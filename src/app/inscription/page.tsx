@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { PROFESSION_GROUPS } from "@/lib/professions";
 
 export default function InscriptionPage() {
+  const router = useRouter();
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [telephone, setTelephone] = useState("");
@@ -17,8 +19,32 @@ export default function InscriptionPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [code, setCode] = useState("");
+  const [codeError, setCodeError] = useState<string | null>(null);
+  const [codeLoading, setCodeLoading] = useState(false);
+  const [resendMessage, setResendMessage] = useState<string | null>(null);
 
   const professionEstAutre = profession === "Autre";
+
+  async function sendOtp() {
+    const supabase = createClient();
+    return supabase.auth.signInWithOtp({
+      email,
+      options: {
+        shouldCreateUser: true,
+        emailRedirectTo: `${window.location.origin}/auth/callback`,
+        data: {
+          nom,
+          prenom,
+          telephone,
+          profession,
+          profession_autre: professionEstAutre ? professionAutre.trim() : null,
+          consent_service: true,
+          consent_partners: consentPartners,
+        },
+      },
+    });
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -36,23 +62,7 @@ export default function InscriptionPage() {
     }
 
     setLoading(true);
-    const supabase = createClient();
-    const { error: signUpError } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        shouldCreateUser: true,
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
-        data: {
-          nom,
-          prenom,
-          telephone,
-          profession,
-          profession_autre: professionEstAutre ? professionAutre.trim() : null,
-          consent_service: true,
-          consent_partners: consentPartners,
-        },
-      },
-    });
+    const { error: signUpError } = await sendOtp();
     setLoading(false);
 
     if (signUpError) {
@@ -66,6 +76,40 @@ export default function InscriptionPage() {
     setSubmitted(true);
   }
 
+  async function handleVerifyCode(e: React.FormEvent) {
+    e.preventDefault();
+    setCodeError(null);
+    setCodeLoading(true);
+    const supabase = createClient();
+    const { error: verifyError } = await supabase.auth.verifyOtp({
+      email,
+      token: code.trim(),
+      type: "email",
+    });
+    setCodeLoading(false);
+
+    if (verifyError) {
+      setCodeError(
+        "Code invalide ou expiré (" + verifyError.message + "). Vérifiez le code ou demandez-en un nouveau.",
+      );
+      return;
+    }
+    router.push("/finaliser-compte");
+  }
+
+  async function handleResend() {
+    setCodeError(null);
+    setResendMessage(null);
+    setCodeLoading(true);
+    const { error: resendError } = await sendOtp();
+    setCodeLoading(false);
+    if (resendError) {
+      setCodeError("Impossible de renvoyer le code (" + resendError.message + ").");
+      return;
+    }
+    setResendMessage("Un nouveau code vient d'être envoyé à " + email + ".");
+  }
+
   if (submitted) {
     return (
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 text-center">
@@ -73,11 +117,47 @@ export default function InscriptionPage() {
           Vérifiez votre boîte email
         </h1>
         <p className="mt-4 text-slate-600">
-          Un lien de confirmation a été envoyé à <strong>{email}</strong>.
-          Cliquez sur ce lien pour valider votre adresse et finaliser la
+          Un code à 6 chiffres a été envoyé à <strong>{email}</strong>.
+          Saisissez-le ci-dessous pour valider votre adresse et finaliser la
           création de votre compte (choix d&apos;un identifiant et d&apos;un
-          mot de passe).
+          mot de passe). Le lien présent dans l&apos;email fonctionne aussi,
+          mais uniquement s&apos;il est ouvert sur cet appareil.
         </p>
+
+        <form onSubmit={handleVerifyCode} className="mt-6 space-y-3">
+          <input
+            required
+            inputMode="numeric"
+            autoComplete="one-time-code"
+            maxLength={6}
+            value={code}
+            onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
+            placeholder="123456"
+            className="w-full rounded-md border border-slate-300 px-3 py-2.5 text-center text-lg tracking-[0.3em] focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+          />
+
+          {codeError && <p className="text-sm text-red-600">{codeError}</p>}
+          {resendMessage && (
+            <p className="text-sm text-teal-700">{resendMessage}</p>
+          )}
+
+          <button
+            type="submit"
+            disabled={codeLoading || code.trim().length < 6}
+            className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50"
+          >
+            {codeLoading ? "Vérification…" : "Valider le code"}
+          </button>
+
+          <button
+            type="button"
+            onClick={handleResend}
+            disabled={codeLoading}
+            className="w-full text-center text-sm text-teal-700 underline disabled:opacity-50"
+          >
+            Renvoyer le code
+          </button>
+        </form>
       </div>
     );
   }
