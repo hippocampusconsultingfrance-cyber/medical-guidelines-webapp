@@ -117,7 +117,7 @@ export default function InscriptionPage() {
           Vérifiez votre boîte email
         </h1>
         <p className="mt-4 text-slate-600">
-          Un code à 6 chiffres a été envoyé à <strong>{email}</strong>.
+          Un code a été envoyé à <strong>{email}</strong>.
           Saisissez-le ci-dessous pour valider votre adresse et finaliser la
           création de votre compte (choix d&apos;un identifiant et d&apos;un
           mot de passe). Le lien présent dans l&apos;email fonctionne aussi,
@@ -129,10 +129,10 @@ export default function InscriptionPage() {
             required
             inputMode="numeric"
             autoComplete="one-time-code"
-            maxLength={6}
+            maxLength={10}
             value={code}
             onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
-            placeholder="123456"
+            placeholder="12345678"
             className="w-full rounded-md border border-slate-300 px-3 py-2.5 text-center text-lg tracking-[0.3em] focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
           />
 
