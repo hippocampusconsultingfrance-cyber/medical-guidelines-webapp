@@ -41,7 +41,7 @@ export default function InscriptionPage() {
       email,
       options: {
         shouldCreateUser: true,
-        emailRedirectTo: `${window.location.origin}/auth/confirm`,
+        emailRedirectTo: `${window.location.origin}/auth/callback`,
         data: {
           nom,
           prenom,
