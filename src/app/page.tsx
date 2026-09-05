@@ -34,9 +34,12 @@ export default async function Home() {
         Bienvenue{profile ? `, ${profile.prenom}` : ""}
         {profile?.profession ? ` (${profile.profession})` : ""}.
       </p>
-      <p className="mt-2 text-sm text-slate-500">
-        Les fiches de synthèse seront bientôt disponibles ici.
-      </p>
+      <a
+        href="/fiches/index.html"
+        className="mt-8 inline-block rounded-md bg-teal-700 px-5 py-3 text-sm font-medium text-white hover:bg-teal-800"
+      >
+        Accéder aux fiches de synthèse →
+      </a>
     </div>
   );
 }
