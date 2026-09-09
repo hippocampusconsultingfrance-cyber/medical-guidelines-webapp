@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (28 / 59)
+## Fiches migrées (29 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -46,8 +46,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000026 | `ih` | `0026_migrate_ih.sql` | Insuffisance hépatique en soins critiques (SFAR/AFEF, RFE 2018) | 19 |
 | 000027 | `intubation_difficile_adulte` | `0027_migrate_intubation_difficile_adulte.sql` | Intubation difficile et extubation en anesthésie chez l'adulte (SFAR, RFE 2017) | 13 |
 | 000028 | `intubation_reanimation` | `0028_migrate_intubation_reanimation.sql` | Intubation et extubation du patient de réanimation (SFAR/SRLF/SFMU + 3 sociétés, RFE 2016) | 32 |
+| 000029 | `intubation_urgence` | `0029_migrate_intubation_urgence.sql` | Intubation en urgence d'un adulte hors bloc opératoire et hors unité des soins critiques (SFAR/SFMU, RFE 2025) | 28 |
 
-**Total : 1196 recommandations atomiques, 28 documents, 7 sociétés du seed
+**Total : 1224 recommandations atomiques, 29 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -457,13 +458,27 @@ non exhaustive, section 14.1).**
   source, volontairement pas migrés (mêmes critères que
   intubation_difficile_adulte/0027). SFAR/SRLF/SFMU liées en
   document_societies (GFRUP/ADARPEF/SKR hors seed).
+- `intubation_urgence` (SFAR/SFMU, RFE 2025, hors bloc/hors soins
+  critiques) : 28 recommandations migrées, GRADE classique. **Écart de
+  comptage EXPLIQUÉ, pas une ligne manquante** : source annonce "32
+  recommandations (5 Grade1, 12 Grade2, 15 AE)" ; le tableau classique ne
+  compte que 28 lignes (5×1+, 12×Grade2, 11×AE) — l'écart de 4 AE
+  correspond EXACTEMENT à la sous-section « Conduite à tenir en cas
+  d'échec d'intubation (R4.3.1 à R4.3.4, avis d'experts, accord fort) »,
+  rendue par le contenu construit sous forme de 2 algorithmes parallèles
+  (Figures 3 extrahospitalier/4 intrahospitalier, ~6 étapes chacun) SANS
+  qu'aucune étape ne soit rattachée à l'un des 4 repères R4.3.x — aucune
+  correspondance étape→repère récupérable sans deviner, donc PAS migrées
+  individuellement (disclosure plutôt qu'invention). 28+4=32, 5+12+15=32,
+  reconciliation exacte vérifiée sur les deux axes. 4 questions « sans
+  recommandation possible » volontairement pas migrées. SFAR et SFMU
+  (toutes deux dans le seed) liées en document_societies.
 
-## Fiches restantes (31 / 59)
+## Fiches restantes (30 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
