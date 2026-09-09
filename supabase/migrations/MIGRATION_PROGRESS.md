@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (10 / 59)
+## Fiches migrées (12 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -28,11 +28,14 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000008 | `anaphylaxie` | `0008_migrate_anaphylaxie.sql` | Diagnostic et prise en charge des réactions d'hypersensibilité immédiate périopératoires (SFAR/SFA, RFE 2025) | 62 |
 | 000009 | `antibioprophylaxie` | `0009_migrate_antibioprophylaxie.sql` | Antibioprophylaxie en chirurgie et médecine interventionnelle adulte et pédiatrique — Champ 1 (SFAR/SPILF, RFE V3.0/V3.1) | 11 |
 | 000010 | `antibiotherapie_probabiliste` | `0010_migrate_antibiotherapie_probabiliste.sql` | Antibiothérapie probabiliste des états septiques graves (SFAR/SRLF/SPILF/SFMU, Conférence d'experts 2004) | 37 |
+| 000011 | `anticoag_urgence` | `0011_migrate_anticoag_urgence.sql` | Gestion de l'anticoagulation dans un contexte d'urgence (SFMU/SFAR/GIHP/SFTH, RFE 2024) | 91 |
+| 000012 | `anticoagulants` | `0012_migrate_anticoagulants.sql` | Gestion des anticoagulants pour une procédure invasive programmée (GIHP/SFAR + 25 sociétés, RFE 2026) | 64 |
 
-**Total : 509 recommandations atomiques, 10 documents, 6 sociétés savantes
-nouvellement liées (SFAR, SRLF, SPILF, SFMU, ABM, dont ABM ajoutée à
-`societies` — absente du seed Annexe B, qui se décrit lui-même comme non
-exhaustif, section 14.1).**
+**Total : 664 recommandations atomiques, 12 documents, 7 sociétés du seed
+Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
+SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
+société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
+non exhaustive, section 14.1).**
 
 ### Points laissés `-- À VÉRIFIER` dans ces 10 migrations (à trancher par un relecteur humain)
 
@@ -143,14 +146,43 @@ exhaustif, section 14.1).**
   jusqu'ici dans cette migration). Document de 2004 : un relecteur humain
   devrait vérifier l'existence d'une actualisation plus récente avant
   publication (écologie bactérienne évolutive), disclosure volontaire.
+- `anticoag_urgence` : 91 recommandations extraites des tableaux, mais le
+  décompte annoncé par la RFE est 102 — écart d'abord non expliqué par le
+  contenu construit. Investigation complémentaire faite ici (téléchargement
+  et lecture directe du PDF source, pas une supposition) : les 9 items
+  manquants sont tous des recommandations-pointeurs "les experts suggèrent
+  d'utiliser l'algorithme suivant (figure N)", dont le contenu clinique réel
+  est décomposé par les items numérotés suivants (déjà migrés) — même
+  logique d'exclusion que les figures-résumés d'autres RFE de ce corpus,
+  mais vérifiée ici contre le texte source plutôt que déduite. 1 "Absence de
+  recommandation" et 1 phrase d'argumentaire (pas un item séparé) complètent
+  la reconciliation exacte (91+9+1+1=102). SFAR ET SFMU liées en
+  document_societies ; GIHP et SFTH non liés (hors seed Annexe B).
+- `anticoagulants` : fiche compagnon de `anticoag_urgence` (procédure
+  programmée vs urgence). ~20 tableaux "Annexe — Classification du risque
+  hémorragique par spécialité" (radiologie interventionnelle, rhumatologie,
+  cardiologie, chirurgie thoracique/orale/ORL, endoscopie, viscérale,
+  proctologie, gynéco, urologie, plastique, orthopédie, neurochirurgie)
+  volontairement pas migrés : ce sont des tables de classification d'actes
+  par risque, sans chip de grade propre — la décision clinique elle-même
+  reste portée par les 64 recommandations migrées. Deux tableaux à cellules
+  fusionnées (rowspan visuel : colonne Molécule/Stade IRC vide sauf sur la
+  première ligne d'un groupe) reconstruits en reportant le dernier libellé
+  non vide sur chaque ligne, pour que chaque `statement` migré reste
+  autoporteur — la structure de groupement vient du contenu construit,
+  seule la mise en phrase complète est de mon fait. Colonne "Accord"
+  (niveau de consensus du vote, Fort/Faible) conservée en citation inline
+  dans `statement`, jamais fusionnée dans `grade` (deux informations
+  différentes de la source). SFAR, SFC ET CNGOF liées en document_societies
+  (3 sur les ~27 sociétés co-signataires citées, les autres hors seed
+  Annexe B) ; GIHP (coordonnateur principal) non lié.
 
-## Fiches restantes (49 / 59)
+## Fiches restantes (47 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-anticoag_urgence,
-anticoagulants, asthme_aigu_grave, choc_hemorragique, civd,
+asthme_aigu_grave, choc_hemorragique, civd,
 controle_temperature, corticotherapie, curares, eclsa, eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
