@@ -335,7 +335,10 @@ create table if not exists public.documents (
   pmid text,
   -- 4.1/16.3 : "Aucune fiche publiée sans source URL valide" — appliqué au
   -- document autant qu'à chaque recommandation (recommendations.source_url).
-  source_url text not null,
+  -- unique : permet aux scripts de migration (Tâche 1) de faire
+  -- "insert ... on conflict (source_url) do nothing" plutôt que de générer
+  -- et suivre des UUID de document à la main.
+  source_url text not null unique,
   pdf_url text, -- distinct de source_url lorsque applicable (4.3)
   -- 6.3 : "Avertissement lorsque les populations, définitions ou systèmes
   -- de grading ne sont pas directement comparables" — le comparateur a
@@ -410,6 +413,22 @@ create table if not exists public.document_specialties (
   document_id uuid not null references public.documents(id) on delete cascade,
   specialty_id uuid not null references public.specialties(id) on delete restrict,
   primary key (document_id, specialty_id)
+);
+
+-- CORRECTIF POST-AUDIT (trouvé en écrivant les premières migrations de
+-- fiches, Tâche 1) : documents.society_id est une FK unique, mais une part
+-- significative du corpus RFE réel est co-publiée par plusieurs sociétés à
+-- la fois (ex. transport intrahospitalier : SRLF+SFAR+SFMU ; mort
+-- encéphalique : SFAR+SRLF+Agence de la biomédecine) — le cahier des
+-- charges ne tranche pas ce point explicitement, mais le modéliser en 1:1
+-- aurait forcé à en choisir une arbitrairement et perdre les autres.
+-- documents.society_id reste la société "porteuse"/principale (pratique
+-- pour les requêtes simples et cohérent avec les seeds Annexe B) ;
+-- document_societies porte l'ensemble complet des sociétés co-publicatrices.
+create table if not exists public.document_societies (
+  document_id uuid not null references public.documents(id) on delete cascade,
+  society_id uuid not null references public.societies(id) on delete restrict,
+  primary key (document_id, society_id)
 );
 
 -- 7.3 : versionnage. Une ligne par version successive détectée/publiée.
@@ -1036,6 +1055,13 @@ drop policy if exists document_specialties_select_all on public.document_special
 create policy document_specialties_select_all on public.document_specialties for select using (true);
 drop policy if exists document_specialties_write_editorial on public.document_specialties;
 create policy document_specialties_write_editorial on public.document_specialties for all
+  using (public.has_editorial_role('relecteur')) with check (public.has_editorial_role('relecteur'));
+
+alter table public.document_societies enable row level security;
+drop policy if exists document_societies_select_all on public.document_societies;
+create policy document_societies_select_all on public.document_societies for select using (true);
+drop policy if exists document_societies_write_editorial on public.document_societies;
+create policy document_societies_write_editorial on public.document_societies for all
   using (public.has_editorial_role('relecteur')) with check (public.has_editorial_role('relecteur'));
 
 alter table public.document_versions enable row level security;
