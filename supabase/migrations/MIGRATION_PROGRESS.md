@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (5 / 59)
+## Fiches migrées (6 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -23,12 +23,13 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000003 | `mort_encephalique` | `0003_migrate_mort_encephalique.sql` | Mort encéphalique et prélèvement d'organes (SFAR/SRLF/ABM, 2005) | 142 |
 | 000004 | `aap_urgence` | `0004_migrate_aap_urgence.sql` | Gestion des AAP en cas de procédure invasive non programmée ou d'hémorragie (GIHP/GFHT/SFAR, 2018) | 21 |
 | 000005 | `aap_programmee` | `0005_migrate_aap_programmee.sql` | Gestion des AAP pour une procédure invasive programmée (GIHP/GFHT/SFAR, RFE 2018) | 34 |
+| 000006 | `allergie_prevention` | `0006_migrate_allergie_prevention.sql` | Prévention du risque allergique péranesthésique. Texte court (Sfar/SFA, RFE 2011) | 47 |
 
-**Total : 342 recommandations atomiques, 5 documents, 3 sociétés savantes
+**Total : 389 recommandations atomiques, 6 documents, 3 sociétés savantes
 nouvellement liées (dont ABM, ajoutée à `societies` — absente du seed Annexe
 B, qui se décrit lui-même comme non exhaustif, section 14.1).**
 
-### Points laissés `-- À VÉRIFIER` dans ces 5 migrations (à trancher par un relecteur humain)
+### Points laissés `-- À VÉRIFIER` dans ces 6 migrations (à trancher par un relecteur humain)
 
 - `ecbu` : `library_final.json` et le contenu déjà audité de la fiche citent
   deux URL PDF différentes (dates de fichier différentes) — celle
@@ -62,31 +63,35 @@ B, qui se décrit lui-même comme non exhaustif, section 14.1).**
   migrée (R34). Panneau "Absence de proposition" (dose de charge anti-P2Y12)
   volontairement pas migré (aucune proposition réelle à porter). Même
   restriction `document_societies` que `aap_urgence` (GIHP/GFHT non liés).
+- `allergie_prevention` : texte narratif (Sfar/SFA, 2011) SANS aucun chip de
+  grade par recommandation — grade/evidence_level laissés NULL sur les 47
+  lignes (disclosure explicite déjà faite par le contenu construit lui-même :
+  recherche exhaustive de "Grade A/B/C"/"accord professionnel" dans la
+  source = aucune occurrence ; les NP1-4 qualifient un constat de
+  l'argumentaire, jamais la force d'une recommandation, donc conservés
+  seulement en citation inline dans `statement`, jamais promus en
+  `evidence_level`). Méthode d'atomisation différente des 5 fiches
+  précédentes : chaque repère "Sx.x.x" officiellement numéroté par la RFE
+  source = 1 recommandation atomique, quelle que soit sa forme grammaticale
+  (y compris les items purement définitionnels S4.1.1-S4.1.5, "patients à
+  risque" — un relecteur pourrait préférer les modéliser en critères de
+  `population` plutôt qu'en recommandations séparées, choix non tranché
+  unilatéralement ici) ; le reste (prose sans repère Sx.x.x) suit les
+  marqueurs directifs que le contenu construit énonce lui-même
+  ("il faut"/"il est recommandé de"/"il ne faut pas"/"il n'y a pas lieu
+  de"...). Question 6 (traitement du choc) délibérément PAS migrée : le
+  contenu construit la présente lui-même comme un résumé avec renvoi vers
+  `Fiche_SFAR_Anaphylaxie_2025.pdf` (fiche `anaphylaxie`, pas encore
+  migrée) qui la couvre intégralement — à extraire de cette source-là le
+  moment venu, pas d'un résumé paraphrasé. SFA (co-auteur) non liée en
+  `document_societies` (absente de l'Annexe B, même cas que GIHP/GFHT).
 
-### Fiche examinée puis reportée à un prochain lot (pas migrée cette session)
-
-- `allergie_prevention` (72 Ko, la 3e de la liste de priorité) : lue en
-  intégralité mais volontairement pas migrée cette session — structurellement
-  très différente des 5 fiches déjà migrées. C'est un texte narratif (Sfar/SFAIC
-  2011) qui n'imprime **aucun chip de grade par recommandation** (le contenu
-  déjà construit le dit lui-même explicitement : recherche exhaustive de
-  "Grade A/B/C"/"accord professionnel" dans la source = aucune occurrence).
-  Les recommandations y sont des phrases directives noyées dans la prose
-  ("il faut", "il est recommandé de", "il ne faut pas"...) plutôt que des
-  lignes de tableau individuellement chipées comme les 5 fiches déjà migrées
-  — leur identification à la lecture (sans fabriquer de grade) demande un
-  passage dédié, pas fait dans le temps de cette session pour ne pas bâcler
-  la relecture phrase par phrase exigée par la qualité attendue. À reprendre
-  en priorité au prochain lot (ne pas sauter à `anaphylaxie`/`anemie` sans y
-  revenir d'abord, sous peine de perdre l'ordre de priorité clinique suivi).
-
-## Fiches restantes (54 / 59)
+## Fiches restantes (53 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
-par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif).
-`allergie_prevention` (voir ci-dessus) doit rester en tête de cette liste :
+par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-allergie_prevention, anaphylaxie, anemie,
+anaphylaxie, anemie,
 antibioprophylaxie, antibiotherapie_probabiliste, anticoag_urgence,
 anticoagulants, asthme_aigu_grave, choc_hemorragique, civd,
 controle_temperature, corticotherapie, curares, eclsa, eer,
