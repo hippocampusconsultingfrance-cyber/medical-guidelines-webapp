@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (31 / 59)
+## Fiches migrées (32 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -49,8 +49,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000029 | `intubation_urgence` | `0029_migrate_intubation_urgence.sql` | Intubation en urgence d'un adulte hors bloc opératoire et hors unité des soins critiques (SFAR/SFMU, RFE 2025) | 28 |
 | 000030 | `ira` | `0030_migrate_ira.sql` | Insuffisance rénale aiguë en périopératoire et en réanimation (SFAR/SRLF, RFE 2015) | 33 |
 | 000031 | `lat_soins_critiques` | `0031_migrate_lat_soins_critiques.sql` | Décisions de limitation et d'arrêt de traitements (LAT) en soins critiques de l'adulte (SFAR/SOFMER, RFE 2025) | 9 |
+| 000032 | `mal_epileptique` | `0032_migrate_mal_epileptique.sql` | États de mal épileptiques de l'adulte et de l'enfant (SRLF/GFRUP/SFMU, RFE 2008) | 163 |
 
-**Total : 1266 recommandations atomiques, 31 documents, 7 sociétés du seed
+**Total : 1429 recommandations atomiques, 32 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -511,13 +512,41 @@ non exhaustive, section 14.1).**
   migrés (non cotés individuellement par le jury). 2 absences de
   recommandation pas migrées. SOFMER hors seed — seule la SFAR liée en
   document_societies.
+- `mal_epileptique` (SRLF/GFRUP/SFMU, RFE 2008) : **163 recommandations —
+  document le plus volumineux du corpus à ce jour**, numérotation
+  `recommendation_code` étendue à 3 chiffres (R001-R163, vs 2 chiffres
+  partout ailleurs ; format `R{rang}` du projet supporte nativement la
+  largeur variable). Méthode RAND/UCLA à un seul axe (Fort/Faible),
+  PAS GRADE. **Divergence de comptage majeure disclosée, non résolue** : le
+  panneau méthodologique source annonce 190 tags bruts (167 fort + 23
+  faible) consolidés en "149 lignes (141 thématiques + 8 classification)" ;
+  un parcours exhaustif et dédupliqué du contenu construit JSON (aucun
+  statement dupliqué) trouve 163 lignes distinctes (155 thématiques + 8
+  classification, 140 fort + 23 faible) — le compte de tags "faible" (23)
+  correspond exactement au brut annoncé, mais 155 thématiques trouvées vs
+  141 annoncées est un écart dans le sens INVERSE de ce qu'une
+  consolidation produirait. Les 163 lignes réellement présentes dans le
+  JSON de build (l'artefact faisant foi pour ce projet) sont toutes
+  migrées, aucune retranchée pour forcer une correspondance à "149".
+  Classification opérationnelle de l'EME (champ 1, 8 formes cliniques) :
+  contrairement aux tableaux de classification purs exclus ailleurs dans
+  ce corpus (WFNS/Hunt&Hess/Fisher de `hsa`/0023, sans cotation), CE
+  tableau porte un tag Accord individuel par forme clinique — migré comme
+  8 recommandations reformulées en phrases déclaratives (R008-R015).
+  Spécificités pédiatriques repérées par le marqueur littéral "(enfant)"
+  de la source, présent sur 18 lignes → `population='Pédiatrie'`.
+  Document de 2008 dont la source dit elle-même littéralement (R163)
+  qu'il "devra être réactualisé dans un délai maximum de trois ans" —
+  échéance dépassée de 14+ ans ; `freshness_status='revision_detectee'`
+  malgré `library_final.json` "en vigueur". SRLF et SFMU liées en
+  document_societies (GFRUP hors seed).
 
-## Fiches restantes (28 / 59)
+## Fiches restantes (27 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-mal_epileptique, mtev_perioperatoire, nutrition,
+mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
