@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (20 / 59)
+## Fiches migrées (21 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -38,8 +38,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000018 | `curares` | `0018_migrate_curares.sql` | Curarisation et décurarisation en anesthésie (SFAR, RFE 2018) | 33 |
 | 000019 | `eclsa` | `0019_migrate_eclsa.sql` | Indications de l'assistance circulatoire dans le traitement des arrêts cardiaques réfractaires (9 sociétés dont SFAR/SFMU/SFC/SRLF, 2009) | 12 |
 | 000020 | `eer` | `0020_migrate_eer.sql` | Épuration extrarénale en réanimation adulte et pédiatrique (SRLF/SFAR/GFRUP/SFD, RFE 2014) | 78 |
+| 000021 | `epanchement_pleural` | `0021_migrate_epanchement_pleural.sql` | Épanchement pleural liquidien de l'adulte en soins critiques (SFAR/SFMU/SPLF/SFCTCV, RPP 2023) | 25 |
 
-**Total : 948 recommandations atomiques, 20 documents, 7 sociétés du seed
+**Total : 973 recommandations atomiques, 21 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -311,13 +312,31 @@ non exhaustive, section 14.1).**
   la dialyse péritonéale" alors que la source couvre continue+intermittente
   ET un champ dédié dialyse péritonéale) — titre de la source retenu,
   divergence disclosée.
+- `epanchement_pleural` (SFAR, avec SFMU/SPLF/SFCTCV, RPP 2023) : 25
+  recommandations, RPP (pas RFE) — méthode GRADE grid utilisée pour le
+  vote, mais AUCUNE recommandation graduée numériquement faute de
+  littérature ; toutes cotées « AE » (avis d'experts) avec accord FORT sans
+  exception après 4 tours de cotation. Décompte source ("25 recommandations
+  réparties en 4 champs") exactement reconcilié. 3 items « Absence de
+  recommandation » (drainage vs ponction, position du patient, temps du
+  cycle respiratoire au retrait sous VM) volontairement pas migrés — les
+  experts déclarent explicitement ne pas pouvoir statuer, faute de
+  données. Tableau de référence posologique "anticoagulants avant drainage"
+  (7 lignes par molécule) pas migré séparément — déjà couvert par R14
+  (Réf. R2.4.3). **Incohérence interne à la source disclosée sans être
+  résolue** : résumé source "15 experts" vs comptage direct des 4 listes
+  nominatives imprimées = 16 noms (SFAR 9 + SFCTCV 3 + SFMU 2 + SPLF 2) —
+  les deux chiffres reproduits, aucun tranché. Champ hors pleurésie
+  purulente/hémothorax/néoplasique et hors pédiatrie (disclosé au niveau
+  document). SFAR et SFMU liées en document_societies (SPLF/SFCTCV hors
+  seed).
 
-## Fiches restantes (39 / 59)
+## Fiches restantes (38 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
+glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
