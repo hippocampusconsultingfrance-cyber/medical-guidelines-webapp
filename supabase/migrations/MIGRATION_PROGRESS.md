@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (18 / 59)
+## Fiches migrées (19 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -36,8 +36,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000016 | `controle_temperature` | `0016_migrate_controle_temperature.sql` | Contrôle ciblé de la température en réanimation (SRLF/SFAR/SFMU, RFE 2016) | 30 |
 | 000017 | `corticotherapie` | `0017_migrate_corticotherapie.sql` | Corticothérapie au cours du choc septique et du SDRA (SFAR/SPILF, CC 2000) | 18 |
 | 000018 | `curares` | `0018_migrate_curares.sql` | Curarisation et décurarisation en anesthésie (SFAR, RFE 2018) | 33 |
+| 000019 | `eclsa` | `0019_migrate_eclsa.sql` | Indications de l'assistance circulatoire dans le traitement des arrêts cardiaques réfractaires (9 sociétés dont SFAR/SFMU/SFC/SRLF, 2009) | 12 |
 
-**Total : 858 recommandations atomiques, 18 documents, 7 sociétés du seed
+**Total : 870 recommandations atomiques, 19 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -257,13 +258,39 @@ non exhaustive, section 14.1).**
   2 algorithmes de décurarisation et 2 tableaux de posologie
   (sugammadex/succinylcholine enfant) volontairement pas migrés
   (référence/algorithme). Seule la SFAR organise cette RFE — liée seule.
+- `eclsa` (9 sociétés dont SFAR/SFMU/SFC/SRLF, Ann Fr Anesth Reanim 2009) :
+  12 recommandations — **CAS PARTICULIER DE CE CORPUS**, à relire en
+  priorité. Ce document est en PROSE CONTINUE, SANS GRADE, SANS
+  numérotation R1/R2, SANS aucun tableau "Réf. | Recommandation | Grade" :
+  une seule mention de niveau de preuve imprimée pour tout le texte
+  (« niveau 5 », avis d'experts), reproduite comme `grade = 'AE'` sur
+  chacune des 12 lignes (un seul grade global, pas un grade composite
+  fabriqué). Contrairement aux précédents de ce corpus (aap_urgence,
+  aap_programmee, anticoagulants, curares, civd) où un algorithme/figure a
+  été exclu parce que son contenu était redondant avec des recommandations
+  déjà graduées ailleurs, ici l'algorithme décisionnel (Fig. 1, 3
+  colonnes "Indication possible / Incertitude / Pas d'indication") EST la
+  seule source de critères cliniques concrets de tout le document — décision
+  prise de le convertir fidèlement en recommandations déclaratives (R01-R06)
+  plutôt que de ne migrer aucune recommandation clinique exploitable pour ce
+  document. R05 documente une exception disclosée par la source elle-même
+  (seuil low-flow > 100 min non contre-indicatif en cas d'intoxication par
+  cardiotrope). `freshness_status` mis à `revision_detectee` (et non
+  `a_jour`) à cause de l'avertissement de la source sur les essais ECPR
+  modernes postérieurs (ARREST 2020, PRAGUE-OHCA 2022, INCEPTION 2023) —
+  alors que `library_final.json` indique lui `"status": "en vigueur"`,
+  divergence disclosée, à trancher par un relecteur humain. Seules SFAR,
+  SFMU, SFC et SRLF (sur les 9 sociétés co-signataires de la source) sont
+  dans le seed Annexe B — les 5 autres (Conseil français de réanimation
+  cardiopulmonaire, SFCTCV, Société française de pédiatrie, GFRUP, Société
+  française de perfusion) non liées, absentes du seed.
 
-## Fiches restantes (41 / 59)
+## Fiches restantes (40 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-eclsa, eer,
+eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
