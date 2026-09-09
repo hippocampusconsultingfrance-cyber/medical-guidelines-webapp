@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (16 / 59)
+## Fiches migrées (18 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -34,8 +34,10 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000014 | `choc_hemorragique` | `0014_migrate_choc_hemorragique.sql` | Recommandations sur la réanimation du choc hémorragique (SFAR/SRLF/SFMU/GEHT, RFE 2014/2015) | 29 |
 | 000015 | `civd` | `0015_migrate_civd.sql` | Coagulations Intra-Vasculaires Disséminées (CIVD) en réanimation (SRLF, CC 2002) | 22 |
 | 000016 | `controle_temperature` | `0016_migrate_controle_temperature.sql` | Contrôle ciblé de la température en réanimation (SRLF/SFAR/SFMU, RFE 2016) | 30 |
+| 000017 | `corticotherapie` | `0017_migrate_corticotherapie.sql` | Corticothérapie au cours du choc septique et du SDRA (SFAR/SPILF, CC 2000) | 18 |
+| 000018 | `curares` | `0018_migrate_curares.sql` | Curarisation et décurarisation en anesthésie (SFAR, RFE 2018) | 33 |
 
-**Total : 807 recommandations atomiques, 16 documents, 7 sociétés du seed
+**Total : 858 recommandations atomiques, 18 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -238,13 +240,30 @@ non exhaustive, section 14.1).**
   recommandations", répartition 3/13/14 par force) exactement reconcilié.
   SRLF, SFAR ET SFMU liées en document_societies (toutes trois dans le
   seed) ; ANARLF/GFRUP/SFNV non liées.
+- `corticotherapie` (SFAR, CC 2000, avec SPILF/SPLF/GFRUP) : 18
+  recommandations. Cotation à deux axes INDÉPENDANTS non-GRADE, imprimée
+  comme un chip COMPOSITE unique par la source elle-même ("1a", "2b"...) —
+  décomposé proprement en `grade` (partie chiffrée) et `evidence_level`
+  (partie lettrée), pas un grade composite fabriqué (la légende de la
+  source nomme explicitement les deux axes). "N.C." (non coté, anomalie
+  disclosée par le contenu construit pour Q4 et l'énoncé 5.5) -> les deux
+  champs NULL. SFAR et SPILF liées en document_societies.
+- `curares` (SFAR, RFE 2018, actualisation de la CC SFAR 1999) : 33
+  recommandations. Décompte source ("33 recommandations numérotées, R1.1
+  à R8.14") exactement reconcilié par recherche exhaustive de tous les
+  repères Rx.y (aucun absent des tableaux — ma première estimation
+  manuelle de 30 lignes était une erreur de comptage à la lecture du
+  résultat intermédiaire, corrigée avant écriture du fichier final).
+  2 algorithmes de décurarisation et 2 tableaux de posologie
+  (sugammadex/succinylcholine enfant) volontairement pas migrés
+  (référence/algorithme). Seule la SFAR organise cette RFE — liée seule.
 
-## Fiches restantes (43 / 59)
+## Fiches restantes (41 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-corticotherapie, curares, eclsa, eer,
+eclsa, eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
