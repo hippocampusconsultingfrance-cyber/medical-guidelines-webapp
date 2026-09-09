@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (32 / 59)
+## Fiches migrées (33 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -50,8 +50,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000030 | `ira` | `0030_migrate_ira.sql` | Insuffisance rénale aiguë en périopératoire et en réanimation (SFAR/SRLF, RFE 2015) | 33 |
 | 000031 | `lat_soins_critiques` | `0031_migrate_lat_soins_critiques.sql` | Décisions de limitation et d'arrêt de traitements (LAT) en soins critiques de l'adulte (SFAR/SOFMER, RFE 2025) | 9 |
 | 000032 | `mal_epileptique` | `0032_migrate_mal_epileptique.sql` | États de mal épileptiques de l'adulte et de l'enfant (SRLF/GFRUP/SFMU, RFE 2008) | 163 |
+| 000033 | `mtev_perioperatoire` | `0033_migrate_mtev_perioperatoire.sql` | Prévention de la maladie thromboembolique veineuse péri-opératoire (GIHP/SFAR/SFTH/SFMV, RFE 2024) | 77 |
 
-**Total : 1429 recommandations atomiques, 32 documents, 7 sociétés du seed
+**Total : 1506 recommandations atomiques, 33 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -540,13 +541,35 @@ non exhaustive, section 14.1).**
   échéance dépassée de 14+ ans ; `freshness_status='revision_detectee'`
   malgré `library_final.json` "en vigueur". SRLF et SFMU liées en
   document_societies (GFRUP hors seed).
+- `mtev_perioperatoire` (GIHP, avec SFAR/SFTH/SFMV, RFE 2024, actualise la
+  RFE SFAR 2011) : 77 recommandations, GRADE classique. **Particularité
+  disclosée par la source elle-même** : les 77 recommandations sont
+  TOUTES à Accord Fort — aucune Accord Faible dans tout le document
+  (vérifié par recherche exhaustive), donc pas de colonne Accord/
+  evidence_level distincte pour ce document. Décompte source ("77
+  recommandations, 14 questions PICO, 21 sous-thèmes") exactement
+  reconcilié. **3 figures (PTH/PTG, TVP distale, schéma de synthèse)
+  volontairement pas migrées malgré une disclosure explicite de la source
+  qu'elles portent de VRAIS grades fidèlement reproduits** (contrairement
+  aux algorithmes non gradés exclus ailleurs dans ce corpus) : un examen
+  ponctuel montre qu'elles restatent en arbre décisionnel du contenu déjà
+  couvert par les lignes Indication/Durée/Modalités migrées, et une
+  analyse bloc-par-bloc pour séparer avec certitude le nouveau du
+  redondant n'a pas été menée vu le volume — disclosure explicite, décision
+  documentée pour reprise ultérieure par un relecteur humain. Tableaux
+  posologiques (délai neuraxial par anticoagulant, adaptation par DFG) et
+  tableaux de méta-analyses chiffrées volontairement pas migrés (données
+  d'argumentaire, pas des recommandations). `library_final.json` liste
+  encore la RFE 2011 remplacée comme "en vigueur" — incohérence de cet
+  index disclosée, hors périmètre de correction de ce projet. Seule la
+  SFAR (collaboratrice) liée en document_societies.
 
-## Fiches restantes (27 / 59)
+## Fiches restantes (26 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-mtev_perioperatoire, nutrition,
+nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
