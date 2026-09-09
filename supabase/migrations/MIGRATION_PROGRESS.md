@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (22 / 59)
+## Fiches migrées (23 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -40,8 +40,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000020 | `eer` | `0020_migrate_eer.sql` | Épuration extrarénale en réanimation adulte et pédiatrique (SRLF/SFAR/GFRUP/SFD, RFE 2014) | 78 |
 | 000021 | `epanchement_pleural` | `0021_migrate_epanchement_pleural.sql` | Épanchement pleural liquidien de l'adulte en soins critiques (SFAR/SFMU/SPLF/SFCTCV, RPP 2023) | 25 |
 | 000022 | `glycemie` | `0022_migrate_glycemie.sql` | Contrôle de la glycémie en réanimation et en anesthésie (Sfar/SRLF + 6 partenaires, RFE 2009) | 74 |
+| 000023 | `hsa` | `0023_migrate_hsa.sql` | Hémorragie sous-arachnoïdienne grave (SFAR/ANARLF + 2 sociétés, CE 2004) | 60 |
 
-**Total : 1047 recommandations atomiques, 22 documents, 7 sociétés du seed
+**Total : 1107 recommandations atomiques, 23 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -354,13 +355,33 @@ non exhaustive, section 14.1).**
   malgré `library_final.json` "en vigueur" (même pattern que eclsa/0019).
   Seules SFAR et SRLF liées en document_societies (6 sociétés partenaires
   hors seed).
+- `hsa` (SFAR, avec ANARLF/neurochirurgie/neuroradiologie, CE 2004) : 60
+  recommandations. Conférence d'experts (pas GRADE), motivée par la source
+  elle-même par le faible niveau de preuve disponible. Grades A/B/D/E
+  imprimés par le jury (aucune occurrence de Grade C) — **A et B définis
+  littéralement par le texte court (preuve forte / présomption
+  scientifique), D et E NON définis** (le texte court n'en donne nulle
+  part la signification, probablement présente dans l'argumentaire
+  scientifique complet non disponible pour cette fiche) : disclosure
+  explicite plutôt qu'une définition devinée, `grade` reproduit
+  littéralement la lettre source. Comptage source ("2×A, 1×B, 10×D, 48×E"
+  = 61 occurrences textuelles) reconcilié avec les 60 lignes migrées :
+  écart d'une occurrence expliqué par une 2e mention de "Grade D" dans le
+  panneau de champ d'application (hors tableau de recommandations), pas
+  une ligne manquante. 4 tableaux de classification de référence (WFNS,
+  Hunt et Hess, Fisher, index bicaudé) volontairement pas migrés
+  (échelles cliniques établies, pas des recommandations graduées par le
+  jury). Conférence de 2004, source avertit elle-même de se référer aux
+  pratiques plus récentes — `freshness_status = 'revision_detectee'`
+  malgré `library_final.json` "en vigueur". Seule la SFAR liée en
+  document_societies (3 sociétés partenaires hors seed).
 
-## Fiches restantes (37 / 59)
+## Fiches restantes (36 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-hsa, hyperthermie_maligne, hypothermie, ih,
+hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
