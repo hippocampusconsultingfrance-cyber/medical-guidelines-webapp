@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (12 / 59)
+## Fiches migrées (14 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -30,8 +30,10 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000010 | `antibiotherapie_probabiliste` | `0010_migrate_antibiotherapie_probabiliste.sql` | Antibiothérapie probabiliste des états septiques graves (SFAR/SRLF/SPILF/SFMU, Conférence d'experts 2004) | 37 |
 | 000011 | `anticoag_urgence` | `0011_migrate_anticoag_urgence.sql` | Gestion de l'anticoagulation dans un contexte d'urgence (SFMU/SFAR/GIHP/SFTH, RFE 2024) | 91 |
 | 000012 | `anticoagulants` | `0012_migrate_anticoagulants.sql` | Gestion des anticoagulants pour une procédure invasive programmée (GIHP/SFAR + 25 sociétés, RFE 2026) | 64 |
+| 000013 | `asthme_aigu_grave` | `0013_migrate_asthme_aigu_grave.sql` | Prise en charge des crises d'asthme aiguës graves (SRLF, révision 2002 d'une CC 1988) | 62 |
+| 000014 | `choc_hemorragique` | `0014_migrate_choc_hemorragique.sql` | Recommandations sur la réanimation du choc hémorragique (SFAR/SRLF/SFMU/GEHT, RFE 2014/2015) | 29 |
 
-**Total : 664 recommandations atomiques, 12 documents, 7 sociétés du seed
+**Total : 755 recommandations atomiques, 14 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -176,13 +178,49 @@ non exhaustive, section 14.1).**
   différentes de la source). SFAR, SFC ET CNGOF liées en document_societies
   (3 sur les ~27 sociétés co-signataires citées, les autres hors seed
   Annexe B) ; GIHP (coordonnateur principal) non lié.
+- `asthme_aigu_grave` (SRLF, révision 2002 d'une Conférence de Consensus
+  1988) : 62 recommandations. Grille SRLF à DEUX axes réellement distincts —
+  "Preuve" (a>b>c>d, niveau de preuve de la référence) et "Force" (1>2>3,
+  niveau de recommandation, imprimé seulement quand le jury l'a jugé
+  possible) — première fiche du corpus migrée avec `grade` ET
+  `evidence_level` tous deux renseignés distinctement (Force -> grade,
+  Preuve -> evidence_level), au lieu d'un seul champ ou de citations
+  inline. `grade` NULL quand la Force n'est pas imprimée ("—" dans la
+  source), jamais déduit de la Preuve. Document de 2002 : le contenu
+  construit disclose lui-même que les pratiques ont évolué depuis (place
+  élargie du sulfate de magnésium) — à vérifier par le relecteur humain.
+- `choc_hemorragique` (SFAR/SRLF/SFMU/GEHT, RFE 2014/2015) : 29
+  recommandations extraites de 24 numéros de référence source (4 numéros
+  portent chacun plusieurs lignes à grades DIFFÉRENTS et contenu distinct,
+  ex. réf. 15 : traumatisé 1+, non-traumatisé 2+, négative au-delà de la
+  3e heure 1- — pas des doublons, donc pas fusionnées, désambiguïsées en
+  1a/1b/15a/15b/15c/etc. dans `source_section`). **Bug méthodologique
+  trouvé et corrigé pendant cette migration** : le script Python
+  d'extraction utilisé depuis `anaphylaxie` (0008) avait une regex de
+  nettoyage HTML trop permissive (`<[^>]+>`) qui, en présence d'un texte
+  source contenant un opérateur "<" suivi plus loin d'un ">" SANS balise
+  HTML réelle entre les deux (ex. "objectif INR < 1,5 ... si INR > 1,5"),
+  supprimait silencieusement tout le texte entre les deux comme si
+  c'était une balise. Trouvé sur 1 ligne de cette migration (réf. 23,
+  CCP/vitamine K) pendant la relecture, corrigé avant commit par une
+  regex qui ne cible que les balises HTML réellement utilisées dans ce
+  corpus (b/i/br/sup/sub/u). **Audit rétroactif fait sur toutes les
+  migrations précédentes construites par script** (`anaphylaxie` 0008,
+  `antibiotherapie_probabiliste` 0010, `anticoag_urgence` 0011,
+  `anticoagulants` 0012) par re-extraction et diff contre le SQL déjà
+  commité : aucune n'était affectée (le motif "< N ... > N" sans balise
+  entre les deux ne s'était par chance jamais produit ailleurs) — pas de
+  correctif rétroactif nécessaire sur les migrations déjà poussées.
+  **Pour toute prochaine extraction scriptée** : utiliser une regex de
+  nettoyage HTML qui ne cible que des noms de balises connus, jamais
+  `<[^>]+>` seul.
 
 ## Fiches restantes (47 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-asthme_aigu_grave, choc_hemorragique, civd,
+civd,
 controle_temperature, corticotherapie, curares, eclsa, eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
@@ -208,9 +246,30 @@ ne pas confondre les deux.)
    (`grep -n '"[12][+-]/[12][+-]'` sur le fiche script source si besoin),
    choisir le prochain numéro de séquence document libre (voir tableau
    ci-dessus, incrémenter), écrire `NNNN_migrate_<clé>.sql` suivant le
-   patron des 3 fichiers déjà présents (insert documents -> document_societies
+   patron des fichiers déjà présents (insert documents -> document_societies
    -> document_specialties -> recommendations, tout en `on conflict do
    nothing`, statut toujours `draft`).
+   - Pour les fiches à tableaux "Réf. | Recommandation | Grade" réguliers
+     (la majorité), un script Python d'extraction automatique (walk du
+     JSON, table par table) est plus fiable qu'une transcription manuelle
+     à ce volume — mais **jamais** avec une regex de nettoyage HTML du
+     type `<[^>]+>` (elle mange silencieusement tout texte source
+     contenant un "<" suivi plus loin d'un ">" sans balise réelle entre
+     les deux, ex. "INR < 1,5 ... si INR > 1,5" — bug trouvé et corrigé
+     sur `choc_hemorragique`/0014). Utiliser une regex qui ne cible que
+     les balises réellement présentes dans ce corpus :
+     ```python
+     import re, html as ihtml
+     def strip_tags(s):
+         s = re.sub(r'<(?:b|/b|i|/i|br/?|sup|/sup|sub|/sub|u|/u)>', '', s or '')
+         s = ihtml.unescape(s)
+         return re.sub(r'\s*\n\s*', ' ', s).strip()
+     ```
+     Après extraction scriptée, **toujours diffuser un contrôle** :
+     ré-exécuter l'extraction et comparer (`in`/diff) chaque statement
+     généré contre le texte brut de la source — pas seulement un comptage
+     de lignes, un vrai contrôle de contenu — avant d'écrire le fichier
+     SQL final.
 3. **Tester réellement** avant de committer : PostgreSQL 16 local (déjà
    installé dans cet environnement — `service postgresql start`), stub
    `auth.users`/`auth.uid()` minimal :
