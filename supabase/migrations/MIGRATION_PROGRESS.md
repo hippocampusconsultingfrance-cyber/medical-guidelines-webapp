@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (21 / 59)
+## Fiches migrées (22 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -39,8 +39,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000019 | `eclsa` | `0019_migrate_eclsa.sql` | Indications de l'assistance circulatoire dans le traitement des arrêts cardiaques réfractaires (9 sociétés dont SFAR/SFMU/SFC/SRLF, 2009) | 12 |
 | 000020 | `eer` | `0020_migrate_eer.sql` | Épuration extrarénale en réanimation adulte et pédiatrique (SRLF/SFAR/GFRUP/SFD, RFE 2014) | 78 |
 | 000021 | `epanchement_pleural` | `0021_migrate_epanchement_pleural.sql` | Épanchement pleural liquidien de l'adulte en soins critiques (SFAR/SFMU/SPLF/SFCTCV, RPP 2023) | 25 |
+| 000022 | `glycemie` | `0022_migrate_glycemie.sql` | Contrôle de la glycémie en réanimation et en anesthésie (Sfar/SRLF + 6 partenaires, RFE 2009) | 74 |
 
-**Total : 973 recommandations atomiques, 21 documents, 7 sociétés du seed
+**Total : 1047 recommandations atomiques, 22 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -330,13 +331,36 @@ non exhaustive, section 14.1).**
   purulente/hémothorax/néoplasique et hors pédiatrie (disclosé au niveau
   document). SFAR et SFMU liées en document_societies (SPLF/SFCTCV hors
   seed).
+- `glycemie` (Sfar/SRLF + Alfediam/Adarpef/Gefrup/Sbar/SFNEP/SIZ, RFE 2009) :
+  74 recommandations. Encore un système à deux axes indépendants, propre à
+  cette fiche (documenté en détail dans `fiche_glycemie.py` côté
+  rfe-sfar-website) : NGP (Niveau Global de Preuve : Fort/Modéré/Faible) et
+  Accord (Fort/Faible + 1 « Indécision »), jamais fusionnés — la source dit
+  explicitement qu'un accord fort est possible avec un NGP faible et
+  inversement. Convention retenue : Accord -> `grade`, NGP ->
+  `evidence_level` (même logique que asthme_aigu_grave/civd Force/Preuve).
+  Décompte exactement reconcilié avec les "74 recommandations" que la
+  source annonce (champs 5-10 ; champs 1-4 = physiopathologie, "ne
+  pouvaient pas faire l'objet de recommandations avec de vraies cotations"
+  dixit la source, non migrés). **2 anomalies source-internes confirmées
+  par lecture directe du PDF et disclosées, non résolues silencieusement** :
+  (1) 1 recommandation (Champ 7, mesure en SSPI) sans AUCUNE cotation
+  imprimée — grade/evidence_level NULL plutôt qu'inventés ; (2) 1
+  recommandation (Champ 8, arrêt insuline IV) porte un tag "(accord
+  modéré)" alors que la méthodologie déclarée ne définit que fort/faible
+  pour cet axe — reproduit littéralement (`grade = 'Modéré'`), pas forcé.
+  Document de 2009 : la source elle-même avertit que les cibles
+  glycémiques ont évolué depuis — `freshness_status = 'revision_detectee'`
+  malgré `library_final.json` "en vigueur" (même pattern que eclsa/0019).
+  Seules SFAR et SRLF liées en document_societies (6 sociétés partenaires
+  hors seed).
 
-## Fiches restantes (38 / 59)
+## Fiches restantes (37 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
+hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
