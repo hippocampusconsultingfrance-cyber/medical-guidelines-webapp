@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (25 / 59)
+## Fiches migrées (26 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -43,8 +43,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000023 | `hsa` | `0023_migrate_hsa.sql` | Hémorragie sous-arachnoïdienne grave (SFAR/ANARLF + 2 sociétés, CE 2004) | 60 |
 | 000024 | `hyperthermie_maligne` | `0024_migrate_hyperthermie_maligne.sql` | Prise en charge de l'Hyperthermie Maligne (SFAR, RPP 2019) | 11 |
 | 000025 | `hypothermie` | `0025_migrate_hypothermie.sql` | Prévention de l'hypothermie peropératoire accidentelle au bloc opératoire chez l'adulte (SFAR, RFE 2018) | 14 |
+| 000026 | `ih` | `0026_migrate_ih.sql` | Insuffisance hépatique en soins critiques (SFAR/AFEF, RFE 2018) | 19 |
 
-**Total : 1132 recommandations atomiques, 25 documents, 7 sociétés du seed
+**Total : 1151 recommandations atomiques, 26 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -411,13 +412,28 @@ non exhaustive, section 14.1).**
   glycemie/eer). Question 8 (réchauffement des fluides gazeux, aucun
   consensus atteint) volontairement pas migrée. Seule la SFAR liée en
   document_societies.
+- `ih` (SFAR/AFEF, RFE 2018) : 19 recommandations, GRADE classique. **Deux
+  incohérences internes à la source disclosées, non reconciliées** : (1)
+  nombre d'experts — "23" au résumé (confirmé par comptage direct des
+  listes nominatives) vs "vingt" en introduction du même document ; (2)
+  nombre de recommandations — "18" annoncées par une phrase du résumé, mais
+  la répartition par grade imprimée dans ce même résumé (6+7+6=19)
+  confirme 19, cohérent avec le comptage direct des 19 items numérotés :
+  19 migrées, "18" traité comme une coquille de la source, disclosé sans
+  trancher silencieusement. Accord fort à 100 % (aucune exception, à la
+  différence de hypothermie/0025). 5 tableaux/figures de référence
+  (symptomatique IHA, algorithme IHA sévère, KDIGO modifié cirrhotique +
+  algorithme IRA, définition SHR, CLIF-SOFA + grade ACLF) volontairement
+  pas migrés (classification/algorithme, pas des recommandations
+  graduées). Question 9 (thromboprophylaxie médicamenteuse, aucun
+  consensus) pas migrée. AFEF hors seed — seule la SFAR liée en
+  document_societies.
 
-## Fiches restantes (34 / 59)
+## Fiches restantes (33 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
