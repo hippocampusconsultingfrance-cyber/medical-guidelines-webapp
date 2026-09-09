@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (34 / 59)
+## Fiches migrées (35 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -52,8 +52,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000032 | `mal_epileptique` | `0032_migrate_mal_epileptique.sql` | États de mal épileptiques de l'adulte et de l'enfant (SRLF/GFRUP/SFMU, RFE 2008) | 163 |
 | 000033 | `mtev_perioperatoire` | `0033_migrate_mtev_perioperatoire.sql` | Prévention de la maladie thromboembolique veineuse péri-opératoire (GIHP/SFAR/SFTH/SFMV, RFE 2024) | 77 |
 | 000034 | `nutrition` | `0034_migrate_nutrition.sql` | Nutrition artificielle en réanimation (SFAR/SRLF/SFNEP, RFE 2014) | 70 |
+| 000035 | `nvpo` | `0035_migrate_nvpo.sql` | Prise en charge des nausées et vomissements postopératoires (SFAR, CE 2008) | 53 |
 
-**Total : 1576 recommandations atomiques, 34 documents, 7 sociétés du seed
+**Total : 1629 recommandations atomiques, 35 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -580,13 +581,25 @@ non exhaustive, section 14.1).**
   effectivement migrées. Tableaux de référence chiffrés (besoins
   énergétiques du brûlé, apports pédiatriques j1-j4) volontairement pas
   migrés. SFAR et SRLF liées en document_societies (SFNEP hors seed).
+- `nvpo` (SFAR, CE 2008, panel international) : 53 recommandations. GRADE
+  avec une convention propre : G1+/G2+/G1-/G2-, PAS de catégorie "avis
+  d'experts" — 4 items "pas de recommandation possible" explicitement
+  disclosés par le panel lui-même, non migrés (cohérent avec le principe
+  du projet). Pas de chiffre-résumé officiel à comparer (source ne publie
+  pas de total agrégé) — 53 lignes comptées directement, répartition
+  vérifiée 15×1+/6×1-/22×2+/10×2-=53. 4 tableaux de référence (scores
+  Apfel/Koivuranta, pharmacocinétique AR-5HT3, facteurs de risque
+  pédiatriques, posologies pédiatriques) et 1 figure de stratégie par
+  niveau de risque volontairement pas migrés — aucun ne porte de colonne
+  Grade/Accord (contrairement à la classification EME de
+  mal_epileptique/0032). Seule la SFAR liée en document_societies.
 
-## Fiches restantes (25 / 59)
+## Fiches restantes (24 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
+pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
