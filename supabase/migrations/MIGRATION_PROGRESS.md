@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (27 / 59)
+## Fiches migrées (28 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -45,8 +45,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000025 | `hypothermie` | `0025_migrate_hypothermie.sql` | Prévention de l'hypothermie peropératoire accidentelle au bloc opératoire chez l'adulte (SFAR, RFE 2018) | 14 |
 | 000026 | `ih` | `0026_migrate_ih.sql` | Insuffisance hépatique en soins critiques (SFAR/AFEF, RFE 2018) | 19 |
 | 000027 | `intubation_difficile_adulte` | `0027_migrate_intubation_difficile_adulte.sql` | Intubation difficile et extubation en anesthésie chez l'adulte (SFAR, RFE 2017) | 13 |
+| 000028 | `intubation_reanimation` | `0028_migrate_intubation_reanimation.sql` | Intubation et extubation du patient de réanimation (SFAR/SRLF/SFMU + 3 sociétés, RFE 2016) | 32 |
 
-**Total : 1164 recommandations atomiques, 27 documents, 7 sociétés du seed
+**Total : 1196 recommandations atomiques, 28 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -442,13 +443,27 @@ non exhaustive, section 14.1).**
   le contenu construit, volontairement pas migrés (synthèses opérationnelles
   des recommandations déjà graduées, sans chip individuel). Seule la SFAR
   liée en document_societies.
+- `intubation_reanimation` (SFAR/SRLF, avec SFMU/GFRUP/ADARPEF/SKR, RFE
+  2016) : 32 recommandations ADULTES, GRADE classique (12×1+, 19×Grade2
+  incl. 1×2-, 1×AE). Décompte source ("32 recommandations ; 12 Grade1, 19
+  Grade2, 1 AE") exactement reconcilié. **La source contient aussi 15
+  recommandations pédiatriques parallèles, explicitement absentes du
+  contenu construit lui-même** ("cette fiche, centrée sur l'adulte") — rien
+  à migrer pour le volet pédiatrique, absent de la source de cette
+  migration (pas un choix d'exclusion de ce fichier). R7.5 seule exception
+  « Accord faible » disclosée ponctuellement. 2 tableaux de référence
+  (complications de l'intubation, score MACOCHA) et 2 algorithmes de
+  synthèse (IOT, extubation), tous transcrits depuis un rendu visuel de la
+  source, volontairement pas migrés (mêmes critères que
+  intubation_difficile_adulte/0027). SFAR/SRLF/SFMU liées en
+  document_societies (GFRUP/ADARPEF/SKR hors seed).
 
-## Fiches restantes (32 / 59)
+## Fiches restantes (31 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-intubation_reanimation, intubation_urgence,
+intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
