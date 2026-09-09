@@ -215,7 +215,7 @@ non exhaustive, section 14.1).**
   nettoyage HTML qui ne cible que des noms de balises connus, jamais
   `<[^>]+>` seul.
 
-## Fiches restantes (47 / 59)
+## Fiches restantes (45 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
