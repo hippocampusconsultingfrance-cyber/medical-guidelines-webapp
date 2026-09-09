@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (26 / 59)
+## Fiches migrées (27 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -44,8 +44,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000024 | `hyperthermie_maligne` | `0024_migrate_hyperthermie_maligne.sql` | Prise en charge de l'Hyperthermie Maligne (SFAR, RPP 2019) | 11 |
 | 000025 | `hypothermie` | `0025_migrate_hypothermie.sql` | Prévention de l'hypothermie peropératoire accidentelle au bloc opératoire chez l'adulte (SFAR, RFE 2018) | 14 |
 | 000026 | `ih` | `0026_migrate_ih.sql` | Insuffisance hépatique en soins critiques (SFAR/AFEF, RFE 2018) | 19 |
+| 000027 | `intubation_difficile_adulte` | `0027_migrate_intubation_difficile_adulte.sql` | Intubation difficile et extubation en anesthésie chez l'adulte (SFAR, RFE 2017) | 13 |
 
-**Total : 1151 recommandations atomiques, 26 documents, 7 sociétés du seed
+**Total : 1164 recommandations atomiques, 27 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -428,13 +429,26 @@ non exhaustive, section 14.1).**
   graduées). Question 9 (thromboprophylaxie médicamenteuse, aucun
   consensus) pas migrée. AFEF hors seed — seule la SFAR liée en
   document_societies.
+- `intubation_difficile_adulte` (SFAR, RFE 2017, actualise la CE 2006) : 13
+  recommandations, GRADE classique (5×1+, 8×2+). Décompte source ("13
+  recommandations ; 5 Grade1, 8 Grade2") exactement reconcilié. Numérotation
+  source non continue (R1→R2→R4→R5→R6, pas de "R3.x") documentée par la
+  source elle-même : la question 3 a abouti à « pas de recommandation »,
+  pas un repère manquant. R2.3 seule exception « Accord faible » disclosée
+  ponctuellement (comme hypothermie/0025 et non systématique). 5
+  algorithmes-organigrammes (intubation prévue/non prévue, oxygénation de
+  sauvetage, facteurs de risque et leadership d'extubation), tous
+  "transcrits depuis le rendu visuel de la source (pures images)" d'après
+  le contenu construit, volontairement pas migrés (synthèses opérationnelles
+  des recommandations déjà graduées, sans chip individuel). Seule la SFAR
+  liée en document_societies.
 
-## Fiches restantes (33 / 59)
+## Fiches restantes (32 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
+intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
