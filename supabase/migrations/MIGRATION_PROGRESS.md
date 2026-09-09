@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (6 / 59)
+## Fiches migrées (8 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -24,10 +24,12 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000004 | `aap_urgence` | `0004_migrate_aap_urgence.sql` | Gestion des AAP en cas de procédure invasive non programmée ou d'hémorragie (GIHP/GFHT/SFAR, 2018) | 21 |
 | 000005 | `aap_programmee` | `0005_migrate_aap_programmee.sql` | Gestion des AAP pour une procédure invasive programmée (GIHP/GFHT/SFAR, RFE 2018) | 34 |
 | 000006 | `allergie_prevention` | `0006_migrate_allergie_prevention.sql` | Prévention du risque allergique péranesthésique. Texte court (Sfar/SFA, RFE 2011) | 47 |
+| 000007 | `anemie` | `0007_migrate_anemie.sql` | Gestion et prévention de l'anémie (hors hémorragie aiguë) chez le patient adulte de soins critiques (SFAR/SRLF, RFE 2019) | 10 |
+| 000008 | `anaphylaxie` | `0008_migrate_anaphylaxie.sql` | Diagnostic et prise en charge des réactions d'hypersensibilité immédiate périopératoires (SFAR/SFA, RFE 2025) | 62 |
 
-**Total : 389 recommandations atomiques, 6 documents, 3 sociétés savantes
-nouvellement liées (dont ABM, ajoutée à `societies` — absente du seed Annexe
-B, qui se décrit lui-même comme non exhaustif, section 14.1).**
+**Total : 461 recommandations atomiques, 8 documents, 4 sociétés savantes
+nouvellement liées (SFAR, SRLF, ABM, dont ABM ajoutée à `societies` — absente
+du seed Annexe B, qui se décrit lui-même comme non exhaustif, section 14.1).**
 
 ### Points laissés `-- À VÉRIFIER` dans ces 6 migrations (à trancher par un relecteur humain)
 
@@ -85,13 +87,40 @@ B, qui se décrit lui-même comme non exhaustif, section 14.1).**
   migrée) qui la couvre intégralement — à extraire de cette source-là le
   moment venu, pas d'un résumé paraphrasé. SFA (co-auteur) non liée en
   `document_societies` (absente de l'Annexe B, même cas que GIHP/GFHT).
+- `anemie` : divergence source-interne disclosée — le résumé de la RFE
+  annonce "3 grade élevé, 4 grade faible et 2 avis d'experts" (somme = 9),
+  un comptage direct des 10 grades littéraux donne 3 Grade 1 + 4 Grade 2 +
+  3 avis d'experts (total correct de 10, cohérent avec "10 recommandations
+  formalisées" annoncé par ailleurs) — reproduit tel quel, pas réconcilié
+  arbitrairement. R3.4 ("Absence de recommandation", vitamines) PAS migrée
+  (même traitement que le panneau homologue de `aap_programmee`). Figure 1
+  (cibles d'Hb par contexte clinique) PAS remigrée en recommandations
+  supplémentaires : le contenu construit précise lui-même que ses
+  fourchettes sont "volontairement approximatives", pas des seuils exacts,
+  sauf R2.1/R2.2 (déjà migrées). SFTS/SFVTT (co-autrices) non liées en
+  `document_societies` — SFAR ET SRLF, elles, sont toutes deux dans le seed
+  Annexe B et donc bien liées (contrairement aux lots précédents où un seul
+  co-signataire y figurait).
+- `anaphylaxie` : fiche compagnon de `allergie_prevention` (0006), RFE SFAR/
+  SFA 2025 — première fiche de ce projet où j'ai dû chercher les repères
+  "Rx.y" au-delà des seuls tableaux "Réf. | Recommandation | Grade" : R4.1
+  (échelle de Ring & Messmer modifiée) est noyée dans un paragraphe de prose
+  entre R4.0 (légende) et le tableau de R4.2 — recherche exhaustive de tous
+  les repères Rx.y du texte source effectuée avant d'écrire le script pour
+  ne pas la manquer. 62/70 recommandations de la RFE migrées (le reste du
+  Champ 3, prévention programmée au-delà de R3.4/R3.5, hors périmètre de
+  cette fiche — non couvert par le contenu construit lui-même). SFA non liée
+  en `document_societies` (même cas que `allergie_prevention`). Question 6
+  de `allergie_prevention` (traitement, actuellement résumée avec renvoi)
+  pourrait être enrichie/reliée à cette migration-ci lors d'une prochaine
+  passe de relecture éditoriale — pas fait automatiquement ici pour ne pas
+  modifier une migration déjà commitée sans relecture humaine.
 
-## Fiches restantes (53 / 59)
+## Fiches restantes (51 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-anaphylaxie, anemie,
 antibioprophylaxie, antibiotherapie_probabiliste, anticoag_urgence,
 anticoagulants, asthme_aigu_grave, choc_hemorragique, civd,
 controle_temperature, corticotherapie, curares, eclsa, eer,
