@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (33 / 59)
+## Fiches migrées (34 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -51,8 +51,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000031 | `lat_soins_critiques` | `0031_migrate_lat_soins_critiques.sql` | Décisions de limitation et d'arrêt de traitements (LAT) en soins critiques de l'adulte (SFAR/SOFMER, RFE 2025) | 9 |
 | 000032 | `mal_epileptique` | `0032_migrate_mal_epileptique.sql` | États de mal épileptiques de l'adulte et de l'enfant (SRLF/GFRUP/SFMU, RFE 2008) | 163 |
 | 000033 | `mtev_perioperatoire` | `0033_migrate_mtev_perioperatoire.sql` | Prévention de la maladie thromboembolique veineuse péri-opératoire (GIHP/SFAR/SFTH/SFMV, RFE 2024) | 77 |
+| 000034 | `nutrition` | `0034_migrate_nutrition.sql` | Nutrition artificielle en réanimation (SFAR/SRLF/SFNEP, RFE 2014) | 70 |
 
-**Total : 1506 recommandations atomiques, 33 documents, 7 sociétés du seed
+**Total : 1576 recommandations atomiques, 34 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -563,13 +564,28 @@ non exhaustive, section 14.1).**
   encore la RFE 2011 remplacée comme "en vigueur" — incohérence de cet
   index disclosée, hors périmètre de correction de ce projet. Seule la
   SFAR (collaboratrice) liée en document_societies.
+- `nutrition` (SFAR/SRLF/SFNEP, RFE 2014) : 70 recommandations. Cotation à
+  un seul axe Accord fort/faible (comme eer/0020, dont la source signale
+  explicitement partager cette particularité). Force GRADE (1/2)
+  déductible du verbe de l'énoncé mais jamais réimprimée séparément par la
+  source — inférence de lecture, pas extraite dans un champ structuré
+  (`evidence_level` NULL), même logique que le "+" de
+  lat_soins_critiques/0031. **Divergence de comptage disclosée par la
+  source elle-même** : résumé officiel "69 recommandations" (6 derniers
+  champs) vs 71 encadrés numérotés trouvés par inventaire direct sur les
+  10 champs (dont 4 encadrés des champs 1-3, décrits comme "points forts"
+  non cotés par la méthodologie mais portant en pratique un vrai tag
+  Accord) — aucun sous-ensemble ne correspond à "69". 1 encadré (9.3.1)
+  sans tag, traité comme absence de recommandation → 71-1=70 lignes
+  effectivement migrées. Tableaux de référence chiffrés (besoins
+  énergétiques du brûlé, apports pédiatriques j1-j4) volontairement pas
+  migrés. SFAR et SRLF liées en document_societies (SFNEP hors seed).
 
-## Fiches restantes (26 / 59)
+## Fiches restantes (25 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
