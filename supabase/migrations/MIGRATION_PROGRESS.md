@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (24 / 59)
+## Fiches migrées (25 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -42,8 +42,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000022 | `glycemie` | `0022_migrate_glycemie.sql` | Contrôle de la glycémie en réanimation et en anesthésie (Sfar/SRLF + 6 partenaires, RFE 2009) | 74 |
 | 000023 | `hsa` | `0023_migrate_hsa.sql` | Hémorragie sous-arachnoïdienne grave (SFAR/ANARLF + 2 sociétés, CE 2004) | 60 |
 | 000024 | `hyperthermie_maligne` | `0024_migrate_hyperthermie_maligne.sql` | Prise en charge de l'Hyperthermie Maligne (SFAR, RPP 2019) | 11 |
+| 000025 | `hypothermie` | `0025_migrate_hypothermie.sql` | Prévention de l'hypothermie peropératoire accidentelle au bloc opératoire chez l'adulte (SFAR, RFE 2018) | 14 |
 
-**Total : 1118 recommandations atomiques, 24 documents, 7 sociétés du seed
+**Total : 1132 recommandations atomiques, 25 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -394,13 +395,29 @@ non exhaustive, section 14.1).**
   `eclsa`/0019, où exclure l'algorithme aurait réduit la migration à zéro :
   ici 11 recommandations graduées existent indépendamment). Seule la SFAR
   liée en document_societies.
+- `hypothermie` (SFAR, RFE 2018, 1re RFE française sur le sujet) : 14
+  recommandations, GRADE classique (1+/1-/2+/2-/AE). Décompte source ("5
+  Grade1 + 7 Grade2 + 2 avis d'experts") exactement reconcilié. **R14
+  (« Proposition de stratégie », synthèse en 3 phases Accueil/Per-anesthésie/
+  SSPI) est explicitement numérotée et comptée par la source elle-même comme
+  la 14e recommandation** (2e avis d'experts) bien que rendue sous forme de
+  tableau de synthèse plutôt qu'une phrase isolée — migrée comme un seul
+  `statement` narratif renvoyant aux recommandations R3/R4/R6/R7/R8/R12/R13
+  qu'elle synthétise, sans contenu nouveau ajouté. Disclosure ponctuelle (pas
+  systématique) : R8 est la seule des 14 recommandations avec un « Accord
+  faible » malgré son grade GRADE 2+ — notée dans son propre
+  `source_section`, pas un axe `evidence_level` extrait pour tout le
+  document (la source ne l'imprime pas ligne à ligne, à la différence de
+  glycemie/eer). Question 8 (réchauffement des fluides gazeux, aucun
+  consensus atteint) volontairement pas migrée. Seule la SFAR liée en
+  document_societies.
 
-## Fiches restantes (35 / 59)
+## Fiches restantes (34 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-hypothermie, ih,
+ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
