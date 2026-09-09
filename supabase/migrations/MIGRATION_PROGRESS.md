@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (8 / 59)
+## Fiches migrées (10 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -26,12 +26,15 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000006 | `allergie_prevention` | `0006_migrate_allergie_prevention.sql` | Prévention du risque allergique péranesthésique. Texte court (Sfar/SFA, RFE 2011) | 47 |
 | 000007 | `anemie` | `0007_migrate_anemie.sql` | Gestion et prévention de l'anémie (hors hémorragie aiguë) chez le patient adulte de soins critiques (SFAR/SRLF, RFE 2019) | 10 |
 | 000008 | `anaphylaxie` | `0008_migrate_anaphylaxie.sql` | Diagnostic et prise en charge des réactions d'hypersensibilité immédiate périopératoires (SFAR/SFA, RFE 2025) | 62 |
+| 000009 | `antibioprophylaxie` | `0009_migrate_antibioprophylaxie.sql` | Antibioprophylaxie en chirurgie et médecine interventionnelle adulte et pédiatrique — Champ 1 (SFAR/SPILF, RFE V3.0/V3.1) | 11 |
+| 000010 | `antibiotherapie_probabiliste` | `0010_migrate_antibiotherapie_probabiliste.sql` | Antibiothérapie probabiliste des états septiques graves (SFAR/SRLF/SPILF/SFMU, Conférence d'experts 2004) | 37 |
 
-**Total : 461 recommandations atomiques, 8 documents, 4 sociétés savantes
-nouvellement liées (SFAR, SRLF, ABM, dont ABM ajoutée à `societies` — absente
-du seed Annexe B, qui se décrit lui-même comme non exhaustif, section 14.1).**
+**Total : 509 recommandations atomiques, 10 documents, 6 sociétés savantes
+nouvellement liées (SFAR, SRLF, SPILF, SFMU, ABM, dont ABM ajoutée à
+`societies` — absente du seed Annexe B, qui se décrit lui-même comme non
+exhaustif, section 14.1).**
 
-### Points laissés `-- À VÉRIFIER` dans ces 6 migrations (à trancher par un relecteur humain)
+### Points laissés `-- À VÉRIFIER` dans ces 10 migrations (à trancher par un relecteur humain)
 
 - `ecbu` : `library_final.json` et le contenu déjà audité de la fiche citent
   deux URL PDF différentes (dates de fichier différentes) — celle
@@ -115,13 +118,38 @@ du seed Annexe B, qui se décrit lui-même comme non exhaustif, section 14.1).**
   pourrait être enrichie/reliée à cette migration-ci lors d'une prochaine
   passe de relecture éditoriale — pas fait automatiquement ici pour ne pas
   modifier une migration déjà commitée sans relecture humaine.
+- `antibioprophylaxie` : fiche limitée au Champ 1 (11 recommandations
+  générales) — les Champs 2-3 (18 tableaux disciplinaires de posologie par
+  procédure, ~85 pages) sont explicitement hors périmètre du contenu
+  construit lui-même (pas des recommandations narratives, des tableaux de
+  référence au cas par cas). `library_final.json` contient 3 entrées
+  distinctes pour ce document (2023, 2018, 2017), toutes marquées
+  "en vigueur" — seule celle de 2023 (dont l'historique de versions propre
+  va jusqu'à V3.1 2026-07-10) a été utilisée ; les 2 autres semblent des
+  versions obsolètes non nettoyées de l'index, signalé pour le mainteneur
+  de `library_final.json`, pas résolu unilatéralement ici. SFAR ET SPILF
+  liées en document_societies (les deux dans le seed Annexe B) ; les 32
+  autres sociétés co-signataires n'y figurant pas, non liées.
+- `antibiotherapie_probabiliste` : conférence d'experts 2004, AUCUN grade ni
+  niveau de preuve associé à une proposition individuelle nulle part dans le
+  document (vérifié par lecture exhaustive) — grade/evidence_level NULL sur
+  les 37 lignes, cas encore plus radical que `allergie_prevention` (qui, elle,
+  conservait des citations NP ponctuelles). Tableau final de posologies
+  génériques (24 lignes, Famille/Antibiotique/Posologie/Voie) volontairement
+  pas migré (référence pharmacologique, pas des recommandations
+  situationnelles). SFAR, SRLF, SPILF ET SFMU toutes liées en
+  document_societies (4 sociétés du seed Annexe B citées sous leur nom
+  complet par le contenu construit — le cas le plus favorable rencontré
+  jusqu'ici dans cette migration). Document de 2004 : un relecteur humain
+  devrait vérifier l'existence d'une actualisation plus récente avant
+  publication (écologie bactérienne évolutive), disclosure volontaire.
 
-## Fiches restantes (51 / 59)
+## Fiches restantes (49 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-antibioprophylaxie, antibiotherapie_probabiliste, anticoag_urgence,
+anticoag_urgence,
 anticoagulants, asthme_aigu_grave, choc_hemorragique, civd,
 controle_temperature, corticotherapie, curares, eclsa, eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
