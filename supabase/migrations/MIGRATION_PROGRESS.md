@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (19 / 59)
+## Fiches migrées (20 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -37,8 +37,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000017 | `corticotherapie` | `0017_migrate_corticotherapie.sql` | Corticothérapie au cours du choc septique et du SDRA (SFAR/SPILF, CC 2000) | 18 |
 | 000018 | `curares` | `0018_migrate_curares.sql` | Curarisation et décurarisation en anesthésie (SFAR, RFE 2018) | 33 |
 | 000019 | `eclsa` | `0019_migrate_eclsa.sql` | Indications de l'assistance circulatoire dans le traitement des arrêts cardiaques réfractaires (9 sociétés dont SFAR/SFMU/SFC/SRLF, 2009) | 12 |
+| 000020 | `eer` | `0020_migrate_eer.sql` | Épuration extrarénale en réanimation adulte et pédiatrique (SRLF/SFAR/GFRUP/SFD, RFE 2014) | 78 |
 
-**Total : 870 recommandations atomiques, 19 documents, 7 sociétés du seed
+**Total : 948 recommandations atomiques, 20 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -284,13 +285,38 @@ non exhaustive, section 14.1).**
   dans le seed Annexe B — les 5 autres (Conseil français de réanimation
   cardiopulmonaire, SFCTCV, Société française de pédiatrie, GFRUP, Société
   française de perfusion) non liées, absentes du seed.
+- `eer` (SRLF, avec SFAR/GFRUP/SFD, Réanimation 2014) : 78 recommandations.
+  Encore une convention de cotation propre à ce corpus : analyse littérature
+  GRADE mais cotation COLLECTIVE RAND/UCLA (chip « Fort »/« Faible » de force
+  du consensus, PAS un synonyme des tags GRADE 1+/2+ utilisés ailleurs —
+  `grade` reproduit littéralement 'Fort'/'Faible', pas de conversion
+  inventée). Décompte du contenu construit ("78 recommandations numérotées
+  au total") exactement reconcilié : les 63 lignes du tableau classique
+  "Réf. | Recommandation | Accord" (champs 1-4.2) + les 15 items du champ
+  4.3 (tableau "Étape | Recommandations" à puces, SANS repères Rx.y.z
+  individuels dans le contenu construit — migrés avec disclosure explicite
+  de cette perte de numérotation plutôt qu'une correspondance inventée) =
+  78, correspondance exacte. Les 15 items du champ 4.3 étaient des fragments
+  télégraphiques à la source ("deux personnes pour réaliser le
+  branchement...") reformulés en phrases complètes "Il faut..." pour rester
+  cohérents avec le style du reste du document (disclosure : complétion
+  grammaticale, aucun contenu ajouté). **Collision d'acronyme détectée et
+  disclosée** : la source cite une société co-participante « SFD (Société
+  francophone de dialyse) » — le seed Annexe B contient déjà un acronyme
+  'SFD' mais sans `full_name`, très probablement une société différente
+  (Société Française de Diabétologie, plus probable dans le contexte de ce
+  corpus) ; PAR PRUDENCE, non liée dans cette migration (ni GFRUP, absent du
+  seed) — seules SRLF et SFAR liées en document_societies. Titre du document
+  divergent de `library_final.json` (qui dit "continue... à l'exclusion de
+  la dialyse péritonéale" alors que la source couvre continue+intermittente
+  ET un champ dédié dialyse péritonéale) — titre de la source retenu,
+  divergence disclosée.
 
-## Fiches restantes (40 / 59)
+## Fiches restantes (39 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
