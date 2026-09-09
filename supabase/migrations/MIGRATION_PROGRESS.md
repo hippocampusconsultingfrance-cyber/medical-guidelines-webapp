@@ -14,19 +14,21 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (3 / 59)
+## Fiches migrées (5 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
 | 000001 | `transport_intrahospitalier` | `0001_migrate_transport_intrahospitalier.sql` | Transport intrahospitalier des patients à risque vital (SRLF/SFAR/SFMU, RFE 2011) | 99 |
 | 000002 | `ecbu` | `0002_migrate_ecbu.sql` | Place de l'ECBU avant une prise en charge urologique (AFU/CIAFU, RBP 2026) | 46 |
 | 000003 | `mort_encephalique` | `0003_migrate_mort_encephalique.sql` | Mort encéphalique et prélèvement d'organes (SFAR/SRLF/ABM, 2005) | 142 |
+| 000004 | `aap_urgence` | `0004_migrate_aap_urgence.sql` | Gestion des AAP en cas de procédure invasive non programmée ou d'hémorragie (GIHP/GFHT/SFAR, 2018) | 21 |
+| 000005 | `aap_programmee` | `0005_migrate_aap_programmee.sql` | Gestion des AAP pour une procédure invasive programmée (GIHP/GFHT/SFAR, RFE 2018) | 34 |
 
-**Total : 287 recommandations atomiques, 3 documents, 3 sociétés savantes
+**Total : 342 recommandations atomiques, 5 documents, 3 sociétés savantes
 nouvellement liées (dont ABM, ajoutée à `societies` — absente du seed Annexe
 B, qui se décrit lui-même comme non exhaustif, section 14.1).**
 
-### Points laissés `-- À VÉRIFIER` dans ces 3 migrations (à trancher par un relecteur humain)
+### Points laissés `-- À VÉRIFIER` dans ces 5 migrations (à trancher par un relecteur humain)
 
 - `ecbu` : `library_final.json` et le contenu déjà audité de la fiche citent
   deux URL PDF différentes (dates de fichier différentes) — celle
@@ -45,13 +47,46 @@ B, qui se décrit lui-même comme non exhaustif, section 14.1).**
   `rfe-sfar-website/build/fiche_mort_encephalique.py` (méthodologie RAND/UCLA,
   décimales françaises `7,5`/`8,5`, anomalie de cotation de la source) —
   reproduites à l'identique dans la migration, pas ré-argumentées ici.
+- `aap_urgence` : même divergence d'URL source que `ecbu` (URL `library_final.json`
+  différente de celle citée par le contenu déjà audité) — celle du contenu
+  audité retenue, à confirmer. GIHP/GFHT (auteurs principaux) non liés en
+  `document_societies` (absents de l'Annexe B, seule SFAR co-signataire liée).
+  Figures 1/2 et leur tableau récapitulatif ne sont pas remigrés séparément
+  (reformulation en schéma de propositions déjà chipées ailleurs).
+- `aap_programmee` : divergence source-interne disclosée — le résumé du
+  document annonce "toutes [les propositions] sauf une" en accord fort, mais
+  aucune exception n'est identifiable dans le corps du texte (34/34 taguées
+  "Fort") ; les deux faits sont reproduits sans résolution silencieuse. Une
+  note sur le ticagrélor (pontage semi-urgent) apparaît deux fois dans la
+  source, chipée une seule des deux fois — seule l'occurrence chipée est
+  migrée (R34). Panneau "Absence de proposition" (dose de charge anti-P2Y12)
+  volontairement pas migré (aucune proposition réelle à porter). Même
+  restriction `document_societies` que `aap_urgence` (GIHP/GFHT non liés).
 
-## Fiches restantes (56 / 59)
+### Fiche examinée puis reportée à un prochain lot (pas migrée cette session)
+
+- `allergie_prevention` (72 Ko, la 3e de la liste de priorité) : lue en
+  intégralité mais volontairement pas migrée cette session — structurellement
+  très différente des 5 fiches déjà migrées. C'est un texte narratif (Sfar/SFAIC
+  2011) qui n'imprime **aucun chip de grade par recommandation** (le contenu
+  déjà construit le dit lui-même explicitement : recherche exhaustive de
+  "Grade A/B/C"/"accord professionnel" dans la source = aucune occurrence).
+  Les recommandations y sont des phrases directives noyées dans la prose
+  ("il faut", "il est recommandé de", "il ne faut pas"...) plutôt que des
+  lignes de tableau individuellement chipées comme les 5 fiches déjà migrées
+  — leur identification à la lecture (sans fabriquer de grade) demande un
+  passage dédié, pas fait dans le temps de cette session pour ne pas bâcler
+  la relecture phrase par phrase exigée par la qualité attendue. À reprendre
+  en priorité au prochain lot (ne pas sauter à `anaphylaxie`/`anemie` sans y
+  revenir d'abord, sous peine de perdre l'ordre de priorité clinique suivi).
+
+## Fiches restantes (54 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
-par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
+par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif).
+`allergie_prevention` (voir ci-dessus) doit rester en tête de cette liste :
 
-aap_programmee, aap_urgence, allergie_prevention, anaphylaxie, anemie,
+allergie_prevention, anaphylaxie, anemie,
 antibioprophylaxie, antibiotherapie_probabiliste, anticoag_urgence,
 anticoagulants, asthme_aigu_grave, choc_hemorragique, civd,
 controle_temperature, corticotherapie, curares, eclsa, eer,
@@ -82,11 +117,28 @@ ne pas confondre les deux.)
    patron des 3 fichiers déjà présents (insert documents -> document_societies
    -> document_specialties -> recommendations, tout en `on conflict do
    nothing`, statut toujours `draft`).
-3. **Tester réellement** avant de committer : PostgreSQL local (stub
-   `auth.users`/`auth.uid()` minimal, voir la méthode utilisée pour les 3
-   premiers fichiers), `schema.sql` + `schema_v2.sql` + les migrations déjà
-   commitées + la nouvelle, deux fois de suite (idempotence), plus une
-   vérification du compte de lignes attendu.
+3. **Tester réellement** avant de committer : PostgreSQL 16 local (déjà
+   installé dans cet environnement — `service postgresql start`), stub
+   `auth.users`/`auth.uid()` minimal :
+   ```sql
+   create database mgtest;
+   \c mgtest
+   create extension if not exists pgcrypto;
+   create schema if not exists auth;
+   create table auth.users (id uuid primary key default gen_random_uuid(), email text);
+   create or replace function auth.uid() returns uuid language sql stable as $$ select null::uuid $$;
+   ```
+   Puis `\i schema.sql`, `\i schema_v2.sql`, `\i` chaque migration dans
+   l'ordre (`schema.sql` seul n'est PAS idempotent — pas de `drop policy if
+   exists` avant ses `create policy` — donc ne le rejouer qu'une fois ; pour
+   le test d'idempotence, rejouer seulement `schema_v2.sql` + toutes les
+   migrations une seconde fois sur la même base). Vérifier : la 2e passe
+   insère 0 ligne partout (`insert 0 0`), le compte de lignes
+   `recommendations` par document correspond à celui annoncé dans le message
+   de commit, et `select recommendation_code from recommendations where
+   recommendation_code !~ '^MG-ANES-[0-9]{6}-R[0-9]+$'` ne renvoie rien.
+   Le safety net `grep -n '"[12][+-]/[12][+-]'` (grade composite) doit
+   rester sans résultat sur chaque nouveau fichier de migration.
 4. Mettre à jour ce fichier (déplacer les clés migrées, ajouter la ligne au
    tableau, documenter les `-- À VÉRIFIER` du lot).
 5. Committer avec le décompte migré/restant dans le message, comme pour les
