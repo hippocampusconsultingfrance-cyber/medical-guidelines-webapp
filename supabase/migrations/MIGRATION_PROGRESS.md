@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (30 / 59)
+## Fiches migrées (31 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -48,8 +48,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000028 | `intubation_reanimation` | `0028_migrate_intubation_reanimation.sql` | Intubation et extubation du patient de réanimation (SFAR/SRLF/SFMU + 3 sociétés, RFE 2016) | 32 |
 | 000029 | `intubation_urgence` | `0029_migrate_intubation_urgence.sql` | Intubation en urgence d'un adulte hors bloc opératoire et hors unité des soins critiques (SFAR/SFMU, RFE 2025) | 28 |
 | 000030 | `ira` | `0030_migrate_ira.sql` | Insuffisance rénale aiguë en périopératoire et en réanimation (SFAR/SRLF, RFE 2015) | 33 |
+| 000031 | `lat_soins_critiques` | `0031_migrate_lat_soins_critiques.sql` | Décisions de limitation et d'arrêt de traitements (LAT) en soins critiques de l'adulte (SFAR/SOFMER, RFE 2025) | 9 |
 
-**Total : 1257 recommandations atomiques, 30 documents, 7 sociétés du seed
+**Total : 1266 recommandations atomiques, 31 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -490,13 +491,33 @@ non exhaustive, section 14.1).**
   dans cette migration. 5 tableaux/figure de référence (KDIGO, pRIFLE,
   facteurs de risque, agents néphrotoxiques, schéma agression→dysfonction)
   volontairement pas migrés. SFAR et SRLF liées en document_societies.
+- `lat_soins_critiques` (SFAR/SOFMER, RFE 2025, adulte uniquement) : 9
+  recommandations. **Particularité disclosée par la source elle-même :
+  aucun tag GRADE de ce document ne porte de signe +/-** (contrairement à
+  la quasi-totalité des autres RFE du corpus) — le contenu construit avait
+  lui-même inféré la polarité et ajouté un « + » "par cohérence visuelle
+  avec le reste du corpus" ; cette migration s'en écarte volontairement et
+  reproduit les valeurs BRUTES de la source ('1'/'2'/'AE', sans signe) pour
+  rester strictement fidèle à ce qui est réellement imprimé — divergence
+  disclosée par rapport au chip visuel de la fiche, pas par rapport à la
+  source. Décompte source ("1 GRADE1, 2 GRADE2, 6 AE = 9") exactement
+  reconcilié. R1.3/R2.1 : formulation du tableau récapitulatif amendé de la
+  source retenue (légèrement différente du texte sous l'argumentaire),
+  cohérent avec le choix déjà fait par le contenu construit source. 8
+  figures/encadrés réglementaires et protocoles opérationnels (directives
+  anticipées, personne de confiance, algorithme décisionnel, check-list de
+  procédure collégiale, protocole de sédation + échelles RASS/BPS/RDOS,
+  accompagnement des proches, outils de communication) volontairement pas
+  migrés (non cotés individuellement par le jury). 2 absences de
+  recommandation pas migrées. SOFMER hors seed — seule la SFAR liée en
+  document_societies.
 
-## Fiches restantes (29 / 59)
+## Fiches restantes (28 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
+mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
