@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (23 / 59)
+## Fiches migrées (24 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -41,8 +41,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000021 | `epanchement_pleural` | `0021_migrate_epanchement_pleural.sql` | Épanchement pleural liquidien de l'adulte en soins critiques (SFAR/SFMU/SPLF/SFCTCV, RPP 2023) | 25 |
 | 000022 | `glycemie` | `0022_migrate_glycemie.sql` | Contrôle de la glycémie en réanimation et en anesthésie (Sfar/SRLF + 6 partenaires, RFE 2009) | 74 |
 | 000023 | `hsa` | `0023_migrate_hsa.sql` | Hémorragie sous-arachnoïdienne grave (SFAR/ANARLF + 2 sociétés, CE 2004) | 60 |
+| 000024 | `hyperthermie_maligne` | `0024_migrate_hyperthermie_maligne.sql` | Prise en charge de l'Hyperthermie Maligne (SFAR, RPP 2019) | 11 |
 
-**Total : 1107 recommandations atomiques, 23 documents, 7 sociétés du seed
+**Total : 1118 recommandations atomiques, 24 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -375,13 +376,31 @@ non exhaustive, section 14.1).**
   pratiques plus récentes — `freshness_status = 'revision_detectee'`
   malgré `library_final.json` "en vigueur". Seule la SFAR liée en
   document_societies (3 sociétés partenaires hors seed).
+- `hyperthermie_maligne` (SFAR, RPP 2019, remplace la RFE 2013 abrogée) : 11
+  recommandations, toutes « AE » (avis d'experts, seule cotation de ce
+  document). **Écart de comptage disclosé, non résolu silencieusement** :
+  le contenu construit annonce "12 recommandations" en introduction, mais
+  un parcours exhaustif programmatique de tous les repères Rx.y du JSON
+  (pas seulement les tableaux visibles) n'en trouve que 11 — les deux
+  chiffres reproduits dans le fichier de migration, aucune ligne inventée
+  pour atteindre 12. Volontairement pas migrés : la reconstruction
+  "Situation | Conduite à tenir" de la Figure 1 (arbre décisionnel, pure
+  image source, déjà reformulée par le contenu construit "pour la
+  lisibilité"), le protocole "Annexe 2" de traitement de la crise (15
+  étapes) et le protocole de reconstitution du dantrolène (7 étapes) — tous
+  trois transcrits depuis des affiches-photos SANS chip de cotation
+  individuelle, donc des protocoles opérationnels non gradués un par un,
+  pas des recommandations RPP au sens de ce modèle (contrairement à
+  `eclsa`/0019, où exclure l'algorithme aurait réduit la migration à zéro :
+  ici 11 recommandations graduées existent indépendamment). Seule la SFAR
+  liée en document_societies.
 
-## Fiches restantes (36 / 59)
+## Fiches restantes (35 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-hyperthermie_maligne, hypothermie, ih,
+hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
 nvpo, pancreatite, pavm, preeclampsie, remplissage, sdra,
