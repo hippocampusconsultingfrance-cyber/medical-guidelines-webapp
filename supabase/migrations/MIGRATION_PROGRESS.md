@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (14 / 59)
+## Fiches migrées (16 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -32,8 +32,10 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000012 | `anticoagulants` | `0012_migrate_anticoagulants.sql` | Gestion des anticoagulants pour une procédure invasive programmée (GIHP/SFAR + 25 sociétés, RFE 2026) | 64 |
 | 000013 | `asthme_aigu_grave` | `0013_migrate_asthme_aigu_grave.sql` | Prise en charge des crises d'asthme aiguës graves (SRLF, révision 2002 d'une CC 1988) | 62 |
 | 000014 | `choc_hemorragique` | `0014_migrate_choc_hemorragique.sql` | Recommandations sur la réanimation du choc hémorragique (SFAR/SRLF/SFMU/GEHT, RFE 2014/2015) | 29 |
+| 000015 | `civd` | `0015_migrate_civd.sql` | Coagulations Intra-Vasculaires Disséminées (CIVD) en réanimation (SRLF, CC 2002) | 22 |
+| 000016 | `controle_temperature` | `0016_migrate_controle_temperature.sql` | Contrôle ciblé de la température en réanimation (SRLF/SFAR/SFMU, RFE 2016) | 30 |
 
-**Total : 755 recommandations atomiques, 14 documents, 7 sociétés du seed
+**Total : 807 recommandations atomiques, 16 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -214,14 +216,35 @@ non exhaustive, section 14.1).**
   **Pour toute prochaine extraction scriptée** : utiliser une regex de
   nettoyage HTML qui ne cible que des noms de balises connus, jamais
   `<[^>]+>` seul.
+- `civd` (SRLF, CC 2002, avec SFAR/GEHT/GFRUP) : 22 recommandations, même
+  grille SRLF à deux axes (Preuve/Force) que `asthme_aigu_grave` (0013),
+  même convention de migration (Force -> grade, Preuve -> evidence_level).
+  Décompte du contenu construit ("22 énoncés cotés") exactement reconcilié
+  avec les 22 lignes migrées, aucune divergence. Tableau des critères de
+  consommation majeurs/mineurs et organigramme de stratégie thérapeutique
+  (reconstruit par le contenu construit depuis un rendu visuel à 200dpi,
+  "texte scramblé par l'extraction automatique" sur cette page-là)
+  volontairement pas migrés (référence/algorithme, contenu déjà couvert
+  par les recommandations textuelles). SRLF et SFAR liées en
+  document_societies ; GEHT et GFRUP non liés (hors seed Annexe B).
+- `controle_temperature` (SRLF/SFAR + ANARLF/GFRUP/SFMU/SFNV, RFE 2016) :
+  30 recommandations (24 adulte + 6 pédiatriques dédiées). Particularité
+  de notation disclosée par le contenu construit et vérifiée par
+  inventaire exhaustif des tags : cette source n'imprime JAMAIS de
+  suffixe "-" — le sens négatif d'une recommandation ("il ne faut
+  probablement pas...") est porté par le texte du `statement`, jamais par
+  le grade (donc grade '2', jamais '2-', dans ce document précis — à ne
+  pas confondre avec un oubli). Décompte du contenu construit ("30
+  recommandations", répartition 3/13/14 par force) exactement reconcilié.
+  SRLF, SFAR ET SFMU liées en document_societies (toutes trois dans le
+  seed) ; ANARLF/GFRUP/SFNV non liées.
 
-## Fiches restantes (45 / 59)
+## Fiches restantes (43 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-civd,
-controle_temperature, corticotherapie, curares, eclsa, eer,
+corticotherapie, curares, eclsa, eer,
 epanchement_pleural, glycemie, hsa, hyperthermie_maligne, hypothermie, ih,
 intubation_difficile_adulte, intubation_reanimation, intubation_urgence,
 ira, lat_soins_critiques, mal_epileptique, mtev_perioperatoire, nutrition,
