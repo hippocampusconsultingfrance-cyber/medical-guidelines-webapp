@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (39 / 59)
+## Fiches migrées (40 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -57,8 +57,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000037 | `pavm` | `0037_migrate_pavm.sql` | Pneumonies associées aux soins de réanimation (PAS, incluant la PAVM) (SFAR/SRLF + ADARPEF/GFRUP pédiatrique, RFE 2017) | 17 |
 | 000038 | `preeclampsie` | `0038_migrate_preeclampsie.sql` | Prise en charge de la patiente avec une pré-éclampsie sévère (SFAR/CNGOF, RFE 2020) | 27 |
 | 000039 | `remplissage` | `0039_migrate_remplissage.sql` | Choix du soluté pour le remplissage vasculaire en situation critique (SFAR/SFMU, RFE 2021) | 9 |
+| 000040 | `sdra` | `0040_migrate_sdra.sql` | Recommandations pour la prise en charge du SDRA (traduction SFAR d'un guideline ATS/ESICM/SCCM, 2018) | 5 |
 
-**Total : 1706 recommandations atomiques, 39 documents, 7 sociétés du seed
+**Total : 1711 recommandations atomiques, 40 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -690,13 +691,38 @@ non exhaustive, section 14.1).**
   des sous-groupes démographiques au sens des autres fiches du corpus —
   contexte clinique de chaque ligne porté par `source_section`. SFAR et
   SFMU (toutes deux dans le seed) liées en document_societies.
+- `sdra` (SFAR, 2018) : 5 recommandations (R1-R5), GRADE classique,
+  comptage exactement reconcilié avec la source ("5 recommandations R1-R5
+  + 1 question sans recommandation/ECMO"), aucun écart. **Nature du
+  document disclosée en tête de migration** : contrairement à la
+  quasi-totalité du corpus, ce n'est PAS une RFE rédigée par un comité
+  d'experts SFAR, mais la traduction française résumée officielle d'un
+  guideline international déjà publié (An Official ATS/ESICM/SCCM
+  Clinical Practice Guideline, Am J Respir Crit Care Med 2017) — disclosé
+  explicitement par le contenu construit lui-même. `library_final.json`
+  classe pourtant ce document `"exact_type": "RFE"` comme les autres —
+  divergence disclosée, non résolue. `evidence_level` laissé NULL : la
+  "confiance globale dans l'estimation de l'effet" (Haute/Modérée/Basse/
+  Très basse) de la version anglaise originale n'est volontairement pas
+  reportée par les traducteurs SFAR eux-mêmes en fin d'énoncé (elle varie
+  par critère de jugement au sein d'une même recommandation, donc pas
+  extractible dans un champ structuré unique). Question 6 (ECMO
+  veino-veineuse) volontairement pas migrée — absence de recommandation
+  explicitement déclarée par le comité international faute de preuves
+  suffisantes (essai EOLIA alors en cours). **Choix de prudence sur
+  document_societies, à vérifier par un relecteur humain** : seule la
+  SFAR est liée (organisme qui publie ce document précis à ce
+  source_url) ; ESICM et SCCM, auteurs du guideline anglais ORIGINAL et
+  tous deux présents dans le seed Annexe B, ne sont PAS liés ici — ils ne
+  sont pas signataires du document français publié à cette URL, mais du
+  texte anglais qu'il traduit, un document distinct non migré dans ce
+  projet.
 
-## Fiches restantes (20 / 59)
+## Fiches restantes (19 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
