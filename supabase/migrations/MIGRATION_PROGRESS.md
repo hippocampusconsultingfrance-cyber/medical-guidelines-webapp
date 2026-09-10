@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (44 / 59)
+## Fiches migrées (45 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -62,8 +62,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000042 | `sedation_reanimation` | `0042_migrate_sedation_reanimation.sql` | Sédation et analgésie en réanimation, nouveau-né exclu (Conférence de Consensus SFAR-SRLF, 2007) | 45 |
 | 000043 | `sedation_urgences` | `0043_migrate_sedation_urgences.sql` | Sédation et analgésie en structure d'urgence (SFAR/SFMU, 2010) | 160 |
 | 000044 | `sepsis` | `0044_migrate_sepsis.sql` | Prise en charge du sepsis du nouveau-né, de l'enfant et de l'adulte (HAS, avec SFAR/SRLF/SFMU/SPILF, RPC 2025) | 130 |
+| 000045 | `sepsis_hemodynamique` | `0045_migrate_sepsis_hemodynamique.sql` | Prise en charge hémodynamique du sepsis grave, nouveau-né exclu (SFAR/SRLF, CC 2006) | 33 |
 
-**Total : 2244 recommandations atomiques, 44 documents, 8 sociétés du seed
+**Total : 2277 recommandations atomiques, 45 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -840,13 +841,36 @@ non exhaustive, section 14.1).**
   document distinct et plus ancien (CC SRLF 2005/2006, hémodynamique
   uniquement, nouveau-né exclu) existe dans `library_final.json`, non
   confondu (href/contenu vérifiés distincts).
+- `sepsis_hemodynamique` (SFAR/SRLF, CC 2006, nouveau-né exclu) : c'est
+  précisément ce "document distinct et plus ancien" évoqué ci-dessus pour
+  `sepsis`/0044 — 33 recommandations, cotation à LETTRE UNIQUE non-GRADE
+  (B/C/D/E, aucune occurrence de A, signification des lettres non
+  redéfinie par la source — même situation que hsa/0023). Comptage
+  exactement reconcilié (18E+10B+3C+2D=33). **1 recommandation (grade D)
+  imprimée hors du tableau standard Réf./Recommandation/Grade** — un
+  paragraphe autonome suivi d'une note "Grade D" séparée — disclosure
+  explicite (`source_section` marquée "sans repère imprimé" plutôt qu'un
+  numéro Réf. inventé). Plusieurs anomalies de la source vérifiées à
+  600dpi et disclosées (valeurs pédiatriques du Tableau 1 sans repère
+  "(E)", coquille probable mmol/l pour µmol/l sur 2 seuils, symbole absent
+  avant un seuil de cortisolémie) — Tableau 1 lui-même (définitions) et
+  l'algorithme décisionnel de la Question 5 (Figure 1, redessiné, sans
+  chip individuel) volontairement pas migrés. 6 recommandations marquées
+  "P" taguées `population = 'Pédiatrie'`. **`freshness_status =
+  'revision_detectee'`** : disclosure explicite de la source elle-même
+  ("se référer aux données plus récentes, Surviving Sepsis Campaign, RFE
+  postérieures") — cette RFE/RPC plus récente existe désormais dans ce
+  même corpus (`sepsis`/0044, HAS RPC 2025, périmètre bien plus large),
+  les deux documents restant migrés séparément sans fusion ni dépréciation
+  automatique. SFAR et SRLF (toutes deux dans le seed) liées en
+  document_societies.
 
-## Fiches restantes (15 / 59)
+## Fiches restantes (14 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
+sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
