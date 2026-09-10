@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (36 / 59)
+## Fiches migrées (37 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -54,8 +54,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000034 | `nutrition` | `0034_migrate_nutrition.sql` | Nutrition artificielle en réanimation (SFAR/SRLF/SFNEP, RFE 2014) | 70 |
 | 000035 | `nvpo` | `0035_migrate_nvpo.sql` | Prise en charge des nausées et vomissements postopératoires (SFAR, CE 2008) | 53 |
 | 000036 | `pancreatite` | `0036_migrate_pancreatite.sql` | Pancréatite aigüe grave du patient adulte en soins critiques (SFAR + 4 sociétés, RFE 2021) | 24 |
+| 000037 | `pavm` | `0037_migrate_pavm.sql` | Pneumonies associées aux soins de réanimation (PAS, incluant la PAVM) (SFAR/SRLF + ADARPEF/GFRUP pédiatrique, RFE 2017) | 17 |
 
-**Total : 1653 recommandations atomiques, 36 documents, 7 sociétés du seed
+**Total : 1670 recommandations atomiques, 37 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -608,13 +609,41 @@ non exhaustive, section 14.1).**
   fiches où l'absence de reco est hors tableau — non migrées. Figure 1
   (algorithme, image pure) et Annexe 1 (scores Balthazar) volontairement
   pas migrées. Seule la SFAR liée en document_societies.
+- `pavm` (SFAR/SRLF, avec ADARPEF/GFRUP pédiatrique, RFE 2017) : 17
+  recommandations (15 adultes + 2 pédiatriques dédiées, repères "Rx.y P"),
+  GRADE classique. **Écart de répartition GRADE disclosé, non résolu** : le
+  résumé officiel annonce "3 recommandations GRADE 1 et 11 GRADE 2" (+1 avis
+  d'experts = 15 recommandations adultes) ; un inventaire direct, vérifié tag
+  par tag sur les 15 lignes adultes, dénombre 4 GRADE1 (R1.1, R3.2, R3.5,
+  R3.7) et 10 GRADE2 (+1 AE) — le TOTAL (15) concorde avec le résumé
+  officiel, mais PAS la répartition annoncée (3+11 vs 4+10 constaté) ; chaque
+  tag individuel migré est reproduit tel qu'imprimé à côté de sa
+  recommandation, sans forcer la répartition au résumé erroné. La source dit
+  avoir "analysé" 4 populations spécifiques (BPCO, neutropénie,
+  postopératoire, pédiatrie), mais seules BPCO (R1.5) et pédiatrie (R1.1 P,
+  R2.2 P) ont donné lieu à des recommandations numérotées propres —
+  neutropénie/postopératoire n'ont informé que l'argumentaire d'autres
+  recommandations, rien à migrer pour ces deux-là (cohérent avec le contenu
+  réel de la source, pas une omission). 4 "protocoles de soins" (avis
+  d'experts au niveau du protocole global d'après le résumé officiel
+  lui-même, PAS une cotation individuelle ligne par ligne) volontairement pas
+  migrés : Protocole n°1 (Figure 1, prévention multimodale) ; Protocole n°2
+  (décontamination digestive sélective) et son Tableau III associé
+  (préparation officinale — **incohérence interne à la source disclosée** :
+  "tobramycine" dans le texte du protocole vs "gentamicine" dans la recette
+  du Tableau III, non résolue) ; Protocole n°3 (Figure 2, procédure
+  diagnostique) ; Protocole n°4 (Tableau IV, schémas thérapeutiques par
+  situation clinique). Tableau I (critères de définition, pas une
+  recommandation graduée) également pas migré. SFAR et SRLF (toutes deux
+  dans le seed) liées en document_societies ; ADARPEF et GFRUP
+  (collaborateurs pédiatriques) hors seed, non liés.
 
-## Fiches restantes (23 / 59)
+## Fiches restantes (22 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-pavm, preeclampsie, remplissage, sdra,
+preeclampsie, remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
