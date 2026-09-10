@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (48 / 59)
+## Fiches migrées (49 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -66,8 +66,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000046 | `sevrage_vm` | `0046_migrate_sevrage_vm.sql` | Sevrage de la ventilation mécanique, nouveau-né et réveil d'anesthésie exclus (SRLF/SFAR, CC 2001) | 17 |
 | 000047 | `tih` | `0047_migrate_tih.sql` | Diagnostic et prise en charge d'une thrombopénie induite par l'héparine (GIHP/GFHT, avec SFAR, Propositions 2019) | 40 |
 | 000048 | `tracheotomie` | `0048_migrate_tracheotomie.sql` | Trachéotomie en réanimation (SRLF/SFAR, avec SFMU/SFORL, RFE 2016/2017) | 18 |
+| 000049 | `transfusion_plasma` | `0049_migrate_transfusion_plasma.sql` | Transfusion de plasma thérapeutique : produits, indications (ANSM/HAS, 2012) | 40 |
 
-**Total : 2352 recommandations atomiques, 48 documents, 8 sociétés du seed
+**Total : 2392 recommandations atomiques, 49 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -942,13 +943,38 @@ non exhaustive, section 14.1).**
   hors champ, disclosure de portée de la source). SRLF, SFAR et SFMU
   (toutes trois dans le seed) liées en document_societies ; SFORL hors
   seed, non liée.
+- `transfusion_plasma` (ANSM/HAS, actualisation 2012) : 40 énoncés migrés.
+  **NATURE DU DOCUMENT DISCLOSÉE, CAS UNIQUE DU CORPUS** : ce n'est pas un
+  document SFAR — la SFAR n'est ni auteure ni co-signataire, seulement
+  hébergeuse d'une copie sur son site ; `library_final.json` classe
+  pourtant ce document "RFE" comme les autres — divergence disclosée, non
+  résolue. **SFAR volontairement NON liée en document_societies** pour
+  cette raison précise (1er cas de ce type dans le corpus). Méthodologie
+  HAS/ANAES (grades A/B/C + « accord professionnel », différente de
+  GRADE) : 33 énoncés tagués exactement reconciliés avec le comptage du
+  contenu construit (6B + 11C + 16AP, aucun A) ; **7 énoncés
+  cliniquement substantiels supplémentaires SANS tag explicite** dans la
+  source (disclosure de la source elle-même) migrés avec `grade = NULL`
+  — pas des items "absence de recommandation possible" (contrairement au
+  '?' de sepsis/0044) mais des indications/non-indications réelles
+  simplement non gradées, même traitement que les "non cotés" de
+  securisation_proc/0041. Total migré 40 = 33 gradés + 7 non gradés.
+  Tableau des 4 plasmas thérapeutiques homologues et toute la prose
+  produit/pharmacologique (décongélation, compatibilité ABO,
+  contre-indications, tests biologiques) volontairement pas migrés
+  (référence produit, jamais un chip individuel). 6 énoncés de la section
+  pédiatrie/néonatologie taggés `population = 'Pédiatrie'` ; 3 énoncés
+  préfixés "Obstétrique" taggés `population = 'Grossesse'`. Seule la HAS
+  (2e utilisation de cette société du seed) liée en document_societies ;
+  ANSM hors seed, non liée. Un document distinct et plus récent (SFAR,
+  RPP 2020, PLYO en choc hémorragique) existe dans `library_final.json`,
+  non confondu, non couvert par cette migration.
 
-## Fiches restantes (11 / 59)
+## Fiches restantes (10 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
