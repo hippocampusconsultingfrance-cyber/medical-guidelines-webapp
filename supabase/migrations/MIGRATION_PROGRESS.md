@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (57 / 59)
+## Fiches migrées (58 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -75,8 +75,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000055 | `traumatisme_thoracique` | `0055_migrate_traumatisme_thoracique.sql` | Traumatisme thoracique : prise en charge des 48 premières heures (SFAR/SFMU, avec SFCTCV/SFR, RFE 2015) | 48 |
 | 000056 | `traumatisme_vertebromedullaire` | `0056_migrate_traumatisme_vertebromedullaire.sql` | Prise en charge des patients présentant, ou à risque, de traumatisme vertébro-médullaire (SFAR, avec ANARLF/SFCR/SFMU/SOFCOT/SOFMER/SSA, RFE 2019) | 19 |
 | 000057 | `urgences_obstetricales` | `0057_migrate_urgences_obstetricales.sql` | Prise en charge des urgences obstétricales en médecine d'urgence (SFMU/SFAR/CNGOF, RPP 2022) | 15 |
+| 000058 | `vni` | `0058_migrate_vni.sql` | Ventilation Non Invasive au cours de l'insuffisance respiratoire aiguë, nouveau-né exclu (SFAR/SPLF/SRLF, avec SFMU/SAMU de France/GFRUP/ADARPEF, CC 2006) | 26 |
 
-**Total : 2587 recommandations atomiques, 57 documents, 8 sociétés du seed
+**Total : 2613 recommandations atomiques, 58 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1140,13 +1141,44 @@ non exhaustive, section 14.1).**
   Population laissée NULL sur toutes les lignes (document entièrement
   consacré à la grossesse, même convention que `preeclampsie`/0038). SFMU,
   SFAR ET CNGOF (toutes trois dans le seed) liées en document_societies.
+- `vni` (3e Conférence de Consensus commune SFAR-SPLF-SRLF, avec
+  participation SFMU/SAMU de France/GFRUP/ADARPEF, 2006) : 26
+  recommandations, GRADE classique (4×1+, 17×2+, 5×2-), grades imprimés
+  littéralement (pas de déduction de polarité nécessaire, contrairement à
+  `sedation_reanimation`/0042). **Pas de total agrégé officiel publié par
+  la source** — 26 lignes comptées directement, aucun chiffre-résumé à
+  réconcilier. **Structure "Tableau 2" disclosée en détail** : ce tableau
+  groupe plusieurs indications sous un même grade partagé (contrairement
+  aux tableaux "Thème | Recommandation | Grade" habituels) ; la plupart de
+  son contenu est déjà couvert par des lignes détaillées migrées séparément
+  (pour éviter la redondance), SAUF 5 indications sans ligne détaillée
+  correspondante ailleurs (4×2- : pneumopathie hypoxémiante, SDRA,
+  traitement de l'IRA post-extubation, maladies neuromusculaires aiguës
+  réversibles ; 1×2+ : traumatisme thoracique fermé isolé) — migrées
+  directement depuis ce Tableau 2, avec reformulation grammaticale minimale
+  disclosée (aucun contenu ajouté). 3 "situations sans cotation possible"
+  (asthme aigu grave, syndrome d'obésité-hypoventilation, bronchiolite
+  aiguë du nourrisson hors forme apnéisante) déclarées PAR LA SOURCE
+  ELLE-MÊME, volontairement pas migrées. Tableau 1 (contre-indications,
+  liste sans grade), Tableau 3 (effets indésirables) et Tableau 4 (critères
+  de risque d'échec) volontairement pas migrés (référence clinique sans
+  grade individuel). Particularités pédiatriques signalées par la notation
+  littérale "[pédiatrie]" de la source — `population='Pédiatrie'`
+  uniquement sur R19 (seule ligne graduée entièrement dédiée). **Document
+  de 2006, source avertit elle-même que les pratiques de VNI ont évolué
+  depuis** (interfaces, oxygénothérapie à haut débit) —
+  `freshness_status='revision_detectee'` malgré `library_final.json` "en
+  vigueur" (même pattern que eclsa/0019, glycemie/0022, hsa/0023,
+  mal_epileptique/0032). SFAR, SRLF ET SFMU (dans le seed) liées en
+  document_societies ; SPLF (co-organisatrice à égalité dans le titre de
+  la conférence), SAMU de France, GFRUP et ADARPEF hors seed, non liés.
 
-## Fiches restantes (2 / 59)
+## Fiches restantes (1 / 59)
 
-Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
-par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
+Dernière fiche du lot, dans l'ordre de priorité clinique déjà suivi par
+`rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-vni, voies_aeriennes_enfant.
+voies_aeriennes_enfant.
 
 (`tih` ci-dessus = une fiche distincte de `transport_intrahospitalier`,
 malgré l'acronyme partagé — à vérifier son sujet exact avant migration,
