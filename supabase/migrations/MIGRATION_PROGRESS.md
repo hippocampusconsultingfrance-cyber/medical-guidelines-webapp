@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (46 / 59)
+## Fiches migrées (47 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -64,8 +64,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000044 | `sepsis` | `0044_migrate_sepsis.sql` | Prise en charge du sepsis du nouveau-né, de l'enfant et de l'adulte (HAS, avec SFAR/SRLF/SFMU/SPILF, RPC 2025) | 130 |
 | 000045 | `sepsis_hemodynamique` | `0045_migrate_sepsis_hemodynamique.sql` | Prise en charge hémodynamique du sepsis grave, nouveau-né exclu (SFAR/SRLF, CC 2006) | 33 |
 | 000046 | `sevrage_vm` | `0046_migrate_sevrage_vm.sql` | Sevrage de la ventilation mécanique, nouveau-né et réveil d'anesthésie exclus (SRLF/SFAR, CC 2001) | 17 |
+| 000047 | `tih` | `0047_migrate_tih.sql` | Diagnostic et prise en charge d'une thrombopénie induite par l'héparine (GIHP/GFHT, avec SFAR, Propositions 2019) | 40 |
 
-**Total : 2294 recommandations atomiques, 46 documents, 8 sociétés du seed
+**Total : 2334 recommandations atomiques, 47 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -895,13 +896,39 @@ non exhaustive, section 14.1).**
   2001"). SRLF et SFAR (toutes deux dans le seed) liées en
   document_societies ; Société de Pneumologie de Langue Française et
   GFRUP hors seed, non liées.
+- `tih` (GIHP/GFHT, avec SFAR, Propositions 2019 — actualise la CE SFAR
+  2002 : NE PAS CONFONDRE avec `transport_intrahospitalier`/0001, malgré
+  l'acronyme "TIH" partagé — c'est ici "thrombopénie induite par
+  l'héparine", vérifié dès l'ouverture du contenu construit) : 40
+  propositions (12 questions), comptage exactement reconcilié avec le
+  résumé officiel de la source. **Axe unique "Accord", pas de grade GRADE**
+  (comme en 2002) : vote de 32 membres GIHP/GFHT, "fort" si ≥ 70 % pour —
+  **les 40 propositions ont TOUTES recueilli un accord fort**, colonne
+  Accord constante reproduite fidèlement (`grade = 'Fort'` partout, pas
+  une valeur par défaut inventée). **Nature du document disclosée** :
+  `library_final.json` classe ce document "Autre" (ni RFE ni CC/CE) —
+  `doc_type = 'Propositions GIHP/GFHT'` retenu, conforme à
+  l'auto-description de la source. Volume important de tableaux/figures
+  de référence pharmacologique et algorithmique (5 tableaux, 4 figures)
+  volontairement pas migrés — dont une **incohérence interne disclosée
+  par le contenu construit lui-même, non résolue** : le corps du texte
+  introduit "≥ 4" comme seuil d'arrêt de l'argatroban lors du relais AVK,
+  la figure correspondante trace "> 4" — les deux formulations coexistent
+  dans la source. Prop. 36 (grossesse) taguée `population = 'Grossesse'`
+  (1er usage de cette valeur dans ce corpus) ; Prop. 37/38 (enfant)
+  taguées `population = 'Pédiatrie'`. Un document distinct et plus ancien
+  (CE SFAR 2002, prédécesseur explicitement actualisé par celui-ci) existe
+  dans `library_final.json`, non confondu, non migré séparément
+  (superseded). Seule la SFAR (collaboratrice, dans le seed) liée en
+  document_societies ; GIHP et GFHT (auteurs principaux) hors seed, non
+  liés.
 
-## Fiches restantes (13 / 59)
+## Fiches restantes (12 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-tih, tracheotomie, transfusion_plasma,
+tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
