@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (37 / 59)
+## Fiches migrées (38 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -55,8 +55,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000035 | `nvpo` | `0035_migrate_nvpo.sql` | Prise en charge des nausées et vomissements postopératoires (SFAR, CE 2008) | 53 |
 | 000036 | `pancreatite` | `0036_migrate_pancreatite.sql` | Pancréatite aigüe grave du patient adulte en soins critiques (SFAR + 4 sociétés, RFE 2021) | 24 |
 | 000037 | `pavm` | `0037_migrate_pavm.sql` | Pneumonies associées aux soins de réanimation (PAS, incluant la PAVM) (SFAR/SRLF + ADARPEF/GFRUP pédiatrique, RFE 2017) | 17 |
+| 000038 | `preeclampsie` | `0038_migrate_preeclampsie.sql` | Prise en charge de la patiente avec une pré-éclampsie sévère (SFAR/CNGOF, RFE 2020) | 27 |
 
-**Total : 1670 recommandations atomiques, 37 documents, 7 sociétés du seed
+**Total : 1697 recommandations atomiques, 38 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -637,13 +638,41 @@ non exhaustive, section 14.1).**
   recommandation graduée) également pas migré. SFAR et SRLF (toutes deux
   dans le seed) liées en document_societies ; ADARPEF et GFRUP
   (collaborateurs pédiatriques) hors seed, non liés.
+- `preeclampsie` (SFAR/CNGOF, RFE 2020) : 27 recommandations, GRADE
+  classique. **Écart de comptage disclosé, isolé précisément, non résolu** :
+  le résumé officiel annonce "25 recommandations (8 GRADE1, 9 GRADE2, avis
+  d'experts pour le reste)". Un inventaire direct tag par tag trouve bien
+  8 GRADE1 et 9 GRADE2 (sous-totaux EXACTEMENT concordants avec le résumé),
+  mais 10 avis d'experts (AE) au lieu des 8 implicitement attendus
+  (25-8-9=8) — l'écart de 2 correspond précisément à R1.1 et R1.2 (Champ 1,
+  définition de la pré-éclampsie sévère et de son aggravation), deux items
+  à tag AE individuel et distinct dans le contenu construit, hypothèse
+  plausible mais non vérifiable qu'ils aient été comptés comme une seule
+  entrée définitionnelle par le résumé officiel — les 27 lignes réellement
+  taguées sont toutes migrées, aucune retranchée pour forcer 25. Les 3
+  "questions sans recommandation possible" annoncées, elles, sont
+  exactement reconciliées (fullPIERS/Champ 1, échographie thoracique/
+  Champ 3, simulation-aides cognitives/Champ 7). **Supersession disclosée,
+  non résolue** : la source dit se substituer aux recommandations SFAR/
+  CNGOF antérieures sur le même champ, mais `library_final.json` liste
+  encore une RFE 2009/2010 distincte ("formes graves de prééclampsie")
+  comme "en vigueur" — incohérence de cet index signalée, pas corrigée
+  unilatéralement (même pattern que mtev_perioperatoire/0033). Algorithme
+  de prise en charge de l'HTA (Champ 2, synoptique à 2 colonnes sans chip
+  propre, restatement de R2.1-R2.7) et rappel posologique du sulfate de
+  magnésium volontairement pas migrés. `population` laissée NULL sur les
+  27 lignes : l'intégralité du document concerne une population unique
+  (pré-éclampsie sévère anté/post-partum), contrairement à `pavm`/0037 où
+  seul un sous-ensemble était pédiatrique. SFAR et CNGOF (toutes deux déjà
+  dans le seed, aucune société nouvelle ajoutée à l'ensemble utilisé)
+  liées en document_societies.
 
-## Fiches restantes (22 / 59)
+## Fiches restantes (21 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-preeclampsie, remplissage, sdra,
+remplissage, sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
