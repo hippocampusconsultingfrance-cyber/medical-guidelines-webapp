@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (47 / 59)
+## Fiches migrées (48 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -65,8 +65,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000045 | `sepsis_hemodynamique` | `0045_migrate_sepsis_hemodynamique.sql` | Prise en charge hémodynamique du sepsis grave, nouveau-né exclu (SFAR/SRLF, CC 2006) | 33 |
 | 000046 | `sevrage_vm` | `0046_migrate_sevrage_vm.sql` | Sevrage de la ventilation mécanique, nouveau-né et réveil d'anesthésie exclus (SRLF/SFAR, CC 2001) | 17 |
 | 000047 | `tih` | `0047_migrate_tih.sql` | Diagnostic et prise en charge d'une thrombopénie induite par l'héparine (GIHP/GFHT, avec SFAR, Propositions 2019) | 40 |
+| 000048 | `tracheotomie` | `0048_migrate_tracheotomie.sql` | Trachéotomie en réanimation (SRLF/SFAR, avec SFMU/SFORL, RFE 2016/2017) | 18 |
 
-**Total : 2334 recommandations atomiques, 47 documents, 8 sociétés du seed
+**Total : 2352 recommandations atomiques, 48 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -922,13 +923,32 @@ non exhaustive, section 14.1).**
   (superseded). Seule la SFAR (collaboratrice, dans le seed) liée en
   document_societies ; GIHP et GFHT (auteurs principaux) hors seed, non
   liés.
+- `tracheotomie` (SRLF/SFAR, avec SFMU/SFORL, RFE 2016/2017) : 18
+  recommandations (R1.1-R5.3), GRADE classique, comptage EXACTEMENT
+  reconcilié sur les deux axes (total 18 = 8 formalisées [2 GRADE1 + 6
+  GRADE2] + 10 AE), cas propre sans écart. **Correction d'extraction
+  disclosée par le contenu construit lui-même** : R1.3 et R3.2 imprimées
+  "(Grade 1-)"/"(Grade 2-)" dans la source (confirmé par rendu visuel),
+  mais l'extraction automatique du PDF perd le signe "moins" pour ces
+  deux tags (bug déjà rencontré, cf. choc_hemorragique/0014) — corrigé
+  par le contenu construit avec le signe réellement imprimé, grade migré
+  reflète cette correction (1-/2-, pas 1/2 bruts). 3 protocoles de soins
+  associés (R3.5 : procédure standardisée de trachéotomie percutanée ;
+  R4.1 : gestion post-trachéotomie par période ; R5.1 : algorithme
+  séquentiel de décanulation en 5 étapes d'après Warnecke et al.)
+  volontairement pas migrés séparément (avis d'experts au niveau du
+  protocole global, pas une cotation individuelle). Champ explicitement
+  limité à la trachéotomie PROGRAMMÉE (la trachéotomie en urgence est
+  hors champ, disclosure de portée de la source). SRLF, SFAR et SFMU
+  (toutes trois dans le seed) liées en document_societies ; SFORL hors
+  seed, non liée.
 
-## Fiches restantes (12 / 59)
+## Fiches restantes (11 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-tracheotomie, transfusion_plasma,
+transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
