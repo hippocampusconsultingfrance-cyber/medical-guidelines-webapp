@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (38 / 59)
+## Fiches migrées (39 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -56,8 +56,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000036 | `pancreatite` | `0036_migrate_pancreatite.sql` | Pancréatite aigüe grave du patient adulte en soins critiques (SFAR + 4 sociétés, RFE 2021) | 24 |
 | 000037 | `pavm` | `0037_migrate_pavm.sql` | Pneumonies associées aux soins de réanimation (PAS, incluant la PAVM) (SFAR/SRLF + ADARPEF/GFRUP pédiatrique, RFE 2017) | 17 |
 | 000038 | `preeclampsie` | `0038_migrate_preeclampsie.sql` | Prise en charge de la patiente avec une pré-éclampsie sévère (SFAR/CNGOF, RFE 2020) | 27 |
+| 000039 | `remplissage` | `0039_migrate_remplissage.sql` | Choix du soluté pour le remplissage vasculaire en situation critique (SFAR/SFMU, RFE 2021) | 9 |
 
-**Total : 1697 recommandations atomiques, 38 documents, 7 sociétés du seed
+**Total : 1706 recommandations atomiques, 39 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -666,13 +667,36 @@ non exhaustive, section 14.1).**
   seul un sous-ensemble était pédiatrique. SFAR et CNGOF (toutes deux déjà
   dans le seed, aucune société nouvelle ajoutée à l'ensemble utilisé)
   liées en document_societies.
+- `remplissage` (SFAR/SFMU, RFE 2021, "situation critique" — distinct de la
+  RFE 2012 "périopératoire" du même thème général, hrefs vérifiés non
+  confondus) : 9 recommandations, GRADE classique, répartition EXACTEMENT
+  reconciliée avec le résumé officiel (2 GRADE1, 6 GRADE2, 1 AE ; 2
+  questions "absence de recommandation" également reconciliées) — aucun
+  écart, cas le plus propre de ce corpus depuis `civd`/0015 et `ira`/0030.
+  **Incohérence interne à la source disclosée par le contenu construit
+  lui-même, reproduite sans être résolue** : le résumé officiel de la RFE
+  annonce "trois protocoles de prise en charge" élaborés par les experts,
+  absents du texte court après vérification visuelle exhaustive des 28
+  pages (ni texte, ni figure) — non reproduits, hors périmètre du contenu
+  disponible. Tableau 1 (composition ionique comparée de 5 solutés, donnée
+  de référence pharmacologique) volontairement pas migré. Panneau
+  "Exception SSH" (Champ 2 — un bolus de sérum salé hypertonique reste
+  indiqué en cas de choc hémorragique associé à un traumatisme crânien
+  grave avec signe de focalisation, nuance clinique importante à R2.3)
+  volontairement pas migré séparément : SANS chip de grade propre,
+  contrairement à R2.3 elle-même individuellement cotée '1-'. `population`
+  laissée NULL sur les 9 lignes : les 4 "champs" de cette RFE sont des
+  contextes cliniques (sepsis, hémorragie, cérébrolésion, péripartum), pas
+  des sous-groupes démographiques au sens des autres fiches du corpus —
+  contexte clinique de chaque ligne porté par `source_section`. SFAR et
+  SFMU (toutes deux dans le seed) liées en document_societies.
 
-## Fiches restantes (21 / 59)
+## Fiches restantes (20 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-remplissage, sdra,
+sdra,
 securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
