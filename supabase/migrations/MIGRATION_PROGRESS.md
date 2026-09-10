@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (45 / 59)
+## Fiches migrées (46 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -63,8 +63,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000043 | `sedation_urgences` | `0043_migrate_sedation_urgences.sql` | Sédation et analgésie en structure d'urgence (SFAR/SFMU, 2010) | 160 |
 | 000044 | `sepsis` | `0044_migrate_sepsis.sql` | Prise en charge du sepsis du nouveau-né, de l'enfant et de l'adulte (HAS, avec SFAR/SRLF/SFMU/SPILF, RPC 2025) | 130 |
 | 000045 | `sepsis_hemodynamique` | `0045_migrate_sepsis_hemodynamique.sql` | Prise en charge hémodynamique du sepsis grave, nouveau-né exclu (SFAR/SRLF, CC 2006) | 33 |
+| 000046 | `sevrage_vm` | `0046_migrate_sevrage_vm.sql` | Sevrage de la ventilation mécanique, nouveau-né et réveil d'anesthésie exclus (SRLF/SFAR, CC 2001) | 17 |
 
-**Total : 2277 recommandations atomiques, 45 documents, 8 sociétés du seed
+**Total : 2294 recommandations atomiques, 46 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -864,13 +865,43 @@ non exhaustive, section 14.1).**
   les deux documents restant migrés séparément sans fusion ni dépréciation
   automatique. SFAR et SRLF (toutes deux dans le seed) liées en
   document_societies.
+- `sevrage_vm` (SRLF, avec SFAR/Société de Pneumologie de Langue
+  Française/GFRUP, CC 2001) : **CAS PARTICULIER DE CE CORPUS, 17
+  recommandations seulement — comptage volontairement restreint, disclosure
+  extensive**. Méthodologie SCCM Rating System (1997, non-GRADE, même
+  principe que civd/0015), mais le texte source mêle dans les MÊMES
+  crochets des cotations preuve/force ("[a, 1]", "[c, 3]") et de simples
+  renvois bibliographiques numérotés sans lettre ("[2]", "[3]" seuls — 32
+  occurrences sur 101 crochets, vérifié exhaustivement) — rien ne permet
+  de distinguer les deux avec certitude. Le contenu construit a fait le
+  choix explicite de NE JAMAIS convertir un crochet en grade_chip et de
+  tous les reproduire verbatim en texte inline — cette migration respecte
+  intégralement ce choix : `grade`/`evidence_level` laissés NULL sur
+  TOUTES les lignes, sans extraction sélective des crochets les moins
+  ambigus (qui aurait réintroduit, de façon incohérente, l'interprétation
+  que la source a précisément choisi d'éviter). **Atomisation restreinte
+  aux 4 tableaux "Thème/Énoncé/Réf." du document (17 blocs thématiques,
+  Q1 : 3, Q2 : 3, Q4 : 7, Q5 : 4)** — la Question 3 (conduite de l'épreuve
+  de VS) et les paragraphes d'ouverture de Q1/Q4/Q5 sont en PROSE CONTINUE
+  sans repère individuel (contiennent pourtant des directives importantes,
+  ex. "la VACI ne doit pas être proposée [a, 1]") — NON migrés séparément
+  pour éviter un découpage arbitraire incohérent avec le traitement des 17
+  blocs, disclosure explicite qu'une relecture future pourrait juger utile
+  d'atomiser cette prose plus finement. Organigramme "Procédure de
+  sevrage" (Figure 1, reconstruit depuis un rendu à 150dpi) volontairement
+  pas migré. Bloc "Patients pédiatriques" taggé `population =
+  'Pédiatrie'`. `freshness_status = 'revision_detectee'` : disclosure
+  explicite de la source elle-même ("les pratiques ont évolué depuis
+  2001"). SRLF et SFAR (toutes deux dans le seed) liées en
+  document_societies ; Société de Pneumologie de Langue Française et
+  GFRUP hors seed, non liées.
 
-## Fiches restantes (14 / 59)
+## Fiches restantes (13 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-sevrage_vm, tih, tracheotomie, transfusion_plasma,
+tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
