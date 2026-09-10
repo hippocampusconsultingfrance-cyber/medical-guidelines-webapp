@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (56 / 59)
+## Fiches migrées (57 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -74,8 +74,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000054 | `traumatisme_pelvien` | `0054_migrate_traumatisme_pelvien.sql` | Prise en charge des traumatisés pelviens graves à la phase précoce (SFMU/SFAR, RFE 2017) | 22 |
 | 000055 | `traumatisme_thoracique` | `0055_migrate_traumatisme_thoracique.sql` | Traumatisme thoracique : prise en charge des 48 premières heures (SFAR/SFMU, avec SFCTCV/SFR, RFE 2015) | 48 |
 | 000056 | `traumatisme_vertebromedullaire` | `0056_migrate_traumatisme_vertebromedullaire.sql` | Prise en charge des patients présentant, ou à risque, de traumatisme vertébro-médullaire (SFAR, avec ANARLF/SFCR/SFMU/SOFCOT/SOFMER/SSA, RFE 2019) | 19 |
+| 000057 | `urgences_obstetricales` | `0057_migrate_urgences_obstetricales.sql` | Prise en charge des urgences obstétricales en médecine d'urgence (SFMU/SFAR/CNGOF, RPP 2022) | 15 |
 
-**Total : 2572 recommandations atomiques, 56 documents, 8 sociétés du seed
+**Total : 2587 recommandations atomiques, 57 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1114,13 +1115,38 @@ non exhaustive, section 14.1).**
   graduées migrées (R1.1, R2.1/R2.2, R8.1/R8.2). SFAR et SFMU (toutes deux
   dans le seed) liées en document_societies ; ANARLF, SFCR, SOFCOT,
   SOFMER et le SSA (co-auteurs) hors seed, non liés.
+- `urgences_obstetricales` (SFMU/SFAR/CNGOF, RPP 2022, remplace la RFE 2010
+  "Urgences Obstétricales Extrahospitalières" de `library_final.json`) : 15
+  recommandations sur 6 champs cliniques (+ formation), méthodologie RPP
+  (avis d'experts « AE », pas GRADE), sauf 2 des 4 recommandations
+  explicitement reprises littéralement d'une RFE antérieure qui conservent
+  leur tag GRADE d'origine. **Traitement non uniforme des 4 reprises
+  disclosé, non résolu** : R2.1 (reprise de la RPC HPP CNGOF/SFAR 2014) et
+  R4.1 (reprise de la RFE pré-éclampsie SFAR/CNGOF 2020) sont re-taguées
+  "AE" par ce document, tandis que R4.2/R4.3 (également reprises de la RFE
+  2020) conservent leur tag GRADE d'origine "1+" — `grade` reproduit ce qui
+  est effectivement imprimé dans CE document, pas le grade de la RFE
+  source. **Ambiguïté de comptage disclosed, non résolue** : le panneau
+  méthodologique annonce "15 recommandations + 4 recommandations reprises"
+  — lu ici comme "15 au total, dont 4 reprises" (cohérent avec l'inventaire
+  direct de 15 repères Rx.y.z distincts), pas "15+4=19" (aucune 4e ligne
+  supplémentaire identifiable). 2 questions "Absence de recommandation"
+  disclosées PAR LA SOURCE ELLE-MÊME (transfert inter-hospitalier HPP
+  grave ; extraction fœtale en arrêt cardiaque) volontairement pas
+  migrées — correspond exactement aux "2 questions sans recommandation
+  possible" annoncées. Tableau de seuils de dose d'exposition fœtale et
+  panneau "Points clés" (arrêt cardiaque) volontairement pas migrés
+  (référence/contenu accompagnant une question sans recommandation).
+  Population laissée NULL sur toutes les lignes (document entièrement
+  consacré à la grossesse, même convention que `preeclampsie`/0038). SFMU,
+  SFAR ET CNGOF (toutes trois dans le seed) liées en document_societies.
 
-## Fiches restantes (3 / 59)
+## Fiches restantes (2 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-urgences_obstetricales, vni, voies_aeriennes_enfant.
+vni, voies_aeriennes_enfant.
 
 (`tih` ci-dessus = une fiche distincte de `transport_intrahospitalier`,
 malgré l'acronyme partagé — à vérifier son sujet exact avant migration,
