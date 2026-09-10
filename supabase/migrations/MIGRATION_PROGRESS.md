@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (55 / 59)
+## Fiches migrées (56 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -73,8 +73,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000053 | `traumatisme_membre` | `0053_migrate_traumatisme_membre.sql` | Prise en charge des patients présentant un traumatisme sévère de membre(s) (SFAR/SFMU, RFE 2019/2020) | 19 |
 | 000054 | `traumatisme_pelvien` | `0054_migrate_traumatisme_pelvien.sql` | Prise en charge des traumatisés pelviens graves à la phase précoce (SFMU/SFAR, RFE 2017) | 22 |
 | 000055 | `traumatisme_thoracique` | `0055_migrate_traumatisme_thoracique.sql` | Traumatisme thoracique : prise en charge des 48 premières heures (SFAR/SFMU, avec SFCTCV/SFR, RFE 2015) | 48 |
+| 000056 | `traumatisme_vertebromedullaire` | `0056_migrate_traumatisme_vertebromedullaire.sql` | Prise en charge des patients présentant, ou à risque, de traumatisme vertébro-médullaire (SFAR, avec ANARLF/SFCR/SFMU/SOFCOT/SOFMER/SSA, RFE 2019) | 19 |
 
-**Total : 2553 recommandations atomiques, 55 documents, 8 sociétés du seed
+**Total : 2572 recommandations atomiques, 56 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1099,14 +1100,27 @@ non exhaustive, section 14.1).**
   l'entrée `library_final.json` qui n'indique que l'année ("2015"). SFAR
   et SFMU (toutes deux dans le seed) liées en document_societies ; SFCTCV
   et SFR (co-auteurs) hors seed, non liées.
+- `traumatisme_vertebromedullaire` (SFAR, avec ANARLF/SFCR/SFMU/SOFCOT/
+  SOFMER/SSA, RFE 2019, actualisation de la CE 2004) : 19 recommandations
+  sur 12 questions PICO, GRADE classique, comptage EXACTEMENT reconcilié
+  sur les deux axes (19 = 2×GRADE1 [1×1+, 1×1-] + 12×GRADE2 [tous 2+] +
+  5×AE), 100 % accord fort — cas propre, aucun écart avec le résumé
+  officiel de la source. 2 algorithmes de la source (Figure 1 —
+  immobilisation rachidienne ; Figure 2 — procédure d'intubation
+  trachéale) reformulés par le contenu construit en tableaux de décision
+  condensés (vérifiés par rendu visuel des pages source), non gradués
+  individuellement par le jury donc volontairement pas migrés séparément
+  — leur contenu clinique concret est déjà couvert par les recommandations
+  graduées migrées (R1.1, R2.1/R2.2, R8.1/R8.2). SFAR et SFMU (toutes deux
+  dans le seed) liées en document_societies ; ANARLF, SFCR, SOFCOT,
+  SOFMER et le SSA (co-auteurs) hors seed, non liés.
 
-## Fiches restantes (4 / 59)
+## Fiches restantes (3 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-traumatisme_vertebromedullaire, urgences_obstetricales, vni,
-voies_aeriennes_enfant.
+urgences_obstetricales, vni, voies_aeriennes_enfant.
 
 (`tih` ci-dessus = une fiche distincte de `transport_intrahospitalier`,
 malgré l'acronyme partagé — à vérifier son sujet exact avant migration,
