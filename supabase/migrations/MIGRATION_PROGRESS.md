@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (50 / 59)
+## Fiches migrées (51 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -68,8 +68,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000048 | `tracheotomie` | `0048_migrate_tracheotomie.sql` | Trachéotomie en réanimation (SRLF/SFAR, avec SFMU/SFORL, RFE 2016/2017) | 18 |
 | 000049 | `transfusion_plasma` | `0049_migrate_transfusion_plasma.sql` | Transfusion de plasma thérapeutique : produits, indications (ANSM/HAS, 2012) | 40 |
 | 000050 | `traumatisme_abdominal` | `0050_migrate_traumatisme_abdominal.sql` | Prise en charge du traumatisme abdominal grave de l'adulte : les 48 premières heures (SFAR/SFMU, RFE 2019) | 15 |
+| 000051 | `traumatisme_cranien` | `0051_migrate_traumatisme_cranien.sql` | Prises en charge neurochirurgicales des traumatismes cranio-encéphaliques (SFNC, avec SFAR/SPILF, RPP 2025) | 43 |
 
-**Total : 2407 recommandations atomiques, 50 documents, 8 sociétés du seed
+**Total : 2450 recommandations atomiques, 51 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -985,13 +986,38 @@ non exhaustive, section 14.1).**
   posters-images sans chip individuel, volontairement pas migrés. SFAR et
   SFMU (toutes deux dans le seed) liées en document_societies ; AFC, AFU,
   SFRI et École du Val de Grâce hors seed, non liés.
+- `traumatisme_cranien` (SFNC, avec SFNCP/SFNCL/ANARLF/SFAR/GFRUP/SFNR/
+  SPILF/SOFMER, RPP 2025) : **première RPP portée spécifiquement par la
+  neurochirurgie depuis 2006** (disclosure de la source elle-même). 43
+  recommandations réelles (R1.1-R15.2) réparties en 7 champs + 2 items
+  "Absence de recommandation" (R11.4, R14.2, non migrés). **"43" et "45"
+  du résumé officiel réconciliés par la source elle-même, reproduit tel
+  quel** : 45 items formulés au total, dont 43 recommandations réelles (39
+  AE + 4 "GRADE 2") et 2 "Absence de recommandation" explicites — les deux
+  chiffres comptent des ensembles différents, aucune divergence réelle,
+  contrairement aux nombreuses vraies divergences disclosées ailleurs dans
+  ce corpus. **Méthodologie GRADE simplifiée à 2 niveaux** (pas de palier
+  GRADE1, pas de suffixe +/- imprimé sur les tags "GRADE 2") : le sens
+  +/- de chaque "GRADE 2" est déduit de la formulation littérale de la
+  phrase par le contenu construit — disclosure explicite de cette
+  dérivation. **Incohérence source relevée et signalée par le contenu
+  construit lui-même (vérifiée par rendu visuel), non corrigée
+  silencieusement** : R6.4 utilise la formule verbale du Grade 2 mais est
+  littéralement taguée "avis d'experts" — le tag imprimé retenu (AE), pas
+  la formulation verbale. Annexes de référence (mFI-5, score SPIN,
+  critères scanographiques, GOSE, Clinical Frailty Scale) volontairement
+  pas migrées. 7 recommandations du Champ 7 (particularités pédiatriques,
+  nouveau-né/nourrisson <2 ans) taguées `population = 'Pédiatrie'`. SFAR
+  et SPILF (2 des 9 sociétés du groupe de travail, toutes deux dans le
+  seed) liées en document_societies ; SFNC (coordinatrice), SFNCP, SFNCL,
+  ANARLF, GFRUP, SFNR et SOFMER hors seed, non liées.
 
-## Fiches restantes (9 / 59)
+## Fiches restantes (8 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-traumatisme_cranien, traumatisme_cranien_leger,
+traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
 voies_aeriennes_enfant.
