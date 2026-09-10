@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (51 / 59)
+## Fiches migrées (52 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -69,8 +69,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000049 | `transfusion_plasma` | `0049_migrate_transfusion_plasma.sql` | Transfusion de plasma thérapeutique : produits, indications (ANSM/HAS, 2012) | 40 |
 | 000050 | `traumatisme_abdominal` | `0050_migrate_traumatisme_abdominal.sql` | Prise en charge du traumatisme abdominal grave de l'adulte : les 48 premières heures (SFAR/SFMU, RFE 2019) | 15 |
 | 000051 | `traumatisme_cranien` | `0051_migrate_traumatisme_cranien.sql` | Prises en charge neurochirurgicales des traumatismes cranio-encéphaliques (SFNC, avec SFAR/SPILF, RPP 2025) | 43 |
+| 000052 | `traumatisme_cranien_leger` | `0052_migrate_traumatisme_cranien_leger.sql` | Prise en charge des patients présentant un traumatisme crânien léger de l'adulte (SFMU/SFAR, RPP 2022) | 14 |
 
-**Total : 2450 recommandations atomiques, 51 documents, 8 sociétés du seed
+**Total : 2464 recommandations atomiques, 52 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1011,13 +1012,32 @@ non exhaustive, section 14.1).**
   et SPILF (2 des 9 sociétés du groupe de travail, toutes deux dans le
   seed) liées en document_societies ; SFNC (coordinatrice), SFNCP, SFNCL,
   ANARLF, GFRUP, SFNR et SOFMER hors seed, non liées.
+- `traumatisme_cranien_leger` (SFMU/SFAR, avec SFBC/SFR/SOFMER, RPP 2022) :
+  14 énoncés individuellement formulés selon le cadre PICO propre du
+  texte, tous "avis d'experts" (AE). **Format RPP, pas de GRADE numérique**
+  — choix méthodologique explicite de la source, faute de niveau de preuve
+  suffisant. **Divergence de comptage disclosée par le contenu construit
+  lui-même, non résolue** : le résumé officiel annonce "13 recommandations"
+  mais l'inventaire direct des 14 énoncés PICO en dénombre 14 — le contenu
+  construit précise lui-même que "13" est cité tel quel sans détail de
+  correspondance avec le découpage individuel ; les 14 énoncés réels sont
+  tous migrés, aucun retranché. **Intervertissement de numérotation
+  disclosé par la source elle-même, reproduit fidèlement** : R2.4 (délai
+  de la TDM) est imprimé sous la Question 2.3, et R2.3 (Doppler
+  transcrânien) sous la Question 2.4 — anomalie propre à la source, non
+  corrigée. Absence de recommandation (inhibiteurs P2Y12, faute de
+  données), Tableaux 1-3 (définition OMS, signes de fracture, cinétique
+  élevée), Annexe 1 (comparatif de 7 scores, non reproduite intégralement
+  par le contenu construit lui-même — extraction disloquée) et Annexe 2
+  (fiche d'information patient, contenu informationnel non gradué)
+  volontairement pas migrés. SFMU et SFAR (toutes deux dans le seed) liées
+  en document_societies ; SFBC, SFR et SOFMER hors seed, non liées.
 
-## Fiches restantes (8 / 59)
+## Fiches restantes (7 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
 voies_aeriennes_enfant.
