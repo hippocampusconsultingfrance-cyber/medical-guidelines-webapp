@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (49 / 59)
+## Fiches migrées (50 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -67,8 +67,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000047 | `tih` | `0047_migrate_tih.sql` | Diagnostic et prise en charge d'une thrombopénie induite par l'héparine (GIHP/GFHT, avec SFAR, Propositions 2019) | 40 |
 | 000048 | `tracheotomie` | `0048_migrate_tracheotomie.sql` | Trachéotomie en réanimation (SRLF/SFAR, avec SFMU/SFORL, RFE 2016/2017) | 18 |
 | 000049 | `transfusion_plasma` | `0049_migrate_transfusion_plasma.sql` | Transfusion de plasma thérapeutique : produits, indications (ANSM/HAS, 2012) | 40 |
+| 000050 | `traumatisme_abdominal` | `0050_migrate_traumatisme_abdominal.sql` | Prise en charge du traumatisme abdominal grave de l'adulte : les 48 premières heures (SFAR/SFMU, RFE 2019) | 15 |
 
-**Total : 2392 recommandations atomiques, 49 documents, 8 sociétés du seed
+**Total : 2407 recommandations atomiques, 50 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -969,13 +970,28 @@ non exhaustive, section 14.1).**
   ANSM hors seed, non liée. Un document distinct et plus récent (SFAR,
   RPP 2020, PLYO en choc hémorragique) existe dans `library_final.json`,
   non confondu, non couvert par cette migration.
+- `traumatisme_abdominal` (SFAR/SFMU, avec AFC/AFU/SFRI/École du Val de
+  Grâce, RFE 2019) : 15 recommandations réparties en 3 champs (diagnostic,
+  thérapeutique, surveillance), champ EXPLICITEMENT restreint à l'adulte
+  hors grossesse (pédiatrie et femmes enceintes exclus par la source
+  elle-même — `population` laissée NULL, disclosure de portée). **Écart
+  de répartition GRADE disclosé, isolé précisément, non résolu** : le
+  résumé officiel annonce "5 GRADE1, 6 GRADE2, 4 AE" ; un inventaire
+  direct tag par tag trouve 4 GRADE1 (2×1+, 2×1-) et 7 GRADE2 (7×2+,
+  aucun 2-) — le total (15) ET le compte d'AE (4) concordent avec le
+  résumé officiel, mais pas la répartition GRADE1/GRADE2 annoncée (5+6 vs
+  4+7 constaté). Fiche réflexe préhospitalière (Figure 1) et Algorithme de
+  prise en charge hospitalière (Figure 2), tous deux transcrits depuis des
+  posters-images sans chip individuel, volontairement pas migrés. SFAR et
+  SFMU (toutes deux dans le seed) liées en document_societies ; AFC, AFU,
+  SFRI et École du Val de Grâce hors seed, non liés.
 
-## Fiches restantes (10 / 59)
+## Fiches restantes (9 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
+traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
 voies_aeriennes_enfant.
