@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (54 / 59)
+## Fiches migrées (55 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -72,8 +72,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000052 | `traumatisme_cranien_leger` | `0052_migrate_traumatisme_cranien_leger.sql` | Prise en charge des patients présentant un traumatisme crânien léger de l'adulte (SFMU/SFAR, RPP 2022) | 14 |
 | 000053 | `traumatisme_membre` | `0053_migrate_traumatisme_membre.sql` | Prise en charge des patients présentant un traumatisme sévère de membre(s) (SFAR/SFMU, RFE 2019/2020) | 19 |
 | 000054 | `traumatisme_pelvien` | `0054_migrate_traumatisme_pelvien.sql` | Prise en charge des traumatisés pelviens graves à la phase précoce (SFMU/SFAR, RFE 2017) | 22 |
+| 000055 | `traumatisme_thoracique` | `0055_migrate_traumatisme_thoracique.sql` | Traumatisme thoracique : prise en charge des 48 premières heures (SFAR/SFMU, avec SFCTCV/SFR, RFE 2015) | 48 |
 
-**Total : 2505 recommandations atomiques, 54 documents, 8 sociétés du seed
+**Total : 2553 recommandations atomiques, 55 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1068,13 +1069,42 @@ non exhaustive, section 14.1).**
   dédiée distincte). SFMU et SFAR (toutes deux dans le seed) liées en
   document_societies ; SFR, SSA, AFU, SOFCOT et SFCD hors seed, non
   liées.
+- `traumatisme_thoracique` (SFAR/SFMU, avec SFCTCV/SFR, Anesth Reanim.
+  2015;1:272-287, en ligne 23/05/2015) : 48 recommandations sur 7
+  questions PICO, GRADE classique (19×1+, 17×2+, 7×AE, 4×2-, 1×1-).
+  **Première RFE française sur ce sujet, disclosure de la source
+  elle-même** (aucune recommandation antérieure d'une société savante
+  française sur la prise en charge spécifique du traumatisme thoracique).
+  **Divergence de comptage disclosée, non réconciliée par la source
+  elle-même** : le résumé officiel annonce un total agrégé de "60
+  recommandations formalisées" (accord fort 50/90 %, accord faible 10),
+  chiffre cité tel quel en introduction sans être recalculé ni réparti
+  ligne par ligne — inventaire direct = 48 énoncés individuellement
+  gradés (chaque « Proposition » numérotée par la source pouvant regrouper
+  plusieurs phrases distinctement graduées, ici éclatées en lignes
+  séparées selon leur propre tag) ; la correspondance exacte entre 48 et
+  60 n'est pas reconstituable depuis le texte publié. **Piège d'extraction
+  disclosé par la source elle-même et corrigé avant intégration** : le
+  signe moins de 5 tags "G1-"/"G2-" a été corrompu en caractère de
+  contrôle non imprimable par l'extraction automatique du PDF, confirmé
+  par rendu visuel de la page 3 (même famille de bug que
+  `tracheotomie`/0048 et `choc_hemorragique`/0014). Aucune table de
+  classification ou figure de référence identifiée nécessitant une
+  exclusion (contrairement à `traumatisme_membre`/0053 ou
+  `traumatisme_pelvien`/0054) — le contenu construit est composé presque
+  intégralement des 7 tableaux Réf./Recommandation/Grade formellement
+  structurés. Aucun contenu pédiatrique ou obstétrical identifié —
+  population NULL sur toutes les lignes. `publication_date` = date de
+  mise en ligne disclosée par la source (23/05/2015), plus précise que
+  l'entrée `library_final.json` qui n'indique que l'année ("2015"). SFAR
+  et SFMU (toutes deux dans le seed) liées en document_societies ; SFCTCV
+  et SFR (co-auteurs) hors seed, non liées.
 
-## Fiches restantes (5 / 59)
+## Fiches restantes (4 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
 voies_aeriennes_enfant.
 
