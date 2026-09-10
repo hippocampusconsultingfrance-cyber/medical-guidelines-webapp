@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (40 / 59)
+## Fiches migrées (41 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -58,8 +58,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000038 | `preeclampsie` | `0038_migrate_preeclampsie.sql` | Prise en charge de la patiente avec une pré-éclampsie sévère (SFAR/CNGOF, RFE 2020) | 27 |
 | 000039 | `remplissage` | `0039_migrate_remplissage.sql` | Choix du soluté pour le remplissage vasculaire en situation critique (SFAR/SFMU, RFE 2021) | 9 |
 | 000040 | `sdra` | `0040_migrate_sdra.sql` | Recommandations pour la prise en charge du SDRA (traduction SFAR d'un guideline ATS/ESICM/SCCM, 2018) | 5 |
+| 000041 | `securisation_proc` | `0041_migrate_securisation_proc.sql` | Sécurisation des procédures à risques en réanimation, risque infectieux exclu (SRLF/SFAR, 2008) | 198 |
 
-**Total : 1711 recommandations atomiques, 40 documents, 7 sociétés du seed
+**Total : 1909 recommandations atomiques, 41 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -717,13 +718,39 @@ non exhaustive, section 14.1).**
   sont pas signataires du document français publié à cette URL, mais du
   texte anglais qu'il traduit, un document distinct non migré dans ce
   projet.
+- `securisation_proc` (SRLF/SFAR, 2008, risque infectieux explicitement
+  exclu du champ) : **198 recommandations — 2e plus grande migration de ce
+  corpus après mal_epileptique/0032 (163)**, extraite par script Python
+  (walk programmatique du JSON réparti en 8 champs cliniques, PAS une
+  transcription manuelle vu le volume), contrôlée par inventaire exhaustif
+  et tally avant écriture du SQL final (155 Fort + 35 Faible + 5 non
+  cotées + 3 Indécision = 198, cohérent). **Méthodologie RAND/UCLA
+  adaptée SRLF-SFAR à un seul axe (PAS GRADE)** : `grade` reproduit
+  littéralement 'Fort'/'Faible'/'Indécision', jamais converti en échelle
+  GRADE 1+/2+. 5 propositions "non cotées" (Champ 3.1 uniquement,
+  disclosure de la source elle-même) migrées avec `grade = NULL` plutôt
+  qu'un tag '?' fabriqué. 3 propositions en "zone d'indécision" (catégorie
+  distincte explicitement identifiée par les auteurs, médiane 4-6) migrées
+  avec `grade = 'Indécision'`, jamais reclassées en Fort/Faible. Champ 8
+  (spécificités pédiatriques, 12 lignes) seul taggé `population =
+  'Pédiatrie'`, le reste laissé NULL (adulte/enfant mêlés dans les Champs
+  1-7 sans marqueur individuel dans la source). **Pas de numérotation Rx.y
+  propre à ce document** — le rang `[Réf. N]` de `source_section` est un
+  ordre de lecture séquentiel du tableau JSON, PAS un identifiant imprimé
+  par la source, disclosure explicite (même pattern que le Champ 4.3
+  d'eer/0020). `freshness_status = 'a_jour'` retenu : contrairement à
+  eclsa/glycemie/hsa/mal_epileptique, cette fiche ne contient AUCUNE
+  mention explicite d'obsolescence dans le contenu construit — pas de
+  `revision_detectee` inventé par simple analogie d'ancienneté (2008),
+  disclosure du choix. SFAR et SRLF (toutes deux dans le seed) liées en
+  document_societies.
 
-## Fiches restantes (19 / 59)
+## Fiches restantes (18 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-securisation_proc, sedation_reanimation, sedation_urgences, sepsis,
+sedation_reanimation, sedation_urgences, sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
