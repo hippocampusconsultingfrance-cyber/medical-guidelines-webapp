@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (58 / 59)
+## Fiches migrées (59 / 59) — TÂCHE 1 COMPLÈTE
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -76,8 +76,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000056 | `traumatisme_vertebromedullaire` | `0056_migrate_traumatisme_vertebromedullaire.sql` | Prise en charge des patients présentant, ou à risque, de traumatisme vertébro-médullaire (SFAR, avec ANARLF/SFCR/SFMU/SOFCOT/SOFMER/SSA, RFE 2019) | 19 |
 | 000057 | `urgences_obstetricales` | `0057_migrate_urgences_obstetricales.sql` | Prise en charge des urgences obstétricales en médecine d'urgence (SFMU/SFAR/CNGOF, RPP 2022) | 15 |
 | 000058 | `vni` | `0058_migrate_vni.sql` | Ventilation Non Invasive au cours de l'insuffisance respiratoire aiguë, nouveau-né exclu (SFAR/SPLF/SRLF, avec SFMU/SAMU de France/GFRUP/ADARPEF, CC 2006) | 26 |
+| 000059 | `voies_aeriennes_enfant` | `0059_migrate_voies_aeriennes_enfant.sql` | Gestion des voies aériennes de l'enfant (SFAR/ADARPEF, RFE 2018) | 17 |
 
-**Total : 2613 recommandations atomiques, 58 documents, 8 sociétés du seed
+**Total : 2630 recommandations atomiques, 59 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1172,13 +1173,60 @@ non exhaustive, section 14.1).**
   mal_epileptique/0032). SFAR, SRLF ET SFMU (dans le seed) liées en
   document_societies ; SPLF (co-organisatrice à égalité dans le titre de
   la conférence), SAMU de France, GFRUP et ADARPEF hors seed, non liés.
+- `voies_aeriennes_enfant` (SFAR/ADARPEF, RFE 2019;5:408-426, comité de 17
+  experts) : **59e et dernière fiche du lot.** 17 recommandations, GRADE
+  classique, comptage EXACTEMENT reconcilié sur les deux axes (17 = 6
+  Grade1 [tous 1+] + 6 Grade2 [5×2+, 1×2-] + 5 avis d'experts), 100 %
+  accord fort — cas propre, aucun écart avec le résumé officiel de la
+  source. Les 5 avis d'experts (numérotés "n°1" à "n°5" par la source, non
+  rattachés à un repère Rx.y) sont migrés comme des lignes à part entière,
+  comptées dans le total de 17 conformément à la source ; l'avis d'experts
+  n°4 (extubation) combine dans une seule ligne ses deux suggestions
+  distinctes (réveil complet + 3 min ventilation spontanée ; OU extubation
+  sur guide échangeur creux), pour rester fidèle au décompte officiel "5
+  avis d'experts" plutôt que de le porter artificiellement à 6. 3
+  questions "Pas de recommandation" déclarées PAR LA SOURCE ELLE-MÊME
+  (retrait DSG sous AG profonde vs éveil ; extubation profonde vs
+  éveillée ; choix DSG/sonde chez l'enfant enrhumé si masque facial non
+  utilisable) volontairement pas migrées — correspond exactement aux "3
+  questions" annoncées. 3 algorithmes (intubation difficile imprévue,
+  ventilation au masque difficile, CICO — transcrits en tableaux de
+  décision depuis des figures pures images, vérifiés visuellement)
+  volontairement pas migrés : la source elle-même les compte séparément
+  des "17 recommandations", aucune étape individuelle n'y porte de chip de
+  grade (même traitement que les algorithmes exclus ailleurs dans ce
+  corpus). Population laissée NULL sur toutes les lignes (document
+  entièrement consacré à l'enfant, hors nouveau-né/prématuré exclu par la
+  source elle-même — même convention que `preeclampsie`/0038 et
+  `urgences_obstetricales`/0057). Seule la SFAR (dans le seed) liée en
+  document_societies ; l'ADARPEF (co-auteur à égalité, "communes
+  SFAR-ADARPEF" dans le titre) hors seed, non liée.
 
-## Fiches restantes (1 / 59)
+## Fiches restantes (0 / 59)
 
-Dernière fiche du lot, dans l'ordre de priorité clinique déjà suivi par
-`rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
+**Aucune — les 59 fiches construites (`rfe-sfar-website/build/content_*.json`)
+sont maintenant toutes migrées vers le modèle relationnel de
+`schema_v2.sql`.** Total final : 2630 recommandations atomiques, 59
+documents, 8 sociétés du seed Annexe B utilisées, toutes en statut
+`draft` — la relecture/validation éditoriale humaine complète (par
+document et par recommandation individuelle) reste entièrement à faire
+avant toute promotion en statut `active`. Voir les nombreuses sections
+`-- À VÉRIFIER` ci-dessus, fiche par fiche, pour le détail des points
+disclosed nécessitant une décision humaine (conventions de cotation
+non-GRADE, écarts de comptage source-internes, sociétés hors seed Annexe
+B, documents disclosant leur propre obsolescence, etc.).
 
-voies_aeriennes_enfant.
+Conformément aux instructions de la Tâche 1, cette migration n'a jamais
+été exécutée contre la base de production — uniquement validée par
+exécution réelle (fresh-apply + rejeu complet pour vérifier l'idempotence)
+contre une instance PostgreSQL 16 locale, fiche par fiche, avant chaque
+commit.
+
+**Prochaine étape (Tâche 2)** : reprendre le pipeline de construction de
+fiches documenté dans `rfe-sfar-website/CLAUDE.md` pour construire la
+prochaine fiche prioritaire non encore construite parmi les 160 items de
+la bibliothèque SFAR (`build/library_final.json`), maintenant que la
+Tâche 1 est complète.
 
 (`tih` ci-dessus = une fiche distincte de `transport_intrahospitalier`,
 malgré l'acronyme partagé — à vérifier son sujet exact avant migration,
