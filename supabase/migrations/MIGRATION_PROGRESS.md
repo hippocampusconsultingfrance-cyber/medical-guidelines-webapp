@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (43 / 59)
+## Fiches migrées (44 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -61,11 +61,12 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000041 | `securisation_proc` | `0041_migrate_securisation_proc.sql` | Sécurisation des procédures à risques en réanimation, risque infectieux exclu (SRLF/SFAR, 2008) | 198 |
 | 000042 | `sedation_reanimation` | `0042_migrate_sedation_reanimation.sql` | Sédation et analgésie en réanimation, nouveau-né exclu (Conférence de Consensus SFAR-SRLF, 2007) | 45 |
 | 000043 | `sedation_urgences` | `0043_migrate_sedation_urgences.sql` | Sédation et analgésie en structure d'urgence (SFAR/SFMU, 2010) | 160 |
+| 000044 | `sepsis` | `0044_migrate_sepsis.sql` | Prise en charge du sepsis du nouveau-né, de l'enfant et de l'adulte (HAS, avec SFAR/SRLF/SFMU/SPILF, RPC 2025) | 130 |
 
-**Total : 2114 recommandations atomiques, 43 documents, 7 sociétés du seed
+**Total : 2244 recommandations atomiques, 44 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
-SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
-société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
+SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
+seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
 
 ### Points laissés `-- À VÉRIFIER` dans ces 10 migrations (à trancher par un relecteur humain)
@@ -803,13 +804,48 @@ non exhaustive, section 14.1).**
   volontairement pas migrée. 44 recommandations des sous-questions
   pédiatriques (Q6 1/2, Q6 2/2, SOAPME) taguées `population = 'Pédiatrie'`.
   SFAR et SFMU (toutes deux dans le seed) liées en document_societies.
+- `sepsis` (HAS, avec SFAR/SRLF/SFMU/SPILF + 12 autres promoteurs, RPC
+  2025) : **130 recommandations migrées sur 149 dénombrées par la source
+  elle-même (84 adulte + 65 enfant)** — 1er document HAS (pas SFAR) de ce
+  corpus, reproduisant intégralement en Annexe 5/6 la Surviving Sepsis
+  Campaign (SSC) 2021 adulte et 2020 enfant "validée pour le contexte
+  français". **Périmètre de migration restreint aux recommandations
+  directionnelles réelles, disclosure explicite** : 19 des 149 items
+  portent le grade officiel "?" (= "Pas de recommandation possible",
+  catégorie de LÉGENDE SOURCE, pas un marqueur ad hoc comme le '?' de
+  securisation_proc/0041) — non migrés, même traitement que les panneaux
+  "Absence de recommandation" de tout le corpus et les lignes "SR" de
+  pancreatite/0036 ; seules les 130 lignes à grade directionnel réel
+  (38×1+, 7×1-, 48×2+, 37×2- = 130) sont migrées. Le total officiel "149"
+  de la source INCLUT ces 19 items sans recommandation — divergence de
+  convention de comptage disclosée entre source et migration.
+  **Numérotation source reproduite avec ses propres discontinuités**
+  (numéros absents disclosés par la source elle-même : "items exclus de
+  la validation française de la SSC"), pas une renumérotation de ma part.
+  **Simplification disclosée pour l'Annexe 6 (pédiatrique)** : la source
+  SSC imprime deux axes (force + niveau de certitude) par recommandation
+  pédiatrique, que le contenu construit a lui-même synthétisés en un seul
+  chip — reproduit tel quel, simplification disclosée pour relecture
+  future. Définitions, scores diagnostiques (Phoenix, feux NICE, signes
+  vitaux), messages clés du parcours de soins, bonnes pratiques
+  hémoculture et facteurs de risque BMR volontairement pas migrés (aucun
+  n'est compté dans les "149" de la source, tous sans chip individuel).
+  Annexe 6 (pédiatrique, 54 lignes) intégralement taguée `population =
+  'Pédiatrie'`. **Collision d'acronyme "SFN"** (même pattern que eer/0020
+  et ira/0030, probablement "Société Française de Néonatologie" ici, pas
+  vérifiable) — non liée par prudence. SFAR, SRLF, SFMU, SPILF (4 des 16
+  promoteurs) ET HAS elle-même (organisme publiant/validant — 1ère
+  utilisation de cette société du seed dans ce corpus) liées en
+  document_societies ; les 11 autres promoteurs hors seed, non liés. Un
+  document distinct et plus ancien (CC SRLF 2005/2006, hémodynamique
+  uniquement, nouveau-né exclu) existe dans `library_final.json`, non
+  confondu (href/contenu vérifiés distincts).
 
-## Fiches restantes (16 / 59)
+## Fiches restantes (15 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
