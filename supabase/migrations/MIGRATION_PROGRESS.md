@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (53 / 59)
+## Fiches migrées (54 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -71,8 +71,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000051 | `traumatisme_cranien` | `0051_migrate_traumatisme_cranien.sql` | Prises en charge neurochirurgicales des traumatismes cranio-encéphaliques (SFNC, avec SFAR/SPILF, RPP 2025) | 43 |
 | 000052 | `traumatisme_cranien_leger` | `0052_migrate_traumatisme_cranien_leger.sql` | Prise en charge des patients présentant un traumatisme crânien léger de l'adulte (SFMU/SFAR, RPP 2022) | 14 |
 | 000053 | `traumatisme_membre` | `0053_migrate_traumatisme_membre.sql` | Prise en charge des patients présentant un traumatisme sévère de membre(s) (SFAR/SFMU, RFE 2019/2020) | 19 |
+| 000054 | `traumatisme_pelvien` | `0054_migrate_traumatisme_pelvien.sql` | Prise en charge des traumatisés pelviens graves à la phase précoce (SFMU/SFAR, RFE 2017) | 22 |
 
-**Total : 2483 recommandations atomiques, 53 documents, 8 sociétés du seed
+**Total : 2505 recommandations atomiques, 54 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -1048,13 +1049,32 @@ non exhaustive, section 14.1).**
   lui-même — rien à migrer au-delà du seuil déjà cité en introduction.
   SFAR et SFMU (toutes deux dans le seed) liées en document_societies ;
   SOFCOT, SCVE et SSA hors seed, non liées.
+- `traumatisme_pelvien` (SFMU/SFAR, avec SFR/SSA/AFU/SOFCOT/SFCD, RFE
+  2017) : 22 recommandations (5 préhospitalières + 17 hospitalières),
+  GRADE classique, comptage EXACTEMENT reconcilié sur les deux axes (22 =
+  11 GRADE1 + 11 GRADE2), cas propre sans écart (3e cas de ce type de
+  suite dans ce lot, après traumatisme_membre/0053). **Disclosure
+  méthodologique particulière de la source elle-même, reproduite sans
+  invention** : 9 questions n'ayant pu aboutir qu'à un avis d'experts
+  (littérature insuffisante pour GRADE) ont été délibérément exclues du
+  document publié par la source elle-même — contrairement à la
+  quasi-totalité du corpus, ce document ne contient donc AUCUN panneau
+  "Absence de recommandation" ni item avis d'experts résiduel. Les
+  classifications Young-Burgess et Tile (planches anatomiques illustrées,
+  non reproduites par le contenu construit lui-même) volontairement pas
+  migrées séparément — leur contenu clinique de référence résumé en
+  tableau texte associé à R2.7 (seule recommandation graduée liée).
+  Traitement du choc hémorragique explicitement exclu du champ (RFE
+  dédiée distincte). SFMU et SFAR (toutes deux dans le seed) liées en
+  document_societies ; SFR, SSA, AFU, SOFCOT et SFCD hors seed, non
+  liées.
 
-## Fiches restantes (6 / 59)
+## Fiches restantes (5 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-traumatisme_pelvien, traumatisme_thoracique,
+traumatisme_thoracique,
 traumatisme_vertebromedullaire, urgences_obstetricales, vni,
 voies_aeriennes_enfant.
 
