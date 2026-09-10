@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (42 / 59)
+## Fiches migrées (43 / 59)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -60,8 +60,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000040 | `sdra` | `0040_migrate_sdra.sql` | Recommandations pour la prise en charge du SDRA (traduction SFAR d'un guideline ATS/ESICM/SCCM, 2018) | 5 |
 | 000041 | `securisation_proc` | `0041_migrate_securisation_proc.sql` | Sécurisation des procédures à risques en réanimation, risque infectieux exclu (SRLF/SFAR, 2008) | 198 |
 | 000042 | `sedation_reanimation` | `0042_migrate_sedation_reanimation.sql` | Sédation et analgésie en réanimation, nouveau-né exclu (Conférence de Consensus SFAR-SRLF, 2007) | 45 |
+| 000043 | `sedation_urgences` | `0043_migrate_sedation_urgences.sql` | Sédation et analgésie en structure d'urgence (SFAR/SFMU, 2010) | 160 |
 
-**Total : 1954 recommandations atomiques, 42 documents, 7 sociétés du seed
+**Total : 2114 recommandations atomiques, 43 documents, 7 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, plus ABM ajoutée au seed lui-même en 0003 — seule
 société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
@@ -772,13 +773,43 @@ non exhaustive, section 14.1).**
   `publication_date`, plus précise que le "2008" de `library_final.json`
   (probablement l'année de publication AFAR). SFAR et SRLF (toutes deux
   dans le seed, co-organisatrices) liées en document_societies.
+- `sedation_urgences` (SFAR/SFMU, RFE 2010, réactualisation de la CE SFAR
+  1999) : **160 recommandations — 3e plus grande migration de ce corpus
+  après securisation_proc/0041 (198) et mal_epileptique/0032 (163)**,
+  réparties en 16 sous-sections (Q1, Q2 1/2 et 2/2, Q3, Q4, Q5a-h [8
+  circonstances particulières], Q6 1/2 et 2/2 [pédiatrie], Surveillance
+  SOAPME). Extraction par script Python (walk programmatique du JSON),
+  contrôlée par inventaire exhaustif et tally avant écriture du SQL final
+  (39×1+ + 8×1- + 45×2+ + 11×2- + 57×AE = 160, cohérent). **Type de
+  document divergent disclosé** : `library_final.json` classe ce document
+  "CE" (Conférence d'experts), mais le contenu construit le décrit
+  lui-même comme une RFE SFAR-SFMU (réactualisation de la CE 1999) —
+  `doc_type = 'RFE'` retenu, conforme à l'auto-description du document
+  2010 lui-même. **Fiabilité de source disclosée** : la page 9 du PDF
+  (Figure 2, Question 4 "Patient intubé-ventilé" en intégralité, phrase
+  d'ouverture de Q5a) est entièrement rastérisée sans texte extractible —
+  contenu migré retranscrit depuis le rendu visuel vérifié à 400dpi par
+  le contenu construit, pas depuis un calque de texte (disclosure
+  conservée pour relecture future). GRADE adaptée à 3 niveaux
+  (disclosure explicite de la source : méthode classique adaptée faute
+  d'études de haut niveau suffisantes) — Niveau 1→1+/1-, Niveau 2→2+/2-,
+  Niveau 3→AE. "Accord faible" signalé par la source pour certaines
+  recommandations, conservé entre parenthèses dans `statement` (jamais un
+  champ `evidence_level` séparé — même convention que hypothermie/0025 et
+  intubation_difficile_adulte/0027). Figure 1 (algorithme traitement
+  antalgique, Q2) et Figure 2 (algorithme intubation, Q3/Q4) — synoptiques
+  restatant du contenu déjà gradué — volontairement pas migrées ; Question
+  7 (prérequis/formation, prose organisationnelle continue sans chip)
+  volontairement pas migrée. 44 recommandations des sous-questions
+  pédiatriques (Q6 1/2, Q6 2/2, SOAPME) taguées `population = 'Pédiatrie'`.
+  SFAR et SFMU (toutes deux dans le seed) liées en document_societies.
 
-## Fiches restantes (17 / 59)
+## Fiches restantes (16 / 59)
 
 Un lot par prochaine session, dans l'ordre de priorité clinique déjà suivi
 par `rfe-sfar-website/CLAUDE.md` (aigu/garde avant routine/administratif) :
 
-sedation_urgences, sepsis,
+sepsis,
 sepsis_hemodynamique, sevrage_vm, tih, tracheotomie, transfusion_plasma,
 traumatisme_abdominal, traumatisme_cranien, traumatisme_cranien_leger,
 traumatisme_membre, traumatisme_pelvien, traumatisme_thoracique,
