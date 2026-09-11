@@ -14,8 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (60 / 60 disponibles — TÂCHE 1 initialement close à 59/59,
-## reprise le 2026-09-11 après ajout de la fiche 60 côté rfe-sfar-website)
+## Fiches migrées (61 / 61 disponibles — TÂCHE 1 initialement close à 59/59,
+## reprise le 2026-09-11 après ajout des fiches 60 puis 61 côté rfe-sfar-website)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -79,12 +79,81 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000058 | `vni` | `0058_migrate_vni.sql` | Ventilation Non Invasive au cours de l'insuffisance respiratoire aiguë, nouveau-né exclu (SFAR/SPLF/SRLF, avec SFMU/SAMU de France/GFRUP/ADARPEF, CC 2006) | 26 |
 | 000059 | `voies_aeriennes_enfant` | `0059_migrate_voies_aeriennes_enfant.sql` | Gestion des voies aériennes de l'enfant (SFAR/ADARPEF, RFE 2018) | 17 |
 | 000060 | `voies_aeriennes_adulte` | `0060_migrate_voies_aeriennes_adulte.sql` | Prise en charge des voies aériennes en anesthésie adulte à l'exception de l'intubation difficile (SFAR, Conférence de Consensus, texte court 2002/publié 2003) | 53 |
+| 000061 | `urgences_transfusionnelles_obstetricales` | `0061_migrate_urgences_transfusionnelles_obstetricales.sql` | Le traitement des urgences transfusionnelles obstétricales (EFS, Conclusions de table ronde 2000-2001, soumis pour avis SFAR/Collège des Obstétriciens/SFTS) | 25 |
 
-**Total : 2683 recommandations atomiques, 60 documents, 8 sociétés du seed
+**Total : 2708 recommandations atomiques, 61 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 61 — `urgences_transfusionnelles_obstetricales` (`0061_migrate_urgences_transfusionnelles_obstetricales.sql`, ajoutée 2026-09-11)
+
+EFS (Établissement Français du Sang), Conclusions de la table ronde du
+26/09/2000 (texte daté 21/12/01-07/06/01, mis en ligne sfar.org 2015),
+soumise pour avis à la SFAR, au Collège des Obstétriciens, aux Directeurs
+d'établissement de l'EFS et à la SFTS. **Aucun système de gradation dans la
+source** (ni GRADE, ni RAND/UCLA, ni vote chiffré, ni échelle ANAES) —
+`grade` et `evidence_level` laissés NULL sur les 25 lignes, aucun grade
+deviné. 25 recommandations atomiques couvrant les 4 chapitres opérationnels
+du corps du texte : I. niveaux d'urgence (3 : UVI/UV/transfusion urgente),
+II. surveillance immuno-hématologique de la grossesse (typage érythrocytaire
++ 4 règles RAI + identification = 6), III. organisation ES/ST/ES+ST (4+4+5 =
+13), IV. évaluation et suivi (3). `population` NULL sur les 25 lignes
+(document mono-population grossesse/péripartum, même convention que
+`preeclampsie`/0038 et `urgences_obstetricales`/0057).
+
+**Incohérence de métadonnées disclosurée** (déjà documentée dans la fiche
+source elle-même) : l'index `library_final.json` de rfe-sfar-website
+intitule cet item « Hémorragies du post-partum immédiat » avec
+`exact_date: "2014"` et `exact_type: "RFE"`, alors que le contenu réel de
+CE MÊME document (correspondance href/pdf-url vérifiée unique) est daté
+2000-2001, n'est pas une RFE gradée mais des conclusions de table ronde en
+prose continue, et la page qui l'héberge affiche un `datePublished` 2015.
+`documents.publication_date` est laissé NULL plutôt que de choisir
+arbitrairement entre ces dates incompatibles ; le détail complet des trois
+dates est conservé dans `grading_system` et dans les commentaires en tête du
+fichier de migration. `freshness_status` mis à `revision_detectee` (même
+convention que `hsa`/0023, `eclsa`/0019, `glycemie`/0022,
+`voies_aeriennes_adulte`/0060).
+
+**Volontairement pas migrés en recommandations distinctes** (disclosure,
+pas un oubli — détail complet dans les commentaires de tête du fichier de
+migration) : le panneau contextuel « Deux types de risque » (cadrage, pas
+une proposition actionnable) ; le Tableau I (arbre décisionnel de la
+procédure d'urgence vitale — protocole opérationnel sans tag de force
+individuel, déjà couvert par R01-R03 et R14-R17, même traitement que les
+algorithmes déjà exclus dans `voies_aeriennes_enfant`/0059,
+`intubation_difficile_adulte`/0027, `intubation_reanimation`/0028,
+`traumatisme_vertebromedullaire`/0056) ; la « Liste des items — procédure
+générale » (15 items, cahier des charges de spécification, pas 15
+propositions cliniques individuellement sourcées — **À VÉRIFIER** : un
+relecteur pourrait juger que ces 15 items méritent d'être migrés comme
+recommandations additionnelles R26-R40 dans une migration de suivi).
+
+**Testé par exécution réelle** contre PostgreSQL 16 local (`schema.sql` +
+`schema_v2.sql` + les 61 migrations 0001-0061 rejouées dans l'ordre sans
+erreur, avec un stub minimal `auth.users`/`auth.uid()` pour satisfaire les
+dépendances de `schema.sql` en dehors de l'environnement Supabase réel ;
+total recommandations en base après coup : 2708, soit exactement 2683 + 25)
+et **idempotence vérifiée par ré-exécution** de
+`0061_migrate_urgences_transfusionnelles_obstetricales.sql` seule (4×
+`INSERT 0 0`, aucune ligne dupliquée, comptes inchangés). `document_societies`
+(SFAR seule) et `document_specialties`
+(`anesthesie_reanimation`/`gynecologie_obstetrique`/`hematologie`) vérifiés
+en base après migration.
+
+**À VÉRIFIER** (voir aussi les commentaires en tête du fichier de migration,
+plus détaillés) :
+1. EFS (auteur principal), Collège des Obstétriciens et SFTS (co-
+   destinataires pour avis) ne figurent pas dans le seed Annexe B — seule la
+   SFAR est liée en `document_societies`, même traitement que `ecbu`/0002.
+2. R08 (surveillance RAI en post-partum) reproduit un point que la source
+   elle-même qualifie d'insuffisamment documenté (« à confirmer par une
+   étude prospective ») — reproduit tel quel, ni renforcé ni affaibli.
+3. La « Liste des items » (15 items, voir ci-dessus) : décision de ne pas la
+   migrer comme recommandations distinctes, à confirmer par un relecteur
+   humain.
 
 ### Fiche 60 — `voies_aeriennes_adulte` (`0060_migrate_voies_aeriennes_adulte.sql`, ajoutée 2026-09-11)
 
