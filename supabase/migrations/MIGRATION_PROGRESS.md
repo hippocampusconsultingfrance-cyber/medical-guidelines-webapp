@@ -14,7 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (59 / 59) — TÂCHE 1 COMPLÈTE
+## Fiches migrées (60 / 60 disponibles — TÂCHE 1 initialement close à 59/59,
+## reprise le 2026-09-11 après ajout de la fiche 60 côté rfe-sfar-website)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -77,12 +78,60 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000057 | `urgences_obstetricales` | `0057_migrate_urgences_obstetricales.sql` | Prise en charge des urgences obstétricales en médecine d'urgence (SFMU/SFAR/CNGOF, RPP 2022) | 15 |
 | 000058 | `vni` | `0058_migrate_vni.sql` | Ventilation Non Invasive au cours de l'insuffisance respiratoire aiguë, nouveau-né exclu (SFAR/SPLF/SRLF, avec SFMU/SAMU de France/GFRUP/ADARPEF, CC 2006) | 26 |
 | 000059 | `voies_aeriennes_enfant` | `0059_migrate_voies_aeriennes_enfant.sql` | Gestion des voies aériennes de l'enfant (SFAR/ADARPEF, RFE 2018) | 17 |
+| 000060 | `voies_aeriennes_adulte` | `0060_migrate_voies_aeriennes_adulte.sql` | Prise en charge des voies aériennes en anesthésie adulte à l'exception de l'intubation difficile (SFAR, Conférence de Consensus, texte court 2002/publié 2003) | 53 |
 
-**Total : 2630 recommandations atomiques, 59 documents, 8 sociétés du seed
+**Total : 2683 recommandations atomiques, 60 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 60 — `voies_aeriennes_adulte` (`0060_migrate_voies_aeriennes_adulte.sql`, ajoutée 2026-09-11)
+
+SFAR, Conférence de Consensus, Recommandations du Jury, texte court, 2002
+(publié Ann Fr Anesth Réanim 2003;22:745-749), label de qualité Anaes. 53
+recommandations atomiques (grade A à E, échelle ANAES à axe unique
+explicitement définie par la source — ni GRADE 1+/2+, ni RAND/UCLA — 2×A,
+1×B, 10×C, 14×D, 26×E, reconciliation exacte via script Python dédié
+contournant un piège de coupure de ligne PDF). `evidence_level` NULL sur
+les 53 lignes (axe unique, pas de second axe Preuve/Force séparé dans cette
+source, à la différence de `asthme_aigu_grave`/0013 ou `civd`/0015).
+`population` NULL sur les 53 lignes (document mono-population adulte,
+pédiatrie explicitement exclue au niveau document). Seule la SFAR liée en
+document_societies ; seule `anesthesie_reanimation` liée en
+document_specialties. `freshness_status` mis à `revision_detectee` (source
+de 2002/2003, le contenu construit disclose lui-même l'évolution des
+pratiques depuis) malgré `library_final.json` "en vigueur" — même pattern
+que `hsa`/0023, `eclsa`/0019, `glycemie`/0022.
+
+**Testé par exécution réelle** contre PostgreSQL 16 local (schema.sql +
+schema_v2.sql + les 60 migrations 0001-0060 rejouées dans l'ordre sans
+erreur ; total recommandations en base après coup : 2683, soit exactement
+2630 + 53) et **idempotence vérifiée par ré-exécution** de
+`0060_migrate_voies_aeriennes_adulte.sql` seule (4× `INSERT 0 0`, aucune
+ligne dupliquée, comptes inchangés).
+
+**À VÉRIFIER** (voir aussi les commentaires en tête du fichier de
+migration lui-même, plus détaillés) :
+1. Deux cellules du contenu construit (Q4.15 lidocaïne/esmolol, Q5.10 LMA/
+   tube laryngé) associaient un énoncé gradé et un aside contextuel NON
+   gradé par la source dans la même cellule — seul l'énoncé gradé est migré
+   (R31, R41), l'aside non gradé n'est pas repris comme ligne séparée.
+2. **Divergence découverte le même jour, documentée dans
+   `rfe-sfar-website/CLAUDE.md` (section "KNOWN DRIFT")** : le site publié
+   (Artifact) contenait déjà, au moment de cette migration, une fiche
+   `voies_aeriennes_adulte` construite indépendamment pour ce même document
+   par une session non tracée dans le git de rfe-sfar-website (même URL
+   source, même tally 53/2A-1B-10C-14D-26E) — cette migration-ci utilise le
+   contenu de CE dépôt (`content_voies_aeriennes_adulte.json`, construit et
+   audité dans la session qui a écrit cette migration), pas celui du site
+   publié. Un relecteur pourrait vouloir comparer les deux versions avant
+   toute publication `active` de ces recommandations. Plus largement, le
+   site publié a 69 clés `FICHE_HREF_MATCH` contre 60 dans ce dépôt au
+   moment de cette migration (9 fiches vivent uniquement sur le site
+   publié, sans aucune trace git ni migration correspondante) — une
+   reconciliation dédiée est nécessaire avant de considérer "60/160" comme
+   le compte réel de fiches disponibles pour la Tâche 1.
 
 ### Points laissés `-- À VÉRIFIER` dans ces 10 migrations (à trancher par un relecteur humain)
 
