@@ -48,42 +48,19 @@ $$;
 alter table public.profiles alter column specialty_id
   set default public.default_specialty_id();
 
-update public.profiles set specialty_id = (select id from public.specialties where slug = 'anesthesie_reanimation')
-  where specialty_id is null;
+-- Pas de backfill générique ici ("where specialty_id is null" -> défaut) :
+-- ça écraserait à tort les profils "Autre" que le résolveur de la section 7
+-- laisse délibérément à NULL (file de revue). Le backfill réel, basé sur
+-- profession_specialty_map plutôt qu'un défaut aveugle, est fait en fin de
+-- section 7 — seul endroit du fichier qui connaît la bonne règle pour
+-- chaque profil.
 
--- handle_new_user() (schema.sql) liste ses colonnes explicitement sans
--- specialty_id : le DEFAULT de colonne ci-dessus s'applique déjà à
--- l'insertion, mais on le recrée pour renseigner la colonne explicitement
--- plutôt que de dépendre implicitement de ce détail si la liste de colonnes
--- du trigger change un jour (ex. si specialty_id devient un jour un champ
--- du formulaire d'inscription plutôt qu'un défaut).
-create or replace function public.handle_new_user()
-returns trigger
-language plpgsql
-security definer
-set search_path = public
-as $$
-begin
-  insert into public.profiles (
-    id, nom, prenom, telephone, profession, profession_autre,
-    consent_service, consent_partners, consent_recorded_at, specialty_id
-  )
-  values (
-    new.id,
-    coalesce(new.raw_user_meta_data ->> 'nom', ''),
-    coalesce(new.raw_user_meta_data ->> 'prenom', ''),
-    coalesce(new.raw_user_meta_data ->> 'telephone', ''),
-    coalesce(new.raw_user_meta_data ->> 'profession', ''),
-    new.raw_user_meta_data ->> 'profession_autre',
-    coalesce((new.raw_user_meta_data ->> 'consent_service')::boolean, true),
-    coalesce((new.raw_user_meta_data ->> 'consent_partners')::boolean, false),
-    now(),
-    (select id from public.specialties where slug = 'anesthesie_reanimation')
-  )
-  on conflict (id) do nothing;
-  return new;
-end;
-$$;
+-- Le DEFAULT de colonne ci-dessus ne couvre que le cas générique (ex. un
+-- insert manuel qui omet specialty_id) : handle_new_user() (schema.sql),
+-- qui gère la vraie création de compte, est mis à jour plus bas (section 7)
+-- pour résoudre specialty_id via la table de correspondance
+-- profession_specialty_map plutôt que ce défaut unique — inutile de le
+-- redéfinir ici pour ensuite le re-remplacer.
 
 -- =========================================================================
 -- 2. Accès au contenu par spécialité (§5.6) — comptes authentifiés
@@ -395,3 +372,181 @@ begin
   return query select true, null::text, pc.discount_type, pc.discount_value, pc.promotion_duration_months;
 end;
 $$;
+
+-- =========================================================================
+-- 7. Correspondance profession (src/lib/professions.ts, V1, texte libre)
+--    <-> specialties (schema_v2.sql, Annexe A) — comble le manque signalé
+--    en tête de fichier (section 1)
+-- =========================================================================
+-- src/lib/professions.ts propose ~55 intitulés à l'inscription, regroupés
+-- par le formulaire (Médecins / Odontologie et pharmacie / Professions
+-- paramédicales / Étudiants / Autre), sans AUCUN lien avec les 51+2
+-- entrées de `specialties` (Annexe A). Table de correspondance explicite
+-- plutôt qu'une résolution devinée à la volée : chaque ligne est un choix
+-- audité un par un ci-dessous, avec ses cas non triviaux commentés (aucune
+-- correspondance n'est laissée implicite).
+create table if not exists public.profession_specialty_map (
+  profession text primary key, -- valeur exacte de src/lib/professions.ts
+  specialty_id uuid not null references public.specialties(id),
+  notes text, -- disclosure : pourquoi ce choix quand la correspondance n'est pas 1:1 évidente
+  created_at timestamptz not null default now()
+);
+
+alter table public.profession_specialty_map enable row level security;
+drop policy if exists profession_specialty_map_select_all on public.profession_specialty_map;
+create policy profession_specialty_map_select_all on public.profession_specialty_map for select using (true);
+drop policy if exists profession_specialty_map_write_admin on public.profession_specialty_map;
+create policy profession_specialty_map_write_admin on public.profession_specialty_map for all
+  using (public.is_admin()) with check (public.is_admin());
+
+-- GAP DE RÉFÉRENTIEL : l'Annexe A du cahier des charges donne un "Autre
+-- (champ libre)" pour la liste PARAMÉDICALE uniquement (déjà seedé,
+-- schema_v2.sql : 'autre_paramedical') — pas pour la liste MÉDICALE.
+-- Plusieurs intitulés médicaux de professions.ts (voir plus bas :
+-- "Médecin biologiste", "Interne en médecine", "Étudiant(e) en médecine")
+-- n'ont pourtant aucune spécialité médicale correspondante dans l'Annexe A.
+-- Ajout, par symétrie avec l'existant plutôt qu'une invention isolée, d'un
+-- "Autre" côté médical — À CONFIRMER avec le porteur de projet, ce n'est
+-- pas dans le texte original de l'Annexe A.
+insert into public.specialties (slug, category, is_other, name_i18n) values
+  ('autre_medicale', 'medicale', true, '{"fr": "Autre (champ libre)"}')
+on conflict (slug) do nothing;
+
+insert into public.profession_specialty_map (profession, specialty_id, notes)
+select v.profession, s.id, v.notes
+from (values
+  -- --- Médecins ---
+  ('Anesthésiste-réanimateur', 'anesthesie_reanimation', null),
+  ('Médecin généraliste', 'medecine_generale_medecine_de_famille', null),
+  ('Médecin urgentiste', 'medecine_d_urgence', null),
+  ('Réanimateur médical', 'medecine_intensive_reanimation', null),
+  ('Chirurgien général', 'chirurgie_digestive_et_viscerale',
+    'Annexe A n''a pas de "chirurgie générale" distincte (DES fusionné avec digestive/viscérale en France) — rapprochement, pas une équivalence exacte.'),
+  ('Chirurgien orthopédiste', 'chirurgie_orthopedique_et_traumatologique', null),
+  ('Chirurgien cardiaque / thoracique', 'chirurgie_cardiaque',
+    'professions.ts fusionne 2 intitulés que l''Annexe A distingue (chirurgie_cardiaque / chirurgie_thoracique) : un seul choix scalaire possible ici, cardiaque retenu arbitrairement — À VÉRIFIER si les deux devraient être proposées séparément côté formulaire.'),
+  ('Chirurgien vasculaire', 'chirurgie_vasculaire', null),
+  ('Chirurgien viscéral / digestif', 'chirurgie_digestive_et_viscerale', null),
+  ('Chirurgien pédiatrique', 'chirurgie_pediatrique', null),
+  ('Chirurgien plastique', 'chirurgie_plastique_reconstructrice_et_esthetique', null),
+  ('Chirurgien ORL', 'orl_et_chirurgie_cervico_faciale', null),
+  ('Chirurgien maxillo-facial', 'chirurgie_maxillo_faciale', null),
+  ('Chirurgien urologue', 'chirurgie_urologique', null),
+  ('Neurochirurgien', 'neurochirurgie', null),
+  ('Gynécologue-obstétricien', 'gynecologie_obstetrique', null),
+  ('Pédiatre', 'pediatrie', null),
+  ('Cardiologue', 'cardiologie', null),
+  ('Pneumologue', 'pneumologie', null),
+  ('Néphrologue', 'nephrologie', null),
+  ('Hépato-gastro-entérologue', 'gastro_enterologie_et_hepatologie', null),
+  ('Endocrinologue', 'endocrinologie_diabetologie_maladies_metaboliques', null),
+  ('Neurologue', 'neurologie', null),
+  ('Hématologue', 'hematologie', null),
+  ('Oncologue', 'oncologie_medicale', null),
+  ('Infectiologue', 'infectiologie_maladies_infectieuses_et_tropicales', null),
+  ('Radiologue', 'radiologie_et_imagerie_medicale', null),
+  ('Médecin biologiste', 'autre_medicale',
+    'Aucune spécialité "biologie médicale" dans l''Annexe A — GAP DE RÉFÉRENTIEL, pas une invention : à ajouter à l''Annexe A si le volume d''inscrits le justifie.'),
+  ('Médecin du travail', 'medecine_du_travail', null),
+  ('Médecin légiste', 'medecine_legale', null),
+  ('Gériatre', 'geriatrie', null),
+  ('Psychiatre', 'psychiatrie', null),
+  ('Interne en médecine', 'autre_medicale',
+    'Intitulé générique sans spécialité déterminée (l''internat couvre toutes les spécialités) — non résolu par la file de revue Autre puisque ce n''est pas l''option "Autre" du formulaire ; classé Autre-médicale ici pour rester honnête plutôt que de deviner une spécialité.'),
+  -- --- Odontologie et pharmacie ---
+  ('Chirurgien-dentiste', 'odontologie_chirurgie_dentaire', null),
+  ('Pharmacien hospitalier', 'pharmacienne', null),
+  ('Pharmacien d''officine', 'pharmacienne', null),
+  ('Préparateur en pharmacie', 'preparateurrice_en_pharmacie', null),
+  -- --- Professions paramédicales ---
+  ('Infirmier(ère) diplômé(e) d''État (IDE)', 'infirmierere_soins_generaux', null),
+  ('Infirmier(ère) anesthésiste (IADE)', 'infirmierere_anesthesiste_iade', null),
+  ('Infirmier(ère) de bloc opératoire (IBODE)', 'infirmierere_de_bloc_operatoire_ibode', null),
+  ('Infirmier(ère) en pratique avancée (IPA)', 'infirmierere_en_pratique_avancee_ipa', null),
+  ('Infirmier(ère) de réanimation', 'infirmierere_soins_generaux',
+    '"IDE de réanimation" n''est pas une spécialité IDE officielle distincte (contrairement à IADE/IBODE/IPA) — rapprochement vers soins généraux, pas une équivalence exacte.'),
+  ('Sage-femme / Maïeuticien', 'sage_femme_maieuticienne', null),
+  ('Aide-soignant(e)', 'aide_soignante', null),
+  ('Auxiliaire de puériculture', 'auxiliaire_de_puericulture', null),
+  ('Kinésithérapeute', 'kinesitherapeute_physiotherapeute', null),
+  ('Ergothérapeute', 'ergotherapeute', null),
+  ('Psychomotricien(ne)', 'psychomotricienne', null),
+  ('Orthophoniste', 'orthophoniste', null),
+  ('Orthoptiste', 'orthoptiste', null),
+  ('Diététicien(ne)', 'dieteticienne_nutritionniste', null),
+  ('Manipulateur(trice) en électroradiologie médicale', 'manipulateurrice_en_electroradiologie_medicale', null),
+  ('Technicien(ne) de laboratoire médical', 'technicienne_de_laboratoire_medical', null),
+  ('Perfusionniste', 'perfusionniste', null),
+  ('Ambulancier(ère)', 'ambulancierere', null),
+  ('Podologue', 'podologue', null),
+  ('Opticien(ne)', 'opticienne', null),
+  ('Audioprothésiste', 'audioprothesiste', null),
+  ('Psychologue', 'autre_paramedical',
+    'GAP DE RÉFÉRENTIEL : "Psychologue" figure dans professions.ts (V1) mais pas dans l''Annexe A du cahier des charges (V2.1/V4) — à ajouter à l''Annexe A si confirmé, pas une invention de spécialité.'),
+  -- --- Étudiants (générique par nature ; rapprochement de filière quand direct) ---
+  ('Étudiant(e) en médecine', 'autre_medicale', 'Aucune spécialité déterminée à ce stade du cursus.'),
+  ('Étudiant(e) en soins infirmiers', 'infirmierere_soins_generaux', null),
+  ('Étudiant(e) sage-femme', 'sage_femme_maieuticienne', null),
+  ('Étudiant(e) en pharmacie', 'pharmacienne', null),
+  ('Étudiant(e) en odontologie', 'odontologie_chirurgie_dentaire', null),
+  ('Étudiant(e) paramédical (autre filière)', 'autre_paramedical', 'Filière non précisée par cet intitulé.')
+) as v(profession, specialty_slug, notes)
+join public.specialties s on s.slug = v.specialty_slug
+on conflict (profession) do update set specialty_id = excluded.specialty_id, notes = excluded.notes;
+-- ('Autre' — dernière option du formulaire — est délibérément ABSENTE de
+-- cette table : c'est un texte libre (profession_autre), donc sans
+-- correspondance déductible. resolve_specialty_id() ci-dessous la laisse
+-- à NULL, pour traitement par la file de revue déjà prévue en schema_v2.sql
+-- ("file de revue du référentiel", profiles_profession_autre_idx) plutôt
+-- que par une spécialité devinée.
+
+-- Résolveur utilisé par handle_new_user() (et réutilisable pour un
+-- back-office de ré-affectation manuelle des cas "Autre"/gaps ci-dessus).
+-- Ne retombe PLUS sur l'ancien défaut inconditionnel anesthesie_reanimation
+-- (section 1) que pour une profession totalement absente des deux listes
+-- ci-dessus ET absente de professions.ts (ne devrait pas arriver en usage
+-- normal ; filet de sécurité seulement, pas une politique délibérée).
+create or replace function public.resolve_specialty_id(p_profession text)
+returns uuid
+language sql
+stable
+as $$
+  select coalesce(
+    (select specialty_id from public.profession_specialty_map where profession = p_profession),
+    case when p_profession = 'Autre' then null else public.default_specialty_id() end
+  );
+$$;
+
+create or replace function public.handle_new_user()
+returns trigger
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  insert into public.profiles (
+    id, nom, prenom, telephone, profession, profession_autre,
+    consent_service, consent_partners, consent_recorded_at, specialty_id
+  )
+  values (
+    new.id,
+    coalesce(new.raw_user_meta_data ->> 'nom', ''),
+    coalesce(new.raw_user_meta_data ->> 'prenom', ''),
+    coalesce(new.raw_user_meta_data ->> 'telephone', ''),
+    coalesce(new.raw_user_meta_data ->> 'profession', ''),
+    new.raw_user_meta_data ->> 'profession_autre',
+    coalesce((new.raw_user_meta_data ->> 'consent_service')::boolean, true),
+    coalesce((new.raw_user_meta_data ->> 'consent_partners')::boolean, false),
+    now(),
+    public.resolve_specialty_id(coalesce(new.raw_user_meta_data ->> 'profession', ''))
+  )
+  on conflict (id) do nothing;
+  return new;
+end;
+$$;
+
+-- Backfill des profils déjà créés (idempotent : ne change que les lignes
+-- dont la spécialité recalculée diffère de l'actuelle).
+update public.profiles p
+set specialty_id = public.resolve_specialty_id(p.profession)
+where p.specialty_id is distinct from public.resolve_specialty_id(p.profession);
