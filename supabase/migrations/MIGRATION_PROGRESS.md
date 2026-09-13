@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (68 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (69 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -90,12 +90,45 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000066 | `traumatisme_cranien_grave_precoce` | `0066_migrate_traumatisme_cranien_grave_precoce.sql` | Traumatisés crâniens graves, phase précoce (SFAR/Anarlf/SFMU/SFNC/GFRUP/Adarpef, RFE 2016) — ⚠️ KNOWN DRIFT | 32 |
 | 000067 | `monitorage_traumatise` | `0067_migrate_monitorage_traumatise.sql` | Monitorage du patient traumatisé grave en préhospitalier (SFAR/Samu de France/SFMU/SRLF, Conférence d'experts 2006) — ⚠️ KNOWN DRIFT | 55 |
 | 000068 | `infarctus_myocarde` | `0068_migrate_infarctus_myocarde.sql` | Infarctus du myocarde à la phase aiguë hors cardiologie (HAS/SAMU de France/SFAR/SRLF, Conférence de consensus 2006) — ⚠️ KNOWN DRIFT, découpage narratif éditorial | 56 |
+| 000069 | `avc_precoce` | `0069_migrate_avc_precoce.sql` | AVC : prise en charge précoce (HAS, RBP mai 2009) — ⚠️ KNOWN DRIFT | 54 |
 
-**Total : 2967 recommandations atomiques, 68 documents, 8 sociétés du seed
+**Total : 3021 recommandations atomiques, 69 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 69 — `avc_precoce` (`0069_migrate_avc_precoce.sql`, ajoutée 2026-09-13, routine planifiée)
+
+AVC : prise en charge précoce (alerte, phase préhospitalière, phase
+hospitalière initiale, indications de la thrombolyse) (HAS, RBP, mai
+2009). **⚠️ PROVENANCE** : KNOWN DRIFT (même disclosure que 0065-0068).
+
+Grades HAS A/B/C + "accord professionnel" (AP, comme `transfusion_
+plasma`/0049), PAS le GRADE 1+/2+ utilisé ailleurs. 54 recommandations sur
+5 sous-sections cliniques (alerte 13, préhospitalier 14, hospitalier
+initial 16, thrombolyse IV 8, thrombolyse IA 3) — répartition en base
+1A/2B/4C/43AP/4 NULL, EXACTEMENT le compte que la fiche construite annonce
+elle-même. Les 4 lignes NULL sont des énoncés explicitement non tagués par
+la source elle-même (scanner à défaut d'IRM, orientation systématique UNV,
+sonothrombolyse, thrombolyse combinée/mécanique) — reproduits tels quels,
+aucun grade inventé. `population` = 'Sujet âgé (> 80 ans)' (R46) et
+'Pédiatrie (< 18 ans)' (R47).
+
+**Volontairement pas migrés** : Annexe 1 (algorithme, chaîne opérationnelle
+à un seul chemin, déjà couverte par les recommandations individuelles) ;
+Annexe 2 (contre-indications ACTILYSE®, extrait littéral du RCP/AMM du
+fabricant — donnée réglementaire pharmaceutique, pas une recommandation
+formulée/gradée par le groupe de travail HAS).
+
+**À VÉRIFIER** : Société française neuro-vasculaire (société savante) et
+DHOS (une administration, pas une société savante) hors seed — seule la
+HAS est liée. `publication_date` = 2009-05-01 (mois+année connus, jour
+non précisé). `freshness_status = 'revision_detectee'` — la source
+elle-même déclare la thrombolyse/thrombectomie "évoluées depuis 2009".
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 3021 (2967 + 54) ; idempotence confirmée.
 
 ### Fiche 68 — `infarctus_myocarde` (`0068_migrate_infarctus_myocarde.sql`, ajoutée 2026-09-13, routine planifiée)
 
