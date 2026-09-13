@@ -14,11 +14,12 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (71 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
-## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
-## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
-## `content_*.json` supplémentaires non encore migrés — voir note de reprise
-## en fin de tableau)
+## Fiches migrées (72 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 COMPLÈTE
+## au 2026-09-13. Initialement close à 59/59, reprise le 2026-09-11 après
+## ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
+## planifiée) après découverte de 11 fichiers `content_*.json`
+## supplémentaires non encore migrés, tous migrés dans cette même session —
+## voir Tâche 2 pour la suite du pipeline de construction de nouvelles fiches)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -93,12 +94,87 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000069 | `avc_precoce` | `0069_migrate_avc_precoce.sql` | AVC : prise en charge précoce (HAS, RBP mai 2009) — ⚠️ KNOWN DRIFT | 54 |
 | 000070 | `recommandations_avk` | `0070_migrate_recommandations_avk.sql` | Surdosages/hémorragies/chirurgie sous AVK (GEHT/HAS, RBP avril 2008) — ⚠️ KNOWN DRIFT | 62 |
 | 000071 | `douleur_postoperatoire` | `0071_migrate_douleur_postoperatoire.sql` | Douleur postopératoire chez l'adulte et l'enfant (SFAR, RFE 2008) — ⚠️ KNOWN DRIFT, réactualisation 2016 SFAR non encore construite | 101 |
+| 000072 | `tih_2002` | `0072_migrate_tih_2002.sql` | Thrombopénie induite par l'héparine (SFAR/GEHT/SFC/SRLF, CE 2002) — ⚠️ KNOWN DRIFT, superseded_by tih/0047 (2019) | 67 |
 
-**Total : 3184 recommandations atomiques, 71 documents, 8 sociétés du seed
+**Total : 3251 recommandations atomiques, 72 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 72 — `tih_2002` (`0072_migrate_tih_2002.sql`, ajoutée 2026-09-13, routine planifiée) — DERNIÈRE FICHE DU LOT, TÂCHE 1 COMPLÈTE
+
+Thrombopénie induite par l'héparine (SFAR/GEHT/SFC/SRLF, Conférence
+d'experts, 2002). **⚠️ PROVENANCE** : KNOWN DRIFT (même disclosure que
+0065-0071).
+
+**Aucun système de grade formel** — la source le dit explicitement
+("les experts ont estimé inutile d'assortir chaque proposition d'un
+grade"). `grade`/`evidence_level` NULL sur les 67 lignes. La colonne
+"Thème" de la source remplace la colonne de grade habituelle
+(`condition_topic`).
+
+**⚠️ Document explicitement superseded** — disclosure la plus forte de ce
+lot, faite par la fiche source elle-même dès son introduction : "une
+fiche plus récente existe... les Propositions du GIHP et du GFHT (2019)
+sont le document de référence ACTUEL". Ce document 2019 est déjà migré
+(`tih`/0047). `freshness_status = 'revision_detectee'` ET
+`superseded_by_document_id` effectivement pointé vers ce document via
+UPDATE post-insertion (vérifié en base : `superseded_by` = "Diagnostic et
+prise en charge d'une thrombopénie induite par l'héparine"). Lépirudine
+(Refludan®) retirée du marché depuis 2012 — posologies reproduites
+fidèlement à titre documentaire uniquement.
+
+Les 7 lignes du tableau comparatif "Traitements de substitution"
+(R22-R28) fusionnent par thème les données des 3 molécules comparées
+(danaparoïde, lépirudine, désirudine) en un seul `statement` chacune.
+
+**À VÉRIFIER** : GEHT hors seed Annexe B — SFAR/SFC/SRLF (dans le seed)
+liées. `population` = 'Femme enceinte' (R48) et 'Pédiatrie' (R49).
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 3251 (3184 + 67) ; `superseded_by_document_id` vérifié pointer
+correctement vers le document 2019 ; idempotence confirmée (INSERT/UPDATE
+0 sur ré-exécution complète, y compris l'UPDATE de supersession).
+
+---
+
+## ✅ TÂCHE 1 COMPLÈTE (2026-09-13) — 72/72 fiches `content_*.json` migrées
+
+Les 11 fichiers découverts non migrés en début de session (routine
+planifiée du 2026-09-13) ont tous été migrés dans cette même session :
+`aap_endoprotheses_coronaires`/0062, `bris_dentaires`/0063,
+`sujet_age_esf`/0064, `examens_preinterventionnels`/0065,
+`traumatisme_cranien_grave_precoce`/0066, `monitorage_traumatise`/0067,
+`infarctus_myocarde`/0068, `avc_precoce`/0069, `recommandations_avk`/0070,
+`douleur_postoperatoire`/0071, `tih_2002`/0072. Total final : 3251
+recommandations atomiques, 72 documents, 62 migrations 0001-0072 rejouées
+sans erreur contre PostgreSQL 16 local à chaque étape.
+
+**9 de ces 11 fiches restent "KNOWN DRIFT"** (0065-0071, hors
+`bris_dentaires`/0063 et `sujet_age_esf`/0064 qui avaient déjà suivi le
+pipeline complet du projet rfe-sfar-website) : leur `content_*.json` a été
+récupéré depuis l'Artifact live sans jamais avoir suivi le pipeline de
+triple-lecture + audit indépendant de ce projet. Chaque migration
+correspondante porte une disclosure explicite en tête de fichier. La
+Tâche 1 (migration structurelle vers le modèle atomique) est terminée
+pour ces 9 fiches, mais une relecture humaine renforcée — voire un audit
+complet contre le PDF source — reste recommandée avant de faire passer
+leurs recommandations en `published`.
+
+**2 nouvelles disclosures trouvées pendant cette session** (non signalées
+par les fiches sources elles-mêmes) : (1) `sujet_age_esf`/0064, R5.4 —
+même incohérence formulation-négative/tag-positif que R3.3/R3.4, non
+disclosée par la fiche source ; (2) `douleur_postoperatoire`/0071 —
+existence d'une réactualisation SFAR 2016 de cette même RFE, non
+mentionnée par la fiche 2008, non encore construite dans le corpus
+rfe-sfar-website (candidat prioritaire pour la Tâche 2).
+
+**Suite (Tâche 2)** : reprendre le pipeline de construction de nouvelles
+fiches côté rfe-sfar-website — diff entre `library_final.json` (160 items)
+et `site/app.js` `FICHE_HREF_MATCH` (72 clés après cette session) pour
+identifier le prochain document prioritaire à construire. Voir
+rfe-sfar-website/CLAUDE.md pour le pipeline complet.
 
 ### Fiche 71 — `douleur_postoperatoire` (`0071_migrate_douleur_postoperatoire.sql`, ajoutée 2026-09-13, routine planifiée)
 
