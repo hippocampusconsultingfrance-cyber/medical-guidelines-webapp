@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (69 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (70 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -91,12 +91,44 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000067 | `monitorage_traumatise` | `0067_migrate_monitorage_traumatise.sql` | Monitorage du patient traumatisé grave en préhospitalier (SFAR/Samu de France/SFMU/SRLF, Conférence d'experts 2006) — ⚠️ KNOWN DRIFT | 55 |
 | 000068 | `infarctus_myocarde` | `0068_migrate_infarctus_myocarde.sql` | Infarctus du myocarde à la phase aiguë hors cardiologie (HAS/SAMU de France/SFAR/SRLF, Conférence de consensus 2006) — ⚠️ KNOWN DRIFT, découpage narratif éditorial | 56 |
 | 000069 | `avc_precoce` | `0069_migrate_avc_precoce.sql` | AVC : prise en charge précoce (HAS, RBP mai 2009) — ⚠️ KNOWN DRIFT | 54 |
+| 000070 | `recommandations_avk` | `0070_migrate_recommandations_avk.sql` | Surdosages/hémorragies/chirurgie sous AVK (GEHT/HAS, RBP avril 2008) — ⚠️ KNOWN DRIFT | 62 |
 
-**Total : 3021 recommandations atomiques, 69 documents, 8 sociétés du seed
+**Total : 3083 recommandations atomiques, 70 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 70 — `recommandations_avk` (`0070_migrate_recommandations_avk.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Surdosages en AVK, situations à risque hémorragique et accidents
+hémorragiques sous AVK (GEHT/HAS, RBP, avril 2008). **⚠️ PROVENANCE** :
+KNOWN DRIFT (même disclosure que 0065-0069).
+
+Grades HAS A/B/C + AP. 62 recommandations sur 5 chapitres (surdosage dont
+7 cellules du Tableau 1, hémorragies, chirurgie/relais 4.1-4.2, modalités/
+indications 4.3-4.4, acte urgent 4.5). Répartition en base 5A/2B/21C/25AP/
+9 NULL — les 5A/2B/21C reconcilient EXACTEMENT les "28 citations (grade X)
+explicites" que la fiche construite annonce elle-même (grep exhaustif).
+
+**Disclosure déjà faite par la source, reproduite** : 2 clauses (R39 ACFA
+haut risque, R55 MTEV risque modéré) cliniquement analogues à des clauses
+gradées C dans la même sous-section n'ont AUCUN tag imprimé — retranscrites
+AP, jamais un C inventé par analogie.
+
+**Volontairement pas migrés** : cellule Tableau 1 "INR<4/cible>=3" (hachurée
+"sans objet" par la source) ; Annexe 1 (grille risque hémorragique
+rhumatologie, classification) ; Annexe 2 (exemple chronologique J-5→J0,
+déjà couvert en substance par R43).
+
+**À VÉRIFIER** : GEHT (promoteur) hors seed Annexe B — seule HAS liée.
+`freshness_status` laissé 'a_jour' (l'avertissement de la source ne
+déclare pas explicitement une péremption de stratégie, contrairement à
+0068/0069 — jugement éditorial documenté, discutable par un relecteur vu
+l'essor des AOD depuis 2008).
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 3083 (3021 + 62) ; idempotence confirmée.
 
 ### Fiche 69 — `avc_precoce` (`0069_migrate_avc_precoce.sql`, ajoutée 2026-09-13, routine planifiée)
 
