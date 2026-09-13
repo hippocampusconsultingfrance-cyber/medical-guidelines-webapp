@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (65 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (66 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -87,12 +87,45 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000063 | `bris_dentaires` | `0063_migrate_bris_dentaires.sql` | Bris dentaires périanesthésiques : texte court (SFAR/Adarpef/SFSCMF, RFE 2012) | 36 |
 | 000064 | `sujet_age_esf` | `0064_migrate_sujet_age_esf.sql` | Anesthésie du sujet âgé : l'exemple de fracture de l'extrémité supérieure du fémur (SFAR/SOFCOT/SFGG/SFPC, RFE 2017) | 26 |
 | 000065 | `examens_preinterventionnels` | `0065_migrate_examens_preinterventionnels.sql` | Examens pré-interventionnels systématiques (SFAR, RFE 2012) — ⚠️ KNOWN DRIFT, non ré-audité contre le PDF source | 38 |
+| 000066 | `traumatisme_cranien_grave_precoce` | `0066_migrate_traumatisme_cranien_grave_precoce.sql` | Traumatisés crâniens graves, phase précoce (SFAR/Anarlf/SFMU/SFNC/GFRUP/Adarpef, RFE 2016) — ⚠️ KNOWN DRIFT | 32 |
 
-**Total : 2824 recommandations atomiques, 65 documents, 8 sociétés du seed
+**Total : 2856 recommandations atomiques, 66 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 66 — `traumatisme_cranien_grave_precoce` (`0066_migrate_traumatisme_cranien_grave_precoce.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Prise en charge des traumatisés crâniens graves à la phase précoce (24
+premières heures) (SFAR/Anarlf/SFMU/SFNC/GFRUP/Adarpef, RFE 2016). **⚠️
+PROVENANCE** : fait partie des 9 fichiers "KNOWN DRIFT" — même disclosure
+que `examens_preinterventionnels`/0065 (récupéré depuis l'Artifact live
+sans fiche_*.py ni fichier source committé).
+
+GRADE 1+/1-/2+/2-/AE. 32 recommandations R1.1-R11.3 sur 11 champs
+cliniques — répartition en base 10 grade1 / 18 grade2 / 4 AE, EXACTEMENT
+le compte que la source revendique elle-même (recompté page 441). Accord
+FORT pour 100% des 32 recommandations (pas de mention "(accord faible)"
+à reproduire, contrairement à `sujet_age_esf`/0064). `population` =
+'Adulte' (R9.1, marqueur explicite) et 'Pédiatrie' (R11.1-R11.3, champ 11
+dédié) ; NULL ailleurs.
+
+**Volontairement pas migré** : le champ 12 "Contrôle ciblé de la
+température" (R12.1-R12.6) — la source elle-même le présente comme une
+"retranscription partielle" de la RFE 2016 SFAR/SRLF dédiée, déjà migrée
+séparément (`controle_temperature`/0016, mêmes énoncés/grades vérifiés
+ligne à ligne par la fiche construite). Non remigré ici pour éviter un
+doublon de contenu sous un code différent.
+
+**À VÉRIFIER** : Anarlf, SFNC, GFRUP, Adarpef hors seed Annexe B ; SFMU
+(dans le seed) EST liée avec SFAR. `publication_date` = 2016-09-21 (date
+de validation CA Sfar citée par la source elle-même) plutôt que le
+2016-09-24 de `library_final.json` (écart mineur, disclosure).
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 2856 (2824 + 32) ; idempotence confirmée ; safety net grade
+composite sans résultat.
 
 ### Fiche 65 — `examens_preinterventionnels` (`0065_migrate_examens_preinterventionnels.sql`, ajoutée 2026-09-13, routine planifiée)
 
