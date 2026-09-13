@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (70 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (71 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -92,12 +92,46 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000068 | `infarctus_myocarde` | `0068_migrate_infarctus_myocarde.sql` | Infarctus du myocarde à la phase aiguë hors cardiologie (HAS/SAMU de France/SFAR/SRLF, Conférence de consensus 2006) — ⚠️ KNOWN DRIFT, découpage narratif éditorial | 56 |
 | 000069 | `avc_precoce` | `0069_migrate_avc_precoce.sql` | AVC : prise en charge précoce (HAS, RBP mai 2009) — ⚠️ KNOWN DRIFT | 54 |
 | 000070 | `recommandations_avk` | `0070_migrate_recommandations_avk.sql` | Surdosages/hémorragies/chirurgie sous AVK (GEHT/HAS, RBP avril 2008) — ⚠️ KNOWN DRIFT | 62 |
+| 000071 | `douleur_postoperatoire` | `0071_migrate_douleur_postoperatoire.sql` | Douleur postopératoire chez l'adulte et l'enfant (SFAR, RFE 2008) — ⚠️ KNOWN DRIFT, réactualisation 2016 SFAR non encore construite | 101 |
 
-**Total : 3083 recommandations atomiques, 70 documents, 8 sociétés du seed
+**Total : 3184 recommandations atomiques, 71 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 71 — `douleur_postoperatoire` (`0071_migrate_douleur_postoperatoire.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Prise en charge de la douleur postopératoire (DPO) chez l'adulte et
+l'enfant (SFAR, RFE 2008). **⚠️ PROVENANCE** : KNOWN DRIFT (même
+disclosure que 0065-0070).
+
+**Particularité méthodologique** : cette source n'imprime AUCUN tag
+individuel — la force est encodée dans le VERBE de chaque phrase ("il est
+recommandé" = Fort, "il est probablement recommandé" = Faible), résolution
+textuelle disclosée par la fiche construite elle-même. La source ne
+numérote aucune recommandation ; le découpage en 101 lignes est thématique
+et ne recoupe PAS le chiffre agrégé "124 recommandations" que la source
+annonce (disclosure explicite, pas une divergence introduite par cette
+migration). Répartition en base : Fort:67 / Faible:27 / NULL:7 (=101).
+`population` = 'Sujet âgé' (3) et 'Pédiatrie' (8).
+
+**⚠️ NOUVELLE DISCLOSURE trouvée par cette migration** (pas mentionnée par
+la fiche source elle-même) : `library_final.json` contient une
+réactualisation SFAR 2016 de CETTE MÊME RFE ("Réactualisation de la
+recommandation sur la douleur postopératoire", 2016-09-01), pas encore
+construite comme fiche dans ce corpus (absente de `FICHE_HREF_MATCH`).
+`freshness_status = 'revision_detectee'` retenu sur ce critère renforcé
+(succession documentée, pas seulement une disclosure générique) — signalé
+comme candidat prioritaire pour la Tâche 2 (prochaine fiche à construire).
+
+**À VÉRIFIER** : R72 (bloc paravertébral sein, "probablement recommandé")
+— divergence source-interne déjà disclosée par la fiche construite
+elle-même vs R61 ("recommandé en priorité" sans "probablement" pour la
+même indication) : les deux formulations reproduites telles quelles.
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 3184 (3083 + 101) ; idempotence confirmée.
 
 ### Fiche 70 — `recommandations_avk` (`0070_migrate_recommandations_avk.sql`, ajoutée 2026-09-13, routine planifiée)
 
