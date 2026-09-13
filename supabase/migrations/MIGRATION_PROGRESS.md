@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (67 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (68 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -89,12 +89,58 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000065 | `examens_preinterventionnels` | `0065_migrate_examens_preinterventionnels.sql` | Examens pré-interventionnels systématiques (SFAR, RFE 2012) — ⚠️ KNOWN DRIFT, non ré-audité contre le PDF source | 38 |
 | 000066 | `traumatisme_cranien_grave_precoce` | `0066_migrate_traumatisme_cranien_grave_precoce.sql` | Traumatisés crâniens graves, phase précoce (SFAR/Anarlf/SFMU/SFNC/GFRUP/Adarpef, RFE 2016) — ⚠️ KNOWN DRIFT | 32 |
 | 000067 | `monitorage_traumatise` | `0067_migrate_monitorage_traumatise.sql` | Monitorage du patient traumatisé grave en préhospitalier (SFAR/Samu de France/SFMU/SRLF, Conférence d'experts 2006) — ⚠️ KNOWN DRIFT | 55 |
+| 000068 | `infarctus_myocarde` | `0068_migrate_infarctus_myocarde.sql` | Infarctus du myocarde à la phase aiguë hors cardiologie (HAS/SAMU de France/SFAR/SRLF, Conférence de consensus 2006) — ⚠️ KNOWN DRIFT, découpage narratif éditorial | 56 |
 
-**Total : 2911 recommandations atomiques, 67 documents, 8 sociétés du seed
+**Total : 2967 recommandations atomiques, 68 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 68 — `infarctus_myocarde` (`0068_migrate_infarctus_myocarde.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Prise en charge de l'infarctus du myocarde à la phase aiguë en dehors des
+services de cardiologie (HAS/SAMU de France/Société francophone de
+médecine d'urgence/Société française de cardiologie, Conférence de
+consensus, 23/11/2006). **⚠️ PROVENANCE** : KNOWN DRIFT (même disclosure
+que 0065-0067).
+
+**⚠️ PARTICULARITÉ DE CE LOT** : contrairement aux autres fiches, ce
+document N'EST PAS structuré en liste numérotée R1/R2 par la source — texte
+de conférence de consensus en prose continue (4 algorithmes décisionnels +
+1 tableau "Traitements adjuvants" + paragraphes narratifs). Les 56
+recommandations ci-dessous sont un DÉCOUPAGE ÉDITORIAL de cette migration
+(chaque énoncé actionnable autonome identifié à la lecture), pas une
+transcription mécanique d'une numérotation source — à vérifier avec un
+soin particulier par un relecteur humain.
+
+Grades HAS A/B/C (PAS le GRADE 1+/2+ utilisé ailleurs dans ce corpus) —
+seules 11 mentions explicites de grade dans tout le texte (3xA, 7xB, 1xC,
+disclosure de la fiche source elle-même) ; `grade` NULL sur la majorité des
+56 lignes (consensus du jury sans grade individuel, reproduit fidèlement).
+Vérifié en base : 3 A, 1 C, 13 B — les 13 B se décomposent en 6 mentions
+individuelles + 1 mention de section ("(grade B)" introduisant le tableau
+tachycardies) appliquée à ses 7 lignes = 6+7=13 lignes pour 7 mentions
+imprimées, cohérent avec le compte "7xB" de la source (11 mentions
+imprimées au total, 17 lignes portent un grade en base : 3+13+1=17).
+`population` renseigné pour Q4 (Sujet âgé, Diabète, Périopératoire).
+
+**Volontairement pas migré** : Algorithme 3 (filières SAMU → effecteur →
+SCDI, chaîne opérationnelle à un seul chemin, pas de branchement
+décisionnel) ; Annexe 1 (échelle de gradation HAS elle-même).
+
+**À VÉRIFIER** : "Société francophone de médecine d'urgence" (promoteur
+nommé par la source) N'EST PAS liée à SFMU du seed (ambiguïté de
+dénomination non résolue par supposition) — seules SFAR, SRLF et HAS
+(partenaire méthodologique explicite) sont liées. `doc_type` = "Conférence
+de consensus" (auto-désignation) vs `library_final.json` "RFE" —
+divergence disclosée. `freshness_status = 'revision_detectee'` — la source
+elle-même déclare les stratégies "évoluées depuis 2006 (P2Y12,
+recommandations ESC ultérieures)".
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 2967 (2911 + 56) ; idempotence confirmée ; safety net grade
+composite sans résultat.
 
 ### Fiche 67 — `monitorage_traumatise` (`0067_migrate_monitorage_traumatise.sql`, ajoutée 2026-09-13, routine planifiée)
 
