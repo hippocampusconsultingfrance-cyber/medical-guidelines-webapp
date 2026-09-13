@@ -402,14 +402,34 @@ create policy profession_specialty_map_write_admin on public.profession_specialt
 -- GAP DE RÉFÉRENTIEL : l'Annexe A du cahier des charges donne un "Autre
 -- (champ libre)" pour la liste PARAMÉDICALE uniquement (déjà seedé,
 -- schema_v2.sql : 'autre_paramedical') — pas pour la liste MÉDICALE.
--- Plusieurs intitulés médicaux de professions.ts (voir plus bas :
--- "Médecin biologiste", "Interne en médecine", "Étudiant(e) en médecine")
--- n'ont pourtant aucune spécialité médicale correspondante dans l'Annexe A.
--- Ajout, par symétrie avec l'existant plutôt qu'une invention isolée, d'un
--- "Autre" côté médical — À CONFIRMER avec le porteur de projet, ce n'est
--- pas dans le texte original de l'Annexe A.
+-- Certains intitulés médicaux de professions.ts (voir plus bas : "Interne
+-- en médecine", "Étudiant(e) en médecine" — génériques par nature, aucune
+-- spécialité déterminée à ce stade) n'ont aucune spécialité médicale
+-- correspondante dans l'Annexe A. Ajout, par symétrie avec l'existant
+-- plutôt qu'une invention isolée, d'un "Autre" côté médical — À CONFIRMER
+-- avec le porteur de projet, ce n'est pas dans le texte original de
+-- l'Annexe A.
 insert into public.specialties (slug, category, is_other, name_i18n) values
   ('autre_medicale', 'medicale', true, '{"fr": "Autre (champ libre)"}')
+on conflict (slug) do nothing;
+
+-- Deux GAP DE RÉFÉRENTIEL signalés au commit précédent ("Médecin
+-- biologiste", "Psychologue" — absents de l'Annexe A) tranchés
+-- explicitement par le porteur de projet le 2026-09-13 : Biologie médicale
+-- et Psychologie deviennent de vraies spécialités de l'Annexe A, pas des
+-- "Autre" génériques. "Biologie médicale" (plutôt que le mot "Biologie"
+-- seul) est le nom réel de la spécialité en France (DES de biologie
+-- médicale) — choix de libellé, pas de périmètre, la décision du porteur
+-- de projet porte sur le fond (créer une spécialité dédiée), pas sur
+-- l'intitulé exact. Catégorie de Psychologie : ni strictement "médicale"
+-- ni "paramédicale" au sens réglementaire (statut à part), mais le modèle
+-- ne connaît que ces deux catégories (contrainte CHECK, schema_v2.sql) et
+-- professions.ts range déjà "Psychologue" sous "Professions paramédicales"
+-- — classée 'paramedicale' par cohérence avec l'existant, à revoir si le
+-- porteur de projet veut un jour un 3e statut de catégorie.
+insert into public.specialties (slug, category, name_i18n) values
+  ('biologie_medicale', 'medicale', '{"fr": "Biologie médicale"}'),
+  ('psychologie', 'paramedicale', '{"fr": "Psychologie"}')
 on conflict (slug) do nothing;
 
 insert into public.profession_specialty_map (profession, specialty_id, notes)
@@ -445,8 +465,8 @@ from (values
   ('Oncologue', 'oncologie_medicale', null),
   ('Infectiologue', 'infectiologie_maladies_infectieuses_et_tropicales', null),
   ('Radiologue', 'radiologie_et_imagerie_medicale', null),
-  ('Médecin biologiste', 'autre_medicale',
-    'Aucune spécialité "biologie médicale" dans l''Annexe A — GAP DE RÉFÉRENTIEL, pas une invention : à ajouter à l''Annexe A si le volume d''inscrits le justifie.'),
+  ('Médecin biologiste', 'biologie_medicale',
+    'Spécialité dédiée créée sur décision explicite du porteur de projet le 2026-09-13 (remplace le classement provisoire "autre_medicale").'),
   ('Médecin du travail', 'medecine_du_travail', null),
   ('Médecin légiste', 'medecine_legale', null),
   ('Gériatre', 'geriatrie', null),
@@ -481,8 +501,8 @@ from (values
   ('Podologue', 'podologue', null),
   ('Opticien(ne)', 'opticienne', null),
   ('Audioprothésiste', 'audioprothesiste', null),
-  ('Psychologue', 'autre_paramedical',
-    'GAP DE RÉFÉRENTIEL : "Psychologue" figure dans professions.ts (V1) mais pas dans l''Annexe A du cahier des charges (V2.1/V4) — à ajouter à l''Annexe A si confirmé, pas une invention de spécialité.'),
+  ('Psychologue', 'psychologie',
+    'Spécialité dédiée créée sur décision explicite du porteur de projet le 2026-09-13 (remplace le classement provisoire "autre_paramedical").'),
   -- --- Étudiants (générique par nature ; rapprochement de filière quand direct) ---
   ('Étudiant(e) en médecine', 'autre_medicale', 'Aucune spécialité déterminée à ce stade du cursus.'),
   ('Étudiant(e) en soins infirmiers', 'infirmierere_soins_generaux', null),
