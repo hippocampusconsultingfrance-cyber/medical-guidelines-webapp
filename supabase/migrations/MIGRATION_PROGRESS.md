@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (63 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (64 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -85,12 +85,42 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000061 | `urgences_transfusionnelles_obstetricales` | `0061_migrate_urgences_transfusionnelles_obstetricales.sql` | Le traitement des urgences transfusionnelles obstétricales (EFS, Conclusions de table ronde 2000-2001, soumis pour avis SFAR/Collège des Obstétriciens/SFTS) | 25 |
 | 000062 | `aap_endoprotheses_coronaires` | `0062_migrate_aap_endoprotheses_coronaires.sql` | Gestion du traitement antiplaquettaire oral chez les patients porteurs d'endoprothèses coronaires (SFAR/AFAR, avis d'experts 2006) | 16 |
 | 000063 | `bris_dentaires` | `0063_migrate_bris_dentaires.sql` | Bris dentaires périanesthésiques : texte court (SFAR/Adarpef/SFSCMF, RFE 2012) | 36 |
+| 000064 | `sujet_age_esf` | `0064_migrate_sujet_age_esf.sql` | Anesthésie du sujet âgé : l'exemple de fracture de l'extrémité supérieure du fémur (SFAR/SOFCOT/SFGG/SFPC, RFE 2017) | 26 |
 
-**Total : 2760 recommandations atomiques, 63 documents, 8 sociétés du seed
+**Total : 2786 recommandations atomiques, 64 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 64 — `sujet_age_esf` (`0064_migrate_sujet_age_esf.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Anesthésie du sujet âgé : l'exemple de FESF (SFAR/SOFCOT/SFGG/SFPC, RFE
+2017). GRADE® (force 1+/1-/2+/2-/AE + accord Delphi, fort par défaut, faible
+pour R1.4/R5.1 seulement, cité inline). 26 recommandations R1.1-R8.2.
+`evidence_level` NULL (pas de niveau de preuve distinct du tag de force,
+même convention que `sepsis`/0044).
+
+**NOUVELLE DISCLOSURE trouvée par cette migration** (pas signalée par la
+fiche source rfe-sfar-website elle-même) : R5.4 présente la même
+incohérence que R3.3/R3.4 déjà disclosée par la fiche (formulation négative
+"il ne faut probablement pas…" mais imprimée "GRADE 2+ (ACCORD FORT)") —
+vérifiée directement contre `rfe-sfar-website/sources/anesthesie_sujet_age.txt`
+ligne 846 (texte source brut, pas une erreur d'extraction du pipeline).
+Tag imprimé "2+" conservé tel quel (ni corrigé ni deviné). À reporter dans
+la disclosure méthodologique de la fiche rfe-sfar-website elle-même — hors
+périmètre de ce script SQL.
+
+**À VÉRIFIER** : SOFCOT, SFGG, SFPC hors seed Annexe B — seule la SFAR
+liée en `document_societies`. Tableau I (délai d'intervention, données
+épidémiologiques par référence bibliographique) volontairement pas migré
+en recommandation distincte (contexte appuyant R12/R4.1, pas une
+proposition).
+
+**Testé par exécution réelle** : total recommandations en base après coup :
+2786 (2760 + 26), répartition grade 1+:7 / 1-:1 / 2+:12 / 2-:2 / AE:4
+(= 26) vérifiée en base ; idempotence confirmée ; safety net grade composite
+(`grep -n '"[12][+-]/[12][+-]'`) sans résultat.
 
 ### Fiche 63 — `bris_dentaires` (`0063_migrate_bris_dentaires.sql`, ajoutée 2026-09-13, routine planifiée)
 
