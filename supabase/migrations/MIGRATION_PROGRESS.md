@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (64 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (65 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -86,12 +86,48 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000062 | `aap_endoprotheses_coronaires` | `0062_migrate_aap_endoprotheses_coronaires.sql` | Gestion du traitement antiplaquettaire oral chez les patients porteurs d'endoprothèses coronaires (SFAR/AFAR, avis d'experts 2006) | 16 |
 | 000063 | `bris_dentaires` | `0063_migrate_bris_dentaires.sql` | Bris dentaires périanesthésiques : texte court (SFAR/Adarpef/SFSCMF, RFE 2012) | 36 |
 | 000064 | `sujet_age_esf` | `0064_migrate_sujet_age_esf.sql` | Anesthésie du sujet âgé : l'exemple de fracture de l'extrémité supérieure du fémur (SFAR/SOFCOT/SFGG/SFPC, RFE 2017) | 26 |
+| 000065 | `examens_preinterventionnels` | `0065_migrate_examens_preinterventionnels.sql` | Examens pré-interventionnels systématiques (SFAR, RFE 2012) — ⚠️ KNOWN DRIFT, non ré-audité contre le PDF source | 38 |
 
-**Total : 2786 recommandations atomiques, 64 documents, 8 sociétés du seed
+**Total : 2824 recommandations atomiques, 65 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 65 — `examens_preinterventionnels` (`0065_migrate_examens_preinterventionnels.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Examens pré-interventionnels systématiques (SFAR, RFE 2012). **⚠️
+PROVENANCE** : `content_examens_preinterventionnels.json` fait partie des 9
+fichiers "KNOWN DRIFT" du CLAUDE.md rfe-sfar-website — récupéré depuis
+l'Artifact live sans `fiche_*.py` ni fichier source committé, PAS
+re-audité contre le PDF source. Détail complet en tête du fichier de
+migration ; à traiter avec une attention de relecture supérieure aux
+fiches git-natives auditées (`bris_dentaires`/0063, `sujet_age_esf`/0064).
+
+GRADE 1+/1-/2+/2-. 38 recommandations regroupées sous 9 références "R1"-
+"R9" par thème d'examen (cardio, respiratoire, hémostase, hémogramme,
+immunohématologie, biochimie, femme enceinte, test de grossesse, dépistage
+infectieux) — chaque référence couvre plusieurs propositions
+individuellement graduées. Répartition en base 1+:14/1-:14/2+:9/2-:1,
+EXACTEMENT le compte que la fiche source annonce elle-même. `evidence_level`
+NULL (pas de niveau distinct du tag de force).
+
+**Volontairement pas migrés** : Tableau 1 (grille ECBU/BU par type de
+chirurgie x risque, déjà couvert par R35-R38), Tableau 2 (synthèse ASA x
+risque, résumé de haut niveau) et Annexe A (stratification risque cardiaque
+ACC/AHA, classification citée en soutien de R01-R06) — tableaux de
+synthèse/classification, pas des propositions votées séparément.
+
+**À VÉRIFIER** : CNGOF et SFC figurent dans le seed Annexe B et SONT liées
+en `document_societies` avec SFAR (contrairement au traitement "SFAR seule"
+des autres fiches de ce lot) ; 12 autres sociétés validatrices (AFC, AFU,
+EFS, SCGP, SFCD, GEHT, SF2H, SOFOP, SFORL, SFR-FRI, SFSCMF, SPLF) restent
+hors seed, non liées. `publication_date` = 2012-01-01 par convention (année
+seule connue, même traitement que `allergie_prevention`/0006).
+
+**Testé par exécution réelle** : total recommandations en base après coup :
+2824 (2786 + 38) ; idempotence confirmée ; safety net grade composite sans
+résultat.
 
 ### Fiche 64 — `sujet_age_esf` (`0064_migrate_sujet_age_esf.sql`, ajoutée 2026-09-13, routine planifiée)
 
