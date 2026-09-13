@@ -14,8 +14,11 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (61 / 61 disponibles — TÂCHE 1 initialement close à 59/59,
-## reprise le 2026-09-11 après ajout des fiches 60 puis 61 côté rfe-sfar-website)
+## Fiches migrées (63 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
+## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
+## `content_*.json` supplémentaires non encore migrés — voir note de reprise
+## en fin de tableau)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -80,12 +83,85 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000059 | `voies_aeriennes_enfant` | `0059_migrate_voies_aeriennes_enfant.sql` | Gestion des voies aériennes de l'enfant (SFAR/ADARPEF, RFE 2018) | 17 |
 | 000060 | `voies_aeriennes_adulte` | `0060_migrate_voies_aeriennes_adulte.sql` | Prise en charge des voies aériennes en anesthésie adulte à l'exception de l'intubation difficile (SFAR, Conférence de Consensus, texte court 2002/publié 2003) | 53 |
 | 000061 | `urgences_transfusionnelles_obstetricales` | `0061_migrate_urgences_transfusionnelles_obstetricales.sql` | Le traitement des urgences transfusionnelles obstétricales (EFS, Conclusions de table ronde 2000-2001, soumis pour avis SFAR/Collège des Obstétriciens/SFTS) | 25 |
+| 000062 | `aap_endoprotheses_coronaires` | `0062_migrate_aap_endoprotheses_coronaires.sql` | Gestion du traitement antiplaquettaire oral chez les patients porteurs d'endoprothèses coronaires (SFAR/AFAR, avis d'experts 2006) | 16 |
+| 000063 | `bris_dentaires` | `0063_migrate_bris_dentaires.sql` | Bris dentaires périanesthésiques : texte court (SFAR/Adarpef/SFSCMF, RFE 2012) | 36 |
 
-**Total : 2708 recommandations atomiques, 61 documents, 8 sociétés du seed
+**Total : 2760 recommandations atomiques, 63 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 63 — `bris_dentaires` (`0063_migrate_bris_dentaires.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Bris dentaires périanesthésiques : texte court (RFE commune SFAR/Adarpef/
+SFSCMF, 2012). **Aucun GRADE** — mention de force unique et globale
+imprimée par la source ("toutes les propositions ont reçu un accord fort") :
+`grade = 'Fort'` uniforme sur les 36 lignes, pas une distinction inventée.
+36 recommandations : 31 propositions numérotées (R01-R31, `population` NULL)
++ 5 encarts "Proposition enfant" non numérotés par la source, intercalés
+dans le corps du texte (R32-R36, `population = 'Pédiatrie'` — marqueur
+explicite "chez l'enfant" dans chaque encart). Numérotation R32-R36 : pure
+convention de ce script pour l'unicité de `recommendation_code`, la source
+ne les numérote pas. Contrairement à plusieurs autres fichiers de ce lot,
+cette fiche a déjà suivi le pipeline complet du projet rfe-sfar-website
+(git-native, triple-lecture + audit indépendant déjà faits — voir son
+CLAUDE.md) : aucune réserve de provenance à signaler ici.
+
+**À VÉRIFIER** : ADARPEF et SFSCMF (co-auteurs de la RFE, même titre que la
+SFAR) ne figurent pas dans le seed Annexe B — seule la SFAR est liée en
+`document_societies`, même traitement que `ecbu`/0002 et
+`aap_endoprotheses_coronaires`/0062.
+
+**Testé par exécution réelle** : total recommandations en base après coup :
+2760, soit exactement 2724 + 36 (63 migrations 0001-0063 rejouées dans
+l'ordre sans erreur) ; idempotence vérifiée par ré-exécution isolée du
+fichier (4x `INSERT 0 0`) ; 5 lignes `population = 'Pédiatrie'` confirmées
+en base.
+
+### Fiche 62 — `aap_endoprotheses_coronaires` (`0062_migrate_aap_endoprotheses_coronaires.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Gestion du traitement antiplaquettaire oral (AAP) chez les patients porteurs
+d'endoprothèses coronaires (SFAR/AFAR, avis d'un groupe d'experts, 31 mars
+2006, Ann Fr Anesth Reanim 2006;25:796-798). **Aucun système de gradation**
+(ni GRADE, ni vote/pourcentage d'accord) — `grade`/`evidence_level` NULL sur
+les 16 lignes. 16 recommandations atomiques : 9 lignes du tableau thématique
+du corps du texte (le document source condense lui-même ses 10 propositions
+initiales en ces 9 lignes) + 6 cellules du Tableau 1 (matrice de décision
+risque-thrombose x risque-hémorragique) + 1 consigne transversale
+s'appliquant dans tous les cas ("reporter au-delà de 6 semaines d'un SCA").
+`population` NULL sur les 16 lignes (population unique, déjà dans le titre).
+
+**Fraîcheur** : `revision_detectee` — la fiche source elle-même (intro ET
+avertissement final) déclare explicitement ce document "antérieur aux
+propositions GIHP/GFHT/SFAR 2018" (déjà migrées : `aap_urgence`/0004,
+`aap_programmee`/0005) et recommande de s'y référer pour la gestion générale
+des AAP ; ce document-ci reste néanmoins la seule source du corpus dédiée à
+la matrice de décision spécifique "stent coronaire", d'où sa migration
+séparée sans fusion ni dépréciation automatique.
+
+**Divergence de classification disclosurée** : `library_final.json` classe
+ce document `exact_type: "RFE"` ; la source se désigne elle-même comme une
+"Information professionnelle", sans la structure méthodologique (vote,
+cotation) d'une RFE. `doc_type` reprend l'auto-désignation de la source ;
+la classification de l'index est reproduite en commentaire pour traçabilité,
+non silencieusement écartée.
+
+**Volontairement pas migrés en recommandations distinctes** : le panneau
+"Champ" (cadrage, pas une proposition) ; les 3 notes de définition du
+Tableau 1 (nécessaires à l'interprétation de R10-R15, pas des propositions
+indépendantes) ; la section "Sources et traçabilité" (métadonnées
+bibliographiques).
+
+**Testé par exécution réelle** contre PostgreSQL 16 local (`schema.sql` +
+`schema_v2.sql` + les 62 migrations 0001-0062 rejouées dans l'ordre sans
+erreur, stub `auth.users`/`auth.uid()` comme pour les migrations
+précédentes ; total recommandations en base après coup : 2724, soit
+exactement 2708 + 16). `document_societies` (SFAR seule — société
+publicatrice du journal AFAR/relais sfar.org, cohérent avec le traitement
+"SFAR comme société hébergeuse" déjà appliqué à `ecbu`/0002 pour une source
+non-SFAR) et `document_specialties`
+(`anesthesie_reanimation`/`cardiologie`) vérifiés en base après migration.
 
 ### Fiche 61 — `urgences_transfusionnelles_obstetricales` (`0061_migrate_urgences_transfusionnelles_obstetricales.sql`, ajoutée 2026-09-11)
 
