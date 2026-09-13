@@ -14,7 +14,7 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (66 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
+## Fiches migrées (67 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 initialement close à 59/59,
 ## reprise le 2026-09-11 après ajout des fiches 60 puis 61, reprise à nouveau
 ## le 2026-09-13 (routine planifiée) après découverte de 11 fichiers
 ## `content_*.json` supplémentaires non encore migrés — voir note de reprise
@@ -88,12 +88,38 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000064 | `sujet_age_esf` | `0064_migrate_sujet_age_esf.sql` | Anesthésie du sujet âgé : l'exemple de fracture de l'extrémité supérieure du fémur (SFAR/SOFCOT/SFGG/SFPC, RFE 2017) | 26 |
 | 000065 | `examens_preinterventionnels` | `0065_migrate_examens_preinterventionnels.sql` | Examens pré-interventionnels systématiques (SFAR, RFE 2012) — ⚠️ KNOWN DRIFT, non ré-audité contre le PDF source | 38 |
 | 000066 | `traumatisme_cranien_grave_precoce` | `0066_migrate_traumatisme_cranien_grave_precoce.sql` | Traumatisés crâniens graves, phase précoce (SFAR/Anarlf/SFMU/SFNC/GFRUP/Adarpef, RFE 2016) — ⚠️ KNOWN DRIFT | 32 |
+| 000067 | `monitorage_traumatise` | `0067_migrate_monitorage_traumatise.sql` | Monitorage du patient traumatisé grave en préhospitalier (SFAR/Samu de France/SFMU/SRLF, Conférence d'experts 2006) — ⚠️ KNOWN DRIFT | 55 |
 
-**Total : 2856 recommandations atomiques, 66 documents, 8 sociétés du seed
+**Total : 2911 recommandations atomiques, 67 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
+
+### Fiche 67 — `monitorage_traumatise` (`0067_migrate_monitorage_traumatise.sql`, ajoutée 2026-09-13, routine planifiée)
+
+Monitorage du patient traumatisé grave en préhospitalier (SFAR/Samu de
+France/SFMU/SRLF, Conférence d'experts, texte court, 2006). **⚠️
+PROVENANCE** : KNOWN DRIFT, même disclosure que 0065/0066.
+
+PAS de GRADE — force A-E (A = >= 2 études niveau I ... E = niveau IV/V,
+avis d'experts), `evidence_level` NULL (même convention que `hsa`/0023).
+55 recommandations sur 8 questions — exactement le compte que la fiche
+construite annonce ("55 recommandations... sur 75 lettres de grade
+imprimées au total", le reste étant du contexte non promu en ligne).
+Répartition en base A:3/B:4/C:2/D:22/E:24 (=55). `population` = 'Femme
+enceinte' (3 lignes RCF) et 'Pédiatrie' (4 lignes "— enfant"), NULL
+ailleurs.
+
+**À VÉRIFIER** : Samu de France hors seed Annexe B ; SFMU et SRLF (dans le
+seed) SONT liées avec SFAR. `doc_type` = "Conférence d'experts" (auto-
+désignation de la source) vs `library_final.json` "RFE" — divergence
+disclosée. `publication_date` = 2006-01-01 (année seule connue).
+`freshness_status = 'revision_detectee'` — disclosure explicite de la
+source elle-même ("les pratiques ... ont pu évoluer depuis").
+
+**Testé par exécution réelle** : total recommandations en base après
+coup : 2911 (2856 + 55) ; idempotence confirmée.
 
 ### Fiche 66 — `traumatisme_cranien_grave_precoce` (`0066_migrate_traumatisme_cranien_grave_precoce.sql`, ajoutée 2026-09-13, routine planifiée)
 
