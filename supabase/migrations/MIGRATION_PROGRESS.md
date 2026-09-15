@@ -14,11 +14,15 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (72 / 72 disponibles côté rfe-sfar-website — TÂCHE 1 COMPLÈTE
-## au 2026-09-13. Initialement close à 59/59, reprise le 2026-09-11 après
+## Fiches migrées (76 / 76 disponibles côté rfe-sfar-website — TÂCHE 1 COMPLÈTE
+## au 2026-09-15. Initialement close à 59/59, reprise le 2026-09-11 après
 ## ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
-## supplémentaires non encore migrés, tous migrés dans cette même session —
+## supplémentaires non encore migrés (close à 72/72), reprise une troisième
+## fois le 2026-09-15 (routine planifiée) après découverte de 4 fichiers
+## `content_*.json` supplémentaires ajoutés côté rfe-sfar-website entre-temps
+## (`amygdalectomie_enfant`, `douleur_reactualisation_2016`, `ponction_lombaire`,
+## `protection_oculaire`), tous les quatre migrés dans cette même session —
 ## voir Tâche 2 pour la suite du pipeline de construction de nouvelles fiches)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
@@ -93,16 +97,88 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000068 | `infarctus_myocarde` | `0068_migrate_infarctus_myocarde.sql` | Infarctus du myocarde à la phase aiguë hors cardiologie (HAS/SAMU de France/SFAR/SRLF, Conférence de consensus 2006) — ⚠️ KNOWN DRIFT, découpage narratif éditorial | 56 |
 | 000069 | `avc_precoce` | `0069_migrate_avc_precoce.sql` | AVC : prise en charge précoce (HAS, RBP mai 2009) — ⚠️ KNOWN DRIFT | 54 |
 | 000070 | `recommandations_avk` | `0070_migrate_recommandations_avk.sql` | Surdosages/hémorragies/chirurgie sous AVK (GEHT/HAS, RBP avril 2008) — ⚠️ KNOWN DRIFT | 62 |
-| 000071 | `douleur_postoperatoire` | `0071_migrate_douleur_postoperatoire.sql` | Douleur postopératoire chez l'adulte et l'enfant (SFAR, RFE 2008) — ⚠️ KNOWN DRIFT, réactualisation 2016 SFAR non encore construite | 101 |
+| 000071 | `douleur_postoperatoire` | `0071_migrate_douleur_postoperatoire.sql` | Douleur postopératoire chez l'adulte et l'enfant (SFAR, RFE 2008) — ⚠️ KNOWN DRIFT, réactualisation 2016 SFAR migrée séparément, voir 0074 (ne la remplace pas) | 101 |
 | 000072 | `tih_2002` | `0072_migrate_tih_2002.sql` | Thrombopénie induite par l'héparine (SFAR/GEHT/SFC/SRLF, CE 2002) — ⚠️ KNOWN DRIFT, superseded_by tih/0047 (2019) | 67 |
+| 000073 | `amygdalectomie_enfant` | `0073_migrate_amygdalectomie_enfant.sql` | Anesthésie pour amygdalectomie chez l'enfant (SFAR/Adarpef/Carorl, CE 2005) | 72 |
+| 000074 | `douleur_reactualisation_2016` | `0074_migrate_douleur_reactualisation_2016.sql` | Réactualisation de la recommandation sur la douleur postopératoire (SFAR/ANREA, RFE 2016) — complète (n'abroge pas) douleur_postoperatoire/0071 | 17 |
+| 000075 | `ponction_lombaire` | `0075_migrate_ponction_lombaire.sql` | Prévention et prise en charge des effets indésirables après ponction lombaire (HAS, fiche mémo 2019) — aucun système de grade | 72 |
+| 000076 | `protection_oculaire` | `0076_migrate_protection_oculaire.sql` | Protection oculaire en Anesthésie et Réanimation (SFAR/SRLF, RFE 2016) — ⚠️ KNOWN DRIFT | 12 |
 
-**Total : 3251 recommandations atomiques, 72 documents, 8 sociétés du seed
+**Total : 3424 recommandations atomiques, 76 documents, 8 sociétés du seed
 Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
 SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
 seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
 non exhaustive, section 14.1).**
 
-### Fiche 72 — `tih_2002` (`0072_migrate_tih_2002.sql`, ajoutée 2026-09-13, routine planifiée) — DERNIÈRE FICHE DU LOT, TÂCHE 1 COMPLÈTE
+### Lot du 2026-09-15 (routine planifiée) — fiches 73-76, TÂCHE 1 COMPLÈTE (76/76)
+
+Découverte au démarrage de cette session que `rfe-sfar-website` avait avancé
+à 76 fiches `content_*.json` construites (branche `claude/loving-ritchie-v2c5i7`)
+alors que la migration Tâche 1 s'était arrêtée à 72/72 lors de la session
+précédente (close le 2026-09-13) — 4 fiches ajoutées entre-temps restaient
+non migrées : `amygdalectomie_enfant`, `douleur_reactualisation_2016`,
+`ponction_lombaire`, `protection_oculaire`. Les 4 migrations ont été
+produites en parallèle (un sous-agent par fiche, chacun avec sa propre base
+de test PostgreSQL isolée), puis validées ensemble par un rejeu cumulatif
+des 76 migrations dans l'ordre sur une base fraîche (`schema.sql` +
+`schema_v2.sql` + `0001`..`0076`) : 76 documents / 3424 recommandations
+insérés en une passe, 0 ligne insérée en seconde passe (idempotence globale
+confirmée), aucune violation du format `recommendation_code`, aucun grade
+composite détecté.
+
+- **`amygdalectomie_enfant`/0073** (72 recos) : Conférence d'experts SFAR/
+  Adarpef/Carorl 2005. Deux systèmes de cotation combinés sans jamais être
+  fusionnés sur une même ligne (Grade A/B/C selon la littérature ; Accord
+  fort/faible RAND/UCLA modifié en l'absence de preuve suffisante) — 48
+  Accord fort, 3 Grade A, 6 Grade B, 14 Grade C, 1 Accord faible. Vérifié :
+  aucune proposition ne porte un grade D/E (présents seulement dans la
+  légende méthodologique). **À VÉRIFIER** : Adarpef et Carorl, co-organisateurs
+  à égalité avec la SFAR, absents du seed Annexe B — seule la SFAR est liée
+  en `document_societies`.
+- **`douleur_reactualisation_2016`/0074** (17 recos) : SFAR/ANREA, RFE 2016.
+  Complète explicitement (n'abroge pas) la RFE SFAR 2008 déjà migrée en
+  0071 — aucune relation `superseded_by`/`freshness_status` posée entre les
+  deux documents (vérifié en base après migration : 0071 inchangé). Numérotation
+  source R1.1-R1.5/R3.1-R3.9/R4.1-R4.3 reproduite telle quelle, y compris
+  l'absence de tout R2.x (disclosure de la source elle-même : la question du
+  monitorage de l'analgésie n'a abouti à aucune recommandation formalisée).
+  **Divergence source-interne disclosée** (non résolue) : l'intro annonce
+  "11 fortes/3 faibles/3 avis d'experts" (11+3+3=17) mais le recompte tag par
+  tag des 17 recommandations donne 10 fortes/4 faibles/3 avis d'experts
+  (10+4+3=17 également, mais 10 et non 11 fortes) — les 17 tags individuels
+  font foi. **À VÉRIFIER** : ANREA absent du seed Annexe B (seule la SFAR est
+  liée) ; trois dates de validation/publication distinctes selon la source
+  consultée (retenue : mise en ligne du 31/10/2016, les deux autres restant
+  documentées dans le fichier de migration).
+- **`ponction_lombaire`/0075** (72 recos) : fiche mémo HAS, juin 2019 —
+  premier document du corpus sans aucun système de grade ni de cotation
+  d'accord (synthèse narrative de littérature, disclosure explicite de la
+  source elle-même) ; `grade`/`evidence_level` NULL sur les 72 lignes,
+  confirmé par requête. 11 lignes pédiatriques dédiées (`population` =
+  'Pédiatrie', R62-R72). HAS est dans le seed Annexe B, aucune société
+  manquante à disclosed.
+- **`protection_oculaire`/0076** (12 recos) : ⚠️ **PROVENANCE — KNOWN DRIFT**
+  (même disclosure que 0065/0072 et consorts) — contenu récupéré depuis
+  l'Artifact publié en ligne, aucun `fiche_*.py` ni PDF source jamais committé
+  côté rfe-sfar-website, jamais audité contre le PDF original ; publication
+  du contenu still pending décision du porteur de projet côté rfe-sfar-website
+  (voir la PR ouverte de ce dépôt). Migré en `draft` comme toute fiche de ce
+  lot — la relecture humaine reste entièrement à faire, avec une vigilance
+  accrue sur cette fiche en particulier. **À VÉRIFIER** (plusieurs, disclosure
+  volontairement renforcée compte tenu de la provenance) : incohérence
+  interne sur le décompte ("10 recommandations" annoncé par la méthodologie
+  source vs. 12 réellement dénombrées, les 12 faisant foi) ; le tag Delphi
+  "Accord FORT" n'est imprimé individuellement que sur 3 des 12 items gradés
+  GRADE mais affirmé globalement par un paragraphe de synthèse (non modélisé,
+  schéma sans colonne dédiée) ; 6 des 9 lignes tagguées AE emploient une
+  formulation ("il est probablement recommandé") que la méthodologie de la
+  source associe habituellement à GRADE 2+ — non résolu, le tag AE imprimé
+  est conservé tel quel ; SFO absent du seed Annexe B (seules SFAR et SRLF
+  liées) ; aucune URL source n'était citée dans le contenu récupéré lui-même,
+  celle utilisée provient de `library_final.json` (cohérente par titre/sujet/
+  année, non re-vérifiée contre le PDF).
+
+### Fiche 72 — `tih_2002` (`0072_migrate_tih_2002.sql`, ajoutée 2026-09-13, routine planifiée) — dernière fiche du lot du 2026-09-13 (Tâche 1 rouverte le 2026-09-15, voir le lot 73-76 ci-dessus pour la clôture réelle à 76/76)
 
 Thrombopénie induite par l'héparine (SFAR/GEHT/SFC/SRLF, Conférence
 d'experts, 2002). **⚠️ PROVENANCE** : KNOWN DRIFT (même disclosure que
