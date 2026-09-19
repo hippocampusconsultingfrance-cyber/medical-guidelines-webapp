@@ -14,8 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (79 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
-## EN COURS, 20 restantes. Initialement close à 59/59, reprise le 2026-09-11
+## Fiches migrées (81 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
+## EN COURS, 18 restantes. Initialement close à 59/59, reprise le 2026-09-11
 ## après ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
 ## supplémentaires non encore migrés (close à 72/72), reprise une troisième
@@ -123,7 +123,7 @@ grade composite (`grep -n '"[12][+-]/[12][+-]'`) sans résultat sur les 3
 nouveaux fichiers.
 
 ### Lot du 2026-09-19 (routine planifiée) — découverte de branches divergentes
-### côté rfe-sfar-website + fiches 77-79 (79/99, 20 restantes)
+### côté rfe-sfar-website + fiches 77-81 (81/99, 18 restantes)
 
 **Découverte critique en tout début de session, avant toute migration** :
 la routine planifiée de ce jour a reçu pour instruction de développer sur
@@ -189,10 +189,26 @@ Cette découverte porte le périmètre de la Tâche 1 de 76/76 (faux complet) à
   vérifiable). **À VÉRIFIER** : SF2H (co-autrice à parité), AFC et CERES
   (validateurs), absents du seed Annexe B.
 
-**Reste à migrer (20 fiches, Tâche 1 toujours prioritaire à la prochaine
-session)** : `alr_non_specialiste`, `alr_pediatrie`, `alr_perinerveuse`,
+- **`alr_perinerveuse`/0080** (12 recos) : RFE SFAR 2016 (ALR-PN), met à
+  jour sans remplacer la RPC-ALR 2003. **Incohérence interne source
+  disclosed** : paragraphe méthodologique contient un texte non finalisé
+  ("XX recommandations", répartition annoncée 4/5/5=14) incompatible avec
+  le compte direct de 12 (R1.1-R5.2) — 12 retenu.
+- **`eeg_cortical`/0081** (2 recos seulement) : RFE texte court SFAR
+  2009/2010, format Question/Réponse **sans grille de cotation** (source
+  elle-même : Module A "non conçu comme des recommandations"). Décision
+  disclosed de ne migrer QUE les 2 énoncés directement actionnables de la
+  question 6 (pédiatrie, `grade` NULL) — tout le reste du contenu (Modules
+  A et B questions 2-5, figure dose-réponse des halogénés) est explicatif/
+  descriptif, sans énoncé "il faut faire X" gradable, et reste dans la
+  fiche HTML sans contrepartie atomique en base. **À VÉRIFIER** :
+  divergence de date entre le contenu construit ("2009, publié 2010") et
+  `library_final.json` (`exact_date` = "2011" seule) — 2010-01-01 retenu.
+
+**Reste à migrer (18 fiches, Tâche 1 toujours prioritaire à la prochaine
+session)** : `alr_non_specialiste`, `alr_pediatrie`,
 `aod_urgence`, `brule_grave`, `candidoses_aspergilloses`,
-`catheters_veineux_centraux`, `coronarien`, `eeg_cortical`,
+`catheters_veineux_centraux`, `coronarien`,
 `erreurs_medicamenteuses`, `examens_pertinence_rea`,
 `infections_intra_abdominales`, `insuffisance_analgesie_cesarienne`,
 `plyo_transfusion`, `relations_anesth_chir`, `remplissage_perioperatoire`,
