@@ -14,8 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (81 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
-## EN COURS, 18 restantes. Initialement close à 59/59, reprise le 2026-09-11
+## Fiches migrées (83 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
+## EN COURS, 16 restantes. Initialement close à 59/59, reprise le 2026-09-11
 ## après ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
 ## supplémentaires non encore migrés (close à 72/72), reprise une troisième
@@ -123,7 +123,7 @@ grade composite (`grep -n '"[12][+-]/[12][+-]'`) sans résultat sur les 3
 nouveaux fichiers.
 
 ### Lot du 2026-09-19 (routine planifiée) — découverte de branches divergentes
-### côté rfe-sfar-website + fiches 77-81 (81/99, 18 restantes)
+### côté rfe-sfar-website + fiches 77-83 (83/99, 16 restantes)
 
 **Découverte critique en tout début de session, avant toute migration** :
 la routine planifiée de ce jour a reçu pour instruction de développer sur
@@ -205,14 +205,26 @@ Cette découverte porte le périmètre de la Tâche 1 de 76/76 (faux complet) à
   divergence de date entre le contenu construit ("2009, publié 2010") et
   `library_final.json` (`exact_date` = "2011" seule) — 2010-01-01 retenu.
 
-**Reste à migrer (18 fiches, Tâche 1 toujours prioritaire à la prochaine
+- **`thrombectomie`/0082** (18 recos) : RPP SFAR/ANARLF (+SFNR/SFNV/GFHT)
+  2022. 2 questions sans recommandation formulée (littérature insuffisante),
+  non migrées, disclosed. **À VÉRIFIER** : ANARLF/SFNR/SFNV/GFHT absents du
+  seed Annexe B ; titres de 2 champs divergents dans la source elle-même
+  (en-tête vs résumé des champs).
+- **`plyo_transfusion`/0083** (10 recos) : RPP SFAR/SFMU (+7 sociétés) 2020.
+  Divergence de granularité disclosed : source annonce "8 recommandations"
+  (groupées) vs 10 énoncés individuellement gradés (retenus). Tableau annexe
+  "Posologies HAS 2012" explicitement NON migré (grades appartenant à un
+  autre référentiel HAS, pas à cette RPP PLYO). **À VÉRIFIER** : ADARPEF/
+  CARO/CNCRH/CTSA/EFS/GFRUP/GIHP/SSA absents du seed Annexe B.
+
+**Reste à migrer (16 fiches, Tâche 1 toujours prioritaire à la prochaine
 session)** : `alr_non_specialiste`, `alr_pediatrie`,
 `aod_urgence`, `brule_grave`, `candidoses_aspergilloses`,
 `catheters_veineux_centraux`, `coronarien`,
 `erreurs_medicamenteuses`, `examens_pertinence_rea`,
 `infections_intra_abdominales`, `insuffisance_analgesie_cesarienne`,
-`plyo_transfusion`, `relations_anesth_chir`, `remplissage_perioperatoire`,
-`sauv`, `tests_viscoelastiques`, `thrombectomie`, `urgences_ob_extrahosp`.
+`relations_anesth_chir`, `remplissage_perioperatoire`,
+`sauv`, `tests_viscoelastiques`, `urgences_ob_extrahosp`.
 
 ### Lot du 2026-09-15 (routine planifiée) — fiches 73-76, TÂCHE 1 COMPLÈTE (76/76)
 
