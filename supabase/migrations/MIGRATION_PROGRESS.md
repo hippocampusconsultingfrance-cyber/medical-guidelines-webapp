@@ -14,8 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (84 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
-## EN COURS, 15 restantes. Initialement close à 59/59, reprise le 2026-09-11
+## Fiches migrées (86 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
+## EN COURS, 13 restantes. Initialement close à 59/59, reprise le 2026-09-11
 ## après ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
 ## supplémentaires non encore migrés (close à 72/72), reprise une troisième
@@ -123,7 +123,7 @@ grade composite (`grep -n '"[12][+-]/[12][+-]'`) sans résultat sur les 3
 nouveaux fichiers.
 
 ### Lot du 2026-09-19 (routine planifiée) — découverte de branches divergentes
-### côté rfe-sfar-website + fiches 77-84 (84/99, 15 restantes)
+### côté rfe-sfar-website + fiches 77-86 (86/99, 13 restantes)
 
 **Découverte critique en tout début de session, avant toute migration** :
 la routine planifiée de ce jour a reçu pour instruction de développer sur
@@ -228,13 +228,23 @@ Cette découverte porte le périmètre de la Tâche 1 de 76/76 (faux complet) à
   normatif à la place). Même traitement de principe que `ponction_
   lombaire`/0075 (source également sans système de grade).
 
-**Reste à migrer (15 fiches, Tâche 1 toujours prioritaire à la prochaine
+- **`remplissage_perioperatoire`/0085** (15 recos) : RFE SFAR/Adarpef 2012,
+  distincte de `remplissage`/0039 (RFE 2021 "situation critique" — sujet et
+  source différents). Divergence interne disclosed sur R4 (résumé module la
+  posologie selon la durée du geste, texte de la recommandation donne un
+  intervalle unique) — texte de la recommandation retenu.
+- **`brule_grave`/0086** (24 recos, toutes AE/Accord fort) : RPP SFAR/SFB/
+  SFMU/Adarpef 2019. **10 annexes citées par la source absentes du PDF
+  téléchargé** (vérifié : 0 image sur 38 pages) — non reproduites,
+  disclosed. **À VÉRIFIER** : SFB/SFMU/Adarpef absents du seed Annexe B.
+
+**Reste à migrer (13 fiches, Tâche 1 toujours prioritaire à la prochaine
 session)** : `alr_non_specialiste`, `alr_pediatrie`,
-`aod_urgence`, `brule_grave`, `candidoses_aspergilloses`,
+`aod_urgence`, `candidoses_aspergilloses`,
 `catheters_veineux_centraux`, `coronarien`,
 `erreurs_medicamenteuses`, `examens_pertinence_rea`,
 `infections_intra_abdominales`, `insuffisance_analgesie_cesarienne`,
-`relations_anesth_chir`, `remplissage_perioperatoire`,
+`relations_anesth_chir`,
 `tests_viscoelastiques`, `urgences_ob_extrahosp`.
 
 ### Lot du 2026-09-15 (routine planifiée) — fiches 73-76, TÂCHE 1 COMPLÈTE (76/76)
