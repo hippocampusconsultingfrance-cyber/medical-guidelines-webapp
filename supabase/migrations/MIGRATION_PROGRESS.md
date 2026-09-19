@@ -14,16 +14,21 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (76 / 76 disponibles côté rfe-sfar-website — TÂCHE 1 COMPLÈTE
-## au 2026-09-15. Initialement close à 59/59, reprise le 2026-09-11 après
-## ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
+## Fiches migrées (79 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
+## EN COURS, 20 restantes. Initialement close à 59/59, reprise le 2026-09-11
+## après ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
 ## supplémentaires non encore migrés (close à 72/72), reprise une troisième
 ## fois le 2026-09-15 (routine planifiée) après découverte de 4 fichiers
 ## `content_*.json` supplémentaires ajoutés côté rfe-sfar-website entre-temps
 ## (`amygdalectomie_enfant`, `douleur_reactualisation_2016`, `ponction_lombaire`,
-## `protection_oculaire`), tous les quatre migrés dans cette même session —
-## voir Tâche 2 pour la suite du pipeline de construction de nouvelles fiches)
+## `protection_oculaire`), tous les quatre migrés (close à 76/76, "TÂCHE 1
+## COMPLÈTE" à l'époque) — puis reprise une quatrième fois le 2026-09-19
+## (routine planifiée) après découverte que `rfe-sfar-website` avait en
+## réalité avancé à 99 fiches construites sur une branche orpheline
+## (`claude/loving-ritchie-t2ggs2`, jamais rattachée à la PR ouverte) —
+## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
+## découverte et l'état de la reconciliation de branches.)
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
@@ -103,12 +108,95 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 | 000074 | `douleur_reactualisation_2016` | `0074_migrate_douleur_reactualisation_2016.sql` | Réactualisation de la recommandation sur la douleur postopératoire (SFAR/ANREA, RFE 2016) — complète (n'abroge pas) douleur_postoperatoire/0071 | 17 |
 | 000075 | `ponction_lombaire` | `0075_migrate_ponction_lombaire.sql` | Prévention et prise en charge des effets indésirables après ponction lombaire (HAS, fiche mémo 2019) — aucun système de grade | 72 |
 | 000076 | `protection_oculaire` | `0076_migrate_protection_oculaire.sql` | Protection oculaire en Anesthésie et Réanimation (SFAR/SRLF, RFE 2016) — ⚠️ KNOWN DRIFT | 12 |
+| 000077 | `tabagisme` | `0077_migrate_tabagisme.sql` | Recommandations sur la prise en charge du tabagisme en période périopératoire (SFAR/SFT/CNCT/SOFCOT + 2 CNP, RFE 2016) | 4 |
+| 000078 | `echo_acces_vasculaires` | `0078_migrate_echo_acces_vasculaires.sql` | Utilisation de l'échographie lors de la mise en place des accès vasculaires (SFAR, RFE 2015) — R7 (sous-clavière enfant) sans grade formulé, non migrée | 9 |
+| 000079 | `tenue_vestimentaire` | `0079_migrate_tenue_vestimentaire.sql` | Tenue vestimentaire au bloc opératoire (SFAR/SF2H + AFC/CERES, RPP 2021) — incohérence interne source "13" vs 16 comptées | 16 |
 
-**Total : 3424 recommandations atomiques, 76 documents, 8 sociétés du seed
-Annexe B utilisées en document_societies au fil des migrations (SFAR, SRLF,
-SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au seed lui-même en 0003 —
-seule société non couverte par l'Annexe B d'origine, qui se décrit elle-même comme
-non exhaustive, section 14.1).**
+**Total (au 2026-09-19) : 3453 recommandations atomiques, 79 documents, 8
+sociétés du seed Annexe B utilisées en document_societies au fil des
+migrations (SFAR, SRLF, SPILF, SFMU, SFC, CNGOF, HAS, plus ABM ajoutée au
+seed lui-même en 0003 — seule société non couverte par l'Annexe B d'origine,
+qui se décrit elle-même comme non exhaustive, section 14.1). Rejeu cumulatif
+`schema.sql` + `schema_v2.sql` + `0001`..`0079` sur base fraîche : insertion
+en une passe, 0 ligne en seconde passe (idempotence confirmée), safety net
+grade composite (`grep -n '"[12][+-]/[12][+-]'`) sans résultat sur les 3
+nouveaux fichiers.
+
+### Lot du 2026-09-19 (routine planifiée) — découverte de branches divergentes
+### côté rfe-sfar-website + fiches 77-79 (79/99, 20 restantes)
+
+**Découverte critique en tout début de session, avant toute migration** :
+la routine planifiée de ce jour a reçu pour instruction de développer sur
+des branches fraîches (`claude/laughing-cannon-32te58` côté webapp,
+`claude/loving-ritchie-32te58` côté rfe-sfar-website) — mais chaque session
+planifiée précédente semble avoir reçu, de la même façon, un nom de branche
+nouveau à chaque exécution, sans visibilité sur les branches des sessions
+antérieures. Résultat : sur rfe-sfar-website, la PR ouverte #1 pointait sur
+`claude/loving-ritchie-v2c5i7` (76 fiches, dernière mise à jour 2026-09-14),
+mais une branche `claude/loving-ritchie-t2ggs2` (descendante directe de
+`v2c5i7`, jamais rattachée à la PR ni mentionnée nulle part) contenait en
+réalité **99 fiches construites**, 23 de plus — travail réel, jamais perdu,
+mais invisible tant que l'arbre git n'a pas été exploré branche par branche.
+Deux autres branches orphelines (`claude/loving-ritchie-pju8m8`,
+`claude/loving-ritchie-1lkmry`) contenaient un troisième chemin de
+construction indépendant et divergent : mêmes noms de fiches, mais **au
+moins 2 fichiers `content_*.json` avec un contenu réellement différent
+selon la branche** (`content_voies_aeriennes_adulte.json` : 2 versions
+distinctes ; `content_protection_oculaire.json` : **3 versions distinctes**
+sur les 3 branches, dont une vide sur `pju8m8`) — vraisemblablement deux
+routines planifiées ayant travaillé en parallèle, chacune sans savoir que
+l'autre existait. **Aucune fusion automatique de ces 2 branches orphelines
+n'a été tentée** : le risque de mélanger silencieusement deux versions
+auditées indépendamment d'une même fiche (ou de réintroduire une version
+non finalisée) est jugé trop élevé pour une décision autonome — cf. section
+1.3 du cahier des charges V2.1 (relecture humaine obligatoire) et le
+principe "disclose, ne résous jamais silencieusement" de ce projet. Ces 2
+branches sont laissées intactes sur origin pour investigation humaine ;
+elles ne contiennent aucune fiche absente de `t2ggs2` (mêmes 69 noms de
+fichiers, tous déjà présents dans les 99 de `t2ggs2`), donc aucun travail
+n'est à risque de perte — seule la question "quelle version de
+`voies_aeriennes_adulte`/`protection_oculaire` est la bonne" reste ouverte.
+**Action prise** : la branche `claude/loving-ritchie-v2c5i7` (support de la
+PR #1 ouverte) a été avancée par fast-forward jusqu'à `t2ggs2` (avance
+strictement linéaire, aucun commit perdu, aucun conflit) et poussée sous ce
+même nom — la PR #1 reflète donc maintenant les 99 fiches sans qu'une
+nouvelle PR ait été ouverte, conformément à la consigne "ne pas empiler une
+2e PR sur le même sujet". Côté webapp, `claude/laughing-cannon-pju8m8`
+s'est révélée être un ancêtre strict de `claude/laughing-cannon-v2c5i7`
+(aucune divergence) — rien à réconcilier de ce côté.
+
+Cette découverte porte le périmètre de la Tâche 1 de 76/76 (faux complet) à
+76/99 restant à traiter — 20 fiches restent après les 3 migrées ci-dessous.
+
+- **`tabagisme`/0077** (4 recos) : RFE SFAR 2016. Fiche courte, déjà
+  entièrement atomique (tableau R1-R4), toutes grade 1+, aucune ambiguïté.
+  Question 5 (cigarette électronique) : aucune recommandation formulée
+  (seuil de consensus GRADE Grid non atteint) — non migrée, disclosed.
+  **À VÉRIFIER** : SFT/CNCT/SOFCOT/CNP Chirurgie Plastique/CNP Chirurgie
+  Thoracique et Cardio-vasculaire, co-auteurs, absents du seed Annexe B.
+- **`echo_acces_vasculaires`/0078** (9 recos) : RFE SFAR 2015 (méthode
+  GRADE, qualité de preuve explicite par recommandation → portée par
+  `evidence_level`, distincte du grade de force). R7 (voie sous-clavière
+  chez l'enfant) : chip "?", aucune recommandation formulée faute d'essai
+  randomisé disponible — non migrée, disclosed ; numérotation native R1-R10
+  conservée telle quelle (saut de R06 à R08).
+- **`tenue_vestimentaire`/0079** (16 recos) : RPP SFAR-SF2H (+ AFC/CERES)
+  2021, GRADE non intégralement applicable (avis d'expert majoritaire,
+  grade AE uniforme, Accord fort à 100%). **Incohérence interne source
+  disclosed** : la source annonce "13 recommandations" mais 16 énoncés
+  individuellement gradés sont dénombrés directement (R1.1.1-R4.2) — aucun
+  regroupement ne réconcilie les deux chiffres ; 16 retenu (compte
+  vérifiable). **À VÉRIFIER** : SF2H (co-autrice à parité), AFC et CERES
+  (validateurs), absents du seed Annexe B.
+
+**Reste à migrer (20 fiches, Tâche 1 toujours prioritaire à la prochaine
+session)** : `alr_non_specialiste`, `alr_pediatrie`, `alr_perinerveuse`,
+`aod_urgence`, `brule_grave`, `candidoses_aspergilloses`,
+`catheters_veineux_centraux`, `coronarien`, `eeg_cortical`,
+`erreurs_medicamenteuses`, `examens_pertinence_rea`,
+`infections_intra_abdominales`, `insuffisance_analgesie_cesarienne`,
+`plyo_transfusion`, `relations_anesth_chir`, `remplissage_perioperatoire`,
+`sauv`, `tests_viscoelastiques`, `thrombectomie`, `urgences_ob_extrahosp`.
 
 ### Lot du 2026-09-15 (routine planifiée) — fiches 73-76, TÂCHE 1 COMPLÈTE (76/76)
 
