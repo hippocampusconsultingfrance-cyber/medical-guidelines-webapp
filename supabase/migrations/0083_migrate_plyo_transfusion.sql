@@ -57,10 +57,18 @@
 -- explicite) ; 'Enfant / nouveau-né' pour les 2 lignes R2-pédiatrie et la
 -- ligne R3-pédiatrie.
 --
--- `specialties` : `anesthesie_reanimation` (réanimation/urgences/pédiatrie
--- transversales au document, pas de spécialité "hématologie/transfusion"
--- ni "pédiatrie" dédiée retenue au-delà de ce libellé générique dans le
--- seed Annexe B à ce jour).
+-- ⚠️ CORRECTIF POST-COMMIT (2026-09-19, même session) : `medecine_d_urgence`
+-- ajoutée ci-dessous, omise par erreur au premier passage (liste des
+-- specialties du seed alors consultée tronquée) — SFMU est co-autrice et
+-- la Q2 "Transports médicalisés" (SAMU/SMUR préhospitalier) relève
+-- directement de la médecine d'urgence, au même titre que `sauv`/0084 et
+-- `brule_grave`/0086 (même correctif appliqué aux trois fichiers).
+--
+-- `specialties` : `anesthesie_reanimation` et `medecine_d_urgence`
+-- (réanimation/urgences/pédiatrie transversales au document, pas de
+-- spécialité "hématologie/transfusion" ni "pédiatrie" dédiée retenue
+-- au-delà de ces deux libellés génériques dans le seed Annexe B à ce
+-- jour).
 --
 -- ADARPEF, CARO, CNCRH, CTSA, EFS, GFRUP, GIHP, SSA (co-auteurs/
 -- participants cités par la source), ne figurent PAS dans le seed Annexe B
@@ -87,7 +95,7 @@ on conflict do nothing;
 insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/indications-de-transfusion-de-plasmas-lyophilises-plyo-chez-un-patient-en-choc-hemorragique-ou-a-risque-de-transfusion-massive-en-milieu-civil/'
-  and s.slug in ('anesthesie_reanimation')
+  and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
 
 insert into public.recommendations (recommendation_code, document_id, statement, grade, condition_topic, population, source_section, source_url, status)

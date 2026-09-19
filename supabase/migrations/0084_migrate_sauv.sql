@@ -40,10 +40,18 @@
 -- `exact_date` = 2003-11-05, cohérent avec "reçu et accepté le 5 novembre
 -- 2003" du contenu construit — aucune divergence à disclosed ici.
 --
--- `specialties` : `medecine_d_urgence` si présente au seed, sinon
--- `anesthesie_reanimation` — vérifié : le seed Annexe B ne contient pas de
--- slug "médecine d'urgence" à ce jour, seul `anesthesie_reanimation` est
--- retenu (SFAR co-autrice, sujet transversal urgences/réanimation).
+-- ⚠️ CORRECTIF POST-COMMIT (2026-09-19, même session) : la version
+-- initialement committée de ce fichier affirmait à tort que le seed
+-- Annexe B ne contenait pas de slug "médecine d'urgence" et ne liait que
+-- `anesthesie_reanimation`. Vérification exhaustive de la liste complète
+-- des specialties du seed (`grep` intégral de `schema_v2.sql`, pas la
+-- version tronquée utilisée par erreur au premier passage) : le slug
+-- `medecine_d_urgence` EXISTE bien dans le seed. Ce document, à
+-- l'initiative de la SFMU (médecine d'urgence) avec Samu de France, la
+-- SRLF et la SFAR, porte precisément sur l'organisation d'une salle
+-- d'urgence — `medecine_d_urgence` est donc ajoutée ci-dessous en plus de
+-- `anesthesie_reanimation` (SFAR co-autrice, sujet également transversal
+-- à la réanimation).
 
 insert into public.documents (title, doc_type, original_language, publication_date, source_url, pdf_url, grading_system, freshness_status)
 values (
@@ -65,7 +73,7 @@ on conflict do nothing;
 insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2016/01/Recommandations-concernant-la-mise-en-place-la-gestion-l-utilisation-et-l-evaluation-d-une-salle-d-accueil-des-urgences-vitales.pdf'
-  and s.slug in ('anesthesie_reanimation')
+  and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
 
 insert into public.recommendations (recommendation_code, document_id, statement, grade, condition_topic, source_section, source_url, status)

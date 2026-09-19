@@ -32,9 +32,14 @@
 -- faible"). `grade` = 'AE' sur les 24 lignes, `evidence_level` non
 -- renseigné (absent du contenu construit pour ce document).
 --
--- SFB, SFMU, Adarpef (co-auteurs), ne figurent PAS dans le seed Annexe B
--- (`public.societies`) : seule SFAR (dans le seed) est liée en
--- `document_societies` ci-dessous.
+-- ⚠️ CORRECTIF POST-COMMIT (2026-09-19, même session) : la version
+-- initialement committée affirmait à tort que SFB, SFMU et Adarpef
+-- étaient toutes absentes du seed Annexe B et ne liait que SFAR.
+-- Vérification exhaustive de la liste complète du seed (`grep` intégral de
+-- `schema_v2.sql`, pas la version tronquée utilisée par erreur au premier
+-- passage) : **SFMU EST bien présente dans le seed** (`('SFMU', 'France')`).
+-- SFB et Adarpef restent, elles, correctement absentes. SFMU est donc
+-- ajoutée ci-dessous en `document_societies`, aux côtés de SFAR.
 --
 -- SOURCE_URL / PDF_URL : `library_final.json` (recherche "brûlé grave" —
 -- exactement 1 correspondance) donne `href` et `direct_pdf_url`, identique
@@ -45,8 +50,10 @@
 -- l'énoncé s'applique indifféremment aux deux (formulation non stratifiée
 -- par âge dans la source).
 --
--- `specialties` : `anesthesie_reanimation` uniquement (pas de spécialité
--- "brûlologie" dédiée dans le seed Annexe B à ce jour).
+-- `specialties` : `anesthesie_reanimation` et `medecine_d_urgence` (SFMU
+-- co-autrice à l'initiative du Champ 1 régulation/admission/télémédecine,
+-- sujet directement de médecine d'urgence) — pas de spécialité
+-- "brûlologie" dédiée dans le seed Annexe B à ce jour.
 
 insert into public.documents (title, doc_type, original_language, publication_date, source_url, pdf_url, grading_system, freshness_status)
 values (
@@ -62,13 +69,13 @@ on conflict (source_url) do nothing;
 insert into public.document_societies (document_id, society_id)
 select d.id, s.id from public.documents d, public.societies s
 where d.source_url = 'https://sfar.org/prise-en-charge-du-brule-grave-a-la-phase-aigue-chez-ladulte-et-lenfant/'
-  and (s.acronym, s.country_or_region) in (('SFAR', 'France'))
+  and (s.acronym, s.country_or_region) in (('SFAR', 'France'), ('SFMU', 'France'))
 on conflict do nothing;
 
 insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-du-brule-grave-a-la-phase-aigue-chez-ladulte-et-lenfant/'
-  and s.slug in ('anesthesie_reanimation')
+  and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
 
 insert into public.recommendations (recommendation_code, document_id, statement, grade, condition_topic, population, source_section, source_url, status)
