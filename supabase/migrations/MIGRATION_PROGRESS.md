@@ -14,8 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (83 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
-## EN COURS, 16 restantes. Initialement close à 59/59, reprise le 2026-09-11
+## Fiches migrées (84 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
+## EN COURS, 15 restantes. Initialement close à 59/59, reprise le 2026-09-11
 ## après ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
 ## supplémentaires non encore migrés (close à 72/72), reprise une troisième
@@ -123,7 +123,7 @@ grade composite (`grep -n '"[12][+-]/[12][+-]'`) sans résultat sur les 3
 nouveaux fichiers.
 
 ### Lot du 2026-09-19 (routine planifiée) — découverte de branches divergentes
-### côté rfe-sfar-website + fiches 77-83 (83/99, 16 restantes)
+### côté rfe-sfar-website + fiches 77-84 (84/99, 15 restantes)
 
 **Découverte critique en tout début de session, avant toute migration** :
 la routine planifiée de ce jour a reçu pour instruction de développer sur
@@ -217,14 +217,25 @@ Cette découverte porte le périmètre de la Tâche 1 de 76/76 (faux complet) à
   autre référentiel HAS, pas à cette RPP PLYO). **À VÉRIFIER** : ADARPEF/
   CARO/CNCRH/CTSA/EFS/GFRUP/GIHP/SSA absents du seed Annexe B.
 
-**Reste à migrer (16 fiches, Tâche 1 toujours prioritaire à la prochaine
+- **`sauv`/0084** (21 recos, `grade` NULL sur toutes) : texte organisationnel
+  SFMU/Samu de France/SRLF/SFAR 2003 (normes d'architecture/équipement/
+  personnel pour une salle d'accueil des urgences vitales) — **PAS un
+  référentiel de recommandations cliniques gradées**, la source le dit
+  elle-même explicitement. Décision disclosed : chaque sous-section
+  normative numérotée de la source (3, 4.1-4.3, 5, 5.2, 6, 7.1, 7.2.1-7.2.5,
+  8.1-8.2, 9, 10 — 21 au total) migrée comme une ligne `recommendations`
+  sans grade ni population de patients (`condition_topic` porte le domaine
+  normatif à la place). Même traitement de principe que `ponction_
+  lombaire`/0075 (source également sans système de grade).
+
+**Reste à migrer (15 fiches, Tâche 1 toujours prioritaire à la prochaine
 session)** : `alr_non_specialiste`, `alr_pediatrie`,
 `aod_urgence`, `brule_grave`, `candidoses_aspergilloses`,
 `catheters_veineux_centraux`, `coronarien`,
 `erreurs_medicamenteuses`, `examens_pertinence_rea`,
 `infections_intra_abdominales`, `insuffisance_analgesie_cesarienne`,
 `relations_anesth_chir`, `remplissage_perioperatoire`,
-`sauv`, `tests_viscoelastiques`, `urgences_ob_extrahosp`.
+`tests_viscoelastiques`, `urgences_ob_extrahosp`.
 
 ### Lot du 2026-09-15 (routine planifiée) — fiches 73-76, TÂCHE 1 COMPLÈTE (76/76)
 
