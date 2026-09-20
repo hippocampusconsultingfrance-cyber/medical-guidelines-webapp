@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-107 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-108 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -150,13 +150,30 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   maximales d'anesthésiques locaux). Document RPC de 2001, non abrogé,
   toujours actif dans le corpus SFAR (complété mais non remplacé par la
   RFE 2011 sur l'échographie en ALR déjà migrée sous `alr_perinerveuse`).
+- **108 : `raac_colorectal`** — "Réhabilitation rapide après une chirurgie
+  colorectale programmée", SFAR/SFCD, RFE 2014. 35 recommandations,
+  méthode GRADE standard (1+/1-/2+/2-, déjà connue de ce corpus).
+  **Particularité de migration à ne pas perdre : chaque recommandation
+  porte DEUX cotations indépendantes** — le grade GRADE habituel (absent
+  pour 5/35 recommandations, faute de preuves suffisantes — ces 5
+  doivent migrer avec `grade = NULL`, même piège que les fiches
+  précédentes) ET un résultat de vote Delphi séparé, "Accord Fort" ou
+  "Accord Faible" (présent pour les 35 sans exception). Si le schéma de
+  migration ne prévoit qu'un seul champ de force/cotation par
+  recommandation, **ces deux informations ne doivent pas être fusionnées
+  ni l'une écrasée par l'autre** — envisager un champ texte libre
+  supplémentaire (ex. `consensus_note`) pour conserver le résultat
+  Delphi si le schéma n'a pas de colonne dédiée. Inclut un tableau
+  annexe de synthèse par paramètre (21 lignes, recommandation
+  principale/secondaire/absence de recommandation) reproduit
+  intégralement depuis la source.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
 `content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
-`content_aod_programme.json`, `content_blocs_peripheriques_membres.json`
-et la PR #1 de ce dépôt pour
+`content_aod_programme.json`, `content_blocs_peripheriques_membres.json`,
+`content_raac_colorectal.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
