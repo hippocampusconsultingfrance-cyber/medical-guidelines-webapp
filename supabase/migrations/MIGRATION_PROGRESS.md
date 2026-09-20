@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-108 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-109 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -167,13 +167,31 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   annexe de synthèse par paramètre (21 lignes, recommandation
   principale/secondaire/absence de recommandation) reproduit
   intégralement depuis la source.
+- **109 : `chir_ambu_proctologie`** — "Chirurgie ambulatoire en
+  proctologie", SNFCP/ANAP/SFAR, mars 2015. Grille A/B/C/AE (accord
+  d'experts) — **sur 43 recommandations, seules 3 portent un grade A
+  explicite ; le reste (40/43) doit migrer avec `grade = NULL`** si le
+  schéma ne modélise pas "AE" comme une valeur de grade à part entière
+  (piège identique aux fiches précédentes de ce lot, mais ici la
+  proportion non gradée est particulièrement élevée : 93 %). Deux
+  recommandations sources (R15, R27) fusionnaient dans le texte
+  original une clause gradée A et une clause non gradée dans le même
+  paragraphe numéroté — scindées ici en `R15a/R15b/R15c` et
+  `R27a/R27b` (46 lignes au total pour 43 recommandations numérotées) ;
+  **un futur import ne doit pas tenter de refusionner ces sous-lettres
+  dans une seule ligne R15/R27**, la scission est intentionnelle
+  (anti-composite-grade). Deux recommandations (R37, R40) n'ont aucun
+  marqueur de grade imprimé dans la source ; chippées "AE" par défaut
+  et disclosed comme telles dans la fiche — à vérifier si une relecture
+  humaine ultérieure du texte source confirme ce choix par défaut.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
 `content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
 `content_aod_programme.json`, `content_blocs_peripheriques_membres.json`,
-`content_raac_colorectal.json` et la PR #1 de ce dépôt pour
+`content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`
+et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
