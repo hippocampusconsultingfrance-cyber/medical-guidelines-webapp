@@ -30,6 +30,20 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
+## ⚠️ Fiche 100 en attente de migration (ajoutée côté rfe-sfar-website le 2026-09-20)
+
+Une routine planifiée a construit une 100e fiche côté `rfe-sfar-website`
+(`hospit_ambulatoire` — "Prise en charge anesthésique en hospitalisation
+ambulatoire", SFAR RFE 2009, 71 recommandations, 8e convention de cotation
+distincte de ce corpus : force encodée uniquement par le verbe modal, pas
+de grille GRADE imprimée — voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`
+et la PR #1 de ce dépôt pour le détail complet du build/audit). Le tableau
+ci-dessous reste donc à jour pour 99/99 uniquement — la migration de
+`hospit_ambulatoire` est le prochain élément de la Tâche 1 à traiter (même
+pipeline que les 99 précédents : `documents`/`document_societies`/
+`document_specialties`/`recommendations`, statut `draft`, `recommendation_code`
+suivant, safety net grade composite vérifié).
+
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
 | 000001 | `transport_intrahospitalier` | `0001_migrate_transport_intrahospitalier.sql` | Transport intrahospitalier des patients à risque vital (SRLF/SFAR/SFMU, RFE 2011) | 99 |
