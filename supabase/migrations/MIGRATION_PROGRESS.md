@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-104 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-105 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -80,11 +80,42 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   précédentes). Portée partielle disclosed sur les Tableaux 3-6
   (protocoles croisés très denses) — condensés en synthèse plutôt que
   reproduits intégralement, à rester disclosed si migré.
+- **105 : `ivg_14sa`** — "Prise en charge de l'interruption volontaire de
+  grossesse jusqu'à 14 semaines", ANAES, mars 2001 (màj partielle déc.
+  2010 par la HAS, IVG médicamenteuse uniquement). Grille de grade
+  propre à ce document — **PAS GRADE, PAS le système Sfar fort/faible** :
+  grille ANAES à 3 niveaux **A/B/C** (A = essais randomisés de forte
+  puissance/méta-analyses ; B = essais randomisés de faible puissance/
+  cohortes ; C = cas-témoins/séries de cas), avec un chip **AP** (accord
+  professionnel) pour tout énoncé non explicitement gradé — convention
+  explicite du texte source lui-même (« en l'absence de précision, les
+  recommandations proposées correspondent à un accord professionnel »).
+  **NE PAS migrer les items AP avec un `grade` NULL confondu avec les
+  chips « 0/ » d'`alr_douleur_chronique` ou « Def. » de
+  `nutrition_perioperatoire`** — sémantiquement différent : AP signifie
+  ici *consensus professionnel explicite* (le texte source le nomme
+  ainsi), pas *absence de position possible* (0/) ni *item purement
+  descriptif* (Def.). Si le schéma de migration a besoin d'un champ
+  texte pour la grille (`grade_scale` ou équivalent), consigner "ANAES
+  A/B/C + AP" pour ce document plutôt que "GRADE" par défaut. 29 blocs de
+  contenu au total (thèmes + recommandations gradées), dont seulement 8
+  énoncés portent un grade A/B/C explicite (3×A, 3×B, 2×C — décompte
+  vérifié par grep sur le texte source avant finalisation ; une première
+  version du script avait mal compté "7" au lieu de 8, corrigée en
+  audit). Disclosure retenue dans la fiche : le
+  PDF source indique que les passages modifiés en 2010 apparaissent « en
+  rouge » dans le document original, information de couleur perdue à
+  l'extraction texte — impossible de distinguer le texte 2001 du texte
+  amendé 2010 dans le contenu migré ; ce document couvre uniquement la
+  technique **chirurgicale** et les éléments communs aux deux méthodes
+  d'IVG (l'IVG médicamenteuse elle-même est explicitement hors périmètre,
+  renvoyée aux recommandations HAS 2010 non incluses dans le PDF source).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
-`content_nutrition_perioperatoire.json` et la PR #1 de ce dépôt pour
+`content_nutrition_perioperatoire.json`, `content_ivg_14sa.json` et la
+PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
