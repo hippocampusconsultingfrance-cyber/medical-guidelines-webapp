@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-109 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-110 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -184,14 +184,34 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   marqueur de grade imprimé dans la source ; chippées "AE" par défaut
   et disclosed comme telles dans la fiche — à vérifier si une relecture
   humaine ultérieure du texte source confirme ce choix par défaut.
+- **110 : `mieux_vivre_reanimation`** — "Mieux vivre la Réanimation",
+  SFAR/SRLF, 6e Conférence de Consensus, novembre 2009. **Convention de
+  cotation la plus éloignée d'un système de grade migrable telle
+  quelle** : ce document n'imprime AUCUN symbole de grade — la force de
+  chaque énoncé est portée uniquement par le verbe modal du texte
+  français lui-même (« il faut », « il faut probablement », « il est
+  possible »...), plus un sigle **RC** (recommandation consensuelle)
+  pour les énoncés sans référence scientifique. **Si le schéma de
+  migration a une colonne `grade` typée (ex. enum GRADE), ce document
+  entier doit migrer avec `grade = NULL`** — il n'y a pas de mapping
+  raisonnable entre les locutions modales françaises et une échelle
+  A/B/C/GRADE/1+/2+ sans fabriquer une correspondance que le texte
+  source ne fournit pas. Envisager de conserver la locution modale
+  elle-même dans un champ texte (ex. `grade_note` ou équivalent) plutôt
+  que de la perdre. 16 blocs de contenu couvrant 5 thématiques
+  (barrières, environnement, soins, communication, processus
+  décisionnel) — la Question 1 (barrières, très majoritairement
+  descriptive/épidémiologique) a été condensée dans la fiche
+  conformément à la règle de projet sur l'argumentaire minimal ; les
+  Questions 2-5 sont transcrites intégralement.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
 `content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
 `content_aod_programme.json`, `content_blocs_peripheriques_membres.json`,
-`content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`
-et la PR #1 de ce dépôt pour
+`content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`,
+`content_mieux_vivre_reanimation.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
