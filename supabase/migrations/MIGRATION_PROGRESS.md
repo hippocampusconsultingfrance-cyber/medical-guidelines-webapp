@@ -30,9 +30,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-103 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-104 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
-Une routine planifiée a construit quatre fiches supplémentaires côté
+Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
 
 - **100 : `hospit_ambulatoire`** — "Prise en charge anesthésique en
@@ -68,10 +68,23 @@ Une routine planifiée a construit quatre fiches supplémentaires côté
   NULL). Contient un vrai tableau chiffré (Tableau 1, épidémiologie REA
   Raisin 2006) et 5 encadrés de critères diagnostiques condensés en
   tableau de référence.
+- **104 : `nutrition_perioperatoire`** — "Nutrition périopératoire
+  (chirurgie programmée de l'adulte)", actualisation 2010 SFAR/SFNEP.
+  À NE PAS CONFONDRE avec le document déjà migré `nutrition` (2014,
+  patients de réanimation) — deux documents distincts, vérifié. Méthode
+  avis d'experts avec correspondance GRADE fort/faible explicitement
+  énoncée par la source, transcrite en 1+/1-/2+/2-. 71 recommandations
+  numérotées R1-R71, dont 10 énoncés purement définitionnels/descriptifs
+  (chip « Def. » — NE PAS migrer ces 10 avec un `grade` GRADE inventé,
+  `grade` doit rester NULL pour elles, même piège que les fiches
+  précédentes). Portée partielle disclosed sur les Tableaux 3-6
+  (protocoles croisés très denses) — condensés en synthèse plutôt que
+  reproduits intégralement, à rester disclosed si migré.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
-`content_infections_nosocomiales_rea.json` et la PR #1 de ce dépôt pour
+`content_infections_nosocomiales_rea.json`,
+`content_nutrition_perioperatoire.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
@@ -80,10 +93,13 @@ anti-grade-composite ; pour `alr_douleur_chronique`, une autre scission
 similaire sur intrathécale/péridurale en douleur cancéreuse ; et pour
 `infections_nosocomiales_rea`, 4 bugs trouvés à l'audit — 3 scissions de
 grade composite et 1 recommandation entière initialement omise, ajoutée
-après coup).
+après coup ; et pour `nutrition_perioperatoire`, un bug critique de
+couverture — une section entière de 7 recommandations jamais intégrée
+au build, trouvée et corrigée avant finalisation).
 Le tableau ci-dessous reste donc à jour pour 99/99 uniquement — la migration
-de `hospit_ambulatoire`, `echo_alr`, `alr_douleur_chronique` puis
-`infections_nosocomiales_rea` est le prochain élément de la Tâche 1 à
+de `hospit_ambulatoire`, `echo_alr`, `alr_douleur_chronique`,
+`infections_nosocomiales_rea` puis `nutrition_perioperatoire` est le
+prochain élément de la Tâche 1 à
 traiter (même pipeline que les 99 précédents :
 `documents`/`document_societies`/`document_specialties`/`recommendations`,
 statut `draft`, `recommendation_code` suivant, safety net grade composite
