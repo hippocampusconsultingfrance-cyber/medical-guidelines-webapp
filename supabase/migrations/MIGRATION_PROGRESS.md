@@ -30,9 +30,9 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-102 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-103 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
-Une routine planifiée a construit trois fiches supplémentaires côté
+Une routine planifiée a construit quatre fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
 
 - **100 : `hospit_ambulatoire`** — "Prise en charge anesthésique en
@@ -56,18 +56,35 @@ Une routine planifiée a construit trois fiches supplémentaires côté
   énoncés "aucune reco possible" sont, de façon incohérente, aussi
   étiquetés "Avis d'experts" par la source elle-même malgré n'être pas
   des recommandations — disclosed dans la fiche, à re-disclosed si migré.
+- **103 : `infections_nosocomiales_rea`** — "Prévention des infections
+  nosocomiales en réanimation", 5e Conférence de Consensus SFAR/SRLF
+  2008/2009, 10e convention de cotation distincte : la source dit
+  s'inspirer de GRADE mais n'imprime jamais de symbole — force portée
+  par la locution verbale (« il faut »/« il faut probablement »),
+  transcrite en chips standard 1+/1-/2+/2- (équivalence explicitement
+  énoncée par la source elle-même) + un chip « 0/ » pour 3 énoncés sans
+  position possible (même piège que pour `alr_douleur_chronique` : NE
+  PAS migrer ces 3 avec un `grade` négatif inventé, `grade` doit rester
+  NULL). Contient un vrai tableau chiffré (Tableau 1, épidémiologie REA
+  Raisin 2006) et 5 encadrés de critères diagnostiques condensés en
+  tableau de référence.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
-`content_echo_alr.json`, `content_alr_douleur_chronique.json` et la PR #1
-de ce dépôt pour le détail complet du build/audit de chacune (y compris,
-pour `echo_alr`, un bug de grade composite trouvé et corrigé avant la
-finalisation — une phrase source avec deux clauses de force différente
-avait été fusionnée en une seule ligne, scindée en 2 conformément à la
-règle anti-grade-composite ; et pour `alr_douleur_chronique`, une autre
-scission similaire sur intrathécale/péridurale en douleur cancéreuse).
+`content_echo_alr.json`, `content_alr_douleur_chronique.json`,
+`content_infections_nosocomiales_rea.json` et la PR #1 de ce dépôt pour
+le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
+un bug de grade composite trouvé et corrigé avant la finalisation — une
+phrase source avec deux clauses de force différente avait été fusionnée
+en une seule ligne, scindée en 2 conformément à la règle
+anti-grade-composite ; pour `alr_douleur_chronique`, une autre scission
+similaire sur intrathécale/péridurale en douleur cancéreuse ; et pour
+`infections_nosocomiales_rea`, 4 bugs trouvés à l'audit — 3 scissions de
+grade composite et 1 recommandation entière initialement omise, ajoutée
+après coup).
 Le tableau ci-dessous reste donc à jour pour 99/99 uniquement — la migration
-de `hospit_ambulatoire`, `echo_alr` puis `alr_douleur_chronique` est le
-prochain élément de la Tâche 1 à traiter (même pipeline que les 99 précédents :
+de `hospit_ambulatoire`, `echo_alr`, `alr_douleur_chronique` puis
+`infections_nosocomiales_rea` est le prochain élément de la Tâche 1 à
+traiter (même pipeline que les 99 précédents :
 `documents`/`document_societies`/`document_specialties`/`recommendations`,
 statut `draft`, `recommendation_code` suivant, safety net grade composite
 vérifié).
