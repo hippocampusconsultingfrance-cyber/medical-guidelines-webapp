@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-111 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-112 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -225,6 +225,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   préparation colique mécanique uniquement comme pratique jugée inutile
   en chirurgie colorectale — pas de chevauchement de contenu, vérifié
   avant construction.
+- **112 : `organisation_ar_obstetricale`** — "Organisation de
+  l'anesthésie-réanimation obstétricale", SFAR (avec Caro, CNGOF, CNSF,
+  Société française de néonatologie), Recommandations Professionnelles,
+  validées 11 décembre 2015, Anesth Réanim 2016;2:206-212. **Convention
+  de cotation la plus simple de ce corpus : un seul niveau de consensus
+  pour l'ensemble du document** — cotation Delphi (échelle 1-9, 2
+  tours), accord fort obtenu pour les 30 recommandations sans exception
+  (100 %, vérifié par comptage direct contre l'affirmation du texte
+  source). **Si le schéma de migration a une colonne `grade` typée
+  GRADE/A-E/etc., ce document doit migrer avec un chip/valeur dédiée
+  "Accord Fort" (ou `grade = NULL` si le schéma ne modélise pas de
+  consensus Delphi) — pas de mapping vers une échelle GRADE qui
+  n'existe pas dans ce texte.** Particularité distincte à ne pas perdre
+  : **13 des 30 recommandations portent en plus un astérisque dans le
+  texte source lui-même**, signalant qu'elles relèvent aussi d'une
+  disposition légale ou réglementaire (décrets de 1994/1998, circulaire
+  de 2006, etc.) — information disjointe du niveau de consensus (toutes
+  les 30 sont "accord fort", légales ou non) ; si le schéma de migration
+  a un champ booléen ou texte libre disponible (ex. `legal_basis` ou
+  `notes`), envisager de le préserver plutôt que de le perdre au
+  passage. Vérifié un par un contre le texte source avant finalisation
+  (13/30 marquées : RP1, RP2.1, RP2.5.2, RP2.6, RP3.1, RP3.4, RP3.6,
+  RP3.8, RP3.9, RP3.14, RP4.3, RP4.4, RP4.5). 29 blocs de contenu
+  couvrant les 4 chapitres du texte source (locaux/équipements,
+  personnels/effectifs, parcours de soins, qualité/formation) plus
+  l'Annexe 1 (soins maternels de recours, liste de conditions
+  opérationnelles) reproduite intégralement. Document sans lien de
+  contenu avec les fiches obstétricales déjà migrées (`preeclampsie`,
+  `hemorragie_post_partum`, etc.) — celui-ci porte sur l'organisation
+  des services, pas sur la prise en charge clinique d'une pathologie
+  donnée ; vérifié par grep avant construction, aucune collision.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -232,8 +263,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
 `content_aod_programme.json`, `content_blocs_peripheriques_membres.json`,
 `content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`,
-`content_mieux_vivre_reanimation.json`, `content_preparation_colique.json`
-et la PR #1 de ce dépôt pour
+`content_mieux_vivre_reanimation.json`, `content_preparation_colique.json`,
+`content_organisation_ar_obstetricale.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
