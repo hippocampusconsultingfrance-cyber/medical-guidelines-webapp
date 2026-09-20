@@ -14,8 +14,8 @@ chiffres}-R{rang}`. La séquence est attribuée dans l'ordre de migration
 (pas de rapport avec l'ordre des 160 items de `library_final.json`) — le
 tableau ci-dessous fait foi pour éviter toute collision entre lots.
 
-## Fiches migrées (86 / 99 disponibles côté rfe-sfar-website au 2026-09-19 —
-## EN COURS, 13 restantes. Initialement close à 59/59, reprise le 2026-09-11
+## Fiches migrées (99 / 99 disponibles côté rfe-sfar-website — TÂCHE 1
+## COMPLÈTE au 2026-09-20. Initialement close à 59/59, reprise le 2026-09-11
 ## après ajout des fiches 60 puis 61, reprise à nouveau le 2026-09-13 (routine
 ## planifiée) après découverte de 11 fichiers `content_*.json`
 ## supplémentaires non encore migrés (close à 72/72), reprise une troisième
@@ -238,14 +238,94 @@ Cette découverte porte le périmètre de la Tâche 1 de 76/76 (faux complet) à
   téléchargé** (vérifié : 0 image sur 38 pages) — non reproduites,
   disclosed. **À VÉRIFIER** : SFB/SFMU/Adarpef absents du seed Annexe B.
 
-**Reste à migrer (13 fiches, Tâche 1 toujours prioritaire à la prochaine
-session)** : `alr_non_specialiste`, `alr_pediatrie`,
-`aod_urgence`, `candidoses_aspergilloses`,
-`catheters_veineux_centraux`, `coronarien`,
-`erreurs_medicamenteuses`, `examens_pertinence_rea`,
-`infections_intra_abdominales`, `insuffisance_analgesie_cesarienne`,
-`relations_anesth_chir`,
-`tests_viscoelastiques`, `urgences_ob_extrahosp`.
+### Lot du 2026-09-20 (routine planifiée) — fiches 87-99, TÂCHE 1 COMPLÈTE (99/99)
+
+Reprise de la session du 2026-09-19 (interrompue par une limite de session
+en cours de workflow multi-agents — 9 fiches déjà construites et testées
+individuellement par les agents, sans audit indépendant complété). Cette
+session a : (a) revérifié les 9 fichiers déjà produits (0087-0095) par
+relecture ciblée + rejeu PostgreSQL déterministe plutôt qu'un nouvel audit
+multi-agents coûteux (leçon de coût tirée de la session précédente) —
+trouvés corrects, avec correction de 2 erreurs de vérification (voir
+commit dédié "Fix society/specialty tagging errors") ; (b) construit et
+testé individuellement, sans agents parallèles, les 4 dernières fiches
+(insuffisance_analgesie_cesarienne, relations_anesth_chir,
+tests_viscoelastiques, urgences_ob_extrahosp) ; (c) rejeu cumulatif complet
+final sur base fraîche : **99 documents, 4138 recommandations, idempotent
+(0 ligne en 2e passe), safety net grade composite propre, 100% des
+recommendation_code au format attendu**.
+
+- **`alr_non_specialiste`/0087** (34 recos) : Conférence d'experts SFAR sur
+  les ALR par médecins non spécialisés en urgence. `medecine_d_urgence` +
+  `anesthesie_reanimation`. DOI relevé directement dans le PDF re-téléchargé
+  pour cette migration (absent du contenu construit et de l'index).
+- **`alr_pediatrie`/0088** (92 recos) : RFE SFAR/ADARPEF (ADARPEF absente du
+  seed). Écart disclosed 106 (résumé) vs 92 (compte direct) non résolu.
+- **`aod_urgence`/0089** (21 recos) : Propositions du GIHP (absent du seed —
+  aucune société liée, requête intentionnellement à 0 ligne, disclosed).
+  Distinct de `anticoag_urgence`/0011 et `anticoagulants`/0012 (source_url
+  différents, vérifié).
+- **`candidoses_aspergilloses`/0090** (59 recos) : Conférence de Consensus
+  SFAR/SPILF/SRLF 2004. Distinction organisatrices (liées) vs participantes
+  (SF Hématologie/Mycologie/Greffe de Mœlle, absentes du seed) vérifiée
+  contre le colophon exact de la source.
+- **`catheters_veineux_centraux`/0091** (71 recos) : Réactualisation 12e
+  conférence de consensus SRLF 2002/2003 — grille bespoke "Niveau (1-3) -
+  Score (a-d)" propre à cette conférence, correctement identifiée et non
+  confondue avec du GRADE générique.
+- **`coronarien`/0092** (65 recos) : RFE SFAR/SFC.
+- **`erreurs_medicamenteuses`/0093** (7 recos) : RFE SFAR 2006.
+- **`examens_pertinence_rea`/0094** (43 recos) : RFE SFAR/SRLF.
+- **`infections_intra_abdominales`/0095** (44 recos) : RFE SFAR/SRLF/SPILF +
+  2 sociétés chirurgicales absentes du seed (specialty
+  `chirurgie_digestive_et_viscerale` retenue à leur place).
+- **`insuffisance_analgesie_cesarienne`/0096** (24 recos, `grade` NULL) :
+  Préconisations CARO/CNGOF/SFAR (+7 partenaires absents du seed) 2021,
+  aucun système de cotation. Doublon d'impression P1.7/P1.8 dans la source
+  reproduit tel quel (2 lignes identiques, non fusionnées). Incohérence
+  chiffrée non réconciliée sur la fréquence de l'insuffisance d'analgésie.
+- **`relations_anesth_chir`/0097** (29 recos, `grade` NULL) : texte
+  déontologique/juridique CNOM/SFAR 2001 — même traitement que `sauv`/0084
+  (aucun système de cotation scientifique). Incohérence interne disclosed
+  (loi n°2001-586 vs n°2001-588 pour le même texte).
+- **`tests_viscoelastiques`/0098** (9 recos, `grade` NULL) : position GIHP
+  publiée **en anglais** (Anaesth Crit Care Pain Med 2019) — `original_
+  language`='en', piège identifié et vérifié explicitement (pas une
+  supposition 'fr' par défaut). 9 positions du GIHP réparties sur 4
+  situations cliniques (3+2+2+2), décompte vérifié conforme à la source.
+  Grade 2C d'une recommandation externe (ESA) explicitement NON attribué à
+  ce document. Absence de position propre en pédiatrie disclosed, non migrée.
+- **`urgences_ob_extrahosp`/0099** (85 recos, la plus volumineuse migration
+  du corpus) : RFE SFAR/SFMU/CNGOF 2010, 9 chapitres. 2 corrections d'unité
+  déjà faites par le contenu construit lui-même (sulprostone mg/h→µg/h,
+  créatininémie mmol/L→µmol/L, artefacts d'extraction PDF) conservées telles
+  quelles. Tableaux de référence diagnostique différentielle et algorithmes
+  figuratifs dupliquant un tableau adjacent explicitement exclus (disclosed)
+  pour éviter le doublonnage plutôt que la perte de couverture.
+
+**Note de méthode (coût)** : le lot 0087-0095 a initialement été produit via
+un workflow à agents parallèles (construction + audit indépendant par
+fiche) qui a consommé ~2M tokens et heurté une limite de session avant la
+fin. Sur demande explicite du porteur de projet, cette approche est
+abandonnée pour la suite du pipeline (Tâche 2) : traitement séquentiel,
+sans flotte d'agents parallèles par défaut, la vérification directe
+(lecture complète + rejeu PostgreSQL déterministe) étant suffisante et
+nettement moins coûteuse pour ce type de travail.
+
+## ✅ TÂCHE 1 COMPLÈTE — 99/99 fiches migrées (2026-09-20)
+
+Plus aucune fiche `content_*.json` de `rfe-sfar-website` (branche
+`claude/loving-ritchie-t2ggs2`, 99 fiches au 2026-09-19) n'attend de
+migration. **4138 recommandations atomiques au total**, toutes en statut
+`draft`. Passage à la Tâche 2 (reprise du pipeline de construction de
+nouvelles fiches côté `rfe-sfar-website`) à la prochaine session — sous
+réserve que le fork de branches non résolu (`claude/loving-ritchie-pju8m8`,
+`claude/loving-ritchie-1lkmry`, voir "Lot du 2026-09-19" ci-dessus) reste
+sans conséquence sur les fiches déjà migrées ici (vérifié : aucune des 2
+fiches divergentes, `voies_aeriennes_adulte` et `protection_oculaire`, n'a
+été retouchée dans cette migration au-delà de leur contenu déjà migré en
+0060 et 0076 respectivement — une décision humaine sur ces 2 branches
+orphelines reste nécessaire indépendamment de l'avancement de la Tâche 1).
 
 ### Lot du 2026-09-15 (routine planifiée) — fiches 73-76, TÂCHE 1 COMPLÈTE (76/76)
 
