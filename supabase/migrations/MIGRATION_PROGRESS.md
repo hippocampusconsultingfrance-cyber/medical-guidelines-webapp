@@ -30,19 +30,34 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiche 100 en attente de migration (ajoutée côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-101 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
-Une routine planifiée a construit une 100e fiche côté `rfe-sfar-website`
-(`hospit_ambulatoire` — "Prise en charge anesthésique en hospitalisation
-ambulatoire", SFAR RFE 2009, 71 recommandations, 8e convention de cotation
-distincte de ce corpus : force encodée uniquement par le verbe modal, pas
-de grille GRADE imprimée — voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`
-et la PR #1 de ce dépôt pour le détail complet du build/audit). Le tableau
-ci-dessous reste donc à jour pour 99/99 uniquement — la migration de
-`hospit_ambulatoire` est le prochain élément de la Tâche 1 à traiter (même
-pipeline que les 99 précédents : `documents`/`document_societies`/
-`document_specialties`/`recommendations`, statut `draft`, `recommendation_code`
-suivant, safety net grade composite vérifié).
+Une routine planifiée a construit deux fiches supplémentaires côté
+`rfe-sfar-website` dans la même session :
+
+- **100 : `hospit_ambulatoire`** — "Prise en charge anesthésique en
+  hospitalisation ambulatoire", SFAR RFE 2009, 71 recommandations, 8e
+  convention de cotation distincte de ce corpus : force encodée
+  uniquement par le verbe modal, pas de grille GRADE imprimée.
+- **101 : `echo_alr`** — "Échographie en anesthésie locorégionale", SFAR
+  RFE 2011, 9e convention de cotation distincte : texte narratif sans
+  numérotation, force à 3 niveaux (R/PR/P) portée par une locution
+  modale du texte source. Contient un vrai tableau (Tableau 1 —
+  classement des dispositifs médicaux) à reproduire fidèlement si migré
+  en `source_section`/notes.
+
+Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
+`content_echo_alr.json` et la PR #1 de ce dépôt pour le détail complet du
+build/audit de chacune (y compris, pour `echo_alr`, un bug de grade
+composite trouvé et corrigé avant la finalisation — une phrase source
+avec deux clauses de force différente avait été fusionnée en une seule
+ligne, scindée en 2 conformément à la règle anti-grade-composite). Le
+tableau ci-dessous reste donc à jour pour 99/99 uniquement — la migration
+de `hospit_ambulatoire` puis `echo_alr` est le prochain élément de la
+Tâche 1 à traiter (même pipeline que les 99 précédents :
+`documents`/`document_societies`/`document_specialties`/`recommendations`,
+statut `draft`, `recommendation_code` suivant, safety net grade composite
+vérifié).
 
 | Séquence | Clé | Fichier migration | Titre | Recommandations |
 |---|---|---|---|---|
