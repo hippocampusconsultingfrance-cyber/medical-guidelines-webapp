@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-106 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-107 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -133,12 +133,30 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   deux, si jamais un futur script de migration itère sur
   `library_final.json` plutôt que sur `content_<clé>.json` (piège
   potentiel à surveiller).
+- **107 : `blocs_peripheriques_membres`** — "Les blocs périphériques des
+  membres chez l'adulte", SFAR/Sofcot/Sofmer, RPC 22 septembre 2001
+  (Ann Fr Anesth Réanim 22 (2003) 567-581). **Grille EBM propre à ce
+  document — PAS GRADE, PAS ANAES A/B/C, PAS Sfar fort/faible** : 5
+  niveaux de preuve **A/B/C/D/E** (A = ≥2 études niveau I, la plus forte,
+  jusqu'à E = études niveau IV/V) **plus un chip CP** (consensus
+  professionnel/avis d'experts) pour les énoncés sans aucune étude — CP
+  est sémantiquement distinct du Grade E : Grade E reste une catégorie de
+  preuve (études de faible niveau), CP signale l'absence totale d'étude.
+  **Ne pas confondre les 5 niveaux A-E de ce document avec les 3 niveaux
+  A/B/C d'`ivg_14sa` (fiche 105)** — même lettres, échelles différentes,
+  bien vérifier quel document est migré avant de mapper un grade. 31
+  blocs de contenu (dont 2 tableaux transcrits visuellement : Tableau 1
+  indications chirurgicales membre supérieur, tableau des doses
+  maximales d'anesthésiques locaux). Document RPC de 2001, non abrogé,
+  toujours actif dans le corpus SFAR (complété mais non remplacé par la
+  RFE 2011 sur l'échographie en ALR déjà migrée sous `alr_perinerveuse`).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
 `content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
-`content_aod_programme.json` et la PR #1 de ce dépôt pour
+`content_aod_programme.json`, `content_blocs_peripheriques_membres.json`
+et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
