@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-112 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-113 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -256,6 +256,32 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   `hemorragie_post_partum`, etc.) — celui-ci porte sur l'organisation
   des services, pas sur la prise en charge clinique d'une pathologie
   donnée ; vérifié par grep avant construction, aucune collision.
+- **113 : `erreurs_medicamenteuses_ar_2016`** — "Prévention des erreurs
+  médicamenteuses en anesthésie et en réanimation" (texte court), SFAR
+  en partenariat avec la SFPC, actualisation 2016. **Aucune grille de
+  grade — 10 préconisations narratives numérotées (1 à 10), même
+  convention que `aod_programme` (fiche 106)** : si le schéma de
+  migration exige un `grade` non-NULL, ce document entier doit migrer
+  avec `grade = NULL`. **Piège de collision de clé à ne pas commettre**
+  : il existe déjà une fiche migrée sous la clé `erreurs_medicamenteuses`
+  ("Prévention des erreurs médicamenteuses en anesthésie", SFAR seule,
+  **2006**) — **113 est un document différent** (actualisation 2016,
+  coécrite avec la SFPC, périmètre élargi explicitement à la
+  réanimation, ajout d'une préconisation dédiée aux soins critiques) ;
+  vérifié par needle sur les deux URLs sfar.org
+  (`preverreurmedic_recos.pdf` en 2006 vs `texte-court-preco-erreurs-
+  med-2016` en 2016), aucun chevauchement d'URL ni de clé côté site. Si
+  une future migration traite les deux documents comme un seul parce
+  qu'ils partagent un titre très proche, elle fusionnerait à tort deux
+  jeux de recommandations distincts (le document 2006 reste
+  spécifiquement anesthésie ; le document 2016 couvre aussi la
+  réanimation et remplace/actualise le premier sans l'annuler côté
+  bibliothèque SFAR — les deux restent indexés séparément dans
+  `library_final.json`). 12 blocs de contenu couvrant les 10
+  préconisations (stratégie/organisation, facteurs de risque/formation,
+  spécificités réanimation, prévention active/passive, rangement/
+  étiquetage détaillé par sous-point a-e, protocoles, gestion des
+  erreurs/retour d'expérience).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -264,7 +290,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_aod_programme.json`, `content_blocs_peripheriques_membres.json`,
 `content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`,
 `content_mieux_vivre_reanimation.json`, `content_preparation_colique.json`,
-`content_organisation_ar_obstetricale.json` et la PR #1 de ce dépôt pour
+`content_organisation_ar_obstetricale.json`,
+`content_erreurs_medicamenteuses_ar_2016.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
