@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-113 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-114 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -282,6 +282,31 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   spécificités réanimation, prévention active/passive, rangement/
   étiquetage détaillé par sous-point a-e, protocoles, gestion des
   erreurs/retour d'expérience).
+- **114 : `anesth_pediatrique_structures`** — "Recommandations pour les
+  structures et le matériel de l'anesthésie pédiatrique", SFAR,
+  septembre 2000. **Aucune grille de grade, aucune recommandation
+  numérotée** — texte narratif de spécifications structurelles (salle
+  d'intervention, transferts, SSPI, hospitalisation post-opératoire,
+  laboratoires) et matérielles (assistance respiratoire, abord
+  vasculaire, défibrillateur, monitorage, hypothermie, transport,
+  solutés), avec beaucoup de valeurs chiffrées concrètes (tailles de
+  sondes/masques/cathéters, volumes, débits, températures). **Si le
+  schéma de migration exige un `grade` non-NULL, ce document entier
+  doit migrer avec `grade = NULL`**, même famille que `aod_programme`
+  (106) et `preparation_colique` (111). **Particularité à ne pas
+  perdre au moment de la migration** : contrairement aux fiches
+  purement "recommandation" de ce corpus, une bonne partie du contenu
+  actionnable ici est une **valeur numérique de spécification**
+  (ex. "tailles de sondes 2,5 à 6,5", "brassards tailles 1 à 4",
+  "délai 3-5h") plutôt qu'une phrase de type "il est recommandé de..."
+  — si le schéma de migration attend un champ `recommendation_text`
+  de forme impérative, ces blocs de spécification matérielle
+  devraient probablement être migrés tels quels (valeur + contexte)
+  plutôt que reformulés en fausses recommandations verbales. Distinct
+  de la RPP SFAR 2023 "Organisation de l'anesthésie pédiatrique"
+  (organisation des centres, non construite dans ce lot) — vérifié par
+  titre avant construction, aucune collision. 11 blocs de contenu
+  couvrant les 2 parties du texte source (Structures, Matériel).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -291,7 +316,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`,
 `content_mieux_vivre_reanimation.json`, `content_preparation_colique.json`,
 `content_organisation_ar_obstetricale.json`,
-`content_erreurs_medicamenteuses_ar_2016.json` et la PR #1 de ce dépôt pour
+`content_erreurs_medicamenteuses_ar_2016.json`,
+`content_anesth_pediatrique_structures.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
