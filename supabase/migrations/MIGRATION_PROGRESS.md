@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-110 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-111 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -204,6 +204,27 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   descriptive/épidémiologique) a été condensée dans la fiche
   conformément à la règle de projet sur l'argumentaire minimal ; les
   Questions 2-5 sont transcrites intégralement.
+- **111 : `preparation_colique`** — "Préparation colique et anesthésie
+  générale", position commune SFED/SFAR, validée 7 juillet 2016 (SFED)
+  / 21 septembre 2016 (SFAR). **Aucune grille de grade, aucune
+  recommandation numérotée** — texte de position commune, synthèse
+  narrative de la littérature (méta-analyses, essais cliniques) avec
+  conclusions pratiques et deux tableaux. **Si le schéma de migration
+  exige un `grade` non-NULL, ce document entier doit migrer avec
+  `grade = NULL`**, comme `aod_programme` (fiche 106) et
+  `mieux_vivre_reanimation` (fiche 110) — pas de mapping possible entre
+  ce texte narratif et une échelle de grade. 20 blocs de contenu,
+  incluant les deux tableaux pratiques de la source reproduits
+  intégralement (Tableau I : liste des situations ralentissant la
+  vidange gastrique ; Tableau II : délais de jeûne — alimentation
+  légère/préparation colique/autres liquides clairs — selon l'horaire
+  programmé de la coloscopie). Recommandation pratique centrale : délai
+  de 3h entre dernière prise de préparation colique et induction
+  anesthésique (vs 2h pour les autres liquides clairs standards).
+  Distinct de `raac_colorectal` (fiche 108), qui mentionne la
+  préparation colique mécanique uniquement comme pratique jugée inutile
+  en chirurgie colorectale — pas de chevauchement de contenu, vérifié
+  avant construction.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -211,7 +232,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
 `content_aod_programme.json`, `content_blocs_peripheriques_membres.json`,
 `content_raac_colorectal.json`, `content_chir_ambu_proctologie.json`,
-`content_mieux_vivre_reanimation.json` et la PR #1 de ce dépôt pour
+`content_mieux_vivre_reanimation.json`, `content_preparation_colique.json`
+et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
