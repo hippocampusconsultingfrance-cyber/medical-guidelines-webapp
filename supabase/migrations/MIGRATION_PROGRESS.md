@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-105 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-106 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -110,12 +110,35 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   technique **chirurgicale** et les éléments communs aux deux méthodes
   d'IVG (l'IVG médicamenteuse elle-même est explicitement hors périmètre,
   renvoyée aux recommandations HAS 2010 non incluses dans le PDF source).
+- **106 : `aod_programme`** — "Gestion des Anticoagulants Oraux Directs
+  pour la chirurgie et les actes invasifs programmés", GIHP, propositions
+  réactualisées septembre 2015. **Aucune grille de grade** — ni GRADE, ni
+  A/B/C, ni fort/faible Sfar : ce document est un ensemble de
+  "propositions" pragmatiques d'un groupe d'intérêt, sans cotation
+  formelle. **Si le schéma de migration exige un `grade` non-NULL par
+  recommandation, ce document ne peut pas en fournir un** — les 17 blocs
+  de contenu (thèmes + 2 tableaux transcrits visuellement) doivent migrer
+  avec `grade = NULL` en totalité, pas seulement pour un sous-ensemble
+  comme pour les fiches précédentes de ce lot. Distinct de la fiche déjà
+  migrée `aod_urgence` (gestion en URGENCE) — celui-ci couvre la gestion
+  PROGRAMMÉE (acte électif, délai d'arrêt préétabli) ; vérifié par grep
+  avant construction, aucune collision de contenu. **Doublon d'indexation
+  disclosed** : ce document apparaît deux fois dans
+  `rfe-sfar-website/build/library_final.json` sous deux années
+  différentes ("2015" et "2021", deux URL sfar.org distinctes) mais il
+  s'agit du même document (page de titre et bibliographie de 18
+  références strictement identiques entre les deux PDF sources) — la
+  fiche est indexée sous les deux needles côté site pour couvrir les deux
+  entrées, mais **une seule recommandation-set doit être migrée**, pas
+  deux, si jamais un futur script de migration itère sur
+  `library_final.json` plutôt que sur `content_<clé>.json` (piège
+  potentiel à surveiller).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
-`content_nutrition_perioperatoire.json`, `content_ivg_14sa.json` et la
-PR #1 de ce dépôt pour
+`content_nutrition_perioperatoire.json`, `content_ivg_14sa.json`,
+`content_aod_programme.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
