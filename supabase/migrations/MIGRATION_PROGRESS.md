@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-114 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-115 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -307,6 +307,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   (organisation des centres, non construite dans ce lot) — vérifié par
   titre avant construction, aucune collision. 11 blocs de contenu
   couvrant les 2 parties du texte source (Structures, Matériel).
+- **115 : `aod_dabigatran_urgence_2016`** — "Prise en charge des
+  hémorragies et des gestes invasifs urgents chez les patients recevant
+  un anticoagulant oral et direct anti-IIa (dabigatran)", GIHP,
+  réactualisation septembre 2016. **Aucune grille de grade** —
+  propositions pragmatiques du GIHP, même famille que `aod_programme`
+  (106) et `aod_urgence` (déjà migré) : si le schéma exige un `grade`
+  non-NULL, ce document entier migre avec `grade = NULL`.
+  **Particularité de contenu unique dans ce corpus à ce jour** : le
+  cœur actionnable n'est pas une liste de recommandations textuelles
+  mais **3 algorithmes décisionnels** (arbres de décision) reçus comme
+  images pures dans le PDF source (vérifié via `page.get_images()`,
+  aucune couche de texte) et **transcrits en tableaux de décision**
+  (colonnes Situation / Critère / Conduite à tenir) plutôt qu'en
+  recommandations numérotées classiques. **Si un futur script de
+  migration itère sur un pattern `R\d+` ou une liste de
+  recommandations numérotées pour extraire les lignes à migrer, il ne
+  trouvera rien pour ce document** — les 20 blocs de contenu de
+  `content_aod_dabigatran_urgence_2016.json` sont structurés en lignes
+  de tableau de décision (condition → action), pas en recommandations
+  R1/R2 ; un mapping dédié sera nécessaire pour ce document (et pour
+  tout futur document de la même famille "algorithme décisionnel").
+  **Piège de collision à ne pas commettre** : ce document est
+  **complémentaire, pas doublon**, de la fiche déjà migrée
+  `aod_urgence` (GIHP 2013, dabigatran + rivaroxaban, PRE-antidote
+  spécifique, déjà disclosed comme daté/incomplet) — celui-ci le
+  remplace uniquement pour le volet dabigatran (nouvel antidote
+  idarucizumab intégré) ; `aod_urgence` reste la seule source pour les
+  principes généraux applicables au rivaroxaban dans ce corpus. Ne pas
+  fusionner les deux documents ni supprimer `aod_urgence` lors d'une
+  future migration — vérifié par needle et par contenu (49 occurrences
+  "idarucizumab", absentes de `aod_urgence`) avant construction.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -317,7 +348,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_mieux_vivre_reanimation.json`, `content_preparation_colique.json`,
 `content_organisation_ar_obstetricale.json`,
 `content_erreurs_medicamenteuses_ar_2016.json`,
-`content_anesth_pediatrique_structures.json` et la PR #1 de ce dépôt pour
+`content_anesth_pediatrique_structures.json`,
+`content_aod_dabigatran_urgence_2016.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
