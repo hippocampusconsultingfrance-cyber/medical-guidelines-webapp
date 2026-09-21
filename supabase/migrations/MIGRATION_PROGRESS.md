@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-117 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-118 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -396,6 +396,32 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   (`agents_halogenes` ou équivalents) — celui-ci traite spécifiquement
   du critère environnemental, pas de l'efficacité clinique ; vérifié
   par titre avant construction, aucune collision.
+- **118 : `diabete_perioperatoire_2025`** — "Prise en charge du patient
+  diabétique en péri opératoire", Fiches simplifiées, Groupe SFAR/SFD,
+  version 2025. **Nature de contenu radicalement différente de tout ce
+  qui a été migré jusqu'ici dans ce corpus : ce ne sont pas des
+  recommandations textuelles mais des algorithmes de dosage et des
+  tableaux posologiques** (protocoles d'insulinothérapie IVSE et SC,
+  seuils de glycémie/cétonémie, doses en UI). **Aucune grille de
+  grade** — si le schéma de migration exige un `grade` non-NULL, ce
+  document entier migre avec `grade = NULL`. **Avertissement critique
+  pour une future migration** : ce contenu est un outil de dosage
+  clinique actif (valeurs numériques prescriptives : unités
+  d'insuline, seuils mmol/L et g/L, débits mL/h) — une migration doit
+  impérativement conserver l'intégrité exacte de chaque valeur
+  numérique et de son unité, sans arrondi ni reformulation, et
+  idéalement faire vérifier chaque table migrée contre le PDF source
+  par une relecture humaine avant toute mise en `active` (la
+  contrainte `recommendations_active_requires_review` de
+  `schema_v2.sql` s'applique ici avec une importance particulière,
+  compte tenu du risque clinique direct d'une erreur de dosage
+  d'insuline). Le document source lui-même est déjà un outil simplifié
+  destiné à l'usage clinique direct (pas une RFE/RPC narrative) — la
+  fiche elle-même porte un avertissement de sécurité explicite en ce
+  sens, à répercuter dans l'interface si ce contenu est un jour migré
+  et affiché aux utilisateurs. 43 blocs de contenu sur 6 sections
+  (généralités DT1/DT2, pré-opératoire, hyper/hypoglycémie, IVSE +
+  relais, Basal Bolus + reprise des AD, intervention courte durée).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -409,7 +435,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_anesth_pediatrique_structures.json`,
 `content_aod_dabigatran_urgence_2016.json`,
 `content_tc_readaptation.json`,
-`content_impact_environnemental_ag.json` et la PR #1 de ce dépôt pour
+`content_impact_environnemental_ag.json`,
+`content_diabete_perioperatoire_2025.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
