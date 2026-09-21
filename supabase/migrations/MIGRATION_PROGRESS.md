@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-133 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-134 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -901,6 +901,38 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   l'analgésie périmédullaire, d'après Rackelboom) retranscrite en tableau
   condensé. 37 blocs de contenu sur 5 sections (5 champs).
 
+- **134 : `erreurs_medicamenteuses_2024`** — "Prévention des erreurs
+  médicamenteuses en anesthésie-réanimation", SFAR en collaboration avec
+  la Société Française de Pharmacie Clinique (SFPC), RPP, texte validé
+  le 30 avril 2024. **Réactualisation d'un document déjà git-tracké** :
+  ce corpus suivait déjà `erreurs_medicamenteuses_ar_2016` (préconisation
+  SFAR/SFPC, novembre 2016, même sujet) — cette fiche 2024 est
+  volontairement conservée sous une clé DISTINCTE plutôt que de
+  remplacer la fiche 2016, car beaucoup plus étendue (29 recommandations
+  sur 4 champs vs le format "préconisation" plus court de 2016) : **un
+  futur schéma de migration devrait pouvoir représenter une relation de
+  succession/réactualisation entre deux documents du même corpus sans
+  perdre l'ancien** (même pattern déjà noté pour
+  `optimisation_hemodynamique_adulte_2024` vis-à-vis de
+  `remplissage_perioperatoire`). Format RPP choisi en amont (pas RFE)
+  car le texte source lui-même déclare qu'il n'existait pas assez
+  d'études pour une cotation GRADE numérique — **les 29 recommandations
+  sont donc TOUTES des avis d'experts, à accord fort pour 100%
+  d'entre elles** (décompte vérifié exact : recherche de toutes les
+  occurrences du tag "avis d'experts", correspond exactement aux 29
+  marqueurs R numérotés). 4 champs : environnement de travail et
+  processus (19 recommandations — logiciels de prescription,
+  étiquetage, seringues préremplies, traçabilité...), facteurs humains
+  et organisationnels (6), gestion des risques a posteriori (2),
+  pénuries médicamenteuses (2). 2 absences de recommandation
+  (informatisation de la prescription en anesthésie ; systèmes
+  data-matrix/RFID), chacune imprimée en encadrement avant ET après son
+  texte dans le source (motif déjà rencontré sur les fiches HAS de ce
+  corpus, ici sur un document SFAR/SFPC RPP — pas limité à une seule
+  famille de documents). 31 blocs de contenu sur 3 sections (4 champs,
+  fusionnés en 3 sections après vérification visuelle de densité de
+  page).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -929,7 +961,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_resection_hepatique_2025.json`,
 `content_programme_optimisation_perioperatoire_2022.json`,
 `content_facteurs_humains_2022.json`,
-`content_douleur_accouchement_2025.json` et la PR #1 de ce dépôt pour
+`content_douleur_accouchement_2025.json`,
+`content_erreurs_medicamenteuses_2024.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
