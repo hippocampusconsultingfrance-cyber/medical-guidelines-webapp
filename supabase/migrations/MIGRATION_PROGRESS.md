@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-122 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-123 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -546,6 +546,45 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   20 blocs de contenu sur 1 section (regroupée par phase clinique :
   généralités + préopératoire, peropératoire, postopératoire
   analgésie/thromboprophylaxie, postopératoire récupération).
+- **123 : `reduction_antibiotiques_reanimation_2014`** — "Stratégies de
+  réduction de l'utilisation des antibiotiques à visée curative en
+  réanimation (adulte et pédiatrique)", SRLF/SFAR (GFRUP/SFM/SPILF/SF2H),
+  RFE, Juin 2014. **Méthode de cotation entièrement différente de GRADE
+  numérique** : le texte source n'imprime AUCUN grade GRADE (1+/1-/2+/2-)
+  par item — seule la cotation collective RAND/UCLA (Accord Fort/Accord
+  Faible, 2 tours, échelle 1-9) est explicite ; la force "il faut" vs
+  "il faut probablement" reste dans le libellé textuel de chaque
+  recommandation, jamais formalisée en symbole. Un futur schéma de
+  migration calé sur GRADE (colonne `grade` avec valeurs 1+/1-/2+/2-)
+  ne peut PAS s'appliquer tel quel à ce document — il faut soit un champ
+  `consensus` séparé (Accord Fort/Faible) soit dériver mécaniquement un
+  pseudo-grade depuis le texte ("il faut" → fort, "il faut probablement"
+  → faible), au choix du schéma cible, mais ne jamais fabriquer un grade
+  numérique qui n'existe pas dans la source. **Piège de comptage majeur,
+  déjà résolu pendant la construction** : le texte source annonce lui-même
+  "54 recommandations... certaines scindées en différents items (n=74)" —
+  vérifié exact par extraction programmatique (47 Accord Fort + 27 Accord
+  Faible = 74). Mais **11 des 54 recommandations numérotées contiennent en
+  réalité plusieurs sous-votes internes** (bullets "•" ou phrases
+  successives), chacun avec son propre tag Accord Fort/Faible, **parfois
+  de niveaux différents au sein d'une même recommandation numérotée**
+  (ex. l'item Q2.7 sur les antigénuries : positivité pneumocoque = Accord
+  faible, négativité pneumocoque = Accord fort, positivité légionelle =
+  Accord faible, négativité légionelle = Accord faible — 4 faits, 2
+  niveaux, sous le même numéro "7" dans le texte source). **Un futur
+  import automatisé qui se contenterait de découper le texte source par
+  numéro de recommandation (1., 2., 3...) fusionnerait à tort des faits de
+  niveaux d'accord différents sous une seule cotation** — cette fiche a
+  scindé les 11 recommandations concernées en sous-lignes (ex. "Q2.7a"/
+  "Q2.7b") precisément pour éviter ce piège, jamais l'inverse (jamais deux
+  niveaux fusionnés). Résultat : 62 lignes de synthèse pour 74 votes
+  source, vérifiées une par une par relecture complète du texte source
+  (pas de décompte deviné). 29 blocs de contenu sur 1 section (12
+  sous-sections : Q1 résistance/épidémiologie, Q2 données
+  microbiologiques, Q3a-d choix de l'antibiothérapie [colonisation,
+  carbapénèmes, quinolones, anti-SARM probabiliste/documenté], Q4a-d
+  optimisation de l'administration [indication, dosage/TDM, modalités,
+  associations], Q5 réévaluation/durée).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -564,7 +603,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_anesth_cardiopathie_congenitale.json`,
 `content_ressources_humaines_anesthesie_2024.json`,
 `content_demarches_anticipees_don_organes_2024.json`,
-`content_raac_orthopedique_2019.json` et la PR #1 de ce dépôt pour
+`content_raac_orthopedique_2019.json`,
+`content_reduction_antibiotiques_reanimation_2014.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
