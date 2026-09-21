@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-125 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-126 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -634,6 +634,35 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   beaucoup plus détaillé et spécifique, comparaison faite avant
   construction, aucune recommandation dupliquée à l'identique entre les
   deux fiches. 16 blocs de contenu sur 1 section (4 champs + Tableau 1).
+- **126 : `raac_lobectomie_pulmonaire_2019`** — "Réhabilitation
+  améliorée après lobectomie pulmonaire", SFAR/SFCTCV, RFE, validée
+  20/09/2019. Méthode GRADE standard, 32 recommandations dénombrées
+  exactement (contrairement aux fiches 122 et 125 de ce batch, les
+  items numérotés à 3 niveaux ici — R1.2.1/R1.2.2, R2.1.1/R2.1.2,
+  R2.5.1/R2.5.2, R3.3.1/R3.3.2, R3.4.1/R3.4.2, R4.4.1-4.4.4 — sont
+  chacun une recommandation distincte à part entière, pas des
+  sous-votes d'un parent ; 32 items = 32 recommandations annoncées,
+  vérifié). 7 GRADE1+, 18 GRADE2+, 5 GRADE2-, 2 avis d'experts ; 31
+  accord fort + 1 accord faible (R2.5.2 — seule exception, comme pour
+  la fiche 122 son propre cas d'accord faible isolé). **Incohérence
+  interne trouvée et disclosed** : le résumé en tête de document
+  ("Résultats") annonce "pour 2 questions, aucune recommandation n'a
+  pu être formulée", mais la section corps "Synthèse des résultats"
+  annonce "pour 3 questions" — écart de 1, non résolu. Recherche
+  exhaustive : seulement 2 tags explicites "ABSENCE DE RECOMMANDATION"
+  imprimés (prémédication préopératoire ; aspiration du drain
+  thoracique), plus un 3e cas mentionné uniquement en prose dans
+  l'argumentaire d'une question par ailleurs graduée (décolonisation
+  nasale du portage de S. aureus, mentionnée dans l'argumentaire de la
+  question sur la désinfection oropharyngée à la chlorhexidine, R2.4)
+  — les 3 cas sont documentés dans la fiche, aucun résolu en faveur de
+  l'un ou l'autre chiffre. Pour une future migration : si un schéma de
+  base de données doit représenter les "questions sans réponse", ce
+  document illustre qu'un simple comptage des tags "ABSENCE DE
+  RECOMMANDATION" (=2) peut sous-compter par rapport à ce que le texte
+  source lui-même revendique (=3) — un import automatisé devrait
+  signaler cet écart plutôt que de le résoudre silencieusement. 21
+  blocs de contenu sur 1 section (5 champs).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -655,7 +684,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_raac_orthopedique_2019.json`,
 `content_reduction_antibiotiques_reanimation_2014.json`,
 `content_simulation_soins_critiques_2019.json`,
-`content_optimisation_beta_lactamines_2018.json` et la PR #1 de ce dépôt pour
+`content_optimisation_beta_lactamines_2018.json`,
+`content_raac_lobectomie_pulmonaire_2019.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
