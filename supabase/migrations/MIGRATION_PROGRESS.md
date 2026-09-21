@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-123 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-124 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -585,6 +585,23 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   carbapénèmes, quinolones, anti-SARM probabiliste/documenté], Q4a-d
   optimisation de l'administration [indication, dosage/TDM, modalités,
   associations], Q5 réévaluation/durée).
+- **124 : `simulation_soins_critiques_2019`** — "Intérêts de
+  l'apprentissage par simulation en soins critiques", SRLF/SFAR/SFMU/
+  SOFRASIMS, RPP, textes validés par les CA respectifs (déc. 2018 -
+  janv. 2019). Méthode GRADE grid, 24 recommandations réparties en 3
+  champs (10 compétences techniques, 12 compétences non techniques, 2
+  situations sanitaires exceptionnelles). **Cas le plus simple de ce
+  batch pour une future migration** : les 24 recommandations ont TOUTES
+  recueilli un accord fort, sans une seule exception (vérifié par grep
+  exhaustif : 24× "Accord fort", 0× "Accord faible" dans le texte
+  source) — pas de nuance de cotation à représenter, un simple
+  `grade = 'accord_fort'` uniforme suffit pour les 24 lignes. Seule
+  curiosité mineure : le slug de l'URL de téléchargement source contient
+  "rfe" (`rfe-interets-de-lapprentissage-par-simulation-en-soins-
+  critiques.pdf`) mais le texte précise explicitement avoir choisi un
+  format RPP plutôt que RFE — un futur script qui déduirait le type de
+  document depuis le nom de fichier se tromperait pour celui-ci. 13
+  blocs de contenu sur 1 section (3 champs).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -604,7 +621,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_ressources_humaines_anesthesie_2024.json`,
 `content_demarches_anticipees_don_organes_2024.json`,
 `content_raac_orthopedique_2019.json`,
-`content_reduction_antibiotiques_reanimation_2014.json` et la PR #1 de ce dépôt pour
+`content_reduction_antibiotiques_reanimation_2014.json`,
+`content_simulation_soins_critiques_2019.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
