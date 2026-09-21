@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-120 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-121 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -486,6 +486,35 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   l'audit : la fiche affichait d'abord "36" par erreur de calcul avant
   vérification ligne par ligne des 3 listes de références). 15 blocs de
   contenu sur 1 section (3 questions/tableaux + repères réglementaires).
+- **121 : `demarches_anticipees_don_organes_2024`** — "Recommandations de
+  bonne pratique relatives aux démarches anticipées en vue de don
+  d'organes et de tissus", Agence de la biomédecine (ABM), RBP,
+  septembre 2024. **Méthode de cotation différente de GRADE** : RAND/UCLA
+  à 2 tours (échelle continue 1-9, 3 zones désaccord/indécision/accord,
+  "fort" si la médiane reste dans une zone, "faible" si elle empiète sur
+  une borne) — même famille que la fiche déjà migrée-candidate
+  `mort_encephalique` (SFAR/SRLF/ABM 2005). **29 blocs à accord fort + 1
+  seul bloc à accord faible** (conduite à tenir en cas de défaillance
+  vitale immédiate pendant le repérage d'un donneur possible) — si un
+  futur schéma de migration a une colonne `grade` calée sur GRADE
+  (1+/1-/2+/2-/AE), ce document a besoin d'un mapping vers un vocabulaire
+  RAND/UCLA distinct ("accord fort"/"accord faible"/"désaccord"/
+  "indécision" — seuls les deux premiers apparaissent ici, mais le
+  texte source prévoit les 4 valeurs possibles). **Piège de comptage
+  déjà résolu pendant l'audit** : le texte source tague chaque bloc de
+  texte APRÈS le bloc concerné (convention "l'accord signalé concerne
+  tout ce qui précède depuis l'accord précédent"), donc un futur import
+  automatisé du PDF source ne doit pas supposer qu'un tag `(accord X)`
+  ne couvre que la phrase immédiatement précédente. **Distinction de
+  périmètre vérifiée avant construction** (lecture complète du texte
+  source) : ce document traite d'un patient **avant** la mort cérébrale
+  (coma grave sans perspective thérapeutique, admission en réanimation
+  dans le seul but d'un don), par opposition à `mort_encephalique` qui
+  traite d'un donneur **déjà** en mort encéphalique — deux documents,
+  deux clés, aucun chevauchement de contenu clinique. 25 blocs de
+  contenu sur 1 section (5 sous-sections I à V : prérequis
+  institutionnels, définitions, prérequis cliniques, les 4 étapes de la
+  démarche, formation des professionnels).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -502,7 +531,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_impact_environnemental_ag.json`,
 `content_diabete_perioperatoire_2025.json`,
 `content_anesth_cardiopathie_congenitale.json`,
-`content_ressources_humaines_anesthesie_2024.json` et la PR #1 de ce dépôt pour
+`content_ressources_humaines_anesthesie_2024.json`,
+`content_demarches_anticipees_don_organes_2024.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
