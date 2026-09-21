@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-126 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-127 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -663,6 +663,32 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   source lui-même revendique (=3) — un import automatisé devrait
   signaler cet écart plutôt que de le résoudre silencieusement. 21
   blocs de contenu sur 1 section (5 champs).
+- **127 : `raac_cardiaque_2021`** — "Réhabilitation améliorée après
+  chirurgie cardiaque adulte sous CEC ou à cœur battant", SFAR/SFCTCV,
+  RFE, validée 25/09/2021. Méthode GRADE standard, 33 recommandations
+  dénombrées exactement (7×1+ + 3×1- + 15×2+ + 4×2- + 4 avis d'experts
+  = 33, correspond exactement à la synthèse du texte source). **Cas le
+  plus "propre" des 3 fiches RAAC de ce batch (122, 126, 127)** : les
+  33 recommandations ont TOUTES recueilli un accord fort — aucune
+  exception, contrairement à `raac_orthopedique_2019` (R2 à accord
+  faible) et `raac_lobectomie_pulmonaire_2019` (R2.5.2 à accord
+  faible) — et les 3 tags "ABSENCE DE RECOMMANDATION" trouvés
+  correspondent exactement aux "3 questions sans réponse" annoncées
+  par la synthèse (aucun écart de comptage, contrairement aux 2
+  fiches sœurs). Pour une future migration, ce document peut servir
+  de "cas de référence" sans piège de comptage à documenter — un bon
+  test de non-régression pour un futur pipeline d'import automatisé
+  avant de s'attaquer aux cas pièges (122, 125, 126). Note structurelle :
+  2 des 3 absences de recommandation partagent la même question
+  numérotée du texte source (Champ 4, Question 1 sur les voies
+  d'abord mini-invasives, qui traite successivement chirurgie
+  valvulaire aortique [absence], chirurgie mitrale [R4.1, avis
+  d'experts] et chirurgie coronaire [absence]) — une seule "Question 1"
+  du texte source contient donc à la fois une recommandation et 2
+  absences, ce qui est cohérent avec le total mais illustre qu'une
+  "question" n'est pas toujours 1:1 avec un statut unique
+  (recommandation OU absence). 22 blocs de contenu sur 1 section (6
+  champs).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -685,7 +711,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_reduction_antibiotiques_reanimation_2014.json`,
 `content_simulation_soins_critiques_2019.json`,
 `content_optimisation_beta_lactamines_2018.json`,
-`content_raac_lobectomie_pulmonaire_2019.json` et la PR #1 de ce dépôt pour
+`content_raac_lobectomie_pulmonaire_2019.json`,
+`content_raac_cardiaque_2021.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
