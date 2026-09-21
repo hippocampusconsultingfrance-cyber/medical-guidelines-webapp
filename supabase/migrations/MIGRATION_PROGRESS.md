@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-134 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-135 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -933,6 +933,36 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   fusionnés en 3 sections après vérification visuelle de densité de
   page).
 
+- **135 : `organisation_anesthesie_pediatrique_2023`** — "Organisation
+  structurelle, matérielle et fonctionnelle des centres effectuant de
+  l'anesthésie pédiatrique", SFAR-ADARPEF, RPP, texte validé le
+  19/01/2023. **Relation à deux échelles avec un document déjà
+  git-tracké**, anticipée avant même la construction de cette fiche :
+  `anesth_pediatrique_structures` (RFE SFAR 2000) portait déjà, dans son
+  propre `short`, la mention "Distinct de la RPP SFAR 2023 « Organisation
+  de l'anesthésie pédiatrique »" — cette fiche 135 EST ce document
+  anticipé. Vérifié non redondant : le document 2000 détaille le
+  matériel chiffré (tailles de sondes, masques...) au sein D'UN site ;
+  celui-ci (2023) porte sur l'organisation ENTRE sites/centres (réseaux
+  ville/centre spécialisé, criètres d'orientation par âge/ASA, effectifs
+  minimaux par tranche d'âge) — **un futur schéma de migration devrait
+  pouvoir représenter deux documents du même corpus portant sur des
+  ÉCHELLES différentes du même sujet (site unique vs réseau de sites)
+  sans les traiter comme redondants ou comme une simple
+  succession temporelle** (différent du pattern de réactualisation pure
+  déjà noté pour `erreurs_medicamenteuses_2024`/`ar_2016` ou
+  `optimisation_hemodynamique_adulte_2024`/`remplissage_perioperatoire`).
+  Méthode GRADE prévue en amont mais les 34 recommandations
+  ("préconisations") sont TOUTES avis d'experts, accord fort à 100%
+  (décompte source vérifié exact, PAS d'absence de recommandation dans
+  ce document — contrairement à plusieurs autres RPP de ce corpus). 4
+  champs : structure et logistique (6), équipement et matériel (12),
+  formation (3), organisation fonctionnelle (13, dont R4.3.1-4.3.4 =
+  critères d'effectifs minimaux par tranche d'âge, du type le plus
+  directement actionnable de tout ce corpus : ex. "&lt;1 an ou ASA 4-5 →
+  2 professionnels dédiés exclusivement"). 20 blocs de contenu sur 4
+  sections (4 champs).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -962,7 +992,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_programme_optimisation_perioperatoire_2022.json`,
 `content_facteurs_humains_2022.json`,
 `content_douleur_accouchement_2025.json`,
-`content_erreurs_medicamenteuses_2024.json` et la PR #1 de ce dépôt pour
+`content_erreurs_medicamenteuses_2024.json`,
+`content_organisation_anesthesie_pediatrique_2023.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
