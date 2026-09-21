@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-131 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-132 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -838,6 +838,38 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   3 sections (4 champs, fusionnés en 3 sections après vérification
   visuelle de la densité de page).
 
+- **132 : `facteurs_humains_2022`** — "Facteurs humains en situations
+  critiques", SFAR en association avec le Groupe Facteurs Humains en
+  Santé (FHS), RPP, texte validé le 14/05/2022 (SFAR) et le 04/07/2022
+  (FHS). Crisis resource management en anesthésie-réanimation. Méthode
+  GRADE prévue en amont (format PICO) mais explicitement déclarée non
+  applicable en totalité par le texte source lui-même faute d'essais
+  randomisés sur le sujet — **les 21 recommandations sont donc TOUTES
+  des avis d'experts, à accord fort pour 100% d'entre elles** (décompte
+  vérifié exact : 21 tags "Avis d'experts (accord fort)" trouvés pour 21
+  items numérotés, aucune divergence). **Piège de numérotation
+  spécifique à ce document, distinct des pièges de décompte déjà
+  documentés pour les fiches 128/129/130** : le texte source alterne,
+  sans justification apparente, entre les formats "R3.8"/"R3.9" et
+  "R.3.8"/"R.3.10" (point après le "R") pour des items CONSÉCUTIFS de la
+  même sous-liste — purement typographique, aucune signification
+  clinique, mais un parseur automatisé cherchant uniquement le motif
+  `^R\d` sans la variante `R\.\d` manquerait silencieusement 2 des 21
+  recommandations (trouvé uniquement par une relecture manuelle
+  intégrale du texte, pas par une regex seule — **une future migration
+  automatisée par regex sur ce corpus devrait explicitement tolérer un
+  point optionnel après le "R"**). Sur les 16 annexes du document
+  source, une seule a été jugée à la fois autoportante ET non redondante
+  avec le texte des recommandations elles-mêmes : l'Annexe 14, une fiche
+  pratique "réagir face à un comportement hostile" (campagne SFAR/CFAR
+  "1Patient1Equipe", méthode DESC en 4 étapes pour exprimer un
+  désaccord) — les 15 autres annexes sont soit de simples liens externes
+  vers des mémos HAS/SFAR déjà publiés ailleurs (rien à migrer), soit des
+  exemples de cas cliniques illustratifs redondants avec le texte des
+  recommandations (omis par la règle argumentaire-minimal). 17 blocs de
+  contenu sur 3 sections (4 champs, dont Champ 1+2 fusionnés en une
+  section après vérification visuelle de densité de page).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -864,7 +896,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_optimisation_hemodynamique_pediatrie_2024.json`,
 `content_optimisation_hemodynamique_adulte_2024.json`,
 `content_resection_hepatique_2025.json`,
-`content_programme_optimisation_perioperatoire_2022.json` et la PR #1 de ce dépôt pour
+`content_programme_optimisation_perioperatoire_2022.json`,
+`content_facteurs_humains_2022.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
