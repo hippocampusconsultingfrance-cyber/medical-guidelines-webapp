@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-130 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-131 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -800,6 +800,44 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   cherche à référencer des "annexes" par numéro. 51 blocs de contenu sur
   7 sections (3 champs + annexes 1/2 + méthode/sources).
 
+- **131 : `programme_optimisation_perioperatoire_2022`** — "Programme
+  d'optimisation périopératoire du patient adulte", SFAR, RFE, texte
+  validé par le Comité des Référentiels Cliniques le 13/06/2022 et le
+  Conseil d'Administration le 29/06/2022. Socle commun de mesures
+  applicables quelle que soit la chirurgie — règle de scope explicite du
+  texte source : une mesure devait être valable dans AU MOINS 3 domaines
+  chirurgicaux distincts pour faire l'objet d'une recommandation ici,
+  contrairement aux 4 RFE de réhabilitation améliorée déjà git-trackées
+  qui sont chacune spécifique à UNE chirurgie (`raac_lobectomie_pulmonaire_2019`,
+  `raac_cardiaque_2021`, `raac_orthopedique_2019`, `raac_colorectal`) —
+  **un futur schéma de migration devrait pouvoir distinguer ces deux
+  niveaux (socle générique vs spécialisation par chirurgie) plutôt que de
+  les traiter comme des documents indépendants sans relation**, puisque
+  cette RFE elle-même se positionne explicitement comme leur dénominateur
+  commun. Méthode GRADE standard (1+/1-/2+/2-/AE, PAS de convention non
+  standard cette fois), 4 champs, 30 recommandations numérotées + 2
+  absences de recommandation. **Premier cas de décompte totalement
+  "propre" de ce batch de fiches (100-131)** : les 5 sous-totaux annoncés
+  par le résumé du texte source (16 GRADE1+, 3 GRADE1-, 10 GRADE2+, 0
+  GRADE2-, 1 avis d'experts = 30) correspondent EXACTEMENT à un décompte
+  direct item par item (chaque marqueur `Rx.y[.z] -` apparié
+  individuellement à son tag de grade), de même que les 2 questions sans
+  réponse — contrairement aux fiches 129 (`optimisation_hemodynamique_adulte_2024`,
+  écart sur le TOTAL, 24 annoncé vs 18 réel) et 130 (`resection_hepatique_2025`,
+  écart sur un SOUS-total GRADE2, 22 trouvés vs 21 annoncés). **Utile
+  comme cas de test de référence positif pour un futur schéma de
+  migration automatisée** : un document où la validation par
+  recoupement des totaux/sous-totaux annoncés contre un décompte direct
+  ne devrait PAS lever d'alerte, à la différence des fiches 129 et 130.
+  Un item R4.5 est scindé en deux recommandations numérotées séparément
+  (R4.5.1 GRADE1+ et R4.5.2 GRADE2+) portant sur la même mesure
+  (déambulation précoce) mais deux critères de jugement différents (durée
+  de séjour vs complications) — piège de numérotation à noter (une seule
+  "Question" source peut produire 2 recommandations numérotées avec des
+  grades différents, pas nécessairement le même). 22 blocs de contenu sur
+  3 sections (4 champs, fusionnés en 3 sections après vérification
+  visuelle de la densité de page).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -825,7 +863,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_raac_cardiaque_2021.json`,
 `content_optimisation_hemodynamique_pediatrie_2024.json`,
 `content_optimisation_hemodynamique_adulte_2024.json`,
-`content_resection_hepatique_2025.json` et la PR #1 de ce dépôt pour
+`content_resection_hepatique_2025.json`,
+`content_programme_optimisation_perioperatoire_2022.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
