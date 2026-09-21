@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-124 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-125 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -602,6 +602,38 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   format RPP plutôt que RFE — un futur script qui déduirait le type de
   document depuis le nom de fichier se tromperait pour celui-ci. 13
   blocs de contenu sur 1 section (3 champs).
+- **125 : `optimisation_beta_lactamines_2018`** — "Optimisation du
+  traitement par bêta-lactamines chez le patient de soins critiques",
+  SFPT (Groupe STP/PT) / SFAR, RPP, 2018. Méthode GRADE grid, 21
+  recommandations officiellement dénombrées mais **26 sous-items cotés
+  individuellement** (ex. R1.2.1/R1.2.2, R4.7.1/R4.7.2, R4.8.1/R4.8.2/
+  R4.8.3 comptent chacun pour UNE seule recommandation-parent dans le
+  total de 21, mais chaque sous-item est rédigé et déclaré comme une
+  suggestion distincte) — **piège similaire à celui déjà noté pour la
+  fiche 122 (raac_orthopedique_2019)** : un futur import automatisé qui
+  ne découperait le texte que par numéro de premier niveau (R1, R2...)
+  perdrait la granularité des sous-items ; celui qui compterait chaque
+  ligne "Les experts suggèrent..." comme une recommandation séparée
+  obtiendrait 26 et non les 21 annoncés par la synthèse — les deux
+  chiffres sont réels et non contradictoires (juste deux niveaux de
+  granularité), contrairement aux vraies incohérences trouvées ailleurs
+  dans ce batch. **Toutes les recommandations sont à accord fort** (une
+  seule mention "Accord fort" imprimée UNE FOIS pour l'ensemble du
+  document, pas par item individuel — contrairement aux fiches 121/123/
+  124 de ce batch qui impriment un tag par item) : un futur schéma qui
+  chercherait un tag de cotation après chaque recommandation ne le
+  trouvera pas ici, il faut utiliser la déclaration collective. Contient
+  le **Tableau 1** (cibles thérapeutiques plasmatiques pour 11
+  bêta-lactamines par CMI/fraction libre) intégralement repris pour la
+  colonne "infection documentée" — la colonne "infection non documentée"
+  et les notes de bas de tableau ne sont PAS dans le contenu migré
+  (scope disclosed). **Vérifié complémentaire, pas redondant**, avec la
+  fiche 123 (`reduction_antibiotiques_reanimation_2014`, SRLF/SFAR 2014)
+  qui couvre déjà brièvement le dosage/perfusion continue des
+  bêta-lactamines de façon générale — celle-ci est un RPP dédié
+  beaucoup plus détaillé et spécifique, comparaison faite avant
+  construction, aucune recommandation dupliquée à l'identique entre les
+  deux fiches. 16 blocs de contenu sur 1 section (4 champs + Tableau 1).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -622,7 +654,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_demarches_anticipees_don_organes_2024.json`,
 `content_raac_orthopedique_2019.json`,
 `content_reduction_antibiotiques_reanimation_2014.json`,
-`content_simulation_soins_critiques_2019.json` et la PR #1 de ce dépôt pour
+`content_simulation_soins_critiques_2019.json`,
+`content_optimisation_beta_lactamines_2018.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
