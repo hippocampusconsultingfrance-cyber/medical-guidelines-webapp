@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-121 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-122 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -515,6 +515,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   contenu sur 1 section (5 sous-sections I à V : prérequis
   institutionnels, définitions, prérequis cliniques, les 4 étapes de la
   démarche, formation des professionnels).
+- **122 : `raac_orthopedique_2019`** — "Réhabilitation améliorée après
+  chirurgie orthopédique lourde du membre inférieur (arthroplastie de
+  hanche et de genou)", SFAR, RFE, validée 20/09/2019. Méthode GRADE
+  standard (8 items GRADE1 + 15 items GRADE2 + 1 avis d'experts = 24
+  items dénombrés directement). **3 incohérences internes au texte
+  source trouvées et disclosed, jamais résolues** — un futur import
+  automatisé de ce PDF doit connaître ces 3 pièges avant de faire
+  confiance aux chiffres de synthèse imprimés en tête de document :
+  (1) la synthèse (français ET anglais) annonce "23 recommandations"
+  (7 GRADE1 + 15 GRADE2 + 1 avis d'experts) mais un dénombrement direct
+  des items R1.1 à R15 (avec sous-items) totalise **24**, l'écart de 1
+  étant localisé sur le sous-total GRADE1 (8 dénombrés, pas 7) — le
+  sous-total GRADE2 (15) et avis d'experts (1) correspondent
+  exactement à l'annonce ; (2) la synthèse affirme "un accord fort a
+  été obtenu pour l'ensemble des recommandations" après 2 tours + 1
+  amendement, mais R2 (gabapentinoïdes) porte elle-même, imprimé dans
+  le texte juste après son grade GRADE 2-, le tag **"(accord
+  faible)"** — si un futur schéma de migration a un champ `consensus`
+  séparé du `grade` GRADE, ce document a besoin d'une valeur
+  "faible" pour R2 spécifiquement, malgré ce que dit le résumé du
+  document ; (3) la synthèse annonce "deux questions [qui] n'ont pas
+  trouvé de réponse dans la littérature" mais le texte imprime la
+  mention explicite **"ABSENCE DE RECOMMANDATION"** à 3 reprises (Q2
+  information/éducation préopératoire, Q3 préhabilitation, Q7
+  apports liquidiens peropératoires) — un futur schéma de migration
+  doit prévoir de représenter ces 3 "questions sans recommandation"
+  d'une manière ou d'une autre (ligne à `grade = NULL` avec un texte
+  explicatif, ou table séparée), pas seulement les 24 items gradés.
+  20 blocs de contenu sur 1 section (regroupée par phase clinique :
+  généralités + préopératoire, peropératoire, postopératoire
+  analgésie/thromboprophylaxie, postopératoire récupération).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -532,7 +563,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_diabete_perioperatoire_2025.json`,
 `content_anesth_cardiopathie_congenitale.json`,
 `content_ressources_humaines_anesthesie_2024.json`,
-`content_demarches_anticipees_don_organes_2024.json` et la PR #1 de ce dépôt pour
+`content_demarches_anticipees_don_organes_2024.json`,
+`content_raac_orthopedique_2019.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
