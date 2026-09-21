@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-116 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-117 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -372,6 +372,30 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   autre nom) — celui-ci couvre spécifiquement la phase de réadaptation/
   réveil de coma, un troisième volet distinct ; vérifié par titre avant
   construction, aucune collision.
+- **117 : `impact_environnemental_ag`** — "Réduction de l'impact
+  environnemental de l'anesthésie générale", SFAR avec SF2H et SFPC,
+  RPP 2022. **Grille la plus simple à migrer de ce lot : un seul
+  niveau, uniforme sur les 17 recommandations** — "Avis d'experts
+  (Accord fort)", parce que la méthode GRADE visée n'a pas pu être
+  appliquée à l'ensemble des questions (disclosed par la source
+  elle-même dans son propre résumé). **Si le schéma de migration a une
+  colonne `grade` typée GRADE, ce document entier migre avec
+  `grade = NULL`** (ou une valeur dédiée "avis d'experts + accord
+  fort" si le schéma la modélise) — pas de 1+/1-/2+/2- nulle part dans
+  ce document, à ne pas confondre avec un document qui utiliserait
+  GRADE normalement. 11 blocs de contenu couvrant les 17
+  recommandations en 3 champs (vapeurs/gaz anesthésiques, médicaments
+  intraveineux, dispositifs médicaux/environnement de travail).
+  Particularité de contenu : plusieurs recommandations comparent deux
+  alternatives sans indiquer clairement laquelle est strictement
+  préférée (ex. R1.5 : vapeurs inhalées OU AIVOC au propofol
+  "indifféremment", chacune ayant un type d'impact différent) — à
+  garder tel quel lors d'une migration, ne pas forcer un choix unique
+  que la source ne fait pas. Document sans lien de contenu avec les
+  fiches déjà migrées sur le choix des agents anesthésiques
+  (`agents_halogenes` ou équivalents) — celui-ci traite spécifiquement
+  du critère environnemental, pas de l'efficacité clinique ; vérifié
+  par titre avant construction, aucune collision.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -384,7 +408,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_erreurs_medicamenteuses_ar_2016.json`,
 `content_anesth_pediatrique_structures.json`,
 `content_aod_dabigatran_urgence_2016.json`,
-`content_tc_readaptation.json` et la PR #1 de ce dépôt pour
+`content_tc_readaptation.json`,
+`content_impact_environnemental_ag.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
