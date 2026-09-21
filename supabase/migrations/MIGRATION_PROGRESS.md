@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-127 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-128 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -689,6 +689,34 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   "question" n'est pas toujours 1:1 avec un statut unique
   (recommandation OU absence). 22 blocs de contenu sur 1 section (6
   champs).
+- **128 : `optimisation_hemodynamique_pediatrie_2024`** — "Optimisation
+  hémodynamique périopératoire – Pédiatrie", SFAR, RPP, mars 2024
+  (transfusion exclue du champ). Méthode GRADE grid, **9 avis d'experts
+  décomptés exactement** (R1.1.1/1.1.2/1.1.3 partagent un seul tag
+  "Avis d'experts (Accord fort)" imprimé une fois après les 3 — ce sont
+  3 sous-strates d'âge d'une même question, pas 3 votes indépendants —
+  alors que R4.1.1/R4.1.2 portent chacune leur PROPRE tag séparé bien
+  que numérotées de façon similaire : **piège de généralisation à
+  éviter pour une future migration** — la présence d'un tag partagé vs.
+  répété après des items `X.Y.Z` n'est pas prévisible depuis le seul
+  schéma de numérotation, il faut lire le texte source pour chaque
+  groupe). **4 tags "ABSENCE DE RECOMMANDATION" = 4 questions sans
+  réponse annoncées, décompte exact, aucune incohérence**. Document
+  **entièrement non gradé** (aucun GRADE 1+/1-/2+/2- imprimé nulle
+  part, contrairement à la plupart des RFE/RPP GRADE de ce corpus) —
+  seul le statut "Avis d'experts (Accord fort)" existe, un futur schéma
+  de migration ne doit pas s'attendre à un grade numérique pour ce
+  document. **Distinction explicite du texte source à préserver** :
+  une "absence de recommandation" (littérature insuffisante) est
+  différente d'une "recommandation négative" ("il ne faut pas faire",
+  absente de ce document en particulier) — si un futur schéma de
+  migration a un champ `grade` avec une valeur "négatif", ne pas
+  l'utiliser pour représenter les 4 "absences" de ce document (elles
+  doivent être `grade = NULL` avec texte explicatif, pas une valeur
+  "négative"). Vérifié complémentaire, pas redondant, de la fiche
+  `remplissage_perioperatoire` (RFE SFAR/Adarpef 2012, adulte à haut
+  risque, mention pédiatrique minimale). 18 blocs de contenu sur 1
+  section (4 champs).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -712,7 +740,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_simulation_soins_critiques_2019.json`,
 `content_optimisation_beta_lactamines_2018.json`,
 `content_raac_lobectomie_pulmonaire_2019.json`,
-`content_raac_cardiaque_2021.json` et la PR #1 de ce dépôt pour
+`content_raac_cardiaque_2021.json`,
+`content_optimisation_hemodynamique_pediatrie_2024.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
