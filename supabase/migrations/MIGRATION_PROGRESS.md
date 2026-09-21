@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-135 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-136 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -963,6 +963,33 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   2 professionnels dédiés exclusivement"). 20 blocs de contenu sur 4
   sections (4 champs).
 
+- **136 : `organisation_usc_2018`** — "Recommandations pour le
+  fonctionnement des Unités de Surveillance Continue (USC) dans les
+  Établissements de Santé", Conseils Nationaux Professionnels de
+  Médecine Intensive Réanimation, d'Anesthésie-Réanimation et de
+  Médecine d'Urgence, 2018. **Nouvelle convention de cotation pour ce
+  corpus, distincte à la fois de GRADE (1+/1-/2+/2-/AE) et du format
+  "recommandation numérotée sans signe" (HAS)** : ce document suit
+  chaque recommandation de la seule mention "Accord Fort", sans aucune
+  distinction de niveau de preuve ni d'avis d'experts séparé — 26
+  recommandations, toutes à ce même niveau unique (décompte vérifié
+  exact, aucune absence de recommandation). Même convention que la
+  fiche déjà git-trackée `bris_dentaires` (accord fort uniforme, chip
+  "Fort" déjà défini dans `style.py` et réutilisé tel quel ici, sans
+  modification) — **un futur schéma de migration a maintenant DEUX
+  fiches de référence pour ce pattern "accord fort sans grade", utile
+  pour ne pas le confondre avec un pattern "avis d'experts" (AE) qui a
+  une sémantique différente** (balance bénéfices/risques indéterminée)
+  déjà documenté pour d'autres fiches (128, 130, 132, 134, 135). 5
+  champs (typologie des patients, structure des USC, organisation
+  paramédicale, organisation médicale, USC dans le contexte des GHT).
+  Inclut le tableau des critères d'admission en USC de l'American
+  College of Critical Care (référence externe citée PAR le source, pas
+  une recommandation SFAR/CNP propre — distinction à préserver si migré :
+  ce tableau n'a pas le même statut d'autorité que les 26
+  recommandations elles-mêmes) reproduit intégralement par appareil. 19
+  blocs de contenu sur 3 sections (5 champs, fusionnés en 3 sections).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -993,7 +1020,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_facteurs_humains_2022.json`,
 `content_douleur_accouchement_2025.json`,
 `content_erreurs_medicamenteuses_2024.json`,
-`content_organisation_anesthesie_pediatrique_2023.json` et la PR #1 de ce dépôt pour
+`content_organisation_anesthesie_pediatrique_2023.json`,
+`content_organisation_usc_2018.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
