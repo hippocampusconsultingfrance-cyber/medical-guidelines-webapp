@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-128 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-129 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -717,6 +717,39 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   `remplissage_perioperatoire` (RFE SFAR/Adarpef 2012, adulte à haut
   risque, mention pédiatrique minimale). 18 blocs de contenu sur 1
   section (4 champs).
+- **129 : `optimisation_hemodynamique_adulte_2024`** — "Optimisation
+  hémodynamique périopératoire – Adulte dont obstétrique", SFAR, RFE,
+  janvier 2024 (réactualisation de `remplissage_perioperatoire`, RFE
+  SFAR/Adarpef 2012, déjà git-tracked). **Piège de décompte le plus
+  significatif de tout ce batch** : le résumé du texte source annonce
+  "24 recommandations", mais un décompte direct exhaustif (chaque item
+  numéroté relu individuellement, y compris les items préfixés "OBS"
+  pour la césarienne sous rachianesthésie) trouve seulement **18
+  recommandations réelles**. Fait notable : les 3 SOUS-totaux du résumé
+  (2 GRADE1, 8 GRADE2, 6 questions sans réponse) correspondent TOUS
+  exactement au décompte direct — seul le total final (24 vs 18) diverge.
+  18 + 6 absences = 24, ce qui suggère fortement que le résumé du texte
+  source traite les "absences de recommandation" comme des
+  "recommandations formulées" au sens large (24 questions ayant reçu une
+  réponse quelconque, positive ou négative-par-absence), plutôt qu'une
+  vraie recommandation manquante de mon décompte — **mais ceci reste une
+  hypothèse, pas une certitude**, disclosed comme telle dans la fiche.
+  **Pour une future migration automatisée** : ne JAMAIS faire confiance
+  au chiffre total annoncé dans un résumé/abstract sans le recouper avec
+  les sous-totaux détaillés ET un décompte direct des items — ce
+  document est la preuve qu'un total peut être correct en apparence
+  (24) tout en dissimulant une divergence de définition ("recommandation"
+  incluant ou non les absences) qui ferait échouer une validation basée
+  uniquement sur le total. **Particularité de format disclosed** : ce
+  document imprime "GRADE 1"/"GRADE 2" SANS signe +/- (contrairement au
+  format standard 1+/1-/2+/2- utilisé par la plupart des RFE de ce
+  corpus) — un schéma de migration avec une colonne `grade` typée
+  strictement "1+"/"1-"/"2+"/"2-" ne peut pas accueillir les valeurs de
+  ce document telles quelles ; il faudra soit une valeur "1"/"2" neutre,
+  soit dériver le signe depuis le verbe de la recommandation (comme fait
+  dans cette fiche, jamais deviné sans vérification). 27 blocs de
+  contenu sur 1 section (5 champs, dont 2 sous-sections obstétricales
+  dédiées).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -741,7 +774,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_optimisation_beta_lactamines_2018.json`,
 `content_raac_lobectomie_pulmonaire_2019.json`,
 `content_raac_cardiaque_2021.json`,
-`content_optimisation_hemodynamique_pediatrie_2024.json` et la PR #1 de ce dépôt pour
+`content_optimisation_hemodynamique_pediatrie_2024.json`,
+`content_optimisation_hemodynamique_adulte_2024.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
