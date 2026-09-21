@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-115 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-116 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -338,6 +338,40 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   fusionner les deux documents ni supprimer `aod_urgence` lors d'une
   future migration — vérifié par needle et par contenu (49 occurrences
   "idarucizumab", absentes de `aod_urgence`) avant construction.
+- **116 : `tc_readaptation`** — "Les traumatisés crâniens adultes en
+  médecine physique et réadaptation : du coma à l'éveil", SOFMER,
+  Conférence de consensus, 8 octobre 2001. **Grille de grade la plus
+  complexe rencontrée dans ce corpus à ce jour : DEUX échelles A/B/C
+  DIFFÉRENTES au sein d'un même document**, selon la question traitée
+  (Questions 1-2 : échelle pronostique/validation d'échelle ;
+  Questions 3-4 : échelle Canadian Task Force d'efficacité
+  thérapeutique) — **mêmes lettres A/B/C, critères différents**. La
+  fiche a fait un choix délibéré de ne PAS créer deux jeux de chips
+  visuellement distincts (aurait nécessité un système de double-lettre
+  ou de couleur dédoublée) et a disclosed la distinction dans le texte
+  de méthodologie à la place. **Si le schéma de migration a un champ
+  `grade_scale` ou équivalent, ce document nécessite de savoir, pour
+  chaque recommandation migrée, sous quelle Question (donc quelle
+  échelle) elle a été énoncée** — l'information Q1/Q2 vs Q3/Q4 est
+  disponible via le préfixe de la référence assignée par la fiche
+  (`Q1.x`/`Q2.x` vs `Q3.x`/`Q4.x`), à ne pas jeter lors d'une
+  migration. En plus des grades A/B/C, deux catégories non gradées
+  **distinctes l'une de l'autre selon le texte source lui-même** :
+  **AE** (avis d'experts — situé dans la littérature, au niveau C/III)
+  et **AP** (accord professionnel — aucune publication dans la
+  littérature) ; ne pas les fusionner sous un même "pas de preuve" si
+  le schéma de migration a une distinction équivalente disponible.
+  **Numérotation Q#.# entièrement assignée par cette fiche** — le
+  texte source ne numérote aucune de ses recommandations (contrairement
+  à la plupart des RFE/RPC de ce corpus) ; ne pas présenter cette
+  numérotation comme native à la source dans une future migration. 21
+  blocs de contenu couvrant les 4 questions du jury. Distinct des deux
+  autres documents SFAR sur les traumatismes crâniens déjà indexés
+  dans `library_final.json` (traumatisme crânien léger 2022, traitement
+  de la phase précoce/24 premières heures 2016, déjà migré sous un
+  autre nom) — celui-ci couvre spécifiquement la phase de réadaptation/
+  réveil de coma, un troisième volet distinct ; vérifié par titre avant
+  construction, aucune collision.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -349,7 +383,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_organisation_ar_obstetricale.json`,
 `content_erreurs_medicamenteuses_ar_2016.json`,
 `content_anesth_pediatrique_structures.json`,
-`content_aod_dabigatran_urgence_2016.json` et la PR #1 de ce dépôt pour
+`content_aod_dabigatran_urgence_2016.json`,
+`content_tc_readaptation.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
