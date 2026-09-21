@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Medical Guidelines",
   description:
-    "Fiches de synthèse des recommandations professionnelles pour l'anesthésie-réanimation.",
+    "Fiches de synthèse des recommandations professionnelles, pour le personnel médical et paramédical.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
