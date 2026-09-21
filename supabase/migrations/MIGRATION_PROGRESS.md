@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-119 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-120 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -452,6 +452,40 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   traitements, sous forme de tableau texte) le sont intégralement. 22
   blocs de contenu sur 4 champs cliniques (risque préopératoire,
   stratégie anesthésique, postopératoire, obstétrique) + annexe.
+- **120 : `ressources_humaines_anesthesie_2024`** — "Préconisations pour
+  les ressources humaines médicales en anesthésie programmée", SFAR/CNP
+  ARMPO, RPP validée par le CA de la SFAR le 02/12/2024. **Deux statuts
+  distincts, ni l'un ni l'autre n'étant un grade GRADE numérique** : "RR"
+  (Rappel à la réglementation, 4 items R1.1-R1.4 — la question trouve sa
+  réponse dans un texte légal/réglementaire déjà en vigueur, pas dans une
+  cotation d'experts) et "AE" (Avis d'experts, 7 items R2.1-R2.4/R3.1-R3.3
+  — méthode GRADE grid mais format RPP, terminologie "les experts
+  suggèrent"). Le texte source précise explicitement que les 11
+  préconisations ont recueilli un accord fort dès le premier tour de
+  cotation, **sans distinction de force entre elles** — si un futur schéma
+  de migration a une colonne `grade` unique, ce document a besoin d'une
+  colonne supplémentaire (ou d'une valeur composite du type
+  `"RR"`/`"AE"`) distincte de tout champ `consensus`/`accord`, pour ne pas
+  perdre l'information sur la nature de la source (loi vs avis d'expert)
+  ni la fusionner avec le niveau de consensus (qui est uniforme "accord
+  fort" pour les 11 items). Champ explicitement restreint : hors urgence/
+  soins critiques, hors anesthésie pédiatrique et obstétricale (renvoi
+  vers des fiches dédiées), hors consultation préanesthésique/médecine
+  périopératoire. Aucune collision de titre/clé trouvée (`grep -i
+  "ressources humaines"` sur `site/app.js` et `library_final.json` avant
+  construction) — document génuinement absent de `FICHE_HREF_MATCH`
+  avant cette fiche. Argumentaire minimal appliqué dès la construction
+  (règle 2026-09-14) : les statistiques/études de risque citées à l'appui
+  (OR, %, cohortes Burns et al. JAMA Surgery 2022, Arbous et al.
+  Anesthesiology 2005) ne sont pas transcrites — seuls les points
+  cliniquement actionnables (rôles MAR/IADE/DJ-AR, limites de 1-2 salles
+  par MAR, proximité des salles, procédure de recours) sont retenus. Le
+  texte source cite 40 références bibliographiques réparties sur 3
+  numérotations indépendantes par question (23 + 13 + 4, chaque question
+  redémarrant à [1] dans le texte — piège trouvé et corrigé pendant
+  l'audit : la fiche affichait d'abord "36" par erreur de calcul avant
+  vérification ligne par ligne des 3 listes de références). 15 blocs de
+  contenu sur 1 section (3 questions/tableaux + repères réglementaires).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -467,7 +501,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_tc_readaptation.json`,
 `content_impact_environnemental_ag.json`,
 `content_diabete_perioperatoire_2025.json`,
-`content_anesth_cardiopathie_congenitale.json` et la PR #1 de ce dépôt pour
+`content_anesth_cardiopathie_congenitale.json`,
+`content_ressources_humaines_anesthesie_2024.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
