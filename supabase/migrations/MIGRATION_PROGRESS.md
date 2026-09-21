@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-118 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
+## ⚠️ Fiches 100-119 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -422,6 +422,36 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   et affiché aux utilisateurs. 43 blocs de contenu sur 6 sections
   (généralités DT1/DT2, pré-opératoire, hyper/hypoglycémie, IVSE +
   relais, Basal Bolus + reprise des AD, intervention courte durée).
+- **119 : `anesth_cardiopathie_congenitale`** — "Anesthésie et
+  cardiopathie congénitale de l'adulte", SFAR/SFC/SFP/CARO/SFCTCV, RPP
+  2023. **Grade uniforme "Avis d'experts (Accord fort)" pour les 11
+  recommandations (méthode GRADE Grid mais pas de grade GRADE
+  numérique imprimé)** — si le schéma exige un `grade` non-NULL,
+  ce document entier migre avec `grade = NULL`, même famille que
+  `impact_environnemental_ag` (117) et `bris_dentaires`. **Piège
+  d'URL de téléchargement SFAR trouvé pendant la construction, à ne
+  jamais réutiliser sans vérification** : `library_final.json` pointe
+  vers `wpdmdl=50051` pour ce titre, mais ce fichier contient en
+  réalité les fiches pratiques annexes (10 pages, infographies
+  visuelles) et NON le texte principal — le texte des 11
+  recommandations vient de `wpdmdl=50052` (dont le slug contient
+  pourtant "-annexes", nom trompeur). **Si une future migration ou un
+  script de retéléchargement automatique utilise
+  `direct_pdf_url` de `library_final.json` tel quel pour ce titre, il
+  récupérera le mauvais fichier** — `library_final.json` lui-même
+  n'a pas été corrigé (risque de collision avec ce même piège pour
+  quiconque retéléchargerait ce document plus tard). **Scope
+  disclosed, non migré depuis cette fiche** : le Tableau 6 (score de
+  risque composite croisé par lésion cardiaque spécifique — une
+  classification cardiologique exhaustive sur plusieurs pages) et les
+  5 fiches pratiques annexes #2-6 (infographies visuelles : pièges du
+  monitorage, principes d'anesthésie, protocoles d'urgence HTAP/
+  Fontan, conduite obstétricale) ne sont pas dans le contenu migré —
+  seuls le Tableau 3 (statut physiologique A-D), le Tableau 5 (risque
+  chirurgical) et la Fiche pratique #1 (gestion périopératoire des
+  traitements, sous forme de tableau texte) le sont intégralement. 22
+  blocs de contenu sur 4 champs cliniques (risque préopératoire,
+  stratégie anesthésique, postopératoire, obstétrique) + annexe.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -436,7 +466,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_aod_dabigatran_urgence_2016.json`,
 `content_tc_readaptation.json`,
 `content_impact_environnemental_ag.json`,
-`content_diabete_perioperatoire_2025.json` et la PR #1 de ce dépôt pour
+`content_diabete_perioperatoire_2025.json`,
+`content_anesth_cardiopathie_congenitale.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
