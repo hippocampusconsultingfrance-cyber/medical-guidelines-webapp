@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-129 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-130 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -751,6 +751,55 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   contenu sur 1 section (5 champs, dont 2 sous-sections obstétricales
   dédiées).
 
+- **130 : `resection_hepatique_2025`** — "Prise en charge péri-opératoire
+  du patient adulte lors d'une résection hépatique", HAS, recommandation
+  de bonne pratique adoptée par le Collège le 11 septembre 2025, élaborée
+  par la SFAR avec l'AFEF (Société Française d'Hépatologie) et l'ACHBPT.
+  Méthode GRADE, 3 champs / 14 questions, 40 recommandations numérotées
+  (accord fort) + 3 absences de recommandation. **Piège de décompte du
+  même type que `optimisation_hemodynamique_adulte_2024` (fiche 129),
+  mais dans l'autre sens** : le résumé du texte source annonce "39
+  recommandations" (7 GRADE1 + 21 GRADE2 + 11 avis d'experts), mais un
+  décompte direct exhaustif — chaque marqueur `R x.y.z` apparié
+  individuellement à son chip de grade suivant dans le texte, sans
+  chevauchement possible avec un marqueur d'absence voisin, revérifié
+  paire par paire — trouve **40 recommandations** (7 GRADE1 + **22**
+  GRADE2 + 11 avis d'experts). Les sous-totaux GRADE1 (7) et avis
+  d'experts (11) correspondent EXACTEMENT au résumé ; seul le sous-total
+  GRADE2 diverge (22 trouvés vs 21 annoncés), contrairement à la fiche
+  129 où c'était le total global qui divergeait pour une raison
+  identifiée (absences comptées comme "recommandations"). Ici, les 3
+  absences de recommandation du résumé correspondent exactement aussi —
+  l'écart porte donc uniquement sur un item GRADE2 numéroté en trop par
+  rapport au résumé, sans hypothèse de résolution identifiée (contrairement
+  à la fiche 129, cette divergence n'a pas d'explication candidate
+  évidente). **Pour une future migration automatisée** : ce document est
+  un second exemple, indépendant de la fiche 129, qu'un total ou un
+  sous-total annoncé dans un résumé source ne doit jamais remplacer un
+  décompte direct — ici c'est un SOUS-total (GRADE2) qui est faux, pas le
+  total global, ce qui est un mode de divergence différent et donc un
+  piège de validation différent (une validation qui ne vérifierait que le
+  total global 39 contre 40 aurait détecté l'erreur, mais une validation
+  qui ferait confiance aux 3 sous-totaux individuellement annoncés sans
+  les re-sommer ne l'aurait pas détectée). **Distinction ABS/AE explicite
+  dès la légende du texte source lui-même** (page 2) : "ABS — Pas de
+  recommandation" (absence d'études concluantes, aucune proposition
+  faite) est explicitement différenciée de "AE — Avis d'experts"
+  (proposition malgré l'absence de preuves fortes) — même piège que la
+  fiche 128 (`optimisation_hemodynamique_pediatrie_2024`), à ne pas
+  fusionner dans un futur schéma de migration (`grade` doit rester NULL
+  pour les 3 ABS, distinct d'un avis d'experts). **Particularité de
+  format identique à la fiche 129** : le document imprime "1"/"2" SANS
+  signe +/- (pas de format standard 1+/1-/2+/2-) — mêmes implications
+  pour un futur schéma `grade` typé strictement sur le format à signe.
+  **Autre disclosure mineure** : le texte source lui-même numérote DEUX
+  annexes différentes "Annexe 3" (une p.13 sur le risque d'insuffisance
+  hépatique post-hépatectomie chez les patients CHC, une p.18 sur
+  l'antibioprophylaxie) — doublon de numérotation propre au document
+  source, non corrigé dans la fiche, à noter si une future migration
+  cherche à référencer des "annexes" par numéro. 51 blocs de contenu sur
+  7 sections (3 champs + annexes 1/2 + méthode/sources).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -775,7 +824,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_raac_lobectomie_pulmonaire_2019.json`,
 `content_raac_cardiaque_2021.json`,
 `content_optimisation_hemodynamique_pediatrie_2024.json`,
-`content_optimisation_hemodynamique_adulte_2024.json` et la PR #1 de ce dépôt pour
+`content_optimisation_hemodynamique_adulte_2024.json`,
+`content_resection_hepatique_2025.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
