@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-132 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-133 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -870,6 +870,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   contenu sur 3 sections (4 champs, dont Champ 1+2 fusionnés en une
   section après vérification visuelle de densité de page).
 
+- **133 : `douleur_accouchement_2025`** — "Prise en charge de la douleur
+  de l'accouchement : analgésie périmédullaire et alternatives
+  médicamenteuses", HAS, RBP validée par le Collège le 30 avril 2025,
+  promue par la SFAR et le Collège d'Anesthésie et Réanimation en
+  Obstétrique (CARO). Actualisation des recommandations SFAR de 2006 sur
+  l'analgésie obstétricale. Même convention de grade que la fiche 130
+  (`resection_hepatique_2025`, même famille de documents HAS) — "1"/"2"
+  SANS signe +/-, chip ABS distinct d'AE. 34 recommandations + 5
+  absences de recommandation (39 items) sur 5 champs. **Différence
+  notable avec la fiche 130** : ce document N'IMPRIME AUCUNE synthèse
+  chiffrée globale ("XX recommandations, Y niveau élevé...") — aucune
+  vérification croisée résumé-vs-décompte n'était donc possible ici,
+  contrairement aux fiches 129/130/131 qui avaient toutes une phrase de
+  synthèse à recouper. Le décompte de cette fiche (34+5=39) est un
+  décompte direct exhaustif SANS résumé source de référence — **une
+  future migration automatisée ne doit pas supposer qu'un document
+  HAS/SFAR de cette famille contient toujours une phrase de synthèse
+  chiffrée exploitable pour validation croisée : certains n'en ont
+  pas, et le seul filet de sécurité est alors la relecture manuelle
+  intégrale**. Piège de comptage disclosed : sur les 5 absences de
+  recommandation, 2 n'ont AUCUN numéro "R" du tout (port de la casaque
+  stérile ; monitorage systématique maternel/RCF pendant la pose) —
+  present dans le texte comme question explicitement posée puis
+  répondue par une absence, sans jamais recevoir de numéro, contrairement
+  aux 3 autres absences qui suivent le même motif d'encadrement ABS mais
+  sont positionnées entre deux items numérotés adjacents (repérable
+  seulement par lecture, pas par un saut de numérotation visible). Inclut
+  la Figure 4 du source (algorithme de gestion de l'insuffisance/échec de
+  l'analgésie périmédullaire, d'après Rackelboom) retranscrite en tableau
+  condensé. 37 blocs de contenu sur 5 sections (5 champs).
+
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
 `content_infections_nosocomiales_rea.json`,
@@ -897,7 +928,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_optimisation_hemodynamique_adulte_2024.json`,
 `content_resection_hepatique_2025.json`,
 `content_programme_optimisation_perioperatoire_2022.json`,
-`content_facteurs_humains_2022.json` et la PR #1 de ce dépôt pour
+`content_facteurs_humains_2022.json`,
+`content_douleur_accouchement_2025.json` et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
