@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-141 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-142 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1196,6 +1196,43 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   présentes). 30 blocs de contenu sur 2 sections (deux fusions
   successives de sections ont RÉDUIT le nombre de pages réel de 5 à 3,
   la seconde corrigeant aussi un bloc orphelin isolé).
+- **142 : `delivrance_information_2012`** — "Délivrance de l'information
+  à la personne sur son état de santé", HAS, Recommandation de Bonne
+  Pratique, validée par le Collège de la HAS en **mai 2012**. Texte
+  fondamental sur le consentement éclairé/l'information du patient,
+  applicable à toute consultation d'anesthésie : contenu et qualités
+  de l'information, modalités de délivrance (entretien individuel,
+  accompagnant, personne de confiance, documents écrits, coordination
+  entre plusieurs professionnels, traçabilité), information du mineur/
+  majeur protégé/majeur inapte (cas particuliers détaillés), évaluation
+  de l'information donnée. Actualise et remplace « Information des
+  patients — Recommandations destinées aux médecins » (ANAES, mars
+  2000) — ce document 2000 est lui-même un lien mort sur sfar.org,
+  aucun risque de collision. **Deux problèmes d'index bibliothèque
+  disclosed et corrigés plutôt que de provoquer un échec silencieux** :
+  (1) `library_final.json` contient une coquille dans son
+  `direct_pdf_url` ("l-information" avec un tiret superflu) qui 404 —
+  l'URL fonctionnelle (sans le tiret) a été trouvée en grattant la
+  page href elle-même ; (2) l'index date ce document de "2010", mais
+  le PDF lui-même affiche "Mai 2012" comme date de validation par le
+  Collège de la HAS — la fiche utilise la date réellement imprimée sur
+  le document, divergence disclosed plutôt que tranchée arbitrairement
+  (si migré, utiliser mai 2012 comme date de référence, pas 2010).
+  **Méthodologie** : la grille HAS A/B/C/AE est définie en préambule du
+  document MAIS jamais citée individuellement dans le corps du texte
+  (vérifié par grep exhaustif, zéro occurrence de "(A)"/"(B)"/"(C)"/
+  "(AE)") — le document énonce lui-même que l'absence de données
+  scientifiques suffisantes fait reposer TOUTES les recommandations
+  sur un accord d'experts. Chip "AE" appliqué uniformément aux 28
+  items (même pattern que `bris_dentaires`/`organisation_usc_2018` pour
+  un grade uniforme disclosed par la source elle-même — **si migré, ne
+  pas fabriquer de différenciation A/B/C qui n'existe pas dans le
+  texte, `grade` doit être 'AE' pour les 28 lignes**). Contrairement
+  aux fiches 139-141, ce document a sa PROPRE entrée `library_final.json`
+  (non partagée) — `FICHE_HREF_MATCH` ajouté normalement, revérifié par
+  Playwright que la ligne du tableau bibliographique route bien vers
+  cette fiche. 15 blocs de contenu sur 3 sections (fusion de 4→3
+  sections qui a RÉDUIT le nombre de pages réel de 4 à 3).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1232,7 +1269,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_gestion_traitements_chroniques_cardio_2009.json`,
 `content_gestion_traitements_chroniques_douleur_toxico_2009.json`,
 `content_gestion_traitements_chroniques_neuro_psy_2011.json`,
-`content_gestion_traitements_chroniques_infectieux_2009.json`
+`content_gestion_traitements_chroniques_infectieux_2009.json`,
+`content_delivrance_information_2012.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
