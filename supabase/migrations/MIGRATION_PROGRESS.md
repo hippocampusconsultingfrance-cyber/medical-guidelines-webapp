@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-146 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-147 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1371,6 +1371,27 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   de forcer une fusion artificielle. Partage l'entrée `FICHE_HREF_MATCH`
   des fiches 143-145 (pas de doublon) mais possède ses propres entrées
   `RAW`/`DOC_META` complètes.
+- **147 : `blocs_perimedullaires_terrain_cardioresp_2006`** — cinquième
+  installment du même document (fiches 143-146). Couvre INTÉGRALEMENT les
+  Questions 9 (terrain cardiovasculaire : effets hémodynamiques, HTA,
+  coronarien, insuffisance cardiaque, valvulopathies, troubles du rythme)
+  et 10 (terrain respiratoire : asthme, altération ventilatoire, SAOS,
+  surveillance) — les deux premières d'une série de 5 « Questions terrain »
+  consécutives (9-13) du document source. 18 recommandations gradées (A:4,
+  B:3, C:10, AE:1), vérifiées par audit indépendant — décompte correct dès
+  la première passe, sans correction nécessaire cette fois (contrairement à
+  plusieurs installments précédents). Aucune citation « grade D »,
+  « consensus professionnel » ni « avis d'experts » dans ce périmètre —
+  disclosed explicitement comme une absence confirmée, pas simplement non
+  mentionnée. Installment le plus compact à ce jour : seulement 2 pages
+  pour 18 recommandations, aucun problème de densité de page rencontré.
+  Aucun tableau ni figure dans ce périmètre (vérifié par grep). Les
+  Questions 11-13 (hémostase, neurologique, infectieux — 70 citations
+  brutes combinées, nettement plus volumineuses) et 14-15 (gestion de
+  l'échec, facteurs de risque de complications) restent pour des
+  installments futurs. Partage l'entrée `FICHE_HREF_MATCH` des fiches
+  143-146 (pas de doublon) mais possède ses propres entrées
+  `RAW`/`DOC_META` complètes.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1412,7 +1433,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_ci_2006.json`,
 `content_blocs_perimedullaires_technique_2006.json`,
 `content_blocs_perimedullaires_cesarienne_2006.json`,
-`content_blocs_perimedullaires_postop_2006.json`
+`content_blocs_perimedullaires_postop_2006.json`,
+`content_blocs_perimedullaires_terrain_cardioresp_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
