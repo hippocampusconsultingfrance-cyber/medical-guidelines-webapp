@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-143 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-144 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1264,6 +1264,42 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   après une fusion de sections réussie (5→4). Needle `FICHE_HREF_MATCH`
   ('les-blocs-perimedullaires-chez-ladulte') vérifié comme correspondant
   à exactement 1 entrée `library_final.json`.
+- **144 : `blocs_perimedullaires_technique_2006`** — deuxième installment du
+  même document que la fiche 143 ("Les blocs périmédullaires chez l'adulte",
+  SFAR/Sofcot/Sofmer RPC 2006-2007). Couvre INTÉGRALEMENT les Questions 3
+  (modalités de la rachianesthésie), 4 (modalités de la péridurale) et 5
+  (association blocs périmédullaires-anesthésie générale : chronologie,
+  surveillance peropératoire) — le « groupe technique » déjà annoncé comme
+  installment futur dans la fiche 143. 24 recommandations gradées (A:11,
+  B:4, C:8, AE:1), vérifiées par audit indépendant (regex sur le script
+  final) — correct dès la première passe cette fois, sans correction de
+  décompte nécessaire. **Méthodologie de consolidation disclosed** : 31
+  citations de grade brutes dans le texte source (A×17, B×5, C×8,
+  « consensus professionnel » ×1, vérifié par grep) sont regroupées en 24
+  lignes de tableau lorsque plusieurs citations portent le MÊME grade pour
+  le MÊME point clinique au sein d'un seul paragraphe source — jamais deux
+  grades DIFFÉRENTS fusionnés dans une seule ligne (safety net anti-grade-
+  composite vérifié propre). **Nouvelle variante terminologique** trouvée
+  dans la Question 5 : « consensus professionnel », une troisième
+  formulation du palier de preuve le plus faible (avec « accord
+  professionnel » et « avis d'experts » déjà rencontrés dans les Questions
+  1-2 de la fiche 143) — toutes trois disclosed comme équivalentes, pas des
+  paliers distincts (**si migré : `grade` doit être 'AE' pour cette ligne
+  comme pour les autres accords professionnels de ce document**). Trois
+  tableaux pharmacologiques reproduits verbatim (facteurs déterminant le
+  bloc en rachianesthésie ; pharmacodynamie comparée des AL en
+  rachianesthésie ; en péridurale), y compris leurs cellules réellement
+  vides dans le source — vérifié par rendu visuel du PDF source à 200dpi
+  (pages 726-728) avant rédaction, pas supposé à partir du seul texte
+  extrait (risque connu de ce corpus sur les tableaux multi-colonnes,
+  non constaté ici après vérification). QA visuelle : deux corrections
+  faites avant commit (titre de section trop long débordant de sa barre de
+  couleur, raccourci ; première colonne du Tableau 4 trop étroite coupant
+  "Lévobupivacaïne" en deux lignes, élargie). Partage l'entrée
+  `FICHE_HREF_MATCH` de la fiche 143 (pas de doublon) mais possède ses
+  propres entrées `RAW`/`DOC_META` complètes, la rendant indépendamment
+  accessible (menu latéral/page d'accueil) — même pattern que les fiches
+  139-141 partageant l'entrée de la fiche 138.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1302,7 +1338,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_gestion_traitements_chroniques_neuro_psy_2011.json`,
 `content_gestion_traitements_chroniques_infectieux_2009.json`,
 `content_delivrance_information_2012.json`,
-`content_blocs_perimedullaires_ci_2006.json`
+`content_blocs_perimedullaires_ci_2006.json`,
+`content_blocs_perimedullaires_technique_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
