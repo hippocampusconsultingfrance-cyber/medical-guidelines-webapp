@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-144 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-145 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1300,6 +1300,43 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   propres entrées `RAW`/`DOC_META` complètes, la rendant indépendamment
   accessible (menu latéral/page d'accueil) — même pattern que les fiches
   139-141 partageant l'entrée de la fiche 138.
+- **145 : `blocs_perimedullaires_cesarienne_2006`** — troisième installment
+  du même document (fiches 143-144). Couvre INTÉGRALEMENT la Question 7
+  (blocs périmédullaires pour la césarienne : préparation, choix de la
+  technique, gestion de l'échec, situations obstétricales particulières,
+  analgésie postopératoire). **Question 6 (travail obstétrical)
+  délibérément EXCLUE** — collision vérifiée AVANT rédaction (comme demandé
+  par le pipeline standard) : le texte source de `douleur_accouchement_2025`
+  (HAS, RBP validée 30 avril 2025, déjà git-trackée) se décrit lui-même
+  comme "actualisation des recommandations SFAR de 2006 sur l'analgésie
+  obstétricale" — exactement le périmètre de cette Question 6 de 2006.
+  Construire une fiche pour ce contenu 2006 aurait dupliqué/entrerait en
+  conflit avec une référence 2025 déjà à jour sur le même sujet — même
+  logique que l'incident prééclampsie 2009/2020 déjà documenté. 31
+  recommandations gradées (A:4, B:5, C:20, D:1, AE:1), vérifiées par audit
+  indépendant — **erreur de décompte manuel réelle trouvée et corrigée
+  avant commit** : le brouillon du docstring/DOC_META annonçait 27 lignes
+  (C:16), l'audit regex sur le script final a trouvé 31 lignes (C:20) — le
+  code lui-même était correct, seule l'arithmétique manuelle de rédaction
+  était fausse (si migré : utiliser 31/C:20, pas 27/C:16). **Nouvelle
+  incohérence interne du source disclosed** : le préambule méthodologique
+  du document ("GRADATION... ANAES AVRIL 2004") ne définit que les grades
+  A/B/C + accord professionnel, mais le corps du texte cite un « grade D »
+  (10 occurrences dans le document complet, vérifié par grep exhaustif,
+  dont 1 seule dans le périmètre de cette fiche) — jamais défini par le
+  source lui-même, confirmé authentique (pas un artefact d'extraction, par
+  rendu visuel à 150dpi) et présenté avec un chip visuellement distinct
+  plutôt qu'arbitrairement assimilé à un grade C ou à un accord
+  professionnel (**si migré : `grade` doit être 'D' littéralement pour
+  cette ligne — ne pas la fusionner avec les lignes 'C' ou 'AE' de ce
+  document**). Vérifié : les fiches 143 et 144 (déjà publiées) ne sont pas
+  concernées, aucune occurrence de "grade D" dans leurs périmètres
+  respectifs. La Fig. 1 du source (deux algorithmes décisionnels visuels
+  pour le choix de la technique d'ALR) est retranscrite fidèlement en texte
+  structuré (arborescence de décision) plutôt qu'en image — ce corpus n'a
+  pas de pattern établi pour intégrer une image matricielle dans une fiche
+  reportlab. Partage l'entrée `FICHE_HREF_MATCH` des fiches 143-144 (pas de
+  doublon) mais possède ses propres entrées `RAW`/`DOC_META` complètes.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1339,7 +1376,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_gestion_traitements_chroniques_infectieux_2009.json`,
 `content_delivrance_information_2012.json`,
 `content_blocs_perimedullaires_ci_2006.json`,
-`content_blocs_perimedullaires_technique_2006.json`
+`content_blocs_perimedullaires_technique_2006.json`,
+`content_blocs_perimedullaires_cesarienne_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
