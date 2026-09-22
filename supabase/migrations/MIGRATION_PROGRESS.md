@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-142 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-143 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1233,6 +1233,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   Playwright que la ligne du tableau bibliographique route bien vers
   cette fiche. 15 blocs de contenu sur 3 sections (fusion de 4→3
   sections qui a RÉDUIT le nombre de pages réel de 4 à 3).
+- **143 : `blocs_perimedullaires_ci_2006`** — "Les blocs périmédullaires
+  chez l'adulte", SFAR/Sofcot/Sofmer, Recommandations pour la Pratique
+  Clinique, présentées le 24 septembre 2005 (47e congrès SFAR), Annales
+  Françaises d'Anesthésie et de Réanimation 26 (2007) 720-752. **Fiche à
+  périmètre limité** : le document source compte 15 « Questions »
+  cliniques et 369 citations de grade individuelles au total — beaucoup
+  trop dense pour une seule fiche. Cette fiche couvre INTÉGRALEMENT les
+  Questions 1 et 2 (information au patient ; contre-indications
+  générales, surveillance et monitorage), le socle applicable à toute
+  anesthésie-analgésie périmédullaire. Les Questions 3 à 15 (technique
+  rachianesthésie/péridurale, association AG-bloc, travail obstétrical,
+  césarienne, analgésie postopératoire, terrains spécifiques, gestion de
+  l'échec, facteurs de risque de complications) NE SONT PAS couvertes —
+  installments futurs du même document, disclosed explicitement en page
+  1 de la fiche. **Grille EBM classique A/B/C/AE** — la seule occurrence
+  du texte source en « avis d'experts » est traitée comme équivalente à
+  l'« accord professionnel » (même palier le plus bas), disclosed comme
+  variation terminologique et non un palier distinct **(si migré : ne
+  pas fabriquer de palier séparé pour « avis d'experts », `grade` doit
+  être 'AE' pour cette ligne comme pour les autres accords professionnels)**.
+  41 recommandations gradées au total sur les 2 questions, vérifiées par
+  audit indépendant (regex sur le script final, pas seulement estimation
+  à la lecture) : A:3, C:31, AE:7. **Corrige une évaluation erronée d'une
+  session antérieure** qui avait conclu à tort que ce document ne
+  comportait aucune citation gradée — cette conclusion venait d'une
+  recherche sensible à la casse sur « Grade » (majuscule) qui ne trouvait
+  aucune occurrence ; le texte source utilise systématiquement la
+  minuscule « grade », d'où les 369 citations réelles retrouvées. 4 pages
+  après une fusion de sections réussie (5→4). Needle `FICHE_HREF_MATCH`
+  ('les-blocs-perimedullaires-chez-ladulte') vérifié comme correspondant
+  à exactement 1 entrée `library_final.json`.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1270,7 +1301,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_gestion_traitements_chroniques_douleur_toxico_2009.json`,
 `content_gestion_traitements_chroniques_neuro_psy_2011.json`,
 `content_gestion_traitements_chroniques_infectieux_2009.json`,
-`content_delivrance_information_2012.json`
+`content_delivrance_information_2012.json`,
+`content_blocs_perimedullaires_ci_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
