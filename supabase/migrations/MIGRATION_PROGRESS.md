@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-139 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-140 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1117,6 +1117,47 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   (fusion de 4→2 sections qui a RÉDUIT le nombre de pages réel de 5 à
   4, contrairement à la fiche 138 — a aussi corrigé un bloc orphelin
   isolé seul sur une page).
+- **140 : `gestion_traitements_chroniques_neuro_psy_2011`** — "Gestion
+  périopératoire des traitements chroniques et dispositifs médicaux —
+  Pathologies neurologiques et psychiatriques" + texte court
+  "Phytothérapie", SFAR RFE, Ann Fr Anesth Réanim 30 (2011) 191-194 et
+  200. **Module 4/4, dernier module du même référentiel composite que
+  les fiches 138/139** (pages 32-36 du même PDF fusionné) :
+  antiparkinsoniens, antidépresseurs (avec une sous-section IMAO
+  dédiée — ancienne/nouvelle génération, choix d'opiacés pour éviter
+  un syndrome sérotoninergique), et le texte court « Phytothérapie »
+  (bundled dans cette fiche vu sa taille très réduite — moins d'une
+  page source, même auteur/responsable). Le Module 3
+  (Infectieux/immunosuppresseurs) reste hors périmètre. **Un module
+  "pathologies endocriniennes" annoncé par le préambule du référentiel
+  (voir fiche 138) a été activement recherché dans les 36 pages du PDF
+  fusionné et n'y a pas été trouvé** — disclosed comme probablement
+  jamais publié sous cette forme ou publié ailleurs, plutôt que
+  silencieusement omis. **Deux divergences méthodologiques réelles
+  disclosed par rapport aux modules 1/2** (fiches 138/139) : (1) ce
+  module (groupe de travail différent, publié 2011) utilise « grade D »
+  ET « accord fort » comme DEUX notations distinctes et non
+  interchangeables — contrairement aux modules 1/2 où D n'apparaissait
+  jamais autrement que relabellisé accord fort — chip local "D" séparé
+  ajouté pour ce module uniquement ; (2) une citation source imprime un
+  grade hésitant explicite "(grade B ou C)" (association
+  imipraminique-anticholinergique) — reproduit tel quel avec un chip
+  neutre "B/C", **jamais tranché arbitrairement en faveur de l'un ou
+  l'autre si migré**. 27 lignes de recommandations/repères gradés (A:3,
+  B:5, C:6, D:4, accord fort:8, B/C:1) — **si migré, le chip "B/C" ne
+  doit pas être forcé vers un `grade` unique, et prévoir un traitement
+  dédié pour cette valeur si le schéma Supabase n'accepte qu'un seul
+  grade par recommandation**. Tally initialement mal estimé au moment
+  d'écrire le docstring (avant l'écriture effective du code) puis
+  corrigé après l'audit indépendant par regex — corrigé avant le
+  commit, pas après (aucune valeur erronée n'a été poussée). Même
+  particularité de routage que la fiche 139 (`FICHE_HREF_MATCH`
+  inchangé, résolution du tableau bibliographique vers le Module 1,
+  fiche accessible via `RAW`/`DOC_META` seuls — revérifié par
+  Playwright avec les 3 fiches désormais présentes). Tentative de
+  fusion de sections (4→3) essayée puis annulée : n'a pas réduit le
+  nombre de pages réel (contrairement à la fiche 139, comme la fiche
+  138).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1151,7 +1192,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_organisation_anesthesie_pediatrique_2023.json`,
 `content_organisation_usc_2018.json`, `content_transfusion_gr_anesth_2014.json`,
 `content_gestion_traitements_chroniques_cardio_2009.json`,
-`content_gestion_traitements_chroniques_douleur_toxico_2009.json`
+`content_gestion_traitements_chroniques_douleur_toxico_2009.json`,
+`content_gestion_traitements_chroniques_neuro_psy_2011.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
