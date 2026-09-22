@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-136 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/21)
+## ⚠️ Fiches 100-137 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -989,6 +989,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   ce tableau n'a pas le même statut d'autorité que les 26
   recommandations elles-mêmes) reproduit intégralement par appareil. 19
   blocs de contenu sur 3 sections (5 champs, fusionnés en 3 sections).
+- **137 : `transfusion_gr_anesth_2014`** — "Transfusion de globules
+  rouges homologues : produits, indications, alternatives", HAS,
+  recommandation de bonne pratique, novembre 2014. **Fiche à périmètre
+  volontairement limité** (même pattern que sepsis/anaphylaxie déjà
+  git-trackées) : le document source complet (72 pages) comporte 4
+  parties très hétérogènes — seule la Partie 2 (sections 5 à 8 :
+  anesthésie, réanimation, chirurgie, urgence) est couverte ici,
+  intégralement ; les Parties 1 (médecine transfusionnelle générale), 3
+  (hématologie-oncologie : drépanocytose, thalassémie, leucémies) et 4
+  (néonatologie : exsanguino-transfusion) sont hors du périmètre
+  anesthésie/réanimation adulte de ce corpus et NE SONT PAS traitées —
+  disclosed explicitement dans l'encadré d'intro de la fiche, le
+  docstring et `DOC_META`. **11e convention de cotation distincte pour ce
+  corpus** : grille HAS classique **A/B/C/AE** (A = preuve scientifique
+  établie ; B = présomption scientifique ; C = faible niveau de preuve ;
+  AE = accord d'experts) — distincte à la fois du format SFAR
+  1+/1-/2+/2- et de la grille ANAES A/B/C/AP déjà vue pour `ivg_14sa` (AE
+  y remplace AP, avec un chip **ABS** ajouté localement pour les
+  absences de recommandation explicites). 26 recommandations gradées
+  (A:3, B:10, C:1, AE:12) + 4 absences de recommandation explicitement
+  énoncées par la source elle-même (seuil transfusionnel en
+  neuroréanimation ; âge/durée de conservation des CGR ; acide
+  tranexamique et rFVIIa dans l'hémorragie du post-partum — **NE PAS
+  migrer ces 4 avec un `grade` inventé, `grade` doit rester NULL pour
+  elles**, même piège que plusieurs fiches précédentes de ce lot).
+  Contient aussi plusieurs précisions de contexte non gradées
+  séparément (patient traumatisé, transfusion massive, règles RH/KEL
+  pour la femme en âge de procréer) transcrites en note italique
+  distincte, sans grade fabriqué. 27 blocs de contenu sur 3 sections
+  (5 sections d'origine fusionnées en 3 après vérification visuelle —
+  plusieurs pages étaient sous 60% de remplissage).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1021,7 +1052,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_douleur_accouchement_2025.json`,
 `content_erreurs_medicamenteuses_2024.json`,
 `content_organisation_anesthesie_pediatrique_2023.json`,
-`content_organisation_usc_2018.json` et la PR #1 de ce dépôt pour
+`content_organisation_usc_2018.json`, `content_transfusion_gr_anesth_2014.json`
+et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
 phrase source avec deux clauses de force différente avait été fusionnée
