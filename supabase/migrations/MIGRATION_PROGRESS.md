@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-140 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-141 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1158,6 +1158,44 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   fusion de sections (4→3) essayée puis annulée : n'a pas réduit le
   nombre de pages réel (contrairement à la fiche 139, comme la fiche
   138).
+- **141 : `gestion_traitements_chroniques_infectieux_2009`** —
+  "Gestion périopératoire des traitements chroniques et dispositifs
+  médicaux — Anti-infectieux, immunosuppresseurs", SFAR RFE, Ann Fr
+  Anesth Réanim 28 (2009) 1057-1065. **Module 3/4, ACHÈVE la
+  couverture des 4 modules du même référentiel composite que les
+  fiches 138/139/140** (pages 23-31 du même PDF fusionné) :
+  antituberculeux, antirétroviraux, et 6 immunosuppresseurs distincts
+  (inhibiteurs de calcineurine [ciclosporine, tacrolimus], thalidomide,
+  méthotrexate, azathioprine, mycophénolate mofétil, cyclophosphamide,
+  anticorps monoclonaux anti-TNF). Seuls DEUX grades apparaissent
+  effectivement dans ce module (grade C et accord fort, vérifié
+  exhaustivement par grep — aucune citation A/B/D nue), plus simple que
+  les échelles mixtes des modules 1/2/4. **Disclosure réelle** : la
+  section anti-TNF énonce essentiellement le même fait clinique trois
+  fois à travers deux sous-sections, toutes gradées C — dont une
+  citation est un doublon mot pour mot littéral d'une autre —
+  consolidées en UNE seule ligne de tableau, jamais en fusionnant des
+  grades différents (règle anti-composite respectée : mêmes grade et
+  scénario clinique uniquement). 30 lignes de recommandations gradées
+  (accord fort:16, grade C:14) — **le décompte estimé dans le
+  docstring avant écriture du code était erroné (15 au lieu de 14 pour
+  grade C) et corrigé après l'audit indépendant par regex, avant le
+  commit**. **Deux bugs trouvés et corrigés pendant ce build** : (1)
+  une fonction `_section_sources()` définie mais jamais câblée dans
+  `SECTIONS`, supprimant silencieusement le bloc Sources/avertissement
+  du premier PDF généré — détecté par relecture visuelle page par
+  page, pas supposé complet après un build réussi sans erreur ; (2)
+  après fusion de sections pour densifier (5→3 pages), les textes
+  `DOC_META` des fiches 138 et 139 ont aussi été corrigés — ils
+  affirmaient encore que les autres modules "ne sont pas traités",
+  ce qui était vrai au moment de leur écriture mais obsolète une fois
+  les 4 modules effectivement construits. Même particularité de
+  routage que les fiches 139/140 (`FICHE_HREF_MATCH` inchangé,
+  résolution vers le Module 1, fiche accessible via `RAW`/`DOC_META`
+  seuls — revérifié par Playwright avec les 4 fiches désormais
+  présentes). 30 blocs de contenu sur 2 sections (deux fusions
+  successives de sections ont RÉDUIT le nombre de pages réel de 5 à 3,
+  la seconde corrigeant aussi un bloc orphelin isolé).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1193,7 +1231,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_organisation_usc_2018.json`, `content_transfusion_gr_anesth_2014.json`,
 `content_gestion_traitements_chroniques_cardio_2009.json`,
 `content_gestion_traitements_chroniques_douleur_toxico_2009.json`,
-`content_gestion_traitements_chroniques_neuro_psy_2011.json`
+`content_gestion_traitements_chroniques_neuro_psy_2011.json`,
+`content_gestion_traitements_chroniques_infectieux_2009.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
