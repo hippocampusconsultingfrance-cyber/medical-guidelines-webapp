@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-145 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-146 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1337,6 +1337,40 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   pas de pattern établi pour intégrer une image matricielle dans une fiche
   reportlab. Partage l'entrée `FICHE_HREF_MATCH` des fiches 143-144 (pas de
   doublon) mais possède ses propres entrées `RAW`/`DOC_META` complètes.
+- **146 : `blocs_perimedullaires_postop_2006`** — quatrième installment du
+  même document (fiches 143-145). Couvre INTÉGRALEMENT la Question 8
+  (analgésie postopératoire par voie périmédullaire : agents, indications
+  par type de chirurgie, monitorage/surveillance) — le plus volumineux des
+  quatre installments, 71 recommandations gradées (A:28, B:17, C:26).
+  **Construit via un workflow à deux agents parallèles** : un agent a écrit
+  et vérifié visuellement la fiche (6 pages, toutes rendues et inspectées),
+  l'autre a fait un audit VRAIMENT en aveugle — texte source brut
+  uniquement (lignes 1766-2198), aucun accès au brouillon — reconstruisant
+  sa propre inventaire des recommandations gradées depuis zéro. C'est le
+  premier installment de ce document (parmi 143-146) à utiliser le pattern
+  d'audit "subagent frais, en aveugle" explicitement demandé par
+  CLAUDE.md/le pipeline standard de ce dépôt, plutôt que l'auto-vérification
+  regex solo utilisée pour 143-145. Les deux agents ont convergé
+  indépendamment sur le même décompte exact (A:28, B:17, C:26, total 71),
+  reconfirmé une troisième fois par un audit regex direct sur le fichier
+  committé — accord total sur les trois vérifications. **Aucune citation
+  "grade D", "accord professionnel" ni "avis d'experts" dans le périmètre
+  de cette Question** — vérifié par les deux agents indépendamment,
+  disclosed explicitement (si migré : aucune ligne 'D' ou 'AE' attendue
+  pour ce document). **Particularité méthodologique disclosed** : la
+  sous-section Monitorage/surveillance ne comporte AUCUNE citation de grade
+  individuelle rattachée à une phrase précise dans le source (seulement une
+  justification méthodologique globale) — condensée en repères pratiques
+  non gradés plutôt que de fabriquer une ligne gradée artificielle (**si
+  migré : ne rien migrer comme recommandation gradée pour cette
+  sous-section, elle n'en contient réellement aucune**). Tentative de
+  fusion de sections pour combler une page sous-remplie : le nombre total
+  de pages est resté à 6 (le vide s'est simplement déplacé), donc réversion
+  conforme à la règle "revert if it doesn't help" — une page (2/6) garde un
+  peu d'espace blanc, disclosed comme compromis mineur accepté plutôt que
+  de forcer une fusion artificielle. Partage l'entrée `FICHE_HREF_MATCH`
+  des fiches 143-145 (pas de doublon) mais possède ses propres entrées
+  `RAW`/`DOC_META` complètes.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1377,7 +1411,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_delivrance_information_2012.json`,
 `content_blocs_perimedullaires_ci_2006.json`,
 `content_blocs_perimedullaires_technique_2006.json`,
-`content_blocs_perimedullaires_cesarienne_2006.json`
+`content_blocs_perimedullaires_cesarienne_2006.json`,
+`content_blocs_perimedullaires_postop_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
