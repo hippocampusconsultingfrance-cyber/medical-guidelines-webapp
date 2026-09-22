@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-137 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-138 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1020,6 +1020,58 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   distincte, sans grade fabriqué. 27 blocs de contenu sur 3 sections
   (5 sections d'origine fusionnées en 3 après vérification visuelle —
   plusieurs pages étaient sous 60% de remplissage).
+- **138 : `gestion_traitements_chroniques_cardio_2009`** — "Gestion
+  périopératoire des traitements chroniques et dispositifs médicaux",
+  SFAR, Recommandations Formalisées d'Experts, Ann Fr Anesth Réanim 28
+  (2009) 1037-1045. **Fiche à périmètre volontairement limité** : le
+  PDF source téléchargé (36 pages) est en réalité un document
+  COMPOSITE fusionnant plusieurs articles AFAR distincts publiés entre
+  2009 et 2011, correspondant aux 4 modules annoncés par le Préambule
+  du référentiel (Cardiovasculaire ; Douleur chronique/toxicomanie ;
+  Infectieux/immunosuppresseurs ; Neurologique-psychiatrique et/ou
+  endocrinien). Cette fiche couvre UNIQUEMENT le **Module 1 —
+  Pathologies cardiovasculaires** (pages 3-11 du PDF fusionné, le plus
+  transversal à toute anesthésie programmée) — les 3 autres modules ne
+  sont pas traités, chacun nécessitant sa propre lecture/audit dédiée
+  pour identifier ses limites de pages exactes dans le PDF fusionné
+  (le fichier ne les sépare pas explicitement). Les traitements
+  antithrombotiques (antiagrégants plaquettaires, AVK) sont
+  explicitement exclus de l'ENSEMBLE du référentiel par son comité
+  d'organisation lui-même, déjà couverts par d'autres textes SFAR/HAS
+  distincts (ex. `aap_programmee` déjà git-tracké) — aucun risque de
+  chevauchement. **12e convention de cotation distincte pour ce
+  corpus** : grille ANAES 2004 A/B/C/D, avec particularité disclosed
+  par le Préambule lui-même — les recommandations de grade D jugées
+  les plus importantes ont été renforcées par une méthode Delphi à
+  deux tours, aboutissant dans la quasi-totalité des cas à un "accord
+  fort" (seule forme de grade D effectivement imprimée dans le Module
+  1 — aucune occurrence de "accord professionnel" nu) — chip local
+  "AF" distinct du chip "AE" déjà utilisé ailleurs dans ce corpus (sens
+  légèrement différent : ici consensus explicite renforcé par méthode
+  Delphi, vs. balance bénéfice/risque indéterminée pour AE). 15
+  recommandations gradées (A:0, B:3, C:3, AF:9) + 1 recommandation
+  explicitement NON GRADÉE par la source elle-même (antiarythmiques
+  classe I, interruption 24h avant chirurgie programmée — **NE PAS
+  migrer avec un `grade` inventé, `grade` doit rester NULL pour cette
+  ligne**, même piège que plusieurs fiches précédentes de ce lot) + 1
+  section pratique non gradée (stimulateurs cardiaques/défibrillateurs
+  automatiques implantables — DCI), la source n'y attachant AUCUN
+  grade A/B/C/D à aucun moment, incluant 2 points explicitement
+  signalés par la source comme ne faisant PAS l'objet d'un consensus
+  (reprogrammation préopératoire en mode asynchrone chez le patient
+  stimulo-dépendant ; déprogrammation de la fonction d'asservissement)
+  — à ne pas non plus grader si migré. **Disclosure supplémentaire** :
+  plusieurs classes thérapeutiques (bêtabloquants, statines) énoncent
+  la même action ("ne pas interrompre") deux fois dans des
+  sous-sections différentes du texte source, chacune avec un grade
+  différent attaché (ex. bêtabloquants : grade C dans la sous-section
+  "risque d'événement", puis "accord fort" dans la sous-section
+  "stratégie") — jamais fusionnées en un chip composite ; le grade
+  retenu pour la ligne d'action est celui de la sous-section
+  "stratégie", l'autre citation étant reportée en note de contexte
+  séparée. 34 blocs de contenu sur 4 sections (tentative de fusion de
+  sections 4→2 essayée puis annulée : n'a pas réduit le nombre de
+  pages réel).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1052,7 +1104,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_douleur_accouchement_2025.json`,
 `content_erreurs_medicamenteuses_2024.json`,
 `content_organisation_anesthesie_pediatrique_2023.json`,
-`content_organisation_usc_2018.json`, `content_transfusion_gr_anesth_2014.json`
+`content_organisation_usc_2018.json`, `content_transfusion_gr_anesth_2014.json`,
+`content_gestion_traitements_chroniques_cardio_2009.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
