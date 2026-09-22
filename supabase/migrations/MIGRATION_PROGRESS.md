@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-138 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-139 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1072,6 +1072,51 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   séparée. 34 blocs de contenu sur 4 sections (tentative de fusion de
   sections 4→2 essayée puis annulée : n'a pas réduit le nombre de
   pages réel).
+- **139 : `gestion_traitements_chroniques_douleur_toxico_2009`** —
+  "Gestion périopératoire des traitements chroniques et dispositifs
+  médicaux — Douleur chronique, toxicomanie", SFAR RFE, Ann Fr Anesth
+  Réanim 28 (2009) 1046-1056. **Module 2/4 du même référentiel
+  composite que la fiche 138** (pages 12-22 du même PDF fusionné) :
+  opioïdes (traitement chronique de la douleur, avec table de
+  conversion complète), AINS/coxibs, antiépileptiques, antidépresseurs,
+  benzodiazépines, cathéters intrathécaux/périmédullaires, stimulateurs
+  médullaires, toxicomanie substituée (méthadone/buprénorphine, avec sa
+  propre table de conversion), et toxicomanie active (cannabis,
+  héroïne, cocaïne, autres excitants du SNC, médicaments détournés).
+  Les modules Infectieux/immunosuppresseurs et
+  Neurologique-psychiatrique/endocrinien restent hors périmètre, comme
+  disclosed pour la fiche 138. **Particularité méthodologique propre à
+  ce module** (différente du module 1) : la grande majorité des
+  énoncés prescriptifs du texte source ne portent AUCUNE citation de
+  grade — seulement 28 citations de grade explicites sur l'ensemble du
+  module (A:0, B:4, C:9, accord fort:15). Conformément à la règle
+  anti-fabrication de grade, seules ces 28 citations (consolidées en 26
+  lignes de tableau lorsque 2 citations consécutives partagent le même
+  grade — jamais lorsque les grades diffèrent) apparaissent dans les
+  tableaux de recommandations gradées ; tous les autres énoncés
+  prescriptifs du texte source sont regroupés en blocs de "repères
+  pratiques non gradés" par substance, disclosed une fois par section
+  plutôt que par un encadré répété à chaque ligne — **si migré, NE PAS
+  attribuer de `grade` à ces repères pratiques, `grade` doit rester
+  NULL pour eux**, seules les 26 lignes de tableau portent un `grade`
+  réel. **Particularité de routage propre à cette fiche** : elle
+  partage la MÊME entrée `library_final.json` (même href/PDF) que la
+  fiche 138 — `FICHE_HREF_MATCH` n'a délibérément PAS été modifié pour
+  cette fiche (reste résolu vers le Module 1/fiche 138 pour la ligne du
+  tableau bibliographique), cette fiche étant rendue accessible
+  uniquement via `RAW`/`DOC_META` (qui pilotent indépendamment la barre
+  latérale et la grille de cartes de la page d'accueil) — vérifié par
+  Playwright que la ligne du tableau bibliographique route toujours
+  vers le Module 1 et que les deux modules apparaissent comme entrées
+  distinctes dans la barre latérale. **Si migré vers Supabase, ce
+  routage web n'a pas d'équivalent direct** — les deux fiches
+  partageront probablement une seule `document_id`/entrée source avec
+  deux jeux de recommandations distincts, ou nécessiteront une
+  décision de modélisation dédiée (à trancher au moment de la
+  migration, pas anticipée ici). 32 blocs de contenu sur 2 sections
+  (fusion de 4→2 sections qui a RÉDUIT le nombre de pages réel de 5 à
+  4, contrairement à la fiche 138 — a aussi corrigé un bloc orphelin
+  isolé seul sur une page).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1105,7 +1150,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_erreurs_medicamenteuses_2024.json`,
 `content_organisation_anesthesie_pediatrique_2023.json`,
 `content_organisation_usc_2018.json`, `content_transfusion_gr_anesth_2014.json`,
-`content_gestion_traitements_chroniques_cardio_2009.json`
+`content_gestion_traitements_chroniques_cardio_2009.json`,
+`content_gestion_traitements_chroniques_douleur_toxico_2009.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
