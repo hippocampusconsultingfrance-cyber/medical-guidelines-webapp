@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-148 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-149 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1427,6 +1427,38 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   clair, conforme à la règle "revert if it doesn't help". Partage l'entrée
   `FICHE_HREF_MATCH` des fiches 143-147 (pas de doublon) mais possède ses
   propres entrées `RAW`/`DOC_META` complètes.
+- **149 : `blocs_perimedullaires_neuro_2006`** — septième installment du
+  même document (fiches 143-148). Couvre INTÉGRALEMENT la Question 12
+  (terrain neurologique et neuromusculaire : céphalées/migraine, épilepsie,
+  maladies dégénératives centrales, AVC, spina bifida et malformations
+  rachidiennes héréditaires, Charcot-Marie-Tooth, tumeurs du SNC, hernie
+  discale, lésion médullaire, SEP/Guillain-Barré, diabète/neuropathies
+  métaboliques, porphyrie, VIH, poliomyélite, myasthénie, dystrophie
+  myotonique, myopathies mitochondriales, canalopathies musculaires) — la
+  quatrième d'une série de 5 « Questions terrain » consécutives (9-13).
+  **Construit via le même workflow à deux agents parallèles (build +
+  audit en aveugle) que la fiche 146**, ce volume de citations (42 brutes)
+  le justifiant. Les deux agents ont convergé indépendamment sur le même
+  décompte brut (42 citations), et une revérification directe sur le
+  fichier committé confirme le décompte final consolidé : 41
+  recommandations gradées (A:0, B:5, C:32, D:1, AE:3) — accord sur les
+  trois vérifications. **Piège typographique réel détecté AVANT rédaction
+  et explicitement signalé aux deux agents** : une citation de grade C est
+  notée « [grade C] » entre crochets au lieu de la ponctuation habituelle
+  « (grade C) » — une recherche naïve limitée aux parenthèses sous-compte
+  d'exactement une unité ; les deux agents ont confirmé l'avoir trouvée
+  (**si migré : cette ligne reste `grade` = 'C', simple variante de
+  frappe, pas un palier distinct**). Le « grade D » non défini par le
+  préambule méthodologique (déjà rencontré en Question 7/fiche 145)
+  réapparaît ici pour la préférence APD en cas de SEP/Guillain-Barré — même
+  chip NAVY réutilisé plutôt que retraité comme une découverte nouvelle
+  (**si migré : `grade` doit être 'D' littéralement pour cette ligne**).
+  QA visuelle : un bug de coupure de mot dans un libellé de catégorie
+  (slash sans espace insécable) trouvé et corrigé. Une fusion de sections
+  testée pour la densité de page, correctement réversée (n'a pas réduit
+  le nombre de pages), conforme à la règle établie. Partage l'entrée
+  `FICHE_HREF_MATCH` des fiches 143-148 (pas de doublon) mais possède ses
+  propres entrées `RAW`/`DOC_META` complètes.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1470,7 +1502,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_cesarienne_2006.json`,
 `content_blocs_perimedullaires_postop_2006.json`,
 `content_blocs_perimedullaires_terrain_cardioresp_2006.json`,
-`content_blocs_perimedullaires_hemostase_2006.json`
+`content_blocs_perimedullaires_hemostase_2006.json`,
+`content_blocs_perimedullaires_neuro_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
