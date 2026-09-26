@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-149 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-150 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1459,6 +1459,37 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   le nombre de pages), conforme à la règle établie. Partage l'entrée
   `FICHE_HREF_MATCH` des fiches 143-148 (pas de doublon) mais possède ses
   propres entrées `RAW`/`DOC_META` complètes.
+- **150 : `blocs_perimedullaires_infectieux_2006`** — huitième installment
+  du même document (fiches 143-149), dernière d'une série de 5 « Questions
+  terrain » consécutives (9-13). Couvre INTÉGRALEMENT la Question 13
+  (terrain infectieux : patient fébrile, femme enceinte fébrile, états
+  septiques graves, infections virales, VIH, réactivation herpétique
+  post-opiacés). 8 recommandations gradées (A:0, B:2, C:6), correspondance
+  directe 1:1 avec les 8 citations brutes du source — aucune consolidation
+  nécessaire, correct dès la première passe (revérifié avec le pattern
+  regex sensible aux crochets appris de la fiche 149, aucune variante
+  crochet trouvée ici). **Correction de densité de page appliquée avant
+  commit** : la fiche construisait initialement 2 pages, la seconde étant
+  vide à 95 % (seul l'encadré d'avertissement y débordait) — plutôt que
+  d'accepter une fusion de sections inutile (il n'y a qu'une seule Question
+  ici, donc rien à fusionner) ou de laisser tel quel, les tailles de
+  plusieurs `Spacer` de la page unique ont été réduites (3mm→2mm,
+  2,5mm→1,5mm) pour libérer juste assez d'espace vertical — tout tient
+  maintenant sur une seule page, décompte et safety net revérifiés
+  inchangés après la modification. **Chevauchement thématique disclosed
+  (pas un chevauchement de clé)** : le VIH est abordé ici sous l'angle
+  infectieux général (indication opératoire, bilan préopératoire),
+  complémentaire — non redondant — de l'angle neurologique déjà couvert
+  dans la fiche 149/Question 12 (évolution de l'infection, blood-patch) —
+  le source lui-même aborde le VIH sous deux angles dans deux Questions
+  différentes (**si migré : ne pas fusionner ces deux lignes VIH, elles
+  couvrent des aspects cliniques distincts du même document**). Partage
+  l'entrée `FICHE_HREF_MATCH` des fiches 143-149 (pas de doublon) mais
+  possède ses propres entrées `RAW`/`DOC_META` complètes. **Avec cette
+  fiche, les 5 « Questions terrain » consécutives (9-13) sont
+  intégralement couvertes** — restent les Questions 14 (gestion de
+  l'échec) et 15 (facteurs de risque de complications) avant couverture
+  intégrale du document (hors Question 6, délibérément exclue).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1503,7 +1534,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_postop_2006.json`,
 `content_blocs_perimedullaires_terrain_cardioresp_2006.json`,
 `content_blocs_perimedullaires_hemostase_2006.json`,
-`content_blocs_perimedullaires_neuro_2006.json`
+`content_blocs_perimedullaires_neuro_2006.json`,
+`content_blocs_perimedullaires_infectieux_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
