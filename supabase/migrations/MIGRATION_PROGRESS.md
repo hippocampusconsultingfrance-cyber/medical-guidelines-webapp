@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-147 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-148 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1392,6 +1392,41 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   installments futurs. Partage l'entrée `FICHE_HREF_MATCH` des fiches
   143-146 (pas de doublon) mais possède ses propres entrées
   `RAW`/`DOC_META` complètes.
+- **148 : `blocs_perimedullaires_hemostase_2006`** — sixième installment du
+  même document (fiches 143-147). Couvre INTÉGRALEMENT la Question 11
+  (anomalies de l'hémostase : pathologies héréditaires/acquises,
+  antiagrégants, thiénopyridines, anti-GPIIb/IIIa, héparines NF/BPM, AVK,
+  nouveaux antithrombotiques, thrombolytiques, diagnostic et surveillance
+  de l'hématome périmédullaire, évaluation du risque hémorragique) — la
+  troisième d'une série de 5 « Questions terrain » consécutives (9-13). 24
+  recommandations gradées (A:0, B:5, C:4, AE:15) — de loin la Question la
+  plus dense en « consensus professionnel » rencontrée dans ce document
+  (15 occurrences). **Robustesse du décompte** : un premier grep
+  automatique sur texte aplati avait sous-compté ces citations à cause
+  d'une césure typographique de fin de ligne ("profes-\n sionnel") coupant
+  le motif recherché — corrigé par une revérification ligne par ligne
+  avant rédaction, puis par l'audit regex post-build habituel qui a trouvé
+  une vraie erreur de décompte manuel dans le texte Sources (brouillon
+  23/AE:14, réel 24/AE:15 — corrigé). **Nouvelle incohérence du source
+  disclosed** : une citation unique porte DEUX étiquettes méthodologiques
+  à la fois — « grade B, consensus professionnel » — pour la même phrase
+  (délai de 12h avant réinjection d'héparine après une APM à risque
+  hémorragique assumé). Ce n'est pas la violation de grade composite
+  interdite par la règle 4 (qui concerne la fusion de deux grades
+  alphanumériques distincts sur une seule ligne) : ce sont deux labels
+  méthodologiques différents attribués par le SOURCE LUI-MÊME à la même
+  phrase. Chippée 'B' (le label le plus spécifique), avec la double
+  mention disclosed en note plutôt que fusionnée arbitrairement (**si
+  migré : `grade` doit être 'B' pour cette ligne précise, avec une note
+  sur la double étiquette source si le schéma le permet**). QA visuelle :
+  un bug de coupure de mot dans un libellé de catégorie trouvé et corrigé
+  ("Indication/bénéfice-r/isque" → "Bénéfice/risque"). Trois arrangements
+  de fusion de sections testés pour combler deux pages sous-remplies :
+  aucun n'a réduit le total sous 3 pages (le contenu réel nécessite un peu
+  plus de 2 pages), donc réversion vers le découpage en 3 sections le plus
+  clair, conforme à la règle "revert if it doesn't help". Partage l'entrée
+  `FICHE_HREF_MATCH` des fiches 143-147 (pas de doublon) mais possède ses
+  propres entrées `RAW`/`DOC_META` complètes.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1434,7 +1469,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_technique_2006.json`,
 `content_blocs_perimedullaires_cesarienne_2006.json`,
 `content_blocs_perimedullaires_postop_2006.json`,
-`content_blocs_perimedullaires_terrain_cardioresp_2006.json`
+`content_blocs_perimedullaires_terrain_cardioresp_2006.json`,
+`content_blocs_perimedullaires_hemostase_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
