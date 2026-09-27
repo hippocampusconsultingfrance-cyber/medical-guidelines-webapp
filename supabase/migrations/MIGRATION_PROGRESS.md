@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-155 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-156 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1684,6 +1684,45 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   sections séparées donnaient 4 pages avec 40-70% d'espace vide sur
   chacune ; fusion complète en un seul flux continu réduite à 3 pages
   denses.
+- **156 : `alr_pediatrique_2026`** — "Anesthésie locorégionale en
+  chirurgie pédiatrique", SFAR/ADARPEF, RFE validée par le Comité des
+  Référentiels Cliniques de la SFAR (17/03/2026), le CA de la SFAR
+  (21/05/2026) et le CA de l'ADARPEF (22/05/2026) — troisième document
+  trouvé via recherche web ce même jour (même stratégie que les fiches
+  154/155), également absent de `library_final.json` à l'origine et
+  **ajouté comme nouvelle entrée**. 34 recommandations gradées GRADE
+  (GRADE1:5, GRADE2:7, avis d'experts:17, absence de recommandation:5)
+  — **décompte identique à celui que le source annonce lui-même** dans sa
+  propre section "Synthèse des résultats" ("34 recommandations... 5 ont
+  un niveau de preuve élevé (GRADE 1), 7 ont un niveau de preuve modéré à
+  faible (GRADE 2) et 17 sont des avis d'experts et 5 des absences de
+  recommandations"), vérifié par un recomptage manuel complet et
+  indépendant du corps du texte — aucune divergence, contrairement à
+  plusieurs fiches antérieures de la série blocs_perimedullaires où des
+  erreurs de décompte manuel avaient dû être corrigées. **Actualise/
+  supersede cliniquement** la fiche déjà présente `alr_pediatrie` (RFE
+  SFAR/ADARPEF 2010, conservée telle quelle pour sa valeur historique) —
+  confirmé par la propre liste de références du nouveau document, qui
+  cite la RFE 2010 comme son prédécesseur historique direct (**si migré :
+  envisager de marquer `alr_pediatrie` comme "superseded"**, même
+  traitement que `intubation_difficile_adulte`/`voies_aeriennes_adulte`
+  pour la fiche 154). Particularité structurelle disclosed : 5 des 34
+  recommandations sont des "ABSENCE DE RECOMMANDATION" non numérotées par
+  le source lui-même (greffées à la suite d'une recommandation numérotée
+  de la même sous-question, sans numéro R propre) — traitées comme des
+  lignes de tableau à part entière dans cette fiche, pas fusionnées avec
+  la recommandation numérotée précédente (**si migré, ces 5 lignes n'ont
+  pas de numéro `R#.#` propre dans le source — leur attribuer un
+  identifiant de migration distinct plutôt que de les rattacher au numéro
+  de la recommandation précédente**). Deux "fiches pratiques" citées par
+  renvoi (choix des adjuvants ; choix de la technique d'ALR par type de
+  chirurgie abdominale) ne sont pas présentes dans le document source
+  téléchargé et ne sont donc pas reproduites. Toutes les recommandations
+  GRADE 1/2 de ce document sont formulées POUR l'intervention (aucun
+  "1-"/"2-"). Densité de page : déjà 3 pages denses avec le découpage
+  naturel en 3 groupes (Champ1 | Champ2-3 | Champ4-5-sources) ; fusion
+  complète testée sans amélioration (toujours 3 pages) — découpage à 3
+  conservé.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1734,7 +1773,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_complications_2006.json`,
 `content_chir_ambu_urologie_2013.json`,
 `content_voies_aeriennes_bloc_2026.json`,
-`content_urgences_vitales_ih_2026.json`
+`content_urgences_vitales_ih_2026.json`,
+`content_alr_pediatrique_2026.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
