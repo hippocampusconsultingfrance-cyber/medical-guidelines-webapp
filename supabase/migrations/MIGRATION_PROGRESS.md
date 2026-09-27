@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-158 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22, puis 157-158 le 2026-09-27)
+## ⚠️ Fiches 100-159 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22, puis 157-159 le 2026-09-27)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1849,6 +1849,58 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   `output/`. Publication vers l'Artifact live également différée cette
   session, même raison que la fiche 157 (voir ci-dessus et
   `rfe-sfar-website/CLAUDE.md`).**
+- **159 : `nutrition_clinique_2026`** — "Nutrition clinique de l'adulte "
+  en contexte périopératoire et en soins critiques", SFAR/SFNCM/AFDN/FCVD,
+  Recommandation de Bonne Pratique adoptée par le Collège de la HAS le
+  03/09/2026 — sixième document trouvé via recherche web dans cette même
+  série (154 à 159), également absent de `library_final.json` à l'origine
+  et **ajouté comme nouvelle entrée**. 2 champs, 13 questions. **40
+  recommandations, décompte exact** (GRADE1:11, GRADE2:9, avis
+  d'experts:16, absence:3, 1 item "Rappel à la réglementation") vérifié
+  contre la section "Synthèse des recommandations" du source, qui donne
+  le texte intégral de chacune des 40 recommandations (pas juste un
+  résumé) — décompte identique à celui annoncé juste avant la
+  bibliographie, aucune divergence. **Actualise/supersede cliniquement
+  DEUX fiches à la fois** : `nutrition` (RFE SFAR 2014, "Nutrition
+  artificielle en réanimation") et `nutrition_perioperatoire` (2011) —
+  ce nouveau document fusionne explicitement les deux périmètres
+  (Champ 1 périopératoire + Champ 2 soins critiques) dans une seule RBP
+  (**si migré : envisager de marquer LES DEUX fiches `nutrition` et
+  `nutrition_perioperatoire` comme "superseded"**, cas différent des
+  fiches web précédentes qui n'en supersèdent qu'une seule à la fois).
+  **Grades négatifs présents** (chips "1-"/"2-", même particularité que
+  la fiche 158) : 2 items GRADE1 (R2.3.5, R2.6.2) et 3 items GRADE2
+  (R2.6.5, R2.6.6, R2.7.2) sont phrasés comme s'opposant à une pratique
+  précise ("ne pas utiliser/privilégier/associer/recueillir X") plutôt
+  que comme fixant un objectif-cible — **si migré, préserver le signe
+  (+/-) de la recommandation** (le tableau de synthèse du source
+  lui-même n'imprime que "1"/"2" sans distinction +/- visuelle ; le signe
+  a été déduit du libellé de chaque recommandation, disclosed dans le
+  docstring de la fiche). 1 item "Rappel à la réglementation" (R2.9.1,
+  présence obligatoire d'un diététicien, décret n°2022-694 du
+  26/04/2022) réutilise le chip `RÉGL` déjà introduit par la fiche 155
+  (**si migré, même traitement : ni un grade GRADE ni une absence de
+  recommandation, catégorie dédiée**). **9 figures du document lues et
+  triées visuellement une à une** (rendu PyMuPDF 150-200dpi) : 5
+  apportent un contenu réellement actionnable absent du texte des
+  recommandations elles-mêmes et sont reprises en tableaux compacts
+  (critères diagnostiques HAS de dénutrition fusionnant les Figures 1 et
+  3 ; facteurs de conversion des calories non nutritionnelles, Figure 5 ;
+  posologie des prokinétiques, Figure 6 ; protocole de massage abdominal,
+  Figure 7 ; protocole du syndrome de renutrition inappropriée, Figure 9
+  — le contenu le plus actionnable de tout le document au-delà des 40
+  recommandations elles-mêmes) ; les 4 autres figures (2, 4, 8 en grande
+  partie) sont redondantes avec le texte déjà complet des recommandations
+  et ne sont pas reprises, décision prise seulement après vérification
+  visuelle de chacune, jamais par supposition. Densité de page : 5
+  sections testées séparément donnaient 5 pages avec 3 d'entre elles à
+  moins de 60% de remplissage ; fusion complète en un seul flux continu
+  (même pattern que 151/157/158) réduite à 4 pages, toutes denses.
+  **Fiche construite, auditée, intégrée (4 fichiers) et testée en
+  Playwright (H1 correct, zéro pageerror) ; commit/push effectués côté
+  `rfe-sfar-website` ; PDF dans `output/`. Publication vers l'Artifact
+  live également différée cette session, même raison que les fiches
+  157-158 (voir ci-dessus et `rfe-sfar-website/CLAUDE.md`).**
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1901,7 +1953,7 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_voies_aeriennes_bloc_2026.json`,
 `content_urgences_vitales_ih_2026.json`,
 `content_alr_pediatrique_2026.json`, `content_sedation_procedurale_2026.json`,
-`content_infections_intra_abdominales_2026.json`
+`content_infections_intra_abdominales_2026.json`, `content_nutrition_clinique_2026.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
