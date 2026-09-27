@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-152 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-153 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1581,6 +1581,41 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   ses propres entrées `RAW`/`DOC_META` complètes. **Ce document (15
   Questions, hors Q6 exclue) est maintenant couvert à 14/15 par 10
   fiches séparées (143-152).**
+- **153 : `chir_ambu_urologie_2013`** — "Chirurgie ambulatoire en
+  urologie", AFU/SFAR/AFCA/ANAP, texte des recommandations AFU (novembre
+  2013), Progrès en Urologie (2013) 23, 62-66, label HAS (méthode
+  consensus formalisé). **Nouvel item de bibliothèque** (pas un
+  installment d'un document déjà en cours). Couvre le parcours de soin en
+  chirurgie ambulatoire urologique (éthique, éligibilité, organisation,
+  particularités anesthésiques, médecin traitant, patient, continuité
+  des soins), les spécificités personne âgée, et les risques
+  rétentionnel/infectieux/douloureux/hémorragique postopératoires. 59
+  recommandations au total (texte court uniquement, pages 62-66 du
+  source — l'argumentaire de 61 pages et la tribune syndicale de fin de
+  document sont hors périmètre). **Particularité méthodologique notable,
+  disclosed** : bien que la grille source définisse 4 niveaux (A/B/C/AE),
+  AUCUNE des 59 recommandations n'est gradée A, B ou C — 57 reposent sur
+  un accord d'experts (AE) et 2 (n°19, n°43) ne portent aucune mention de
+  grade dans le source (**si migré : garder un `grade` NULL ou un
+  indicateur dédié pour ces 2 items, ne pas leur attribuer AE par
+  défaut** — le source ne le fait pas, cette fiche non plus). **Piège
+  d'extraction trouvé et résolu** : le PDF source (mise en page 2
+  colonnes) livre, en extraction brute PyMuPDF, un ordre de lecture
+  incohérent (des recommandations numérotées 19+ apparaissant avant des
+  recommandations numérotées 10-18) — corrigé par ré-extraction avec
+  `get_text("blocks")` trié explicitement par colonne (x < mi-largeur
+  puis x >= mi-largeur) puis par position verticale, vérifié
+  recommandation par recommandation (1 à 59, aucun numéro manquant,
+  aucune duplication) avant rédaction du script. **Si un futur document
+  de ce corpus a une mise en page 2 colonnes, appliquer cette même
+  méthode de tri avant de faire confiance à l'ordre d'extraction brut.**
+  Correction de densité de page : 4 sections séparées donnaient 5 pages
+  avec un espace vide important sur 3 d'entre elles ; la fusion des
+  sections 1+2 seule suffit à atteindre 4 pages (résultat identique à
+  une fusion complète), retenue car elle change le moins la granularité
+  des titres de page. Pas de section `FICHE_HREF_MATCH` partagée ici
+  (item de bibliothèque indépendant) — 2 needles ajoutés, chacun vérifié
+  par grep pour ne matcher qu'une seule entrée de `library_final.json`.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1628,7 +1663,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_neuro_2006.json`,
 `content_blocs_perimedullaires_infectieux_2006.json`,
 `content_blocs_perimedullaires_echec_2006.json`,
-`content_blocs_perimedullaires_complications_2006.json`
+`content_blocs_perimedullaires_complications_2006.json`,
+`content_chir_ambu_urologie_2013.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
