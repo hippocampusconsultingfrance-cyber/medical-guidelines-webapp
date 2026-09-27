@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-153 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-154 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1616,6 +1616,38 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   des titres de page. Pas de section `FICHE_HREF_MATCH` partagée ici
   (item de bibliothèque indépendant) — 2 needles ajoutés, chacun vérifié
   par grep pour ne matcher qu'une seule entrée de `library_final.json`.
+- **154 : `voies_aeriennes_bloc_2026`** — "Prise en charge des voies
+  aériennes de l'adulte au bloc opératoire", SFAR/CARORL/CARO/FHS/SFORL
+  (+ CORASSO), RBP labellisée HAS, adoptée par le Collège de la HAS le
+  **3 septembre 2026** — document TRÈS RÉCENT, trouvé via recherche web
+  après que le diff needle-based standard (`library_final.json` vs
+  `FICHE_HREF_MATCH`) n'a plus trouvé de candidat clinique propre (voir
+  la section "Backlog status" de `CLAUDE.md`, datée 2026-09-27). **Ajouté
+  aussi comme nouvelle entrée dans `library_final.json`** (absent à
+  l'origine car publié après la construction de cet index), pour qu'une
+  session future ne le redécouvre pas comme "non traité". 28
+  recommandations gradées GRADE (grade 1:1, grade 2:13, avis
+  d'experts:13, absence de recommandation:1 — **si migré, garder
+  "absence de recommandation" comme `grade` NULL, distinct de "avis
+  d'experts"**, même piège que `alr_douleur_chronique`/
+  `nutrition_perioperatoire`), vérifiées par recoupement EXACT avec le
+  tableau de synthèse que le document source reproduit lui-même en fin
+  de texte (troisième niveau d'audit, en plus de la lecture du corps du
+  texte et du regex final). **Actualise/supersede cliniquement** deux
+  fiches déjà présentes sur ce site : `intubation_difficile_adulte`
+  (RFE SFAR 2017) et `voies_aeriennes_adulte` (Conférence de Consensus
+  SFAR 2002/2003) — toutes deux conservées telles quelles pour leur
+  valeur historique, **si migré : envisager de marquer ces deux
+  documents comme "superseded" dans le schéma de migration plutôt que de
+  les traiter comme des sources indépendantes toujours d'actualité**.
+  Périmètre exclu et disclosed : 7 figures/algorithmes visuels (pages
+  100% image, aucune couche de texte) publiés séparément par la SFAR
+  comme outils imprimables autonomes — non reproduits en prose/tableau,
+  liens directs fournis à la place (**si migré, ces outils ne
+  correspondent à aucune recommandation atomique — ne pas essayer de les
+  forcer dans le schéma `recommendations`**). Densité de page : 3
+  sections séparées donnaient 5 pages avec 2 pages quasi vides ; fusion
+  complète en un seul flux continu réduite à 3 pages denses.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1664,7 +1696,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_infectieux_2006.json`,
 `content_blocs_perimedullaires_echec_2006.json`,
 `content_blocs_perimedullaires_complications_2006.json`,
-`content_chir_ambu_urologie_2013.json`
+`content_chir_ambu_urologie_2013.json`,
+`content_voies_aeriennes_bloc_2026.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
