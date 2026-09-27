@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-150 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-151 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1490,6 +1490,47 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   intégralement couvertes** — restent les Questions 14 (gestion de
   l'échec) et 15 (facteurs de risque de complications) avant couverture
   intégrale du document (hors Question 6, délibérément exclue).
+- **151 : `blocs_perimedullaires_echec_2006`** — neuvième installment du
+  même document (fiches 143-150). Couvre INTÉGRALEMENT la Question 14
+  (gestion de l'échec d'une anesthésie périmédullaire : diagnostic/
+  prévention/causes, causes liées à la technique/à l'AL/au matériel,
+  conduite à tenir devant une analgésie insuffisante ou de durée
+  insuffisante) — avant-dernière Question du document. 27 recommandations
+  gradées (A:4, C:15, D:5, AE:3). Le « grade D » non défini par le
+  préambule méthodologique du source (déjà rencontré Q7/Q12) réapparaît
+  ici avec la densité la plus élevée à ce jour (5 occurrences — **si
+  migré, garder ce grade D tel quel, ne pas le réinterpréter comme un
+  score numérique GRADE**, le source ne le définit nulle part). **Piège
+  de césure typographique trouvé ET corrigé AVANT rédaction du script**
+  (même catégorie qu'en Question 11, fiche 148) : une citation « consensus
+  professionnel » coupée par un retour à la ligne (« con-/sensus
+  professionnel », lignes ~2781-2782 du texte source) avait échappé à un
+  premier grep automatique sur texte aplati — retrouvée par recherche
+  ciblée des motifs de fin/début de ligne, portant le total de citations
+  brutes de 27 à 28 avant consolidation (28→27 après regroupement de 2
+  citations de grade C décrivant la même conséquence clinique — passage
+  transforaminal/septum et passage sous-dural du cathéter, **si migré :
+  ne pas dédoubler cette ligne, une seule recommandation dans le
+  source**). Audit indépendant par regex tally : correspondance exacte
+  dès le premier passage (contrairement aux fiches 145 et 148 où une
+  erreur de décompte manuel avait dû être corrigée après coup — première
+  fois dans cette série que le piège de césure est anticipé et corrigé
+  avant l'écriture du script plutôt que détecté après coup). **Correction
+  de densité de page appliquée avant commit** : les 3 sous-sections
+  construites séparément (avec `PageBreak`) donnaient 3 pages avec 45-55 %
+  d'espace vide en fin de chaque page. Fusions partielles testées (1+2,
+  puis 2+3) : n'aidaient pas, le total restait à 3 pages (l'espace vide
+  se déplaçait simplement) — reverted. Fusion complète des 3
+  sous-sections en un seul flux continu (sans `PageBreak` intermédiaire) :
+  réduit effectivement à 2 pages denses sans coupure disgracieuse ni
+  chevauchement — retenue, vérifiée visuellement page par page après
+  fusion (aucune régression : mêmes 27 lignes, mêmes chips, aucun retour
+  à la ligne cassé). Partage l'entrée `FICHE_HREF_MATCH` des fiches
+  143-150 (pas de doublon) mais possède ses propres entrées `RAW`/
+  `DOC_META` complètes. **Restera** : Question 15 (facteurs de risque de
+  complications, ~59 citations brutes estimées) pour couverture intégrale
+  du document (hors Question 6, délibérément exclue — superseded par la
+  fiche HAS 2025 dédiée).
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1535,7 +1576,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_terrain_cardioresp_2006.json`,
 `content_blocs_perimedullaires_hemostase_2006.json`,
 `content_blocs_perimedullaires_neuro_2006.json`,
-`content_blocs_perimedullaires_infectieux_2006.json`
+`content_blocs_perimedullaires_infectieux_2006.json`,
+`content_blocs_perimedullaires_echec_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
