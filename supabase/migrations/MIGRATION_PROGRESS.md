@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-156 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-157 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22, puis 157 le 2026-09-27)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1723,6 +1723,72 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   naturel en 3 groupes (Champ1 | Champ2-3 | Champ4-5-sources) ; fusion
   complète testée sans amélioration (toujours 3 pages) — découpage à 3
   conservé.
+- **157 : `sedation_procedurale_2026`** — "Sédation procédurale en
+  structure de médecine d'urgence", SFMU/SFAR, RFE à jour au 25/06/2026 —
+  quatrième document trouvé via recherche web dans cette même série
+  (même stratégie que 154/155/156), également absent de
+  `library_final.json` à l'origine et **ajouté comme nouvelle entrée**.
+  17 questions PICO réparties en 4 champs. **Divergence de décompte
+  source non résolue (disclosed, pas une erreur de cette fiche) :** le
+  document annonce dans sa "Synthèse des résultats" 36 recommandations
+  (1 GRADE1, 3 GRADE2, 29 avis d'experts, 3 absences de recommandation),
+  mais la lecture intégrale et le recomptage indépendant du corps du
+  texte (vérifiés deux fois, par grep ciblé puis relecture linéaire
+  complète des 17 questions) ne trouvent que 34 items : GRADE1:1,
+  **GRADE2:4** (pas 3), **avis d'experts:26** (pas 29), absence de
+  recommandation:3 (concorde). Écart net : -2 recommandations au total,
+  et la répartition GRADE2/AE diverge de ±1/∓3 par rapport à l'annoncé —
+  aucune recommandation supplémentaire retrouvable après relecture
+  ciblée des zones à fort volume d'argumentaire. **Si migré : utiliser le
+  décompte réel (34, vérifié exhaustivement), pas celui annoncé par le
+  source (36) — et documenter cette divergence dans les métadonnées du
+  document migré.** **Actualise/supersede cliniquement** la fiche déjà
+  présente `sedation_urgences` (CE SFAR/SFMU 2010 — pharmacologie des
+  agents, ventilation spontanée, ISR, patient intubé-ventilé,
+  circonstances particulières — conservée telle quelle pour sa valeur
+  historique) — même sujet clinique, méthodologie GRADE bien plus
+  récente et périmètre explicitement précisé par le nouveau document
+  (adulte, hors grossesse, voie IV exclusivement) (**si migré : envisager
+  de marquer `sedation_urgences` comme "superseded"**, même traitement
+  que les 3 fiches précédentes de cette série web). Deux coquilles
+  source confirmées visuellement (rendu PyMuPDF 150dpi, jamais corrigées
+  silencieusement) : (1) le tableau MASS écrit littéralement "PA ± 20 à
+  50 mmHg = 50" au lieu de "= 1" (incohérent avec le barème 2/1/0 des 3
+  autres items du même tableau) ; (2) le tableau mPADSS omet purement et
+  simplement la valeur numérique de son 2e item de constantes vitales
+  (phrase interrompue sans chiffre dans le PDF source lui-même, pas un
+  bug d'extraction) — "1" complété par déduction dans les deux cas, noté
+  en marge de tableau. Particularités de numérotation disclosed, sans
+  conséquence sur le fond : 2 items numérotés "Q3.2.x" (préfixe Q au lieu
+  de R), 2 items numérotés sans lettre du tout ("4.4.1"/"4.4.2"), 1 item
+  "R.4.6.1" (point après le R, même défaut typographique déjà rencontré
+  sur `alr_pediatrique_2026`). 3 des 34 items sont des "ABSENCE DE
+  RECOMMANDATION" : un seul porte un numéro propre (R2.6.1), les deux
+  autres sont greffés sans numéro à la suite d'une recommandation
+  numérotée de la même question (**si migré, même traitement que les 5
+  items non numérotés de la fiche 156 : identifiant de migration
+  distinct**). Contenu non gradé rattaché par recommandation et repris :
+  score ASA (6 classes), questionnaire STOP-BANG (8 items), tableau fusionné
+  des délais Tmax des opioïdes forts (9 lignes), scores MASS et mPADSS
+  (barèmes complets), briefing de sécurité pré-procédural. Non repris
+  (non cliniques) : méthodologie GRADE/PICO, logigramme d'organisation
+  des 4 champs. Densité de page : fusion complète des 5 sections testées
+  en un seul flux continu, 7→4 pages. **Fiche construite, auditée,
+  intégrée (4 fichiers) et testée en Playwright (H1 correct, zéro
+  pageerror) ; commit/push effectués côté `rfe-sfar-website` ; PDF dans
+  `output/`. Publication vers l'Artifact live SIGNALÉE COMME NON FAITE
+  cette session** — voir note dans `rfe-sfar-website/CLAUDE.md`
+  ("Publication différée — fiche 157") : le fichier HTML assemblé fait
+  désormais 105 544 lignes / 3,1 Mo, et la porte de sécurité du fichier
+  outil ("lire l'intégralité de la version live avant publication")
+  exigerait plus de 60 appels de lecture supplémentaires rien que pour
+  visualiser du contenu déjà existant sans rapport avec cette fiche —
+  alors même que la stricte inclusion (aucune clé live absente du build
+  local) avait déjà été vérifiée par diff exact des marqueurs
+  `id="content-*"` (74 clés live, toutes présentes dans les 158 clés du
+  build local). Une session future devra soit consacrer un temps dédié à
+  cette lecture intégrale, soit publier malgré tout après avoir revérifié
+  la non-régression par le même diff de marqueurs.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1774,7 +1840,7 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_chir_ambu_urologie_2013.json`,
 `content_voies_aeriennes_bloc_2026.json`,
 `content_urgences_vitales_ih_2026.json`,
-`content_alr_pediatrique_2026.json`
+`content_alr_pediatrique_2026.json`, `content_sedation_procedurale_2026.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
