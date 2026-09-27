@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-154 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-155 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1648,6 +1648,42 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   forcer dans le schéma `recommendations`**). Densité de page : 3
   sections séparées donnaient 5 pages avec 2 pages quasi vides ; fusion
   complète en un seul flux continu réduite à 3 pages denses.
+- **155 : `urgences_vitales_ih_2026`** — "Recommandations pour
+  l'organisation de la prise en charge des urgences vitales
+  intra-hospitalières" (UVIH), SFAR/SFMU/SRLF (+ CARO/ADARPEF/GFRUP/
+  SFPC), RBP labellisée HAS, adoptée par le Collège de la HAS le
+  **3 septembre 2026** — publiée le MÊME JOUR que la fiche 154
+  (`voies_aeriennes_bloc_2026`), trouvée par la même recherche web,
+  également absente de `library_final.json` à l'origine et **ajoutée
+  comme nouvelle entrée** pour la même raison. 39 recommandations
+  gradées GRADE (grade 2:4, avis d'experts:30, absence de
+  recommandation:4, **1 "obligation réglementaire"**), vérifiées par
+  recoupement avec le tableau de synthèse du source lui-même.
+  **Particularité méthodologique nouvelle dans ce corpus** : une
+  recommandation (R3.11.1, attestation FGSU2 obligatoire) est étiquetée
+  « OBLIGATION RÉGLEMENTAIRE » par le source — PAS un grade GRADE, un
+  rappel d'obligation légale existante (Arrêté du 3 mars 2006 modifié,
+  art. L4021-1 CSP). **Si migré : ce n'est ni un `grade` GRADE ni une
+  "absence de recommandation" — prévoir une catégorie dédiée
+  (`obligation_reglementaire` ou équivalent) dans le schéma de migration,
+  ne pas la classer comme AE ni comme grade 2**. Incohérence de titre
+  disclosed : le tableau de synthèse du source lui-même intitule par
+  erreur son "Champ 3" avec le titre du Champ 2 — confirmé comme coquille
+  du source (pas une erreur de cette fiche) par recoupement avec la
+  table des matières et la section Méthode du même document, toutes deux
+  cohérentes entre elles ; le titre correct est utilisé dans la fiche
+  (**si migré, utiliser le titre correct "Modalités de suivi et
+  fonctionnement de la filière UVIH", pas celui, erroné, du tableau de
+  synthèse**). Aucune fiche existante sur ce site ne couvre ce sujet
+  (organisation institutionnelle de la réponse aux urgences vitales) —
+  la fiche `sauv` (Salle d'Accueil des Urgences Vitales) est un sujet
+  distinct (aménagement d'une salle, pas l'organisation de la filière).
+  Périmètre exclu et disclosed : 2 aides cognitives visuelles (adulte/
+  enfant) publiées séparément par la SFAR, non reproduites (même
+  traitement que les 7 figures de la fiche 154). Densité de page : 4
+  sections séparées donnaient 4 pages avec 40-70% d'espace vide sur
+  chacune ; fusion complète en un seul flux continu réduite à 3 pages
+  denses.
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1697,7 +1733,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_echec_2006.json`,
 `content_blocs_perimedullaires_complications_2006.json`,
 `content_chir_ambu_urologie_2013.json`,
-`content_voies_aeriennes_bloc_2026.json`
+`content_voies_aeriennes_bloc_2026.json`,
+`content_urgences_vitales_ih_2026.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
