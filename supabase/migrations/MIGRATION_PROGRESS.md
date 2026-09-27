@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-157 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22, puis 157 le 2026-09-27)
+## ⚠️ Fiches 100-158 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22, puis 157-158 le 2026-09-27)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1778,7 +1778,8 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   pageerror) ; commit/push effectués côté `rfe-sfar-website` ; PDF dans
   `output/`. Publication vers l'Artifact live SIGNALÉE COMME NON FAITE
   cette session** — voir note dans `rfe-sfar-website/CLAUDE.md`
-  ("Publication différée — fiche 157") : le fichier HTML assemblé fait
+  ("Publication différée — fiches 157-158", mise à jour pour couvrir
+  aussi la fiche 158 ci-dessous) : le fichier HTML assemblé fait
   désormais 105 544 lignes / 3,1 Mo, et la porte de sécurité du fichier
   outil ("lire l'intégralité de la version live avant publication")
   exigerait plus de 60 appels de lecture supplémentaires rien que pour
@@ -1786,9 +1787,68 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   alors même que la stricte inclusion (aucune clé live absente du build
   local) avait déjà été vérifiée par diff exact des marqueurs
   `id="content-*"` (74 clés live, toutes présentes dans les 158 clés du
-  build local). Une session future devra soit consacrer un temps dédié à
+  build local à ce moment-là). Une session future devra soit consacrer un temps dédié à
   cette lecture intégrale, soit publier malgré tout après avoir revérifié
   la non-régression par le même diff de marqueurs.
+- **158 : `infections_intra_abdominales_2026`** — "Prise en charge "
+  thérapeutique des Infections intra-abdominales de l'adulte", SFAR en
+  association avec FCVD/SFCD/SFED/SFM/SFR/SPILF/SFPT, RFE validée par le
+  Comité des Référentiels Cliniques de la SFAR (09/06/2026) et le CA de
+  la SFAR (24/06/2026) — cinquième document trouvé via recherche web dans
+  cette même série (154 à 158), également absent de `library_final.json`
+  à l'origine et **ajouté comme nouvelle entrée**. 3 champs (prise en
+  charge initiale/contrôle de la source, surveillance clinique/durée de
+  traitement, complications évolutives). **43 recommandations, décompte
+  exact, aucune divergence** (contrairement à la fiche précédente de
+  cette série, 157) : le source annonce dans sa "Synthèse des résultats"
+  « 42 recommandations... 8 [...] GRADE 1, 13 [...] GRADE 2 et 21 [...]
+  avis d'experts. Enfin, pour 1 question, aucune recommandation n'a pu
+  être formulée » (42+1=43) ; le recomptage manuel complet du "Tableau de
+  synthèse" (qui duplique le texte de chacune des recommandations
+  numérotées) trouve exactement les mêmes 43 items (Champ1:21 dont
+  GRADE1:5/GRADE2:7/AE:9 ; Champ2:12 dont GRADE1:3/GRADE2:3/AE:5/
+  absence:1 ; Champ3:10 dont GRADE2:3/AE:7) — vérifié deux fois,
+  concordance exacte contrairement à `sedation_procedurale_2026`.
+  **Actualise/supersede cliniquement** la fiche déjà présente
+  `infections_intra_abdominales` (CC SFAR/SFCD/SPILF/AFC, 2014/2015,
+  conservée pour sa valeur historique) — même sujet clinique, RFE bien
+  plus récente et methodologie GRADE/PRISMA (7 sociétés co-signataires,
+  recherche bibliographique 2012-2024) (**si migré : envisager de
+  marquer `infections_intra_abdominales` comme "superseded"**, même
+  traitement que les fiches web précédentes de cette série).
+  **Particularité notable pour la migration : grades négatifs présents**
+  (chips "1-"/"2-", à ne pas confondre avec une absence de
+  recommandation) : R2.2.1 (GRADE1, ne pas prescrire d'antibiothérapie
+  postopératoire au-delà de l'antibioprophylaxie pour une appendicite non
+  compliquée), R1.2.2 et R2.1.1 (GRADE2, ne pas prendre en compte les
+  BLSE dans le choix probabiliste / ne pas réaliser certains examens
+  systématiques) — **si migré, préserver le signe (+/-) de la
+  recommandation dans le schéma de migration, pas seulement son niveau
+  numérique** (ce corpus a déjà des precédents pour ce cas, ex.
+  `anticoagulants`/0014). 1 item "ABSENCE DE RECOMMANDATION" non numéroté
+  par le source (greffé à la suite de R2.3.1, même sous-question, sans
+  numéro R propre — même pattern que les items non numérotés des fiches
+  156/157, **si migré : identifiant de migration distinct**). Contenu non
+  gradé rattaché par recommandation et repris : Tableau 1 du source
+  (facteurs de risque de bactéries résistantes — BLSE, BMR au sens large,
+  entérocoques résistants à l'ampicilline), directement actionnable pour
+  les recommandations d'escalade antibiotique (R1.2.3/1.2.5/1.2.10).
+  Contenu antibiotique très dense et actionnable (choix probabiliste
+  précis par molécule selon le contexte communautaire/associé aux soins
+  et les facteurs de risque de résistance, durées de traitement en
+  jours). Densité de page : fusion complète des 3 champs en un seul flux
+  continu testée directement (comme pour 157), 4 pages — la dernière page
+  reste peu remplie (seul le panneau d'avertissement final) malgré deux
+  passes de resserrement du texte (attribution de source raccourcie,
+  panneau d'introduction condensé) : le contenu des pages 1 à 3 est
+  entièrement plein jusqu'au pied de page, la 4e page est une contrainte
+  structurelle réelle (le panneau final ne tient pas dans l'espace
+  restant), pas un gaspillage évitable. **Fiche construite, auditée,
+  intégrée (4 fichiers) et testée en Playwright (H1 correct, zéro
+  pageerror) ; commit/push effectués côté `rfe-sfar-website` ; PDF dans
+  `output/`. Publication vers l'Artifact live également différée cette
+  session, même raison que la fiche 157 (voir ci-dessus et
+  `rfe-sfar-website/CLAUDE.md`).**
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1840,7 +1900,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_chir_ambu_urologie_2013.json`,
 `content_voies_aeriennes_bloc_2026.json`,
 `content_urgences_vitales_ih_2026.json`,
-`content_alr_pediatrique_2026.json`, `content_sedation_procedurale_2026.json`
+`content_alr_pediatrique_2026.json`, `content_sedation_procedurale_2026.json`,
+`content_infections_intra_abdominales_2026.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
