@@ -30,7 +30,7 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
-## ⚠️ Fiches 100-151 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
+## ⚠️ Fiches 100-152 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté
 `rfe-sfar-website` dans la même session :
@@ -1531,6 +1531,56 @@ Une routine planifiée a construit cinq fiches supplémentaires côté
   complications, ~59 citations brutes estimées) pour couverture intégrale
   du document (hors Question 6, délibérément exclue — superseded par la
   fiche HAS 2025 dédiée).
+- **152 : `blocs_perimedullaires_complications_2006`** — dixième et
+  DERNIER installment du même document (fiches 143-151). Couvre
+  INTÉGRALEMENT la Question 15 (facteurs de risque de complications et
+  prise en charge des complications des APM : cardiovasculaires,
+  respiratoires, toxicité systémique des AL, erreurs d'injection,
+  neurologiques, infectieuses, brèche durale, effets des morphiniques) —
+  dernière Question du document. **Avec cette fiche, les 15 Questions
+  sont couvertes à 14/15** (seule la Question 6, travail obstétrical,
+  reste délibérément EXCLUE — superseded par `douleur_accouchement_2025`,
+  HAS 2025). 58 recommandations gradées (A:7, B:6, C:42, D:3), issues de
+  59 citations brutes. Une seule consolidation : la même recommandation
+  « lidocaïne proscrite en rachianesthésie » (grade B) énoncée deux fois
+  par le source sous deux intitulés distincts (syndrome neurologique
+  transitoire et syndrome de la queue-de-cheval) — un seul point
+  clinique, regroupée en une ligne (**si migré : ne pas dédoubler cette
+  ligne**). **Particularité méthodologique notable, première dans cette
+  série** : AUCUNE citation « consensus professionnel »/« accord
+  professionnel »/« avis d'experts » dans toute cette Question — à la
+  différence de tous les installments précédents (143-151), qui
+  comportaient tous au moins une citation « AE » (**si migré : ce
+  document n'a pas de valeur `grade` de type AE pour cette Question,
+  uniquement A/B/C/D**). Vérifié par grep exhaustif + recherche de
+  césures typographiques (motif `con-$`, cf. l'incident de la Question
+  11) : les 3 faux positifs trouvés (« inconnue », « connue »,
+  « concomitante ») ne sont pas « consensus ». Trois thèmes
+  (respiratoire, toxicité systémique des AL, erreurs d'injection) ne
+  comportent aucune citation de grade individuelle — condensés en
+  repères pratiques non gradés, disclosed (même méthode que la
+  sous-section Monitorage de la Question 8, fiche 146 — **si migré, ce
+  contenu n'a pas de `recommendation_code`/`grade` individuel, à traiter
+  comme note contextuelle plutôt que comme recommandation atomique**).
+  **Erreur de décompte manuel trouvée et corrigée avant commit** :
+  le brouillon du docstring disait B:7/C:41, l'audit indépendant par
+  regex tally sur le code final a trouvé B:6/C:42 (la consolidation
+  avait retiré une citation de grade B, pas de grade C — erreur
+  d'arithmétique manuelle similaire à celle des fiches 145/148, mais ici
+  détectée et corrigée avant le commit plutôt qu'après). **Correction de
+  densité de page appliquée avant commit** : les 5 sous-sections
+  construites séparément (avec `PageBreak`) donnaient 7 pages avec un
+  espace vide important sur plusieurs pages (2, 3, 4, 6). Neuf
+  arrangements de fusion testés systématiquement (fusions par paires,
+  triples, fusion complète) ; la fusion en 2 groupes (cardiovasculaire+
+  respiratoire/toxicité/injection+neurologique, puis infectieux/brèche
+  durale+morphiniques) réduit à 5 pages tout en conservant des titres de
+  page distincts et informatifs — retenue, vérifiée visuellement page
+  par page (5/5 pages, toutes denses et correctes). Partage l'entrée
+  `FICHE_HREF_MATCH` des fiches 143-151 (pas de doublon) mais possède
+  ses propres entrées `RAW`/`DOC_META` complètes. **Ce document (15
+  Questions, hors Q6 exclue) est maintenant couvert à 14/15 par 10
+  fiches séparées (143-152).**
 
 Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_echo_alr.json`, `content_alr_douleur_chronique.json`,
@@ -1577,7 +1627,8 @@ Voir `rfe-sfar-website/build/content_hospit_ambulatoire.json`,
 `content_blocs_perimedullaires_hemostase_2006.json`,
 `content_blocs_perimedullaires_neuro_2006.json`,
 `content_blocs_perimedullaires_infectieux_2006.json`,
-`content_blocs_perimedullaires_echec_2006.json`
+`content_blocs_perimedullaires_echec_2006.json`,
+`content_blocs_perimedullaires_complications_2006.json`
 et la PR #1 de ce dépôt pour
 le détail complet du build/audit de chacune (y compris, pour `echo_alr`,
 un bug de grade composite trouvé et corrigé avant la finalisation — une
