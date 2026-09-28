@@ -1,0 +1,201 @@
+﻿SPÉCIFICATION TECHNIQUE
+medical-guidelines.net
+Comment développer, déployer et exploiter le produit décrit dans le cahier des charges produit
+Version 4.5 — Document 2/3 : spécification technique
+Document 1/3 : cahier des charges produit (référence fonctionnelle) — Document 3/3 : checklist de recette
+Les numéros « CDC §x » renvoient au cahier des charges produit V4.5.
+28 septembre 2026
+
+Sommaire
+
+
+
+1. Architecture
+Composant
+Choix
+Rôle
+Application web
+Next.js 16 (App Router), TypeScript strict
+Pages publiques, espace membre, back-office, routes serveur.
+Hébergement
+Vercel
+Déploiement automatique depuis la branche main ; aperçu par demande d’intégration.
+Base de données et authentification
+Supabase (PostgreSQL, Francfort)
+Source de vérité du contenu et des comptes ; règles d’accès (RLS).
+Stockage de fichiers
+Supabase Storage
+Documents sources autorisés, artefacts ; liens signés à durée limitée.
+E-mails
+Resend (domaine medical-guidelines.net authentifié)
+E-mails d’authentification, e-mails de veille, alertes.
+Paiement
+Stripe Billing + Stripe Tax
+Abonnement annuel, codes promotionnels, factures, TVA.
+Surveillance
+Sentry (erreurs) + sonde de disponibilité
+Alertes e-mail au porteur de projet.
+Mesure d’audience
+Plausible ou Vercel Analytics (sans cookies)
+Tunnel de conversion (CDC §13).
+Routine automatisée
+Claude Code (routine planifiée)
+Production des fiches, import, veille mensuelle, synthèse hebdomadaire.
+Réception e-mail
+Redirection (ex. ImprovMX) de contact@medical-guidelines.net
+Vers la messagerie du porteur de projet.
+
+    • Rendu côté serveur avec mise en cache pour les pages de fiches ; aucune génération IA à la demande pour l’utilisateur final.
+    • Aucun contenu clinique en dur dans le code ; aucun fichier regroupant le catalogue servi au navigateur.
+    • Recherche : PostgreSQL plein texte (et trigrammes pour les suggestions) au départ ; moteur dédié seulement si nécessaire.
+2. Dépôts de code et branches
+Dépôt (privé)
+Contenu
+Ne contient pas
+rfe-sfar-website (atelier)
+Sources, extraction, rédaction, contrôles qualité, fiches JSON, brouillons anglais
+Rien de servi directement aux utilisateurs
+medical-guidelines-webapp (site)
+Application, schéma et migrations de structure, outil d’import, back-office, tests
+Texte clinique en dur, sources soumises à droits
+
+    • Les deux dépôts restent privés en permanence.
+    • Règle « deux versions au maximum » par dépôt : main (officielle) + une seule branche de travail (ex. routine/travail).
+    • Toute autre branche est intégrée puis supprimée ; une branche divergente dont le contenu n’est pas repris est d’abord conservée sous forme d’étiquette d’archive.
+    • La routine ne pousse jamais sur main et ne maintient qu’une seule demande d’intégration ouverte par dépôt ; la fusion est humaine (rendez-vous hebdomadaire, CDC §14).
+    • Intégration continue obligatoire avant fusion : lint, typage, compilation, tests (§10).
+    • Secrets (clés Stripe, Supabase, Resend, Sentry) stockés dans les réglages des services, jamais dans le code.
+3. Circuit du contenu
+    • 1. Atelier : production de la fiche (JSON structuré) et de sa version anglaise en brouillon.
+    • 2. Import : outil d’import rejouable (sans doublon) qui charge documents, recommandations et traductions en statut brouillon. File triée par date de publication décroissante ; tout traitement hors ordre est signalé.
+    • 3. Relecture dans le back-office ; arbitrage des points « À VÉRIFIER ».
+    • 4. Publication par un rôle autorisé, soumise au verrou (§5.3).
+    • 5. Page générée depuis la base : /{langue}/{spécialité}/{société}/{fiche}, ex. /fr/anesthesie-reanimation/sfar/choc-hemorragique-2014 ; adresses stables, redirection en cas de changement.
+    • Une seule source de vérité : la base. Le JSON de l’atelier est un format d’échange ; toute correction se fait en base ou est réimportée.
+    • Migrations = structure uniquement (tables, règles d’accès, fonctions). Le contenu clinique passe exclusivement par l’outil d’import.
+    • Transition : le fichier actuel public/fiches/index.html (fichier unique, environ 40 fiches) reste en ligne jusqu’à la mise en service des pages par fiche, puis est supprimé.
+4. Modèle de données
+Schéma cible : supabase/schema_v2.sql (contenu éditorial) puis supabase/schema_v3.sql (accès par spécialité, tarification), complémentaires et à appliquer dans cet ordre, d’abord sur l’environnement de test. Tables principales :
+Table
+Rôle
+profiles
+Compte, profession, specialty_id (périmètre d’accès), langue, rôles (is_admin, relecteur). Colonnes modifiables par l’utilisateur limitées (droits par colonne).
+consent_log
+Historique horodaté des consentements ; lisible, jamais modifiable par l’utilisateur. (En production.)
+specialties, societies
+Référentiels ; noms traduisibles.
+source_legal_profiles
+Registre juridique par source (CDC §12.4) ; statut « validé » requis pour publier.
+documents, document_versions
+Document source, date de publication, dernière vérification, statut de fraîcheur, remplacé par.
+recommendations, recommendation_translations
+Recommandations atomiques et versions linguistiques, avec relecteur et date par langue.
+recommendation_links
+Relations : même question clinique (pour l’encadré « Recommandations divergentes »), remplacement.
+topics, drugs, interventions, populations
+Taxonomies pour la recherche.
+watch_sources, watch_runs
+Registre de veille ; journal de chaque cycle mensuel.
+editorial_reviews, audit_log
+Relectures, décisions, traçabilité des actions sensibles.
+error_reports
+Signalements d’erreurs (en production) ; criticité, statut, décision.
+corrections_log
+Journal public des corrections (date, fiche, criticité, résumé).
+free_content_unlocks
+Fiches débloquées par les comptes gratuits (document_id), 5 maximum.
+subscriptions, plans, promotion_codes, promotion_redemptions
+Abonnements, tarifs et historique, codes promotionnels (Annexe).
+favorites, consultation_history, notification_preferences, notifications_log
+Favoris, historique, préférences, e-mails envoyés.
+
+V2 : table student_verifications (dépôt et validation des attestations dans le back-office). En MVP, les justificatifs sont traités par e-mail et donnent lieu à un code promotionnel personnel.
+5. Contrôle d’accès
+5.1 Principes
+    • Toute autorisation est décidée côté serveur et en base (RLS), jamais uniquement dans l’interface.
+    • Entrées de l’autorisation : specialty_id + type de compte (FREE / PREMIUM) + déblocages gratuits ; un seul mécanisme, pas de systèmes parallèles.
+    • Le contenu premium n’est envoyé au navigateur qu’après vérification des droits pour la fiche demandée.
+5.2 Quota gratuit
+    • Fonction transactionnelle unlock_document(document_id) : vérifie la spécialité, l’unicité (user_id, document_id) et refuse un 6ᵉ déblocage ; appelée uniquement côté serveur.
+    • Une recommandation ouverte depuis la recherche appelle le déblocage de sa fiche.
+    • Le paramètre du quota (5) est stocké dans plans et toute modification est tracée dans audit_log.
+5.3 Verrou de publication
+Contrainte en base (fonction de validation déclenchée au passage au statut « publiée ») qui refuse la publication si l’une des conditions du CDC §9.2 manque : source_url valide, date de publication, statut juridique validé, traduction autorisée pour toute langue traduite, relecteur et date de relecture pour chaque langue publiée, version française validée, grade et niveau de preuve renseignés ou « non indiqué ».
+6. Sécurité et protection du contenu
+    • En-têtes HTTP sur toutes les pages : Content-Security-Policy, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, HSTS (en production).
+    • Fonctions SECURITY DEFINER non exécutables sans connexion ; analyse de sécurité Supabase revue chaque mois.
+    • Filigrane : identifiant ou e-mail + date/heure superposé au contenu premium, généré côté serveur à chaque affichage.
+    • Anti-extraction : limitation du nombre de fiches premium consultées par compte et par période, détection de rythmes automatisés, journalisation et alerte ; blocage temporaire en cas d’abus.
+    • Neutralisation de l’impression (feuille de style d’impression), du clic droit et de la sélection sur le contenu premium : mesures secondaires.
+    • V2 (application installable Android) : indicateur système interdisant la capture d’écran ; iOS : détection a posteriori seulement.
+    • Protection contre les mots de passe compromis (option Supabase payante) activée dès le passage à l’offre payante.
+7. Environnements et exploitation
+Environnement
+Usage
+Production
+Supabase offre payante (pas de mise en pause, sauvegardes quotidiennes, restauration à un instant donné) ; Vercel production (domaine www.medical-guidelines.net).
+Test
+Base et site distincts ; toute migration de structure, tout import et tout cycle de veille y passent d’abord.
+Aperçus
+Une version d’aperçu Vercel par demande d’intégration, reliée à l’environnement de test.
+
+    • Surveillance : Sentry (erreurs serveur et navigateur) et sonde de disponibilité (site, base) avec alerte e-mail immédiate.
+    • Supervision par l’assistant : connecteur Vercel autorisé sur l’équipe ahmed-edbd (déploiements et journaux).
+    • Contrôle quotidien automatisé par la routine : état de la base, disponibilité du site, protection des fiches (une fiche sans session doit rediriger vers la connexion).
+    • Test de restauration d’une sauvegarde au moins une fois par trimestre, documenté.
+8. Veille, e-mails et routine
+    • Déclenchement : routine planifiée le dernier jour de chaque mois (cycle CDC §8), journalisé dans watch_runs.
+    • Détection par source selon watch_sources (flux RSS/Atom, sitemap, page de publications avec empreinte) et conditions d’accès du registre juridique.
+    • Création automatique des brouillons (français et anglais) en tête de file ; aucune publication ni envoi sans validation humaine.
+    • E-mails via Resend : envoi d’essai à l’administrateur, puis envoi par lots ; en-têtes List-Unsubscribe (désabonnement en un clic) ; respect des préférences ; journal dans notifications_log.
+    • Capacité : l’offre gratuite de Resend est limitée à 100 e-mails/jour et 3 000/mois ; passer à l’offre payante avant la première campagne dépassant ces volumes.
+    • Modèles d’e-mails d’authentification : liens du type {{ .SiteURL }}/auth/callback?token_hash={{ .TokenHash }}&type=… (validation au clic, robustes à la double ouverture) ; en production.
+    • Routine : une seule branche de travail et une seule demande d’intégration ouverte par dépôt ; plafond de fiches par session ; synthèse d’une page avant le rendez-vous hebdomadaire.
+9. Paiement
+    • Stripe Billing : produit PREMIUM, prix annuel récurrent ; nouveau prix Stripe pour tout changement de tarif, appliqué au prochain renouvellement.
+    • Codes promotionnels : coupons Stripe à durée « once » (première facture annuelle) ; FONDATEURS limité à 100 utilisations ; codes personnels étudiants à usage unique.
+    • Stripe Tax : TVA selon le pays et le statut de l’acheteur ; collecte du numéro de TVA des professionnels ; factures conformes.
+    • Webhooks Stripe (paiement réussi, échec, renouvellement, résiliation) mettant à jour subscriptions côté serveur ; le prix n’est jamais déterminé par le navigateur.
+    • Case CGV + case de renonciation au droit de rétractation obligatoires avant paiement ; version des CGV et horodatage conservés.
+    • Rappel 30 jours avant renouvellement en cas de hausse de tarif (e-mail avec lien de résiliation).
+10. Qualité logicielle et mesure
+    • Intégration continue (GitHub Actions) : lint, vérification des types, compilation à chaque demande d’intégration ; fusion interdite en cas d’échec. (En production.)
+    • Tests de bout en bout (navigateur automatisé) du parcours : inscription → confirmation → déblocage de 5 fiches → refus du 6ᵉ → paiement en mode test Stripe → accès à toute la spécialité → résiliation ; rejoués avant chaque mise en production.
+    • Mesure d’audience sans cookies : événements inscription, e-mail confirmé, fiche débloquée (1 à 5), quota atteint, page d’abonnement vue, paiement commencé, paiement réussi, résiliation, renouvellement, dernière fiche consultée avant paiement.
+    • Polices et ressources hébergées sur le site (aucun appel à Google Fonts).
+    • Internationalisation : textes de l’interface dans des fichiers de traduction ; adresses par langue ; formats localisés ; prise en charge de l’écriture de droite à gauche prévue (V2).
+11. État des lieux au 28/09/2026
+Élément
+État
+Décision
+Site en production
+Inscription par code, connexion, mot de passe oublié, « Mon compte », signalements, en-têtes de sécurité, intégration continue, fiches lisibles sur mobile
+Conserver.
+Base de production
+Table profiles, consent_log, error_reports ; droits par colonne ; plus aucune fonction appelable sans connexion
+Conserver ; appliquer ensuite schema_v2 puis schema_v3 via l’environnement de test.
+Fiches
+159 fiches JSON dans l’atelier ; ~40 en ligne dans un fichier unique
+Importer du plus récent au plus ancien ; remplacer le fichier unique par des pages.
+Recommandations migrées
+99 scripts SQL (4 138 recommandations en brouillon), 112 points « À VÉRIFIER »
+Convertir en données d’import ; arbitrage médical.
+Branches
+Plusieurs branches de travail non fusionnées dans chaque dépôt
+Intégrer la plus récente, archiver les divergentes, supprimer le reste.
+E-mails
+Resend configuré, domaine authentifié, modèles en français avec lien par token_hash
+Conserver ; dimensionner avant la première campagne.
+Paiement, CGV, pages publiques, veille, filigrane
+À développer
+Phase 0.
+
+Annexe — Tarification (champs)
+plans
+    • plan_code (FREE / PREMIUM), billing_interval (none / year), price_amount (0 / 5000 centimes), currency (EUR), free_unlock_quota (5), effective_from, applies_to (all_on_renewal / new_subscribers_only), stripe_price_id
+promotion_codes
+    • id, code, name, description, discount_type (pourcentage / montant), discount_value, currency, starts_at, ends_at, is_active, max_redemptions, max_redemptions_per_user, first_subscription_only, applies_to_premium, promotion_duration_months (12), personal_user_id (codes étudiants), created_by, created_at, updated_at
+promotion_redemptions
+    • id, promotion_code_id, user_id, subscription_id, original_amount, discount_amount, final_amount, promotion_start_at, promotion_end_at, redeemed_at, stripe_invoice_id, stripe_subscription_id
+Règle de non-cumul
+    • Une seule réduction par abonnement : la plus favorable est appliquée côté serveur.
