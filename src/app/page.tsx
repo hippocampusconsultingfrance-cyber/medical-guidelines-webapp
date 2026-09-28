@@ -56,6 +56,11 @@ export default async function Home() {
       >
         Accéder à la bibliothèque des fiches →
       </Link>
+      <p className="mt-4 text-sm">
+        <Link href="/abonnement" className="text-[#1C7FB6] underline">
+          Abonnement PREMIUM : toutes les fiches, 50 € / an
+        </Link>
+      </p>
       {profile?.editorial_role && (
         <p className="mt-4 text-sm text-slate-600">
           Compte relecteur : la bibliothèque affiche aussi les brouillons, avec

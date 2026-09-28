@@ -136,7 +136,12 @@ export default async function FichePage({
               </form>
             </>
           ) : (
-            !message && <p>{MESSAGES.quota_atteint}</p>
+            <>
+              {!message && <p>{MESSAGES.quota_atteint}</p>}
+              <a href="/abonnement" className="btn btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+                Passer à PREMIUM
+              </a>
+            </>
           )}
         </div>
       </Shell>

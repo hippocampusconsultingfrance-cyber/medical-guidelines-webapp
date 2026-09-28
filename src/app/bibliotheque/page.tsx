@@ -84,6 +84,9 @@ export default async function BibliothequePage({
               </b>{" "}
               sur {FREE_QUOTA}. Un crédit débloque une fiche, définitivement.
             </span>
+            <a href="/abonnement" style={{ marginLeft: "auto", fontWeight: 700 }}>
+              Passer à PREMIUM →
+            </a>
           </>
         )}
       </div>
