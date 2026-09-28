@@ -36,6 +36,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             CGU
           </a>
           {" · "}
+          <a href="/cgv" className="hover:underline">
+            CGV
+          </a>
+          {" · "}
           <a href="/confidentialite" className="hover:underline">
             Confidentialité
           </a>
