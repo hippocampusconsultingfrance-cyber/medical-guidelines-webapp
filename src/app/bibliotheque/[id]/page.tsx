@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import {
+  accordion,
   chipClass,
   escapeHtml,
   formatDate,
@@ -12,6 +13,7 @@ import {
   type TocItem,
 } from "@/lib/fiches";
 import { cardTitle, loadLibrary } from "../data";
+import AccordionControls from "../accordion-controls";
 import Shell from "../shell";
 import { reportError, setPublication, unlockDocument } from "./actions";
 
@@ -209,6 +211,7 @@ export default async function FichePage({
             )}
           </div>
         )}
+        {toc.length > 1 && <AccordionControls />}
         <div dangerouslySetInnerHTML={{ __html: body }} />
         <details
           className="unlock-box"
@@ -249,16 +252,10 @@ export default async function FichePage({
 // de la base et est échappé.
 function renderRecommendations(recs: Recommendation[]) {
   const toc: TocItem[] = [];
-  let html = "";
-  let current: string | null = null;
+  const groups: { title: string; html: string }[] = [];
   for (const rec of recs) {
     const section = rec.source_section ?? "Recommandations";
-    if (section !== current) {
-      current = section;
-      const tid = `section-${toc.length}`;
-      toc.push({ id: tid, text: section });
-      html += `<h2 class="block-section" id="${tid}">${escapeHtml(section)}</h2>`;
-    }
+    if (groups[groups.length - 1]?.title !== section) groups.push({ title: section, html: "" });
     const meta = [
       rec.grade && `<span class="chip ${chipClass(rec.grade)}">${escapeHtml(rec.grade)}</span>`,
       rec.evidence_level && `Niveau de preuve : ${escapeHtml(rec.evidence_level)}`,
@@ -266,7 +263,14 @@ function renderRecommendations(recs: Recommendation[]) {
       escapeHtml(rec.recommendation_code),
       rec.status !== "active" && `<span class="state-pill state-draft">${escapeHtml(rec.status)}</span>`,
     ].filter(Boolean);
-    html += `<div class="panel"><p>${escapeHtml(rec.statement)}</p><div class="rec-meta">${meta.join(" ")}</div></div>`;
+    groups[groups.length - 1].html += `<div class="panel"><p>${escapeHtml(rec.statement)}</p><div class="rec-meta">${meta.join(" ")}</div></div>`;
   }
+  const html = groups
+    .map((g, i) => {
+      const id = `section-${i}`;
+      toc.push({ id, text: g.title });
+      return accordion(escapeHtml(g.title), id, g.html, i === 0);
+    })
+    .join("");
   return { html, toc };
 }

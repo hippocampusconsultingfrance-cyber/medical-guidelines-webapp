@@ -1,10 +1,12 @@
 import Link from "next/link";
 import type { TocItem } from "@/lib/fiches";
-import { cardTitle, docState, type Library } from "./data";
+import { LogoMark } from "../logo";
+import { cardTitle, docState, groupBySection, type Library } from "./data";
 import MenuToggle from "./menu-toggle";
 
-// Cadre commun de la bibliothèque, repris de l'ancienne page : barre
-// latérale (fiches, sommaire de la fiche ouverte) et zone de lecture.
+// Cadre commun de la bibliothèque : barre latérale (logo, spécialité
+// consultée, fiches rangées par rubrique, sommaire de la fiche ouverte) et
+// zone de lecture.
 export default function Shell({
   lib,
   activeId,
@@ -16,17 +18,36 @@ export default function Shell({
   toc?: TocItem[];
   children: React.ReactNode;
 }) {
+  const groups = groupBySection(lib.docs);
+  const activeSection = lib.docs.find((d) => d.id === activeId)?.card_json?.section ?? null;
+
   return (
     <div className="mg-app">
       <MenuToggle />
       <aside className="sidebar" id="sidebar">
-        <div className="sidebar__brand">
-          <div className="sidebar__mark">Medical Guidelines</div>
-          <div className="sidebar__sub">
-            Synthèses fiables des recommandations cliniques, au service de la
-            pratique quotidienne.
+        <Link href="/" className="sidebar__brand sidebar__brand--logo" aria-label="medical-guidelines.net, accueil">
+          <span className="sidebar__logo">
+            <LogoMark className="sidebar__logo-mark" />
+          </span>
+          <span>
+            <span className="sidebar__mark">
+              medical-guidelines<span className="sidebar__tld">.net</span>
+            </span>
+            {lib.specialty && <span className="sidebar__specialty">{lib.specialty}</span>}
+          </span>
+        </Link>
+
+        {toc && toc.length > 0 && (
+          <div className="toc">
+            <div className="nav-group__label">Sommaire de la fiche</div>
+            {toc.map((t) => (
+              <a key={t.id} href={`#${t.id}`} className="toc__item">
+                {t.text}
+              </a>
+            ))}
           </div>
-        </div>
+        )}
+
         <nav className="nav-group" aria-label="Fiches">
           <Link href="/bibliotheque" className={`nav-link${activeId ? "" : " is-active"}`}>
             <span className="nav-link__dot" />
@@ -35,34 +56,33 @@ export default function Shell({
               {lib.docs.length}
             </span>
           </Link>
-          {lib.docs.map((d) => {
-            const state = docState(lib, d.id);
-            return (
-              <Link
-                key={d.id}
-                href={`/bibliotheque/${d.id}`}
-                className={`nav-link${d.id === activeId ? " is-active" : ""}`}
-              >
-                <span className="nav-link__dot" />
-                {cardTitle(d)}
-                {state === "lock" && (
-                  <span className="nav-link__lock" aria-label="Fiche bloquée">
-                    🔒
-                  </span>
-                )}
-              </Link>
-            );
-          })}
+          {groups.map(([section, docs]) => (
+            <details key={section} className="nav-section" open={section === activeSection}>
+              <summary className="nav-section__title">
+                {section}
+                <span className="nav-section__count">{docs.length}</span>
+              </summary>
+              {docs.map((d) => {
+                const state = docState(lib, d.id);
+                return (
+                  <Link
+                    key={d.id}
+                    href={`/bibliotheque/${d.id}`}
+                    className={`nav-link nav-link--sub${d.id === activeId ? " is-active" : ""}`}
+                  >
+                    {cardTitle(d)}
+                    {state === "lock" && (
+                      <span className="nav-link__lock" aria-label="Fiche bloquée">
+                        🔒
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </details>
+          ))}
         </nav>
-        {toc && toc.length > 0 && (
-          <div className="toc">
-            {toc.map((t) => (
-              <a key={t.id} href={`#${t.id}`} className="toc__item">
-                {t.text}
-              </a>
-            ))}
-          </div>
-        )}
+
         <div className="sidebar__footer">
           <Link href="/" style={{ color: "inherit" }}>
             Accueil

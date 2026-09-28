@@ -128,6 +128,11 @@ for (const key of keys) {
   const lib = LIBRARY_BY_FICHE_KEY[key];
   const { url, existing: isExisting } = targets.get(key);
   const card = Object.fromEntries(CARD_FIELDS.filter((f) => meta[f] != null).map((f) => [f, meta[f]]));
+  // Rubrique de la barre latérale : premier domaine de la catégorie de la
+  // bibliothèque (« Anesthésie, Urgences » → Anesthésie). Les fiches sans
+  // entrée dans la bibliothèque (découpages de textes SFAR d'anesthésie :
+  // blocs périmédullaires, traitements chroniques) sont rangées en Anesthésie.
+  card.section = (lib?.category ?? "Anesthésie").split(",")[0].trim();
   const presentation = { v: 1, key, sections: RAW[key].sections };
 
   if (isExisting) {

@@ -136,14 +136,14 @@ export default async function BibliothequePage({
             return (
               <Link key={d.id} href={`/bibliotheque/${d.id}`} className="doc-card">
                 <span className="doc-card__top">
-                  <span className="doc-card__badge">{c?.badge ?? d.doc_type ?? "Recommandation"}</span>
+                  <span className="doc-card__badge">{shortBadge(c?.badge, d.doc_type)}</span>
                   <span className={`state-pill ${STATE_CLASS[state]}`}>{STATE_LABEL[state]}</span>
                 </span>
                 <h2>{cardTitle(d)}</h2>
-                {c?.short ? <p>{c.short}</p> : null}
+                {c?.short ? <p className="doc-card__short">{c.short}</p> : null}
                 <span className="doc-card__meta">
-                  <span>{c?.society ?? [d.doc_type, date].filter(Boolean).join(" — ")}</span>
-                  {c?.pages ? <span>{c.pages} pages</span> : null}
+                  <span className="doc-card__society">{c?.society ?? d.doc_type ?? ""}</span>
+                  <span>{[date, c?.pages ? `${c.pages} p.` : null].filter(Boolean).join(" · ")}</span>
                 </span>
               </Link>
             );
@@ -159,4 +159,11 @@ function normalize(s: string) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "");
+}
+
+// Étiquette courte de la carte : le badge de l'atelier s'il est bref, sinon
+// le type de document (RFE, RBP…).
+function shortBadge(badge: string | undefined, docType: string | null) {
+  if (badge && badge.length <= 22) return badge;
+  return docType ?? badge?.split(/[—,(]/)[0].trim().slice(0, 22) ?? "Recommandation";
 }

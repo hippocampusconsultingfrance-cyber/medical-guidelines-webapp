@@ -25,6 +25,7 @@ export type Card = {
   validated?: string;
   methodology?: string;
   pages?: number;
+  section?: string;
 };
 
 /* ---------------------------------------------------------------------------
@@ -143,11 +144,35 @@ function renderBlock(b: Block | null | undefined, toc: { counter: number; items:
   return "";
 }
 
+// Affichage en accordéon : chaque section de la fiche devient un bloc
+// repliable (<details>), la première ouverte. Les blocs placés avant la
+// première section (principe général, légende) restent toujours visibles.
+export function accordion(title: string, id: string, body: string, open: boolean) {
+  return (
+    `<details class="acc" id="${id}"${open ? " open" : ""}>` +
+    `<summary class="acc__title">${title}</summary><div class="acc__body">${body}</div></details>`
+  );
+}
+
 export function renderPresentation(p: Presentation) {
   const toc = { counter: 0, items: [] as TocItem[] };
-  const html = (p.sections ?? [])
-    .flatMap((s) => s.items ?? [])
-    .map((b) => renderBlock(b, toc))
-    .join("");
+  let html = "";
+  let current: { id: string; title: string; body: string } | null = null;
+  const flush = () => {
+    if (current) html += accordion(current.title, current.id, current.body, current.id === toc.items[0]?.id);
+  };
+  for (const b of (p.sections ?? []).flatMap((s) => s.items ?? [])) {
+    if (b?.t === "section") {
+      flush();
+      const id = slugify(b.text, toc.counter++);
+      toc.items.push({ id, text: b.text });
+      current = { id, title: b.text, body: "" };
+    } else if (current) {
+      current.body += renderBlock(b, toc);
+    } else {
+      html += renderBlock(b, toc);
+    }
+  }
+  flush();
   return { html, toc: toc.items };
 }
