@@ -38,7 +38,8 @@ const files = readdirSync(dir)
   .filter((f) => f.endsWith(".sql"))
   .map((name) => {
     const sql = readFileSync(join(dir, name), "utf8");
-    return { name, date: publicationDate(sql), direct: publishesDirectly(sql) };
+    const isDocument = sql.includes("insert into public.documents");
+    return { name, isDocument, date: publicationDate(sql), direct: publishesDirectly(sql) };
   });
 
 const blocked = files.filter((f) => f.direct);
@@ -47,8 +48,10 @@ if (blocked.length) {
   process.exit(1);
 }
 
-// Du plus récent au plus ancien ; les documents sans date en dernier.
+// Du plus récent au plus ancien ; les documents sans date en dernier ; les
+// compléments (mise en page, sans création de document) après tout le reste.
 files.sort((a, b) => {
+  if (a.isDocument !== b.isDocument) return a.isDocument ? -1 : 1;
   if (a.date === b.date) return a.name.localeCompare(b.name);
   if (!a.date) return 1;
   if (!b.date) return -1;
@@ -57,9 +60,10 @@ files.sort((a, b) => {
 
 console.log(`${files.length} scripts de contenu, du plus récent au plus ancien :`);
 for (const [i, f] of files.entries()) {
-  console.log(`${String(i + 1).padStart(3)}. ${f.date ?? "sans date "}  ${f.name}`);
+  const label = f.isDocument ? (f.date ?? "sans date ") : "complément";
+  console.log(`${String(i + 1).padStart(3)}. ${label}  ${f.name}`);
 }
-const undated = files.filter((f) => !f.date);
+const undated = files.filter((f) => f.isDocument && !f.date);
 if (undated.length) {
   console.warn(`Attention : ${undated.length} document(s) sans date de publication, importé(s) en dernier.`);
 }
