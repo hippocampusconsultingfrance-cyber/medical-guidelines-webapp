@@ -16,3 +16,19 @@ export async function unlockDocument(formData: FormData) {
   const status = error ? "erreur" : (data as { status?: string } | null)?.status ?? "erreur";
   redirect(`/bibliotheque/${id}?r=${encodeURIComponent(status)}`);
 }
+
+// Publication ou dépublication d'une fiche. Le droit (validateur ou admin)
+// est vérifié par la base (publish_document).
+export async function setPublication(formData: FormData) {
+  const id = String(formData.get("id") ?? "");
+  if (!UUID.test(id)) redirect("/bibliotheque");
+  const publier = formData.get("publier") === "1";
+  if (publier && formData.get("confirme") !== "1") {
+    redirect(`/bibliotheque/${id}?r=confirmation_requise`);
+  }
+
+  const supabase = await createClient();
+  const { error } = await supabase.rpc("publish_document", { doc_id: id, publier });
+  const status = error ? "publication_erreur" : publier ? "publiee" : "depubliee";
+  redirect(`/bibliotheque/${id}?r=${status}`);
+}
