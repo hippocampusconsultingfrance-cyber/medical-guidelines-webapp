@@ -9,8 +9,10 @@ import { createClient } from "@/lib/supabase/client";
 // session dans le fragment d'URL (#access_token=...&refresh_token=...,
 // flux implicite), soit avec un ?code=... (flux PKCE). On traite les deux
 // cas explicitement au lieu de compter sur la seule détection automatique
-// du SDK, et on affiche le détail technique en cas d'échec pour pouvoir
-// diagnostiquer sans deviner.
+// du SDK. Un lien de réinitialisation de mot de passe (type=recovery) mène à
+// /nouveau-mot-de-passe, un lien d'inscription à /finaliser-compte. On
+// affiche le détail technique en cas d'échec pour pouvoir diagnostiquer
+// sans deviner.
 export default function AuthCallbackPage() {
   const router = useRouter();
   const [status, setStatus] = useState<"loading" | "error">("loading");
@@ -56,7 +58,10 @@ export default function AuthCallbackPage() {
         }
         if (!settled) {
           settled = true;
-          router.replace("/finaliser-compte");
+          const isRecovery =
+            hashParams.get("type") === "recovery" ||
+            queryParams.get("type") === "recovery";
+          router.replace(isRecovery ? "/nouveau-mot-de-passe" : "/finaliser-compte");
         }
       } catch (err) {
         if (!settled) {

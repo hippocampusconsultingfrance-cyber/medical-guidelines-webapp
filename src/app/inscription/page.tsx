@@ -67,9 +67,9 @@ export default function InscriptionPage() {
 
     if (signUpError) {
       setError(
-        "Une erreur est survenue (" +
-          signUpError.message +
-          "). Vérifiez votre adresse email et réessayez.",
+        signUpError.status === 429
+          ? "Trop de demandes en peu de temps. Patientez quelques minutes puis réessayez."
+          : "L'envoi du code a échoué. Vérifiez votre adresse email et réessayez.",
       );
       return;
     }
@@ -90,7 +90,7 @@ export default function InscriptionPage() {
 
     if (verifyError) {
       setCodeError(
-        "Code invalide ou expiré (" + verifyError.message + "). Vérifiez le code ou demandez-en un nouveau.",
+        "Code invalide ou expiré. Vérifiez le code ou demandez-en un nouveau.",
       );
       return;
     }
@@ -104,7 +104,11 @@ export default function InscriptionPage() {
     const { error: resendError } = await sendOtp();
     setCodeLoading(false);
     if (resendError) {
-      setCodeError("Impossible de renvoyer le code (" + resendError.message + ").");
+      setCodeError(
+        resendError.status === 429
+          ? "Trop de demandes en peu de temps. Patientez quelques minutes avant de redemander un code."
+          : "Impossible de renvoyer le code. Réessayez dans quelques instants.",
+      );
       return;
     }
     setResendMessage("Un nouveau code vient d'être envoyé à " + email + ".");
@@ -175,10 +179,12 @@ export default function InscriptionPage() {
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-slate-700">
+            <label htmlFor="nom" className="block text-sm font-medium text-slate-700">
               Nom
             </label>
             <input
+            id="nom"
+            autoComplete="family-name"
               required
               value={nom}
               onChange={(e) => setNom(e.target.value)}
@@ -186,10 +192,12 @@ export default function InscriptionPage() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-slate-700">
+            <label htmlFor="prenom" className="block text-sm font-medium text-slate-700">
               Prénom
             </label>
             <input
+            id="prenom"
+            autoComplete="given-name"
               required
               value={prenom}
               onChange={(e) => setPrenom(e.target.value)}
@@ -199,10 +207,12 @@ export default function InscriptionPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="telephone" className="block text-sm font-medium text-slate-700">
             Numéro de téléphone
           </label>
           <input
+            id="telephone"
+            autoComplete="tel"
             required
             type="tel"
             value={telephone}
@@ -213,10 +223,12 @@ export default function InscriptionPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="email" className="block text-sm font-medium text-slate-700">
             Adresse email
           </label>
           <input
+            id="email"
+            autoComplete="email"
             required
             type="email"
             value={email}
@@ -226,10 +238,11 @@ export default function InscriptionPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="profession" className="block text-sm font-medium text-slate-700">
             Profession
           </label>
           <select
+            id="profession"
             required
             value={profession}
             onChange={(e) => setProfession(e.target.value)}
@@ -252,10 +265,11 @@ export default function InscriptionPage() {
 
         {professionEstAutre && (
           <div>
-            <label className="block text-sm font-medium text-slate-700">
+            <label htmlFor="profession-autre" className="block text-sm font-medium text-slate-700">
               Précisez votre spécialité
             </label>
             <input
+            id="profession-autre"
               required
               value={professionAutre}
               onChange={(e) => setProfessionAutre(e.target.value)}
@@ -287,7 +301,8 @@ export default function InscriptionPage() {
                 Politique de Confidentialité
               </Link>
               . Mes données (nom, prénom, téléphone, email, profession) sont
-              traitées pour créer et sécuriser mon compte. <em>Obligatoire.</em>
+              traitées pour créer et sécuriser mon compte.{" "}
+              <em>Obligatoire.</em>
             </span>
           </label>
 
@@ -304,8 +319,8 @@ export default function InscriptionPage() {
               produits ou services liés à mon activité professionnelle).{" "}
               <em>
                 Facultatif — vous pouvez créer votre compte sans cocher cette
-                case, et revenir sur ce choix à tout moment dans vos
-                paramètres.
+                case, et revenir sur ce choix à tout moment depuis la page
+                « Mon compte ».
               </em>
             </span>
           </label>

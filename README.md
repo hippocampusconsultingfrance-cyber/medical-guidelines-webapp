@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Medical Guidelines — site web
 
-## Getting Started
+Site authentifié de **medical-guidelines.net** : inscription et connexion des
+professionnels de santé, puis accès aux fiches de synthèse des
+recommandations (SFAR, SRLF, HAS…).
 
-First, run the development server:
+- Framework : Next.js 16 (App Router), déployé sur Vercel.
+- Base de données et authentification : Supabase (projet hébergé à
+  Francfort).
+- Fiches : `public/fiches/index.html`, généré dans le dépôt
+  `rfe-sfar-website` et synchronisé ici. `npm run build` le prépare
+  automatiquement (`scripts/prepare-fiches.mjs` : doctype, affichage mobile,
+  bouton « Signaler une erreur » branché sur la base).
+
+## Développement
 
 ```bash
+npm ci
+cp .env.example .env.local   # puis renseigner les deux variables
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Variables d'environnement (publiques, côté navigateur) :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vérifications (lancées aussi par GitHub Actions sur chaque PR) :
 
-## Learn More
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Base de données
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `supabase/schema.sql` : schéma initial (profils, création automatique du
+  profil à l'inscription).
+- `supabase/migrations/` : évolutions, à appliquer dans l'ordre des noms de
+  fichier. Ne jamais modifier la base de production sans relecture.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Pages
 
-## Deploy on Vercel
+| Route | Rôle |
+|---|---|
+| `/inscription`, `/finaliser-compte` | Création du compte (code par email, puis mot de passe) |
+| `/connexion`, `/mot-de-passe-oublie`, `/nouveau-mot-de-passe` | Connexion et réinitialisation |
+| `/` | Accueil connecté, accès aux fiches |
+| `/compte` | Droits RGPD : rectification, consentement, export, suppression |
+| `/cgu`, `/confidentialite` | Textes légaux |
+| `/api/signalements` | Signalements d'erreurs sur les fiches |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Audit
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dernier audit complet : `docs/audit/AUDIT_2026-09-28.md`.
