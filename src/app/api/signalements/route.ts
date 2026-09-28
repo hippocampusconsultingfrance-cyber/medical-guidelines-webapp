@@ -1,8 +1,8 @@
 import { type NextRequest } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 
-// Signalements d'erreurs envoyés depuis les fiches (public/fiches/index.html,
-// via public/fiches/signalements-bridge.js). Les règles d'accès sont portées
+// API des signalements d'erreurs (lecture, création). Les fiches de la
+// bibliothèque passent par des actions serveur. Les règles d'accès sont portées
 // par la base (RLS sur error_reports) : chacun ne lit que ses propres
 // signalements, les administrateurs lisent tout.
 

@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prebuild": "node scripts/prepare-fiches.mjs",
     "typecheck": "next typegen && tsc --noEmit",
     "import:content": "node scripts/import-content.mjs"
   },

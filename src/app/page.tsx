@@ -32,14 +32,6 @@ export default async function Home() {
     redirect("/finaliser-compte");
   }
 
-  // Bascule automatique : dès qu'au moins une fiche est publiée pour la
-  // spécialité du membre, la nouvelle bibliothèque devient l'accès principal
-  // (les relecteurs y voient aussi les brouillons).
-  const { count: visibles } = await supabase
-    .from("documents")
-    .select("id", { count: "exact", head: true });
-  const bibliotheque = Boolean(profile?.editorial_role) || (visibles ?? 0) > 0;
-
   return (
     <div className="mx-auto min-h-screen max-w-3xl px-6 py-10">
       <div className="flex items-center justify-between gap-3">
@@ -58,28 +50,16 @@ export default async function Home() {
         Bienvenue{profile?.prenom ? `, ${profile.prenom}` : ""}
       </h1>
       {profile?.profession && <p className="mt-1 text-slate-600">{profile.profession}</p>}
-      {bibliotheque ? (
-        <Link
-          href="/bibliotheque"
-          className="mt-8 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-        >
-          Accéder à la bibliothèque des fiches →
-        </Link>
-      ) : (
-        <a
-          href="/fiches/index.html"
-          className="mt-8 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-        >
-          Accéder aux fiches de synthèse →
-        </a>
-      )}
+      <Link
+        href="/bibliotheque"
+        className="mt-8 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+      >
+        Accéder à la bibliothèque des fiches →
+      </Link>
       {profile?.editorial_role && (
         <p className="mt-4 text-sm text-slate-600">
           Compte relecteur : la bibliothèque affiche aussi les brouillons, avec
-          le bouton de publication.{" "}
-          <a href="/fiches/index.html" className="text-[#1C7FB6] underline">
-            Ancienne page des fiches
-          </a>
+          le bouton de publication.
         </p>
       )}
     </div>

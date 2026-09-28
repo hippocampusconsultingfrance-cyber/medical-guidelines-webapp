@@ -13,7 +13,7 @@ import {
 } from "@/lib/fiches";
 import { cardTitle, loadLibrary } from "../data";
 import Shell from "../shell";
-import { setPublication, unlockDocument } from "./actions";
+import { reportError, setPublication, unlockDocument } from "./actions";
 
 export const metadata: Metadata = {
   title: "Fiche — Medical Guidelines",
@@ -29,6 +29,9 @@ const MESSAGES: Record<string, string> = {
   depubliee: "Fiche dépubliée : elle n'est plus visible par les membres.",
   confirmation_requise: "Cochez la case de relecture avant de publier.",
   publication_erreur: "La publication n'a pas abouti (droits de validateur requis).",
+  signalement_envoye: "Merci : votre signalement a été envoyé. Il sera examiné avant toute correction.",
+  signalement_vide: "Décrivez l'erreur en quelques mots avant d'envoyer.",
+  signalement_erreur: "Le signalement n'a pas pu être envoyé. Réessayez dans un instant.",
 };
 
 type Recommendation = {
@@ -167,7 +170,7 @@ export default async function FichePage({
         {header}
         {lib.isEditor && (
           <div className="unlock-box" style={{ marginTop: 18, marginBottom: 10 }}>
-            {message && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
+            {message && !String(r).startsWith("signalement") && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
             {lib.published.has(id) ? (
               <>
                 <p>
@@ -207,6 +210,30 @@ export default async function FichePage({
           </div>
         )}
         <div dangerouslySetInnerHTML={{ __html: body }} />
+        <details
+          className="unlock-box"
+          id="signaler"
+          open={r === "signalement_vide" || r === "signalement_erreur"}
+          style={{ userSelect: "text", WebkitUserSelect: "text" }}
+        >
+          <summary style={{ cursor: "pointer", fontWeight: 700 }}>⚠ Signaler une erreur dans cette fiche</summary>
+          {typeof r === "string" && r.startsWith("signalement") && message && (
+            <p style={{ color: "var(--ink)", fontWeight: 600, marginTop: 12 }}>{message}</p>
+          )}
+          <form action={reportError} style={{ marginTop: 12 }}>
+            <input type="hidden" name="id" value={id} />
+            <input type="hidden" name="title" value={cardTitle(doc)} />
+            <div className="field">
+              <label htmlFor="rf-section">Section ou tableau concerné (facultatif)</label>
+              <input id="rf-section" name="section" maxLength={300} />
+            </div>
+            <div className="field">
+              <label htmlFor="rf-description">Description de l&apos;erreur</label>
+              <textarea id="rf-description" name="description" required minLength={5} maxLength={4000} />
+            </div>
+            <button className="btn btn-primary">Envoyer le signalement</button>
+          </form>
+        </details>
         <p className="block-p is-note" style={{ marginTop: 40 }}>
           Synthèse indépendante : elle ne remplace pas le texte intégral de la
           recommandation officielle.{" "}

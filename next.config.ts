@@ -3,14 +3,13 @@ import type { NextConfig } from "next";
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 const supabaseWs = supabaseUrl.replace(/^https:/, "wss:");
 
-// La page des fiches (public/fiches/index.html) contient des scripts et des
-// styles en ligne et charge ses polices depuis Google Fonts ; Next.js injecte
-// aussi des scripts en ligne. D'où 'unsafe-inline' pour script-src/style-src.
+// Next.js injecte des scripts et des styles en ligne : d'où 'unsafe-inline'
+// pour script-src/style-src. Les polices sont hébergées par le site.
 const contentSecurityPolicy = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline'",
-  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "font-src 'self' https://fonts.gstatic.com",
+  "style-src 'self' 'unsafe-inline'",
+  "font-src 'self'",
   "img-src 'self' data: blob:",
   `connect-src 'self' ${supabaseUrl} ${supabaseWs}`.trim(),
   "frame-ancestors 'none'",
@@ -21,6 +20,11 @@ const contentSecurityPolicy = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Ancienne page des fiches (un seul fichier avec tout le contenu),
+  // remplacée par la bibliothèque et ses crédits.
+  async redirects() {
+    return [{ source: "/fiches/:path*", destination: "/bibliotheque", permanent: false }];
+  },
   async headers() {
     return [
       {

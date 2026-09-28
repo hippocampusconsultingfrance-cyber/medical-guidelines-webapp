@@ -28,8 +28,8 @@ export type Card = {
 };
 
 /* ---------------------------------------------------------------------------
- * Rendu de presentation_json : portage fidèle du rendu de l'ancienne page
- * public/fiches/index.html (renderBlock, renderTable, renderLegend). Le HTML
+ * Rendu de presentation_json : portage fidèle du rendu de l'atelier
+ * (rfe-sfar-website, site/app.js : renderBlock, renderTable, renderLegend). Le HTML
  * des blocs provient du pipeline éditorial de l'atelier (contenu de
  * confiance, jamais saisi par un utilisateur) et est inséré tel quel, comme
  * dans l'ancienne page.
