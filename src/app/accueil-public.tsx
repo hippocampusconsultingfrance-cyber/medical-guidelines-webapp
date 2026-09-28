@@ -25,7 +25,7 @@ const PRINCIPES = [
 
 const ETAPES = [
   ["1", "Créez un compte gratuit", "Nom, e-mail, profession et spécialité ; vérification de l'e-mail par code."],
-  ["2", "Choisissez vos fiches", "Le compte gratuit donne accès à 5 fiches complètes au choix, à vie, sans carte bancaire."],
+  ["2", "Choisissez vos fiches", "Le compte gratuit donne accès à 5 fiches gratuites au choix, consultables à vie, sans carte bancaire."],
   ["3", "Consultez sur ordinateur ou mobile", "Consultation en ligne uniquement, adaptée aux écrans de téléphone."],
 ];
 
@@ -40,7 +40,7 @@ const FAQ = [
   ],
   [
     "Que contient l'offre payante ?",
-    "L'abonnement PREMIUM (toutes les fiches de votre spécialité) n'est pas encore ouvert. Le tarif prévu est de 50 € par an ; il reste une hypothèse commerciale, révisable, et sera confirmé avant l'ouverture des abonnements.",
+    "L'abonnement PREMIUM (toutes les fiches de votre spécialité, 50 € TTC par an) n'est pas encore ouvert. Ce prix est une hypothèse commerciale, révisable, et sera confirmé avant l'ouverture des abonnements ; il inclut le tarif fondateurs (−30 % la première année pour les 100 premiers abonnés) et le tarif étudiant (−30 % sur justificatif), non cumulables.",
   ],
   [
     "Puis-je télécharger ou imprimer une fiche ?",
@@ -113,7 +113,7 @@ export default function AccueilPublic() {
               </Link>
             </div>
             <p className="mt-4 text-sm text-slate-600">
-              5 fiches complètes offertes, à vie, sans carte bancaire.
+              5 fiches gratuites, sans carte bancaire.
             </p>
           </div>
         </section>
@@ -163,7 +163,7 @@ export default function AccueilPublic() {
               <h3 className="text-lg font-semibold text-slate-900">Gratuit</h3>
               <p className="mt-1 text-3xl font-semibold text-slate-900">0 €</p>
               <ul className="mt-4 space-y-2 text-slate-700">
-                <li>5 fiches complètes au choix, à vie</li>
+                <li>5 fiches complètes gratuites, consultables à vie</li>
                 <li>Aucune carte bancaire</li>
                 <li>Consultation sur ordinateur et mobile</li>
               </ul>
@@ -181,13 +181,24 @@ export default function AccueilPublic() {
                   Bientôt
                 </span>
               </h3>
-              <p className="mt-1 text-slate-700">
-                Toutes les fiches de votre spécialité. Tarif annuel prévu, à
-                confirmer avant ouverture.
+              <p className="mt-1 text-3xl font-semibold text-slate-900">
+                50 € <span className="text-base font-normal text-slate-600">TTC / an</span>
               </p>
+              <ul className="mt-4 space-y-2 text-slate-700">
+                <li>Toutes les fiches de votre spécialité</li>
+                <li>Paiement annuel, résiliable à tout moment</li>
+                <li>
+                  −30 % la première année pour les 100 premiers abonnés
+                  (offre membres fondateurs, 35 €)
+                </li>
+                <li>
+                  −30 % pour les internes et étudiants sur justificatif (non
+                  cumulable)
+                </li>
+              </ul>
               <p className="mt-4 text-sm text-slate-600">
-                Créez votre compte gratuit : vous serez informé de l&apos;ouverture
-                des abonnements.
+                Ouverture des abonnements à venir. Prix indicatif, révisable avant
+                l&apos;ouverture ; créez votre compte gratuit pour être informé.
               </p>
             </div>
           </div>
