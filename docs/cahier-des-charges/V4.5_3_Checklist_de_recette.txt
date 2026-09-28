@@ -1,0 +1,305 @@
+﻿CHECKLIST DE RECETTE
+medical-guidelines.net
+Critères à vérifier avant de déclarer le MVP terminé et avant chaque mise en production majeure
+Version 4.5 — Document 3/3 : checklist de recette
+Document 1/3 : cahier des charges produit — Document 2/3 : spécification technique
+Chaque ligne doit être cochée, datée et signée par le porteur de projet avant l’ouverture commerciale.
+28 septembre 2026
+
+Sommaire
+
+
+
+Mode d’emploi
+    • Chaque critère renvoie au cahier des charges produit (CDC) ou à la spécification technique (ST).
+    • Les vérifications sont faites sur l’environnement de test, puis contrôlées à nouveau en production après mise en ligne.
+    • Les tests marqués « automatique » sont rejoués par l’intégration continue avant chaque mise en production.
+    • Un critère non conforme bloque l’ouverture commerciale ; il est reporté dans la synthèse hebdomadaire jusqu’à sa correction.
+1. Parcours et accès
+1.1 Parcours complet (mobile et ordinateur)
+Critère
+Comment vérifier
+OK
+Inscription → e-mail confirmé (par code et par lien) → 1 à 5 fiches débloquées → quota atteint → paiement → accès à toute la spécialité → résiliation
+Test automatique de bout en bout + test manuel sur iOS Safari, Android Chrome et un navigateur d’ordinateur
+☐
+Le lien reçu par e-mail fonctionne même ouvert deux fois
+Ouvrir deux fois le même lien de confirmation et de mot de passe oublié
+☐
+Mot de passe oublié fonctionne de bout en bout
+Demande, e-mail reçu, nouveau mot de passe, connexion
+☐
+
+1.2 Compte gratuit (CDC §5)
+Critère
+Comment vérifier
+OK
+Un 6ᵉ déblocage est refusé, y compris par appel direct au serveur
+Test automatique : appel de la fonction de déblocage une 6ᵉ fois
+☐
+Une fiche débloquée reste consultable et n’est pas recomptée
+Rouvrir une fiche déjà débloquée : compteur inchangé
+☐
+Confirmation affichée avant chaque déblocage
+Test manuel
+☐
+Compteur « x/5 » visible et exact
+Test manuel
+☐
+Une recommandation ouverte depuis la recherche compte pour sa fiche
+Rechercher, ouvrir, vérifier le compteur
+☐
+Les pages publiques ne consomment aucun quota et n’exposent pas le contenu premium
+Consulter une page publique sans compte ; vérifier le code source de la page
+☐
+
+1.3 Spécialité et droits (CDC §5.3)
+Critère
+Comment vérifier
+OK
+Un compte ne peut pas lire le contenu premium d’une autre spécialité
+Test automatique d’accès croisé
+☐
+Aucun contenu premium n’est envoyé au navigateur sans droits
+Inspecter les réponses du serveur d’un compte gratuit sur une fiche non débloquée
+☐
+Aucune fiche n’est accessible sans session (redirection vers la connexion)
+Test automatique quotidien
+☐
+
+2. Contenu et publication
+2.1 Verrou de publication (CDC §9.2)
+Critère
+Comment vérifier
+OK
+Publication refusée sans URL source, sans date, sans statut juridique validé
+Tenter de publier une fiche incomplète pour chaque condition
+☐
+Publication d’une traduction refusée sans autorisation de traduction ni relecture de la langue
+Test sur une fiche de test
+☐
+Aucun grade vide : valeur de la source ou « non indiqué »
+Contrôle automatique à l’import
+☐
+
+2.2 Fiche (CDC §6.2)
+Critère
+Comment vérifier
+OK
+Points clés (3 à 5) en tête de fiche
+Revue de 5 fiches au hasard
+☐
+Mention « Relue par Dr …, le … »
+Revue de 5 fiches
+☐
+Dernière et prochaine vérification affichées
+Revue de 5 fiches
+☐
+Avertissement d’ancienneté au-delà de 10 ans
+Fiche d’un document de plus de 10 ans
+☐
+Encadré « Recommandations divergentes » quand deux sociétés divergent
+Fiche de test reliée à une recommandation divergente
+☐
+Filigrane personnalisé visible sur 100 % des fiches premium
+Ordinateur et mobile
+☐
+Aucun export, téléchargement ni impression du contenu premium
+Tenter l’impression et l’enregistrement de la page
+☐
+
+2.3 Ordre de traitement et langues (CDC §4.2, §7)
+Critère
+Comment vérifier
+OK
+La file de travail et l’import sont triés du plus récent au plus ancien
+Contrôle de la file et du compte rendu de session de la routine
+☐
+Une fiche française validée peut être publiée sans attendre l’anglais
+Test sur une fiche de test
+☐
+La version anglaise n’est publiée qu’après relecture
+Test sur une fiche de test
+☐
+
+2.4 Qualité et corrections (CDC §9.3, §9.4)
+Critère
+Comment vérifier
+OK
+Un signalement d’erreur est enregistré et visible dans le back-office
+Signaler une erreur depuis une fiche
+☐
+Une erreur critique peut entraîner une dépublication immédiate
+Test de dépublication
+☐
+La correction apparaît dans le journal public, sans donnée personnelle
+Corriger une fiche de test
+☐
+
+3. Veille et e-mails
+3.1 Cycle mensuel (CDC §8)
+Critère
+Comment vérifier
+OK
+Un cycle complet a été exécuté sur l’environnement de test : détection, brouillons français et anglais, validation, e-mail, compte rendu
+Journal watch_runs + e-mail d’essai reçu par l’administrateur
+☐
+Aucun e-mail n’est envoyé aux membres sans validation humaine
+Vérifier qu’un brouillon non validé ne déclenche aucun envoi
+☐
+Mois sans nouveauté : aucun e-mail aux membres, compte rendu envoyé au porteur de projet
+Simulation
+☐
+L’e-mail contient le lien vers la fiche sur le site et le lien vers la source
+Lecture de l’e-mail d’essai
+☐
+Lien de désinscription fonctionnel et préférence respectée
+Se désinscrire puis relancer un envoi d’essai
+☐
+Alerte envoyée quand une fiche consultée ou favorite est mise à jour
+Mettre à jour une fiche de test
+☐
+Capacité du service d’envoi adaptée au nombre de membres
+Vérifier l’offre Resend
+☐
+
+4. Paiement, facturation et offres
+4.1 Paiement (CDC §10)
+Critère
+Comment vérifier
+OK
+Paiement annuel de 50 € TTC en mode test Stripe
+Test automatique
+☐
+Facture conforme avec identité de l’éditeur, SIREN et TVA selon le pays
+Paiement test depuis la France et depuis un autre pays de l’UE, avec et sans numéro de TVA
+☐
+CGV acceptées par case à cocher ; version et date conservées
+Contrôle en base
+☐
+Case distincte de renonciation au droit de rétractation, confirmée dans l’e-mail de commande
+Test manuel
+☐
+Résiliation : accès maintenu jusqu’à la fin de l’année payée, puis retour au gratuit
+Simulation de fin de période
+☐
+Hausse de tarif : e-mail 30 jours avant le renouvellement avec lien de résiliation
+Simulation
+☐
+
+4.2 Réductions (CDC §10.2)
+Critère
+Comment vérifier
+OK
+Code FONDATEURS : -30 % la 1ʳᵉ année, refusé après 100 utilisations
+Test automatique
+☐
+Code étudiant personnel : -30 %, usage unique
+Test automatique
+☐
+Non-cumul : une seule réduction appliquée
+Tenter deux codes
+☐
+Renouvellement au tarif normal alors en vigueur
+Simulation
+☐
+
+5. Conformité et sécurité
+5.1 Mentions légales et RGPD (CDC §12)
+Critère
+Comment vérifier
+OK
+Vérification finale des informations légales de l’éditeur (Kbis à jour)
+Contrôle par le porteur de projet
+☐
+Page « Mentions légales » publiée et complète
+Lecture de la page
+☐
+Adresse contact@medical-guidelines.net opérationnelle
+Envoyer un e-mail de test
+☐
+Politique de confidentialité : sous-traitants et localisation listés
+Lecture de la page
+☐
+« Mon compte » : rectification, retrait du consentement, export, suppression
+Test manuel (en production depuis le 28/09/2026)
+☐
+Mesure d’audience sans cookies ; aucune ressource chargée depuis un service tiers sans nécessité
+Outils de développement du navigateur : aucun cookie de mesure, aucun appel à Google Fonts
+☐
+CGV validées par un conseil juridique ; médiateur de la consommation désigné
+Document signé
+☐
+
+5.2 Sécurité (ST §5, §6)
+Critère
+Comment vérifier
+OK
+En-têtes de sécurité présents sur toutes les pages
+Test automatique
+☐
+Analyse de sécurité Supabase sans alerte nouvelle
+Revue mensuelle
+☐
+Détection d’extraction : blocage temporaire après un rythme anormal
+Simulation
+☐
+Dépôts de code privés
+Contrôle GitHub
+☐
+
+6. Exploitation
+6.1 Environnements et surveillance (ST §7)
+Critère
+Comment vérifier
+OK
+Supabase en offre payante (pas de mise en pause, sauvegardes)
+Tableau de bord Supabase
+☐
+Restauration d’une sauvegarde testée et documentée
+Procédure de test
+☐
+Une panne simulée déclenche une alerte e-mail
+Couper l’environnement de test
+☐
+Une erreur simulée remonte dans Sentry
+Erreur de test
+☐
+Tests de bout en bout et intégration continue au vert avant mise en production
+GitHub Actions
+☐
+Connecteur Vercel autorisé pour la supervision
+Test de lecture des déploiements
+☐
+
+6.2 Organisation (CDC §14)
+Critère
+Comment vérifier
+OK
+Chaque dépôt ne compte que main + au plus une branche de travail
+Contrôle GitHub
+☐
+Rendez-vous hebdomadaire en place, avec synthèse de la routine
+Première synthèse reçue
+☐
+Mesure du tunnel de conversion opérationnelle
+Tableau de bord d’audience
+☐
+
+Validation finale
+Étape
+Date
+Signature
+Recette sur l’environnement de test terminée
+
+
+Mise en production du MVP
+
+
+Contrôle en production terminé
+
+
+Ouverture commerciale
+
+
+

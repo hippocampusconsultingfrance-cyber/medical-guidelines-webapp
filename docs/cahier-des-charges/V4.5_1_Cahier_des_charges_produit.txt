@@ -1,0 +1,525 @@
+﻿CAHIER DES CHARGES
+medical-guidelines.net
+Plateforme de synthèse, de veille et de comparaison des recommandations médicales et paramédicales
+Version 4.5 — Document 1/3 : cahier des charges produit
+Document 2/3 : spécification technique — Document 3/3 : checklist de recette
+Version de rationalisation de la V4.4 : décisions définitives, périmètre MVP / V2 séparé, détails techniques déplacés dans la spécification technique.
+Éditeur : Hippocampus Consulting (SARL)
+28 septembre 2026
+
+Sommaire
+
+
+
+Décisions définitives
+Cette page résume les règles fondamentales du produit. En cas de doute, elle prévaut sur le reste des documents ; toute modification de l’une de ces décisions donne lieu à une nouvelle version.
+Sujet
+Décision
+Objectif de la phase actuelle
+Vérifier que les médecins paient : mesurer la conversion gratuit → payant et le renouvellement annuel. Aucune extension avant cette validation.
+Spécialité pilote
+Anesthésie-réanimation (sociétés savantes françaises : SFAR, SRLF, HAS et partenaires).
+Accès
+Un compte = une spécialité (celle choisie à l’inscription). Contrôle côté serveur.
+Compte gratuit
+5 fiches complètes au total, à vie, sans carte bancaire. Une recommandation ouverte depuis la recherche ouvre sa fiche et compte pour 1 fiche.
+Compte PREMIUM
+50 € par an, toutes les fiches de la spécialité. Prix = hypothèse commerciale à tester, révisable au renouvellement.
+Offre membres fondateurs
+-30 % la première année pour les 100 premiers abonnés (code promotionnel).
+Tarif interne / étudiant
+-30 % sur justificatif validé par le porteur de projet. MVP : envoi de l’attestation par e-mail, réponse par code promotionnel personnel à usage unique. Non cumulable avec l’offre fondateurs.
+Paiement
+Stripe, paiement annuel, factures conformes, TVA calculée automatiquement (Stripe Tax), CGV avec droit de rétractation.
+Langues
+Fiches publiées en français dès validation. Version anglaise préparée en arrière-plan pour chaque fiche et publiée dès sa relecture.
+Ordre de traitement
+OBLIGATOIREMENT de la recommandation la plus récente à la plus ancienne, sans limite d’ancienneté.
+Veille
+Vérification de toutes les sources chaque fin de mois ; nouveauté résumée, validée par un humain, puis annoncée par e-mail aux membres payants de la spécialité.
+Validation humaine
+Obligatoire avant toute publication et avant tout e-mail aux membres.
+Export
+Aucun export ni téléchargement de fiche (pas de PDF). Consultation en ligne uniquement, sur ordinateur et mobile.
+Protection du contenu
+Filigrane personnalisé (utilisateur + date), contrôle des droits côté serveur, anti-extraction, journalisation. Pas de promesse d’empêcher les captures d’écran.
+Publication
+Verrou : aucune fiche publiée sans source officielle, date, statut juridique validé, relecture et version française validée (§9.2).
+Contact et éditeur
+contact@medical-guidelines.net (redirigé vers la messagerie du porteur de projet) ; Hippocampus Consulting, SARL au capital de 1 000 €, 6 rue d’Armaillé, 75017 Paris, SIREN 999 259 252 ; directeur de la publication : Dr Ahmed Ben Lallahom.
+
+
+1. Vision et principes
+1.1 Vision
+Les recommandations de bonne pratique sont dispersées entre de nombreuses sociétés savantes, dans des formats hétérogènes et avec des mises à jour irrégulières. medical-guidelines.net réduit le temps nécessaire pour trouver, comprendre et vérifier une recommandation, sans jamais se substituer au document source.
+1.2 Proposition de valeur
+    • Rapidité : points clés lisibles en 30 secondes, recherche instantanée.
+    • Traçabilité : chaque recommandation est reliée à son document, sa section et, si possible, sa page source.
+    • Actualité : veille mensuelle, date de dernière et de prochaine vérification visibles.
+    • Transparence : divergences entre sociétés savantes affichées sans arbitrage ; relecteur et corrections publiés.
+    • Mobilité : même profondeur fonctionnelle sur mobile et sur ordinateur.
+1.3 Principes non négociables
+    • Lien vers la source officielle obligatoire.
+    • Aucun logo ni élément graphique protégé d’une société savante sans autorisation.
+    • Aucun grade inventé, fusionné ou extrapolé.
+    • Aucun arbitrage automatique entre recommandations divergentes.
+    • Relecture humaine obligatoire avant publication et avant tout e-mail aux membres.
+    • Traitement des fiches de la plus récente à la plus ancienne.
+    • Traçabilité complète des modifications ; dépublication immédiate possible en cas de doute clinique sérieux ou de demande juridique fondée.
+    • Aucun export ni téléchargement de fiche.
+2. Périmètre : MVP, V2 et hors périmètre
+Le MVP contient uniquement ce qui est nécessaire pour vendre et mesurer. Tout le reste est prévu dans l’architecture mais développé après la validation commerciale.
+MVP commercial (phase actuelle)
+V2 (après validation commerciale)
+Anesthésie-réanimation
+Autres spécialités (une par abonnement), accès multi-spécialités payant
+Fiches en français ; anglais préparé en arrière-plan et publié au fil des relectures
+Autres langues (arabe, espagnol, allemand…) et interface multilingue complète
+5 fiches gratuites ; PREMIUM 50 €/an ; Stripe, factures, TVA, CGV
+Tarifs différenciés (pays, profession) si les données le justifient
+Offre membres fondateurs (code promotionnel)
+—
+Tarif interne/étudiant par e-mail et code personnel
+Tarif interne/étudiant automatisé : dépôt de l’attestation et validation dans le back-office
+Fiche : points clés, sources, relecteur, dates de vérification, divergences, signalement d’erreur
+Comparateur avancé multi-sociétés (sélection libre de 2 à N documents)
+Recherche instantanée ; pages publiques de résumé indexées par Google
+Recherche sémantique sur le corpus validé
+Veille mensuelle et e-mail aux membres après validation
+Alertes sophistiquées (suivi par thème, société, recommandation)
+Alerte de mise à jour des fiches consultées ou favorites
+Centre de notifications avancé, digest paramétrable
+Journal public des corrections ; mention du relecteur
+Comité scientifique multi-spécialités et multi-pays
+Mesure d’audience sans cookies ; surveillance ; back-office essentiel
+Offre Institution (SSO, statistiques), API, intégrations, application installable hors ligne
+
+2.1 Hors périmètre
+    • Diagnostic ou conduite à tenir personnalisés pour un patient ; calculateurs appliqués à un patient tant que leur statut réglementaire n’est pas établi (§12.6).
+    • Remplacement du document source officiel.
+    • Assistant conversationnel donnant une conduite à tenir non bornée par le corpus validé.
+    • Export, téléchargement ou impression des fiches.
+3. Utilisateurs
+Profil
+Besoin principal
+Exemple
+Médecin hospitalier ou libéral
+Réponse rapide et vérifiable
+Retrouver le délai d’arrêt d’un anticoagulant avant un geste.
+Interne / étudiant
+Apprentissage structuré
+Réviser les recommandations d’un thème avant une garde.
+Paramédical (IADE, IBODE…)
+Recommandations propres au métier
+Accéder aux recommandations de sa profession.
+Relecteur médical
+Validation éditoriale
+Vérifier grade, formulation, population et source.
+Porteur de projet (administrateur)
+Pilotage
+Valider les publications, les justificatifs étudiants, suivre la conversion.
+
+4. Contenu
+4.1 Fiche et recommandation atomique
+La recommandation atomique est l’unité de base : un énoncé clinique autonome, avec son grade et son niveau de preuve exacts, sa population et sa source. La fiche regroupe les recommandations atomiques d’un document source et constitue l’unité de consultation et de quota.
+Information
+Règle
+Identifiant
+Permanent et lisible, ex. MG-ANES-000124-R03.
+Énoncé
+Formulation éditoriale validée ; citation courte du libellé exact seulement selon la politique juridique (§12.4).
+Grade / niveau de preuve
+Exactement comme dans la source ; « non indiqué » si absent. Jamais déduit.
+Population, pathologie, intervention, médicament
+Renseignés pour la recherche et le regroupement.
+Source
+Société, titre, date, section, page si fiable, URL officielle obligatoire.
+Statut
+Brouillon, en relecture, publiée, en révision, remplacée, retirée, archivée.
+
+4.2 Ordre de traitement
+    • Les fiches sont construites, traduites, relues et publiées obligatoirement de la plus récente à la plus ancienne, sans limite d’ancienneté.
+    • Date de référence : date de publication de la version en vigueur du document (une actualisation compte comme nouvelle date).
+    • Les nouveautés détectées par la veille passent en tête de file.
+    • Seule exception : une urgence clinique décidée par un relecteur.
+    • Les documents abrogés ou remplacés ne sont pas traités comme recommandations actives ; leur remplaçant est traité à leur place.
+4.3 Ancienneté et fraîcheur visibles
+    • Chaque fiche affiche l’année de publication de la source ; au-delà de 10 ans, un avertissement invite à vérifier l’existence d’une actualisation.
+    • Chaque fiche affiche « Dernière vérification de la source : JJ/MM/AAAA » et « Prochaine vérification prévue : JJ/MM/AAAA » (fin du mois suivant).
+    • Statuts de fraîcheur : À jour ; Révision détectée (relecture en cours) ; Remplacée (lien vers la nouvelle version) ; Retirée.
+4.4 Recommandations divergentes
+Lorsqu’au moins deux sociétés savantes formulent des recommandations différentes sur une même question clinique, la fiche affiche explicitement un encadré « Recommandations divergentes » qui présente séparément, pour chaque société : la position, la date, la population, le grade et le niveau de preuve. Aucune position n’est présentée comme meilleure ; un avertissement signale les différences de population ou de système de gradation qui limitent la comparaison.
+5. Accès et compte gratuit
+5.1 Trois niveaux d’accès
+Niveau
+Qui
+Contenu accessible
+Public
+Tout visiteur, moteurs de recherche
+Titre, société savante, année, sujet, population, résumé très court (sans le détail premium), lien vers la source officielle. Ne consomme aucun quota.
+Gratuit
+Compte vérifié, sans paiement
+Le niveau public + 5 fiches complètes au choix dans sa spécialité, consultables à vie.
+Premium
+Abonné à 50 €/an
+Toutes les fiches complètes de sa spécialité, alertes de mise à jour, e-mail mensuel des nouveautés.
+
+5.2 Règles du compte gratuit
+    • Quota : 5 fiches au total pour toute la durée de vie du compte, sans remise à zéro.
+    • Unité : l’ouverture du contenu complet d’une fiche consomme 1 unité ; une recommandation ouverte depuis la recherche ouvre sa fiche et consomme 1 unité si la fiche n’était pas déjà débloquée.
+    • Confirmation : avant de consommer une unité, l’utilisateur voit le niveau public de la fiche et confirme (« Utiliser 1 de vos 5 fiches gratuites ? »).
+    • Déblocage définitif : une fiche débloquée reste consultable, y compris ses mises à jour.
+    • Compteur « x/5 fiches utilisées » visible en permanence.
+    • Quota atteint : écran d’invitation à l’abonnement (avec l’offre en cours) ; aucune autre fiche ne peut être ouverte.
+    • Anti-abus : un compte gratuit par adresse e-mail vérifiée ; détection des créations multiples.
+    • Retour au gratuit après un abonnement non renouvelé : accès conservé aux fiches débloquées avant l’abonnement, complétable jusqu’à 5.
+5.3 Spécialité
+    • La spécialité déclarée à l’inscription détermine le périmètre de contenu, en gratuit comme en premium.
+    • Changement de spécialité : sur demande au support, pas en libre-service.
+    • Tant qu’une seule spécialité est ouverte, la règle est sans effet visible ; elle s’applique pleinement dès l’ouverture d’une deuxième spécialité.
+6. Expérience utilisateur
+6.1 Inscription et compte
+    • Inscription : nom, prénom, e-mail, téléphone, profession/spécialité (« Autre » avec précision), consentements séparés (CGU obligatoire, partenaires facultatif et jamais pré-coché).
+    • Vérification de l’e-mail par code ; le lien reçu par e-mail fonctionne aussi, même ouvert plusieurs fois.
+    • Mot de passe oublié en libre-service.
+    • Page « Mon compte » : modification des informations, retrait du consentement partenaires, historique des consentements, export des données, suppression du compte, type de compte, compteur gratuit, abonnement, factures, date de renouvellement, résiliation.
+6.2 Fiche
+    • Points clés en tête : les 3 à 5 recommandations majeures avec leur grade, lisibles en 30 secondes.
+    • Population et périmètre ; recommandations regroupées par thème ; grades et niveaux de preuve sans altération.
+    • Source : société, titre, date, lien officiel ; année et avertissement d’ancienneté (§4.3).
+    • Dernière et prochaine vérification ; statut de fraîcheur ; historique des versions.
+    • Encadré « Recommandations divergentes » si applicable (§4.4).
+    • « Relue par Dr [nom], [spécialité], le JJ/MM/AAAA » (et relecteur de la version anglaise le cas échéant) ; lien vers le journal des corrections de la fiche.
+    • Favori ; signalement d’erreur ; adresse stable et partageable (le destinataire n’y accède que s’il a les droits).
+    • Filigrane discret avec l’identifiant de l’utilisateur et la date (§11).
+    • Aucun export, téléchargement ni impression du contenu premium.
+6.3 Recherche
+    • Recherche instantanée dès la page d’accueil : un champ unique, suggestions dès les premières lettres (médicament, pathologie, geste, société) ; accès à la bonne recommandation en deux gestes, y compris sur mobile.
+    • Filtres : spécialité, société, année, thème, population, grade.
+    • Résultats : question clinique → recommandation → grade → société → année → fraîcheur.
+    • Les résultats montrent le niveau public ; l’ouverture du contenu complet suit les règles d’accès (§5).
+6.4 Mobile et accessibilité
+    • Tous les parcours sont complets sur mobile (iOS Safari, Android Chrome) et sur ordinateur dès le lancement.
+    • Accessibilité numérique (WCAG, European Accessibility Act) : contraste, navigation au clavier, lecteurs d’écran.
+7. Langues
+    • Français : langue de publication du MVP ; une fiche est publiée dès que sa version française est validée.
+    • Anglais : préparé en arrière-plan pour chaque fiche, dans le même ordre (du plus récent au plus ancien), et publié dès sa relecture par un relecteur médical maîtrisant l’anglais.
+    • Grades, niveaux de preuve, doses et unités identiques dans toutes les langues.
+    • Avant toute publication traduite, le registre juridique de la source doit autoriser la diffusion d’un résumé traduit (§12.4).
+    • V2 : interface entièrement traduite, adresses par langue, autres langues selon la demande.
+8. Veille mensuelle et e-mails aux membres
+Le dernier jour de chaque mois, la routine automatisée exécute obligatoirement le cycle suivant :
+    • 1. Vérification de toutes les sources du registre de veille : publications mises en ligne depuis le dernier passage.
+    • 2. Nouveauté détectée : fiche et recommandations préparées en français et en anglais, en brouillon, en tête de file.
+    • 3. Validation humaine du résumé, puis publication. Délai cible : 7 jours après la détection.
+    • 4. E-mail récapitulatif unique par membre payant de la spécialité concernée, dans sa langue : titre, société, date, court résumé, lien vers la fiche sur medical-guidelines.net, lien vers la source officielle. Envoyé seulement après validation humaine, avec un envoi d’essai préalable à l’administrateur.
+    • 5. Aucune nouveauté : aucun e-mail aux membres.
+    • 6. Dans tous les cas : compte rendu mensuel au porteur de projet (sources vérifiées, erreurs, nouveautés, fiches en attente, e-mails envoyés).
+    • Chaque e-mail comporte un lien de désinscription ; l’e-mail mensuel est désactivable depuis « Mon compte ».
+    • Alerte individuelle lorsqu’une fiche consultée ou mise en favori par le membre est mise à jour (regroupée dans l’e-mail mensuel si les dates coïncident).
+    • Prérequis : registre de veille complet (page des publications de chaque société, méthode de détection, conditions d’accès).
+9. Workflow éditorial et qualité
+9.1 Étapes
+    • 1. Détection ou ajout du document source ; vérification juridique et création dans le référentiel.
+    • 2. Extraction, structuration en recommandations atomiques, rédaction (triple lecture et audit indépendant dans l’atelier).
+    • 3. Contrôles automatiques : champs obligatoires, cohérence, liens, similarité textuelle.
+    • 4. Relecture médicale ; arbitrage des points signalés « À VÉRIFIER ».
+    • 5. Validation finale et publication par un rôle autorisé.
+    • 6. Information des membres selon le cycle mensuel (§8).
+9.2 Verrou de publication
+La publication est techniquement impossible (refus par le système, pas seulement par procédure) si l’une des conditions suivantes n’est pas remplie :
+    • URL de la source officielle présente et valide ;
+    • date de publication de la source renseignée ;
+    • statut juridique de la source validé dans le registre (§12.4) ;
+    • traduction autorisée par la source, pour toute version traduite ;
+    • relecture médicale effectuée et tracée (nom, date) pour chaque langue publiée ;
+    • version française validée ;
+    • grades et niveaux de preuve renseignés exactement comme dans la source (ou explicitement « non indiqué »).
+9.3 Signalement d’erreur
+Criticité
+Exemple
+Délai cible
+Critique
+Dose, contre-indication, seuil ou recommandation erronée
+Triage immédiat ; dépublication préventive si doute ; correction < 24 h.
+Modérée
+Ambiguïté, grade mal retranscrit
+Correction < 5 jours ouvrés.
+Mineure
+Coquille, mise en forme
+Correction < 15 jours.
+
+9.4 Crédibilité
+    • Journal public des corrections : date, fiche, criticité, résumé de la modification ; accessible depuis chaque fiche et depuis le site ; aucune donnée personnelle du déclarant.
+    • Mention du relecteur et de la date sur chaque fiche ; déclaration des liens d’intérêts des relecteurs.
+    • Au moins deux relecteurs qualifiés par spécialité active, pour éviter qu’un départ bloque la publication.
+    • V2 : comité scientifique multi-spécialités avec page publique.
+10. Offre commerciale
+10.1 Comptes et tarif
+Type de compte
+Prix
+Accès
+GRATUIT
+0 €, sans limite de durée, sans carte bancaire
+5 fiches complètes au total dans la spécialité choisie.
+PREMIUM
+50 €/an TTC, paiement annuel d’avance
+Toutes les fiches de la spécialité choisie, alertes et e-mail mensuel.
+
+    • Le prix de 50 €/an est une hypothèse commerciale à tester, pas une décision définitive du produit. Il est révisé selon les indicateurs du §13.
+    • Renouvellement automatique à la date anniversaire ; résiliation à tout moment, accès maintenu jusqu’à la fin de l’année payée, puis retour au compte gratuit.
+    • Le tarif de l’année en cours est garanti ; une hausse ne s’applique qu’au renouvellement, après information au moins 30 jours avant (avec lien de résiliation), dans le respect des règles de reconduction tacite (Code de la consommation, art. L215-1).
+    • L’administrateur choisit si un nouveau tarif s’applique à tous au renouvellement ou seulement aux nouveaux abonnés.
+10.2 Réductions
+Offre
+Réduction
+Conditions
+Membres fondateurs
+-30 % la 1ʳᵉ année (35 €)
+100 premiers abonnés payants ; code promotionnel limité à 100 utilisations, une par personne, nouveaux abonnés uniquement.
+Interne / étudiant
+-30 %
+Attestation d’inscription de l’année universitaire en cours, validée par le porteur de projet. MVP : envoi par e-mail à contact@medical-guidelines.net, réponse par un code personnel à usage unique. Nouveau justificatif à chaque renouvellement.
+Codes promotionnels
+Pourcentage ou montant
+Créés dans le back-office : dates, plafonds, restriction aux nouveaux abonnés ; s’appliquent à la première année uniquement.
+
+    • Réductions non cumulables : la plus favorable s’applique (décision validée).
+    • Justificatifs étudiants supprimés après décision, ou conservés un an au maximum si nécessaire à la preuve (décision validée).
+    • L’écran de souscription affiche : prix normal, réduction, prix payé la première année, date de renouvellement, possibilité d’évolution du tarif.
+10.3 Conditions générales de vente
+    • CGV distinctes des CGU, acceptées par case à cocher à chaque souscription ; version et date conservées.
+    • Contenu : vendeur, offre, prix TTC, durée et reconduction, paiement, résiliation, évolution du tarif, réductions et justificatifs, rétractation, responsabilité, médiation de la consommation, droit applicable.
+    • Droit de rétractation de 14 jours pour les consommateurs : l’accès étant immédiat, une case distincte recueille la demande d’exécution immédiate et la renonciation expresse au droit de rétractation, confirmées dans l’e-mail de commande.
+    • Adhésion à un médiateur de la consommation.
+    • Rédaction ou validation par un conseil juridique avant la première vente.
+10.4 Facturation et TVA
+    • Facture conforme émise automatiquement pour chaque paiement (numérotation, mentions obligatoires, identité de la SARL Hippocampus Consulting et SIREN).
+    • TVA calculée automatiquement selon le pays et le statut de l’acheteur (particulier ou professionnel avec numéro de TVA) par Stripe Tax ; prix affichés TTC pour les particuliers.
+10.5 Acquisition
+    • Une page publique de résumé par fiche, indexée par Google (niveau public, §5.1), avec invitation à créer un compte.
+    • Adresses stables et descriptives ; aucune exposition du contenu premium ; protection contre l’extraction massive.
+11. Protection du contenu
+Objectif : dissuader et tracer, pas promettre une impossibilité technique. Aucune mesure logicielle n’empêche une photo d’écran ; cette limite est assumée et ne doit jamais être présentée comme une garantie aux abonnés ou aux sociétés savantes.
+Mesure
+Priorité
+Filigrane personnalisé (identifiant ou e-mail + date/heure) sur toute fiche premium affichée
+Essentielle
+Contrôle des droits côté serveur avant tout envoi de contenu premium
+Essentielle
+Aucun export, téléchargement ou fichier regroupant le catalogue
+Essentielle
+Limitation du nombre de consultations par période et détection de l’extraction automatisée
+Essentielle
+Journalisation des accès anormaux et alerte à l’administrateur
+Essentielle
+Neutralisation de l’impression, du clic droit et de la sélection de texte sur le contenu premium
+Secondaire (dissuasion uniquement)
+
+12. Conformité
+12.1 Mentions légales
+Mention
+Valeur
+Éditeur
+Hippocampus Consulting, SARL au capital de 1 000 €
+Siège social
+6 rue d’Armaillé, 75017 Paris
+SIREN
+999 259 252
+Contact
+contact@medical-guidelines.net
+Directeur de la publication
+Dr Ahmed Ben Lallahom
+Hébergeur
+Vercel Inc. (États-Unis) — coordonnées reprises des informations légales publiées par Vercel
+
+Tâche obligatoire avant mise en production : vérification finale de toutes les informations légales de l’éditeur (Kbis à jour), et mise en service de l’adresse contact@medical-guidelines.net.
+12.2 Données personnelles (RGPD)
+    • Politique de confidentialité : responsable du traitement (Hippocampus Consulting), contact, finalités, bases légales, durées de conservation, droits, réclamation CNIL.
+    • Sous-traitants et localisation : Supabase (base de données, Union européenne — Francfort), Vercel (hébergement du site, États-Unis), Resend (envoi des e-mails, Irlande), Stripe (paiement), outil de mesure d’audience ; cadre des transferts (Data Privacy Framework ou clauses contractuelles types). Contrats de traitement acceptés auprès de chacun.
+    • Consentements séparés, journal horodaté non modifiable par l’utilisateur.
+    • Droits exercés en libre-service depuis « Mon compte » (rectification, retrait du consentement, export, suppression).
+    • Mesure d’audience sans cookies ; aucune ressource chargée depuis un service tiers sans nécessité (polices hébergées sur le site).
+    • Le site ne traite aucune donnée de santé de patient ; si cela changeait, analyse d’impact et hébergeur certifié HDS.
+12.3 Accessibilité
+Conformité aux exigences d’accessibilité (WCAG, European Accessibility Act) sur tous les parcours du MVP.
+12.4 Droits d’auteur et registre juridique par source
+Champ du registre
+Valeurs
+Statut du droit d’auteur
+Connu / à vérifier / autorisation requise
+Réutilisation commerciale
+Oui / non / incertain
+Accès automatisé (veille)
+Oui / non / conditions
+Traduction d’un résumé
+Oui / non / conditions
+Autorisation obtenue
+Oui / non / non nécessaire selon avis
+Statut de revue juridique
+Non revu / en revue / validé / bloqué — seul « validé » permet la publication (§9.2)
+
+    • Attribution visible ; aucun logo tiers ; pas de reproduction à l’identique de tableaux ou de mise en page ; reformulation éditoriale ; citation courte du libellé exact selon avis juridique.
+    • Procédure de retrait à la demande d’une société savante.
+    • Décision : pas de prise de contact préalable avec la SFAR avant le lancement ; le registre reste obligatoire pour chaque source.
+12.5 Transparence et indépendance
+    • Indication claire de l’usage de l’IA dans l’extraction, la synthèse ou la traduction, et du rôle de la validation humaine (règlement européen sur l’IA, à valider par un conseil).
+    • Le contenu est une aide à la pratique, ne remplace ni le jugement clinique ni le document source.
+    • Aucune influence d’un partenaire commercial sur le contenu.
+12.6 Dispositifs médicaux
+Tant que la plateforme présente et compare des recommandations publiées, sans calcul ni conclusion propre à un patient, elle relève de l’information professionnelle. Toute fonction appliquant une recommandation à un patient (calcul de dose, score, conduite à tenir personnalisée, assistant conversationnel) pourrait relever du règlement européen 2017/745 (marquage CE) : aucune fonction de ce type sans analyse réglementaire préalable.
+13. Indicateurs
+13.1 Test commercial (prioritaires)
+    • Tunnel mesuré étape par étape : inscription → e-mail confirmé → 1ʳᵉ fiche débloquée → 5 fiches (quota atteint) → page d’abonnement vue → paiement commencé → paiement réussi.
+    • Conversion gratuit → payant et délai médian entre inscription et paiement.
+    • Fiches qui déclenchent le plus souvent le passage au payant (dernière fiche consultée avant paiement).
+    • Taux de renouvellement annuel, résiliations, effet d’une hausse de tarif.
+    • Utilisation des offres membres fondateurs et interne/étudiant.
+    • Revenu annuel récurrent ; répartition mobile / ordinateur.
+13.2 Qualité éditoriale et service
+    • Cycle de veille exécuté chaque mois ; délai détection → e-mail aux membres (objectif 7 jours).
+    • Délai de correction par criticité ; taux de signalement pour 1 000 consultations.
+    • Part des fiches publiées disponibles en anglais.
+    • Taux de liens sources valides ; taux d’ouverture et de désinscription des e-mails.
+14. Gouvernance
+    • Rendez-vous hebdomadaire de 30 minutes du porteur de projet : fusion des demandes d’intégration de la routine, validation des fiches et des e-mails de veille, revue des signalements, validation des justificatifs étudiants. La routine prépare une synthèse d’une page avant chaque rendez-vous.
+    • Back-office : file éditoriale et statuts, registre juridique, référentiels (sociétés, spécialités), signalements triés par criticité, utilisateurs et abonnements, tarifs et codes promotionnels (avec historique), quota gratuit, journal des corrections, statistiques, dépublication et audit.
+15. Feuille de route
+Phase
+Contenu
+Objectif
+0 — Fondations
+Ménage des dépôts, environnement de test, base de données cible, import des fiches du plus récent au plus ancien, pages par fiche, accès et quota, paiement, conformité, veille
+Disposer du MVP commercial complet.
+1 — Test commercial (phase actuelle)
+Anesthésie-réanimation France, en français (anglais au fil des relectures)
+Valider la conversion et le renouvellement réels. Critère de passage à la phase 2.
+2 — International anesthésie-réanimation
+Sociétés européennes et internationales ; publication anglaise complète
+Tester la veille multi-sources et les divergences.
+3 — Recherche et comparaison avancées
+Comparateur, recherche sémantique, alertes fines
+Créer l’avantage produit principal.
+4 — Autres spécialités
+Selon la demande
+Élargir sans diluer la qualité.
+5 — Expansion internationale
+Autres langues et pays selon l’usage et les droits
+Déploiement progressif.
+6 — Institutions / API
+SSO, API, intégrations, offre multi-spécialités
+Canal B2B.
+
+
+Annexe A — Spécialités et professions
+Spécialités médicales
+    • Médecine générale / médecine de famille
+    • Allergologie
+    • Anesthésie-réanimation (spécialité pilote)
+    • Cardiologie
+    • Chirurgie cardiaque
+    • Chirurgie digestive et viscérale
+    • Chirurgie de la main
+    • Chirurgie maxillo-faciale
+    • Chirurgie orthopédique et traumatologique
+    • Chirurgie pédiatrique
+    • Chirurgie plastique, reconstructrice et esthétique
+    • Chirurgie thoracique
+    • Chirurgie urologique
+    • Chirurgie vasculaire
+    • Dermatologie et vénéréologie
+    • Endocrinologie, diabétologie, maladies métaboliques
+    • Gastro-entérologie et hépatologie
+    • Génétique médicale
+    • Gériatrie
+    • Gynécologie-obstétrique
+    • Hématologie
+    • Immunologie clinique
+    • Infectiologie / maladies infectieuses et tropicales
+    • Médecine du travail
+    • Médecine du sport
+    • Médecine d'urgence
+    • Médecine intensive-réanimation
+    • Médecine interne
+    • Médecine légale
+    • Médecine nucléaire
+    • Médecine palliative et soins palliatifs
+    • Médecine physique et de réadaptation
+    • Médecine de la douleur / algologie
+    • Néonatologie
+    • Néphrologie
+    • Neurochirurgie
+    • Neurologie
+    • Odontologie / chirurgie dentaire
+    • Oncologie médicale
+    • Ophtalmologie
+    • ORL et chirurgie cervico-faciale
+    • Pédiatrie
+    • Pédopsychiatrie
+    • Pneumologie
+    • Psychiatrie
+    • Radiologie et imagerie médicale
+    • Radiothérapie / oncologie radiothérapique
+    • Rhumatologie
+    • Santé publique et médecine sociale
+    • Toxicologie
+    • Urologie
+Professions paramédicales
+    • Infirmier(ère) — soins généraux
+    • Infirmier(ère) anesthésiste (IADE)
+    • Infirmier(ère) de bloc opératoire (IBODE)
+    • Infirmier(ère) en pratique avancée (IPA)
+    • Infirmier(ère) puériculteur(rice)
+    • Sage-femme / maïeuticien(ne)
+    • Kinésithérapeute / physiothérapeute
+    • Ergothérapeute
+    • Orthophoniste
+    • Orthoptiste
+    • Psychomotricien(ne)
+    • Diététicien(ne) / nutritionniste
+    • Pharmacien(ne)
+    • Préparateur(rice) en pharmacie
+    • Manipulateur(rice) en électroradiologie médicale
+    • Technicien(ne) de laboratoire médical
+    • Audioprothésiste
+    • Podologue
+    • Opticien(ne)
+    • Ambulancier(ère)
+    • Aide-soignant(e)
+    • Auxiliaire de puériculture
+    • Assistant(e) dentaire
+    • Prothésiste dentaire
+    • Perfusionniste
+    • Technicien(ne) en physiologie médicale
+    • Ostéopathe
+    • Chiropracteur(rice)
+    • Assistant(e) social(e) en santé
+    • Autre (champ libre)
+Annexe B — Sociétés savantes (référentiel initial)
+    • France : SFAR, SRLF, HAS, SPILF, SFMU, CNGOF, SFC, SFN, SFD, puis autres sociétés par spécialité.
+    • Anesthésie-réanimation international (phase 2) : ESAIC, ESICM, SCCM, ASA, DAS, ASRA.
+    • Royaume-Uni : NICE ; Allemagne : AWMF ; Espagne / Amérique latine : SEMICYUC ; autres régions progressivement.
+Annexe C — Exemple de recommandation atomique
+Champ
+Exemple fictif
+Identifiant
+MG-ANES-000124-R03
+Question clinique
+Gestion péri-procédurale d’un traitement anticoagulant
+Population
+Adulte
+Intervention
+Geste invasif / anesthésie locorégionale
+Recommandation
+Texte éditorial validé
+Grade / niveau de preuve
+Valeur exacte de la source ou « non indiqué »
+Source
+Société / titre / année / section / page
+Statut
+Publiée
+Dernière vérification / prochaine
+AAAA-MM-JJ / AAAA-MM-JJ
+Relecture
+Dr [nom], [spécialité], AAAA-MM-JJ
+
