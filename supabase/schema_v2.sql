@@ -82,6 +82,19 @@ alter table public.profiles add column if not exists editorial_role text
 -- relecteur/validateur au quotidien).
 alter table public.profiles add column if not exists member_comite_consultatif boolean not null default false;
 
+-- RÉCONCILIATION 28/09/2026 : la production possède déjà profiles.is_admin
+-- (migration 20260928120000_audit_securite_rgpd). Les administrateurs
+-- existants reçoivent editorial_role = 'admin' pour ne pas perdre leurs
+-- droits quand is_admin() est redéfinie ci-dessous. Sans effet sur une base
+-- neuve (colonne absente).
+do $$
+begin
+  if exists (select 1 from information_schema.columns
+             where table_schema = 'public' and table_name = 'profiles' and column_name = 'is_admin') then
+    execute 'update public.profiles set editorial_role = ''admin'' where is_admin and editorial_role is null';
+  end if;
+end $$;
+
 -- Déclaration de conflit d'intérêts au niveau du profil (8.2 : "lorsque
 -- pertinente" — donc pas de contrainte NOT NULL, seulement un espace pour
 -- la déclarer quand elle existe).
@@ -807,32 +820,46 @@ create index if not exists editorial_reviews_recommendation_id_idx on public.edi
 --   critique -> cible 24 h ; modérée -> cible 5 jours ouvrés ; mineure -> cible 15 jours.
 create table if not exists public.error_reports (
   id uuid primary key default gen_random_uuid(),
-  -- CORRECTIF POST-AUDIT : "on delete set null" plutôt qu'aucune action —
-  -- un signalement garde sa valeur (KPI 16.2, historique SLA) même si la
-  -- recommandation/le document visé ou son auteur sont ensuite supprimés ;
-  -- sans quoi la suppression d'une recommandation pouvait échouer de façon
-  -- peu lisible dès qu'un signalement existait contre elle.
+  -- CORRECTIF POST-AUDIT : "on delete set null" — un signalement garde sa
+  -- valeur (KPI 16.2, historique SLA) même si sa cible ou son auteur sont
+  -- supprimés.
   recommendation_id uuid references public.recommendations(id) on delete set null,
   document_id uuid references public.documents(id) on delete set null,
-  reported_by uuid references public.profiles(id) on delete set null, -- nullable : signalement possible sans compte selon UX retenue
-  criticality text not null check (criticality in ('critique', 'moderee', 'mineure')),
+  -- RÉCONCILIATION 28/09/2026 : l'auteur s'appelle user_id (nom déjà utilisé
+  -- en production par /api/signalements) ; doc/doc_title/section identifient
+  -- la fiche telle qu'affichée par la page des fiches.
+  user_id uuid default auth.uid() references auth.users(id) on delete set null,
+  doc text,
+  doc_title text,
+  section text,
+  -- Criticité posée au triage par l'équipe éditoriale (l'utilisateur qui
+  -- signale ne la connaît pas) : nullable jusqu'au triage.
+  criticality text check (criticality is null or criticality in ('critique', 'moderee', 'mineure')),
   description text not null,
-  -- Statut opérationnel : NON énuméré littéralement dans le cahier des
-  -- charges (qui ne donne que la table des cibles SLA, 8.3) — inféré a
-  -- minima pour piloter le tri par criticité (12).
-  status text not null default 'nouveau'
-    check (status in ('nouveau', 'en_cours', 'resolu', 'rejete')),
+  status text not null default 'nouveau',
   target_resolution_at timestamptz,
   resolved_at timestamptz,
   resolution_notes text,
+  decided_at timestamptz,
+  decided_by uuid references auth.users(id) on delete set null,
   created_at timestamptz not null default now()
-  -- Pas de CHECK "au moins une cible renseignée" ici : recommendation_id et
-  -- document_id sont tous deux "on delete set null" (ci-dessus), donc une
-  -- ligne ancienne peut légitimement finir avec les deux à null après
-  -- suppression de sa cible d'origine — un CHECK à l'insertion appartient à
-  -- la couche application, pas à une contrainte qui bloquerait alors la
-  -- suppression elle-même.
 );
+
+-- RÉCONCILIATION 28/09/2026 : la table existe déjà en production (bouton
+-- « Signaler une erreur ») ; on y ajoute les colonnes du modèle V2.
+alter table public.error_reports add column if not exists recommendation_id uuid references public.recommendations(id) on delete set null;
+alter table public.error_reports add column if not exists document_id uuid references public.documents(id) on delete set null;
+alter table public.error_reports add column if not exists criticality text
+  check (criticality is null or criticality in ('critique', 'moderee', 'mineure'));
+alter table public.error_reports add column if not exists target_resolution_at timestamptz;
+alter table public.error_reports add column if not exists resolved_at timestamptz;
+alter table public.error_reports add column if not exists resolution_notes text;
+-- Statuts : ceux de la page des fiches (nouveau / valide / rejete) et ceux
+-- du suivi SLA (en_cours / resolu).
+alter table public.error_reports drop constraint if exists error_reports_status_check;
+alter table public.error_reports add constraint error_reports_status_check
+  check (status in ('nouveau', 'valide', 'en_cours', 'resolu', 'rejete'));
+
 create index if not exists error_reports_status_idx on public.error_reports(status);
 create index if not exists error_reports_criticality_idx on public.error_reports(criticality);
 
@@ -1177,15 +1204,25 @@ alter table public.error_reports enable row level security;
 -- une ambiguïté", ouvert à tout utilisateur du site) ; seule l'équipe
 -- éditoriale lit/traite la file complète. Un auteur voit son propre
 -- signalement (suivi de son statut), pas ceux des autres.
+-- RÉCONCILIATION 28/09/2026 : remplace les politiques posées en production
+-- (error_reports_select / _insert_own / _update_admin). Signalement réservé
+-- aux utilisateurs connectés ; l'équipe éditoriale traite la file.
+drop policy if exists error_reports_select on public.error_reports;
+drop policy if exists error_reports_insert_own on public.error_reports;
+drop policy if exists error_reports_update_admin on public.error_reports;
 drop policy if exists error_reports_insert_any on public.error_reports;
-create policy error_reports_insert_any on public.error_reports for insert
-  with check (reported_by is null or reported_by = auth.uid());
+create policy error_reports_insert_any on public.error_reports for insert to authenticated
+  with check (user_id = (select auth.uid()) and status = 'nouveau');
 drop policy if exists error_reports_select_own_or_editorial on public.error_reports;
-create policy error_reports_select_own_or_editorial on public.error_reports for select
-  using (reported_by = auth.uid() or public.has_editorial_role('relecteur'));
+create policy error_reports_select_own_or_editorial on public.error_reports for select to authenticated
+  using (user_id = (select auth.uid()) or public.has_editorial_role('relecteur'));
 drop policy if exists error_reports_update_editorial on public.error_reports;
-create policy error_reports_update_editorial on public.error_reports for update
+create policy error_reports_update_editorial on public.error_reports for update to authenticated
   using (public.has_editorial_role('relecteur')) with check (public.has_editorial_role('relecteur'));
+revoke all on public.error_reports from anon;
+grant select, insert on public.error_reports to authenticated;
+grant update (criticality, status, target_resolution_at, resolved_at, resolution_notes, decided_at, decided_by)
+  on public.error_reports to authenticated;
 
 alter table public.subscriptions enable row level security;
 drop policy if exists subscriptions_select_own on public.subscriptions;
