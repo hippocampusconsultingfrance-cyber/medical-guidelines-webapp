@@ -1228,9 +1228,13 @@ alter table public.subscriptions enable row level security;
 drop policy if exists subscriptions_select_own on public.subscriptions;
 create policy subscriptions_select_own on public.subscriptions for select
   using (user_id = auth.uid() or public.is_admin());
+-- CORRECTIF (28/09/2026) : un utilisateur ne doit jamais pouvoir créer ou
+-- modifier son propre abonnement (auto-attribution de PREMIUM). Écriture
+-- réservée à l'administrateur et au serveur (service_role, webhook Stripe).
 drop policy if exists subscriptions_write_own_or_admin on public.subscriptions;
-create policy subscriptions_write_own_or_admin on public.subscriptions for all
-  using (user_id = auth.uid() or public.is_admin()) with check (user_id = auth.uid() or public.is_admin());
+drop policy if exists subscriptions_write_admin on public.subscriptions;
+create policy subscriptions_write_admin on public.subscriptions for all to authenticated
+  using (public.is_admin()) with check (public.is_admin());
 
 alter table public.institutions enable row level security;
 drop policy if exists institutions_admin_only on public.institutions;

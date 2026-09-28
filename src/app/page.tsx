@@ -15,7 +15,7 @@ export default async function Home() {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("nom, prenom, profession, setup_completed")
+    .select("nom, prenom, profession, setup_completed, editorial_role")
     .eq("id", user.id)
     .single();
 
@@ -49,6 +49,13 @@ export default async function Home() {
       >
         Accéder aux fiches de synthèse →
       </a>
+      {profile?.editorial_role && (
+        <p className="mt-4 text-sm">
+          <Link href="/bibliotheque" className="text-teal-700 underline">
+            Nouvelle bibliothèque (aperçu relecteur, brouillons compris)
+          </Link>
+        </p>
+      )}
     </div>
   );
 }

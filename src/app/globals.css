@@ -17,3 +17,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Aucune impression du contenu premium (CDC §11, dissuasion). */
+@media print {
+  .fiche-premium {
+    display: none !important;
+  }
+}
