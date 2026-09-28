@@ -34,7 +34,13 @@ export default function ConfidentialitePage() {
       </h2>
       <p className="mt-2">
         Le responsable du traitement des données collectées sur ce site est
-        l&apos;éditeur de Medical Guidelines.
+        Hippocampus Consulting, SARL au capital de 1 000 €, 6 rue
+        d&apos;Armaillé, 75017 Paris (SIREN 999 259 252), joignable à
+        l&apos;adresse hippocampusconsultingfrance@gmail.com. Voir aussi les{" "}
+        <a href="/mentions-legales" className="underline">
+          mentions légales
+        </a>
+        .
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
@@ -119,6 +125,11 @@ export default function ConfidentialitePage() {
         transferts hors de l&apos;Union européenne par les clauses
         contractuelles types de la Commission européenne et/ou le Data
         Privacy Framework UE–États-Unis.
+      </p>
+      <p className="mt-2">
+        Les e-mails de service (confirmation d&apos;inscription, mot de passe
+        oublié) sont envoyés par Resend, qui agit en tant que sous-traitant
+        dans les mêmes conditions.
       </p>
       <p className="mt-2">
         La page des fiches charge ses polices de caractères depuis Google

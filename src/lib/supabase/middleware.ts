@@ -39,6 +39,7 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname.startsWith("/finaliser-compte") ||
     request.nextUrl.pathname.startsWith("/cgu") ||
     request.nextUrl.pathname.startsWith("/confidentialite") ||
+    request.nextUrl.pathname.startsWith("/mentions-legales") ||
     request.nextUrl.pathname.startsWith("/mot-de-passe-oublie");
   const isPublicAsset =
     request.nextUrl.pathname.startsWith("/_next") ||
