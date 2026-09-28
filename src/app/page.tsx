@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import LogoutButton from "./logout-button";
@@ -28,7 +29,15 @@ export default async function Home() {
         <h1 className="text-2xl font-semibold text-slate-900">
           Medical Guidelines
         </h1>
-        <LogoutButton />
+        <div className="flex items-center gap-3">
+          <Link
+            href="/compte"
+            className="text-sm text-slate-700 underline hover:text-slate-900"
+          >
+            Mon compte
+          </Link>
+          <LogoutButton />
+        </div>
       </div>
       <p className="mt-4 text-slate-600">
         Bienvenue{profile ? `, ${profile.prenom}` : ""}

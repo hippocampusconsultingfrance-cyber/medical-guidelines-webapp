@@ -1,5 +1,7 @@
 -- Medical Guidelines — schema d'authentification et de profils utilisateurs
 -- A exécuter une fois dans Supabase : Dashboard -> SQL Editor -> New query -> coller -> Run
+-- Puis appliquer, dans l'ordre, les fichiers de supabase/migrations/ (droits par
+-- colonne, journal des consentements, signalements d'erreurs, suppression de compte).
 
 create table if not exists public.profiles (
   id uuid primary key references auth.users (id) on delete cascade,

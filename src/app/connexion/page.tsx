@@ -11,6 +11,7 @@ function ConnexionForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const accountDeleted = searchParams.get("compte") === "supprime";
   const [error, setError] = useState<string | null>(
     searchParams.get("erreur") === "lien-invalide"
       ? "Ce lien de confirmation est invalide ou a expiré. Réessayez de vous connecter, ou recommencez l'inscription."
@@ -41,14 +42,22 @@ function ConnexionForm() {
     <div className="mx-auto min-h-screen max-w-md px-6 py-16">
       <h1 className="text-2xl font-semibold text-slate-900">Se connecter</h1>
 
+      {accountDeleted && (
+        <p className="mt-4 rounded-md bg-slate-100 p-3 text-sm text-slate-700">
+          Votre compte et vos données personnelles ont été supprimés.
+        </p>
+      )}
+
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="email" className="block text-sm font-medium text-slate-700">
             Email
           </label>
           <input
+            id="email"
             required
             type="email"
+            autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
@@ -56,17 +65,28 @@ function ConnexionForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="password" className="block text-sm font-medium text-slate-700">
             Mot de passe
           </label>
           <input
+            id="password"
             required
             type="password"
+            autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
           />
         </div>
+
+        <p className="text-right text-sm">
+          <Link
+            href="/mot-de-passe-oublie"
+            className="text-teal-700 underline"
+          >
+            Mot de passe oublié ?
+          </Link>
+        </p>
 
         {error && <p className="text-sm text-red-600">{error}</p>}
 

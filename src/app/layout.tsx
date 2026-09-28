@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Medical Guidelines",
   description:
     "Fiches de synthèse des recommandations professionnelles pour l'anesthésie-réanimation.",
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
