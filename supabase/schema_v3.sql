@@ -104,6 +104,9 @@ create policy documents_select_public on public.documents for select
     )
   );
 
+-- REMPLACÉE (28/09/2026) par migrations/20260928220000_acces_fiches_quota.sql :
+-- cette version laisse lire toute recommandation active sans compte et sans
+-- quota. Toujours rejouer les migrations/ après ce fichier.
 drop policy if exists recommendations_select_public on public.recommendations;
 create policy recommendations_select_public on public.recommendations for select
   using (
