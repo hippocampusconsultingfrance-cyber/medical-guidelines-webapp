@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import LogoutButton from "./logout-button";
 import AccueilPublic from "./accueil-public";
+
+export const metadata: Metadata = {
+  title: "medical-guidelines.net — Recommandations médicales et paramédicales en fiches",
+  description:
+    "Les recommandations des sociétés savantes en fiches claires et sourcées, grades conservés, pour les médecins et les professionnels paramédicaux. 5 fiches gratuites.",
+};
 
 export default async function Home() {
   const supabase = await createClient();
