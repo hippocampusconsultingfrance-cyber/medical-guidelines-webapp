@@ -15,10 +15,19 @@ export default function CguPage() {
         et médecine critique. L&apos;accès au contenu est réservé aux
         professionnels de santé et étudiants des filières médicales et
         paramédicales, sous réserve de la création d&apos;un compte.
-        L&apos;accès est actuellement gratuit ; il pourra évoluer vers un
-        modèle payant par abonnement mensuel, avec information préalable des
-        utilisateurs et sans modification rétroactive des conditions déjà
-        acceptées pour la période déjà payée.
+        Le compte gratuit donne accès, dans la spécialité choisie à
+        l&apos;inscription, à 5 fiches complètes au total, à vie, sans carte
+        bancaire. L&apos;abonnement PREMIUM (toutes les fiches de la
+        spécialité choisie) est proposé au prix de 50 € TTC par an, payable
+        annuellement d&apos;avance ; il se renouvelle automatiquement à la
+        date anniversaire et peut être résilié à tout moment, l&apos;accès
+        étant maintenu jusqu&apos;à la fin de l&apos;année payée. Le tarif de
+        l&apos;année en cours est garanti ; toute hausse ne s&apos;applique
+        qu&apos;au renouvellement, après information au moins 30 jours à
+        l&apos;avance avec lien de résiliation. Les conditions de
+        souscription (réductions, droit de rétractation, facturation) sont
+        précisées dans les conditions générales de vente, distinctes des
+        présentes conditions et acceptées à chaque souscription.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
