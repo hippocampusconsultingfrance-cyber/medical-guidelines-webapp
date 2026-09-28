@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "prebuild": "node scripts/prepare-fiches.mjs",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "import:content": "node scripts/import-content.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",
