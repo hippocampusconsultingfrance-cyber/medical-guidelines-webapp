@@ -41,3 +41,43 @@ export async function publishAll(formData: FormData) {
   const { data, error } = await supabase.rpc("publish_all_documents");
   redirect(`/bibliotheque?r=${error ? "publication_erreur" : `toutes_publiees_${Number(data ?? 0)}`}`);
 }
+
+// Signalement d'une erreur depuis une fiche. La base impose l'auteur (le
+// membre connecté) et le statut initial « nouveau » (RLS).
+export async function reportError(formData: FormData) {
+  const id = String(formData.get("id") ?? "");
+  if (!UUID.test(id)) redirect("/bibliotheque");
+  const description = String(formData.get("description") ?? "").trim().slice(0, 4000);
+  const section = String(formData.get("section") ?? "").trim().slice(0, 300) || null;
+  const title = String(formData.get("title") ?? "").trim().slice(0, 300) || null;
+  if (description.length < 5) redirect(`/bibliotheque/${id}?r=signalement_vide#signaler`);
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/connexion");
+  const { error } = await supabase
+    .from("error_reports")
+    .insert({ user_id: user.id, doc: id, doc_title: title, section, description });
+  redirect(`/bibliotheque/${id}?r=${error ? "signalement_erreur" : "signalement_envoye"}#signaler`);
+}
+
+// Décision de l'administrateur sur un signalement (RLS : administrateurs).
+export async function decideReport(formData: FormData) {
+  const id = String(formData.get("id") ?? "");
+  const status = String(formData.get("status") ?? "");
+  if (!UUID.test(id) || !["valide", "rejete", "nouveau"].includes(status)) {
+    redirect("/bibliotheque/signalements");
+  }
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/connexion");
+  await supabase
+    .from("error_reports")
+    .update({ status, decided_at: new Date().toISOString(), decided_by: user.id })
+    .eq("id", id);
+  redirect("/bibliotheque/signalements");
+}

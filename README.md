@@ -7,10 +7,10 @@ recommandations (SFAR, SRLF, HAS…).
 - Framework : Next.js 16 (App Router), déployé sur Vercel.
 - Base de données et authentification : Supabase (projet hébergé à
   Francfort).
-- Fiches : `public/fiches/index.html`, généré dans le dépôt
-  `rfe-sfar-website` et synchronisé ici. `npm run build` le prépare
-  automatiquement (`scripts/prepare-fiches.mjs` : doctype, affichage mobile,
-  bouton « Signaler une erreur » branché sur la base).
+- Fiches : produites dans le dépôt `rfe-sfar-website` (l'atelier), chargées
+  dans la base par `scripts/import-atelier.mjs` puis l'outil d'import, et
+  affichées par la bibliothèque (`/bibliotheque`) : bloquées par défaut,
+  5 crédits pour un compte gratuit, tout ouvert pour PREMIUM.
 
 ## Développement
 
@@ -64,7 +64,10 @@ production : GitHub → Actions → « Importer le contenu » → Run workflow
 |---|---|
 | `/inscription`, `/finaliser-compte` | Création du compte (code par email, puis mot de passe) |
 | `/connexion`, `/mot-de-passe-oublie`, `/nouveau-mot-de-passe` | Connexion et réinitialisation |
-| `/` | Accueil connecté, accès aux fiches |
+| `/` | Accueil public (visiteur) ou espace membre (connecté) |
+| `/bibliotheque`, `/bibliotheque/[id]` | Catalogue et fiches (crédits, filigrane, signalement d'erreur, publication) |
+| `/bibliotheque/signalements` | Tableau de bord des signalements (administrateur) |
+| `/mentions-legales` | Mentions légales |
 | `/compte` | Droits RGPD : rectification, consentement, export, suppression |
 | `/cgu`, `/confidentialite` | Textes légaux |
 | `/api/signalements` | Signalements d'erreurs sur les fiches |

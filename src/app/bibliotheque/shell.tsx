@@ -71,6 +71,14 @@ export default function Shell({
           <Link href="/compte" style={{ color: "inherit" }}>
             Mon compte
           </Link>
+          {lib.canPublish && (
+            <>
+              {" · "}
+              <Link href="/bibliotheque/signalements" style={{ color: "inherit" }}>
+                Signalements
+              </Link>
+            </>
+          )}
           <br />
           Synthèses indépendantes, non officielles. Se référer aux textes
           intégraux en cas de doute.
