@@ -37,8 +37,26 @@ npm run build
 
 - `supabase/schema.sql` : schéma initial (profils, création automatique du
   profil à l'inscription).
-- `supabase/migrations/` : évolutions, à appliquer dans l'ordre des noms de
-  fichier. Ne jamais modifier la base de production sans relecture.
+- `supabase/schema_v2.sql`, `supabase/schema_v3.sql` : modèle de données cible
+  (installés en production le 28/09/2026).
+- `supabase/migrations/` : évolutions de **structure** uniquement, à appliquer
+  dans l'ordre des noms de fichier. Ne jamais modifier la base de production
+  sans relecture.
+- `supabase/content/` : **contenu clinique** (une fiche par script, en
+  brouillon), chargé par l'outil d'import, jamais par les migrations.
+  Suivi : `supabase/content/SUIVI_CONTENU.md`.
+
+## Import du contenu
+
+```bash
+npm run import:content                              # aperçu de l'ordre
+DATABASE_URL=... npm run import:content -- --apply  # import
+```
+
+Ordre obligatoire : du document le plus récent au plus ancien. Tout reste en
+brouillon ; l'outil refuse un script qui publierait directement. En
+production : GitHub → Actions → « Importer le contenu » → Run workflow
+(secret `SUPABASE_DB_URL` requis).
 
 ## Pages
 

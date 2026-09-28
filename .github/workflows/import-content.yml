@@ -1,0 +1,29 @@
+name: Importer le contenu
+
+# Lancement manuel uniquement (onglet Actions → « Importer le contenu » →
+# Run workflow). Charge supabase/content/ dans la base, du plus récent au
+# plus ancien, en brouillon. Nécessite le secret SUPABASE_DB_URL
+# (Settings → Secrets and variables → Actions).
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: 'Tapez IMPORTER pour confirmer'
+        required: true
+
+jobs:
+  importer:
+    if: ${{ github.event.inputs.confirmation == 'IMPORTER' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get install -y -qq postgresql-client
+      - name: Aperçu de l'ordre d'import
+        run: node scripts/import-content.mjs
+      - name: Import
+        env:
+          DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: node scripts/import-content.mjs --apply
