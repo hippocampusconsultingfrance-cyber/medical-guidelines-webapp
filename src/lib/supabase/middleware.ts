@@ -38,10 +38,12 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname.startsWith("/verifiez-votre-email") ||
     request.nextUrl.pathname.startsWith("/finaliser-compte") ||
     request.nextUrl.pathname.startsWith("/cgu") ||
-    request.nextUrl.pathname.startsWith("/confidentialite");
+    request.nextUrl.pathname.startsWith("/confidentialite") ||
+    request.nextUrl.pathname.startsWith("/mot-de-passe-oublie");
   const isPublicAsset =
     request.nextUrl.pathname.startsWith("/_next") ||
-    request.nextUrl.pathname.startsWith("/favicon");
+    request.nextUrl.pathname.startsWith("/favicon") ||
+    request.nextUrl.pathname === "/robots.txt";
 
   if (!user && !isAuthRoute && !isPublicAsset && request.nextUrl.pathname !== "/") {
     const url = request.nextUrl.clone();

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
+import { passwordAssezFort, PASSWORD_RULE } from "@/lib/password";
 
 export default function FinaliserComptePage() {
   const router = useRouter();
@@ -12,15 +13,6 @@ export default function FinaliserComptePage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  function passwordAssezForte(pw: string) {
-    return (
-      pw.length >= 10 &&
-      /[a-z]/.test(pw) &&
-      /[A-Z]/.test(pw) &&
-      /[0-9]/.test(pw)
-    );
-  }
-
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
@@ -29,10 +21,8 @@ export default function FinaliserComptePage() {
       setError("L'identifiant doit contenir au moins 3 caractères.");
       return;
     }
-    if (!passwordAssezForte(password)) {
-      setError(
-        "Le mot de passe doit contenir au moins 10 caractères, une majuscule, une minuscule et un chiffre.",
-      );
+    if (!passwordAssezFort(password)) {
+      setError(`Le mot de passe doit contenir au moins ${PASSWORD_RULE}.`);
       return;
     }
     if (password !== password2) {
@@ -64,9 +54,7 @@ export default function FinaliserComptePage() {
     if (updateError || !userData.user) {
       setLoading(false);
       setError(
-        "Une erreur est survenue lors de la création du mot de passe (" +
-          (updateError?.message ?? "session invalide") +
-          "). Le lien a peut-être expiré : recommencez l'inscription.",
+        "Le mot de passe n'a pas pu être enregistré. Votre session a peut-être expiré : recommencez l'inscription.",
       );
       return;
     }
@@ -79,9 +67,7 @@ export default function FinaliserComptePage() {
     setLoading(false);
     if (profileError) {
       setError(
-        "Compte créé mais l'identifiant n'a pas pu être enregistré (" +
-          profileError.message +
-          "). Contactez le support.",
+        "Compte créé, mais l'identifiant n'a pas pu être enregistré. Réessayez dans quelques instants.",
       );
       return;
     }
@@ -101,11 +87,13 @@ export default function FinaliserComptePage() {
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="username" className="block text-sm font-medium text-slate-700">
             Nom d&apos;utilisateur
           </label>
           <input
+            id="username"
             required
+            autoComplete="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
@@ -113,28 +101,32 @@ export default function FinaliserComptePage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="password" className="block text-sm font-medium text-slate-700">
             Mot de passe
           </label>
           <input
+            id="password"
             required
             type="password"
+            autoComplete="new-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
           />
           <p className="mt-1 text-xs text-slate-500">
-            Au moins 10 caractères, avec majuscule, minuscule et chiffre.
+            Au moins {PASSWORD_RULE}.
           </p>
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700">
+          <label htmlFor="password2" className="block text-sm font-medium text-slate-700">
             Confirmer le mot de passe
           </label>
           <input
+            id="password2"
             required
             type="password"
+            autoComplete="new-password"
             value={password2}
             onChange={(e) => setPassword2(e.target.value)}
             className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"

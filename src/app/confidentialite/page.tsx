@@ -20,7 +20,7 @@ export default function ConfidentialitePage() {
             Ces données ne sont <strong>jamais</strong> partagées avec des
             partenaires commerciaux, sauf si vous cochez explicitement et
             séparément la case correspondante lors de l&apos;inscription (ou
-            plus tard dans vos paramètres).
+            plus tard depuis la page « Mon compte »).
           </li>
           <li>
             Vous pouvez à tout moment consulter, corriger, exporter ou faire
@@ -86,8 +86,13 @@ export default function ConfidentialitePage() {
         d&apos;opposition sur vos données, ainsi que du droit de retirer à
         tout moment votre consentement au partage avec des partenaires
         (sans effet rétroactif et sans impact sur l&apos;accès au service).
-        Vous pouvez exercer ces droits depuis les paramètres de votre compte
-        ou en contactant l&apos;éditeur du site. Vous disposez également du
+        Vous pouvez exercer ces droits depuis la page{" "}
+        <a href="/compte" className="underline">
+          Mon compte
+        </a>{" "}
+        (modification de vos informations, retrait du consentement, export
+        de vos données, suppression du compte) ou en contactant
+        l&apos;éditeur du site. Vous disposez également du
         droit d&apos;introduire une réclamation auprès de la CNIL
         (www.cnil.fr).
       </p>
@@ -106,7 +111,24 @@ export default function ConfidentialitePage() {
         7. Hébergement
       </h2>
       <p className="mt-2">
-        Les données sont hébergées au sein de l&apos;Union Européenne.
+        La base de données (comptes et profils) est hébergée par Supabase
+        Inc. dans l&apos;Union européenne (Francfort, Allemagne). Le site est
+        servi par Vercel Inc. via son réseau mondial de distribution. Ces
+        deux prestataires sont des sociétés établies aux États-Unis, qui
+        agissent en tant que sous-traitants et encadrent les éventuels
+        transferts hors de l&apos;Union européenne par les clauses
+        contractuelles types de la Commission européenne et/ou le Data
+        Privacy Framework UE–États-Unis.
+      </p>
+      <p className="mt-2">
+        La page des fiches charge ses polices de caractères depuis Google
+        Fonts (Google LLC), ce qui transmet votre adresse IP à Google lors de
+        l&apos;affichage.
+      </p>
+      <p className="mt-2">
+        Chaque changement de votre consentement au partage avec des
+        partenaires est horodaté et conservé dans un historique consultable
+        depuis la page « Mon compte ».
       </p>
     </div>
   );
