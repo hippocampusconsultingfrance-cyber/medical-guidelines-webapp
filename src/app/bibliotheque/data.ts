@@ -23,7 +23,11 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
         .order("title"),
       supabase.from("document_unlocks").select("document_id"),
       supabase.rpc("has_premium"),
-      supabase.from("profiles").select("editorial_role").eq("id", userId).single(),
+      supabase
+        .from("profiles")
+        .select("editorial_role, specialty:specialties(name_i18n)")
+        .eq("id", userId)
+        .single(),
     ]);
 
   const role = (profile?.editorial_role as string | null) ?? null;
@@ -39,7 +43,15 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     for (const d of (documents ?? []) as LibraryDoc[]) if (d.published_at) published.add(d.id);
   }
 
+  const spec = profile?.specialty as
+    | { name_i18n: { fr?: string } | null }
+    | { name_i18n: { fr?: string } | null }[]
+    | null
+    | undefined;
+  const specialty = (Array.isArray(spec) ? spec[0] : spec)?.name_i18n?.fr ?? null;
+
   return {
+    specialty,
     docs: (documents ?? []) as LibraryDoc[],
     unlocked: new Set((unlocks ?? []).map((u) => u.document_id as string)),
     premium: Boolean(premium),
@@ -60,4 +72,20 @@ export function docState(lib: Library, id: string): "draft" | "open" | "lock" {
 
 export function cardTitle(d: LibraryDoc) {
   return d.card_json?.title ?? d.title;
+}
+
+// Rubriques de la barre latérale, dans cet ordre ; les autres à la suite.
+const SECTION_ORDER = ["Anesthésie", "Réanimation", "Urgences", "Obstétrique", "Pédiatrie"];
+
+export function groupBySection(docs: LibraryDoc[]) {
+  const groups = new Map<string, LibraryDoc[]>();
+  for (const d of docs) {
+    const section = d.card_json?.section ?? "Autres";
+    groups.set(section, [...(groups.get(section) ?? []), d]);
+  }
+  const rank = (s: string) => {
+    const i = SECTION_ORDER.indexOf(s);
+    return i < 0 ? (s === "Autres" ? 99 : 50) : i;
+  };
+  return [...groups.entries()].sort(([a], [b]) => rank(a) - rank(b) || a.localeCompare(b, "fr"));
 }

@@ -11,7 +11,7 @@ export default function MenuToggle() {
       >
         ☰
       </button>
-      Medical Guidelines
+      medical-guidelines.net
     </div>
   );
 }

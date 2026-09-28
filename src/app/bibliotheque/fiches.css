@@ -294,3 +294,54 @@ td.align-c, th.align-c{ text-align:center; }
 .watermark{ position:fixed; inset:-20%; z-index:30; pointer-events:none; user-select:none; display:flex; flex-wrap:wrap; align-content:flex-start; gap:90px 110px; padding:40px; transform:rotate(-24deg); font-family:var(--font-mono); font-size:0.72rem; color:rgb(11 59 84 / 0.07); overflow:hidden; }
 .rec-meta{ display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; margin-top:6px; font-size:0.74rem; color:var(--ink-faint); font-family:var(--font-mono); }
 .fiche-premium{ -webkit-user-select:none; user-select:none; }
+
+/* ============ Accordéon des fiches ============ */
+.acc-controls{ display:flex; gap:8px; justify-content:flex-end; margin:18px 0 6px; }
+details.acc{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); margin:10px 0; scroll-margin-top:16px; }
+details.acc > summary.acc__title{
+  list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:14px 18px; font-family:var(--font-display); font-weight:700; font-size:1.02rem; color:var(--ink);
+}
+details.acc > summary.acc__title::-webkit-details-marker{ display:none; }
+details.acc > summary.acc__title::after{
+  content:"+"; flex:none; width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  background:var(--surface-2); color:var(--accent-ink); font-family:var(--font-mono); font-size:1rem; transition:transform .15s ease;
+}
+details.acc[open] > summary.acc__title{ border-bottom:1px solid var(--border); }
+details.acc[open] > summary.acc__title::after{ content:"−"; }
+details.acc > summary.acc__title:hover{ background:var(--surface-2); border-radius:var(--radius); }
+.acc__body{ padding:6px 18px 12px; }
+.acc__body > .table-scroll:first-child, .acc__body > .panel:first-child{ margin-top:10px; }
+
+/* ============ Cartes compactes ============ */
+.doc-card__short{ display:-webkit-box; -webkit-line-clamp:3; line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.doc-card__meta{ justify-content:space-between; }
+.doc-card__society{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.doc-card__meta > span:last-child{ flex:none; }
+.doc-card__badge{ max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+/* ============ Barre latérale : logo, spécialité, rubriques ============ */
+.sidebar__brand--logo{ display:flex; align-items:center; gap:11px; text-decoration:none; }
+.sidebar__logo{ flex:none; background:#fff; border-radius:9px; padding:5px 6px; display:flex; }
+.sidebar__logo-mark{ height:22px; width:auto; display:block; }
+.sidebar__brand--logo .sidebar__mark{ display:block; font-size:0.86rem; letter-spacing:-0.02em; white-space:nowrap; }
+.sidebar__brand--logo{ padding-right:14px; }
+.sidebar__brand--logo > span:last-child{ min-width:0; }
+.sidebar__tld{ color:#6CC5F0; }
+.sidebar__specialty{
+  display:inline-block; margin-top:5px; font-family:var(--font-mono); font-size:0.64rem; font-weight:600;
+  letter-spacing:0.06em; text-transform:uppercase; color:#0B3B54; background:#9FD6DC; border-radius:5px; padding:2px 7px;
+}
+.nav-section{ margin-top:4px; }
+.nav-section__title{
+  list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:space-between; gap:8px;
+  padding:9px 10px; border-radius:8px; font-family:var(--font-mono); font-size:0.7rem; font-weight:600;
+  letter-spacing:0.08em; text-transform:uppercase; color:#B9D3D8;
+}
+.nav-section__title::-webkit-details-marker{ display:none; }
+.nav-section__title::before{ content:"▸"; margin-right:6px; transition:transform .15s ease; display:inline-block; }
+.nav-section[open] > .nav-section__title::before{ transform:rotate(90deg); }
+.nav-section__title:hover{ background:rgba(255,255,255,0.08); color:#fff; }
+.nav-section__count{ margin-left:auto; font-size:0.66rem; color:#8FBAC1; }
+.nav-link--sub{ font-size:0.8rem; padding:6px 10px 6px 24px; line-height:1.3; }
+.toc .nav-group__label{ padding:4px 8px 6px; }
