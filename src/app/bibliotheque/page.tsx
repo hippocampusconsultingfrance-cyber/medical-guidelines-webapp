@@ -61,10 +61,11 @@ export default async function BibliothequePage({
       <h1 className="mt-4 text-2xl font-semibold text-slate-900">Bibliothèque</h1>
 
       <p className="mt-2 text-sm text-slate-600">
-        {premium
-          ? "Abonnement PREMIUM : toutes les fiches de votre spécialité sont accessibles."
-          : `Compte gratuit : ${unlocked.size}/${FREE_QUOTA} fiches débloquées.`}
-        {isEditor && " Vue relecteur : les brouillons sont affichés."}
+        {isEditor
+          ? "Vue relecteur : toutes les fiches sont lisibles, brouillons compris."
+          : premium
+            ? "Abonnement PREMIUM : toutes les fiches de votre spécialité sont accessibles."
+            : `Compte gratuit : ${unlocked.size}/${FREE_QUOTA} fiches débloquées.`}
       </p>
 
       <form className="mt-6 flex gap-2" role="search">
