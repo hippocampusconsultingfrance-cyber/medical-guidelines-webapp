@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const PRINCIPES = [
   {
-    titre: "Lisible en 30 secondes",
+    titre: "Clair et structuré",
     texte:
       "Les recommandations sont présentées par thème, dans des tableaux clairs, chacune avec son grade tel qu'il figure dans la source.",
   },
