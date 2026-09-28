@@ -25,7 +25,22 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="flex-1">{children}</div>
+        <footer className="border-t border-slate-200 px-6 py-4 text-center text-xs text-slate-500">
+          <a href="/mentions-legales" className="hover:underline">
+            Mentions légales
+          </a>
+          {" · "}
+          <a href="/cgu" className="hover:underline">
+            CGU
+          </a>
+          {" · "}
+          <a href="/confidentialite" className="hover:underline">
+            Confidentialité
+          </a>
+        </footer>
+      </body>
     </html>
   );
 }
