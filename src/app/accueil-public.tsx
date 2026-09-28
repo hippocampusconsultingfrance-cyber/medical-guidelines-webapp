@@ -4,7 +4,7 @@ const PRINCIPES = [
   {
     titre: "Lisible en 30 secondes",
     texte:
-      "Chaque fiche commence par ses points clés : les recommandations majeures, avec leur grade, avant le détail par thème.",
+      "Les recommandations sont présentées par thème, dans des tableaux clairs, chacune avec son grade tel qu'il figure dans la source.",
   },
   {
     titre: "Toujours relié à la source",
@@ -24,7 +24,7 @@ const PRINCIPES = [
 ];
 
 const ETAPES = [
-  ["1", "Créez un compte gratuit", "Nom, e-mail, profession et spécialité ; vérification de l'e-mail par code."],
+  ["1", "Créez un compte gratuit", "Nom, e-mail et profession ; confirmation de l'adresse par un lien envoyé par e-mail."],
   ["2", "Choisissez vos fiches", "Le compte gratuit donne accès à 5 fiches gratuites au choix, consultables à vie, sans carte bancaire."],
   ["3", "Consultez sur ordinateur ou mobile", "Consultation en ligne uniquement, adaptée aux écrans de téléphone."],
 ];
