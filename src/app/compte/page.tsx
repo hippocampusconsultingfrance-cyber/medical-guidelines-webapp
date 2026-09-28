@@ -18,7 +18,7 @@ export default async function ComptePage() {
     supabase
       .from("profiles")
       .select(
-        "nom, prenom, telephone, profession, profession_autre, username, consent_partners",
+        "nom, prenom, telephone, profession, profession_autre, username, consent_partners, specialty:specialties(name_i18n)",
       )
       .eq("id", user.id)
       .single(),

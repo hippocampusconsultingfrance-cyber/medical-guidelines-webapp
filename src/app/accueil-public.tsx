@@ -24,7 +24,7 @@ const PRINCIPES = [
 ];
 
 const ETAPES = [
-  ["1", "Créez un compte gratuit", "Nom, e-mail et profession ; confirmation de l'adresse par un lien envoyé par e-mail."],
+  ["1", "Créez un compte gratuit", "Nom, e-mail, profession et spécialité à consulter ; confirmation de l'adresse par un lien envoyé par e-mail."],
   ["2", "Choisissez vos fiches", "Le compte gratuit donne accès à 5 fiches gratuites au choix, consultables à vie, sans carte bancaire."],
   ["3", "Consultez sur ordinateur ou mobile", "Consultation en ligne uniquement, adaptée aux écrans de téléphone."],
 ];

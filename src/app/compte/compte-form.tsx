@@ -12,6 +12,9 @@ type Profile = {
   profession_autre: string | null;
   username: string | null;
   consent_partners: boolean;
+  // Relation many-to-one : objet unique à l'exécution, typé tableau ou objet
+  // selon le client Supabase.
+  specialty?: { name_i18n: { fr?: string } | null } | { name_i18n: { fr?: string } | null }[] | null;
 };
 
 type Consent = {
@@ -147,6 +150,9 @@ export default function CompteForm({
     router.refresh();
   }
 
+  const spec = Array.isArray(profile.specialty) ? profile.specialty[0] : profile.specialty;
+  const specialtyName = spec?.name_i18n?.fr;
+
   return (
     <div className="mt-8 space-y-10">
       <section>
@@ -156,6 +162,7 @@ export default function CompteForm({
         <p className="mt-1 text-sm text-slate-600">
           Profession : {profile.profession}
           {profile.profession_autre ? ` (${profile.profession_autre})` : ""}
+          {specialtyName ? ` · Spécialité : ${specialtyName}` : ""}
           {profile.username ? ` · Identifiant : ${profile.username}` : ""}
         </p>
         <form onSubmit={handleSave} className="mt-4 space-y-4">
