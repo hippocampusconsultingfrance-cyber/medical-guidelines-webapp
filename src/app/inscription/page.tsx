@@ -1,10 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { PROFESSION_GROUPS } from "@/lib/professions";
+
+type SpecialtyRow = {
+  slug: string;
+  category: string;
+  is_other: boolean;
+  name_i18n: { fr?: string } | null;
+};
+type Specialty = { slug: string; category: string; isOther: boolean; name: string };
+
+const SPECIALTY_GROUPS = [
+  { category: "medicale", label: "Spécialités médicales" },
+  { category: "paramedicale", label: "Professions paramédicales" },
+];
 
 export default function InscriptionPage() {
   const router = useRouter();
@@ -14,6 +27,8 @@ export default function InscriptionPage() {
   const [email, setEmail] = useState("");
   const [profession, setProfession] = useState("");
   const [professionAutre, setProfessionAutre] = useState("");
+  const [specialty, setSpecialty] = useState("");
+  const [specialties, setSpecialties] = useState<Specialty[]>([]);
   const [consentService, setConsentService] = useState(false);
   const [consentPartners, setConsentPartners] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -25,6 +40,23 @@ export default function InscriptionPage() {
   const [resendMessage, setResendMessage] = useState<string | null>(null);
 
   const professionEstAutre = profession === "Autre";
+
+  // Liste des spécialités (table publique specialties), chargée une fois.
+  useEffect(() => {
+    createClient()
+      .from("specialties")
+      .select("slug, category, is_other, name_i18n")
+      .then(({ data }) => {
+        const list = ((data ?? []) as SpecialtyRow[]).map((s) => ({
+          slug: s.slug,
+          category: s.category,
+          isOther: s.is_other,
+          name: s.name_i18n?.fr ?? s.slug,
+        }));
+        list.sort((a, b) => Number(a.isOther) - Number(b.isOther) || a.name.localeCompare(b.name, "fr"));
+        setSpecialties(list);
+      });
+  }, []);
 
   async function sendOtp() {
     const supabase = createClient();
@@ -39,6 +71,7 @@ export default function InscriptionPage() {
           telephone,
           profession,
           profession_autre: professionEstAutre ? professionAutre.trim() : null,
+          specialty_slug: specialty,
           consent_service: true,
           consent_partners: consentPartners,
         },
@@ -278,6 +311,39 @@ export default function InscriptionPage() {
           </div>
         )}
 
+        <div>
+          <label htmlFor="specialite" className="block text-sm font-medium text-slate-700">
+            Spécialité que vous souhaitez consulter
+          </label>
+          <select
+            id="specialite"
+            required
+            value={specialty}
+            onChange={(e) => setSpecialty(e.target.value)}
+            aria-describedby="specialite-aide"
+            className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+          >
+            <option value="" disabled>
+              {specialties.length ? "Sélectionnez une spécialité" : "Chargement…"}
+            </option>
+            {SPECIALTY_GROUPS.map((g) => (
+              <optgroup key={g.category} label={g.label}>
+                {specialties
+                  .filter((s) => s.category === g.category)
+                  .map((s) => (
+                    <option key={s.slug} value={s.slug}>
+                      {s.name}
+                    </option>
+                  ))}
+              </optgroup>
+            ))}
+          </select>
+          <p id="specialite-aide" className="mt-1 text-xs text-slate-500">
+            Votre compte donne accès aux fiches de cette spécialité. Pour en
+            changer plus tard, contactez-nous.
+          </p>
+        </div>
+
         <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-4">
           <label className="flex items-start gap-3 text-sm text-slate-700">
             <input
@@ -300,7 +366,7 @@ export default function InscriptionPage() {
               >
                 Politique de Confidentialité
               </Link>
-              . Mes données (nom, prénom, téléphone, email, profession) sont
+              . Mes données (nom, prénom, téléphone, email, profession, spécialité) sont
               traitées pour créer et sécuriser mon compte.{" "}
               <em>Obligatoire.</em>
             </span>

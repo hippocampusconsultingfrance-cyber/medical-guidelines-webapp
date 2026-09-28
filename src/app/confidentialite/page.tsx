@@ -47,7 +47,7 @@ export default function ConfidentialitePage() {
         2. Données collectées
       </h2>
       <p className="mt-2">À l&apos;inscription : nom, prénom, numéro de téléphone, adresse
-        email, profession (et spécialité si &laquo;&nbsp;Autre&nbsp;&raquo;),
+        email, profession (précisée si &laquo;&nbsp;Autre&nbsp;&raquo;), spécialité consultée,
         puis un identifiant et un mot de passe (stocké de façon chiffrée,
         jamais en clair) lors de la finalisation du compte.
       </p>
