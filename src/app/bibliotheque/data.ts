@@ -7,6 +7,7 @@ export type LibraryDoc = {
   doc_type: string | null;
   publication_date: string | null;
   card_json: Card | null;
+  published_at: string | null;
 };
 
 // Tout ce qu'affichent la barre latérale et le catalogue. Les droits sont
@@ -17,7 +18,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     await Promise.all([
       supabase
         .from("documents")
-        .select("id, title, doc_type, publication_date, card_json")
+        .select("id, title, doc_type, publication_date, card_json, published_at")
         .order("publication_date", { ascending: false, nullsFirst: false })
         .order("title"),
       supabase.from("document_unlocks").select("document_id"),
@@ -35,6 +36,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
         .filter((s) => s.active > 0)
         .map((s) => s.document_id),
     );
+    for (const d of (documents ?? []) as LibraryDoc[]) if (d.published_at) published.add(d.id);
   }
 
   return {

@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
 import { cardTitle, docState, loadLibrary } from "./data";
 import Shell from "./shell";
+import { publishAll } from "./[id]/actions";
 
 export const metadata: Metadata = {
   title: "Bibliothèque — Medical Guidelines",
@@ -36,6 +37,16 @@ export default async function BibliothequePage({
       )
     : lib.docs;
 
+  const r = (await searchParams).r;
+  const notice =
+    typeof r === "string" && r.startsWith("toutes_publiees_")
+      ? `${r.slice(16)} fiche(s) mise(s) en ligne : elles sont visibles, bloquées, par les membres de leur spécialité.`
+      : r === "confirmation_requise"
+        ? "Cochez la case de confirmation avant de mettre les fiches en ligne."
+        : r === "publication_erreur"
+          ? "La mise en ligne n'a pas abouti (droits d'administrateur requis)."
+          : null;
+  const drafts = lib.isEditor ? lib.docs.filter((d) => !lib.published.has(d.id)).length : 0;
   const used = lib.unlocked.size;
   const remaining = Math.max(FREE_QUOTA - used, 0);
 
@@ -76,6 +87,28 @@ export default async function BibliothequePage({
           </>
         )}
       </div>
+
+      {notice && (
+        <div className="credit-strip" role="status">
+          <b>{notice}</b>
+        </div>
+      )}
+      {lib.canPublish && drafts > 0 && (
+        <form action={publishAll} className="unlock-box" style={{ marginTop: 18 }}>
+          <h2>Mettre les fiches en ligne</h2>
+          <p>
+            <b>{drafts}</b> fiche{drafts > 1 ? "s" : ""} en brouillon. Une fois en ligne, les
+            membres de la spécialité les voient bloquées : 5 crédits pour un compte
+            gratuit, tout ouvert pour PREMIUM. Vous pourrez dépublier une fiche à tout
+            moment depuis sa page.
+          </p>
+          <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem", margin: "4px 0 12px" }}>
+            <input type="checkbox" name="confirme" value="1" required style={{ marginTop: 3 }} />
+            <span>Je valide la mise en ligne de toutes les fiches mises en page.</span>
+          </label>
+          <button className="btn btn-primary">Mettre toutes les fiches en ligne</button>
+        </form>
+      )}
 
       <form className="lib-toolbar" role="search" style={{ marginTop: 22 }}>
         <label className="lib-search">

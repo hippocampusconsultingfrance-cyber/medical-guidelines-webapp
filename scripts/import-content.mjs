@@ -38,7 +38,9 @@ const files = readdirSync(dir)
   .filter((f) => f.endsWith(".sql"))
   .map((name) => {
     const sql = readFileSync(join(dir, name), "utf8");
-    const isDocument = sql.includes("insert into public.documents");
+    // Scripts de documents : 00xx_*.sql ; les autres (0100, 0200…) sont des
+    // compléments (mise en page, fiches de l'atelier), exécutés après.
+    const isDocument = /^00\d{2}_/.test(name) && sql.includes("insert into public.documents");
     return { name, isDocument, date: publicationDate(sql), direct: publishesDirectly(sql) };
   });
 

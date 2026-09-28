@@ -32,3 +32,12 @@ export async function setPublication(formData: FormData) {
   const status = error ? "publication_erreur" : publier ? "publiee" : "depubliee";
   redirect(`/bibliotheque/${id}?r=${status}`);
 }
+
+// Mise en ligne de toutes les fiches mises en page (administrateur,
+// vérifié par la base).
+export async function publishAll(formData: FormData) {
+  if (formData.get("confirme") !== "1") redirect("/bibliotheque?r=confirmation_requise");
+  const supabase = await createClient();
+  const { data, error } = await supabase.rpc("publish_all_documents");
+  redirect(`/bibliotheque?r=${error ? "publication_erreur" : `toutes_publiees_${Number(data ?? 0)}`}`);
+}
