@@ -92,7 +92,7 @@ export default async function BibliothequePage({
         <div className="lib-empty">
           {query
             ? "Aucune fiche ne correspond à cette recherche."
-            : "Aucune fiche n'est encore publiée. Les fiches seront disponibles ici au fil de leur validation."}
+            : "Aucune fiche n'est encore publiée pour votre spécialité. Elles apparaîtront ici au fil de leur validation par notre équipe médicale."}
         </div>
       ) : (
         <div className="doc-grid">

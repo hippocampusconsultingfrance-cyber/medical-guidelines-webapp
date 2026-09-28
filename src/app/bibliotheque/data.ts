@@ -25,14 +25,16 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
       supabase.from("profiles").select("editorial_role").eq("id", userId).single(),
     ]);
 
-  const isEditor = Boolean(profile?.editorial_role);
+  const role = (profile?.editorial_role as string | null) ?? null;
+  const isEditor = Boolean(role);
   let published = new Set<string>();
   if (isEditor) {
-    const { data: active } = await supabase
-      .from("recommendations")
-      .select("document_id")
-      .eq("status", "active");
-    published = new Set((active ?? []).map((r) => r.document_id as string));
+    const { data: status } = await supabase.rpc("document_publication_status");
+    published = new Set(
+      ((status ?? []) as { document_id: string; active: number }[])
+        .filter((s) => s.active > 0)
+        .map((s) => s.document_id),
+    );
   }
 
   return {
@@ -40,6 +42,8 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     unlocked: new Set((unlocks ?? []).map((u) => u.document_id as string)),
     premium: Boolean(premium),
     isEditor,
+    // Publication réservée aux validateurs et administrateurs.
+    canPublish: role === "validateur" || role === "admin",
     published,
   };
 }

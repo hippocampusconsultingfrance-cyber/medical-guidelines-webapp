@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import LogoutButton from "./logout-button";
 import AccueilPublic from "./accueil-public";
+import Logo from "./logo";
 
 export const metadata: Metadata = {
   title: "medical-guidelines.net — Recommandations médicales et paramédicales en fiches",
@@ -31,12 +32,18 @@ export default async function Home() {
     redirect("/finaliser-compte");
   }
 
+  // Bascule automatique : dès qu'au moins une fiche est publiée pour la
+  // spécialité du membre, la nouvelle bibliothèque devient l'accès principal
+  // (les relecteurs y voient aussi les brouillons).
+  const { count: visibles } = await supabase
+    .from("documents")
+    .select("id", { count: "exact", head: true });
+  const bibliotheque = Boolean(profile?.editorial_role) || (visibles ?? 0) > 0;
+
   return (
-    <div className="mx-auto min-h-screen max-w-3xl px-6 py-16">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold text-slate-900">
-          Medical Guidelines
-        </h1>
+    <div className="mx-auto min-h-screen max-w-3xl px-6 py-10">
+      <div className="flex items-center justify-between gap-3">
+        <Logo />
         <div className="flex items-center gap-3">
           <Link
             href="/compte"
@@ -47,21 +54,32 @@ export default async function Home() {
           <LogoutButton />
         </div>
       </div>
-      <p className="mt-4 text-slate-600">
-        Bienvenue{profile ? `, ${profile.prenom}` : ""}
-        {profile?.profession ? ` (${profile.profession})` : ""}.
-      </p>
-      <a
-        href="/fiches/index.html"
-        className="mt-8 inline-block rounded-md bg-teal-700 px-5 py-3 text-sm font-medium text-white hover:bg-teal-800"
-      >
-        Accéder aux fiches de synthèse →
-      </a>
+      <h1 className="mt-10 text-2xl font-bold text-[#0E3A78]">
+        Bienvenue{profile?.prenom ? `, ${profile.prenom}` : ""}
+      </h1>
+      {profile?.profession && <p className="mt-1 text-slate-600">{profile.profession}</p>}
+      {bibliotheque ? (
+        <Link
+          href="/bibliotheque"
+          className="mt-8 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+        >
+          Accéder à la bibliothèque des fiches →
+        </Link>
+      ) : (
+        <a
+          href="/fiches/index.html"
+          className="mt-8 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+        >
+          Accéder aux fiches de synthèse →
+        </a>
+      )}
       {profile?.editorial_role && (
-        <p className="mt-4 text-sm">
-          <Link href="/bibliotheque" className="text-teal-700 underline">
-            Nouvelle bibliothèque (aperçu relecteur, brouillons compris)
-          </Link>
+        <p className="mt-4 text-sm text-slate-600">
+          Compte relecteur : la bibliothèque affiche aussi les brouillons, avec
+          le bouton de publication.{" "}
+          <a href="/fiches/index.html" className="text-[#1C7FB6] underline">
+            Ancienne page des fiches
+          </a>
         </p>
       )}
     </div>

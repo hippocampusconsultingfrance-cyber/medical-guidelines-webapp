@@ -13,7 +13,7 @@ import {
 } from "@/lib/fiches";
 import { cardTitle, loadLibrary } from "../data";
 import Shell from "../shell";
-import { unlockDocument } from "./actions";
+import { setPublication, unlockDocument } from "./actions";
 
 export const metadata: Metadata = {
   title: "Fiche — Medical Guidelines",
@@ -25,6 +25,10 @@ const MESSAGES: Record<string, string> = {
   quota_atteint: `Vous avez utilisé vos ${FREE_QUOTA} crédits. L'abonnement PREMIUM ouvre toutes les fiches de votre spécialité.`,
   indisponible: "Cette fiche n'est pas disponible pour votre compte.",
   erreur: "Le déblocage n'a pas abouti. Réessayez dans un instant.",
+  publiee: "Fiche publiée : elle est maintenant visible par les membres de sa spécialité.",
+  depubliee: "Fiche dépubliée : elle n'est plus visible par les membres.",
+  confirmation_requise: "Cochez la case de relecture avant de publier.",
+  publication_erreur: "La publication n'a pas abouti (droits de validateur requis).",
 };
 
 type Recommendation = {
@@ -161,6 +165,47 @@ export default async function FichePage({
           ))}
         </div>
         {header}
+        {lib.isEditor && (
+          <div className="unlock-box" style={{ marginTop: 18, marginBottom: 10 }}>
+            {message && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
+            {lib.published.has(id) ? (
+              <>
+                <p>
+                  <span className="state-pill state-open">Publiée</span> Visible par
+                  les membres de la spécialité (5 crédits gratuits ou PREMIUM).
+                </p>
+                {lib.canPublish && (
+                  <form action={setPublication}>
+                    <input type="hidden" name="id" value={id} />
+                    <input type="hidden" name="publier" value="0" />
+                    <button className="btn btn-ghost">Dépublier cette fiche</button>
+                  </form>
+                )}
+              </>
+            ) : (
+              <>
+                <p>
+                  <span className="state-pill state-draft">Brouillon</span> Invisible
+                  pour les membres tant qu&apos;elle n&apos;est pas publiée.
+                </p>
+                {lib.canPublish && (
+                  <form action={setPublication}>
+                    <input type="hidden" name="id" value={id} />
+                    <input type="hidden" name="publier" value="1" />
+                    <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem", margin: "4px 0 12px" }}>
+                      <input type="checkbox" name="confirme" value="1" required style={{ marginTop: 3 }} />
+                      <span>
+                        J&apos;ai relu cette fiche : source officielle, date, grades et
+                        contenu vérifiés.
+                      </span>
+                    </label>
+                    <button className="btn btn-primary">Publier cette fiche</button>
+                  </form>
+                )}
+              </>
+            )}
+          </div>
+        )}
         <div dangerouslySetInnerHTML={{ __html: body }} />
         <p className="block-p is-note" style={{ marginTop: 40 }}>
           Synthèse indépendante : elle ne remplace pas le texte intégral de la
