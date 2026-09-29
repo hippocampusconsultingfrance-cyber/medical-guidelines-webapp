@@ -1,17 +1,30 @@
 -- Noms complets des sociétés savantes, affichés au survol des sigles
 -- (espace membre, bibliothèque) et en clair sur la page d'une fiche.
 --
--- Seuls les noms connus avec certitude sont renseignés ; un nom déjà saisi
--- n'est jamais remplacé (full_name is null). Sigles laissés sans nom, faute
--- de certitude sur le développé ou parce que le sigle est ambigu, à
--- compléter par l'équipe éditoriale lors de la validation (schema_v2 §3) :
---   ACHBPT, ANAP, ANARLF, ARMPO, CARORL, CERES, CNCRH, CORASSO, EVG, FHS,
---   SFB, SFN, SFNCL, SFPP, SFRI, SFT, SFVTT, SIZ.
+-- Seuls les noms vérifiés sont renseignés ; un nom déjà saisi n'est jamais
+-- remplacé (full_name is null). Sigles laissés sans nom, faute de source
+-- sûre, à compléter par l'équipe éditoriale (schema_v2 §3) : SFPP, SFRI.
 -- Idempotent.
 
 update public.societies s
    set full_name = v.full_name
   from (values
+    ('ACHBPT', 'Association de chirurgie hépato-bilio-pancréatique et transplantation'),
+    ('ANAP', 'Agence nationale d''appui à la performance des établissements de santé et médico-sociaux'),
+    ('ANARLF', 'Association des neuro-anesthésistes réanimateurs de langue française'),
+    ('ARMPO', 'Conseil national professionnel d''anesthésie-réanimation et médecine péri-opératoire'),
+    ('CARORL', 'Club d''anesthésie-réanimation en ORL'),
+    ('CERES', 'Collectif écoresponsabilité en santé'),
+    ('CNCRH', 'Conférence nationale des coordonnateurs régionaux d''hémovigilance'),
+    ('CORASSO', 'Corasso, association de patients atteints de cancers de la tête et du cou'),
+    ('EVG', 'École du Val-de-Grâce'),
+    ('FHS', 'Groupe Facteurs humains en santé'),
+    ('SFB', 'Société française de brûlologie'),
+    ('SFN', 'Société française de néonatalogie'),
+    ('SFNCL', 'Société française des neurochirurgiens libéraux'),
+    ('SFT', 'Société francophone de tabacologie'),
+    ('SFVTT', 'Société française de vigilance et de thérapeutique transfusionnelle'),
+    ('SIZ', 'Société belge de soins intensifs'),
     ('ABM', 'Agence de la biomédecine'),
     ('ADARPEF', 'Association des anesthésistes-réanimateurs pédiatriques d''expression française'),
     ('AFC', 'Association française de chirurgie'),
