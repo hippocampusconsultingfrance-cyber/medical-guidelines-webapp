@@ -15,7 +15,7 @@ import {
 import { cardTitle, FRESHNESS_LABEL, loadLibrary } from "../data";
 import AccordionControls from "../accordion-controls";
 import Shell from "../shell";
-import { reportError, setPublication, toggleFavorite, unlockDocument } from "./actions";
+import { reportError, setFreshness, setPublication, toggleFavorite, unlockDocument } from "./actions";
 
 export const metadata: Metadata = {
   title: "Fiche — Medical Guidelines",
@@ -34,6 +34,29 @@ const MESSAGES: Record<string, string> = {
   signalement_envoye: "Merci : votre signalement a été envoyé. Il sera examiné avant toute correction.",
   signalement_vide: "Décrivez l'erreur en quelques mots avant d'envoyer.",
   signalement_erreur: "Le signalement n'a pas pu être envoyé. Réessayez dans un instant.",
+  veille_ok: "Statut de la fiche enregistré.",
+  veille_version: "Nouvelle version enregistrée, statut de la fiche mis à jour.",
+  veille_invalide: "Formulaire incomplet : vérifiez le statut et le type de version.",
+  veille_remplacement: "Choisissez la fiche qui remplace celle-ci.",
+  veille_retrait: "Cochez la case de confirmation pour retirer la fiche.",
+  veille_version_existe: "Cette version est déjà enregistrée pour cette fiche.",
+  veille_erreur: "L'enregistrement n'a pas abouti (droits de validateur requis).",
+};
+
+const FRESHNESS_OPTIONS: [string, string][] = [
+  ["a_jour", "À jour"],
+  ["revision_detectee", "Révision détectée : nouvelle version en cours d'analyse"],
+  ["remplacee", "Remplacée par une autre fiche"],
+  ["retiree", "Retirée : invisible pour les membres"],
+];
+
+type Version = {
+  id: string;
+  version_label: string;
+  change_type: string;
+  diff_summary: string | null;
+  detected_at: string;
+  published_at: string | null;
 };
 
 const FRESHNESS_NOTICE: Record<string, string> = {
@@ -76,6 +99,13 @@ export default async function FichePage({
     .eq("id", id)
     .single();
   const { data: canRead } = await supabase.rpc("can_read_document", { doc_id: id });
+  const { data: versions } = lib.canPublish
+    ? await supabase
+        .from("document_versions")
+        .select("id, version_label, change_type, diff_summary, detected_at, published_at")
+        .eq("document_id", id)
+        .order("detected_at", { ascending: false })
+    : { data: null };
   const r = (await searchParams).r;
   const message = typeof r === "string" ? MESSAGES[r] : undefined;
 
@@ -216,7 +246,9 @@ export default async function FichePage({
         {header}
         {lib.isEditor && (
           <div className="unlock-box" style={{ marginTop: 18, marginBottom: 10 }}>
-            {message && !String(r).startsWith("signalement") && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
+            {message && !String(r).startsWith("signalement") && !String(r).startsWith("veille") && (
+              <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>
+            )}
             {lib.published.has(id) ? (
               <>
                 <p>
@@ -252,6 +284,89 @@ export default async function FichePage({
                   </form>
                 )}
               </>
+            )}
+            {lib.canPublish && (
+              <details id="veille" open={typeof r === "string" && r.startsWith("veille")} style={{ marginTop: 16 }}>
+                <summary style={{ cursor: "pointer", fontWeight: 700 }}>
+                  Veille : nouvelle version ou changement de statut
+                </summary>
+                {typeof r === "string" && r.startsWith("veille") && message && (
+                  <p style={{ color: "var(--ink)", fontWeight: 600, marginTop: 12 }}>{message}</p>
+                )}
+                <form action={setFreshness} style={{ marginTop: 12 }}>
+                  <input type="hidden" name="id" value={id} />
+                  <div className="field">
+                    <label htmlFor="vf-statut">Statut de la fiche</label>
+                    <select id="vf-statut" name="statut" defaultValue={doc.freshness_status ?? "a_jour"}>
+                      {FRESHNESS_OPTIONS.map(([v, l]) => (
+                        <option key={v} value={v}>
+                          {l}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="field">
+                    <label htmlFor="vf-remplacee">Remplacée par (si « Remplacée »)</label>
+                    <select id="vf-remplacee" name="remplacee_par" defaultValue={extra?.superseded_by_document_id ?? ""}>
+                      <option value="">—</option>
+                      {lib.docs
+                        .filter((d) => d.id !== id)
+                        .map((d) => (
+                          <option key={d.id} value={d.id}>
+                            {cardTitle(d)}
+                            {d.publication_date ? ` (${d.publication_date.slice(0, 4)})` : ""}
+                          </option>
+                        ))}
+                    </select>
+                  </div>
+                  <fieldset style={{ border: "1px solid var(--border)", borderRadius: 8, padding: "10px 14px", margin: "8px 0 12px" }}>
+                    <legend style={{ fontSize: "0.86rem", fontWeight: 700 }}>Nouvelle version de la source (facultatif)</legend>
+                    <div className="field">
+                      <label htmlFor="vf-version">Version (ex. « RFE 2026 », « mise à jour mars 2026 »)</label>
+                      <input id="vf-version" name="version" maxLength={100} />
+                    </div>
+                    <div className="field">
+                      <label htmlFor="vf-type">Type de changement</label>
+                      <select id="vf-type" name="type" defaultValue="majeure">
+                        <option value="majeure">Majeure (recommandations modifiées)</option>
+                        <option value="mineure">Mineure (forme, précisions)</option>
+                      </select>
+                    </div>
+                    <div className="field">
+                      <label htmlFor="vf-resume">Ce qui change (affiché aux membres)</label>
+                      <textarea id="vf-resume" name="resume" maxLength={2000} />
+                    </div>
+                    <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem" }}>
+                      <input type="checkbox" name="publier_version" value="1" style={{ marginTop: 3 }} />
+                      <span>
+                        Publier cette version : les membres qui suivent la fiche
+                        (débloquée, favorite ou consultée) sont prévenus.
+                      </span>
+                    </label>
+                  </fieldset>
+                  <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem", margin: "4px 0 12px" }}>
+                    <input type="checkbox" name="confirme_retrait" value="1" style={{ marginTop: 3 }} />
+                    <span>Si « Retirée » : je confirme que la fiche doit disparaître pour les membres.</span>
+                  </label>
+                  <button className="btn btn-primary">Enregistrer</button>
+                </form>
+                {versions && versions.length > 0 && (
+                  <div style={{ marginTop: 16, fontSize: "0.86rem" }}>
+                    <b>Versions enregistrées</b>
+                    <ul style={{ margin: "6px 0 0", paddingLeft: 18 }}>
+                      {(versions as Version[]).map((v) => (
+                        <li key={v.id}>
+                          {v.version_label} — {v.change_type}
+                          {v.published_at
+                            ? `, publiée le ${new Date(v.published_at).toLocaleDateString("fr-FR", { timeZone: "Europe/Paris" })}`
+                            : ", non publiée"}
+                          {v.diff_summary ? ` : ${v.diff_summary}` : ""}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </details>
             )}
           </div>
         )}
