@@ -100,3 +100,55 @@ export async function decideReport(formData: FormData) {
     .eq("id", id);
   redirect("/bibliotheque/signalements");
 }
+
+const FRESHNESS = ["a_jour", "revision_detectee", "remplacee", "retiree"];
+
+// Veille (cahier des charges §5.4 et §7.3) : statut de fraîcheur de la fiche
+// et, s'il y a lieu, enregistrement d'une nouvelle version de la
+// recommandation source. Droits vérifiés par la base (RLS : validateur ou
+// administrateur pour la fiche, relecteur ou plus pour les versions). Une
+// version publiée déclenche les alertes aux membres qui suivent la fiche.
+export async function setFreshness(formData: FormData) {
+  const id = String(formData.get("id") ?? "");
+  if (!UUID.test(id)) redirect("/bibliotheque");
+  const back = (r: string) => redirect(`/bibliotheque/${id}?r=${r}#veille`);
+
+  const status = String(formData.get("statut") ?? "");
+  const replacement = String(formData.get("remplacee_par") ?? "");
+  const label = String(formData.get("version") ?? "").trim().slice(0, 100);
+  const changeType = String(formData.get("type") ?? "");
+  const summary = String(formData.get("resume") ?? "").trim().slice(0, 2000) || null;
+  const publishVersion = formData.get("publier_version") === "1";
+  if (!FRESHNESS.includes(status)) back("veille_invalide");
+  if (status === "remplacee" && (!UUID.test(replacement) || replacement === id)) back("veille_remplacement");
+  if (label && !["majeure", "mineure"].includes(changeType)) back("veille_invalide");
+  if (status === "retiree" && formData.get("confirme_retrait") !== "1") back("veille_retrait");
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/connexion");
+
+  if (label) {
+    const { error } = await supabase.from("document_versions").insert({
+      document_id: id,
+      version_label: label,
+      change_type: changeType,
+      diff_summary: summary,
+      published_at: publishVersion ? new Date().toISOString() : null,
+      created_by: user.id,
+    });
+    if (error) back(error.code === "23505" ? "veille_version_existe" : "veille_erreur");
+  }
+
+  const { data, error } = await supabase
+    .from("documents")
+    .update({
+      freshness_status: status,
+      superseded_by_document_id: status === "remplacee" ? replacement : null,
+    })
+    .eq("id", id)
+    .select("id");
+  back(error || !data?.length ? "veille_erreur" : label ? "veille_version" : "veille_ok");
+}
