@@ -3,7 +3,7 @@
 Le site encaisse aujourd'hui en **mode test** : aucun débit réel, et le
 bouton « Payer » n'est proposé qu'à l'équipe éditoriale (les membres voient
 « Les abonnements ouvrent bientôt »). Le passage au réel se fait en changeant
-quatre variables dans Vercel. Le médiateur (CM2C) étant renseigné, la vente
+cinq variables dans Vercel. Le médiateur (CM2C) étant renseigné, la vente
 s'ouvre à tous dès que les clés réelles sont en place : ne les mettre
 qu'après les réglages Stripe (partie B). La relecture juridique (A1) est
 faite.
@@ -60,6 +60,19 @@ quelques centaines d'euros par an selon l'organisme.
 ## B. Stripe en mode réel (Vous, dans le tableau de bord Stripe)
 
 Basculer le tableau de bord sur **mode réel** : interrupteur « Mode test » en
+
+> **Compte partagé.** Le compte Stripe « HIPPOCAMPUS CONSULTING » sert
+> aussi à d'autres activités (rendez-vous drahmedbenlallahom.com, site
+> manus.space). Le site n'utilise donc que des objets marqués
+> `app = medical-guidelines` : il refuse tout autre code promotionnel et
+> ignore les paiements et abonnements des autres activités. Les réglages
+> de compte (B1 à B3 : identité, e-mails, modèle de facture) sont communs
+> à toutes les activités ; le libellé bancaire est porté par le produit
+> (« MEDICAL-GUIDELINES »).
+>
+> ⚠ Le code `MANUS100OFFKAZ` (−99 % à vie, sans restriction de produit)
+> est actif sur ce compte : s'il s'agissait d'un essai, le désactiver
+> (Catalogue de produits → Coupons).
 haut à droite, désactivé.
 
 - [ ] **B1. Activer le compte** (Paramètres → Détails de l'entreprise) :
@@ -79,12 +92,15 @@ haut à droite, désactivé.
       comportement fiscal « TVA incluse ». Copier l'identifiant du prix
       (`price_…`).
 - [ ] **B5. Code FONDATEURS** : Catalogue de produits → Coupons → Nouveau
-      coupon : **30 %**, durée **une fois**. Puis sur ce coupon, ajouter un
-      code promotionnel `FONDATEURS`, limité à **100** utilisations.
-- [ ] **B6. Portail client** (Paramètres → Facturation → Portail client) :
-      activer l'historique des factures, la mise à jour du moyen de paiement
-      et la **résiliation en fin de période**. Pas de changement d'offre.
-      Enregistrer.
+      coupon : **30 %**, durée **une fois**, limité au produit PREMIUM,
+      métadonnée `app` = `medical-guidelines` (sans elle, le site refuse le
+      code). Puis sur ce coupon, ajouter un code promotionnel `FONDATEURS`,
+      limité à **100** utilisations. Même principe pour les codes étudiants.
+- [ ] **B6. Portail client** : une configuration propre au site (créée par
+      API, sans toucher à celle par défaut des autres activités) :
+      historique des factures, mise à jour du moyen de paiement,
+      **résiliation en fin de période**, pas de changement d'offre. Son
+      identifiant `bpc_…` va dans `STRIPE_PORTAL_CONFIG_ID`.
 - [ ] **B7. Webhook** (Développeurs → Webhooks → Ajouter un point de
       terminaison) :
       - URL : `https://www.medical-guidelines.net/api/stripe/webhook`
@@ -116,6 +132,7 @@ haut à droite, désactivé.
    | `STRIPE_PRICE_ID` | `price_…` réel (B4) |
    | `STRIPE_WEBHOOK_SECRET` | `whsec_…` réel (B7) |
    | `STRIPE_TAX_RATE_ID` | `txr_…` réel (B8) |
+   | `STRIPE_PORTAL_CONFIG_ID` | `bpc_…` (B6) |
 
    Garder les valeurs de test pour « Preview », afin que les essais restent
    gratuits. Puis Deployments → dernier déploiement → ⋯ → **Redeploy**.
@@ -175,4 +192,6 @@ haut à droite, désactivé.
 | Clé réelle, médiateur non renseigné | Vente fermée à tous. |
 | Clé réelle et médiateur renseigné | Vente ouverte. |
 | Client Stripe créé en test, paiement en réel | Nouveau client créé automatiquement, sans erreur. |
+| Code promotionnel d'une autre activité | Refusé : seuls les coupons marqués `app = medical-guidelines` sont acceptés (saisie sur le site). |
+| Paiement ou abonnement d'une autre activité reçu par le webhook | Ignoré (réponse 200, rien n'est écrit). |
 | Page `/abonnement/verification` | Contrôle en lecture seule : compte, prix, webhook, portail, code FONDATEURS, TVA 20 % incluse, médiateur. |

@@ -9,6 +9,8 @@ import { mediateurRenseigne } from "./legal";
 //   STRIPE_TAX_RATE_ID     taux de TVA fixe (txr_…) : TVA française 20 %,
 //                          incluse dans le prix (régime retenu avec
 //                          l'expert-comptable) ; figure sur les factures
+//   STRIPE_PORTAL_CONFIG_ID configuration du portail client (bpc_…) propre
+//                          au site ; sinon, celle par défaut du compte
 //   STRIPE_TAX             « 1 » pour laisser Stripe Tax calculer la TVA à la
 //                          place du taux fixe (service payant de Stripe)
 // Tant que la clé ou le prix manquent, les abonnements sont affichés
@@ -73,4 +75,34 @@ export function periodEnd(sub: Stripe.Subscription): string | null {
   const legacy = (sub as unknown as { current_period_end?: number }).current_period_end;
   const ts = item?.current_period_end ?? legacy;
   return ts ? new Date(ts * 1000).toISOString() : null;
+}
+
+// Le compte Stripe (Hippocampus Consulting) sert aussi à d'autres activités :
+// seuls les objets marqués metadata.app = APP concernent ce site (codes
+// promotionnels acceptés, abonnements enregistrés par le webhook).
+export const APP = "medical-guidelines";
+
+// Code promotionnel saisi par le membre : accepté seulement s'il existe,
+// est actif et que son coupon est marqué pour ce site. Renvoie son id.
+export async function promotionCodeFor(code: string): Promise<string | null> {
+  const clean = code.trim().toUpperCase().replace(/[^A-Z0-9_-]/g, "").slice(0, 40);
+  if (!clean) return null;
+  const list = await getStripe().promotionCodes.list({
+    code: clean,
+    active: true,
+    limit: 1,
+    expand: ["data.promotion.coupon"],
+  });
+  const pc = list.data[0];
+  const coupon = pc?.promotion?.coupon;
+  if (!pc || !coupon || typeof coupon === "string") return null;
+  return coupon.valid && coupon.metadata?.app === APP ? pc.id : null;
+}
+
+// L'abonnement Stripe a-t-il été souscrit sur ce site ? (métadonnées posées
+// par startCheckout, ou prix PREMIUM du site)
+export function isOwnSubscription(sub: Stripe.Subscription) {
+  if (sub.metadata?.app === APP || sub.metadata?.cgv_version) return true;
+  const price = process.env.STRIPE_PRICE_ID;
+  return Boolean(price && sub.items?.data?.some((i) => i.price?.id === price));
 }

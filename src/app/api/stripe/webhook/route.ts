@@ -1,10 +1,12 @@
 import type Stripe from "stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { getStripe, periodEnd, toDbStatus } from "@/lib/stripe";
+import { APP, getStripe, isOwnSubscription, periodEnd, toDbStatus } from "@/lib/stripe";
 
 // Notifications Stripe (paiement, renouvellement, résiliation). Seule source
 // d'écriture des abonnements : la signature Stripe authentifie l'appel, puis
 // la ligne du membre est créée ou mise à jour avec la clé service_role.
+// Le compte Stripe sert aussi à d'autres activités : leurs paiements et
+// abonnements sont ignorés (réponse 200, rien n'est écrit).
 export async function POST(request: Request) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
   const signature = request.headers.get("stripe-signature");
@@ -23,7 +25,8 @@ export async function POST(request: Request) {
   try {
     if (event.type === "checkout.session.completed") {
       const session = event.data.object;
-      if (session.mode === "subscription" && typeof session.subscription === "string") {
+      const ours = session.metadata?.app === APP || Boolean(session.metadata?.cgv_version);
+      if (ours && session.mode === "subscription" && typeof session.subscription === "string") {
         const sub = await stripe.subscriptions.retrieve(session.subscription);
         await saveSubscription(sub, session.client_reference_id);
       }
@@ -32,7 +35,7 @@ export async function POST(request: Request) {
       event.type === "customer.subscription.updated" ||
       event.type === "customer.subscription.deleted"
     ) {
-      await saveSubscription(event.data.object, null);
+      if (isOwnSubscription(event.data.object)) await saveSubscription(event.data.object, null);
     }
   } catch (e) {
     console.error("Webhook Stripe", event.type, e);

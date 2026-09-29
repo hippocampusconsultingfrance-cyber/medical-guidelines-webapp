@@ -4,7 +4,7 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { isEditorialAccount } from "@/lib/roles";
-import { CGV_VERSION, checkoutOpen, getStripe, stripeEnabled } from "@/lib/stripe";
+import { APP, CGV_VERSION, checkoutOpen, getStripe, promotionCodeFor, stripeEnabled } from "@/lib/stripe";
 
 // Client Stripe déjà connu, s'il existe dans le mode courant : un client
 // créé en mode test n'existe pas en mode réel (et inversement).
@@ -29,8 +29,8 @@ async function origin() {
 // (CGV ; exécution immédiate et renonciation au droit de rétractation) sont
 // obligatoires ; leur date et la version des CGV suivent l'abonnement
 // (métadonnées Stripe → base, via le webhook). Codes promotionnels
-// (FONDATEURS, codes étudiants personnels) saisis sur la page Stripe : un
-// seul code par paiement, donc pas de cumul.
+// (FONDATEURS, codes étudiants personnels) saisis sur le site et vérifiés
+// (promotionCodeFor) : un seul code par paiement, donc pas de cumul.
 export async function startCheckout(formData: FormData) {
   if (!stripeEnabled()) redirect("/abonnement");
   if (formData.get("cgv") !== "1" || formData.get("retractation") !== "1") {
@@ -50,9 +50,17 @@ export async function startCheckout(formData: FormData) {
     .eq("user_id", user.id)
     .maybeSingle();
 
+  // Code promotionnel saisi sur le site (FONDATEURS, codes étudiants) :
+  // seuls les codes créés pour ce site sont acceptés, jamais ceux des
+  // autres activités du même compte Stripe.
+  const code = String(formData.get("code") ?? "");
+  const promotionCode = code.trim() ? await promotionCodeFor(code) : null;
+  if (code.trim() && !promotionCode) redirect("/abonnement?r=code");
+
   const customer = await knownCustomer(existing?.stripe_customer_id);
   const now = new Date().toISOString();
   const metadata = {
+    app: APP,
     user_id: user.id,
     cgv_version: CGV_VERSION,
     cgv_accepted_at: now,
@@ -77,7 +85,7 @@ export async function startCheckout(formData: FormData) {
       : { customer_email: user.email }),
     subscription_data: { metadata },
     metadata,
-    allow_promotion_codes: true,
+    ...(promotionCode ? { discounts: [{ promotion_code: promotionCode }] } : {}),
     billing_address_collection: "required",
     tax_id_collection: { enabled: true },
     automatic_tax: { enabled: autoTax },
@@ -104,8 +112,10 @@ export async function openPortal() {
   const customer = await knownCustomer(data?.stripe_customer_id);
   if (!customer) redirect("/abonnement?r=portail");
 
+  const configuration = process.env.STRIPE_PORTAL_CONFIG_ID;
   const portal = await getStripe().billingPortal.sessions.create({
     customer,
+    ...(configuration ? { configuration } : {}),
     return_url: `${await origin()}/abonnement`,
     locale: "fr",
   });
