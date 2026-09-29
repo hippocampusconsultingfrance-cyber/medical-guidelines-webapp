@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Card } from "@/lib/fiches";
+import { orderSocieties, type Card } from "@/lib/fiches";
 
 export type LibraryDoc = {
   id: string;
@@ -58,9 +58,12 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
   };
   const docs: LibraryDoc[] = ((documents ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => ({
     ...d,
-    societies: (document_societies ?? [])
-      .flatMap((l) => (Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : []))
-      .map((s) => s.acronym),
+    societies: orderSocieties(
+      (document_societies ?? [])
+        .flatMap((l) => (Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : []))
+        .map((s) => s.acronym),
+      d.card_json?.society,
+    ),
   }));
 
   return {
