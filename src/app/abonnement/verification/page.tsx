@@ -4,7 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { MEDIATEUR, mediateurRenseigne } from "@/lib/legal";
 import { isAdminAccount } from "@/lib/roles";
 import { SITE_URL } from "@/lib/seo";
-import { CGV_VERSION, getStripe, stripeEnabled, stripeMode } from "@/lib/stripe";
+import { APP, CGV_VERSION, getStripe, stripeEnabled, stripeMode } from "@/lib/stripe";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
@@ -71,9 +71,12 @@ async function stripeChecks(): Promise<Check[]> {
       };
     }),
     run("Portail client : factures, carte, résiliation", async () => {
-      const list = await stripe.billingPortal.configurations.list({ is_default: true, limit: 1 });
-      const c = list.data[0];
+      const id = process.env.STRIPE_PORTAL_CONFIG_ID;
+      const c = id
+        ? await stripe.billingPortal.configurations.retrieve(id)
+        : (await stripe.billingPortal.configurations.list({ is_default: true, limit: 1 })).data[0];
       if (!c) return { ok: false, detail: "portail non configuré" };
+      if (!c.active) return { ok: false, detail: `configuration ${c.id} inactive` };
       const f = c.features;
       const ok = f.invoice_history.enabled && f.payment_method_update.enabled && f.subscription_cancel.enabled;
       return {
@@ -87,10 +90,11 @@ async function stripeChecks(): Promise<Check[]> {
       if (!pc) return { ok: false, detail: "code absent ou inactif" };
       const coupon = pc.promotion?.coupon;
       const c = typeof coupon === "string" || !coupon ? null : coupon;
-      const ok = c?.percent_off === 30 && c?.duration === "once" && pc.max_redemptions === 100;
+      const ok =
+        c?.percent_off === 30 && c?.duration === "once" && pc.max_redemptions === 100 && c?.metadata?.app === APP;
       return {
         ok,
-        detail: `${c?.percent_off ?? "?"} %, durée ${c?.duration ?? "?"}, ${pc.times_redeemed} utilisé(s) sur ${pc.max_redemptions ?? "illimité"}`,
+        detail: `${c?.percent_off ?? "?"} %, durée ${c?.duration ?? "?"}, ${pc.times_redeemed} utilisé(s) sur ${pc.max_redemptions ?? "illimité"}${c?.metadata?.app === APP ? "" : ", coupon non marqué app=medical-guidelines (refusé par le site)"}`,
       };
     }),
     run("TVA française 20 % incluse, sur les factures", async () => {

@@ -15,6 +15,7 @@ const MESSAGES: Record<string, string> = {
   merci: "Merci ! Votre paiement est enregistré. L'accès PREMIUM s'active dans quelques secondes : rechargez la page si besoin.",
   annule: "Paiement annulé : aucun montant n'a été débité.",
   cases: "Cochez les deux cases pour continuer.",
+  code: "Ce code promotionnel n'est pas valable. Vérifiez-le, ou laissez le champ vide.",
   portail: "Espace de facturation indisponible pour ce compte : écrivez-nous à contact@medical-guidelines.net.",
 };
 
@@ -99,6 +100,16 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
 
           {open ? (
             <form action={startCheckout} className="mt-6 space-y-3">
+              <label className="block text-sm text-slate-700">
+                Code promotionnel (facultatif)
+                <input
+                  name="code"
+                  maxLength={40}
+                  autoComplete="off"
+                  placeholder="FONDATEURS"
+                  className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 uppercase"
+                />
+              </label>
               <label className="flex items-start gap-3 text-sm text-slate-700">
                 <input type="checkbox" name="cgv" value="1" required className="mt-0.5 h-4 w-4" />
                 <span>
@@ -120,8 +131,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
                 Payer et activer PREMIUM
               </button>
               <p className="text-xs text-slate-500">
-                Paiement sécurisé par Stripe. Vous pourrez saisir un code promotionnel sur la
-                page de paiement. Une facture vous est envoyée par e-mail.
+                Paiement sécurisé par Stripe. Une facture vous est envoyée par e-mail.
               </p>
             </form>
           ) : (
