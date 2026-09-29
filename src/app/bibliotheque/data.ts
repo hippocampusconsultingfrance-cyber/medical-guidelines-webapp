@@ -8,6 +8,7 @@ export type LibraryDoc = {
   publication_date: string | null;
   card_json: Card | null;
   published_at: string | null;
+  societies: string[];
 };
 
 // Tout ce qu'affichent la barre latérale et le catalogue. Les droits sont
@@ -18,7 +19,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     await Promise.all([
       supabase
         .from("documents")
-        .select("id, title, doc_type, publication_date, card_json, published_at")
+        .select("id, title, doc_type, publication_date, card_json, published_at, document_societies(societies(acronym))")
         .order("publication_date", { ascending: false, nullsFirst: false })
         .order("title"),
       supabase.from("document_unlocks").select("document_id"),
@@ -40,7 +41,9 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
         .filter((s) => s.active > 0)
         .map((s) => s.document_id),
     );
-    for (const d of (documents ?? []) as LibraryDoc[]) if (d.published_at) published.add(d.id);
+    for (const d of (documents ?? []) as { id: string; published_at: string | null }[]) {
+      if (d.published_at) published.add(d.id);
+    }
   }
 
   const spec = profile?.specialty as
@@ -50,9 +53,19 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     | undefined;
   const specialty = (Array.isArray(spec) ? spec[0] : spec)?.name_i18n?.fr ?? null;
 
+  type Row = Omit<LibraryDoc, "societies"> & {
+    document_societies: { societies: { acronym: string } | { acronym: string }[] | null }[] | null;
+  };
+  const docs: LibraryDoc[] = ((documents ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => ({
+    ...d,
+    societies: (document_societies ?? [])
+      .flatMap((l) => (Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : []))
+      .map((s) => s.acronym),
+  }));
+
   return {
     specialty,
-    docs: (documents ?? []) as LibraryDoc[],
+    docs,
     unlocked: new Set((unlocks ?? []).map((u) => u.document_id as string)),
     premium: Boolean(premium),
     isEditor,
@@ -88,4 +101,12 @@ export function groupBySection(docs: LibraryDoc[]) {
     return i < 0 ? (s === "Autres" ? 99 : 50) : i;
   };
   return [...groups.entries()].sort(([a], [b]) => rank(a) - rank(b) || a.localeCompare(b, "fr"));
+}
+
+// Sociétés savantes présentes dans le catalogue, de la plus représentée à la
+// moins représentée (filtre de la bibliothèque).
+export function societyCounts(docs: LibraryDoc[]) {
+  const counts = new Map<string, number>();
+  for (const d of docs) for (const s of d.societies) counts.set(s, (counts.get(s) ?? 0) + 1);
+  return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }

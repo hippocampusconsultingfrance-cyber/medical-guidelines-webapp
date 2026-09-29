@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
-import { cardTitle, docState, loadLibrary } from "./data";
+import { cardTitle, docState, loadLibrary, societyCounts } from "./data";
 import Shell from "./shell";
 import { publishAll } from "./[id]/actions";
 
@@ -28,14 +28,27 @@ export default async function BibliothequePage({
   if (!user) redirect("/connexion");
 
   const lib = await loadLibrary(supabase, user.id);
-  const q = (await searchParams).q;
-  const query = typeof q === "string" ? q.trim().slice(0, 100) : "";
+  const params = await searchParams;
+  const query = typeof params.q === "string" ? params.q.trim().slice(0, 100) : "";
+  const societies = societyCounts(lib.docs);
+  const societe =
+    typeof params.societe === "string" && societies.some(([s]) => s === params.societe) ? params.societe : "";
   const needle = normalize(query);
-  const docs = needle
-    ? lib.docs.filter((d) =>
-        normalize(`${d.title} ${d.card_json?.title ?? ""} ${d.card_json?.short ?? ""}`).includes(needle),
-      )
-    : lib.docs;
+  const docs = lib.docs.filter(
+    (d) =>
+      (!societe || d.societies.includes(societe)) &&
+      (!needle ||
+        normalize(`${d.title} ${d.card_json?.title ?? ""} ${d.card_json?.short ?? ""} ${d.card_json?.society ?? ""}`).includes(
+          needle,
+        )),
+  );
+  const filterHref = (s: string) => {
+    const p = new URLSearchParams();
+    if (query) p.set("q", query);
+    if (s) p.set("societe", s);
+    const qs = p.toString();
+    return qs ? `/bibliotheque?${qs}` : "/bibliotheque";
+  };
 
   const r = (await searchParams).r;
   const notice =
@@ -122,7 +135,38 @@ export default async function BibliothequePage({
           <span className="sr-only">Rechercher une fiche</span>
           <input name="q" type="search" defaultValue={query} placeholder="Rechercher une fiche…" />
         </label>
+        {societe && <input type="hidden" name="societe" value={societe} />}
+        <div className="lib-filters">
+          <span className="lib-filters__label">Société savante</span>
+          <a href={filterHref("")} className={`soc-chip${societe ? "" : " is-active"}`}>
+            Toutes
+          </a>
+          {societies.slice(0, 8).map(([s, n]) => (
+            <a key={s} href={filterHref(s)} className={`soc-chip${societe === s ? " is-active" : ""}`}>
+              {s} <span>{n}</span>
+            </a>
+          ))}
+          {societies.length > 8 && (
+            <details className="soc-more">
+              <summary className="soc-chip">Autres sociétés ({societies.length - 8})</summary>
+              <div className="soc-more__list">
+                {societies.slice(8).map(([s, n]) => (
+                  <a key={s} href={filterHref(s)} className={`soc-chip${societe === s ? " is-active" : ""}`}>
+                    {s} <span>{n}</span>
+                  </a>
+                ))}
+              </div>
+            </details>
+          )}
+        </div>
       </form>
+      {(societe || query) && (
+        <div className="lib-count">
+          {docs.length} fiche{docs.length > 1 ? "s" : ""}
+          {societe ? ` co-signée${docs.length > 1 ? "s" : ""} par ${societe}` : ""}
+          {query ? ` pour « ${query} »` : ""}
+        </div>
+      )}
 
       {docs.length === 0 ? (
         <div className="lib-empty">
