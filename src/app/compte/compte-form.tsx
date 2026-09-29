@@ -102,14 +102,34 @@ export default function CompteForm({
   async function handleExport() {
     setBusy(true);
     const supabase = createClient();
-    const [{ data: fullProfile }, { data: consentLog }, { data: reports }] =
-      await Promise.all([
-        supabase.from("profiles").select("*").single(),
-        supabase.from("consent_log").select("consent_type, value, recorded_at"),
-        supabase
-          .from("error_reports")
-          .select("doc, doc_title, section, description, status, created_at"),
-      ]);
+    // Filtre explicite : un administrateur lit aussi les lignes des autres comptes.
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    const uid = user?.id ?? "";
+    const [
+      { data: fullProfile },
+      { data: consentLog },
+      { data: reports },
+      { data: favorites },
+      { data: follows },
+      { data: alerts },
+      { data: history },
+    ] = await Promise.all([
+      supabase.from("profiles").select("*").eq("id", uid).single(),
+      supabase.from("consent_log").select("consent_type, value, recorded_at"),
+      supabase
+        .from("error_reports")
+        .select("doc, doc_title, section, description, status, created_at")
+        .eq("user_id", uid),
+      supabase.from("favorites").select("document_id, created_at").eq("user_id", uid),
+      supabase
+        .from("notification_preferences")
+        .select("society_id, created_at, societies(acronym)")
+        .eq("user_id", uid),
+      supabase.from("notifications_log").select("subject, body, document_id, channel, sent_at").eq("user_id", uid),
+      supabase.from("consultation_history").select("document_id, viewed_at").eq("user_id", uid),
+    ]);
     setBusy(false);
 
     const data = {
@@ -118,6 +138,10 @@ export default function CompteForm({
       profil: fullProfile,
       historique_consentements: consentLog ?? [],
       signalements_erreurs: reports ?? [],
+      favoris: favorites ?? [],
+      societes_suivies: follows ?? [],
+      alertes_envoyees: alerts ?? [],
+      historique_consultation: history ?? [],
     };
     const blob = new Blob([JSON.stringify(data, null, 2)], {
       type: "application/json",

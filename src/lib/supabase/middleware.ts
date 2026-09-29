@@ -43,6 +43,11 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname.startsWith("/cgv") ||
     // Appelé par Stripe (sans session) ; authentifié par sa signature.
     request.nextUrl.pathname === "/api/stripe/webhook" ||
+    // Tâche planifiée Vercel ; authentifiée par CRON_SECRET.
+    request.nextUrl.pathname.startsWith("/api/cron/") ||
+    // Liens de désinscription des e-mails ; authentifiés par leur jeton.
+    request.nextUrl.pathname === "/alertes/desinscription" ||
+    request.nextUrl.pathname === "/api/alertes/desinscription" ||
     request.nextUrl.pathname.startsWith("/mot-de-passe-oublie");
   const isPublicAsset =
     request.nextUrl.pathname.startsWith("/_next") ||

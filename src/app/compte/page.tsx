@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import AlertesSection from "./alertes";
 import CompteForm from "./compte-form";
 
 // Exercice des droits RGPD promis par la Politique de confidentialité :
-// rectification, retrait du consentement partenaires, export, suppression.
-export default async function ComptePage() {
+// rectification, retrait du consentement partenaires, export, suppression ;
+// et réglage des alertes e-mail.
+export default async function ComptePage({ searchParams }: PageProps<"/compte">) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -27,6 +29,7 @@ export default async function ComptePage() {
       .select("consent_type, value, recorded_at")
       .order("recorded_at", { ascending: false }),
   ]);
+  const { r } = await searchParams;
 
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
@@ -39,6 +42,8 @@ export default async function ComptePage() {
       <p className="mt-2 text-sm text-slate-600">
         Adresse email : <strong>{user.email}</strong>
       </p>
+
+      <AlertesSection supabase={supabase} userId={user.id} r={typeof r === "string" ? r : ""} />
 
       {profile ? (
         <CompteForm

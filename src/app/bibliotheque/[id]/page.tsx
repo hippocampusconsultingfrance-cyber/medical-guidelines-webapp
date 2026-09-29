@@ -12,10 +12,10 @@ import {
   type Presentation,
   type TocItem,
 } from "@/lib/fiches";
-import { cardTitle, loadLibrary } from "../data";
+import { cardTitle, FRESHNESS_LABEL, loadLibrary } from "../data";
 import AccordionControls from "../accordion-controls";
 import Shell from "../shell";
-import { reportError, setPublication, unlockDocument } from "./actions";
+import { reportError, setPublication, toggleFavorite, unlockDocument } from "./actions";
 
 export const metadata: Metadata = {
   title: "Fiche — Medical Guidelines",
@@ -34,6 +34,12 @@ const MESSAGES: Record<string, string> = {
   signalement_envoye: "Merci : votre signalement a été envoyé. Il sera examiné avant toute correction.",
   signalement_vide: "Décrivez l'erreur en quelques mots avant d'envoyer.",
   signalement_erreur: "Le signalement n'a pas pu être envoyé. Réessayez dans un instant.",
+};
+
+const FRESHNESS_NOTICE: Record<string, string> = {
+  revision_detectee:
+    "Une nouvelle version de la recommandation source a été détectée : cette fiche est en cours de révision par notre équipe.",
+  remplacee: "La recommandation source a été remplacée par un texte plus récent.",
 };
 
 type Recommendation = {
@@ -66,7 +72,7 @@ export default async function FichePage({
 
   const { data: extra } = await supabase
     .from("documents")
-    .select("revision_date, source_url, grading_system")
+    .select("revision_date, source_url, grading_system, superseded_by_document_id")
     .eq("id", id)
     .single();
   const { data: canRead } = await supabase.rpc("can_read_document", { doc_id: id });
@@ -75,6 +81,11 @@ export default async function FichePage({
 
   const card = doc.card_json;
   const date = formatDate(doc.publication_date);
+  const isFavorite = lib.favorite.has(id);
+  const replacement = extra?.superseded_by_document_id
+    ? lib.docs.find((d) => d.id === extra.superseded_by_document_id)
+    : undefined;
+  const freshness = doc.freshness_status ? FRESHNESS_NOTICE[doc.freshness_status] : undefined;
   const header = (
     <div className="doc-header">
       <div className="doc-header__eyebrow">
@@ -105,11 +116,39 @@ export default async function FichePage({
             <b>Révision</b>&nbsp;{formatDate(extra.revision_date)}
           </span>
         )}
+        {doc.societies.length > 0 && (
+          <span>
+            <b>Société{doc.societies.length > 1 ? "s" : ""}</b>&nbsp;
+            {doc.societies
+              .map((s) => (lib.societyNames[s] ? `${s} (${lib.societyNames[s]})` : s))
+              .join(" · ")}
+          </span>
+        )}
       </div>
-      {extra?.source_url && (
-        <a className="source-link" href={extra.source_url} target="_blank" rel="noopener noreferrer">
-          Document source officiel ↗
-        </a>
+      <div className="doc-header__actions">
+        {extra?.source_url && (
+          <a className="source-link" href={extra.source_url} target="_blank" rel="noopener noreferrer">
+            Document source officiel ↗
+          </a>
+        )}
+        <form action={toggleFavorite}>
+          <input type="hidden" name="id" value={id} />
+          <input type="hidden" name="favori" value={isFavorite ? "0" : "1"} />
+          <button className={`btn btn-ghost btn-sm fav-btn${isFavorite ? " is-on" : ""}`} aria-pressed={isFavorite}>
+            {isFavorite ? "★ Dans mes favoris" : "☆ Ajouter aux favoris"}
+          </button>
+        </form>
+      </div>
+      {freshness && (
+        <div className="panel warn" role="note">
+          <b>{FRESHNESS_LABEL[doc.freshness_status!]}.</b> {freshness}
+          {replacement && (
+            <>
+              {" "}
+              <Link href={`/bibliotheque/${replacement.id}`}>Voir la nouvelle fiche : {cardTitle(replacement)} →</Link>
+            </>
+          )}
+        </div>
       )}
     </div>
   );

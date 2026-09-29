@@ -291,6 +291,9 @@ td.align-c, th.align-c{ text-align:center; }
 .unlock-box p{ color:var(--ink-muted); font-size:0.9rem; margin:0 0 12px; max-width:62ch; }
 .unlock-box .btn-primary{ flex:none; }
 .source-link{ font-size:0.82rem; }
+.doc-header__actions{ display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-top:4px; }
+.fav-btn.is-on{ color:var(--warn); border-color:var(--warn); background:var(--warn-bg); }
+.panel.warn{ border-left-color:var(--warn); background:var(--warn-bg); }
 .watermark{ position:fixed; inset:-20%; z-index:30; pointer-events:none; user-select:none; display:flex; flex-wrap:wrap; align-content:flex-start; gap:90px 110px; padding:40px; transform:rotate(-24deg); font-family:var(--font-mono); font-size:0.72rem; color:rgb(11 59 84 / 0.07); overflow:hidden; }
 .rec-meta{ display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; margin-top:6px; font-size:0.74rem; color:var(--ink-faint); font-family:var(--font-mono); }
 .fiche-premium{ -webkit-user-select:none; user-select:none; }

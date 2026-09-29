@@ -20,6 +20,8 @@ export default function Shell({
 }) {
   const groups = groupBySection(lib.docs);
   const activeSection = lib.docs.find((d) => d.id === activeId)?.card_json?.section ?? null;
+  const byId = new Map(lib.docs.map((d) => [d.id, d]));
+  const favorites = lib.favorites.flatMap((id) => byId.get(id) ?? []);
 
   return (
     <div className="mg-app">
@@ -56,6 +58,23 @@ export default function Shell({
               {lib.docs.length}
             </span>
           </Link>
+          {favorites.length > 0 && (
+            <details className="nav-section" open={!activeId || favorites.some((d) => d.id === activeId)}>
+              <summary className="nav-section__title">
+                ★ Mes favoris
+                <span className="nav-section__count">{favorites.length}</span>
+              </summary>
+              {favorites.map((d) => (
+                <Link
+                  key={d.id}
+                  href={`/bibliotheque/${d.id}`}
+                  className={`nav-link nav-link--sub${d.id === activeId ? " is-active" : ""}`}
+                >
+                  {cardTitle(d)}
+                </Link>
+              ))}
+            </details>
+          )}
           {groups.map(([section, docs]) => (
             <details key={section} className="nav-section" open={section === activeSection}>
               <summary className="nav-section__title">

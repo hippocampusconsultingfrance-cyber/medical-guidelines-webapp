@@ -8,18 +8,28 @@ export type LibraryDoc = {
   publication_date: string | null;
   card_json: Card | null;
   published_at: string | null;
+  freshness_status: string | null;
   societies: string[];
+};
+
+// Statut de fraîcheur (cahier des charges §5.4), libellés affichés.
+export const FRESHNESS_LABEL: Record<string, string> = {
+  revision_detectee: "Révision détectée",
+  remplacee: "Remplacée",
+  retiree: "Retirée",
 };
 
 // Tout ce qu'affichent la barre latérale et le catalogue. Les droits sont
 // appliqués par la base : un membre ne reçoit que les fiches publiées de sa
 // spécialité, un relecteur reçoit aussi les brouillons.
 export async function loadLibrary(supabase: SupabaseClient, userId: string) {
-  const [{ data: documents }, { data: unlocks }, { data: premium }, { data: profile }] =
+  const [{ data: documents }, { data: unlocks }, { data: premium }, { data: profile }, { data: favorites }] =
     await Promise.all([
       supabase
         .from("documents")
-        .select("id, title, doc_type, publication_date, card_json, published_at, document_societies(societies(acronym))")
+        .select(
+          "id, title, doc_type, publication_date, card_json, published_at, freshness_status, document_societies(societies(acronym, full_name))",
+        )
         .order("publication_date", { ascending: false, nullsFirst: false })
         .order("title"),
       // Filtre explicite : un administrateur lit aussi les déblocages des autres comptes.
@@ -30,6 +40,12 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
         .select("editorial_role, specialty:specialties(name_i18n)")
         .eq("id", userId)
         .single(),
+      supabase
+        .from("favorites")
+        .select("document_id")
+        .eq("user_id", userId)
+        .not("document_id", "is", null)
+        .order("created_at", { ascending: false }),
     ]);
 
   const role = (profile?.editorial_role as string | null) ?? null;
@@ -54,20 +70,29 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     | undefined;
   const specialty = (Array.isArray(spec) ? spec[0] : spec)?.name_i18n?.fr ?? null;
 
+  type Society = { acronym: string; full_name: string | null };
   type Row = Omit<LibraryDoc, "societies"> & {
-    document_societies: { societies: { acronym: string } | { acronym: string }[] | null }[] | null;
+    document_societies: { societies: Society | Society[] | null }[] | null;
   };
-  const docs: LibraryDoc[] = ((documents ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => ({
-    ...d,
-    societies: (document_societies ?? [])
-      .flatMap((l) => (Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : []))
-      .map((s) => s.acronym),
-  }));
+  // Nom complet de chaque sigle, pour l'infobulle (vide s'il n'est pas connu).
+  const societyNames: Record<string, string> = {};
+  const docs: LibraryDoc[] = ((documents ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => {
+    const list = (document_societies ?? []).flatMap((l) =>
+      Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : [],
+    );
+    for (const s of list) if (s.full_name) societyNames[s.acronym] = s.full_name;
+    return { ...d, societies: list.map((s) => s.acronym) };
+  });
+  const favoriteIds = ((favorites ?? []) as { document_id: string }[]).map((f) => f.document_id);
 
   return {
     specialty,
     docs,
+    societyNames,
     unlocked: new Set((unlocks ?? []).map((u) => u.document_id as string)),
+    // Du plus récent au plus ancien.
+    favorites: favoriteIds,
+    favorite: new Set(favoriteIds),
     premium: Boolean(premium),
     isEditor,
     // Publication réservée aux validateurs et administrateurs.

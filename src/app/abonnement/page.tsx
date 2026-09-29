@@ -78,6 +78,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
           </p>
           <ul className="mt-4 space-y-2 text-sm text-slate-700">
             <li>✓ Toutes les fiches de votre spécialité, sans limite de crédits</li>
+            <li>✓ Alertes e-mail : nouvelles recommandations des sociétés savantes que vous suivez et mises à jour de vos fiches</li>
             <li>✓ Paiement annuel ; résiliation à tout moment, accès maintenu jusqu&apos;à la fin de l&apos;année payée</li>
             <li>✓ Offre membres fondateurs : −30 % la première année pour les 100 premiers abonnés (code FONDATEURS)</li>
             <li>✓ Internes et étudiants : −30 % sur justificatif, code personnel à demander à l&apos;adresse de contact (non cumulable)</li>
