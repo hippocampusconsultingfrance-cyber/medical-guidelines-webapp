@@ -55,7 +55,11 @@ export default function ConfidentialitePage() {
         Pendant l&apos;utilisation : fiches débloquées, fiches mises en
         favori, historique des fiches consultées, sociétés savantes suivies
         et préférence d&apos;alerte e-mail, ainsi que la liste des alertes
-        envoyées. Ces données servent à afficher votre espace personnel
+        envoyées. En cas d&apos;abonnement PREMIUM : statut et dates de
+        l&apos;abonnement, date d&apos;acceptation des conditions de vente et
+        de la renonciation au droit de rétractation, identifiants Stripe du
+        client et de l&apos;abonnement. Les données de carte bancaire sont
+        saisies chez Stripe et ne nous sont jamais transmises. Ces données servent à afficher votre espace personnel
         (reprendre la lecture, favoris, mises à jour de vos fiches) et à
         vous envoyer les alertes. Le classement « les plus consultées » ne
         repose que sur des nombres de lecteurs agrégés : il n&apos;affiche
@@ -90,7 +94,9 @@ export default function ConfidentialitePage() {
       <p className="mt-2">
         Vos données sont conservées tant que votre compte est actif, puis
         supprimées dans un délai de 12 mois après suppression du compte ou
-        après 3 ans d&apos;inactivité, sauf obligation légale contraire.
+        après 3 ans d&apos;inactivité, sauf obligation légale contraire. Les
+        factures et les pièces relatives aux paiements sont conservées 10 ans
+        (obligation comptable, article L123-22 du code de commerce).
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
@@ -135,6 +141,12 @@ export default function ConfidentialitePage() {
         transferts hors de l&apos;Union européenne par les clauses
         contractuelles types de la Commission européenne et/ou le Data
         Privacy Framework UE–États-Unis.
+      </p>
+      <p className="mt-2">
+        Les paiements de l&apos;abonnement PREMIUM sont traités par Stripe
+        Payments Europe, Ltd. (Dublin, Irlande), prestataire de services de
+        paiement, qui reçoit votre adresse e-mail, votre adresse de
+        facturation et vos données de paiement, et émet les factures.
       </p>
       <p className="mt-2">
         Les e-mails de service (confirmation d&apos;inscription, mot de passe

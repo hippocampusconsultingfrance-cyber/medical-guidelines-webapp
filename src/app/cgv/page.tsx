@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MEDIATEUR, mediateurRenseigne } from "@/lib/legal";
 import { CGV_VERSION } from "@/lib/stripe";
 
 export const metadata: Metadata = {
@@ -6,8 +7,10 @@ export const metadata: Metadata = {
 };
 
 // Projet de CGV rédigé d'après le cahier des charges V4.5 (§10.3). À faire
-// valider par un conseil juridique avant la première vente ; le médiateur
-// de la consommation reste à désigner.
+// valider par un conseil juridique avant la première vente. Le médiateur de
+// la consommation est renseigné dans lib/legal.ts ; toute modification du
+// texte s'accompagne d'une nouvelle CGV_VERSION (lib/stripe.ts), enregistrée
+// avec chaque souscription.
 export default function CgvPage() {
   const h2 = "mt-8 text-lg font-semibold text-slate-900";
   return (
@@ -90,9 +93,23 @@ export default function CgvPage() {
 
       <h2 className={h2}>9. Médiation et droit applicable</h2>
       <p className="mt-2">
-        En cas de litige, le consommateur peut recourir gratuitement à un médiateur de la
-        consommation, dont les coordonnées seront indiquées ici. Les présentes conditions sont
-        soumises au droit français.
+        En cas de litige, le consommateur adresse d&apos;abord une réclamation écrite à
+        contact@medical-guidelines.net. À défaut de solution, il peut recourir gratuitement au
+        médiateur de la consommation
+        {mediateurRenseigne() ? (
+          <>
+            {" "}
+            : {MEDIATEUR.nom}
+            {MEDIATEUR.adresse ? `, ${MEDIATEUR.adresse}` : ""},{" "}
+            <a href={MEDIATEUR.site} className="underline" target="_blank" rel="noopener noreferrer">
+              {MEDIATEUR.site}
+            </a>
+          </>
+        ) : (
+          ", dont les coordonnées seront indiquées ici"
+        )}
+        . Il peut aussi utiliser la plateforme européenne de règlement en ligne des litiges.
+        Les présentes conditions sont soumises au droit français.
       </p>
     </div>
   );
