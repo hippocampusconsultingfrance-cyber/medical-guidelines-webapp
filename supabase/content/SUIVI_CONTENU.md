@@ -30,6 +30,15 @@ tableau ci-dessous fait foi pour éviter toute collision entre lots.
 ## voir section "Lot du 2026-09-19" ci-dessous pour le détail de cette
 ## découverte et l'état de la reconciliation de branches.)
 
+## Référentiel des sociétés savantes (2026-09-29)
+
+`0201_societes_noms_complets.sql` renseigne `societies.full_name` (affiché au
+survol des sigles et en clair sur la page d'une fiche) pour 74 sigles dont le
+développé est certain, sans jamais remplacer un nom déjà saisi. 18 sigles
+restent sans nom, faute de certitude ou parce que le sigle est ambigu, à
+compléter lors de la validation : ACHBPT, ANAP, ANARLF, ARMPO, CARORL, CERES,
+CNCRH, CORASSO, EVG, FHS, SFB, SFN, SFNCL, SFPP, SFRI, SFT, SFVTT, SIZ.
+
 ## ⚠️ Fiches 100-159 en attente de migration (ajoutées côté rfe-sfar-website le 2026-09-20/22, puis 157-159 le 2026-09-27)
 
 Une routine planifiée a construit cinq fiches supplémentaires côté

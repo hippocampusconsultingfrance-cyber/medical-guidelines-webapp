@@ -17,6 +17,25 @@ export async function unlockDocument(formData: FormData) {
   redirect(`/bibliotheque/${id}?r=${encodeURIComponent(status)}`);
 }
 
+// Ajout ou retrait d'une fiche des favoris (RLS : chacun ne gère que les
+// siens). Un double envoi bute sur la contrainte d'unicité, sans effet.
+export async function toggleFavorite(formData: FormData) {
+  const id = String(formData.get("id") ?? "");
+  if (!UUID.test(id)) redirect("/bibliotheque");
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/connexion");
+  if (formData.get("favori") === "1") {
+    await supabase.from("favorites").insert({ user_id: user.id, document_id: id });
+  } else {
+    await supabase.from("favorites").delete().eq("user_id", user.id).eq("document_id", id);
+  }
+  redirect(`/bibliotheque/${id}`);
+}
+
 // Publication ou dépublication d'une fiche. Le droit (validateur ou admin)
 // est vérifié par la base (publish_document).
 export async function setPublication(formData: FormData) {

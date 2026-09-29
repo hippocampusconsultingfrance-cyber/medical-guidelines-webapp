@@ -33,13 +33,14 @@ export default async function Home({ searchParams }: PageProps<"/">) {
     redirect("/finaliser-compte");
   }
 
-  const { societe } = await searchParams;
+  const { societe, r } = await searchParams;
   return (
     <EspaceMembre
       supabase={supabase}
       user={user}
       profile={profile}
       societe={typeof societe === "string" ? societe : ""}
+      r={typeof r === "string" ? r : ""}
     />
   );
 }

@@ -51,6 +51,16 @@ export default function ConfidentialitePage() {
         puis un identifiant et un mot de passe (stocké de façon chiffrée,
         jamais en clair) lors de la finalisation du compte.
       </p>
+      <p className="mt-2">
+        Pendant l&apos;utilisation : fiches débloquées, fiches mises en
+        favori, historique des fiches consultées, sociétés savantes suivies
+        et préférence d&apos;alerte e-mail, ainsi que la liste des alertes
+        envoyées. Ces données servent à afficher votre espace personnel
+        (reprendre la lecture, favoris, mises à jour de vos fiches) et à
+        vous envoyer les alertes. Le classement « les plus consultées » ne
+        repose que sur des nombres de lecteurs agrégés : il n&apos;affiche
+        jamais ce qu&apos;a lu une personne.
+      </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
         3. Finalités et bases légales — deux finalités bien distinctes
@@ -128,8 +138,12 @@ export default function ConfidentialitePage() {
       </p>
       <p className="mt-2">
         Les e-mails de service (confirmation d&apos;inscription, mot de passe
-        oublié) sont envoyés par Resend, qui agit en tant que sous-traitant
-        dans les mêmes conditions.
+        oublié) et les alertes e-mail (nouvelles recommandations des sociétés
+        suivies, mises à jour de vos fiches, pour les abonnés PREMIUM qui les
+        ont activées) sont envoyés par Resend, qui agit en tant que
+        sous-traitant dans les mêmes conditions. Chaque alerte comporte un
+        lien de désinscription ; les alertes se désactivent aussi depuis la
+        page « Mon compte ».
       </p>
       <p className="mt-2">
         La fréquentation du site est mesurée par Vercel Web Analytics, sans cookies ni

@@ -1,0 +1,91 @@
+-- Noms complets des sociétés savantes, affichés au survol des sigles
+-- (espace membre, bibliothèque) et en clair sur la page d'une fiche.
+--
+-- Seuls les noms connus avec certitude sont renseignés ; un nom déjà saisi
+-- n'est jamais remplacé (full_name is null). Sigles laissés sans nom, faute
+-- de certitude sur le développé ou parce que le sigle est ambigu, à
+-- compléter par l'équipe éditoriale lors de la validation (schema_v2 §3) :
+--   ACHBPT, ANAP, ANARLF, ARMPO, CARORL, CERES, CNCRH, CORASSO, EVG, FHS,
+--   SFB, SFN, SFNCL, SFPP, SFRI, SFT, SFVTT, SIZ.
+-- Idempotent.
+
+update public.societies s
+   set full_name = v.full_name
+  from (values
+    ('ABM', 'Agence de la biomédecine'),
+    ('ADARPEF', 'Association des anesthésistes-réanimateurs pédiatriques d''expression française'),
+    ('AFC', 'Association française de chirurgie'),
+    ('AFCA', 'Association française de chirurgie ambulatoire'),
+    ('AFDN', 'Association française des diététiciens nutritionnistes'),
+    ('AFEF', 'Association française pour l''étude du foie'),
+    ('AFU', 'Association française d''urologie'),
+    ('ANAES', 'Agence nationale d''accréditation et d''évaluation en santé'),
+    ('ANSM', 'Agence nationale de sécurité du médicament et des produits de santé'),
+    ('ASA', 'American Society of Anesthesiologists'),
+    ('ASRA', 'American Society of Regional Anesthesia and Pain Medicine'),
+    ('ATS', 'American Thoracic Society'),
+    ('AWMF', 'Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften'),
+    ('CARO', 'Club d''anesthésie-réanimation en obstétrique'),
+    ('CIAFU', 'Comité d''infectiologie de l''Association française d''urologie'),
+    ('CIANE', 'Collectif interassociatif autour de la naissance'),
+    ('CNCT', 'Comité national contre le tabagisme'),
+    ('CNGOF', 'Collège national des gynécologues et obstétriciens français'),
+    ('CNSF', 'Collège national des sages-femmes de France'),
+    ('CTSA', 'Centre de transfusion sanguine des armées'),
+    ('DAS', 'Difficult Airway Society'),
+    ('EFS', 'Établissement français du sang'),
+    ('ESAIC', 'European Society of Anaesthesiology and Intensive Care'),
+    ('ESICM', 'European Society of Intensive Care Medicine'),
+    ('FCVD', 'Fédération de chirurgie viscérale et digestive'),
+    ('GEHT', 'Groupe d''étude sur l''hémostase et la thrombose'),
+    ('GFHT', 'Groupe français d''études sur l''hémostase et la thrombose'),
+    ('GFRUP', 'Groupe francophone de réanimation et d''urgences pédiatriques'),
+    ('GIHP', 'Groupe d''intérêt en hémostase périopératoire'),
+    ('HAS', 'Haute Autorité de santé'),
+    ('NICE', 'National Institute for Health and Care Excellence'),
+    ('SCCM', 'Society of Critical Care Medicine'),
+    ('SCVE', 'Société de chirurgie vasculaire et endovasculaire de langue française'),
+    ('SEMICYUC', 'Sociedad Española de Medicina Intensiva, Crítica y Unidades Coronarias'),
+    ('SF2H', 'Société française d''hygiène hospitalière'),
+    ('SFA', 'Société française d''allergologie'),
+    ('SFAR', 'Société française d''anesthésie et de réanimation'),
+    ('SFBC', 'Société française de biologie clinique'),
+    ('SFC', 'Société française de cardiologie'),
+    ('SFCD', 'Société française de chirurgie digestive'),
+    ('SFCR', 'Société française de chirurgie rachidienne'),
+    ('SFCTCV', 'Société française de chirurgie thoracique et cardio-vasculaire'),
+    ('SFD', 'Société francophone du diabète'),
+    ('SFED', 'Société française d''endoscopie digestive'),
+    ('SFGG', 'Société française de gériatrie et gérontologie'),
+    ('SFM', 'Société française de microbiologie'),
+    ('SFMP', 'Société française de médecine périnatale'),
+    ('SFMU', 'Société française de médecine d''urgence'),
+    ('SFMV', 'Société française de médecine vasculaire'),
+    ('SFNC', 'Société française de neurochirurgie'),
+    ('SFNCM', 'Société francophone nutrition clinique et métabolisme'),
+    ('SFNCP', 'Société française de neurochirurgie pédiatrique'),
+    ('SFNEP', 'Société francophone de nutrition entérale et parentérale'),
+    ('SFNR', 'Société française de neuroradiologie'),
+    ('SFNV', 'Société française neurovasculaire'),
+    ('SFO', 'Société française d''ophtalmologie'),
+    ('SFORL', 'Société française d''oto-rhino-laryngologie et de chirurgie de la face et du cou'),
+    ('SFP', 'Société française de pédiatrie'),
+    ('SFPC', 'Société française de pharmacie clinique'),
+    ('SFPT', 'Société française de pharmacologie et de thérapeutique'),
+    ('SFR', 'Société française de radiologie'),
+    ('SFSCMF', 'Société française de stomatologie, chirurgie maxillo-faciale et chirurgie orale'),
+    ('SFTH', 'Société française de thrombose et d''hémostase'),
+    ('SFTS', 'Société française de transfusion sanguine'),
+    ('SKR', 'Société de kinésithérapie de réanimation'),
+    ('SNFCP', 'Société nationale française de colo-proctologie'),
+    ('SNFGE', 'Société nationale française de gastro-entérologie'),
+    ('SOFCOT', 'Société française de chirurgie orthopédique et traumatologique'),
+    ('SOFMER', 'Société française de médecine physique et de réadaptation'),
+    ('SPILF', 'Société de pathologie infectieuse de langue française'),
+    ('SPLF', 'Société de pneumologie de langue française'),
+    ('SRLF', 'Société de réanimation de langue française'),
+    ('SSA', 'Service de santé des armées'),
+    ('SoFraSimS', 'Société francophone de simulation en santé')
+  ) as v (acronym, full_name)
+ where s.acronym = v.acronym
+   and s.full_name is null;

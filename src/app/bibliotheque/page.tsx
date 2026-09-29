@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
-import { cardTitle, docState, loadLibrary, societyCounts } from "./data";
+import { cardTitle, docState, FRESHNESS_LABEL, loadLibrary, societyCounts } from "./data";
 import Shell from "./shell";
 import { publishAll } from "./[id]/actions";
 
@@ -162,7 +162,12 @@ export default async function BibliothequePage({
             Toutes
           </a>
           {societies.slice(0, 8).map(([s, n]) => (
-            <a key={s} href={filterHref(s)} className={`soc-chip${societe === s ? " is-active" : ""}`}>
+            <a
+              key={s}
+              href={filterHref(s)}
+              title={lib.societyNames[s]}
+              className={`soc-chip${societe === s ? " is-active" : ""}`}
+            >
               {s} <span>{n}</span>
             </a>
           ))}
@@ -171,7 +176,12 @@ export default async function BibliothequePage({
               <summary className="soc-chip">Autres sociétés ({societies.length - 8})</summary>
               <div className="soc-more__list">
                 {societies.slice(8).map(([s, n]) => (
-                  <a key={s} href={filterHref(s)} className={`soc-chip${societe === s ? " is-active" : ""}`}>
+                  <a
+                    key={s}
+                    href={filterHref(s)}
+                    title={lib.societyNames[s]}
+                    className={`soc-chip${societe === s ? " is-active" : ""}`}
+                  >
                     {s} <span>{n}</span>
                   </a>
                 ))}
@@ -184,7 +194,9 @@ export default async function BibliothequePage({
         <div className="lib-count">
           {docs.length} fiche{docs.length > 1 ? "s" : ""}
           {annee ? ` publiée${docs.length > 1 ? "s" : ""} en ${annee}` : ""}
-          {societe ? ` co-signée${docs.length > 1 ? "s" : ""} par ${societe}` : ""}
+          {societe
+            ? ` co-signée${docs.length > 1 ? "s" : ""} par ${societe}${lib.societyNames[societe] ? ` (${lib.societyNames[societe]})` : ""}`
+            : ""}
           {query ? ` pour « ${query} »` : ""}
           {" · "}
           <Link href="/bibliotheque">Effacer les filtres</Link>
@@ -207,7 +219,12 @@ export default async function BibliothequePage({
               <Link key={d.id} href={`/bibliotheque/${d.id}`} className="doc-card">
                 <span className="doc-card__top">
                   <span className="doc-card__badge">{shortBadge(c?.badge, d.doc_type)}</span>
-                  <span className={`state-pill ${STATE_CLASS[state]}`}>{STATE_LABEL[state]}</span>
+                  <span style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "flex-end" }}>
+                    {d.freshness_status && FRESHNESS_LABEL[d.freshness_status] && (
+                      <span className="state-pill state-draft">{FRESHNESS_LABEL[d.freshness_status]}</span>
+                    )}
+                    <span className={`state-pill ${STATE_CLASS[state]}`}>{STATE_LABEL[state]}</span>
+                  </span>
                 </span>
                 <h2>{cardTitle(d)}</h2>
                 {needle && !titleMatch(d) && contentRank.has(d.id) && (
