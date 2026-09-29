@@ -1,0 +1,31 @@
+name: Surveillance du site
+
+# Toutes les heures : les pages principales doivent répondre et la base
+# doit être joignable (/api/sante). En cas d'échec, GitHub envoie un e-mail
+# au propriétaire du dépôt (réglage par défaut des notifications Actions).
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Pages principales et base de données
+        run: |
+          site=https://www.medical-guidelines.net
+          echec=0
+          for chemin in / /recommandations /connexion /sitemap.xml /robots.txt /api/sante; do
+            code=$(curl -sS -o reponse.txt -w '%{http_code}' --max-time 20 --retry 2 --retry-delay 15 "$site$chemin") || code=000
+            echo "$chemin → $code"
+            if [ "$code" != 200 ]; then
+              echo "::error::$site$chemin répond $code"
+              echec=1
+            fi
+          done
+          # Dernière page appelée : /api/sante.
+          cat reponse.txt; echo
+          grep -q '"ok":true' reponse.txt || { echo "::error::La base de données ne répond pas"; echec=1; }
+          exit $echec

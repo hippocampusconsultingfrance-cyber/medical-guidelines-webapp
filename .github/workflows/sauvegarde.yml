@@ -1,0 +1,90 @@
+name: Sauvegarde de la base
+
+# Chaque lundi : sauvegarde des schémas public (fiches, abonnements,
+# déblocages…) et auth (comptes), puis restauration dans une base vide pour
+# vérifier qu'elle est exploitable (mêmes nombres de lignes qu'en production).
+#
+# Conservation : si le secret BACKUP_PASSPHRASE existe, la sauvegarde est
+# chiffrée (AES-256) et gardée 30 jours dans l'onglet Actions. Sans ce
+# secret, elle est seulement vérifiée, jamais conservée : elle contient des
+# données personnelles (adresses e-mail, noms).
+# Déchiffrer : gpg --decrypt sauvegarde.dump.gpg > sauvegarde.dump
+on:
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+
+jobs:
+  sauvegarder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      restauration:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: restauration
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
+      RESTAURATION_URL: postgres://postgres:restauration@localhost:5432/postgres
+      PG: docker run --rm --network host -v ${{ github.workspace }}:/w -w /w postgres:17
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Nombres de lignes en production
+        run: $PG psql "$DATABASE_URL" -X -At -F ' ' -f scripts/sauvegarde/comptes.sql > production.txt && cat production.txt
+
+      - name: Sauvegarde
+        run: |
+          $PG pg_dump "$DATABASE_URL" --format=custom --no-owner --no-privileges \
+            --schema=public --schema=auth --file=sauvegarde.dump
+          ls -l sauvegarde.dump
+
+      - name: Restauration dans une base vide
+        run: |
+          $PG psql "$RESTAURATION_URL" -X -q -v ON_ERROR_STOP=1 -f scripts/sauvegarde/preparer-restauration.sql
+          # Les objets propres à Supabase (rôles internes, fonctions du
+          # schéma auth) peuvent échouer : seules les données comptent ici.
+          $PG pg_restore --no-owner --no-privileges -d "$RESTAURATION_URL" sauvegarde.dump 2> erreurs.txt || true
+          echo "$(grep -c 'error:' erreurs.txt || true) erreur(s) de restauration (objets Supabase)"
+
+      - name: Vérification
+        shell: bash
+        run: |
+          $PG psql "$RESTAURATION_URL" -X -At -F ' ' -f scripts/sauvegarde/comptes.sql > restauration.txt
+          echo "table production restauration"
+          join -a1 -e -1 -o 0,1.2,2.2 <(sort production.txt) <(sort restauration.txt) | tee comparaison.txt
+          # Échec si une table manque ou est vide alors qu'elle ne l'est pas
+          # en production. Un écart de quelques lignes (inscription pendant
+          # la sauvegarde) est seulement signalé.
+          awk '$3 < 0 || ($2 > 0 && $3 == 0) { print "::error::" $1 " non restaurée"; bad=1 }
+               $2 != $3 && $3 > 0 { print "::warning::" $1 " : " $2 " en production, " $3 " restaurées" }
+               END { exit bad }' comparaison.txt
+
+      - name: Chiffrement
+        id: chiffrement
+        env:
+          BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          if [ -z "$BACKUP_PASSPHRASE" ]; then
+            echo "::warning::Secret BACKUP_PASSPHRASE absent : sauvegarde vérifiée mais non conservée."
+            exit 0
+          fi
+          printf '%s' "$BACKUP_PASSPHRASE" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 \
+            --symmetric --cipher-algo AES256 --output sauvegarde.dump.gpg sauvegarde.dump
+          echo "conserver=1" >> "$GITHUB_OUTPUT"
+
+      - name: Conservation (30 jours)
+        if: steps.chiffrement.outputs.conserver == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sauvegarde-${{ github.run_number }}
+          path: sauvegarde.dump.gpg
+          retention-days: 30
+
+      - name: Nettoyage
+        if: always()
+        run: sudo rm -f sauvegarde.dump sauvegarde.dump.gpg

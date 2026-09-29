@@ -46,6 +46,8 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname === "/sitemap.xml" ||
     // Appelé par Stripe (sans session) ; authentifié par sa signature.
     request.nextUrl.pathname === "/api/stripe/webhook" ||
+    // Page de santé de la surveillance (aucune donnée).
+    request.nextUrl.pathname === "/api/sante" ||
     // Tâche planifiée Vercel ; authentifiée par CRON_SECRET.
     request.nextUrl.pathname.startsWith("/api/cron/") ||
     // Liens de désinscription des e-mails ; authentifiés par leur jeton.
