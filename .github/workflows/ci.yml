@@ -23,3 +23,21 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run build
+
+  # Règles du parcours membre (crédits, PREMIUM, spécialité, publication),
+  # appliquées par la base : base PostgreSQL 17 vide, schéma, migrations et
+  # contenu, puis scénario tests/base/parcours.sql.
+  parcours-membre:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: tests/base/lancer.sh postgres://postgres:test@localhost:5432/postgres
