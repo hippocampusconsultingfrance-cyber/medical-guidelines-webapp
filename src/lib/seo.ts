@@ -1,9 +1,9 @@
 // Référencement des pages publiques (cahier des charges V4.5, §10.5).
-// INDEXABLE reste à false tant que le porteur de projet n'a pas décidé
-// d'ouvrir le site aux moteurs de recherche : les pages publiques sont
-// alors visibles des visiteurs mais marquées « noindex », et robots.txt
-// interdit l'exploration.
-export const INDEXABLE = false;
+// Ouvert aux moteurs de recherche sur décision du porteur de projet
+// (29/09/2026). Seules l'accueil et les pages /recommandations sont
+// indexables ; l'espace membre reste exclu (robots.ts) et les autres pages
+// gardent le « noindex » de la mise en page.
+export const INDEXABLE = true;
 
 export const SITE_URL = "https://www.medical-guidelines.net";
 
