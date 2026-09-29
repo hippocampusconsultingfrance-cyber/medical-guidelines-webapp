@@ -5,7 +5,8 @@ bouton « Payer » n'est proposé qu'à l'équipe éditoriale (les membres voien
 « Les abonnements ouvrent bientôt »). Le passage au réel se fait en changeant
 quatre variables dans Vercel. Le médiateur (CM2C) étant renseigné, la vente
 s'ouvre à tous dès que les clés réelles sont en place : ne les mettre
-qu'après la relecture du juriste (A1).
+qu'après les réglages Stripe (partie B). La relecture juridique (A1) est
+faite.
 
 Qui fait quoi : **Vous** (porteur de projet), **Claude** (code et
 vérifications), **Juriste**, **Expert-comptable**.
@@ -14,23 +15,23 @@ vérifications), **Juriste**, **Expert-comptable**.
 
 ## A. Juridique et comptable — avant tout (Vous, avec vos conseils)
 
-### A1. Faire relire par un juriste
+### A1. Faire relire par un juriste — ✅ validé (septembre 2026)
 Documents à transmettre : pages `/cgv`, `/cgu`, `/confidentialite` et
 `/mentions-legales` du site. Points à lui soumettre explicitement :
 
-- [ ] **Renonciation au droit de rétractation** (art. L221-28 13° du code de
+- [x] **Renonciation au droit de rétractation** (art. L221-28 13° du code de
       la consommation) : double case à cocher avant paiement, enregistrée
       avec la date et la version des CGV. Le libellé suffit-il ?
-- [ ] **Reconduction tacite annuelle** (art. L215-1) : le consommateur doit
+- [x] **Reconduction tacite annuelle** (art. L215-1) : le consommateur doit
       être informé par écrit, 1 à 3 mois avant l'échéance, de sa faculté de
       ne pas reconduire. Stripe peut envoyer ce rappel automatiquement (voir
       B2) : le contenu de cet e-mail convient-il ?
-- [ ] **Clientèle mixte** : médecins libéraux (professionnels) et internes
+- [x] **Clientèle mixte** : médecins libéraux (professionnels) et internes
       (consommateurs). Faut-il distinguer les conditions ?
-- [ ] **Responsabilité** : clause sur les synthèses médicales (CGV §8, CGU).
-- [ ] **Mentions légales** : ajouter le numéro RCS et le numéro de TVA
+- [x] **Responsabilité** : clause sur les synthèses médicales (CGV §8, CGU).
+- [x] **Mentions légales** : ajouter le numéro RCS et le numéro de TVA
       intracommunautaire s'ils existent.
-- [ ] **Confidentialité** : la section sur Stripe et la conservation des
+- [x] **Confidentialité** : la section sur Stripe et la conservation des
       factures (10 ans) a été ajoutée ; à valider.
 
 ### A2. Adhérer à un médiateur de la consommation
@@ -45,8 +46,9 @@ quelques centaines d'euros par an selon l'organisme.
 ### A3. TVA — décidé avec l'expert-comptable
 - [x] **TVA française à 20 %**, incluse dans le prix : 50 € TTC = 41,67 € HT
       + 8,33 € de TVA. Indiqué dans les CGV (§3).
-- [ ] **Numéro de TVA intracommunautaire** : à transmettre à Claude pour les
-      mentions légales, et à saisir dans Stripe pour les factures (B3).
+- [x] **Numéro de TVA intracommunautaire** : FR43 999 259 252, affiché dans
+      les mentions légales et les CGV (§1) ; à saisir aussi dans Stripe pour
+      les factures (B3).
 - [ ] À confirmer avec le comptable : cas d'un client professionnel d'un
       autre pays de l'UE (autoliquidation) et seuil de 10 000 € de ventes
       aux particuliers européens (guichet OSS). Le taux fixe de 20 %
@@ -101,8 +103,8 @@ haut à droite, désactivé.
 
 ## C. Jour J — bascule (Vous et Claude)
 
-1. **Claude** : date la nouvelle version des CGV (`CGV_VERSION` dans
-   `src/lib/stripe.ts`) et intègre les corrections du juriste. Le médiateur
+1. **Claude** : vérifie que la version des CGV (`CGV_VERSION` dans
+   `src/lib/stripe.ts`) correspond au texte validé par le juriste. Le médiateur
    (CM2C) est déjà renseigné : **la vente s'ouvre dès que les clés réelles
    sont en place**. Mise en ligne par une PR, avec les
    contrôles automatiques au vert.

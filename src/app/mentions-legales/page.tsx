@@ -18,6 +18,7 @@ export default function MentionsLegalesPage() {
       <ul className="mt-2 list-disc pl-5">
         <li>Siège social : 6 rue d&apos;Armaillé, 75017 Paris, France</li>
         <li>SIREN : 999 259 252</li>
+        <li>N° de TVA intracommunautaire : FR43 999 259 252</li>
         <li>
           Contact :{" "}
           <a href="mailto:contact@medical-guidelines.net" className="underline">
