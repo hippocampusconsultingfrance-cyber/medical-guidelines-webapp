@@ -2,10 +2,185 @@
 -- Fiches de l'atelier : carte, mise en page et spécialités. Aucune
 -- publication (published_at et statuts inchangés). Idempotent.
 
+insert into public.societies (acronym) select 'ACHBPT'
+where not exists (select 1 from public.societies where acronym = 'ACHBPT');
+insert into public.societies (acronym) select 'ADARPEF'
+where not exists (select 1 from public.societies where acronym = 'ADARPEF');
+insert into public.societies (acronym) select 'AFC'
+where not exists (select 1 from public.societies where acronym = 'AFC');
+insert into public.societies (acronym) select 'AFCA'
+where not exists (select 1 from public.societies where acronym = 'AFCA');
+insert into public.societies (acronym) select 'AFDN'
+where not exists (select 1 from public.societies where acronym = 'AFDN');
+insert into public.societies (acronym) select 'AFEF'
+where not exists (select 1 from public.societies where acronym = 'AFEF');
+insert into public.societies (acronym) select 'AFU'
+where not exists (select 1 from public.societies where acronym = 'AFU');
+insert into public.societies (acronym) select 'ANAES'
+where not exists (select 1 from public.societies where acronym = 'ANAES');
+insert into public.societies (acronym) select 'ANAP'
+where not exists (select 1 from public.societies where acronym = 'ANAP');
+insert into public.societies (acronym) select 'ANARLF'
+where not exists (select 1 from public.societies where acronym = 'ANARLF');
+insert into public.societies (acronym) select 'ANSM'
+where not exists (select 1 from public.societies where acronym = 'ANSM');
+insert into public.societies (acronym) select 'ARMPO'
+where not exists (select 1 from public.societies where acronym = 'ARMPO');
+insert into public.societies (acronym) select 'ATS'
+where not exists (select 1 from public.societies where acronym = 'ATS');
+insert into public.societies (acronym) select 'CARO'
+where not exists (select 1 from public.societies where acronym = 'CARO');
+insert into public.societies (acronym) select 'CARORL'
+where not exists (select 1 from public.societies where acronym = 'CARORL');
+insert into public.societies (acronym) select 'CERES'
+where not exists (select 1 from public.societies where acronym = 'CERES');
+insert into public.societies (acronym) select 'CIAFU'
+where not exists (select 1 from public.societies where acronym = 'CIAFU');
+insert into public.societies (acronym) select 'CIANE'
+where not exists (select 1 from public.societies where acronym = 'CIANE');
+insert into public.societies (acronym) select 'CNCRH'
+where not exists (select 1 from public.societies where acronym = 'CNCRH');
+insert into public.societies (acronym) select 'CNCT'
+where not exists (select 1 from public.societies where acronym = 'CNCT');
+insert into public.societies (acronym) select 'CNGOF'
+where not exists (select 1 from public.societies where acronym = 'CNGOF');
+insert into public.societies (acronym) select 'CNSF'
+where not exists (select 1 from public.societies where acronym = 'CNSF');
+insert into public.societies (acronym) select 'CORASSO'
+where not exists (select 1 from public.societies where acronym = 'CORASSO');
+insert into public.societies (acronym) select 'CTSA'
+where not exists (select 1 from public.societies where acronym = 'CTSA');
+insert into public.societies (acronym) select 'EFS'
+where not exists (select 1 from public.societies where acronym = 'EFS');
+insert into public.societies (acronym) select 'ESICM'
+where not exists (select 1 from public.societies where acronym = 'ESICM');
+insert into public.societies (acronym) select 'EVG'
+where not exists (select 1 from public.societies where acronym = 'EVG');
+insert into public.societies (acronym) select 'FCVD'
+where not exists (select 1 from public.societies where acronym = 'FCVD');
+insert into public.societies (acronym) select 'FHS'
+where not exists (select 1 from public.societies where acronym = 'FHS');
+insert into public.societies (acronym) select 'GEHT'
+where not exists (select 1 from public.societies where acronym = 'GEHT');
+insert into public.societies (acronym) select 'GFHT'
+where not exists (select 1 from public.societies where acronym = 'GFHT');
+insert into public.societies (acronym) select 'GFRUP'
+where not exists (select 1 from public.societies where acronym = 'GFRUP');
+insert into public.societies (acronym) select 'GIHP'
+where not exists (select 1 from public.societies where acronym = 'GIHP');
+insert into public.societies (acronym) select 'HAS'
+where not exists (select 1 from public.societies where acronym = 'HAS');
+insert into public.societies (acronym) select 'SCCM'
+where not exists (select 1 from public.societies where acronym = 'SCCM');
+insert into public.societies (acronym) select 'SCVE'
+where not exists (select 1 from public.societies where acronym = 'SCVE');
+insert into public.societies (acronym) select 'SF2H'
+where not exists (select 1 from public.societies where acronym = 'SF2H');
+insert into public.societies (acronym) select 'SFA'
+where not exists (select 1 from public.societies where acronym = 'SFA');
+insert into public.societies (acronym) select 'SFAR'
+where not exists (select 1 from public.societies where acronym = 'SFAR');
+insert into public.societies (acronym) select 'SFB'
+where not exists (select 1 from public.societies where acronym = 'SFB');
+insert into public.societies (acronym) select 'SFBC'
+where not exists (select 1 from public.societies where acronym = 'SFBC');
+insert into public.societies (acronym) select 'SFC'
+where not exists (select 1 from public.societies where acronym = 'SFC');
+insert into public.societies (acronym) select 'SFCD'
+where not exists (select 1 from public.societies where acronym = 'SFCD');
+insert into public.societies (acronym) select 'SFCR'
+where not exists (select 1 from public.societies where acronym = 'SFCR');
+insert into public.societies (acronym) select 'SFCTCV'
+where not exists (select 1 from public.societies where acronym = 'SFCTCV');
+insert into public.societies (acronym) select 'SFD'
+where not exists (select 1 from public.societies where acronym = 'SFD');
+insert into public.societies (acronym) select 'SFED'
+where not exists (select 1 from public.societies where acronym = 'SFED');
+insert into public.societies (acronym) select 'SFGG'
+where not exists (select 1 from public.societies where acronym = 'SFGG');
+insert into public.societies (acronym) select 'SFM'
+where not exists (select 1 from public.societies where acronym = 'SFM');
+insert into public.societies (acronym) select 'SFMP'
+where not exists (select 1 from public.societies where acronym = 'SFMP');
+insert into public.societies (acronym) select 'SFMU'
+where not exists (select 1 from public.societies where acronym = 'SFMU');
+insert into public.societies (acronym) select 'SFMV'
+where not exists (select 1 from public.societies where acronym = 'SFMV');
+insert into public.societies (acronym) select 'SFN'
+where not exists (select 1 from public.societies where acronym = 'SFN');
+insert into public.societies (acronym) select 'SFNC'
+where not exists (select 1 from public.societies where acronym = 'SFNC');
+insert into public.societies (acronym) select 'SFNCL'
+where not exists (select 1 from public.societies where acronym = 'SFNCL');
+insert into public.societies (acronym) select 'SFNCM'
+where not exists (select 1 from public.societies where acronym = 'SFNCM');
+insert into public.societies (acronym) select 'SFNCP'
+where not exists (select 1 from public.societies where acronym = 'SFNCP');
+insert into public.societies (acronym) select 'SFNEP'
+where not exists (select 1 from public.societies where acronym = 'SFNEP');
+insert into public.societies (acronym) select 'SFNR'
+where not exists (select 1 from public.societies where acronym = 'SFNR');
+insert into public.societies (acronym) select 'SFNV'
+where not exists (select 1 from public.societies where acronym = 'SFNV');
+insert into public.societies (acronym) select 'SFO'
+where not exists (select 1 from public.societies where acronym = 'SFO');
+insert into public.societies (acronym) select 'SFORL'
+where not exists (select 1 from public.societies where acronym = 'SFORL');
+insert into public.societies (acronym) select 'SFP'
+where not exists (select 1 from public.societies where acronym = 'SFP');
+insert into public.societies (acronym) select 'SFPC'
+where not exists (select 1 from public.societies where acronym = 'SFPC');
+insert into public.societies (acronym) select 'SFPP'
+where not exists (select 1 from public.societies where acronym = 'SFPP');
+insert into public.societies (acronym) select 'SFPT'
+where not exists (select 1 from public.societies where acronym = 'SFPT');
+insert into public.societies (acronym) select 'SFR'
+where not exists (select 1 from public.societies where acronym = 'SFR');
+insert into public.societies (acronym) select 'SFRI'
+where not exists (select 1 from public.societies where acronym = 'SFRI');
+insert into public.societies (acronym) select 'SFSCMF'
+where not exists (select 1 from public.societies where acronym = 'SFSCMF');
+insert into public.societies (acronym) select 'SFT'
+where not exists (select 1 from public.societies where acronym = 'SFT');
+insert into public.societies (acronym) select 'SFTH'
+where not exists (select 1 from public.societies where acronym = 'SFTH');
+insert into public.societies (acronym) select 'SFTS'
+where not exists (select 1 from public.societies where acronym = 'SFTS');
+insert into public.societies (acronym) select 'SFVTT'
+where not exists (select 1 from public.societies where acronym = 'SFVTT');
+insert into public.societies (acronym) select 'SIZ'
+where not exists (select 1 from public.societies where acronym = 'SIZ');
+insert into public.societies (acronym) select 'SKR'
+where not exists (select 1 from public.societies where acronym = 'SKR');
+insert into public.societies (acronym) select 'SNFCP'
+where not exists (select 1 from public.societies where acronym = 'SNFCP');
+insert into public.societies (acronym) select 'SNFGE'
+where not exists (select 1 from public.societies where acronym = 'SNFGE');
+insert into public.societies (acronym) select 'SOFCOT'
+where not exists (select 1 from public.societies where acronym = 'SOFCOT');
+insert into public.societies (acronym) select 'SOFMER'
+where not exists (select 1 from public.societies where acronym = 'SOFMER');
+insert into public.societies (acronym) select 'SPILF'
+where not exists (select 1 from public.societies where acronym = 'SPILF');
+insert into public.societies (acronym) select 'SPLF'
+where not exists (select 1 from public.societies where acronym = 'SPLF');
+insert into public.societies (acronym) select 'SRLF'
+where not exists (select 1 from public.societies where acronym = 'SRLF');
+insert into public.societies (acronym) select 'SSA'
+where not exists (select 1 from public.societies where acronym = 'SSA');
+insert into public.societies (acronym) select 'SoFraSimS'
+where not exists (select 1 from public.societies where acronym = 'SoFraSimS');
+
 insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2026/04/RFE-20.4.2026-deifinitif-et-validei.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2026/04/RFE-20.4.2026-deifinitif-et-validei.pdf' and s.acronym in ('SFAR', 'GIHP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2026/04/RFE-20.4.2026-deifinitif-et-validei.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'anticoagulants',
   card_json = $mgjson${"badge":"GRADE","title":"Anticoagulants & procédure invasive","short":"Gestion péri-procédurale des anticoagulants pour une procédure invasive programmée.","society":"SFAR / GIHP — RFE 2026","version":"20 avril 2026","validated":"CA SFAR le 18/03/2026","methodology":"GRADE","pages":19,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -16,6 +191,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://www.urofrance.org/wp-content/uploads/2026/03/Reco_ECBU_Synthese_23.02.2023_MEL.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://www.urofrance.org/wp-content/uploads/2026/03/Reco_ECBU_Synthese_23.02.2023_MEL.pdf' and s.acronym in ('AFU', 'CIAFU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://www.urofrance.org/wp-content/uploads/2026/03/Reco_ECBU_Synthese_23.02.2023_MEL.pdf' and d.society_id is null and s.acronym = 'AFU';
 update public.documents set
   fiche_key = 'ecbu',
   card_json = $mgjson${"badge":"HAS · RCF","title":"ECBU pré-urologique & colonisation","short":"Place de l'ECBU avant une prise en charge urologique et modalités de traitement d'une colonisation.","society":"AFU / CIAFU — partenaire SFAR","version":"Janvier 2026","validated":"publiée sfar.org le 04/03/2026","methodology":"HAS (RCF)","pages":5,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -26,6 +207,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_AFAR_Recommandations-sur-la-reanimation-du-choc-hemorragique.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_AFAR_Recommandations-sur-la-reanimation-du-choc-hemorragique.pdf' and s.acronym in ('SFAR', 'SRLF', 'SFMU', 'GEHT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_AFAR_Recommandations-sur-la-reanimation-du-choc-hemorragique.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'choc_hemorragique',
   card_json = $mgjson${"badge":"GRADE","title":"Réanimation du choc hémorragique","short":"Prise en charge du choc hémorragique à la phase précoce, pré- et intra-hospitalière (hors hémorragie digestive et obstétricale).","society":"SFAR / SRLF / SFMU / GEHT — RFE 2014","version":"Validée CA SFAR 12/09/2014","validated":"publiée le 2 février 2015","methodology":"GRADE","pages":4,"section":"Réanimation"}$mgjson$::jsonb,
@@ -36,6 +223,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/intubation-en-urgence-dun-adulte-hors-bloc-operatoire-et-hors-unite-des-soins-critiques/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/intubation-en-urgence-dun-adulte-hors-bloc-operatoire-et-hors-unite-des-soins-critiques/' and s.acronym in ('SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/intubation-en-urgence-dun-adulte-hors-bloc-operatoire-et-hors-unite-des-soins-critiques/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'intubation_urgence',
   card_json = $mgjson${"badge":"GRADE","title":"Intubation en urgence hors bloc & hors soins critiques","short":"Intubation trachéale de l'adulte en situation d'urgence, hors bloc opératoire et hors unité de soins critiques.","society":"SFAR / SFMU — RFE 2024","version":"Validée CA SFAR 03/12/2024","validated":"CA SFMU 21/11/2024","methodology":"GRADE","pages":5,"section":"Urgences"}$mgjson$::jsonb,
@@ -46,6 +239,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-du-sepsis-du-nouveau-ne-de-lenfant-et-de-ladulte-has-2025/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-sepsis-du-nouveau-ne-de-lenfant-et-de-ladulte-has-2025/' and s.acronym in ('HAS', 'SRLF', 'SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-sepsis-du-nouveau-ne-de-lenfant-et-de-ladulte-has-2025/' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'sepsis',
   card_json = $mgjson${"badge":"HAS","title":"Sepsis — repérage & parcours de soins","short":"Définitions, scores diagnostiques (adulte/enfant), messages clés du parcours de soins, et l'intégralité des recommandations Surviving Sepsis Campaign 2021 (adulte) et 2020 (enfant/nouveau-né) validées pour le contexte français (~147 recommandations).","society":"HAS / SRLF / SFAR / SFMU & 16 sociétés — RBP 2025","version":"Validée Collège HAS 29/01/2025","validated":"RPC","methodology":"GRADE (RPC)","pages":14,"section":"Réanimation"}$mgjson$::jsonb,
@@ -56,6 +255,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-urgences-obstetricales-en-medecine-durgence/' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-urgences-obstetricales-en-medecine-durgence/' and s.acronym in ('SFMU', 'SFAR', 'CNGOF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-urgences-obstetricales-en-medecine-durgence/' and d.society_id is null and s.acronym = 'SFMU';
 update public.documents set
   fiche_key = 'urgences_obstetricales',
   card_json = $mgjson${"badge":"RPP","title":"Urgences obstétricales en médecine d'urgence","short":"Accouchement imminent, hémorragie du post-partum, MAP, pré-éclampsie/éclampsie, traumatisme, imagerie, arrêt cardiaque et formation — hors structure spécialisée.","society":"SFMU / SFAR / CNGOF — RPP 2022","version":"Validée CA SFAR 04/03/2022","validated":"CA SFMU 31/03/2022","methodology":"Avis d'experts (RPP)","pages":5,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -66,6 +271,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/diagnostic-et-prise-en-charge-des-reactions-dhypersensibilite-immediate-perioperatoires/?wpdmdl=103153' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/diagnostic-et-prise-en-charge-des-reactions-dhypersensibilite-immediate-perioperatoires/?wpdmdl=103153' and s.acronym in ('SFAR', 'SFA')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/diagnostic-et-prise-en-charge-des-reactions-dhypersensibilite-immediate-perioperatoires/?wpdmdl=103153' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'anaphylaxie',
   card_json = $mgjson${"badge":"GRADE","title":"Anaphylaxie périopératoire","short":"Bilan diagnostique post-réaction (tryptase, histamine, IgE spécifiques, tests cutanés, tests de provocation), facteurs de risque (latex, bêtalactamines/céfazoline, pholcodine, mastocytose) et traitement de l'hypersensibilité immédiate périopératoire par grade de gravité (adrénaline, remplissage, réfractaire, chirurgie urgente).","society":"SFAR / SFA — RFE 2025","version":"2025","validated":"GRADE","methodology":"GRADE","pages":13,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -76,6 +287,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-de-la-patiente-avec-une-pre-eclampsie-severe/' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-de-la-patiente-avec-une-pre-eclampsie-severe/' and s.acronym in ('SFAR', 'CNGOF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-de-la-patiente-avec-une-pre-eclampsie-severe/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'preeclampsie',
   card_json = $mgjson${"badge":"GRADE","title":"Pré-éclampsie sévère","short":"Définition, signes de gravité, traitement antihypertenseur (algorithme inclus), sulfate de magnésium, critères d'arrêt de grossesse, anesthésie et prise en charge postpartum.","society":"SFAR / CNGOF — RFE 2020","version":"Validée CRC SFAR 08/07/2020","validated":"CA SFAR 04/09/2020","methodology":"GRADE","pages":6,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -86,6 +303,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-de-lhyperthermie-maligne/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-de-lhyperthermie-maligne/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-de-lhyperthermie-maligne/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'hyperthermie_maligne',
   card_json = $mgjson${"badge":"RPP","title":"Hyperthermie maligne","short":"Dépistage, diagnostic de sensibilité, conduite anesthésique chez un patient à risque, et protocole complet de traitement de la crise (affiche + reconstitution du dantrolène).","society":"SFAR — RPP 2019 (actualisation 2013)","version":"Validée Comité Référentiels 30/05/2018","validated":"CA SFAR 21/06/2018","methodology":"Avis d'experts (RPP)","pages":6,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -96,6 +319,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/gestion-de-lanticoagulation-dans-un-contexte-durgence/?wpdmdl=62045' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-de-lanticoagulation-dans-un-contexte-durgence/?wpdmdl=62045' and s.acronym in ('SFMU', 'SFAR', 'GIHP', 'SFTH')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-de-lanticoagulation-dans-un-contexte-durgence/?wpdmdl=62045' and d.society_id is null and s.acronym = 'SFMU';
 update public.documents set
   fiche_key = 'anticoag_urgence',
   card_json = $mgjson${"badge":"GRADE","title":"Anticoagulation en contexte d'urgence","short":"Hémorragie sous anticoagulant (AVK, dabigatran, AOD anti-Xa, héparines, fondaparinux), surdosages asymptomatiques, procédures invasives non programmées et thrombolyse de l'AVC ischémique sous anticoagulant.","society":"SFMU / SFAR / GIHP / SFTH — RFE 2024","version":"2024","validated":"GRADE","methodology":"GRADE","pages":9,"section":"Urgences"}$mgjson$::jsonb,
@@ -106,6 +335,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-du-traumatisme-abdominal-grave-de-ladulte-les-48-premieres-heures/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-traumatisme-abdominal-grave-de-ladulte-les-48-premieres-heures/' and s.acronym in ('SFAR', 'SFMU', 'AFC', 'AFU', 'SFRI', 'EVG')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-traumatisme-abdominal-grave-de-ladulte-les-48-premieres-heures/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'traumatisme_abdominal',
   card_json = $mgjson${"badge":"GRADE","title":"Traumatisme abdominal grave de l'adulte","short":"Stratégie diagnostique (examen clinique, FAST, scanner), stratégie thérapeutique (laparotomie, damage control, cœlioscopie, traitement non-opératoire, angio-embolisation) et modalités précoces de surveillance des 48 premières heures. Fiche réflexe préhospitalière et algorithme hospitalier inclus.","society":"SFAR / SFMU (AFC, AFU, SFRI, EVG) — RFE 2019","version":"2019","validated":"CA SFAR 20/06/2019, CA SFMU 16/09/2019","methodology":"GRADE","pages":5,"section":"Urgences"}$mgjson$::jsonb,
@@ -116,6 +351,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/sedation-et-analgesie-en-reanimation-nouveau-ne-exclu/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/sedation-et-analgesie-en-reanimation-nouveau-ne-exclu/' and s.acronym in ('SFAR', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/sedation-et-analgesie-en-reanimation-nouveau-ne-exclu/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'sedation_reanimation',
   card_json = $mgjson${"badge":"GRADE","title":"Sédation et analgésie en réanimation","short":"Définitions et buts, moyens médicamenteux et non médicamenteux (hypnotiques, morphiniques, curares), outils d'évaluation (échelles de douleur/conscience, BIS), arrêt de la sédation-analgésie et syndrome de sevrage, algorithme de conduite pratique.","society":"SFAR / SRLF — Conférence de Consensus 2007 (publiée 2008)","version":"2007/2008","validated":"Conférence de Consensus, Paris, 15/11/2007","methodology":"GRADE","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -126,6 +367,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/sedation-analgesie-structure-durgence/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/sedation-analgesie-structure-durgence/' and s.acronym in ('SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/sedation-analgesie-structure-durgence/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'sedation_urgences',
   card_json = $mgjson${"badge":"GRADE","title":"Sédation et analgésie en structure d'urgence","short":"Pharmacologie des agents, ventilation spontanée, intubation en séquence rapide, patient intubé-ventilé, circonstances particulières (choc, neuro, respiratoire, femme enceinte, actes douloureux, CEE, patient incarcéré, afflux de victimes) et pédiatrie — extra- et intra-hospitalier.","society":"SFAR / SFMU — RFE 2010 (réactualisation Conférence d'experts 1999)","version":"2010","validated":"RFE 2010","methodology":"GRADE (adaptée, 3 niveaux)","pages":14,"section":"Urgences"}$mgjson$::jsonb,
@@ -136,6 +383,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/ventilation-non-invasive%E2%80%A8au-cours-de-linsuffisance-respiratoire-aigue-nouveau-ne-exclu/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/ventilation-non-invasive%E2%80%A8au-cours-de-linsuffisance-respiratoire-aigue-nouveau-ne-exclu/' and s.acronym in ('SFAR', 'SPLF', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/ventilation-non-invasive%E2%80%A8au-cours-de-linsuffisance-respiratoire-aigue-nouveau-ne-exclu/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'vni',
   card_json = $mgjson${"badge":"GRADE","title":"Ventilation non invasive (insuffisance respiratoire aiguë)","short":"Indications et contre-indications de la VNI, critères cliniques d'instauration par pathologie (BPCO, OAP cardiogénique, immunodéprimé, post-opératoire, neuromusculaire, pédiatrie), moyens de mise en œuvre (interfaces, réglages, monitorage), critères d'efficacité, d'échec et effets indésirables.","society":"SFAR / SPLF / SRLF — Conférence de Consensus 2006","version":"2006","validated":"3e Conférence de Consensus commune, 12/10/2006","methodology":"GRADE","pages":6,"section":"Réanimation"}$mgjson$::jsonb,
@@ -146,6 +399,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aap-en-urgence/?wpdmdl=34414' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aap-en-urgence/?wpdmdl=34414' and s.acronym in ('GIHP', 'GFHT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aap-en-urgence/?wpdmdl=34414' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'aap_urgence',
   card_json = $mgjson${"badge":"Propositions","title":"Agents antiplaquettaires en urgence","short":"Gestion des agents antiplaquettaires oraux (aspirine, clopidogrel, prasugrel, ticagrelor) en cas de procédure invasive non programmée ou d'hémorragie : moyens de neutralisation, durées d'interruption, conduite selon le type de procédure et la gravité de l'hémorragie.","society":"GIHP / GFHT — en collaboration avec la SFAR, 2018","version":"2018","validated":"Vote Delphi (n=38), accord fort","methodology":"Propositions (non-GRADE)","pages":5,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -156,6 +415,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2018/10/2_RFE-CURARE-3.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/10/2_RFE-CURARE-3.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/10/2_RFE-CURARE-3.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'curares',
   card_json = $mgjson${"badge":"GRADE","title":"Curarisation et décurarisation en anesthésie","short":"Indications de la curarisation (ventilation au masque, intubation, dispositifs supra-glottiques, chirurgie), monitorage per-opératoire, diagnostic et traitement de la curarisation résiduelle (néostigmine, sugammadex), populations spéciales (enfant, obésité, maladies neuromusculaires, ECT, insuffisance rénale/hépatique).","society":"SFAR — RFE 2018 (actualisation de la CC 1999)","version":"2018","validated":"Texte validé par le CA SFAR le 21/06/2018","methodology":"GRADE","pages":12,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -166,6 +431,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/choix-du-solute-pour-le-remplissage-vasculaire-en-situation-critique/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/choix-du-solute-pour-le-remplissage-vasculaire-en-situation-critique/' and s.acronym in ('SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/choix-du-solute-pour-le-remplissage-vasculaire-en-situation-critique/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'remplissage',
   card_json = $mgjson${"badge":"GRADE","title":"Remplissage vasculaire — choix du soluté","short":"Choix du type de soluté de remplissage vasculaire (colloïdes vs cristalloïdes, type de cristalloïde) au cours du sepsis/choc septique, du choc hémorragique, chez le patient cérébrolésé et en péripartum. Tableau de composition des solutés inclus.","society":"SFAR / SFMU — RFE 2021","version":"2021","validated":"CA SFAR 19/05/2021, CA SFMU 29/06/2021","methodology":"GRADE","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -176,6 +447,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-un-traumatisme-severe-de-membres/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-un-traumatisme-severe-de-membres/' and s.acronym in ('SFAR', 'SFMU', 'SOFCOT', 'SCVE', 'SSA')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-un-traumatisme-severe-de-membres/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'traumatisme_membre',
   card_json = $mgjson${"badge":"GRADE","title":"Traumatisme sévère de membre(s)","short":"Orientation vers un centre spécialisé (critères de Vittel), contrôle du saignement (garrot), dépistage d'une lésion vasculaire, moment de l'ostéosynthèse (stabilisation précoce vs damage control orthopaedic surgery), sauvetage de membre vs amputation, prévention infectieuse et thromboembolique, syndrome des loges, rhabdomyolyse, embolie graisseuse, analgésie.","society":"SFAR / SFMU, avec SOFCOT / SCVE / SSA — RFE 2020","version":"2020","validated":"CRC 16/06/2020, CA SFAR 25/08/2020, CA SFMU 15/09/2020","methodology":"GRADE","pages":9,"section":"Urgences"}$mgjson$::jsonb,
@@ -186,6 +463,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/gestion-des-voies-aeriennes-de-lenfant/' and s.slug in ('anesthesie_reanimation', 'pediatrie', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/gestion-des-voies-aeriennes-de-lenfant/' and s.acronym in ('SFAR', 'ADARPEF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/gestion-des-voies-aeriennes-de-lenfant/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'voies_aeriennes_enfant',
   card_json = $mgjson${"badge":"GRADE","title":"Voies aériennes de l'enfant","short":"Dispositifs supraglottiques, sondes à ballonnet, vidéolaryngoscopes, curares et induction en séquence rapide, extubation, enfant enrhumé — avec les 3 algorithmes complets (intubation difficile imprévue, ventilation au masque difficile, CICO). Ne s'applique pas au nouveau-né/prématuré.","society":"SFAR / ADARPEF — RFE 2018","version":"2018","validated":"CA SFAR 21/06/2018, CA ADARPEF 24/05/2018","methodology":"GRADE","pages":10,"section":"Pédiatrie"}$mgjson$::jsonb,
@@ -196,6 +479,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/actualisation-de-recommandations-intubation-difficile-et-extubation-en-anesthesie-chez-ladulte/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/actualisation-de-recommandations-intubation-difficile-et-extubation-en-anesthesie-chez-ladulte/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/actualisation-de-recommandations-intubation-difficile-et-extubation-en-anesthesie-chez-ladulte/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'intubation_difficile_adulte',
   card_json = $mgjson${"badge":"GRADE","title":"Intubation difficile & extubation (adulte)","short":"Actualisation de la Conférence d'Experts Intubation difficile 2006 : vidéolaryngoscopes en intubation prévue et non prévue, techniques d'oxygénation, anesthésie et curarisation, stratégie de gestion des voies aériennes en cas d'intubation difficile non prévue, extubation à risque (facteurs de risque, leadership et décision).","society":"SFAR — RFE 2017","version":"2017","validated":"Texte validé par le CA SFAR le 29/06/2017","methodology":"GRADE","pages":11,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -206,6 +495,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-charges-traumatises-pelviens-graves-a-phase-precoce-24-premieres-heures/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-charges-traumatises-pelviens-graves-a-phase-precoce-24-premieres-heures/' and s.acronym in ('SFMU', 'SFAR', 'SFR', 'SSA', 'AFU', 'SOFCOT', 'SFCD')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-charges-traumatises-pelviens-graves-a-phase-precoce-24-premieres-heures/' and d.society_id is null and s.acronym = 'SFMU';
 update public.documents set
   fiche_key = 'traumatisme_pelvien',
   card_json = $mgjson${"badge":"GRADE","title":"Traumatisme pelvien grave","short":"Prise en charge à la phase précoce (24 premières heures) : préhospitalier (orientation, contention pelvienne), imagerie initiale (TDM, opacification urètre/vessie), classifications Young-Burgess et Tile, contrôle de l'hémostase (embolisation, tamponnement extrapéritonéal, fixation externe), traumatisme pelvien ouvert.","society":"SFMU / SFAR, avec SFR / SSA / AFU / SOFCOT / SFCD — RFE 2017","version":"2017","validated":"CA SFMU et CA SFAR le 29/06/2017","methodology":"GRADE","pages":9,"section":"Urgences"}$mgjson$::jsonb,
@@ -216,6 +511,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/traumatisme-thoracique-prise-en-charge-des-48-premieres-heures/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/traumatisme-thoracique-prise-en-charge-des-48-premieres-heures/' and s.acronym in ('SFAR', 'SFMU', 'SFCTCV', 'SFR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/traumatisme-thoracique-prise-en-charge-des-48-premieres-heures/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'traumatisme_thoracique',
   card_json = $mgjson${"badge":"GRADE","title":"Traumatisme thoracique — 48 premières heures","short":"Critères de gravité et orientation, stratégie diagnostique (échographie pleuropulmonaire, TDM), support ventilatoire (VNI, ventilation protectrice), stratégies analgésiques (ALR, bloc paravertébral, péridurale), drainage pleural, chirurgie et radiologie interventionnelle, spécificités du traumatisme pénétrant.","society":"SFAR / SFMU, avec SFCTCV / SFR — RFE 2015","version":"2015","validated":"Disponible en ligne le 23/05/2015","methodology":"GRADE","pages":10,"section":"Réanimation"}$mgjson$::jsonb,
@@ -226,6 +527,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-neurochirurgicales-des-traumatismes-cranio-encephaliques-de-ladulte-et-de-lenfant-a-la-phase-initiale/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-neurochirurgicales-des-traumatismes-cranio-encephaliques-de-ladulte-et-de-lenfant-a-la-phase-initiale/' and s.acronym in ('SFNC', 'SFNCP', 'SFNCL', 'ANARLF', 'SFAR', 'GFRUP', 'SFNR', 'SPILF', 'SOFMER')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-neurochirurgicales-des-traumatismes-cranio-encephaliques-de-ladulte-et-de-lenfant-a-la-phase-initiale/' and d.society_id is null and s.acronym = 'SFNC';
 update public.documents set
   fiche_key = 'traumatisme_cranien',
   card_json = $mgjson${"badge":"GRADE","title":"Traumatisme cranio-encéphalique — prise en charge neurochirurgicale","short":"Facteurs de mauvais pronostic (fragilité, mydriase, délai), hématomes extra-duraux et sous-duraux aigus, embarrures et brèches ostéo-durales, traumatismes pénétrants (score SPIN), désordres hydrauliques post-traumatiques, particularités pédiatriques (HED néonatal, syndrome du bébé secoué, fracture ping-pong). Annexes GOSE, mFI-5, SPIN.","society":"SFNC, avec SFNCP/SFNCL/ANARLF/SFAR/GFRUP/SFNR/SPILF/SOFMER — RPP 2025","version":"2025","validated":"V1.13, 19/03/2025, publiée le 19/09/2025","methodology":"GRADE","pages":9,"section":"Réanimation"}$mgjson$::jsonb,
@@ -236,6 +543,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-ou-a-risque-de-traumatisme-vertebromedullaire/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-ou-a-risque-de-traumatisme-vertebromedullaire/' and s.acronym in ('SFAR', 'ANARLF', 'SFCR', 'SFMU', 'SOFCOT', 'SOFMER', 'SSA')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-ou-a-risque-de-traumatisme-vertebromedullaire/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'traumatisme_vertebromedullaire',
   card_json = $mgjson${"badge":"GRADE","title":"Traumatisme vertébro-médullaire","short":"Immobilisation du rachis, intubation oro-trachéale (pré-hospitalière et hospitalière, avec algorithmes), objectifs hémodynamiques, filière de soins spécialisée, corticothérapie (contre-indiquée), IRM, délai chirurgical, sevrage ventilatoire, antalgie neuropathique, installation/mobilisation, sondage vésical intermittent.","society":"SFAR, avec ANARLF/SFCR/SFMU/SOFCOT/SOFMER/SSA — RFE 2019","version":"2019","validated":"CRC 15/05/2019, CA SFAR 24/05/2019","methodology":"GRADE","pages":8,"section":"Urgences"}$mgjson$::jsonb,
@@ -246,6 +559,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/intubation-et-extubation-du-patient-de-reanimation/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/intubation-et-extubation-du-patient-de-reanimation/' and s.acronym in ('SFAR', 'SRLF', 'SFMU', 'GFRUP', 'ADARPEF', 'SKR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/intubation-et-extubation-du-patient-de-reanimation/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'intubation_reanimation',
   card_json = $mgjson${"badge":"GRADE","title":"Intubation & extubation en réanimation","short":"Intubation compliquée (score MACOCHA), matériel (vidéolaryngoscopes, DSG, capnographie), agents d'induction (succinylcholine, rocuronium/sugammadex), protocoles/bundles avec algorithme IOT, pré-requis et échecs de l'extubation (test de fuite, corticothérapie), gestion pratique (VNI, ONHD, kinésithérapie) avec algorithme d'extubation.","society":"SFAR / SRLF, avec SFMU/GFRUP/ADARPEF/SKR — RFE 2016","version":"2016","validated":"CA SRLF et CA SFAR le 17/06/2016","methodology":"GRADE","pages":8,"section":"Réanimation"}$mgjson$::jsonb,
@@ -256,6 +575,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-un-traumatisme-cranien-leger-de-ladulte/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-un-traumatisme-cranien-leger-de-ladulte/' and s.acronym in ('SFMU', 'SFAR', 'SFBC', 'SFR', 'SOFMER')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-patients-presentant-un-traumatisme-cranien-leger-de-ladulte/' and d.society_id is null and s.acronym = 'SFMU';
 update public.documents set
   fiche_key = 'traumatisme_cranien_leger',
   card_json = $mgjson${"badge":"RPP","title":"Traumatisme crânien léger de l'adulte","short":"Stratification du risque (élevé/intermédiaire), biomarqueurs (S100B, UCH-L1+GFAP), délai de la TDM cérébrale, Doppler transcrânien, imagerie de contrôle, réversion des anticoagulants et antiplaquettaires, critères de retour à domicile, filière de soins et information de sortie (fiche patient incluse).","society":"SFMU, avec SFAR/SFBC/SFR/SOFMER — RPP 2022","version":"2022","validated":"CA SFMU 24/05/2022, CA SFAR 15/09/2022","methodology":"Avis d'experts (RPP)","pages":8,"section":"Urgences"}$mgjson$::jsonb,
@@ -266,6 +591,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/decisions-de-limitation-et-darret-de-traitements-lat-en-soins-critiques-de-ladulte/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/decisions-de-limitation-et-darret-de-traitements-lat-en-soins-critiques-de-ladulte/' and s.acronym in ('SFAR', 'SOFMER')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/decisions-de-limitation-et-darret-de-traitements-lat-en-soins-critiques-de-ladulte/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'lat_soins_critiques',
   card_json = $mgjson${"badge":"GRADE","title":"Décisions de LAT en soins critiques","short":"Prérequis et modalités d'une décision de limitation/arrêt de traitements (réunions pluriprofessionnelles, recherche des volontés du patient, procédure collégiale), protocole de sédation profonde et continue (posologies, échelles RASS/BPS/RDOS), relations avec les proches (accompagnement, communication, structure d'éthique clinique).","society":"SFAR, avec SOFMER — RFE 2025","version":"2025","validated":"Comité des Référentiels Cliniques SFAR 10/05/2025, CA SFAR 15/07/2025","methodology":"GRADE","pages":9,"section":"Réanimation"}$mgjson$::jsonb,
@@ -276,6 +607,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/recommandations-prise-charge-sdra/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/recommandations-prise-charge-sdra/' and s.acronym in ('SFAR', 'ATS', 'ESICM', 'SCCM')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/recommandations-prise-charge-sdra/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'sdra',
   card_json = $mgjson${"badge":"GRADE","title":"SDRA — Ventilation mécanique","short":"Traduction résumée officielle SFAR du guideline international ATS/ESICM/SCCM 2017 : volume courant/pression de plateau, décubitus ventral, VOHF, PEP élevée, manœuvres de recrutement, ECMO.","society":"SFAR (trad. ATS/ESICM/SCCM) — 2017-2018","version":"2018","validated":"Comité des Référentiels Cliniques SFAR 12/12/2017, CA SFAR 02/02/2018","methodology":"GRADE","pages":3,"section":"Réanimation"}$mgjson$::jsonb,
@@ -286,6 +623,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/pneumonies-associees-aux-soins-de-reanimation/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/pneumonies-associees-aux-soins-de-reanimation/' and s.acronym in ('SFAR', 'SRLF', 'ADARPEF', 'GFRUP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/pneumonies-associees-aux-soins-de-reanimation/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'pavm',
   card_json = $mgjson${"badge":"GRADE","title":"Pneumonies associées aux soins","short":"Prévention multimodale (dont décontamination digestive sélective), diagnostic (limites du CPIS et des biomarqueurs), traitement antibiotique probabiliste et documenté (schémas thérapeutiques détaillés), spécificités BPCO et pédiatrie.","society":"SFAR / SRLF, avec ADARPEF/GFRUP — RFE 2017","version":"2017","validated":"CA SFAR 29/06/2017, CA SRLF 08/06/2017","methodology":"GRADE","pages":6,"section":"Réanimation"}$mgjson$::jsonb,
@@ -296,6 +639,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/tracheotomie-en-reanimation/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/tracheotomie-en-reanimation/' and s.acronym in ('SRLF', 'SFAR', 'SFMU', 'SFORL')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/tracheotomie-en-reanimation/' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'tracheotomie',
   card_json = $mgjson${"badge":"GRADE","title":"Trachéotomie en réanimation","short":"Indications et contre-indications (délai ≥4 jours, situations à haut risque), technique percutanée par dilatation unique progressive, fibroscopie et échographie cervicale, protocoles détaillés (réalisation, soins post-trachéotomie, décanulation avec algorithme séquentiel).","society":"SRLF / SFAR, avec SFMU/SFORL — RFE 2016","version":"2016","validated":"CA SFAR 15/12/2016, CA SRLF 13/12/2016","methodology":"GRADE","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -306,6 +655,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/nutrition-artificielle-en-reanimation%E2%80%A8/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/nutrition-artificielle-en-reanimation%E2%80%A8/' and s.acronym in ('SFAR', 'SRLF', 'SFNEP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/nutrition-artificielle-en-reanimation%E2%80%A8/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'nutrition',
   card_json = $mgjson${"badge":"GRADE","title":"Nutrition artificielle en réanimation","short":"Stratégie générale (entérale précoce vs. parentérale), objectifs caloriques/protéiques, nutrition entérale (sonde, position, prokinétiques, mélanges) et parentérale, pharmaconutrition, particularités par terrain (IRC épuré, insuffisant hépatique, SDRA, obèse, dénutrition sévère, brûlé) et pédiatriques — 71 recommandations.","society":"SFAR / SRLF / SFNEP — RFE 2014","version":"2014","validated":"Recommandations validées février 2013","methodology":"GRADE","pages":9,"section":"Réanimation"}$mgjson$::jsonb,
@@ -316,6 +671,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_REANIMATION_epuration-extrarenale-en-reanimation-adulte-et-pediatrique.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_REANIMATION_epuration-extrarenale-en-reanimation-adulte-et-pediatrique.pdf' and s.acronym in ('SRLF', 'SFAR', 'GFRUP', 'SFD')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_REANIMATION_epuration-extrarenale-en-reanimation-adulte-et-pediatrique.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'eer',
   card_json = $mgjson${"badge":"GRADE","title":"Épuration extrarénale en réanimation","short":"Indications et timing de l'EER (précoce vs. différée), modalités techniques (continue vs. intermittente, dose de dialyse, anticoagulation régionale au citrate vs. héparine, gestion du circuit par phase), particularités pédiatriques — 78 recommandations, adulte et pédiatrique.","society":"SRLF, avec SFAR/GFRUP/SFD — RFE 2014","version":"2014","validated":"Publication Réanimation 2014, DOI 10.1007/s13546-014-0917-6","methodology":"GRADE","pages":7,"section":"Réanimation"}$mgjson$::jsonb,
@@ -326,6 +687,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/insuffisance-renale-aigue/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/insuffisance-renale-aigue/' and s.acronym in ('SFAR', 'SRLF', 'GFRUP', 'SFN')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/insuffisance-renale-aigue/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'ira',
   card_json = $mgjson${"badge":"GRADE","title":"Insuffisance rénale aiguë périopératoire","short":"Diagnostic et gravité (KDIGO/pRIFLE), diagnostic précoce (biomarqueurs, Doppler rénal), évaluation du risque, prévention non spécifique (HEA, PAM, remplissage), gestion des agents néphrotoxiques, stratégies pharmacologiques, nutrition et évaluation de la récupération rénale — 33 recommandations, adulte et pédiatrique.","society":"SFAR / SRLF, avec GFRUP/SFN — RFE 2015","version":"2015","validated":"CA SFAR 19/06/2015, CA SRLF 06/08/2015","methodology":"GRADE","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -336,6 +703,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/insuffisance-hepatique-en-soins-critiques/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/insuffisance-hepatique-en-soins-critiques/' and s.acronym in ('SFAR', 'AFEF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/insuffisance-hepatique-en-soins-critiques/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'ih',
   card_json = $mgjson${"badge":"GRADE","title":"Insuffisance hépatique en soins critiques","short":"Insuffisance hépatique aiguë (bilan étiologique, N-acétylcystéine, transplantation) et insuffisance hépatique sur cirrhose/ACLF (admission en soins critiques, IRA et syndrome hépatorénal, sepsis, albumine, hémorragie digestive et TIPS, hémostase, avis spécialisé) — 19 recommandations, CLIF-SOFA et grade ACLF en annexe.","society":"SFAR / AFEF — RFE 2018","version":"2018","validated":"Publié 2018","methodology":"GRADE","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -346,6 +719,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/epanchement-pleural-liquidien-de-ladulte-en-soins-critiques/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/epanchement-pleural-liquidien-de-ladulte-en-soins-critiques/' and s.acronym in ('SFAR', 'SFMU', 'SPLF', 'SFCTCV')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/epanchement-pleural-liquidien-de-ladulte-en-soins-critiques/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'epanchement_pleural',
   card_json = $mgjson${"badge":"RPP","title":"Épanchement pleural liquidien","short":"Diagnostic échographique, indication de ponction/drainage, technique de pose (voie d'abord, calibre, gestion des antithrombotiques), analgésie, surveillance post-drainage et procédure de retrait du drain — 25 recommandations (avis d'experts, accord fort), hors pleurésie purulente/hémothorax/épanchement néoplasique.","society":"SFAR / SFMU / SPLF / SFCTCV — RPP 2023","version":"2023","validated":"CRC SFAR 10/04/2023, CA SFAR 20/04/2023, CA SFCTCV/SFMU 21/06/2023, CA SPLF 18/07/2023","methodology":"Avis d'experts (RPP)","pages":4,"section":"Réanimation"}$mgjson$::jsonb,
@@ -356,6 +735,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/rfe-gestion-anemie-reanimation/?wpdmdl=24462' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/rfe-gestion-anemie-reanimation/?wpdmdl=24462' and s.acronym in ('SFAR', 'SRLF', 'SFTS', 'SFVTT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/rfe-gestion-anemie-reanimation/?wpdmdl=24462' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'anemie',
   card_json = $mgjson${"badge":"GRADE","title":"Anémie en soins critiques","short":"Prévention non pharmacologique (réduction des prélèvements sanguins), seuils transfusionnels restrictifs par contexte clinique (Hb 7,0-8,0 g/dL selon la situation), politique de transfusion unitaire, traitement par érythropoïétine et gestion du fer — 10 recommandations, hors hémorragie aiguë et anémies chroniques.","society":"SFAR / SRLF, avec SFTS/SFVTT — RFE 2019","version":"2019","validated":"CA SFAR 20/06/2019, CA SRLF 26/06/2019","methodology":"GRADE","pages":3,"section":"Réanimation"}$mgjson$::jsonb,
@@ -366,6 +751,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prevention-de-lhypothermie-peroperatoire-accidentelle-au-bloc-operatoire-chez-ladulte/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prevention-de-lhypothermie-peroperatoire-accidentelle-au-bloc-operatoire-chez-ladulte/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prevention-de-lhypothermie-peroperatoire-accidentelle-au-bloc-operatoire-chez-ladulte/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'hypothermie',
   card_json = $mgjson${"badge":"GRADE","title":"Prévention de l'hypothermie peropératoire","short":"Seuil cible de température centrale (≥36,5°C), réchauffement cutané actif (pré-warming, per-anesthésie, SSPI), réchauffement des fluides IV/produits sanguins/liquides d'irrigation, risques (brûlures, infection) et stratégie chronologique par phase — 14 recommandations, première RFE française sur ce sujet.","society":"SFAR — RFE 2018","version":"2018","validated":"CRC SFAR 12/06/2018, CA SFAR 21/06/2018","methodology":"GRADE","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -376,6 +767,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-nausees-et-vomissements-postoperatoires/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-nausees-et-vomissements-postoperatoires/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-nausees-et-vomissements-postoperatoires/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'nvpo',
   card_json = $mgjson${"badge":"GRADE","title":"NVPO — Nausées et vomissements postopératoires","short":"Facteurs de risque et scores prédictifs (Apfel, Koivuranta), sétrons, dexaméthasone, dropéridol, antagonistes NK1 (aprépitant), traitements alternatifs, stratégies de prévention multimodale et algorithme décisionnel par niveau de risque, particularités pédiatriques et en chirurgie ambulatoire — conférence d'experts, ~60 recommandations.","society":"SFAR — Conférence d'experts 2007/2008","version":"2008","validated":"Publié Ann Fr Anesth Réanim 2008;27:866-878","methodology":"GRADE","pages":7,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -386,6 +783,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2018/03/2_Gestion-des-agents-antiplaquettaires-pour-une-procedure-invasive-programmee.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/03/2_Gestion-des-agents-antiplaquettaires-pour-une-procedure-invasive-programmee.pdf' and s.acronym in ('GIHP', 'GFHT', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/03/2_Gestion-des-agents-antiplaquettaires-pour-une-procedure-invasive-programmee.pdf' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'aap_programmee',
   card_json = $mgjson${"badge":"PROPOSITIONS","title":"Agents antiplaquettaires — procédure invasive programmée","short":"Classification du risque hémorragique de la procédure (faible/intermédiaire/élevé) et du risque thrombotique du patient, délais d'arrêt par molécule (J-3 aspirine, J-5 clopidogrel/ticagrélor, J-7 prasugrel), gestion selon l'indication, bithérapie et stent coronaire, anesthésie locorégionale rachidienne et blocs périphériques, chirurgie de pontage aortocoronaire — complète la fiche dédiée à la procédure non programmée/l'hémorragie.","society":"GIHP & GFHT, en collaboration avec la SFAR — Propositions 2018","version":"2018","validated":"Publié Anesth Reanim 2018 (ANREA-314), doi 10.1016/j.anrea.2018.01.002","methodology":"Propositions (vote GIHP/GFHT, n=37 — non GRADE)","pages":7,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -396,6 +799,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prevention-de-la-maladie-thromboembolique-veineuse-peri-operatoire/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prevention-de-la-maladie-thromboembolique-veineuse-peri-operatoire/' and s.acronym in ('GIHP', 'SFAR', 'SFTH', 'SFMV')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prevention-de-la-maladie-thromboembolique-veineuse-peri-operatoire/' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'mtev_perioperatoire',
   card_json = $mgjson${"badge":"GRADE","title":"Prévention de la MTEV péri-opératoire","short":"Actualisation 2024 des recommandations SFAR 2011 : implémentation de protocoles, facteurs de risque liés au patient, thromboprophylaxie pharmacologique par type de chirurgie (orthopédie/traumatologie, abdominopelvienne, carcinologique, vasculaire), délai d'introduction et anesthésie locorégionale, compression pneumatique intermittente, filtre cave, insuffisance rénale, obésité, pédiatrie, réanimation, acide tranexamique, monitorage biologique, TVP distale — 77 recommandations et schéma de synthèse.","society":"GIHP, en collaboration avec la SFAR, la SFTH et la SFMV — RFE 2024","version":"16.5.2024","validated":"Validation SFAR 30/04/2024, SFTH 23/02/2024, SFMV janvier 2024","methodology":"GRADE","pages":14,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -406,6 +815,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/controle-de-la-glycemie-en-reanimation-et-en-anesthesie/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/controle-de-la-glycemie-en-reanimation-et-en-anesthesie/' and s.acronym in ('SFAR', 'SRLF', 'SFNEP', 'SIZ')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/controle-de-la-glycemie-en-reanimation-et-en-anesthesie/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'glycemie',
   card_json = $mgjson${"badge":"NGP/ACCORD","title":"Contrôle de la glycémie en réanimation et en anesthésie","short":"Diagnostic et risques de l'hypoglycémie, cibles de contrôle glycémique en réanimation et en périopératoire, réalisation pratique (apports glucidiques, modalités de surveillance, algorithmes et protocoles), spécificités du patient diabétique et en pédiatrie — 74 recommandations cotées sur deux axes indépendants (niveau de preuve et force de l'accord d'experts), précédées d'un rappel de physiologie/physiopathologie du glucose et de l'insuline.","society":"SFAR & SRLF, avec Alfediam/Adarpef/Gefrup/Sbar/SFNEP/SIZ — RFE 2009","version":"2009 (validée juillet 2008)","validated":"Publié Ann Fr Anesth Reanim 2009;28:410-415, doi 10.1016/j.annfar.2009.02.020","methodology":"NGP + Accord (deux axes indépendants, non GRADE numérique)","pages":8,"section":"Réanimation"}$mgjson$::jsonb,
@@ -416,6 +831,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-en-situation-durgence-et-en-reanimation-des-etats-de-mal-epileptiques-de-ladulte-et-de-lenfant-nouveau-ne-exclu/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-en-situation-durgence-et-en-reanimation-des-etats-de-mal-epileptiques-de-ladulte-et-de-lenfant-nouveau-ne-exclu/' and s.acronym in ('SRLF', 'GFRUP', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-en-situation-durgence-et-en-reanimation-des-etats-de-mal-epileptiques-de-ladulte-et-de-lenfant-nouveau-ne-exclu/' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'mal_epileptique',
   card_json = $mgjson${"badge":"ACCORD","title":"États de mal épileptiques — prise en charge d'urgence","short":"Définitions et classification opérationnelle de l'EME (8 formes cliniques par degré d'urgence pronostique), diagnostic différentiel (pseudo état de mal), EEG, enquête étiologique, facteurs pronostiques, prise en charge générale, schéma thérapeutique et posologies par molécule (benzodiazépines, phénobarbital, valproate, (fos)phénytoïne), particularités pédiatriques — adulte ET enfant, nouveau-né exclu.","society":"SRLF, avec le GFRUP et la SFMU — RFE 2009","version":"2008/2009","validated":"Publié Réanimation 2009;18:4-12, doi 10.1016/j.reaurg.2008.07.008","methodology":"Accord fort/faible (méthode RAND/UCLA, non GRADE)","pages":14,"section":"Urgences"}$mgjson$::jsonb,
@@ -426,6 +847,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prevention-du-risque-allergique-peranesthesique.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prevention-du-risque-allergique-peranesthesique.pdf' and s.acronym in ('SFAR', 'SFA')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prevention-du-risque-allergique-peranesthesique.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'allergie_prevention',
   card_json = $mgjson${"badge":"NP (preuve)","title":"Prévention du risque allergique péranesthésique","short":"Réalité du risque et substances responsables (curares en tête), mécanismes et physiopathologie du choc, bilan diagnostique biologique (histamine, tryptase, IgE spécifiques) et cutané (tests cutanés, tableaux de concentrations de référence), facteurs favorisants et croisements allergéniques, place du bilan allergologique préanesthésique, prévention primaire/secondaire et choix de la technique — complète la fiche « Anaphylaxie 2025 » (traitement aigu) déjà publiée sur ce site.","society":"SFAR & Société française d'allergologie (SFA) — RFE 2011","version":"2011 (actualisation 2001/2002)","validated":"Publié Ann Fr Anesth Reanim 2011;30:212-222, doi:10.1016/j.annfar.2010.12.002","methodology":"Niveaux de preuve NP1-4 (argumentaire) — pas de grade par recommandation","pages":9,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -436,6 +863,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/antibioprophylaxie-en-chirurgie-et-medecine-interventionnelle/?wpdmdl=68362' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/antibioprophylaxie-en-chirurgie-et-medecine-interventionnelle/?wpdmdl=68362' and s.acronym in ('SFAR', 'SPILF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/antibioprophylaxie-en-chirurgie-et-medecine-interventionnelle/?wpdmdl=68362' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'antibioprophylaxie',
   card_json = $mgjson${"badge":"GRADE","title":"Antibioprophylaxie — recommandations générales","short":"Les 11 recommandations générales (Champ 1) de la RFE : délai d'administration avant l'incision, réinjection peropératoire et rythme par molécule, durée (limitée à la période peropératoire dans la grande majorité des cas), adaptation posologique chez le patient obèse (céphalosporines, amoxicilline-clavulanate, clindamycine, gentamicine, vancomycine, teicoplanine), et dépistage/antibioprophylaxie ciblée chez le patient colonisé à E-BLSE avant chirurgie colo-rectale. Périmètre volontairement limité : exclut les Champs 2-3 (18 tableaux disciplinaires adultes et pédiatriques de posologie par procédure, ~85 pages) — voir le texte intégral pour le choix et la dose d'une procédure donnée.","society":"SFAR / SPILF (32 sociétés savantes associées) — RFE 2024","version":"V3.0 du 04/05/2026 (V1.0 originale 08/12/2023)","validated":"CA SFAR 30/06/2023 (Champs 1-2) ; CA SFAR 20/05/2026 (Champ 3 pédiatrique)","methodology":"GRADE","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -446,6 +879,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2019/10/rfe-controle-cible-de-la-temperature-en-reanimation.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2019/10/rfe-controle-cible-de-la-temperature-en-reanimation.pdf' and s.acronym in ('SRLF', 'SFAR', 'ANARLF', 'GFRUP', 'SFMU', 'SFNV')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2019/10/rfe-controle-cible-de-la-temperature-en-reanimation.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'controle_temperature',
   card_json = $mgjson${"badge":"GRADE","title":"Contrôle ciblé de la température en réanimation","short":"30 recommandations GRADE réparties en 6 champs cliniques (adulte + variantes pédiatriques) : arrêt cardiaque (cible 32-36°C selon le rythme initial), traumatisme crânien grave (35-37°C, échec de la neuroprotection par hypothermie profonde), AVC grave et autres hémorragies cérébrales, état de mal épileptique réfractaire et méningite/méningo-encéphalite, états de choc (cardiogénique, septique), et modalités pratiques de mise en œuvre (méthodes asservies, sites de mesure, surveillance des complications). Hors nouveau-nés.","society":"RFE commune SRLF-SFAR, avec l'ANARLF, le GFRUP, la SFMU et la SFNV — 2016","version":"2016","validated":"CA SRLF et CA SFAR le 18/02/2016 ; publié Anesth Reanim. 2019;5:49-66, doi 10.1016/j.anrea.2018.10.004","methodology":"GRADE","pages":6,"section":"Réanimation"}$mgjson$::jsonb,
@@ -456,6 +895,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/diagnostic-et-prise-en-charge-dune-thrombopenie-induite-par-lheparine/?wpdmdl=34610' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/diagnostic-et-prise-en-charge-dune-thrombopenie-induite-par-lheparine/?wpdmdl=34610' and s.acronym in ('GIHP', 'GFHT', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/diagnostic-et-prise-en-charge-dune-thrombopenie-induite-par-lheparine/?wpdmdl=34610' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'tih',
   card_json = $mgjson${"badge":"ACCORD","title":"Thrombopénie induite par l'héparine (TIH)","short":"12 questions, 40 propositions (toutes à accord fort, pas de grade GRADE) : stades et niveaux de risque, surveillance de la numération plaquettaire, circonstances évocatrices et score des 4T, diagnostic biologique (anticorps anti-FP4, tests fonctionnels), prise en charge initiale, choix et posologie des anticoagulants de substitution (danaparoïde, argatroban, bivalirudine, fondaparinux, AOD, AVK), chirurgie hors cardiaque et chirurgie cardiaque avec/sans CEC, médecine/obstétrique/pédiatrie, prévention d'une récidive.","society":"GIHP & GFHT, en collaboration avec la SFAR — Propositions 2019","version":"2019 (actualise la conférence d'experts SFAR de 2002)","validated":"Vote du groupe GIHP/GFHT (n=32 participants)","methodology":"Accord fort (méthode GIHP/GFHT, pas de grade GRADE)","pages":9,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -466,6 +911,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/86-civdccons.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/86-civdccons.pdf' and s.acronym in ('SRLF', 'SFAR', 'GEHT', 'GFRUP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/86-civdccons.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'civd',
   card_json = $mgjson${"badge":"PREUVE/FORCE","title":"CIVD en réanimation","short":"Coagulation intravasculaire disséminée (hors cancers et hémopathies malignes) : définition et terminologie retenue (biologique/clinique/compliquée), situations à risque (mécanismes physiopathologiques), diagnostic clinique et biologique (critères de consommation majeurs/mineurs), moyens thérapeutiques substitutifs et spécifiques, stratégie selon la situation clinique (organigramme SASC) — 22 énoncés cotés sur deux axes indépendants (niveau de preuve a-d, force de recommandation 1-3, pas toujours les deux).","society":"SRLF, avec la SFAR, la Société Française d'Hématologie (GEHT) et le GFRUP — Conférence de Consensus 2002","version":"2002 (XXIIe Conférence de Consensus)","validated":"Faculté de Médecine de Lille, 10 octobre 2002 — Président du jury : P.E. Bollaert","methodology":"Preuve (a-d) + Force (1-3), deux axes indépendants, non GRADE","pages":6,"section":"Réanimation"}$mgjson$::jsonb,
@@ -476,6 +927,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Recommandations-sur-les-indications-de-lassistance-circulatoire-dans-le-traitement-des-arrets-cardiaques-refractaires.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Recommandations-sur-les-indications-de-lassistance-circulatoire-dans-le-traitement-des-arrets-cardiaques-refractaires.pdf' and s.acronym in ('SFAR', 'SFC', 'SFCTCV', 'SFMU', 'GFRUP', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Recommandations-sur-les-indications-de-lassistance-circulatoire-dans-le-traitement-des-arrets-cardiaques-refractaires.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'eclsa',
   card_json = $mgjson${"badge":"NIVEAU 5","title":"Assistance circulatoire — AC réfractaire","short":"Indications et contre-indications de l'assistance circulatoire (ECLS/ECMO) dans l'arrêt cardiaque réfractaire, intra- et extrahospitalier : définition et changement de paradigme, déterminants no-flow/low-flow, signes remettant en cause une durée de no-flow estimée (hypothermie, signes de vie, troubles du rythme), seuil ETCO2, algorithme décisionnel complet (Fig. 1), modalités pratiques (équipe, abord vasculaire), spécificités pédiatriques et de l'AC hypothermique, limites et lacunes de connaissances explicitement reconnues par les auteurs.","society":"Conseil français de réanimation cardiopulmonaire, SFAR, SFC, SFCTCV, SFMU, SF Pédiatrie, GFRUP, SF Perfusion, SRLF — RFE 2009","version":"2009 (Ann Fr Anesth Reanim 2009;28:182-186)","validated":"Coordonnateur : Bruno Riou — sous l'égide de la DGS/DHOS","methodology":"Prose continue, sans GRADE ni R1/R2 — niveau 5 (avis d'experts) global","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -486,6 +943,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_AFAR_Transport-intrahospitalier-des-patients-a-risque-vital.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_AFAR_Transport-intrahospitalier-des-patients-a-risque-vital.pdf' and s.acronym in ('SRLF', 'SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_AFAR_Transport-intrahospitalier-des-patients-a-risque-vital.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'transport_intrahospitalier',
   card_json = $mgjson${"badge":"ACCORD","title":"Transport intrahospitalier des patients à risque vital","short":"5 champs, 99 propositions (toutes à accord fort, pas de grade GRADE) : épidémiologie des événements indésirables (EI/EIG/EPR), matériels/monitorage/maintenance (ventilateurs de transport, dispositifs cardiaques, spécificités pédiatriques), préparation du malade avant transport, ressources humaines et formation des soignants, organisation/architecture/traçabilité.","society":"SRLF, SFAR, SFMU — Recommandations Formalisées d'Experts 2011","version":"2011 (Ann Fr Anesth Reanim 2011;30:952-956)","validated":"Présidents du comité d'organisation : J.-P. Quenot, C. Milesi, A. Cravoisy","methodology":"Accord fort (RAND/UCLA à deux tours, pas de grade GRADE)","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -496,6 +959,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/transfusion-de-plasma-therapeutique-produits-indications/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/transfusion-de-plasma-therapeutique-produits-indications/' and s.acronym in ('ANSM', 'HAS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/transfusion-de-plasma-therapeutique-produits-indications/' and d.society_id is null and s.acronym = 'ANSM';
 update public.documents set
   fiche_key = 'transfusion_plasma',
   card_json = $mgjson${"badge":"GRADE A/B/C","title":"Transfusion de plasma thérapeutique","short":"Produits, caractéristiques et indications de la transfusion de plasma thérapeutique homologue (PFC-SD, PFC-IA, PFC-Se, PLYO) et autologue : compatibilité ABO, effets indésirables (TRALI, allergie), contre-indications ; indications gradées en chirurgie/traumatologie/obstétrique, en médecine (CIVD, micro-angiopathies thrombotiques, échanges plasmatiques, œdème angioneurotique héréditaire), en néonatologie/pédiatrie, et comme antidote exceptionnel au surdosage en AVK.","society":"ANSM & HAS — Actualisation 2012","version":"2012 (juin 2012)","validated":"ANSM / HAS, en concertation avec les sociétés savantes concernées","methodology":"Grades HAS/ANAES A/B/C + accord professionnel (pas de GRADE 1+/2+)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -506,6 +975,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/sevrage-de-la-ventilation-mecanique-2/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/sevrage-de-la-ventilation-mecanique-2/' and s.acronym in ('SRLF', 'SFAR', 'SPLF', 'GFRUP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/sevrage-de-la-ventilation-mecanique-2/' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'sevrage_vm',
   card_json = $mgjson${"badge":"PREUVE/FORCE","title":"Sevrage de la ventilation mécanique","short":"5 questions : quand débuter le sevrage (pré-requis généraux/respiratoires), prédiction du sevrage difficile (facteurs de risque, indice f/VT), conduite de l'épreuve de ventilation spontanée (pièce en T vs aide inspiratoire, durée, surveillance, conduite en cas d'échec), particularités selon le terrain (BPCO, cardiopathie, neurologique, chirurgical, pédiatrique), conduite à tenir en cas d'échec du sevrage (VNI, trachéotomie, domicile, limitation de soins) — avec l'organigramme complet de la procédure de sevrage.","society":"SRLF, avec la SFAR, la SPLF et le GFRUP — Conférence de Consensus 2001","version":"2001 (Réanimation 2001;10:697-8)","validated":"Président du jury : C. Richard (Le Kremlin-Bicêtre)","methodology":"Niveau de preuve a/b/c/d + niveau de recommandation 1/2/3 (Society of Critical Care Medicine Rating System 1997, pas de GRADE) — à l'exclusion du nouveau-né et du réveil d'anesthésie","pages":12,"section":"Réanimation"}$mgjson$::jsonb,
@@ -516,6 +991,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/REANIMATION_Prise-en-charge-des-crises-dasthme-aigues-graves-de-ladulte-et-de-lenfant-.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/REANIMATION_Prise-en-charge-des-crises-dasthme-aigues-graves-de-ladulte-et-de-lenfant-.pdf' and s.acronym in ('SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/REANIMATION_Prise-en-charge-des-crises-dasthme-aigues-graves-de-ladulte-et-de-lenfant-.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'asthme_aigu_grave',
   card_json = $mgjson${"badge":"PREUVE/FORCE","title":"Crises d'asthme aiguës graves","short":"5 questions : prédiction de la gravité immédiate (Tableau I des critères de gravité), voie et schéma des bêta-2 mimétiques (nébulisation, aérosols-doseurs, voie SC, perfusion IV — Tableau II des molécules disponibles), place des autres thérapeutiques (oxygène, corticoïdes, anticholinergiques, adrénaline, aminophylline, sulfate de magnésium, hélium-oxygène, antibiothérapie), indications et modalités de l'hospitalisation (critères DEP adulte/enfant), modalités de la ventilation mécanique (intubation, réglages, sédation-curarisation, sevrage) — adulte et enfant, à l'exclusion du nourrisson.","society":"SRLF — Révision de la 3ᵉ Conférence de Consensus de 1988","version":"2002 (Réanimation 2002;11:1-9)","validated":"Coordinateur : E. L'Her (Brest)","methodology":"Niveau de preuve a/b/c/d + niveau de recommandation 1/2/3 (grille SRLF, pas de GRADE) — à l'exclusion du nourrisson","pages":9,"section":"Urgences"}$mgjson$::jsonb,
@@ -526,6 +1007,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/pancreatite-aigue-grave-du-patient-adulte-en-soins-critiques/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/pancreatite-aigue-grave-du-patient-adulte-en-soins-critiques/' and s.acronym in ('SFAR', 'SNFGE', 'SFR', 'SFNCM', 'SFED')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/pancreatite-aigue-grave-du-patient-adulte-en-soins-critiques/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'pancreatite',
   card_json = $mgjson${"badge":"GRADE","title":"Pancréatite aigüe grave en soins critiques","short":"14 questions PICO réparties en 3 champs : évaluation et admission en soins critiques (critères de gravité, examens des 72 premières heures, surveillance de la pression intra-abdominale — Tableau 1 du score de Marshall modifié, Figure 1 de l'algorithme diagnostique, Annexe 1 des scores de risque BISAP/SIRS/APACHE/Ranson/Balthazar/CTSI) ; prise en charge à la phase initiale (hémodynamique, respiratoire, nutrition entérale/parentérale, CPRE, thérapeutiques non conventionnelles, antalgie) ; prise en charge des complications évolutives (antibioprophylaxie, diagnostic et drainage de la nécrose infectée, antibiothérapie curative, complications vasculaires, thrombose veineuse splanchnique). 24 recommandations + 4 questions sans recommandation possible.","society":"SFAR, en collaboration avec la SNFGE, la SFR, la SFNCM et la SFED","version":"2021 (validé CA SFAR 30/06/2021)","validated":"Coordonnateur d'experts : S. Jaber (Montpellier)","methodology":"GRADE® (1+/1-/2+/2-) + avis d'experts + absence de recommandation — actualise les recommandations SFAR/CNGOF 2001","pages":48,"section":"Réanimation"}$mgjson$::jsonb,
@@ -536,6 +1023,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_SFAR_Corticotherapie-au-cours-du-choc-septique-et-du-SDRA.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_SFAR_Corticotherapie-au-cours-du-choc-septique-et-du-SDRA.pdf' and s.acronym in ('SFAR', 'SPILF', 'SPLF', 'GFRUP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_SFAR_Corticotherapie-au-cours-du-choc-septique-et-du-SDRA.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'corticotherapie',
   card_json = $mgjson${"badge":"PREUVE/FORCE","title":"Corticothérapie : choc septique & SDRA","short":"5 questions : manifestations du SDRA accessibles à la corticothérapie, conséquences surrénaliennes et vasculaires du choc septique (seuil de cortisolémie, place du test au Synacthène), bénéfices/risques attendus, indications et modalités dans le choc septique (hémisuccinate d'hydrocortisone 200-300 mg/j), indications et modalités dans le SDRA (méthylprednisolone 2 mg/kg/j à la phase fibro-proliférative). Les protocoles pratiques des Questions 4 et 5 ne portent aucune cotation dans le texte source (anomalie disclosée dans la fiche).","society":"SFAR, avec la SPILF, la SPLF et le GFRUP — XXe Conférence de Consensus, labellisée ANAES","version":"2000 (12 octobre 2000)","validated":"Président du jury : F. Fourrier (Lille)","methodology":"Niveau de preuve a/b/c/d + niveau de recommandation 1/2/3 (pas de GRADE) — niveau 3 et preuve d jamais utilisés dans le corps du texte ; protocoles pratiques des Questions 4-5 non cotés","pages":6,"section":"Réanimation"}$mgjson$::jsonb,
@@ -546,6 +1039,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Antibiotherapie-probabiliste-des-etats-septiques-graves.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Antibiotherapie-probabiliste-des-etats-septiques-graves.pdf' and s.acronym in ('SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Antibiotherapie-probabiliste-des-etats-septiques-graves.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'antibiotherapie_probabiliste',
   card_json = $mgjson${"badge":"PROPOSITIONS","title":"Antibiothérapie probabiliste des états septiques graves","short":"12 sites infectieux (4.1-4.12) avec propositions d'antibiothérapie probabiliste par situation clinique : méningites communautaires/nosocomiales, pneumopathies communautaires/PAVM, infections urinaires, infections intra-abdominales (péritonites, pancréatites, angiocholites), infections cutanées/tissus mous (DHBN-FN), endocardites, infection sur cathéter, sepsis sans porte d'entrée. Plus généralités immunodéprimé/pédiatrie, réévaluation impérative à J2-J3 et J10, et tableau des posologies de première injection (24 antibiotiques). Aucune proposition individuelle n'est cotée par un niveau de preuve (disclosure dans la fiche).","society":"SFAR, avec la Société de réanimation de langue française, la Société de pathologie infectieuse de langue française, la Société de microbiologie, la Médecine militaire, la SFMU et la Société française de pédiatrie","version":"2004 (Conférence d'experts, texte court)","validated":"Coordonnateur : B. Veber (Rouen)","methodology":"Conférence d'experts — tableau général des niveaux de preuve I à V, non rattaché explicitement à une proposition individuelle du corps du texte","pages":7,"section":"Réanimation"}$mgjson$::jsonb,
@@ -556,6 +1055,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/hemorragie-sous-arachnoidienne-hsa-grave/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/hemorragie-sous-arachnoidienne-hsa-grave/' and s.acronym in ('SFAR', 'ANARLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/hemorragie-sous-arachnoidienne-hsa-grave/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'hsa',
   card_json = $mgjson${"badge":"GRADE A/B/D/E","title":"Hémorragie sous-arachnoïdienne grave","short":"Prise en charge de l'HSA grave par rupture d'anévrysme (WFNS III-V) : diagnostic et prise en charge initiale (clinique, classifications WFNS/Hunt-Hess/Fisher, imagerie, ponction lombaire, transfert en centre de référence), complications précoces (HTIC, hydrocéphalie, resaignement, épilepsie, retentissement cardio-pulmonaire, natrémie), traitement de l'anévrysme (chirurgie vs endovasculaire, délai de 72h), anesthésie et douleur, vasospasme (diagnostic Doppler, prévention par nimodipine, triple H, traitement endovasculaire), stratégie de suivi et filière de soins. Grades A/B/D/E imprimés par le jury, sans définition dans ce texte court (disclosure dans la fiche) ; aucune occurrence de Grade C.","society":"SFAR, avec l'ANARLF, la Société française de neurochirurgie et la Société française de neuroradiologie","version":"2004 (Conférence d'experts, texte court)","validated":"Président du jury : L. Beydon (Angers)","methodology":"Conférence d'experts (grades A/B/D/E, pas de GRADE) — signification des lettres non définie dans le texte court","pages":12,"section":"Réanimation"}$mgjson$::jsonb,
@@ -566,6 +1071,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-hemodynamique-du-sepsis-grave-nouveau-ne-exclu/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-hemodynamique-du-sepsis-grave-nouveau-ne-exclu/' and s.acronym in ('SFAR', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-hemodynamique-du-sepsis-grave-nouveau-ne-exclu/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'sepsis_hemodynamique',
   card_json = $mgjson${"badge":"Grades B/C/D/E","title":"Prise en charge hémodynamique du sepsis grave","short":"Volet circulatoire/hémodynamique exclusivement du sepsis grave et du choc septique (nouveau-né exclu) : cibles thérapeutiques, modalités de l'expansion volémique et de la transfusion, place des inotropes/vasoactifs, traitements complémentaires (corticothérapie), et algorithme de stratégie thérapeutique en 3 étapes avec repères temporels (60-90 min, 6h). 33 recommandations graduées B/C/D/E (aucun Grade A dans le texte), signification des lettres non définie dans ce texte court (disclosure dans la fiche).","society":"SFAR / SRLF","version":"2006 (Conférence de consensus commune, texte court)","validated":"Publication : Ann Fr Anesth Réanim 2006;25 — Réanimation 2006;15","methodology":"Conférence de consensus (grades B/C/D/E, pas de GRADE) — signification des lettres non définie dans le texte court","pages":3,"section":"Réanimation"}$mgjson$::jsonb,
@@ -576,6 +1087,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/securisation-des-procedures-a-risques-en-reanimation-risque-infectieux-exclu/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/securisation-des-procedures-a-risques-en-reanimation-risque-infectieux-exclu/' and s.acronym in ('SRLF', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/securisation-des-procedures-a-risques-en-reanimation-risque-infectieux-exclu/' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'securisation_proc',
   card_json = $mgjson${"badge":"ACCORD","title":"Sécurisation des procédures à risques en réanimation","short":"Pratiques de sécurité (« safety practices ») en réanimation, risque infectieux explicitement exclu : taxonomie EI/EPR et indicateurs, épidémiologie, organisation structurelle et managériale (protocoles, culture sécurité), sécurisation du matériel/dispositifs médicaux, ventilation mécanique (intubation, trachéotomie, sevrage, extubation, VNI), procédures circulatoires (vasoactifs, cathéters artériels/veineux centraux/artériels pulmonaires), épuration extra-rénale, spécificités pédiatriques — plus une zone d'indécision explicite de 3 propositions (ni accord ni désaccord), disclosée comme catégorie distincte.","society":"SRLF / SFAR","version":"2008 (Ann Fr Anesth Reanim 2008;27:e43-e51)","validated":"Groupes d'experts de la SRLF et de la SFAR","methodology":"Accord fort/faible (méthode RAND/UCLA, pas de GRADE) + zone d'indécision explicite","pages":9,"section":"Réanimation"}$mgjson$::jsonb,
@@ -586,6 +1103,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prise-en-charge-des-sujets-en-etat-de-mort-encephalique-dans-loptique-dun-prelevement-dorganes.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prise-en-charge-des-sujets-en-etat-de-mort-encephalique-dans-loptique-dun-prelevement-dorganes.pdf' and s.acronym in ('SFAR', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prise-en-charge-des-sujets-en-etat-de-mort-encephalique-dans-loptique-dun-prelevement-dorganes.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'mort_encephalique',
   card_json = $mgjson${"badge":"RAND/UCLA 1-9","title":"Mort encéphalique & prélèvement d'organes","short":"Prise en charge des sujets en état de mort encéphalique (ME) dans l'optique d'un prélèvement d'organes et de tissus : diagnostic clinique et paraclinique de la ME (EEG, angiographie, Doppler transcrânien), réanimation du donneur potentiel (hémodynamique, diabète insipide, cibles thérapeutiques, hémostase, infection, pédiatrie), critères d'évaluation et contre-indications par organe (cœur, poumon, foie, rein, pancréas, intestin, tissus), organisation du prélèvement (coordination hospitalière, PMO, donneurs à cœur arrêté/Maastricht). Cotation RAND/UCLA (médiane 1-9, 3 zones désaccord/indécision/accord) imprimée après la quasi-totalité des énoncés du texte source, y compris certains rappels de contexte non soumis au vote — disclosure de cette ambiguïté source dans la fiche.","society":"SFAR / SRLF / Agence de la biomédecine","version":"2005 (Ann Fr Anesth Réanim 2005;24:836-843)","validated":"Conférence d'experts Sfar/SRLF/Agence de la biomédecine","methodology":"Cotation RAND/UCLA (médiane 1-9, pas de GRADE) — zones désaccord (1-3) / indécision (4-6) / accord (7-9)","pages":8,"section":"Réanimation"}$mgjson$::jsonb,
@@ -596,6 +1119,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-voies-aeriennes-en-anesthesie-adulte-a-lexception-de-lintubation-difficile/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-voies-aeriennes-en-anesthesie-adulte-a-lexception-de-lintubation-difficile/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-voies-aeriennes-en-anesthesie-adulte-a-lexception-de-lintubation-difficile/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'voies_aeriennes_adulte',
   card_json = $mgjson${"badge":"ANAES A-E","title":"Voies aériennes en anesthésie adulte","short":"Prise en charge des voies aériennes en anesthésie adulte, à l'exception de l'intubation difficile (exclusions explicites : médecine extrahospitalière, urgence médicale hospitalière, anesthésie pédiatrique, ventilation à poumons séparés). Critères prédictifs d'intubation et de ventilation au masque difficiles, matériel et alternatives à la sonde d'intubation, pré-oxygénation, agents d'induction (IV, halogénés, morphiniques, curares) et monitorage, positionnement et techniques d'intubation, contrôle du tube et du ballonnet, lésions liées à l'intubation et prévention de l'inhalation bronchique. 53 recommandations gradées A à E (échelle ANAES définie par la source, comptage après consolidation des coupures de ligne PDF).","society":"SFAR","version":"2002 (Ann Fr Anesth Réanim 2003;22:745-749)","validated":"Conférence de Consensus SFAR — Recommandations du Jury","methodology":"Échelle ANAES A-E (niveaux de preuve I à V) — pas de GRADE","pages":5,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -606,6 +1135,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/le-traitement-des-urgences-transfusionnelles-obstetricales/' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/le-traitement-des-urgences-transfusionnelles-obstetricales/' and s.acronym in ('EFS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/le-traitement-des-urgences-transfusionnelles-obstetricales/' and d.society_id is null and s.acronym = 'EFS';
 update public.documents set
   fiche_key = 'urgences_transfusionnelles_obstetricales',
   card_json = $mgjson${"badge":"Sans grading","title":"Urgences transfusionnelles obstétricales","short":"Organisation de la réponse transfusionnelle à l'hémorragie du péripartum : définition de 3 niveaux d'urgence (UVI, UV, transfusion urgente), règles de surveillance immuno-hématologique de la grossesse (typage érythrocytaire, RAI), propositions d'organisation entre établissement de santé et site transfusionnel, évaluation et suivi. Inclut le Tableau I (procédure d'urgence vitale) et la liste des items d'une procédure générale. Conclusions d'une table ronde EFS (2000-2001, en prose continue, sans système de gradation) — dont le titre et la date affichés par l'index du site (« Hémorragies du post-partum immédiat », 2014) divergent des métadonnées propres du document ; divergence disclosée dans la fiche.","society":"EFS — pour avis SFAR / Collège des Obstétriciens / SFTS","version":"Table ronde du 26/09/2000, texte daté 21/12/01-07/06/01 (mis en ligne sfar.org 2015)","validated":"Conclusions de table ronde multidisciplinaire EFS","methodology":"Aucun système de gradation imprimé par la source (ni GRADE, ni RAND/UCLA, ni ANAES) — prose continue","pages":6,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -616,6 +1151,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/gestion-du-traitement-anti-plaquettaire-oral-chez-les-patients-porteurs-dendoprotheses-coronaires/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/gestion-du-traitement-anti-plaquettaire-oral-chez-les-patients-porteurs-dendoprotheses-coronaires/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/gestion-du-traitement-anti-plaquettaire-oral-chez-les-patients-porteurs-dendoprotheses-coronaires/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'aap_endoprotheses_coronaires',
   card_json = $mgjson${"badge":"Avis d'experts","title":"AAP oral & endoprothèses coronaires","short":"Gestion périopératoire du traitement antiplaquettaire oral (aspirine, clopidogrel) chez les patients porteurs d'une endoprothèse coronaire (stent, nu ou pharmacoactif) devant subir un acte invasif. Matrice de décision (Tableau 1) croisant risque de thrombose du stent et risque hémorragique de l'intervention. Document historique de 2006, antérieur et complémentaire aux propositions GIHP/GFHT/SFAR 2018 (AAP procédure programmée / non programmée) déjà couvertes dans ce corpus.","society":"SFAR","version":"2006 (Information professionnelle)","validated":"Propositions du groupe d'experts, 31 mars 2006","methodology":"Avis d'un groupe d'experts, sans système GRADE ni vote/pourcentage d'accord formalisé (voir disclosure méthodologique en page 1 de la fiche)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -626,6 +1167,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/accident-vasculaire-cerebral-prise-en-charge-precoce/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/accident-vasculaire-cerebral-prise-en-charge-precoce/' and s.acronym in ('HAS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/accident-vasculaire-cerebral-prise-en-charge-precoce/' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'avc_precoce',
   card_json = $mgjson${"badge":"GRADE A-C + AP","title":"AVC — prise en charge précoce","short":"Accident vasculaire cérébral : prise en charge précoce — alerte, phase préhospitalière, phase hospitalière initiale, indications de la thrombolyse. Grand public et formation professionnelle, échelles FAST/NIHSS, régulation SAMU-Centre 15, filière neuro-vasculaire (UNV), imagerie (IRM privilégiée), thrombolyse IV/IA/combinée, algorithme de la filière de prise en charge, et contre-indications de l'altéplase (RCP/AMM ACTILYSE®).","society":"HAS / Société française neuro-vasculaire","version":"2009 (recommandations de bonne pratique)","validated":"Validé par le Collège de la HAS en mai 2009","methodology":"Grades HAS A/B/C + « accord professionnel » (pas de GRADE 1+/2+)","pages":21,"section":"Urgences"}$mgjson$::jsonb,
@@ -646,6 +1193,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/examens-preinterventionnels-systematiques/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/examens-preinterventionnels-systematiques/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/examens-preinterventionnels-systematiques/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'examens_preinterventionnels',
   card_json = $mgjson${"badge":"GRADE 1/2","title":"Examens préinterventionnels systématiques","short":"Prescription des examens complémentaires préinterventionnels systématiques (ECG, échocardiographie, radio thorax, gaz du sang, EFR, hémostase, hémogramme, immunohématologie, biochimie, femme enceinte en prépartum, test de grossesse, dépistage infectieux/ECBU) en dehors de signes d'appel anamnestiques ou cliniques. Stratification selon le type de chirurgie (risque cardiaque ACC/AHA) et la classe ASA. Actualisation SFAR 2012 des recommandations Anaes de 1998, 9 recommandations, 38 tags GRADE.","society":"SFAR (actualisation des recommandations Anaes 1998)","version":"2012 (RFE)","validated":"Validé par 14 sociétés savantes (AFC, AFU, CNGOF, EFS, SCGP, SFC, SFCD, GEHT, SF2H, SOFOP, SFORL, SFR-FRI, SFSCMF, SPLF)","methodology":"GRADE 1+/1-/2+/2- — 38 recommandations taguées (14× 1+, 14× 1-, 9× 2+, 1× 2-), dont 13 signes résolus depuis le sens de la phrase (disclosure en page 1 de la fiche)","pages":12,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -656,6 +1209,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-de-linfarctus-du-myocarde-a-la-phase-aigue-en-dehors-des-services-de-cardiologie/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-de-linfarctus-du-myocarde-a-la-phase-aigue-en-dehors-des-services-de-cardiologie/' and s.acronym in ('HAS', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-de-linfarctus-du-myocarde-a-la-phase-aigue-en-dehors-des-services-de-cardiologie/' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'infarctus_myocarde',
   card_json = $mgjson${"badge":"GRADE A-C","title":"Infarctus du myocarde à la phase aiguë hors cardiologie","short":"Prise en charge de l'infarctus du myocarde à la phase aiguë en dehors des services de cardiologie, sur les 5 questions du texte court : critères décisionnels de désobstruction coronaire, stratégies de reperfusion (angioplastie/fibrinolyse, délais porte à porte cardio) et traitements adjuvants du SCA ST+, filières de prise en charge (SAMU-Centre 15), situations particulières (sujet âgé, diabétique, service non cardiologique, périopératoire), complications initiales (bradycardies, tachycardies, arrêt circulatoire, choc cardiogénique, transferts interhospitaliers).","society":"HAS / Samu de France / SFMU / Société française de cardiologie","version":"2006 (conférence de consensus, texte court publié 2007)","validated":"Conférence de consensus HAS/Samu de France/SFMU/Société française de cardiologie","methodology":"Grades HAS A/B/C (études thérapeutiques, pas de GRADE 1+/2+) — en l'absence de précision, consensus du jury","pages":24,"section":"Urgences"}$mgjson$::jsonb,
@@ -666,6 +1225,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/monitorage-du-patient-traumatise-grave-en-prehospitalier/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/monitorage-du-patient-traumatise-grave-en-prehospitalier/' and s.acronym in ('SFAR', 'SFMU', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/monitorage-du-patient-traumatise-grave-en-prehospitalier/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'monitorage_traumatise',
   card_json = $mgjson${"badge":"FORCE A-E","title":"Monitorage du traumatisé grave en préhospitalier","short":"Monitorage du patient traumatisé grave en médecine d'urgence préhospitalière, sur les 8 questions du texte court : justification du monitorage, cardiovasculaire (ECG, PA non invasive/invasive, échographie FAST) et thermique, respiratoire (SpO2, capnographie, ballonnet de sonde d'intubation), neurologique (ACSOS, PaCO2 cible, Doppler transcrânien), biologique (hémoglobine, gaz du sang), transferts secondaires, femme enceinte (rythme cardiaque fœtal) et enfant traumatisés, monitorage en milieu difficile (montagne, mer, catastrophe, NRBC).","society":"SFAR / Samu de France / SFMU / SRLF","version":"2006 (conférence d'experts, texte court)","validated":"Conférence d'experts SFAR/Samu de France/SFMU/SRLF","methodology":"Conférence d'experts (pas de GRADE) — niveaux de preuve I-V, force de recommandation A à E","pages":15,"section":"Urgences"}$mgjson$::jsonb,
@@ -676,6 +1241,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-surdosages-en-antivitamines-k-des-situations-a-risque-hemorragique-et-des-accidents-hemorragiques-chez-les-patients-traites-par-antivitamines-k-en-ville-et-en-milieu-hospitalier/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-surdosages-en-antivitamines-k-des-situations-a-risque-hemorragique-et-des-accidents-hemorragiques-chez-les-patients-traites-par-antivitamines-k-en-ville-et-en-milieu-hospitalier/' and s.acronym in ('HAS', 'GEHT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-surdosages-en-antivitamines-k-des-situations-a-risque-hemorragique-et-des-accidents-hemorragiques-chez-les-patients-traites-par-antivitamines-k-en-ville-et-en-milieu-hospitalier/' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'recommandations_avk',
   card_json = $mgjson${"badge":"HAS A/B/C","title":"Surdosages, hémorragies & AVK","short":"Prise en charge des surdosages en antivitamines K (AVK), des situations à risque hémorragique et des accidents hémorragiques, en ville et en milieu hospitalier. Tableau 1 (mesures correctrices selon l'INR), classification de gravité des hémorragies, médicaments antagonisants (CCP/vitamine K), conduite en cas de traumatisme, réintroduction des AVK, gestion périopératoire (relais héparinique selon l'indication : PVM, ACFA, MTEV), acte urgent à risque hémorragique, et Annexe 1 (risque hémorragique en rhumatologie, 23 actes).","society":"HAS / GEHT (Groupe d'étude sur l'hémostase et la thrombose)","version":"2008 (recommandations professionnelles)","validated":"Validé par le Collège de la HAS en avril 2008","methodology":"Grades HAS A/B/C + « accord professionnel » (AP) — 28 recommandations taguées explicitement (5× A, 2× B, 21× C), vérifiées par grep exhaustif ; 2 divergences source-internes disclosées (disclosure en page 1 de la fiche)","pages":21,"section":"Urgences"}$mgjson$::jsonb,
@@ -686,6 +1257,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/thrombopenie-induite-par-lheparine/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/thrombopenie-induite-par-lheparine/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/thrombopenie-induite-par-lheparine/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'tih_2002',
   card_json = $mgjson${"badge":"HISTORIQUE","title":"Thrombopénie induite par l'héparine (2002)","short":"Document historique — voir en priorité la fiche « Thrombopénie induite par l'héparine (TIH) » (GIHP/GFHT 2019, ci-dessus) pour une décision thérapeutique actuelle. Conférence d'experts sans grade formel : définitions (type I/II), physiopathologie, circonstances évocatrices et seuils diagnostiques, diagnostic biologique (Elisa, tests d'activation plaquettaire) et démarche pratique, diagnostic différentiel, prévention et surveillance systématique, traitements de substitution (danaparoïde, lépirudine, désirudine — posologies complètes), contre-indications, Tableau 1 (principes généraux de prise en charge), stratégies par contexte clinique dont le détail des protocoles de chirurgie cardiaque avec/sans CEC. ⚠ La lépirudine (Refludan®) n'est plus commercialisée depuis 2012.","society":"SFAR — Conférence d'experts 2002","version":"2002 (texte court, Ann Fr Anesth Reanim 2003;22:150-159)","validated":"Conférence d'experts (comité d'organisation Y. Blanloeil)","methodology":"Sans système de grade formel (la source l'indique explicitement) — propositions présentées par thème","pages":10,"section":"Réanimation"}$mgjson$::jsonb,
@@ -696,6 +1273,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-traumatises-craniens-graves-a-la-phase-precoce/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-traumatises-craniens-graves-a-la-phase-precoce/' and s.acronym in ('SFAR', 'SFMU', 'SFNC', 'GFRUP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-traumatises-craniens-graves-a-la-phase-precoce/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'traumatisme_cranien_grave_precoce',
   card_json = $mgjson${"badge":"GRADE 1/2 + AE","title":"Traumatisme crânien grave — phase précoce","short":"Prise en charge des traumatisés crâniens graves à la phase précoce (24 premières heures) : gravité initiale (Glasgow moteur, TDM), prise en charge préhospitalière, imagerie, indications neurochirurgicales, sédation-analgésie, monitorage cérébral (PIC/PPC/PtiO2/Doppler transcrânien), HTIC médicale, polytraumatisé avec TC grave, épilepsie post-traumatique, homéostasie biologique (glycémie), particularités de l'enfant. 32 recommandations, actualisation 2016 des RFE de 1998.","society":"SFAR / Anarlf / SFMU / SFNC / GFRUP / Adarpef","version":"2016 (RFE actualisation)","validated":"Validé par le Conseil d'administration de la Sfar le 21/09/2016","methodology":"GRADE 1+/1-/2+/2- + avis d'experts (AE) — accord FORT sur 100% des recommandations","pages":23,"section":"Urgences"}$mgjson$::jsonb,
@@ -706,6 +1289,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/anesthesie-du-sujet-age-lexemple-de-fracture-de-lextremite-superieure-du-femur/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-du-sujet-age-lexemple-de-fracture-de-lextremite-superieure-du-femur/' and s.acronym in ('SFAR', 'SOFCOT', 'SFGG', 'SFPC')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-du-sujet-age-lexemple-de-fracture-de-lextremite-superieure-du-femur/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'sujet_age_esf',
   card_json = $mgjson${"badge":"GRADE 1/2 + AE","title":"Anesthésie du sujet âgé — exemple de la FESF","short":"Prise en charge périopératoire du sujet âgé, prenant pour modèle la fracture de l'extrémité supérieure du fémur (FESF) : évaluation préopératoire (cardiovasculaire, cognitive, rénale), programme spécifique orthogériatrique et chirurgie ambulatoire, gestion des traitements confusiogènes et de l'anxiété préopératoire, délai d'intervention (48h), monitorage (hémodynamique, PAM, température), techniques et agents anesthésiques, prévention et traitement de la confusion postopératoire, analgésie postopératoire (bloc fémoral/iliofascial). 26 recommandations, 8 questions.","society":"SFAR / SOFCOT / SFGG / SFPC — RFE 2017","version":"2017 (publiée 2019, Anesth Reanim. 2019;5:122-138)","validated":"Validé par le Conseil d'administration de la SFAR le 29/06/2017","methodology":"GRADE 1+/1-/2+/2- + avis d'experts (AE), avec accord Delphi/GRADE Grid fort/faible imprimé séparément","pages":17,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -716,6 +1305,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/bris-dentaires-perianesthesiques/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/bris-dentaires-perianesthesiques/' and s.acronym in ('SFAR', 'SFSCMF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/bris-dentaires-perianesthesiques/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'bris_dentaires',
   card_json = $mgjson${"badge":"Accord fort","title":"Bris dentaires périanesthésiques","short":"Prévention et conduite à tenir devant un bris dentaire périanesthésique : facteurs prédictifs (consultation préanesthésique, traçabilité, information du patient), prévention au bloc opératoire (choix du protocole, matériel de contrôle des voies aériennes, protection dentaire sur mesure, surveillance péri- et postopératoire), et conduite à tenir devant un bris dentaire constaté (prise en charge immédiate, traçabilité, déclaration, information du patient). 31 propositions, dont 5 addenda pédiatriques.","society":"SFAR / Adarpef / SFSCMF — RFE 2012","version":"2012 (Ann Fr Anesth Reanim 2012;31:272-275)","validated":"Validé par les comités des référentiels cliniques et le CA de la SFAR","methodology":"Pas de GRADE — accord fort global (vote du groupe de travail), sans distinction individuelle entre propositions","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -726,6 +1321,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/reactualisation-de-la-recommandation-sur-la-douleur-postoperatoire/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/reactualisation-de-la-recommandation-sur-la-douleur-postoperatoire/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/reactualisation-de-la-recommandation-sur-la-douleur-postoperatoire/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'douleur_reactualisation_2016',
   card_json = $mgjson${"badge":"17 recos","title":"Douleur postopératoire — réactualisation 2016","short":"Réactualisation 2016 de la RFE SFAR sur la douleur postopératoire : complète (ne remplace pas) la RFE 2008 sur des questions non traitées ou des recommandations modifiées. Évaluation de la DPO (échelles enfant/patient non communicant, dépistage DCPC/DN4), thérapeutiques médicamenteuses systémique/orale (AINS, oxycodone, lidocaïne IV, dexaméthasone, kétamine, gabapentinoïdes), et anesthésie locale/locorégionale postopératoire (cathéters périnerveux/péridural/infiltration). 17 recommandations formalisées.","society":"SFAR — RFE 2016","version":"2016 (Anesth Reanim. 2016;2:421-430)","validated":"Texte validé par le conseil d'administration de la Sfar le 17/06/2016","methodology":"GRADE® (1+/1-/2+/2- ou avis d'experts) + vote Delphi/GRADE Grid (accord fort/faible)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -736,6 +1337,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/protection-oculaire-en-anesthesie-et-reanimation/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/protection-oculaire-en-anesthesie-et-reanimation/' and s.acronym in ('SFAR', 'SFO', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/protection-oculaire-en-anesthesie-et-reanimation/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'protection_oculaire',
   card_json = $mgjson${"badge":"GRADE 1/2 + AE","title":"Protection oculaire en anesthésie et réanimation","short":"Prévention des complications oculaires liées à une perte de conscience prolongée : lésions cornéennes en anesthésie (occlusion palpébrale par bandes adhésives, lubrifiants pour les chirurgies à risque, formation des équipes) et en réanimation (dépistage à la fluorescéine, gel aqueux/chambres humides), et prévention des lésions rétiniennes par occlusion de l'artère centrale de la rétine et neuropathies optiques ischémiques aiguës (têtières adaptées, contrôle de la compression oculaire, position, hémodynamique en chirurgie du rachis). 12 recommandations, 3 chapitres.","society":"SFAR / SFO / SRLF — RFE 2016","version":"2016 (Anesth Reanim. 2016, ANREA-135)","validated":"Validé par le Conseil d'administration de la SFAR le 14/03/2016","methodology":"GRADE 1+/2+ + avis d'experts — disclosure d'une incohérence source-interne sur le décompte total des recommandations (« 10 » annoncé vs 12 recomptées)","pages":9,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -746,6 +1353,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://www.has-sante.fr/upload/docs/application/pdf/2019-07/fm_ponction_lombaire.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://www.has-sante.fr/upload/docs/application/pdf/2019-07/fm_ponction_lombaire.pdf' and s.acronym in ('HAS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://www.has-sante.fr/upload/docs/application/pdf/2019-07/fm_ponction_lombaire.pdf' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'ponction_lombaire',
   card_json = $mgjson${"badge":"Fiche mémo","title":"Ponction lombaire — prévention et prise en charge des effets indésirables","short":"Fiche mémo HAS : indications et contre-indications formelles (hypertension intracrânienne, infections au point de ponction, thrombopénie < 50 G/L, troubles de l'hémostase) de la ponction lombaire, modalités de réalisation (aiguille atraumatique ≤22G avec introducteur, asepsie, formation), effets indésirables — syndrome post-PL (céphalée orthostatique, signes d'alerte de complication grave), hématomes, infections — traitement par blood-patch, et spécificités pédiatriques (choix de l'aiguille, angle, analgésie). Pas de système GRADE : synthèse de la littérature sans cotation d'accord.","society":"HAS — Fiche mémo 2019","version":"Juin 2019","validated":"Haute Autorité de Santé","methodology":"Fiche mémo — synthèse de la littérature, sans système GRADE ni cotation d'accord","pages":7,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -756,6 +1369,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/anesthesie-pour-amygdalectomie-chez-lenfant/' and s.slug in ('anesthesie_reanimation', 'pediatrie', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-pour-amygdalectomie-chez-lenfant/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-pour-amygdalectomie-chez-lenfant/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'amygdalectomie_enfant',
   card_json = $mgjson${"badge":"Grade A-C + Accord","title":"Anesthésie pour amygdalectomie chez l'enfant","short":"Conférence d'experts texte court, 5 questions : évaluation préopératoire (bilan hémostase, gestion d'une IVAS, retentissement du SAOS), prise en charge anesthésique (induction, apports hydroélectrolytiques règle 4-2-1, contrôle des voies aériennes par sonde à ballonnet), soins postopératoires (surveillance SSPI, reprise alimentaire, analgésie — morphine IV en 1ère ligne, AINS déconseillés), complications (hémorragie 0,5-3 %, NVPO 40-70 %), et conditions de l'ambulatoire. Deux systèmes de cotation combinés (Grade A/B/C selon la preuve + Accord RAND/UCLA fort/faible).","society":"SFAR / Adarpef / Carorl — Conférence d'experts 2005","version":"2005","validated":"Comité des Référentiels de la Sfar","methodology":"Conférence d'experts — Grade A/B/C (niveau de preuve) + Accord RAND/UCLA modifié (fort/faible) selon la proposition","pages":8,"section":"Pédiatrie"}$mgjson$::jsonb,
@@ -766,6 +1385,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-candidoses-et-aspergilloses-invasives-de-ladulte/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-candidoses-et-aspergilloses-invasives-de-ladulte/' and s.acronym in ('SFAR', 'SPILF', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-candidoses-et-aspergilloses-invasives-de-ladulte/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'candidoses_aspergilloses',
   card_json = $mgjson${"badge":"Cotation A/B/C + 1/2/3","title":"Candidoses et aspergilloses invasives de l'adulte","short":"Conférence de Consensus commune SFAR/SPILF/SRLF (2004), 5 questions : diagnostic (examen direct systématique, antigénémie aspergillaire ELISA, TDM thoracique/signe du halo), moyens thérapeutiques (spectre d'activité et effets indésirables des 4 familles d'antifongiques, tableaux reproduits verbatim), stratégie des candidoses systémiques (2 arbres décisionnels selon créatininémie/neutropénie/azolé antérieur, retranscrits en tableaux Situation/Conduite), chimio-prophylaxie, et stratégie des aspergilloses invasives (voriconazole en 1ère ligne). Cotation lettre+chiffre (A1, B3, C3…) sans légende publiée dans ce document « Résumé » — disclosure méthodologique en page 1.","society":"SFAR / SPILF / SRLF — Conférence de Consensus commune 2004","version":"13 mai 2004","validated":"Comité des Référentiels de la Sfar","methodology":"Conférence de Consensus — cotation lettre+chiffre (A1/A2/B2/B3/C3…), légende non publiée dans le texte « Résumé »","pages":8,"section":"Réanimation"}$mgjson$::jsonb,
@@ -776,6 +1401,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/infections-liees-aux-catheters-veineux-centraux-en-reanimation-3/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/infections-liees-aux-catheters-veineux-centraux-en-reanimation-3/' and s.acronym in ('SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/infections-liees-aux-catheters-veineux-centraux-en-reanimation-3/' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'catheters_veineux_centraux',
   card_json = $mgjson${"badge":"Niveau 1-3 + Score a-d","title":"Infections liées aux cathéters veineux centraux en réanimation","short":"Réactualisation de la 12e conférence de consensus SRLF (2003), 5 questions : définition et diagnostic de l'ILC (hémocultures quantitatives couplées, délai différentiel de positivation, techniques « cathéter en place »), mécanismes de contamination/colonisation, facteurs de risque et morbi-mortalité, prévention (10 sous-thèmes : matériel, technique de pose, site d'accès, pansement, antiseptique, entretien de ligne, politique générale, Swan-Ganz, cathéters de dialyse), et stratégie diagnostique/thérapeutique initiale avec l'algorithme décisionnel complet (Figure 1, retranscrit en tableau Étape/Conduite). Grille méthodologique Niveau (1-3)/Score (a-d) publiée intégralement par la source.","society":"SRLF — Réactualisation de la 12e Conférence de Consensus, 2003","version":"Décembre 2002 / publié 2003","validated":"Société de Réanimation de Langue Française","methodology":"Conférence de consensus — grille Niveau de recommandation (1-3) / Score d'évaluation des études (a-d), légende publiée par la source","pages":8,"section":"Réanimation"}$mgjson$::jsonb,
@@ -786,6 +1417,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2016/01/Recommandations-concernant-la-mise-en-place-la-gestion-l-utilisation-et-l-evaluation-d-une-salle-d-accueil-des-urgences-vitales.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2016/01/Recommandations-concernant-la-mise-en-place-la-gestion-l-utilisation-et-l-evaluation-d-une-salle-d-accueil-des-urgences-vitales.pdf' and s.acronym in ('SFMU', 'SRLF', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2016/01/Recommandations-concernant-la-mise-en-place-la-gestion-l-utilisation-et-l-evaluation-d-une-salle-d-accueil-des-urgences-vitales.pdf' and d.society_id is null and s.acronym = 'SFMU';
 update public.documents set
   fiche_key = 'sauv',
   card_json = $mgjson${"badge":"Sans cotation","title":"Salle d'accueil des urgences vitales (SAUV)","short":"Recommandations organisationnelles SFMU/Samu de France/SRLF/SFAR (2003-2004) pour la mise en place, la gestion et l'évaluation d'une SAUV (« salle de déchoquage ») : critères d'admission, architecture (localisation, accès, structure — surface ≥ 25 m², emplacements minimaux), équipement Niveau 1 (services non SAU) et Niveau 2 (SAU) détaillé par domaine (réanimation respiratoire, cardiovasculaire, médicaments, immobilisation), collaboration (Samu-Smur, anesthésie-réanimation, consultants, services d'aval), ressources humaines (effectifs minimaux, formation), procédures et évaluation. Aucun système de cotation — recommandations organisationnelles normatives.","society":"SFMU / Samu de France / SRLF / SFAR — Recommandations 2003-2004","version":"5 novembre 2003 (publié 2004)","validated":"Sociétés savantes participantes (SFMU à l'initiative)","methodology":"Texte organisationnel/réglementaire — aucun système de cotation ni niveau de preuve individuel","pages":6,"section":"Urgences"}$mgjson$::jsonb,
@@ -796,6 +1433,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2014/04/196-reco-anesth-chir-autres-2001.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2014/04/196-reco-anesth-chir-autres-2001.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2014/04/196-reco-anesth-chir-autres-2001.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'relations_anesth_chir',
   card_json = $mgjson${"badge":"Sans cotation","title":"Relations anesthésistes-réanimateurs / chirurgiens","short":"Recommandations du Conseil national de l'Ordre des médecins (2001, actualisation d'un texte de 1994) sur les relations entre anesthésistes-réanimateurs, chirurgiens, autres spécialistes et professionnels de santé : principes déontologiques (obligation d'information, articles 35/36/64 du code de déontologie), organisation (chartes de fonctionnement), structures publiques/privées, mise en œuvre en 9 points (consultation pré-anesthésique, programme opératoire, SSPI, soins intensifs, hospitalisation, anesthésie par des non-anesthésistes, chirurgie ambulatoire, transfusions), sages-femmes/gynécologues-obstétriciens (analgésie périmédullaire), et infirmiers anesthésistes diplômés d'État (IADE). Texte déontologique/juridique, aucun système de cotation.","society":"Conseil national de l'Ordre des médecins, avec la SFAR — édition 2001","version":"Décembre 2001 (texte original mai 1994)","validated":"Conseil national de l'Ordre des médecins","methodology":"Texte déontologique/juridique — articles du code de déontologie et du code de la santé publique, aucun système de cotation scientifique","pages":20,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -806,6 +1449,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2014/04/preverreurmedic_recos.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2014/04/preverreurmedic_recos.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2014/04/preverreurmedic_recos.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'erreurs_medicamenteuses',
   card_json = $mgjson${"badge":"Sans cotation","title":"Prévention des erreurs médicamenteuses en anesthésie","short":"Recommandations SFAR (novembre 2006) : état des lieux épidémiologique (1 erreur sur 900 à 130 anesthésies), modélisation par arbre des pannes des mécanismes d'erreur (reconstitution et administration), prévention des erreurs de reconstitution (spécialité, dilution, étiquetage), prévention des erreurs d'administration (voie, seringues) avec le tableau complet des codes couleurs/trames internationaux par classe pharmacologique (curarisants en rouge, opioïdes en bleu, anesthésiques locaux en gris...). Texte narratif appuyé sur 20 références bibliographiques, aucun système de cotation GRADE.","society":"SFAR — Comité Analyse et Maîtrise du Risque","version":"Novembre 2006","validated":"Comité Analyse et Maîtrise du Risque de la SFAR","methodology":"Texte narratif appuyé sur bibliographie (20 références), aucun système de cotation GRADE ni niveau de preuve individuel","pages":7,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -816,6 +1465,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/strategie-du-remplissage-vasculaire-perioperatoire-2/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/strategie-du-remplissage-vasculaire-perioperatoire-2/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/strategie-du-remplissage-vasculaire-perioperatoire-2/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'remplissage_perioperatoire',
   card_json = $mgjson${"badge":"GRADE","title":"Stratégie du remplissage vasculaire périopératoire","short":"RFE SFAR/Adarpef (19 octobre 2012) : titration du remplissage peropératoire guidée sur le volume d'éjection systolique (VES) chez le patient chirurgical à haut risque (Figure 1 — algorithme de titration par bolus de 200±50 mL), remplissage en chirurgie mineure et en obstétrique (péridurale, rachianesthésie pour césarienne, coremplissage/vasoconstricteurs, prééclampsie), et situations particulières (allergies aux colloïdes, HEA et fonction rénale/hémostase, donneurs en mort encéphalique, patient cérébrolésé, pédiatrie règle 4-2-1). 15 recommandations, méthode GRADE.","society":"SFAR / Adarpef","version":"19 octobre 2012","validated":"Conseil d'administration de la Sfar","methodology":"Méthode GRADE — qualité des preuves en 4 catégories, force de recommandation forte (1+/1-) ou faible (2+/2-), avis d'experts (AE) en l'absence d'évaluation quantifiée","pages":9,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -826,6 +1481,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-anesthesique-peri-procedurale-dune-revascularisation-cerebrale-par-thrombectomie/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-anesthesique-peri-procedurale-dune-revascularisation-cerebrale-par-thrombectomie/' and s.acronym in ('SFAR', 'ANARLF', 'SFNR', 'SFNV', 'GFHT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-anesthesique-peri-procedurale-dune-revascularisation-cerebrale-par-thrombectomie/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'thrombectomie',
   card_json = $mgjson${"badge":"Avis d'experts","title":"Thrombectomie cérébrale — prise en charge anesthésique","short":"RPP SFAR/ANARLF (2022), avec la SFNR/SFNV/GFHT : prise en charge anesthésique péri-procédurale de la thrombectomie mécanique pour AVC ischémique — choix anesthésie générale/sédation/anesthésie locale selon critères cliniques, cibles per/post-procédure (PA, SpO2, etCO2, glycémie), gestion des antiagrégants/anticoagulants, extubation et orientation post-procédure (USINV). 18 préconisations, toutes avis d'experts à accord fort ; 2 questions sans recommandation faute de littérature suffisante, disclosure explicite.","society":"SFAR / ANARLF, avec SFNR / SFNV / GFHT","version":"2022","validated":"Comité des Référentiels Cliniques de la SFAR, CA de la SFAR, bureau de l'ANARLF, CS/CA de la SFNV, CS de la SFNR","methodology":"Format RPP (Recommandations pour la Pratique Professionnelle) — analyse de la littérature selon GRADE®, cotation collective GRADE Grid, 100 % accord fort après 2 tours","pages":33,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -836,6 +1497,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/preconisations-insuffisance-danalgesie-au-cours-de-la-cesarienne-sous-anesthesie-perimedullaire-prevention-prise-en-charge-immediate-et-differee/?wpdmdl=32629' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/preconisations-insuffisance-danalgesie-au-cours-de-la-cesarienne-sous-anesthesie-perimedullaire-prevention-prise-en-charge-immediate-et-differee/?wpdmdl=32629' and s.acronym in ('CARO', 'CNGOF', 'SFAR', 'SFMP', 'CNSF', 'SoFraSimS', 'CIANE', 'SFPP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/preconisations-insuffisance-danalgesie-au-cours-de-la-cesarienne-sous-anesthesie-perimedullaire-prevention-prise-en-charge-immediate-et-differee/?wpdmdl=32629' and d.society_id is null and s.acronym = 'CARO';
 update public.documents set
   fiche_key = 'insuffisance_analgesie_cesarienne',
   card_json = $mgjson${"badge":"Avis d'experts","title":"Insuffisance d'analgésie — césarienne sous APM","short":"Préconisations du CARO, avec le CNGOF, la SFAR, la SFMP, le CNSF et d'autres partenaires (2021) : prévention, reconnaissance et prise en charge de l'insuffisance/l'échec d'analgésie au cours de la césarienne sous anesthésie périmédullaire — évaluation du bloc avant incision (niveaux T6/T3, doses de bupivacaïne), délai décision-naissance et communication, gestion de la douleur avant/après incision (complément IV, conversion en anesthésie générale), prévention et gestion de l'état de stress post-traumatique, aspects médico-légaux. 24 préconisations (dont 10 identifiées comme clés), aucun système GRADE ; annexe décisionnelle incluse.","society":"CARO, avec CNGOF / SFAR / SFMP / CNSF / SoFraSimS / CIANE / Césarine / SFPP","version":"2021","validated":"Comité de pilotage CARO (D. Benhamou, H. Keita-Meyer, P. Deruelle, A. Evrard)","methodology":"Aucun système GRADE, aucun processus de cotation/vote formel décrit — préconisations d'experts, 10 sur 24 identifiées comme « clés »","pages":25,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -846,6 +1513,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-du-coronarien-opere-en-chirurgie-non-cardiaque/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-coronarien-opere-en-chirurgie-non-cardiaque/' and s.acronym in ('SFAR', 'SFC')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-coronarien-opere-en-chirurgie-non-cardiaque/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'coronarien',
   card_json = $mgjson${"badge":"RFE","title":"Coronarien opéré en chirurgie non cardiaque","short":"RFE conjointe SFAR/SFC (2011) sur la prise en charge du patient coronarien devant subir une chirurgie non cardiaque : quantification du risque (score de Lee, capacité à l'effort), indications des examens complémentaires (ECG, échocardiographie de stress, scintigraphie, coronarographie), revascularisation préopératoire (indications restreintes, choix stent nu/actif), gestion périopératoire des bêta-bloquants, statines, antiplaquettaires, IEC/ARA2, et algorithme décisionnel global en 4 étapes. 65 recommandations gradées GRADE (1+/1-/2+/2-) avec accord Delphi (fort/faible) distinct.","society":"SFAR / SFC (Société française de cardiologie)","version":"2011","validated":"CA de la Sfar (17 décembre 2010), CA de la SFC (octobre 2010)","methodology":"GRADE (1+/1-/2+/2-) croisé avec un vote Delphi indépendant (accord fort/faible, échelle 1-9) — deux axes distincts","pages":26,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -856,6 +1529,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-du-brule-grave-a-la-phase-aigue-chez-ladulte-et-lenfant/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'pediatrie', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-brule-grave-a-la-phase-aigue-chez-ladulte-et-lenfant/' and s.acronym in ('SFAR', 'SFB', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-du-brule-grave-a-la-phase-aigue-chez-ladulte-et-lenfant/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'brule_grave',
   card_json = $mgjson${"badge":"RPP","title":"Brûlé grave à la phase aiguë","short":"RPP conjointe SFAR/SFB/SFMU/Adarpef (2019) sur la prise en charge du brûlé grave (brûlures thermiques uniquement) dans les 48 premières heures, adulte et enfant : critères de gravité, évaluation de la surface cutanée brûlée (Lund & Browder), réanimation hémodynamique (remplissage initial, albumine), voies aériennes et inhalation de fumées (intubation, hydroxocobalamine, oxygénothérapie hyperbare), anesthésie-analgésie (kétamine), traitement local (refroidissement, pansement, antibioprophylaxie), nutrition et thromboprophylaxie. 24 recommandations, toutes à accord fort (format RPP, pas de grade 1+/2+ individuel). Les 10 annexes citées par la source (tableaux/algorithmes/formules) sont absentes du PDF téléchargé — disclosure explicite dans la fiche.","society":"SFAR, avec SFB / SFMU / Adarpef","version":"2019","validated":"Comité des Référentiels Cliniques de la Sfar (15/05/2019), CA de la Sfar (24/05/2019)","methodology":"RPP — analyse de la littérature selon GRADE, mais force de recommandation non individuellement gradée (« les experts suggèrent... ») ; cotation Delphi, accord fort/faible global — toutes les recommandations sont à accord fort","pages":38,"section":"Urgences"}$mgjson$::jsonb,
@@ -866,6 +1545,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/recommandations-sur-la-prise-en-charge-du-tabagisme-en-periode-perioperatoire/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/recommandations-sur-la-prise-en-charge-du-tabagisme-en-periode-perioperatoire/' and s.acronym in ('SFAR', 'SFT', 'CNCT', 'SOFCOT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/recommandations-sur-la-prise-en-charge-du-tabagisme-en-periode-perioperatoire/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'tabagisme',
   card_json = $mgjson${"badge":"RFE","title":"Tabagisme en période périopératoire","short":"RFE SFAR (2016, avec SFT/CNCT/SOFCOT/CNP Chirurgie Plastique/CNP Chirurgie Thoracique et Cardio-vasculaire), actualisant la conférence d'experts OFT/SFAR/AFC de 2005 : prise en charge comportementale et substitution nicotinique avant chirurgie programmée, arrêt préopératoire systématique du tabac quel que soit le délai avant l'intervention (avec seuils de bénéfice à 2/4/8 semaines), rôle de tous les professionnels du parcours de soins dans le conseil au sevrage, éviction du tabagisme passif chez l'enfant. Seulement 4 recommandations, toutes Grade 1+/Accord fort. Une 5e question (cigarette électronique) n'a abouti à aucune recommandation — les deux propositions soumises au vote des experts ont toutes deux échoué au seuil de consensus GRADE, disclosure intégrale dans la fiche.","society":"SFAR, avec SFT / CNCT / SOFCOT / CNP Chirurgie Plastique / CNP Chirurgie Thoracique et Cardio-vasculaire","version":"2016","validated":"Comité des Référentiels Cliniques de la Sfar","methodology":"GRADE standard (qualité des preuves 1-4, force 1+/1-/2+/2-, seuil de consensus GRADE Grid ≥50%/<20%)","pages":29,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -876,6 +1561,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/prise-en-charge-des-infections-intra-abdominales/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-infections-intra-abdominales/' and s.acronym in ('SFAR', 'SRLF', 'SPILF', 'AFC', 'SFCD')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/prise-en-charge-des-infections-intra-abdominales/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'infections_intra_abdominales',
   card_json = $mgjson${"badge":"RFE","title":"Infections intra-abdominales","short":"RFE conjointe SFAR/SRLF/SPILF/AFC/SFCD (2015), actualisant la Conférence de consensus SFAR de 2000 : diagnostic et contrôle de la source infectieuse (imagerie, chirurgie vs drainage radiologique, relaparotomie), microbiologie et antibiothérapie probabiliste des péritonites communautaires, particularités pédiatriques, diagnostic et antibiothérapie des infections associées aux soins (dont critères de risque de bactérie multirésistante), avec 3 algorithmes décisionnels. 44 recommandations sur 6 thèmes (communautaire 24, pédiatrie 3, associées aux soins 17), toutes à Accord fort. Hors champ : infections primaires des cirrhoses, infections focalisées isolées (biliaires, abcès hépatiques isolés, sigmoïdites).","society":"SFAR / SRLF / SPILF / AFC / SFCD","version":"2015","validated":"Groupe de relecture de 38 médecins (cotation Delphi, 2 tours)","methodology":"GRADE standard (qualité des preuves 1-4, force 1+/1-/2+/2-, vote Delphi)","pages":25,"section":"Réanimation"}$mgjson$::jsonb,
@@ -886,6 +1577,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/anesthesie-loco-regionale-perinerveuse/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-loco-regionale-perinerveuse/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-loco-regionale-perinerveuse/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'alr_perinerveuse',
   card_json = $mgjson${"badge":"RFE","title":"Anesthésie loco-régionale périnerveuse (ALR-PN)","short":"RFE SFAR (validée 18/11/2016), mise à jour de la RPC-ALR 2003 centrée sur les données nouvelles depuis 2003 (échoguidage devenu technique de référence, adjuvants, toxicité) — ne remplace pas la RPC 2003, toujours valide pour les données anatomocliniques et les techniques de base. 12 recommandations sur 4 thèmes (médicaments, écueils liés au terrain, stratégies d'utilisation, hygiène et sécurité), toutes à Accord fort, plus 4 points d'actualisation « Relecture RPC 2003 » et 2 NB hors recommandation numérotée (dexaméthasone, ALR-PN/infiltrations). Périmètre limité aux 24 premières heures postopératoires ; plus d'indication de l'ALR par type de chirurgie.","society":"SFAR","version":"2016","validated":"Conseil d'administration de la SFAR","methodology":"GRADE standard (qualité des preuves 1-4, force 1+/1-/2+/2-, vote Delphi GRADE Grid)","pages":10,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -896,6 +1593,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/urgences-obstetricales-extrahospitalieres/' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/urgences-obstetricales-extrahospitalieres/' and s.acronym in ('SFAR', 'SFMU', 'CNGOF', 'GFRUP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/urgences-obstetricales-extrahospitalieres/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'urgences_ob_extrahosp',
   card_json = $mgjson${"badge":"RFE","title":"Urgences obstétricales extrahospitalières","short":"RFE SFAR/SFMU (avec CNGOF, Collège national des sages-femmes, GFRUP), validée 2010 : prise en charge des urgences obstétricales en dehors d'une maternité — régulation Samu et accouchement inopiné (mécanique, nouveau-né), hémorragies du 2e/3e trimestre et post-partum (avec algorithme HPP), traumatismes chez la femme enceinte, HTA gravidique/prééclampsie/éclampsie (avec algorithme de titration antihypertenseur), menace d'accouchement prématuré, transferts in utero interhospitaliers. Cotation Delphi (2 tours), pas de grade individuel — Accord fort quasi systématique. 4 tableaux et 2 figures (algorithmes) retranscrits intégralement. Couverture complète de 8 des 9 chapitres ; le chapitre formation/évaluation des pratiques (organisationnel) est résumé.","society":"SFAR / SFMU (avec CNGOF, Collège national des sages-femmes, GFRUP)","version":"2010","validated":"Comité des urgences de la SFAR","methodology":"Méthode GRADE annoncée, cotation Delphi (2 tours), sans grade individuel 1+/2+/A/B/C","pages":14,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -906,6 +1609,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-aod-en-urgence/?wpdmdl=34804' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-aod-en-urgence/?wpdmdl=34804' and s.acronym in ('GIHP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-aod-en-urgence/?wpdmdl=34804' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'aod_urgence',
   card_json = $mgjson${"badge":"Propositions GIHP","title":"AOD : chirurgie et hémorragie en urgence","short":"Propositions du GIHP (2013, non une RFE/RPC — aucun système de cotation) pour la chirurgie urgente à risque hémorragique et les hémorragies graves chez un patient sous dabigatran ou rivaroxaban à dose curative : algorithmes guidés par dosage plasmatique (seuil de sécurité 30 ng/mL) ou, à défaut, par TCA/TP ; conduite en cas d'hémorragie grave (organe critique vs. autres, définition HAS 2008). ⚠ Document de 2013 antérieur aux antidotes spécifiques (idarucizumab, andexanet alfa) : ne couvre ni apixaban ni edoxaban (exclus par la source elle-même) et ne reflète pas la prise en charge actuelle de référence — repère historique des principes généraux uniquement. Pour le dabigatran spécifiquement, voir la fiche « Hémorragies et gestes urgents sous dabigatran (antidote idarucizumab) » (GIHP, réactualisation 2016), qui remplace ce document sur ce point précis.","society":"GIHP (Groupe d'Intérêt en Hémostase Périopératoire)","version":"2013","validated":"Consensus du GIHP (relecture critique des membres)","methodology":"Analyse de la littérature + relecture critique GIHP — aucun système de cotation (propositions, pas de recommandations)","pages":10,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -916,6 +1625,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/indications-de-transfusion-de-plasmas-lyophilises-plyo-chez-un-patient-en-choc-hemorragique-ou-a-risque-de-transfusion-massive-en-milieu-civil/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'medecine_d_urgence', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/indications-de-transfusion-de-plasmas-lyophilises-plyo-chez-un-patient-en-choc-hemorragique-ou-a-risque-de-transfusion-massive-en-milieu-civil/' and s.acronym in ('SFAR', 'SFMU', 'ADARPEF', 'CARO', 'CNCRH', 'CTSA', 'EFS', 'GFRUP', 'GIHP', 'SSA')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/indications-de-transfusion-de-plasmas-lyophilises-plyo-chez-un-patient-en-choc-hemorragique-ou-a-risque-de-transfusion-massive-en-milieu-civil/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'plyo_transfusion',
   card_json = $mgjson${"badge":"RPP","title":"Transfusion de plasmas lyophilisés (PLYO)","short":"RPP SFAR (avec SFMU, ADARPEF, CARO, CNCRH, CTSA, EFS, GFRUP, GIHP, SSA), 2020 : place du plasma lyophilisé (PLYO) par rapport au plasma frais congelé (PFC) chez l'adulte, l'enfant et le nouveau-né en choc hémorragique ou à risque de transfusion massive, en milieu civil. 6 questions cliniques, 10 énoncés gradés (regroupés en 8 recommandations par la source), tous Accord fort : hémorragie sans urgence vitale, transports médicalisés préhospitaliers (seuil de 20 min), transfusion intra-hospitalière (ratio plasma:CGR ≥1:2), hémorragie du péripartum, règles transfusionnelles et circuit du PLYO. Annexe : posologies HAS 2012 et objectifs hémodynamiques pédiatriques par âge.","society":"SFAR / SFMU / ADARPEF / CARO / CNCRH / CTSA / EFS / GFRUP / GIHP / SSA","version":"2020","validated":"Comité des Référentiels Cliniques (16/06/2020) et CA de la SFAR (23/06/2020)","methodology":"Analyse GRADE de la littérature, format RPP (« les experts suggèrent »), cotation Delphi GRADE grid","pages":28,"section":"Réanimation"}$mgjson$::jsonb,
@@ -926,6 +1641,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/tenue-vestimentaire-au-bloc-operatoire/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/tenue-vestimentaire-au-bloc-operatoire/' and s.acronym in ('SFAR', 'SF2H', 'AFC', 'CERES')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/tenue-vestimentaire-au-bloc-operatoire/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'tenue_vestimentaire',
   card_json = $mgjson${"badge":"RPP","title":"Tenue vestimentaire au bloc opératoire","short":"RPP commune SFAR-SF2H (avec validation AFC/CERES), 2021 : tenue de bloc opératoire, articles coiffants, masques, chaussures et sur-chaussures. 16 énoncés individuellement gradés « Avis d'expert (Accord Fort) » (la source annonce 13 recommandations formalisées ; le compte direct des énoncés numérotés donne 16 — divergence de comptage source non réconciliable, disclosed telle quelle), organisés en 4 champs thématiques : tenue de bloc (R1.1.1-R1.5), articles coiffants (R2.1.1-R2.2), masques (R3.1-R3.2), chaussures/sur-chaussures (R4.1-R4.2). Ces RPP se substituent explicitement aux recommandations SFAR et/ou SF2H précédentes sur le même champ.","society":"SFAR / SF2H (avec validation AFC / CERES)","version":"2021","validated":"Comité des Référentiels Cliniques de la SFAR (05/05/2021), CA de la SFAR (19/05/2021), Conseil Scientifique de la SF2H (06/05/2021) et CA de l'AFC/CERES (28/05/2021)","methodology":"Format RPP, méthodologie GRADE partiellement applicable (méthode GRADE non intégralement applicable selon la source, avis d'expert pour la plupart des questions), formulation uniforme « les experts suggèrent de faire/de ne pas faire », accord fort pour 100% des recommandations","pages":21,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -936,6 +1657,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/pratique-des-anesthesies-locales-et-locoregionales-par-des-medecins-non-specialises-en-anesthesie-reanimation/' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/pratique-des-anesthesies-locales-et-locoregionales-par-des-medecins-non-specialises-en-anesthesie-reanimation/' and s.acronym in ('SFAR', 'SFMU')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/pratique-des-anesthesies-locales-et-locoregionales-par-des-medecins-non-specialises-en-anesthesie-reanimation/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'alr_non_specialiste',
   card_json = $mgjson${"badge":"Grades A-E","title":"AL/ALR par médecins non spécialisés — urgences","short":"Conférence d'experts, texte court, SFAR/Samu de France/SFMU, 2002 (Ann Fr Anesth Réanim 2004;23:167-176) : pratique de l'anesthésie locale (AL) et locorégionale (ALR) par des médecins de l'urgence non spécialisés en anesthésie-réanimation (SAU, urgences préhospitalières) — exclut l'anesthésie « chirurgicale » et les ALR périmédullaires/blocs du tronc. 34 énoncés individuellement gradés (grille EBM Niveaux I-V / Grades A-E, source non numérotée Rx.y — référencement synthétique §<sous-section> disclosed) : pharmacologie/toxicité des AL (dont Tableau 4 posologies et Tableau 3 toxicité neurologique), indications/techniques (AL topique, infiltration, blocs des membres — fémoral/iliofascial, pied, main — et de la face), sédation/analgésie associées, précautions/surveillance/monitorage (Tableau 5 complications), particularités en milieu difficile et chez l'enfant, formation requise.","society":"SFAR / Samu de France / SFMU","version":"2002","validated":"Conférence d'experts (Ann Fr Anesth Réanim 2004;23:167-176)","methodology":"Conférence d'experts, grille EBM Niveaux de preuve I-V / Grades A-E — formulation narrative, aucune numérotation Rx.y native dans la source","pages":10,"section":"Urgences"}$mgjson$::jsonb,
@@ -946,6 +1673,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/recommandations-sur-lutilisation-de-lechographie-lors-de-la-mise-en-place-des-acces-vasculaires/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/recommandations-sur-lutilisation-de-lechographie-lors-de-la-mise-en-place-des-acces-vasculaires/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/recommandations-sur-lutilisation-de-lechographie-lors-de-la-mise-en-place-des-acces-vasculaires/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'echo_acces_vasculaires',
   card_json = $mgjson${"badge":"GRADE","title":"Échographie et accès vasculaires","short":"RFE SFAR (méthode GRADE), 2015 (Anesth Réanim. 2015;1:183-189) : utilisation de l'échoguidage lors de la mise en place d'accès vasculaires veineux centraux, artériels et veineux périphériques a priori difficiles, chez l'adulte et l'enfant. 10 recommandations (R1-R10) : jugulaire interne, sous-clavière, fémorale et radiale (adulte et enfant), veine périphérique a priori difficile (adulte et enfant) — grades 1+ (fort) ou 2+ (faible) selon le site et la qualité de preuve ; aucune recommandation possible pour la sous-clavière chez l'enfant (absence d'essai randomisé). Champ exclu par la source : échoguidage de l'artère fémorale (données insuffisantes) et techniques d'écho-repérage/Doppler seul. Analyse médico-économique incluse (coût marginal, gain estimé).","society":"SFAR","version":"2015","validated":"CA de la SFAR (12/09/2014), publié Anesth Réanim. 2015;1:183-189","methodology":"Méthode GRADE® — qualité des preuves en 4 catégories (haute/modérée/basse/très basse), formulation binaire forte/faible (Grade 1+/1-/2+/2-)","pages":7,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -956,6 +1689,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/tests-viscoelastiques-2018/?wpdmdl=34421' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/tests-viscoelastiques-2018/?wpdmdl=34421' and s.acronym in ('GIHP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/tests-viscoelastiques-2018/?wpdmdl=34421' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'tests_viscoelastiques',
   card_json = $mgjson${"badge":"Sans cotation","title":"Tests viscoélastiques (TEG®/ROTEM®)","short":"Position du GIHP (Groupe d'Intérêt en Hémostase Périopératoire), 2019 (Anaesth Crit Care Pain Med 2019;38:539-548, en ligne 2018) : revue narrative de la littérature sur la place des tests viscoélastiques (thromboélastographie TEG®, thromboélastométrie ROTEM®) en médecine d'urgence et périopératoire. Aucune grille de cotation (ni niveaux de preuve, ni grades) — 9 positions du GIHP formulées en prose dans 4 situations cliniques : traumatisme sévère (3 positions), hémorragie du post-partum, chirurgie cardiaque, transplantation hépatique. Rôle établi en traumatologie sévère et chirurgie cardiaque (réduction de transfusion et de mortalité dans les méta-analyses) ; rôle encore à définir en obstétrique, transplantation hépatique et pédiatrie (absence de position propre du GIHP en pédiatrie, disclosed — seule une recommandation externe ESA 2013 grade 2C est citée). Inclut les principes techniques TEG/ROTEM et le positionnement bedside/laboratoire.","society":"GIHP (Groupe d'Intérêt en Hémostase Périopératoire) — Sfar","version":"2019 (en ligne 2018)","validated":"Publié Anaesth Crit Care Pain Med 2019;38:539-548","methodology":"Revue narrative de la littérature, sans grille de cotation (ni niveaux de preuve, ni grades) — positions du GIHP formulées en prose","pages":10,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -966,6 +1705,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/monitorage-de-ladequation-profondeur-de-lanesthesie-a-partir-de-lanalyse-de-leeg-cortical/' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/monitorage-de-ladequation-profondeur-de-lanesthesie-a-partir-de-lanalyse-de-leeg-cortical/' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/monitorage-de-ladequation-profondeur-de-lanesthesie-a-partir-de-lanalyse-de-leeg-cortical/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'eeg_cortical',
   card_json = $mgjson${"badge":"Sans cotation","title":"Monitorage EEG cortical de l'anesthésie","short":"RFE SFAR, texte court, septembre 2009 (publié 2010) : monitorage de l'adéquation/profondeur de l'anesthésie par analyse de l'EEG cortical (BIS®, Entropie®). Format Question/Réponse, sans grille de cotation. Module A (contexte, non conçu comme des recommandations selon la source) : principes des index, non-interchangeabilité des moniteurs, relation non linéaire index/concentration, effets des morphiniques et facteurs confondants, courbe dose-réponse des halogénés. Module B (bénéfice clinique) : diminution des doses d'hypnotiques (10-40%) sans bénéfice clinique majeur sur le réveil, dépistage partiel de la mémorisation explicite sans l'abolir, effet sur les NVPO conditionné à l'absence de prévention systématique, ~17 situations cliniques à bénéfice potentiel, et particularités pédiatriques (BIS possible >2 ans en TIVA, aucune étude ne permettant de le recommander <2 ans).","society":"SFAR","version":"2010 (texte de septembre 2009)","validated":"Recommandations Formalisées d'Experts, SFAR","methodology":"Format Question/Réponse, sans grille de cotation (ni niveaux de preuve, ni grades) — une seule mention « avis d'experts » dans tout le texte","pages":11,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -976,6 +1721,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/pertinence-de-la-prescription-des-examens-biologiques-et-de-la-radiographie-thoracique-en-reanimation/' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/pertinence-de-la-prescription-des-examens-biologiques-et-de-la-radiographie-thoracique-en-reanimation/' and s.acronym in ('SFAR', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/pertinence-de-la-prescription-des-examens-biologiques-et-de-la-radiographie-thoracique-en-reanimation/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'examens_pertinence_rea',
   card_json = $mgjson${"badge":"GRADE","title":"Pertinence des examens en réanimation","short":"RFE commune SFAR-SRLF (méthode GRADE), validée 12/2016 (publiée 2017) : pertinence de la prescription des examens biologiques et de la radiographie thoracique (RT) au lit en réanimation. 42 recommandations (R1.1-R8.4) réparties en 8 champs : bilan d'entrée, bilan quotidien, biomarqueurs du sepsis (PCT/CRP), troponine postopératoire, peptides natriurétiques, bilan d'hémostase, examens bactériologiques (hémocultures, prélèvements pulmonaires, ECBU, coproculture), radiographie thoracique au lit — plus 3 questions sans recommandation possible et une anomalie de numérotation source disclosed (« R 7.2.5 »). Divergence de comptage source disclosed (49 recommandations annoncées vs 42 comptées directement dans le texte).","society":"SFAR / SRLF","version":"2016/2017","validated":"CA de la SFAR (15/12/2016) et de la SRLF (13/12/2016)","methodology":"Méthode GRADE®, méthode PICO — qualité des preuves en 4 catégories, formulation binaire forte/faible (Grade 1+/1-/2+/2-), certains items en avis d'expert","pages":26,"section":"Réanimation"}$mgjson$::jsonb,
@@ -986,6 +1737,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/anesthesie-loco-regionale-en-pediatrie/' and s.slug in ('anesthesie_reanimation', 'pediatrie', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-loco-regionale-en-pediatrie/' and s.acronym in ('SFAR', 'ADARPEF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/anesthesie-loco-regionale-en-pediatrie/' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'alr_pediatrie',
   card_json = $mgjson${"badge":"FORT/OPT","title":"ALR en pédiatrie","short":"RFE SFAR-ADARPEF 2010, actualisant la Conférence d'Experts 1997 sur l'anesthésie loco-régionale (ALR) chez l'enfant — nouveau-né, nourrisson, petit enfant surtout. Pas de grille de cotation A-E : chaque recommandation est « forte » (« il faut »/« il ne faut pas ») ou « optionnelle » (« il est possible de »/« il faut probablement »/« les experts proposent »/« il faut penser à ») selon le verbe employé par la source elle-même. 6 Questions (106 énoncés) : anesthésiques locaux et posologies, adjuvants (clonidine, morphiniques, adrénaline), méthodes de localisation et matériels (dont Tableau 1 — choix des aiguilles par technique/âge/poids), prévention et traitement des complications, choix de la technique selon le terrain et la chirurgie.","society":"SFAR / ADARPEF","version":"2010","validated":"Conférence d'Experts SFAR-ADARPEF 1997, actualisée RFE 2010","methodology":"Méthode GRADE quand pertinente, sinon accord professionnel (méthode Groupe Nominal adaptée RAND/UCLA) — force encodée directement dans le verbe de chaque recommandation (forte/optionnelle), pas de grille de lettres A-E","pages":13,"section":"Pédiatrie"}$mgjson$::jsonb,
@@ -999,6 +1756,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prise-en-charge-anesthesique-des-patients-en-hospitalisation-ambulatoire.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prise-en-charge-anesthesique-des-patients-en-hospitalisation-ambulatoire.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prise-en-charge-anesthesique-des-patients-en-hospitalisation-ambulatoire.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'hospit_ambulatoire',
   card_json = $mgjson${"badge":"Sans cotation","title":"Prise en charge anesthésique en hospitalisation ambulatoire","short":"Recommandations Formalisées d'Experts (RFE) SFAR, 2009 (Ann Fr Anesth Réanim 29 (2010) 67-72). Aucune grille de cotation imprimée (ni GRADE, ni RAND/UCLA) — force de chaque recommandation déduite du seul verbe modal introduisant l'énoncé : « il est recommandé » (forte, R), « il est souhaitable » (intermédiaire, S), « il est possible » (permissif, P), « il n'est pas recommandé » (négatif, N). 71 recommandations réparties en 11 questions : définitions, critères d'éligibilité (triptyque acte-patient-structure), information du patient, choix de la technique d'anesthésie, prise en charge des suites opératoires (douleur, prévention thromboembolique, NVPO), modalités de sortie, coordination et continuité des soins, évaluation et gestion des risques, spécificités liées à l'âge (pédiatrie, gériatrie), spécificités organisationnelles et spatiales, responsabilité de l'anesthésiste-réanimateur.","society":"SFAR","version":"2009 (publié 2010)","validated":"Recommandations Formalisées d'Experts, SFAR","methodology":"Aucune grille de cotation scientifique imprimée — force déduite du verbe modal introduisant chaque recommandation (convention bespoke propre à ce document)","pages":6,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1012,6 +1775,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_echographie-en-anesthesie-locoregionale.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_echographie-en-anesthesie-locoregionale.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_echographie-en-anesthesie-locoregionale.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'echo_alr',
   card_json = $mgjson${"badge":"Sans cotation","title":"Échographie en anesthésie locorégionale","short":"Recommandations Formalisées d'Experts (RFE) SFAR, 2011 (Ann Fr Anesth Réanim 30 (2011) e33-e35). Texte narratif sans grille de cotation imprimée — force de chaque énoncé portée par une locution modale du texte lui-même, avec 3 niveaux distincts : « il est recommandé » (force pleine, R), « il est probablement recommandé » (force intermédiaire, PR), « il est possible » (permissif/qualifié, P). Complète, sans les remplacer, les RPC 2002 (blocs périphériques des membres) et 2006 (blocs périmédullaires). Couvre : règles générales et apprentissage (formation, sonoanatomie, courbe d'apprentissage), matériel et aspect technique (choix de sonde, réglages, aiguilles dédiées), règles de sécurité (limiter le risque d'injection intraneurale), application aux blocs des membres et du tronc (interscalénique, supraclaviculaire, axillaire, fémoral, poplité, blocs d'espace, périmédullaires), et conditions de réalisation/hygiène (Tableau 1 : classement des dispositifs médicaux et niveaux de traitement requis, reproduit verbatim).","society":"SFAR","version":"2011","validated":"Recommandations Formalisées d'Experts, SFAR","methodology":"Texte narratif sans grille de cotation imprimée — force déduite des locutions modales du texte (convention bespoke propre à ce document)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1025,6 +1794,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2a_AFAR_Techniques-analgesiques-locoregionales-et-douleur-chronique.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2a_AFAR_Techniques-analgesiques-locoregionales-et-douleur-chronique.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2a_AFAR_Techniques-analgesiques-locoregionales-et-douleur-chronique.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'alr_douleur_chronique',
   card_json = $mgjson${"badge":"GRADE","title":"ALR et douleur chronique","short":"RFE SFAR 2013 (Ann Fr Anesth Réanim 32 (2013) 275-284) — première recommandation francophone sur la place des techniques d'analgésie locorégionale (ALR) dans la douleur chronique. Méthode GRADE standard. 43 énoncés au total sur 6 champs (médicaments, algies craniofaciales, douleurs abdomino-pelviennes, douleurs neuropathiques des membres [SDRC, amputation], douleurs cancéreuses, gestion des cathéters au long cours) : 33 recommandations réellement gradées (1+/1-/2+/2-/avis d'experts), 9 énoncés où la source déclare explicitement qu'aucune recommandation n'est possible faute de données (disclosed, distingués d'un grade négatif), et 1 énoncé permissif non gradé explicitement par la source. Pathologies rachidiennes explicitement exclues (objet d'une recommandation séparée multi-spécialités).","society":"SFAR","version":"2013","validated":"Recommandations Formalisées d'Experts, SFAR","methodology":"GRADE (qualité des preuves à 4 catégories, force forte/faible par vote Delphi) + avis d'experts + 9 énoncés « aucune recommandation possible » distincts d'un grade négatif (disclosed, voir fiche)","pages":10,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1038,6 +1813,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prevention-des-infections-nosocomiales-en-reanimation-transmission-croisee-et-nouveau-ne-exclus.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prevention-des-infections-nosocomiales-en-reanimation-transmission-croisee-et-nouveau-ne-exclus.pdf' and s.acronym in ('SFAR', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Prevention-des-infections-nosocomiales-en-reanimation-transmission-croisee-et-nouveau-ne-exclus.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'infections_nosocomiales_rea',
   card_json = $mgjson${"badge":"Sans cotation","title":"Prévention des infections nosocomiales en réanimation","short":"5e Conférence de Consensus SFAR/SRLF (2008/2009) — transmission croisée et nouveau-né explicitement exclus du champ. Le texte s'inspire de GRADE mais n'imprime jamais de symbole : force portée par la locution verbale elle-même (« il faut »/« il faut probablement »), transcrite ici en chips 1+/1-/2+/2- (correspondance explicitement énoncée par la source) + un chip « 0/ » pour les 3 énoncés où le jury déclare explicitement ne pouvoir se prononcer faute de données. Cinq questions : épidémiologie et définitions (critères diagnostiques CTINILS des pneumopathies, infections urinaires, bactériémies, ILC, ISO ; épidémiologie REA Raisin 2006), organisation architecturale, impact de l'antibiothérapie (désescalade, durée, rotation/mélange), préventions spécifiques (PAVM, infection urinaire, cathéters, site opératoire, Clostridium difficile), stratégie globale.","society":"SFAR / SRLF","version":"2008 (en ligne 2009)","validated":"5e Conférence de Consensus, Président du jury : J. Duranteau","methodology":"Inspirée de GRADE, formulée en locutions verbales plutôt qu'en symboles imprimés — voir légende dans la fiche","pages":9,"section":"Réanimation"}$mgjson$::jsonb,
@@ -1051,6 +1832,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Nutrition-artificielle-perioperatoire-en-chirurgie-programmee-de-ladulte.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Nutrition-artificielle-perioperatoire-en-chirurgie-programmee-de-ladulte.pdf' and s.acronym in ('SFAR', 'SFNEP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Nutrition-artificielle-perioperatoire-en-chirurgie-programmee-de-ladulte.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'nutrition_perioperatoire',
   card_json = $mgjson${"badge":"Avis d'experts","title":"Nutrition périopératoire (chirurgie programmée)","short":"Actualisation 2010 SFAR/SFNEP de la Conférence de Consensus 1994 sur la nutrition artificielle périopératoire — étendue à la prise en charge nutritionnelle globale (orale + assistance) de l'adulte en chirurgie programmée. Distinct de la fiche « Nutrition artificielle en réanimation » (SFAR/SRLF/SFNEP RFE 2014, patients de réanimation). Méthode avis d'experts non formalisée, rédigée selon les déclinaisons de force Sfar/GRADE (fort/faible) explicitement définies par la source. 71 recommandations numérotées (R1-R71) sur 6 champs : évaluation de l'état nutritionnel (facteurs de risque, seuils diagnostiques de dénutrition, grade nutritionnel GN1-4), nutrition pré- et postopératoire, pharmaconutrition (immunonutrition, glutamine, oméga-3), obésité et chirurgie (dont bariatrique), diabète. Tableaux 3-6 (protocoles croisés GN × sous-groupe) condensés en synthèse — portée partielle disclosed.","society":"SFAR / SFNEP","version":"2010 (publié 2011)","validated":"Actualisation de la Conférence de Consensus 1994","methodology":"Avis d'experts non formalisée, rédigée selon les déclinaisons de force Sfar/GRADE (fort/faible) — voir légende dans la fiche","pages":9,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1064,6 +1851,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_ANAES_Prise-en-charge-de-l-interruption-volontaire-de-grossesse-jusqu-a-14-semaines.pdf' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_ANAES_Prise-en-charge-de-l-interruption-volontaire-de-grossesse-jusqu-a-14-semaines.pdf' and s.acronym in ('ANAES', 'HAS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_ANAES_Prise-en-charge-de-l-interruption-volontaire-de-grossesse-jusqu-a-14-semaines.pdf' and d.society_id is null and s.acronym = 'ANAES';
 update public.documents set
   fiche_key = 'ivg_14sa',
   card_json = $mgjson${"badge":"ANAES A/B/C","title":"Prise en charge de l'IVG jusqu'à 14 semaines","short":"ANAES, mars 2001 (mise à jour partielle déc. 2010 par la HAS pour l'IVG médicamenteuse uniquement — non incluse ici, voir avertissement dans la fiche). Organisation des structures, accueil, consultations pré-IVG, choix de la technique (chirurgicale ou médicamenteuse) et du mode d'anesthésie selon l'âge gestationnel, prise en charge de la douleur, prévention des complications infectieuses et de l'incompatibilité Rhésus, suites et suivi post-IVG. Grille ANAES à 3 niveaux (A/B/C) ; 8 énoncés gradés explicitement, le reste relevant de l'accord professionnel (AP) par défaut selon la convention du texte source. Disclosure : le PDF source signale des passages modifiés en 2010 « en rouge », information de couleur non récupérable à l'extraction texte — non résolue silencieusement, voir la fiche.","society":"ANAES / HAS","version":"mars 2001 (màj partielle déc. 2010)","validated":"ANCIC, ANSFL, CNGE, CNGOF, planning familial, Fédération Française de Psychiatrie, SFAR, SFMG, SFTG","methodology":"Grille ANAES A/B/C (grade A/B/C explicite) + accord professionnel (AP) par défaut — voir légende dans la fiche","pages":4,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -1077,6 +1870,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aod-pour-un-acte-programme/?wpdmdl=33608' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aod-pour-un-acte-programme/?wpdmdl=33608' and s.acronym in ('GIHP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aod-pour-un-acte-programme/?wpdmdl=33608' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'aod_programme',
   card_json = $mgjson${"badge":"Propositions GIHP","title":"AOD : gestion périopératoire pour un acte programmé","short":"GIHP, propositions réactualisées, septembre 2015 (réactualisation des propositions GIHP 2011). Distinct de la fiche « AOD : chirurgie et hémorragie en urgence » — ce document couvre la gestion PROGRAMMÉE (acte électif, délai d'arrêt préétabli), l'autre couvre la gestion en URGENCE. Aucune grille de grade (propositions pragmatiques d'un groupe d'intérêt, sans cotation formelle). Risque hémorragique faible : pas de prise la veille/le matin, reprise ≥6h après le geste. Risque hémorragique élevé : dernière prise à J-3 (rivaroxaban/apixaban/edoxaban) ou J-4/J-5 selon la clairance de la créatinine (dabigatran) ; reprise en dose prophylactique puis curative selon un délai indicatif. Inclut le Tableau 1 (schéma récapitulatif) et le Tableau 2 (posologies usuelles des 4 AOD par indication), tous deux transcrits depuis un rendu visuel. Doublon d'indexation disclosed : ce document apparaît deux fois dans l'index bibliothèque du projet sous deux années différentes (2015 et 2021) — il s'agit du même document (bibliographie de 18 références identique entre les deux PDF sources), pas d'une actualisation 2021 distincte.","society":"GIHP","version":"septembre 2015","validated":"Groupe d'Intérêt en Hémostase Périopératoire (GIHP)","methodology":"Propositions d'un groupe d'intérêt, sans grille de grade formelle (ni GRADE, ni A/B/C, ni fort/faible)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1090,6 +1889,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Les-blocs-peripheriques-des-membres-chez-l-adulte.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Les-blocs-peripheriques-des-membres-chez-l-adulte.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Les-blocs-peripheriques-des-membres-chez-l-adulte.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_peripheriques_membres',
   card_json = $mgjson${"badge":"Grille EBM A-E","title":"Les blocs périphériques des membres chez l'adulte","short":"SFAR/Sofcot/Sofmer, Recommandations pour la Pratique Clinique (RPC), présentées le 22 septembre 2001 (43e congrès SFAR), publiées Ann Fr Anesth Réanim 22 (2003) 567-581. 14 questions : information du patient, préparation/surveillance, anesthésie locorégionale intraveineuse (ALRIV), techniques de repérage (neurostimulation), matériel, agents pharmacologiques, recommandations par territoire anatomique (membre supérieur avec Tableau 1 des indications chirurgicales, membre inférieur), analgésie postopératoire, conduite sous anticoagulant ou en cas de pathologie neurologique, gestion de l'échec, toxicité systémique des anesthésiques locaux (avec tableau des doses maximales), complications neurologiques. Grille EBM à 5 niveaux (A-E) + chip CP (consensus professionnel/avis d'experts, distinct du Grade E) — convention propre à ce document. Document RPC 2001 non abrogé, complété (mais non remplacé) par la RFE 2011 sur l'échographie en ALR de ce même corpus.","society":"SFAR / Sofcot / Sofmer","version":"22 septembre 2001 (publié 2003)","validated":"RPC, 43e Congrès national d'anesthésie et de réanimation","methodology":"Grille EBM A-E (niveaux de preuve I-V) + consensus professionnel (CP) — voir légende dans la fiche","pages":9,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1103,6 +1908,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Rehabilitation-rapide-apres-une-chirurgie-colorectale-programmee.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Rehabilitation-rapide-apres-une-chirurgie-colorectale-programmee.pdf' and s.acronym in ('SFAR', 'SFCD')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Rehabilitation-rapide-apres-une-chirurgie-colorectale-programmee.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'raac_colorectal',
   card_json = $mgjson${"badge":"GRADE + Delphi","title":"Réhabilitation rapide après chirurgie colorectale programmée","short":"SFAR/SFCD, RFE, Ann Fr Anesth Réanim 33 (2014) 370-384. 35 recommandations organisées en 3 périodes (pré-, per- et postopératoire) sur 19 paramètres identifiés par la littérature. Double cotation propre à cette RFE : chaque recommandation porte à la fois un grade GRADE (1+/1-/2+/2-, 30/35 recommandations, 5 sans grade faute de preuves suffisantes) ET un résultat de vote Delphi indépendant du groupe de relecture (Accord Fort ou Accord Faible, présent pour les 35), deux axes distincts jamais fusionnés. Facteurs confirmés utiles mais insuffisamment appliqués : carbohydrates préopératoires, optimisation hémodynamique peropératoire, alimentation orale et lever avant h24, mastication de gommes. Pratiques confirmées inutiles : préparation colique mécanique (chirurgie colique), sonde nasogastrique systématique, drainage chirurgical systématique (chirurgie colique). Inclut le tableau annexe de synthèse par paramètre (recommandation principale/secondaire/absence de recommandation), reproduit intégralement.","society":"SFAR / SFCD","version":"2014","validated":"RFE, groupe de travail Sfar/SFCD (30 experts, vote Delphi 3 tours)","methodology":"GRADE (qualité des preuves + force 1+/1-/2+/2-) + vote Delphi indépendant (Accord Fort/Faible) — voir légende dans la fiche","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1116,6 +1927,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2016/08/RECOCHIRAMBUSNFCP-120315.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2016/08/RECOCHIRAMBUSNFCP-120315.pdf' and s.acronym in ('SNFCP', 'ANAP', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2016/08/RECOCHIRAMBUSNFCP-120315.pdf' and d.society_id is null and s.acronym = 'SNFCP';
 update public.documents set
   fiche_key = 'chir_ambu_proctologie',
   card_json = $mgjson${"badge":"Accord d'experts","title":"Chirurgie ambulatoire en proctologie","short":"SNFCP, avec l'ANAP et la SFAR, mars 2015. 43 recommandations pour développer la chirurgie proctologique ambulatoire avec les mêmes conditions de qualité et sécurité qu'en hospitalisation traditionnelle — sans définir de liste d'actes éligibles (« ce n'est pas l'acte qui est ambulatoire mais le trio acte/patient/organisation »). 5 champs : parcours de soin et organisation (éligibilité, UCA, rôle du médecin traitant et du patient, continuité des soins), douleur postopératoire, rétention d'urines, risque hémorragique, reprise du transit. Grille à 4 niveaux (A/B/C/AE) mais seules 3 recommandations portent un grade A explicite (limitation des perfusions IV, anesthésique local de courte durée pour la rachianesthésie, analgésie multimodale par AL de longue durée) — le reste relève de l'accord d'experts.","society":"SNFCP / ANAP / SFAR","version":"mars 2015","validated":"Groupe de travail SNFCP, avec relecture d'un médecin généraliste","methodology":"Grille A/B/C/AE (accord d'experts) — voir légende dans la fiche","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1129,6 +1946,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Mieux-vivre-la-reanimation.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Mieux-vivre-la-reanimation.pdf' and s.acronym in ('SFAR', 'SRLF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Mieux-vivre-la-reanimation.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'mieux_vivre_reanimation',
   card_json = $mgjson${"badge":"Conférence de consensus","title":"Mieux vivre la Réanimation","short":"SFAR/SRLF, 6e Conférence de Consensus (texte long novembre 2009), avec le GFRUP et l'Adarpef, Ann Fr Anesth Réanim 29 (2010) 321-330. La réanimation est un lieu de vie mais aussi une agression — pour les patients, les familles et les soignants. 5 thématiques : barrières au « mieux vivre » (bruit, lumière, sommeil, douleur, delirium, ESPT, burn-out), amélioration de l'environnement (bruit, lumière, personnalisation de la chambre, organisation des soins, place de la famille), soins favorisant le mieux vivre (intimité, kinésithérapie précoce, massages, musique, hydratation, anxiété/dépression, douleur/agitation, soins centrés famille), stratégies de communication (soignant-patient, soignant-famille, entre soignants, famille-patient, sortie), personnalisation du processus décisionnel. Méthode narrative à locutions modales (« il faut »/« il faut probablement »/« il est »/« il est possible » + sigle RC pour les recommandations consensuelles sans référence scientifique majeure) — pas de grille GRADE imprimée avec symboles.","society":"SFAR / SRLF","version":"novembre 2009 (publié 2010)","validated":"6e Conférence de Consensus, méthodologie ANAES, avec GFRUP et Adarpef","methodology":"Locutions modales (il faut/il faut probablement/il est/il est possible) + sigle RC — voir légende dans la fiche","pages":3,"section":"Réanimation"}$mgjson$::jsonb,
@@ -1142,6 +1965,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2019/04/preparation-colique-anesthesie-generale.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2019/04/preparation-colique-anesthesie-generale.pdf' and s.acronym in ('SFED', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2019/04/preparation-colique-anesthesie-generale.pdf' and d.society_id is null and s.acronym = 'SFED';
 update public.documents set
   fiche_key = 'preparation_colique',
   card_json = $mgjson${"badge":"Position commune","title":"Préparation colique et anesthésie générale","short":"SFED/SFAR, position commune, validée 7 juillet 2016 (SFED) / 21 septembre 2016 (SFAR). La qualité de la préparation colique conditionne le taux d'intubation caecale et le taux de détection d'adénomes en coloscopie — la grande majorité des coloscopies françaises se fait sous anesthésie générale. Prise fractionnée avec pause nocturne supérieure pour une coloscopie du matin ; délai optimal de 3 à 5 h entre fin de purge et début d'examen. Un délai de 3 h entre dernière prise de préparation et induction anesthésique est jugé sûr (liquides de préparation assimilés à des liquides clairs, volume gastrique résiduel non majoré). Liste des situations ralentissant la vidange gastrique et tableau pratique des délais de jeûne selon l'horaire de la coloscopie (Tableaux I et II), reproduits intégralement. Précautions hydro-électrolytiques : phosphate de sodium contre-indiqué avant 18 ans et après 65 ans (risque d'hyperphosphatémie/hyponatrémie), PEG mieux toléré en cas d'insuffisance rénale/hépatique/cardiaque.","society":"SFED / SFAR","version":"2016","validated":"Position commune des conseils d'administration SFED (7 juillet 2016) et SFAR (21 septembre 2016)","methodology":"Texte narratif de synthèse de la littérature — pas de grille GRADE ni de recommandations numérotées","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1155,6 +1984,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2018/03/RFE-ANREA-Organisation-de-l-anesthesie-reanimation-obstetricale.pdf' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/03/RFE-ANREA-Organisation-de-l-anesthesie-reanimation-obstetricale.pdf' and s.acronym in ('SFAR', 'CNGOF', 'CNSF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/03/RFE-ANREA-Organisation-de-l-anesthesie-reanimation-obstetricale.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'organisation_ar_obstetricale',
   card_json = $mgjson${"badge":"Recommandations professionnelles","title":"Organisation de l'anesthésie-réanimation obstétricale","short":"Ducloy-Bouthors AS, Tourres J, Malinovsky JM, pour le groupe d'experts de la Sfar et des sociétés associées (Caro, CNGOF, CNSF, Société française de néonatologie), Recommandations Professionnelles, texte validé par le Conseil d'administration de la Sfar le 11 décembre 2015, Anesth Réanim 2016;2:206-212. 30 recommandations (RP1 à RP4.6) portant sur l'organisation des locaux/équipements, des personnels/effectifs/permanence de soins, du parcours de soins (consultation préanesthésique, analgésie en salle de travail, anesthésie-réanimation en salle d'intervention, réanimation du nouveau-né, surveillance post-anesthésique, réhabilitation post-partum, surveillance continue/réanimation) et de la qualité des soins/formation/évaluation. Cotation Delphi : accord fort obtenu pour les 30 recommandations (100 %). Les recommandations relevant en outre d'une disposition légale ou réglementaire sont signalées d'un astérisque, convention reprise du texte source. Inclut l'Annexe 1 (soins maternels de recours) reproduite intégralement.","society":"SFAR / Caro / CNGOF / CNSF / Société française de néonatologie","version":"11 décembre 2015 (publié 2016)","validated":"Groupe d'experts Sfar et sociétés associées, cotation Delphi (échelle 1-9, 2 tours)","methodology":"Accord Fort (Delphi, 100 % des 30 RP) + astérisque pour les dispositions légales — pas de grille GRADE","pages":3,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -1168,6 +2003,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2016/11/texte-court-preco-erreurs-med-2016-SFAR-SFPC-version-finale-25-oct-2016.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2016/11/texte-court-preco-erreurs-med-2016-SFAR-SFPC-version-finale-25-oct-2016.pdf' and s.acronym in ('SFAR', 'SFPC')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2016/11/texte-court-preco-erreurs-med-2016-SFAR-SFPC-version-finale-25-oct-2016.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'erreurs_medicamenteuses_ar_2016',
   card_json = $mgjson${"badge":"Sans cotation","title":"Prévention des erreurs médicamenteuses en anesthésie-réanimation (actualisation 2016)","short":"SFAR, en partenariat avec la Société Française de Pharmacie Clinique (SFPC), texte court, actualisation 2016. Actualise et élargit à la réanimation les préconisations SFAR de 2006 (document distinct, déjà disponible sous la fiche « Prévention des erreurs médicamenteuses en anesthésie »). 10 préconisations : démarche institutionnelle et équipe pluriprofessionnelle dédiée à la sécurisation de la prise en charge médicamenteuse (PECM) ; facteurs de risque (traitements habituels, médicaments à haut risque, informatisation, interruptions de tâches) et formation continue ; spécificités réanimation/soins critiques (règle des 5B, pharmacien dans l'unité, vigilance sédatifs/vasopresseurs) ; mesures actives/passives de prévention ; rangement et étiquetage détaillé (voies, seringues, poches, PCA/PCEA/PSE, chariots — codes couleurs internationaux ISO 26825) ; protocoles de prescription/préparation/administration (vigilance antiseptique/anesthésique injectable) ; gestion des erreurs et retour d'expérience (REMED, CREX, déclaration ANSM/CRPV). ⚠️ Une nouvelle RPP SFAR/SFPC plus récente, « Prévention des Erreurs Médicamenteuses en Anesthésie-Réanimation » (validée 27 mai 2024, 66 pages, gradée GRADE), existe et n'est pas encore intégrée à ce site (trouvée le 2026-09-20, taille nécessitant un traitement dédié) — se référer à la version 2024 en priorité si disponible.","society":"SFAR / SFPC","version":"Actualisation 2016 (préconisations initiales SFAR 2006) — RPP 2024 plus récente non encore intégrée, voir avertissement","validated":"Conseils d'administration de la SFAR et de la SFPC","methodology":"10 préconisations narratives numérotées — aucun système de cotation GRADE ni niveau de preuve individuel","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1181,6 +2022,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_SFAR_Recommandations-pour-les-structures-et-le-materiel-de-lanesthesie-pediatrique.pdf' and s.slug in ('anesthesie_reanimation', 'pediatrie', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_SFAR_Recommandations-pour-les-structures-et-le-materiel-de-lanesthesie-pediatrique.pdf' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_SFAR_Recommandations-pour-les-structures-et-le-materiel-de-lanesthesie-pediatrique.pdf' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'anesth_pediatrique_structures',
   card_json = $mgjson${"badge":"Sans cotation","title":"Structures et matériel de l'anesthésie pédiatrique","short":"SFAR, septembre 2000, groupe d'experts coordonné par C. Ecoffey (Rennes). Les dispositions SFAR sur la surveillance péri-anesthésique et le décret du 5 décembre 1994 s'appliquent en pédiatrie ; ce texte précise les particularités liées au jeune âge. Partie I — Structures : salle d'intervention (personnel selon l'âge), transferts entre unités, SSPI (emplacements/personnel/qualification), prise en charge post-opératoire (charte de l'enfant hospitalisé — l'hospitalisation d'un enfant de moins de 10 ans en réanimation adulte ne se justifie pas), laboratoires/examens complémentaires. Partie II — Matériel : assistance respiratoire (masques, canules, ballons, valves, plateau d'intubation, sondes, masque laryngé, respirateurs, algorithme d'intubation difficile, drain pleural — tailles et spécifications chiffrées), abord vasculaire, défibrillateur, monitorage (cardiovasculaire, ventilatoire, divers), prévention de l'hypothermie, matériel de transport, solutés. Distinct de la RPP SFAR-ADARPEF 2023 « Organisation de l'anesthésie pédiatrique » (organisation ENTRE centres — réseaux, orientation par âge/ASA, effectifs), désormais également git-trackée sous la clé organisation_anesthesie_pediatrique_2023.","society":"SFAR","version":"Septembre 2000","validated":"Groupe d'experts SFAR coordonné par C. Ecoffey","methodology":"Texte narratif de spécifications structurelles et matérielles — aucun système de cotation GRADE ni recommandation numérotée","pages":3,"section":"Pédiatrie"}$mgjson$::jsonb,
@@ -1194,6 +2041,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aod-en-urgence/?wpdmdl=34412' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aod-en-urgence/?wpdmdl=34412' and s.acronym in ('GIHP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/gestion-perioperatoire-des-patients-sous-aod-en-urgence/?wpdmdl=34412' and d.society_id is null and s.acronym = 'GIHP';
 update public.documents set
   fiche_key = 'aod_dabigatran_urgence_2016',
   card_json = $mgjson${"badge":"Propositions GIHP","title":"Hémorragies et gestes urgents sous dabigatran (antidote idarucizumab)","short":"GIHP, réactualisation septembre 2016 (Albaladejo, Pernod, Godier et al.) des propositions de 2013, spécifiquement pour le dabigatran (anti-IIa), intégrant l'antidote spécifique idarucizumab (Praxbind®, 5 g), désormais disponible. Couvre : hémorragie dans un organe critique/choc hémorragique, hémorragie grave (autre), hémorragie non grave (Figure 1) ; geste invasif urgent selon 3 niveaux de risque hémorragique et le délai de prise en charge (Figure 2) ; anesthésie locorégionale — bloc superficiel, anesthésie périmédullaire/bloc profond, cas particulier de la ponction lombaire diagnostique (Figure 3). Seuils de concentration 30/50 ng/mL, DDP et clairance de la créatinine comme critères de décision en l'absence de dosage. ⚠ Ne couvre que le dabigatran — pas rivaroxaban/apixaban (complément annoncé par le GIHP pour quand un antidote spécifique anti-Xa serait disponible) ; AVC ischémique hors périmètre. Complète la fiche « AOD : chirurgie et hémorragie en urgence » (GIHP 2013), explicitement datée et incomplète pour le dabigatran depuis la mise à disposition de l'idarucizumab.","society":"GIHP (Groupe d'Intérêt en Hémostase Périopératoire)","version":"Réactualisation septembre 2016 (propositions initiales 2013)","validated":"GIHP (analyse de la littérature + relecture des membres)","methodology":"Propositions pragmatiques du GIHP — aucun système de cotation GRADE ; 3 algorithmes décisionnels transcrits en tableaux","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1207,6 +2060,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/Annales-de-Readaptation-et-de-Medecine-Physique_Les-traumatises-craniens-adultes-en-medecine-physique-et-readaptation.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/Annales-de-Readaptation-et-de-Medecine-Physique_Les-traumatises-craniens-adultes-en-medecine-physique-et-readaptation.pdf' and s.acronym in ('SOFMER')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/Annales-de-Readaptation-et-de-Medecine-Physique_Les-traumatises-craniens-adultes-en-medecine-physique-et-readaptation.pdf' and d.society_id is null and s.acronym = 'SOFMER';
 update public.documents set
   fiche_key = 'tc_readaptation',
   card_json = $mgjson${"badge":"Conférence de consensus","title":"Traumatisés crâniens : du coma à l'éveil (médecine physique et réadaptation)","short":"SOFMER, Conférence de consensus (texte court des recommandations du jury, président Pr Jean-Luc Truelle), 8 octobre 2001, organisée selon les règles ANAES, Ann Readapt Med Phys 45 (2002) 417-423. 4 questions : modalités et niveaux cliniques du passage coma → éveil (GCS, GOAT, WHIM, GOS, distinction état végétatif/pauci-relationnel/mutisme akinétique/locked-in syndrome), apport des examens complémentaires (TDM/IRM, potentiels évoqués, EEG selon la phase aiguë/subaiguë-chronique), traitements médicamenteux (faible niveau de preuve, aucune conclusion possible), procédures de rééducation (neurostimulation, stimulation/régulation sensorielle — aucune approche à privilégier ne peut être recommandée) et place de la famille. Deux échelles de grade A/B/C distinctes selon la question (disclosed, non fusionnées), plus les catégories « avis d'experts » et « accord professionnel » (distinctes l'une de l'autre). Numérotation Q#.# assignée par la fiche — le texte source ne numérote pas ses recommandations.","society":"SOFMER (Société française de médecine physique et réadaptation)","version":"8 octobre 2001 (publié 2002)","validated":"Conférence de consensus, méthodologie ANAES, jury présidé par le Pr Jean-Luc Truelle","methodology":"Deux échelles A/B/C distinctes selon la question + avis d'experts (AE) + accord professionnel (AP) — voir légende dans la fiche","pages":3,"section":"Réanimation"}$mgjson$::jsonb,
@@ -1220,6 +2079,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/reduction-de-limpact-environnemental-de-lanesthesie-generale/?wpdmdl=37890' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/reduction-de-limpact-environnemental-de-lanesthesie-generale/?wpdmdl=37890' and s.acronym in ('SFAR', 'SF2H', 'SFPC')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/reduction-de-limpact-environnemental-de-lanesthesie-generale/?wpdmdl=37890' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'impact_environnemental_ag',
   card_json = $mgjson${"badge":"Avis d'experts (Accord fort)","title":"Réduction de l'impact environnemental de l'anesthésie générale","short":"SFAR, avec la SF2H et la SFPC, Recommandations de Pratiques Professionnelles, 2022 (validées CA SFAR 29/06/2022, CS SF2H). 17 recommandations en 3 champs : vapeurs/gaz anesthésiques (préférer le sévoflurane au desflurane/isoflurane à bénéfice égal, éviter le protoxyde d'azote, bas débit de gaz frais, monitorage de la profondeur d'anesthésie) ; médicaments intraveineux (préparation à la demande plutôt qu'anticipée, seringues pré-remplies, monitorage BIS/entropie pour limiter la consommation de propofol) ; dispositifs médicaux et environnement de travail (privilégier le réutilisable, éviter le DEHP, changement hebdomadaire des circuits de ventilateur, tri et recyclage des déchets). Méthode GRADE visée mais non applicable à l'ensemble des questions — les 17 recommandations sont toutes au niveau « Avis d'experts (Accord fort) », aucune n'est gradée 1+/1-/2+/2-.","society":"SFAR / SF2H / SFPC","version":"2022","validated":"Comité des Référentiels Cliniques de la SFAR, CA SFAR (29/06/2022), Conseil Scientifique de la SF2H","methodology":"Avis d'experts (Accord fort) uniforme — méthode GRADE visée mais non applicable à l'ensemble des questions","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1233,6 +2098,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/prise-en-charge-du-patient-diabetique-en-peri-operatoire/?wpdmdl=122568' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-du-patient-diabetique-en-peri-operatoire/?wpdmdl=122568' and s.acronym in ('SFAR', 'SFD')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-du-patient-diabetique-en-peri-operatoire/?wpdmdl=122568' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'diabete_perioperatoire_2025',
   card_json = $mgjson${"badge":"Fiches simplifiées","title":"Prise en charge du patient diabétique en péri opératoire","short":"Groupe SFAR/SFD (Cheisson, Benhamou, Cosson, Ichai, Jacqueminet, Nicolescu-Catargi, Ouattara, Tauveron), Fiches simplifiées, version 2025. Aucune grille de grade — algorithmes et tableaux posologiques prêts à l'emploi. Généralités DT1/DT2 et stratégie selon HbA1c (objectif glycémique péri-opératoire 5-10 mmol/L) ; prise en charge pré-opératoire (arrêt des antidiabétiques selon le type d'intervention, règles de jeûne, protocole de glycémies capillaires) ; CAT devant une hyperglycémie ≥16,5 mmol/L (dont le cas particulier des inhibiteurs SGLT2 à risque d'acidocétose euglycémique) et devant une hypoglycémie ; protocole d'insulinothérapie IV à la seringue électrique (IVSE) à 8 paliers de glycémie ; relais IVSE/SC ; protocole d'insulinothérapie SC type Basal Bolus ; modalités de reprise des antidiabétiques chez le DT2 ; intervention de courte durée. ⚠ Document déjà conçu comme outil clinique simplifié : vérifier toute posologie contre le texte source ou un outil clinique validé avant application.","society":"SFAR / SFD (Société Francophone du Diabète)","version":"2025","validated":"Groupe de travail SFAR/SFD","methodology":"Fiches simplifiées (algorithmes et tableaux posologiques) — aucun système de cotation GRADE","pages":6,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1246,6 +2117,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/anesthesie-pour-chirurgie-non-cardiaque-des-patients-adultes-porteurs-de-cardiopathie-congenitale-annexes/?wpdmdl=50052' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/anesthesie-pour-chirurgie-non-cardiaque-des-patients-adultes-porteurs-de-cardiopathie-congenitale-annexes/?wpdmdl=50052' and s.acronym in ('SFAR', 'SFC', 'SFP', 'CARO', 'SFCTCV')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/anesthesie-pour-chirurgie-non-cardiaque-des-patients-adultes-porteurs-de-cardiopathie-congenitale-annexes/?wpdmdl=50052' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'anesth_cardiopathie_congenitale',
   card_json = $mgjson${"badge":"Avis d'experts (Accord fort)","title":"Anesthésie et cardiopathie congénitale de l'adulte","short":"SFAR, en association avec la SFC, la SFP, le CARO et la SFCTCV, RPP, 2023 (méthode GRADE Grid, 11 recommandations, accord fort 100 %). La mortalité périopératoire en chirurgie non cardiaque est 2 à 7 % chez l'adulte porteur de cardiopathie congénitale (CC) — facteur de risque indépendant, 60 % des complications survenant en postopératoire. Score composite de risque combinant le type de cardiopathie (classification AHA 2018), le statut physiologique A-D (Tableau 3, reproduit intégralement) et le risque chirurgical (Tableau 5, reproduit intégralement) ; prise en charge en centre expert si risque intermédiaire/élevé. Stratégie anesthésique : ALR préférée à l'AG, ALR neuraxiale titrée/continue préférée à la non titrée, monitorage adapté au risque (PVC continue si Fontan). Postopératoire : soins critiques et avis cardiologique spécialisé si risque intermédiaire/élevé. Obstétrique : évaluation précoce en centre expert, ALR titrée préférée, surveillance postpartum en soins critiques si risque intermédiaire/élevé. Annexe : tableau de gestion périopératoire des traitements cardiotropes/anticoagulants (Fiche pratique #1), reproduit intégralement. ⚠ Le Tableau 6 (croisement complet risque composite par lésion cardiaque spécifique) et les fiches pratiques #2-6 (infographies visuelles : pièges du monitorage, principes d'anesthésie, protocoles d'urgence HTAP/Fontan, conduite obstétricale) ne sont pas transcrits intégralement — se référer au texte source. Note : les 2 fichiers proposés par sfar.org pour ce document ont des noms trompeurs (le fichier sans « -annexes » contient en réalité les fiches pratiques visuelles, celui avec « -annexes » contient le texte principal synthétisé ici).","society":"SFAR / SFC / SFP / CARO / SFCTCV","version":"Septembre 2023","validated":"Comité de 16 experts, méthode GRADE Grid (2 tours de cotation)","methodology":"Avis d'experts (Accord fort, 100 % des 11 recommandations) — pas de grade GRADE numérique","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1259,6 +2136,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/preconisations-pour-les-ressources-humaines-medicales-en-anesthesie-programmee/?wpdmdl=72905' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/preconisations-pour-les-ressources-humaines-medicales-en-anesthesie-programmee/?wpdmdl=72905' and s.acronym in ('SFAR', 'ARMPO')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/preconisations-pour-les-ressources-humaines-medicales-en-anesthesie-programmee/?wpdmdl=72905' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'ressources_humaines_anesthesie_2024',
   card_json = $mgjson${"badge":"RPP — Rappels réglementaires + Avis d'experts","title":"Ressources humaines médicales en anesthésie programmée","short":"SFAR, à l'initiative du CNP ARMPO, RPP, texte validé par le CA de la SFAR le 02/12/2024 (méthode GRADE grid, 11 préconisations : 4 rappels à la réglementation + 7 avis d'experts, accord fort dès le 1er tour pour toutes). Champ : anesthésie programmée hors urgence/soins critiques, hors anesthésie pédiatrique et obstétricale (fiches dédiées), hors consultation préanesthésique/médecine périopératoire. Q1 — qui fait quoi : MAR seul responsable de l'acte (R4311-12, R6153-1-2 CSP), IADE sous contrôle exclusif du MAR, DJ-AR en autonomie supervisée, surveillance clinique continue obligatoire. Q2 — combien de patients/salles par MAR : le MAR décide seul de prendre 1 ou 2 salles simultanées au maximum, aide IADE par salle ou pour 2 salles, exception pour ALR périphériques exclusives (>2 patients sous surveillance IDE dédiée), salles suffisamment proches en cas de responsabilité de 2 salles. Q3 — surveillance continue et recours : procédure organisationnelle par établissement, procédure de déclenchement d'un renfort, architecture des nouveaux sites d'anesthésie favorisant la proximité pour le recours humain.","society":"SFAR / CNP ARMPO","version":"2024","validated":"CA de la SFAR, 02/12/2024","methodology":"Méthode GRADE grid, format RPP — 4 rappels à la réglementation + 7 avis d'experts, accord fort 100 % dès le 1er tour","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1285,6 +2168,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/rfe-rac-orthopedique/?wpdmdl=24459' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/rfe-rac-orthopedique/?wpdmdl=24459' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/rfe-rac-orthopedique/?wpdmdl=24459' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'raac_orthopedique_2019',
   card_json = $mgjson${"badge":"RFE — GRADE (24 items, 3 incohérences source disclosed)","title":"Réhabilitation améliorée — arthroplastie de hanche/genou","short":"SFAR, RFE, comité de 19 experts, méthode GRADE (format PICO, 18 questions), validé 20/09/2019. 15 questions avec recommandation graduée ou avis d'experts, 3 avec absence de recommandation explicite (Q2 information/éducation préopératoire, Q3 préhabilitation, Q7 apports liquidiens peropératoires). Points forts : programme de réhabilitation (1+), acide tranexamique (1+), lutte contre l'hypothermie (1+), analgésie locorégionale pour PTG (1+), thromboprophylaxie systématique (1+) ; pratiques déconseillées : dispositifs de récupération de sang si épargne sanguine préop (1-), bilan infectieux systématique (1-). ⚠ 3 incohérences internes au texte source disclosed, non résolues : (1) synthèse annonce 23 recommandations (7 GRADE1+15 GRADE2+1 avis d'experts) mais décompte direct des items numérotés = 24, écart de 1 sur le sous-total GRADE1 (8 dénombrés) ; (2) synthèse annonce un accord fort pour l'ensemble des recommandations alors que R2 (gabapentinoïdes) porte elle-même le tag imprimé « accord faible » ; (3) synthèse annonce 2 questions sans réponse dans la littérature alors que 3 portent la mention explicite « ABSENCE DE RECOMMANDATION ».","society":"SFAR","version":"20 septembre 2019","validated":"Comité de 19 experts, méthode GRADE (2 tours + 1 amendement)","methodology":"GRADE — 24 items dénombrés (8 GRADE1 + 15 GRADE2 + 1 avis d'experts), accord fort sauf R2 (accord faible)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1298,6 +2187,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_SPILF_Strategies-de-reduction-de-lutilisation-des-antibiotiques-a-visee-curative-en-reanimation.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_SPILF_Strategies-de-reduction-de-lutilisation-des-antibiotiques-a-visee-curative-en-reanimation.pdf' and s.acronym in ('SRLF', 'SFAR', 'GFRUP', 'SFM', 'SPILF', 'SF2H')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/09/2_SPILF_Strategies-de-reduction-de-lutilisation-des-antibiotiques-a-visee-curative-en-reanimation.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'reduction_antibiotiques_reanimation_2014',
   card_json = $mgjson${"badge":"RFE — RAND/UCLA (Accord Fort/Faible), pas de GRADE numérique","title":"Réduction de l'utilisation des antibiotiques en réanimation","short":"SRLF/SFAR (GFRUP/SFM/SPILF/SF2H), RFE, Juin 2014 (adulte et pédiatrique). Méthode GRADE pour l'analyse de la littérature + cotation collective RAND/UCLA (2 tours, échelle 1-9) — 54 recommandations comportant 74 votes internes (47 Accord Fort + 27 Accord Faible), condensés ici en 62 lignes sans jamais fusionner deux niveaux d'accord différents. 5 questions : (Q1) lien résistance/consommation d'antibiotiques et données d'épidémiologie française (DDJ) ; (Q2) données microbiologiques (prélèvements avant antibiothérapie, PAVM, délai de culture, CMI, tests rapides, antigénuries) ; (Q3) choix de l'antibiothérapie — impact de la colonisation, réduction des carbapénèmes/quinolones/anti-SARM (probabiliste et documenté) ; (Q4) optimisation de l'administration — indication formelle et délais (choc septique <1h, méningite <3h), dosage/TDM (aminosides, vancomycine, bêta-lactamines), modalités d'administration (perfusion continue/prolongée), associations d'antibiotiques ; (Q5) réévaluation systématique à 48-72h, rôle de la procalcitonine, durées de traitement raccourcies (5-8 jours selon le site). Particularité méthodologique : contrairement à d'autres RFE de ce corpus, aucun grade GRADE numérique (1+/1-/2+/2-) n'est imprimé par item — seule la cotation Accord Fort/Faible (RAND/UCLA) est explicite, la force « il faut »/« il faut probablement » restant dans le libellé textuel de chaque recommandation.","society":"SRLF / SFAR (GFRUP/SFM/SPILF/SF2H)","version":"Juin 2014","validated":"Groupe d'experts, méthode GRADE + cotation RAND/UCLA (2 tours)","methodology":"RAND/UCLA — 54 recommandations / 74 votes (47 Accord Fort + 27 Accord Faible), pas de grade GRADE numérique par item","pages":5,"section":"Réanimation"}$mgjson$::jsonb,
@@ -1311,6 +2206,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2019/05/rfe-interets-de-lapprentissage-par-simulation-en-soins-critiques.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2019/05/rfe-interets-de-lapprentissage-par-simulation-en-soins-critiques.pdf' and s.acronym in ('SRLF', 'SFAR', 'SFMU', 'SoFraSimS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2019/05/rfe-interets-de-lapprentissage-par-simulation-en-soins-critiques.pdf' and d.society_id is null and s.acronym = 'SRLF';
 update public.documents set
   fiche_key = 'simulation_soins_critiques_2019',
   card_json = $mgjson${"badge":"RPP — 24/24 Accord Fort","title":"Intérêts de l'apprentissage par simulation en soins critiques","short":"SRLF/SFAR/SFMU/SOFRASIMS, RPP, textes validés par les CA de la SRLF (20/12/2018), de la SFAR (10/01/2019), de la SFMU (16/01/2019) et de la SOFRASIMS (18/01/2019). Méthode GRADE (analyse de littérature, format PICO) + cotation GRADE grid (≥ 70 % d'opinions favorables, < 20 % contraires) — 24 recommandations réparties en 3 champs, toutes à accord fort sans exception : Champ 1 — compétences techniques (10 recs : formation initiale/continue, simulation basse fidélité préférée pour les gestes, évaluation systématique de l'impact, ne pas utiliser la simulation seule hors curriculum, gestion des voies aériennes, cathéters veineux centraux, cathétérisme artériel, drain pleural) ; Champ 2 — compétences non techniques (12 recs : intégration des novices, simulation haute fidélité pour le travail d'équipe et la gestion de crise, communication inter-professionnelle et avec les patients/proches, correction des erreurs cognitives, conscience de la situation, résolution de problème/prise de décision, compétences relationnelles, outils d'évaluation TEAM/ANTS, débriefing systématique) ; Champ 3 — situations sanitaires exceptionnelles (2 recs : acquisition de compétences, tri des victimes). Slug de l'URL source dit « rfe » mais le texte précise explicitement avoir choisi un format RPP plutôt que RFE (divergence disclosed, non corrigée).","society":"SRLF / SFAR / SFMU / SOFRASIMS","version":"Déc. 2018 - Janv. 2019","validated":"Groupe d'experts, méthode GRADE + cotation GRADE grid","methodology":"GRADE grid — 24 recommandations, 100 % Accord Fort (aucune à accord faible)","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1324,6 +2225,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2018/09/RPP_beta-lactamines-en-soins-critiques_041018_logoSFPT.pdf' and s.slug in ('anesthesie_reanimation', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/09/RPP_beta-lactamines-en-soins-critiques_041018_logoSFPT.pdf' and s.acronym in ('SFPT', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2018/09/RPP_beta-lactamines-en-soins-critiques_041018_logoSFPT.pdf' and d.society_id is null and s.acronym = 'SFPT';
 update public.documents set
   fiche_key = 'optimisation_beta_lactamines_2018',
   card_json = $mgjson${"badge":"RPP — 21/21 Accord Fort","title":"Optimisation du traitement par bêta-lactamines en soins critiques","short":"SFPT (Groupe STP/PT) / SFAR, RPP, 2018. Méthode GRADE (PRISMA, format PICO) + cotation GRADE grid — 21 recommandations (26 sous-items cotés), toutes à accord fort sans exception, sur 4 champs : (1) variabilité pharmacocinétique — sources de variabilité, estimation du DFG (clairance créatinine UxV/P), TDM systématique en épuration extra-rénale, dosage albuminémie, posologie initiale majorée ; (2) relation PK-PD — cible %fT > k×CMI, viser 4-8×CMI pendant 100% de l'intervalle, seuil de toxicité à 8×CMI ; (3) modalités d'administration — perfusion prolongée/continue si CMI élevée, choc/gravité, infection respiratoire basse ou à bacille Gram négatif non-fermentant, dose de charge systématique ; (4) suivi thérapeutique pharmacologique (TDM) — indications, timing (24-48h), technique chromatographique, ajustements post-dosage, et Tableau 1 des cibles plasmatiques par molécule (11 bêta-lactamines : amoxicilline, céfazoline, céfépime, céfotaxime, ceftazidime, ceftriaxone, cloxacilline, ertapénème, imipénème, méropénème, pipéracilline). Complémentaire de la fiche `reduction_antibiotiques_reanimation_2014` (SRLF/SFAR 2014, recommandations générales sur le dosage/perfusion continue) — celle-ci est un RPP dédié beaucoup plus détaillé, spécifique aux bêta-lactamines, vérifié non redondant avant construction.","society":"SFPT (Groupe STP/PT) / SFAR","version":"2018","validated":"Groupe d'experts, méthode GRADE + cotation GRADE grid","methodology":"GRADE grid — 21 recommandations (26 sous-items), 100 % Accord Fort","pages":3,"section":"Réanimation"}$mgjson$::jsonb,
@@ -1337,6 +2244,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/rfe-anesthesie-rac-lobectomie-pulmonaire/?wpdmdl=24440' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/rfe-anesthesie-rac-lobectomie-pulmonaire/?wpdmdl=24440' and s.acronym in ('SFAR', 'SFCTCV')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/rfe-anesthesie-rac-lobectomie-pulmonaire/?wpdmdl=24440' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'raac_lobectomie_pulmonaire_2019',
   card_json = $mgjson${"badge":"RFE — GRADE (32 recs, incohérence source disclosed)","title":"Réhabilitation améliorée après lobectomie pulmonaire","short":"SFAR/SFCTCV, RFE, validée 20/09/2019 (population pédiatrique exclue). Méthode GRADE — 32 recommandations sur 5 champs : (1) parcours patient/information — centre à haut volume, pas d'hospitalisation systématique en réanimation, information de qualité ; (2) prise en charge et préhabilitation préopératoire — dépistage/correction dénutrition, arrêt tabac, réhabilitation préopératoire, désinfection oropharyngée chlorhexidine, prévention ACFA ; (3) anesthésie et analgésie — ventilation protectrice unipulmonaire, apports liquidiens titrés, analgésie locorégionale (bloc paravertébral privilégié), AINS, PCA ; (4) stratégie chirurgicale — thoracoscopie privilégiée, dispositif aérostatique, drain unique retiré rapidement ; (5) réhabilitation postopératoire — pas de VNI/OHD préventive systématique mais en traitement curatif, programme RAC avec mobilisation précoce, kinésithérapie multimodale. 31 recommandations à accord fort + 1 à accord faible (R2.5.2) ; 7 GRADE1+, 18 GRADE2+, 5 GRADE2-, 2 avis d'experts. ⚠ Incohérence disclosed : le résumé en tête de document annonce 2 questions sans réponse, la section « Synthèse des résultats » en annonce 3 — 3 cas trouvés et documentés (prémédication, décolonisation nasale S. aureus, aspiration du drain thoracique), écart non résolu.","society":"SFAR / SFCTCV","version":"20 septembre 2019","validated":"Groupe d'experts, méthode GRADE (2 tours + amendements)","methodology":"GRADE — 32 recommandations (7×1+, 18×2+, 5×2-, 2 avis d'experts), 31 accord fort + 1 accord faible","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1350,6 +2263,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/rehabilitation-amelioree-apres-chirurgie-cardiaque-adulte-sous-cec-ou-a-coeur-battant/?wpdmdl=35416' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/rehabilitation-amelioree-apres-chirurgie-cardiaque-adulte-sous-cec-ou-a-coeur-battant/?wpdmdl=35416' and s.acronym in ('SFAR', 'SFCTCV')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/rehabilitation-amelioree-apres-chirurgie-cardiaque-adulte-sous-cec-ou-a-coeur-battant/?wpdmdl=35416' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'raac_cardiaque_2021',
   card_json = $mgjson${"badge":"RFE — GRADE (33/33 Accord Fort)","title":"Réhabilitation améliorée après chirurgie cardiaque adulte","short":"SFAR/SFCTCV, RFE, validée 25/09/2021 (CEC ou à cœur battant, population pédiatrique exclue). Méthode GRADE — 33 recommandations sur 6 champs, TOUTES à accord fort (aucune exception, contrairement aux fiches sœurs raac_orthopedique_2019 et raac_lobectomie_pulmonaire_2019) : (1) parcours patient/information — programme RAACC, information de qualité, admission en soins critiques ; (2) prise en charge et préhabilitation préopératoire — dénutrition, sevrage tabagique, HbA1c, préhabilitation cardio-respiratoire, décolonisation nasale S. aureus, prévention FA, pas de statine de novo, jeûne limité à 6h/2h ; (3) anesthésie et analgésie — pas d'agent halogéné privilégié, ventilation protectrice hors CEC, optimisation hémodynamique, blocs échoguidés pariétaux privilégiés à l'infiltration pré-sternale, épargne morphinique sans gabapentine ; (4) stratégie chirurgicale et CEC — chirurgie mitrale vidéo-assistée (avis d'experts), CEC en normothermie, pas de pontage à cœur battant systématique, CEC optimisée ; (5) gestion personnalisée du capital sanguin (PBM) — programme PBM avec correction de l'anémie ferriprive, récupération sanguine peropératoire, pas de seuil transfusionnel systématique (avis d'experts) ; (6) réhabilitation postopératoire — extubation précoce (<6h), mobilisation précoce, ablation précoce des drains/sondes/cathéters. 7 GRADE1+, 3 GRADE1-, 15 GRADE2+, 4 GRADE2-, 4 avis d'experts (7+3+15+4+4=33, exact). 3 questions sans réponse (voies mini-invasives en chirurgie valvulaire aortique et coronaire, stratégie transfusionnelle restrictive/libérale) — décompte source cohérent cette fois, aucune incohérence trouvée.","society":"SFAR / SFCTCV","version":"25 septembre 2021","validated":"Groupe d'experts, méthode GRADE (3 tours + amendements)","methodology":"GRADE — 33 recommandations (7×1+, 3×1-, 15×2+, 4×2-, 4 avis d'experts), 100 % Accord Fort","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1363,6 +2282,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/optimisation-hemodynamique-perioperatoire-pediatrie/?wpdmdl=62046' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/optimisation-hemodynamique-perioperatoire-pediatrie/?wpdmdl=62046' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/optimisation-hemodynamique-perioperatoire-pediatrie/?wpdmdl=62046' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'optimisation_hemodynamique_pediatrie_2024',
   card_json = $mgjson${"badge":"RPP — 9/9 Avis d'experts, Accord Fort","title":"Optimisation hémodynamique périopératoire — Pédiatrie","short":"SFAR, RPP, mars 2024 (transfusion exclue du champ). Méthode GRADE (analyse bibliographique PRISMA) + cotation GRADE grid — 9 avis d'experts sur 4 champs, TOUS à accord fort, document entièrement non gradé (aucun GRADE 1+/1-/2+/2- imprimé) : Champ 1 — cibles de pression artérielle moyenne peropératoire par tranche d'âge (> 35 mmHg si < 6 mois, > 43 mmHg si 6 mois-2 ans, > [1,5×âge+40] mmHg si 2-10 ans) ; Champ 2 — VES/indices dynamiques (Doppler œsophagien chez le patient à risque élevé/très élevé si échocardiographie indisponible ; absence de recommandation pour la population générale sur le monitorage du VES et les indices dynamiques seuls) ; Champ 3 — indices de perfusion tissulaire (lactatémie utile en cas de bas débit, monitorage cérébral chez le nourrisson < 1 an en chirurgie majeure ; absence de recommandation sur DIVA-CO2/ScvO2) ; Champ 4 — expansion volémique (cristalloïde balancé en 1re intention, albumine 4-5% chez le nouveau-né/nourrisson, vasoconstricteur à dose majorée par rapport à l'adulte si hypotension persistante ; absence de recommandation sur le choix du vasoconstricteur). 4 questions sans réponse, décompte source vérifié exact (aucune incohérence). Complémentaire de la fiche `remplissage_perioperatoire` (RFE SFAR/Adarpef 2012, adulte à haut risque, brève mention pédiatrique règle 4-2-1 uniquement) — ce RPP 2024 est dédié et beaucoup plus détaillé spécifiquement à la pédiatrie.","society":"SFAR","version":"Mars 2024","validated":"Groupe d'experts, méthode GRADE grid","methodology":"GRADE grid — 9 avis d'experts, 100 % Accord Fort, document non gradé (pas de GRADE numérique)","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1376,6 +2301,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/optimisation-hemodynamique-perioperatoire-adulte-dont-obstetrique/?wpdmdl=62044' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'gynecologie_obstetrique', 'sage_femme_maieuticienne')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/optimisation-hemodynamique-perioperatoire-adulte-dont-obstetrique/?wpdmdl=62044' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/optimisation-hemodynamique-perioperatoire-adulte-dont-obstetrique/?wpdmdl=62044' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'optimisation_hemodynamique_adulte_2024',
   card_json = $mgjson${"badge":"RFE — GRADE (18 recs, décompte source disclosed)","title":"Optimisation hémodynamique périopératoire — Adulte / Obstétrique","short":"SFAR, RFE, janvier 2024 — réactualisation des recommandations SFAR 2012 sur le remplissage vasculaire périopératoire. Méthode GRADE — 18 recommandations réelles (2 GRADE1 + 8 GRADE2 + 8 avis d'experts, ces 3 sous-totaux exacts) + 6 absences de recommandation sur 5 champs : pression artérielle (éviter PAM <60-70 mmHg, cible >90% habituelle si hypertendu chronique, pas de monitorage continu systématique à risque faible/intermédiaire) ; VES/indices dynamiques (monitorage chez le patient à risque élevé/très élevé, associer un indice dynamique si analyse de courbe de PA, ne rien utiliser à risque faible/intermédiaire) ; indices de perfusion tissulaire (lactate artériel à très haut risque, pas de ScVO2, absence de recommandation sur DIVA-CO2/NIRS) ; expansion volémique/vasoconstricteurs/inotropes (cristalloïdes balancés, noradrénaline privilégiée à la phényléphrine, dobutamine en 1re intention si inotrope nécessaire) ; impact économique (optimisation utile sur la DMS à risque élevé, absence de recommandation sur les coûts). Inclut 4 recommandations et 1 absence spécifiques à la césarienne programmée sous rachianesthésie (préfixe OBS) : pas d'éphédrine prophylactique, phényléphrine/noradrénaline faiblement concentrée privilégiée, co-remplissage cristalloïde. ⚠ Le résumé du texte source annonce « 24 recommandations » mais le décompte direct trouve 18 réelles — 18+6 absences=24, disclosed sans résolution certaine (hypothèse la plus probable : le résumé compte les absences comme des « recommandations formulées » au sens large). Particularité : ce document imprime « GRADE 1 »/« GRADE 2 » SANS signe +/-, contrairement au format standard 1+/1-/2+/2- de ce corpus.","society":"SFAR","version":"Janvier 2024","validated":"Groupe d'experts, méthode GRADE","methodology":"GRADE (sans signe +/-) — 18 recommandations réelles (2 GRADE1 + 8 GRADE2 + 8 avis d'experts) + 6 absences ; résumé source annonce 24","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1389,6 +2320,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/prise-en-charge-peri-operatoire-du-patient-adulte-lors-dune-resection-hepatique/?wpdmdl=123091' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-peri-operatoire-du-patient-adulte-lors-dune-resection-hepatique/?wpdmdl=123091' and s.acronym in ('HAS', 'SFAR', 'AFEF', 'ACHBPT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-peri-operatoire-du-patient-adulte-lors-dune-resection-hepatique/?wpdmdl=123091' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'resection_hepatique_2025',
   card_json = $mgjson${"badge":"RBP HAS/SFAR — GRADE (40 recs, décompte source disclosed)","title":"Prise en charge péri-opératoire — Résection hépatique","short":"HAS, recommandation de bonne pratique adoptée par le Collège le 11 septembre 2025, élaborée par la SFAR avec l'AFEF (Société Française d'Hépatologie) et l'ACHBPT. Méthode GRADE (recherche bibliographique 2004-2024, PRISMA, format PICO) — 3 champs, 14 questions, 40 recommandations numérotées (accord fort, 2 tours de vote) et 3 absences de recommandation : Champ 1 — évaluation/optimisation préopératoire (dépistage systématique anémie/thrombopénie/dénutrition/fragilité en chirurgie à haut risque ; préhabilitation si dénutrition/âge>65/fragilité/ASA>2 ; pas d'immunonutrition ; drainage biliaire au cas par cas si ictère obstructif ; scores ALBI/APRI/Fib4/MELD/Child-Pugh pour le risque d'insuffisance hépatique post-hépatectomie) ; Champ 2 — optimisation peropératoire (pas de préférence IV/inhalé ; bolus de dexaméthasone 8-10mg ; pas de N-acétylcystéine ni de préconditionnement au sévoflurane ; antibioprophylaxie selon la RFE SFAR/SPILF 2024 ; hypovolémie permissive guidée par le VES pendant la transsection puis restauration volémique ; cristalloïdes balancés ; ventilation protectrice 6-8ml/kg + PEP≥5 ; pas d'acide tranexamique préventif systématique ; analgésie multimodale ± infiltration/bloc/péridurale selon abord) ; Champ 3 — optimisation postopératoire (admission en soins critiques individualisée selon un arbre décisionnel à 5 étapes ; surveillance clinico-biologique rapprochée de la fonction hépatique ; thromboprophylaxie par HBPM 4 semaines si carcinologique sans cirrhose, 7 jours si bénin/donneur vivant ; réhabilitation améliorée après chirurgie ; pas de VNI/CPAP prophylactique systématique). Champ d'application explicitement exclu par le texte source : pédiatrie, transplantation hépatique, hydatidose/abcès hépatiques, indications chirurgicales, traitement interventionnel non-chirurgical. Écart de décompte disclosed : la synthèse du source annonce « 39 recommandations » (7 GRADE1+21 GRADE2+11 avis d'experts) mais un décompte direct des items numérotés trouve 40 (7 GRADE1+22 GRADE2+11 avis d'experts, chaque paire marqueur→grade revérifiée individuellement) — écart d'un GRADE2 non résolu, disclosed tel quel. Particularité : comme pour la fiche `optimisation_hemodynamique_adulte_2024`, ce document imprime « 1 »/« 2 » SANS signe +/- (chips locaux G1/G2/AE/ABS) ; ABS (« pas de recommandation », 3 cas) est explicitement distingué d'AE (avis d'experts) dans la légende même du source. Le source numérote deux Annexes différentes « Annexe 3 » (p.13 et p.18) — doublon propre au document, non corrigé.","society":"HAS / SFAR / AFEF / ACHBPT","version":"Septembre 2025","validated":"Collège de la HAS, 11 septembre 2025 — groupe d'experts, méthode GRADE","methodology":"GRADE (sans signe +/-) — 40 recommandations numérotées (7 GRADE1 + 22 GRADE2 + 11 avis d'experts, décompte direct) + 3 absences de recommandation ; résumé source annonce 39","pages":7,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1402,6 +2339,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/programme-doptimisation-perioperatoire-du-patient-adulte/?wpdmdl=37889' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/programme-doptimisation-perioperatoire-du-patient-adulte/?wpdmdl=37889' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/programme-doptimisation-perioperatoire-du-patient-adulte/?wpdmdl=37889' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'programme_optimisation_perioperatoire_2022',
   card_json = $mgjson${"badge":"RFE — GRADE (30 recs, décompte source exact)","title":"Programme d'optimisation périopératoire du patient adulte","short":"SFAR, RFE, texte validé par le Comité des Référentiels Cliniques le 13/06/2022 et le Conseil d'Administration le 29/06/2022. Socle commun de mesures applicables quelle que soit la chirurgie (à la différence des RFE de réhabilitation améliorée déjà git-trackées dans ce corpus — raac_lobectomie_pulmonaire_2019, raac_cardiaque_2021, raac_orthopedique_2019, raac_colorectal — spécifiques à une chirurgie) : une mesure devait être valable dans au moins 3 domaines chirurgicaux distincts pour être retenue. Méthode GRADE (vote GRADE grid, 2 tours), 30 recommandations sur 4 champs — 1. Généralités (mettre en place un programme d'optimisation, inclure tous les patients, équipe pluriprofessionnelle dédiée ; absence de recommandation sur la place de la médecine de ville) ; 2. Mesures préopératoires (préhabilitation, jeûne limité à 6h solides/2h liquides clairs, pas de prémédication sédative systématique, admission le jour de l'intervention, patient blood management) ; 3. Mesures peropératoires (pas de préférence IV/inhalé ni générale/locorégionale en chirurgie des membres inférieurs, ventilation protectrice 6-8ml/kg + PEP≥5, anesthésiques locaux péri-nerveux en chirurgie des membres, analgésie locorégionale en chirurgie majeure, lidocaïne IV en laparoscopie abdomino-pelvienne, monitorage hémodynamique par VES, monitorage de la profondeur d'anesthésie, lutte contre l'hypothermie, prévention des NVPO, dexaméthasone systématique, acide tranexamique, antibioprophylaxie selon la RFE dédiée, monitorage de la curarisation ; absence de recommandation sur les moniteurs d'analgésie) ; 4. Mesures postopératoires (analgésie multimodale, thromboprophylaxie protocolisée, mesures d'optimisation dès la SSPI, alimentation orale précoce <24h, déambulation précoce <24h, critères de sortie prédéfinis) — plus 2 absences de recommandation au total. Décompte source vérifié EXACT (16 GRADE1+ + 3 GRADE1- + 10 GRADE2+ + 0 GRADE2- + 1 avis d'experts = 30, et 2 questions sans réponse, tous confirmés par un décompte direct item par item) : contrairement aux fiches optimisation_hemodynamique_adulte_2024 et resection_hepatique_2025 (chacune avec un écart de décompte disclosed), ce document est un cas « propre » sans divergence.","society":"SFAR","version":"2022","validated":"Comité des Référentiels Cliniques (13/06/2022) et CA de la SFAR (29/06/2022)","methodology":"GRADE (1+/1-/2+/2-/AE) — 30 recommandations (16 G1+ + 3 G1- + 10 G2+ + 1 AE) + 2 absences, décompte source exact","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1415,6 +2358,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/facteurs-humains-en-situations-critiques/?wpdmdl=37888' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/facteurs-humains-en-situations-critiques/?wpdmdl=37888' and s.acronym in ('SFAR', 'FHS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/facteurs-humains-en-situations-critiques/?wpdmdl=37888' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'facteurs_humains_2022',
   card_json = $mgjson${"badge":"RPP — 21 avis d'experts (accord fort 100 %)","title":"Facteurs humains en situations critiques","short":"SFAR, en association avec le Groupe Facteurs Humains en Santé (FHS), RPP, texte validé le 14/05/2022 (SFAR) et le 04/07/2022 (FHS). « Crisis resource management » en anesthésie-réanimation. Méthode GRADE prévue en amont (format PICO) mais non applicable en totalité faute d'essais randomisés sur le sujet — les 21 recommandations sont donc TOUTES des avis d'experts, à accord fort pour 100 % d'entre elles (décompte source vérifié exact, comme optimisation_hemodynamique_pediatrie_2024). 4 champs : 1. Communication (briefing avant prise en charge, communication sécurisée/standardisée, débriefing après prise en charge) ; 2. Organisation (conscience situationnelle individuelle et collective, culture de sécurité, leader identifié/partage d'informations/répartition des tâches, aide cognitive de crise) ; 3. Environnement de travail (matériel disposé logiquement et vérifié, formation systématique à tout nouveau matériel, utilisabilité des dispositifs complexes, protection contre les interruptions de tâche — notamment lors de l'administration d'une thérapeutique et lors des sources technologiques, gestion du risque de fatigue et de la charge de travail, ambiance de travail apaisée, prévention de l'épuisement professionnel) ; 4. Formation (préparation psychologique à la gestion du stress, formation aux facteurs humains). Piège de numérotation disclosed : le source alterne sans raison apparente entre les formats « R3.8 » et « R.3.10 » (point après le R) pour des items consécutifs — purement typographique. Inclut une reproduction condensée de l'Annexe 14 du source, une fiche pratique « réagir face à un comportement hostile » (campagne SFAR/CFAR 1Patient1Equipe, méthode DESC pour exprimer un désaccord) — seule annexe du document directement actionnable et non redondante avec le texte des recommandations ; les autres annexes (exemples cliniques illustratifs, liens externes vers des mémos HAS/SFAR déjà publiés ailleurs) ne sont pas reproduites.","society":"SFAR / Groupe Facteurs Humains en Santé (FHS)","version":"2022","validated":"Comité des Référentiels Cliniques SFAR (14/05/2022) et CA FHS (04/07/2022)","methodology":"GRADE prévu en amont, non applicable en totalité — 21 avis d'experts, accord fort 100 %, décompte source exact","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1428,6 +2377,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/prise-en-charge-de-la-douleur-de-laccouchement-analgesie-perimedullaire-et-alternatives-medicamenteuses-texte-court/?wpdmdl=106110' and s.slug in ('anesthesie_reanimation', 'gynecologie_obstetrique', 'sage_femme_maieuticienne')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-de-la-douleur-de-laccouchement-analgesie-perimedullaire-et-alternatives-medicamenteuses-texte-court/?wpdmdl=106110' and s.acronym in ('HAS', 'SFAR', 'CARO')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-de-la-douleur-de-laccouchement-analgesie-perimedullaire-et-alternatives-medicamenteuses-texte-court/?wpdmdl=106110' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'douleur_accouchement_2025',
   card_json = $mgjson${"badge":"RBP HAS — GRADE (34 recs + 5 absences)","title":"Douleur de l'accouchement — Analgésie périmédullaire","short":"HAS, RBP validée par le Collège le 30 avril 2025, promue par la SFAR et le Collège d'Anesthésie et Réanimation en Obstétrique (CARO), en association avec CNGOF/SF2H/CNSF/CIANE/GIHP/SFTH et d'autres — actualisation des recommandations SFAR de 2006 sur l'analgésie obstétricale. Méthode GRADE (grade 1/grade 2 SANS signe +/-, comme resection_hepatique_2025), 5 champs — pose, initiation, entretien, gestion de l'insuffisance/échec, alternatives médicamenteuses à l'analgésie périmédullaire (APM) — 34 recommandations et 5 absences de recommandation (39 items). Points clés : pas de repérage échographique systématique (sauf obésité/rachis difficile) ; pas de préférence décubitus latéral/position assise ; délai après HBPM ≥12h (prophylactique)/≥24h (curative) ; technique avec ponction durale si efficacité rapide attendue ; accès à l'APM précoce (≤4cm) ; pas de dose-test à la lidocaïne ; bolus intermittent programmé (BIP) préféré au débit continu ; déambulation possible sous APM ; sufentanil systématique en adjuvant, pas de clonidine en 1re intention ni d'adrénaline ; mesures correctrices en cas d'échec avec algorithme dédié (Figure 4, d'après Rackelboom) et repose de cathéter à 45min si échec ; rémifentanil IV-PCA en 2e ligne si contre-indication à l'APM avec surveillance rapprochée (risque dépression respiratoire) ; pas de protoxyde d'azote comparé à l'APM. Ce document N'IMPRIME PAS de synthèse chiffrée globale à recouper (contrairement à resection_hepatique_2025) — décompte direct exhaustif uniquement, chaque marqueur R x.y[.z] et chaque bloc ABS (imprimé en encadrement avant ET après le texte, vérifié pour ne pas compter en double) apparié individuellement à son grade. 5 absences dont 2 sans aucun numéro R (port de la casaque stérile ; monitorage systématique maternel/RCF pendant la pose) — questions posées explicitement dans le texte source mais n'ayant reçu aucune proposition, même non numérotée.","society":"HAS / SFAR / CARO","version":"Avril 2025","validated":"Collège de la HAS, 30 avril 2025","methodology":"GRADE (sans signe +/-) — 34 recommandations (12 G1 + 10 G2 + 12 avis d'experts) + 5 absences, décompte direct exhaustif (pas de synthèse chiffrée source à recouper)","pages":5,"section":"Obstétrique"}$mgjson$::jsonb,
@@ -1441,6 +2396,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/prevention-des-erreurs-medicamenteuses/?wpdmdl=68460' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/prevention-des-erreurs-medicamenteuses/?wpdmdl=68460' and s.acronym in ('SFAR', 'SFPC')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/prevention-des-erreurs-medicamenteuses/?wpdmdl=68460' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'erreurs_medicamenteuses_2024',
   card_json = $mgjson${"badge":"RPP — 29 avis d'experts (accord fort 100 %)","title":"Prévention des erreurs médicamenteuses en anesthésie-réanimation","short":"SFAR, en collaboration avec la Société Française de Pharmacie Clinique (SFPC), RPP, texte validé par le Comité des Référentiels Cliniques de la SFAR le 30 avril 2024. Réactualisation, complémentaire et beaucoup plus étendue, de la préconisation SFAR/SFPC 2016 déjà git-trackée sous la clé erreurs_medicamenteuses_ar_2016 (les deux fiches restent utiles, sous des clés distinctes). Format RPP choisi en amont (pas RFE) faute d'un nombre suffisant d'études permettant une cotation GRADE numérique — les 29 recommandations sont donc TOUTES des avis d'experts, à accord fort pour 100 % d'entre elles (décompte source vérifié exact). 4 champs : 1. Environnement de travail et processus (protocoles de prescription/préparation/administration standardisés, logiciels de prescription et aide à la prescription en soins critiques, bilan médicamenteux et conciliation, double contrôle, codes couleurs internationaux d'étiquetage, mentions obligatoires sur les étiquettes de poches PCA/PCEA, étiquetage des voies d'administration, conformité ANSM/ISO 26825-2020, limitation du nombre de médicaments différents disponibles, seringues préremplies, normes de connectique, traçabilité par code barre, standardisation de l'approvisionnement/stockage) ; 2. Facteurs humains et organisationnels (lutte contre les interruptions de tâches, restriction des communications non essentielles, audits d'équipe, lecture attentive/double lecture/communication sécurisée, formation par simulation, intégration de pharmaciens cliniciens) ; 3. Gestion des risques a posteriori (déclaration et analyse des erreurs, REX) ; 4. Pénuries médicamenteuses (anticipation des changements de marché/ruptures, inclusion dans les plans de gestion des risques). 2 absences de recommandation : informatisation de la prescription en anesthésie (distincte des recommandations sur les soins critiques) ; systèmes data-matrix et RFID (distincts de la recommandation sur la traçabilité par code barre). Aucune annexe dans le document source.","society":"SFAR / Société Française de Pharmacie Clinique (SFPC)","version":"2024","validated":"Comité des Référentiels Cliniques SFAR, 30 avril 2024","methodology":"Format RPP (pas RFE) — 29 avis d'experts, accord fort 100 %, décompte source exact ; 2 absences de recommandation","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1454,6 +2415,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/organisation-de-lanesthesie-pediatrique/?wpdmdl=43179' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/organisation-de-lanesthesie-pediatrique/?wpdmdl=43179' and s.acronym in ('SFAR', 'ADARPEF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/organisation-de-lanesthesie-pediatrique/?wpdmdl=43179' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'organisation_anesthesie_pediatrique_2023',
   card_json = $mgjson${"badge":"RPP — 34 avis d'experts (accord fort 100 %)","title":"Organisation de l'anesthésie pédiatrique","short":"SFAR-ADARPEF, « Organisation structurelle, matérielle et fonctionnelle des centres effectuant de l'anesthésie pédiatrique », RPP, texte validé par le Comité des Référentiels Cliniques de la SFAR le 19/01/2023. Complémentaire de la fiche déjà git-trackée anesth_pediatrique_structures (RFE SFAR 2000, matériel chiffré au sein d'UN site) — celle-ci porte sur l'organisation ENTRE sites/centres, deux échelles différentes, toutes deux nécessaires. Méthode GRADE prévue en amont mais les 34 recommandations (« préconisations ») sont TOUTES formulées comme avis d'experts, à accord fort pour la totalité (décompte source vérifié exact, aucune absence de recommandation dans ce document). 4 champs : 1. Structure et logistique (salle d'intervention adaptée, secteur pédiatrique en SSPI, hospitalisation en secteur dédié, consultation d'anesthésie en lieu adapté, plateau technique et réseaux de consultants spécialistes) ; 2. Équipement et matériel (matériel respiratoire/vasculaire adapté à l'âge, solutés hydro-électrolytiques et de remplissage par tranche d'âge, chariot d'urgence pédiatrique, monitorage adapté dont oxygénation régionale cérébrale pour les chirurgies majeures du nouveau-né/nourrisson, prévention de l'hypothermie, sondes échographiques 25-38mm/8-14MHz) ; 3. Formation (≥3 mois de stage en centre spécialisé pour tout interne, activité régulière minimale pour tout MAR pratiquant la pédiatrie, simulation) ; 4. Organisation fonctionnelle — réseaux ville/centre spécialisé avec critères d'orientation par âge et ASA (nouveau-né <6 semaines, ancien prématuré <60 semaines d'âge post-conceptionnel, ASA 3-5 vers un centre spécialisé), et surtout des **critères d'effectifs minimaux par tranche d'âge** directement actionnables (< 1 an ou ASA 4-5 : 2 professionnels dédiés exclusivement ; 1-3 ans et 3-10 ans : MAR + IADE dédiés ou MAR dédié avec second professionnel identifié à l'avance ; > 10 ans : règles adultes), plus les effectifs SSPI (IDE/IADE/puéricultrice formée, second paramédical, renfort si ≥6 postes).","society":"SFAR / ADARPEF","version":"2023","validated":"Comité des Référentiels Cliniques SFAR (19/01/2023), CA SFAR (26/01/2023)","methodology":"Format RPP — 34 avis d'experts, accord fort 100 %, décompte source exact ; aucune absence de recommandation","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1480,6 +2447,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_HAS_transfusion_de_globules_rouges_homologues_-_produits_indications_alternatives_-_recommandations.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_HAS_transfusion_de_globules_rouges_homologues_-_produits_indications_alternatives_-_recommandations.pdf' and s.acronym in ('HAS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_HAS_transfusion_de_globules_rouges_homologues_-_produits_indications_alternatives_-_recommandations.pdf' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'transfusion_gr_anesth_2014',
   card_json = $mgjson${"badge":"HAS 2014 — Partie 2/4 (périmètre limité)","title":"Transfusion de globules rouges homologues — Anesthésie/Réanimation","short":"HAS, « Transfusion de globules rouges homologues : produits, indications, alternatives », recommandation de bonne pratique, novembre 2014. Le document source complet comporte 4 parties très hétérogènes (produits/qualifications de CGR — médecine transfusionnelle générale ; anesthésie/réanimation/chirurgie/urgence ; hématologie-oncologie : drépanocytose, thalassémie, leucémies ; néonatologie : exsanguino-transfusion). Cette fiche couvre INTÉGRALEMENT la seule Partie 2 (sections 5 à 8, la seule directement actionnable pour un anesthésiste-réanimateur d'adulte) — les Parties 1, 3 et 4 ne sont pas traitées, périmètre explicitement disclosed en page 1. Grille de cotation HAS classique A/B/C/AE (distincte du format SFAR 1+/1-/2+/2- utilisé ailleurs dans ce corpus) : seuils transfusionnels en anesthésie et en réanimation (Hb 7-10 g/dl selon contexte, TaO2 crit/sécurité), niveaux d'urgence transfusionnelle et procédures (CGR O par défaut, règles RH/KEL pour la femme en âge de procréer), alternatives à la transfusion homologue (fer, EPO, acide tranexamique, rFVIIa, récupération de sang péri/postopératoire, transfusion autologue programmée). 26 recommandations gradées + 4 absences de recommandation explicitement énoncées (neuroréanimation ; durée de conservation des CGR ; acide tranexamique et rFVIIa dans l'hémorragie du post-partum) — décompte vérifié exact sur la Partie 2 intégrale.","society":"HAS (Haute Autorité de Santé)","version":"2014","validated":"Collège de la HAS, novembre 2014","methodology":"Grille HAS A/B/C/AE (preuve établie / présomption scientifique / faible niveau de preuve / accord d'experts) — 26 recommandations gradées + 4 absences de recommandation, Partie 2 uniquement (anesthésie/réanimation/chirurgie/urgence)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1493,6 +2466,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_cardio_2009' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_cardio_2009' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_cardio_2009' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'gestion_traitements_chroniques_cardio_2009',
   card_json = $mgjson${"badge":"SFAR RFE 2009 — Module 1/4 (périmètre limité)","title":"Gestion périopératoire des traitements chroniques — Cardiovasculaire","short":"SFAR, « Gestion périopératoire des traitements chroniques et dispositifs médicaux », Recommandations Formalisées d'Experts, Ann Fr Anesth Réanim 28 (2009) 1037-1045. Le référentiel complet fusionne en réalité plusieurs articles distincts publiés entre 2009 et 2011, correspondant aux 4 modules annoncés par son Préambule (Cardiovasculaire ; Douleur chronique/toxicomanie ; Infectieux/immunosuppresseurs ; Neurologique-psychiatrique et/ou endocrinien). Cette fiche couvre UNIQUEMENT le Module 1 — Pathologies cardiovasculaires (le plus transversal à toute anesthésie programmée) : bêtabloquants, inhibiteurs calciques, diurétiques, activateurs des canaux potassiques (nicorandil), inhibiteurs du SRAA (IEC/sartans), dérivés nitrés, statines, antiarythmiques (classes I et III de Vaughan-Williams), et stimulateurs cardiaques/défibrillateurs automatiques implantables (DCI, section pratique non gradée). Les 3 autres modules sont traités dans des fiches séparées. Les traitements antithrombotiques (antiagrégants plaquettaires, AVK) sont explicitement exclus de l'ensemble du référentiel par son comité d'organisation lui-même (déjà couverts par d'autres textes SFAR/HAS distincts, sans risque de chevauchement). Grille ANAES 2004 A/B/C/D — D étant systématiquement renforcé par méthode Delphi en « accord fort » (chip local AF) dans ce module. 15 recommandations gradées (A:0, B:3, C:3, AF:9) + 1 recommandation explicitement non gradée par la source elle-même (antiarythmiques classe I) + 1 section pratique non gradée (stimulateurs cardiaques/DCI, incluant 2 points explicitement signalés par la source comme ne faisant pas l'objet d'un consensus).","society":"SFAR (Société française d'anesthésie et de réanimation)","version":"2009","validated":"Comité des référentiels de la SFAR","methodology":"Grille ANAES 2004 A/B/C/D (D renforcé en « accord fort » par méthode Delphi) — 15 recommandations gradées + 1 non gradée, Module 1/4 uniquement (pathologies cardiovasculaires)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1506,6 +2485,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_douleur_toxico_2009' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_douleur_toxico_2009' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_douleur_toxico_2009' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'gestion_traitements_chroniques_douleur_toxico_2009',
   card_json = $mgjson${"badge":"SFAR RFE 2009 — Module 2/4 (périmètre limité)","title":"Gestion périopératoire des traitements chroniques — Douleur & toxicomanie","short":"SFAR, « Gestion périopératoire des traitements chroniques et dispositifs médicaux — Douleur chronique, toxicomanie », Recommandations Formalisées d'Experts, Ann Fr Anesth Réanim 28 (2009) 1046-1056. Même document source composite que le Module 1 (Cardiovasculaire, fiche séparée — la fiche bibliothèque de ce document source unique renvoie vers ce Module 1 ; accédez au Module 2 directement via cette carte ou la barre latérale). Cette fiche couvre UNIQUEMENT le Module 2 — Douleur chronique, toxicomanie : opioïdes (traitement chronique, table de conversion), AINS/coxibs, antiépileptiques, antidépresseurs, benzodiazépines, cathéters intrathécaux/périmédullaires, stimulateurs médullaires, toxicomanie substituée (méthadone/buprénorphine, table de conversion), et toxicomanie active (cannabis, héroïne, cocaïne, autres excitants du SNC, médicaments détournés). Les modules Cardiovasculaire, Infectieux/immunosuppresseurs et Neurologique-psychiatrique/phytothérapie sont traités dans des fiches séparées. Grille ANAES 2004 A/B/C/D (D renforcé en « accord fort » par méthode Delphi). Particularité disclosed de ce module : la grande majorité des énoncés prescriptifs du texte source ne portent aucune citation de grade — seuls 28 citations de grade explicites (A:0, B:4, C:9, accord fort:15) apparaissent dans le texte, regroupées ici en 26 lignes de recommandations gradées ; tous les autres énoncés prescriptifs sont regroupés en repères pratiques non gradés par substance, sans grade fabriqué.","society":"SFAR (Société française d'anesthésie et de réanimation)","version":"2009","validated":"Comité des référentiels de la SFAR","methodology":"Grille ANAES 2004 A/B/C/D (D renforcé en « accord fort » par méthode Delphi) — 26 lignes de recommandations gradées (28 citations) + nombreux repères pratiques non gradés par substance, Module 2/4 uniquement (douleur chronique, toxicomanie)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1519,6 +2504,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_neuro_psy_2011' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_neuro_psy_2011' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_neuro_psy_2011' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'gestion_traitements_chroniques_neuro_psy_2011',
   card_json = $mgjson${"badge":"SFAR RFE 2011 — Module 4/4 (périmètre limité)","title":"Gestion périopératoire des traitements chroniques — Neuro/psychiatrique & phytothérapie","short":"SFAR, « Gestion périopératoire des traitements chroniques et dispositifs médicaux — Pathologies neurologiques et psychiatriques » + « Phytothérapie », RFE, Ann Fr Anesth Réanim 30 (2011) 191-194 et 200. Même document source composite que les Modules 1 et 2 (fiches séparées — la fiche bibliothèque de ce document source unique renvoie vers le Module 1 ; accédez à ce Module 4 directement via cette carte ou la barre latérale). Cette fiche couvre le Module 4 — antiparkinsoniens, antidépresseurs (dont une sous-section IMAO dédiée) — ET le texte court « Phytothérapie » publié à la suite dans le même document (bundled ici vu sa taille réduite). Le Module 3 (Infectieux/immunosuppresseurs) est traité dans une fiche séparée. Un module « pathologies endocriniennes » annoncé par le préambule du référentiel n'a pas été retrouvé dans le PDF source téléchargé. Divergence méthodologique disclosed par rapport aux Modules 1 et 2 : ce module (groupe de travail différent, publié 2011) utilise « grade D » et « accord fort » comme deux notations distinctes et non interchangeables (contrairement aux Modules 1/2 où D n'apparaissait jamais autrement que relabellisé accord fort) ; une citation source imprime même un grade hésitant « B ou C » (association imipraminique-anticholinergique), reproduit tel quel sans trancher arbitrairement. 27 lignes de recommandations/repères gradés (A:3, B:5, C:6, D:4, accord fort:8, B/C:1).","society":"SFAR (Société française d'anesthésie et de réanimation)","version":"2011","validated":"Comité des référentiels de la SFAR","methodology":"Grille ANAES 2004 A/B/C/D avec « accord fort » comme notation distincte du grade D (divergence vs. Modules 1/2) — 27 lignes de recommandations gradées, Module 4/4 uniquement (neuro-psychiatrique + phytothérapie)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1532,6 +2523,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_infectieux_2009' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_infectieux_2009' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Gestion-perioperatoire-des-traitements-chroniques-et-dispositifs-medicaux.pdf#gestion_traitements_chroniques_infectieux_2009' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'gestion_traitements_chroniques_infectieux_2009',
   card_json = $mgjson${"badge":"SFAR RFE 2009 — Module 3/4 (périmètre limité)","title":"Gestion périopératoire des traitements chroniques — Anti-infectieux, immunosuppresseurs","short":"SFAR, « Gestion périopératoire des traitements chroniques et dispositifs médicaux — Anti-infectieux, immunosuppresseurs », RFE, Ann Fr Anesth Réanim 28 (2009) 1057-1065. Même document source composite que les Modules 1, 2 et 4 (fiches séparées — la fiche bibliothèque de ce document source unique renvoie vers le Module 1 ; accédez à ce Module 3 directement via cette carte ou la barre latérale). Ce module ACHÈVE la couverture des 4 modules effectivement présents dans le PDF fusionné de ce référentiel. Couvre : antituberculeux, antirétroviraux, et 6 immunosuppresseurs distincts — inhibiteurs de calcineurine (ciclosporine, tacrolimus), thalidomide, méthotrexate, azathioprine, mycophénolate mofétil, cyclophosphamide, anticorps monoclonaux anti-TNF. Seuls deux grades apparaissent effectivement dans ce module (grille ANAES 2004) : grade C (faible niveau de preuve) et accord fort (grade D renforcé par méthode Delphi, même convention que les Modules 1/2) — aucune citation A, B ou D nu. 30 lignes de recommandations gradées (accord fort:16, grade C:14) ; le module anti-TNF consolide 3 citations de même grade portant sur le même scénario clinique (dont une phrase source dupliquée mot pour mot dans le texte) en une seule ligne, sans jamais fusionner des grades différents.","society":"SFAR (Société française d'anesthésie et de réanimation)","version":"2009","validated":"Comité des référentiels de la SFAR","methodology":"Grille ANAES 2004 — seuls grade C et accord fort apparaissent dans ce module — 30 lignes de recommandations gradées, Module 3/4 uniquement (anti-infectieux, immunosuppresseurs)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1545,6 +2542,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2a_HAS_texte-court_Delivrance-de-linformation-a-la-personne-sur-son-etat-de-sante.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2a_HAS_texte-court_Delivrance-de-linformation-a-la-personne-sur-son-etat-de-sante.pdf' and s.acronym in ('HAS')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2a_HAS_texte-court_Delivrance-de-linformation-a-la-personne-sur-son-etat-de-sante.pdf' and d.society_id is null and s.acronym = 'HAS';
 update public.documents set
   fiche_key = 'delivrance_information_2012',
   card_json = $mgjson${"badge":"HAS — RBP, mai 2012","title":"Délivrance de l'information à la personne sur son état de santé","short":"HAS, « Délivrance de l'information à la personne sur son état de santé », Recommandation de Bonne Pratique, validée par le Collège de la HAS en mai 2012. Actualise et remplace « Information des patients — Recommandations destinées aux médecins » (ANAES, mars 2000, désormais lien mort). Couvre : le contenu et les qualités de l'information (ce qu'elle doit contenir, comment la délivrer pour qu'elle soit comprise) ; les modalités de délivrance (entretien individuel, accompagnant, personne de confiance, documents écrits, coordination entre professionnels, traçabilité) ; l'information du mineur, du majeur protégé ou du majeur inapte à recevoir l'information (cas particuliers détaillés) ; l'évaluation de l'information donnée. Grille HAS A/B/C/AE définie en préambule mais jamais citée individuellement — la source énonce explicitement que l'absence de données scientifiques suffisantes fait reposer toutes les recommandations sur un accord d'experts (AE), appliqué uniformément aux 28 items de la fiche. Divergence disclosed : l'index bibliothèque date ce document de 2010, mais le document lui-même affiche mai 2012 comme date de validation par le Collège de la HAS ; le lien PDF direct de l'index contient aussi une coquille (corrigée pour cette fiche).","society":"HAS (Haute Autorité de Santé)","version":"2012","validated":"Collège de la HAS, mai 2012","methodology":"Grille HAS A/B/C/AE définie mais jamais citée individuellement — source explicite : absence de données suffisantes, toutes les recommandations reposent sur un accord d'experts (AE) — 28 items, couverture intégrale des 4 sections","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1558,6 +2561,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_ci_2006' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_ci_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_ci_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_ci_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q1-2/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Information & contre-indications (Q1-2/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », Recommandations pour la Pratique Clinique, présentées le 24 septembre 2005 (47e congrès SFAR), Annales Françaises d'Anesthésie et de Réanimation 26 (2007) 720-752. Document source très volumineux : 15 « Questions » cliniques, 369 citations de grade individuelles. Cette fiche couvre INTÉGRALEMENT les Questions 1 et 2 (information au patient ; contre-indications générales, surveillance et monitorage) — 41 recommandations gradées (A:3, C:31, AE:7). Les Questions 3 à 15 (technique de la rachianesthésie et de la péridurale, association AG-bloc, travail obstétrical, césarienne, analgésie postopératoire, terrains spécifiques, gestion de l'échec, facteurs de risque de complications) ne sont PAS couvertes ici — installments futurs de ce même document, disclosed explicitement en page 1. Grille EBM classique A/B/C/AE ; la seule occurrence du texte source en « avis d'experts » est traitée comme équivalente à l'« accord professionnel » (même palier le plus bas), disclosed comme variation terminologique et non un palier distinct. Une évaluation antérieure de ce document avait conclu à tort qu'il ne comportait aucune citation gradée (recherche sensible à la casse sur « Grade » majuscule) — correction apportée : le texte source utilise systématiquement la minuscule « grade », d'où 369 citations réelles au total.","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/AE — 41 recommandations gradées (A:3, C:31, AE:7), Questions 1-2/15 uniquement (périmètre limité, document source 369 citations sur 15 Questions)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1571,6 +2580,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_technique_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_technique_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_technique_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_technique_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q3-5/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Rachianesthésie, péridurale, AG-Bloc (Q3-5/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Deuxième installment de ce document (15 Questions, 369 citations de grade au total) — le premier installment (Questions 1-2, information au patient et contre-indications générales) est une fiche séparée. Cette fiche couvre INTÉGRALEMENT les Questions 3 (modalités de réalisation de la rachianesthésie), 4 (modalités de réalisation de l'anesthésie péridurale) et 5 (association blocs périmédullaires-anesthésie générale : chronologie, surveillance peropératoire) — 24 recommandations gradées (A:11, B:4, C:8, AE:1), vérifiées par audit indépendant (regex sur le script final). Trois tableaux pharmacologiques reproduits verbatim : facteurs déterminant le bloc en rachianesthésie, pharmacodynamie comparée des anesthésiques locaux en rachianesthésie et en péridurale (y compris leurs cellules vides, non renseignées par le source, vérifiées par rendu visuel du PDF source à 200dpi). Grille EBM classique A/B/C/AE — une troisième variante terminologique du palier le plus faible est rencontrée ici (« consensus professionnel », Question 5), en plus de « accord professionnel » et « avis d'experts » déjà rencontrés dans les Questions 1-2 ; toutes trois sont disclosed comme équivalentes, pas des paliers distincts. Les Questions 6 à 15 (travail obstétrical, césarienne, analgésie postopératoire, terrains spécifiques, échec, facteurs de risque de complications) ne sont PAS couvertes — installments futurs.","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/AE — 24 recommandations gradées (A:11, B:4, C:8, AE:1), Questions 3-5/15 uniquement (périmètre limité, document source 369 citations sur 15 Questions)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1584,6 +2599,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_cesarienne_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_cesarienne_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_cesarienne_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_cesarienne_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q7/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Césarienne (Q7/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Troisième installment de ce document (15 Questions, 369 citations de grade au total) — les Questions 1-2 et 3-5 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 7 (quels blocs périmédullaires pour la césarienne : préparation, choix de la technique, gestion de l'échec, situations obstétricales particulières, analgésie postopératoire) — 31 recommandations gradées (A:4, B:5, C:20, D:1, AE:1), vérifiées par audit indépendant. La Question 6 (travail obstétrical) est délibérément EXCLUE de cet installment : elle est superseded par une fiche séparée plus récente (HAS 2025, « Douleur de l'accouchement », dont le texte source se décrit lui-même comme actualisant les recommandations SFAR 2006 sur l'analgésie obstétricale). Incohérence du source disclosed : le préambule méthodologique du document ne définit que les grades A/B/C + accord professionnel, mais le corps du texte cite un « grade D » (jamais défini) — présenté ici avec un chip visuellement distinct plutôt qu'arbitrairement assimilé à un grade existant. La Fig. 1 du source (deux algorithmes décisionnels visuels pour le choix de la technique d'ALR selon le degré d'urgence) est retranscrite fidèlement sous forme de texte structuré, ce corpus n'ayant pas de pattern établi pour l'intégration d'images matricielles dans une fiche.","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/AE + un « grade D » cité par le source sans définition dans son propre préambule (incohérence disclosed) — 31 recommandations gradées (A:4, B:5, C:20, D:1, AE:1), Question 7/15 uniquement (périmètre limité)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1597,6 +2618,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_postop_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_postop_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_postop_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_postop_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q8/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Analgésie postopératoire (Q8/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Quatrième installment de ce document (15 Questions, 369 citations de grade au total) — les Questions 1-2, 3-5 et 7 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 8 (analgésie postopératoire par voie périmédullaire : agents, indications par type de chirurgie, monitorage/surveillance) — 71 recommandations gradées (A:28, B:17, C:26), vérifiées par un audit indépendant en aveugle (un second agent, sans accès au brouillon, a reconstruit sa propre inventaire directement depuis le texte source et obtenu exactement le même décompte). Aucune citation « grade D », « accord professionnel » ni « avis d'experts » dans le périmètre de cette Question — disclosed explicitement, chips D/AE donc absents de cette fiche. Particularité méthodologique disclosed : la sous-section Monitorage/surveillance ne comporte AUCUNE citation de grade individuelle dans le source (seulement une justification méthodologique globale, non rattachée à une phrase précise) — plutôt que d'inventer un chip qui fabriquerait une recommandation gradée inexistante, ce contenu est intégralement condensé en repères pratiques non gradés. La Question 6 (travail obstétrical) reste EXCLUE (superseded par la fiche HAS 2025 dédiée).","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C (aucun D/AE dans ce périmètre) — 71 recommandations gradées (A:28, B:17, C:26), vérifiées par audit indépendant en aveugle, Question 8/15 uniquement (périmètre limité)","pages":6,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1610,6 +2637,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_terrain_cardioresp_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_terrain_cardioresp_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_terrain_cardioresp_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_terrain_cardioresp_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q9-10/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Terrains cardiovasculaire & respiratoire (Q9-10/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Cinquième installment de ce document (15 Questions, 369 citations de grade au total) — les Questions 1-2, 3-5, 7 et 8 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT les Questions 9 (terrain cardiovasculaire : effets hémodynamiques, HTA, coronarien, insuffisance cardiaque, valvulopathies, troubles du rythme) et 10 (terrain respiratoire : asthme, altération ventilatoire, SAOS, surveillance) — 18 recommandations gradées (A:4, B:3, C:10, AE:1), vérifiées par audit indépendant. Aucune citation « grade D », « consensus professionnel » ni « avis d'experts » dans ce périmètre. Les Questions 11-13 (hémostase, neurologique, infectieux — nettement plus volumineuses) et 14-15 (gestion de l'échec, facteurs de risque de complications) restent hors périmètre, installments futurs. La Question 6 reste EXCLUE (superseded par la fiche HAS 2025 dédiée).","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/AE (aucun D/consensus professionnel/avis d'experts dans ce périmètre) — 18 recommandations gradées (A:4, B:3, C:10, AE:1), Questions 9-10/15 uniquement (périmètre limité)","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1623,6 +2656,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_hemostase_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_hemostase_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_hemostase_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_hemostase_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q11/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Terrain hémostase (Q11/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Sixième installment de ce document (15 Questions, 369 citations de grade au total) — les Questions 1-2, 3-5, 7, 8 et 9-10 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 11 (anomalies de l'hémostase : pathologies héréditaires/acquises, antiagrégants, thiénopyridines, anti-GPIIb/IIIa, héparines NF/BPM, AVK, nouveaux antithrombotiques, thrombolytiques, diagnostic et surveillance de l'hématome périmédullaire, évaluation du risque hémorragique) — 24 recommandations gradées (A:0, B:5, C:4, AE:15), vérifiées par audit indépendant. Question la plus dense en « consensus professionnel » du document exploré à ce jour (15 occurrences). Incohérence du source disclosed : une citation unique porte deux étiquettes méthodologiques à la fois (« grade B, consensus professionnel ») — chippée B (label le plus spécifique) avec la double mention disclosed en note, plutôt que fusionnée arbitrairement. La Question 6 reste EXCLUE (superseded par la fiche HAS 2025 dédiée) ; les Questions 12-13 (neurologique, infectieux) et 14-15 (échec, facteurs de risque) restent hors périmètre, installments futurs.","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/AE (aucun D/avis d'experts dans ce périmètre ; « consensus professionnel » et « accord professionnel » regroupés sous AE) — 24 recommandations gradées (A:0, B:5, C:4, AE:15), Question 11/15 uniquement (périmètre limité)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1636,6 +2675,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_neuro_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_neuro_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_neuro_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_neuro_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q12/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Terrain neurologique & neuromusculaire (Q12/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Septième installment de ce document — les Questions 1-2, 3-5, 7, 8, 9-10 et 11 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 12 (terrain neurologique et neuromusculaire : céphalées/migraine, épilepsie, maladies dégénératives centrales, AVC, spina bifida et malformations rachidiennes héréditaires, Charcot-Marie-Tooth, tumeurs du SNC, hernie discale, lésion médullaire, sclérose en plaques/Guillain-Barré, diabète/neuropathies métaboliques, porphyrie, VIH, poliomyélite, myasthénie, dystrophie myotonique, myopathies mitochondriales, canalopathies musculaires) — 41 recommandations gradées (A:0, B:5, C:32, D:1, AE:3), vérifiées par audit indépendant en aveugle (un second agent, sans accès au brouillon, a reconstruit sa propre inventaire directement depuis le texte source et retrouvé exactement les mêmes 42 citations brutes avant consolidation). Incohérence typographique du source disclosed : une citation de grade C est notée « [grade C] » entre crochets au lieu de la ponctuation habituelle « (grade C) » — même palier de preuve, simple variante de frappe. Un « grade D » (palier non défini par le préambule méthodologique du source, déjà rencontré en Question 7) réapparaît ici pour la préférence APD en cas de sclérose en plaques/Guillain-Barré. La Question 6 reste EXCLUE (superseded par la fiche HAS 2025 dédiée) ; la Question 13 (terrain infectieux général) et les Questions 14-15 (échec, facteurs de risque) restent hors périmètre, installments futurs.","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/AE + un « grade D » non défini par le préambule (disclosed) — 41 recommandations gradées (A:0, B:5, C:32, D:1, AE:3), vérifiées par audit indépendant en aveugle, Question 12/15 uniquement (périmètre limité)","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1649,6 +2694,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_infectieux_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_infectieux_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_infectieux_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_infectieux_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q13/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Terrain infectieux (Q13/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Huitième installment de ce document — dernière d'une série de 5 « Questions terrain » consécutives (9 à 13) ; les Questions 1-2, 3-5, 7, 8, 9-10, 11 et 12 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 13 (terrain infectieux : patient fébrile, femme enceinte fébrile, états septiques graves, infections virales, VIH, réactivation herpétique post-opiacés) — 8 recommandations gradées (A:0, B:2, C:6), aucune consolidation nécessaire (correspondance directe avec les 8 citations brutes du source). Aucune citation « grade D », accord/consensus professionnel ni avis d'experts dans ce périmètre. Le VIH est abordé ici sous l'angle infectieux général (indication opératoire, bilan préopératoire), complémentaire — non redondant — de l'angle neurologique déjà couvert dans la fiche de la Question 12 (évolution de l'infection, blood-patch). La Question 6 reste EXCLUE (superseded par la fiche HAS 2025 dédiée) ; les Questions 14-15 (gestion de l'échec, facteurs de risque de complications) restent hors périmètre — derniers installments avant couverture intégrale de ce document (hors Question 6).","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C (aucun D/AE dans ce périmètre) — 8 recommandations gradées (A:0, B:2, C:6), Question 13/15 uniquement (périmètre limité)","pages":1,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1662,6 +2713,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_echec_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_echec_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_echec_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_echec_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q14/15, périmètre limité)","title":"Les blocs périmédullaires chez l'adulte — Échec d'une anesthésie périmédullaire (Q14/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Neuvième installment de ce document — les Questions 1-2, 3-5, 7, 8, 9-10, 11, 12 et 13 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 14 (gestion de l'échec d'une anesthésie périmédullaire : diagnostic et prévention de l'échec, causes liées à la technique/à l'anesthésique local/au matériel, conduite à tenir devant une analgésie insuffisante ou de durée insuffisante) — 27 recommandations gradées (A:4, C:15, D:5, AE:3), avant-dernière Question du document. Un « grade D » non défini par le préambule méthodologique du source (déjà rencontré en Questions 7 et 12) réapparaît ici avec la densité la plus élevée rencontrée à ce jour dans ce document (5 occurrences). Piège de césure typographique disclosed et corrigé AVANT rédaction du script (même catégorie que celui rencontré en Question 11) : une citation « consensus professionnel » coupée par un retour à la ligne (« con-/sensus professionnel ») avait échappé à un premier grep automatique sur texte aplati — retrouvée par recherche ciblée des motifs de fin/début de ligne, portant le total de citations brutes de 27 à 28 avant consolidation (28 → 27 après regroupement de 2 citations de grade C décrivant la même conséquence clinique — passage transforaminal/septum et passage sous-dural du cathéter). Seule la Question 15 (facteurs de risque de complications) reste à construire pour une couverture intégrale du document (hors Question 6, exclue — superseded par la fiche HAS 2025 dédiée).","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/C/D (aucun grade B dans ce périmètre) + « consensus professionnel » (AE) — 27 recommandations gradées (A:4, C:15, D:5, AE:3), Question 14/15 uniquement (périmètre limité)","pages":2,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1675,6 +2732,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_complications_2006' and s.slug in ('anesthesie_reanimation')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_complications_2006' and s.acronym in ('SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_AFAR_Blocs-perimedullaires-chez-ladulte.pdf#blocs_perimedullaires_complications_2006' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'blocs_perimedullaires_complications_2006',
   card_json = $mgjson${"badge":"SFAR/Sofcot/Sofmer — RPC 2007 (Q15/15, DERNIÈRE Question)","title":"Les blocs périmédullaires chez l'adulte — Facteurs de risque & complications des APM (Q15/15)","short":"SFAR/Sofcot/Sofmer, « Les blocs périmédullaires chez l'adulte », RPC, Ann Fr Anesth Réanim 26 (2007) 720-752. Dixième et DERNIER installment de ce document — les Questions 1-2, 3-5, 7, 8, 9-10, 11, 12, 13 et 14 sont des fiches séparées. Cette fiche couvre INTÉGRALEMENT la Question 15 (facteurs de risque de complications et prise en charge des complications des anesthésies périmédullaires : cardiovasculaires — hypotension, bradycardie, arrêt cardiaque, rachianesthésie totale ; respiratoires ; toxicité systémique des anesthésiques locaux ; erreurs d'injection ; neurologiques — syndrome neurologique transitoire, syndrome de la queue-de-cheval, lésions traumatiques ; infectieuses — bactériennes, méningites, abcès péridural ; brèche durale — céphalées, blood-patch ; effets secondaires des morphiniques — NVPO, prurit) — dernière Question du document. 58 recommandations gradées (A:7, B:6, C:42, D:3), issues de 59 citations brutes (1 consolidation disclosed : la même recommandation « lidocaïne proscrite en rachianesthésie », grade B, énoncée deux fois par le source sous deux intitulés distincts — syndrome neurologique transitoire et syndrome de la queue-de-cheval — regroupée en une ligne). Particularité méthodologique notable : AUCUNE citation « consensus professionnel »/« accord professionnel »/« avis d'experts » dans cette Question — à la différence de tous les installments précédents de ce document, seuls les grades A/B/C/D apparaissent ici. Les thèmes respiratoire, toxicité systémique des AL et erreurs d'injection ne comportent aucune citation de grade individuelle (disclosed, condensés en repères pratiques non gradés). Avec cette fiche, les 15 Questions du document sont couvertes à 14/15 — seule la Question 6 (travail obstétrical) reste délibérément EXCLUE, superseded par la fiche HAS 2025 dédiée (douleur_accouchement_2025).","society":"SFAR / Sofcot / Sofmer","version":"2006-2007","validated":"Comité des référentiels de la SFAR","methodology":"Grille EBM classique A/B/C/D, aucune citation « consensus professionnel »/« accord professionnel »/« avis d'experts » dans ce périmètre — 58 recommandations gradées (A:7, B:6, C:42, D:3), Question 15/15 uniquement (dernière Question, périmètre limité)","pages":5,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1688,6 +2751,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_PUROL_Recommandations-chirurgie-ambulatoire-en-urologie.pdf' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_PUROL_Recommandations-chirurgie-ambulatoire-en-urologie.pdf' and s.acronym in ('AFU', 'SFAR', 'AFCA', 'ANAP')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/wp-content/uploads/2015/10/2_PUROL_Recommandations-chirurgie-ambulatoire-en-urologie.pdf' and d.society_id is null and s.acronym = 'AFU';
 update public.documents set
   fiche_key = 'chir_ambu_urologie_2013',
   card_json = $mgjson${"badge":"AFU/SFAR/AFCA/ANAP — Consensus formalisé HAS, 2013","title":"Chirurgie ambulatoire en urologie — Recommandations AFU/SFAR/AFCA/ANAP","short":"AFU/SFAR/AFCA/ANAP, « Chirurgie ambulatoire en urologie », texte des recommandations AFU (novembre 2013), Progrès en Urologie (2013) 23, 62-66. Label HAS (recommandation de bonne pratique élaborée selon les procédures et règles méthodologiques préconisées par la HAS, méthode du consensus formalisé). Couvre le parcours de soin en chirurgie ambulatoire urologique (éthique, éligibilité, organisation, particularités anesthésiques, place du médecin traitant, place du patient, continuité des soins), les spécificités chez la personne âgée, et la prévention/prise en charge des risques rétentionnel, infectieux, douloureux et hémorragique postopératoires. 59 recommandations au total. Particularité méthodologique notable, disclosed : bien que la grille définisse 4 niveaux (A/B/C/AE), AUCUNE des 59 recommandations n'est gradée A, B ou C — 57 reposent sur un accord d'experts (AE) et 2 (n°19, n°43) ne portent aucune mention de grade dans le source (chip « NG », jamais un grade inventé). Piège d'extraction résolu : le PDF source (mise en page 2 colonnes) livre un ordre de lecture incohérent en extraction brute ; corrigé par tri explicite des blocs de texte par colonne puis par position verticale, vérifié recommandation par recommandation (1 à 59, aucun numéro manquant). Ne couvre que le texte court des recommandations (pages 62-66 du document source) — l'argumentaire scientifique détaillé (61 pages) et la tribune d'opinion syndicale de fin de document (SNCUF) sont hors périmètre.","society":"AFU / SFAR / AFCA / ANAP","version":"2013","validated":"HAS (label, méthode consensus formalisé)","methodology":"Grille HAS « consensus formalisé » A/B/C/AE — en pratique, 57/59 recommandations « accord d'experts » (AE), 2/59 non gradées dans le source (disclosed, chip « NG »), aucune recommandation A/B/C malgré ces grades étant définis","pages":4,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1701,6 +2770,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/prise-en-charge-des-voies-aeriennes-de-ladulte-au-bloc-operatoire-recommandation/?wpdmdl=145883' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-des-voies-aeriennes-de-ladulte-au-bloc-operatoire-recommandation/?wpdmdl=145883' and s.acronym in ('SFAR', 'CARORL', 'CARO', 'FHS', 'SFORL', 'CORASSO')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-des-voies-aeriennes-de-ladulte-au-bloc-operatoire-recommandation/?wpdmdl=145883' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'voies_aeriennes_bloc_2026',
   card_json = $mgjson${"badge":"SFAR/CARORL/CARO/FHS/SFORL — RBP HAS, 03/09/2026","title":"Prise en charge des voies aériennes de l'adulte au bloc opératoire","short":"SFAR/CARORL/CARO/FHS/SFORL (+ CORASSO), « Prise en charge des voies aériennes de l'adulte au bloc opératoire », Recommandation de Bonne Pratique labellisée HAS, adoptée par le Collège de la HAS le 3 septembre 2026 — document très récent, trouvé via recherche web (absent de l'index habituel de ce site à la date de sa publication). Couvre 3 champs : voies aériennes SANS difficulté prévisible (vidéolaryngoscopie de première intention, dispositifs supraglottiques de 2ème génération, oxygénation nasale à haut débit en sédation procédurale, capnographie), voies aériennes DIFFICILES prévues ou non (stratégies d'oxygénation apnéique, dispositifs supraglottiques de 2ème génération en cas de ventilation au masque difficile, cricothyroïdotomie technique SMS en situation « cannot intubate, cannot oxygenate »), et facteurs humains/dimensions organisationnelles (simulation, seuils de maintien de compétences par technique, briefing/debriefing/defusing, revue de mortalité-morbidité). 28 recommandations (grade 1:1, grade 2:13, avis d'experts:13, absence de recommandation:1), vérifiées par recoupement avec le tableau de synthèse du document source lui-même. ACTUALISE/SUPERSEDE cliniquement les fiches « Intubation difficile et extubation en anesthésie chez l'adulte » (RFE 2017) et « Prise en charge des voies aériennes en anesthésie adulte, à l'exception de l'intubation difficile » (Conférence de Consensus 2002/2003), toutes deux conservées sur ce site pour leur valeur historique. Exclut explicitement la pédiatrie et les soins critiques (choix du source). Les 7 algorithmes/aides cognitives visuelles publiés séparément par la SFAR (outils imprimables) ne sont pas reproduits ici — disclosed, liens directs en section Sources de la fiche.","society":"SFAR / CARORL / CARO / FHS / SFORL / CORASSO","version":"2026","validated":"Collège de la HAS (labellisation RBP, 03/09/2026)","methodology":"Grille GRADE — grade 1 (recommandation forte), grade 2 (recommandation faible), AE (avis d'experts), absence de recommandation (chip « 0/ ») — 28 recommandations (grade 1:1, grade 2:13, AE:13, 0/:1), aucune recommandation « contre » gradée numériquement","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1714,6 +2789,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/organisation-pour-la-prise-en-charge-des-urgences-vitales-intra-hospitalieres/?wpdmdl=145385' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'medecine_intensive_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/organisation-pour-la-prise-en-charge-des-urgences-vitales-intra-hospitalieres/?wpdmdl=145385' and s.acronym in ('SFAR', 'SFMU', 'SRLF', 'CARO', 'ADARPEF', 'GFRUP', 'SFPC')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/organisation-pour-la-prise-en-charge-des-urgences-vitales-intra-hospitalieres/?wpdmdl=145385' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'urgences_vitales_ih_2026',
   card_json = $mgjson${"badge":"SFAR/SFMU/SRLF — RBP HAS, 03/09/2026","title":"Organisation de la prise en charge des urgences vitales intra-hospitalières","short":"SFAR/SFMU/SRLF (+ CARO/ADARPEF/GFRUP/SFPC), « Recommandations pour l'organisation de la prise en charge des urgences vitales intra-hospitalières » (UVIH), RBP labellisée HAS, adoptée par le Collège de la HAS le 3 septembre 2026 — publiée le même jour que « Prise en charge des voies aériennes de l'adulte au bloc opératoire », document très récent trouvé via recherche web (absent de l'index habituel de ce site à la date de sa publication). Couvre 4 champs : mise en place et déclenchement de la filière UVIH (procédure institutionnelle écrite, réflexion anticipée sur l'engagement thérapeutique, numéro unique type « 2222 »), conditions matérielles et ressources humaines (standardisation des chariots d'urgence et des sacs d'intervention, composition minimale de l'équipe), modalités de suivi et fonctionnement (registre institutionnel, RMM, annonce aux proches, formation FGSU2 obligatoire), et spécificités organisationnelles (établissements sans présence médicale continue, activité mixte adulte/enfant, visiteurs et personnel). 39 recommandations (grade 2:4, avis d'experts:30, absence de recommandation:4, obligation réglementaire:1), vérifiées par recoupement avec le tableau de synthèse du document source lui-même. Particularité notable disclosed : une recommandation (formation FGSU2) est étiquetée « obligation réglementaire » par le source, pas une recommandation GRADE — rappel d'une obligation légale existante (Arrêté du 3 mars 2006 modifié), chippée distinctement plutôt que fondue dans les avis d'experts. Incohérence de titre du Champ 3 dans le tableau de synthèse du source disclosed (corrigée ici par recoupement avec la table des matières). Les 2 aides cognitives visuelles (adulte/enfant) publiées séparément par la SFAR ne sont pas reproduites ici — disclosed, liens directs en section Sources.","society":"SFAR / SFMU / SRLF / CARO / ADARPEF / GFRUP / SFPC","version":"2026","validated":"Collège de la HAS (labellisation RBP, 03/09/2026)","methodology":"Grille GRADE — grade 2 (recommandation faible, seule tier numérique présente), AE (avis d'experts), absence de recommandation (chip « 0/ »), obligation réglementaire (chip « RÉGL », hors GRADE) — 39 recommandations (grade 2:4, AE:30, 0/:4, RÉGL:1)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1727,6 +2808,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/anesthesie-locoregionale-en-chirurgie-pediatrique/?wpdmdl=142285' and s.slug in ('anesthesie_reanimation', 'infirmierere_anesthesiste_iade', 'pediatrie')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/anesthesie-locoregionale-en-chirurgie-pediatrique/?wpdmdl=142285' and s.acronym in ('SFAR', 'ADARPEF')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/anesthesie-locoregionale-en-chirurgie-pediatrique/?wpdmdl=142285' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'alr_pediatrique_2026',
   card_json = $mgjson${"badge":"SFAR/ADARPEF — RFE, validée 22/05/2026","title":"Anesthésie locorégionale en chirurgie pédiatrique","short":"SFAR/ADARPEF, « Anesthésie locorégionale en chirurgie pédiatrique », RFE, validée par le Comité des Référentiels Cliniques de la SFAR (17/03/2026), le CA de la SFAR (21/05/2026) et le CA de l'ADARPEF (22/05/2026) — document très récent trouvé via recherche web (absent de l'index habituel de ce site à la date de sa publication). ACTUALISE cliniquement la fiche « Anesthésie loco-régionale en pédiatrie » (RFE SFAR/ADARPEF 2010), conservée sur ce site pour sa valeur historique — citée comme référence par ce nouveau document. Couvre 5 champs : méthodes de localisation et médicaments (échoguidage, adjuvants alpha-2 et dexaméthasone), chirurgies céphaliques (fente labiale/palatine, craniotomie), chirurgies du thorax et du rachis (thoracotomie/thoracoscopie, arthrodèse vertébrale et morphine intrathécale), chirurgies de l'abdomen et des organes génitaux externes (abdominale profonde/pariétale, voie inguinale/ombilicale, ancien prématuré, posthectomie/hypospade), et chirurgies de la hanche. 34 recommandations (GRADE 1:5, GRADE 2:7, avis d'experts:17, absence de recommandation:5), population 0 à 15 ans (0 à 18 ans pour scolioses et thoracoplasties) y compris nouveau-nés — décompte vérifié exactement identique à celui annoncé par le document source lui-même dans sa section « Synthèse des résultats ».","society":"SFAR / ADARPEF","version":"2026","validated":"CA SFAR (21/05/2026) et CA ADARPEF (22/05/2026)","methodology":"Grille GRADE — GRADE 1 (recommandation forte), GRADE 2 (recommandation faible), AE (avis d'experts), absence de recommandation (chip « 0/ ») — 34 recommandations (GRADE1:5, GRADE2:7, AE:17, 0/:5), toutes les recommandations gradées numériquement sont formulées POUR l'intervention (aucun « 1-»/« 2-» dans ce document)","pages":3,"section":"Anesthésie"}$mgjson$::jsonb,
@@ -1740,6 +2827,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/sedation-procedurale-en-structure-de-medecine-durgence/?wpdmdl=145123' and s.slug in ('anesthesie_reanimation', 'medecine_d_urgence')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/sedation-procedurale-en-structure-de-medecine-durgence/?wpdmdl=145123' and s.acronym in ('SFMU', 'SFAR')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/sedation-procedurale-en-structure-de-medecine-durgence/?wpdmdl=145123' and d.society_id is null and s.acronym = 'SFMU';
 update public.documents set
   fiche_key = 'sedation_procedurale_2026',
   card_json = $mgjson${"badge":"SFMU/SFAR — RFE, à jour au 25/06/2026","title":"Sédation procédurale en structure de médecine d'urgence","short":"SFMU/SFAR, « Sédation procédurale en structure de médecine d'urgence », RFE, à jour au 25/06/2026 — document très récent trouvé via recherche web (absent de l'index habituel de ce site à la date de sa publication). ACTUALISE cliniquement la fiche « Sédation procédurale en structure de médecine d'urgence » (RFE SFMU/SFAR 2010), conservée sur ce site pour sa valeur historique. Périmètre : adulte, hors grossesse, voie intraveineuse exclusivement. Couvre 4 champs et 17 questions PICO : indication de la sédation (alternatives type ALR) ; patients à risque — quand faire ou non (ASA, obésité morbide, SAOS, sujet âgé, jeûne, alcoolisation aiguë, morphiniques déjà reçus) ; conditions de sécurité (capnographie, oxygénation, critères d'appel du MAR) ; modalités de réalisation (échelles de sédation, choix des molécules dont kétamine-propofol, cardioversion électrique, surveillance post-procédure avec scores MASS/mPADSS, checklist). 34 recommandations effectivement dénombrées dans le corps du texte (GRADE1:1, GRADE2:4, AE:26, absence de recommandation:3) — le document annonce lui-même 36 dans sa synthèse (1 GRADE1, 3 GRADE2, 29 AE, 3 absences) ; divergence disclosed dans la fiche, non résolue après relecture intégrale des 17 questions.","society":"SFMU / SFAR","version":"2026","validated":"À jour au 25/06/2026","methodology":"Grille GRADE — GRADE 1 (recommandation forte), GRADE 2 (recommandation faible), AE (avis d'experts), absence de recommandation (chip « 0/ ») — 34 items dénombrés dans le corps du texte (GRADE1:1, GRADE2:4, AE:26, 0/:3) vs 36 annoncés par la synthèse du document (1/3/29/3) — écart source non résolu","pages":4,"section":"Urgences"}$mgjson$::jsonb,
@@ -1753,6 +2846,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/prise-en-charge-therapeutique-des-infections-intra-abdominales-de-ladulte/?wpdmdl=145222' and s.slug in ('anesthesie_reanimation', 'infectiologie_maladies_infectieuses_et_tropicales')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-therapeutique-des-infections-intra-abdominales-de-ladulte/?wpdmdl=145222' and s.acronym in ('SFAR', 'FCVD', 'SFCD', 'SFED', 'SFM', 'SFR', 'SPILF', 'SFPT')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/prise-en-charge-therapeutique-des-infections-intra-abdominales-de-ladulte/?wpdmdl=145222' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'infections_intra_abdominales_2026',
   card_json = $mgjson${"badge":"SFAR/FCVD/SFCD/SFED/SFM/SFR/SPILF/SFPT — RFE, validée 24/06/2026","title":"Infections intra-abdominales de l'adulte — prise en charge","short":"SFAR, en association avec FCVD/SFCD/SFED/SFM/SFR/SPILF/SFPT, « Prise en charge thérapeutique des Infections intra-abdominales de l'adulte », RFE, validée par le Comité des Référentiels Cliniques de la SFAR (09/06/2026) et le CA de la SFAR (24/06/2026) — document très récent trouvé via recherche web (absent de l'index habituel de ce site à la date de sa publication). ACTUALISE cliniquement la fiche « Prise en charge des infections intra-abdominales » (CC SFAR/SFCD/SPILF/AFC, 2014/2015), conservée sur ce site pour sa valeur historique. Périmètre : adulte nécessitant une prise en charge interventionnelle (chirurgie, endoscopie ou radiologie interventionnelle). Couvre 3 champs : prise en charge initiale (contrôle de la source, antibiothérapie probabiliste détaillée par contexte communautaire/associé aux soins avec facteurs de risque de BLSE/BMR, orientation en soins critiques) ; surveillance clinique et durée de traitement (désescalade, durées d'antibiothérapie/antifongique selon le contexte) ; complications évolutives (réintervention, antibiothérapie de complication postopératoire). 43 recommandations (GRADE1:8, GRADE2:13, avis d'experts:21, absence de recommandation:1) — décompte vérifié exactement identique à celui annoncé par le document source lui-même dans sa section « Synthèse des résultats », aucune divergence.","society":"SFAR / FCVD / SFCD / SFED / SFM / SFR / SPILF / SFPT","version":"2026","validated":"Comité des Référentiels Cliniques SFAR (09/06/2026) et CA SFAR (24/06/2026)","methodology":"Grille GRADE — GRADE 1/2 (forte/faible, pour ou contre), AE (avis d'experts), absence de recommandation (chip « 0/ ») — 43 recommandations (GRADE1:8, GRADE2:13, AE:21, 0/:1), décompte identique à celui annoncé par le source","pages":4,"section":"Infectiologie"}$mgjson$::jsonb,
@@ -1766,6 +2865,12 @@ insert into public.document_specialties (document_id, specialty_id)
 select d.id, s.id from public.documents d, public.specialties s
 where d.source_url = 'https://sfar.org/download/nutrition-clinique-de-ladulte-en-contexte-perioperatoire-et-en-soins-critiques-version-courte/?wpdmdl=145550' and s.slug in ('anesthesie_reanimation', 'dieteticienne_nutritionniste')
 on conflict do nothing;
+insert into public.document_societies (document_id, society_id)
+select d.id, s.id from public.documents d, public.societies s
+where d.source_url = 'https://sfar.org/download/nutrition-clinique-de-ladulte-en-contexte-perioperatoire-et-en-soins-critiques-version-courte/?wpdmdl=145550' and s.acronym in ('SFAR', 'SFNCM', 'AFDN', 'FCVD')
+on conflict do nothing;
+update public.documents d set society_id = s.id from public.societies s
+where d.source_url = 'https://sfar.org/download/nutrition-clinique-de-ladulte-en-contexte-perioperatoire-et-en-soins-critiques-version-courte/?wpdmdl=145550' and d.society_id is null and s.acronym = 'SFAR';
 update public.documents set
   fiche_key = 'nutrition_clinique_2026',
   card_json = $mgjson${"badge":"SFAR/SFNCM/AFDN/FCVD — RBP, adoptée Collège HAS 03/09/2026","title":"Nutrition clinique de l'adulte — périopératoire & soins critiques","short":"SFAR/SFNCM/AFDN/FCVD, « Nutrition clinique de l'adulte en contexte périopératoire et en soins critiques », Recommandation de Bonne Pratique, adoptée par le Collège de la HAS le 03/09/2026 — document très récent trouvé via recherche web (absent de l'index habituel de ce site à la date de sa publication). ACTUALISE cliniquement DEUX fiches déjà présentes sur ce site : « Nutrition artificielle en réanimation » (RFE SFAR 2014) et « Nutrition périopératoire » (2011), conservées pour leur valeur historique — ce document fusionne les deux périmètres. Couvre 2 champs, 13 questions : dénutrition et critères diagnostiques HAS (communs aux deux champs) ; stratégies nutritionnelles péri/postopératoires et rôle du diététicien ; cibles nutritionnelles en soins critiques selon la phase clinique (choc/défaillance multiviscérale, stabilisation, réhabilitation) ; tolérance digestive de la nutrition entérale (prokinétiques, massages abdominaux protocolisés) ; surveillance, efficacité et syndrome de renutrition inappropriée. 40 recommandations (GRADE1:11, GRADE2:9, avis d'experts:16, absence de recommandation:3, rappel réglementaire:1) — décompte vérifié exactement identique à celui annoncé par le document source lui-même, aucune divergence.","society":"SFAR / SFNCM / AFDN / FCVD","version":"2026","validated":"Adoptée par le Collège de la HAS le 03/09/2026","methodology":"Grille GRADE — GRADE 1/2 (forte/faible, pour ou contre), AE (avis d'experts), absence de recommandation (chip « 0/ »), rappel réglementaire (chip « RÉGL », hors GRADE) — 40 recommandations (GRADE1:11, GRADE2:9, AE:16, 0/:3, RÉGL:1), décompte identique à celui annoncé par le source","pages":4,"section":"Nutrition"}$mgjson$::jsonb,

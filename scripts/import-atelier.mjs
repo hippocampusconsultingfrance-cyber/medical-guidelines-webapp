@@ -87,6 +87,25 @@ const json = (o) => {
 };
 
 const CARD_FIELDS = ["badge", "title", "short", "society", "version", "validated", "methodology", "pages"];
+
+// Sociétés savantes signataires, lues dans la mention de la carte
+// (« SFAR / SRLF / SFMU (AFC, AFU) — RFE 2019 » → SFAR, SRLF, SFMU, AFC, AFU).
+// Sigles de type de document ou ambigus écartés.
+const NOT_SOCIETIES = new Set(["RFE", "RBP", "RPP", "RPC", "ALR", "SF", "CNP", "GRADE", "PT", "STP"]);
+// Graphie de référence d'un sigle écrit de plusieurs façons.
+const CANONICAL = { SOFRASIMS: "SoFraSimS" };
+export function societiesOf(mention) {
+  const head = String(mention ?? "").split("—")[0];
+  const out = [];
+  for (const token of head.match(/\b[A-Z][A-Za-z0-9]*[A-Z][A-Za-z0-9-]*\b/g) ?? []) {
+    for (const part of token.split("-")) {
+      const name = CANONICAL[part.toUpperCase()] ?? part;
+      if (/^[A-Z][A-Za-z0-9]*[A-Z0-9]$/.test(part) && !NOT_SOCIETIES.has(part) && !out.includes(name)) out.push(name);
+    }
+  }
+  return out;
+}
+const allSocieties = new Set();
 let sql =
   "-- Généré par scripts/import-atelier.mjs — ne pas modifier à la main.\n" +
   "-- Fiches de l'atelier : carte, mise en page et spécialités. Aucune\n" +
@@ -153,6 +172,19 @@ for (const key of keys) {
     `select d.id, s.id from public.documents d, public.specialties s\n` +
     `where d.source_url = ${q(url)} and s.slug in (${specialtiesFor(lib?.category).map(q).join(", ")})\n` +
     `on conflict do nothing;\n`;
+  // Sociétés signataires : ajoutées (jamais retirées) ; la première est la
+  // société porteuse (documents.society_id) si elle n'est pas déjà renseignée.
+  const societies = societiesOf(meta.society);
+  societies.forEach((a) => allSocieties.add(a));
+  if (societies.length) {
+    sql +=
+      `insert into public.document_societies (document_id, society_id)\n` +
+      `select d.id, s.id from public.documents d, public.societies s\n` +
+      `where d.source_url = ${q(url)} and s.acronym in (${societies.map(q).join(", ")})\n` +
+      `on conflict do nothing;\n` +
+      `update public.documents d set society_id = s.id from public.societies s\n` +
+      `where d.source_url = ${q(url)} and d.society_id is null and s.acronym = ${q(societies[0])};\n`;
+  }
   sql +=
     `update public.documents set\n` +
     `  fiche_key = ${q(key)},\n` +
@@ -161,5 +193,18 @@ for (const key of keys) {
     `where source_url = ${q(url)};\n\n`;
 }
 
+// Sociétés absentes du référentiel : créées « à valider » (sans pays : non
+// indiqué par l'atelier), avant tous les rattachements.
+const header = [...allSocieties]
+  .sort()
+  .map(
+    (a) =>
+      `insert into public.societies (acronym) select ${q(a)}\n` +
+      `where not exists (select 1 from public.societies where acronym = ${q(a)});\n`,
+  )
+  .join("");
+const cut = sql.indexOf("\n\n") + 2;
+sql = sql.slice(0, cut) + header + "\n" + sql.slice(cut);
+
 writeFileSync(new URL("supabase/content/0200_fiches_atelier.sql", root), sql);
-console.log(`${keys.length} fiches : ${matched} documents existants complétés, ${created} documents créés.`);
+console.log(`${keys.length} fiches : ${matched} documents existants complétés, ${created} documents créés, ${allSocieties.size} sociétés signataires.`);

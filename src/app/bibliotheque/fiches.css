@@ -345,3 +345,17 @@ details.acc > summary.acc__title:hover{ background:var(--surface-2); border-radi
 .nav-section__count{ margin-left:auto; font-size:0.66rem; color:#8FBAC1; }
 .nav-link--sub{ font-size:0.8rem; padding:6px 10px 6px 24px; line-height:1.3; }
 .toc .nav-group__label{ padding:4px 8px 6px; }
+
+/* ============ Filtre par société savante ============ */
+.soc-chip{
+  display:inline-flex; align-items:center; gap:6px; font-family:var(--font-mono); font-size:0.72rem; font-weight:600;
+  padding:4px 10px; border-radius:99px; border:1px solid var(--border); background:var(--surface); color:var(--ink);
+  text-decoration:none; cursor:pointer; list-style:none;
+}
+.soc-chip span{ color:var(--ink-faint); font-weight:500; }
+.soc-chip:hover{ border-color:var(--accent); }
+.soc-chip.is-active{ background:var(--brand); border-color:var(--brand); color:#fff; }
+.soc-chip.is-active span{ color:#9FD6DC; }
+.soc-more{ display:inline-block; }
+.soc-more > summary::-webkit-details-marker{ display:none; }
+.soc-more__list{ display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; max-width:640px; }
