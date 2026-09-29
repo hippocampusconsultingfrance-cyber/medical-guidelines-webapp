@@ -8,7 +8,7 @@ import "server-only";
 //   ALERTS_FROM     expéditeur, par défaut « medical-guidelines.net
 //                   <alertes@medical-guidelines.net> »
 //   SITE_URL        adresse du site dans les liens, par défaut
-//                   https://medical-guidelines.net
+//                   https://www.medical-guidelines.net (le domaine nu y redirige)
 // Sans clé, aucun e-mail n'est envoyé.
 
 export type OutgoingEmail = {
@@ -24,7 +24,7 @@ export function emailEnabled() {
 }
 
 export function siteUrl() {
-  return (process.env.SITE_URL ?? "https://medical-guidelines.net").replace(/\/+$/, "");
+  return (process.env.SITE_URL ?? "https://www.medical-guidelines.net").replace(/\/+$/, "");
 }
 
 // Envoi groupé (100 e-mails au plus par appel, limite de Resend). La clé
