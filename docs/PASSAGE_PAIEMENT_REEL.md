@@ -117,6 +117,21 @@ haut à droite, désactivé.
 
 ---
 
+## Objets Stripe réels déjà créés (29 septembre 2026, par Claude via le connecteur)
+
+Compte « HIPPOCAMPUS CONSULTING » (`acct_1TybVC6TiiyJDzjO`), mode réel ;
+tous marqués `app = medical-guidelines`.
+
+| Élément | Identifiant | Détail |
+|---|---|---|
+| Produit | `prod_VLqGczv97YaGpK` | libellé bancaire MEDICAL-GUIDELINES |
+| Prix (`STRIPE_PRICE_ID`) | `price_1UL8Ze6TiiyJDzjO6zcgQSqe` | 50,00 € / an, TVA incluse |
+| Coupon | `XVJy2VT9` | −30 %, une fois, limité au produit |
+| Code FONDATEURS | `promo_1UL8a66TiiyJDzjOQzuNaxK1` | 100 utilisations |
+| Portail (`STRIPE_PORTAL_CONFIG_ID`) | `bpc_1UL8aI6TiiyJDzjOGBzcv6cg` | factures, carte, résiliation en fin de période |
+| Webhook | `we_1UL8aY6TiiyJDzjOjKxzYGjW` | **désactivé** jusqu'au jour J ; secret à révéler dans Stripe → Développeurs → Webhooks |
+| Taux de TVA (`STRIPE_TAX_RATE_ID`) | à recréer par le porteur | 20 %, France, **inclus** (le premier créé est « hors taxes » : à archiver) |
+
 ## C. Jour J — bascule (Vous et Claude)
 
 1. **Claude** : vérifie que la version des CGV (`CGV_VERSION` dans
@@ -124,7 +139,9 @@ haut à droite, désactivé.
    (CM2C) est déjà renseigné : **la vente s'ouvre dès que les clés réelles
    sont en place**. Mise en ligne par une PR, avec les
    contrôles automatiques au vert.
-2. **Vous**, dans Vercel → projet → Settings → Environment Variables, en
+2. **Claude** réactive le webhook `we_1UL8aY6TiiyJDzjOjKxzYGjW` (connecteur
+   Stripe), juste avant la bascule.
+3. **Vous**, dans Vercel → projet → Settings → Environment Variables, en
    cochant **uniquement « Production »** pour chaque variable :
    | Variable | Valeur |
    |---|---|
@@ -136,7 +153,7 @@ haut à droite, désactivé.
 
    Garder les valeurs de test pour « Preview », afin que les essais restent
    gratuits. Puis Deployments → dernier déploiement → ⋯ → **Redeploy**.
-3. **Claude** : supprime de la base les abonnements créés en mode test
+4. **Claude** : supprime de la base les abonnements créés en mode test
    (y compris celui du compte d'essai), avec votre accord. Requête
    exécutée dans Supabase → SQL Editor :
    ```sql
