@@ -114,23 +114,23 @@ export function buildDigests(rows: PendingAlert[], docs: Map<string, AlertDocume
   });
 }
 
-function titleOf(d: AlertDocument) {
+export function titleOf(d: AlertDocument) {
   return d.card_json?.title ?? d.title;
 }
 
 // Résumé de la carte, coupé à la fin d'un mot : certains résumés de
 // l'atelier sont longs, l'e-mail n'en garde que le début.
-function shortOf(d: AlertDocument) {
+export function shortOf(d: AlertDocument) {
   const s = (d.card_json?.short ?? "").trim();
   if (s.length <= 220) return s;
   return `${s.slice(0, 220).replace(/\s+\S*$/, "").replace(/[\s.,;:—–-]+$/, "")}…`;
 }
 
-function metaOf(d: AlertDocument) {
+export function metaOf(d: AlertDocument) {
   return [d.societies.join(" · ") || d.card_json?.society, formatDate(d.publication_date)].filter(Boolean).join(" — ");
 }
 
-function updateDetail(d: AlertDocument) {
+export function updateDetail(d: AlertDocument) {
   if (!d.version) return "Nouvelle version publiée.";
   return `Version ${d.version.version_label}${d.version.diff_summary ? ` : ${d.version.diff_summary}` : ""}`;
 }
