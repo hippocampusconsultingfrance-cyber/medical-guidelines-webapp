@@ -97,6 +97,10 @@ export default function Shell({
               <Link href="/bibliotheque/signalements" style={{ color: "inherit" }}>
                 Signalements
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/statistiques" style={{ color: "inherit" }}>
+                Statistiques
+              </Link>
             </>
           )}
           <br />
