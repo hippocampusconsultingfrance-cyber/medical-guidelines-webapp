@@ -3,9 +3,9 @@
 Le site encaisse aujourd'hui en **mode test** : aucun débit réel, et le
 bouton « Payer » n'est proposé qu'à l'équipe éditoriale (les membres voient
 « Les abonnements ouvrent bientôt »). Le passage au réel se fait en changeant
-trois variables dans Vercel. Le médiateur (CM2C) étant renseigné, la vente
+quatre variables dans Vercel. Le médiateur (CM2C) étant renseigné, la vente
 s'ouvre à tous dès que les clés réelles sont en place : ne les mettre
-qu'après la relecture du juriste (A1) et le réglage de la TVA (A3).
+qu'après la relecture du juriste (A1).
 
 Qui fait quoi : **Vous** (porteur de projet), **Claude** (code et
 vérifications), **Juriste**, **Expert-comptable**.
@@ -42,16 +42,16 @@ quelques centaines d'euros par an selon l'organisme.
 - [x] Adhésion faite : **CM2C** (49 rue de Ponthieu, 75008 Paris). Mention
       officielle affichée dans les CGV (§9) et les mentions légales.
 
-### A3. TVA — avec l'expert-comptable
-- [ ] **Régime de TVA** de la société :
-      - franchise en base (art. 293 B du CGI) : pas de TVA facturée, mention
-        obligatoire sur les factures ;
-      - ou TVA à 20 % (service électronique vendu en France), incluse dans les
-        50 € TTC.
-- [ ] **Clients dans d'autres pays de l'UE** : au-delà de 10 000 € de ventes
-      par an aux particuliers européens, TVA du pays du client (guichet
-      unique OSS). Stripe Tax peut la calculer (option B8).
-- [ ] **Numéro de TVA intracommunautaire** (factures et mentions légales).
+### A3. TVA — décidé avec l'expert-comptable
+- [x] **TVA française à 20 %**, incluse dans le prix : 50 € TTC = 41,67 € HT
+      + 8,33 € de TVA. Indiqué dans les CGV (§3).
+- [ ] **Numéro de TVA intracommunautaire** : à transmettre à Claude pour les
+      mentions légales, et à saisir dans Stripe pour les factures (B3).
+- [ ] À confirmer avec le comptable : cas d'un client professionnel d'un
+      autre pays de l'UE (autoliquidation) et seuil de 10 000 € de ventes
+      aux particuliers européens (guichet OSS). Le taux fixe de 20 %
+      s'applique à tous tant que ces cas restent marginaux ; Stripe Tax
+      (payant) peut prendre le relais plus tard (variable `STRIPE_TAX=1`).
 
 ---
 
@@ -90,8 +90,10 @@ haut à droite, désactivé.
         `customer.subscription.created`, `customer.subscription.updated`,
         `customer.subscription.deleted`
       - copier le **secret de signature** (`whsec_…`).
-- [ ] **B8. Stripe Tax** (optionnel, selon A3) : Paramètres → Taxes →
-      renseigner l'adresse et l'immatriculation TVA France.
+- [ ] **B8. Taux de TVA** (Catalogue de produits → Taux de taxe → Nouveau) :
+      nom « TVA », **20 %**, pays France, **inclus dans le prix**. Copier
+      l'identifiant (`txr_…`). Il s'applique au premier paiement et à chaque
+      renouvellement, et figure sur les factures.
 - [ ] **B9. Clé secrète réelle** (Développeurs → Clés API) : révéler la clé
       `sk_live_…`. Ne jamais l'envoyer par message ni en capture d'écran.
 
@@ -111,7 +113,7 @@ haut à droite, désactivé.
    | `STRIPE_SECRET_KEY` | `sk_live_…` (B9) |
    | `STRIPE_PRICE_ID` | `price_…` réel (B4) |
    | `STRIPE_WEBHOOK_SECRET` | `whsec_…` réel (B7) |
-   | `STRIPE_TAX` | `1` si Stripe Tax est activé (B8), sinon ne pas créer |
+   | `STRIPE_TAX_RATE_ID` | `txr_…` réel (B8) |
 
    Garder les valeurs de test pour « Preview », afin que les essais restent
    gratuits. Puis Deployments → dernier déploiement → ⋯ → **Redeploy**.
@@ -137,7 +139,8 @@ haut à droite, désactivé.
       - une fiche jamais débloquée est lisible ;
       - Stripe → Développeurs → Webhooks → le point de terminaison : les 4
         derniers envois sont en **200** ;
-      - reçu et facture reçus par e-mail, avec les bonnes mentions (B3).
+      - reçu et facture reçus par e-mail, avec les bonnes mentions (B3) et
+        la TVA : 35 € TTC dont 5,83 € de TVA.
 - [ ] **D3. Portail** : bouton « Factures, moyen de paiement, résiliation »
       → la facture est visible → **résilier** → retour sur le site :
       « actif jusqu'au … (résiliation enregistrée) », accès maintenu.
@@ -170,4 +173,4 @@ haut à droite, désactivé.
 | Clé réelle, médiateur non renseigné | Vente fermée à tous. |
 | Clé réelle et médiateur renseigné | Vente ouverte. |
 | Client Stripe créé en test, paiement en réel | Nouveau client créé automatiquement, sans erreur. |
-| Page `/abonnement/verification` | Contrôle en lecture seule : compte, prix, webhook, portail, code FONDATEURS, TVA, médiateur. |
+| Page `/abonnement/verification` | Contrôle en lecture seule : compte, prix, webhook, portail, code FONDATEURS, TVA 20 % incluse, médiateur. |

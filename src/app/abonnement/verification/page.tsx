@@ -93,12 +93,18 @@ async function stripeChecks(): Promise<Check[]> {
         detail: `${c?.percent_off ?? "?"} %, durée ${c?.duration ?? "?"}, ${pc.times_redeemed} utilisé(s) sur ${pc.max_redemptions ?? "illimité"}`,
       };
     }),
-    run("TVA (Stripe Tax)", async () => {
-      if (process.env.STRIPE_TAX !== "1") {
-        return { ok: null, detail: "calcul automatique désactivé (STRIPE_TAX) : à confirmer avec l'expert-comptable" };
+    run("TVA française 20 % incluse, sur les factures", async () => {
+      if (process.env.STRIPE_TAX === "1") {
+        const t = await stripe.tax.settings.retrieve();
+        return { ok: t.status === "active", detail: `calculée par Stripe Tax (${t.status === "active" ? "actif" : "à compléter"})` };
       }
-      const t = await stripe.tax.settings.retrieve();
-      return { ok: t.status === "active", detail: `Stripe Tax ${t.status === "active" ? "actif" : "à compléter"}` };
+      const id = process.env.STRIPE_TAX_RATE_ID;
+      if (!id) return { ok: false, detail: "aucune TVA appliquée : STRIPE_TAX_RATE_ID absent" };
+      const r = await stripe.taxRates.retrieve(id);
+      return {
+        ok: r.active && r.percentage === 20 && r.inclusive && r.livemode === live,
+        detail: `${r.display_name} ${r.percentage} %, ${r.inclusive ? "incluse" : "en sus"}, ${r.country ?? "pays non précisé"}, ${r.active ? "actif" : "inactif"}, mode ${r.livemode ? "réel" : "test"}`,
+      };
     }),
   ]);
 }

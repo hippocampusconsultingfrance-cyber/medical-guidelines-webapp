@@ -40,10 +40,10 @@ export default function CgvPage() {
 
       <h2 className={h2}>3. Prix</h2>
       <p className="mt-2">
-        50 € toutes taxes comprises par an pour les consommateurs. La TVA applicable est
-        calculée selon le pays et le statut de l&apos;acheteur (particulier ou professionnel
-        disposant d&apos;un numéro de TVA). Le prix payé, les éventuelles réductions et la date de
-        renouvellement sont indiqués avant le paiement.
+        50 € toutes taxes comprises par an, dont TVA française au taux de 20 % (soit
+        41,67 € hors taxes). Le prix payé, les éventuelles réductions et la date de
+        renouvellement sont indiqués avant le paiement ; la facture mentionne le montant de la
+        TVA.
       </p>
 
       <h2 className={h2}>4. Réductions</h2>

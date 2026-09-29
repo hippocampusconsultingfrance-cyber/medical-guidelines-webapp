@@ -6,7 +6,11 @@ import { mediateurRenseigne } from "./legal";
 //   STRIPE_SECRET_KEY      clé secrète Stripe (sk_live_… ou sk_test_…)
 //   STRIPE_PRICE_ID        prix annuel PREMIUM (price_…), 50 € TTC / an
 //   STRIPE_WEBHOOK_SECRET  secret de signature du webhook (whsec_…)
-//   STRIPE_TAX             « 1 » pour activer le calcul de TVA par Stripe Tax
+//   STRIPE_TAX_RATE_ID     taux de TVA fixe (txr_…) : TVA française 20 %,
+//                          incluse dans le prix (régime retenu avec
+//                          l'expert-comptable) ; figure sur les factures
+//   STRIPE_TAX             « 1 » pour laisser Stripe Tax calculer la TVA à la
+//                          place du taux fixe (service payant de Stripe)
 // Tant que la clé ou le prix manquent, les abonnements sont affichés
 // « bientôt ouverts » et aucun appel à Stripe n'est fait.
 //

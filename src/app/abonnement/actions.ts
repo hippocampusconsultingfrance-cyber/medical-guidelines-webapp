@@ -59,9 +59,18 @@ export async function startCheckout(formData: FormData) {
     withdrawal_waiver_at: now,
   };
   const base = await origin();
+  const autoTax = process.env.STRIPE_TAX === "1";
+  const taxRate = process.env.STRIPE_TAX_RATE_ID;
   const session = await getStripe().checkout.sessions.create({
     mode: "subscription",
-    line_items: [{ price: process.env.STRIPE_PRICE_ID!, quantity: 1 }],
+    line_items: [
+      {
+        price: process.env.STRIPE_PRICE_ID!,
+        quantity: 1,
+        // TVA 20 % incluse (taux fixe), sauf si Stripe Tax la calcule.
+        ...(autoTax || !taxRate ? {} : { tax_rates: [taxRate] }),
+      },
+    ],
     client_reference_id: user.id,
     ...(customer
       ? { customer, customer_update: { address: "auto", name: "auto" } }
@@ -71,7 +80,7 @@ export async function startCheckout(formData: FormData) {
     allow_promotion_codes: true,
     billing_address_collection: "required",
     tax_id_collection: { enabled: true },
-    automatic_tax: { enabled: process.env.STRIPE_TAX === "1" },
+    automatic_tax: { enabled: autoTax },
     locale: "fr",
     success_url: `${base}/abonnement?r=merci`,
     cancel_url: `${base}/abonnement?r=annule`,
