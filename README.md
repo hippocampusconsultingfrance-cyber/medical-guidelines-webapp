@@ -33,6 +33,8 @@ Variables serveur (Vercel uniquement, jamais exposées au navigateur) :
 - `ALERTS_FROM` (facultatif) : expéditeur des alertes, par défaut
   `medical-guidelines.net <alertes@medical-guidelines.net>` (domaine à
   vérifier dans Resend)
+- `ALERTS_REPLY_TO` (facultatif) : adresse de réponse des alertes, par défaut
+  `contact@medical-guidelines.net` (doit pouvoir recevoir des e-mails)
 - `SITE_URL` (facultatif) : adresse du site dans les e-mails, par défaut
   `https://www.medical-guidelines.net` (le domaine nu y redirige)
 - `CRON_SECRET` : secret de la tâche planifiée des alertes (Vercel l'envoie
