@@ -62,7 +62,13 @@ export function buildDigests(rows: PendingAlert[], docs: Map<string, AlertDocume
             .join("")
         : "";
 
+    // Document HTML complet (langue, encodage, titre) : un fragment sans
+    // <html> ni <head> est mal noté par certains filtres anti-spam.
     const html =
+      `<!doctype html><html lang="fr"><head><meta charset="utf-8">` +
+      `<meta name="viewport" content="width=device-width, initial-scale=1">` +
+      `<title>${escapeHtml(subject)}</title></head>` +
+      `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
       `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
       `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
       `<p style="font-size:15px">${escapeHtml(hello)}</p>` +
@@ -71,11 +77,11 @@ export function buildDigests(rows: PendingAlert[], docs: Map<string, AlertDocume
       `<p style="font-size:12px;color:#64748B;margin-top:28px">Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations.</p>` +
       `<p style="font-size:12px;color:#64748B">Vous recevez cet e-mail car les alertes sont activées sur votre compte. ` +
       `<a href="${site}/compte#alertes" style="color:#64748B">Gérer mes alertes</a> · ` +
-      `<a href="${unsubscribe}" style="color:#64748B">Se désinscrire</a></p></div>`;
+      `<a href="${unsubscribe}" style="color:#64748B">Se désinscrire</a></p></div></body></html>`;
 
     const textSection = (title: string, list: AlertDocument[], detail: (d: AlertDocument) => string) =>
       list.length
-        ? `\n${title}\n${"=".repeat(title.length)}\n` +
+        ? `\n\n${title} :\n` +
           list
             .map(
               (d) =>
@@ -85,10 +91,11 @@ export function buildDigests(rows: PendingAlert[], docs: Map<string, AlertDocume
             .join("\n")
         : "";
     const text =
-      `${hello}\n` +
+      hello +
       textSection("Nouvelles recommandations de vos sociétés suivies", news, shortOf) +
       textSection("Vos fiches ont été mises à jour", updates, updateDetail) +
-      `\n\nGérer mes alertes : ${site}/compte#alertes\nSe désinscrire : ${unsubscribe}\n`;
+      `\n\nSynthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations.` +
+      `\nGérer mes alertes : ${site}/compte#alertes\nSe désinscrire : ${unsubscribe}\n`;
 
     return {
       userId: first.user_id,

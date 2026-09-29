@@ -8,6 +8,8 @@ import { SITE_URL } from "@/lib/seo";
 //   RESEND_API_KEY  clé d'API Resend (re_…), domaine d'envoi vérifié
 //   ALERTS_FROM     expéditeur, par défaut « medical-guidelines.net
 //                   <alertes@medical-guidelines.net> »
+//   ALERTS_REPLY_TO adresse de réponse, par défaut contact@medical-guidelines.net
+//                   (vide : aucune adresse de réponse)
 //   SITE_URL        adresse du site dans les liens, par défaut celle de
 //                   src/lib/seo.ts (https://www.medical-guidelines.net)
 // Sans clé, aucun e-mail n'est envoyé.
@@ -34,6 +36,9 @@ export async function sendBatch(emails: OutgoingEmail[], idempotencyKey: string)
   const key = process.env.RESEND_API_KEY;
   if (!key) return { ok: false as const, error: "RESEND_API_KEY manquant" };
   const from = process.env.ALERTS_FROM ?? "medical-guidelines.net <alertes@medical-guidelines.net>";
+  // Les réponses des membres arrivent sur une boîte lue, pas sur l'adresse
+  // d'envoi.
+  const replyTo = process.env.ALERTS_REPLY_TO ?? "contact@medical-guidelines.net";
   const res = await fetch("https://api.resend.com/emails/batch", {
     method: "POST",
     headers: {
@@ -41,7 +46,17 @@ export async function sendBatch(emails: OutgoingEmail[], idempotencyKey: string)
       "Content-Type": "application/json",
       "Idempotency-Key": idempotencyKey,
     },
-    body: JSON.stringify(emails.map((e) => ({ from, to: [e.to], subject: e.subject, html: e.html, text: e.text, headers: e.headers }))),
+    body: JSON.stringify(
+      emails.map((e) => ({
+        from,
+        to: [e.to],
+        ...(replyTo ? { reply_to: replyTo } : {}),
+        subject: e.subject,
+        html: e.html,
+        text: e.text,
+        headers: e.headers,
+      })),
+    ),
   });
   if (!res.ok) return { ok: false as const, error: `Resend ${res.status} : ${(await res.text()).slice(0, 300)}` };
   return { ok: true as const };
