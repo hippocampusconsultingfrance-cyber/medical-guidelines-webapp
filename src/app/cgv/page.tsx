@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MEDIATEUR, mediateurRenseigne } from "@/lib/legal";
+import Mediation from "../mediation";
 import { CGV_VERSION } from "@/lib/stripe";
 
 export const metadata: Metadata = {
@@ -92,25 +92,8 @@ export default function CgvPage() {
       </p>
 
       <h2 className={h2}>9. Médiation et droit applicable</h2>
-      <p className="mt-2">
-        En cas de litige, le consommateur adresse d&apos;abord une réclamation écrite à
-        contact@medical-guidelines.net. À défaut de solution, il peut recourir gratuitement au
-        médiateur de la consommation
-        {mediateurRenseigne() ? (
-          <>
-            {" "}
-            : {MEDIATEUR.nom}
-            {MEDIATEUR.adresse ? `, ${MEDIATEUR.adresse}` : ""},{" "}
-            <a href={MEDIATEUR.site} className="underline" target="_blank" rel="noopener noreferrer">
-              {MEDIATEUR.site}
-            </a>
-          </>
-        ) : (
-          ", dont les coordonnées seront indiquées ici"
-        )}
-        . Il peut aussi utiliser la plateforme européenne de règlement en ligne des litiges.
-        Les présentes conditions sont soumises au droit français.
-      </p>
+      <Mediation />
+      <p className="mt-2">Les présentes conditions sont soumises au droit français.</p>
     </div>
   );
 }
