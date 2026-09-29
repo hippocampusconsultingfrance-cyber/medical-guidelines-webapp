@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   title: "Conditions Générales de Vente — medical-guidelines.net",
 };
 
-// Projet de CGV rédigé d'après le cahier des charges V4.5 (§10.3). À faire
-// valider par un conseil juridique avant la première vente. Le médiateur de
+// CGV rédigées d'après le cahier des charges V4.5 (§10.3), validées par le
+// conseil juridique du porteur de projet (septembre 2026). Le médiateur de
 // la consommation est renseigné dans lib/legal.ts ; toute modification du
 // texte s'accompagne d'une nouvelle CGV_VERSION (lib/stripe.ts), enregistrée
 // avec chaque souscription.
@@ -21,7 +21,7 @@ export default function CgvPage() {
       <h2 className={h2}>1. Vendeur</h2>
       <p className="mt-2">
         Hippocampus Consulting, SARL au capital de 1 000 €, 6 rue d&apos;Armaillé, 75017 Paris,
-        SIREN 999 259 252, éditrice du site medical-guidelines.net. Contact :
+        SIREN 999 259 252, TVA intracommunautaire FR43 999 259 252, éditrice du site medical-guidelines.net. Contact :
         contact@medical-guidelines.net.
       </p>
 
