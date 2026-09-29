@@ -49,6 +49,8 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname.startsWith("/mot-de-passe-oublie");
   const isPublicAsset =
     request.nextUrl.pathname.startsWith("/_next") ||
+    // Script et envoi de la mesure d'audience Vercel.
+    request.nextUrl.pathname.startsWith("/_vercel") ||
     request.nextUrl.pathname.startsWith("/favicon") ||
     request.nextUrl.pathname === "/robots.txt";
 
