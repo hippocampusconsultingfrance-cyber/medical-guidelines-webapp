@@ -22,7 +22,8 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
         .select("id, title, doc_type, publication_date, card_json, published_at, document_societies(societies(acronym))")
         .order("publication_date", { ascending: false, nullsFirst: false })
         .order("title"),
-      supabase.from("document_unlocks").select("document_id"),
+      // Filtre explicite : un administrateur lit aussi les déblocages des autres comptes.
+      supabase.from("document_unlocks").select("document_id").eq("user_id", userId),
       supabase.rpc("has_premium"),
       supabase
         .from("profiles")

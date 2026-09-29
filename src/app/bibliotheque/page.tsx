@@ -33,6 +33,8 @@ export default async function BibliothequePage({
   const societies = societyCounts(lib.docs);
   const societe =
     typeof params.societe === "string" && societies.some(([s]) => s === params.societe) ? params.societe : "";
+  // Année de publication (lien « nouveautés de l'année » de l'espace membre).
+  const annee = typeof params.annee === "string" && /^\d{4}$/.test(params.annee) ? params.annee : "";
   const needle = normalize(query);
   // Recherche dans le contenu, faite par la base : elle ne renvoie que les
   // fiches correspondantes (et leur pertinence), jamais leur texte.
@@ -44,13 +46,19 @@ export default async function BibliothequePage({
   const titleMatch = (d: (typeof lib.docs)[number]) =>
     normalize(`${d.title} ${d.card_json?.title ?? ""} ${d.card_json?.short ?? ""} ${d.card_json?.society ?? ""}`).includes(needle);
   const docs = lib.docs
-    .filter((d) => (!societe || d.societies.includes(societe)) && (!needle || titleMatch(d) || contentRank.has(d.id)))
+    .filter(
+      (d) =>
+        (!societe || d.societies.includes(societe)) &&
+        (!annee || d.publication_date?.startsWith(annee)) &&
+        (!needle || titleMatch(d) || contentRank.has(d.id)),
+    )
     .sort((a, b) =>
       needle ? Number(titleMatch(b)) - Number(titleMatch(a)) || (contentRank.get(b.id) ?? 0) - (contentRank.get(a.id) ?? 0) : 0,
     );
   const filterHref = (s: string) => {
     const p = new URLSearchParams();
     if (query) p.set("q", query);
+    if (annee) p.set("annee", annee);
     if (s) p.set("societe", s);
     const qs = p.toString();
     return qs ? `/bibliotheque?${qs}` : "/bibliotheque";
@@ -147,6 +155,7 @@ export default async function BibliothequePage({
           />
         </label>
         {societe && <input type="hidden" name="societe" value={societe} />}
+        {annee && <input type="hidden" name="annee" value={annee} />}
         <div className="lib-filters">
           <span className="lib-filters__label">Société savante</span>
           <a href={filterHref("")} className={`soc-chip${societe ? "" : " is-active"}`}>
@@ -171,17 +180,20 @@ export default async function BibliothequePage({
           )}
         </div>
       </form>
-      {(societe || query) && (
+      {(societe || query || annee) && (
         <div className="lib-count">
           {docs.length} fiche{docs.length > 1 ? "s" : ""}
+          {annee ? ` publiée${docs.length > 1 ? "s" : ""} en ${annee}` : ""}
           {societe ? ` co-signée${docs.length > 1 ? "s" : ""} par ${societe}` : ""}
           {query ? ` pour « ${query} »` : ""}
+          {" · "}
+          <Link href="/bibliotheque">Effacer les filtres</Link>
         </div>
       )}
 
       {docs.length === 0 ? (
         <div className="lib-empty">
-          {query
+          {query || annee
             ? "Aucune fiche ne correspond à cette recherche."
             : "Aucune fiche n'est encore publiée pour votre spécialité. Elles apparaîtront ici au fil de leur validation par notre équipe médicale."}
         </div>
