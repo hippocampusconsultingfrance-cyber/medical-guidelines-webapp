@@ -339,8 +339,8 @@ export default function AccueilPublic() {
           </p>
           <p>
             Contact :{" "}
-            <a href="mailto:hippocampusconsultingfrance@gmail.com" className="underline hover:text-slate-900">
-              hippocampusconsultingfrance@gmail.com
+            <a href="mailto:contact@medical-guidelines.net" className="underline hover:text-slate-900">
+              contact@medical-guidelines.net
             </a>{" "}
             · © Hippocampus Consulting
           </p>

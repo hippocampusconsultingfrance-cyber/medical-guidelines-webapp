@@ -36,7 +36,7 @@ export default function ConfidentialitePage() {
         Le responsable du traitement des données collectées sur ce site est
         Hippocampus Consulting, SARL au capital de 1 000 €, 6 rue
         d&apos;Armaillé, 75017 Paris (SIREN 999 259 252), joignable à
-        l&apos;adresse hippocampusconsultingfrance@gmail.com. Voir aussi les{" "}
+        l&apos;adresse contact@medical-guidelines.net. Voir aussi les{" "}
         <a href="/mentions-legales" className="underline">
           mentions légales
         </a>

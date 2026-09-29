@@ -11,6 +11,7 @@
 // action du porteur de projet (publish_all_documents / bouton « Publier »).
 //
 // Usage : ATELIER_DIR=../rfe-sfar-website node scripts/import-atelier.mjs
+import { createHash } from "node:crypto";
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import vm from "node:vm";
@@ -88,6 +89,28 @@ const json = (o) => {
 
 const CARD_FIELDS = ["badge", "title", "short", "society", "version", "validated", "methodology", "pages"];
 
+// Résumé de la carte (card_json.short) : il est public (pages indexées par
+// Google, bibliothèque, e-mails). Celui de l'atelier mêle parfois la
+// description clinique et des notes de travail (décomptes, « disclosed »,
+// renvois aux clés de fiches…) : il est alors remplacé par le résumé relu
+// de scripts/resumes-fiches.json. « atelier » y est l'empreinte du résumé
+// d'origine : s'il change dans l'atelier, le résumé relu est à revoir.
+const RESUMES = JSON.parse(readFileSync(new URL("scripts/resumes-fiches.json", root), "utf8"));
+const NOTE_INTERNE =
+  /disclos|recherche web|index habituel|recoupement|supersede|sur ce site|ce corpus|chipp|décompte|git-track|installment|`/i;
+const aRelire = [];
+function resume(key, short) {
+  const relu = RESUMES[key];
+  if (relu) {
+    if (relu.atelier !== createHash("sha1").update(short ?? "").digest("hex").slice(0, 10)) {
+      aRelire.push(`${key} (résumé modifié dans l'atelier)`);
+    }
+    return relu.resume;
+  }
+  if (short && NOTE_INTERNE.test(short)) aRelire.push(`${key} (notes internes)`);
+  return short;
+}
+
 // Sociétés savantes signataires, lues dans la mention de la carte
 // (« SFAR / SRLF / SFMU (AFC, AFU) — RFE 2019 » → SFAR, SRLF, SFMU, AFC, AFU).
 // Sigles de type de document ou ambigus écartés.
@@ -147,6 +170,7 @@ for (const key of keys) {
   const lib = LIBRARY_BY_FICHE_KEY[key];
   const { url, existing: isExisting } = targets.get(key);
   const card = Object.fromEntries(CARD_FIELDS.filter((f) => meta[f] != null).map((f) => [f, meta[f]]));
+  if (card.short != null) card.short = resume(key, card.short);
   // Rubrique de la barre latérale : premier domaine de la catégorie de la
   // bibliothèque (« Anesthésie, Urgences » → Anesthésie). Les fiches sans
   // entrée dans la bibliothèque (découpages de textes SFAR d'anesthésie :
@@ -207,4 +231,7 @@ const cut = sql.indexOf("\n\n") + 2;
 sql = sql.slice(0, cut) + header + "\n" + sql.slice(cut);
 
 writeFileSync(new URL("supabase/content/0200_fiches_atelier.sql", root), sql);
+if (aRelire.length) {
+  console.warn(`Résumés à relire dans scripts/resumes-fiches.json :\n  ${aRelire.join("\n  ")}`);
+}
 console.log(`${keys.length} fiches : ${matched} documents existants complétés, ${created} documents créés, ${allSocieties.size} sociétés signataires.`);

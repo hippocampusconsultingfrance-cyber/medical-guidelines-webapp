@@ -19,8 +19,8 @@ export default function MentionsLegalesPage() {
         <li>SIREN : 999 259 252</li>
         <li>
           Contact :{" "}
-          <a href="mailto:hippocampusconsultingfrance@gmail.com" className="underline">
-            hippocampusconsultingfrance@gmail.com
+          <a href="mailto:contact@medical-guidelines.net" className="underline">
+            contact@medical-guidelines.net
           </a>
         </li>
       </ul>

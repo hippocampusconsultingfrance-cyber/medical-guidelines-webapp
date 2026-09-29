@@ -19,7 +19,7 @@ export default function CgvPage() {
       <p className="mt-2">
         Hippocampus Consulting, SARL au capital de 1 000 €, 6 rue d&apos;Armaillé, 75017 Paris,
         SIREN 999 259 252, éditrice du site medical-guidelines.net. Contact :
-        hippocampusconsultingfrance@gmail.com.
+        contact@medical-guidelines.net.
       </p>
 
       <h2 className={h2}>2. Offre</h2>
