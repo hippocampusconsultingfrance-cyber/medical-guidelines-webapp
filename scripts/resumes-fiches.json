@@ -1,0 +1,382 @@
+{
+  "aap_endoprotheses_coronaires": {
+    "atelier": "7367bbef53",
+    "resume": "Gestion périopératoire du traitement antiplaquettaire oral (aspirine, clopidogrel) chez le porteur d'une endoprothèse coronaire (stent nu ou pharmacoactif) devant subir un acte invasif : matrice de décision croisant risque de thrombose du stent et risque hémorragique de l'intervention. Document historique de 2006, complété par les propositions GIHP/GFHT/SFAR 2018 sur les antiplaquettaires."
+  },
+  "aap_programmee": {
+    "atelier": "0fe3f311e7",
+    "resume": "Classification du risque hémorragique de la procédure (faible, intermédiaire, élevé) et du risque thrombotique du patient, délais d'arrêt par molécule (J-3 aspirine, J-5 clopidogrel/ticagrélor, J-7 prasugrel), gestion selon l'indication, bithérapie et stent coronaire, anesthésie locorégionale rachidienne et blocs périphériques, chirurgie de pontage aortocoronaire."
+  },
+  "allergie_prevention": {
+    "atelier": "b2f61b71b6",
+    "resume": "Réalité du risque et substances responsables (curares en tête), mécanismes et physiopathologie du choc, bilan diagnostique biologique (histamine, tryptase, IgE spécifiques) et cutané (tests cutanés, concentrations de référence), facteurs favorisants et allergies croisées, place du bilan allergologique préanesthésique, prévention primaire et secondaire, choix de la technique anesthésique."
+  },
+  "alr_douleur_chronique": {
+    "atelier": "9afd2abdfa",
+    "resume": "Place de l'analgésie locorégionale dans la douleur chronique : médicaments, algies craniofaciales, douleurs abdomino-pelviennes, douleurs neuropathiques des membres (SDRC, amputation), douleurs cancéreuses, gestion des cathéters au long cours. Méthode GRADE ; pathologies rachidiennes exclues."
+  },
+  "alr_non_specialiste": {
+    "atelier": "7a1fa4d0f5",
+    "resume": "Anesthésie locale et locorégionale pratiquée par les médecins urgentistes (SAU, préhospitalier), hors ALR périmédullaire et blocs du tronc : pharmacologie et toxicité des anesthésiques locaux (posologies), indications et techniques (anesthésie topique, infiltration, blocs fémoral et iliofascial, pied, main, face), sédation-analgésie associée, surveillance et complications, milieu difficile, enfant, formation requise."
+  },
+  "alr_pediatrie": {
+    "atelier": "73592a901c",
+    "resume": "ALR chez l'enfant, surtout nouveau-né, nourrisson et petit enfant : anesthésiques locaux et posologies, adjuvants (clonidine, morphiniques, adrénaline), méthodes de localisation et matériel (choix des aiguilles selon la technique, l'âge et le poids), prévention et traitement des complications, choix de la technique selon le terrain et la chirurgie. Actualisé en 2026 par la RFE SFAR/ADARPEF sur l'ALR en chirurgie pédiatrique."
+  },
+  "alr_pediatrique_2026": {
+    "atelier": "7f9eccd067",
+    "resume": "ALR en chirurgie pédiatrique, de 0 à 15 ans (nouveau-nés compris) : échoguidage, adjuvants (alpha-2 agonistes, dexaméthasone), chirurgie céphalique (fente labio-palatine, craniotomie), thorax et rachis (thoracotomie, arthrodèse vertébrale, morphine intrathécale), abdomen et organes génitaux externes (voie inguinale ou ombilicale, ancien prématuré, posthectomie, hypospadias), hanche. 34 recommandations ; actualise la RFE de 2010."
+  },
+  "alr_perinerveuse": {
+    "atelier": "0266f4d8dd",
+    "resume": "Mise à jour de la RPC ALR 2003 sur les données nouvelles : échoguidage devenu technique de référence, adjuvants, toxicité, terrain, stratégies d'utilisation, hygiène et sécurité, sur les 24 premières heures postopératoires. Ne remplace pas la RPC 2003, toujours valable pour les données anatomocliniques et les techniques de base. 12 recommandations à accord fort."
+  },
+  "anesth_cardiopathie_congenitale": {
+    "atelier": "977695ac62",
+    "resume": "Anesthésie de l'adulte porteur d'une cardiopathie congénitale en chirurgie non cardiaque : score de risque composite (type de cardiopathie, statut physiologique A à D, risque chirurgical), centre expert si risque intermédiaire ou élevé, ALR titrée préférée à l'anesthésie générale, monitorage adapté (PVC continue si Fontan), soins critiques postopératoires, grossesse et accouchement, gestion des traitements cardiotropes et anticoagulants. 11 recommandations."
+  },
+  "anesth_pediatrique_structures": {
+    "atelier": "e3926d7147",
+    "resume": "Structures et matériel pour l'anesthésie de l'enfant : salle d'intervention et personnel selon l'âge, transferts, SSPI, prise en charge postopératoire (pas d'hospitalisation d'un enfant de moins de 10 ans en réanimation adulte), examens complémentaires ; matériel d'assistance respiratoire (tailles chiffrées), abord vasculaire, défibrillateur, monitorage, prévention de l'hypothermie, transport, solutés. L'organisation entre centres relève de la RPP SFAR-ADARPEF 2023."
+  },
+  "antibioprophylaxie": {
+    "atelier": "03cc5124ac",
+    "resume": "Recommandations générales : délai d'administration avant l'incision, réinjection peropératoire et rythme par molécule, durée (limitée à la période peropératoire dans la grande majorité des cas), adaptation posologique chez le patient obèse, dépistage et antibioprophylaxie ciblée du patient colonisé à E-BLSE avant chirurgie colorectale. Les protocoles par intervention (adulte et enfant) sont à consulter dans le texte intégral."
+  },
+  "antibiotherapie_probabiliste": {
+    "atelier": "829430d15a",
+    "resume": "Antibiothérapie probabiliste pour 12 sites infectieux : méningites communautaires et nosocomiales, pneumopathies communautaires et PAVM, infections urinaires, infections intra-abdominales (péritonites, pancréatites, angiocholites), infections cutanées et des tissus mous (DHBN-FN), endocardites, infections sur cathéter, sepsis sans porte d'entrée. Immunodéprimé et enfant, réévaluation à J2-J3 et J10, posologies de première injection de 24 antibiotiques."
+  },
+  "aod_dabigatran_urgence_2016": {
+    "atelier": "da1f692eac",
+    "resume": "Hémorragie et geste invasif urgent sous dabigatran, avec l'antidote idarucizumab (Praxbind®, 5 g) : hémorragie dans un organe critique ou choc hémorragique, hémorragie grave ou non grave, geste urgent selon 3 niveaux de risque hémorragique et le délai disponible, ALR et ponction lombaire. Seuils de 30 et 50 ng/mL ; à défaut de dosage, délai depuis la dernière prise et clairance de la créatinine. Ne concerne pas les anti-Xa."
+  },
+  "aod_programme": {
+    "atelier": "e9f378686e",
+    "resume": "Anticoagulants oraux directs avant un acte programmé : risque hémorragique faible (pas de prise la veille au soir ni le matin du geste, reprise au moins 6 h après) ou élevé (dernière prise à J-3 pour rivaroxaban, apixaban et edoxaban, à J-4 ou J-5 pour le dabigatran selon la clairance de la créatinine ; reprise à dose prophylactique puis curative). Schéma récapitulatif et posologies usuelles des 4 AOD."
+  },
+  "aod_urgence": {
+    "atelier": "7816377155",
+    "resume": "Chirurgie urgente à risque hémorragique et hémorragie grave sous dabigatran ou rivaroxaban à dose curative : algorithmes guidés par la concentration plasmatique (seuil de 30 ng/mL) ou, à défaut, par le TCA et le TP ; conduite selon la gravité de l'hémorragie. Document de 2013, antérieur aux antidotes spécifiques, sans apixaban ni edoxaban ; pour le dabigatran, voir la réactualisation GIHP 2016 (idarucizumab)."
+  },
+  "blocs_perimedullaires_cesarienne_2006": {
+    "atelier": "a46659425a",
+    "resume": "Blocs périmédullaires pour la césarienne (question 7 de la RPC) : préparation, choix de la technique selon le degré d'urgence (algorithmes), gestion de l'échec, situations obstétricales particulières, analgésie postopératoire. 31 recommandations gradées. L'analgésie du travail relève désormais de la recommandation HAS 2025 sur la douleur de l'accouchement."
+  },
+  "blocs_perimedullaires_ci_2006": {
+    "atelier": "0b1dec0136",
+    "resume": "Blocs périmédullaires de l'adulte, questions 1 et 2 de la RPC : information du patient, contre-indications générales, surveillance et monitorage. 41 recommandations gradées."
+  },
+  "blocs_perimedullaires_complications_2006": {
+    "atelier": "ad869efc08",
+    "resume": "Complications des blocs périmédullaires (question 15 de la RPC) : hypotension, bradycardie, arrêt cardiaque, rachianesthésie totale, complications respiratoires, toxicité systémique des anesthésiques locaux, erreurs d'injection, complications neurologiques (syndrome neurologique transitoire, syndrome de la queue-de-cheval), infectieuses (méningite, abcès péridural), brèche durale et blood-patch, effets des morphiniques. 58 recommandations gradées."
+  },
+  "blocs_perimedullaires_echec_2006": {
+    "atelier": "3d63b2f979",
+    "resume": "Échec d'une anesthésie périmédullaire (question 14 de la RPC) : diagnostic et prévention, causes liées à la technique, à l'anesthésique local ou au matériel, conduite à tenir devant une analgésie insuffisante ou trop courte. 27 recommandations gradées."
+  },
+  "blocs_perimedullaires_hemostase_2006": {
+    "atelier": "ac4f4a93a2",
+    "resume": "Blocs périmédullaires et anomalies de l'hémostase (question 11 de la RPC) : pathologies héréditaires et acquises, antiagrégants, thiénopyridines, anti-GPIIb/IIIa, héparines, AVK, nouveaux antithrombotiques, thrombolytiques, diagnostic et surveillance de l'hématome périmédullaire, évaluation du risque hémorragique. 24 recommandations gradées."
+  },
+  "blocs_perimedullaires_infectieux_2006": {
+    "atelier": "581c424e9e",
+    "resume": "Blocs périmédullaires sur terrain infectieux (question 13 de la RPC) : patient fébrile, femme enceinte fébrile, états septiques graves, infections virales, VIH, réactivation herpétique après morphiniques. 8 recommandations gradées."
+  },
+  "blocs_perimedullaires_neuro_2006": {
+    "atelier": "20b99835d1",
+    "resume": "Blocs périmédullaires sur terrain neurologique et neuromusculaire (question 12 de la RPC) : céphalées, épilepsie, maladies dégénératives, AVC, spina bifida et malformations rachidiennes, tumeurs du SNC, hernie discale, lésion médullaire, sclérose en plaques, Guillain-Barré, neuropathies, porphyrie, myasthénie, myopathies et canalopathies. 41 recommandations gradées."
+  },
+  "blocs_perimedullaires_postop_2006": {
+    "atelier": "dc9907bcc6",
+    "resume": "Analgésie postopératoire par voie périmédullaire (question 8 de la RPC) : agents, indications selon le type de chirurgie, monitorage et surveillance. 71 recommandations gradées."
+  },
+  "blocs_perimedullaires_technique_2006": {
+    "atelier": "a39ce04f6f",
+    "resume": "Blocs périmédullaires de l'adulte, questions 3 à 5 de la RPC : réalisation de la rachianesthésie et de la péridurale, association à l'anesthésie générale (chronologie, surveillance peropératoire), facteurs déterminant l'extension du bloc et pharmacodynamie comparée des anesthésiques locaux. 24 recommandations gradées."
+  },
+  "blocs_perimedullaires_terrain_cardioresp_2006": {
+    "atelier": "47f4d11ebb",
+    "resume": "Blocs périmédullaires sur terrain cardiovasculaire (effets hémodynamiques, HTA, coronarien, insuffisance cardiaque, valvulopathies, troubles du rythme) et respiratoire (asthme, altération ventilatoire, SAOS, surveillance) : questions 9 et 10 de la RPC. 18 recommandations gradées."
+  },
+  "blocs_peripheriques_membres": {
+    "atelier": "cb718c551f",
+    "resume": "Blocs périphériques des membres : information, préparation et surveillance, ALRIV, repérage par neurostimulation, matériel, agents, recommandations par territoire (membre supérieur, membre inférieur), analgésie postopératoire, anticoagulants et pathologie neurologique, gestion de l'échec, toxicité systémique des anesthésiques locaux (doses maximales), complications neurologiques. Complété par la RFE 2011 sur l'échographie en ALR."
+  },
+  "brule_grave": {
+    "atelier": "9d961d21d5",
+    "resume": "Brûlé grave (brûlure thermique) dans les 48 premières heures, adulte et enfant : critères de gravité, surface cutanée brûlée (Lund et Browder), réanimation hémodynamique (remplissage initial, albumine), voies aériennes et inhalation de fumées (intubation, hydroxocobalamine, oxygénothérapie hyperbare), anesthésie-analgésie (kétamine), traitement local, nutrition et thromboprophylaxie. 24 recommandations à accord fort."
+  },
+  "candidoses_aspergilloses": {
+    "atelier": "db6e175c4e",
+    "resume": "Candidoses et aspergilloses invasives de l'adulte : diagnostic (examen direct, antigénémie aspergillaire, TDM thoracique et signe du halo), spectre et effets indésirables des 4 familles d'antifongiques, stratégie dans les candidoses systémiques (arbres décisionnels selon créatininémie, neutropénie, azolé antérieur), chimioprophylaxie, stratégie dans les aspergilloses invasives (voriconazole en première ligne)."
+  },
+  "catheters_veineux_centraux": {
+    "atelier": "808c750337",
+    "resume": "Infections liées aux cathéters veineux centraux en réanimation : définition et diagnostic (hémocultures quantitatives couplées, délai différentiel de positivité, techniques cathéter en place), mécanismes de colonisation, facteurs de risque et morbi-mortalité, prévention (matériel, pose, site, pansement, antiseptique, entretien de ligne, Swan-Ganz, cathéters de dialyse), stratégie diagnostique et thérapeutique initiale avec algorithme décisionnel."
+  },
+  "chir_ambu_proctologie": {
+    "atelier": "ed5cebc49e",
+    "resume": "Chirurgie proctologique ambulatoire : parcours et organisation (éligibilité, unité ambulatoire, médecin traitant, continuité des soins), douleur postopératoire, rétention d'urines, risque hémorragique, reprise du transit. 43 recommandations ; « ce n'est pas l'acte qui est ambulatoire mais le trio acte/patient/organisation »."
+  },
+  "chir_ambu_urologie_2013": {
+    "atelier": "7e1f99d535",
+    "resume": "Chirurgie ambulatoire en urologie : éligibilité, organisation, particularités anesthésiques, rôle du médecin traitant et du patient, continuité des soins, sujet âgé, prévention et prise en charge des risques de rétention, d'infection, de douleur et d'hémorragie. 59 recommandations, reposant presque toutes sur un accord d'experts."
+  },
+  "controle_temperature": {
+    "atelier": "3833e26afe",
+    "resume": "Contrôle ciblé de la température en réanimation, adulte et enfant (hors nouveau-né) : arrêt cardiaque (32-36 °C selon le rythme initial), traumatisme crânien grave (35-37 °C), AVC grave et hémorragies cérébrales, état de mal épileptique réfractaire, méningite et méningo-encéphalite, états de choc, et modalités pratiques (méthodes asservies, sites de mesure, surveillance des complications). 30 recommandations GRADE."
+  },
+  "corticotherapie": {
+    "atelier": "6fe54ae836",
+    "resume": "Manifestations du SDRA accessibles à la corticothérapie, conséquences surrénaliennes et vasculaires du choc septique (seuil de cortisolémie, place du test au Synacthène), bénéfices et risques attendus, indications et modalités dans le choc septique (hémisuccinate d'hydrocortisone 200-300 mg/j) et dans le SDRA (méthylprednisolone 2 mg/kg/j à la phase fibroproliférative)."
+  },
+  "delivrance_information_2012": {
+    "atelier": "057d66dbc4",
+    "resume": "Information du patient sur son état de santé : contenu et qualités de l'information, modalités (entretien individuel, accompagnant, personne de confiance, documents écrits, coordination entre professionnels, traçabilité), cas du mineur, du majeur protégé ou hors d'état de recevoir l'information, évaluation de l'information délivrée. Remplace les recommandations ANAES de 2000."
+  },
+  "demarches_anticipees_don_organes_2024": {
+    "atelier": "6f6acafa68",
+    "resume": "Démarche anticipée de don d'organes chez le patient en coma grave (Glasgow < 8) sans perspective thérapeutique, avant la mort encéphalique : prérequis institutionnels et cliniques (décision de limitation des traitements déjà annoncée aux proches), repérage du donneur possible, appel à la coordination hospitalière, entretiens avec les proches, transfert et accueil en réanimation, formation des professionnels."
+  },
+  "diabete_perioperatoire_2025": {
+    "atelier": "40eb8d1982",
+    "resume": "Fiches pratiques pour le patient diabétique opéré : stratégie selon l'HbA1c (objectif glycémique de 5 à 10 mmol/L), arrêt des antidiabétiques selon l'intervention, jeûne et glycémies capillaires, conduite devant une hyperglycémie ≥ 16,5 mmol/L (dont acidocétose euglycémique sous inhibiteur de SGLT2) ou une hypoglycémie, protocoles d'insuline intraveineuse à la seringue électrique et sous-cutanée basal-bolus, relais et reprise des antidiabétiques."
+  },
+  "douleur_accouchement_2025": {
+    "atelier": "a408cc5314",
+    "resume": "Analgésie périmédullaire du travail obstétrical : pose (repérage échographique si obésité ou rachis difficile, délais après HBPM), initiation et entretien (bolus intermittents programmés, sufentanil en adjuvant, déambulation possible), gestion de l'échec (algorithme, nouvelle pose du cathéter à 45 min), alternatives (rémifentanil IV en PCA en deuxième ligne sous surveillance rapprochée). Actualise les recommandations SFAR de 2006."
+  },
+  "echo_acces_vasculaires": {
+    "atelier": "d447ff45ef",
+    "resume": "Échoguidage pour la pose des accès vasculaires chez l'adulte et l'enfant : veines jugulaire interne, sous-clavière et fémorale, artère radiale, veine périphérique a priori difficile. 10 recommandations GRADE ; pas de recommandation pour la voie sous-clavière chez l'enfant. Hors artère fémorale et repérage échographique ou Doppler seul. Analyse médico-économique incluse."
+  },
+  "echo_alr": {
+    "atelier": "d51f16175a",
+    "resume": "Échographie en anesthésie locorégionale : formation et courbe d'apprentissage, sonoanatomie, matériel et réglages (sondes, aiguilles dédiées), sécurité (prévention de l'injection intraneurale), application aux blocs des membres et du tronc (interscalénique, supraclaviculaire, axillaire, fémoral, poplité, blocs d'espace, périmédullaires), hygiène et classement des dispositifs médicaux. Complète les RPC de 2002 et de 2006."
+  },
+  "eeg_cortical": {
+    "atelier": "bb93f130b8",
+    "resume": "Monitorage de la profondeur d'anesthésie par l'EEG cortical (BIS®, Entropie®) : principes des index, non-interchangeabilité des moniteurs, facteurs confondants, bénéfices cliniques (réduction de 10 à 40 % des doses d'hypnotiques, dépistage partiel de la mémorisation, effet sur les NVPO), situations à bénéfice potentiel, particularités pédiatriques (BIS utilisable après 2 ans en anesthésie intraveineuse, pas de données avant 2 ans)."
+  },
+  "erreurs_medicamenteuses_2024": {
+    "atelier": "4163adddb1",
+    "resume": "Prévention des erreurs médicamenteuses en anesthésie-réanimation : protocoles standardisés, aide à la prescription, conciliation, double contrôle, étiquetage (codes couleurs ISO 26825), seringues préremplies, traçabilité par code-barres, interruptions de tâches, communication sécurisée, simulation, pharmaciens cliniciens, déclaration et analyse des erreurs, gestion des pénuries. 29 avis d'experts, qui actualisent les préconisations de 2016."
+  },
+  "erreurs_medicamenteuses_ar_2016": {
+    "atelier": "def9ce7ec3",
+    "resume": "Prévention des erreurs médicamenteuses en anesthésie et en réanimation : démarche institutionnelle et équipe dédiée, facteurs de risque (médicaments à haut risque, informatisation, interruptions de tâches), spécificités des soins critiques (règle des 5B, pharmacien dans l'unité), rangement et étiquetage (codes couleurs ISO 26825), protocoles de prescription et d'administration, retour d'expérience et déclaration. Actualisé en 2024 par la RPP SFAR/SFPC."
+  },
+  "examens_pertinence_rea": {
+    "atelier": "f12beb449d",
+    "resume": "Pertinence des examens biologiques et de la radiographie thoracique au lit en réanimation : bilans d'entrée et quotidien, biomarqueurs du sepsis (PCT, CRP), troponine postopératoire, peptides natriurétiques, bilan d'hémostase, examens bactériologiques (hémocultures, prélèvements pulmonaires, ECBU, coproculture), radiographie thoracique. Recommandations GRADE sur 8 champs."
+  },
+  "facteurs_humains_2022": {
+    "atelier": "d978d661a6",
+    "resume": "Facteurs humains et gestion de crise en anesthésie-réanimation : communication (briefing, communication sécurisée, débriefing), organisation (conscience de la situation, leadership, répartition des tâches, aides cognitives), environnement de travail (matériel, interruptions de tâches, fatigue, épuisement professionnel), formation (gestion du stress). Fiche pratique face à un comportement hostile (méthode DESC). 21 avis d'experts."
+  },
+  "gestion_traitements_chroniques_cardio_2009": {
+    "atelier": "df66c6edf2",
+    "resume": "Gestion périopératoire des traitements cardiovasculaires au long cours : bêtabloquants, inhibiteurs calciques, diurétiques, nicorandil, IEC et sartans, dérivés nitrés, statines, antiarythmiques, stimulateurs cardiaques et défibrillateurs implantables. Les antithrombotiques relèvent d'autres recommandations. Module 1 de la RFE SFAR sur les traitements chroniques."
+  },
+  "gestion_traitements_chroniques_douleur_toxico_2009": {
+    "atelier": "b414cded62",
+    "resume": "Gestion périopératoire des traitements de la douleur chronique et des toxicomanies : opioïdes au long cours (table de conversion), AINS et coxibs, antiépileptiques, antidépresseurs, benzodiazépines, cathéters intrathécaux et stimulateurs médullaires, traitements de substitution (méthadone, buprénorphine), consommation active (cannabis, héroïne, cocaïne, autres excitants, médicaments détournés). Module 2 de la RFE SFAR sur les traitements chroniques."
+  },
+  "gestion_traitements_chroniques_infectieux_2009": {
+    "atelier": "3f1364b167",
+    "resume": "Gestion périopératoire des anti-infectieux et immunosuppresseurs au long cours : antituberculeux, antirétroviraux, ciclosporine et tacrolimus, thalidomide, méthotrexate, azathioprine, mycophénolate mofétil, cyclophosphamide, anti-TNF. Module 3 de la RFE SFAR sur les traitements chroniques."
+  },
+  "gestion_traitements_chroniques_neuro_psy_2011": {
+    "atelier": "a4bc572049",
+    "resume": "Gestion périopératoire des traitements neurologiques et psychiatriques au long cours : antiparkinsoniens, antidépresseurs dont les IMAO, et phytothérapie. Module 4 de la RFE SFAR sur les traitements chroniques."
+  },
+  "hospit_ambulatoire": {
+    "atelier": "f69a0db3e3",
+    "resume": "Prise en charge anesthésique en ambulatoire : définitions, éligibilité (triptyque acte-patient-structure), information du patient, choix de la technique, suites opératoires (douleur, prévention thromboembolique, NVPO), critères de sortie, coordination et continuité des soins, gestion des risques, enfant et sujet âgé, organisation des locaux, responsabilité de l'anesthésiste-réanimateur. 71 recommandations."
+  },
+  "hsa": {
+    "atelier": "e439df98c5",
+    "resume": "Hémorragie sous-arachnoïdienne grave par rupture d'anévrisme (WFNS III-V) : diagnostic et prise en charge initiale (classifications WFNS, Hunt-Hess, Fisher, imagerie, ponction lombaire, transfert en centre de référence), complications précoces (HTIC, hydrocéphalie, resaignement, épilepsie, retentissement cardiopulmonaire, natrémie), traitement de l'anévrisme (chirurgie ou endovasculaire, délai de 72 h), anesthésie et douleur, vasospasme (Doppler, nimodipine, triple H, traitement endovasculaire), suivi et filière de soins."
+  },
+  "impact_environnemental_ag": {
+    "atelier": "ec0b27a4a2",
+    "resume": "Réduire l'impact environnemental de l'anesthésie : gaz et vapeurs (sévoflurane préféré au desflurane et à l'isoflurane à bénéfice égal, éviter le protoxyde d'azote, bas débit de gaz frais, monitorage de la profondeur d'anesthésie), médicaments intraveineux (préparation à la demande, seringues préremplies), dispositifs médicaux (réutilisable, sans DEHP), circuits changés chaque semaine, tri et recyclage des déchets. 17 avis d'experts à accord fort."
+  },
+  "infections_intra_abdominales": {
+    "atelier": "155a54793c",
+    "resume": "Diagnostic et contrôle de la source (imagerie, chirurgie ou drainage radiologique, relaparotomie), microbiologie et antibiothérapie probabiliste des péritonites communautaires, particularités pédiatriques, infections associées aux soins (dont risque de bactérie multirésistante), 3 algorithmes décisionnels. Hors infections du cirrhotique et infections focalisées isolées. Actualisé en 2026 par la RFE SFAR sur les infections intra-abdominales de l'adulte."
+  },
+  "infections_intra_abdominales_2026": {
+    "atelier": "976451cc33",
+    "resume": "Infections intra-abdominales de l'adulte nécessitant un geste interventionnel : contrôle de la source, antibiothérapie probabiliste selon le contexte communautaire ou associé aux soins (facteurs de risque de BLSE et de BMR), orientation en soins critiques, désescalade et durées d'antibiothérapie et d'antifongique, complications évolutives et réintervention. 43 recommandations ; actualise les recommandations de 2015."
+  },
+  "infections_nosocomiales_rea": {
+    "atelier": "ab829c54a3",
+    "resume": "Prévention des infections nosocomiales en réanimation (transmission croisée et nouveau-né exclus) : définitions et épidémiologie (pneumopathies, infections urinaires, bactériémies, infections sur cathéter, infections du site opératoire), organisation architecturale, impact de l'antibiothérapie (désescalade, durée, rotation), préventions spécifiques (PAVM, infection urinaire, cathéters, site opératoire, Clostridium difficile), stratégie globale."
+  },
+  "insuffisance_analgesie_cesarienne": {
+    "atelier": "7276905a6c",
+    "resume": "Prévention, reconnaissance et prise en charge de l'insuffisance ou de l'échec d'analgésie au cours de la césarienne sous anesthésie périmédullaire : évaluation du bloc avant incision (niveaux T6/T3, doses de bupivacaïne), délai décision-naissance et communication, douleur avant et après incision (complément IV, conversion en anesthésie générale), état de stress post-traumatique, aspects médico-légaux. 24 préconisations et annexe décisionnelle."
+  },
+  "ivg_14sa": {
+    "atelier": "807a942608",
+    "resume": "Interruption volontaire de grossesse jusqu'à 14 semaines d'aménorrhée : organisation des structures, accueil, consultations pré-IVG, choix de la technique (chirurgicale ou médicamenteuse) et du mode d'anesthésie selon l'âge gestationnel, prise en charge de la douleur, prévention des complications infectieuses et de l'incompatibilité Rhésus, suivi post-IVG. La mise à jour HAS de 2010 sur l'IVG médicamenteuse n'est pas intégrée."
+  },
+  "mieux_vivre_reanimation": {
+    "atelier": "efa3a23de9",
+    "resume": "Mieux vivre la réanimation, pour les patients, les familles et les soignants : obstacles (bruit, lumière, sommeil, douleur, delirium, stress post-traumatique, épuisement professionnel), amélioration de l'environnement et de l'organisation des soins, soins favorisant le bien-être (intimité, kinésithérapie précoce, musique, anxiété, douleur, soins centrés sur la famille), communication et personnalisation des décisions."
+  },
+  "mort_encephalique": {
+    "atelier": "cda4f7db47",
+    "resume": "Prise en charge du sujet en état de mort encéphalique en vue d'un prélèvement d'organes et de tissus : diagnostic clinique et paraclinique (EEG, angiographie, Doppler transcrânien), réanimation du donneur (hémodynamique, diabète insipide, hémostase, infection, pédiatrie), critères d'évaluation et contre-indications par organe, organisation du prélèvement (coordination hospitalière, donneurs décédés après arrêt circulatoire, classification de Maastricht)."
+  },
+  "nutrition_clinique_2026": {
+    "atelier": "98bd83fe25",
+    "resume": "Nutrition clinique de l'adulte en périopératoire et en soins critiques : dénutrition et critères HAS, stratégies nutritionnelles péri- et postopératoires, rôle du diététicien, cibles selon la phase (choc, stabilisation, réhabilitation), tolérance de la nutrition entérale (prokinétiques, massages abdominaux), surveillance et syndrome de renutrition inappropriée. 40 recommandations ; actualise les recommandations de 2011 et 2014."
+  },
+  "nutrition_perioperatoire": {
+    "atelier": "2fac62a894",
+    "resume": "Prise en charge nutritionnelle de l'adulte en chirurgie programmée : évaluation de l'état nutritionnel (facteurs de risque, seuils de dénutrition, grade nutritionnel GN1 à GN4), nutrition pré- et postopératoire, pharmaconutrition (immunonutrition, glutamine, oméga-3), obésité et chirurgie bariatrique, diabète. 71 recommandations. Actualisé en 2026 par la RBP sur la nutrition clinique en périopératoire et en soins critiques."
+  },
+  "optimisation_beta_lactamines_2018": {
+    "atelier": "511629d40e",
+    "resume": "Optimisation du traitement par bêta-lactamines : variabilité pharmacocinétique (débit de filtration glomérulaire mesuré, épuration extrarénale, albuminémie, posologie initiale majorée), cibles PK-PD (4 à 8 fois la CMI pendant 100 % de l'intervalle, toxicité au-delà de 8 fois), perfusion prolongée ou continue et dose de charge, suivi thérapeutique pharmacologique (indications, délai, ajustement) et cibles plasmatiques de 11 bêta-lactamines."
+  },
+  "optimisation_hemodynamique_adulte_2024": {
+    "atelier": "e6fa41c353",
+    "resume": "Optimisation hémodynamique périopératoire de l'adulte : éviter une PAM < 60-70 mmHg, monitorage du volume d'éjection systolique chez le patient à risque élevé, lactate artériel, cristalloïdes balancés, noradrénaline préférée à la phényléphrine, dobutamine si un inotrope est nécessaire ; césarienne programmée sous rachianesthésie (pas d'éphédrine prophylactique, phényléphrine ou noradrénaline, co-remplissage). Actualise les recommandations de 2012 sur le remplissage."
+  },
+  "optimisation_hemodynamique_pediatrie_2024": {
+    "atelier": "ffb398b322",
+    "resume": "Optimisation hémodynamique peropératoire de l'enfant (transfusion exclue) : cibles de pression artérielle moyenne selon l'âge (> 35 mmHg avant 6 mois, > 43 mmHg de 6 mois à 2 ans, > 1,5 × âge + 40 mmHg de 2 à 10 ans), Doppler œsophagien chez l'enfant à risque élevé, lactatémie et monitorage cérébral du nourrisson, cristalloïde balancé en première intention, albumine à 4-5 % chez le nouveau-né et le nourrisson, vasoconstricteur si hypotension persistante."
+  },
+  "organisation_anesthesie_pediatrique_2023": {
+    "atelier": "00d54a1fc1",
+    "resume": "Organisation des centres pratiquant l'anesthésie pédiatrique : locaux et secteurs dédiés, matériel adapté à l'âge, formation (au moins 3 mois en centre spécialisé pour les internes), réseaux et critères d'orientation vers un centre spécialisé (nouveau-né de moins de 6 semaines, ancien prématuré de moins de 60 semaines post-conception, ASA 3 à 5), effectifs minimaux par tranche d'âge et en SSPI."
+  },
+  "organisation_ar_obstetricale": {
+    "atelier": "7bb7708f55",
+    "resume": "Organisation de l'anesthésie-réanimation obstétricale : locaux et équipements, effectifs et permanence des soins, parcours (consultation préanesthésique, analgésie en salle de travail, anesthésie en salle d'intervention, réanimation du nouveau-né, surveillance postanesthésique, réhabilitation post-partum, surveillance continue et réanimation), qualité, formation et évaluation. 30 recommandations professionnelles à accord fort."
+  },
+  "organisation_usc_2018": {
+    "atelier": "e0fd721472",
+    "resume": "Fonctionnement des unités de surveillance continue (soins intermédiaires) : patients concernés, structure (autorisation, rattachement à la réanimation, au moins 6 lits), effectifs paramédicaux (IDE et AS ≥ 0,4 par lit ouvert), présence médicale 24 h/24, organisation au sein des GHT. Critères d'admission par appareil. 26 recommandations à accord fort."
+  },
+  "pancreatite": {
+    "atelier": "b11dc26f15",
+    "resume": "Pancréatite aiguë grave en soins critiques : critères de gravité et d'admission, examens des 72 premières heures, surveillance de la pression intra-abdominale ; prise en charge initiale (hémodynamique, respiratoire, nutrition entérale ou parentérale, CPRE, antalgie) ; complications évolutives (antibioprophylaxie, diagnostic et drainage de la nécrose infectée, antibiothérapie, complications vasculaires, thrombose veineuse splanchnique). 24 recommandations."
+  },
+  "plyo_transfusion": {
+    "atelier": "9d3fdf3778",
+    "resume": "Place du plasma lyophilisé (PLYO) par rapport au plasma frais congelé chez l'adulte, l'enfant et le nouveau-né en choc hémorragique ou à risque de transfusion massive : hémorragie sans urgence vitale, transport médicalisé préhospitalier (seuil de 20 min), transfusion intrahospitalière (ratio plasma/CGR d'au moins 1:2), hémorragie du péripartum, circuit du PLYO. Posologies et objectifs hémodynamiques pédiatriques en annexe."
+  },
+  "preparation_colique": {
+    "atelier": "6ec97f9cd7",
+    "resume": "Préparation colique et anesthésie pour coloscopie : prise fractionnée, délai optimal de 3 à 5 h entre la fin de la purge et l'examen, délai de 3 h jugé sûr entre la dernière prise et l'induction (liquides assimilés à des liquides clairs), situations ralentissant la vidange gastrique, délais de jeûne selon l'horaire de la coloscopie, précautions hydroélectrolytiques (phosphate de sodium contre-indiqué avant 18 ans et après 65 ans)."
+  },
+  "programme_optimisation_perioperatoire_2022": {
+    "atelier": "42ce9365e6",
+    "resume": "Socle commun d'optimisation périopératoire, applicable à toute chirurgie : programme et équipe dédiés, préhabilitation, jeûne limité (6 h solides, 2 h liquides clairs), admission le jour même, gestion du capital sanguin, ventilation protectrice, ALR, monitorage du volume d'éjection systolique et de la profondeur d'anesthésie, prévention de l'hypothermie et des NVPO, dexaméthasone, acide tranexamique, alimentation et déambulation dans les 24 h, critères de sortie. 30 recommandations."
+  },
+  "raac_cardiaque_2021": {
+    "atelier": "3b87d18e6a",
+    "resume": "Réhabilitation améliorée après chirurgie cardiaque de l'adulte, avec ou sans CEC : préhabilitation (dénutrition, tabac, HbA1c, décolonisation nasale, prévention de la fibrillation atriale), jeûne limité à 6 h et 2 h, ventilation protectrice, blocs pariétaux échoguidés, épargne morphinique, CEC en normothermie, gestion du capital sanguin (anémie ferriprive, récupération peropératoire), extubation en moins de 6 h, mobilisation et retrait précoces des drains. 33 recommandations."
+  },
+  "raac_colorectal": {
+    "atelier": "020c5cdc62",
+    "resume": "Réhabilitation améliorée en chirurgie colorectale : 35 recommandations sur les périodes pré-, per- et postopératoires. Mesures utiles mais encore insuffisamment appliquées : carbohydrates préopératoires, optimisation hémodynamique, alimentation et lever avant la 24e heure, gomme à mâcher. Pratiques inutiles : préparation colique mécanique (chirurgie colique), sonde nasogastrique et drainage systématiques."
+  },
+  "raac_lobectomie_pulmonaire_2019": {
+    "atelier": "ab6659d5d3",
+    "resume": "Réhabilitation améliorée après lobectomie pulmonaire de l'adulte : parcours en centre à haut volume, préhabilitation (dénutrition, tabac, prévention de la fibrillation atriale), ventilation unipulmonaire protectrice, apports liquidiens titrés, bloc paravertébral, thoracoscopie privilégiée, drain unique retiré rapidement, pas de VNI préventive systématique, mobilisation précoce et kinésithérapie. 32 recommandations GRADE."
+  },
+  "raac_orthopedique_2019": {
+    "atelier": "f114e13acf",
+    "resume": "Réhabilitation améliorée après chirurgie orthopédique : programme de réhabilitation, acide tranexamique, prévention de l'hypothermie, ALR pour prothèse totale de genou, thromboprophylaxie systématique (recommandations fortes) ; récupération sanguine en cas d'épargne sanguine préopératoire et bilan infectieux systématique déconseillés. Information, préhabilitation et apports liquidiens peropératoires sans recommandation possible."
+  },
+  "reduction_antibiotiques_reanimation_2014": {
+    "atelier": "92491a9765",
+    "resume": "Réduire la consommation d'antibiotiques en réanimation, adulte et enfant : lien résistance-consommation, microbiologie (prélèvements avant antibiothérapie, CMI, tests rapides), choix de l'antibiothérapie (moins de carbapénèmes, quinolones et anti-SARM), optimisation (délais : choc septique < 1 h, méningite < 3 h ; dosages, perfusion continue ou prolongée, associations), réévaluation à 48-72 h, procalcitonine, durées raccourcies (5 à 8 jours selon le site)."
+  },
+  "relations_anesth_chir": {
+    "atelier": "8fd9202ad9",
+    "resume": "Recommandations du Conseil national de l'Ordre des médecins sur les relations entre anesthésistes-réanimateurs, chirurgiens et autres professionnels : principes déontologiques (information, articles 35, 36 et 64), chartes de fonctionnement, structures publiques et privées, consultation préanesthésique, programme opératoire, SSPI, soins intensifs, ambulatoire, transfusion, relations avec les sages-femmes, les obstétriciens et les IADE."
+  },
+  "resection_hepatique_2025": {
+    "atelier": "e8bad9dee8",
+    "resume": "Anesthésie-réanimation pour résection hépatique : dépistage de l'anémie, de la dénutrition et de la fragilité, préhabilitation, scores de risque d'insuffisance hépatique post-hépatectomie, dexaméthasone 8-10 mg, hypovolémie permissive guidée par le volume d'éjection systolique pendant la transsection, ventilation protectrice, analgésie multimodale, admission en soins critiques selon un arbre décisionnel, thromboprophylaxie, réhabilitation améliorée. Hors pédiatrie et transplantation."
+  },
+  "ressources_humaines_anesthesie_2024": {
+    "atelier": "be1316b1c6",
+    "resume": "Ressources humaines en anesthésie programmée : rôle de chacun (le MAR seul responsable de l'acte, l'IADE sous son contrôle, le docteur junior en autonomie supervisée), nombre de salles par MAR (deux au maximum simultanément, exception des ALR périphériques exclusives), surveillance clinique continue, procédure de renfort et proximité des sites. Hors urgence, soins critiques, pédiatrie et obstétrique."
+  },
+  "sauv": {
+    "atelier": "c004867125",
+    "resume": "Mise en place, fonctionnement et évaluation d'une salle d'accueil des urgences vitales (« déchocage ») : critères d'admission, architecture (surface d'au moins 25 m², emplacements minimaux), équipement de niveau 1 (hors SAU) et de niveau 2 (SAU) par domaine, collaboration avec le Samu-Smur, l'anesthésie-réanimation, les consultants et les services d'aval, effectifs minimaux et formation, procédures et évaluation."
+  },
+  "securisation_proc": {
+    "atelier": "7502e7aac5",
+    "resume": "Pratiques de sécurité en réanimation (risque infectieux exclu) : taxonomie des événements indésirables et indicateurs, épidémiologie, organisation structurelle et managériale (protocoles, culture de sécurité), matériel et dispositifs médicaux, ventilation mécanique (intubation, trachéotomie, sevrage, extubation, VNI), procédures circulatoires (vasoactifs, cathéters artériels, veineux centraux et artériels pulmonaires), épuration extrarénale, spécificités pédiatriques."
+  },
+  "sedation_procedurale_2026": {
+    "atelier": "9e3639d1d2",
+    "resume": "Sédation procédurale de l'adulte aux urgences (hors grossesse, voie intraveineuse) : indication et alternatives (ALR), patients à risque (ASA, obésité morbide, SAOS, sujet âgé, jeûne, alcoolisation aiguë), sécurité (capnographie, oxygénation, appel du MAR), échelles de sédation, choix des molécules dont kétamine-propofol, cardioversion, surveillance post-procédure (scores MASS, mPADSS) et check-list. Actualise la RFE de 2010."
+  },
+  "sepsis_hemodynamique": {
+    "atelier": "f84034e662",
+    "resume": "Volet hémodynamique du sepsis grave et du choc septique (nouveau-né exclu) : cibles thérapeutiques, expansion volémique et transfusion, place des inotropes et vasoactifs, traitements complémentaires (corticothérapie), algorithme de stratégie thérapeutique en 3 étapes avec repères temporels (60-90 min, 6 h). 33 recommandations graduées."
+  },
+  "simulation_soins_critiques_2019": {
+    "atelier": "1784148085",
+    "resume": "Simulation en soins critiques : compétences techniques (voies aériennes, cathéters veineux centraux et artériels, drain pleural), compétences non techniques (travail d'équipe, gestion de crise, communication, prise de décision, débriefing systématique, outils d'évaluation TEAM et ANTS), situations sanitaires exceptionnelles (tri des victimes). 24 recommandations à accord fort."
+  },
+  "tabagisme": {
+    "atelier": "33c9830110",
+    "resume": "Tabagisme périopératoire : arrêt préopératoire systématique quel que soit le délai avant une chirurgie programmée (bénéfices à 2, 4 et 8 semaines), prise en charge comportementale et substitution nicotinique, rôle de tous les professionnels du parcours dans le conseil au sevrage, éviction du tabagisme passif chez l'enfant. Pas de recommandation possible sur la cigarette électronique."
+  },
+  "tc_readaptation": {
+    "atelier": "47b2feb2d6",
+    "resume": "Du coma à l'éveil après traumatisme crânien grave : niveaux cliniques du passage coma-éveil (état végétatif, état pauci-relationnel, mutisme akinétique, locked-in syndrome ; échelles GCS, GOAT, WHIM, GOS), apport de l'imagerie, des potentiels évoqués et de l'EEG, traitements médicamenteux, procédures de rééducation (stimulation sensorielle) et place de la famille."
+  },
+  "tenue_vestimentaire": {
+    "atelier": "808ef32269",
+    "resume": "Tenue au bloc opératoire : tenue de bloc, articles coiffants, masques, chaussures et sur-chaussures. Avis d'experts à accord fort, qui remplacent les recommandations SFAR et SF2H antérieures sur le même sujet."
+  },
+  "tests_viscoelastiques": {
+    "atelier": "0f65bc7a91",
+    "resume": "Place des tests viscoélastiques (TEG®, ROTEM®) en médecine d'urgence et périopératoire : principes techniques, utilisation au lit ou au laboratoire, positions du GIHP dans le traumatisme sévère, l'hémorragie du post-partum, la chirurgie cardiaque et la transplantation hépatique. Rôle établi en traumatologie sévère et en chirurgie cardiaque, encore à définir en obstétrique, en transplantation hépatique et en pédiatrie."
+  },
+  "thrombectomie": {
+    "atelier": "d88f50ea7c",
+    "resume": "Prise en charge anesthésique de la thrombectomie mécanique pour AVC ischémique : choix entre anesthésie générale, sédation ou anesthésie locale selon des critères cliniques, cibles per- et post-procédure (PA, SpO2, EtCO2, glycémie), gestion des antiagrégants et anticoagulants, extubation et orientation post-procédure (USINV). 18 préconisations d'experts à accord fort."
+  },
+  "tih_2002": {
+    "atelier": "ca79916ea0",
+    "resume": "Thrombopénie induite par l'héparine : définitions (type I et II), physiopathologie, circonstances évocatrices et seuils diagnostiques, diagnostic biologique (ELISA, tests d'activation plaquettaire), diagnostic différentiel, prévention et surveillance, traitements de substitution (danaparoïde, lépirudine, désirudine), stratégies par contexte dont la chirurgie cardiaque avec ou sans CEC. Document historique : se référer en priorité aux propositions GIHP/GFHT 2019. La lépirudine n'est plus commercialisée depuis 2012."
+  },
+  "transfusion_gr_anesth_2014": {
+    "atelier": "43512f2604",
+    "resume": "Transfusion de globules rouges en anesthésie, réanimation, chirurgie et urgence : seuils transfusionnels (Hb 7 à 10 g/dL selon le contexte), niveaux d'urgence transfusionnelle et procédures (CGR O par défaut, règles pour la femme en âge de procréer), alternatives à la transfusion homologue (fer, EPO, acide tranexamique, rFVIIa, récupération de sang, transfusion autologue programmée). Partie 2 de la recommandation HAS de 2014."
+  },
+  "urgences_ob_extrahosp": {
+    "atelier": "f3ab2e5f2f",
+    "resume": "Urgences obstétricales hors maternité : régulation Samu et accouchement inopiné (mécanique, nouveau-né), hémorragies du 2e et du 3e trimestre et du post-partum (algorithme HPP), traumatisme de la femme enceinte, HTA gravidique, prééclampsie et éclampsie (algorithme de titration antihypertensive), menace d'accouchement prématuré, transferts in utero interhospitaliers."
+  },
+  "urgences_transfusionnelles_obstetricales": {
+    "atelier": "63c4da0de5",
+    "resume": "Organisation de la réponse transfusionnelle à l'hémorragie du péripartum : 3 niveaux d'urgence (urgence vitale immédiate, urgence vitale, transfusion urgente), surveillance immuno-hématologique de la grossesse (typage érythrocytaire, RAI), organisation entre établissement de santé et site transfusionnel, évaluation et suivi. Procédure d'urgence vitale et contenu d'une procédure générale."
+  },
+  "urgences_vitales_ih_2026": {
+    "atelier": "1bf276ffd4",
+    "resume": "Organisation de la prise en charge des urgences vitales intrahospitalières : procédure institutionnelle et numéro d'appel unique, réflexion anticipée sur l'engagement thérapeutique, chariots d'urgence et sacs d'intervention standardisés, composition de l'équipe, registre et RMM, annonce aux proches, formation aux gestes et soins d'urgence de niveau 2 obligatoire, établissements sans présence médicale continue, activité mixte adulte-enfant."
+  },
+  "voies_aeriennes_adulte": {
+    "atelier": "286a887152",
+    "resume": "Voies aériennes en anesthésie adulte, hors intubation difficile (et hors préhospitalier, urgence, pédiatrie, ventilation à poumons séparés) : critères prédictifs d'intubation et de ventilation au masque difficiles, matériel et alternatives à la sonde, préoxygénation, agents d'induction et monitorage, positionnement et techniques d'intubation, contrôle du tube et du ballonnet, lésions liées à l'intubation, prévention de l'inhalation. Actualisé en 2026 par la RBP sur les voies aériennes de l'adulte au bloc opératoire."
+  },
+  "voies_aeriennes_bloc_2026": {
+    "atelier": "6eef473a77",
+    "resume": "Voies aériennes de l'adulte au bloc opératoire : sans difficulté prévisible (vidéolaryngoscopie en première intention, dispositifs supraglottiques de 2e génération, oxygénation nasale à haut débit en sédation, capnographie), difficultés prévues ou non (oxygénation apnéique, cricothyroïdotomie en situation « impossible d'intuber, impossible d'oxygéner »), facteurs humains (simulation, maintien des compétences, briefing). Actualise la RFE 2017 sur l'intubation difficile et le consensus de 2002-2003."
+  }
+}
