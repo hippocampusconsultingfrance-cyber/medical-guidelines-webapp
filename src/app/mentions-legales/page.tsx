@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Mediation from "../mediation";
 
 export const metadata: Metadata = {
   title: "Mentions légales — Medical Guidelines",
@@ -44,6 +45,11 @@ export default function MentionsLegalesPage() {
         </a>
         .
       </p>
+
+      <h2 className="mt-8 text-lg font-semibold text-slate-900">
+        Médiation de la consommation
+      </h2>
+      <Mediation />
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
         Propriété intellectuelle

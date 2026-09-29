@@ -3,8 +3,9 @@
 Le site encaisse aujourd'hui en **mode test** : aucun débit réel, et le
 bouton « Payer » n'est proposé qu'à l'équipe éditoriale (les membres voient
 « Les abonnements ouvrent bientôt »). Le passage au réel se fait en changeant
-trois variables dans Vercel. Le site refuse alors toute vente tant que le
-médiateur de la consommation n'est pas renseigné.
+trois variables dans Vercel. Le médiateur (CM2C) étant renseigné, la vente
+s'ouvre à tous dès que les clés réelles sont en place : ne les mettre
+qu'après la relecture du juriste (A1) et le réglage de la TVA (A3).
 
 Qui fait quoi : **Vous** (porteur de projet), **Claude** (code et
 vérifications), **Juriste**, **Expert-comptable**.
@@ -38,8 +39,8 @@ médiateur référencé par la CECMC (liste sur economie.gouv.fr, rubrique
 « médiation de la consommation »). Adhésion payante, de quelques dizaines à
 quelques centaines d'euros par an selon l'organisme.
 
-- [ ] Adhésion faite. Transmettre à Claude : **nom**, **site web**,
-      **adresse postale** du médiateur.
+- [x] Adhésion faite : **CM2C** (49 rue de Ponthieu, 75008 Paris). Mention
+      officielle affichée dans les CGV (§9) et les mentions légales.
 
 ### A3. TVA — avec l'expert-comptable
 - [ ] **Régime de TVA** de la société :
@@ -98,9 +99,10 @@ haut à droite, désactivé.
 
 ## C. Jour J — bascule (Vous et Claude)
 
-1. **Claude** : renseigne le médiateur (`src/lib/legal.ts`), date la
-   nouvelle version des CGV (`CGV_VERSION` dans `src/lib/stripe.ts`) et
-   intègre les corrections du juriste. Mise en ligne par une PR, avec les
+1. **Claude** : date la nouvelle version des CGV (`CGV_VERSION` dans
+   `src/lib/stripe.ts`) et intègre les corrections du juriste. Le médiateur
+   (CM2C) est déjà renseigné : **la vente s'ouvre dès que les clés réelles
+   sont en place**. Mise en ligne par une PR, avec les
    contrôles automatiques au vert.
 2. **Vous**, dans Vercel → projet → Settings → Environment Variables, en
    cochant **uniquement « Production »** pour chaque variable :

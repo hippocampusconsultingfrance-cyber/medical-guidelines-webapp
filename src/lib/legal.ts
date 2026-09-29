@@ -1,12 +1,14 @@
 // Médiateur de la consommation (art. L612-1 du code de la consommation),
-// obligatoire avant toute vente à un consommateur. À compléter après
-// adhésion auprès d'un médiateur référencé par la CECMC
-// (www.economie.gouv.fr/mediation-conso) ; tant que le nom et le site sont
-// vides, la vente en mode réel reste fermée (voir checkoutOpen, lib/stripe).
+// obligatoire avant toute vente à un consommateur ; la mention doit figurer
+// sur le site et dans les CGV (art. L616-1, sanction art. L641-1). Tant que
+// le nom et le site sont vides, la vente en mode réel reste fermée (voir
+// checkoutOpen, lib/stripe).
 export const MEDIATEUR = {
-  nom: "",
-  site: "",
-  adresse: "",
+  nom: "CM2C",
+  adresse: "49 rue de Ponthieu, 75008 Paris",
+  telephone: "01 89 47 00 14",
+  site: "https://www.cm2c.net/declarer-un-litige.php",
+  email: "litiges@cm2c.net",
 };
 
 export function mediateurRenseigne() {
