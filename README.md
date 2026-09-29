@@ -64,8 +64,8 @@ production : GitHub → Actions → « Importer le contenu » → Run workflow
 |---|---|
 | `/inscription`, `/finaliser-compte` | Création du compte (code par email, puis mot de passe) |
 | `/connexion`, `/mot-de-passe-oublie`, `/nouveau-mot-de-passe` | Connexion et réinitialisation |
-| `/` | Accueil public (visiteur) ou espace membre (connecté) |
-| `/bibliotheque`, `/bibliotheque/[id]` | Catalogue et fiches (crédits, filigrane, signalement d'erreur, publication) |
+| `/` | Accueil public (visiteur) ou espace membre (connecté : nouveautés de l'année par société savante, lecture en cours, crédits ou abonnement) |
+| `/bibliotheque`, `/bibliotheque/[id]` | Catalogue (filtres `q`, `societe`, `annee`) et fiches (crédits, filigrane, signalement d'erreur, publication) |
 | `/bibliotheque/signalements` | Tableau de bord des signalements (administrateur) |
 | `/mentions-legales` | Mentions légales |
 | `/compte` | Droits RGPD : rectification, consentement, export, suppression |
