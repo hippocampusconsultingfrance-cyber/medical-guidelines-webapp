@@ -3,7 +3,20 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { CGV_VERSION, getStripe, stripeEnabled } from "@/lib/stripe";
+import { isEditorialAccount } from "@/lib/roles";
+import { CGV_VERSION, checkoutOpen, getStripe, stripeEnabled } from "@/lib/stripe";
+
+// Client Stripe déjà connu, s'il existe dans le mode courant : un client
+// créé en mode test n'existe pas en mode réel (et inversement).
+async function knownCustomer(id: string | null | undefined) {
+  if (!id) return null;
+  try {
+    const c = await getStripe().customers.retrieve(id);
+    return c.deleted ? null : c.id;
+  } catch {
+    return null;
+  }
+}
 
 async function origin() {
   const h = await headers();
@@ -29,6 +42,7 @@ export async function startCheckout(formData: FormData) {
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) redirect("/connexion");
+  if (!checkoutOpen(await isEditorialAccount(supabase, user.id))) redirect("/abonnement");
 
   const { data: existing } = await supabase
     .from("subscriptions")
@@ -36,6 +50,7 @@ export async function startCheckout(formData: FormData) {
     .eq("user_id", user.id)
     .maybeSingle();
 
+  const customer = await knownCustomer(existing?.stripe_customer_id);
   const now = new Date().toISOString();
   const metadata = {
     user_id: user.id,
@@ -48,8 +63,8 @@ export async function startCheckout(formData: FormData) {
     mode: "subscription",
     line_items: [{ price: process.env.STRIPE_PRICE_ID!, quantity: 1 }],
     client_reference_id: user.id,
-    ...(existing?.stripe_customer_id
-      ? { customer: existing.stripe_customer_id, customer_update: { address: "auto", name: "auto" } }
+    ...(customer
+      ? { customer, customer_update: { address: "auto", name: "auto" } }
       : { customer_email: user.email }),
     subscription_data: { metadata },
     metadata,
@@ -77,10 +92,11 @@ export async function openPortal() {
     .select("stripe_customer_id")
     .eq("user_id", user.id)
     .maybeSingle();
-  if (!data?.stripe_customer_id) redirect("/abonnement");
+  const customer = await knownCustomer(data?.stripe_customer_id);
+  if (!customer) redirect("/abonnement?r=portail");
 
   const portal = await getStripe().billingPortal.sessions.create({
-    customer: data.stripe_customer_id,
+    customer,
     return_url: `${await origin()}/abonnement`,
     locale: "fr",
   });

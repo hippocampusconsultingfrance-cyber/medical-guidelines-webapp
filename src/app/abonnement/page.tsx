@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { stripeEnabled } from "@/lib/stripe";
+import { isEditorialAccount } from "@/lib/roles";
+import { checkoutOpen, stripeEnabled, stripeMode } from "@/lib/stripe";
 import Logo from "../logo";
 import { openPortal, startCheckout } from "./actions";
 
@@ -14,6 +15,7 @@ const MESSAGES: Record<string, string> = {
   merci: "Merci ! Votre paiement est enregistré. L'accès PREMIUM s'active dans quelques secondes : rechargez la page si besoin.",
   annule: "Paiement annulé : aucun montant n'a été débité.",
   cases: "Cochez les deux cases pour continuer.",
+  portail: "Espace de facturation indisponible pour ce compte : écrivez-nous à contact@medical-guidelines.net.",
 };
 
 export default async function AbonnementPage({ searchParams }: PageProps<"/abonnement">) {
@@ -23,17 +25,20 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
   } = await supabase.auth.getUser();
   if (!user) redirect("/connexion");
 
-  const [{ data: sub }, { data: premium }] = await Promise.all([
+  const [{ data: sub }, { data: premium }, isEditor] = await Promise.all([
     supabase
       .from("subscriptions")
       .select("status, current_period_end, canceled_at, stripe_customer_id")
       .eq("user_id", user.id)
       .maybeSingle(),
     supabase.rpc("has_premium"),
+    isEditorialAccount(supabase, user.id),
   ]);
   const r = (await searchParams).r;
   const message = typeof r === "string" ? MESSAGES[r] : undefined;
   const enabled = stripeEnabled();
+  const open = checkoutOpen(isEditor);
+  const testMode = stripeMode() === "test";
   const fin = sub?.current_period_end
     ? new Date(sub.current_period_end).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })
     : null;
@@ -50,6 +55,14 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
       </div>
 
       <h1 className="mt-10 text-2xl font-bold text-[#0E3A78]">Abonnement PREMIUM</h1>
+      {isEditor && (
+        <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+          <b>Équipe éditoriale</b> — paiement en mode {testMode ? "TEST : aucun débit réel, carte 4242 4242 4242 4242. Les membres voient « ouvre bientôt »." : stripeMode() === "live" ? "RÉEL." : "non configuré."}{" "}
+          <Link href="/abonnement/verification" className="underline">
+            Vérifier la configuration
+          </Link>
+        </p>
+      )}
       {message && (
         <p role="status" className="mt-4 rounded-lg bg-[#EEF6FB] p-4 text-sm font-medium text-[#0E3A78]">
           {message}
@@ -84,7 +97,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
             <li>✓ Internes et étudiants : −30 % sur justificatif, code personnel à demander à l&apos;adresse de contact (non cumulable)</li>
           </ul>
 
-          {enabled ? (
+          {open ? (
             <form action={startCheckout} className="mt-6 space-y-3">
               <label className="flex items-start gap-3 text-sm text-slate-700">
                 <input type="checkbox" name="cgv" value="1" required className="mt-0.5 h-4 w-4" />

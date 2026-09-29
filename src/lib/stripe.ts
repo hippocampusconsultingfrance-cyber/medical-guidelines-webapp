@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { mediateurRenseigne } from "./legal";
 
 // Paiement de l'abonnement PREMIUM (cahier des charges V4.5, §10).
 // Variables d'environnement (Vercel) :
@@ -8,6 +9,13 @@ import Stripe from "stripe";
 //   STRIPE_TAX             « 1 » pour activer le calcul de TVA par Stripe Tax
 // Tant que la clé ou le prix manquent, les abonnements sont affichés
 // « bientôt ouverts » et aucun appel à Stripe n'est fait.
+//
+// Garde-fous (docs/PASSAGE_PAIEMENT_REEL.md) :
+//   - clé de test (sk_test_…) : paiement ouvert à l'équipe éditoriale
+//     seulement, pour les essais ; sinon n'importe quel membre obtiendrait
+//     PREMIUM avec une carte de test publique ;
+//   - clé réelle (sk_live_…) : paiement ouvert à tous, une fois le
+//     médiateur de la consommation renseigné (lib/legal.ts).
 
 export const CGV_VERSION = "2026-09-29";
 
@@ -15,6 +23,21 @@ let client: Stripe | null = null;
 
 export function stripeEnabled() {
   return Boolean(process.env.STRIPE_SECRET_KEY && process.env.STRIPE_PRICE_ID);
+}
+
+export function stripeMode(): "live" | "test" | null {
+  const key = process.env.STRIPE_SECRET_KEY ?? "";
+  if (key.startsWith("sk_live_") || key.startsWith("rk_live_")) return "live";
+  if (key.startsWith("sk_test_") || key.startsWith("rk_test_")) return "test";
+  return null;
+}
+
+// Le paiement est-il proposé à ce compte ? (voir les garde-fous ci-dessus)
+export function checkoutOpen(isEditor: boolean) {
+  if (!stripeEnabled()) return false;
+  const mode = stripeMode();
+  if (mode === "test") return isEditor;
+  return mode === "live" && mediateurRenseigne();
 }
 
 export function getStripe(): Stripe {
