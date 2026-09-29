@@ -137,6 +137,11 @@ export default function AccueilPublic() {
                   J&apos;ai déjà un compte
                 </Link>
               </div>
+              <p className="mt-4 text-sm">
+                <Link href="/recommandations" className="font-semibold text-[#1C7FB6] underline">
+                  Voir la liste des recommandations disponibles →
+                </Link>
+              </p>
               <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600">
                 {["5 fiches gratuites", "Sans carte bancaire", "Ordinateur et mobile"].map((t) => (
                   <li key={t} className="flex items-center gap-1.5">

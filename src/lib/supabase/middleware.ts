@@ -41,6 +41,9 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname.startsWith("/confidentialite") ||
     request.nextUrl.pathname.startsWith("/mentions-legales") ||
     request.nextUrl.pathname.startsWith("/cgv") ||
+    // Pages publiques de résumé des fiches (sans contenu premium).
+    request.nextUrl.pathname.startsWith("/recommandations") ||
+    request.nextUrl.pathname === "/sitemap.xml" ||
     // Appelé par Stripe (sans session) ; authentifié par sa signature.
     request.nextUrl.pathname === "/api/stripe/webhook" ||
     request.nextUrl.pathname.startsWith("/mot-de-passe-oublie");
