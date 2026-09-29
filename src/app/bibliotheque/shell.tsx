@@ -120,6 +120,10 @@ export default function Shell({
               <Link href="/bibliotheque/statistiques" style={{ color: "inherit" }}>
                 Statistiques
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/veille" style={{ color: "inherit" }}>
+                Lettre de veille
+              </Link>
             </>
           )}
           <br />
