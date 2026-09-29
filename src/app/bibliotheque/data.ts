@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { Card } from "@/lib/fiches";
+import { orderSocieties, type Card } from "@/lib/fiches";
 
 export type LibraryDoc = {
   id: string;
@@ -81,7 +81,13 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
       Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : [],
     );
     for (const s of list) if (s.full_name) societyNames[s.acronym] = s.full_name;
-    return { ...d, societies: list.map((s) => s.acronym) };
+    return {
+      ...d,
+      societies: orderSocieties(
+        list.map((s) => s.acronym),
+        d.card_json?.society,
+      ),
+    };
   });
   const favoriteIds = ((favorites ?? []) as { document_id: string }[]).map((f) => f.document_id);
 
@@ -116,8 +122,8 @@ export function cardTitle(d: LibraryDoc) {
 // Rubriques de la barre latérale, dans cet ordre ; les autres à la suite.
 const SECTION_ORDER = ["Anesthésie", "Réanimation", "Urgences", "Obstétrique", "Pédiatrie"];
 
-export function groupBySection(docs: LibraryDoc[]) {
-  const groups = new Map<string, LibraryDoc[]>();
+export function groupBySection<T extends Pick<LibraryDoc, "card_json">>(docs: T[]) {
+  const groups = new Map<string, T[]>();
   for (const d of docs) {
     const section = d.card_json?.section ?? "Autres";
     groups.set(section, [...(groups.get(section) ?? []), d]);

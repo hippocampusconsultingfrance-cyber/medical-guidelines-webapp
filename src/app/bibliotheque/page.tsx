@@ -36,15 +36,25 @@ export default async function BibliothequePage({
   // Année de publication (lien « nouveautés de l'année » de l'espace membre).
   const annee = typeof params.annee === "string" && /^\d{4}$/.test(params.annee) ? params.annee : "";
   const needle = normalize(query);
-  const docs = lib.docs.filter(
-    (d) =>
-      (!societe || d.societies.includes(societe)) &&
-      (!annee || d.publication_date?.startsWith(annee)) &&
-      (!needle ||
-        normalize(`${d.title} ${d.card_json?.title ?? ""} ${d.card_json?.short ?? ""} ${d.card_json?.society ?? ""}`).includes(
-          needle,
-        )),
-  );
+  // Recherche dans le contenu, faite par la base : elle ne renvoie que les
+  // fiches correspondantes (et leur pertinence), jamais leur texte.
+  const contentRank = new Map<string, number>();
+  if (needle.length >= 2) {
+    const { data: hits } = await supabase.rpc("search_documents", { q: query });
+    for (const h of (hits ?? []) as { document_id: string; rank: number }[]) contentRank.set(h.document_id, h.rank);
+  }
+  const titleMatch = (d: (typeof lib.docs)[number]) =>
+    normalize(`${d.title} ${d.card_json?.title ?? ""} ${d.card_json?.short ?? ""} ${d.card_json?.society ?? ""}`).includes(needle);
+  const docs = lib.docs
+    .filter(
+      (d) =>
+        (!societe || d.societies.includes(societe)) &&
+        (!annee || d.publication_date?.startsWith(annee)) &&
+        (!needle || titleMatch(d) || contentRank.has(d.id)),
+    )
+    .sort((a, b) =>
+      needle ? Number(titleMatch(b)) - Number(titleMatch(a)) || (contentRank.get(b.id) ?? 0) - (contentRank.get(a.id) ?? 0) : 0,
+    );
   const filterHref = (s: string) => {
     const p = new URLSearchParams();
     if (query) p.set("q", query);
@@ -137,7 +147,12 @@ export default async function BibliothequePage({
             <path d="m20 20-3.5-3.5" />
           </svg>
           <span className="sr-only">Rechercher une fiche</span>
-          <input name="q" type="search" defaultValue={query} placeholder="Rechercher une fiche…" />
+          <input
+            name="q"
+            type="search"
+            defaultValue={query}
+            placeholder="Rechercher un titre, un médicament, une situation… (ex. rivaroxaban)"
+          />
         </label>
         {societe && <input type="hidden" name="societe" value={societe} />}
         {annee && <input type="hidden" name="annee" value={annee} />}
@@ -212,6 +227,11 @@ export default async function BibliothequePage({
                   </span>
                 </span>
                 <h2>{cardTitle(d)}</h2>
+                {needle && !titleMatch(d) && contentRank.has(d.id) && (
+                  <span className="state-pill state-open" style={{ width: "fit-content" }}>
+                    « {query} » dans le contenu
+                  </span>
+                )}
                 {c?.short ? <p className="doc-card__short">{c.short}</p> : null}
                 <span className="doc-card__meta">
                   <span className="doc-card__society">{c?.society ?? d.doc_type ?? ""}</span>

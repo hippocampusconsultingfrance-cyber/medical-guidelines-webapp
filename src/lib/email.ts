@@ -1,4 +1,5 @@
 import "server-only";
+import { SITE_URL } from "@/lib/seo";
 
 // Envoi des e-mails d'alerte par Resend, déjà utilisé pour les e-mails de
 // service (voir la politique de confidentialité). Appel direct de l'API
@@ -7,8 +8,8 @@ import "server-only";
 //   RESEND_API_KEY  clé d'API Resend (re_…), domaine d'envoi vérifié
 //   ALERTS_FROM     expéditeur, par défaut « medical-guidelines.net
 //                   <alertes@medical-guidelines.net> »
-//   SITE_URL        adresse du site dans les liens, par défaut
-//                   https://www.medical-guidelines.net (le domaine nu y redirige)
+//   SITE_URL        adresse du site dans les liens, par défaut celle de
+//                   src/lib/seo.ts (https://www.medical-guidelines.net)
 // Sans clé, aucun e-mail n'est envoyé.
 
 export type OutgoingEmail = {
@@ -24,7 +25,7 @@ export function emailEnabled() {
 }
 
 export function siteUrl() {
-  return (process.env.SITE_URL ?? "https://www.medical-guidelines.net").replace(/\/+$/, "");
+  return (process.env.SITE_URL ?? SITE_URL).replace(/\/+$/, "");
 }
 
 // Envoi groupé (100 e-mails au plus par appel, limite de Resend). La clé

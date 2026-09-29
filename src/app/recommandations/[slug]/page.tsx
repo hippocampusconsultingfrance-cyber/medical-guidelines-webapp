@@ -1,0 +1,155 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
+import { FREE_QUOTA, formatDate } from "@/lib/fiches";
+import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
+import { loadPublicFiches } from "../data";
+import PublicHeader from "../public-header";
+
+async function load(slug: string) {
+  if (!/^[a-z0-9-]{2,120}$/.test(slug)) return null;
+  const supabase = await createClient();
+  const [fiche] = await loadPublicFiches(supabase, ficheKey(slug));
+  return fiche ? { fiche, supabase } : null;
+}
+
+export async function generateMetadata({ params }: PageProps<"/recommandations/[slug]">): Promise<Metadata> {
+  const { slug } = await params;
+  const found = await load(slug);
+  if (!found) return { title: "Fiche introuvable — medical-guidelines.net" };
+  const { fiche } = found;
+  const title = fiche.card_json?.title ?? fiche.title;
+  const description = (fiche.card_json?.short ?? fiche.title).slice(0, 160);
+  return {
+    title: `${title} — ${fiche.societies.slice(0, 3).join(" / ") || "fiche de synthèse"} | medical-guidelines.net`,
+    description,
+    alternates: { canonical: `${SITE_URL}/recommandations/${slug}` },
+    robots: { index: INDEXABLE, follow: INDEXABLE },
+    openGraph: { title, description, type: "article", url: `${SITE_URL}/recommandations/${slug}` },
+  };
+}
+
+// Page publique de résumé d'une fiche : ce qui figure sur sa carte (titre,
+// sociétés, date, méthodologie, résumé) et le lien vers la source. Le
+// contenu de la fiche reste réservé aux comptes (crédits ou PREMIUM).
+export default async function RecommandationPage({ params }: PageProps<"/recommandations/[slug]">) {
+  const { slug } = await params;
+  const found = await load(slug);
+  if (!found) notFound();
+  const { fiche, supabase } = found;
+  if (ficheSlug(fiche.fiche_key) !== slug) notFound();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const c = fiche.card_json;
+  const title = c?.title ?? fiche.title;
+  const date = formatDate(fiche.publication_date);
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: title,
+    description: c?.short ?? fiche.title,
+    url: `${SITE_URL}/recommandations/${slug}`,
+    about: { "@type": "MedicalGuideline", name: fiche.title, url: fiche.source_url },
+    audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+    inLanguage: "fr",
+  };
+
+  return (
+    <div className="min-h-screen bg-white text-slate-800">
+      <PublicHeader connected={Boolean(user)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+      <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+        <p className="text-sm">
+          <Link href="/recommandations" className="text-[#1C7FB6] underline">
+            ← Toutes les recommandations
+          </Link>
+        </p>
+        <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#2BB5A6]">
+          {c?.society ?? fiche.societies.join(" / ")}
+        </p>
+        <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]">{title}</h1>
+        {c?.title && c.title !== fiche.title && <p className="mt-2 text-slate-600">{fiche.title}</p>}
+
+        <dl className="mt-6 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
+          {fiche.societies.length > 0 && (
+            <>
+              <dt className="font-semibold text-slate-900">Sociétés savantes</dt>
+              <dd className="text-slate-600">{fiche.societies.join(", ")}</dd>
+            </>
+          )}
+          {(fiche.doc_type || date) && (
+            <>
+              <dt className="font-semibold text-slate-900">Document</dt>
+              <dd className="text-slate-600">{[fiche.doc_type, date].filter(Boolean).join(" · ")}</dd>
+            </>
+          )}
+          {c?.methodology && (
+            <>
+              <dt className="font-semibold text-slate-900">Méthodologie</dt>
+              <dd className="text-slate-600">{c.methodology}</dd>
+            </>
+          )}
+          {c?.validated && (
+            <>
+              <dt className="font-semibold text-slate-900">Validation</dt>
+              <dd className="text-slate-600">{c.validated}</dd>
+            </>
+          )}
+        </dl>
+
+        {c?.short && (
+          <section className="mt-8">
+            <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
+            <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
+          </section>
+        )}
+
+        <p className="mt-6 text-sm">
+          <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1C7FB6] underline">
+            Document source officiel ↗
+          </a>
+        </p>
+
+        <section className="mt-10 rounded-2xl bg-[#EEF6FB] p-6">
+          <h2 className="text-lg font-bold text-[#0E3A78]">Lire la fiche complète</h2>
+          <p className="mt-2 text-sm text-slate-700">
+            Recommandations détaillées par thème, tableaux et grades tels qu&apos;ils figurent dans la
+            source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
+          </p>
+          {user ? (
+            <Link
+              href={`/bibliotheque/${fiche.id}`}
+              className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+            >
+              Ouvrir la fiche dans ma bibliothèque
+            </Link>
+          ) : (
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/inscription"
+                className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
+              >
+                Créer mon compte gratuit
+              </Link>
+              <Link
+                href="/connexion"
+                className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
+              >
+                J&apos;ai déjà un compte
+              </Link>
+            </div>
+          )}
+        </section>
+
+        <p className="mt-10 text-xs text-slate-500">
+          Synthèse indépendante : elle ne remplace ni le texte intégral de la recommandation
+          officielle ni le jugement clinique, et n&apos;est ni éditée ni validée par les sociétés
+          savantes citées.
+        </p>
+      </main>
+    </div>
+  );
+}

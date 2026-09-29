@@ -176,3 +176,14 @@ export function renderPresentation(p: Presentation) {
   flush();
   return { html, toc: toc.items };
 }
+
+// Sociétés dans l'ordre de la mention de la carte (société porteuse en
+// premier), les autres ensuite par ordre alphabétique.
+export function orderSocieties(societies: string[], mention: string | undefined) {
+  const head = (mention ?? "").split("—")[0];
+  const rank = (s: string) => {
+    const i = head.search(new RegExp(`\\b${s.replace(/[^A-Za-z0-9]/g, "")}\\b`));
+    return i < 0 ? Number.MAX_SAFE_INTEGER : i;
+  };
+  return [...societies].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+}

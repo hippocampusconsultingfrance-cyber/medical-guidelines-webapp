@@ -146,9 +146,10 @@ export default function ConfidentialitePage() {
         page « Mon compte ».
       </p>
       <p className="mt-2">
-        La page des fiches charge ses polices de caractères depuis Google
-        Fonts (Google LLC), ce qui transmet votre adresse IP à Google lors de
-        l&apos;affichage.
+        La fréquentation du site est mesurée par Vercel Web Analytics, sans cookies ni
+        identifiant persistant : seules des statistiques agrégées (pages vues, pays, type
+        d&apos;appareil, site de provenance) sont produites. Les polices de caractères sont
+        hébergées par le site lui-même.
       </p>
       <p className="mt-2">
         Chaque changement de votre consentement au partage avec des
