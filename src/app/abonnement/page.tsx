@@ -62,6 +62,84 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
     ? new Date(sub.current_period_end).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })
     : null;
 
+  // Tarif médecin en formation : le justificatif se dépose AVANT le paiement
+  // (le code validé est prérempli au paiement). Pour un abonné, seul l'état
+  // d'une demande existante est rappelé.
+  const blocEtudiant = (
+    <section id="etudiant" className="mt-6 rounded-2xl border border-slate-200 p-6">
+      <h2 className="text-lg font-semibold text-slate-900">Médecin en formation ? −30 % la première année</h2>
+      <p className="mt-2 text-sm text-slate-600">
+        Externes, internes, résidents et docteurs juniors : déposez un justificatif de
+        l&apos;année universitaire en cours (carte d&apos;étudiant, certificat de scolarité,
+        attestation d&apos;affectation) <b>avant de payer</b>. Après vérification (en général sous
+        48 h), vous recevez par e-mail un code personnel de −30 %, prérempli ci-dessous au moment du
+        paiement. Le justificatif est supprimé dès notre décision.
+      </p>
+      {etudiantMessage && (
+        <p role="status" className="mt-3 rounded-lg bg-[#EEF6FB] p-3 text-sm font-medium text-[#0E3A78]">
+          {etudiantMessage}
+        </p>
+      )}
+      {demande?.status === "en_attente" ? (
+        <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+          Justificatif reçu le{" "}
+          {new Date(demande.created_at as string).toLocaleDateString("fr-FR", { timeZone: "Europe/Paris" })} :
+          vérification en cours. Réponse par e-mail.
+        </p>
+      ) : demande?.status === "valide" && (codeEtudiant || demande.applied_to_subscription) ? (
+        <p className="mt-4 rounded-lg bg-emerald-50 p-4 text-sm text-emerald-900">
+          {codeEtudiant ? (
+            <>
+              Justificatif validé. Votre code personnel <b>{codeEtudiant}</b> est prérempli ci-dessous :
+              −30 % sur votre première année.
+            </>
+          ) : (
+            <>Justificatif validé : −30 % sur votre prochain renouvellement.</>
+          )}
+        </p>
+      ) : (
+        <form action={demanderTarifEtudiant} className="mt-4 space-y-3">
+          {demande?.status === "refuse" && (
+            <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">
+              Votre précédent justificatif n&apos;a pas été validé
+              {demande.decision_note ? ` : ${demande.decision_note}` : "."} Vous pouvez en déposer un nouveau.
+            </p>
+          )}
+          <label className="block text-sm text-slate-700">
+            Votre statut
+            <select name="statut" required defaultValue="" className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2">
+              <option value="" disabled>
+                Choisir…
+              </option>
+              {Object.entries(STATUTS).map(([v, l]) => (
+                <option key={v} value={v}>
+                  {l}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label className="block text-sm text-slate-700">
+            Justificatif (PDF, JPEG ou PNG, 3 Mo maximum)
+            <input
+              type="file"
+              name="justificatif"
+              required
+              accept="application/pdf,image/jpeg,image/png"
+              className="mt-1 block w-full text-sm"
+            />
+          </label>
+          <label className="flex items-start gap-3 text-sm text-slate-700">
+            <input type="checkbox" name="atteste" value="1" required className="mt-0.5 h-4 w-4" />
+            <span>J&apos;atteste être en formation pour l&apos;année universitaire en cours.</span>
+          </label>
+          <button className="rounded-lg border border-slate-300 px-5 py-2.5 font-semibold text-slate-800 hover:bg-slate-50">
+            Envoyer mon justificatif
+          </button>
+        </form>
+      )}
+    </section>
+  );
+
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-10">
       <div className="flex items-center justify-between gap-3">
@@ -88,6 +166,8 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
         </p>
       )}
 
+      {!premium && blocEtudiant}
+
       {premium ? (
         <section className="mt-6 rounded-2xl border-2 border-[#2BB5A6] p-6">
           <p className="text-lg font-semibold text-slate-900">Votre abonnement PREMIUM est actif.</p>
@@ -113,7 +193,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
             <li>✓ Alertes e-mail : nouvelles recommandations des sociétés savantes que vous suivez et mises à jour de vos fiches</li>
             <li>✓ Paiement annuel ; résiliation à tout moment, accès maintenu jusqu&apos;à la fin de l&apos;année payée</li>
             <li>✓ Offre membres fondateurs : −30 % la première année pour les 100 premiers abonnés (code FONDATEURS)</li>
-            <li>✓ Internes et étudiants : −30 % sur justificatif, code personnel à demander à l&apos;adresse de contact (non cumulable)</li>
+            <li>✓ Médecins en formation : −30 % sur justificatif déposé ci-dessus (non cumulable)</li>
           </ul>
 
           {open ? (
@@ -161,78 +241,6 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
         </section>
       )}
 
-      <section id="etudiant" className="mt-8 rounded-2xl border border-slate-200 p-6">
-        <h2 className="text-lg font-semibold text-slate-900">Médecin en formation ? −30 % la première année</h2>
-        <p className="mt-2 text-sm text-slate-600">
-          Externes, internes, résidents et docteurs juniors : déposez un justificatif de
-          l&apos;année universitaire en cours (carte d&apos;étudiant, certificat de scolarité,
-          attestation d&apos;affectation). Après vérification, vous recevez un code personnel
-          {premium ? " ; déjà abonné, la réduction s'applique à votre prochain renouvellement" : ""}.
-          Le justificatif est supprimé dès notre décision.
-        </p>
-        {etudiantMessage && (
-          <p role="status" className="mt-3 rounded-lg bg-[#EEF6FB] p-3 text-sm font-medium text-[#0E3A78]">
-            {etudiantMessage}
-          </p>
-        )}
-        {demande?.status === "en_attente" ? (
-          <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
-            Justificatif reçu le{" "}
-            {new Date(demande.created_at as string).toLocaleDateString("fr-FR", { timeZone: "Europe/Paris" })} :
-            vérification en cours. Réponse par e-mail.
-          </p>
-        ) : demande?.status === "valide" && (codeEtudiant || demande.applied_to_subscription) ? (
-          <p className="mt-4 rounded-lg bg-emerald-50 p-4 text-sm text-emerald-900">
-            {codeEtudiant ? (
-              <>
-                Justificatif validé. Votre code personnel <b>{codeEtudiant}</b> est prérempli ci-dessus :
-                −30 % sur votre première année.
-              </>
-            ) : (
-              <>Justificatif validé : −30 % sur votre prochain renouvellement.</>
-            )}
-          </p>
-        ) : (
-          <form action={demanderTarifEtudiant} className="mt-4 space-y-3">
-            {demande?.status === "refuse" && (
-              <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">
-                Votre précédent justificatif n&apos;a pas été validé
-                {demande.decision_note ? ` : ${demande.decision_note}` : "."} Vous pouvez en déposer un nouveau.
-              </p>
-            )}
-            <label className="block text-sm text-slate-700">
-              Votre statut
-              <select name="statut" required defaultValue="" className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2">
-                <option value="" disabled>
-                  Choisir…
-                </option>
-                {Object.entries(STATUTS).map(([v, l]) => (
-                  <option key={v} value={v}>
-                    {l}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="block text-sm text-slate-700">
-              Justificatif (PDF, JPEG ou PNG, 3 Mo maximum)
-              <input
-                type="file"
-                name="justificatif"
-                required
-                accept="application/pdf,image/jpeg,image/png"
-                className="mt-1 block w-full text-sm"
-              />
-            </label>
-            <label className="flex items-start gap-3 text-sm text-slate-700">
-              <input type="checkbox" name="atteste" value="1" required className="mt-0.5 h-4 w-4" />
-              <span>J&apos;atteste être en formation pour l&apos;année universitaire en cours.</span>
-            </label>
-            <button className="rounded-lg border border-slate-300 px-5 py-2.5 font-semibold text-slate-800 hover:bg-slate-50">
-              Envoyer mon justificatif
-            </button>
-          </form>
-        )}
-      </section>
     </div>
   );
 }
