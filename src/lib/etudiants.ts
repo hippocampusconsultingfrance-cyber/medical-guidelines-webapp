@@ -79,13 +79,12 @@ export function emailDecision(
     body += p(t);
     text += `${t}\n`;
   } else if (d.valide) {
-    const t = "Votre justificatif est validé. Voici votre code personnel, valable une fois, pour 30 % de réduction sur votre première année PREMIUM :";
+    const t =
+      "Votre justificatif est validé : la réduction de 30 % s'applique automatiquement à votre première année PREMIUM, soit 35 € TTC au lieu de 50 €. Aucun code à saisir.";
     body +=
       p(t) +
-      `<p style="font-size:22px;font-weight:800;letter-spacing:2px;color:#0E3A78;margin:8px 0 18px">${escapeHtml(d.code ?? "")}</p>` +
-      p(`Il est déjà prérempli sur votre page d'abonnement.`) +
-      `<p style="margin:22px 0"><a href="${site}/abonnement" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Activer PREMIUM</a></p>`;
-    text += `${t}\n\n${d.code}\n\nIl est déjà prérempli sur votre page d'abonnement : ${site}/abonnement\n`;
+      `<p style="margin:22px 0"><a href="${site}/abonnement" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Activer PREMIUM à 35 €</a></p>`;
+    text += `${t}\n\nActiver PREMIUM : ${site}/abonnement\n`;
   } else {
     const t = "Nous n'avons pas pu valider votre justificatif.";
     body += p(t) + (d.note ? p(`<b>Motif :</b> ${escapeHtml(d.note)}`) : "") + p("Vous pouvez déposer un nouveau justificatif depuis votre page d'abonnement.");

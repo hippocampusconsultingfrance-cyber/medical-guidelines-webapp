@@ -2,6 +2,7 @@
 
 import { composerBienvenue } from "@/lib/bienvenue";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
+import { deposerJustificatif } from "@/lib/etudiants-depot";
 import { checkoutOpen } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -63,4 +64,17 @@ export async function envoyerBienvenue() {
   } catch (e) {
     console.error("Bienvenue", e);
   }
+}
+
+// Justificatif obligatoire à la finalisation d'un compte « en formation »
+// (case cochée à l'inscription). Une demande déjà déposée vaut réussite
+// (nouvel essai après une erreur sur l'identifiant ou le mot de passe).
+export async function deposerJustificatifInscription(formData: FormData): Promise<string> {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return "etudiant_session";
+  const r = await deposerJustificatif(user.id, formData);
+  return r === "etudiant_deja" ? "etudiant_envoye" : r;
 }

@@ -20,6 +20,7 @@ const MESSAGES: Record<string, string> = {
   etudiant_format: "Format non accepté : envoyez un PDF, un JPEG ou un PNG.",
   etudiant_taille: "Fichier trop lourd : 3 Mo au maximum.",
   etudiant_deja: "Une demande est déjà en cours d'examen.",
+  etudiant_attente: "Votre justificatif est en cours de vérification : le paiement s'ouvrira avec −30 % dès sa validation.",
   etudiant_erreur: "L'envoi n'a pas abouti. Réessayez dans un instant.",
   merci: "Merci ! Votre paiement est enregistré. L'accès PREMIUM s'active dans quelques secondes : rechargez la page si besoin.",
   annule: "Paiement annulé : aucun montant n'a été débité.",
@@ -51,7 +52,14 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
       .limit(1)
       .maybeSingle(),
   ]);
-  const codeEtudiant = demande?.status === "valide" && !premium ? (demande.promotion_code as string | null) : null;
+  // Médecin en formation (case cochée à l'inscription, ou demande déposée
+  // ici) : pas de paiement pendant l'examen ; une fois validée, la remise
+  // s'applique d'office au paiement (startCheckout), sans code à saisir.
+  const enFormation = user.user_metadata?.en_formation === true;
+  const attente = demande?.status === "en_attente";
+  const remiseEtudiant =
+    !premium && demande?.status === "valide" && Boolean(demande.promotion_code) && !demande.applied_to_subscription;
+  const paiementBloque = !premium && (attente || (enFormation && !demande));
   const r = (await searchParams).r;
   const etudiantMessage = typeof r === "string" && r.startsWith("etudiant_") ? MESSAGES[r] : undefined;
   const message = typeof r === "string" && !r.startsWith("etudiant_") ? MESSAGES[r] : undefined;
@@ -72,8 +80,8 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
         Externes, internes, résidents et docteurs juniors : déposez un justificatif de
         l&apos;année universitaire en cours (carte d&apos;étudiant, certificat de scolarité,
         attestation d&apos;affectation) <b>avant de payer</b>. Après vérification (en général sous
-        48 h), vous recevez par e-mail un code personnel de −30 %, prérempli ci-dessous au moment du
-        paiement. Le justificatif est supprimé dès notre décision.
+        48 h), la réduction de 30 % s&apos;applique automatiquement au paiement (35 € TTC la
+        première année). Le justificatif est supprimé dès notre décision.
       </p>
       {etudiantMessage && (
         <p role="status" className="mt-3 rounded-lg bg-[#EEF6FB] p-3 text-sm font-medium text-[#0E3A78]">
@@ -86,12 +94,12 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
           {new Date(demande.created_at as string).toLocaleDateString("fr-FR", { timeZone: "Europe/Paris" })} :
           vérification en cours. Réponse par e-mail.
         </p>
-      ) : demande?.status === "valide" && (codeEtudiant || demande.applied_to_subscription) ? (
+      ) : demande?.status === "valide" && (remiseEtudiant || demande.applied_to_subscription) ? (
         <p className="mt-4 rounded-lg bg-emerald-50 p-4 text-sm text-emerald-900">
-          {codeEtudiant ? (
+          {remiseEtudiant ? (
             <>
-              Justificatif validé. Votre code personnel <b>{codeEtudiant}</b> est prérempli ci-dessous :
-              −30 % sur votre première année.
+              Justificatif validé : −30 % appliqués automatiquement au paiement ci-dessous, soit 35 € TTC la
+              première année.
             </>
           ) : (
             <>Justificatif validé : −30 % sur votre prochain renouvellement.</>
@@ -185,9 +193,16 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
         </section>
       ) : (
         <section className="mt-6 rounded-2xl border border-slate-200 p-6">
-          <p className="text-4xl font-bold text-[#0E3A78]">
-            50 € <span className="text-base font-normal text-slate-500">TTC / an</span>
-          </p>
+          {remiseEtudiant ? (
+            <p className="text-4xl font-bold text-[#0E3A78]">
+              35 €{" "}
+              <span className="text-base font-normal text-slate-500">TTC la première année, puis 50 € / an</span>
+            </p>
+          ) : (
+            <p className="text-4xl font-bold text-[#0E3A78]">
+              50 € <span className="text-base font-normal text-slate-500">TTC / an</span>
+            </p>
+          )}
           <ul className="mt-4 space-y-2 text-sm text-slate-700">
             <li>✓ Toutes les fiches de votre spécialité, sans limite de crédits</li>
             <li>✓ Alertes e-mail : nouvelles recommandations des sociétés savantes que vous suivez et mises à jour de vos fiches</li>
@@ -196,19 +211,26 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
             <li>✓ Médecins en formation : −30 % sur justificatif déposé ci-dessus (non cumulable)</li>
           </ul>
 
-          {open ? (
+          {open && paiementBloque ? (
+            <p className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+              {attente
+                ? "Votre justificatif de formation est en cours de vérification. Vous recevrez un e-mail dès sa validation : le paiement s'ouvrira alors ici, avec −30 %."
+                : "Vous avez indiqué être en formation : déposez d'abord votre justificatif ci-dessus pour bénéficier de −30 %."}
+            </p>
+          ) : open ? (
             <form action={startCheckout} className="mt-6 space-y-3">
-              <label className="block text-sm text-slate-700">
-                Code promotionnel (facultatif)
-                <input
-                  name="code"
-                  maxLength={40}
-                  autoComplete="off"
-                  placeholder="FONDATEURS"
-                  defaultValue={codeEtudiant ?? ""}
-                  className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 uppercase"
-                />
-              </label>
+              {!remiseEtudiant && (
+                <label className="block text-sm text-slate-700">
+                  Code promotionnel (facultatif)
+                  <input
+                    name="code"
+                    maxLength={40}
+                    autoComplete="off"
+                    placeholder="FONDATEURS"
+                    className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 uppercase"
+                  />
+                </label>
+              )}
               <label className="flex items-start gap-3 text-sm text-slate-700">
                 <input type="checkbox" name="cgv" value="1" required className="mt-0.5 h-4 w-4" />
                 <span>
