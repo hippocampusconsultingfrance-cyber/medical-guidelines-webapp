@@ -5,13 +5,22 @@ import { createClient } from "@/lib/supabase/server";
 import { isEditorialAccount } from "@/lib/roles";
 import { checkoutOpen, stripeEnabled, stripeMode } from "@/lib/stripe";
 import Logo from "../logo";
-import { openPortal, startCheckout } from "./actions";
+import { STATUTS } from "@/lib/etudiants";
+import { demanderTarifEtudiant, openPortal, startCheckout } from "./actions";
 
 export const metadata: Metadata = {
   title: "Abonnement PREMIUM — medical-guidelines.net",
 };
 
 const MESSAGES: Record<string, string> = {
+  etudiant_envoye: "Justificatif reçu : nous le vérifions et vous répondons par e-mail, en général sous 48 h.",
+  etudiant_statut: "Choisissez votre statut.",
+  etudiant_atteste: "Cochez l'attestation avant d'envoyer.",
+  etudiant_fichier: "Joignez votre justificatif.",
+  etudiant_format: "Format non accepté : envoyez un PDF, un JPEG ou un PNG.",
+  etudiant_taille: "Fichier trop lourd : 3 Mo au maximum.",
+  etudiant_deja: "Une demande est déjà en cours d'examen.",
+  etudiant_erreur: "L'envoi n'a pas abouti. Réessayez dans un instant.",
   merci: "Merci ! Votre paiement est enregistré. L'accès PREMIUM s'active dans quelques secondes : rechargez la page si besoin.",
   annule: "Paiement annulé : aucun montant n'a été débité.",
   cases: "Cochez les deux cases pour continuer.",
@@ -26,7 +35,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
   } = await supabase.auth.getUser();
   if (!user) redirect("/connexion");
 
-  const [{ data: sub }, { data: premium }, isEditor] = await Promise.all([
+  const [{ data: sub }, { data: premium }, isEditor, { data: demande }] = await Promise.all([
     supabase
       .from("subscriptions")
       .select("status, current_period_end, canceled_at, stripe_customer_id")
@@ -34,9 +43,18 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
       .maybeSingle(),
     supabase.rpc("has_premium"),
     isEditorialAccount(supabase, user.id),
+    supabase
+      .from("student_discount_requests")
+      .select("status, statut, created_at, decision_note, promotion_code, applied_to_subscription")
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: false })
+      .limit(1)
+      .maybeSingle(),
   ]);
+  const codeEtudiant = demande?.status === "valide" && !premium ? (demande.promotion_code as string | null) : null;
   const r = (await searchParams).r;
-  const message = typeof r === "string" ? MESSAGES[r] : undefined;
+  const etudiantMessage = typeof r === "string" && r.startsWith("etudiant_") ? MESSAGES[r] : undefined;
+  const message = typeof r === "string" && !r.startsWith("etudiant_") ? MESSAGES[r] : undefined;
   const enabled = stripeEnabled();
   const open = checkoutOpen(isEditor);
   const testMode = stripeMode() === "test";
@@ -107,6 +125,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
                   maxLength={40}
                   autoComplete="off"
                   placeholder="FONDATEURS"
+                  defaultValue={codeEtudiant ?? ""}
                   className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2 uppercase"
                 />
               </label>
@@ -141,6 +160,79 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
           )}
         </section>
       )}
+
+      <section id="etudiant" className="mt-8 rounded-2xl border border-slate-200 p-6">
+        <h2 className="text-lg font-semibold text-slate-900">Médecin en formation ? −30 % la première année</h2>
+        <p className="mt-2 text-sm text-slate-600">
+          Externes, internes, résidents et docteurs juniors : déposez un justificatif de
+          l&apos;année universitaire en cours (carte d&apos;étudiant, certificat de scolarité,
+          attestation d&apos;affectation). Après vérification, vous recevez un code personnel
+          {premium ? " ; déjà abonné, la réduction s'applique à votre prochain renouvellement" : ""}.
+          Le justificatif est supprimé dès notre décision.
+        </p>
+        {etudiantMessage && (
+          <p role="status" className="mt-3 rounded-lg bg-[#EEF6FB] p-3 text-sm font-medium text-[#0E3A78]">
+            {etudiantMessage}
+          </p>
+        )}
+        {demande?.status === "en_attente" ? (
+          <p className="mt-4 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+            Justificatif reçu le{" "}
+            {new Date(demande.created_at as string).toLocaleDateString("fr-FR", { timeZone: "Europe/Paris" })} :
+            vérification en cours. Réponse par e-mail.
+          </p>
+        ) : demande?.status === "valide" && (codeEtudiant || demande.applied_to_subscription) ? (
+          <p className="mt-4 rounded-lg bg-emerald-50 p-4 text-sm text-emerald-900">
+            {codeEtudiant ? (
+              <>
+                Justificatif validé. Votre code personnel <b>{codeEtudiant}</b> est prérempli ci-dessus :
+                −30 % sur votre première année.
+              </>
+            ) : (
+              <>Justificatif validé : −30 % sur votre prochain renouvellement.</>
+            )}
+          </p>
+        ) : (
+          <form action={demanderTarifEtudiant} className="mt-4 space-y-3">
+            {demande?.status === "refuse" && (
+              <p className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">
+                Votre précédent justificatif n&apos;a pas été validé
+                {demande.decision_note ? ` : ${demande.decision_note}` : "."} Vous pouvez en déposer un nouveau.
+              </p>
+            )}
+            <label className="block text-sm text-slate-700">
+              Votre statut
+              <select name="statut" required defaultValue="" className="mt-1 block w-full rounded-lg border border-slate-300 px-3 py-2">
+                <option value="" disabled>
+                  Choisir…
+                </option>
+                {Object.entries(STATUTS).map(([v, l]) => (
+                  <option key={v} value={v}>
+                    {l}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="block text-sm text-slate-700">
+              Justificatif (PDF, JPEG ou PNG, 3 Mo maximum)
+              <input
+                type="file"
+                name="justificatif"
+                required
+                accept="application/pdf,image/jpeg,image/png"
+                className="mt-1 block w-full text-sm"
+              />
+            </label>
+            <label className="flex items-start gap-3 text-sm text-slate-700">
+              <input type="checkbox" name="atteste" value="1" required className="mt-0.5 h-4 w-4" />
+              <span>J&apos;atteste être en formation pour l&apos;année universitaire en cours.</span>
+            </label>
+            <button className="rounded-lg border border-slate-300 px-5 py-2.5 font-semibold text-slate-800 hover:bg-slate-50">
+              Envoyer mon justificatif
+            </button>
+          </form>
+        )}
+      </section>
     </div>
   );
 }
