@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { CRITICITES } from "@/lib/corrections";
 import { createClient } from "@/lib/supabase/server";
 import { decideReport } from "../[id]/actions";
 import { loadLibrary } from "../data";
 import Shell from "../shell";
+import { publierCorrection } from "./actions";
 
 export const metadata: Metadata = {
   title: "Signalements — Medical Guidelines",
@@ -30,7 +32,13 @@ type Report = {
 
 // Tableau de bord des signalements d'erreurs (administrateur). La base ne
 // renvoie à un membre que ses propres signalements (RLS).
-export default async function SignalementsPage() {
+const MESSAGES: Record<string, string> = {
+  correction_publiee: "Correction publiée au journal public ; signalement validé.",
+  correction_incomplete: "Choisissez la criticité et résumez la correction (5 caractères au moins).",
+  correction_erreur: "La correction n'a pas pu être publiée (migration du journal appliquée ?).",
+};
+
+export default async function SignalementsPage({ searchParams }: PageProps<"/bibliotheque/signalements">) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -49,6 +57,8 @@ export default async function SignalementsPage() {
   if (!isAdmin) redirect("/bibliotheque");
   const reports = (rows ?? []) as Report[];
   const pending = reports.filter((r) => r.status === "nouveau").length;
+  const r0 = (await searchParams).r;
+  const message = typeof r0 === "string" ? MESSAGES[r0] : undefined;
 
   return (
     <Shell lib={lib}>
@@ -61,6 +71,16 @@ export default async function SignalementsPage() {
           </span>
         </div>
       </div>
+      {message && (
+        <div className="credit-strip" role="status" id="corrections">
+          <b>{message}</b>
+        </div>
+      )}
+      <p className="block-p is-note">
+        Une erreur confirmée et corrigée se publie au{" "}
+        <Link href="/corrections">journal public des corrections</Link> (date, fiche, criticité,
+        résumé ; jamais le nom du déclarant).
+      </p>
       {reports.length === 0 ? (
         <div className="empty-state">Aucun signalement pour le moment.</div>
       ) : (
@@ -94,6 +114,33 @@ export default async function SignalementsPage() {
                   </form>
                 ))}
             </div>
+            {/^[0-9a-f-]{36}$/i.test(r.doc) && (
+              <details style={{ marginTop: 10 }}>
+                <summary style={{ cursor: "pointer", fontWeight: 600 }}>Corrigé : publier au journal public</summary>
+                <form action={publierCorrection} style={{ marginTop: 10 }}>
+                  <input type="hidden" name="document_id" value={r.doc} />
+                  <input type="hidden" name="report_id" value={r.id} />
+                  <div className="field">
+                    <label htmlFor={`crit-${r.id}`}>Criticité</label>
+                    <select id={`crit-${r.id}`} name="criticite" required defaultValue="">
+                      <option value="" disabled>
+                        Choisir…
+                      </option>
+                      {Object.entries(CRITICITES).map(([v, l]) => (
+                        <option key={v} value={v}>
+                          {l}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="field">
+                    <label htmlFor={`res-${r.id}`}>Résumé public de la correction</label>
+                    <textarea id={`res-${r.id}`} name="resume" required minLength={5} maxLength={1000} />
+                  </div>
+                  <button className="btn btn-primary btn-sm">Publier la correction</button>
+                </form>
+              </details>
+            )}
           </div>
         ))
       )}
