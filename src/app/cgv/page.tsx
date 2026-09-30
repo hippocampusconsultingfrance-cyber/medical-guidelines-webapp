@@ -49,10 +49,12 @@ export default function CgvPage() {
       <h2 className={h2}>4. Réductions</h2>
       <p className="mt-2">
         Offre membres fondateurs : −30 % sur la première année pour les 100 premiers abonnés.
-        Tarif interne ou étudiant : −30 % sur la première année, sur présentation d&apos;une
-        attestation d&apos;inscription de l&apos;année universitaire en cours, validée par
-        l&apos;éditeur, qui adresse alors un code personnel à usage unique ; un nouveau
-        justificatif est demandé à chaque renouvellement. Les réductions ne sont pas cumulables.
+        Tarif professionnel de santé en formation (étudiants en médecine ou paramédicaux,
+        internes, résidents, docteurs juniors) : −30 % sur la première année, sur présentation
+        d&apos;une attestation d&apos;inscription de l&apos;année universitaire en cours, validée
+        par l&apos;éditeur. Une fois le justificatif validé, la réduction, personnelle et à usage
+        unique, est appliquée automatiquement au paiement. Un nouveau justificatif est demandé à
+        chaque renouvellement. Les réductions ne sont pas cumulables.
         Les justificatifs sont supprimés après décision, ou conservés un an au plus si
         nécessaire à la preuve.
       </p>
