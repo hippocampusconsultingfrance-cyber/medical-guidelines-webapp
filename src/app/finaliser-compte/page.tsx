@@ -12,7 +12,7 @@ const STATUTS: [string, string][] = [
   ["interne", "Interne"],
   ["resident", "Résident"],
   ["docteur_junior", "Docteur junior"],
-  ["autre", "Autre étudiant en santé"],
+  ["autre", "Étudiant paramédical ou autre étudiant en santé"],
 ];
 const TYPES = ["application/pdf", "image/jpeg", "image/png"];
 const MAX = 3 * 1024 * 1024;

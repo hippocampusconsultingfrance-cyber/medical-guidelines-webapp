@@ -10,7 +10,7 @@ import {
 } from "@/lib/etudiants";
 import { createAdminClient } from "@/lib/supabase/admin";
 
-// Dépôt d'un justificatif de médecin en formation (PDF, JPEG ou PNG, 3 Mo au
+// Dépôt d'un justificatif de professionnel en formation (PDF, JPEG ou PNG, 3 Mo au
 // plus) dans le bucket privé « justificatifs », avec la clé service_role,
 // pour le membre déjà authentifié par l'appelant. Une seule demande en
 // attente à la fois. Utilisé à la finalisation du compte (case « en

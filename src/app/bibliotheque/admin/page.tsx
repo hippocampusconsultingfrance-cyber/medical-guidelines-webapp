@@ -100,13 +100,13 @@ export default async function AdminPage() {
   const taches: Tache[] = [
     { label: "Signalements d'erreur à traiter", n: signalements, href: "/bibliotheque/signalements", detail: "Erreurs signalées par les membres depuis une fiche." },
     {
-      label: "Justificatifs médecins en formation",
+      label: "Justificatifs professionnels en formation",
       n: justificatifs,
       href: "/bibliotheque/etudiants",
       detail:
         justificatifs === null
           ? "Migration des justificatifs pas encore appliquée dans Supabase."
-          : "Externes, internes, résidents : à valider pour le −30 %.",
+          : "Étudiants médicaux et paramédicaux : à valider pour le −30 %.",
     },
     {
       label: "Comptes suspendus (anti-extraction)",
@@ -154,7 +154,7 @@ export default async function AdminPage() {
     ["Signalements", "/bibliotheque/signalements"],
     ["Lettre de veille", "/bibliotheque/veille"],
     ["Traductions", "/bibliotheque/traductions"],
-    ["Médecins en formation", "/bibliotheque/etudiants"],
+    ["Professionnels en formation", "/bibliotheque/etudiants"],
     ["Accès anormaux", "/bibliotheque/acces"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Santé du site", "/api/sante"],

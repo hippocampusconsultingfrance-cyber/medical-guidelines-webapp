@@ -52,7 +52,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
       .limit(1)
       .maybeSingle(),
   ]);
-  // Médecin en formation (case cochée à l'inscription, ou demande déposée
+  // Professionnel en formation (case cochée à l'inscription, ou demande déposée
   // ici) : pas de paiement pendant l'examen ; une fois validée, la remise
   // s'applique d'office au paiement (startCheckout), sans code à saisir.
   const enFormation = user.user_metadata?.en_formation === true;
@@ -70,14 +70,14 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
     ? new Date(sub.current_period_end).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })
     : null;
 
-  // Tarif médecin en formation : le justificatif se dépose AVANT le paiement
+  // Tarif professionnel en formation : le justificatif se dépose AVANT le paiement
   // (le code validé est prérempli au paiement). Pour un abonné, seul l'état
   // d'une demande existante est rappelé.
   const blocEtudiant = (
     <section id="etudiant" className="mt-6 rounded-2xl border border-slate-200 p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Médecin en formation ? −30 % la première année</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Professionnel de santé en formation ? −30 % la première année</h2>
       <p className="mt-2 text-sm text-slate-600">
-        Externes, internes, résidents et docteurs juniors : déposez un justificatif de
+        Étudiants en médecine ou paramédicaux, internes, résidents, docteurs juniors : déposez un justificatif de
         l&apos;année universitaire en cours (carte d&apos;étudiant, certificat de scolarité,
         attestation d&apos;affectation) <b>avant de payer</b>. Après vérification (en général sous
         48 h), la réduction de 30 % s&apos;applique automatiquement au paiement (35 € TTC la
@@ -208,7 +208,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
             <li>✓ Alertes e-mail : nouvelles recommandations des sociétés savantes que vous suivez et mises à jour de vos fiches</li>
             <li>✓ Paiement annuel ; résiliation à tout moment, accès maintenu jusqu&apos;à la fin de l&apos;année payée</li>
             <li>✓ Offre membres fondateurs : −30 % la première année pour les 100 premiers abonnés (code FONDATEURS)</li>
-            <li>✓ Médecins en formation : −30 % sur justificatif déposé ci-dessus (non cumulable)</li>
+            <li>✓ Professionnels de santé en formation : −30 % sur justificatif déposé ci-dessus (non cumulable)</li>
           </ul>
 
           {open && paiementBloque ? (
