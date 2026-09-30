@@ -4,6 +4,17 @@ export const FREE_QUOTA = 5;
 
 // Les scripts d'import enregistrent au 1er janvier une source dont seule
 // l'année est connue : on n'affiche alors que l'année, sans fausse précision.
+// Ancienneté de la source (cahier des charges §4.3) : au-delà de 10 ans, la
+// fiche invite à vérifier qu'aucune actualisation n'a été publiée.
+export const ANCIENNETE_MAX = 10;
+export function avertissementAnciennete(publicationDate: string | null) {
+  if (!publicationDate) return null;
+  const annee = Number(publicationDate.slice(0, 4));
+  const age = new Date().getUTCFullYear() - annee;
+  if (!Number.isFinite(age) || age <= ANCIENNETE_MAX) return null;
+  return `Recommandation publiée en ${annee}, il y a plus de ${ANCIENNETE_MAX} ans : vérifiez auprès de la société savante qu'aucune actualisation n'a été publiée depuis.`;
+}
+
 export function formatDate(value: string | null) {
   if (!value) return null;
   if (value.endsWith("-01-01")) return value.slice(0, 4);

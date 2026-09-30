@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { FREE_QUOTA, formatDate } from "@/lib/fiches";
+import { avertissementAnciennete, FREE_QUOTA, formatDate } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
@@ -46,6 +46,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
   const c = fiche.card_json;
   const title = c?.title ?? fiche.title;
   const date = formatDate(fiche.publication_date);
+  const anciennete = avertissementAnciennete(fiche.publication_date);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -99,6 +100,12 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
             </>
           )}
         </dl>
+
+        {anciennete && (
+          <p role="note" className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+            <b>Source ancienne.</b> {anciennete}
+          </p>
+        )}
 
         {c?.short && (
           <section className="mt-8">
