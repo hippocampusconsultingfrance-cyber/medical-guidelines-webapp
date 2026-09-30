@@ -7,6 +7,7 @@ import { createClient } from "@/lib/supabase/server";
 import {
   accordion,
   avertissementAnciennete,
+  verificationSource,
   chipClass,
   escapeHtml,
   formatDate,
@@ -106,6 +107,12 @@ export default async function FichePage({
     .select("revision_date, source_url, grading_system, superseded_by_document_id")
     .eq("id", id)
     .single();
+  // Requête séparée : sans la migration 20260930130000, la colonne manque.
+  const { data: verif } = await supabase.from("documents").select("source_verified_at").eq("id", id).maybeSingle();
+  const verification = verificationSource(
+    (verif?.source_verified_at as string | null | undefined) ?? null,
+    doc.published_at,
+  );
   const [{ data: canRead }, { data: blocked }] = await Promise.all([
     supabase.rpc("can_read_document", { doc_id: id }),
     supabase.rpc("is_access_blocked"),
@@ -156,6 +163,12 @@ export default async function FichePage({
         {extra?.revision_date && (
           <span>
             <b>Révision</b>&nbsp;{formatDate(extra.revision_date)}
+          </span>
+        )}
+        {verification && (
+          <span>
+            <b>Source vérifiée le</b>&nbsp;{verification.derniere} · prochaine vérification prévue le{" "}
+            {verification.prochaine}
           </span>
         )}
         {doc.societies.length > 0 && (

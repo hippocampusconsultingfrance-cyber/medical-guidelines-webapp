@@ -15,6 +15,18 @@ export function avertissementAnciennete(publicationDate: string | null) {
   return `Recommandation publiée en ${annee}, il y a plus de ${ANCIENNETE_MAX} ans : vérifiez auprès de la société savante qu'aucune actualisation n'a été publiée depuis.`;
 }
 
+// Vérification de la source (cahier des charges §4.3) : dernière date de
+// vérification (à défaut, date de publication de la fiche) et prochaine
+// vérification prévue, à la fin du mois suivant.
+export function verificationSource(verifiedAt: string | null, publishedAt: string | null) {
+  const derniere = verifiedAt ?? publishedAt?.slice(0, 10) ?? null;
+  if (!derniere) return null;
+  const [y, m] = derniere.split("-").map(Number);
+  const prochaine = new Date(Date.UTC(y, m + 1, 0)).toISOString().slice(0, 10);
+  const jour = (v: string) => `${v.slice(8, 10)}/${v.slice(5, 7)}/${v.slice(0, 4)}`;
+  return { derniere: jour(derniere), prochaine: jour(prochaine) };
+}
+
 export function formatDate(value: string | null) {
   if (!value) return null;
   if (value.endsWith("-01-01")) return value.slice(0, 4);
