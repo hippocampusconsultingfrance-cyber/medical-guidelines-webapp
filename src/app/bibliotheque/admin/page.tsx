@@ -9,7 +9,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { loadLibrary } from "../data";
 import Shell from "../shell";
-import { testerSentry } from "./actions";
+import { envoyerSynthese, testerSentry } from "./actions";
 
 export const metadata: Metadata = {
   title: "Tableau de bord — medical-guidelines.net",
@@ -189,7 +189,11 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
       ? "Erreur de test envoyée : elle doit apparaître dans Sentry → Issues d'ici une minute."
       : r === "sentry_inactif"
         ? "Sentry n'est actif qu'en production."
-        : null;
+        : r === "synthese_envoyee"
+          ? "Synthèse envoyée à votre adresse. Elle part automatiquement chaque lundi matin."
+          : r === "synthese_erreur"
+            ? "La synthèse n'a pas pu être envoyée."
+            : null;
   const card = { background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "14px 16px" };
   const aFaire = taches.filter((t) => t.n !== null && t.n > 0).length;
 
@@ -255,9 +259,14 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
           <b>{sentryMessage}</b>
         </div>
       )}
-      <form action={testerSentry} style={{ marginTop: 10 }}>
-        <button className="btn btn-ghost btn-sm">Envoyer une erreur de test à Sentry</button>
-      </form>
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 10 }}>
+        <form action={envoyerSynthese}>
+          <button className="btn btn-ghost btn-sm">M&apos;envoyer la synthèse de la semaine</button>
+        </form>
+        <form action={testerSentry}>
+          <button className="btn btn-ghost btn-sm">Envoyer une erreur de test à Sentry</button>
+        </form>
+      </div>
 
       <h2 className="block-section" style={{ marginTop: 28 }}>Raccourcis</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 8 }}>
