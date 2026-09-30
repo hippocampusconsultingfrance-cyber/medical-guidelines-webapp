@@ -128,7 +128,7 @@ tous marqués `app = medical-guidelines`.
 | Prix (`STRIPE_PRICE_ID`) | `price_1UL8Ze6TiiyJDzjO6zcgQSqe` | 50,00 € / an, TVA incluse |
 | Coupon | `XVJy2VT9` | −30 %, une fois, limité au produit |
 | Code FONDATEURS | `promo_1UL8a66TiiyJDzjOQzuNaxK1` | 100 utilisations |
-| Coupon médecins en formation (`STRIPE_STUDENT_COUPON_ID`) | `YE4HQf7J` | −30 %, une fois ; codes personnels créés à la validation d'un justificatif |
+| Coupon professionnels en formation (`STRIPE_STUDENT_COUPON_ID`) | `YE4HQf7J` | −30 %, une fois ; codes personnels créés à la validation d'un justificatif |
 | Portail (`STRIPE_PORTAL_CONFIG_ID`) | `bpc_1UL8aI6TiiyJDzjOGBzcv6cg` | factures, carte, résiliation en fin de période |
 | Webhook | `we_1UL8aY6TiiyJDzjOjKxzYGjW` | **désactivé** jusqu'au jour J ; secret à révéler dans Stripe → Développeurs → Webhooks |
 | Taux de TVA (`STRIPE_TAX_RATE_ID`) | à recréer par le porteur | 20 %, France, **inclus** (le premier créé est « hors taxes » : à archiver) |

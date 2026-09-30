@@ -68,7 +68,7 @@ export default function ConfidentialitePage() {
       <p className="mt-2">
         Sécurité du contenu : chaque ouverture d&apos;une fiche est journalisée (compte, fiche, date et
         heure) pendant 30 jours, afin de détecter une extraction automatisée ; un rythme anormal suspend
-        temporairement la lecture et prévient un administrateur. Tarif médecin en formation : le justificatif
+        temporairement la lecture et prévient un administrateur. Tarif professionnel en formation : le justificatif
         déposé n&apos;est consulté que par un administrateur et il est supprimé dès la décision prise ; seuls
         le statut déclaré, l&apos;année universitaire et la décision sont conservés.
       </p>

@@ -2,7 +2,7 @@ import "server-only";
 import type { OutgoingEmail } from "@/lib/email";
 import { escapeHtml } from "@/lib/fiches";
 
-// Tarif médecin en formation (CGV §4) : −30 % la première année sur
+// Tarif professionnel en formation (CGV §4) : −30 % la première année sur
 // justificatif de l'année universitaire en cours, validé par un
 // administrateur. Coupon Stripe : STRIPE_STUDENT_COUPON_ID (marqué
 // metadata.app = medical-guidelines, metadata.kind = etudiant).
@@ -12,7 +12,7 @@ export const STATUTS: Record<string, string> = {
   interne: "Interne",
   resident: "Résident",
   docteur_junior: "Docteur junior",
-  autre: "Autre étudiant en santé",
+  autre: "Étudiant paramédical ou autre étudiant en santé",
 };
 
 export const JUSTIFICATIF_MAX = 3 * 1024 * 1024;
@@ -71,7 +71,7 @@ export function emailDecision(
   site: string,
 ): OutgoingEmail {
   const hello = d.prenom ? `Bonjour ${d.prenom},` : "Bonjour,";
-  const subject = d.valide ? "Votre tarif médecin en formation est validé" : "Votre demande de tarif médecin en formation";
+  const subject = d.valide ? "Votre tarif professionnel en formation est validé" : "Votre demande de tarif professionnel en formation";
   let body = p(escapeHtml(hello));
   let text = `${hello}\n\n`;
   if (d.valide && d.surAbonnement) {
@@ -101,7 +101,7 @@ export function emailDecision(
 // Nouveau justificatif : avertit les administrateurs (sans pièce jointe : le
 // justificatif ne se consulte que sur le site, par un lien signé).
 export function emailNouveauJustificatif(to: string, statut: string, site: string): OutgoingEmail {
-  const subject = "Nouveau justificatif médecin en formation à valider";
+  const subject = "Nouveau justificatif professionnel en formation à valider";
   const t = `Un membre (${STATUTS[statut] ?? statut}) a déposé un justificatif pour le tarif −30 %.`;
   const lien = `${site}/bibliotheque/etudiants`;
   const html =

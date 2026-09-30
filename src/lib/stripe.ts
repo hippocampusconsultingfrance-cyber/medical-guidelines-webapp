@@ -9,7 +9,7 @@ import { mediateurRenseigne } from "./legal";
 //   STRIPE_TAX_RATE_ID     taux de TVA fixe (txr_…) : TVA française 20 %,
 //                          incluse dans le prix (régime retenu avec
 //                          l'expert-comptable) ; figure sur les factures
-//   STRIPE_STUDENT_COUPON_ID coupon « médecin en formation » (−30 %, 1re année)
+//   STRIPE_STUDENT_COUPON_ID coupon « professionnel en formation » (−30 %, 1re année)
 //   STRIPE_PORTAL_CONFIG_ID configuration du portail client (bpc_…) propre
 //                          au site ; sinon, celle par défaut du compte
 //   STRIPE_TAX             « 1 » pour laisser Stripe Tax calculer la TVA à la

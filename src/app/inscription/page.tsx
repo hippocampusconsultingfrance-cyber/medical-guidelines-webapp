@@ -304,7 +304,7 @@ export default function InscriptionPage() {
               className="mt-0.5 h-4 w-4"
             />
             <span>
-              (en formation) Externe, interne, résident ou docteur junior : −30 % la première année, sur
+              (en formation) Étudiant en médecine ou paramédical, interne, résident, docteur junior : −30 % la première année, sur
               justificatif demandé à l&apos;étape suivante.
             </span>
           </label>

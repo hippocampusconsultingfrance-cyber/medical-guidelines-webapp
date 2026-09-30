@@ -8,7 +8,7 @@ import Shell from "../shell";
 import { deciderEtudiant } from "./actions";
 
 export const metadata: Metadata = {
-  title: "Justificatifs médecins en formation — medical-guidelines.net",
+  title: "Justificatifs professionnels en formation — medical-guidelines.net",
 };
 
 const MESSAGES: Record<string, string> = {
@@ -39,7 +39,7 @@ type Demande = {
 const date = (v: string | null) =>
   v ? new Date(v).toLocaleDateString("fr-FR", { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Paris" }) : "";
 
-// Demandes de tarif médecin en formation (administrateurs) : justificatif
+// Demandes de tarif professionnel en formation (administrateurs) : justificatif
 // consultable par un lien signé de 10 minutes, puis validation ou refus.
 export default async function EtudiantsPage({ searchParams }: PageProps<"/bibliotheque/etudiants">) {
   const supabase = await createClient();
@@ -93,7 +93,7 @@ export default async function EtudiantsPage({ searchParams }: PageProps<"/biblio
     <Shell lib={lib}>
       <div className="doc-header">
         <div className="doc-header__eyebrow">Administration</div>
-        <h1>Médecins en formation</h1>
+        <h1>Professionnels en formation</h1>
         <div className="doc-header__meta">
           <span>−30 % la première année sur justificatif de l&apos;année universitaire en cours (CGV §4)</span>
         </div>

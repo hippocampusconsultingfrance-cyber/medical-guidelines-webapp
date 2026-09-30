@@ -54,7 +54,7 @@ export async function startCheckout(formData: FormData) {
   // Code promotionnel saisi sur le site (FONDATEURS, codes étudiants) :
   // seuls les codes créés pour ce site sont acceptés, jamais ceux des
   // autres activités du même compte Stripe.
-  // Médecin en formation : pas de paiement pendant l'examen du justificatif ;
+  // Professionnel en formation : pas de paiement pendant l'examen du justificatif ;
   // une fois validé, sa remise personnelle (−30 %, usage unique) s'applique
   // d'office et remplace tout code saisi : jamais de cumul.
   const { data: demande } = await supabase
@@ -142,7 +142,7 @@ export async function openPortal() {
   redirect(portal.url);
 }
 
-// Demande de tarif médecin en formation depuis la page Abonnement.
+// Demande de tarif professionnel en formation depuis la page Abonnement.
 export async function demanderTarifEtudiant(formData: FormData) {
   const supabase = await createClient();
   const {

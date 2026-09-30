@@ -10,7 +10,7 @@ import { createClient } from "@/lib/supabase/server";
 const UUID = /^[0-9a-f-]{36}$/i;
 const YEAR = 365 * 24 * 3600;
 
-// Décision sur une demande de tarif médecin en formation (administrateurs).
+// Décision sur une demande de tarif professionnel en formation (administrateurs).
 // Validation : remise sur le prochain renouvellement si le membre est déjà
 // abonné, sinon code promotionnel personnel à usage unique (valable un an).
 // Dans tous les cas, le justificatif est supprimé et le membre prévenu.
