@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { chargerPropositions } from "@/lib/actualisations";
 import { emailEnabled } from "@/lib/email";
 import { SENTRY_ENABLED } from "@/lib/sentry";
 import { checkoutOpen, stripeMode } from "@/lib/stripe";
@@ -86,6 +87,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("access_blocks").select("id", head).gt("blocked_until", iso)),
   ]);
 
+  const actualisations = (await chargerPropositions(admin)).length;
   const mode = stripeMode();
   const venteOuverte = checkoutOpen(false);
   const conversion = membres && premium !== null ? Math.round((100 * premium) / membres) : 0;
@@ -120,6 +122,12 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
           : "Trop de fiches ouvertes trop vite : vérifier, lever si usage normal.",
     },
     { label: "Fiches en brouillon", n: brouillons, href: "/bibliotheque", detail: "À relire puis publier (bouton « Publier » de la fiche)." },
+    {
+      label: "Actualisations à valider",
+      n: actualisations,
+      href: "/bibliotheque/actualisations",
+      detail: "Fiches probablement remplacées par une recommandation plus récente : valider ou écarter.",
+    },
     { label: "Fiches « révision détectée »", n: revision, href: "/bibliotheque", detail: "Nouvelle version de la source : à mettre à jour (bloc « Veille » de la fiche)." },
     {
       label: "Traductions anglaises à relire",
@@ -163,6 +171,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Traductions", "/bibliotheque/traductions"],
     ["Professionnels en formation", "/bibliotheque/etudiants"],
     ["Accès anormaux", "/bibliotheque/acces"],
+    ["Actualisations à valider", "/bibliotheque/actualisations"],
     ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Santé du site", "/api/sante"],
