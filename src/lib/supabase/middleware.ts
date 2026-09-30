@@ -61,7 +61,10 @@ export async function updateSession(request: NextRequest) {
     // Script et envoi de la mesure d'audience Vercel.
     request.nextUrl.pathname.startsWith("/_vercel") ||
     request.nextUrl.pathname.startsWith("/favicon") ||
-    request.nextUrl.pathname === "/robots.txt";
+    request.nextUrl.pathname === "/robots.txt" ||
+    // Installation sur l'écran d'accueil (manifeste et icônes).
+    request.nextUrl.pathname === "/manifest.webmanifest" ||
+    request.nextUrl.pathname.startsWith("/icones/");
 
   if (!user && !isAuthRoute && !isPublicAsset && request.nextUrl.pathname !== "/") {
     const url = request.nextUrl.clone();
