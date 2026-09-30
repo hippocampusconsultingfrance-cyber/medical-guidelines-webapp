@@ -11,7 +11,8 @@ const contentSecurityPolicy = [
   "style-src 'self' 'unsafe-inline'",
   "font-src 'self'",
   "img-src 'self' data: blob:",
-  `connect-src 'self' ${supabaseUrl} ${supabaseWs}`.trim(),
+  // Envoi des erreurs à Sentry (région UE), cf. src/lib/sentry.ts.
+  `connect-src 'self' ${supabaseUrl} ${supabaseWs} https://*.ingest.de.sentry.io`.trim(),
   "frame-ancestors 'none'",
   "form-action 'self'",
   "base-uri 'self'",
