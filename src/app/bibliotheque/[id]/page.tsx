@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { chargerCorrections, CRITICITES, dateCorrection } from "@/lib/corrections";
 import { signalerSuspensions } from "@/lib/extraction";
 import { createClient } from "@/lib/supabase/server";
 import {
@@ -16,6 +17,7 @@ import {
 } from "@/lib/fiches";
 import { cardTitle, FRESHNESS_LABEL, loadLibrary } from "../data";
 import AccordionControls from "../accordion-controls";
+import { publierCorrection } from "../signalements/actions";
 import Shell from "../shell";
 import { reportError, setFreshness, setPublication, toggleFavorite, unlockDocument } from "./actions";
 
@@ -44,6 +46,9 @@ const MESSAGES: Record<string, string> = {
   veille_retrait: "Cochez la case de confirmation pour retirer la fiche.",
   veille_version_existe: "Cette version est déjà enregistrée pour cette fiche.",
   veille_erreur: "L'enregistrement n'a pas abouti (droits de validateur requis).",
+  correction_publiee: "Correction publiée au journal public.",
+  correction_incomplete: "Choisissez la criticité et résumez la correction (5 caractères au moins).",
+  correction_erreur: "La correction n'a pas pu être publiée.",
 };
 
 const FRESHNESS_OPTIONS: [string, string][] = [
@@ -268,6 +273,7 @@ export default async function FichePage({
     ({ html: body, toc } = renderRecommendations((recs ?? []) as Recommendation[]));
   }
   await supabase.from("consultation_history").insert({ user_id: user.id, document_id: id });
+  const corrections = await chargerCorrections(supabase, id, 50);
 
   const watermark = `${user.email} · ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })}`;
 
@@ -408,6 +414,53 @@ export default async function FichePage({
         )}
         {toc.length > 1 && <AccordionControls />}
         <div dangerouslySetInnerHTML={{ __html: body }} />
+        <section className="unlock-box" id="corrections" style={{ userSelect: "text", WebkitUserSelect: "text" }}>
+          <h2 style={{ fontSize: "1rem", margin: 0 }}>Journal des corrections de cette fiche</h2>
+          {typeof r === "string" && r.startsWith("correction") && message && (
+            <p style={{ color: "var(--ink)", fontWeight: 600, marginTop: 10 }}>{message}</p>
+          )}
+          {corrections.length ? (
+            <ul style={{ margin: "10px 0 0", paddingLeft: 18, fontSize: "0.9rem" }}>
+              {corrections.map((c) => (
+                <li key={c.id}>
+                  {dateCorrection(c.corrected_at)} — <b>{CRITICITES[c.criticite] ?? c.criticite}</b> : {c.resume}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p style={{ fontSize: "0.9rem", margin: "8px 0 0" }}>Aucune correction publiée pour cette fiche.</p>
+          )}
+          <p style={{ fontSize: "0.82rem", margin: "8px 0 0" }}>
+            <Link href="/corrections">Journal de toutes les corrections →</Link>
+          </p>
+          {lib.isAdmin && (
+            <details style={{ marginTop: 12 }}>
+              <summary style={{ cursor: "pointer", fontWeight: 600 }}>Publier une correction</summary>
+              <form action={publierCorrection} style={{ marginTop: 10 }}>
+                <input type="hidden" name="document_id" value={id} />
+                <input type="hidden" name="retour" value="fiche" />
+                <div className="field">
+                  <label htmlFor="cr-crit">Criticité</label>
+                  <select id="cr-crit" name="criticite" required defaultValue="">
+                    <option value="" disabled>
+                      Choisir…
+                    </option>
+                    {Object.entries(CRITICITES).map(([v, l]) => (
+                      <option key={v} value={v}>
+                        {l}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="field">
+                  <label htmlFor="cr-resume">Résumé public de la correction</label>
+                  <textarea id="cr-resume" name="resume" required minLength={5} maxLength={1000} />
+                </div>
+                <button className="btn btn-primary btn-sm">Publier la correction</button>
+              </form>
+            </details>
+          )}
+        </section>
         <details
           className="unlock-box"
           id="signaler"

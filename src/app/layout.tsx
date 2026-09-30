@@ -44,6 +44,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <a href="/confidentialite" className="hover:underline">
             Confidentialité
           </a>
+          {" · "}
+          <a href="/corrections" className="hover:underline">
+            Journal des corrections
+          </a>
         </footer>
         {/* Mesure d'audience Vercel : sans cookies ni identifiant persistant. */}
         <Analytics />

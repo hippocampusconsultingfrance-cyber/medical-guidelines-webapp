@@ -298,4 +298,21 @@ select pg_temp.ok((select bool_and(public.get_document_presentation(d.id) is not
   'équipe éditoriale : jamais suspendue');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 12. Journal public des corrections : lisible sans compte, sans donnée personnelle.
+-- ---------------------------------------------------------------------------
+insert into public.corrections_log (document_id, criticite, resume, created_by)
+values (:'f8', 'majeure', 'Posologie corrigée dans le tableau 2', :'validateur'),
+       (:'f6', 'mineure', 'Coquille corrigée (fiche retirée)', :'validateur');
+set role anon;
+select pg_temp.ok((select count(*) from public.corrections_log where resume like 'Posologie%') = 1,
+  'visiteur : correction d''une fiche en ligne visible');
+select pg_temp.ok((select count(*) from public.corrections_log where document_id = :'f6') = 0,
+  'visiteur : correction d''une fiche retirée invisible');
+select pg_temp.ok(not has_column_privilege('anon', 'public.corrections_log', 'created_by', 'select')
+  and not has_column_privilege('authenticated', 'public.corrections_log', 'error_report_id', 'select')
+  and not has_table_privilege('authenticated', 'public.corrections_log', 'insert'),
+  'journal : ni auteur ni signalement exposés, aucune écriture directe');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';
