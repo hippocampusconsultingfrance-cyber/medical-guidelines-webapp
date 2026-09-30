@@ -103,6 +103,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     isEditor,
     // Publication réservée aux validateurs et administrateurs.
     canPublish: role === "validateur" || role === "admin",
+    isAdmin: role === "admin",
     published,
   };
 }

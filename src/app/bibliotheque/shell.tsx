@@ -110,6 +110,14 @@ export default function Shell({
           <Link href="/compte" style={{ color: "inherit" }}>
             Mon compte
           </Link>
+          {lib.isAdmin && (
+            <>
+              {" · "}
+              <Link href="/bibliotheque/admin" style={{ color: "inherit", fontWeight: 700 }}>
+                Tableau de bord
+              </Link>
+            </>
+          )}
           {lib.isEditor && (
             <>
               {" · "}
