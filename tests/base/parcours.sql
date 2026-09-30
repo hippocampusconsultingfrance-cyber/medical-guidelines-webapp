@@ -208,4 +208,23 @@ select pg_temp.ok((select freshness_status from public.documents where id = :'f5
   'validateur : statut de fraîcheur modifié et version publiée');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 9. Traductions : brouillons réservés à l'équipe éditoriale.
+-- ---------------------------------------------------------------------------
+select pg_temp.ok((select count(*) from public.document_translations) >= 1, 'traductions importées en brouillon');
+select document_id as tr from public.document_translations limit 1 \gset
+select pg_temp.agir(:'premium');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.document_translations) = 0, 'membre : aucune traduction visible');
+select pg_temp.ok(not public.review_translation(:'tr', 'en', true, 'x'), 'membre : relecture refusée');
+reset role;
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.document_translations) >= 1, 'équipe éditoriale : traductions visibles');
+select pg_temp.ok(public.review_translation(:'tr', 'en', true, 'relu'), 'équipe éditoriale : traduction marquée relue');
+reset role;
+select pg_temp.ok(
+  (select status = 'relue' and reviewed_by = :'validateur' from public.document_translations where document_id = :'tr' and lang = 'en'),
+  'relecture enregistrée avec son auteur');
+
 select 'Parcours membre : toutes les vérifications sont passées.';

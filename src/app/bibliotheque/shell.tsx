@@ -110,6 +110,14 @@ export default function Shell({
           <Link href="/compte" style={{ color: "inherit" }}>
             Mon compte
           </Link>
+          {lib.isEditor && (
+            <>
+              {" · "}
+              <Link href="/bibliotheque/traductions" style={{ color: "inherit" }}>
+                Traductions
+              </Link>
+            </>
+          )}
           {lib.canPublish && (
             <>
               {" · "}
