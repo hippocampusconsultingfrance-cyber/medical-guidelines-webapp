@@ -345,4 +345,13 @@ set role authenticated;
 select pg_temp.ok((select count(*) from public.actualisations_ecartees) = 1, 'équipe éditoriale : propositions écartées visibles');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 15. Recette : réservée aux administrateurs.
+-- ---------------------------------------------------------------------------
+insert into public.recette_validations (code) values ('1.1-1');
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.recette_validations) = 0, 'recette : invisible hors administrateurs');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';
