@@ -98,3 +98,19 @@ export function emailDecision(
   text += `\nVotre justificatif a été supprimé après examen.\n`;
   return { to: d.email, subject, html: layout(subject, body, site), text };
 }
+
+// Nouveau justificatif : avertit les administrateurs (sans pièce jointe : le
+// justificatif ne se consulte que sur le site, par un lien signé).
+export function emailNouveauJustificatif(to: string, statut: string, site: string): OutgoingEmail {
+  const subject = "Nouveau justificatif médecin en formation à valider";
+  const t = `Un membre (${STATUTS[statut] ?? statut}) a déposé un justificatif pour le tarif −30 %.`;
+  const lien = `${site}/bibliotheque/etudiants`;
+  const html =
+    `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(subject)}</title></head>` +
+    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
+    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
+    p(escapeHtml(t)) +
+    `<p style="margin:22px 0"><a href="${lien}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Examiner le justificatif</a></p>` +
+    `</div></body></html>`;
+  return { to, subject, html, text: `${t}\n\nExaminer : ${lien}\n` };
+}

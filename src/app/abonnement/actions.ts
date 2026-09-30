@@ -4,7 +4,8 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { anneeUniversitaire, JUSTIFICATIF_MAX, JUSTIFICATIF_TYPES, signatureValide, STATUTS } from "@/lib/etudiants";
+import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
+import { anneeUniversitaire, emailNouveauJustificatif, JUSTIFICATIF_MAX, JUSTIFICATIF_TYPES, signatureValide, STATUTS } from "@/lib/etudiants";
 import { isEditorialAccount } from "@/lib/roles";
 import { APP, CGV_VERSION, checkoutOpen, getStripe, promotionCodeFor, stripeEnabled } from "@/lib/stripe";
 
@@ -166,17 +167,44 @@ export async function demanderTarifEtudiant(formData: FormData) {
     console.error("Justificatif : dépôt", upError);
     back("etudiant_erreur");
   }
-  const { error } = await admin.from("student_discount_requests").insert({
-    user_id: user.id,
-    statut,
-    annee_universitaire: anneeUniversitaire(new Date()),
-    file_path: path,
-    file_name: f.name.slice(0, 200),
-  });
-  if (error) {
+  const { data: created, error } = await admin
+    .from("student_discount_requests")
+    .insert({
+      user_id: user.id,
+      statut,
+      annee_universitaire: anneeUniversitaire(new Date()),
+      file_path: path,
+      file_name: f.name.slice(0, 200),
+    })
+    .select("id")
+    .single();
+  if (error || !created) {
     console.error("Justificatif : demande", error);
     await admin.storage.from("justificatifs").remove([path]);
     back("etudiant_erreur");
   }
+  await prevenirAdmins(admin, statut, created!.id as string);
   back("etudiant_envoye");
+}
+
+// Avertit les administrateurs d'un nouveau justificatif, sans bloquer le
+// membre si l'envoi échoue (la tâche reste visible au tableau de bord).
+async function prevenirAdmins(admin: ReturnType<typeof createAdminClient>, statut: string, id: string) {
+  if (!emailEnabled()) return;
+  try {
+    const { data: admins } = await admin.from("profiles").select("id").eq("editorial_role", "admin");
+    const emails: string[] = [];
+    for (const a of admins ?? []) {
+      const { data } = await admin.auth.admin.getUserById(a.id as string);
+      if (data?.user?.email) emails.push(data.user.email);
+    }
+    if (!emails.length) return;
+    const sent = await sendBatch(
+      emails.map((to) => emailNouveauJustificatif(to, statut, siteUrl())),
+      `justificatif-${id}`,
+    );
+    if (!sent.ok) console.error("Justificatif : alerte admin", sent.error);
+  } catch (e) {
+    console.error("Justificatif : alerte admin", e);
+  }
 }
