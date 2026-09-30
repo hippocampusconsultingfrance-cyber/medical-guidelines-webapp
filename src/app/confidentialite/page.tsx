@@ -165,6 +165,12 @@ export default function ConfidentialitePage() {
         page « Mon compte ».
       </p>
       <p className="mt-2">
+        Deux e-mails de suivi peuvent aussi vous être adressés, une seule fois chacun : un rappel si
+        votre inscription n&apos;est pas finalisée après 24 heures, et une information sur
+        l&apos;abonnement lorsque vos crédits gratuits sont épuisés. Ils comportent un lien de
+        désinscription, qui désactive aussi les alertes.
+      </p>
+      <p className="mt-2">
         La fréquentation du site est mesurée par Vercel Web Analytics, sans cookies ni
         identifiant persistant : seules des statistiques agrégées (pages vues, pays, type
         d&apos;appareil, site de provenance) sont produites. Les polices de caractères sont

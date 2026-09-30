@@ -11,6 +11,10 @@
     {
       "path": "/api/cron/synthese",
       "schedule": "50 5 * * 1"
+    },
+    {
+      "path": "/api/cron/relances",
+      "schedule": "20 8 * * *"
     }
   ]
 }
