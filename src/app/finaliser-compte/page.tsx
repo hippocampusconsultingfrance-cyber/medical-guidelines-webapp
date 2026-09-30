@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { passwordAssezFort, PASSWORD_RULE } from "@/lib/password";
+import { envoyerBienvenue } from "./actions";
 
 export default function FinaliserComptePage() {
   const router = useRouter();
@@ -72,6 +73,8 @@ export default function FinaliserComptePage() {
       return;
     }
 
+    // E-mail de bienvenue (une seule fois ; un échec n'empêche pas l'accès).
+    await envoyerBienvenue().catch(() => undefined);
     router.push("/");
   }
 
