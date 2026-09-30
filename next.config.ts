@@ -20,6 +20,9 @@ const contentSecurityPolicy = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Justificatifs des médecins en formation (3 Mo max, cf. src/lib/etudiants.ts) :
+  // la limite par défaut des actions serveur (1 Mo) est trop basse.
+  experimental: { serverActions: { bodySizeLimit: "4mb" } },
   // Ancienne page des fiches (un seul fichier avec tout le contenu),
   // remplacée par la bibliothèque et ses crédits.
   async redirects() {

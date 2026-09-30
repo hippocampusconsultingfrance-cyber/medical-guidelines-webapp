@@ -9,6 +9,7 @@ import { mediateurRenseigne } from "./legal";
 //   STRIPE_TAX_RATE_ID     taux de TVA fixe (txr_…) : TVA française 20 %,
 //                          incluse dans le prix (régime retenu avec
 //                          l'expert-comptable) ; figure sur les factures
+//   STRIPE_STUDENT_COUPON_ID coupon « médecin en formation » (−30 %, 1re année)
 //   STRIPE_PORTAL_CONFIG_ID configuration du portail client (bpc_…) propre
 //                          au site ; sinon, celle par défaut du compte
 //   STRIPE_TAX             « 1 » pour laisser Stripe Tax calculer la TVA à la
@@ -84,7 +85,7 @@ export const APP = "medical-guidelines";
 
 // Code promotionnel saisi par le membre : accepté seulement s'il existe,
 // est actif et que son coupon est marqué pour ce site. Renvoie son id.
-export async function promotionCodeFor(code: string): Promise<string | null> {
+export async function promotionCodeFor(code: string, userId: string): Promise<string | null> {
   const clean = code.trim().toUpperCase().replace(/[^A-Z0-9_-]/g, "").slice(0, 40);
   if (!clean) return null;
   const list = await getStripe().promotionCodes.list({
@@ -96,7 +97,11 @@ export async function promotionCodeFor(code: string): Promise<string | null> {
   const pc = list.data[0];
   const coupon = pc?.promotion?.coupon;
   if (!pc || !coupon || typeof coupon === "string") return null;
-  return coupon.valid && coupon.metadata?.app === APP ? pc.id : null;
+  if (!coupon.valid || coupon.metadata?.app !== APP) return null;
+  // Code étudiant : personnel, utilisable seulement par le membre à qui il a
+  // été attribué après validation de son justificatif.
+  if (coupon.metadata?.kind === "etudiant" && pc.metadata?.user_id !== userId) return null;
+  return pc.id;
 }
 
 // L'abonnement Stripe a-t-il été souscrit sur ce site ? (métadonnées posées

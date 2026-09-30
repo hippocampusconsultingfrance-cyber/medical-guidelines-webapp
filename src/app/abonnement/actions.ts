@@ -3,6 +3,8 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
+import { anneeUniversitaire, JUSTIFICATIF_MAX, JUSTIFICATIF_TYPES, signatureValide, STATUTS } from "@/lib/etudiants";
 import { isEditorialAccount } from "@/lib/roles";
 import { APP, CGV_VERSION, checkoutOpen, getStripe, promotionCodeFor, stripeEnabled } from "@/lib/stripe";
 
@@ -54,7 +56,7 @@ export async function startCheckout(formData: FormData) {
   // seuls les codes créés pour ce site sont acceptés, jamais ceux des
   // autres activités du même compte Stripe.
   const code = String(formData.get("code") ?? "");
-  const promotionCode = code.trim() ? await promotionCodeFor(code) : null;
+  const promotionCode = code.trim() ? await promotionCodeFor(code, user.id) : null;
   if (code.trim() && !promotionCode) redirect("/abonnement?r=code");
 
   const customer = await knownCustomer(existing?.stripe_customer_id);
@@ -124,4 +126,57 @@ export async function openPortal() {
     locale: "fr",
   });
   redirect(portal.url);
+}
+
+// Demande de tarif médecin en formation : dépôt du justificatif (PDF, JPEG
+// ou PNG, 3 Mo au plus) dans le bucket privé « justificatifs », avec la clé
+// service_role après contrôle du compte. Une seule demande en attente à la
+// fois.
+export async function demanderTarifEtudiant(formData: FormData) {
+  const back = (r: string) => redirect(`/abonnement?r=${r}#etudiant`);
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/connexion");
+
+  const statut = String(formData.get("statut") ?? "");
+  const file = formData.get("justificatif");
+  if (!(statut in STATUTS)) back("etudiant_statut");
+  if (formData.get("atteste") !== "1") back("etudiant_atteste");
+  if (!(file instanceof File) || file.size === 0) back("etudiant_fichier");
+  const f = file as File;
+  const ext = JUSTIFICATIF_TYPES[f.type];
+  if (!ext) back("etudiant_format");
+  if (f.size > JUSTIFICATIF_MAX) back("etudiant_taille");
+  const bytes = new Uint8Array(await f.arrayBuffer());
+  if (!signatureValide(bytes, f.type)) back("etudiant_format");
+
+  const admin = createAdminClient();
+  const { count } = await admin
+    .from("student_discount_requests")
+    .select("id", { count: "exact", head: true })
+    .eq("user_id", user.id)
+    .eq("status", "en_attente");
+  if ((count ?? 0) > 0) back("etudiant_deja");
+
+  const path = `${user.id}/${crypto.randomUUID()}.${ext}`;
+  const { error: upError } = await admin.storage.from("justificatifs").upload(path, bytes, { contentType: f.type });
+  if (upError) {
+    console.error("Justificatif : dépôt", upError);
+    back("etudiant_erreur");
+  }
+  const { error } = await admin.from("student_discount_requests").insert({
+    user_id: user.id,
+    statut,
+    annee_universitaire: anneeUniversitaire(new Date()),
+    file_path: path,
+    file_name: f.name.slice(0, 200),
+  });
+  if (error) {
+    console.error("Justificatif : demande", error);
+    await admin.storage.from("justificatifs").remove([path]);
+    back("etudiant_erreur");
+  }
+  back("etudiant_envoye");
 }

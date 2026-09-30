@@ -227,4 +227,28 @@ select pg_temp.ok(
   (select status = 'relue' and reviewed_by = :'validateur' from public.document_translations where document_id = :'tr' and lang = 'en'),
   'relecture enregistrée avec son auteur');
 
+-- ---------------------------------------------------------------------------
+-- 10. Tarif médecin en formation : chacun ne voit que ses demandes.
+-- ---------------------------------------------------------------------------
+insert into public.student_discount_requests (user_id, statut, annee_universitaire, file_path, file_name)
+values (:'gratuit', 'interne', '2026-2027', :'gratuit' || '/x.pdf', 'carte.pdf');
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.student_discount_requests) = 1, 'interne : sa demande est visible');
+reset role;
+select pg_temp.agir(:'premium');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.student_discount_requests) = 0, 'autre membre : demande d''autrui invisible');
+do $$
+begin
+  insert into public.student_discount_requests (user_id, statut, annee_universitaire, file_path, file_name)
+  values ('00000000-0000-0000-0000-00000000a002', 'interne', '2026-2027', 'x', 'x');
+  raise exception 'ÉCHEC : un membre a pu créer une demande directement';
+exception when insufficient_privilege then null;
+end $$;
+select pg_temp.ok(
+  not has_table_privilege('authenticated', 'public.student_discount_requests', 'update'),
+  'membre : ni création ni validation directe (serveur seulement)');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';

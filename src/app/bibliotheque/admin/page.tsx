@@ -65,6 +65,7 @@ export default async function AdminPage() {
     revision,
     traductions,
     lettre,
+    justificatifs,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -78,6 +79,7 @@ export default async function AdminPage() {
     count(admin.from("documents").select("id", head).eq("freshness_status", "revision_detectee")),
     count(admin.from("document_translations").select("document_id", head).eq("status", "brouillon")),
     count(admin.from("notifications_log").select("id", head).eq("body", `lettre:${mois}`)),
+    count(admin.from("student_discount_requests").select("id", head).eq("status", "en_attente")),
   ]);
 
   const mode = stripeMode();
@@ -95,6 +97,15 @@ export default async function AdminPage() {
 
   const taches: Tache[] = [
     { label: "Signalements d'erreur à traiter", n: signalements, href: "/bibliotheque/signalements", detail: "Erreurs signalées par les membres depuis une fiche." },
+    {
+      label: "Justificatifs médecins en formation",
+      n: justificatifs,
+      href: "/bibliotheque/etudiants",
+      detail:
+        justificatifs === null
+          ? "Migration des justificatifs pas encore appliquée dans Supabase."
+          : "Externes, internes, résidents : à valider pour le −30 %.",
+    },
     { label: "Fiches en brouillon", n: brouillons, href: "/bibliotheque", detail: "À relire puis publier (bouton « Publier » de la fiche)." },
     { label: "Fiches « révision détectée »", n: revision, href: "/bibliotheque", detail: "Nouvelle version de la source : à mettre à jour (bloc « Veille » de la fiche)." },
     {
@@ -132,6 +143,7 @@ export default async function AdminPage() {
     ["Signalements", "/bibliotheque/signalements"],
     ["Lettre de veille", "/bibliotheque/veille"],
     ["Traductions", "/bibliotheque/traductions"],
+    ["Médecins en formation", "/bibliotheque/etudiants"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Santé du site", "/api/sante"],
   ];
