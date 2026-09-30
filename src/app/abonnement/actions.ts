@@ -71,6 +71,10 @@ export async function startCheckout(formData: FormData) {
   const taxRate = process.env.STRIPE_TAX_RATE_ID;
   const session = await getStripe().checkout.sessions.create({
     mode: "subscription",
+    // Carte bancaire seulement (Apple Pay et Google Pay inclus) : fiable pour
+    // le renouvellement automatique annuel, indépendamment des moyens de
+    // paiement activés pour les autres activités du compte Stripe.
+    payment_method_types: ["card"],
     line_items: [
       {
         price: process.env.STRIPE_PRICE_ID!,
