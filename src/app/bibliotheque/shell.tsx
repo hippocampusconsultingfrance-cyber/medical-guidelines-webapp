@@ -146,6 +146,10 @@ export default function Shell({
                   <Link href="/bibliotheque/etudiants" style={{ color: "inherit" }}>
                     Médecins en formation
                   </Link>
+                  {" · "}
+                  <Link href="/bibliotheque/acces" style={{ color: "inherit" }}>
+                    Accès anormaux
+                  </Link>
                 </>
               )}
             </>

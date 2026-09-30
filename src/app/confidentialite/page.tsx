@@ -65,6 +65,13 @@ export default function ConfidentialitePage() {
         repose que sur des nombres de lecteurs agrégés : il n&apos;affiche
         jamais ce qu&apos;a lu une personne.
       </p>
+      <p className="mt-2">
+        Sécurité du contenu : chaque ouverture d&apos;une fiche est journalisée (compte, fiche, date et
+        heure) pendant 30 jours, afin de détecter une extraction automatisée ; un rythme anormal suspend
+        temporairement la lecture et prévient un administrateur. Tarif médecin en formation : le justificatif
+        déposé n&apos;est consulté que par un administrateur et il est supprimé dès la décision prise ; seuls
+        le statut déclaré, l&apos;année universitaire et la décision sont conservés.
+      </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
         3. Finalités et bases légales — deux finalités bien distinctes
