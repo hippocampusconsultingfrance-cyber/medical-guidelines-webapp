@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const MESSAGES: Record<string, string> = {
-  validee: "Demande validée : le membre a reçu son code (ou la remise sur son renouvellement) par e-mail.",
+  validee: "Demande validée : le membre est prévenu par e-mail ; −30 % s'appliquent automatiquement à son paiement (ou à son renouvellement s'il est déjà abonné).",
   refusee: "Demande refusée : le membre a été prévenu par e-mail avec le motif.",
   motif_requis: "Indiquez le motif du refus : il est envoyé au membre.",
   deja_traitee: "Cette demande a déjà été traitée.",

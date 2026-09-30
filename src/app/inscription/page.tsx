@@ -27,6 +27,7 @@ export default function InscriptionPage() {
   const [email, setEmail] = useState("");
   const [profession, setProfession] = useState("");
   const [professionAutre, setProfessionAutre] = useState("");
+  const [enFormation, setEnFormation] = useState(false);
   const [specialty, setSpecialty] = useState("");
   const [specialties, setSpecialties] = useState<Specialty[]>([]);
   const [consentService, setConsentService] = useState(false);
@@ -74,6 +75,7 @@ export default function InscriptionPage() {
           specialty_slug: specialty,
           consent_service: true,
           consent_partners: consentPartners,
+          en_formation: enFormation,
         },
       },
     });
@@ -294,6 +296,18 @@ export default function InscriptionPage() {
               </optgroup>
             ))}
           </select>
+          <label className="mt-2 flex items-start gap-2 text-sm text-slate-700">
+            <input
+              type="checkbox"
+              checked={enFormation}
+              onChange={(e) => setEnFormation(e.target.checked)}
+              className="mt-0.5 h-4 w-4"
+            />
+            <span>
+              (en formation) Externe, interne, résident ou docteur junior : −30 % la première année, sur
+              justificatif demandé à l&apos;étape suivante.
+            </span>
+          </label>
         </div>
 
         {professionEstAutre && (
