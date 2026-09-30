@@ -91,6 +91,8 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
+  const { data: facteurs } = await supabase.auth.mfa.listFactors();
+  const mfa = (facteurs?.totp ?? []).some((f) => f.status === "verified");
   const mode = stripeMode();
   const venteOuverte = checkoutOpen(false);
   const conversion = membres && premium !== null ? Math.round((100 * premium) / membres) : 0;
@@ -169,6 +171,11 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
           : "Stripe non configuré.",
     ],
     ["E-mails", emailEnabled(), emailEnabled() ? "Envoi actif (Resend)." : "RESEND_API_KEY absente : aucun e-mail ne part."],
+    [
+      "Double authentification de votre compte",
+      mfa,
+      mfa ? "Activée : les droits d'administration exigent votre code." : "Non activée : à activer dans Mon compte → Double authentification.",
+    ],
     [
       "Alertes d'erreurs (Sentry)",
       SENTRY_ENABLED,

@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { orderSocieties, type Card } from "@/lib/fiches";
 
@@ -23,6 +24,11 @@ export const FRESHNESS_LABEL: Record<string, string> = {
 // appliqués par la base : un membre ne reçoit que les fiches publiées de sa
 // spécialité, un relecteur reçoit aussi les brouillons.
 export async function loadLibrary(supabase: SupabaseClient, userId: string) {
+  // Double authentification activée mais code pas encore saisi : sans lui,
+  // la base refuse les droits d'équipe ; on demande le code d'abord.
+  const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
+  if (aal?.nextLevel === "aal2" && aal.currentLevel !== "aal2") redirect("/mfa");
+
   const [{ data: documents }, { data: unlocks }, { data: premium }, { data: profile }, { data: favorites }] =
     await Promise.all([
       supabase
