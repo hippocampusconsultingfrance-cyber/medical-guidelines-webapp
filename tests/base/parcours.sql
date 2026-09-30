@@ -332,4 +332,17 @@ select pg_temp.ok(public.get_divergences(:'f8') is null, 'fiche non débloquée 
 select pg_temp.ok((select count(*) from public.divergence_positions) = 0, 'membre : tables non lisibles directement');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 14. Actualisations écartées : réservées à l'équipe éditoriale.
+-- ---------------------------------------------------------------------------
+insert into public.actualisations_ecartees (ancienne_id, nouvelle_id) values (:'f1', :'f2');
+select pg_temp.agir(:'premium');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.actualisations_ecartees) = 0, 'membre : propositions écartées invisibles');
+reset role;
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.actualisations_ecartees) = 1, 'équipe éditoriale : propositions écartées visibles');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';

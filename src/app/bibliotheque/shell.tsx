@@ -144,6 +144,10 @@ export default function Shell({
               <Link href="/bibliotheque/divergences" style={{ color: "inherit" }}>
                 Divergences
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/actualisations" style={{ color: "inherit" }}>
+                Actualisations
+              </Link>
               {lib.isAdmin && (
                 <>
                   {" · "}
