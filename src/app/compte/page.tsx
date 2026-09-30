@@ -43,6 +43,14 @@ export default async function ComptePage({ searchParams }: PageProps<"/compte">)
         Adresse email : <strong>{user.email}</strong>
       </p>
 
+      <p className="mt-4 rounded-lg border border-slate-200 p-3 text-sm">
+        🔒{" "}
+        <Link href="/compte/securite" className="font-semibold text-teal-700 underline">
+          Double authentification
+        </Link>{" "}
+        : protégez votre compte par un code sur votre téléphone.
+      </p>
+
       <AlertesSection supabase={supabase} userId={user.id} r={typeof r === "string" ? r : ""} />
 
       {profile ? (

@@ -378,4 +378,17 @@ end $$;
 select 'ok  signalements : 21e en 24 h refusé';
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 17. Double authentification : droits éditoriaux seulement avec le code.
+-- ---------------------------------------------------------------------------
+insert into auth.mfa_factors (user_id) values (:'validateur');
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select set_config('request.jwt.claims', '{"aal":"aal1"}', false);
+select pg_temp.ok(not public.has_editorial_role('relecteur'), 'MFA activée, session sans code (aal1) : aucun droit éditorial');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+select pg_temp.ok(public.has_editorial_role('validateur'), 'MFA activée, code saisi (aal2) : droits rétablis');
+reset role;
+select set_config('request.jwt.claims', '', false);
+
 select 'Parcours membre : toutes les vérifications sont passées.';
