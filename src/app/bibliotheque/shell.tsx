@@ -140,6 +140,10 @@ export default function Shell({
               <Link href="/bibliotheque/veille" style={{ color: "inherit" }}>
                 Lettre de veille
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/divergences" style={{ color: "inherit" }}>
+                Divergences
+              </Link>
               {lib.isAdmin && (
                 <>
                   {" · "}

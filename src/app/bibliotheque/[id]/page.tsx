@@ -74,6 +74,22 @@ const FRESHNESS_NOTICE: Record<string, string> = {
   remplacee: "La recommandation source a été remplacée par un texte plus récent.",
 };
 
+type Divergence = {
+  id: string;
+  question: string;
+  avertissement: string | null;
+  positions: {
+    document_id: string;
+    titre: string;
+    societes: string | null;
+    date: string | null;
+    position: string;
+    population: string | null;
+    grade: string | null;
+    niveau: string | null;
+  }[];
+};
+
 type Recommendation = {
   id: string;
   recommendation_code: string;
@@ -287,6 +303,8 @@ export default async function FichePage({
   }
   await supabase.from("consultation_history").insert({ user_id: user.id, document_id: id });
   const corrections = await chargerCorrections(supabase, id, 50);
+  const { data: divData } = await supabase.rpc("get_divergences", { doc_id: id });
+  const divergences = (Array.isArray(divData) ? divData : []) as Divergence[];
 
   const watermark = `${user.email} · ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })}`;
 
@@ -425,6 +443,39 @@ export default async function FichePage({
             )}
           </div>
         )}
+        {divergences.map((d) => (
+          <section key={d.id} className="panel warn" style={{ userSelect: "text", WebkitUserSelect: "text" }}>
+            <h2 style={{ fontSize: "1rem", margin: "0 0 4px" }}>Recommandations divergentes : {d.question}</h2>
+            <p style={{ fontSize: "0.85rem", margin: "0 0 10px" }}>
+              Les sociétés savantes ne formulent pas la même recommandation. Leurs positions sont présentées
+              séparément, sans que l&apos;une soit présentée comme meilleure.
+              {d.avertissement ? ` ${d.avertissement}` : ""}
+            </p>
+            <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
+              {d.positions.map((p) => (
+                <div
+                  key={p.document_id}
+                  style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 8, padding: "10px 12px" }}
+                >
+                  <div style={{ fontWeight: 700, fontSize: "0.9rem" }}>
+                    {p.societes ?? "Société"}
+                    {p.date ? ` · ${p.date.slice(0, 4)}` : ""}
+                  </div>
+                  <p style={{ fontSize: "0.9rem", margin: "6px 0" }}>{p.position}</p>
+                  <div style={{ fontSize: "0.8rem", color: "var(--ink-muted)" }}>
+                    Population : {p.population || "non indiquée"} · Grade : {p.grade || "non indiqué"} · Niveau de
+                    preuve : {p.niveau || "non indiqué"}
+                  </div>
+                  {p.document_id !== id && (
+                    <Link href={`/bibliotheque/${p.document_id}`} style={{ fontSize: "0.8rem" }}>
+                      Voir la fiche : {p.titre} →
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
         {toc.length > 1 && <AccordionControls />}
         <div dangerouslySetInnerHTML={{ __html: body }} />
         <section className="unlock-box" id="corrections" style={{ userSelect: "text", WebkitUserSelect: "text" }}>

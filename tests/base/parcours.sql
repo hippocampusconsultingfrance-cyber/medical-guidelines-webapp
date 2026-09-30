@@ -317,4 +317,19 @@ select pg_temp.ok(has_column_privilege('anon', 'public.documents', 'source_verif
   'date de vérification de la source lisible avec les métadonnées');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 13. Recommandations divergentes : visibles avec la fiche, jamais sans droits.
+-- ---------------------------------------------------------------------------
+insert into public.divergences (id, question) values ('00000000-0000-0000-0000-0000000000d1', 'Question de test');
+insert into public.divergence_positions (divergence_id, document_id, position, sort_order) values
+  ('00000000-0000-0000-0000-0000000000d1', :'f1', 'Position A', 0),
+  ('00000000-0000-0000-0000-0000000000d1', :'f8', 'Position B', 1);
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok(jsonb_array_length(public.get_divergences(:'f1') -> 0 -> 'positions') = 2,
+  'fiche lisible : encadré avec les deux positions');
+select pg_temp.ok(public.get_divergences(:'f8') is null, 'fiche non débloquée : aucune divergence transmise');
+select pg_temp.ok((select count(*) from public.divergence_positions) = 0, 'membre : tables non lisibles directement');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';

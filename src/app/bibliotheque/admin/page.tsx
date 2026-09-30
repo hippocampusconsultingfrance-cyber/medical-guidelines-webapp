@@ -156,6 +156,7 @@ export default async function AdminPage() {
     ["Traductions", "/bibliotheque/traductions"],
     ["Professionnels en formation", "/bibliotheque/etudiants"],
     ["Accès anormaux", "/bibliotheque/acces"],
+    ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Santé du site", "/api/sante"],
   ];
