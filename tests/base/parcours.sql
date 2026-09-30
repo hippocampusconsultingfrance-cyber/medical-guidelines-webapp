@@ -27,6 +27,7 @@ end $$;
 \set premium   '00000000-0000-0000-0000-00000000a002'
 \set urgence   '00000000-0000-0000-0000-00000000a003'
 \set validateur '00000000-0000-0000-0000-00000000a004'
+\set lecteur   '00000000-0000-0000-0000-00000000a005'
 
 -- ---------------------------------------------------------------------------
 -- Préparation : toutes les fiches en ligne, comme en production.
@@ -249,6 +250,52 @@ end $$;
 select pg_temp.ok(
   not has_table_privilege('authenticated', 'public.student_discount_requests', 'update'),
   'membre : ni création ni validation directe (serveur seulement)');
+reset role;
+
+-- ---------------------------------------------------------------------------
+-- 11. Anti-extraction : pas de lecture en masse, suspension au-delà du rythme.
+-- ---------------------------------------------------------------------------
+insert into auth.users (id, email, raw_user_meta_data, email_confirmed_at) values
+  (:'lecteur', 'lecteur@test.fr', '{"prenom":"Lecteur","specialty_slug":"anesthesie_reanimation"}', now());
+insert into public.subscriptions (user_id, plan, status, current_period_end)
+values (:'lecteur', 'premium', 'actif', now() + interval '1 year');
+select pg_temp.agir(:'lecteur');
+set role authenticated;
+create temp table lisibles as
+  select d.id, row_number() over (order by d.id) as n from public.documents d where public.can_read_document(d.id);
+select pg_temp.ok((select count(*) from lisibles) > 21, 'PREMIUM : plus de 21 fiches lisibles pour le scénario');
+select pg_temp.ok((select count(*) from public.recommendations) = 0,
+  'membre : aucune recommandation lisible directement (pas de téléchargement en masse)');
+select pg_temp.ok(jsonb_array_length(public.get_document_recommendations((select id from lisibles where n = 1))) >= 0,
+  'membre : recommandations d''une fiche lisibles par la fonction contrôlée');
+select pg_temp.ok((select bool_and(public.get_document_presentation(id) is not null) from lisibles where n <= 20),
+  'lecture normale : 20 fiches différentes en 10 minutes acceptées');
+select pg_temp.ok(public.get_document_presentation((select id from lisibles where n = 1)) is not null,
+  'relire une fiche déjà ouverte ne compte pas');
+select pg_temp.ok(public.get_document_presentation((select id from lisibles where n = 21)) is null,
+  'rythme anormal : la 21e fiche en 10 minutes est refusée');
+select pg_temp.ok(public.is_access_blocked() and not public.can_read_document((select id from lisibles where n = 2)),
+  'compte suspendu : plus aucune fiche lisible');
+select pg_temp.ok(public.unlock_document((select id from lisibles where n = 2)) ->> 'status' = 'suspendu',
+  'compte suspendu : aucun déblocage possible');
+select pg_temp.ok((select count(*) from public.content_reads) = 0, 'membre : journal des lectures non consultable');
+reset role;
+select pg_temp.ok(
+  (select reason = 'rythme_10min' and distinct_documents = 21 and blocked_until > now() + interval '55 minutes'
+     from public.access_blocks where user_id = :'lecteur'),
+  'suspension enregistrée (motif, nombre de fiches, durée 1 h)');
+update public.access_blocks set blocked_until = now() where user_id = :'lecteur';
+select pg_temp.agir(:'lecteur');
+set role authenticated;
+select pg_temp.ok(not public.is_access_blocked() and public.can_read_document((select id from lisibles where n = 2)),
+  'suspension levée : lecture rétablie');
+reset role;
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.recommendations) > 0, 'équipe éditoriale : recommandations lisibles');
+select pg_temp.ok((select bool_and(public.get_document_presentation(d.id) is not null)
+                     from (select id from public.documents limit 30) d),
+  'équipe éditoriale : jamais suspendue');
 reset role;
 
 select 'Parcours membre : toutes les vérifications sont passées.';

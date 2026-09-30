@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { signalerSuspensions } from "@/lib/extraction";
 import { createClient } from "@/lib/supabase/server";
 import {
   accordion,
@@ -27,6 +28,7 @@ const MESSAGES: Record<string, string> = {
   quota_atteint: `Vous avez utilisé vos ${FREE_QUOTA} crédits. L'abonnement PREMIUM ouvre toutes les fiches de votre spécialité.`,
   indisponible: "Cette fiche n'est pas disponible pour votre compte.",
   erreur: "Le déblocage n'a pas abouti. Réessayez dans un instant.",
+  suspendu: "Consultation suspendue temporairement : aucun crédit n'a été utilisé.",
   publiee: "Fiche publiée : elle est maintenant visible par les membres de sa spécialité.",
   depubliee: "Fiche dépubliée : elle n'est plus visible par les membres.",
   confirmation_requise: "Cochez la case de relecture avant de publier.",
@@ -98,7 +100,10 @@ export default async function FichePage({
     .select("revision_date, source_url, grading_system, superseded_by_document_id")
     .eq("id", id)
     .single();
-  const { data: canRead } = await supabase.rpc("can_read_document", { doc_id: id });
+  const [{ data: canRead }, { data: blocked }] = await Promise.all([
+    supabase.rpc("can_read_document", { doc_id: id }),
+    supabase.rpc("is_access_blocked"),
+  ]);
   const { data: versions } = lib.canPublish
     ? await supabase
         .from("document_versions")
@@ -183,6 +188,29 @@ export default async function FichePage({
     </div>
   );
 
+  // Lecture suspendue (trop de fiches ouvertes trop vite) : message neutre,
+  // sans proposer de débloquer la fiche.
+  const suspension = (
+    <Shell lib={lib} activeId={id}>
+      {header}
+      <div className="unlock-box">
+        <h2>Consultation momentanément suspendue</h2>
+        <p>
+          Un nombre inhabituel de fiches a été ouvert depuis votre compte en peu de temps. Pour protéger le
+          contenu, la lecture est suspendue pendant quelques heures ; elle reprendra automatiquement.
+        </p>
+        <p>
+          S&apos;il s&apos;agit d&apos;un usage normal, écrivez-nous à contact@medical-guidelines.net : nous
+          rétablirons l&apos;accès.
+        </p>
+      </div>
+    </Shell>
+  );
+  if (blocked && !lib.isEditor) {
+    await signalerSuspensions();
+    return suspension;
+  }
+
   if (!canRead) {
     const remaining = Math.max(FREE_QUOTA - lib.unlocked.size, 0);
     return (
@@ -217,21 +245,22 @@ export default async function FichePage({
     );
   }
 
-  await supabase.from("consultation_history").insert({ user_id: user.id, document_id: id });
-
+  // Chaque lecture est journalisée et limitée par la base (anti-extraction) :
+  // un rythme anormal suspend la lecture, dès cette fiche.
   const { data: presentation } = await supabase.rpc("get_document_presentation", { doc_id: id });
   let body: string;
   let toc: TocItem[];
   if (presentation) {
     ({ html: body, toc } = renderPresentation(presentation as Presentation));
   } else {
-    const { data: recs } = await supabase
-      .from("recommendations")
-      .select("id, recommendation_code, statement, grade, evidence_level, source_section, source_page, status")
-      .eq("document_id", id)
-      .order("recommendation_code");
+    const { data: recs, error } = await supabase.rpc("get_document_recommendations", { doc_id: id });
+    if (recs === null && !error) {
+      await signalerSuspensions();
+      return suspension;
+    }
     ({ html: body, toc } = renderRecommendations((recs ?? []) as Recommendation[]));
   }
+  await supabase.from("consultation_history").insert({ user_id: user.id, document_id: id });
 
   const watermark = `${user.email} · ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })}`;
 

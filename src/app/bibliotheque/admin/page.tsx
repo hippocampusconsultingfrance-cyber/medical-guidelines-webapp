@@ -66,6 +66,7 @@ export default async function AdminPage() {
     traductions,
     lettre,
     justificatifs,
+    suspensions,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -80,6 +81,7 @@ export default async function AdminPage() {
     count(admin.from("document_translations").select("document_id", head).eq("status", "brouillon")),
     count(admin.from("notifications_log").select("id", head).eq("body", `lettre:${mois}`)),
     count(admin.from("student_discount_requests").select("id", head).eq("status", "en_attente")),
+    count(admin.from("access_blocks").select("id", head).gt("blocked_until", iso)),
   ]);
 
   const mode = stripeMode();
@@ -105,6 +107,15 @@ export default async function AdminPage() {
         justificatifs === null
           ? "Migration des justificatifs pas encore appliquée dans Supabase."
           : "Externes, internes, résidents : à valider pour le −30 %.",
+    },
+    {
+      label: "Comptes suspendus (anti-extraction)",
+      n: suspensions,
+      href: "/bibliotheque/acces",
+      detail:
+        suspensions === null
+          ? "Migration anti-extraction pas encore appliquée dans Supabase."
+          : "Trop de fiches ouvertes trop vite : vérifier, lever si usage normal.",
     },
     { label: "Fiches en brouillon", n: brouillons, href: "/bibliotheque", detail: "À relire puis publier (bouton « Publier » de la fiche)." },
     { label: "Fiches « révision détectée »", n: revision, href: "/bibliotheque", detail: "Nouvelle version de la source : à mettre à jour (bloc « Veille » de la fiche)." },
@@ -144,6 +155,7 @@ export default async function AdminPage() {
     ["Lettre de veille", "/bibliotheque/veille"],
     ["Traductions", "/bibliotheque/traductions"],
     ["Médecins en formation", "/bibliotheque/etudiants"],
+    ["Accès anormaux", "/bibliotheque/acces"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Santé du site", "/api/sante"],
   ];
