@@ -5,6 +5,7 @@ import { signalerSuspensions } from "@/lib/extraction";
 import { createClient } from "@/lib/supabase/server";
 import {
   accordion,
+  avertissementAnciennete,
   chipClass,
   escapeHtml,
   formatDate,
@@ -121,6 +122,7 @@ export default async function FichePage({
     ? lib.docs.find((d) => d.id === extra.superseded_by_document_id)
     : undefined;
   const freshness = doc.freshness_status ? FRESHNESS_NOTICE[doc.freshness_status] : undefined;
+  const anciennete = doc.freshness_status === "remplacee" ? null : avertissementAnciennete(doc.publication_date);
   const header = (
     <div className="doc-header">
       <div className="doc-header__eyebrow">
@@ -174,6 +176,11 @@ export default async function FichePage({
           </button>
         </form>
       </div>
+      {anciennete && (
+        <div className="panel warn" role="note">
+          <b>Source ancienne.</b> {anciennete}
+        </div>
+      )}
       {freshness && (
         <div className="panel warn" role="note">
           <b>{FRESHNESS_LABEL[doc.freshness_status!]}.</b> {freshness}
