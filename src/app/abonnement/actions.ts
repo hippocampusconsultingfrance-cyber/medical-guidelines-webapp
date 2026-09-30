@@ -73,7 +73,20 @@ export async function startCheckout(formData: FormData) {
   const promotionCode = remiseEtudiant ?? (code.trim() ? await promotionCodeFor(code, user.id) : null);
   if (code.trim() && !promotionCode) redirect("/abonnement?r=code");
 
-  const customer = await knownCustomer(existing?.stripe_customer_id);
+  // Client Stripe propre au membre : factures affichées TTC (prix TVA
+  // incluse, comme pour un particulier : 50,00 € − remise = total, dont TVA).
+  const stripe = getStripe();
+  const rendering = { rendering_options: { amount_tax_display: "include_inclusive_tax" as const } };
+  const known = await knownCustomer(existing?.stripe_customer_id);
+  const customer = known
+    ? (await stripe.customers.update(known, { invoice_settings: rendering })).id
+    : (
+        await stripe.customers.create({
+          email: user.email,
+          metadata: { app: APP, user_id: user.id },
+          invoice_settings: rendering,
+        })
+      ).id;
   const now = new Date().toISOString();
   const metadata = {
     app: APP,
@@ -85,7 +98,7 @@ export async function startCheckout(formData: FormData) {
   const base = await origin();
   const autoTax = process.env.STRIPE_TAX === "1";
   const taxRate = process.env.STRIPE_TAX_RATE_ID;
-  const session = await getStripe().checkout.sessions.create({
+  const session = await stripe.checkout.sessions.create({
     mode: "subscription",
     // Carte bancaire seulement (Apple Pay et Google Pay inclus) : fiable pour
     // le renouvellement automatique annuel, indépendamment des moyens de
@@ -100,9 +113,8 @@ export async function startCheckout(formData: FormData) {
       },
     ],
     client_reference_id: user.id,
-    ...(customer
-      ? { customer, customer_update: { address: "auto", name: "auto" } }
-      : { customer_email: user.email }),
+    customer,
+    customer_update: { address: "auto", name: "auto" },
     subscription_data: { metadata },
     metadata,
     ...(promotionCode ? { discounts: [{ promotion_code: promotionCode }] } : {}),
