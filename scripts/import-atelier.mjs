@@ -235,3 +235,44 @@ if (aRelire.length) {
   console.warn(`Résumés à relire dans scripts/resumes-fiches.json :\n  ${aRelire.join("\n  ")}`);
 }
 console.log(`${keys.length} fiches : ${matched} documents existants complétés, ${created} documents créés, ${allSocieties.size} sociétés signataires.`);
+
+// 4. Traductions anglaises (build/en/content_<clé>.json, brouillons de la
+// routine) → supabase/content/0210_traductions_en.sql, table
+// document_translations (lecture réservée à l'équipe éditoriale). Un
+// brouillon modifié depuis le dernier import repasse en « brouillon » ;
+// fr_a_jour indique si la traduction part du contenu français actuel.
+const enDir = join(atelier, "build/en");
+const sha = (buf) => createHash("sha256").update(buf).digest("hex");
+let en = 0;
+let enSql =
+  "-- Généré par scripts/import-atelier.mjs — ne pas modifier à la main.\n" +
+  "-- Traductions anglaises des fiches, en brouillon pour relecture (aucune\n" +
+  "-- publication). Idempotent.\n\n";
+for (const f of readdirSync(enDir).filter((f) => /^content_.*\.json$/.test(f)).sort()) {
+  const key = f.slice(8, -5);
+  if (!keys.includes(key)) {
+    console.warn(`Traduction sans fiche importée : ${key}`);
+    continue;
+  }
+  const raw = readFileSync(join(enDir, f));
+  const d = JSON.parse(raw.toString("utf8"));
+  if (d.lang !== "en") throw new Error(`${f} : langue ${d.lang}`);
+  const frRaw = readFileSync(join(atelier, "build", `content_${key}.json`));
+  const card = Object.fromEntries(CARD_FIELDS.filter((k) => d.meta?.[k] != null).map((k) => [k, d.meta[k]]));
+  const presentation = { v: 1, key, lang: "en", chip_legend: d.chip_legend ?? null, sections: d.sections };
+  const date = /^\d{4}-\d{2}-\d{2}$/.test(d.source_publication_date ?? "") ? d.source_publication_date : null;
+  enSql +=
+    `insert into public.document_translations (document_id, lang, card_json, presentation_json, key_points, a_verifier, source_publication_date, content_sha256, fr_a_jour)\n` +
+    `select d.id, 'en', ${json(card)}, ${json(presentation)}, ${json(d.key_points ?? [])}, ${json(d.a_verifier ?? [])}, ${q(date)}, ${q(sha(raw))}, ${d.translated_from?.sha256 === sha(frRaw)}\n` +
+    `from public.documents d where d.fiche_key = ${q(key)}\n` +
+    `on conflict (document_id, lang) do update set\n` +
+    `  card_json = excluded.card_json, presentation_json = excluded.presentation_json,\n` +
+    `  key_points = excluded.key_points, a_verifier = excluded.a_verifier,\n` +
+    `  source_publication_date = excluded.source_publication_date, fr_a_jour = excluded.fr_a_jour,\n` +
+    `  status = case when public.document_translations.content_sha256 = excluded.content_sha256\n` +
+    `    then public.document_translations.status else 'brouillon' end,\n` +
+    `  content_sha256 = excluded.content_sha256, imported_at = now();\n\n`;
+  en++;
+}
+writeFileSync(new URL("supabase/content/0210_traductions_en.sql", root), enSql);
+console.log(`${en} traduction(s) anglaise(s) en brouillon.`);
