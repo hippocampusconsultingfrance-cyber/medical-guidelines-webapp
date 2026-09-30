@@ -171,6 +171,13 @@ export default function ConfidentialitePage() {
         hébergées par le site lui-même.
       </p>
       <p className="mt-2">
+        Les erreurs techniques du site sont transmises à Sentry (Functional Software, Inc.),
+        hébergé dans l&apos;Union européenne (Allemagne), qui agit en tant que sous-traitant :
+        message d&apos;erreur, page concernée et type de navigateur, sans adresse IP, cookies,
+        identité ni contenu des fiches. Ces données servent uniquement à corriger les
+        dysfonctionnements et sont conservées 90 jours au plus.
+      </p>
+      <p className="mt-2">
         Chaque changement de votre consentement au partage avec des
         partenaires est horodaté et conservé dans un historique consultable
         depuis la page « Mon compte ».

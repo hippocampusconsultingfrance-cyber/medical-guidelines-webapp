@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { emailEnabled } from "@/lib/email";
+import { SENTRY_ENABLED } from "@/lib/sentry";
 import { checkoutOpen, stripeMode } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { loadLibrary } from "../data";
 import Shell from "../shell";
+import { testerSentry } from "./actions";
 
 export const metadata: Metadata = {
   title: "Tableau de bord — medical-guidelines.net",
@@ -34,7 +36,7 @@ type Tache = { label: string; n: number | null; href: string; detail: string };
 // tâches en attente, état du site et raccourcis. Pensé pour le téléphone.
 // Comptes lus avec la clé service_role (nombres seulement, aucune donnée
 // personnelle affichée).
-export default async function AdminPage() {
+export default async function AdminPage({ searchParams }: PageProps<"/bibliotheque/admin">) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -147,6 +149,11 @@ export default async function AdminPage() {
           : "Stripe non configuré.",
     ],
     ["E-mails", emailEnabled(), emailEnabled() ? "Envoi actif (Resend)." : "RESEND_API_KEY absente : aucun e-mail ne part."],
+    [
+      "Alertes d'erreurs (Sentry)",
+      SENTRY_ENABLED,
+      SENTRY_ENABLED ? "Actives : chaque erreur technique est envoyée à Sentry (UE)." : "Inactives hors production.",
+    ],
   ];
 
   const liens: [string, string][] = [
@@ -167,6 +174,13 @@ export default async function AdminPage() {
     ["Surveillance et sauvegardes (GitHub)", "https://github.com/hippocampusconsultingfrance-cyber/medical-guidelines-webapp/actions"],
   ];
 
+  const r = (await searchParams).r;
+  const sentryMessage =
+    r === "sentry_envoye"
+      ? "Erreur de test envoyée : elle doit apparaître dans Sentry → Issues d'ici une minute."
+      : r === "sentry_inactif"
+        ? "Sentry n'est actif qu'en production."
+        : null;
   const card = { background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius)", padding: "14px 16px" };
   const aFaire = taches.filter((t) => t.n !== null && t.n > 0).length;
 
@@ -226,6 +240,15 @@ export default async function AdminPage() {
           </div>
         ))}
       </div>
+
+      {sentryMessage && (
+        <div className="credit-strip" role="status" style={{ marginTop: 10 }}>
+          <b>{sentryMessage}</b>
+        </div>
+      )}
+      <form action={testerSentry} style={{ marginTop: 10 }}>
+        <button className="btn btn-ghost btn-sm">Envoyer une erreur de test à Sentry</button>
+      </form>
 
       <h2 className="block-section" style={{ marginTop: 28 }}>Raccourcis</h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 8 }}>
