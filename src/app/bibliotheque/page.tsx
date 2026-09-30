@@ -93,6 +93,14 @@ export default async function BibliothequePage({
         {lib.isEditor ? (
           <span>
             <b>Vue relecteur</b> : toutes les fiches sont lisibles, brouillons compris.
+            {lib.isAdmin && (
+              <>
+                {" "}
+                <Link href="/bibliotheque/admin" style={{ fontWeight: 700 }}>
+                  Tableau de bord →
+                </Link>
+              </>
+            )}
           </span>
         ) : lib.premium ? (
           <span>
