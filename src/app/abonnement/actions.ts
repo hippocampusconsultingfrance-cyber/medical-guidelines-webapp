@@ -77,7 +77,15 @@ export async function startCheckout(formData: FormData) {
   // incluse, comme pour un particulier : 50,00 € − remise = total, dont TVA).
   const stripe = getStripe();
   const rendering = { rendering_options: { amount_tax_display: "include_inclusive_tax" as const } };
-  const known = await knownCustomer(existing?.stripe_customer_id);
+  // Client déjà créé lors d'un paiement abandonné : réutilisé (pas de
+  // doublon dans Stripe), retrouvé par ses métadonnées.
+  let known = await knownCustomer(existing?.stripe_customer_id);
+  if (!known) {
+    const found = await stripe.customers
+      .search({ query: `metadata['app']:'${APP}' AND metadata['user_id']:'${user.id}'`, limit: 1 })
+      .catch(() => null);
+    known = found?.data[0]?.id ?? null;
+  }
   const customer = known
     ? (await stripe.customers.update(known, { invoice_settings: rendering })).id
     : (
