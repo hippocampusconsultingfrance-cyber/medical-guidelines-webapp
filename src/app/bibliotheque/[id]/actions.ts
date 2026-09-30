@@ -150,5 +150,10 @@ export async function setFreshness(formData: FormData) {
     })
     .eq("id", id)
     .select("id");
+  // Passage de veille : la source est vérifiée ce jour (sans effet tant que
+  // la migration 20260930130000 n'est pas appliquée).
+  if (!error && data?.length) {
+    await supabase.from("documents").update({ source_verified_at: new Date().toISOString().slice(0, 10) }).eq("id", id);
+  }
   back(error || !data?.length ? "veille_erreur" : label ? "veille_version" : "veille_ok");
 }

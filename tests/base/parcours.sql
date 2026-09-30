@@ -313,6 +313,8 @@ select pg_temp.ok(not has_column_privilege('anon', 'public.corrections_log', 'cr
   and not has_column_privilege('authenticated', 'public.corrections_log', 'error_report_id', 'select')
   and not has_table_privilege('authenticated', 'public.corrections_log', 'insert'),
   'journal : ni auteur ni signalement exposés, aucune écriture directe');
+select pg_temp.ok(has_column_privilege('anon', 'public.documents', 'source_verified_at', 'select'),
+  'date de vérification de la source lisible avec les métadonnées');
 reset role;
 
 select 'Parcours membre : toutes les vérifications sont passées.';
