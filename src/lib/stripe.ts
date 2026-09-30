@@ -24,7 +24,7 @@ import { mediateurRenseigne } from "./legal";
 //   - clé réelle (sk_live_…) : paiement ouvert à tous, une fois le
 //     médiateur de la consommation renseigné (lib/legal.ts).
 
-export const CGV_VERSION = "2026-09-29";
+export const CGV_VERSION = "2026-09-30";
 
 let client: Stripe | null = null;
 
