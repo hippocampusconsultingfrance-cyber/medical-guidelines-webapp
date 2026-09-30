@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { chargerPropositions } from "@/lib/actualisations";
 import { emailEnabled } from "@/lib/email";
+import { RECETTE } from "@/lib/recette";
 import { SENTRY_ENABLED } from "@/lib/sentry";
 import { checkoutOpen, stripeMode } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -70,6 +71,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     lettre,
     justificatifs,
     suspensions,
+    recette,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -85,6 +87,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("notifications_log").select("id", head).eq("body", `lettre:${mois}`)),
     count(admin.from("student_discount_requests").select("id", head).eq("status", "en_attente")),
     count(admin.from("access_blocks").select("id", head).gt("blocked_until", iso)),
+    count(admin.from("recette_validations").select("code", head)),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -102,6 +105,15 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
   ];
 
   const taches: Tache[] = [
+    {
+      label: "Recette avant ouverture commerciale",
+      n: recette === null ? null : RECETTE.length - recette,
+      href: "/bibliotheque/recette",
+      detail:
+        recette === null
+          ? "Migration de la recette pas encore appliquée dans Supabase."
+          : `${recette} / ${RECETTE.length} critères vérifiés et signés.`,
+    },
     { label: "Signalements d'erreur à traiter", n: signalements, href: "/bibliotheque/signalements", detail: "Erreurs signalées par les membres depuis une fiche." },
     {
       label: "Justificatifs professionnels en formation",
@@ -171,6 +183,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Traductions", "/bibliotheque/traductions"],
     ["Professionnels en formation", "/bibliotheque/etudiants"],
     ["Accès anormaux", "/bibliotheque/acces"],
+    ["Recette", "/bibliotheque/recette"],
     ["Actualisations à valider", "/bibliotheque/actualisations"],
     ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Vérification du paiement", "/abonnement/verification"],
