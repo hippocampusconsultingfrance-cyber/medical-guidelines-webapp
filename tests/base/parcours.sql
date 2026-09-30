@@ -354,4 +354,28 @@ set role authenticated;
 select pg_temp.ok((select count(*) from public.recette_validations) = 0, 'recette : invisible hors administrateurs');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 16. Durcissement : aucun droit superflu, signalements limités.
+-- ---------------------------------------------------------------------------
+select pg_temp.ok(not has_table_privilege('authenticated', 'public.subscriptions', 'truncate')
+  and not has_table_privilege('anon', 'public.profiles', 'update')
+  and not has_table_privilege('anon', 'public.error_reports', 'insert'),
+  'durcissement : ni TRUNCATE ni écriture pour les visiteurs');
+select pg_temp.agir(:'urgence');
+set role authenticated;
+do $$
+declare i int;
+begin
+  for i in 1..20 loop
+    insert into public.error_reports (user_id, doc, description) values ('00000000-0000-0000-0000-00000000a003', 'x', 'test ' || i);
+  end loop;
+  begin
+    insert into public.error_reports (user_id, doc, description) values ('00000000-0000-0000-0000-00000000a003', 'x', 'test 21');
+    raise exception 'ÉCHEC : 21e signalement accepté';
+  exception when sqlstate '54000' then null;
+  end;
+end $$;
+select 'ok  signalements : 21e en 24 h refusé';
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';
