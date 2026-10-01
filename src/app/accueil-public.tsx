@@ -53,7 +53,7 @@ const FAQ = [
   ],
   [
     "Que contient l'offre payante ?",
-    "L'abonnement PREMIUM (toutes les fiches de votre spécialité, 50 € TTC par an) n'est pas encore ouvert. Ce prix est une hypothèse commerciale, révisable, et sera confirmé avant l'ouverture des abonnements ; il inclut le tarif fondateurs (−30 % la première année pour les 100 premiers abonnés) et le tarif étudiant (−30 % sur justificatif), non cumulables.",
+    "L'abonnement PREMIUM ouvre toutes les fiches de votre spécialité, avec des alertes e-mail à chaque mise à jour, pour 50 € TTC par an, résiliable à tout moment. La première année : −30 % pour les 100 premiers abonnés (code FONDATEURS, soit 35 €) ou −30 % pour les professionnels de santé en formation sur justificatif ; ces réductions ne se cumulent pas.",
   ],
   [
     "Puis-je télécharger ou imprimer une fiche ?",
@@ -274,11 +274,8 @@ export default function AccueilPublic() {
                 Commencer gratuitement
               </Link>
             </div>
-            <div className="flex flex-col rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-7">
-              <h3 className="flex items-center gap-2 text-lg font-semibold text-slate-900">
-                Premium
-                <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-900">Bientôt</span>
-              </h3>
+            <div className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50 p-7">
+              <h3 className="text-lg font-semibold text-slate-900">Premium</h3>
               <p className="mt-2 text-4xl font-bold text-[#0E3A78]">
                 50 € <span className="text-base font-normal text-slate-500">TTC / an</span>
               </p>
@@ -288,9 +285,15 @@ export default function AccueilPublic() {
                 <li>✓ −30 % la première année pour les 100 premiers abonnés (offre membres fondateurs, 35 €)</li>
                 <li>✓ −30 % pour les internes et étudiants sur justificatif (non cumulable)</li>
               </ul>
-              <p className="mt-6 text-xs text-slate-500">
-                Ouverture des abonnements à venir. Prix indicatif, révisable avant
-                l&apos;ouverture ; créez votre compte gratuit pour être informé.
+              <Link href="/abonnement" className={`mt-7 ${primaryBtn}`}>
+                S&apos;abonner
+              </Link>
+              <p className="mt-3 text-xs text-slate-500">
+                Votre abonnement ne paie pas les recommandations, qui restent en accès libre sur les sites des
+                sociétés savantes : il finance les outils et le travail de synthèse.{" "}
+                <Link href="/demarche" className="underline">
+                  Notre démarche
+                </Link>
               </p>
             </div>
           </div>
