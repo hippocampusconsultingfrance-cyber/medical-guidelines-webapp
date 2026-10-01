@@ -1,4 +1,6 @@
 import type Stripe from "stripe";
+import { composerConfirmation, LOG_COMMANDE } from "@/lib/commande";
+import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { APP, getStripe, isOwnSubscription, periodEnd, toDbStatus } from "@/lib/stripe";
 
@@ -31,7 +33,8 @@ export async function POST(request: Request) {
       const ours = session.metadata?.app === APP || Boolean(session.metadata?.cgv_version);
       if (ours && session.mode === "subscription" && typeof session.subscription === "string") {
         const sub = await stripe.subscriptions.retrieve(session.subscription);
-        await saveSubscription(sub, session.client_reference_id);
+        const userId = await saveSubscription(sub, session.client_reference_id);
+        await confirmerCommande(session, sub, userId);
       }
     } else if (
       event.type === "customer.subscription.created" ||
@@ -84,4 +87,49 @@ async function saveSubscription(sub: Stripe.Subscription, clientReference: strin
   };
   const { error } = await admin.from("subscriptions").upsert(row, { onConflict: "user_id" });
   if (error) throw error;
+  return userId;
+}
+
+// Confirmation de commande sur support durable (CGV §7), une fois par
+// abonnement (notifications_log, clé d'idempotence Resend). Un échec d'envoi
+// n'empêche pas l'enregistrement de l'abonnement : il est seulement journalisé.
+async function confirmerCommande(session: Stripe.Checkout.Session, sub: Stripe.Subscription, userId: string) {
+  if (!emailEnabled()) return;
+  try {
+    const admin = createAdminClient();
+    const body = `${LOG_COMMANDE}:${sub.id}`;
+    const { count } = await admin
+      .from("notifications_log")
+      .select("id", { count: "exact", head: true })
+      .eq("user_id", userId)
+      .eq("body", body);
+    if (count) return;
+    const [{ data: profil }, { data: compte }] = await Promise.all([
+      admin.from("profiles").select("prenom").eq("id", userId).maybeSingle(),
+      admin.auth.admin.getUserById(userId),
+    ]);
+    const to = compte?.user?.email ?? session.customer_details?.email;
+    if (!to) return;
+    const meta = sub.metadata ?? {};
+    const email = composerConfirmation(
+      {
+        email: to,
+        prenom: (profil?.prenom as string | null) || null,
+        montantCents: session.amount_total ?? sub.items?.data?.[0]?.price?.unit_amount ?? 0,
+        debut: new Date(sub.created * 1000).toISOString(),
+        fin: periodEnd(sub),
+        cgvVersion: meta.cgv_version || null,
+        renonciation: meta.withdrawal_waiver_at || null,
+      },
+      siteUrl(),
+    );
+    const sent = await sendBatch([email], body);
+    if (!sent.ok) {
+      console.error("Confirmation de commande : envoi", sent.error);
+      return;
+    }
+    await admin.from("notifications_log").insert({ user_id: userId, subject: email.subject, body, channel: "email" });
+  } catch (e) {
+    console.error("Confirmation de commande", e);
+  }
 }
