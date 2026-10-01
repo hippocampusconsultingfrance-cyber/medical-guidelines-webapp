@@ -91,6 +91,14 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
+  // Registre juridique (CDC §12.4) : fiches en ligne sans statut « validé ».
+  const [{ data: enLigne }, { data: valides, error: erreurRegistre }] = await Promise.all([
+    admin.from("documents").select("id, publication_date").not("published_at", "is", null).neq("freshness_status", "retiree"),
+    admin.from("source_legal_profiles").select("document_id").eq("legal_review_status", "valide"),
+  ]);
+  const idsValides = new Set((valides ?? []).map((v) => v.document_id as string));
+  const sansJuridique = erreurRegistre ? null : (enLigne ?? []).filter((d) => !idsValides.has(d.id as string)).length;
+  const sansDate = (enLigne ?? []).filter((d) => !d.publication_date).length;
   const { data: facteurs } = await supabase.auth.mfa.listFactors();
   const mfa = (facteurs?.totp ?? []).some((f) => f.status === "verified");
   const mode = stripeMode();
@@ -115,6 +123,18 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
         recette === null
           ? "Migration de la recette pas encore appliquée dans Supabase."
           : `${recette} / ${RECETTE.length} critères vérifiés et signés.`,
+    },
+    {
+      label: "Registre juridique des sources",
+      n: sansJuridique,
+      href: "/bibliotheque/juridique",
+      detail: "Fiches en ligne sans statut juridique « Validé » : à renseigner par société (obligatoire pour publier).",
+    },
+    {
+      label: "Fiches en ligne sans date de la source",
+      n: sansDate,
+      href: "/bibliotheque",
+      detail: "Date de publication de la source à compléter (ou fiche à dépublier).",
     },
     { label: "Signalements d'erreur à traiter", n: signalements, href: "/bibliotheque/signalements", detail: "Erreurs signalées par les membres depuis une fiche." },
     {
@@ -194,6 +214,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Journal d'administration", "/bibliotheque/journal"],
     ["Actualisations à valider", "/bibliotheque/actualisations"],
     ["Recommandations divergentes", "/bibliotheque/divergences"],
+    ["Registre juridique", "/bibliotheque/juridique"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Santé du site", "/api/sante"],
   ];

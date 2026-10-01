@@ -80,7 +80,7 @@ export default async function BibliothequePage({
   return (
     <Shell lib={lib}>
       <div className="hero">
-        <div className="hero__eyebrow">Anesthésie-réanimation</div>
+        <div className="hero__eyebrow">{lib.specialty ?? "Recommandations"}</div>
         <h1>Les recommandations, enfin lisibles.</h1>
         <p>
           Synthèses fidèles des recommandations des sociétés savantes — grades

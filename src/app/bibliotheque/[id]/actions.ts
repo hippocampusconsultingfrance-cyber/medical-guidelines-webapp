@@ -48,7 +48,17 @@ export async function setPublication(formData: FormData) {
 
   const supabase = await createClient();
   const { error } = await supabase.rpc("publish_document", { doc_id: id, publier });
-  const status = error ? "publication_erreur" : publier ? "publiee" : "depubliee";
+  const status = error
+    ? /juridique/.test(error.message)
+      ? "publication_juridique"
+      : /Date/.test(error.message)
+        ? "publication_date"
+        : /URL/.test(error.message)
+          ? "publication_source"
+          : "publication_erreur"
+    : publier
+      ? "publiee"
+      : "depubliee";
   redirect(`/bibliotheque/${id}?r=${status}`);
 }
 

@@ -11,8 +11,9 @@ export default function CguPage() {
       </h2>
       <p className="mt-2">
         Medical Guidelines est un site de fiches de synthèse des
-        recommandations professionnelles françaises en anesthésie-réanimation
-        et médecine critique. L&apos;accès au contenu est réservé aux
+        recommandations professionnelles françaises de plusieurs spécialités
+        (anesthésie-réanimation, médecine critique, médecine d&apos;urgence,
+        pédiatrie…). L&apos;accès au contenu est réservé aux
         professionnels de santé et étudiants des filières médicales et
         paramédicales, sous réserve de la création d&apos;un compte.
         Le compte gratuit donne accès, dans la spécialité choisie à

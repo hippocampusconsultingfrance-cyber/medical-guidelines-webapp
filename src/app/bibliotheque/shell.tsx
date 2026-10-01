@@ -148,6 +148,10 @@ export default function Shell({
               <Link href="/bibliotheque/actualisations" style={{ color: "inherit" }}>
                 Actualisations
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/juridique" style={{ color: "inherit" }}>
+                Registre juridique
+              </Link>
               {lib.isAdmin && (
                 <>
                   {" · "}
