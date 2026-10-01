@@ -50,6 +50,13 @@ export default async function ComptePage({ searchParams }: PageProps<"/compte">)
         </Link>{" "}
         : protégez votre compte par un code sur votre téléphone.
       </p>
+      <p className="mt-3 rounded-lg border border-slate-200 p-3 text-sm">
+        💡{" "}
+        <Link href="/suggestions?page=%2Fcompte" className="font-semibold text-teal-700 underline">
+          Une idée, un problème ?
+        </Link>{" "}
+        : aidez-nous à améliorer le site.
+      </p>
 
       <AlertesSection supabase={supabase} userId={user.id} r={typeof r === "string" ? r : ""} />
 

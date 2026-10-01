@@ -451,4 +451,25 @@ select pg_temp.ok(exists (select 1 from public.audit_log where entity_type = 'so
   'registre juridique : modifications tracées');
 update public.documents set publication_date = '2020-01-01', published_at = now() where id = :'fv';
 
+-- ---------------------------------------------------------------------------
+-- 20. Suggestions des membres : privées, auteur imposé, limitées.
+-- ---------------------------------------------------------------------------
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+insert into public.site_suggestions (categorie, message, page) values ('amelioration', 'Ajouter un mode sombre', '/bibliotheque');
+select pg_temp.ok(pg_temp.refuse(format('insert into public.site_suggestions (user_id, categorie, message) values (%L, %L, %L)', :'premium', 'autre', 'au nom d''un autre'), 'row-level security'),
+  'suggestion : impossible d''écrire au nom d''un autre membre');
+select pg_temp.ok(pg_temp.refuse('insert into public.site_suggestions (categorie, message, status) values (''autre'', ''déjà traitée ?'', ''traite'')', 'row-level security'),
+  'suggestion : statut imposé à « nouveau »');
+select pg_temp.agir(:'premium');
+select pg_temp.ok((select count(*) from public.site_suggestions) = 0, 'suggestion : invisible pour les autres membres');
+select pg_temp.agir(:'gratuit');
+select pg_temp.ok((select count(*) from public.site_suggestions) = 1, 'suggestion : relue par son auteur');
+select pg_temp.ok(pg_temp.refuse('update public.site_suggestions set status = ''traite''', 'permission denied'),
+  'suggestion : statut non modifiable par le membre');
+insert into public.site_suggestions (categorie, message) select 'autre', 'message ' || g from generate_series(1, 9) g;
+select pg_temp.ok(pg_temp.refuse('insert into public.site_suggestions (categorie, message) values (''autre'', ''onzième'')', '24 heures'),
+  'suggestion : 11e message en 24 h refusé');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';
