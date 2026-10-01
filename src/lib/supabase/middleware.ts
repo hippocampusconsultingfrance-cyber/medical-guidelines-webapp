@@ -46,6 +46,8 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
     request.nextUrl.pathname.startsWith("/recommandations") ||
     // Journal public des corrections (date, fiche, criticité, résumé).
     request.nextUrl.pathname === "/corrections" ||
+    // Démarche et financement du site (public).
+    request.nextUrl.pathname === "/demarche" ||
     request.nextUrl.pathname === "/sitemap.xml" ||
     // Appelé par Stripe (sans session) ; authentifié par sa signature.
     request.nextUrl.pathname === "/api/stripe/webhook" ||

@@ -48,6 +48,10 @@ const FAQ = [
     "Non. Ce sont des synthèses indépendantes, écrites comme aide-mémoire. Elles ne sont ni éditées ni validées par les sociétés savantes citées et ne remplacent ni le document source ni le jugement clinique.",
   ],
   [
+    "Vendez-vous les recommandations des sociétés savantes ?",
+    "Non. Les recommandations restent en accès libre sur les sites des sociétés savantes, et chaque fiche renvoie au texte officiel. L'abonnement finance le service : d'abord les outils d'intelligence artificielle qui aident à préparer les fiches, puis l'hébergement et la relecture médicale. Ce site a été construit grâce à des personnes volontaires.",
+  ],
+  [
     "Que contient l'offre payante ?",
     "L'abonnement PREMIUM (toutes les fiches de votre spécialité, 50 € TTC par an) n'est pas encore ouvert. Ce prix est une hypothèse commerciale, révisable, et sera confirmé avant l'ouverture des abonnements ; il inclut le tarif fondateurs (−30 % la première année pour les 100 premiers abonnés) et le tarif étudiant (−30 % sur justificatif), non cumulables.",
   ],
@@ -338,7 +342,14 @@ export default function AccueilPublic() {
             validées par les sociétés savantes citées.
           </p>
           <p>
-            Contact :{" "}
+            <Link href="/demarche" className="underline hover:text-slate-900">
+              Notre démarche
+            </Link>{" "}
+            ·{" "}
+            <Link href="/corrections" className="underline hover:text-slate-900">
+              Journal des corrections
+            </Link>{" "}
+            · Contact :{" "}
             <a href="mailto:contact@medical-guidelines.net" className="underline hover:text-slate-900">
               contact@medical-guidelines.net
             </a>{" "}

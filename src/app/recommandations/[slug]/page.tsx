@@ -117,7 +117,8 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
         <p className="mt-6 text-sm">
           <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1C7FB6] underline">
             Document source officiel ↗
-          </a>
+          </a>{" "}
+          <span className="text-slate-500">— en accès libre sur le site de la société savante.</span>
         </p>
 
         <section className="mt-10 rounded-2xl bg-[#EEF6FB] p-6">
@@ -154,7 +155,10 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
         <p className="mt-10 text-xs text-slate-500">
           Synthèse indépendante : elle ne remplace ni le texte intégral de la recommandation
           officielle ni le jugement clinique, et n&apos;est ni éditée ni validée par les sociétés
-          savantes citées.
+          savantes citées.{" "}
+          <Link href="/demarche" className="underline">
+            Notre démarche
+          </Link>
         </p>
       </main>
     </div>
