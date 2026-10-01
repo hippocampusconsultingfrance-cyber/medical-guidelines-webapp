@@ -37,7 +37,7 @@ export async function calculerSynthese(admin: SupabaseClient, now: Date): Promis
     const { count: n, error } = await q;
     return error ? null : (n ?? 0);
   };
-  const [membres, nouveaux, premium, nouveauxPremium, lectures, signalements, justificatifs, suspensions, traductions, revision, lettre, fichesMois, roles] =
+  const [membres, nouveaux, premium, nouveauxPremium, lectures, signalements, justificatifs, suspensions, traductions, revision, lettre, fichesMois, roles, suggestions] =
     await Promise.all([
       count(admin.from("profiles").select("id", head).is("editorial_role", null)),
       count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -52,6 +52,7 @@ export async function calculerSynthese(admin: SupabaseClient, now: Date): Promis
       count(admin.from("notifications_log").select("id", head).eq("body", `lettre:${mois}`)),
       count(admin.from("documents").select("id", head).gte("published_at", `${mois}-01`)),
       count(admin.from("audit_log").select("id", head).eq("entity_type", "profiles").gte("created_at", since7)),
+      count(admin.from("site_suggestions").select("id", head).eq("status", "nouveau")),
     ]);
   const actualisations = (await chargerPropositions(admin)).length;
   return {
@@ -65,6 +66,7 @@ export async function calculerSynthese(admin: SupabaseClient, now: Date): Promis
     ],
     taches: [
       ["Signalements d'erreur à traiter", signalements, "/bibliotheque/signalements"],
+      ["Suggestions des membres à traiter", suggestions, "/bibliotheque/suggestions"],
       ["Justificatifs de formation à valider", justificatifs, "/bibliotheque/etudiants"],
       ["Actualisations à valider", actualisations, "/bibliotheque/actualisations"],
       ["Fiches « révision détectée »", revision, "/bibliotheque"],

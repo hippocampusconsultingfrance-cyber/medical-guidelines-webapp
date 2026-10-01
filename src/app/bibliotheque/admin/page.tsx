@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { chargerPropositions } from "@/lib/actualisations";
+import { assistantConfigure, assistantOuvertAuxMembres } from "@/lib/assistant";
 import { emailEnabled } from "@/lib/email";
 import { RECETTE } from "@/lib/recette";
 import { SENTRY_ENABLED } from "@/lib/sentry";
@@ -73,6 +74,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     suspensions,
     recette,
     suggestions,
+    questions7,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -90,6 +92,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("access_blocks").select("id", head).gt("blocked_until", iso)),
     count(admin.from("recette_validations").select("code", head)),
     count(admin.from("site_suggestions").select("id", head).eq("status", "nouveau")),
+    count(admin.from("assistant_usage").select("id", head).gte("created_at", since7)),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -208,6 +211,13 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
       mfa ? "Activée : les droits d'administration exigent votre code." : "Non activée : à activer dans Mon compte → Double authentification.",
     ],
     [
+      "Assistant de recherche (bêta)",
+      assistantConfigure() ? true : false,
+      !assistantConfigure()
+        ? "ANTHROPIC_API_KEY absente dans Vercel : assistant inactif."
+        : `${assistantOuvertAuxMembres() ? "Ouvert aux abonnés PREMIUM" : "Réservé à l'équipe (ASSISTANT_PUBLIC non activé)"} · ${questions7 ?? "?"} question(s) en 7 jours.`,
+    ],
+    [
       "Alertes d'erreurs (Sentry)",
       SENTRY_ENABLED,
       SENTRY_ENABLED ? "Actives : chaque erreur technique est envoyée à Sentry (UE)." : "Inactives hors production.",
@@ -228,6 +238,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Registre juridique", "/bibliotheque/juridique"],
     ["Vérification du paiement", "/abonnement/verification"],
+    ["Assistant de recherche", "/assistant"],
     ["Santé du site", "/api/sante"],
   ];
   const externes: [string, string][] = [

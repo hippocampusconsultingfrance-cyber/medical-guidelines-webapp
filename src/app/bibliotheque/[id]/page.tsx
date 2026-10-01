@@ -554,8 +554,23 @@ export default async function FichePage({
           </form>
         </details>
         <p className="block-p is-note" style={{ marginTop: 40 }}>
-          Synthèse indépendante : elle ne remplace pas le texte intégral de la
-          recommandation officielle.{" "}
+          <b>Référence de la source :</b>{" "}
+          {[doc.societies.join(" / ") || card?.society, `« ${doc.title} »`, card?.version ?? date]
+            .filter(Boolean)
+            .join(", ")}
+          .{" "}
+          {extra?.source_url && (
+            <>
+              Texte intégral en accès libre :{" "}
+              <a href={extra.source_url} target="_blank" rel="noopener noreferrer">
+                document officiel ↗
+              </a>
+              .{" "}
+            </>
+          )}
+          Les recommandations citées restent l&apos;œuvre et la propriété de leurs auteurs ; cette fiche est une
+          synthèse indépendante qui ne remplace pas le texte intégral. Correction ou retrait :{" "}
+          <a href="mailto:contact@medical-guidelines.net">contact@medical-guidelines.net</a>.{" "}
           <Link href="/bibliotheque">← Toutes les fiches</Link>
         </p>
       </div>
