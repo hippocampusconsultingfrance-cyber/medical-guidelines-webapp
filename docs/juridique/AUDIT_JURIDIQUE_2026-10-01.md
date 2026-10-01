@@ -9,7 +9,7 @@
 
 | Sujet | Niveau de risque | Ce qui protège déjà | À faire |
 |---|---|---|---|
-| Reprise mot pour mot des libellés des recommandations | **Élevé** pour les sources « tous droits réservés » (SFAR, SFMU…) | Source citée, lien vers le texte officiel, pas de PDF, pas de logo | Politique de citation, registre juridique, demande d'autorisation |
+| Libellés des recommandations recopiés ou très proches (≈ 40 %, mesuré) | **Moyen à élevé** pour les sources « tous droits réservés » (SFAR, SFMU…) | Source citée, lien vers le texte officiel, pas de PDF, pas de logo | Politique de citation, registre juridique, demande d'autorisation |
 | Sources HAS | **Faible** | Réutilisation libre sous conditions | Indiquer la date de dernière mise à jour HAS |
 | Traductions anglaises | **Élevé** si publiées sans autorisation | Aucune publiée ; verrou en base ajouté | Garder non publiées jusqu'à autorisation écrite |
 | Noms et sigles des sociétés (SFAR, SRLF…) | Faible | Usage pour désigner la source, aucun logo, « ni éditée ni validée » | Rien |
@@ -52,21 +52,35 @@ commercial avec attribution. Vérifier la licence imprimée sur chaque article.
 
 ## 4. Constat sur nos fiches
 
-- **Échantillon vérifié** : la fiche « Blocs périmédullaires — terrain
-  infectieux » a été comparée au PDF de la SFAR (*AFAR* 2007). Les phrases
-  contrôlées y sont **reprises mot pour mot**, par exemple « De principe, la
-  fièvre est une contre-indication à l'APM ». C'est fidèle médicalement, mais
-  juridiquement c'est une reproduction, pas une reformulation.
-- C'est **contraire au cahier des charges** lui-même (§12.4 : « reformulation
-  éditoriale ; citation courte du libellé exact selon avis juridique » ; « pas
-  de reproduction à l'identique de tableaux »).
+**Mesure complète** (script `scripts/juridique/mesure_reprises.py`, rapport
+détaillé fiche par fiche : `docs/juridique/MESURE_REPRISES.md`). Les 158
+fiches en ligne ont été comparées automatiquement à leur source officielle
+(PDF ou page web). Pour une source web qui n'est qu'une page d'accueil du
+document, la mesure sous-estime la reprise.
+
+| Libellés de recommandation (5 705) | Part |
+|---|---|
+| Recopiés quasi mot pour mot | **10 %** (569) |
+| Très proches de la source, à quelques mots près | **30 %** (1 705) |
+| Reformulés | **60 %** (3 431) |
+
+- **Bonne nouvelle** : les fiches ne sont pas des copies des documents. En
+  moyenne, seule une petite partie du texte d'une fiche se retrouve à
+  l'identique dans la source (12 % pour la SFAR, 22 % pour la SRLF). Une
+  seule fiche dépasse 50 % (GIHP, agents antiplaquettaires).
+- **Point de vigilance** : environ 4 libellés sur 10 restent recopiés ou très
+  proches du texte de la source, par exemple « De principe, la fièvre est une
+  contre-indication à l'APM ». C'est voulu pour la fidélité médicale, mais
+  juridiquement il s'agit d'une reproduction, à couvrir par la courte
+  citation (guillemets, source) ou par une autorisation.
+- Le cahier des charges (§12.4) prévoit « reformulation éditoriale ; citation
+  courte du libellé exact selon avis juridique » : la pratique est donc
+  majoritairement conforme, avec un reste à traiter.
 - Les fiches ne reproduisent ni l'argumentaire, ni les figures, ni la mise en
-  page, ni les logos, et renvoient toujours au document officiel : c'est un
-  bon point, mais cela ne suffit pas pour une reprise systématique des
-  libellés.
-- **Registre juridique : vide** (0 fiche « validée » sur 159 en ligne). Depuis
-  le 01/10, aucune nouvelle fiche ne peut être publiée sans statut validé
-  (verrou en base).
+  page, ni les logos, et renvoient toujours au document officiel.
+- **Registre juridique** : SFAR (110 fiches) en « en revue » ; autres sources
+  non renseignées. Depuis le 01/10, aucune nouvelle fiche ne peut être
+  publiée sans statut validé (verrou en base).
 
 ## 5. Améliorations déjà faites (01/10/2026)
 
@@ -105,7 +119,10 @@ commercial avec attribution. Vérifier la licence imprimée sur chaque article.
      si nécessaire) une autorisation écrite de reprendre les libellés courts
      des recommandations, avec renvoi vers leur site (modèle au §8).
    - **Option C — mixte** (recommandée) : demander l'autorisation à la SFAR
-     (110 fiches) et reformuler les autres sources. **[AVOCAT]**
+     (110 fiches) et, pour les autres sources, reformuler les libellés
+     recopiés (liste fiche par fiche dans `MESURE_REPRISES.md`, en
+     commençant par les fiches les plus proches) ou les présenter comme
+     citations courtes, entre guillemets. **[AVOCAT]**
 3. **Traductions anglaises** : ne pas les publier tant qu'aucune
    autorisation écrite de traduction n'existe (verrou en place).
 
