@@ -8,9 +8,9 @@ import { loadPublicFiches } from "./data";
 import PublicHeader from "./public-header";
 
 export const metadata: Metadata = {
-  title: "Recommandations en anesthésie-réanimation — fiches de synthèse | medical-guidelines.net",
+  title: "Recommandations médicales des sociétés savantes — fiches de synthèse | medical-guidelines.net",
   description:
-    "Toutes les recommandations des sociétés savantes en anesthésie-réanimation (SFAR, SRLF, SFMU, HAS…) en fiches de synthèse claires et sourcées, grades conservés.",
+    "Les recommandations des sociétés savantes françaises (SFAR, SRLF, SFMU, HAS…) en fiches de synthèse claires et sourcées, grades conservés : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
   alternates: { canonical: `${SITE_URL}/recommandations` },
   robots: { index: INDEXABLE, follow: INDEXABLE },
 };
@@ -25,7 +25,7 @@ export default async function RecommandationsPage() {
     <div className="min-h-screen bg-white text-slate-800">
       <PublicHeader connected={Boolean(auth.user)} />
       <main className="mx-auto max-w-5xl px-4 py-10 sm:px-6">
-        <p className="text-sm font-semibold uppercase tracking-wide text-[#2BB5A6]">Anesthésie-réanimation</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#2BB5A6]">Toutes spécialités</p>
         <h1 className="mt-2 text-3xl font-bold text-[#0E3A78]">
           {fiches.length} recommandations en fiches de synthèse
         </h1>
