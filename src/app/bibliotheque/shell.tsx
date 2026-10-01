@@ -111,6 +111,14 @@ export default function Shell({
           <Link href="/compte" style={{ color: "inherit" }}>
             Mon compte
           </Link>
+          {(lib.isEditor || lib.premium) && (
+            <>
+              {" · "}
+              <Link href="/assistant" style={{ color: "inherit" }}>
+                Assistant de recherche (bêta)
+              </Link>
+            </>
+          )}
           {lib.isAdmin && (
             <>
               {" · "}
