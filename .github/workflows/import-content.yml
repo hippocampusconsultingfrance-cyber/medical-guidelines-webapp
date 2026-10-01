@@ -11,12 +11,18 @@ on:
         description: 'Tapez IMPORTER pour confirmer'
         required: true
 
+# Moindre privilège : le jeton GitHub des tâches ne peut que lire le code.
+permissions:
+  contents: read
+
 jobs:
   importer:
     if: ${{ github.event.inputs.confirmation == 'IMPORTER' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 22
