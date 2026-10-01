@@ -65,7 +65,9 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
     request.nextUrl.pathname === "/robots.txt" ||
     // Installation sur l'écran d'accueil (manifeste et icônes).
     request.nextUrl.pathname === "/manifest.webmanifest" ||
-    request.nextUrl.pathname.startsWith("/icones/");
+    request.nextUrl.pathname.startsWith("/icones/") ||
+    // Contact de sécurité (RFC 9116).
+    request.nextUrl.pathname === "/.well-known/security.txt";
 
   if (!user && !isAuthRoute && !isPublicAsset && request.nextUrl.pathname !== "/") {
     const url = request.nextUrl.clone();
