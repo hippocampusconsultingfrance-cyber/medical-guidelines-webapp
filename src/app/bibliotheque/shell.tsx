@@ -165,6 +165,10 @@ export default function Shell({
               <Link href="/bibliotheque/reformulations" style={{ color: "inherit" }}>
                 Reformulations
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/points-cles" style={{ color: "inherit" }}>
+                Points clés
+              </Link>
               {lib.isAdmin && (
                 <>
                   {" · "}

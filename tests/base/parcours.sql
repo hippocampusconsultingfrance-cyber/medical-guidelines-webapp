@@ -545,4 +545,31 @@ select set_config('request.jwt.claims', '', false);
 select pg_temp.ok(exists (select 1 from public.audit_log where action = 'fiche_relue' and entity_id = :'rd'),
   'relecture : tracée au journal');
 
+-- ---------------------------------------------------------------------------
+-- 24. Points clés : validateur seulement, 3 à 5 points, invisibles des membres.
+-- ---------------------------------------------------------------------------
+\set QUIET 1
+set client_min_messages = warning;
+\i supabase/migrations/20261001180000_points_cles.sql
+select document_id as pd from public.points_cles_propositions order by fiche_key limit 1 \gset
+select pg_temp.ok((select count(*) from public.points_cles_propositions) >= 100, 'points clés : propositions chargées');
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.points_cles_propositions) = 0, 'points clés : propositions invisibles pour un membre');
+select pg_temp.ok(not has_column_privilege('public.documents', 'points_cles', 'select'), 'points clés : colonne non lisible directement');
+select pg_temp.ok(pg_temp.refuse(format('select public.valider_points_cles(%L, array[''a'',''b'',''c''])', :'pd'), 'Réservé'),
+  'points clés : validation refusée à un membre');
+reset role;
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select pg_temp.ok(public.valider_points_cles(:'pd', array['Un', 'Deux']) = 'points_invalides', 'points clés : moins de 3 points refusés');
+select pg_temp.ok(public.valider_points_cles(:'pd', array['Point un.', 'Point deux.', ' ', 'Point trois.']) = 'ok', 'points clés : validés par un validateur');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok((select points_cles = '["Point un.", "Point deux.", "Point trois."]'::jsonb from public.documents where id = :'pd'),
+  'points clés : enregistrés sur la fiche (lignes vides retirées)');
+select pg_temp.ok(exists (select 1 from public.audit_log where action = 'points_cles_valides' and entity_id = :'pd'),
+  'points clés : tracés au journal');
+
 select 'Parcours membre : toutes les vérifications sont passées.';

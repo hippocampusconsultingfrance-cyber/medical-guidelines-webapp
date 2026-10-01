@@ -77,6 +77,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     questions7,
     reformulations,
     sansRelecture,
+    pointsCles,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -97,6 +98,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("assistant_usage").select("id", head).gte("created_at", since7)),
     count(admin.from("libelles_reformulation").select("id", head).eq("status", "proposee")),
     count(admin.from("documents").select("id", head).not("published_at", "is", null).neq("freshness_status", "retiree").is("relue_le", null)),
+    count(admin.from("points_cles_propositions").select("document_id", head).eq("status", "proposee")),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -147,6 +149,15 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
         reformulations === null
           ? "Migration des reformulations pas encore appliquée dans Supabase."
           : "Libellés recopiés de la source : valider, retoucher ou garder chaque proposition.",
+    },
+    {
+      label: "Points clés à valider",
+      n: pointsCles,
+      href: "/bibliotheque/points-cles",
+      detail:
+        pointsCles === null
+          ? "Migration des points clés pas encore appliquée dans Supabase."
+          : "3 à 5 points clés proposés par fiche : vérifier, retoucher, valider (et signer la relecture en même temps).",
     },
     {
       label: "Fiches en ligne sans mention de relecture",
@@ -261,6 +272,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Registre juridique", "/bibliotheque/juridique"],
     ["Reformulations à valider", "/bibliotheque/reformulations"],
+    ["Points clés à valider", "/bibliotheque/points-cles"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Assistant de recherche", "/assistant"],
     ["Santé du site", "/api/sante"],

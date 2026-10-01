@@ -1,7 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { PROFESSION_GROUPS } from "@/lib/professions";
+import { signerRelecture } from "@/lib/relecture";
 import { createClient } from "@/lib/supabase/server";
 
 const UUID = /^[0-9a-f-]{36}$/i;
@@ -63,20 +63,6 @@ export async function setPublication(formData: FormData) {
       ? "publiee"
       : "depubliee";
   redirect(`/bibliotheque/${id}?r=${status}`);
-}
-
-// Titre « Dr » pour les médecins, chirurgiens-dentistes et pharmaciens.
-const DOCTEURS = new Set(
-  PROFESSION_GROUPS.filter((g) => g.label === "Médecins" || g.label === "Odontologie et pharmacie").flatMap((g) => g.options),
-);
-
-async function signerRelecture(supabase: Awaited<ReturnType<typeof createClient>>, id: string) {
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) return { error: { message: "non connecté" } };
-  const { data: profil } = await supabase.from("profiles").select("profession").eq("id", user.id).maybeSingle();
-  return supabase.rpc("marquer_relue", { doc_id: id, docteur: DOCTEURS.has((profil?.profession as string | null) ?? "") });
 }
 
 // Relecture d'une fiche déjà en ligne (validateur) : met à jour la mention
