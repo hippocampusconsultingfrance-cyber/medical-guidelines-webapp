@@ -76,6 +76,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     suggestions,
     questions7,
     reformulations,
+    sansRelecture,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -95,6 +96,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("site_suggestions").select("id", head).eq("status", "nouveau")),
     count(admin.from("assistant_usage").select("id", head).gte("created_at", since7)),
     count(admin.from("libelles_reformulation").select("id", head).eq("status", "proposee")),
+    count(admin.from("documents").select("id", head).not("published_at", "is", null).neq("freshness_status", "retiree").is("relue_le", null)),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -145,6 +147,15 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
         reformulations === null
           ? "Migration des reformulations pas encore appliquée dans Supabase."
           : "Libellés recopiés de la source : valider, retoucher ou garder chaque proposition.",
+    },
+    {
+      label: "Fiches en ligne sans mention de relecture",
+      n: sansRelecture,
+      href: "/bibliotheque",
+      detail:
+        sansRelecture === null
+          ? "Migration de la mention de relecture pas encore appliquée dans Supabase."
+          : "Relire la fiche puis « Signer la relecture » : la fiche affiche « Relue par Dr …, le … ».",
     },
     {
       label: "Fiches en ligne sans date de la source",
