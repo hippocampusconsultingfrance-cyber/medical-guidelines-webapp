@@ -41,7 +41,7 @@ const ETAPES = [
 const FAQ = [
   [
     "Pour qui ?",
-    "Pour les médecins, internes et étudiants, ainsi que pour les professionnels paramédicaux. La spécialité pilote est l'anesthésie-réanimation (sociétés savantes françaises : SFAR, SRLF, HAS et partenaires) ; vous choisissez à l'inscription la spécialité que vous souhaitez consulter.",
+    "Pour les médecins, internes et étudiants, ainsi que pour les professionnels paramédicaux. Les fiches couvrent déjà l'anesthésie-réanimation, la réanimation, la médecine d'urgence, la pédiatrie et d'autres spécialités, et s'étendent progressivement ; vous choisissez à l'inscription la spécialité que vous souhaitez consulter.",
   ],
   [
     "Ces fiches remplacent-elles les recommandations officielles ?",
