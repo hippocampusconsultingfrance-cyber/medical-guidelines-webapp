@@ -184,6 +184,22 @@ export default function ConfidentialitePage() {
         dysfonctionnements et sont conservées 90 jours au plus.
       </p>
       <p className="mt-2">
+        <b>Suggestions des membres.</b> Lorsque vous envoyez une suggestion (bouton « Une idée ? »),
+        nous conservons votre message, son type, la page d&apos;où il est envoyé, sa date et le lien
+        avec votre compte, afin de le traiter et de vous en indiquer le suivi. Seule l&apos;équipe
+        d&apos;administration y a accès. Le message est supprimé avec votre compte. N&apos;y indiquez
+        aucune donnée concernant un patient.
+      </p>
+      <p className="mt-2">
+        <b>Assistant de recherche (bêta).</b> Lorsque vous l&apos;utilisez, votre question et des
+        extraits des fiches sont transmis à Anthropic (Anthropic PBC, États-Unis), qui agit en tant
+        que sous-traitant pour produire la réponse, avec des transferts encadrés par les clauses
+        contractuelles types de la Commission européenne. Ni la question ni la réponse ne sont
+        conservées par le site : seuls la date et le nombre d&apos;extraits sont enregistrés, pour
+        appliquer la limite quotidienne. Ne saisissez aucune donnée permettant d&apos;identifier un
+        patient.
+      </p>
+      <p className="mt-2">
         Chaque changement de votre consentement au partage avec des
         partenaires est horodaté et conservé dans un historique consultable
         depuis la page « Mon compte ».

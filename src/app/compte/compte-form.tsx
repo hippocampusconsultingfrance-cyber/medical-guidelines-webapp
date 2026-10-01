@@ -115,6 +115,7 @@ export default function CompteForm({
       { data: follows },
       { data: alerts },
       { data: history },
+      { data: suggestions },
     ] = await Promise.all([
       supabase.from("profiles").select("*").eq("id", uid).single(),
       supabase.from("consent_log").select("consent_type, value, recorded_at"),
@@ -129,6 +130,7 @@ export default function CompteForm({
         .eq("user_id", uid),
       supabase.from("notifications_log").select("subject, body, document_id, channel, sent_at").eq("user_id", uid),
       supabase.from("consultation_history").select("document_id, viewed_at").eq("user_id", uid),
+      supabase.from("site_suggestions").select("categorie, page, message, status, created_at").eq("user_id", uid),
     ]);
     setBusy(false);
 
@@ -142,6 +144,7 @@ export default function CompteForm({
       societes_suivies: follows ?? [],
       alertes_envoyees: alerts ?? [],
       historique_consultation: history ?? [],
+      suggestions: suggestions ?? [],
     };
     const blob = new Blob([JSON.stringify(data, null, 2)], {
       type: "application/json",
