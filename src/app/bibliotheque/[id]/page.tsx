@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { chargerCorrections, CRITICITES, dateCorrection } from "@/lib/corrections";
 import { signalerSuspensions } from "@/lib/extraction";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import {
   accordion,
@@ -319,6 +320,11 @@ export default async function FichePage({
   const corrections = await chargerCorrections(supabase, id, 50);
   const { data: divData } = await supabase.rpc("get_divergences", { doc_id: id });
   const divergences = (Array.isArray(divData) ? divData : []) as Divergence[];
+  // Points clés validés par un médecin (colonne lue par le serveur seulement,
+  // ici sur une fiche que le membre a le droit de lire). Sans la migration
+  // 20261001180000, la colonne manque : rien n'est affiché.
+  const { data: cles } = await createAdminClient().from("documents").select("points_cles").eq("id", id).maybeSingle();
+  const pointsCles = Array.isArray(cles?.points_cles) ? (cles.points_cles as string[]) : [];
 
   const watermark = `${user.email} · ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })}`;
 
@@ -331,6 +337,18 @@ export default async function FichePage({
           ))}
         </div>
         {header}
+        {pointsCles.length > 0 && (
+          <section className="panel" aria-label="Points clés" style={{ marginTop: 18 }}>
+            <p style={{ fontWeight: 700 }}>Points clés</p>
+            <ul style={{ margin: 0, paddingLeft: 20 }}>
+              {pointsCles.map((p, i) => (
+                <li key={i} style={{ marginBottom: 4 }}>
+                  {p}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
         {lib.isEditor && (
           <div className="unlock-box" style={{ marginTop: 18, marginBottom: 10 }}>
             {message && !String(r).startsWith("signalement") && !String(r).startsWith("veille") && (
