@@ -114,7 +114,7 @@ function renderLegend(rows: Cell[][]) {
     const chip = cells[i];
     const label = cells[i + 1];
     if (!chip || chip.t !== "chip") continue;
-    out += `<div class="legend__item"><span class="chip ${chipClass(chip.label)}">${chip.label}</span><span>${label && label.t === "p" ? label.html : ""}</span></div>`;
+    out += `<div class="legend__item"><span class="chip ${chipClass(chip.label)}">${nettoyerHtml(chip.label)}</span><span>${label && label.t === "p" ? nettoyerHtml(label.html) : ""}</span></div>`;
   }
   return `${out}</div>`;
 }
@@ -126,11 +126,11 @@ function isHeaderRow(row: Cell[]) {
 function renderCell(c: Cell, tag: "td" | "th"): string {
   if (!c) return `<${tag}></${tag}>`;
   if (c.t === "chip") {
-    return `<${tag} class="num"><span class="chip ${chipClass(c.label)}">${c.label}</span></${tag}>`;
+    return `<${tag} class="num"><span class="chip ${chipClass(c.label)}">${nettoyerHtml(c.label)}</span></${tag}>`;
   }
   if (c.t === "p") {
     const center = c.style === "cell_c" || c.style === "head_w_c";
-    const inner = c.style === "cell_b" ? `<strong>${c.html}</strong>` : c.html;
+    const inner = c.style === "cell_b" ? `<strong>${nettoyerHtml(c.html)}</strong>` : nettoyerHtml(c.html);
     return `<${tag}${center ? ' class="align-c"' : ""}>${inner}</${tag}>`;
   }
   if (c.t === "table") return `<${tag}>${renderTable(c.rows)}</${tag}>`;
@@ -149,19 +149,54 @@ function renderTable(rows: Cell[][]) {
   return `${html}</table></div>`;
 }
 
+// Nettoyage des fragments HTML du contenu des fiches (défense en profondeur,
+// en plus de la CSP stricte) : seules les balises de mise en forme produites
+// par l'atelier sont gardées (gras, italique, exposant, indice, code, saut de
+// ligne, couleur de texte) ; toute autre balise, tout attribut (sauf une
+// couleur #hex) et tout chevron isolé sont neutralisés en texte.
+const BALISES = new Set(["b", "strong", "i", "em", "u", "br", "sup", "sub", "super", "code", "font", "span"]);
+export function nettoyerHtml(fragment: unknown): string {
+  if (typeof fragment !== "string") return fragment == null ? "" : escapeHtml(String(fragment));
+  let out = "";
+  let last = 0;
+  const re = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)([^<>]*)>/g;
+  const texte = (t: string) => t.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  for (let m = re.exec(fragment); m; m = re.exec(fragment)) {
+    out += texte(fragment.slice(last, m.index));
+    last = re.lastIndex;
+    const [, fin, nomBrut, attrs] = m;
+    const nom = nomBrut.toLowerCase();
+    if (!BALISES.has(nom)) {
+      out += escapeHtml(m[0]);
+      continue;
+    }
+    if (nom === "br") {
+      out += "<br>";
+      continue;
+    }
+    if (fin) {
+      out += `</${nom}>`;
+      continue;
+    }
+    const couleur = nom === "font" ? /color\s*=\s*\\?["']?(#[0-9a-fA-F]{3,8})/.exec(attrs)?.[1] : undefined;
+    out += couleur ? `<font color="${couleur}">` : `<${nom}>`;
+  }
+  return out + texte(fragment.slice(last));
+}
+
 function renderBlock(b: Block | null | undefined, toc: { counter: number; items: TocItem[] }): string {
   if (!b) return "";
   if (b.t === "section") {
     const id = slugify(b.text, toc.counter++);
     toc.items.push({ id, text: b.text });
-    return `<h2 class="block-section" id="${id}">${b.text}</h2>`;
+    return `<h2 class="block-section" id="${id}">${nettoyerHtml(b.text)}</h2>`;
   }
   if (b.t === "p") {
     const cls = `block-p${b.style === "note" ? " is-note" : ""}${b.style === "source" ? " is-source" : ""}`;
-    return `<p class="${cls}">${b.html}</p>`;
+    return `<p class="${cls}">${nettoyerHtml(b.html)}</p>`;
   }
   if (b.t === "panel") {
-    return `<div class="panel ${b.tone || "default"}">${renderBlock(b.content, toc)}</div>`;
+    return `<div class="panel ${/^[a-z_-]{1,20}$/.test(b.tone ?? "") ? b.tone : "default"}">${renderBlock(b.content, toc)}</div>`;
   }
   if (b.t === "table") return isLegendTable(b.rows) ? renderLegend(b.rows) : renderTable(b.rows);
   return "";
@@ -189,7 +224,7 @@ export function renderPresentation(p: Presentation) {
       flush();
       const id = slugify(b.text, toc.counter++);
       toc.items.push({ id, text: b.text });
-      current = { id, title: b.text, body: "" };
+      current = { id, title: nettoyerHtml(b.text), body: "" };
     } else if (current) {
       current.body += renderBlock(b, toc);
     } else {
