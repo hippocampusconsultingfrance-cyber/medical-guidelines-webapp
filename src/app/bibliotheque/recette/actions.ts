@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { RECETTE } from "@/lib/recette";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -27,5 +28,6 @@ export async function cocherCritere(formData: FormData) {
         .from("recette_validations")
         .upsert({ code, validated_by: user.id, validated_at: new Date().toISOString(), note })
     : await admin.from("recette_validations").delete().eq("code", code);
+  if (!error) await journaliser(user.id, verifie ? "recette_verifiee" : "recette_annulee", "recette_validations", null, { code, note });
   redirect(`/bibliotheque/recette?r=${error ? "erreur" : "ok"}#c-${code}`);
 }

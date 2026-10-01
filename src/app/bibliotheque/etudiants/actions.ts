@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { codeEtudiant, emailDecision } from "@/lib/etudiants";
 import { APP, getStripe, stripeEnabled } from "@/lib/stripe";
@@ -102,5 +103,10 @@ export async function deciderEtudiant(formData: FormData) {
       if (!sent.ok) console.error("Tarif étudiant : e-mail", sent.error);
     }
   }
+  await journaliser(user.id, valide ? "justificatif_valide" : "justificatif_refuse", "student_discount_requests", id, {
+    membre: req!.user_id,
+    remise: surAbonnement ? "renouvellement" : code ? "code" : null,
+    note,
+  });
   back(valide ? "validee" : "refusee");
 }

@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { CRITICITES } from "@/lib/corrections";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -45,5 +46,6 @@ export async function publierCorrection(formData: FormData) {
       .update({ status: "valide", decided_at: new Date().toISOString(), decided_by: user.id })
       .eq("id", reportId);
   }
+  await journaliser(user.id, "correction_publiee", "documents", documentId, { criticite, resume, signalement: reportId || null });
   back("correction_publiee");
 }

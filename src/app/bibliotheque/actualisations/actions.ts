@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 
@@ -34,5 +35,6 @@ export async function deciderActualisation(formData: FormData) {
   const { error } = await createAdminClient()
     .from("actualisations_ecartees")
     .upsert({ ancienne_id: ancienne, nouvelle_id: nouvelle, ecartee_par: user.id });
+  if (!error) await journaliser(user.id, "actualisation_ecartee", "documents", ancienne, { nouvelle });
   redirect(`/bibliotheque/actualisations?r=${error ? "erreur" : "ecartee"}`);
 }

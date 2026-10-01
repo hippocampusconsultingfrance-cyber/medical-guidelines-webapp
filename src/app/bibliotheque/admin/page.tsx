@@ -191,6 +191,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Professionnels en formation", "/bibliotheque/etudiants"],
     ["Accès anormaux", "/bibliotheque/acces"],
     ["Recette", "/bibliotheque/recette"],
+    ["Journal d'administration", "/bibliotheque/journal"],
     ["Actualisations à valider", "/bibliotheque/actualisations"],
     ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Vérification du paiement", "/abonnement/verification"],
