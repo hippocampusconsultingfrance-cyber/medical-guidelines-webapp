@@ -7,7 +7,14 @@ médecine d'urgence 42, pédiatrie 34…). À relire et adapter avant publicatio
 Règles à garder dans chaque message (cahier des charges §12.5) :
 - « synthèses indépendantes, non officielles » ; jamais « validé par la SFAR » ;
 - elles ne remplacent ni le texte intégral ni le jugement clinique ;
-- pas de promesse sur la protection du contenu.
+- pas de promesse sur la protection du contenu ;
+- ne jamais écrire qu'on « vend » ou qu'on « donne accès » aux recommandations :
+  elles restent en accès libre sur les sites des sociétés savantes.
+  L'abonnement finance le service (d'abord les outils d'IA, puis l'hébergement
+  et la relecture médicale). Formule type : « Les recommandations restent
+  gratuites sur les sites des sociétés savantes ; l'abonnement finance les
+  outils et le travail de synthèse. » Page de référence :
+  www.medical-guidelines.net/demarche
 
 ---
 
@@ -28,6 +35,11 @@ Règles à garder dans chaque message (cahier des charges §12.5) :
 >
 > 5 fiches gratuites à l'inscription. PREMIUM : 50 €/an, −30 % la première
 > année pour les 100 premiers membres (code FONDATEURS).
+>
+> Les recommandations restent en accès libre sur les sites des sociétés
+> savantes : l'abonnement finance les outils d'IA et le travail de synthèse,
+> pas les recommandations. Merci aux volontaires qui ont permis de construire
+> ce site.
 >
 > Synthèses indépendantes et non officielles : elles ne remplacent pas le
 > texte intégral.
@@ -118,6 +130,14 @@ françaises, au service de leur diffusion**
 - **Transparence** : usage de l'IA dans l'extraction et la rédaction déclaré,
   validation humaine systématique ; aucune influence commerciale sur le
   contenu.
+- **Financement** : les recommandations ne sont pas vendues et restent en
+  accès libre sur vos sites. L'abonnement des membres finance le service,
+  d'abord les outils d'intelligence artificielle, puis l'hébergement et la
+  relecture. Le site a été construit grâce à des volontaires. Votre société
+  ne reçoit et ne verse rien, et n'est associée à aucune offre.
+- **Retrait** : toute demande de correction, de mise à jour ou de retrait
+  d'une fiche est traitée en priorité ; une fiche peut être retirée
+  immédiatement.
 - **Ce que nous proposons** : signaler toute erreur ou toute nouvelle
   version ; mentionner vos recommandations les plus récentes ; étudier
   ensemble un partenariat de diffusion (lien vers vos sites, relecture par vos
