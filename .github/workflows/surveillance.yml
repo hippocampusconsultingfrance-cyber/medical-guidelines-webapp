@@ -3,10 +3,18 @@ name: Surveillance du site
 # Toutes les heures : les pages principales doivent répondre et la base
 # doit être joignable (/api/sante). En cas d'échec, GitHub envoie un e-mail
 # au propriétaire du dépôt (réglage par défaut des notifications Actions).
+# Recette 6.1-3 : lancer à la main avec « simuler une panne » coché ; une
+# page inexistante est ajoutée à la liste, la tâche échoue et l'e-mail
+# d'alerte doit arriver (le site, lui, n'est pas touché).
 on:
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
+    inputs:
+      simuler_panne:
+        description: "Simuler une panne (test de l'alerte e-mail)"
+        type: boolean
+        default: false
 
 # Moindre privilège : le jeton GitHub des tâches ne peut que lire le code.
 permissions:
@@ -21,7 +29,9 @@ jobs:
         run: |
           site=https://www.medical-guidelines.net
           echec=0
-          for chemin in / /recommandations /connexion /sitemap.xml /robots.txt /api/sante; do
+          chemins="/ /recommandations /connexion /sitemap.xml /robots.txt"
+          if [ "${{ inputs.simuler_panne }}" = "true" ]; then chemins="$chemins /panne-simulee-recette"; fi
+          for chemin in $chemins /api/sante; do
             code=$(curl -sS -o reponse.txt -w '%{http_code}' --max-time 20 --retry 2 --retry-delay 15 "$site$chemin") || code=000
             echo "$chemin → $code"
             if [ "$code" != 200 ]; then
