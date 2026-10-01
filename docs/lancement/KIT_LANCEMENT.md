@@ -10,10 +10,11 @@ Règles à garder dans chaque message (cahier des charges §12.5) :
 - pas de promesse sur la protection du contenu ;
 - ne jamais écrire qu'on « vend » ou qu'on « donne accès » aux recommandations :
   elles restent en accès libre sur les sites des sociétés savantes.
-  L'abonnement finance le service (d'abord les outils d'IA, puis l'hébergement
-  et la relecture médicale). Formule type : « Les recommandations restent
-  gratuites sur les sites des sociétés savantes ; l'abonnement finance les
-  outils et le travail de synthèse. » Page de référence :
+  L'abonnement ne sert pas à tirer profit des recommandations : il couvre
+  l'hébergement, les développeurs et les outils d'IA. Formule type : « Les
+  recommandations restent gratuites sur les sites des sociétés savantes ;
+  l'abonnement couvre l'hébergement, le développement et les outils d'IA du
+  site. » Page de référence :
   www.medical-guidelines.net/demarche
 
 ---
@@ -37,8 +38,8 @@ Règles à garder dans chaque message (cahier des charges §12.5) :
 > année pour les 100 premiers membres (code FONDATEURS).
 >
 > Les recommandations restent en accès libre sur les sites des sociétés
-> savantes : l'abonnement finance les outils d'IA et le travail de synthèse,
-> pas les recommandations. Merci aux volontaires qui ont permis de construire
+> savantes : l'abonnement ne sert pas à en tirer profit, il couvre
+> l'hébergement, les développeurs et les outils d'IA du site. Merci aux volontaires qui ont permis de construire
 > ce site.
 >
 > Synthèses indépendantes et non officielles : elles ne remplacent pas le
@@ -131,9 +132,9 @@ françaises, au service de leur diffusion**
   validation humaine systématique ; aucune influence commerciale sur le
   contenu.
 - **Financement** : les recommandations ne sont pas vendues et restent en
-  accès libre sur vos sites. L'abonnement des membres finance le service,
-  d'abord les outils d'intelligence artificielle, puis l'hébergement et la
-  relecture. Le site a été construit grâce à des volontaires. Votre société
+  accès libre sur vos sites. L'abonnement des membres ne sert pas à en tirer
+  profit : il couvre l'hébergement, les développeurs et les outils
+  d'intelligence artificielle. Le site a été construit grâce à des volontaires. Votre société
   ne reçoit et ne verse rien, et n'est associée à aucune offre.
 - **Retrait** : toute demande de correction, de mise à jour ou de retrait
   d'une fiche est traitée en priorité ; une fiche peut être retirée

@@ -472,4 +472,16 @@ select pg_temp.ok(pg_temp.refuse('insert into public.site_suggestions (categorie
   'suggestion : 11e message en 24 h refusé');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 21. Traductions : publication seulement si le registre l'autorise.
+-- ---------------------------------------------------------------------------
+select document_id as ft, lang as lt from public.document_translations limit 1 \gset
+select pg_temp.ok(pg_temp.refuse(format('update public.document_translations set status = ''publiee'' where document_id = %L and lang = %L', :'ft', :'lt'), 'traduction non autorisée'),
+  'traduction : publication refusée sans autorisation de traduction');
+insert into public.source_legal_profiles (document_id, legal_review_status, translation_allowed) values (:'ft', 'valide', 'oui')
+  on conflict (document_id) do update set legal_review_status = 'valide', translation_allowed = 'oui';
+update public.document_translations set status = 'publiee' where document_id = :'ft' and lang = :'lt';
+select pg_temp.ok((select status = 'publiee' from public.document_translations where document_id = :'ft' and lang = :'lt'),
+  'traduction : publication acceptée quand le registre l''autorise');
+
 select 'Parcours membre : toutes les vérifications sont passées.';

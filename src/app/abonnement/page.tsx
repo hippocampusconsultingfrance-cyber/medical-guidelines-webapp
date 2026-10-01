@@ -212,9 +212,9 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
           </ul>
           <p className="mt-4 rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">
             Votre abonnement ne paie pas les recommandations : elles restent en accès libre sur les sites des
-            sociétés savantes. Il finance le service, d&apos;abord les outils d&apos;intelligence artificielle qui
-            aident à préparer les fiches, puis l&apos;hébergement et la relecture médicale. Ce site a été construit
-            grâce à des personnes volontaires.{" "}
+            sociétés savantes. Il ne sert pas à en tirer profit mais à couvrir ce que coûte le site :
+            l&apos;hébergement, les développeurs et les outils d&apos;intelligence artificielle. Ce site a été
+            construit grâce à des personnes volontaires.{" "}
             <Link href="/demarche" className="underline">
               Notre démarche
             </Link>
