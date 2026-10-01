@@ -176,6 +176,10 @@ export default function Shell({
               {lib.isAdmin && (
                 <>
                   {" · "}
+                  <Link href="/bibliotheque/membres" style={{ color: "inherit" }}>
+                    Membres inscrits
+                  </Link>
+                  {" · "}
                   <Link href="/bibliotheque/etudiants" style={{ color: "inherit" }}>
                     Professionnels en formation
                   </Link>

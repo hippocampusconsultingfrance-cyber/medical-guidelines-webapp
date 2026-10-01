@@ -236,6 +236,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
   ];
 
   const liens: [string, string][] = [
+    ["Membres inscrits", "/bibliotheque/membres"],
     ["Statistiques détaillées", "/bibliotheque/statistiques"],
     ["Signalements", "/bibliotheque/signalements"],
     ["Suggestions des membres", "/bibliotheque/suggestions"],
@@ -293,6 +294,11 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
           </div>
         ))}
       </div>
+      <p style={{ marginTop: 10 }}>
+        <Link href="/bibliotheque/membres" className="btn btn-ghost btn-sm">
+          Voir la liste des membres inscrits →
+        </Link>
+      </p>
 
       <h2 className="block-section" style={{ marginTop: 28 }}>
         À faire {aFaire ? `(${aFaire})` : "— rien d'urgent"}
