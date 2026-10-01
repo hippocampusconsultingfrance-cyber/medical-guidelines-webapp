@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 
@@ -58,12 +59,16 @@ export async function creerDivergence(formData: FormData) {
     await admin.from("divergences").delete().eq("id", d!.id);
     back("erreur");
   }
+  await journaliser(userId, "divergence_creee", "divergences", d!.id, { question, fiches: positions.map((p) => p.document_id) });
   back("creee");
 }
 
 export async function supprimerDivergence(formData: FormData) {
-  await editeur();
+  const userId = await editeur();
   const id = String(formData.get("id") ?? "");
-  if (UUID.test(id)) await createAdminClient().from("divergences").delete().eq("id", id);
+  if (UUID.test(id)) {
+    await createAdminClient().from("divergences").delete().eq("id", id);
+    await journaliser(userId, "divergence_supprimee", "divergences", id);
+  }
   redirect("/bibliotheque/divergences?r=supprimee");
 }

@@ -391,4 +391,21 @@ select pg_temp.ok(public.has_editorial_role('validateur'), 'MFA activée, code s
 reset role;
 select set_config('request.jwt.claims', '', false);
 
+-- ---------------------------------------------------------------------------
+-- 18. Journal d'administration : changements de l'équipe et rôles tracés.
+-- ---------------------------------------------------------------------------
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+update public.documents set freshness_status = 'a_jour' where id = :'f5';
+select pg_temp.ok((select count(*) from public.audit_log) = 0, 'journal : illisible hors administrateurs');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok(exists (select 1 from public.audit_log where entity_type = 'documents' and entity_id = :'f5' and actor_id = :'validateur'),
+  'journal : modification de fiche tracée avec son auteur');
+update public.profiles set editorial_role = 'admin' where id = :'gratuit';
+select pg_temp.ok(exists (select 1 from public.audit_log where entity_type = 'profiles' and entity_id = :'gratuit'),
+  'journal : élévation de rôle tracée même hors du site');
+update public.profiles set editorial_role = null where id = :'gratuit';
+
 select 'Parcours membre : toutes les vérifications sont passées.';

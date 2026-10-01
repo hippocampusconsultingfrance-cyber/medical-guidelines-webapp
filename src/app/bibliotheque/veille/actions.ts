@@ -2,6 +2,7 @@
 
 import { createHash } from "node:crypto";
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { sendBatch, emailEnabled, siteUrl } from "@/lib/email";
 import { chargerDestinataires, chargerLettre, composerLettre, logBody, moisValide } from "@/lib/lettre";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -54,7 +55,7 @@ export async function envoyerEssai(formData: FormData) {
 // obligatoire ; chaque envoi est journalisé (jamais deux fois le même mois).
 export async function envoyerLettre(formData: FormData) {
   const { mois, intro, back } = lire(formData);
-  await adminUser();
+  const { user } = await adminUser();
   if (formData.get("confirme") !== "1") back("confirmation");
   if (!emailEnabled()) back("sans_cle");
 
@@ -87,5 +88,6 @@ export async function envoyerLettre(formData: FormData) {
     );
     if (error) console.error("Lettre mensuelle : journal", error);
   }
+  await journaliser(user.id, "lettre_envoyee", "notifications_log", null, { mois, envoyes, echecs });
   back(echecs ? `partiel_${envoyes}_${echecs}` : `envoyee_${envoyes}`);
 }

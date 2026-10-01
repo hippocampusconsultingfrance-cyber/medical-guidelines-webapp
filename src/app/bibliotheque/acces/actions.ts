@@ -1,6 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { journaliser } from "@/lib/journal";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 
@@ -24,5 +25,6 @@ export async function leverSuspension(formData: FormData) {
     .update({ blocked_until: now, lifted_by: user.id, lifted_at: now })
     .eq("id", id)
     .gt("blocked_until", now);
+  if (!error) await journaliser(user.id, "suspension_levee", "access_blocks", null, { suspension: id });
   redirect(`/bibliotheque/acces?r=${error ? "erreur" : "levee"}`);
 }

@@ -37,7 +37,7 @@ export async function calculerSynthese(admin: SupabaseClient, now: Date): Promis
     const { count: n, error } = await q;
     return error ? null : (n ?? 0);
   };
-  const [membres, nouveaux, premium, nouveauxPremium, lectures, signalements, justificatifs, suspensions, traductions, revision, lettre, fichesMois] =
+  const [membres, nouveaux, premium, nouveauxPremium, lectures, signalements, justificatifs, suspensions, traductions, revision, lettre, fichesMois, roles] =
     await Promise.all([
       count(admin.from("profiles").select("id", head).is("editorial_role", null)),
       count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -51,6 +51,7 @@ export async function calculerSynthese(admin: SupabaseClient, now: Date): Promis
       count(admin.from("documents").select("id", head).eq("freshness_status", "revision_detectee")),
       count(admin.from("notifications_log").select("id", head).eq("body", `lettre:${mois}`)),
       count(admin.from("documents").select("id", head).gte("published_at", `${mois}-01`)),
+      count(admin.from("audit_log").select("id", head).eq("entity_type", "profiles").gte("created_at", since7)),
     ]);
   const actualisations = (await chargerPropositions(admin)).length;
   return {
@@ -69,6 +70,8 @@ export async function calculerSynthese(admin: SupabaseClient, now: Date): Promis
       ["Fiches « révision détectée »", revision, "/bibliotheque"],
       ["Traductions à relire", traductions, "/bibliotheque/traductions"],
       ["Suspensions anti-extraction (7 j)", suspensions, "/bibliotheque/acces"],
+      // Sécurité : tout changement de rôle d'équipe doit être reconnu.
+      ["Rôles d'équipe modifiés (7 j) — à vérifier", roles, "/bibliotheque/journal"],
     ],
     lettre: lettre
       ? `Lettre de veille du mois envoyée à ${lettre} abonné(s).`
