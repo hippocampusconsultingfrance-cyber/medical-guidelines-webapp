@@ -116,6 +116,13 @@ export default function AuthCallbackPage() {
       type: (linkType ?? "email") as EmailOtpType,
     });
     if (error) {
+      // Lien déjà utilisé dans ce navigateur : la session ouverte la première
+      // fois suffit pour continuer le parcours.
+      const { data } = await supabase.auth.getSession();
+      if (data.session) {
+        router.replace(destination(linkType));
+        return;
+      }
       setBusy(false);
       setDetail(error.message);
       setStatus("error");

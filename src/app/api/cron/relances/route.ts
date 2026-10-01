@@ -1,11 +1,14 @@
+import { composerAvisRenouvellement, logRenouvellement } from "@/lib/commande";
 import { emailEnabled, sendBatch, siteUrl, type OutgoingEmail } from "@/lib/email";
 import { ciblesFinaliser, ciblesQuota, emailFinaliser, emailQuota, LOG_FINALISER, LOG_QUOTA } from "@/lib/relances";
-import { checkoutOpen } from "@/lib/stripe";
+import { checkoutOpen, getStripe, stripeEnabled } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 // Relances quotidiennes (tâche planifiée Vercel, vercel.json) : inscription
-// non finalisée, crédits gratuits épuisés. Authentifiée par CRON_SECRET ;
-// une relance de chaque sorte au plus par membre (notifications_log).
+// non finalisée, crédits gratuits épuisés, avis de renouvellement de
+// l'abonnement (environ 30 jours avant l'échéance, CGV §5). Authentifiée par
+// CRON_SECRET ; une relance de chaque sorte au plus par membre, et un avis
+// par échéance (notifications_log).
 // ?apercu=1 renvoie le nombre de destinataires sans rien envoyer.
 export async function GET(request: Request) {
   const secret = process.env.CRON_SECRET;
@@ -14,9 +17,13 @@ export async function GET(request: Request) {
   }
   const admin = createAdminClient();
   const now = Date.now();
-  const [finaliser, quota] = await Promise.all([ciblesFinaliser(admin, now), ciblesQuota(admin, now)]);
+  const [finaliser, quota, echeances] = await Promise.all([
+    ciblesFinaliser(admin, now),
+    ciblesQuota(admin, now),
+    echeancesProches(admin, now),
+  ]);
   if (new URL(request.url).searchParams.get("apercu") === "1") {
-    return Response.json({ finaliser: finaliser.length, quota: quota.length });
+    return Response.json({ finaliser: finaliser.length, quota: quota.length, renouvellement: echeances.length });
   }
   if (!emailEnabled()) return Response.json({ envoyes: 0, info: "RESEND_API_KEY manquant : aucun envoi" });
 
@@ -31,6 +38,10 @@ export async function GET(request: Request) {
   }
   const vente = checkoutOpen(false);
   for (const c of quota) lots.push({ userId: c.userId, body: LOG_QUOTA, email: emailQuota(c, vente, site) });
+  const avis = await avisRenouvellement(admin, echeances);
+  for (const e of avis) {
+    lots.push({ userId: e.userId, body: logRenouvellement(e.fin), email: composerAvisRenouvellement(e, site) });
+  }
   if (!lots.length) return Response.json({ envoyes: 0 });
 
   const jour = new Date(now).toISOString().slice(0, 10);
@@ -45,5 +56,56 @@ export async function GET(request: Request) {
   await admin
     .from("notifications_log")
     .insert(lots.map((l) => ({ user_id: l.userId, subject: l.email.subject, body: l.body, channel: "email" })));
-  return Response.json({ finaliser: finaliser.length, quota: quota.length });
+  return Response.json({ finaliser: finaliser.length, quota: quota.length, renouvellement: avis.length });
+}
+
+type Echeance = { userId: string; subscriptionId: string; fin: string };
+
+// Abonnements actifs dont l'échéance tombe dans 25 à 32 jours, sans avis
+// déjà envoyé pour cette échéance.
+async function echeancesProches(admin: ReturnType<typeof createAdminClient>, now: number): Promise<Echeance[]> {
+  if (!stripeEnabled()) return [];
+  const DAY = 24 * 3600 * 1000;
+  const { data } = await admin
+    .from("subscriptions")
+    .select("user_id, stripe_subscription_id, current_period_end")
+    .eq("status", "actif")
+    .is("canceled_at", null)
+    .not("stripe_subscription_id", "is", null)
+    .gte("current_period_end", new Date(now + 25 * DAY).toISOString())
+    .lte("current_period_end", new Date(now + 32 * DAY).toISOString());
+  const out: Echeance[] = [];
+  for (const s of data ?? []) {
+    const fin = s.current_period_end as string;
+    const { count } = await admin
+      .from("notifications_log")
+      .select("id", { count: "exact", head: true })
+      .eq("user_id", s.user_id)
+      .eq("body", logRenouvellement(fin));
+    if (!count) out.push({ userId: s.user_id as string, subscriptionId: s.stripe_subscription_id as string, fin });
+  }
+  return out;
+}
+
+// Montant exact de la prochaine facture (remise éventuelle comprise), lu
+// chez Stripe ; abonnement déjà résilié pour la fin de période : pas d'avis.
+async function avisRenouvellement(admin: ReturnType<typeof createAdminClient>, echeances: Echeance[]) {
+  const stripe = getStripe();
+  const out: { userId: string; email: string; prenom: string | null; fin: string; montantCents: number }[] = [];
+  for (const e of echeances) {
+    try {
+      const sub = await stripe.subscriptions.retrieve(e.subscriptionId);
+      if (sub.cancel_at_period_end || sub.cancel_at || sub.status !== "active") continue;
+      const facture = await stripe.invoices.createPreview({ subscription: e.subscriptionId });
+      const [{ data: profil }, { data: compte }] = await Promise.all([
+        admin.from("profiles").select("prenom").eq("id", e.userId).maybeSingle(),
+        admin.auth.admin.getUserById(e.userId),
+      ]);
+      if (!compte?.user?.email) continue;
+      out.push({ userId: e.userId, email: compte.user.email, prenom: (profil?.prenom as string | null) || null, fin: e.fin, montantCents: facture.total });
+    } catch (err) {
+      console.error("Avis de renouvellement", e.subscriptionId, err);
+    }
+  }
+  return out;
 }
