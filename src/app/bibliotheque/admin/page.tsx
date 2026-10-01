@@ -72,6 +72,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     justificatifs,
     suspensions,
     recette,
+    suggestions,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -88,6 +89,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("student_discount_requests").select("id", head).eq("status", "en_attente")),
     count(admin.from("access_blocks").select("id", head).gt("blocked_until", iso)),
     count(admin.from("recette_validations").select("code", head)),
+    count(admin.from("site_suggestions").select("id", head).eq("status", "nouveau")),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -136,7 +138,16 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
       href: "/bibliotheque",
       detail: "Date de publication de la source à compléter (ou fiche à dépublier).",
     },
-    { label: "Signalements d'erreur à traiter", n: signalements, href: "/bibliotheque/signalements", detail: "Erreurs signalées par les membres depuis une fiche." },
+    {
+      label: "Suggestions des membres",
+      n: suggestions,
+      href: "/bibliotheque/suggestions",
+      detail:
+        suggestions === null
+          ? "Migration des suggestions pas encore appliquée dans Supabase."
+          : "Problèmes et idées envoyés depuis le bouton « Une idée ? », avec l'instruction pour corriger.",
+    },
+    { label: "Signalements d'erreur à traiter", n: signalements, href: "/bibliotheque/signalements", detail: "Erreurs signalées depuis une fiche, avec l'instruction pour vérifier et corriger." },
     {
       label: "Justificatifs professionnels en formation",
       n: justificatifs,
@@ -206,6 +217,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
   const liens: [string, string][] = [
     ["Statistiques détaillées", "/bibliotheque/statistiques"],
     ["Signalements", "/bibliotheque/signalements"],
+    ["Suggestions des membres", "/bibliotheque/suggestions"],
     ["Lettre de veille", "/bibliotheque/veille"],
     ["Traductions", "/bibliotheque/traductions"],
     ["Professionnels en formation", "/bibliotheque/etudiants"],

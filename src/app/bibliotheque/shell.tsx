@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { TocItem } from "@/lib/fiches";
 import { LogoMark } from "../logo";
 import { cardTitle, docState, groupBySection, type Library } from "./data";
+import BoutonIdee from "./bouton-idee";
 import MenuToggle from "./menu-toggle";
 
 // Cadre commun de la bibliothèque : barre latérale (logo, spécialité
@@ -155,6 +156,14 @@ export default function Shell({
               {lib.isAdmin && (
                 <>
                   {" · "}
+                  <Link href="/bibliotheque/suggestions" style={{ color: "inherit" }}>
+                    Suggestions des membres
+                  </Link>
+                </>
+              )}
+              {lib.isAdmin && (
+                <>
+                  {" · "}
                   <Link href="/bibliotheque/etudiants" style={{ color: "inherit" }}>
                     Professionnels en formation
                   </Link>
@@ -174,6 +183,7 @@ export default function Shell({
       <main>
         <div className="content-wrap">{children}</div>
       </main>
+      <BoutonIdee />
     </div>
   );
 }

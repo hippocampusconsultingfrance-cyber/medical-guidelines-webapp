@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { CRITICITES } from "@/lib/corrections";
+import { instructionSignalement } from "@/lib/instructions";
 import { createClient } from "@/lib/supabase/server";
 import { decideReport } from "../[id]/actions";
 import { loadLibrary } from "../data";
+import Instruction from "../instruction";
 import Shell from "../shell";
 import { publierCorrection } from "./actions";
 
@@ -56,6 +58,12 @@ export default async function SignalementsPage({ searchParams }: PageProps<"/bib
   ]);
   if (!isAdmin) redirect("/bibliotheque");
   const reports = (rows ?? []) as Report[];
+  const UUID = /^[0-9a-f-]{36}$/i;
+  const ids = [...new Set(reports.map((r) => r.doc).filter((d) => UUID.test(d)))];
+  const { data: sources } = ids.length
+    ? await supabase.from("documents").select("id, source_url").in("id", ids)
+    : { data: [] };
+  const sourceDe = new Map((sources ?? []).map((d) => [d.id as string, d.source_url as string | null]));
   const pending = reports.filter((r) => r.status === "nouveau").length;
   const r0 = (await searchParams).r;
   const message = typeof r0 === "string" ? MESSAGES[r0] : undefined;
@@ -103,6 +111,17 @@ export default async function SignalementsPage({ searchParams }: PageProps<"/bib
               <span className={`status-pill status-${r.status}`}>{STATUS_LABEL[r.status] ?? r.status}</span>
             </div>
             <div className="report-card__desc">{r.description}</div>
+            {r.status !== "rejete" && r.status !== "resolu" && (
+              <Instruction
+                texte={instructionSignalement({
+                  doc_title: r.doc_title,
+                  section: r.section,
+                  description: r.description,
+                  source_url: sourceDe.get(r.doc) ?? null,
+                  doc_id: UUID.test(r.doc) ? r.doc : null,
+                })}
+              />
+            )}
             <div className="report-card__actions">
               {(["valide", "rejete"] as const)
                 .filter((s) => s !== r.status)
