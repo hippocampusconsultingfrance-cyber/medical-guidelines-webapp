@@ -37,6 +37,10 @@ const MESSAGES: Record<string, string> = {
   depubliee: "Fiche dépubliée : elle n'est plus visible par les membres.",
   confirmation_requise: "Cochez la case de relecture avant de publier.",
   publication_erreur: "La publication n'a pas abouti (droits de validateur requis).",
+  publication_juridique:
+    "Publication refusée : le statut juridique de la source n'est pas « Validé » (Registre juridique, depuis le tableau de bord).",
+  publication_date: "Publication refusée : la date de publication de la source manque.",
+  publication_source: "Publication refusée : l'URL de la source officielle manque.",
   signalement_envoye: "Merci : votre signalement a été envoyé. Il sera examiné avant toute correction.",
   signalement_vide: "Décrivez l'erreur en quelques mots avant d'envoyer.",
   signalement_erreur: "Le signalement n'a pas pu être envoyé. Réessayez dans un instant.",
@@ -569,8 +573,10 @@ function renderRecommendations(recs: Recommendation[]) {
     const section = rec.source_section ?? "Recommandations";
     if (groups[groups.length - 1]?.title !== section) groups.push({ title: section, html: "" });
     const meta = [
-      rec.grade && `<span class="chip ${chipClass(rec.grade)}">${escapeHtml(rec.grade)}</span>`,
-      rec.evidence_level && `Niveau de preuve : ${escapeHtml(rec.evidence_level)}`,
+      rec.grade?.trim()
+        ? `<span class="chip ${chipClass(rec.grade)}">${escapeHtml(rec.grade)}</span>`
+        : `<span class="chip chip-neutral">Grade non indiqué</span>`,
+      `Niveau de preuve : ${rec.evidence_level?.trim() ? escapeHtml(rec.evidence_level) : "non indiqué"}`,
       rec.source_page && `p. ${rec.source_page}`,
       escapeHtml(rec.recommendation_code),
       rec.status !== "active" && `<span class="state-pill state-draft">${escapeHtml(rec.status)}</span>`,

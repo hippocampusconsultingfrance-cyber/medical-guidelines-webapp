@@ -408,4 +408,47 @@ select pg_temp.ok(exists (select 1 from public.audit_log where entity_type = 'pr
   'journal : élévation de rôle tracée même hors du site');
 update public.profiles set editorial_role = null where id = :'gratuit';
 
+-- ---------------------------------------------------------------------------
+-- 19. Verrou de publication : source, date et statut juridique validé.
+-- ---------------------------------------------------------------------------
+create function pg_temp.refuse(requete text, raison text) returns boolean
+language plpgsql as $$
+begin
+  execute requete;
+  return false;
+exception when others then
+  return sqlerrm like '%' || raison || '%';
+end $$;
+grant execute on function pg_temp.refuse(text, text) to authenticated;
+select id as fv from public.documents
+ where freshness_status <> 'retiree' and published_at is not null and publication_date is not null
+   and coalesce(source_url, '') <> '' and id not in (:'f1', :'f2', :'f3', :'f4', :'f5', :'f6', :'f7', :'f8')
+ order by title limit 1 \gset
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select public.publish_document(:'fv', false);
+select pg_temp.ok(pg_temp.refuse(format('select public.publish_document(%L, true)', :'fv'), 'juridique'),
+  'publication refusée sans statut juridique validé');
+select pg_temp.ok(pg_temp.refuse(format('update public.documents set published_at = now() where id = %L', :'fv'), 'juridique'),
+  'mise en ligne directe par l''API refusée sans statut juridique validé');
+insert into public.source_legal_profiles (document_id, legal_review_status) values (:'fv', 'en_revue');
+select pg_temp.ok(pg_temp.refuse(format('select public.publish_document(%L, true)', :'fv'), 'juridique'),
+  'publication refusée avec un statut juridique « en revue »');
+update public.source_legal_profiles set legal_review_status = 'valide' where document_id = :'fv';
+select public.publish_document(:'fv', true);
+select pg_temp.ok((select published_at is not null from public.documents where id = :'fv'),
+  'publication acceptée avec source, date et statut juridique validé');
+select public.publish_document(:'fv', false);
+reset role;
+update public.documents set publication_date = null where id = :'fv';
+set role authenticated;
+select pg_temp.ok(pg_temp.refuse(format('select public.publish_document(%L, true)', :'fv'), 'Date'),
+  'publication refusée sans date de la source');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok(exists (select 1 from public.audit_log where entity_type = 'source_legal_profiles'),
+  'registre juridique : modifications tracées');
+update public.documents set publication_date = '2020-01-01', published_at = now() where id = :'fv';
+
 select 'Parcours membre : toutes les vérifications sont passées.';
