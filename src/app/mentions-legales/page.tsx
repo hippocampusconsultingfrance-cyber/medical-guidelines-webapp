@@ -60,8 +60,23 @@ export default function MentionsLegalesPage() {
         l&apos;éditeur à partir des recommandations des sociétés savantes, dont
         la source officielle est toujours indiquée. Elles n&apos;engagent pas
         ces sociétés savantes, dont aucun logo ni élément protégé n&apos;est
-        reproduit. Toute reproduction ou extraction du contenu du site, même
-        partielle, est interdite sans autorisation écrite de l&apos;éditeur.
+        reproduit. Les recommandations restent l&apos;œuvre et la propriété de
+        leurs auteurs et des sociétés savantes ou institutions qui les
+        publient ; elles demeurent en accès libre sur leurs sites, vers
+        lesquels chaque fiche renvoie. Le site ne vend ni ne diffuse les
+        documents originaux. Toute reproduction ou extraction du contenu du
+        site, même partielle, est interdite sans autorisation écrite de
+        l&apos;éditeur.
+      </p>
+      <p className="mt-2">
+        <b>Demande d&apos;un auteur ou d&apos;une société savante.</b> Toute
+        demande de correction, de mention, de modification ou de retrait
+        d&apos;une fiche peut être adressée à{" "}
+        <a href="mailto:contact@medical-guidelines.net" className="underline">
+          contact@medical-guidelines.net
+        </a>
+        . Elle est traitée en priorité ; la fiche concernée peut être retirée
+        du site immédiatement, le temps de l&apos;examen.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">

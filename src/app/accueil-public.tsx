@@ -49,7 +49,7 @@ const FAQ = [
   ],
   [
     "Vendez-vous les recommandations des sociétés savantes ?",
-    "Non. Les recommandations restent en accès libre sur les sites des sociétés savantes, et chaque fiche renvoie au texte officiel. L'abonnement finance le service : d'abord les outils d'intelligence artificielle qui aident à préparer les fiches, puis l'hébergement et la relecture médicale. Ce site a été construit grâce à des personnes volontaires.",
+    "Non. Les recommandations restent en accès libre sur les sites des sociétés savantes, et chaque fiche renvoie au texte officiel. L'abonnement ne sert pas à tirer profit des recommandations : il couvre ce que coûte le site, c'est-à-dire l'hébergement, les développeurs et les outils d'intelligence artificielle qui aident à préparer les fiches. Ce site a été construit grâce à des personnes volontaires.",
   ],
   [
     "Que contient l'offre payante ?",
@@ -290,7 +290,7 @@ export default function AccueilPublic() {
               </Link>
               <p className="mt-3 text-xs text-slate-500">
                 Votre abonnement ne paie pas les recommandations, qui restent en accès libre sur les sites des
-                sociétés savantes : il finance les outils et le travail de synthèse.{" "}
+                sociétés savantes : il couvre l&apos;hébergement, les développeurs et les outils d&apos;IA du site.{" "}
                 <Link href="/demarche" className="underline">
                   Notre démarche
                 </Link>

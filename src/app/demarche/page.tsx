@@ -5,7 +5,7 @@ import PublicHeader from "../recommandations/public-header";
 export const metadata: Metadata = {
   title: "Notre démarche — medical-guidelines.net",
   description:
-    "Les recommandations restent en accès libre sur les sites des sociétés savantes. L'abonnement finance les outils et le travail de synthèse, pas les recommandations.",
+    "Les recommandations restent en accès libre sur les sites des sociétés savantes. L'abonnement couvre l'hébergement, le développement et les outils d'IA du site, pas les recommandations.",
 };
 
 // Positionnement vis-à-vis des sociétés savantes (cahier des charges §12.4
@@ -24,9 +24,9 @@ export default async function DemarchePage() {
       ],
     ],
     [
-      "Ce que finance l'abonnement",
+      "L'abonnement ne sert pas à tirer profit des recommandations",
       [
-        "L'abonnement PREMIUM finance le service rendu autour de ces textes : d'abord les outils d'intelligence artificielle qui aident à extraire, structurer et tenir à jour les fiches, puis l'hébergement sécurisé du site et la relecture médicale.",
+        "L'abonnement PREMIUM n'est pas le prix d'une recommandation. Il sert à couvrir ce que coûte le site : l'hébergement sécurisé, les développeurs qui le construisent et le maintiennent, et les outils d'intelligence artificielle qui aident à extraire, structurer et tenir à jour les fiches.",
         "L'intelligence artificielle aide, elle ne décide pas : chaque fiche est relue et validée par un médecin avant sa publication, et toute erreur signalée est corrigée publiquement dans le journal des corrections.",
       ],
     ],
