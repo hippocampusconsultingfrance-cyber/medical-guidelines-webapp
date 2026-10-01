@@ -20,7 +20,7 @@ import { cardTitle, FRESHNESS_LABEL, loadLibrary } from "../data";
 import AccordionControls from "../accordion-controls";
 import { publierCorrection } from "../signalements/actions";
 import Shell from "../shell";
-import { reportError, setFreshness, setPublication, toggleFavorite, unlockDocument } from "./actions";
+import { marquerRelue, reportError, setFreshness, setPublication, toggleFavorite, unlockDocument } from "./actions";
 
 export const metadata: Metadata = {
   title: "Fiche — Medical Guidelines",
@@ -35,7 +35,10 @@ const MESSAGES: Record<string, string> = {
   suspendu: "Consultation suspendue temporairement : aucun crédit n'a été utilisé.",
   publiee: "Fiche publiée : elle est maintenant visible par les membres de sa spécialité.",
   depubliee: "Fiche dépubliée : elle n'est plus visible par les membres.",
-  confirmation_requise: "Cochez la case de relecture avant de publier.",
+  confirmation_requise: "Cochez la case de relecture avant de valider.",
+  relue: "Relecture enregistrée : la mention « Relue par … » est à jour sur la fiche.",
+  relue_nom: "Renseignez votre prénom et votre nom dans Mon compte : ils figurent dans la mention de relecture.",
+  relue_erreur: "La relecture n'a pas pu être enregistrée.",
   publication_erreur: "La publication n'a pas abouti (droits de validateur requis).",
   publication_juridique:
     "Publication refusée : le statut juridique de la source n'est pas « Validé » (Registre juridique, depuis le tableau de bord).",
@@ -129,6 +132,8 @@ export default async function FichePage({
     .single();
   // Requête séparée : sans la migration 20260930130000, la colonne manque.
   const { data: verif } = await supabase.from("documents").select("source_verified_at").eq("id", id).maybeSingle();
+  // Requête séparée : sans la migration 20261001170000, les colonnes manquent.
+  const { data: relecture } = await supabase.from("documents").select("relue_par_nom, relue_le").eq("id", id).maybeSingle();
   const verification = verificationSource(
     (verif?.source_verified_at as string | null | undefined) ?? null,
     doc.published_at,
@@ -183,6 +188,11 @@ export default async function FichePage({
         {extra?.revision_date && (
           <span>
             <b>Révision</b>&nbsp;{formatDate(extra.revision_date)}
+          </span>
+        )}
+        {relecture?.relue_par_nom && relecture.relue_le && (
+          <span>
+            <b>Relue par</b>&nbsp;{relecture.relue_par_nom as string}, le {formatDate(relecture.relue_le as string)}
           </span>
         )}
         {verification && (
@@ -332,6 +342,18 @@ export default async function FichePage({
                   <span className="state-pill state-open">Publiée</span> Visible par
                   les membres de la spécialité (5 crédits gratuits ou PREMIUM).
                 </p>
+                {lib.canPublish && (
+                  <form action={marquerRelue} style={{ marginBottom: 12 }}>
+                    <input type="hidden" name="id" value={id} />
+                    <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem", margin: "4px 0 8px" }}>
+                      <input type="checkbox" name="confirme" value="1" required style={{ marginTop: 3 }} />
+                      <span>
+                        J&apos;ai relu cette fiche aujourd&apos;hui : source officielle, date, grades et contenu vérifiés.
+                      </span>
+                    </label>
+                    <button className="btn btn-ghost btn-sm">Signer la relecture</button>
+                  </form>
+                )}
                 {lib.canPublish && (
                   <form action={setPublication}>
                     <input type="hidden" name="id" value={id} />

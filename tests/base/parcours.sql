@@ -525,4 +525,24 @@ select pg_temp.ok(public.appliquer_reformulation(:'r2', 'x x x') = 'fiche_modifi
 reset role;
 select set_config('request.jwt.claims', '', false);
 
+-- ---------------------------------------------------------------------------
+-- 23. Mention « Relue par Dr …, le … » : validateur seulement, nom imposé.
+-- ---------------------------------------------------------------------------
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok(pg_temp.refuse(format('select public.marquer_relue(%L, true)', :'rd'), 'Réservé'),
+  'relecture : refusée à un membre');
+reset role;
+update public.profiles set prenom = 'Valid', nom = 'Testeur' where id = :'validateur';
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select pg_temp.ok(public.marquer_relue(:'rd', true) = 'Dr Valid Testeur', 'relecture : signée par un validateur');
+select pg_temp.ok((select relue_par_nom = 'Dr Valid Testeur' and relue_le is not null from public.documents where id = :'rd'),
+  'relecture : mention lisible sur la fiche');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok(exists (select 1 from public.audit_log where action = 'fiche_relue' and entity_id = :'rd'),
+  'relecture : tracée au journal');
+
 select 'Parcours membre : toutes les vérifications sont passées.';
