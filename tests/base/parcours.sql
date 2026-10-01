@@ -484,4 +484,42 @@ update public.document_translations set status = 'publiee' where document_id = :
 select pg_temp.ok((select status = 'publiee' from public.document_translations where document_id = :'ft' and lang = :'lt'),
   'traduction : publication acceptée quand le registre l''autorise');
 
+-- ---------------------------------------------------------------------------
+-- 22. Reformulation des libellés : validateur seulement, fiche inchangée.
+-- ---------------------------------------------------------------------------
+-- Les propositions se rattachent aux fiches : rejouer la migration une fois
+-- le contenu chargé (idempotent).
+\set QUIET 1
+set client_min_messages = warning;
+\i supabase/migrations/20261001150000_reformulation_libelles.sql
+select id as r1, document_id as rd, chemin as rc from public.libelles_reformulation order by fiche_key, chemin limit 1 \gset
+select id as r2 from public.libelles_reformulation where id <> :'r1' order by fiche_key, chemin limit 1 \gset
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.libelles_reformulation) = 0, 'reformulations : invisibles pour un membre');
+select pg_temp.ok(pg_temp.refuse(format('select public.appliquer_reformulation(%L, %L)', :'r1', 'texte'), 'Réservé'),
+  'reformulations : application refusée à un membre');
+reset role;
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select pg_temp.ok(public.appliquer_reformulation(:'r1', 'Libellé reformulé de test.') = 'ok', 'reformulation appliquée par un validateur');
+select pg_temp.ok(public.appliquer_reformulation(:'r1', 'autre') = 'introuvable', 'reformulation : pas de seconde application');
+select pg_temp.ok(public.refuser_reformulation(:'r2') = 'ok', 'reformulation refusée par un validateur');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok((select presentation_json #>> (:'rc'::text[] || array['html']) from public.documents where id = :'rd') = 'Libellé reformulé de test.',
+  'reformulation : le libellé de la fiche est remplacé');
+select pg_temp.ok(exists (select 1 from public.audit_log where action = 'reformulation_appliquee' and entity_id = :'rd'),
+  'reformulation : tracée au journal');
+update public.libelles_reformulation set status = 'proposee' where id = :'r2';
+update public.documents d set presentation_json = jsonb_set(d.presentation_json, l.chemin || array['html'], '"modifié entre-temps"')
+  from public.libelles_reformulation l where l.id = :'r2' and d.id = l.document_id;
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select pg_temp.ok(public.appliquer_reformulation(:'r2', 'x x x') = 'fiche_modifiee', 'reformulation : refusée si la fiche a changé');
+reset role;
+select set_config('request.jwt.claims', '', false);
+
 select 'Parcours membre : toutes les vérifications sont passées.';

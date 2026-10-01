@@ -75,6 +75,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     recette,
     suggestions,
     questions7,
+    reformulations,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -93,6 +94,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("recette_validations").select("code", head)),
     count(admin.from("site_suggestions").select("id", head).eq("status", "nouveau")),
     count(admin.from("assistant_usage").select("id", head).gte("created_at", since7)),
+    count(admin.from("libelles_reformulation").select("id", head).eq("status", "proposee")),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -134,6 +136,15 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
       n: sansJuridique,
       href: "/bibliotheque/juridique",
       detail: "Fiches en ligne sans statut juridique « Validé » : à renseigner par société (obligatoire pour publier).",
+    },
+    {
+      label: "Reformulations à valider (audit juridique)",
+      n: reformulations,
+      href: "/bibliotheque/reformulations",
+      detail:
+        reformulations === null
+          ? "Migration des reformulations pas encore appliquée dans Supabase."
+          : "Libellés recopiés de la source : valider, retoucher ou garder chaque proposition.",
     },
     {
       label: "Fiches en ligne sans date de la source",
@@ -237,6 +248,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Actualisations à valider", "/bibliotheque/actualisations"],
     ["Recommandations divergentes", "/bibliotheque/divergences"],
     ["Registre juridique", "/bibliotheque/juridique"],
+    ["Reformulations à valider", "/bibliotheque/reformulations"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Assistant de recherche", "/assistant"],
     ["Santé du site", "/api/sante"],
