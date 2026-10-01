@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { loadLibrary } from "../data";
 import Shell from "../shell";
-import { deciderReformulation } from "./actions";
+import { deciderReformulation, validerToutes } from "./actions";
 
 export const metadata: Metadata = {
   title: "Reformulations à valider — medical-guidelines.net",
@@ -16,6 +16,7 @@ const MESSAGES: Record<string, string> = {
   texte_invalide: "Texte vide ou trop long : rien n'a été changé.",
   introuvable: "Proposition déjà traitée.",
   erreur: "L'enregistrement n'a pas abouti (droits de validateur ; migration appliquée ?).",
+  confirmation: "Cochez la case de confirmation avant la validation groupée.",
 };
 
 type Ligne = {
@@ -53,7 +54,13 @@ export default async function ReformulationsPage({ searchParams }: PageProps<"/b
   const fiches = [...new Set(lignes.map((l) => l.fiche_key))];
   const restantes = (k: string) => lignes.filter((l) => l.fiche_key === k && l.status === "proposee").length;
   const choisie = typeof params.fiche === "string" && fiches.includes(params.fiche) ? params.fiche : fiches.find((k) => restantes(k) > 0);
-  const message = typeof params.r === "string" ? MESSAGES[params.r] : undefined;
+  const groupe = typeof params.r === "string" ? /^groupe_(\d+)_(\d+)$/.exec(params.r) : null;
+  const message = groupe
+    ? `${groupe[1]} libellé(s) remplacé(s) dans les fiches${Number(groupe[2]) ? ` ; ${groupe[2]} non appliqué(s) (fiche modifiée entre-temps)` : ""}.`
+    : typeof params.r === "string"
+      ? MESSAGES[params.r]
+      : undefined;
+  const restantTotal = lignes.filter((l) => l.status === "proposee").length;
   const total = lignes.length;
   const faites = lignes.filter((l) => l.status !== "proposee").length;
 
@@ -101,6 +108,28 @@ export default async function ReformulationsPage({ searchParams }: PageProps<"/b
               );
             })}
           </div>
+          {choisie && restantes(choisie) > 0 && (
+            <form action={validerToutes} className="unlock-box" style={{ marginBottom: 16 }}>
+              <input type="hidden" name="fiche" value={choisie} />
+              <h2 style={{ marginTop: 0 }}>Validation groupée</h2>
+              <p style={{ fontSize: "0.86rem" }}>
+                Applique telles quelles les propositions restantes, sans retouche. Les chiffres, doses, grades et la force
+                des recommandations ont été contrôlés automatiquement, mais seule votre relecture garantit le sens.
+              </p>
+              <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem", margin: "4px 0 12px" }}>
+                <input type="checkbox" name="confirme" value="1" required style={{ marginTop: 3 }} />
+                <span>J&apos;ai relu les propositions et je valide leur remplacement dans les fiches.</span>
+              </label>
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                <button name="portee" value="fiche" className="btn btn-primary btn-sm">
+                  Valider les {restantes(choisie)} propositions de cette fiche
+                </button>
+                <button name="portee" value="toutes" className="btn btn-ghost btn-sm">
+                  Valider toutes les fiches ({restantTotal} propositions)
+                </button>
+              </div>
+            </form>
+          )}
           {!choisie ? (
             <div className="empty-state">Toutes les propositions ont été traitées.</div>
           ) : (
