@@ -1,8 +1,10 @@
 name: Surveillance du site
 
 # Toutes les heures : les pages principales doivent répondre et la base
-# doit être joignable (/api/sante). En cas d'échec, GitHub envoie un e-mail
-# au propriétaire du dépôt (réglage par défaut des notifications Actions).
+# doit être joignable (/api/sante). En cas d'échec, la tâche envoie elle-même
+# un e-mail d'alerte par Resend (secret GitHub RESEND_API_KEY ; destinataire :
+# secret ALERTE_EMAIL, à défaut contact@medical-guidelines.net), sans
+# dépendre des réglages de notification de GitHub.
 # Recette 6.1-3 : lancer à la main avec « simuler une panne » coché ; une
 # page inexistante est ajoutée à la liste, la tâche échoue et l'e-mail
 # d'alerte doit arriver (le site, lui, n'est pas touché).
@@ -26,9 +28,11 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Pages principales et base de données
+        id: verification
         run: |
           site=https://www.medical-guidelines.net
           echec=0
+          : > erreurs.txt
           chemins="/ /recommandations /connexion /sitemap.xml /robots.txt"
           if [ "${{ inputs.simuler_panne }}" = "true" ]; then chemins="$chemins /panne-simulee-recette"; fi
           for chemin in $chemins /api/sante; do
@@ -36,10 +40,36 @@ jobs:
             echo "$chemin → $code"
             if [ "$code" != 200 ]; then
               echo "::error::$site$chemin répond $code"
+              echo "$site$chemin répond $code" >> erreurs.txt
               echec=1
             fi
           done
           # Dernière page appelée : /api/sante.
           cat reponse.txt; echo
-          grep -q '"ok":true' reponse.txt || { echo "::error::La base de données ne répond pas"; echec=1; }
+          grep -q '"ok":true' reponse.txt || { echo "::error::La base de données ne répond pas"; echo "La base de données ne répond pas" >> erreurs.txt; echec=1; }
           exit $echec
+
+      - name: Alerte e-mail
+        if: failure() && steps.verification.outcome == 'failure'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERTE_EMAIL: ${{ secrets.ALERTE_EMAIL }}
+          SIMULATION: ${{ inputs.simuler_panne }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ -z "$RESEND_API_KEY" ]; then
+            echo "::warning::Secret RESEND_API_KEY absent : aucun e-mail d'alerte envoyé."
+            exit 0
+          fi
+          prefixe=""
+          if [ "$SIMULATION" = "true" ]; then prefixe="[TEST] "; fi
+          jq -n \
+            --arg to "${ALERTE_EMAIL:-contact@medical-guidelines.net}" \
+            --arg subject "${prefixe}Panne détectée sur medical-guidelines.net" \
+            --arg text "$(printf '%s\n\n' "La surveillance horaire a détecté un problème :"; cat erreurs.txt; printf '\nDétail : %s\n' "$RUN_URL")" \
+            '{from: "medical-guidelines.net <alertes@medical-guidelines.net>", to: [$to], subject: $subject, text: $text}' > alerte.json
+          code=$(curl -sS -o resend.txt -w '%{http_code}' --max-time 20 \
+            -H "Authorization: Bearer $RESEND_API_KEY" -H "Content-Type: application/json" \
+            --data @alerte.json https://api.resend.com/emails) || code=000
+          echo "Resend → $code"; cat resend.txt; echo
+          [ "$code" = 200 ]
