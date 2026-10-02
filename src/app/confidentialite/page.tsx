@@ -9,7 +9,7 @@ export default function ConfidentialitePage() {
         Protection des Données (RGPD).
       </p>
 
-      <div className="mt-6 rounded-md border-l-4 border-teal-600 bg-teal-50 p-4">
+      <div className="mt-6 rounded-md border-l-4 border-[#2BB5A6] bg-[#EEF6FB] p-4">
         <p className="font-medium text-slate-900">En résumé</p>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>

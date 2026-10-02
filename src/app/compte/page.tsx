@@ -34,7 +34,7 @@ export default async function ComptePage({ searchParams }: PageProps<"/compte">)
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
       <p className="text-sm">
-        <Link href="/" className="text-teal-700 underline">
+        <Link href="/" className="text-[#1C7FB6] underline">
           ← Retour aux fiches
         </Link>
       </p>
@@ -45,14 +45,14 @@ export default async function ComptePage({ searchParams }: PageProps<"/compte">)
 
       <p className="mt-4 rounded-lg border border-slate-200 p-3 text-sm">
         🔒{" "}
-        <Link href="/compte/securite" className="font-semibold text-teal-700 underline">
+        <Link href="/compte/securite" className="font-semibold text-[#1C7FB6] underline">
           Double authentification
         </Link>{" "}
         : protégez votre compte par un code sur votre téléphone.
       </p>
       <p className="mt-3 rounded-lg border border-slate-200 p-3 text-sm">
         💡{" "}
-        <Link href="/suggestions?page=%2Fcompte" className="font-semibold text-teal-700 underline">
+        <Link href="/suggestions?page=%2Fcompte" className="font-semibold text-[#1C7FB6] underline">
           Une idée, un problème ?
         </Link>{" "}
         : aidez-nous à améliorer le site.

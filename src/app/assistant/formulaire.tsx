@@ -25,7 +25,7 @@ export default function Formulaire() {
             className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2"
           />
         </label>
-        <button disabled={enCours} className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white disabled:opacity-50">
+        <button disabled={enCours} className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm disabled:opacity-50">
           {enCours ? "Recherche en cours…" : "Rechercher dans les fiches"}
         </button>
       </form>
@@ -46,9 +46,9 @@ export default function Formulaire() {
               <ul className="mt-4 space-y-3">
                 {r.extraits.map((e, i) => (
                   <li key={i} className="rounded-lg border border-slate-200 p-4">
-                    <blockquote className="border-l-4 border-teal-600 pl-3 text-slate-800">« {e.citation} »</blockquote>
+                    <blockquote className="border-l-4 border-[#2BB5A6] pl-3 text-slate-800">« {e.citation} »</blockquote>
                     <p className="mt-2 text-xs text-slate-500">
-                      <Link href={`/bibliotheque/${e.docId}`} className="font-semibold text-teal-700 underline">
+                      <Link href={`/bibliotheque/${e.docId}`} className="font-semibold text-[#1C7FB6] underline">
                         {e.titre}
                       </Link>{" "}
                       · {e.section}

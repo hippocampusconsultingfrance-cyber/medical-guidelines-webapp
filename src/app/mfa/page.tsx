@@ -59,7 +59,7 @@ function Formulaire() {
         />
       </label>
       {erreur && <p className="text-sm text-red-600">{erreur}</p>}
-      <button disabled={occupe || !facteur} className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white disabled:opacity-50">
+      <button disabled={occupe || !facteur} className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm disabled:opacity-50">
         Valider
       </button>
     </form>
@@ -68,8 +68,8 @@ function Formulaire() {
 
 export default function MfaPage() {
   return (
-    <div className="mx-auto min-h-screen max-w-md px-6 py-16">
-      <h1 className="text-2xl font-semibold text-slate-900">Code de sécurité</h1>
+    <div className="w-full">
+      <h1 className="text-2xl font-bold text-[#0E3A78]">Code de sécurité</h1>
       <p className="mt-2 text-sm text-slate-600">
         Votre compte est protégé par la double authentification : saisissez le code affiché par votre
         application.

@@ -1,25 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { PROFESSION_GROUPS } from "@/lib/professions";
 
-type SpecialtyRow = {
-  slug: string;
-  category: string;
-  is_other: boolean;
-  name_i18n: { fr?: string } | null;
-};
-type Specialty = { slug: string; category: string; isOther: boolean; name: string };
+export type Specialty = { slug: string; category: string; isOther: boolean; name: string };
 
 const SPECIALTY_GROUPS = [
   { category: "medicale", label: "Spécialités médicales" },
   { category: "paramedicale", label: "Professions paramédicales" },
 ];
 
-export default function InscriptionPage() {
+// Liste des spécialités lue par le serveur (page.tsx) : pas d'attente à
+// l'affichage du formulaire.
+export default function InscriptionForm({ specialties }: { specialties: Specialty[] }) {
   const router = useRouter();
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
@@ -29,7 +25,6 @@ export default function InscriptionPage() {
   const [professionAutre, setProfessionAutre] = useState("");
   const [enFormation, setEnFormation] = useState(false);
   const [specialty, setSpecialty] = useState("");
-  const [specialties, setSpecialties] = useState<Specialty[]>([]);
   const [consentService, setConsentService] = useState(false);
   const [consentPartners, setConsentPartners] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -41,23 +36,6 @@ export default function InscriptionPage() {
   const [resendMessage, setResendMessage] = useState<string | null>(null);
 
   const professionEstAutre = profession === "Autre";
-
-  // Liste des spécialités (table publique specialties), chargée une fois.
-  useEffect(() => {
-    createClient()
-      .from("specialties")
-      .select("slug, category, is_other, name_i18n")
-      .then(({ data }) => {
-        const list = ((data ?? []) as SpecialtyRow[]).map((s) => ({
-          slug: s.slug,
-          category: s.category,
-          isOther: s.is_other,
-          name: s.name_i18n?.fr ?? s.slug,
-        }));
-        list.sort((a, b) => Number(a.isOther) - Number(b.isOther) || a.name.localeCompare(b.name, "fr"));
-        setSpecialties(list);
-      });
-  }, []);
 
   async function sendOtp() {
     const supabase = createClient();
@@ -151,8 +129,8 @@ export default function InscriptionPage() {
 
   if (submitted) {
     return (
-      <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 text-center">
-        <h1 className="text-2xl font-semibold text-slate-900">
+      <div className="flex flex-col text-center">
+        <h1 className="text-2xl font-bold text-[#0E3A78]">
           Vérifiez votre boîte email
         </h1>
         <p className="mt-4 text-slate-600">
@@ -172,18 +150,18 @@ export default function InscriptionPage() {
             value={code}
             onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
             placeholder="12345678"
-            className="w-full rounded-md border border-slate-300 px-3 py-2.5 text-center text-lg tracking-[0.3em] focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="w-full rounded-md border border-slate-300 px-3 py-2.5 text-center text-lg tracking-[0.3em] focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           />
 
           {codeError && <p className="text-sm text-red-600">{codeError}</p>}
           {resendMessage && (
-            <p className="text-sm text-teal-700">{resendMessage}</p>
+            <p className="text-sm text-[#1C7FB6]">{resendMessage}</p>
           )}
 
           <button
             type="submit"
             disabled={codeLoading || code.trim().length < 6}
-            className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50"
+            className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
           >
             {codeLoading ? "Vérification…" : "Valider le code"}
           </button>
@@ -192,7 +170,7 @@ export default function InscriptionPage() {
             type="button"
             onClick={handleResend}
             disabled={codeLoading}
-            className="w-full text-center text-sm text-teal-700 underline disabled:opacity-50"
+            className="w-full text-center text-sm text-[#1C7FB6] underline disabled:opacity-50"
           >
             Renvoyer le code
           </button>
@@ -202,8 +180,8 @@ export default function InscriptionPage() {
   }
 
   return (
-    <div className="mx-auto min-h-screen max-w-lg px-6 py-12">
-      <h1 className="text-2xl font-semibold text-slate-900">
+    <div className="w-full">
+      <h1 className="text-2xl font-bold text-[#0E3A78]">
         Créer un compte
       </h1>
       <p className="mt-2 text-sm text-slate-600">
@@ -223,7 +201,7 @@ export default function InscriptionPage() {
               required
               value={nom}
               onChange={(e) => setNom(e.target.value)}
-              className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
             />
           </div>
           <div>
@@ -236,7 +214,7 @@ export default function InscriptionPage() {
               required
               value={prenom}
               onChange={(e) => setPrenom(e.target.value)}
-              className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
             />
           </div>
         </div>
@@ -253,7 +231,7 @@ export default function InscriptionPage() {
             value={telephone}
             onChange={(e) => setTelephone(e.target.value)}
             placeholder="06 12 34 56 78"
-            className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           />
         </div>
 
@@ -268,7 +246,7 @@ export default function InscriptionPage() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           />
         </div>
 
@@ -281,7 +259,7 @@ export default function InscriptionPage() {
             required
             value={profession}
             onChange={(e) => setProfession(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           >
             <option value="" disabled>
               Sélectionnez votre profession
@@ -320,7 +298,7 @@ export default function InscriptionPage() {
               required
               value={professionAutre}
               onChange={(e) => setProfessionAutre(e.target.value)}
-              className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+              className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
             />
           </div>
         )}
@@ -335,10 +313,10 @@ export default function InscriptionPage() {
             value={specialty}
             onChange={(e) => setSpecialty(e.target.value)}
             aria-describedby="specialite-aide"
-            className="mt-1 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           >
             <option value="" disabled>
-              {specialties.length ? "Sélectionnez une spécialité" : "Chargement…"}
+              {specialties.length ? "Sélectionnez une spécialité" : "Liste indisponible : rechargez la page"}
             </option>
             {SPECIALTY_GROUPS.map((g) => (
               <optgroup key={g.category} label={g.label}>
@@ -411,14 +389,14 @@ export default function InscriptionPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50"
+          className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
         >
           {loading ? "Envoi en cours…" : "Créer mon compte"}
         </button>
 
         <p className="text-center text-sm text-slate-600">
           Déjà inscrit ?{" "}
-          <Link href="/connexion" className="font-medium text-teal-700 underline">
+          <Link href="/connexion" className="font-medium text-[#1C7FB6] underline">
             Se connecter
           </Link>
         </p>

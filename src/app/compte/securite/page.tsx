@@ -141,7 +141,7 @@ export default function SecuritePage() {
               className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-lg tracking-widest"
             />
           </label>
-          <button disabled={occupe} className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white disabled:opacity-50">
+          <button disabled={occupe} className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm disabled:opacity-50">
             Activer
           </button>
         </form>
@@ -149,7 +149,7 @@ export default function SecuritePage() {
         <button
           onClick={commencer}
           disabled={occupe}
-          className="mt-6 w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white disabled:opacity-50"
+          className="mt-6 w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm disabled:opacity-50"
         >
           Activer la double authentification
         </button>
