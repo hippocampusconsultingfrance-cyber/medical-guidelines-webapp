@@ -49,9 +49,17 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
   if (!found) notFound();
   const { fiche, supabase } = found;
   if (ficheSlug(fiche.fiche_key) !== slug) notFound();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const [
+    {
+      data: { user },
+    },
+    toutes,
+  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(supabase)]);
+  // Autres fiches de la même spécialité, de la plus récente à la plus ancienne.
+  const section = fiche.card_json?.section;
+  const voisines = section
+    ? toutes.filter((f) => f.id !== fiche.id && f.card_json?.section === section).slice(0, 6)
+    : [];
 
   const c = fiche.card_json;
   const title = c?.title ?? fiche.title;
@@ -161,6 +169,34 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
             </div>
           )}
         </section>
+
+        {voisines.length > 0 && (
+          <section className="mt-10" aria-labelledby="voisines">
+            <h2 id="voisines" className="text-lg font-bold text-slate-900">
+              Autres fiches — {section}
+            </h2>
+            <ul className="mt-3 divide-y divide-slate-100 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+              {voisines.map((f) => (
+                <li key={f.id}>
+                  <Link
+                    href={`/recommandations/${ficheSlug(f.fiche_key)}`}
+                    className="flex flex-col gap-0.5 px-4 py-3 hover:bg-slate-50"
+                  >
+                    <span className="font-medium text-slate-900">{f.card_json?.title ?? f.title}</span>
+                    <span className="font-mono text-xs text-slate-500">
+                      {[f.societies.slice(0, 3).join(" / "), formatDate(f.publication_date)].filter(Boolean).join(" · ")}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-sm">
+              <Link href="/recommandations" className="text-[#1A74A6] underline">
+                Voir toutes les recommandations
+              </Link>
+            </p>
+          </section>
+        )}
 
         <p className="mt-10 text-xs text-slate-500">
           Synthèse indépendante : elle ne remplace ni le texte intégral de la recommandation
