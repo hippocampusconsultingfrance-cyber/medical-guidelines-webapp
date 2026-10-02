@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Logo from "./logo";
+import { formatDate } from "@/lib/fiches";
+import { ficheSlug } from "@/lib/seo";
+import type { PublicFiche } from "./recommandations/data";
 
 // Page d'accueil publique (visiteur non connecté). Couleurs du logo :
 // bleu marine #0E3A78, turquoise #2BB5A6, bleu ciel #3AA8E0. Ne promettre
@@ -81,7 +84,7 @@ const APERCU = [
 const primaryBtn =
   "rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white shadow-sm hover:bg-[#0B2F63] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3AA8E0]";
 
-export default function AccueilPublic() {
+export default function AccueilPublic({ recentes = [] }: { recentes?: PublicFiche[] }) {
   return (
     <div className="flex min-h-screen flex-col bg-white text-slate-800">
       <a
@@ -230,6 +233,36 @@ export default function AccueilPublic() {
             </p>
           </div>
         </section>
+
+        {/* Recommandations les plus récentes (métadonnées publiques) */}
+        {recentes.length > 0 && (
+          <section aria-labelledby="recentes" className="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+            <div className="flex flex-wrap items-baseline justify-between gap-3">
+              <h2 id="recentes" className="text-2xl font-bold text-[#0E3A78] sm:text-3xl">
+                Les recommandations les plus récentes
+              </h2>
+              <Link href="/recommandations" className="text-sm font-semibold text-[#1A74A6] underline">
+                Toutes les recommandations →
+              </Link>
+            </div>
+            <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {recentes.map((f) => (
+                <li key={f.id}>
+                  <Link
+                    href={`/recommandations/${ficheSlug(f.fiche_key)}`}
+                    className="flex h-full flex-col rounded-2xl border border-slate-200 p-5 transition hover:border-[#3AA8E0] hover:shadow-md"
+                  >
+                    <span className="font-mono text-[0.7rem] font-semibold uppercase tracking-wider text-[#177E73]">
+                      {f.societies.slice(0, 3).join(" / ")}
+                    </span>
+                    <span className="mt-2 font-semibold leading-snug text-slate-900">{f.card_json?.title ?? f.title}</span>
+                    <span className="mt-auto pt-4 text-xs text-slate-500">{formatDate(f.publication_date)}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* Principes */}
         <section aria-labelledby="principes" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
