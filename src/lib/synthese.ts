@@ -99,7 +99,7 @@ export function composerSynthese(s: Synthese, to: string, site: string): Outgoin
     : `<li>Rien d'urgent cette semaine.</li>`;
   const html = cadreEmail(
     subject,
-    `<p style="font-size:18px;font-weight:700;color:#0E3A78">Synthèse de la semaine — ${escapeHtml(s.semaine)}</p>` +
+    `<p style="font-size:18px;font-weight:700;color:#0E3A78;margin:0 0 8px">Synthèse de la semaine — ${escapeHtml(s.semaine)}</p>` +
     `<h2 style="font-size:16px;margin:20px 0 6px">À valider</h2><ul style="padding-left:18px;font-size:15px">${taches}</ul>` +
     `<h2 style="font-size:16px;margin:20px 0 6px">Chiffres</h2><table style="width:100%;border-collapse:collapse;font-size:15px">${s.chiffres.map(([l, n]) => ligne(l, val(n))).join("")}</table>` +
     `<p style="font-size:14px;margin-top:18px">${escapeHtml(s.lettre)}</p>` +
