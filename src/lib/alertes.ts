@@ -1,4 +1,5 @@
 import "server-only";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml, formatDate, type Card } from "@/lib/fiches";
 import type { OutgoingEmail } from "@/lib/email";
 
@@ -64,20 +65,16 @@ export function buildDigests(rows: PendingAlert[], docs: Map<string, AlertDocume
 
     // Document HTML complet (langue, encodage, titre) : un fragment sans
     // <html> ni <head> est mal noté par certains filtres anti-spam.
-    const html =
-      `<!doctype html><html lang="fr"><head><meta charset="utf-8">` +
-      `<meta name="viewport" content="width=device-width, initial-scale=1">` +
-      `<title>${escapeHtml(subject)}</title></head>` +
-      `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-      `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
-      `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
-      `<p style="font-size:15px">${escapeHtml(hello)}</p>` +
-      section("Nouvelles recommandations de vos sociétés suivies", news, shortOf) +
-      section("Vos fiches ont été mises à jour", updates, updateDetail) +
-      `<p style="font-size:12px;color:#64748B;margin-top:28px">Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations.</p>` +
-      `<p style="font-size:12px;color:#64748B">Vous recevez cet e-mail car les alertes sont activées sur votre compte. ` +
-      `<a href="${site}/compte#alertes" style="color:#64748B">Gérer mes alertes</a> · ` +
-      `<a href="${unsubscribe}" style="color:#64748B">Se désinscrire</a></p></div></body></html>`;
+    const html = cadreEmail(
+      subject,
+      `<p style="font-size:15px;margin:0 0 14px">${escapeHtml(hello)}</p>` +
+        section("Nouvelles recommandations de vos sociétés suivies", news, shortOf) +
+        section("Vos fiches ont été mises à jour", updates, updateDetail),
+      `Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations.<br><br>` +
+        `Vous recevez cet e-mail car les alertes sont activées sur votre compte. ` +
+        `<a href="${site}/compte#alertes" style="color:#64748B">Gérer mes alertes</a> · ` +
+        `<a href="${unsubscribe}" style="color:#64748B">Se désinscrire</a>`,
+    );
 
     const textSection = (title: string, list: AlertDocument[], detail: (d: AlertDocument) => string) =>
       list.length

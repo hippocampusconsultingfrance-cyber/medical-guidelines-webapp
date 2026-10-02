@@ -2,6 +2,7 @@ import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { metaOf, shortOf, titleOf, updateDetail, type AlertDocument } from "@/lib/alertes";
 import type { OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml } from "@/lib/fiches";
 
 // Lettre mensuelle de veille (cahier des charges §8, routine « veille
@@ -195,21 +196,17 @@ export function composerLettre(
         list.map((d) => card(d, detail(d))).join("")
       : "";
 
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8">` +
-    `<meta name="viewport" content="width=device-width, initial-scale=1">` +
-    `<title>${escapeHtml(subject)}</title></head>` +
-    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
-    `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
-    `<p style="font-size:15px">${escapeHtml(hello)}</p>` +
-    introHtml +
-    section("Nouvelles fiches", news, shortOf) +
-    section("Fiches mises à jour", updates, updateDetail) +
-    `<p style="font-size:12px;color:#64748B;margin-top:28px">Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations.</p>` +
-    `<p style="font-size:12px;color:#64748B">Vous recevez cette lettre mensuelle en tant qu'abonné PREMIUM. ` +
-    `<a href="${site}/compte#alertes" style="color:#64748B">Gérer mes alertes</a> · ` +
-    `<a href="${unsubscribe}" style="color:#64748B">Se désinscrire</a></p></div></body></html>`;
+  const html = cadreEmail(
+    subject,
+    `<p style="font-size:15px;margin:0 0 14px">${escapeHtml(hello)}</p>` +
+      introHtml +
+      section("Nouvelles fiches", news, shortOf) +
+      section("Fiches mises à jour", updates, updateDetail),
+    `Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations.<br><br>` +
+      `Vous recevez cette lettre mensuelle en tant qu'abonné PREMIUM. ` +
+      `<a href="${site}/compte#alertes" style="color:#64748B">Gérer mes alertes</a> · ` +
+      `<a href="${unsubscribe}" style="color:#64748B">Se désinscrire</a>`,
+  );
 
   const textSection = (title: string, list: LettreDoc[], detail: (d: LettreDoc) => string) =>
     list.length
