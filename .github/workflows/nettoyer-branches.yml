@@ -1,0 +1,43 @@
+name: Nettoyer les branches
+
+# Recette 6.2-1 : main + au plus une branche de travail. Supprime les
+# branches données, seulement si leur contenu est déjà dans main ou
+# archivé (docs/archives/README.md). main n'est jamais supprimée.
+on:
+  workflow_dispatch:
+    inputs:
+      branches:
+        description: "Branches à supprimer (séparées par des espaces)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  nettoyer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Supprimer les branches sauvegardées
+        env:
+          BRANCHES: ${{ inputs.branches }}
+        run: |
+          echec=0
+          for b in $BRANCHES; do
+            if [ "$b" = main ]; then echo "::error::main n'est jamais supprimée"; echec=1; continue; fi
+            if ! git rev-parse --verify -q "origin/$b" >/dev/null; then echo "$b : déjà absente"; continue; fi
+            sha=$(git rev-parse "origin/$b")
+            if git merge-base --is-ancestor "$sha" origin/main; then
+              raison="contenu déjà dans main"
+            elif grep -q "\`$b\`" docs/archives/README.md && grep -q "\`${sha:0:7}\`" docs/archives/README.md; then
+              raison="archivée (docs/archives)"
+            else
+              echo "::error::$b ($sha) n'est ni dans main ni archivée : conservée"; echec=1; continue
+            fi
+            git push origin --delete "$b" && echo "$b supprimée ($raison)"
+          done
+          exit $echec
