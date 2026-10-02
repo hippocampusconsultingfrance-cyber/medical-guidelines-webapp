@@ -41,7 +41,7 @@ export default async function SuggestionsPage({ searchParams }: PageProps<"/sugg
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
       <p className="text-sm">
-        <Link href={page || "/bibliotheque"} className="text-teal-700 underline">
+        <Link href={page || "/bibliotheque"} className="text-[#1A74A6] underline">
           ← Retour
         </Link>
       </p>
@@ -89,7 +89,7 @@ export default async function SuggestionsPage({ searchParams }: PageProps<"/sugg
         <p className="text-xs text-slate-500">
           N&apos;indiquez aucune donnée concernant un patient.
         </p>
-        <button className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white">Envoyer</button>
+        <button className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm">Envoyer</button>
       </form>
 
       {miennes && miennes.length > 0 && (

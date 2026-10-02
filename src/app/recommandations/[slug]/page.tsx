@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
@@ -7,12 +8,13 @@ import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
 
-async function load(slug: string) {
+// Une seule lecture par requête pour les métadonnées et la page.
+const load = cache(async (slug: string) => {
   if (!/^[a-z0-9-]{2,120}$/.test(slug)) return null;
   const supabase = await createClient();
   const [fiche] = await loadPublicFiches(supabase, ficheKey(slug));
   return fiche ? { fiche, supabase } : null;
-}
+});
 
 export async function generateMetadata({ params }: PageProps<"/recommandations/[slug]">): Promise<Metadata> {
   const { slug } = await params;
@@ -26,7 +28,15 @@ export async function generateMetadata({ params }: PageProps<"/recommandations/[
     description,
     alternates: { canonical: `${SITE_URL}/recommandations/${slug}` },
     robots: { index: INDEXABLE, follow: INDEXABLE },
-    openGraph: { title, description, type: "article", url: `${SITE_URL}/recommandations/${slug}` },
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: `${SITE_URL}/recommandations/${slug}`,
+      siteName: "medical-guidelines.net",
+      locale: "fr_FR",
+    },
+    twitter: { card: "summary_large_image" },
   };
 }
 
@@ -39,9 +49,17 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
   if (!found) notFound();
   const { fiche, supabase } = found;
   if (ficheSlug(fiche.fiche_key) !== slug) notFound();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const [
+    {
+      data: { user },
+    },
+    toutes,
+  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(supabase)]);
+  // Autres fiches de la même spécialité, de la plus récente à la plus ancienne.
+  const section = fiche.card_json?.section;
+  const voisines = section
+    ? toutes.filter((f) => f.id !== fiche.id && f.card_json?.section === section).slice(0, 6)
+    : [];
 
   const c = fiche.card_json;
   const title = c?.title ?? fiche.title;
@@ -64,11 +82,11 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm">
-          <Link href="/recommandations" className="text-[#1C7FB6] underline">
+          <Link href="/recommandations" className="text-[#1A74A6] underline">
             ← Toutes les recommandations
           </Link>
         </p>
-        <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#2BB5A6]">
+        <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#177E73]">
           {c?.society ?? fiche.societies.join(" / ")}
         </p>
         <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]">{title}</h1>
@@ -115,7 +133,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
         )}
 
         <p className="mt-6 text-sm">
-          <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1C7FB6] underline">
+          <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1A74A6] underline">
             Document source officiel ↗
           </a>{" "}
           <span className="text-slate-500">— en accès libre sur le site de la société savante.</span>
@@ -151,6 +169,34 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
             </div>
           )}
         </section>
+
+        {voisines.length > 0 && (
+          <section className="mt-10" aria-labelledby="voisines">
+            <h2 id="voisines" className="text-lg font-bold text-slate-900">
+              Autres fiches — {section}
+            </h2>
+            <ul className="mt-3 divide-y divide-slate-100 overflow-hidden rounded-2xl ring-1 ring-slate-200">
+              {voisines.map((f) => (
+                <li key={f.id}>
+                  <Link
+                    href={`/recommandations/${ficheSlug(f.fiche_key)}`}
+                    className="flex flex-col gap-0.5 px-4 py-3 hover:bg-slate-50"
+                  >
+                    <span className="font-medium text-slate-900">{f.card_json?.title ?? f.title}</span>
+                    <span className="font-mono text-xs text-slate-500">
+                      {[f.societies.slice(0, 3).join(" / "), formatDate(f.publication_date)].filter(Boolean).join(" · ")}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-sm">
+              <Link href="/recommandations" className="text-[#1A74A6] underline">
+                Voir toutes les recommandations
+              </Link>
+            </p>
+          </section>
+        )}
 
         <p className="mt-10 text-xs text-slate-500">
           Synthèse indépendante : elle ne remplace ni le texte intégral de la recommandation

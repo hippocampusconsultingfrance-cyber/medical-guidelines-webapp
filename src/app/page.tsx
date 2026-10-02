@@ -5,12 +5,17 @@ import AccueilPublic from "./accueil-public";
 import EspaceMembre from "./espace-membre";
 import { INDEXABLE, SITE_URL } from "@/lib/seo";
 
+const TITRE = "medical-guidelines.net — Recommandations médicales et paramédicales en fiches";
+const DESCRIPTION =
+  "Les recommandations des sociétés savantes en fiches claires et sourcées, grades conservés, pour les médecins et les professionnels paramédicaux. 5 fiches gratuites.";
+
 export const metadata: Metadata = {
-  title: "medical-guidelines.net — Recommandations médicales et paramédicales en fiches",
-  description:
-    "Les recommandations des sociétés savantes en fiches claires et sourcées, grades conservés, pour les médecins et les professionnels paramédicaux. 5 fiches gratuites.",
+  title: TITRE,
+  description: DESCRIPTION,
   alternates: { canonical: SITE_URL },
   robots: { index: INDEXABLE, follow: INDEXABLE },
+  openGraph: { title: TITRE, description: DESCRIPTION, url: SITE_URL, siteName: "medical-guidelines.net", locale: "fr_FR", type: "website" },
+  twitter: { card: "summary_large_image" },
 };
 
 export default async function Home({ searchParams }: PageProps<"/">) {

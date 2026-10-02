@@ -24,7 +24,7 @@ type Consent = {
 };
 
 const inputClass =
-  "mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600";
+  "mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleString("fr-FR", {
@@ -239,7 +239,7 @@ export default function CompteForm({
           <button
             type="submit"
             disabled={busy}
-            className="rounded-md bg-teal-700 px-4 py-2 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50"
+            className="rounded-lg bg-[#0E3A78] px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
           >
             Enregistrer
           </button>

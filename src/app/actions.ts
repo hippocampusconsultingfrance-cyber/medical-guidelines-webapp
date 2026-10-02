@@ -58,3 +58,11 @@ export async function setEmailAlerts(formData: FormData) {
   const { error } = await supabase.from("profiles").update({ email_alerts: on }).eq("id", user.id);
   back(formData, error ? "alertes_erreur" : on ? "alertes_on" : "alertes_off");
 }
+
+// Déconnexion côté serveur : les cookies de session sont effacés par le
+// client Supabase du serveur, sans charger supabase-js dans le navigateur.
+export async function seDeconnecter() {
+  const supabase = await createClient();
+  await supabase.auth.signOut();
+  redirect("/connexion");
+}

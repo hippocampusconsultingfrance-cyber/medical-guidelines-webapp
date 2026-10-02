@@ -50,7 +50,7 @@ export default async function AlertesSection({
     <section id="alertes" className="mt-8 scroll-mt-6 rounded-md border border-slate-200 p-4">
       <h2 className="text-lg font-semibold text-slate-900">Alertes e-mail</h2>
       {message && (
-        <p role="status" className="mt-2 rounded-md bg-teal-50 px-3 py-2 text-sm text-teal-800">
+        <p role="status" className="mt-2 rounded-md bg-[#EEF6FB] px-3 py-2 text-sm text-[#0E3A78]">
           {message}
         </p>
       )}
@@ -62,7 +62,7 @@ export default async function AlertesSection({
           <>
             {" "}
             Les alertes sont incluses dans{" "}
-            <Link href="/abonnement" className="text-teal-700 underline">
+            <Link href="/abonnement" className="text-[#1A74A6] underline">
               l&apos;abonnement PREMIUM
             </Link>
             .
@@ -103,7 +103,7 @@ export default async function AlertesSection({
         <p className="mt-1 text-sm text-slate-600">
           Aucune.{" "}
           {eligible ? (
-            <Link href="/#alertes" className="text-teal-700 underline">
+            <Link href="/#alertes" className="text-[#1A74A6] underline">
               Choisir des sociétés depuis l&apos;accueil
             </Link>
           ) : null}

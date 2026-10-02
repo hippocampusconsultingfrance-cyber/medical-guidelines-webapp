@@ -39,8 +39,8 @@ function ConnexionForm() {
   }
 
   return (
-    <div className="mx-auto min-h-screen max-w-md px-6 py-16">
-      <h1 className="text-2xl font-semibold text-slate-900">Se connecter</h1>
+    <div className="w-full">
+      <h1 className="text-2xl font-bold text-[#0E3A78]">Se connecter</h1>
 
       {accountDeleted && (
         <p className="mt-4 rounded-md bg-slate-100 p-3 text-sm text-slate-700">
@@ -60,7 +60,7 @@ function ConnexionForm() {
             autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           />
         </div>
 
@@ -75,14 +75,14 @@ function ConnexionForm() {
             autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="mt-1 w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-1 focus:ring-teal-600"
+            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           />
         </div>
 
         <p className="text-right text-sm">
           <Link
             href="/mot-de-passe-oublie"
-            className="text-teal-700 underline"
+            className="text-[#1A74A6] underline"
           >
             Mot de passe oublié ?
           </Link>
@@ -93,7 +93,7 @@ function ConnexionForm() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50"
+          className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
         >
           {loading ? "Connexion…" : "Se connecter"}
         </button>
@@ -102,7 +102,7 @@ function ConnexionForm() {
           Pas encore de compte ?{" "}
           <Link
             href="/inscription"
-            className="font-medium text-teal-700 underline"
+            className="font-medium text-[#1A74A6] underline"
           >
             S&apos;inscrire
           </Link>

@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { SITE_URL } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,12 +16,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  // Adresses absolues des images de partage (opengraph-image).
+  metadataBase: new URL(SITE_URL),
   title: "Medical Guidelines",
   description:
     "Fiches de synthèse des recommandations professionnelles, pour le personnel médical et paramédical.",
   robots: { index: false, follow: false },
   icons: { apple: "/icones/180.png" },
   appleWebApp: { capable: true, title: "Guidelines", statusBarStyle: "default" },
+  openGraph: { siteName: "medical-guidelines.net", locale: "fr_FR", type: "website" },
 };
 
 export const viewport: Viewport = { themeColor: "#0E3A78" };

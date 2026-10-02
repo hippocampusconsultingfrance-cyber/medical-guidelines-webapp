@@ -1,0 +1,15 @@
+// Logo du site en SVG autonome (copie de src/app/icon.svg), pour les images
+// générées par le serveur : icônes de l'application, images de partage.
+export const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 84">
+  <defs>
+    <linearGradient id="l" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2BB5A6"/><stop offset="1" stop-color="#35A9C9"/></linearGradient>
+    <linearGradient id="r" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3AA8E0"/><stop offset="1" stop-color="#3C9FD8"/></linearGradient>
+  </defs>
+  <path fill="#0E3A78" d="M3 24h7v34c19 0 36 4 50 13 14-9 31-13 50-13V24h7v41c-20 0-38 5-54 15h-6C41 70 23 65 3 65z"/>
+  <path fill="url(#l)" d="M15 13c22 3 38 17 43 45v14c-12-8-27-12-43-12z"/>
+  <path fill="url(#r)" d="M105 13c-22 3-38 17-43 45v14c12-8 27-12 43-12z"/>
+  <rect x="54.5" y="1" width="11" height="31" rx="2.5" fill="#0E3A78"/>
+  <rect x="44.5" y="11" width="31" height="11" rx="2.5" fill="#0E3A78"/>
+</svg>`;
+
+export const LOGO_DATA_URI = `data:image/svg+xml;base64,${Buffer.from(LOGO_SVG).toString("base64")}`;

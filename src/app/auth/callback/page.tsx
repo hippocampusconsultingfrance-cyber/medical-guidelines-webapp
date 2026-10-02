@@ -134,8 +134,8 @@ export default function AuthCallbackPage() {
   if (status === "confirm") {
     const recovery = isRecovery(linkType);
     return (
-      <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 text-center">
-        <h1 className="text-2xl font-semibold text-slate-900">
+      <div className="flex flex-col text-center">
+        <h1 className="text-2xl font-bold text-[#0E3A78]">
           {recovery ? "Mot de passe oublié" : "Confirmation de votre email"}
         </h1>
         <p className="mt-4 text-slate-600">
@@ -147,7 +147,7 @@ export default function AuthCallbackPage() {
           type="button"
           onClick={handleConfirm}
           disabled={busy}
-          className="mt-6 w-full rounded-md bg-teal-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 disabled:opacity-50"
+          className="mt-6 w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
         >
           {busy
             ? "Vérification…"
@@ -162,7 +162,7 @@ export default function AuthCallbackPage() {
   if (status === "error") {
     const recovery = isRecovery(linkType);
     return (
-      <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 text-center">
+      <div className="flex flex-col text-center">
         <p className="text-red-600">
           Ce lien a déjà été utilisé ou a expiré.{" "}
           {recovery
@@ -171,15 +171,15 @@ export default function AuthCallbackPage() {
         </p>
         <div className="mt-6 flex flex-col gap-3 text-sm">
           {recovery ? (
-            <Link href="/mot-de-passe-oublie" className="text-teal-700 underline">
+            <Link href="/mot-de-passe-oublie" className="text-[#1A74A6] underline">
               Recevoir un nouveau lien
             </Link>
           ) : (
-            <Link href="/inscription" className="text-teal-700 underline">
+            <Link href="/inscription" className="text-[#1A74A6] underline">
               Recommencer l&apos;inscription
             </Link>
           )}
-          <Link href="/connexion" className="text-teal-700 underline">
+          <Link href="/connexion" className="text-[#1A74A6] underline">
             Aller à la connexion
           </Link>
         </div>
@@ -191,7 +191,7 @@ export default function AuthCallbackPage() {
   }
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 text-center">
+    <div className="flex flex-col text-center">
       <p className="text-slate-600">Validation du lien en cours…</p>
     </div>
   );

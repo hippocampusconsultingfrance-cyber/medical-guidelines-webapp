@@ -126,30 +126,32 @@ export default async function FichePage({
   const doc = lib.docs.find((d) => d.id === id);
   if (!doc) notFound();
 
-  const { data: extra } = await supabase
-    .from("documents")
-    .select("revision_date, source_url, grading_system, superseded_by_document_id")
-    .eq("id", id)
-    .single();
-  // Requête séparée : sans la migration 20260930130000, la colonne manque.
-  const { data: verif } = await supabase.from("documents").select("source_verified_at").eq("id", id).maybeSingle();
-  // Requête séparée : sans la migration 20261001170000, les colonnes manquent.
-  const { data: relecture } = await supabase.from("documents").select("relue_par_nom, relue_le").eq("id", id).maybeSingle();
+  // Lectures indépendantes, envoyées ensemble.
+  const [{ data: extra }, { data: verif }, { data: relecture }, { data: canRead }, { data: blocked }, { data: versions }] =
+    await Promise.all([
+      supabase
+        .from("documents")
+        .select("revision_date, source_url, grading_system, superseded_by_document_id")
+        .eq("id", id)
+        .single(),
+      // Requête séparée : sans la migration 20260930130000, la colonne manque.
+      supabase.from("documents").select("source_verified_at").eq("id", id).maybeSingle(),
+      // Requête séparée : sans la migration 20261001170000, les colonnes manquent.
+      supabase.from("documents").select("relue_par_nom, relue_le").eq("id", id).maybeSingle(),
+      supabase.rpc("can_read_document", { doc_id: id }),
+      supabase.rpc("is_access_blocked"),
+      lib.canPublish
+        ? supabase
+            .from("document_versions")
+            .select("id, version_label, change_type, diff_summary, detected_at, published_at")
+            .eq("document_id", id)
+            .order("detected_at", { ascending: false })
+        : Promise.resolve({ data: null }),
+    ]);
   const verification = verificationSource(
     (verif?.source_verified_at as string | null | undefined) ?? null,
     doc.published_at,
   );
-  const [{ data: canRead }, { data: blocked }] = await Promise.all([
-    supabase.rpc("can_read_document", { doc_id: id }),
-    supabase.rpc("is_access_blocked"),
-  ]);
-  const { data: versions } = lib.canPublish
-    ? await supabase
-        .from("document_versions")
-        .select("id, version_label, change_type, diff_summary, detected_at, published_at")
-        .eq("document_id", id)
-        .order("detected_at", { ascending: false })
-    : { data: null };
   const r = (await searchParams).r;
   const message = typeof r === "string" ? MESSAGES[r] : undefined;
 
@@ -316,14 +318,16 @@ export default async function FichePage({
     }
     ({ html: body, toc } = renderRecommendations((recs ?? []) as Recommendation[]));
   }
-  await supabase.from("consultation_history").insert({ user_id: user.id, document_id: id });
-  const corrections = await chargerCorrections(supabase, id, 50);
-  const { data: divData } = await supabase.rpc("get_divergences", { doc_id: id });
-  const divergences = (Array.isArray(divData) ? divData : []) as Divergence[];
   // Points clés validés par un médecin (colonne lue par le serveur seulement,
   // ici sur une fiche que le membre a le droit de lire). Sans la migration
   // 20261001180000, la colonne manque : rien n'est affiché.
-  const { data: cles } = await createAdminClient().from("documents").select("points_cles").eq("id", id).maybeSingle();
+  const [, corrections, { data: divData }, { data: cles }] = await Promise.all([
+    supabase.from("consultation_history").insert({ user_id: user.id, document_id: id }),
+    chargerCorrections(supabase, id, 50),
+    supabase.rpc("get_divergences", { doc_id: id }),
+    createAdminClient().from("documents").select("points_cles").eq("id", id).maybeSingle(),
+  ]);
+  const divergences = (Array.isArray(divData) ? divData : []) as Divergence[];
   const pointsCles = Array.isArray(cles?.points_cles) ? (cles.points_cles as string[]) : [];
 
   const watermark = `${user.email} · ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })}`;

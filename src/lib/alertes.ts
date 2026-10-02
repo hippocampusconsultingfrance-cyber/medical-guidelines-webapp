@@ -53,10 +53,10 @@ export function buildDigests(rows: PendingAlert[], docs: Map<string, AlertDocume
               (d) =>
                 `<div style="border:1px solid #E2E8F0;border-radius:10px;padding:14px 16px;margin:10px 0">` +
                 `<a href="${site}/bibliotheque/${d.id}" style="font-weight:700;color:#0F172A;font-size:15px;text-decoration:none">${escapeHtml(titleOf(d))}</a>` +
-                `<div style="font-size:12px;color:#1C7FB6;margin-top:4px">${escapeHtml(metaOf(d))}</div>` +
+                `<div style="font-size:12px;color:#1A74A6;margin-top:4px">${escapeHtml(metaOf(d))}</div>` +
                 `<div style="font-size:14px;color:#475569;margin-top:6px">${escapeHtml(detail(d))}</div>` +
-                `<div style="font-size:13px;margin-top:8px"><a href="${site}/bibliotheque/${d.id}" style="color:#1C7FB6">Lire la fiche</a>` +
-                (d.source_url ? ` · <a href="${escapeHtml(d.source_url)}" style="color:#1C7FB6">Document source officiel</a>` : "") +
+                `<div style="font-size:13px;margin-top:8px"><a href="${site}/bibliotheque/${d.id}" style="color:#1A74A6">Lire la fiche</a>` +
+                (d.source_url ? ` · <a href="${escapeHtml(d.source_url)}" style="color:#1A74A6">Document source officiel</a>` : "") +
                 `</div></div>`,
             )
             .join("")

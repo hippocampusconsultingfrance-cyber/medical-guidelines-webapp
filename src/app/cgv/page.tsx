@@ -15,7 +15,7 @@ export default function CgvPage() {
   const h2 = "mt-8 text-lg font-semibold text-slate-900";
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 text-sm leading-6 text-slate-700">
-      <h1 className="text-2xl font-semibold text-slate-900">Conditions Générales de Vente</h1>
+      <h1 className="text-2xl font-bold text-[#0E3A78]">Conditions Générales de Vente</h1>
       <p className="mt-2 text-slate-500">Version du {CGV_VERSION.split("-").reverse().join("/")}.</p>
 
       <h2 className={h2}>1. Vendeur</h2>
