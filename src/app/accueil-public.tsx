@@ -149,7 +149,7 @@ export default function AccueilPublic() {
                   id="q-accueil"
                   name="q"
                   type="search"
-                  placeholder="Rechercher : sepsis, ALR, intubation…"
+                  placeholder="Ex. : sepsis, ALR…"
                   className="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
                 />
                 <button className="shrink-0 rounded-lg border border-[#0E3A78] bg-white px-4 py-3 font-semibold text-[#0E3A78] hover:bg-[#EEF6FB]">
