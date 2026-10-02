@@ -7,6 +7,7 @@ import { groupBySection } from "../bibliotheque/data";
 import { loadPublicFiches } from "./data";
 import PublicHeader from "./public-header";
 import RechercheCatalogue from "./recherche";
+import DonneesStructurees from "../donnees-structurees";
 
 export const metadata: Metadata = {
   title: "Recommandations médicales des sociétés savantes — fiches de synthèse | medical-guidelines.net",
@@ -50,6 +51,25 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
   return (
     <div className="min-h-screen bg-white text-slate-800">
       <PublicHeader connected={Boolean(auth.user)} />
+      <DonneesStructurees
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Recommandations des sociétés savantes en fiches de synthèse",
+          url: `${SITE_URL}/recommandations`,
+          inLanguage: "fr",
+          mainEntity: {
+            "@type": "ItemList",
+            numberOfItems: fiches.length,
+            itemListElement: fiches.map((f, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: f.card_json?.title ?? f.title,
+              url: `${SITE_URL}/recommandations/${ficheSlug(f.fiche_key)}`,
+            })),
+          },
+        }}
+      />
       <main>
         <div className="bg-gradient-to-b from-[#EEF6FB] to-white">
           <div className="mx-auto max-w-5xl px-4 pb-6 pt-10 sm:px-6">
