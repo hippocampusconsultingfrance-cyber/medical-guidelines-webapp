@@ -1,5 +1,6 @@
 import "server-only";
 import type { OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml } from "@/lib/fiches";
 
 // E-mails contractuels de l'abonnement (CGV §5 et §7), envoyés quelle que
@@ -26,17 +27,14 @@ const bouton = (href: string, label: string) =>
 function enveloppe(to: string, prenom: string | null, subject: string, paragraphes: string[], lien: [string, string], site: string): OutgoingEmail {
   const hello = prenom ? `Bonjour ${prenom},` : "Bonjour,";
   const pied = "Hippocampus Consulting, SARL au capital de 1 000 € — 6 rue d'Armaillé, 75017 Paris — SIREN 999 259 252.";
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">` +
-    `<title>${escapeHtml(subject)}</title></head><body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
-    `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
+  const html = cadreEmail(
+    subject,
     p(escapeHtml(hello)) +
-    paragraphes.map((t) => p(escapeHtml(t))).join("") +
-    bouton(lien[1], lien[0]) +
-    p(`Conditions générales de vente : <a href="${site}/cgv" style="color:#0E3A78">${site}/cgv</a>. Une question : répondez simplement à cet e-mail.`) +
-    `<p style="font-size:12px;color:#64748B;margin-top:28px">${escapeHtml(pied)}</p>` +
-    `</div></body></html>`;
+      paragraphes.map((t) => p(escapeHtml(t))).join("") +
+      bouton(lien[1], lien[0]) +
+      p(`Conditions générales de vente : <a href="${site}/cgv" style="color:#0E3A78">${site}/cgv</a>. Une question : répondez simplement à cet e-mail.`),
+    escapeHtml(pied),
+  );
   const text =
     `${hello}\n\n${paragraphes.join("\n\n")}\n\n${lien[0]} : ${lien[1]}\n\n` +
     `Conditions générales de vente : ${site}/cgv. Une question : répondez simplement à cet e-mail.\n\n${pied}\n`;

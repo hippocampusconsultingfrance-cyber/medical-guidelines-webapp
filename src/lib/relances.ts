@@ -1,6 +1,7 @@
 import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml, FREE_QUOTA } from "@/lib/fiches";
 
 // Relances par e-mail (une seule fois par membre, notifications_log) :
@@ -75,15 +76,11 @@ export async function ciblesQuota(admin: SupabaseClient, now: number): Promise<C
 
 function enveloppe(c: Cible, subject: string, corps: string, texte: string, site: string): OutgoingEmail {
   const stop = `${site}/alertes/desinscription?t=${c.token}`;
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">` +
-    `<title>${escapeHtml(subject)}</title></head><body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
-    `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
-    `<p style="font-size:15px">${escapeHtml(c.prenom ? `Bonjour ${c.prenom},` : "Bonjour,")}</p>` +
-    corps +
-    `<p style="font-size:12px;color:#64748B;margin-top:28px"><a href="${stop}" style="color:#64748B">Ne plus recevoir ces e-mails</a></p>` +
-    `</div></body></html>`;
+  const html = cadreEmail(
+    subject,
+    `<p style="font-size:15px;line-height:1.55;margin:0 0 14px">${escapeHtml(c.prenom ? `Bonjour ${c.prenom},` : "Bonjour,")}</p>` + corps,
+    `<a href="${stop}" style="color:#64748B">Ne plus recevoir ces e-mails</a>`,
+  );
   return {
     to: c.email,
     subject,

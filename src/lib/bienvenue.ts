@@ -1,5 +1,6 @@
 import "server-only";
 import type { OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml, FREE_QUOTA } from "@/lib/fiches";
 
 // E-mail de bienvenue, envoyé une fois, quand le membre finalise son compte
@@ -30,13 +31,7 @@ export function composerBienvenue(b: Bienvenue, site: string): OutgoingEmail {
   const button = (href: string, label: string) =>
     `<p style="margin:22px 0"><a href="${href}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">${escapeHtml(label)}</a></p>`;
 
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8">` +
-    `<meta name="viewport" content="width=device-width, initial-scale=1">` +
-    `<title>${escapeHtml(subject)}</title></head>` +
-    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
-    `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
+  const corps =
     p(escapeHtml(hello)) +
     p(`Votre compte est prêt. ${escapeHtml(catalogue)} : des synthèses fidèles des recommandations des sociétés savantes, grades conservés et source officielle toujours indiquée.`) +
     `<h2 style="font-size:17px;color:#0E3A78;margin:24px 0 8px">Vos ${FREE_QUOTA} crédits gratuits</h2>` +
@@ -46,10 +41,14 @@ export function composerBienvenue(b: Bienvenue, site: string): OutgoingEmail {
     `<h2 style="font-size:17px;color:#0E3A78;margin:24px 0 8px">Tout ouvrir</h2>` +
     p(escapeHtml(premium)) +
     (b.premiumOuvert ? button(`${site}/abonnement`, "Découvrir PREMIUM") : "") +
-    p(`Une question, une erreur repérée dans une fiche ? Répondez simplement à cet e-mail, ou utilisez « Signaler une erreur » en bas de chaque fiche.`) +
-    `<p style="font-size:12px;color:#64748B;margin-top:28px">Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations ni le jugement clinique.</p>` +
-    `<p style="font-size:12px;color:#64748B">Vous recevez cet e-mail car vous venez de créer votre compte sur medical-guidelines.net. ` +
-    `<a href="${site}/compte" style="color:#64748B">Mon compte</a></p></div></body></html>`;
+    p(`Une question, une erreur repérée dans une fiche ? Répondez simplement à cet e-mail, ou utilisez « Signaler une erreur » en bas de chaque fiche.`);
+  const html = cadreEmail(
+    subject,
+    corps,
+    `Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations ni le jugement clinique.<br><br>` +
+      `Vous recevez cet e-mail car vous venez de créer votre compte sur medical-guidelines.net. ` +
+      `<a href="${site}/compte" style="color:#64748B">Mon compte</a>`,
+  );
 
   const text =
     `${hello}\n\nVotre compte est prêt. ${catalogue} : des synthèses fidèles des recommandations des sociétés savantes, grades conservés et source officielle toujours indiquée.\n\n` +
