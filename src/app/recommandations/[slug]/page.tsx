@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
@@ -7,12 +8,13 @@ import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
 
-async function load(slug: string) {
+// Une seule lecture par requête pour les métadonnées et la page.
+const load = cache(async (slug: string) => {
   if (!/^[a-z0-9-]{2,120}$/.test(slug)) return null;
   const supabase = await createClient();
   const [fiche] = await loadPublicFiches(supabase, ficheKey(slug));
   return fiche ? { fiche, supabase } : null;
-}
+});
 
 export async function generateMetadata({ params }: PageProps<"/recommandations/[slug]">): Promise<Metadata> {
   const { slug } = await params;

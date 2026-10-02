@@ -22,6 +22,18 @@ const contentSecurityPolicy = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Sentry n'envoie que les erreurs (tracesSampleRate 0, sans enregistrement
+  // de session) : le code de suivi de performance, de rejeu et de débogage
+  // est retiré du JavaScript envoyé au navigateur.
+  compiler: {
+    define: {
+      __SENTRY_DEBUG__: false,
+      __SENTRY_TRACING__: false,
+      __RRWEB_EXCLUDE_IFRAME__: true,
+      __RRWEB_EXCLUDE_SHADOW_DOM__: true,
+      __SENTRY_EXCLUDE_REPLAY_WORKER__: true,
+    },
+  },
   // Justificatifs des médecins en formation (3 Mo max, cf. src/lib/etudiants.ts) :
   // la limite par défaut des actions serveur (1 Mo) est trop basse.
   experimental: { serverActions: { bodySizeLimit: "4mb" } },
