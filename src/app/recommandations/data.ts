@@ -1,4 +1,5 @@
-import type { SupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
+import { unstable_cache } from "next/cache";
 import { orderSocieties, type Card } from "@/lib/fiches";
 
 export type PublicFiche = {
@@ -17,25 +18,45 @@ type Row = Omit<PublicFiche, "societies"> & {
 };
 
 // Métadonnées publiques des fiches en ligne (jamais le contenu : la base ne
-// le transmet qu'aux comptes autorisés).
-export async function loadPublicFiches(supabase: SupabaseClient, key?: string, limit?: number) {
-  let query = supabase
-    .from("documents")
-    .select("id, fiche_key, title, doc_type, publication_date, source_url, card_json, document_societies(societies(acronym))")
-    .not("fiche_key", "is", null)
-    .not("published_at", "is", null)
-    .order("publication_date", { ascending: false, nullsFirst: false })
-    .order("title");
-  if (key) query = query.eq("fiche_key", key);
-  if (limit) query = query.limit(limit);
-  const { data } = await query;
-  return ((data ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => ({
-    ...d,
-    societies: orderSocieties(
-      (document_societies ?? [])
-        .flatMap((l) => (Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : []))
-        .map((s) => s.acronym),
-      d.card_json?.society,
-    ),
-  }));
+// le transmet qu'aux comptes autorisés), lues avec la clé publique et
+// gardées 5 minutes en cache : accueil, catalogue, pages de résumé et images
+// de partage ne réinterrogent plus la base à chaque visite. Publier ou
+// retirer une fiche vide ce cache aussitôt (FICHES_PUBLIQUES, actions de la
+// fiche) ; un réimport du contenu apparaît en 5 minutes au plus.
+export const FICHES_PUBLIQUES = "fiches-publiques";
+
+const toutesLesFiches = unstable_cache(
+  async (): Promise<PublicFiche[]> => {
+    const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
+      auth: { persistSession: false },
+    });
+    const { data, error } = await supabase
+      .from("documents")
+      .select("id, fiche_key, title, doc_type, publication_date, source_url, card_json, document_societies(societies(acronym))")
+      .not("fiche_key", "is", null)
+      .not("published_at", "is", null)
+      .order("publication_date", { ascending: false, nullsFirst: false })
+      .order("title");
+    // Une erreur ne doit pas être gardée en cache comme une liste vide.
+    if (error) throw new Error(`Lecture des fiches publiques : ${error.message}`);
+    return ((data ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => ({
+      ...d,
+      societies: orderSocieties(
+        (document_societies ?? [])
+          .flatMap((l) => (Array.isArray(l.societies) ? l.societies : l.societies ? [l.societies] : []))
+          .map((s) => s.acronym),
+        d.card_json?.society,
+      ),
+    }));
+  },
+  [FICHES_PUBLIQUES],
+  { revalidate: 300, tags: [FICHES_PUBLIQUES] },
+);
+
+// Toutes les fiches en ligne (les plus récentes d'abord), une seule (key)
+// ou les premières (limit).
+export async function loadPublicFiches(key?: string, limit?: number) {
+  const toutes = await toutesLesFiches();
+  if (key) return toutes.filter((f) => f.fiche_key === key);
+  return limit ? toutes.slice(0, limit) : toutes;
 }

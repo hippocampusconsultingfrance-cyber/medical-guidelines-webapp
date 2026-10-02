@@ -1,7 +1,9 @@
 "use server";
 
+import { revalidateTag } from "next/cache";
 import { redirect } from "next/navigation";
 import { signerRelecture } from "@/lib/relecture";
+import { FICHES_PUBLIQUES } from "../../recommandations/data";
 import { createClient } from "@/lib/supabase/server";
 
 const UUID = /^[0-9a-f-]{36}$/i;
@@ -49,6 +51,8 @@ export async function setPublication(formData: FormData) {
 
   const supabase = await createClient();
   const { error } = await supabase.rpc("publish_document", { doc_id: id, publier });
+  // Pages publiques à jour tout de suite (retrait immédiat d'une fiche).
+  if (!error) revalidateTag(FICHES_PUBLIQUES, { expire: 0 });
   // La case « J'ai relu cette fiche » vaut relecture : mention affichée sur la fiche.
   if (!error && publier) await signerRelecture(supabase, id);
   const status = error
@@ -82,6 +86,7 @@ export async function publishAll(formData: FormData) {
   if (formData.get("confirme") !== "1") redirect("/bibliotheque?r=confirmation_requise");
   const supabase = await createClient();
   const { data, error } = await supabase.rpc("publish_all_documents");
+  if (!error) revalidateTag(FICHES_PUBLIQUES, { expire: 0 });
   redirect(`/bibliotheque?r=${error ? "publication_erreur" : `toutes_publiees_${Number(data ?? 0)}`}`);
 }
 

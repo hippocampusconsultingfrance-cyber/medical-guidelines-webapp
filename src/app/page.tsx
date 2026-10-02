@@ -28,7 +28,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
 
   if (!user) {
     // Les plus récentes d'abord (ordre de loadPublicFiches).
-    const recentes = await loadPublicFiches(supabase, undefined, 4);
+    const recentes = await loadPublicFiches(undefined, 4);
     return (
       <>
         <DonneesStructurees

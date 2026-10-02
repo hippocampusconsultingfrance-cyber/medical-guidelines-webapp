@@ -13,7 +13,7 @@ import DonneesStructurees from "../../donnees-structurees";
 const load = cache(async (slug: string) => {
   if (!/^[a-z0-9-]{2,120}$/.test(slug)) return null;
   const supabase = await createClient();
-  const [fiche] = await loadPublicFiches(supabase, ficheKey(slug));
+  const [fiche] = await loadPublicFiches(ficheKey(slug));
   return fiche ? { fiche, supabase } : null;
 });
 
@@ -55,7 +55,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
       data: { user },
     },
     toutes,
-  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(supabase)]);
+  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches()]);
   // Autres fiches de la même spécialité, de la plus récente à la plus ancienne.
   const section = fiche.card_json?.section;
   const voisines = section
