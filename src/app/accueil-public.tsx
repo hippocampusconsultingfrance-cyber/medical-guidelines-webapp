@@ -141,7 +141,22 @@ export default function AccueilPublic() {
                   J&apos;ai déjà un compte
                 </Link>
               </div>
-              <p className="mt-4 text-sm">
+              <form action="/recommandations" role="search" className="mt-6 flex max-w-xl gap-2">
+                <label htmlFor="q-accueil" className="sr-only">
+                  Rechercher une recommandation
+                </label>
+                <input
+                  id="q-accueil"
+                  name="q"
+                  type="search"
+                  placeholder="Rechercher : sepsis, ALR, intubation…"
+                  className="min-w-0 flex-1 rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
+                />
+                <button className="shrink-0 rounded-lg border border-[#0E3A78] bg-white px-4 py-3 font-semibold text-[#0E3A78] hover:bg-[#EEF6FB]">
+                  Chercher
+                </button>
+              </form>
+              <p className="mt-3 text-sm">
                 <Link href="/recommandations" className="font-semibold text-[#1A74A6] underline">
                   Voir la liste des recommandations disponibles →
                 </Link>

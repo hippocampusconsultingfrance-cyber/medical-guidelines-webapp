@@ -41,7 +41,8 @@ const motsCles = (s: string) =>
     .toLowerCase();
 
 // Catalogue public des fiches : titres, sociétés et dates uniquement.
-export default async function RecommandationsPage() {
+export default async function RecommandationsPage({ searchParams }: PageProps<"/recommandations">) {
+  const { q } = await searchParams;
   const supabase = await createClient();
   const [{ data: auth }, fiches] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(supabase)]);
   const groups = groupBySection(fiches);
@@ -66,7 +67,7 @@ export default async function RecommandationsPage() {
             >
               {auth.user ? "Ouvrir ma bibliothèque" : "Créer un compte gratuit : 5 fiches offertes"}
             </Link>
-            <RechercheCatalogue total={fiches.length} />
+            <RechercheCatalogue total={fiches.length} initiale={typeof q === "string" ? q.slice(0, 80) : ""} />
           </div>
         </div>
 
@@ -82,7 +83,9 @@ export default async function RecommandationsPage() {
                   className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:border-[#3AA8E0] hover:text-[#0E3A78]"
                 >
                   {section}
-                  <span className="text-xs text-slate-500">{list.length}</span>
+                  <span className="text-xs text-slate-500" data-compte={ancre(section)}>
+                    {list.length}
+                  </span>
                 </a>
               </li>
             ))}
@@ -99,7 +102,10 @@ export default async function RecommandationsPage() {
               aria-labelledby={`t-${ancre(section)}`}
             >
               <h2 id={`t-${ancre(section)}`} className="text-xl font-bold text-[#0E3A78]">
-                {section} <span className="text-base font-medium text-slate-500">({list.length})</span>
+                {section}{" "}
+                <span className="text-base font-medium text-slate-500">
+                  (<span data-compte={ancre(section)}>{list.length}</span>)
+                </span>
               </h2>
               <ul className="mt-4 divide-y divide-slate-100 overflow-hidden rounded-2xl ring-1 ring-slate-200">
                 {list.map((fiche) => {

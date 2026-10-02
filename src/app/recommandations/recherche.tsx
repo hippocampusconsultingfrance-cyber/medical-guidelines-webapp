@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const normaliser = (s: string) =>
   s
@@ -12,11 +12,23 @@ const normaliser = (s: string) =>
 // rubriques vides) dont le titre ou les sociétés ne contiennent pas tous les
 // mots saisis. La liste complète reste rendue par le serveur (référencement,
 // fonctionnement sans JavaScript).
-export default function RechercheCatalogue({ total }: { total: number }) {
-  const [q, setQ] = useState("");
+export default function RechercheCatalogue({ total, initiale = "" }: { total: number; initiale?: string }) {
+  const [q, setQ] = useState(initiale);
   const [visibles, setVisibles] = useState(total);
 
+  // Recherche lancée depuis l'accueil (/recommandations?q=…).
+  useEffect(() => {
+    if (initiale) filtrer(initiale);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function filtrer(valeur: string) {
+    // Adresse partageable de la recherche en cours, sans recharger la page.
+    const url = new URL(window.location.href);
+    if (valeur) url.searchParams.set("q", valeur);
+    else url.searchParams.delete("q");
+    window.history.replaceState(null, "", url);
+
     setQ(valeur);
     const mots = normaliser(valeur).split(/\s+/).filter(Boolean);
     let n = 0;
@@ -28,6 +40,9 @@ export default function RechercheCatalogue({ total }: { total: number }) {
         if (ok) dansRubrique++;
       }
       section.hidden = dansRubrique === 0;
+      for (const compte of document.querySelectorAll<HTMLElement>(`[data-compte="${section.id}"]`)) {
+        compte.textContent = String(dansRubrique);
+      }
       n += dansRubrique;
     }
     for (const lien of document.querySelectorAll<HTMLElement>("[data-raccourci]")) {
