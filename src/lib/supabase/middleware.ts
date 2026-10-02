@@ -68,6 +68,8 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
     // Installation sur l'écran d'accueil (manifeste et icônes).
     request.nextUrl.pathname === "/manifest.webmanifest" ||
     request.nextUrl.pathname.startsWith("/icones/") ||
+    // Image de partage du site (LinkedIn, messageries).
+    request.nextUrl.pathname.startsWith("/opengraph-image") ||
     // Contact de sécurité (RFC 9116).
     request.nextUrl.pathname === "/.well-known/security.txt";
 

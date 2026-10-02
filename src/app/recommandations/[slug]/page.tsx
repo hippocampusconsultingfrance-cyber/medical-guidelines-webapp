@@ -28,7 +28,15 @@ export async function generateMetadata({ params }: PageProps<"/recommandations/[
     description,
     alternates: { canonical: `${SITE_URL}/recommandations/${slug}` },
     robots: { index: INDEXABLE, follow: INDEXABLE },
-    openGraph: { title, description, type: "article", url: `${SITE_URL}/recommandations/${slug}` },
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: `${SITE_URL}/recommandations/${slug}`,
+      siteName: "medical-guidelines.net",
+      locale: "fr_FR",
+    },
+    twitter: { card: "summary_large_image" },
   };
 }
 

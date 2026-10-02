@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     "Les recommandations des sociétés savantes françaises (SFAR, SRLF, SFMU, HAS…) en fiches de synthèse claires et sourcées, grades conservés : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
   alternates: { canonical: `${SITE_URL}/recommandations` },
   robots: { index: INDEXABLE, follow: INDEXABLE },
+  openGraph: {
+    title: "Recommandations des sociétés savantes en fiches de synthèse",
+    description: "Fiches claires et sourcées, grades conservés : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
+    url: `${SITE_URL}/recommandations`,
+    siteName: "medical-guidelines.net",
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 const ancre = (section: string) =>
