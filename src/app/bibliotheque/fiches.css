@@ -7,7 +7,7 @@
   --border:#D8E3E3;
   --ink:#12232B;
   --ink-muted:#55696F;
-  --ink-faint:#85989D;
+  --ink-faint:#60747A; /* 4,9:1 sur blanc (WCAG AA) */
   --brand:#0B3B54;
   --brand-ink:#083047;
   --accent:#0E7C86;
@@ -15,7 +15,7 @@
   --good:#276A4C;
   --good-bg:#E1EFE6;
   --accent-bg:#D9EEEF;
-  --warn:#9C6314;
+  --warn:#8A5510; /* 5,2:1 sur --warn-bg */
   --warn-bg:#F5E9D3;
   --crit:#A3363A;
   --crit-bg:#F5DEDF;
