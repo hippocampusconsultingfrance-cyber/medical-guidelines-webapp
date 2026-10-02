@@ -1,4 +1,3 @@
-import { createClient } from "@/lib/supabase/server";
 import { formatDate } from "@/lib/fiches";
 import { imagePartage, TAILLE_PARTAGE } from "@/lib/image-partage";
 import { ficheKey } from "@/lib/seo";
@@ -12,7 +11,7 @@ export const contentType = "image/png";
 // publiques seulement, jamais le contenu).
 export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const fiche = /^[a-z0-9-]{2,120}$/.test(slug) ? (await loadPublicFiches(await createClient(), ficheKey(slug)))[0] : undefined;
+  const fiche = /^[a-z0-9-]{2,120}$/.test(slug) ? (await loadPublicFiches(ficheKey(slug)))[0] : undefined;
   if (!fiche) {
     return imagePartage({
       surtitre: "Fiche de synthèse",

@@ -45,7 +45,7 @@ const motsCles = (s: string) =>
 export default async function RecommandationsPage({ searchParams }: PageProps<"/recommandations">) {
   const { q } = await searchParams;
   const supabase = await createClient();
-  const [{ data: auth }, fiches] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(supabase)]);
+  const [{ data: auth }, fiches] = await Promise.all([supabase.auth.getUser(), loadPublicFiches()]);
   const groups = groupBySection(fiches);
 
   return (
