@@ -245,3 +245,33 @@ export function orderSocieties(societies: string[], mention: string | undefined)
   };
   return [...societies].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
 }
+
+// Méthodologie affichée aux lecteurs : le texte de l'atelier garde quelques
+// termes internes (« chip », « disclosed », « grep », décomptes « AE:13 »).
+// On les remplace à l'affichage, sans changer le sens ni les chiffres, pour
+// que la correction survive aux réimports du contenu.
+const JARGON: [RegExp, string][] = [
+  [/chip « /g, "« "],
+  [/\(disclosure en page 1 de la fiche\)/g, "(précisé en tête de la fiche)"],
+  [/voir disclosure méthodologique en page 1 de la fiche/g, "voir la note méthodologique en tête de la fiche"],
+  [/disclosure d'une incohérence source-interne/g, "incohérence interne à la source signalée"],
+  [/(\d+) divergences source-internes disclosées/g, "$1 incohérences internes à la source signalées"],
+  [/incohérence disclosed/g, "incohérence signalée"],
+  [/\(disclosed\)/g, "(signalé)"],
+  [/\(disclosed, /g, "(signalé, "],
+  [/résolution textuelle disclosée/g, "force déduite du texte"],
+  [/disclosée/g, "signalée"],
+  [/convention bespoke propre/g, "convention propre"],
+  [/en page 1 de la fiche/g, "en tête de la fiche"],
+  [/vérifiées par grep exhaustif/g, "vérifiées une à une"],
+  [/taguées/g, "gradées"],
+  [/seule tier numérique présente/g, "seul niveau numérique présent"],
+  [/\b(par|à|de) le source\b/g, "$1 la source"],
+  [/\ble source\b/g, "la source"],
+  [/GRADE([12])\b/g, "GRADE $1"],
+  [/([\wÉ/+-]+(?: \d)?):(\d+)/g, "$1 : $2"],
+];
+
+export function methodologieLisible(texte: string) {
+  return JARGON.reduce((t, [motif, remplacement]) => t.replace(motif, remplacement), texte);
+}

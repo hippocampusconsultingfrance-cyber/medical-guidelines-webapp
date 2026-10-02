@@ -3,7 +3,7 @@ import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { avertissementAnciennete, FREE_QUOTA, formatDate } from "@/lib/fiches";
+import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
@@ -108,7 +108,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           {c?.methodology && (
             <>
               <dt className="font-semibold text-slate-900">Méthodologie</dt>
-              <dd className="text-slate-600">{c.methodology}</dd>
+              <dd className="text-slate-600">{methodologieLisible(c.methodology)}</dd>
             </>
           )}
           {c?.validated && (
