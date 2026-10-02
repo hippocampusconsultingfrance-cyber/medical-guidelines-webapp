@@ -13,6 +13,7 @@ import {
   escapeHtml,
   formatDate,
   FREE_QUOTA,
+  methodologieLisible,
   renderPresentation,
   type Presentation,
   type TocItem,
@@ -177,7 +178,7 @@ export default async function FichePage({
       <div className="doc-header__meta">
         {(card?.methodology || extra?.grading_system) && (
           <span>
-            <b>Méthodologie</b>&nbsp;{card?.methodology ?? extra?.grading_system}
+            <b>Méthodologie</b>&nbsp;{card?.methodology ? methodologieLisible(card.methodology) : extra?.grading_system}
           </span>
         )}
         <span>
