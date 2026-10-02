@@ -18,7 +18,7 @@ type Row = Omit<PublicFiche, "societies"> & {
 
 // Métadonnées publiques des fiches en ligne (jamais le contenu : la base ne
 // le transmet qu'aux comptes autorisés).
-export async function loadPublicFiches(supabase: SupabaseClient, key?: string) {
+export async function loadPublicFiches(supabase: SupabaseClient, key?: string, limit?: number) {
   let query = supabase
     .from("documents")
     .select("id, fiche_key, title, doc_type, publication_date, source_url, card_json, document_societies(societies(acronym))")
@@ -27,6 +27,7 @@ export async function loadPublicFiches(supabase: SupabaseClient, key?: string) {
     .order("publication_date", { ascending: false, nullsFirst: false })
     .order("title");
   if (key) query = query.eq("fiche_key", key);
+  if (limit) query = query.limit(limit);
   const { data } = await query;
   return ((data ?? []) as unknown as Row[]).map(({ document_societies, ...d }) => ({
     ...d,
