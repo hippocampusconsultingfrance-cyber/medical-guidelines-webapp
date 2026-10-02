@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import AccueilPublic from "./accueil-public";
+import DonneesStructurees from "./donnees-structurees";
 import { loadPublicFiches } from "./recommandations/data";
 import EspaceMembre from "./espace-membre";
 import { INDEXABLE, SITE_URL } from "@/lib/seo";
@@ -28,7 +29,34 @@ export default async function Home({ searchParams }: PageProps<"/">) {
   if (!user) {
     // Les plus récentes d'abord (ordre de loadPublicFiches).
     const recentes = await loadPublicFiches(supabase, undefined, 4);
-    return <AccueilPublic recentes={recentes} />;
+    return (
+      <>
+        <DonneesStructurees
+          data={{
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": `${SITE_URL}/#organisation`,
+                name: "medical-guidelines.net",
+                url: SITE_URL,
+                logo: `${SITE_URL}/icones/512.png`,
+                email: "contact@medical-guidelines.net",
+              },
+              {
+                "@type": "WebSite",
+                "@id": `${SITE_URL}/#site`,
+                name: "medical-guidelines.net",
+                url: SITE_URL,
+                inLanguage: "fr",
+                publisher: { "@id": `${SITE_URL}/#organisation` },
+              },
+            ],
+          }}
+        />
+        <AccueilPublic recentes={recentes} />
+      </>
+    );
   }
 
   const { data: profile } = await supabase

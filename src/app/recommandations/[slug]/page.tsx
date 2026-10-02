@@ -7,6 +7,7 @@ import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } 
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
+import DonneesStructurees from "../../donnees-structurees";
 
 // Une seule lecture par requête pour les métadonnées et la page.
 const load = cache(async (slug: string) => {
@@ -79,7 +80,18 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
   return (
     <div className="min-h-screen bg-white text-slate-800">
       <PublicHeader connected={Boolean(user)} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+      <DonneesStructurees data={jsonLd} />
+      <DonneesStructurees
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
+            { "@type": "ListItem", position: 2, name: "Recommandations", item: `${SITE_URL}/recommandations` },
+            { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}/recommandations/${slug}` },
+          ],
+        }}
+      />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm">
           <Link href="/recommandations" className="text-[#1A74A6] underline">
