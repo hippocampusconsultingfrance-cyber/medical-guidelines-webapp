@@ -44,7 +44,7 @@ export default function MotDePasseOubliePage() {
           choisir un nouveau mot de passe vient d&apos;y être envoyé.
         </p>
         <p className="mt-6 text-sm">
-          <Link href="/connexion" className="text-[#1C7FB6] underline">
+          <Link href="/connexion" className="text-[#1A74A6] underline">
             Retour à la connexion
           </Link>
         </p>
@@ -92,7 +92,7 @@ export default function MotDePasseOubliePage() {
         </button>
 
         <p className="text-center text-sm text-slate-600">
-          <Link href="/connexion" className="font-medium text-[#1C7FB6] underline">
+          <Link href="/connexion" className="font-medium text-[#1A74A6] underline">
             Retour à la connexion
           </Link>
         </p>

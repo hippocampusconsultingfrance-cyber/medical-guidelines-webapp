@@ -86,7 +86,7 @@ export default function SecuritePage() {
   return (
     <div className="mx-auto min-h-screen max-w-md px-6 py-12">
       <p className="text-sm">
-        <Link href="/compte" className="text-[#1C7FB6] underline">
+        <Link href="/compte" className="text-[#1A74A6] underline">
           ← Mon compte
         </Link>
       </p>

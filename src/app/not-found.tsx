@@ -14,7 +14,7 @@ export default function NotFound() {
       <Link href="/" aria-label="medical-guidelines.net, accueil">
         <Logo />
       </Link>
-      <p className="mt-10 font-mono text-sm font-semibold uppercase tracking-wider text-[#2BB5A6]">Erreur 404</p>
+      <p className="mt-10 font-mono text-sm font-semibold uppercase tracking-wider text-[#177E73]">Erreur 404</p>
       <h1 className="mt-2 text-3xl font-bold text-[#0E3A78]">Page introuvable</h1>
       <p className="mt-4 text-slate-600">
         Cette adresse ne correspond à aucune page. La fiche a peut-être changé de nom : retrouvez-la dans la

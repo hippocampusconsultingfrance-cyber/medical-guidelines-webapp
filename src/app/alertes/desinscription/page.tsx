@@ -24,7 +24,7 @@ export default async function DesinscriptionPage({ searchParams }: PageProps<"/a
         <p role="status" className="mt-4 text-slate-700">
           C&apos;est fait : vous ne recevrez plus d&apos;e-mail d&apos;alerte. Vous pouvez les
           réactiver à tout moment depuis{" "}
-          <Link href="/compte#alertes" className="text-[#1C7FB6] underline">
+          <Link href="/compte#alertes" className="text-[#1A74A6] underline">
             Mon compte
           </Link>
           .
@@ -32,7 +32,7 @@ export default async function DesinscriptionPage({ searchParams }: PageProps<"/a
       ) : r === "erreur" || !token ? (
         <p role="alert" className="mt-4 text-slate-700">
           Ce lien de désinscription n&apos;est pas valide. Vous pouvez désactiver les alertes depuis{" "}
-          <Link href="/compte#alertes" className="text-[#1C7FB6] underline">
+          <Link href="/compte#alertes" className="text-[#1A74A6] underline">
             Mon compte
           </Link>
           .

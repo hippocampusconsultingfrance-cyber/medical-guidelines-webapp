@@ -43,7 +43,7 @@ export default async function RecommandationsPage() {
       <main>
         <div className="bg-gradient-to-b from-[#EEF6FB] to-white">
           <div className="mx-auto max-w-5xl px-4 pb-6 pt-10 sm:px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#2BB5A6]">Toutes spécialités</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#177E73]">Toutes spécialités</p>
             <h1 className="mt-2 text-3xl font-bold text-[#0E3A78] sm:text-4xl">
               {fiches.length} recommandations en fiches de synthèse
             </h1>
@@ -73,7 +73,7 @@ export default async function RecommandationsPage() {
                   className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:border-[#3AA8E0] hover:text-[#0E3A78]"
                 >
                   {section}
-                  <span className="text-xs text-slate-400">{list.length}</span>
+                  <span className="text-xs text-slate-500">{list.length}</span>
                 </a>
               </li>
             ))}
@@ -90,7 +90,7 @@ export default async function RecommandationsPage() {
               aria-labelledby={`t-${ancre(section)}`}
             >
               <h2 id={`t-${ancre(section)}`} className="text-xl font-bold text-[#0E3A78]">
-                {section} <span className="text-base font-medium text-slate-400">({list.length})</span>
+                {section} <span className="text-base font-medium text-slate-500">({list.length})</span>
               </h2>
               <ul className="mt-4 divide-y divide-slate-100 overflow-hidden rounded-2xl ring-1 ring-slate-200">
                 {list.map((fiche) => {

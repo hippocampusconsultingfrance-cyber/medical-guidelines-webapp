@@ -212,7 +212,7 @@ export default async function EspaceMembre({
                     : `Aucune recommandation publiée en ${year} pour votre spécialité à ce jour : voici les plus récentes.`}
                 </p>
               </div>
-              <Link href="/bibliotheque" className="text-sm font-semibold text-[#1C7FB6] hover:underline">
+              <Link href="/bibliotheque" className="text-sm font-semibold text-[#1A74A6] hover:underline">
                 Toute la bibliothèque →
               </Link>
             </div>
@@ -228,7 +228,7 @@ export default async function EspaceMembre({
                     className="group basis-full"
                     open={yearSocieties.slice(CHIP_LIMIT).some(([s]) => s === societe)}
                   >
-                    <summary className="inline-block cursor-pointer list-none rounded-full border border-dashed border-slate-300 px-3 py-1 text-sm font-semibold text-slate-600 hover:border-[#1C7FB6] hover:text-[#1C7FB6] [&::-webkit-details-marker]:hidden">
+                    <summary className="inline-block cursor-pointer list-none rounded-full border border-dashed border-slate-300 px-3 py-1 text-sm font-semibold text-slate-600 hover:border-[#1A74A6] hover:text-[#1A74A6] [&::-webkit-details-marker]:hidden">
                       <span className="group-open:hidden">+ {yearSocieties.length - CHIP_LIMIT} autres sociétés</span>
                       <span className="hidden group-open:inline">Moins de sociétés</span>
                     </summary>
@@ -258,7 +258,7 @@ export default async function EspaceMembre({
             )}
             {news.length > NEWS_LIMIT && (
               <p className="mt-4 text-sm">
-                <Link href={libraryYearHref} className="font-semibold text-[#1C7FB6] hover:underline">
+                <Link href={libraryYearHref} className="font-semibold text-[#1A74A6] hover:underline">
                   Voir les {news.length} nouveautés {year}
                   {societe ? ` ${societe}` : ""} dans la bibliothèque →
                 </Link>
@@ -282,11 +282,11 @@ export default async function EspaceMembre({
                   return (
                     <li key={d.id}>
                       <Link href={`/bibliotheque/${d.id}`} className="group flex items-center gap-4 px-4 py-3">
-                        <span className="w-6 shrink-0 text-lg font-bold text-[#2BB5A6]" aria-hidden="true">
+                        <span className="w-6 shrink-0 text-lg font-bold text-[#177E73]" aria-hidden="true">
                           {i + 1}
                         </span>
                         <span className="min-w-0 flex-1">
-                          <span className="block font-semibold text-slate-900 group-hover:text-[#1C7FB6] group-hover:underline">
+                          <span className="block font-semibold text-slate-900 group-hover:text-[#1A74A6] group-hover:underline">
                             {cardTitle(d)}
                           </span>
                           <span className="block text-xs text-slate-500">
@@ -317,7 +317,7 @@ export default async function EspaceMembre({
                 {favorites.slice(0, 8).map((d) => (
                   <li key={d.id}>
                     <Link href={`/bibliotheque/${d.id}`} className="group flex items-baseline justify-between gap-3 py-2">
-                      <span className="text-sm font-medium text-slate-800 group-hover:text-[#1C7FB6] group-hover:underline">
+                      <span className="text-sm font-medium text-slate-800 group-hover:text-[#1A74A6] group-hover:underline">
                         {cardTitle(d)}
                       </span>
                       {docState(lib, d.id) === "lock" && (
@@ -336,7 +336,7 @@ export default async function EspaceMembre({
               </p>
             )}
             {favorites.length > 8 && (
-              <Link href="/bibliotheque" className="mt-2 inline-block text-xs font-semibold text-[#1C7FB6] hover:underline">
+              <Link href="/bibliotheque" className="mt-2 inline-block text-xs font-semibold text-[#1A74A6] hover:underline">
                 Tous mes favoris dans la bibliothèque →
               </Link>
             )}
@@ -351,7 +351,7 @@ export default async function EspaceMembre({
                 {recent.map(({ doc, viewedAt }) => (
                   <li key={doc.id}>
                     <Link href={`/bibliotheque/${doc.id}`} className="group flex items-baseline justify-between gap-3 py-2">
-                      <span className="text-sm font-medium text-slate-800 group-hover:text-[#1C7FB6] group-hover:underline">
+                      <span className="text-sm font-medium text-slate-800 group-hover:text-[#1A74A6] group-hover:underline">
                         {cardTitle(doc)}
                       </span>
                       <span className="shrink-0 text-xs text-slate-500">{viewedLabel(viewedAt)}</span>
@@ -381,7 +381,7 @@ export default async function EspaceMembre({
                     key={s}
                     href={`/bibliotheque?societe=${encodeURIComponent(s)}`}
                     title={lib.societyNames[s]}
-                    className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-700 hover:border-[#1C7FB6] hover:text-[#1C7FB6]"
+                    className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-700 hover:border-[#1A74A6] hover:text-[#1A74A6]"
                   >
                     {canFollow && followed.has(s) && <span aria-label="suivie">🔔 </span>}
                     {s} <span className="font-normal text-slate-500">{n}</span>
@@ -389,7 +389,7 @@ export default async function EspaceMembre({
                 ))}
               </div>
               {societies.length > 12 && (
-                <Link href="/bibliotheque" className="mt-3 inline-block text-xs font-semibold text-[#1C7FB6] hover:underline">
+                <Link href="/bibliotheque" className="mt-3 inline-block text-xs font-semibold text-[#1A74A6] hover:underline">
                   Et {societies.length - 12} autres dans la bibliothèque →
                 </Link>
               )}
@@ -469,7 +469,7 @@ export default async function EspaceMembre({
                   <p className="mt-1 text-xs text-slate-600">
                     Suivez les sociétés de votre choix et recevez un e-mail à chaque nouvelle
                     recommandation, ainsi qu&apos;à chaque mise à jour de vos fiches : inclus dans{" "}
-                    <Link href="/abonnement" className="font-semibold text-[#1C7FB6] underline">
+                    <Link href="/abonnement" className="font-semibold text-[#1A74A6] underline">
                       l&apos;abonnement PREMIUM
                     </Link>
                     .
@@ -515,7 +515,7 @@ function SocietyChip({
       className={`rounded-full border px-3 py-1 text-sm font-semibold ${
         active
           ? "border-[#0E3A78] bg-[#0E3A78] text-white"
-          : "border-slate-200 text-slate-700 hover:border-[#1C7FB6] hover:text-[#1C7FB6]"
+          : "border-slate-200 text-slate-700 hover:border-[#1A74A6] hover:text-[#1A74A6]"
       }`}
     >
       {label} <span className={active ? "font-normal text-sky-100" : "font-normal text-slate-500"}>{count}</span>
@@ -529,10 +529,10 @@ function DocCard({ doc, lib }: { doc: LibraryDoc; lib: Library }) {
   return (
     <Link
       href={`/bibliotheque/${doc.id}`}
-      className="flex h-full flex-col rounded-xl border border-slate-200 p-4 transition hover:border-[#1C7FB6] hover:shadow-sm"
+      className="flex h-full flex-col rounded-xl border border-slate-200 p-4 transition hover:border-[#1A74A6] hover:shadow-sm"
     >
       <span className="flex items-center justify-between gap-2">
-        <span className="text-xs font-semibold uppercase tracking-wide text-[#1C7FB6]">
+        <span className="text-xs font-semibold uppercase tracking-wide text-[#1A74A6]">
           {doc.doc_type ?? "Recommandation"}
           {doc.publication_date ? ` · ${formatDate(doc.publication_date)}` : ""}
         </span>
@@ -600,7 +600,7 @@ function UpdatesBlock({ updates, byId }: { updates: DocumentUpdate[]; byId: Map<
             <li key={u.document_id} className="rounded-lg bg-white px-4 py-3">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 {doc ? (
-                  <Link href={`/bibliotheque/${doc.id}`} className="font-semibold text-slate-900 hover:text-[#1C7FB6] hover:underline">
+                  <Link href={`/bibliotheque/${doc.id}`} className="font-semibold text-slate-900 hover:text-[#1A74A6] hover:underline">
                     {u.title}
                   </Link>
                 ) : (
@@ -612,7 +612,7 @@ function UpdatesBlock({ updates, byId }: { updates: DocumentUpdate[]; byId: Map<
               </div>
               <p className="mt-1 text-sm text-slate-600">{detail}</p>
               {replacement && (
-                <Link href={`/bibliotheque/${replacement.id}`} className="mt-1 inline-block text-sm font-semibold text-[#1C7FB6] hover:underline">
+                <Link href={`/bibliotheque/${replacement.id}`} className="mt-1 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
                   Nouvelle fiche : {cardTitle(replacement)} →
                 </Link>
               )}
@@ -646,7 +646,7 @@ function AccessCard({
           Toutes les fiches de votre spécialité sont ouvertes
           {fin ? (sub?.canceled_at ? `, jusqu'au ${fin}.` : ` ; renouvellement le ${fin}.`) : "."}
         </p>
-        <Link href="/abonnement" className="mt-3 inline-block text-sm font-semibold text-[#1C7FB6] hover:underline">
+        <Link href="/abonnement" className="mt-3 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
           Gérer mon abonnement →
         </Link>
       </section>
@@ -677,7 +677,7 @@ function AccessCard({
           <ul className="mt-1 space-y-1">
             {unlockedDocs.map((d) => (
               <li key={d.id}>
-                <Link href={`/bibliotheque/${d.id}`} className="text-sm text-slate-800 hover:text-[#1C7FB6] hover:underline">
+                <Link href={`/bibliotheque/${d.id}`} className="text-sm text-slate-800 hover:text-[#1A74A6] hover:underline">
                   {cardTitle(d)}
                 </Link>
               </li>

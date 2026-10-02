@@ -142,14 +142,14 @@ export default function AccueilPublic() {
                 </Link>
               </div>
               <p className="mt-4 text-sm">
-                <Link href="/recommandations" className="font-semibold text-[#1C7FB6] underline">
+                <Link href="/recommandations" className="font-semibold text-[#1A74A6] underline">
                   Voir la liste des recommandations disponibles →
                 </Link>
               </p>
               <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600">
                 {["5 fiches gratuites", "Sans carte bancaire", "Ordinateur et mobile"].map((t) => (
                   <li key={t} className="flex items-center gap-1.5">
-                    <svg viewBox="0 0 20 20" className="h-4 w-4 text-[#2BB5A6]" fill="currentColor" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" className="h-4 w-4 text-[#177E73]" fill="currentColor" aria-hidden="true">
                       <path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.6l7.3-7.3a1 1 0 0 1 1.4 0z" />
                     </svg>
                     {t}
@@ -163,7 +163,7 @@ export default function AccueilPublic() {
               <div className="absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-br from-[#2BB5A6]/20 to-[#3AA8E0]/20 blur-2xl" aria-hidden="true" />
               <div className="overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200">
                 <div className="border-b border-slate-100 px-5 py-4">
-                  <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-wider text-[#2BB5A6]">
+                  <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-wider text-[#177E73]">
                     SFAR / GIHP — RFE 2026
                   </p>
                   <p className="mt-1 text-lg font-bold text-[#0E3A78]">Anticoagulants &amp; procédure invasive</p>
@@ -193,7 +193,7 @@ export default function AccueilPublic() {
                       ))}
                     </tbody>
                   </table>
-                  <p className="mt-3 text-xs font-medium text-[#1C7FB6]">Document source officiel ↗</p>
+                  <p className="mt-3 text-xs font-medium text-[#1A74A6]">Document source officiel ↗</p>
                 </div>
               </div>
               <figcaption className="mt-3 text-center text-xs text-slate-500">
@@ -336,7 +336,8 @@ export default function AccueilPublic() {
         </section>
       </main>
 
-      <footer className="border-t border-slate-200 bg-white">
+      {/* Pied de page commun (liens légaux) fourni par le layout racine. */}
+      <section aria-label="À propos du site" className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6">
           <Logo tagline />
           <p className="max-w-3xl">
@@ -359,7 +360,7 @@ export default function AccueilPublic() {
             · © Hippocampus Consulting
           </p>
         </div>
-      </footer>
+      </section>
     </div>
   );
 }

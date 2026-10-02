@@ -25,7 +25,7 @@ export default async function AssistantPage() {
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
       <p className="text-sm">
-        <Link href="/bibliotheque" className="text-[#1C7FB6] underline">
+        <Link href="/bibliotheque" className="text-[#1A74A6] underline">
           ← Retour aux fiches
         </Link>
       </p>
@@ -56,7 +56,7 @@ export default async function AssistantPage() {
           {assistantOuvertAuxMembres() ? (
             <>
               L&apos;assistant est réservé aux abonnés PREMIUM.{" "}
-              <Link href="/abonnement" className="font-semibold text-[#1C7FB6] underline">
+              <Link href="/abonnement" className="font-semibold text-[#1A74A6] underline">
                 Découvrir l&apos;abonnement
               </Link>
             </>

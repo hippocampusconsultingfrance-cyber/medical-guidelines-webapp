@@ -13,7 +13,7 @@ export default function Erreur({ error, retry }: { error: Error & { digest?: str
 
   return (
     <main className="mx-auto flex min-h-[70vh] max-w-xl flex-col items-center justify-center px-4 py-16 text-center">
-      <p className="font-mono text-sm font-semibold uppercase tracking-wider text-[#2BB5A6]">Erreur</p>
+      <p className="font-mono text-sm font-semibold uppercase tracking-wider text-[#177E73]">Erreur</p>
       <h1 className="mt-2 text-3xl font-bold text-[#0E3A78]">Un problème est survenu</h1>
       <p className="mt-4 text-slate-600">
         La page n&apos;a pas pu s&apos;afficher. Réessayez dans un instant ; si le problème continue, écrivez-nous à{" "}

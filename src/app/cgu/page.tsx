@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Conditions Générales d'Utilisation — medical-guidelines.net",
+};
+
 export default function CguPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 text-sm leading-6 text-slate-700">
-      <h1 className="text-2xl font-semibold text-slate-900">
+      <h1 className="text-2xl font-bold text-[#0E3A78]">
         Conditions Générales d&apos;Utilisation
       </h1>
       <p className="mt-2 text-slate-500">Dernière mise à jour : 2026.</p>

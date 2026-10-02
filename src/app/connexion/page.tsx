@@ -82,7 +82,7 @@ function ConnexionForm() {
         <p className="text-right text-sm">
           <Link
             href="/mot-de-passe-oublie"
-            className="text-[#1C7FB6] underline"
+            className="text-[#1A74A6] underline"
           >
             Mot de passe oublié ?
           </Link>
@@ -102,7 +102,7 @@ function ConnexionForm() {
           Pas encore de compte ?{" "}
           <Link
             href="/inscription"
-            className="font-medium text-[#1C7FB6] underline"
+            className="font-medium text-[#1A74A6] underline"
           >
             S&apos;inscrire
           </Link>

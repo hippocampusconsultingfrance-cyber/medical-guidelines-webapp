@@ -171,15 +171,15 @@ export default function AuthCallbackPage() {
         </p>
         <div className="mt-6 flex flex-col gap-3 text-sm">
           {recovery ? (
-            <Link href="/mot-de-passe-oublie" className="text-[#1C7FB6] underline">
+            <Link href="/mot-de-passe-oublie" className="text-[#1A74A6] underline">
               Recevoir un nouveau lien
             </Link>
           ) : (
-            <Link href="/inscription" className="text-[#1C7FB6] underline">
+            <Link href="/inscription" className="text-[#1A74A6] underline">
               Recommencer l&apos;inscription
             </Link>
           )}
-          <Link href="/connexion" className="text-[#1C7FB6] underline">
+          <Link href="/connexion" className="text-[#1A74A6] underline">
             Aller à la connexion
           </Link>
         </div>

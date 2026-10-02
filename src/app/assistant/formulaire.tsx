@@ -48,7 +48,7 @@ export default function Formulaire() {
                   <li key={i} className="rounded-lg border border-slate-200 p-4">
                     <blockquote className="border-l-4 border-[#2BB5A6] pl-3 text-slate-800">« {e.citation} »</blockquote>
                     <p className="mt-2 text-xs text-slate-500">
-                      <Link href={`/bibliotheque/${e.docId}`} className="font-semibold text-[#1C7FB6] underline">
+                      <Link href={`/bibliotheque/${e.docId}`} className="font-semibold text-[#1A74A6] underline">
                         {e.titre}
                       </Link>{" "}
                       · {e.section}

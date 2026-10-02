@@ -41,7 +41,7 @@ export default async function SuggestionsPage({ searchParams }: PageProps<"/sugg
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
       <p className="text-sm">
-        <Link href={page || "/bibliotheque"} className="text-[#1C7FB6] underline">
+        <Link href={page || "/bibliotheque"} className="text-[#1A74A6] underline">
           ← Retour
         </Link>
       </p>

@@ -66,11 +66,11 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm">
-          <Link href="/recommandations" className="text-[#1C7FB6] underline">
+          <Link href="/recommandations" className="text-[#1A74A6] underline">
             ← Toutes les recommandations
           </Link>
         </p>
-        <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#2BB5A6]">
+        <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#177E73]">
           {c?.society ?? fiche.societies.join(" / ")}
         </p>
         <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]">{title}</h1>
@@ -117,7 +117,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
         )}
 
         <p className="mt-6 text-sm">
-          <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1C7FB6] underline">
+          <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1A74A6] underline">
             Document source officiel ↗
           </a>{" "}
           <span className="text-slate-500">— en accès libre sur le site de la société savante.</span>

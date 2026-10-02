@@ -72,7 +72,7 @@ export default async function DemarchePage() {
             fiche peut être retirée du site immédiatement.
           </p>
           <p className="mt-3">
-            <a href="mailto:contact@medical-guidelines.net" className="font-semibold text-[#1C7FB6] underline">
+            <a href="mailto:contact@medical-guidelines.net" className="font-semibold text-[#1A74A6] underline">
               contact@medical-guidelines.net
             </a>
           </p>

@@ -155,7 +155,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
 
           {codeError && <p className="text-sm text-red-600">{codeError}</p>}
           {resendMessage && (
-            <p className="text-sm text-[#1C7FB6]">{resendMessage}</p>
+            <p className="text-sm text-[#1A74A6]">{resendMessage}</p>
           )}
 
           <button
@@ -170,7 +170,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             type="button"
             onClick={handleResend}
             disabled={codeLoading}
-            className="w-full text-center text-sm text-[#1C7FB6] underline disabled:opacity-50"
+            className="w-full text-center text-sm text-[#1A74A6] underline disabled:opacity-50"
           >
             Renvoyer le code
           </button>
@@ -396,7 +396,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
 
         <p className="text-center text-sm text-slate-600">
           Déjà inscrit ?{" "}
-          <Link href="/connexion" className="font-medium text-[#1C7FB6] underline">
+          <Link href="/connexion" className="font-medium text-[#1A74A6] underline">
             Se connecter
           </Link>
         </p>

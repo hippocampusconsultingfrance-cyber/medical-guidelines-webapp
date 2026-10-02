@@ -62,7 +62,7 @@ export default async function AlertesSection({
           <>
             {" "}
             Les alertes sont incluses dans{" "}
-            <Link href="/abonnement" className="text-[#1C7FB6] underline">
+            <Link href="/abonnement" className="text-[#1A74A6] underline">
               l&apos;abonnement PREMIUM
             </Link>
             .
@@ -103,7 +103,7 @@ export default async function AlertesSection({
         <p className="mt-1 text-sm text-slate-600">
           Aucune.{" "}
           {eligible ? (
-            <Link href="/#alertes" className="text-[#1C7FB6] underline">
+            <Link href="/#alertes" className="text-[#1A74A6] underline">
               Choisir des sociétés depuis l&apos;accueil
             </Link>
           ) : null}
