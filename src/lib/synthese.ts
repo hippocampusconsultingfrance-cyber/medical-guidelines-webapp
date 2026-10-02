@@ -2,6 +2,7 @@ import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { chargerPropositions } from "@/lib/actualisations";
 import type { OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml } from "@/lib/fiches";
 
 // Synthèse hebdomadaire au porteur de projet (cahier des charges §14 ;
@@ -96,16 +97,15 @@ export function composerSynthese(s: Synthese, to: string, site: string): Outgoin
         .map(([l, n, href]) => `<li style="margin:6px 0"><a href="${site}${href}" style="color:#0E3A78">${escapeHtml(l)}</a> : <b>${n}</b></li>`)
         .join("")
     : `<li>Rien d'urgent cette semaine.</li>`;
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(subject)}</title></head>` +
-    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
+  const html = cadreEmail(
+    subject,
     `<p style="font-size:18px;font-weight:700;color:#0E3A78">Synthèse de la semaine — ${escapeHtml(s.semaine)}</p>` +
     `<h2 style="font-size:16px;margin:20px 0 6px">À valider</h2><ul style="padding-left:18px;font-size:15px">${taches}</ul>` +
     `<h2 style="font-size:16px;margin:20px 0 6px">Chiffres</h2><table style="width:100%;border-collapse:collapse;font-size:15px">${s.chiffres.map(([l, n]) => ligne(l, val(n))).join("")}</table>` +
     `<p style="font-size:14px;margin-top:18px">${escapeHtml(s.lettre)}</p>` +
-    `<p style="margin:22px 0"><a href="${site}/bibliotheque/admin" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Ouvrir le tableau de bord</a></p>` +
-    `</div></body></html>`;
+    `<p style="margin:22px 0"><a href="${site}/bibliotheque/admin" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Ouvrir le tableau de bord</a></p>`,
+    "E-mail de service destiné à l'équipe de medical-guidelines.net.",
+  );
   const text =
     `Synthèse de la semaine — ${s.semaine}\n\nÀ valider :\n` +
     (aFaire.length ? aFaire.map(([l, n, href]) => `- ${l} : ${n} (${site}${href})`).join("\n") : "- Rien d'urgent cette semaine.") +

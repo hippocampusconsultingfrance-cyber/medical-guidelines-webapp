@@ -1,5 +1,6 @@
 import "server-only";
 import { emailEnabled, sendBatch, siteUrl, type OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml } from "@/lib/fiches";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -17,14 +18,13 @@ function email(to: string, compte: string, raison: string, jusqua: string, site:
   const subject = "Accès anormal : lecture suspendue pour un compte";
   const t = `Le compte ${compte} a ouvert ${raison}. Sa lecture est suspendue jusqu'au ${jusqua}.`;
   const lien = `${site}/bibliotheque/acces`;
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(subject)}</title></head>` +
-    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
+  const html = cadreEmail(
+    subject,
     `<p style="font-size:15px;line-height:1.55">${escapeHtml(t)}</p>` +
     `<p style="font-size:15px;line-height:1.55">Si c'est un usage normal, vous pouvez lever la suspension.</p>` +
-    `<p style="margin:22px 0"><a href="${lien}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Voir les accès anormaux</a></p>` +
-    `</div></body></html>`;
+    `<p style="margin:22px 0"><a href="${lien}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Voir les accès anormaux</a></p>`,
+    "E-mail de service destiné à l'équipe de medical-guidelines.net.",
+  );
   return { to, subject, html, text: `${t}\nSi c'est un usage normal, vous pouvez lever la suspension : ${lien}\n` };
 }
 

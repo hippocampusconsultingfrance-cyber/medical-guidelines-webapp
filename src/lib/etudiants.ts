@@ -1,5 +1,6 @@
 import "server-only";
 import type { OutgoingEmail } from "@/lib/email";
+import { cadreEmail } from "@/lib/email-gabarit";
 import { escapeHtml } from "@/lib/fiches";
 
 // Tarif professionnel en formation (CGV §4) : −30 % la première année sur
@@ -44,16 +45,10 @@ export function codeEtudiant() {
 }
 
 function layout(subject: string, body: string, site: string) {
-  return (
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8">` +
-    `<meta name="viewport" content="width=device-width, initial-scale=1">` +
-    `<title>${escapeHtml(subject)}</title></head>` +
-    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
-    `<p style="font-size:18px;font-weight:700;color:#0E3A78">medical-guidelines<span style="color:#3AA8E0">.net</span></p>` +
-    body +
-    `<p style="font-size:12px;color:#64748B;margin-top:28px">Votre justificatif a été supprimé après examen. ` +
-    `<a href="${site}/abonnement" style="color:#64748B">Mon abonnement</a></p></div></body></html>`
+  return cadreEmail(
+    subject,
+    body,
+    `Votre justificatif a été supprimé après examen. <a href="${site}/abonnement" style="color:#64748B">Mon abonnement</a>`,
   );
 }
 
@@ -104,12 +99,11 @@ export function emailNouveauJustificatif(to: string, statut: string, site: strin
   const subject = "Nouveau justificatif professionnel en formation à valider";
   const t = `Un membre (${STATUTS[statut] ?? statut}) a déposé un justificatif pour le tarif −30 %.`;
   const lien = `${site}/bibliotheque/etudiants`;
-  const html =
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(subject)}</title></head>` +
-    `<body style="margin:0;padding:24px 16px;background-color:#ffffff">` +
-    `<div style="font-family:Arial,Helvetica,sans-serif;max-width:620px;margin:0 auto;color:#0F172A">` +
+  const html = cadreEmail(
+    subject,
     p(escapeHtml(t)) +
-    `<p style="margin:22px 0"><a href="${lien}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Examiner le justificatif</a></p>` +
-    `</div></body></html>`;
+    `<p style="margin:22px 0"><a href="${lien}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Examiner le justificatif</a></p>`,
+    "E-mail de service destiné à l'équipe de medical-guidelines.net.",
+  );
   return { to, subject, html, text: `${t}\n\nExaminer : ${lien}\n` };
 }
