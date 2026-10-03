@@ -152,14 +152,42 @@ function unites(p) {
   return out;
 }
 
+// Téléchargement d'une source : trois essais espacés (sites qui coupent
+// une connexion ou limitent le débit), puis curl, qui contourne certains
+// blocages propres à Node (certificat incomplet, filtrage). Le message
+// d'erreur garde la cause réelle (« fetch failed » seul ne dit rien).
+const NAVIGATEUR = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36";
+async function telechargerSource(adresse) {
+  const causes = [];
+  for (let essai = 1; essai <= 3; essai++) {
+    try {
+      const r = await fetch(adresse, {
+        headers: { "User-Agent": NAVIGATEUR, Accept: "application/pdf,text/html;q=0.9,*/*;q=0.8" },
+        redirect: "follow",
+        signal: AbortSignal.timeout(60_000),
+      });
+      if (r.ok) return Buffer.from(await r.arrayBuffer());
+      causes.push(`HTTP ${r.status}`);
+      if (r.status === 404 || r.status === 410) break;
+    } catch (e) {
+      causes.push(e?.cause?.code || e?.cause?.message || e?.message || String(e));
+    }
+    await new Promise((ok) => setTimeout(ok, 3000 * essai));
+  }
+  const c = spawnSync("curl", ["-sSL", "--fail", "--max-time", "90", "-A", NAVIGATEUR, adresse], {
+    maxBuffer: 200 * 1024 * 1024,
+  });
+  if (c.status === 0 && c.stdout?.length) return c.stdout;
+  causes.push(`curl : ${String(c.stderr || "").trim().slice(0, 160) || `code ${c.status}`}`);
+  throw new Error(`source inaccessible (${causes.join(" ; ")})`);
+}
+
 // Texte de la source (PDF via pdftotext, pages séparées par \f, ou page web)
 // et, pour un PDF, le fichier lui-même.
 async function chargerSource(adresse) {
   const f = join(SORTIE, "cache", createHash("sha1").update(adresse).digest("hex"));
   if (!existsSync(f + ".txt")) {
-    const r = await fetch(adresse, { headers: { "User-Agent": "Mozilla/5.0 (verification medical-guidelines.net)" } });
-    if (!r.ok) throw new Error(`source inaccessible (HTTP ${r.status})`);
-    const corps = Buffer.from(await r.arrayBuffer());
+    const corps = await telechargerSource(adresse);
     if (corps.subarray(0, 5).toString() === "%PDF-") {
       writeFileSync(f + ".pdf", corps);
       if (spawnSync("pdftotext", ["-enc", "UTF-8", f + ".pdf", f + ".txt"]).status !== 0) throw new Error("pdftotext a échoué");
