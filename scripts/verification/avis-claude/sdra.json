@@ -1,0 +1,160 @@
+{
+ "cle": "sdra",
+ "date": "2026-10-03",
+ "relecture": "Claude (claude-opus-5-5, API, lecture du PDF)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "10efff8e7dfc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ces recommandations sont faites pour la prise en charge des patients en SDRA et, en aucun cas, ne peuvent être extrapolées à l’ensemble des autres causes d’insuffisance respiratoire aiguë.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "23a62929427a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les SDRA légers (PaO2/FiO2 entre 201 et 300 mmHg),",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "0b6680e18f24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les SDRA modérés (PaO2/FiO2 entre 101 et 200 mmHg)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "b09831163794",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "la force d’une recommandation est le résultat du processus d’analyse de la littérature et de gradation selon la méthode GRADE",
+   "explication": "La source ne mentionne ni les préférences ni les coûts comme déterminants de la force des recommandations ; cette énumération est ajoutée par la fiche.",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "abecf9a8223d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez l’homme, poids théorique (kg) = 50 + 0,91x[taille (cm) – 152,4] ; chez la femme, poids théorique (kg) = 45,5 + 0,91x[taille (cm) – 152,4]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "1f0cc1b76c78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que les patients adultes atteints de SDRA soient ventilés avec une stratégie limitant les volumes courant (Vt 4-8 mL/kg de poids théorique) et la pression de plateau (Pplat < 30 cmH2O). (GRADE 1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "da792d3fd6a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que les patients adultes atteints de SDRA sévère soient positionnés en décubitus ventral pendant plus de 12 heures par jour. (GRADE 1+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "b3dbfc265323",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le décubitus ventral réduit la mortalité si celui-ci est pratiqué plus de 12 heures par jour (5 études, 1002 patients, RR 0,74 – IC95% [0,56-0,99], confiance élevée)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "f0ca469abe28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas utiliser la VHFO en routine chez les patients atteints de SDRA modéré ou sévère. (GRADE 1-)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "d81eb09c14aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé que les patients adultes atteints de SDRA modéré à sévère soient ventilés avec une PEP élevée plutôt qu’avec une PEP basse. (GRADE 2+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u11",
+   "empreinte": "a4b74a882fba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mortalité n’était pas significativement différente entre les patients ventilés avec une PEP élevée et ceux ventilés avec une PEP basse (6 études, 2580 patients ; RR 0,91 –",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u12",
+   "empreinte": "ac6f7814f976",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d’appliquer des manœuvres de recrutement chez les patients adultes atteints de SDRA modéré à sévère. (GRADE 2+)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u13",
+   "empreinte": "3c41130b01ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des preuves supplémentaires étant nécessaires pour formuler une recommandation définitive sur l'utilisation de l'ECMO chez les patients atteints de SDRA sévère.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u14",
+   "empreinte": "f648d539fdbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque les 6 études étaient considérées, les MR étaient également associées de façon significative à une réduction de la mortalité (6 études, 1423 patients; RR 0,81 - IC95% [0,69–0,95] ; confiance modérée).",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u15",
+   "empreinte": "e0c5067ce907",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le bénéfice potentiel de la synergie de stratégies combinées ou d’interventions les unes après les autres n’ayant jamais été évalué, aucune recommandation n’a pu être faite à cet égard.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u16",
+   "empreinte": "a638ee38310c",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "recommande une gestion des patients atteints de SDRA sévère basée sur les preuves de la littérature, concernant la ventilation protectrice et une prise en charge médicalisée la plus précoce possible, avant la mise en place éventuelle d’une VV-ECMO.",
+   "explication": "La source préconise une prise en charge médicalisée précoce, sans mentionner de prise en charge « en centre expert » ; le transfert en centre expert y est même cité comme une co-intervention limitant CESAR.",
+   "page": 14
+  },
+  {
+   "id": "u17",
+   "empreinte": "84a009275f52",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "cle": "tabagisme",
+ "date": "2026-10-03",
+ "relecture": "Claude (claude-opus-5-5, API, lecture du PDF)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "f15ed7472bba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "indique que le tabagisme actif augmente d’environ 20% la mortalité hospitalière et de 40% les complications majeures postopératoires",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "cb4da80dbaf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au moins 50% des participants doivent avoir une opinion en faveur et moins de 20% préfèrent la proposition contraire.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u3",
+   "empreinte": "d7e427508a50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nous recommandons d’offrir une prise en charge comportementale et la prescription d'une substitution nicotinique pour l'arrêt du tabac avant toute intervention chirurgicale programmée.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u4",
+   "empreinte": "ae8d4ab0dc94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nous recommandons systématiquement l’arrêt préopératoire du tabac indépendamment de la date d’intervention.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u5",
+   "empreinte": "7dbcf1288ded",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nous recommandons que tous les professionnels du parcours de soins (chirurgiens, anesthésistes-réanimateurs, soignants) informent les fumeurs des effets positifs de l'arrêt du tabac",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "f2786ff5221f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nous recommandons l’arrêt du tabagisme parental ou l'éviction de l'enfant de tout environnement tabagique le plus en amont possible de l’intervention.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u7",
+   "empreinte": "a4af8b888426",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le taux de sevrage tabagique avant la chirurgie par rapport à \"aucune intervention\", diminue globalement les complications de 60% dans 2 essais randomisés contrôlés",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "013685289364",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Enfin, l’arrêt du tabac péri opératoire, quel que soit son délai par rapport à l’intervention permet d’augmenter la proportion d’arrêt définitif",
+   "explication": "Dans la source, « quel que soit son délai » concerne l'augmentation de l'arrêt définitif ; la fiche l'attache au bénéfice proportionnel à la durée, alors qu'un arrêt de 2-4 semaines ne réduit pas les complications respiratoires.",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "88c04cc848d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "démontre une augmentation de 60% de l’abstinence à 6 mois chez les patients recevant un conseil bref",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "5ac8b5e6ba6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le tabagisme passif chez l’enfant multiplie par deux (RR 2,02 ; IC95% [1,82-2,23]) le risque d’effets indésirables péri opératoires lors d’une anesthésie générale",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "c62a0f967b84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le résultat des votes des experts démontra une grande dispersion des avis sur la première proposition et des avis très divergents pour la deuxième",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u12",
+   "empreinte": "4d908505c790",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "L’analyse porte sur 3 essais randomisés contrôlés incluant 1246 patients 33 en dehors de tout contexte chirurgical. La cigarette électronique multiplie par 2 le taux d’arrêt du tabac",
+   "explication": "La source s'appuie sur 3 essais randomisés (1246 patients), dont 2 comparant cigarette nicotinée versus placebo, et non sur un seul essai versus absence d'intervention.",
+   "page": 9
+  },
+  {
+   "id": "u13",
+   "empreinte": "8154af384bf6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

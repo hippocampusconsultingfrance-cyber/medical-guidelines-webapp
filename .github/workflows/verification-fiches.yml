@@ -7,6 +7,10 @@ name: Vérifier les fiches (IA)
 # « Artifacts »). Rien n'est écrit en base. Voir
 # scripts/verification/verifier-fiches.mjs.
 #
+# Par défaut, seul Gemini est appelé : les avis de Claude sont ceux de la
+# relecture faite hors API et enregistrés dans scripts/verification/avis-claude
+# (voir LISEZMOI.md dans ce dossier).
+#
 # Secrets (Settings → Secrets and variables → Actions) : SUPABASE_DB_URL,
 # ANTHROPIC_API_KEY, GEMINI_API_KEY ; ANTHROPIC_WORKSPACE_ID seulement si la
 # clé Anthropic n'est rattachée à aucun espace de travail.
@@ -14,17 +18,17 @@ on:
   workflow_dispatch:
     inputs:
       fiches:
-        description: "Fiches à vérifier (clés séparées par des espaces)"
+        description: "Fiches à vérifier (clés séparées par des espaces, ou toutes)"
         required: true
         default: "remplissage sdra tabagisme lat_soins_critiques echo_acces_vasculaires"
       ia:
-        description: "IA utilisées : claude,gemini ; claude ; gemini ; ou aucune (chiffres seulement)"
+        description: "IA appelées : gemini (avis Claude enregistrés) ; claude,gemini ; claude ; ou aucune (chiffres seulement)"
         required: true
-        default: "claude,gemini"
+        default: "gemini"
       gemini_model:
         description: "Modèle Gemini : gemini-3.8-flash (sans facturation) ou gemini-3.1-pro-preview (facturation Google activée)"
         required: true
-        default: "gemini-3.8-flash"
+        default: "gemini-3.1-pro-preview"
       envoi:
         description: "Source envoyée aux IA : pdf (tableaux et figures vérifiables) ou texte (moins cher)"
         required: true
@@ -59,8 +63,8 @@ jobs:
           IA: ${{ github.event.inputs.ia }}
           ENVOI: ${{ github.event.inputs.envoi }}
         run: |
-          options=""
-          if [ "$IA" = "aucune" ]; then options="--sans-ia"; else options="--ia=$IA"; fi
+          options="--avis-claude=scripts/verification/avis-claude"
+          if [ "$IA" = "aucune" ]; then options="--sans-ia"; else options="$options --ia=$IA"; fi
           if [ "$ENVOI" = "texte" ]; then options="$options --texte"; fi
           # $FICHES et $options sont découpés en mots volontairement.
           node scripts/verification/verifier-fiches.mjs --sortie=rapport-verification $options $FICHES

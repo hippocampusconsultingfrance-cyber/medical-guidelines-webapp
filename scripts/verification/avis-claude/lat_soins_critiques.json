@@ -1,0 +1,646 @@
+{
+ "cle": "lat_soins_critiques",
+ "date": "2026-10-03",
+ "relecture": "Claude (claude-opus-5-5, API, lecture du PDF)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ec9bfcf53f2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parmi ces recommandations, 1 à un niveau de preuve élevé (GRADE 1), 2 ont un niveau de preuve faible (GRADE 2) et 6 sont des avis d'experts.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "2bd92106c421",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "53 % des décès ont lieu en milieu hospitalier (public ou privé), parmi lesquels 23 % ont lieu dans des services de soins critiques",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u3",
+   "empreinte": "8f1ed87fdaca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une « absence de recommandation » signifiait qu'il n'existait pas suffisamment de littérature pour conclure sur ce qu'il convient de faire.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u4",
+   "empreinte": "e40bae95fea2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Champ 1 – Prérequis et modalités d'une décision de LAT (4 questions)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u5",
+   "empreinte": "6c412e228a7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Champ 2 : Modalités de mise en œuvre d'une décision de LAT (2 questions)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u6",
+   "empreinte": "ffaaaa4d2a0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Champ 3 : Relations avec les proches, communication, désaccords et conflits (3 questions)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u7",
+   "empreinte": "c1fe7fb0447d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lorsque l'équipe soignante envisage une décision de LAT au titre du refus de l'obstination déraisonnable et que le patient n'est pas en état d'exprimer sa volonté",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u8",
+   "empreinte": "1238bc2f9e55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'organiser des réunions pluriprofessionnelles régulières de réflexion et d'échange autour du projet de soins des patients afin d'améliorer la qualité des soins.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u9",
+   "empreinte": "edcb76f303c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de rechercher les volontés du patient hospitalisé en soins critiques précocement et par tout moyen possible afin d'améliorer la qualité des soins.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u10",
+   "empreinte": "703beb509376",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les DA sont révisables et révocables à tout moment et par tout moyen. En présence de plusieurs DA, le document le plus récent fera foi auprès des équipes soignantes.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u11",
+   "empreinte": "42b449f94a3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute personne majeure peut désigner une personne de confiance qui peut être un parent, un proche ou le médecin traitant et qui sera consultée",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u12",
+   "empreinte": "51ae01b24f27",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent d'utiliser un protocole de service d'aide à la décision et de communication avec les proches et au sein de l'équipe soignante pour améliorer la qualité des soins.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u13",
+   "empreinte": "ddff2460cd7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé d'inclure la participation active des équipes paramédicales aux réunions de procédure collégiale de limitation et/ou arrêt des traitements",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u14",
+   "empreinte": "492d9afefeae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Initiation de la réflexion Patient Médecin Equipe paramédicale Personne de confiance Proches",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u15",
+   "empreinte": "95dffaa240e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Information de la personne de confiance et des proches de l'initiation d'une procédure de LAT. Consignation dans le dossier de l'information délivrée.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u16",
+   "empreinte": "8e55032c639c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si demande associée d'une SPCMD Procédure collégiale Equipe de soin Intervenant extérieur",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u17",
+   "empreinte": "f265b60b3890",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Inscription de la décision de LAT et de la procédure de SPCMD dans le dossier médical",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u18",
+   "empreinte": "b792f6c64ac5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "délai permettant d'exercer un recours en temps utile Mise en œuvre de la décision Equipe de soin",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u19",
+   "empreinte": "be03d69d6420",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "Le médecin en charge du patient peut engager la procédure collégiale de sa propre initiative. Il est tenu de le faire à la demande de la personne de confiance, ou, à défaut, de la famille ou de l'un des proches.",
+   "explication": "La fiche présente comme une simple possibilité l'engagement de la procédure à la demande de la personne de confiance ou des proches, alors que la source en fait une obligation pour le médecin.",
+   "page": 31
+  },
+  {
+   "id": "u20",
+   "empreinte": "ca92746fda88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Par tout soignant (médecin ou non) impliqué dans la prise en charge du patient.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u21",
+   "empreinte": "96962772dffd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recueillir l'avis d'un médecin consultant extérieur à l'équipe prenant en charge le patient. L'avis motivé d'un deuxième médecin consultant extérieur peut être recherché si les médecins l'estiment nécessaire.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u22",
+   "empreinte": "58a5d6551b46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Des éléments non-médicaux : souhaits du patient, témoignage de la personne de confiance, témoignage des proches. L'objectif est de recueillir tous les avis, sans nécessairement viser un consensus.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u23",
+   "empreinte": "4e6b4e0e6a8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À l'issue de la délibération collégiale, décision motivée par le médecin en charge du patient. Consigner la décision dans le dossier médical avec mention des participants et des arguments discutés.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u24",
+   "empreinte": "29e0956f2b8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'opposition des proches, solliciter une structure d'éthique clinique, prendre le temps du cheminement, en répétant les entrevues, en variant les interlocuteurs. En cas de situation de blocage, informer la famille des recours légaux possibles.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u25",
+   "empreinte": "f66383ba56a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Médecin sénior en charge du patient Un médecin extérieur au service de soins critiques, appelé en qualité de consultant Membres présents de l'équipe soignante",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u26",
+   "empreinte": "656e2274a5f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "après une décision d'arrêt des traitements, les experts suggèrent d'utiliser un protocole pour l'administration de la sédation profonde et continue maintenue jusqu'au décès pour améliorer la qualité des soins.",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u27",
+   "empreinte": "72fba16b8fad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de données, il n'est pas possible de formuler une recommandation sur la pratique d'une extubation après une décision d'arrêt de traitements, chez les patients ventilés en soins critiques",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u28",
+   "empreinte": "625acbc28247",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "La HAS propose, par exemple, d'utiliser l'échelle RASS (Richmond Agitation-Sedation Scale) avec une valeur cible de RASS à -4 ou -5",
+   "explication": "La cible RASS -5 est une donnée observationnelle (étude Le Dorze) ; le protocole proposé et la HAS retiennent une cible RASS -4 ou -5, et non -5 seul.",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "e62df56cba2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Proposer à la famille un recours à un représentant du culte Demander si la famille souhaite être présente tout au long du processus",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u30",
+   "empreinte": "3d3aad64e5e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ondansétron : 4 mg x 3 / jour IVL ou SC ou Métoclopramide : 10 mg IV/SC x 3/j ou relais de 30 à 60 mg sur 24h en IVSE ou dans un soluté",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u31",
+   "empreinte": "72e9d3a1d033",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La sédation profonde et continue est maintenue jusqu'au décès selon les objectifs de scores RASS et BPS/RDOS. Les posologies de médicaments sont adaptées si besoin pour répondre à ces objectifs. Elle doit associer obligatoirement un hypnotique et un analgésique de palier 3",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u32",
+   "empreinte": "d76d24ede4ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bolus de 1 mg IVD toutes les 3 minutes pour obtenir l'objectif de sédation Entretien IVSE : dose de titration/h Objectif : obtention d'un score RASS -4 ou -5 (cf infra) Posologie maximum : 30 mg/h",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u33",
+   "empreinte": "bc922bfbeae6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette proposition de protocole est utilisable pour toute décision de SPCMD (qu'il y ait ou non une procédure Maastricht 3 suite à la décision de LAT)",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u34",
+   "empreinte": "8b74457de543",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "+4 Combatif. Combatif, danger immédiat envers l'équipe. +3 Très agité.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u35",
+   "empreinte": "e0769f0525a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "+3 Très agité. Tire, arrache tuyaux ou cathéters et/ou agressif envers l'équipe.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u36",
+   "empreinte": "72281c0e0b9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "+2 Agité. Mouvements fréquents sans but précis et/ou désadaptation au respirateur.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u37",
+   "empreinte": "7f7015f798f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "+1 Ne tient pas en place. Anxieux ou craintif, mais mouvements orientés, peu fréquents, non vigoureux, non agressif.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u38",
+   "empreinte": "59ad96823059",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "0 Éveillé et calme. -1 Somnolent. Pas complètement éveillé, mais reste éveillé avec contact visuel à l'appel (>10s).",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u39",
+   "empreinte": "365fd0b39e09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-1 Somnolent. Pas complètement éveillé, mais reste éveillé avec contact visuel à l'appel (>10s).",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u40",
+   "empreinte": "4e187d53626f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-2 Diminution légère de la vigilance. Reste éveillé brièvement avec contact visuel à l'appel (<10s).",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u41",
+   "empreinte": "e53c2a761b9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Diminution modérée de la vigilance. N'importe quel mouvement à l'appel (ex.: ouverture des yeux), mais pas de contact visuel.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u42",
+   "empreinte": "6eb14c2b81ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Diminution profonde de la vigilance. Aucun mouvement à l'appel, n'importe quel mouvement à la stimulation physique (friction non nociceptive de l'épaule ou du sternum).",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u43",
+   "empreinte": "3decccdcd6b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non réveillable. Aucun mouvement, ni à l'appel, ni à la stimulation physique (friction non nociceptive de l'épaule ou du sternum).",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u44",
+   "empreinte": "59b946e3b64b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Expression du visage 1 : détendu 2 : partiellement crispé 3 : crispé 4 : grimace",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u45",
+   "empreinte": "ac98ebd071dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tonus des membres supérieurs 1 : aucun mouvement 2 : flexion partielle 3 : flexion complète 4 : rétraction",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u46",
+   "empreinte": "5db044f3e585",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Adaptation du respirateur 1 : adapté 2 : déclenche ponctuellement 3 : lutte contre le respirateur 4 : non ventilable",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u47",
+   "empreinte": "5b675717c742",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fréquence cardiaque < 90 90-109 ≥ 110 Fréquence respiratoire < 19 19-30 > 30",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u48",
+   "empreinte": "935eeb9d6d6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fréquence respiratoire < 19 19-30 > 30 Agitation mouvements involontaires non occasionnels fréquents",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u49",
+   "empreinte": "32eb383d41a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Agitation mouvements involontaires non occasionnels fréquents respiration abdominale paradoxale non oui",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u50",
+   "empreinte": "a3f3f50384fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "respiration abdominale paradoxale non oui muscles accessoires inspiratoires non légère prononcée",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u51",
+   "empreinte": "81a31a3ecee1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "muscles accessoires inspiratoires non légère prononcée râles expiratoires non oui",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u52",
+   "empreinte": "e2523f63e47e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "râles expiratoires non oui battement des ailes du nez non oui",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u53",
+   "empreinte": "f636478462b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "battement des ailes du nez non oui Expression de crainte non oui",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u54",
+   "empreinte": "899eb9863a9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "battement des ailes du nez non oui Expression de crainte non oui",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u55",
+   "empreinte": "79c5b383022a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d’utiliser une stratégie d’accompagnement structurée après une décision d’arrêt et/ou limitation de traitements, incluant des interactions proactives avec l’équipe soignante et/ou des supports de communication, pour améliorer la qualité des soins. GRADE 1 (accord fort)",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u56",
+   "empreinte": "e33bd1925b8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de former l’équipe médico-soignante à la communication pour permettre de prévenir les conflits entre proches et équipes médico-soignantes. AVIS D’EXPERTS (accord fort)",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u57",
+   "empreinte": "fd5b5914f6e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de désaccords/conflits autour d’une décision de limitation et/ou arrêt des traitements, les experts suggèrent de faire intervenir une structure d’éthique clinique pour améliorer la qualité des soins.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u58",
+   "empreinte": "91ad5e13c02f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé de faire intervenir une structure d’éthique clinique pour améliorer la qualité des soins. GRADE 2 (accord fort)",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u59",
+   "empreinte": "558ca0c59302",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ne sont pas en mesure d’émettre une recommandation concernant l’intervention d’une équipe de médiation pour améliorer la qualité des soins.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u60",
+   "empreinte": "edce6d4f8db8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dès l’admission du patient - Supports écrits et numériques pour faciliter la compréhension des proches de la situation.",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u61",
+   "empreinte": "efed00279f2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Assouplir les horaires de visite et le nombre de visiteurs - Encourager leur participation aux soins non médicaux s'ils le souhaitent",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u62",
+   "empreinte": "8745368690d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Communication continue - Organiser des réunions régulières - Adopter une stratégie de communication structurée",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u63",
+   "empreinte": "9bc568880207",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Soutien psychologique et spirituel - Proposer un soutien psychologique aux proches - Faciliter l'accès aux représentants du culte",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u64",
+   "empreinte": "5c8195bfec97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Expliquer clairement la situation médicale et les décisions de LAT, s'assurer de la compréhension - Proposer une approche individualisée selon les croyances et les valeurs du patient et ses proches",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u65",
+   "empreinte": "4231d8593209",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Informer les proches des signes cliniques - Proposer un livret explicatif des démarches - Dédier un espace de recueillement adapté",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u66",
+   "empreinte": "b4cf897f219d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Offrir aux proches la possibilité de rester autant de temps qu'ils le souhaitent - Permettre un rituel d'adieu selon leurs souhaits",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u67",
+   "empreinte": "c057da14d7fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Proposer une réunion entre les proches et les soignants s'ils le souhaitent - Ne pas envoyer systématiquement de lettre de condoléance, qui peut aggraver le deuil",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u68",
+   "empreinte": "4a639a827707",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Préparer un protocole local de gestion des conflits entre famille/proches et équipe soignante - Encourager des temps d'écoute pour favoriser une décision partagée",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u69",
+   "empreinte": "62493e6ba186",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Disponibilité d'un médecin et d'un infirmier durant les derniers jours de vie dans la chambre pour témoigner du soutien",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u70",
+   "empreinte": "8dbbc8ce8937",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Si une extubation est choisie, elle doit s'accompagner d'un protocole de sédation profonde et continue afin de prévenir les signes d'inconfort",
+   "explication": "La source exige un protocole de sédation profonde et continue en cas d'extubation ; la fiche parle seulement d'un protocole de sédation « adapté », perdant l'exigence de profondeur et de continuité.",
+   "page": 38
+  },
+  {
+   "id": "u71",
+   "empreinte": "da05a84a45a0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
