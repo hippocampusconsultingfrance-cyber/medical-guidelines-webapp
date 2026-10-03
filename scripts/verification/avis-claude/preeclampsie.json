@@ -1,0 +1,340 @@
+{
+ "cle": "preeclampsie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a7d343138219",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "25 recommandations. Parmi les recommandations, 8 ont un niveau de preuve élevé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "77a2868360f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systolique ≥ 140 mmHg et/ou diastolique ≥ 90 mmHg, et une protéinurie ≥ 0,3g/24h",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u3",
+   "empreinte": "ebf682eb2a8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une oligurie ≤ 500 mL/24h ou ≤ 25 mL/h",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "25b7c94b6577",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une PAS ≥ 180 mmHg et/ou une PAD ≥ 120 mmHg",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "14f72d9e0649",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas possible d'émettre de recommandation sur l'utilisation en pratique courante de score de prédiction",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "a398b000cef1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 – Il est recommandé d'administrer systématiquement un traitement antihypertenseur chez",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u7",
+   "empreinte": "3d9cba49fb26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – En cas de pré-éclampsie sévère avec au moins un signe de gravité clinique ou biologique",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u8",
+   "empreinte": "0ff083dcad89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Lorsqu'un antihypertenseur intraveineux est indiqué, il est probablement recommandé",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u9",
+   "empreinte": "9addfdc31abf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4 – Il est probablement recommandé d'utiliser la nicardipine ou l'urapidil en association au",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u10",
+   "empreinte": "4f95d6eea51d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts préconisent de poursuivre le traitement et de faire un relais par un antihypertenseur par voie orale",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u11",
+   "empreinte": "9b082ab91ad6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6 – En cas de pré-éclampsie sévère avec HTA contrôlée sous traitement antihypertenseur",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u12",
+   "empreinte": "a5d3c7749067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la nicardipine ou l'alpha-méthyldopa en association au labétalol per os",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u13",
+   "empreinte": "5bf4d58a2035",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme (p. 35) : « Préeclampsie sévère PAS ≥ 160 et/ou PAD ≥ 110 = urgence hypertensive => débuter ou majorer le traitement » ; hospitalisation/transfert médicalisé, examen, VVP + bilan, PA automatisée, monitoring fœtal.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "47104f6965af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme (p. 35) : absence de signe de gravité ou VVP impossible dans l'heure → voie orale (labétalol 1re intention, nifédipine, nicardipine) ; signe de gravité ou échec oral → IV (titration si PAS ≥ 180/PAD ≥ 120 ; labétalol IVSE 1re intention, nicardipine, urapidil) + discuter MgSO4.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "f83f8ad0644b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme (p. 35) : « Surveillance régulière de la pression artérielle — objectif PAS < 160 mmHg et PAD < 110 mmHg ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "7af3904283f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer en anténatal du sulfate de magnésium aux femmes avec une pré-éclampsie sévère avec au moins un signe clinique de gravité",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u17",
+   "empreinte": "4f48d1510ccf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.9 – Il est probablement recommandé d'administrer en anténatal du sulfate de magnésium",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u18",
+   "empreinte": "ada0276a18f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.10 – Il n'est pas recommandé de réaliser un remplissage vasculaire systématique des femmes",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u19",
+   "empreinte": "0f6484f7ebb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les femmes avec une pré-éclampsie sévère, il n'est pas recommandé d'administrer",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u20",
+   "empreinte": "66cefdf9d43c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer du sulfate de magnésium en première intention chez",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u21",
+   "empreinte": "e26d8007d578",
+   "verdict": "non_retrouve",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "La posologie « dose de charge 4 g IV » n'apparaît pas dans le texte source (seul l'essai Magpie est cité, sans protocole). Information ajoutée hors source, même si la fiche renvoie au protocole local.",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "047f95eb512a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas possible d'émettre de recommandation.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "e894ad0d17df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 – En cas de pré-éclampsie sévère avec signes de gravité (Cf. R1.3), les experts suggèrent une",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u24",
+   "empreinte": "e4feb319e9f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et de la pression artérielle maternelles [3-5], pouvant induire une baisse du débit utéro-placentaire et des",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u25",
+   "empreinte": "078e62a5c736",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 – En cas de pré-éclampsie sévère entre 24 et 34 semaines d'aménorrhée, il est recommandé",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u26",
+   "empreinte": "cbfa23a416a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2 – Compte tenu de l'absence de bénéfice associé à la pratique d'une césarienne",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u27",
+   "empreinte": "554c101bc200",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de stabiliser l'état clinique maternel et d'initier le traitement par sulfate de magnésium avant la décision de naissance.",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u28",
+   "empreinte": "c43dd3b0b6ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 – Il est probablement recommandé de réaliser une anesthésie périmédullaire plutôt qu'une",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u29",
+   "empreinte": "b884cf252ff6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 – En cas d'anesthésie générale chez des femmes ayant une pré-éclampsie sévère, il est",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u30",
+   "empreinte": "c24abaff336b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser en première intention un bolus de 0,5 µg/kg de rémifentanil dans cette indication.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u31",
+   "empreinte": "6ce1e0e11c83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 – Il est recommandé d'introduire un traitement par sulfate de magnésium en cas de",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u32",
+   "empreinte": "9601b1d0eaab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.2 – Il n'est probablement pas recommandé d'initier ou de poursuivre en post-partum un",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u33",
+   "empreinte": "51d1496ba542",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.3 – Il n'est probablement pas recommandé d'administrer systématiquement des diurétiques",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u34",
+   "empreinte": "83cc0b816eca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.4 – Les experts suggèrent que l'indication d'un traitement thromboprophylactique en",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u35",
+   "empreinte": "d22a95db65c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.5 - Compte tenu de la fréquence élevée des diagnostics différentiels et du risque de",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u36",
+   "empreinte": "43989035260b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas possible d'émettre de recommandation. Absence de recommandation Argumentaire : Il n'y a pas d'étude qui explore spécifiquement l'effet de la simulation",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u37",
+   "empreinte": "0d238e9af164",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
