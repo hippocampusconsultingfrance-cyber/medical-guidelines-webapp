@@ -1,0 +1,115 @@
+{
+ "cle": "blocs_perimedullaires_infectieux_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ab1b67952a3b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "5510fd55586c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De principe, la fièvre est une contre-indication à l'APM, cependant, une étiologie non-infectieuse de la fièvre auto-",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u3",
+   "empreinte": "99b5518fdc26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un foyer infectieux bactérien localisé à distance du site de ponction est compatible avec la réalisation d'une APM, mais la « mobilisation » du site infecté doit",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u4",
+   "empreinte": "c7f19ddee9d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la pose d'un cathéter péridural reste indiquée en fonction du rapport bénéfice/risque pour les patientes (grade C).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u5",
+   "empreinte": "cbb3e4bdf162",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La chorioamniotite et les infections urinaires n'augmentent pas le risque de complication septique lié à l'analgésie péridurale.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u6",
+   "empreinte": "9bb5218bc23b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les états septiques graves avec retentissement systémique (choc septique), quels que soient l'agent étiologique et le foyer initial, sont une contre-indication à la pratique de l'APM",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u7",
+   "empreinte": "73f4abfd5d00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En évitant l'utilisation de fortes doses de morphiniques qui augmentent la réplication virale, l'APM peut être intéressante (grade C).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u8",
+   "empreinte": "74f3090269af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM est recommandée en cas d'indication opératoire chez les patients infectés par le VIH, sous réserve que le bilan préopératoire ait éliminé une complication opportuniste",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u9",
+   "empreinte": "905bf6392478",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "herpétique (herpès labial en post-partum) après administration d'opiacés par voie périmédullaire (grade B). En raison du risque pour l'enfant",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u10",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "95c76a564e88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les hépatopathies chroniques postvirales VHB, VHC peuvent induire des thrombopénies, thrombopathies, avec déficits en facteurs contact, et un effondrement du TP.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u12",
+   "empreinte": "63c223b3ce53",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "cle": "alr_perinerveuse",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "0f6d61b328c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le texte présenté ne vise pas à remplacer la RPC 2003, dont les objectifs étaient centrés sur la description de réalisation de l'ALR en pratique clinique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "3897d87fcff0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un avis d'expert n'était validé que dans le cas d'un accord fort avec plus de 70 % d'accord des experts.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "b9847923d4df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode GRADE, XX recommandations ont été formalisées par le comité d'organisation. Parmi les recommandations, 4 est forte (Grade 1+), 5 sont faibles (Grade 2 ) et, pour 5 recommandations",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "ec0535c38678",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandés si l'objectif est la réduction de la toxicité des AL.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "c9281be3cb29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser l'échoguidage pour la réalisation d'une ALR périnerveuse dans le but d'obtenir, pour une efficacité équivalente ou supérieure aux autres techniques, une réduction de la dose",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "3344e9e42e1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les agonistes morphiniques, le tramadol, la naloxone ou le (GRADE 2S) ACCORD FORT magnésium, du fait de l'absence de bénéfice clinique significatif en termes de durée ou d'efficacité.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "59671ba8ac74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Concernant la clonidine comme adjuvant, elle prolonge l'analgésie et la qualité du bloc sensitif et moteur, mais au prix du risque d'effets secondaires notables",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "7465eb653e00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement administrer des émulsions lipidiques intraveineuses au cours d'une intoxication systémique aux anesthésiques locaux, en complément des mesures de réanimation.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "25fb446a13a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les données disponibles dans la littérature ne permettent aucunement de documenter un risque supplémentaire lié à la réalisation d'une ALR-PN chez un patient présentant un processus",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "dbece28a7798",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommandé de respecter un intervalle d'arrêt de 3 jours avant la réalisation d'une ALR-PN (dernière prise à j3), sauf en cas de traitement par le dabigatran pour lequel une",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "30cba6a9ef56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la formulation d'une recommandation est apparue trop prématurée. Une mise à jour ultérieure sera proposée.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "6fb2025e134e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de réaliser systématiquement une ALR périnerveuse (bloc fémoral, bloc ilio-fascial ou bloc du plexus lombaire par voie postérieure)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "4db8ada7b4c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la chirurgie du membre supérieur, il est probablement recommandé de réaliser une ALR périnerveuse par bloc des branches du plexus brachial comme seule technique anesthésique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u14",
+   "empreinte": "b99e545c08d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la chirurgie de la carotide, la réalisation d'un bloc du plexus cervical superficiel est probablement recommandée en alternative ou associée à l'anesthésie générale",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u15",
+   "empreinte": "4bc4c87cbbc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommandée pour obtenir une réduction des ALR-PN seule ou bloc fémoral associé au bloc sciatique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u16",
+   "empreinte": "9387fb67e236",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permis de mieux décrire le bloc de cheville, avec un taux de succès proche de 100 %",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "a48dd703036b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supérieur et 60 minutes après une ALR du membre inférieur",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u18",
+   "empreinte": "230dc9539820",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 – Il est probablement recommandé en première intention de réaliser une ALR chez un patient éveillé ou légèrement sédaté",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u19",
+   "empreinte": "dcad580f2d4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la neurostimulation n'est plus la technique de référence, bénéfice. La traçabilité du choix est importante. Dans ce cas, qui est aujourd'hui le repérage échographique.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u20",
+   "empreinte": "d287863b369c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précoce avant le 3e jour après l'ALR comme valeur de référence et dépistage d'une éventuelle neuropathie préexistante",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u21",
+   "empreinte": "df793a2ebf3e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
