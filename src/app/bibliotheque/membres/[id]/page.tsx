@@ -230,6 +230,7 @@ export default async function MembrePage({ params, searchParams }: PageProps<"/b
               <option value="verifiee">Vérifiée</option>
               <option value="refusee">Refusée</option>
             </select>
+            <div className="field__hint">« Vérifiée » affiche automatiquement le badge « vérifié ».</div>
           </div>
           <div className="field">
             <label htmlFor="editorial_role">Rôle éditorial</label>
@@ -249,7 +250,6 @@ export default async function MembrePage({ params, searchParams }: PageProps<"/b
             )}
           </div>
         </div>
-        {caseACocher("verified_badge", "Badge « vérifié » affiché", p.verified_badge)}
         {caseACocher("member_comite_consultatif", "Membre du comité consultatif", p.member_comite_consultatif)}
 
         <h2>Compte et préférences</h2>

@@ -74,7 +74,6 @@ export async function modifierMembre(formData: FormData) {
     consent_partners: coche(formData, "consent_partners"),
     specialty_visibility_public: coche(formData, "specialty_visibility_public"),
     professional_verification_status: verification,
-    verified_badge: coche(formData, "verified_badge"),
     member_comite_consultatif: coche(formData, "member_comite_consultatif"),
     editorial_role: role,
   };
