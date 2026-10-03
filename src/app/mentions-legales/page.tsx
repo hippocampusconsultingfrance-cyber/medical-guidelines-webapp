@@ -17,8 +17,14 @@ export default function MentionsLegalesPage() {
       </p>
       <ul className="mt-2 list-disc pl-5">
         <li>Siège social : 6 rue d&apos;Armaillé, 75017 Paris, France</li>
-        <li>SIREN : 999 259 252</li>
+        <li>RCS Paris 999 259 252 (SIREN 999 259 252)</li>
         <li>N° de TVA intracommunautaire : FR43 999 259 252</li>
+        <li>
+          Téléphone :{" "}
+          <a href="tel:+33972152413" className="underline">
+            +33 9 72 15 24 13
+          </a>
+        </li>
         <li>
           Contact :{" "}
           <a href="mailto:contact@medical-guidelines.net" className="underline">
@@ -34,8 +40,8 @@ export default function MentionsLegalesPage() {
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">Hébergeur</h2>
       <p className="mt-2">
-        Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis
-        (vercel.com).
+        Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis ;
+        téléphone : +1 (951) 383-6898 ; vercel.com.
       </p>
       <p className="mt-2">
         La base de données est hébergée par Supabase dans l&apos;Union

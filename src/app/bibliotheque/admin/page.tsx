@@ -273,6 +273,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     ["Registre juridique", "/bibliotheque/juridique"],
     ["Reformulations à valider", "/bibliotheque/reformulations"],
     ["Points clés à valider", "/bibliotheque/points-cles"],
+    ["Relecture des fiches (signature)", "/bibliotheque/relecture"],
     ["Vérification du paiement", "/abonnement/verification"],
     ["Assistant de recherche", "/assistant"],
     ["Santé du site", "/api/sante"],

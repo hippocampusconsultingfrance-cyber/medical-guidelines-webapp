@@ -252,8 +252,8 @@ export default function CompteForm({
         </h2>
         <p className="mt-1 text-sm text-slate-600">
           {profile.consent_partners
-            ? "Vous avez accepté que vos données soient partagées avec des entreprises partenaires."
-            : "Vos données ne sont pas partagées avec des entreprises partenaires."}{" "}
+            ? "Vous avez accepté que vos nom, e-mail et profession soient transmis à notre partenaire LASKA CORPORATE SAS."
+            : "Vos données ne sont transmises à aucun partenaire (partenaire actuel : LASKA CORPORATE SAS)."}{" "}
           Ce choix n&apos;a aucun effet sur votre accès aux fiches.
         </p>
         <button

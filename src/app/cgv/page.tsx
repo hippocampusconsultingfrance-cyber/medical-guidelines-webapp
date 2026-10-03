@@ -12,17 +12,23 @@ export const metadata: Metadata = {
 // texte s'accompagne d'une nouvelle CGV_VERSION (lib/stripe.ts), enregistrée
 // avec chaque souscription. Version du 03/10/2026 : le §2 précise ce que
 // rémunère l'abonnement (le service, pas les documents des sociétés savantes).
+// Révision 2 du 03/10/2026 : RCS et téléphone du vendeur, suppression
+// immédiate des justificatifs, information avant renouvellement, bouton de
+// résiliation.
 export default function CgvPage() {
   const h2 = "mt-8 text-lg font-semibold text-slate-900";
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 text-sm leading-6 text-slate-700">
       <h1 className="text-2xl font-bold text-[#0E3A78]">Conditions Générales de Vente</h1>
-      <p className="mt-2 text-slate-500">Version du {CGV_VERSION.split("-").reverse().join("/")}.</p>
+      <p className="mt-2 text-slate-500">
+        Version du {CGV_VERSION.slice(0, 10).split("-").reverse().join("/")}
+        {CGV_VERSION.length > 10 ? ` (révision ${CGV_VERSION.slice(11)})` : ""}.
+      </p>
 
       <h2 className={h2}>1. Vendeur</h2>
       <p className="mt-2">
         Hippocampus Consulting, SARL au capital de 1 000 €, 6 rue d&apos;Armaillé, 75017 Paris,
-        SIREN 999 259 252, TVA intracommunautaire FR43 999 259 252, éditrice du site medical-guidelines.net. Contact :
+        RCS Paris 999 259 252, TVA intracommunautaire FR43 999 259 252, éditrice du site medical-guidelines.net. Téléphone : +33 9 72 15 24 13. Contact :
         contact@medical-guidelines.net.
       </p>
 
@@ -62,14 +68,17 @@ export default function CgvPage() {
         par l&apos;éditeur. Une fois le justificatif validé, la réduction, personnelle et à usage
         unique, est appliquée automatiquement au paiement. Un nouveau justificatif est demandé à
         chaque renouvellement. Les réductions ne sont pas cumulables.
-        Les justificatifs sont supprimés après décision, ou conservés un an au plus si
-        nécessaire à la preuve.
+        Le justificatif n&apos;est consulté que par l&apos;éditeur et il est supprimé dès la décision
+        prise ; seuls le statut déclaré, l&apos;année universitaire et la décision sont conservés.
       </p>
 
       <h2 className={h2}>5. Durée, renouvellement et résiliation</h2>
       <p className="mt-2">
         L&apos;abonnement est conclu pour un an et se renouvelle automatiquement au tarif alors en
-        vigueur. L&apos;abonné peut le résilier à tout moment depuis la page « Abonnement » ;
+        vigueur. L&apos;abonné est informé par e-mail de l&apos;échéance et de la possibilité de ne pas
+        renouveler entre un et trois mois avant celle-ci (article L215-1 du code de la consommation).
+        Il peut résilier à tout moment depuis la page « Abonnement », bouton « Résilier mon
+        abonnement » ;
         l&apos;accès est maintenu jusqu&apos;à la fin de l&apos;année payée, puis le compte redevient
         gratuit, sans perte des fiches débloquées avec les crédits gratuits. En cas d&apos;évolution
         du tarif, l&apos;abonné est informé par e-mail au moins 30 jours avant le renouvellement,

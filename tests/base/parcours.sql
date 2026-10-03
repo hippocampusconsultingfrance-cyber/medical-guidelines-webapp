@@ -633,4 +633,41 @@ select pg_temp.ok(exists (select 1 from auth.users where id = :'recent'), 'purge
 select pg_temp.ok((select count(*) from public.content_reads where user_id = :'recent') = 1, 'purge : lectures de plus de 30 jours effacées, récentes gardées');
 select pg_temp.ok(exists (select 1 from public.audit_log where action = 'purge_conservation'), 'purge : tracée au journal (nombres seulement)');
 
+-- ---------------------------------------------------------------------------
+-- 27. Relecture signée « Équipe médicale interne » (validateur, attestation).
+-- ---------------------------------------------------------------------------
+\i supabase/migrations/20261003140000_relecture_equipe.sql
+select id as rq1 from public.documents where relue_par_nom is null order by id limit 1 \gset
+select id as rq2 from public.documents where relue_par_nom is null order by id offset 1 limit 1 \gset
+update public.documents set relue_par_nom = 'Dr Déjà Signé', relue_le = current_date where id = :'rq2';
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok(pg_temp.refuse(format('select public.signer_relecture_equipe(array[%L]::uuid[])', :'rq1'), 'Réservé'),
+  'relecture équipe : refusée à un membre');
+reset role;
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select pg_temp.ok(public.signer_relecture_equipe(array[:'rq1', :'rq2']::uuid[]) = 1, 'relecture équipe : une fiche signée, la fiche déjà signée ignorée');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok((select relue_par_nom from public.documents where id = :'rq1') = 'Équipe médicale interne', 'relecture équipe : mention affichée');
+select pg_temp.ok((select relue_par_nom from public.documents where id = :'rq2') = 'Dr Déjà Signé', 'relecture équipe : signature nominative jamais écrasée');
+select pg_temp.ok(exists (select 1 from public.audit_log where action = 'fiche_relue' and entity_id = :'rq1' and actor_id = :'validateur'),
+  'relecture équipe : attestation tracée au nom du validateur');
+
+-- ---------------------------------------------------------------------------
+-- 28. Version des CGU acceptée à l'inscription, non modifiable par le membre.
+-- ---------------------------------------------------------------------------
+\i supabase/migrations/20261003150000_version_cgu.sql
+\set cgu '00000000-0000-0000-0000-00000000a0f1'
+insert into auth.users (id, email, raw_user_meta_data, email_confirmed_at) values
+  (:'cgu', 'cgu@test.fr', '{"prenom":"Cgu","specialty_slug":"anesthesie_reanimation","cgu_version":"2026-10-03"}', now());
+select pg_temp.ok((select cgu_version from public.profiles where id = :'cgu') = '2026-10-03', 'CGU : version enregistrée à l''inscription');
+select pg_temp.agir(:'cgu');
+set role authenticated;
+select pg_temp.ok(pg_temp.refuse(format('update public.profiles set cgu_version = %L where id = %L', '2099-01-01', :'cgu'), 'permission denied'),
+  'CGU : version non modifiable par le membre');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';

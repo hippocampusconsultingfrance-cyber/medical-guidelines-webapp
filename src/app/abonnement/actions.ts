@@ -162,6 +162,41 @@ export async function openPortal() {
   redirect(portal.url);
 }
 
+// Résiliation en un clic (loi du 16 août 2022, art. L215-1-1 du code de la
+// consommation) : ouvre directement l'écran de résiliation du portail
+// Stripe pour l'abonnement payé du membre ; l'accès reste ouvert jusqu'à la
+// fin de la période payée (le webhook enregistre la résiliation).
+export async function resilier() {
+  if (!stripeEnabled()) redirect("/abonnement");
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/connexion");
+  const { data } = await supabase
+    .from("subscriptions")
+    .select("stripe_customer_id, stripe_subscription_id")
+    .eq("user_id", user.id)
+    .maybeSingle();
+  const customer = await knownCustomer(data?.stripe_customer_id);
+  if (!customer || !data?.stripe_subscription_id) redirect("/abonnement?r=portail");
+
+  const retour = `${await origin()}/abonnement`;
+  const configuration = process.env.STRIPE_PORTAL_CONFIG_ID;
+  const portal = await getStripe().billingPortal.sessions.create({
+    customer: customer!,
+    ...(configuration ? { configuration } : {}),
+    return_url: retour,
+    locale: "fr",
+    flow_data: {
+      type: "subscription_cancel",
+      subscription_cancel: { subscription: data!.stripe_subscription_id as string },
+      after_completion: { type: "redirect", redirect: { return_url: `${retour}?r=resiliation` } },
+    },
+  });
+  redirect(portal.url);
+}
+
 // Demande de tarif professionnel en formation depuis la page Abonnement.
 export async function demanderTarifEtudiant(formData: FormData) {
   const supabase = await createClient();

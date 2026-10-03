@@ -6,7 +6,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 
 // Relances quotidiennes (tâche planifiée Vercel, vercel.json) : inscription
 // non finalisée, crédits gratuits épuisés, avis de renouvellement de
-// l'abonnement (environ 30 jours avant l'échéance, CGV §5). Authentifiée par
+// l'abonnement (35 à 45 jours avant l'échéance, CGV §5). Authentifiée par
 // CRON_SECRET ; une relance de chaque sorte au plus par membre, et un avis
 // par échéance (notifications_log).
 // ?apercu=1 renvoie le nombre de destinataires sans rien envoyer.
@@ -61,7 +61,8 @@ export async function GET(request: Request) {
 
 type Echeance = { userId: string; subscriptionId: string; fin: string };
 
-// Abonnements actifs dont l'échéance tombe dans 25 à 32 jours, sans avis
+// Abonnements actifs dont l'échéance tombe dans 35 à 45 jours (au moins un
+// mois avant, article L215-1 du code de la consommation), sans avis
 // déjà envoyé pour cette échéance.
 async function echeancesProches(admin: ReturnType<typeof createAdminClient>, now: number): Promise<Echeance[]> {
   if (!stripeEnabled()) return [];
@@ -72,8 +73,8 @@ async function echeancesProches(admin: ReturnType<typeof createAdminClient>, now
     .eq("status", "actif")
     .is("canceled_at", null)
     .not("stripe_subscription_id", "is", null)
-    .gte("current_period_end", new Date(now + 25 * DAY).toISOString())
-    .lte("current_period_end", new Date(now + 32 * DAY).toISOString());
+    .gte("current_period_end", new Date(now + 35 * DAY).toISOString())
+    .lte("current_period_end", new Date(now + 45 * DAY).toISOString());
   const out: Echeance[] = [];
   for (const s of data ?? []) {
     const fin = s.current_period_end as string;
