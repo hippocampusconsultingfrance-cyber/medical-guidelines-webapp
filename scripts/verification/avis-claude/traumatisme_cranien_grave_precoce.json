@@ -1,0 +1,331 @@
+{
+ "cle": "traumatisme_cranien_grave_precoce",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "815ddf8345a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "été obtenu pour 100 % des recommandations. Parmi les recommandations, 10 sont fortes (Grade 1), 18 sont faibles (Grade 2",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "f56b1c364467",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "3b47b6d1b36b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Il faut évaluer la gravité initiale d'un traumatisé crânien",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "0a8da699951a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 – Il faut rechercher et traiter les facteurs systémiques d'agression cérébrale secondaire.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "cf1d5e4c9959",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Il faut évaluer la gravité initiale des traumatisés crâniens",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "2848439da4e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.4 – Il faut probablement évaluer la gravité initiale des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "518a9ac54156",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.5 – Il ne faut probablement pas doser les biomarqueurs en",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "1eb73612e94a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 – Il faut qu'un traumatisé crânien grave soit pris en charge",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "db4bab42fdb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – Il faut probablement maintenir une pression artérielle",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "d4c9a9c5a802",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Il faut contrôler la ventilation des traumatisés crâniens",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "16b57522f83a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 – Il faut réaliser sans délai une tomodensitométrique (TDM)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "44114244798d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 – Il faut probablement faire précocement une exploration",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "b1ffc16d099e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 – Il faut probablement réaliser un drainage ventriculaire",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "b338260914af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décompressive, la mortalité était réduite à 26,9 % (vs 48,9 %",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "f2ef7d089b50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 – En dehors d'une hypertension intracrânienne ou d'un état",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "30ab3da47dbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 – Il faut probablement avoir recours à un monitorage",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "1a009be2955e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2,5 % pour les fibres intraparenchymateuses",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u18",
+   "empreinte": "937bcfc2fa15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.3 – Il faut probablement avoir recours à un monitorage",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "de063e20f18e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.4 – Les experts proposent d'avoir recours à un monitorage",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "7113849bc7ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.1 – Il faut probablement individualiser les objectifs de pression",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u21",
+   "empreinte": "c6166e3b4c94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.2 – En l'absence de monitorage multimodal, il faut",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u22",
+   "empreinte": "ce089be4c4e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypertonique (250 mosmol) en 15 à 20 minutes en traitement",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "14f61a5eb207",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.4 – Il ne faut probablement pas faire d'hypocapnie comme",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u24",
+   "empreinte": "614cbc8cc53b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.5 – Il ne faut probablement pas administrer d'albumine à 4 %",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u25",
+   "empreinte": "62e55d36e36f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faible comparée à celle des lésions nécessitant une chirurgie",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u26",
+   "empreinte": "67bea4bf5459",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.2 – En dehors du cadre de l'urgence vitale immédiate, les",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u27",
+   "empreinte": "d945f50903cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.3 – Il faut probablement mettre en place ou poursuivre le",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u28",
+   "empreinte": "646e51433778",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précoces ou tardives de l'ordre de 1,5 à 5 %.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u29",
+   "empreinte": "63da302ebf80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10.1 – Il ne faut probablement pas induire une hypernatrémie",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u30",
+   "empreinte": "18191bcf1eec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10.2–Il ne faut pas administrer des glucocorticoïdes à forte dose",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u31",
+   "empreinte": "8ff92fdd726f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contrôle glycémique ciblant des valeurs comprises entre 8 mM/L",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u32",
+   "empreinte": "e505ad2984fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11.1 – Il faut probablement mesurer la pression intracrânienne",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u33",
+   "empreinte": "6445ee88cb7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l'enfant : 40 mmHg pour les enfants de 0 à 5 ans, 50 mmHg",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u34",
+   "empreinte": "df781eb59d71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11.3 – Il faut prendre en charge l'enfant traumatisé crânien grave dans un Trauma Center pédiatrique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u35",
+   "empreinte": "18e2f94f4516",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Retranscription partielle des RFE 2016 SFAR/SRLF « contrôle ciblé",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u36",
+   "empreinte": "4b5aeebda6e1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,331 @@
+{
+ "cle": "brule_grave",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "6281e6baa30f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont à l'origine d'environ 10 000 séjours hospitaliers chaque année, dont la moitié nécessite le recours à un",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u2",
+   "empreinte": "7af9acacf96a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "9b2318280fdd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "8a1c0b1aaf45",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "a212b1177f64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et 5%, brûlure électrique bas voltage, brûlure chimique (acide fluorhydrique).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u6",
+   "empreinte": "1ee66c5ed21c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "SCB > 10%, SCB du troisième degré >5%, nourrisson < 1 an, comorbidités sévères,",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u7",
+   "empreinte": "fc70c375bf9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la méthode standardisée de Lund et Browder (adulte ou",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u8",
+   "empreinte": "8d6ffce61fea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de requérir sans délai à un avis spécialisé en cas de brûlure grave",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u9",
+   "empreinte": "26312290399c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la télémédecine pour améliorer l'évaluation initiale du",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u10",
+   "empreinte": "8ae9e6157bc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier une admission directe en Centre de Traitement des Brûlés.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u11",
+   "empreinte": "4fa4e38c214c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "idéalement dans un Centre de Traitement des Brûlés par un praticien expérimenté.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u12",
+   "empreinte": "6f4e6fdae16c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "règle des 9 de Wallace, ayant tendance à surévaluer les lésions, et non adaptée à la pédiatrie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u13",
+   "empreinte": "5e0e9add6a48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'administrer 20 mL/kg d'une solution cristalloïde intraveineuse",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u14",
+   "empreinte": "103a430728c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent l'utilisation des solutions cristalloïdes balancées dans la prise en",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u15",
+   "empreinte": "ebf2d819aafc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser une formule d'estimation du remplissage initial des brûlés",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u16",
+   "empreinte": "93753db9e17a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'ajuster dès que possible les volumes perfusés de réanimation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u17",
+   "empreinte": "943067c3be19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surface cutanée brûlée supérieure à 30%, au-delà des 6 premières heures de prise en charge.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u18",
+   "empreinte": "35333c99c98d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ont été mesurés à environ 6 ml/kg/%SCB",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u19",
+   "empreinte": "6e70e2502d68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas intuber systématiquement un patient avec une brûlure du visage ou du cou.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u20",
+   "empreinte": "9784b018e8a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une brûlure très étendue (i.e. surface cutanée brûlée ≥ 40%).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u21",
+   "empreinte": "d8cc7c125dad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas réaliser de fibroscopie bronchique en cas de suspicion",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u22",
+   "empreinte": "06919403de3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas administrer systématiquement d'hydroxocobalamine en",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u23",
+   "empreinte": "2ae6d8eaf477",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec suspicion élevée d'intoxication majeure aux cyanures chez l'adulte ou d'intoxication modérée chez l'enfant.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u24",
+   "empreinte": "d602bbc21b23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas réaliser systématiquement une séance d'oxygénothérapie",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u25",
+   "empreinte": "4380a0b35f7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hydroxocobalamine (70 mg.kg-1, maximum 5 g)",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u26",
+   "empreinte": "1179e40e2fc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser une analgésie multimodale en titrant les médicaments",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u27",
+   "empreinte": "0523a783bf00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la kétamine par voie intraveineuse en titration",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u28",
+   "empreinte": "2be583705f72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'avoir recours à des techniques non-pharmacologiques en",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u29",
+   "empreinte": "d51a959df943",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de refroidir les brûlures des patients avec une surface cutanée",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u30",
+   "empreinte": "fd51bc311b40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de couvrir les zones brûlées dès la phase initiale",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u31",
+   "empreinte": "77e683a09945",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas administrer d'antibioprophylaxie systémique chez le",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u32",
+   "empreinte": "f443cea09b22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts proposent 10-15% chez l'enfant et 20-25 % chez l'adulte en l'absence d'état de choc.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u33",
+   "empreinte": "87cf669d0e2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de débuter un support nutritionnel dans les 12 heures suivant la",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u34",
+   "empreinte": "25e7f5f19ed4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'administrer une thromboprophylaxie à la phase initiale chez le",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u35",
+   "empreinte": "d153214cc381",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En pédiatrie, la thromboprophylaxie est indiquée dès la puberté ou si un cathéter veineux central",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u36",
+   "empreinte": "4ad7ca650c17",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
