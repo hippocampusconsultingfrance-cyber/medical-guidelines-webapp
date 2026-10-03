@@ -1,0 +1,187 @@
+{
+ "cle": "tenue_vestimentaire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "f4d87fc66948",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces RPP se substituent aux recommandations précédentes émanant de la SFAR et/ou de la SF2H, sur un même champ d'application.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u2",
+   "empreinte": "a1b9ad3b9f7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le travail de synthèse des experts et l'application de la méthode GRADE® ont abouti à 13 recommandations. Pour l'ensemble des questions, la méthode GRADE® ne pouvant pas s'appliquer en totalité",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "6c71229c4ce7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel de bloc opératoire porte une tenue dédiée au bloc opératoire, indifféremment à usage unique ou réutilisable",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "9cd979b7eb29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel de bloc opératoire porte une tenue réutilisable plutôt qu'une tenue à usage unique, pour diminuer l'impact environnemental.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "5b0cbbc5b95a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser un essai sur le terrain des différents produits sélectionnés sur les précédents critères (efficacité, coût environnemental)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "7f1cae92fd84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de souhait de se protéger du froid, le personnel de bloc opératoire porte par-dessus sa tenue une veste à manches longues, indifféremment à usage unique ou réutilisable",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "e0e2b3ed9cfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel de bloc opératoire qui souhaite se protéger du froid n'utilise pas une casaque chirurgicale stérile dans cette indication.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u8",
+   "empreinte": "1ea041db527d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel ne quitte pas le bloc opératoire avec sa tenue de bloc, pour en limiter la contamination",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u9",
+   "empreinte": "d08ae67a839d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que si le personnel doit de façon exceptionnelle répondre à un motif impérieux et quitter le bloc opératoire avec sa tenue de bloc, il change de tenue à son retour",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u10",
+   "empreinte": "7c55f5effb85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent qu'en cas de sortie du bloc opératoire pour une durée courte (de quelques minutes), une alternative puisse être de couvrir sa tenue de bloc par le port d'une blouse fermée",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u11",
+   "empreinte": "2f82c0578b4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel change de tenue de bloc en cas de souillures, et au minimum à la fin de chaque journée de travail",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u12",
+   "empreinte": "416d798846a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel de bloc opératoire porte un article coiffant, indifféremment à usage unique ou réutilisable, lors de sa présence dans l'enceinte du bloc opératoire",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u13",
+   "empreinte": "b64e627fe653",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réutilisable soumis à un entretien régulier plutôt qu'un article coiffant à usage unique, lors de sa présence dans l'enceinte du bloc opératoire, pour diminuer l'impact environnemental.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u14",
+   "empreinte": "cad818620682",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel de bloc opératoire porte un article coiffant recouvrant toute la chevelure, indifféremment une charlotte, un calot ou une cagoule",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u15",
+   "empreinte": "797c2f86bcf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel non-chirurgical de bloc opératoire porte un masque à usage médical de type II ou IIR (norme NF EN 14683:2019) en salle d'intervention",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u16",
+   "empreinte": "fb8fa28f1a9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le personnel du bloc opératoire change de masque chirurgical quand ce dernier devient humide ou présente des traces de projections de liquides biologiques",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u17",
+   "empreinte": "72853c46ebf3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ainsi, les auteurs suggèrent un changement de masque au-delà de 2 heures d'intervention. Cette préconisation repose sur une quantification de l'inoculum sur le masque",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u18",
+   "empreinte": "b8afc958ad98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que le personnel porte des chaussures réservées exclusivement à l'enceinte du bloc opératoire, en conformité avec la norme EN ISO 20347:2012. Ces chaussures réservées doivent être changées au minimum quotidiennement",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u19",
+   "empreinte": "fdc1dc435429",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le port de surchaussures ne peut se concevoir qu'à titre exceptionnel, et par-dessus des chaussures dédiées au bloc opératoire, pour assurer une protection supplémentaire en cas de risque élevé de projection de sang",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u20",
+   "empreinte": "e60475a4a0eb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
