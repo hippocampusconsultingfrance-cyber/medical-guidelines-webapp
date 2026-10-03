@@ -8,8 +8,8 @@
   --ink:#12232B;
   --ink-muted:#55696F;
   --ink-faint:#60747A; /* 4,9:1 sur blanc (WCAG AA) */
-  --brand:#0B3B54;
-  --brand-ink:#083047;
+  --brand:#0E3A78; /* bleu marine du site */
+  --brand-ink:#0B2F63;
   --accent:#0E7C86;
   --accent-ink:#0A5C64;
   --good:#276A4C;
@@ -24,9 +24,10 @@
   --focus:#1E8FA0;
   --shadow: 0 8px 24px -8px rgb(11 59 84 / 0.18);
   --radius: 10px;
-  --font-display:var(--font-archivo), 'Arial Black', sans-serif;
-  --font-body:var(--font-public-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono:var(--font-plex-mono), ui-monospace, 'SF Mono', Menlo, monospace;
+  /* Polices du site (Geist, chargées par la mise en page racine). */
+  --font-display:var(--font-geist-sans), Arial, sans-serif;
+  --font-body:var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:var(--font-geist-mono), ui-monospace, 'SF Mono', Menlo, monospace;
 }
 
 :where(.mg-app) *{box-sizing:border-box;}
@@ -93,11 +94,11 @@
 .hero h1{ font-size:2.05rem; line-height:1.15; margin-bottom:12px; }
 .hero p{ color:var(--ink-muted); font-size:1rem; max-width:60ch; }
 
-.doc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:28px; }
-@media (max-width:760px){ .doc-grid{ grid-template-columns:1fr; } }
+.doc-grid{ display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; margin-top:28px; }
+@media (max-width:760px){ .doc-grid{ grid-template-columns:minmax(0, 1fr); } }
 .doc-card{
   background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:22px 22px 20px;
-  text-decoration:none; color:var(--ink); display:flex; flex-direction:column; gap:10px; cursor:pointer;
+  text-decoration:none; color:var(--ink); display:flex; flex-direction:column; gap:10px; cursor:pointer; min-width:0;
   transition:box-shadow .15s ease, transform .15s ease; box-shadow:0 1px 2px rgb(11 59 84 / 0.05);
 }
 .doc-card:hover{ box-shadow:var(--shadow); transform:translateY(-1px); }
@@ -333,7 +334,7 @@ details.acc > summary.acc__title:hover{ background:var(--surface-2); border-radi
 .sidebar__tld{ color:#6CC5F0; }
 .sidebar__specialty{
   display:inline-block; margin-top:5px; font-family:var(--font-mono); font-size:0.64rem; font-weight:600;
-  letter-spacing:0.06em; text-transform:uppercase; color:#0B3B54; background:#9FD6DC; border-radius:5px; padding:2px 7px;
+  letter-spacing:0.06em; text-transform:uppercase; color:#0E3A78; background:#9FD6DC; border-radius:5px; padding:2px 7px;
 }
 .nav-section{ margin-top:4px; }
 .nav-section__title{

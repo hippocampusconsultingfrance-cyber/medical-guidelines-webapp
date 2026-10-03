@@ -155,8 +155,9 @@ function renderTable(rows: Cell[][]) {
 // ligne, couleur de texte) ; toute autre balise, tout attribut (sauf une
 // couleur #hex) et tout chevron isolé sont neutralisés en texte.
 const BALISES = new Set(["b", "strong", "i", "em", "u", "br", "sup", "sub", "super", "code", "font", "span"]);
-export function nettoyerHtml(fragment: unknown): string {
-  if (typeof fragment !== "string") return fragment == null ? "" : escapeHtml(String(fragment));
+export function nettoyerHtml(brut: unknown): string {
+  if (typeof brut !== "string") return brut == null ? "" : escapeHtml(String(brut));
+  const fragment = texteLisible(brut);
   let out = "";
   let last = 0;
   const re = /<(\/?)([a-zA-Z][a-zA-Z0-9]*)([^<>]*)>/g;
@@ -246,32 +247,80 @@ export function orderSocieties(societies: string[], mention: string | undefined)
   return [...societies].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
 }
 
-// Méthodologie affichée aux lecteurs : le texte de l'atelier garde quelques
-// termes internes (« chip », « disclosed », « grep », décomptes « AE:13 »).
-// On les remplace à l'affichage, sans changer le sens ni les chiffres, pour
-// que la correction survive aux réimports du contenu.
+// Termes internes de l'atelier restés dans le texte des fiches (« chip »,
+// « disclosure », « grep », « tag », notes sur le dépôt de l'atelier) :
+// remplacés à l'affichage par des formulations lisibles, sans toucher au
+// sens, aux chiffres ni aux grades, pour que la correction survive aux
+// réimports du contenu. Les règles particulières passent avant les
+// générales.
 const JARGON: [RegExp, string][] = [
-  [/chip « /g, "« "],
+  // Notes sur le processus de l'atelier, sans intérêt pour le lecteur.
+  [/ — trouvé (?:hors du processus habituel de ce dépôt )?(?:via recherche web )?\(absent de <code>library_final\.json<\/code>[^)]*\)(?:, via recherche web)?\./g, "."],
+  [/l'index interne du projet \(`library_final\.json`\)/g, "l'index interne du projet"],
+  [/ \(grep monoligne\)/g, ""],
+  [/un grep naïf ligne-par-ligne/g, "un comptage automatique ligne par ligne"],
+  [/Vérifié exhaustivement par grep \(([^)]*)\)/g, "Vérifié exhaustivement ($1)"],
+  [/Vérifié par grep exhaustif/g, "Vérifié une à une"],
+  [/par grep exhaustif/g, "une à une"],
+  [/\bgrep\b/g, "recherche automatique"],
+  // Renvois et signalements.
   [/\(disclosure en page 1 de la fiche\)/g, "(précisé en tête de la fiche)"],
-  [/voir disclosure méthodologique en page 1 de la fiche/g, "voir la note méthodologique en tête de la fiche"],
+  [/voir disclosure méthodologique en page 1(?: de la fiche)?/g, "voir la note méthodologique en tête de la fiche"],
   [/disclosure d'une incohérence source-interne/g, "incohérence interne à la source signalée"],
   [/(\d+) divergences source-internes disclosées/g, "$1 incohérences internes à la source signalées"],
-  [/incohérence disclosed/g, "incohérence signalée"],
+  [/source-internes/g, "internes à la source"],
+  [/source-interne/g, "interne à la source"],
+  [/résolution textuelle disclosée/g, "force déduite du texte"],
+  [/disclosurée/g, "signalée"],
+  [/disclosées/g, "signalées"],
+  [/disclosée/g, "signalée"],
+  [/disclosés/g, "signalés"],
+  [/disclosé(?![a-zé])/g, "signalé"],
+  [/couverts par ce dépôt/g, "couverts par ce site"],
   [/\(disclosed\)/g, "(signalé)"],
   [/\(disclosed, /g, "(signalé, "],
-  [/résolution textuelle disclosée/g, "force déduite du texte"],
-  [/disclosée/g, "signalée"],
-  [/convention bespoke propre/g, "convention propre"],
+  [/incohérence disclosed/g, "incohérence signalée"],
+  [/\bdisclosed\b/g, "signalé"],
+  [/Disclosure/g, "Précision"],
+  [/disclosure/g, "précision"],
   [/en page 1 de la fiche/g, "en tête de la fiche"],
-  [/vérifiées par grep exhaustif/g, "vérifiées une à une"],
+  // « page 1 » de la fiche (jamais « page 1 du texte source »).
+  [/\b(?:en )?page 1\b(?! du| de la source)/g, "en tête de la fiche"],
+  // Vocabulaire de mise en page.
+  [/[Cc]hips? « /g, "« "],
+  [/\bChip\b/g, "Étiquette"],
+  [/\bchips\b/g, "étiquettes"],
+  [/\bchip\b/g, "étiquette"],
   [/taguées/g, "gradées"],
+  [/tagués/g, "gradés"],
+  [/taguée/g, "gradée"],
+  [/tagué/g, "gradé"],
+  [/\btags\b/g, "mentions de grade"],
+  [/\btag\b/g, "mention de grade"],
+  [/(ACTUALISE|Actualise)\/(?:SUPERSEDE|supersede)/g, "$1"],
+  [/\bsuperseded\b/gi, "remplacée"],
+  [/\bsupersedes?\b/gi, "remplace"],
   [/seule tier numérique présente/g, "seul niveau numérique présent"],
+  [/convention bespoke propre/g, "convention propre"],
+  [/convention bespoke/g, "convention propre à ce document"],
   [/\b(par|à|de) le source\b/g, "$1 la source"],
   [/\ble source\b/g, "la source"],
+];
+
+// Décomptes du champ « Méthodologie » de la carte (« AE:13 », « GRADE1 ») :
+// propres à ce champ, jamais appliqués au contenu (doses « 1:1000 »).
+const DECOMPTES: [RegExp, string][] = [
   [/GRADE([12])\b/g, "GRADE $1"],
   [/([\wÉ/+-]+(?: \d)?):(\d+)/g, "$1 : $2"],
 ];
 
+const appliquer = (texte: string, regles: [RegExp, string][]) =>
+  regles.reduce((t, [motif, remplacement]) => t.replace(motif, remplacement), texte);
+
+export function texteLisible(texte: string) {
+  return appliquer(texte, JARGON);
+}
+
 export function methodologieLisible(texte: string) {
-  return JARGON.reduce((t, [motif, remplacement]) => t.replace(motif, remplacement), texte);
+  return appliquer(texteLisible(texte), DECOMPTES);
 }

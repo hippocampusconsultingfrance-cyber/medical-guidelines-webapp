@@ -32,13 +32,8 @@ export default async function ComptePage({ searchParams }: PageProps<"/compte">)
   const { r } = await searchParams;
 
   return (
-    <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
-      <p className="text-sm">
-        <Link href="/" className="text-[#1A74A6] underline">
-          ← Retour aux fiches
-        </Link>
-      </p>
-      <h1 className="mt-4 text-2xl font-semibold text-slate-900">Mon compte</h1>
+    <div className="mx-auto max-w-2xl px-6 py-10">
+      <h1 className="text-2xl font-bold text-[#0E3A78]">Mon compte</h1>
       <p className="mt-2 text-sm text-slate-600">
         Adresse email : <strong>{user.email}</strong>
       </p>
