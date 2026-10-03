@@ -68,8 +68,9 @@ export default async function DemarchePage() {
           <h2 className="text-xl font-bold text-[#0E3A78]">Sociétés savantes et auteurs : à votre écoute</h2>
           <p className="mt-3 leading-relaxed text-slate-700">
             Vous représentez une société savante ou êtes l&apos;auteur d&apos;une recommandation ? Toute demande
-            — correction, mention, mise à jour ou retrait d&apos;une fiche — est traitée en priorité, et une
-            fiche peut être retirée du site immédiatement.
+            — correction, mention, mise à jour ou retrait d&apos;une fiche — est traitée en priorité : la fiche
+            est retirée du site sur simple demande pendant l&apos;examen, et une réponse motivée vous est
+            adressée sous 7 jours.
           </p>
           <p className="mt-3">
             <a href="mailto:contact@medical-guidelines.net" className="font-semibold text-[#1A74A6] underline">

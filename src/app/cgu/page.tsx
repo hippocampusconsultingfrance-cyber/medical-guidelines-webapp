@@ -10,7 +10,7 @@ export default function CguPage() {
       <h1 className="text-2xl font-bold text-[#0E3A78]">
         Conditions Générales d&apos;Utilisation
       </h1>
-      <p className="mt-2 text-slate-500">Dernière mise à jour : 2026.</p>
+      <p className="mt-2 text-slate-500">Dernière mise à jour : 3 octobre 2026.</p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
         1. Objet et accès au service
@@ -38,8 +38,19 @@ export default function CguPage() {
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
-        2. Nature du contenu — absence de valeur médicale opposable
+        2. Nature du service et du contenu — absence de valeur médicale opposable
       </h2>
+      <p className="mt-2">
+        Medical Guidelines est un service d&apos;aide à la lecture des
+        recommandations professionnelles : il permet de les retrouver, de les
+        lire sous forme de synthèses rédigées et relues par l&apos;éditeur, de
+        les comparer et d&apos;être alerté de leurs mises à jour. Les documents
+        officiels des recommandations ne sont ni vendus ni diffusés par le
+        site : ils restent l&apos;œuvre et la propriété de leurs auteurs, en
+        accès libre sur leurs sites, vers lesquels chaque fiche renvoie.
+        L&apos;abonnement rémunère le service : rédaction et relecture médicale
+        des synthèses, outils de recherche, alertes et hébergement.
+      </p>
       <p className="mt-2">
         Les fiches publiées sont des synthèses indépendantes, produites à
         titre d&apos;aide-mémoire, à partir des documents publiés par les
@@ -52,18 +63,45 @@ export default function CguPage() {
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
-        3. Compte utilisateur
+        3. Propriété intellectuelle et usage autorisé
+      </h2>
+      <p className="mt-2">
+        Les recommandations citées (libellés, grades, tableaux, figures)
+        appartiennent à leurs auteurs et à leurs éditeurs ; les fiches les
+        citent avec leur référence et le lien vers le texte officiel. Les
+        synthèses, leur sélection, leur organisation, la base de données et le
+        logiciel du site appartiennent à l&apos;éditeur (articles L341-1 et
+        suivants du code de la propriété intellectuelle pour la base de
+        données).
+      </p>
+      <p className="mt-2">
+        Le compte donne un droit d&apos;accès personnel, pour un usage
+        professionnel. Sont interdits : la copie ou l&apos;extraction
+        systématique des fiches, y compris par un robot ou un programme ; la
+        revente ou la diffusion du contenu ; le contournement des mesures de
+        protection du site. En cas de lecture à un rythme anormal, la lecture
+        est suspendue automatiquement pour une durée limitée, et un
+        administrateur en est prévenu (voir la{" "}
+        <a href="/confidentialite" className="underline">
+          politique de confidentialité
+        </a>
+        ).
+      </p>
+
+      <h2 className="mt-8 text-lg font-semibold text-slate-900">
+        4. Compte utilisateur
       </h2>
       <p className="mt-2">
         La création d&apos;un compte nécessite la communication de données
         d&apos;identification (nom, prénom, téléphone, email, profession) et
-        la validation de l&apos;adresse email. L&apos;utilisateur est
-        responsable de la confidentialité de son mot de passe et de toute
+        la validation de l&apos;adresse email. Le compte est personnel : ses
+        identifiants ne doivent être ni partagés ni prêtés. L&apos;utilisateur
+        est responsable de la confidentialité de son mot de passe et de toute
         activité effectuée depuis son compte.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
-        4. Données personnelles
+        5. Données personnelles
       </h2>
       <p className="mt-2">
         Le traitement des données personnelles est décrit intégralement dans
@@ -78,7 +116,7 @@ export default function CguPage() {
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
-        5. Résiliation
+        6. Résiliation
       </h2>
       <p className="mt-2">
         L&apos;utilisateur peut supprimer son compte à tout moment. La
@@ -87,7 +125,7 @@ export default function CguPage() {
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
-        6. Droit applicable
+        7. Droit applicable
       </h2>
       <p className="mt-2">
         Les présentes CGU sont soumises au droit français.

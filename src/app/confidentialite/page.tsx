@@ -11,7 +11,7 @@ export default function ConfidentialitePage() {
         Politique de Confidentialité
       </h1>
       <p className="mt-2 text-slate-500">
-        Dernière mise à jour : 2026. Conforme au Règlement Général sur la
+        Dernière mise à jour : 3 octobre 2026. Conforme au Règlement Général sur la
         Protection des Données (RGPD).
       </p>
 
@@ -80,7 +80,7 @@ export default function ConfidentialitePage() {
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
-        3. Finalités et bases légales — deux finalités bien distinctes
+        3. Finalités et bases légales
       </h2>
       <p className="mt-2">
         <strong>3.1. Fonctionnement du compte (obligatoire).</strong> Vos
@@ -99,6 +99,16 @@ export default function ConfidentialitePage() {
         consentement explicite (article 6.1.a du RGPD), recueilli
         séparément de l&apos;acceptation des CGU, jamais pré-coché, et
         retirable à tout moment sans affecter votre accès au service.
+      </p>
+      <p className="mt-2">
+        <strong>3.3. Statistiques anonymes communiquées aux auteurs.</strong>{" "}
+        Nous pouvons communiquer aux sociétés savantes et aux auteurs des
+        recommandations des statistiques anonymes et agrégées sur la
+        consultation de leurs recommandations (nombre de lecteurs par fiche,
+        par mois et par spécialité), seulement au-delà de 10 lecteurs, et
+        jamais l&apos;identité ni le parcours d&apos;un membre. Base légale :
+        intérêt légitime de l&apos;éditeur à rendre compte aux auteurs de la
+        diffusion de leurs recommandations (article 6.1.f du RGPD).
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">

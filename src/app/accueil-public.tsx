@@ -224,12 +224,12 @@ export default function AccueilPublic({ recentes = [] }: { recentes?: PublicFich
         {/* Sources */}
         <section aria-label="Sources" className="border-y border-slate-100 bg-white">
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:gap-6 sm:px-6">
-            <p className="text-sm text-slate-500">Synthèses des recommandations publiées par</p>
+            <p className="text-sm text-slate-500">Synthèses indépendantes des recommandations publiées par</p>
             <p className="flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm font-bold tracking-wide text-[#0E3A78]">
               <span>SFAR</span>
               <span>SRLF</span>
               <span>HAS</span>
-              <span className="font-medium text-slate-500">et sociétés partenaires</span>
+              <span className="font-medium text-slate-500">et d&apos;autres sociétés savantes</span>
             </p>
           </div>
         </section>
