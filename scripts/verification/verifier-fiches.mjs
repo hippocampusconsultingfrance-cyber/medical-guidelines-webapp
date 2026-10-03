@@ -23,8 +23,9 @@
 //   --texte              envoyer aux IA le texte extrait du PDF plutôt que le
 //                        PDF lui-même (moins cher, mais tableaux et figures en
 //                        image deviennent invérifiables)
-// Variables : ANTHROPIC_API_KEY, GEMINI_API_KEY ; CLAUDE_MODEL (par défaut
-// claude-opus-5-5) ; GEMINI_MODEL (par défaut gemini-3.8-flash, disponible
+// Variables : ANTHROPIC_API_KEY, GEMINI_API_KEY ; ANTHROPIC_WORKSPACE_ID
+// (seulement pour une clé Anthropic non rattachée à un espace de travail) ;
+// CLAUDE_MODEL (par défaut claude-opus-5-5) ; GEMINI_MODEL (par défaut gemini-3.8-flash, disponible
 // sans facturation ; gemini-3.1-pro-preview, plus puissant, demande la
 // facturation activée sur le projet Google).
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -234,7 +235,15 @@ function compter(ia, modele, u) {
   for (const c of ["entree", "cache_ecrit", "cache_lu", "sortie"]) usage[k][c] += u[c] || 0;
 }
 
-const anthropic = IA.includes("claude") ? new Anthropic() : null;
+const anthropic = IA.includes("claude")
+  ? new Anthropic(
+      process.env.ANTHROPIC_WORKSPACE_ID ? { defaultHeaders: { "anthropic-workspace-id": process.env.ANTHROPIC_WORKSPACE_ID } } : {},
+    )
+  : null;
+// Une IA dont le tout premier appel est refusé (clé, espace de travail,
+// modèle, facturation) échouerait sur toutes les fiches : la vérification
+// s'arrête alors aussitôt, avec le message de l'API.
+const aRepondu = { claude: false, gemini: false };
 async function appelClaude(source, lot) {
   let m;
   try {
@@ -270,8 +279,10 @@ async function appelClaude(source, lot) {
       throw new ErreurFatale(`Claude : clé refusée (${e.status})`);
     }
     if (e instanceof Anthropic.NotFoundError) throw new ErreurFatale(`Claude : modèle ${CLAUDE_MODEL} introuvable`);
+    if (e instanceof Anthropic.BadRequestError && !aRepondu.claude) throw new ErreurFatale(`Claude : requête refusée (${e.message})`);
     throw e;
   }
+  aRepondu.claude = true;
   compter("claude", m.model, {
     entree: m.usage.input_tokens,
     cache_ecrit: m.usage.cache_creation_input_tokens,
@@ -307,8 +318,9 @@ async function appelGemini(source, lot) {
         body: JSON.stringify(corps),
       },
     );
-    if ((r.status === 429 || r.status >= 500) && essai < 4) {
-      await attendre(5000 * 2 ** essai);
+    // Surcharge passagère (429, 503…) : jusqu'à 6 essais, 10 s à 60 s d'attente.
+    if ((r.status === 429 || r.status >= 500) && essai < 6) {
+      await attendre(Math.min(60000, 10000 * 2 ** (essai - 1)));
       continue;
     }
     const j = await r.json().catch(() => ({}));
@@ -316,7 +328,9 @@ async function appelGemini(source, lot) {
     if (r.status === 401 || r.status === 403 || r.status === 404 || /API key/i.test(j.error?.message ?? "")) {
       throw new ErreurFatale(message);
     }
+    if (r.status === 400 && !aRepondu.gemini) throw new ErreurFatale(message);
     if (!r.ok) throw new Error(message);
+    aRepondu.gemini = true;
     const u = j.usageMetadata ?? {};
     compter("gemini", j.modelVersion || GEMINI_MODEL, {
       entree: (u.promptTokenCount ?? 0) - (u.cachedContentTokenCount ?? 0),
@@ -495,6 +509,20 @@ for (const r of resultats) {
   const accord = deux.length ? `${Math.round((100 * deux.filter((u) => u.avis[IA[0]].verdict === u.avis[IA[1]].verdict).length) / deux.length)} %` : "—";
   if (r.unites.some((u) => !u.couleur)) L.push(`| ${r.titre} (\`${r.cle}\`) | ${r.unites.length} | vérification interrompue | | | | |`);
   else L.push(`| ${r.titre} (\`${r.cle}\`) | ${r.unites.length} | ${n("rouge")} | ${n("orange")} | ${n("vert")} | ${n("sans_objet")} | ${accord} |`);
+}
+if (IA.length) {
+  L.push("", "## Réponses des IA", "");
+  const toutes = resultats.flatMap((r) => r.unites.filter((u) => u.couleur && !r.erreur_source));
+  for (const m of IA) {
+    const echecs = toutes.filter((u) => u.avis[m]?.verdict === "erreur");
+    const motifs = {};
+    for (const u of echecs) motifs[u.avis[m].explication] = (motifs[u.avis[m].explication] ?? 0) + 1;
+    const principal = Object.entries(motifs).sort((a, b) => b[1] - a[1])[0];
+    L.push(
+      `- ${NOMS[m]} : ${toutes.length - echecs.length} unité(s) vérifiée(s) sur ${toutes.length}` +
+        (principal ? ` ; sans réponse : ${echecs.length}, surtout « ${tronquer(principal[0], 200)} »` : ""),
+    );
+  }
 }
 const lignesUsage = Object.values(usage);
 if (lignesUsage.length) {

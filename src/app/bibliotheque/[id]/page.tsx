@@ -538,6 +538,21 @@ export default async function FichePage({
         ))}
         {toc.length > 1 && <AccordionControls />}
         <div dangerouslySetInnerHTML={{ __html: body }} />
+        <p className="block-p" style={{ fontSize: "0.82rem", color: "var(--ink-muted)", marginTop: 18 }}>
+          Recommandations citées d&apos;après{" "}
+          {doc.societies.length ? doc.societies.map((s) => lib.societyNames[s] ?? s).join(", ") : "leurs auteurs"}, «&nbsp;
+          {doc.title}&nbsp;»{doc.publication_date ? ` (${doc.publication_date.slice(0, 4)})` : ""}. Elles restent
+          l&apos;œuvre et la propriété de leurs auteurs
+          {extra?.source_url ? (
+            <>
+              {" "}; texte intégral en accès libre :{" "}
+              <a href={extra.source_url} target="_blank" rel="noopener noreferrer">
+                document source officiel
+              </a>
+            </>
+          ) : null}
+          . Synthèse indépendante, ni éditée ni validée par les sociétés savantes citées.
+        </p>
         <section className="unlock-box" id="corrections" style={{ userSelect: "text", WebkitUserSelect: "text" }}>
           <h2 style={{ fontSize: "1rem", margin: 0 }}>Journal des corrections de cette fiche</h2>
           {typeof r === "string" && r.startsWith("correction") && message && (
