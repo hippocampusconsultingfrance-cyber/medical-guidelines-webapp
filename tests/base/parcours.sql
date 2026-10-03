@@ -599,4 +599,38 @@ select pg_temp.ok(exists (select 1 from public.document_societies where role = '
 select pg_temp.ok(pg_temp.refuse('update public.document_societies set role = ''sponsor''', 'document_societies_role_check'),
   'rôles : valeur hors liste refusée');
 
+-- ---------------------------------------------------------------------------
+-- 26. Durées de conservation : journal de lecture 30 jours, comptes inactifs
+--     depuis 3 ans (jamais l'équipe ni un abonnement en cours).
+-- ---------------------------------------------------------------------------
+\i supabase/migrations/20261003120000_purge_conservation.sql
+\set inactif '00000000-0000-0000-0000-00000000a0e1'
+\set inactif_abonne '00000000-0000-0000-0000-00000000a0e2'
+\set recent '00000000-0000-0000-0000-00000000a0e3'
+insert into auth.users (id, email, raw_user_meta_data, email_confirmed_at, created_at, last_sign_in_at) values
+  (:'inactif', 'inactif@test.fr', '{"prenom":"Inactif","specialty_slug":"anesthesie_reanimation"}', now(), now() - interval '5 years', now() - interval '4 years'),
+  (:'inactif_abonne', 'abonne@test.fr', '{"prenom":"Abonne","specialty_slug":"anesthesie_reanimation"}', now(), now() - interval '5 years', now() - interval '4 years'),
+  (:'recent', 'recent@test.fr', '{"prenom":"Recent","specialty_slug":"anesthesie_reanimation"}', now(), now() - interval '5 years', now() - interval '2 years');
+insert into public.subscriptions (user_id, plan, status, current_period_end)
+values (:'inactif_abonne', 'premium', 'actif', null);
+update auth.users set created_at = now() - interval '5 years', last_sign_in_at = now() - interval '4 years' where id = :'validateur';
+insert into public.content_reads (user_id, document_id, read_at)
+select :'recent', id, now() - interval '31 days' from public.documents order by id limit 1;
+insert into public.content_reads (user_id, document_id, read_at)
+select :'recent', id, now() - interval '1 day' from public.documents order by id limit 1;
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok(pg_temp.refuse('select public.purger_donnees_expirees()', 'permission'), 'purge : refusée à un membre');
+reset role;
+set role service_role;
+select public.purger_donnees_expirees() as purge \gset
+reset role;
+select pg_temp.ok(not exists (select 1 from auth.users where id = :'inactif'), 'purge : compte inactif depuis 3 ans supprimé');
+select pg_temp.ok(not exists (select 1 from public.profiles where id = :'inactif'), 'purge : profil supprimé avec le compte');
+select pg_temp.ok(exists (select 1 from auth.users where id = :'inactif_abonne'), 'purge : abonnement en cours jamais supprimé');
+select pg_temp.ok(exists (select 1 from auth.users where id = :'validateur'), 'purge : équipe éditoriale jamais supprimée');
+select pg_temp.ok(exists (select 1 from auth.users where id = :'recent'), 'purge : compte actif il y a 2 ans conservé');
+select pg_temp.ok((select count(*) from public.content_reads where user_id = :'recent') = 1, 'purge : lectures de plus de 30 jours effacées, récentes gardées');
+select pg_temp.ok(exists (select 1 from public.audit_log where action = 'purge_conservation'), 'purge : tracée au journal (nombres seulement)');
+
 select 'Parcours membre : toutes les vérifications sont passées.';
