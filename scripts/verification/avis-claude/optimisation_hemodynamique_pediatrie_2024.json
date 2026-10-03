@@ -1,0 +1,142 @@
+{
+ "cle": "optimisation_hemodynamique_pediatrie_2024",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ac11e1f762a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le travail de synthèse des experts et l'application de la méthode GRADE ont abouti à 9 avis d'experts. Un accord fort a été obtenu pour 9 avis d'experts.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "a0d2c9012d84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant anesthésié de moins de 6 mois, les experts suggèrent de maintenir une pression artérielle moyenne peropératoire supérieure à 35 mmHg",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u3",
+   "empreinte": "b602e76561c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les enfants anesthésiés de 6 mois à 2 ans, les experts suggèrent de maintenir une pression artérielle moyenne peropératoire supérieure à 43 mmHg",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u4",
+   "empreinte": "8fb703273e1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de maintenir une pression artérielle moyenne peropératoire supérieure à la valeur calculée par la formule [1,5 x âge (ans) + 40] afin de limiter la morbidité postopératoire.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u5",
+   "empreinte": "3cb424717b22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts ne sont pas en mesure d'émettre une recommandation concernant l'intérêt de l'utilisation du monitorage du volume d'éjection systolique pour optimiser l'hémodynamique",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u6",
+   "empreinte": "6e5a49782183",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts ne sont pas en mesure d'émettre une recommandation concernant l'intérêt de l'utilisation des indices dynamiques pour optimiser l'expansion volémique",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u7",
+   "empreinte": "04cff135c4fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser le Doppler œsophagien pour optimiser l'hémodynamique peropératoire du patient pédiatrique à risque élevé ou très élevé, lorsque la tête du patient est accessible",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u8",
+   "empreinte": "b3438c8165c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que la surveillance de la lactatémie, dans des circonstances potentiellement associées à une hypoxie tissulaire telles qu'un bas débit peropératoire peut être utile",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u9",
+   "empreinte": "0b36cffa0126",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ne sont pas en mesure d'émettre une recommandation concernant la DIVA-CO2 et la ScvO2.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u10",
+   "empreinte": "f0a0dadd95b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent l'utilisation d'un monitorage de la perfusion/oxygénation tissulaire cérébrale chez l'enfant de moins de 1 an opéré d'une chirurgie majeure ou à risque cérébral particulier",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u11",
+   "empreinte": "4e928347516f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent chez l'enfant de privilégier l'expansion volémique initiale par un soluté cristalloïde balancé, limité dans le temps",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u12",
+   "empreinte": "056eca030654",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le nouveau-né et le jeune nourrisson, les experts suggèrent d'utiliser l'albumine à 4 ou 5 % après l'expansion volémique initiale par un soluté cristalloïde balancé",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u13",
+   "empreinte": "d645e02fc330",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent d'utiliser un vasoconstricteur avec des doses rapportées au poids majorées par rapport à l'adulte afin de limiter la durée de l'hypotension artérielle.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u14",
+   "empreinte": "a6f1e5b5e1e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ne sont pas en mesure d'émettre une recommandation concernant quel vasoconstricteur utiliser pour la population pédiatrique.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u15",
+   "empreinte": "60f6bbd56717",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

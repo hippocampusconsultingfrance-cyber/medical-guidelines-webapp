@@ -1,0 +1,115 @@
+{
+ "cle": "erreurs_medicamenteuses_ar_2016",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "91706b4f8447",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La fréquence élevée des erreurs médicamenteuses en anesthésie réanimation, leur gravité potentielle et leur caractère évitable, justifient l'actualisation de préconisations pratiques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "f5e9b95b7d80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette réflexion doit aboutir à la mise en œuvre de mesures de prévention et de traitement spécifiques en particulier par une analyse des EM selon des méthodes validées (REMED, ALARM, RMM) et retour d'expérience (REX).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "92ea064a31a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une équipe pluri-professionnelle, incluant au minimum médecin anesthésiste réanimateur, cadre de santé, IADE et IDE de SSPI ou de réanimation et pharmacien, doit être constituée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "db424f6b2eba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin d'organiser la conciliation médicamenteuse grâce à l'utilisation d'outils adaptés, dont le dossier pharmaceutique (DP) dès la consultation d'anesthésie.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "3c833ba9190a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle doit porter notamment sur la prévention des erreurs de préparation, reconstitution et des erreurs d'administration en anesthésie réanimation. Une formation utilisant les outils de la simulation en santé doit être privilégiée.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "55e906f76a3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vigilance particulière pour les agents sédatifs et les vasopresseurs le plus souvent responsables des erreurs médicamenteuses en réanimation.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "aaaf1b2ae387",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "En complément, certaines mesures actives comme la double lecture de l'étiquette avant injection par une seconde personne ou l'utilisation de seringues étiquetées avec code barre et utilisation avant l'injection d'un lecteur énumérant et/ou affichant le nom du produit sont peut-être des mesures efficaces",
+   "explication": "La source dit que double lecture et seringues à code-barres sont « peut-être des mesures efficaces » ; la fiche les présente sans cette réserve. Elle omet aussi l'absence de robinets sur les tubulures d'ALR.",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "edc861f1a2b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le stockage des médicaments à haut risque [1-5], tel que le KCl doit être évité au maximum. Si celui-ci est tout de même réalisé, des précautions particulières concernant le stockage, le rangement et l'étiquetage, la délivrance doivent être appliquées",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "6c3d0746433f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les caractéristiques techniques des étiquettes de seringues sont régies par la norme ISO 26825.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "4c6be5884211",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les seringues pré remplies devraient bénéficier d'un choix prioritaire pour les médicaments d'urgence, non utilisés systématiquement, tels que l'atropine, l'éphédrine ou la phényléphrine",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "e1cb00d5dfcf",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "Toute erreur médicamenteuse potentielle ou Page 8 SYNTHESE Préconisations 2016 Prévention des erreurs médicamenteuses en A-R avérée sans évènement indésirable doit être déclarée directement par le professionnel",
+   "explication": "La source impose la déclaration au Guichet Erreurs Médicamenteuses de l'ANSM (« doit être déclarée ») ; la fiche la présente comme seulement « possible ».",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "b4fa967b35b5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
