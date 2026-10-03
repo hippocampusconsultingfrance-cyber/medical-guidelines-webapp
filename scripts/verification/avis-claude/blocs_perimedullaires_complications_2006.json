@@ -1,0 +1,799 @@
+{
+ "cle": "blocs_perimedullaires_complications_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "23d00ca37ef0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "d7d834daa953",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les facteurs de risque d'hypotension sont le niveau sensitif élevé du bloc induit, le grand âge, un risque ASA élevé, la grossesse, l'existence d'une hypertension artérielle",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u3",
+   "empreinte": "a19874226a54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'importance de la chute de la pression artérielle « tolérable » varie selon le terrain du patient, le statut hémodynamique et le type d'intervention (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u4",
+   "empreinte": "2bb02b5806a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En obstétrique, il est probable que toute diminution de la pression artérielle est à corriger (grade B).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u5",
+   "empreinte": "0638d8cd8f79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'efficacité du remplissage par cristalloïdes est insuffisante pour prévenir toute survenue d'une hypotension artérielle (grade A).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u6",
+   "empreinte": "52d8d5a88e3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de colloïdes (comparée aux cristalloïdes) est associée à une réduction significative de l'incidence des hypotensions et une réduction des besoins complémentaires en vasopresseurs (grade A).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u7",
+   "empreinte": "f10ef231d2f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'extrême fréquence de l'hypotension et du risque fœtal lié à une hypotension maternelle persistante ou profonde (grade A).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u8",
+   "empreinte": "e7005a50d8f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration de l'éphédrine par voie intramusculaire est déconseillée (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u9",
+   "empreinte": "681004daba76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La phényléphrine serait plus efficace que l'éphédrine, elle peut être administrée seule ou en association avec l'éphédrine (grade B).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u10",
+   "empreinte": "d1fc1b84fedf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les médicaments sympathomimétiques représentent le traitement le plus adapté pour corriger rapidement l'hypotension",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u11",
+   "empreinte": "59e0949291e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Leur administration doit être précoce, sans attendre que l'hypotension soit profonde ou prolongée (grade A).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u12",
+   "empreinte": "31f26422c71d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'administration d'agents sympathomimétiques d'action directe comme la phényléphrine ou l'adrénaline doit être précoce (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u13",
+   "empreinte": "25cb4d7a1866",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "f133d96df691",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle doit être considérée a priori comme un signe d'hypotension artérielle et un signe d'alerte précurseur de complication cardiovasculaire plus grave (arrêt cardiaque)",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u15",
+   "empreinte": "8c43ee7923da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La correction de l'hypotension par un vasopresseur (éphédrine, adrénaline) est prioritaire, et l'atropine ne doit pas être utilisée de première intention (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u16",
+   "empreinte": "117a6b07fff8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les arrêts cardiaques sont souvent précédés d'une bradycardie, cette dernière pouvant être considérée comme un signe d'alerte (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u17",
+   "empreinte": "81caae28c191",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un arrêt cardiaque peut survenir même tardivement après l'injection de l'anesthésique local, y compris en SSPI (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u18",
+   "empreinte": "037664c061e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et la mise en place du ciment en cas de matériel orthopédique prothétique ont été plusieurs fois retrouvées comme associées à la survenue d'un arrêt cardiaque (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u19",
+   "empreinte": "94bd34330955",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "insuffisante des pertes sanguines, voire des défauts de surveillance ont été retrouvés dans plusieurs cas d'arrêts cardiaques ayant entraîné un décès (grade D).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u20",
+   "empreinte": "a8c7ca3a17d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il apparaît important de recourir à l'adrénaline plutôt que de chercher à augmenter les doses d'éphédrine (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u21",
+   "empreinte": "34a1b5545dac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévention en APD passe par des injections lentes et fractionnées (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u22",
+   "empreinte": "5160369149aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vasopresseurs et une expansion volémique (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u23",
+   "empreinte": "8d57c85ad535",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "8555d16e1e54",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "48d33ee0ffe6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La principale cause de détresse respiratoire est liée aux morphiniques, et son incidence est de l'ordre de 1/1000 avec la morphine administrée en péridurale.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u26",
+   "empreinte": "513ecbc7fa3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les facteurs de risque sont l'administration de doses élevées, l'emploi de morphiniques hydrophiles (morphine), un âge élevé, une insuffisance respiratoire préexistante",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u27",
+   "empreinte": "8aef4f315509",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance d'un score de sédation fait partie de la surveillance. Le transfert en soins continus est indiqué.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u28",
+   "empreinte": "aa1f8a4832aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après administration continue péridurale, le risque persiste 12 à 24 heures pour la morphine et quatre à six heures pour un morphinique liposoluble après l'arrêt de l'administration.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u29",
+   "empreinte": "ac1dd9ed877f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par l'administration intraveineuse d'un antagoniste morphinique (naloxone par bolus titrés jusqu'à 0,4 mg).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u30",
+   "empreinte": "f580c5afe641",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "a583c39373b5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "8012278672b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "deux situations : soit lors d'une injection intravasculaire involontaire, soit par résorption sanguine d'une dose trop élevée depuis le site d'injection.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u33",
+   "empreinte": "f61fe6adc06a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Seule la tachycardie induite par une dose-test à la recherche de signes de passage intravasculaire a une valeur positive.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u34",
+   "empreinte": "2d439b03c6e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trois niveaux de toxicité peuvent être distingués : les prodromes, la convulsion, et la toxicité cardiaque dans les cas les plus sévères.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u35",
+   "empreinte": "705488762659",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation des benzodiazépines ou du thiopental est efficace pour traiter les convulsions, mais doit être prudente",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u36",
+   "empreinte": "35b6983887f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une réanimation prolongée peut être nécessaire, parfois de plus d'une heure.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u37",
+   "empreinte": "593b701a9f19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les bolus d'adrénaline doivent être limités à 5–10 µg/kg.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u38",
+   "empreinte": "6a14a340e6b9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "5249c6aab185",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les facteurs de risque sont une ergonomie sous-optimale, le mode de présentation des produits, la multiplicité des produits à injecter",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u40",
+   "empreinte": "96d34f9451d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévention passe par une meilleure identification des médicaments, une bonne ergonomie",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u41",
+   "empreinte": "ba9270f412e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas de traitement spécifique d'une erreur d'injection.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u42",
+   "empreinte": "c1248c1b0738",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les complications neurologiques survenant après anesthésie périmédullaire ne sont pas toutes provoquées par l'anesthésie locorégionale.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u43",
+   "empreinte": "1e440a3e92c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une évaluation neurologique doit toujours être réalisée avant la réalisation d'une anesthésie périmédullaire, y compris dans les conditions de l'urgence (traumatologie) (grade C).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u44",
+   "empreinte": "5140d64e4f77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De ce fait, la lidocaïne ne doit plus être utilisée en rachianesthésie (grade B).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u45",
+   "empreinte": "0230c4406ea6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "alertant le praticien qui doit interrompre alors le geste en cours (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u46",
+   "empreinte": "faa2a9f78371",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de réaliser une anesthésie périmédullaire chez un patient adulte endormi (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u47",
+   "empreinte": "a4070ac55761",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nerveuse doit être entreprise dès que le patient ne récupère pas un bloc sensitif ou moteur dans un temps correspondant à la durée attendue de son effet (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u48",
+   "empreinte": "77ac0f608c8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "impose donc une surveillance neurologique dans la période postanesthésique (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u49",
+   "empreinte": "46907f0c1ae7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'évaluation neurologique à la sortie de la SSPI est un point important de la surveillance",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u50",
+   "empreinte": "756f85180c79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit inclure la recherche d'une cause chirurgicale (ex. : plâtre trop serré, corps étranger, syndrome des loges, posture…) (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u51",
+   "empreinte": "7b9cd1baff61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De ce fait, la lidocaïne ne doit plus être utilisée en rachianesthésie (grade B).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u52",
+   "empreinte": "57231fd8a364",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "ebeed1a36a2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une chirurgie de décompression médullaire en urgence doit être discutée en cas d'hématome ou d'abcès périduraux.",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u54",
+   "empreinte": "48a177c44740",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La rachianesthésie est donc contre-indiquée lors d'une bactériémie ou dans les états septiques graves (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u55",
+   "empreinte": "910df6195bbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le diabète, l'alcool et une corticothérapie sont suspectés comme facteurs facilitant dans des observations isolées (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u56",
+   "empreinte": "48cc0cf935c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de foyers infectieux cutanés à proximité est un facteur de risque de colonisation des cathéters (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u57",
+   "empreinte": "7dde85eb84dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "habillage chirurgical en cas de mise en place d'un cathéter (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u58",
+   "empreinte": "0394e4e561c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La durée du cathétérisme péridural est un facteur de risque d'infection bactérienne, ainsi que le diabète (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u59",
+   "empreinte": "15e942de64d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cathéter péridural (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u60",
+   "empreinte": "36f64d0c18c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'antibiothérapie associée ou non au drainage percutané ou chirurgical (grade C). Un avis neurochirurgical est indispensable.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u61",
+   "empreinte": "643ae5052df2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'incidence des méningites après rachianesthésie est de l'ordre de 0,1/1000.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u62",
+   "empreinte": "a5729f271d08",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "5ad21b96eaba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La survenue de céphalées après une brèche durale dépend principalement de la taille et du type de",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u64",
+   "empreinte": "eca889ed316e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce caractère positionnel est central dans le diagnostic (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u65",
+   "empreinte": "277052fd972b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faire rechercher une autre cause, notamment un hématome sous-dural ou une thrombose veineuse cérébrale (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u66",
+   "empreinte": "0b53fd4513ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les examens complémentaires ne sont utiles au diagnostic que dans les cas atypiques (grade D).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u67",
+   "empreinte": "3e9d0fdd1244",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "caféine peut être utilisée à des doses de 300 à 500 mg deux fois par jour, per os ou par voie intraveineuse (grade B).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u68",
+   "empreinte": "47fadfa23652",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Son efficacité est réelle, mais transitoire, avec une réapparition des symptômes à l'arrêt du traitement (grade B).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u69",
+   "empreinte": "76adad4316f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traitement de référence des céphalées postponction durale est le blood-patch péridural (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u70",
+   "empreinte": "6f880bf31105",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas obligatoire de réaliser des investigations paracliniques pour poser l'indication d'un bloodpatch (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u71",
+   "empreinte": "67635abb57f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "brèche évidente, il n'est pas recommandé d'attendre plus de 48 heures pour réaliser le blood-patch (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u72",
+   "empreinte": "bfe6b71cb411",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conditions d'asepsie rigoureuses (grade D).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u73",
+   "empreinte": "1231b78002a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de dépasser un volume de 20 ml (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u74",
+   "empreinte": "d034d5759820",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'injection sera arrêtée plus précocement si le patient décrit une",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u75",
+   "empreinte": "deef1c448d5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "deuxième blood-patch peut être réalisé qui rapproche le taux de succès de 100 % (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u76",
+   "empreinte": "8b9254df6d03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La réalisation d'un blood-patch pour céphalée ne représente pas une contre-indication à une anesthésie–analgésie péridurale ultérieure (grade C).",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u77",
+   "empreinte": "7b06865ef043",
+   "verdict": "ecart",
+   "type_ecart": "population",
+   "citation": "il n'y a pas d'argument pour recommander la réalisation d'un blood-patch préventif en obstétrique par le cathéter péridural posé dans un deuxième temps (grade C).",
+   "explication": "La source limite cet énoncé à l'obstétrique ; la fiche l'énonce sans cette précision.",
+   "page": 32
+  },
+  {
+   "id": "u78",
+   "empreinte": "b8ba50f72832",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u79",
+   "empreinte": "93f1ce17ac46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la prophylaxie des NVPO, le contrôle de l'hémodynamique est primordial (grade C).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u80",
+   "empreinte": "0433da48c5d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doses (dropéridol 0,625 à 1,25 mg) est indiquée (grade A).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u81",
+   "empreinte": "13baa45231dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ondansétron (8 mg) peut également être utilisé (grade A).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u82",
+   "empreinte": "b2a599e02e7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Par analogie, de faibles doses de dropéridol, et/ou d'ondansétron paraissent logiques (grade C).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u83",
+   "empreinte": "774f344111d8",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "La prévention repose sur l'utilisation des doses minimales efficaces de morphiniques. Les antagonistes ou agonistes– antagonistes morphiniques (naloxone, nalbuphine) à faibles doses paraissent les plus clairement efficaces (grade B).",
+   "explication": "Dans la source, cet énoncé concerne la prévention du prurit ; la fiche le range sous les NVPO sans intertitre « Prurit », ce qui peut le faire lire comme une prévention des nausées.",
+   "page": 33
+  },
+  {
+   "id": "u84",
+   "empreinte": "e150fbff0a67",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "L'utilisation de l'ondansétron est également logique (grade C).",
+   "explication": "Même problème : dans la source, il s'agit de la prévention du prurit, mais la fiche ne l'indique pas (intertitre « Prurit » absent).",
+   "page": 33
+  },
+  {
+   "id": "u85",
+   "empreinte": "f9d57b166962",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucun traitement prophylactique ne prévient totalement la survenue du prurit (grade C)",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u86",
+   "empreinte": "3a3e4d48e55a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une prévention systématique paraît difficile à recommander (grade C).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u87",
+   "empreinte": "4975d8185fee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ondansétron ou la nalbuphine à faibles doses peuvent être proposés avec une efficacité limitée mais certaine (grade C).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u88",
+   "empreinte": "285ca254f6be",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "cle": "blocs_perimedullaires_ci_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "3d0582ce8238",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "30d070bbbbd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il doit également lui en exposer les risques, incluant celui de l'échec pouvant nécessiter le recours à une AG.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "a105b79ced60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les risques habituels et les risques rares mais graves de l'anesthésie périmédullaire doivent être précisés, mais bien remis dans leurs contextes (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "9d5695b5ae00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute femme enceinte présentant un risque particulier de césarienne au cours du travail doit être fortement incitée à bénéficier de la mise en place précoce d'une analgésie péridurale (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "a69f97e5bba3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "on ne peut pas refuser de réaliser une anesthésie périmédullaire (APM) au seul motif que cette consultation n'a pas eu lieu.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "173baaadd205",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La connaissance des techniques, l'adéquation des moyens de surveillance et le consentement éclairé du patient constituent les trois prérequis indispensables à la pratique d'une APM (grade A).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "f0ac12737a85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le refus du patient est une contre-indication absolue (grade A)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "2ab25337851c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de même que l'allergie documentée à l'un des agents injectés par voie intrathécale ou péridurale (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "3d12f5737dca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lidocaïne est contre-indiquée de façon absolue par voie intrathécale (grade A).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "e67e60370313",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En raison du risque de lésions par l'aiguille et/ou le cathéter, un patient non coopérant représente une contre-indication (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "6154237337af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La réalisation d'une APM sous anesthésie générale (AG) n'est pas recommandée (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "578bce185b5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ainsi que les situations où l'hémodynamique n'est pas stabilisée (état de choc, décompensation cardiaque…) sont des contre-indications à l'APM (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "7f33d04673bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La chirurgie à haut risque hémorragique peropératoire doit faire préférer une technique anesthésique alternative (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "64622df9de02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la préférence donnée, lorsque l'APM est choisie, aux techniques d'induction lente : rachianesthésie continue, anesthésie péridurale (grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u15",
+   "empreinte": "773af929eba8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une infection localisée à proximité du point de ponction et/ou une infection systémique documentée sont des contre-indications aux APM (grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u16",
+   "empreinte": "041f4b69e3c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas dépasser la dose de 0,3 mg de morphine en injection intrathécale et de mettre en place une surveillance clinique adéquate jusqu'à la 24e heure (grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "ea68e50b56b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'existence d'un trouble patent de l'hémostase est une contre-indication absolue (grade C). Le retrait d'un cathéter est une période à risque identique à la ponction.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "313399488d71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prise d'aspirine et les AINS ne contre-indiquent pas une APM si, pour un patient donné, on considère que son bénéfice est supérieur au risque exceptionnel d'hématome périmédullaire",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "624ddae9ee47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un délai entre la dernière injection d'HPBM et l'APM et/ ou l'ablation du cathéter de 10 à 12 heures en cas de dose unique quotidienne",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "3bafb5a4d6a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors des traitements par héparine non fractionnée, l'APM n'est pas absolument contre-indiquée à condition de respecter trois principes (Tableau 1)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "c261175c8187",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de recul suffisant, il n'est pas recommandé d'effectuer une APM lorsque la prophylaxie antithrombotique est réalisée avec les molécules de dernière génération (fondaparinux et danaparoïde)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "3fa65094c4a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à condition d'antagoniser ou d'arrêter suffisamment à l'avance ce traitement et de vérifier avant ponction que l'INR est inférieur ou égal à 1,5.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "20a638e63f23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les APM sont contre-indiquées avec les traitements par les thiénopyridines (ticlopidine, clopidogrel) (accord professionnel).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "95f9ec154104",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le délai de retour à la normale des fonctions plaquettaires varie en effet de huit heures (eptifibatide : Integrilin® et tirofiban : Aggrastat®) à 24–48 heures pour l'abciximab",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u25",
+   "empreinte": "95ace06edd41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le risque potentiel et l'absence d'antidote contre-indiquent l'APM (accord professionnel).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u26",
+   "empreinte": "d3e15b22a0bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les APM sont contre-indiquées en cas d'utilisation préopératoire de fibrinolytiques, ou lorsque leur utilisation perou postopératoire est probable (grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "cac6a069af03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Délai entre arrêt héparine et APM ou ablation cathéter 12 heuresa 4 heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "03a815fa7237",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Délai entre APM et héparinothérapie 6 à 8 heures 6 à 8 heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "bf1a48d1a6fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Délai entre héparinothérapie et ponction traumatique ? > 8 heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "96fc786748b1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "01c3fcea4a6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le patient insuffisant cardiaque, l'APM est contre-indiquée si la chirurgie nécessite un bloc étendu. L'HTA non contrôlée est également une contre-indication.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "9f145d9753eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les APM sont contre-indiquées en cas d'obstacle à l'éjection (rétrécissement mitral serré, rétrécissement aortique serré, cardiomyopathie hypertrophique obstructive) (grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "eb161bae0829",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'insuffisance mitrale ou aortique, dès lors que l'hypotension artérielle est rapidement traitée (remplissage vasculaire et/ou vasoconstricteurs) (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "804a805fa61d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la rachianesthésie n'est théoriquement pas contre-indiquée de façon absolue à condition que le bloc-moteur ne dépasse pas T10 (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "443947f47de7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APD thoracique aux AL n'est pas contre-indiquée chez le BPCO sévère",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u36",
+   "empreinte": "a203c487ac9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut privilégier une technique de bloc périphérique (accord professionnel).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "c1dd32a56800",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La syringomyélie est une contre-indication à la rachianesthésie (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u38",
+   "empreinte": "4bcf3bc59c96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une épilepsie équilibrée par le traitement n'est pas une contre-indication (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "f65bf48d598d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APD doit être préférée à la rachianesthésie (RA), en raison de la neurotoxicité potentielle des AL (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u40",
+   "empreinte": "34ff88531490",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les APM sont contre-indiquées dans les formes non stabilisées (en poussée ou en cours de récupération) (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u41",
+   "empreinte": "7fd4a79a58cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'existence reconnue d'un canal lombaire étroit invite à la prudence lors de la réalisation d'une RA (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "8a38949cc99f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un bilan IRM est recommandé avant de réaliser une APM chez un patient présentant une spina bifida identifiée.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u43",
+   "empreinte": "62e7941c2637",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Plusieurs ponctions sont souvent nécessaires à différents niveaux (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "b5e702e62320",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de brèche durale peut être augmenté lors d'anesthésie péridurale (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "642dd13b2b7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La diffusion de l'AL peut être anormale, avec un risque d'anomalies de diffusion plus important par voie péridurale que par voie intrathécale (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "b4d1dcf48d03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans cette situation, une technique de titration paraît appropriée (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "2d54c3e5887d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le repérage de la ligne médiane peut être facilité par l'utilisation de l'échographie (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "6276ddb03790",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un antécédent de blood-patch ne contre-indique pas la rachianesthésie (grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u49",
+   "empreinte": "d3e804e56cf3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

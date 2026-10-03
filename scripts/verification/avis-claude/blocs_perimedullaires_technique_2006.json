@@ -1,0 +1,601 @@
+{
+ "cle": "blocs_perimedullaires_technique_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "89d7b680156a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "2b68f5255ff2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans tous les cas, une asepsie « chirurgicale » est la règle.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u3",
+   "empreinte": "bcf1c865fd28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Niveau de ponction (sol. hyperbare) + – Vitesse d'injection",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u4",
+   "empreinte": "bc444079cfe0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pression abdominale (grossesse–obésité) + –",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u5",
+   "empreinte": "b486aa2b6dd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Position du patient (sol. hyperbare) ++ Volume du LCR",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "035ac88822a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Orientation de l'orifice de l'aiguille + + +",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "ac6d9228d653",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "c6050e0384f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser la ponction lombaire chez un patient conscient, dans l'espace interépineux le plus bas situé parmi ceux qui sont identifiés en dessous de la ligne de Tuffier (grade C).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u9",
+   "empreinte": "9bd2fdcb08b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "guidé par des considérations de coût puisque leurs performances sont en tous points comparables (grade B).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "ca8f73a69291",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La progression de l'aiguille doit être lente de façon à percevoir les différentes structures anatomiques traversées",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "2c1210820da1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La ropivacaïne, la bupivacaïne et la lévobupivacaïne sont les seuls anesthésiques locaux à bénéficier de l'AMM pour l'injection intrathécale (grade A).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "3671e50b205d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les formes moins concentrées sont également contre-indiquées (grade A).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "3866e9c400d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bupivacaïne 4 mg T8 (T6–T12) NA 21 ± 4 115 ± 42",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "a3bf7d44c53d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bupivacaïne 8 mg T5 (T4–T10) 49 ± 44 60 ± 15 198 ± 33",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "f4befedcc49e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bupivacaïne 12 mg T5 (T3–T10) 70 ± 37 65 ± 32 220 ± 63",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "1ab7edadbced",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bupivacaïne 15 mg T4 (T3–T11) 180 (120–210) 80 ± 40 255 (150–420)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "6f83c681d895",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lévobupivacaïne 4 mg T10 ((T7-T12) NA 24 ± 7 102 ± 52",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "b3e2c87c8e37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lévobupivacaïne 8 mg T5 (T3–T7) 39 ± 23 50 ± 12 175 ± 46",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "947dd7d09e83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lévobupivacaïne 12 mg T5 (T3–T7) 55 ± 35 60 ± 30 165 ± 59",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "64e774423835",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lévobupivacaïne 15 mg T4 (T3–T8) 180 (100–210) 80 ± 40 200 ± 70",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "50b48e96f451",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ropivacaïne 4 mg T8 (T4–L1) NA 40 ± 30 81 ± 44",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u22",
+   "empreinte": "0aea85ea16f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ropivacaïne 8 mg T8 (T3–L1) NA 75 ± 21 130 ± 27",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u23",
+   "empreinte": "a3163de3d1f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ropivacaïne 12 mg T8 (T4–L2) 60 85 ± 18 150 ± 44",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u24",
+   "empreinte": "e56150eb465e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ropivacaïne 14 mg T6 (T11–C7) 90 (45–150) 95 ± 32 175 ± 42",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u25",
+   "empreinte": "a5a6fe7c2bb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ropivacaïne 20 mg T3 (T11–C2) 120 (23–150) 95 ± 32 200 (180–345)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u26",
+   "empreinte": "bd8ac1fcae27",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "fecb28718c68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En pratique, l'extension de l'anesthésie dépend essentiellement de la dose administrée d'AL et du volume du LCR (non estimable en pratique clinique) (grade A)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u28",
+   "empreinte": "ee270ee978dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tandis que le volume et la concentration modifient peu l'étendue du bloc (grade B).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u29",
+   "empreinte": "813883c7017a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avec ces solutions le niveau de blocage sensitivomoteur est plus reproductible qu'avec les solutions normobares (grade A).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u30",
+   "empreinte": "38072f675fce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la quantité de glucose ajoutée pour rendre les solutions hyperbares est généralement trop importante (grade B).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u31",
+   "empreinte": "173dbfb1280a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La vitesse d'installation, l'intensité et la durée du bloc dépendent de la dose totale administrée (rapport du volume par la concentration) (grade A).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u32",
+   "empreinte": "ebec8055bd33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La limitation unilatérale ou caudale du bloc est favorisée par l'injection de faibles doses, par l'injection lente, et par le maintien en position latérale ou assise.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u33",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "5b99575f413f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La connaissance du niveau métamérique à atteindre en fonction de l'acte chirurgical est impérative.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u35",
+   "empreinte": "6acd5e571067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le sufentanil (2,5 à 5 µg) prolonge la durée d'analgésie de 25 à 50 %. La morphine (≤0,3 mg) procure une analgésie prolongée de 6 à 24 heures.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u36",
+   "empreinte": "59162be273e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les indications préférentielles de la rachianesthésie procèdent à la fois du terrain (estomac plein, intubation difficile prévue, insuffisance respiratoire",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u37",
+   "empreinte": "86020a7fe4e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La rachianesthésie continue permet d'une part une bonne stabilité hémodynamique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u38",
+   "empreinte": "8708ff61d86f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La rachianesthésie unilatérale est une technique possible pour la chirurgie d'un membre inférieur, car elle permet de réduire l'incidence de l'hypotension artérielle",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u39",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "3c63fe405e69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "repose sur l'utilisation d'un mandrin liquidien. L'utilisation du mandrin gazeux ne peut être recommandée.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u41",
+   "empreinte": "ede512b0d565",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La pratique de la dose-test (association à l'AL de 15 µg d'adrénaline) est recommandée en dehors du travail obstétrical.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u42",
+   "empreinte": "650690e02157",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lidocaïne, la ropivacaïne, la bupivacaïne, la lévobupivacaïne et la mépivacaïne ont l'AMM pour l'injection péridurale.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u43",
+   "empreinte": "8d0e71647f10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "port de calot et masque facial pour tout le personnel de la salle d'intervention (grade C).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u44",
+   "empreinte": "7d5c2fa3df0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lidocaïne 1–2 400 (6–10 mg/kg) 5–15 60 100 ± 80",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u45",
+   "empreinte": "b00f4cccb828",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mépivacaïne 1–2 400 (6–10 mg/kg) 6–17 60 115 ± 15",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u46",
+   "empreinte": "c034d2685c5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bupivacaïne 0,5 150 (2–3 mg/kg) 5–17 180 150 ± 200",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u47",
+   "empreinte": "c795e16cb28f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lévobupivacaïne 0,5 150 (2–3 mg/kg) 10–20 150–200",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u48",
+   "empreinte": "b54acf6fca4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ropivacaïne 0,5 225–300(3–4 mg/kg) 10–20 138 168 ± 60",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u49",
+   "empreinte": "fccdd9937eeb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "a8b1bc03d2f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le délai d'installation du bloc (ou latence), la durée d'action et l'intensité du bloc dépendent de la dose administrée (grade A).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u51",
+   "empreinte": "18c8c3d0c668",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La vitesse d'injection influence le niveau supérieur (grade B).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u52",
+   "empreinte": "e2d5dc26f6d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ropivacaïne inférieure ou égale à 0,2 %, bupivacaïne inférieure ou égale à 0,25 % (grade A).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u53",
+   "empreinte": "66363cb80ff6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de puissance entre la ropivacaïne, d'une part, et la bupivacaïne et la lévobupivacaïne, d'autre part, est de l'ordre de 3 : 2 (grade A).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u54",
+   "empreinte": "7fb50304f54a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'âge augmente l'extension et réduit la durée du bloc (grade A).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u55",
+   "empreinte": "f7d0d2d696d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au cours de la grossesse, l'espace péridural est réduit et accentue l'extension du bloc pour un volume d'AL donné (grade A).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u56",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "491af5342d3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les réinjections péridurales d'AL doivent tenir compte de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u58",
+   "empreinte": "1a6ea50d1148",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À l'étage thoracique (espace péridural réduit, faible densité de graisse), de faibles doses d'AL (4–5",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u59",
+   "empreinte": "427aaecda1a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne permet pas de conclure",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u60",
+   "empreinte": "7ea84c45a5bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un monitorage par électrocardioscope, pression artérielle non invasive et oxymètre de pouls est obligatoire.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u61",
+   "empreinte": "818919c34b98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'elle est réalisée à un niveau métamérique supérieur à L3 et comporte donc un risque de lésion médullaire (grade C).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u62",
+   "empreinte": "e9d4d6e9f3e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration d'oxygène est recommandée lors de la réalisation de l'anesthésie péridurale (grade C).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u63",
+   "empreinte": "82e6245477d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La survenue d'une bradycardie doit être considérée comme un signe d'alerte pouvant précéder un arrêt cardiocirculatoire (grade C).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u64",
+   "empreinte": "6b2ebd68553f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'association peropératoire d'une APD et d'une AG peut être responsable d'une hypotension artérielle sévère (grade C).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u65",
+   "empreinte": "eeb4f6887c27",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de complication neurologique médullaire est favorisé en cas d'artériopathie sévère préexistante, d'hyperlordose ou de canal lombaire étroit (grade C).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u66",
+   "empreinte": "ead24d307b81",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
