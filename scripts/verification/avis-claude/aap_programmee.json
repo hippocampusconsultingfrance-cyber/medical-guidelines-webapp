@@ -1,0 +1,295 @@
+{
+ "cle": "aap_programmee",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e7fb9b050be6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toutes sauf une ont fait l'objet d'un accord fort.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "8beccdf4fcc4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "54718a752c14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de diviser le risque hémorragique associé à la procédure invasive en risque élevé, intermédiaire et faible (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "57fb35c20a1b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "783ad73d1de3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : en-tête « Risque hémorragique de la procédure — À évaluer avec le chirurgien ou le responsable de la procédure ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "3b9941d541c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : colonnes Faible / Intermédiaire / Élevé (risque hémorragique), lignes = risque thrombotique du patient.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "3e0bb79b8acb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : aspirine en prévention primaire — Arrêt ou poursuite / Arrêt / Arrêt.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "4bebea476a45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : « AAP en prévention secondaire (prévention cardiovasculaire, artériopathie des membres inférieurs, antécédent d'accident vasculaire cérébral ischémique) ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "5bc7202f7fea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : aspirine en monothérapie — Poursuite / Poursuite / Arrêt.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "d14329eb943e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : clopidogrel en monothérapie — Poursuite / Arrêt et relais par aspirine / Arrêt.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "1a5e000a4406",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : « Bithérapie antiplaquettaire pour stent coronaire — Différer la procédure à la fin de la bithérapie antiplaquettaire en absence de risque vital ou fonctionnel ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "63025adb7db5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : stent < 1 mois / < 6 mois haut risque / IDM < 6 mois — différer ; si impossible : poursuivre les 2 AAP / poursuivre l'aspirine, interrompre l'anti-P2Y12 / interrompre les 2 AAP **.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "eccde3d00b6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : aucun des 3 critères — poursuivre les 2 AAP / poursuivre l'aspirine, interrompre l'anti-P2Y12 / interrompre les 2 AAP.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "9cd9e4e87816",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "6b6f8fe00561",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : « Faible : réalisable sous bithérapie (ex : cataracte) ; Intermédiaire : sous aspirine seule (ex : PTH) ; Élevé : non réalisable sous AAP (ex : ampullectomie endoscopique) ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "f52cbf3cc061",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : délai d'arrêt J-3 aspirine, J-5 clopidogrel/ticagrélor, J-7 prasugrel (ajouter 2 j si neurochirurgie intracrânienne) ; reprendre les 2 AAP au plus vite.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "277c3a7b28f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 9) : encadré « Caractéristiques d'un stent à haut risque thrombotique » (9 items, dont CrCl < 60, ≥ 3 stents, longueur > 60 mm) et « ** Si stent < 1 mois, discuter un relais par AAP injectable ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "24af34514399",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de n'utiliser ni les héparines (HNF ou HBPM) ni les AINS en relais des AAP (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u19",
+   "empreinte": "597096e56b9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la neurochirurgie intracrânienne, il est proposé que la dernière prise soit à J-5 pour l'aspirine, J-7 pour le clopidogrel et le ticagrélor, J-9",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u20",
+   "empreinte": "c0c5c5812889",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Des données récentes suggèrent que la chirurgie semi-urgente de pontage aortocoronaire puisse être réalisée après une interruption plus",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u21",
+   "empreinte": "27062403235e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'AAP soit remplacé par de l'aspirine, à la dose journalière 75 à 100 mg (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u22",
+   "empreinte": "afd13b5525f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un relais par des AAP parentéraux réversibles comme le tirofiban ou le cangrélor peut être discuté au cas par cas",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "9871cf3b3df4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune proposition ne peut être faite concernant le recours, ou non, à une dose de charge.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "420c84c21956",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation périopératoire des coxibs reste possible.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "a4d50dd6be6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'aspirine ne contre-indique pas une ALR rachidienne si le",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u26",
+   "empreinte": "cc8075b755ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infraclaviculaire, le bloc sciatique para-sacré, le bloc du",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u27",
+   "empreinte": "143d24bc7a38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces blocs incluent les blocs superficiels tels que le bloc fémoral, bloc axillaire, bloc sciatique au creux",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u28",
+   "empreinte": "dad33ee0626f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé que les blocs nerveux périphériques à haut risque hémorragique puissent être réalisés sous aspirine en",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u29",
+   "empreinte": "8aa44618f408",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient réalisés par échoguidage et par un opérateur expérimenté (accord fort).",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u30",
+   "empreinte": "39dccec215af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mise en place d'un cathéter périnerveux ne doit pas compromettre la reprise postopératoire des AAP",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u31",
+   "empreinte": "c39e7d0223f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de poursuivre l'aspirine pour la chirurgie de PAC (accord fort).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u32",
+   "empreinte": "417af480f48e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

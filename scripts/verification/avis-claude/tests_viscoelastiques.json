@@ -1,0 +1,295 @@
+{
+ "cle": "tests_viscoelastiques",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4e8c85b30d8b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "6ecc114902a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "An algorithm built from TEG1 cannot be used with ROTEM1 and viceversa.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "fd6b1021291f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "estimates the clotting time required for an amplitude of 20 mm to be obtained.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "db0e8cd6db23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "The tests are interpretable up to heparinaemia of 6 IU/mL",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "7dae4ea3caff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HEPTEM inhibits up to 7 IU/mL of heparin on INTEM",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "1efc7ff6f55d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10 centres for ROTEM1 found CVs ranging from 7 to 83%",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "722f83f6d9fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "It is complicated in 25 to 30% of cases by acute traumatic coagulopathy (ATC), which worsens the bleeding and increases mortality four-fold.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "dcb9827a2840",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "In 300 trauma patients, EXTEM A5 > 35 mm had a negative predictive value of 83% for RBC transfusion",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "544bf2e0223c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "The sensitivity and speciﬁcity of EXTEM A5 < 36 mm to predict",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "6b1eb4017a4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "in less than 60 minutes is predictive of mortality ranging from 86% to 96%, according to the series.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "3e692b357ae1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "should not guide the administration of tranexamic acid but that it should be administered as soon as possible.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "f85e49a0336e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "accounting for nearly 30% of direct maternal deaths (approximately 150 000 deaths per year worldwide).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "75cfe1f8968d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "356 women with PPH: FIBTEM A5 < 10 mm was associated with progression of bleeding",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "c8737682ccb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "increases rapidly to reach its peak at three hours postpartum.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "392f56aa7ce2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "it is proposed not to guide the administration of tranexamic acid on VETs but to administer it as soon as possible in the event of PPH.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "10adbc43bcf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "In procedures with high haemorrhagic risk (reoperation, circulatory assistance, transplantation), they could be used more systematically.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u17",
+   "empreinte": "7deeaf59ab8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A reduction in transfusion support was observed in the VETguided arm (OR = 0.63, 95% CI 0.56–0.71)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "ee3060bde463",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "demonstrated a signiﬁcant reduction in mortality in the VET-group (RR: 0.52, 95% CI 0.28–0.95)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "bae16f93c424",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "but had no impact on complications, length of hospitalisation or mortality",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "4b8ce89853fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "In cardiac surgery, the GIHP proposes that VETs should be used in the event of haemorrhage at the end of surgery and postoperatively.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "13baa5b6debe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "The routine tests evaluate only procoagulant factors without taking into account the relationship with the coagulation inhibiting systems",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "64cca0403474",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "the correlation with FIBTEM MCF or the maximum TEG",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "9c9e0b6b6ab1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Systematic administration of anti-ﬁbrinolytic does not appear to be necessary",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u24",
+   "empreinte": "742a16e84f22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probably at the cost of an increase in the transfusion of ﬁbrinogen.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "46666fff7d99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "VETs show a hyper coagulable proﬁle compared to that of adults until the age of 6 months.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "f5ca956135e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "European guidelines only suggest the use of VETs to rapidly detect dilution coagulopathy or hyper ﬁbrinolysis (grade 2C)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "8c70971447ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "than r-TEG results (48 min vs. 15 min respectively)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "a785288fbd99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "is the time required to obtain the laboratory results compatible with optimal management of the bleeding patient?",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u29",
+   "empreinte": "323825b3750e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "if positioned in the laboratory, will the laboratory staff be available 24 hours a day for immediate blood sampling",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u30",
+   "empreinte": "6ecc4aa69ca0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "The choice and implementation of a VET can only be made consensually between the clinical department and the laboratory.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u31",
+   "empreinte": "66c805b6a4ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "VETs must be included in algorithms for the management of coagulopathy and bleeding",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "435fcf0f19c8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
