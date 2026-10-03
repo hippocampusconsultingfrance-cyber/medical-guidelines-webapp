@@ -1,0 +1,313 @@
+{
+ "cle": "remplissage_perioperatoire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "54e754c73f11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "kg de cristalloïdes pour les gestes les plus courts, et de 20 à",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "61eb20341fa4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4- Très basse : l'estimation de l'effet est très incertaine.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "47d5435c7f45",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "e9c79306d1a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(risque « d'hypovolémie occulte ») et peut conduire à des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "f093c3991ae1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou VVE inférieures à 9 % indiquent presque certainement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "710b7d446fc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permettant de mettre en œuvre un traitement hémodynamique individualisé (ou « goal-directed hemodynamic therapy »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "491d2d5898a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "clinique – SRLF-Sfar ; juin 1996",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "39dd6314f337",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le délai de reprise d'une alimentation orale des patients de chirurgie digestive. GRADE 1+.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "4fbea8c8e39b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'interrompre le remplissage en l'absence d'augmentation du VES. GRADE 1+",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "933c7dbd7151",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en particulier lors des séquences d'instabilité hémodynamique, afin de s'assurer de la pertinence de cette thérapeutique. GRADE 1+",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "4fa0ac41320a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du VES a été obtenue avec des bolus de colloïde (hydroxyéthylamidon [HEA] ou gélatine fluide modifiée ; entre 100 et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "346e15cefeed",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "4669f15ab080",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 458) : « 1er bolus 200 ± 50 mL en 10' » → mesure de la variation du VES.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "a3dc0d4600b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : « < 10 % augmentation VES » → « Arrêt remplissage ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "330a3a557d2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : « > 10 % augmentation VES » → « Nouveau bolus 200 ± 50 mL en 10' » (boucle).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "e7ed95bd9c58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : après arrêt, « Baisse du VES > 10 % » → nouveau bolus.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "60338f6ddac7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé d'administrer de 15 à 30 mL/kg de cristalloïdes. GRADE 2+",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "4747cb15bd52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "analgésie péridurale pour le travail obstétrical. GRADE 1–",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "9580445b3f42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'effectuer un préremplissage par des cristalloïdes pour une rachianesthésie pour césarienne. GRADE 1–",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "fe531b4dca15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'associer un coremplissage par des cristalloïdes avec des vasoconstricteurs (phényléphrine éventuellement associée à l'éphédrine). GRADE 1+",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u21",
+   "empreinte": "ae507aad3bf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypovolémique ou hémorragique. Avis d'experts",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u22",
+   "empreinte": "ca4917a50f0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est probablement recommandé d'administrer au moins 15 mL/",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "5a329db6b2da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "travail, associée à la mise en décubitus latéral gauche pour",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "0dd9fba4e0c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mais les HEA n'ont pas encore d'AMM dans cette indication en France",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "06e9c102a0dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient allergique à une substance autre que le colloïde luimême. Avis d'experts",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "05ffb8ce3e17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser, si nécessaire, un colloïde de l'autre classe. Avis d'experts",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "e100a8c3a811",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé d'éviter les HEA. GRADE 2+",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "b1123b237c78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de mort encéphalique. Avis d'experts",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u29",
+   "empreinte": "7beb5a05fcc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utiliser chez les patients ayant des troubles de l'hémostase. GRADE 1+",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u30",
+   "empreinte": "6d8c14d7a78a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utiliser des solutés hypotoniques. Avis d'experts",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u31",
+   "empreinte": "6eee451ea683",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'enfant et le nourrisson, ou glucosée à 10 %, chez le nouveauné. Avis d'experts",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "93ec45ede0f5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "774ac6aeeda7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les régulateurs de débit basés sur la réduction du calibre de la ligne de perfusion",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u34",
+   "empreinte": "8c74e18fc5be",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

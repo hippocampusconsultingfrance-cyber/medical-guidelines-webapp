@@ -1,0 +1,313 @@
+{
+ "cle": "erreurs_medicamenteuses_2024",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "3724099f5466",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "GRADE ont abouti à 29 recommandations concernant la prévention des erreurs médicamenteuses en",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "f5f9671f0a86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que la standardisation et l'utilisation de protocoles de prescription",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u3",
+   "empreinte": "221420424a3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser un logiciel de prescription en soins critiques pour",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u4",
+   "empreinte": "656f7adb8285",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'implémenter en soins critiques des outils informatiques d'aide à",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u5",
+   "empreinte": "031d242355f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les logiciels de prescription et les outils d'aide à la prescription",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u6",
+   "empreinte": "95657a2a8357",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION – Devant l'absence de données dans la littérature, les experts",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u7",
+   "empreinte": "2303197fa7ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser un bilan médicamenteux et une conciliation",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u8",
+   "empreinte": "cece813a1b69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de standardiser la préparation des médicaments incluant",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u9",
+   "empreinte": "f1e2a7f1cb81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de proscrire la coexistence de différentes concentrations d'un",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u10",
+   "empreinte": "1c47c9b28165",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de standardiser l'administration des médicaments, d'utiliser des",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u11",
+   "empreinte": "40f7e669975d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors des administrations en intra-veineux direct, les experts suggèrent de choisir des",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u12",
+   "empreinte": "15134387b18b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser les codes couleurs internationaux pour l'étiquetage des",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u13",
+   "empreinte": "27c890946ef4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'identité du patient (par l'étiquette à code barre).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u14",
+   "empreinte": "1e28b9cf4978",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'apposer sur les voies d'administration (à la partie proximale et à la",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u15",
+   "empreinte": "3a7c63dbc45c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "de8a6dee0b3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de choisir des ampoules ou flacons de médicaments avec un",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u17",
+   "empreinte": "7da20caf0c3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de limiter au strict nécessaire le nombre de médicaments différents",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u18",
+   "empreinte": "75b53705b60f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser des seringues préremplies (SPR) plutôt que des seringues",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u19",
+   "empreinte": "6cdd85999309",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser des normes de connectique par type de voie",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u20",
+   "empreinte": "df8d6644b35c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser un système de traçabilité (code barre) aux différentes",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u21",
+   "empreinte": "1e2b806359df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandations concernant les systèmes data-matrix et RFID",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u22",
+   "empreinte": "58f1fadf5480",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de standardiser les modalités d'approvisionnement, de rangement et de stockage en soins critiques",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u23",
+   "empreinte": "68cbdd2f22a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chariot d'anesthésie loco régionale, chariot de pédiatrie, chariot d'urgence",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u24",
+   "empreinte": "87e43b75185b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de lutter contre les interruptions de tâches et les distractions",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u25",
+   "empreinte": "a14a37ff8271",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de restreindre les communications non essentielles lors de la",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u26",
+   "empreinte": "49c6d0e1f2db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un audit selon une méthodologie standardisée",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u27",
+   "empreinte": "88d9131983d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la lecture attentive, la double lecture, la concordance",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u28",
+   "empreinte": "2769570a5563",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la formation par tout type de simulation",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u29",
+   "empreinte": "241568f36043",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'intégrer des pharmaciens cliniciens formés spécifiquement",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u30",
+   "empreinte": "e1ed264e35ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de déclarer et d'analyser a posteriori les erreurs médicamenteuses",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u31",
+   "empreinte": "431c93d6289e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de mettre en place des REX (Retour d'EXpérience)",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u32",
+   "empreinte": "9b37014b7ed7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'anticiper le plus possible les changements de médicaments",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u33",
+   "empreinte": "c0439b5d346e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'inclure des mesures de gestion des pénuries de produits de santé",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u34",
+   "empreinte": "2f4fb0fef9c2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

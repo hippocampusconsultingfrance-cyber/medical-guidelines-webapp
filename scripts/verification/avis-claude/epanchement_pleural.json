@@ -1,0 +1,313 @@
+{
+ "cle": "epanchement_pleural",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e127662a56e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conception : 15 experts des Sociétés Françaises d'Anesthésie-Réanimation (SFAR), de la Société",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "0800918ee884",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sous réserve de la disponibilité d'un échographe et de l'expertise de l'opérateur.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "c48791f77e76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lors de la première ponction puis à chaque fois que la cause de l'épanchement pourrait avoir changé",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "ceca112c4892",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas utiliser uniquement des critères quantitatifs basés sur l'imagerie",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u5",
+   "empreinte": "5894cce03b00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la tolérance respiratoire, avec notamment chez le patient ventilé une baisse de la compliance",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "5ca67d1bf1f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le choix préférentiel d'une évacuation par drainage ou par ponction d'un épanchement pleural liquidien",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u7",
+   "empreinte": "35f73c7fa387",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "i.e. 24 Fr est égal à un calibre interne de 8 mm). Un tube de 20 Fr ou plus est considéré comme",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "36d28e6a38de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(au minimum un écho-repérage ; au mieux un écho-guidage) pour améliorer la qualité et la sécurité du drainage pleural.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u9",
+   "empreinte": "f110602c8108",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent que la ponction et l'insertion du drain suivent le bord supérieur de la côte",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u10",
+   "empreinte": "0f46989984d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plusieurs sites d'insertion pour le drain, le triangle dit «de sécurité» soit le site d'insertion à",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u11",
+   "empreinte": "fed25d0015cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "expérimentées lorsque les données de l'échographie ne retiennent pas le triangle «de sécurité»",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u12",
+   "empreinte": "4e045f318b70",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concernant la position préférentielle du patient lors de l'évacuation d'un épanchement pleural liquidien",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u13",
+   "empreinte": "5e498f273e1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ne suggèrent pas de privilégier le drainage percutané par la technique de Seldinger par rapport à un drainage par une technique chirurgicale pour diminuer la mortalité.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u14",
+   "empreinte": "ca01a981b85d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par rapport à un drainage par une technique chirurgicale pour diminuer la douleur.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u15",
+   "empreinte": "9ad96e8dbaf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier un drain thoracique de petit calibre pour diminuer la douleur.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u16",
+   "empreinte": "41464b7df962",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas arrêter les antithrombotiques (anticoagulants ou antiplaquettaires) avant de réaliser une ponction pleurale",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u17",
+   "empreinte": "9313904c0289",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "considéré comme une procédure invasive à haut risque hémorragique, pour diminuer la morbi-mortalité. L'aspirine",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u18",
+   "empreinte": "e9924865a297",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de discuter au cas par cas de la réversion de l'effet anticoagulant avant le drainage",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u19",
+   "empreinte": "ed3bfe44c765",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dabigatran 4 jours * Idarucizumab Apixaban, rivaroxaban 3 jours",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u20",
+   "empreinte": "b5aa75d791a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'aspirine augmente peu le risque hémorragique, le drainage peut donc",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u21",
+   "empreinte": "7aeb1b081ab8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de ne pas modifier les paramètres ventilatoires lors d'une ponction pleurale ou d'un drainage pleural",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u22",
+   "empreinte": "7d766d26e1b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser systématiquement une anesthésie locale lors de la pose d'un drain pleural",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u23",
+   "empreinte": "ea1b264034f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de mettre en place une stratégie analgésique adaptée au patient pendant la durée du drainage",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u24",
+   "empreinte": "bff86e064d06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réévaluer quotidiennement l'indication du maintien du drain thoracique",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u25",
+   "empreinte": "d2ba49dee635",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "associée à une infiltration d'anesthésique local et/ou à l'application locale de froid",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u26",
+   "empreinte": "b79d9ada68a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser systématiquement une radiographie thoracique après le drainage d'un épanchement pleural",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u27",
+   "empreinte": "ffbfe16d8d5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ne suggèrent pas de mettre le drain systématiquement en aspiration",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u28",
+   "empreinte": "566b152fb9bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas retirer un drain évacuant plus de 450 mL/24h",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u29",
+   "empreinte": "60f336bf9e5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de retirer un drain évacuant moins de 300 mL/24h",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u30",
+   "empreinte": "d4aba5145d9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier l'échographie à la radiographie de thorax pour évaluer la vidange pleurale",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u31",
+   "empreinte": "65bcfd9f071a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en fin d'expiration forcée afin de diminuer le risque de pneumothorax après le retrait du drain.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u32",
+   "empreinte": "df89ff76de6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le meilleur temps du cycle respiratoire auquel retirer un drain pour diminuer le risque de pneumothorax après retrait.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u33",
+   "empreinte": "9edc03b40fa6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "e147ff42cabd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
