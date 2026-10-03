@@ -16,6 +16,7 @@
 //
 // Usage :
 //   DATABASE_URL=... node scripts/verification/verifier-fiches.mjs remplissage sdra
+//   (« toutes » : toutes les fiches publiées)
 // Options :
 //   --sans-ia            étape 1 seulement (aucune clé nécessaire)
 //   --ia=claude,gemini   IA utilisées (par défaut les deux)
@@ -23,6 +24,13 @@
 //   --texte              envoyer aux IA le texte extrait du PDF plutôt que le
 //                        PDF lui-même (moins cher, mais tableaux et figures en
 //                        image deviennent invérifiables)
+//   --avis-claude=dossier  sans --ia=claude : reprend les avis de Claude
+//                        enregistrés dans ce dossier (<clé>.json, relecture
+//                        faite hors API, voir avis-claude/LISEZMOI.md) au lieu
+//                        d'appeler l'API ; un avis n'est repris que si le texte
+//                        de l'unité n'a pas changé depuis (empreinte)
+//   --fiches-json=fichier  lire les fiches dans ce fichier (export JSON de la
+//                        requête ci-dessous) plutôt que dans la base
 // Variables : ANTHROPIC_API_KEY, GEMINI_API_KEY ; ANTHROPIC_WORKSPACE_ID
 // (seulement pour une clé Anthropic non rattachée à un espace de travail) ;
 // CLAUDE_MODEL (par défaut claude-opus-5-5) ; GEMINI_MODEL (par défaut gemini-3.8-flash, disponible
@@ -48,6 +56,12 @@ const IA = args.includes("--sans-ia")
 const SORTIE = option("sortie", "verification-fiches");
 const ENVOI_PDF = !args.includes("--texte");
 const CLES = args.filter((a) => !a.startsWith("--"));
+const TOUTES = CLES.length === 1 && CLES[0] === "toutes"; // toutes les fiches publiées
+const FICHES_JSON = option("fiches-json", "");
+// Avis enregistrés : IA qui n'est pas appelée, mais dont les verdicts sont lus.
+const AVIS_CLAUDE = !IA.includes("claude") && !args.includes("--sans-ia") ? option("avis-claude", "") : "";
+const IA_APPELEES = [...IA];
+if (AVIS_CLAUDE) IA.unshift("claude");
 const CLAUDE_MODEL = process.env.CLAUDE_MODEL || "claude-opus-5-5";
 const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 const MODELES = { claude: CLAUDE_MODEL, gemini: GEMINI_MODEL };
@@ -62,10 +76,11 @@ function arreter(message) {
 if (!CLES.length) arreter("Indiquez les fiches à vérifier (clés fiche_key), par exemple : remplissage sdra");
 for (const c of CLES) if (!/^[a-z0-9_]+$/.test(c)) arreter(`Clé de fiche invalide : ${c}`);
 for (const m of IA) if (!MODELES[m]) arreter(`IA inconnue : ${m} (claude ou gemini)`);
-if (IA.includes("claude") && !process.env.ANTHROPIC_API_KEY) arreter("ANTHROPIC_API_KEY manquant (ou --ia=gemini, ou --sans-ia).");
+if (IA_APPELEES.includes("claude") && !process.env.ANTHROPIC_API_KEY) arreter("ANTHROPIC_API_KEY manquant (ou --ia=gemini, ou --sans-ia).");
 if (IA.includes("gemini") && !process.env.GEMINI_API_KEY) arreter("GEMINI_API_KEY manquant (ou --ia=claude, ou --sans-ia).");
 const url = process.env.DATABASE_URL;
-if (!url) arreter("DATABASE_URL manquant.");
+if (!url && !FICHES_JSON) arreter("DATABASE_URL manquant.");
+if (AVIS_CLAUDE && !existsSync(AVIS_CLAUDE)) arreter(`Dossier d'avis introuvable : ${AVIS_CLAUDE}`);
 mkdirSync(join(SORTIE, "cache"), { recursive: true });
 
 /* ---------------------------------------------------------------------------
@@ -93,6 +108,8 @@ function normaliser(t) {
     .trim();
 }
 const compact = (t) => normaliser(t).replace(/ /g, "");
+// Empreinte d'une unité : un avis enregistré ne vaut que pour ce texte-là.
+const empreinte = (t) => createHash("sha1").update(normaliser(t)).digest("hex").slice(0, 12);
 
 // Nombres, avec séparateur de milliers (espace) et virgule décimale.
 const NOMBRE = /\d+(?:[   ]\d{3})*(?:[.,]\d+)?/g;
@@ -128,7 +145,7 @@ const ENTETES = new Set(["head_w", "head_w_c"]);
 function unites(p) {
   const out = [];
   const ajouter = (texte, section, entete) => {
-    if (normaliser(texte).split(" ").length >= 4) out.push({ id: `u${out.length + 1}`, section, entete, texte });
+    if (normaliser(texte).split(" ").length >= 4) out.push({ id: `u${out.length + 1}`, section, entete, texte, empreinte: empreinte(texte) });
   };
   for (const s of p.sections || []) {
     let section = s.title || "";
@@ -263,7 +280,7 @@ function compter(ia, modele, u) {
   for (const c of ["entree", "cache_ecrit", "cache_lu", "sortie"]) usage[k][c] += u[c] || 0;
 }
 
-const anthropic = IA.includes("claude")
+const anthropic = IA_APPELEES.includes("claude")
   ? new Anthropic(
       process.env.ANTHROPIC_WORKSPACE_ID ? { defaultHeaders: { "anthropic-workspace-id": process.env.ANTHROPIC_WORKSPACE_ID } } : {},
     )
@@ -417,10 +434,19 @@ function classer(u) {
   return { couleur, motifs };
 }
 
+// Avis de Claude enregistrés pour une fiche (null si la fiche n'a pas encore
+// été relue). Chaque avis porte l'empreinte du texte relu.
+function avisEnregistres(cle) {
+  const f = join(AVIS_CLAUDE, `${cle}.json`);
+  if (!existsSync(f)) return null;
+  const j = JSON.parse(readFileSync(f, "utf8"));
+  return { date: j.date, parId: new Map((j.unites || []).map((a) => [a.id, a])) };
+}
+
 /* ---------------------------------------------------------------------------
  * Déroulement
  * ------------------------------------------------------------------------- */
-const psql = spawnSync(
+const psql = FICHES_JSON ? null : spawnSync(
   "psql",
   [
     url,
@@ -432,13 +458,15 @@ const psql = spawnSync(
     "select coalesce(json_agg(json_build_object('cle', fiche_key, 'titre', coalesce(card_json->>'title', title), " +
       "'source', coalesce(pdf_url, source_url), 'p', presentation_json) order by fiche_key), '[]') " +
       "from public.documents where published_at is not null and presentation_json is not null " +
-      `and fiche_key in (${CLES.map((c) => `'${c}'`).join(", ")})`,
+      (TOUTES ? "" : `and fiche_key in (${CLES.map((c) => `'${c}'`).join(", ")})`),
   ],
   { encoding: "utf8", maxBuffer: 512 * 1024 * 1024 },
 );
-if (psql.status !== 0) arreter(`Lecture de la base impossible :\n${psql.stderr}`);
-const fiches = JSON.parse(psql.stdout);
-const absentes = CLES.filter((c) => !fiches.some((f) => f.cle === c));
+if (psql && psql.status !== 0) arreter(`Lecture de la base impossible :\n${psql.stderr}`);
+const fiches = psql
+  ? JSON.parse(psql.stdout)
+  : JSON.parse(readFileSync(FICHES_JSON, "utf8")).filter((f) => TOUTES || CLES.includes(f.cle));
+const absentes = TOUTES ? [] : CLES.filter((c) => !fiches.some((f) => f.cle === c));
 if (absentes.length) console.warn(`Fiches introuvables ou non publiées : ${absentes.join(", ")}`);
 
 const resultats = [];
@@ -465,7 +493,19 @@ try {
       u.chiffres_absents = r.erreur_source ? [] : chiffresAbsents(u.texte, nombres);
       u.avis = {};
     }
-    const ia = r.erreur_source ? [] : IA;
+    const ia = r.erreur_source ? [] : IA_APPELEES;
+    if (AVIS_CLAUDE && !r.erreur_source) {
+      const e = avisEnregistres(fiche.cle);
+      r.avis_claude = e ? e.date : null;
+      for (const u of r.unites) {
+        const a = e?.parId.get(u.id);
+        u.avis.claude = !e
+          ? { verdict: "erreur", explication: "fiche pas encore relue par Claude" }
+          : !a || a.empreinte !== u.empreinte
+            ? { verdict: "erreur", explication: `unité modifiée depuis la relecture de Claude du ${e.date}` }
+            : { ...a, extrait_verifie: extraitVerifie(a.citation, sourceCompacte), page_retrouvee: pageExtrait(a.citation, pages) };
+      }
+    }
     r.envoi = ENVOI_PDF && pdf ? "pdf" : "texte";
     const source = { titre: fiche.titre, texte, pdf: r.envoi === "pdf" ? pdf.toString("base64") : null };
     for (let i = 0; i < r.unites.length && ia.length; i += TAILLE_LOT) {
@@ -518,7 +558,7 @@ const L = [
   `# Vérification des fiches — ${date.split("-").reverse().join("/")}`,
   "",
   IA.length
-    ? `IA : ${IA.map((m) => `${NOMS[m]} (${MODELES[m]})`).join(", ")}, chacune sans voir la réponse de l'autre.`
+    ? `IA : ${IA.map((m) => (AVIS_CLAUDE && m === "claude" ? "Claude (avis enregistrés, relecture hors API)" : `${NOMS[m]} (${MODELES[m]})`)).join(", ")}, chacune sans voir la réponse de l'autre.`
     : "Contrôle sans IA (chiffres seulement).",
   "",
   "Ce rapport oriente la relecture : il ne valide rien. **Vert** : les deux IA jugent l'unité conforme, avec un extrait de la source " +
@@ -587,5 +627,5 @@ for (const r of resultats) {
   }
 }
 writeFileSync(join(SORTIE, "rapport.md"), L.join("\n") + "\n");
-writeFileSync(join(SORTIE, "resultats.json"), JSON.stringify({ date, ia: IA.map((m) => ({ ia: m, modele: MODELES[m] })), usage: lignesUsage, fiches: resultats }, null, 2));
+writeFileSync(join(SORTIE, "resultats.json"), JSON.stringify({ date, ia: IA.map((m) => ({ ia: m, modele: AVIS_CLAUDE && m === "claude" ? "avis enregistrés" : MODELES[m] })), usage: lignesUsage, fiches: resultats }, null, 2));
 console.log(`\nRapport : ${join(SORTIE, "rapport.md")}`);

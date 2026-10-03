@@ -1,0 +1,142 @@
+{
+ "cle": "echo_acces_vasculaires",
+ "date": "2026-10-03",
+ "relecture": "Claude (claude-opus-5-5, API, lecture du PDF)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "db7135930905",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette technique dite échoguidée permet de réduire significativement les complications et devrait être utilisée par défaut.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "9192850862da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La formulation finale des recommandations est toujours binaire : soit positive soit négative et soit forte soit faible",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "85c7bd021879",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser une technique de ponction échoguidée par rapport à une technique utilisant le repérage anatomique lors de la mise en place d'un cathéter veineux central par voie jugulaire interne chez l'adulte (GRADE 1+).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "36678c2c7cdf",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "de 78 % (RR : 0,22 ; IC 95 % : 0,05–0,92) sur 2 études randomisées contrôlées incluant 446 patients, et une réduction du nombre d'hémothorax de 95 %",
+   "explication": "La fiche indique 3 études et ~450-500 patients pour tous les critères, alors que le pneumothorax repose sur 2 études (446 patients) et l'hémothorax sur 1 étude (401 patients).",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "de0e84234c71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une possible réduction du nombre d'hématomes de 50 % (RR : 0,50 ; IC 95 % : 0,09–2,43) sur une étude randomisée contrôlée incluant 110 patients.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "52b811607106",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser une technique de ponction échoguidée par rapport à une technique utilisant le repérage anatomique lors de la mise en place d'un cathéter artériel radial chez l'adulte (GRADE 2 + ).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "74b4fd749f01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une augmentation du taux de succès de canulation de 20 % (RR : 1,20 ; IC 95 % : 0,99–1,33) sur 3 études randomisées contrôlées incluant 154 patients.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "38bee7bc7fa0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La qualité globale des preuves est modérée du fait de l'hétérogénéité des résultats, les balances risque/bénéfice et coût/bénéfice sont favorables.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "56763256b790",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune complication (ponction artérielle ou pneumothorax) n'a été rapportée dans ces séries de cas regroupant au total plus de 400 enfants et nourrissons.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "12f082e2a26c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "65 % (RR : 0,35 ; IC 95 % : 0,14–0,83) sur 3 études randomisées contrôlées incluant 215 patients. La qualité globale des preuves est modérée du fait d'un risque de biais",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "c55b7101d9a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser une technique de ponction échoguidée par rapport à une technique utilisant le repérage anatomique lors de la mise en place d'un cathéter artériel radial chez l'enfant (GRADE 2 + ).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "a857b4bef4dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les études sont peu nombreuses pour cette voie d'abord et la qualité globale des preuves basse du fait de l'imprécision des résultats.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u13",
+   "empreinte": "fe71e7502043",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'analyse médico-économique retenue est celle réalisée par Calvert et al. [15] en 2003 pour le National Health Service utilisant un modèle de décision analytique.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "68d36c281f7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C'est pourquoi ces RFE doiventservir de socle pour la mise en place de programme de formation et de référence opposable pour la mise à disponibilité du matériel adapté",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "4f1777e835e4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

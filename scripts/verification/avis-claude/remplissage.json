@@ -1,0 +1,313 @@
+{
+ "cle": "remplissage",
+ "date": "2026-10-03",
+ "relecture": "Claude (claude-opus-5-5, API, lecture du PDF)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9a0bb30ad426",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parmi ces recommandations, deux ont un niveau de preuve élevé (Grade 1 +/-), six ont un niveau de preuve faible (Grade 2 +/-) et une est un avis d’experts.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "7391f5f3cb7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les recommandations formulées concernent quatre champs selon le type de patients (patients atteints de sepsis ou de choc septique, patients atteints de choc hémorragique, patients cérébrolésés et patientes en péripartum).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u3",
+   "empreinte": "a0ab86a6f70b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les recommandations formulées concernent quatre champs selon le type de patients (patients atteints de sepsis ou de choc septique, patients atteints de choc hémorragique, patients cérébrolésés et patientes en péripartum).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "76749d2e3a06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les recommandations formulées concernent quatre champs selon le type de patients (patients atteints de sepsis ou de choc septique, patients atteints de choc hémorragique, patients cérébrolésés et patientes en péripartum).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "7c1b908f3957",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Composition Plasma NaCl 0,9% Ringer’s Lactate Plasma-lyte Isofundine Na+ (mmol/l) 142 154 130 140 145",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u6",
+   "empreinte": "a07870a9ad2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une limite possible à l’utilisation des solutés balancés pourrait être la présence de potassium dans leur composition (4 ou 5 mmol/l en fonction des solutés, cf tableau1)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u7",
+   "empreinte": "1c52e1e13860",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cl- (mmol/l) 103 154 108 98 127 Ca2+ (mmol/l) 2,4 0,9 0 2,5",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u8",
+   "empreinte": "99945a8a06f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cl- (mmol/l) 103 154 108 98 127 Ca2+ (mmol/l) 2,4 0,9 0 2,5",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u9",
+   "empreinte": "ef15d9b289db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mg2+ (mmol/l) 1 3 1 HCO3- (mmol/l) 27",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "2961e0ec4be6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mg2+ (mmol/l) 1 3 1 HCO3- (mmol/l) 27",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "2b73eb1a9e72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Autre (mmol/l) Lactate 2 Lactate 27,6 Acetate 27 Gluconate 23 Acetate 27 Malate 5",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "7555b9daa915",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Osmolarité (mOsmol/l) 285 308 277 295 309 pH 7,4 5-6,5 6-7,5 6,5-7,5 5-6,5",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "2d2c63a1f653",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Osmolarité (mOsmol/l) 285 308 277 295 309 pH 7,4 5-6,5 6-7,5 6,5-7,5 5-6,5",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "f87ba54414c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients hyperkaliémiques, n’entraine pas d’augmentation de la kaliémie ni de risque pour le patient comme le montrent des études randomisées chez des patients transplantés rénaux",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u15",
+   "empreinte": "93c87a8c9c52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Il n’est pas recommandé d’utiliser les hydroxyéthylamidons pour le remplissage vasculaire au cours du sepsis ou du choc septique, comparativement aux cristalloïdes non hypertoniques",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u16",
+   "empreinte": "dda6bd826e4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 – Les experts suggèrent de ne pas utiliser les gélatines pour le remplissage vasculaire au cours du sepsis ou du choc septique, comparativement aux cristalloïdes non hypertoniques",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u17",
+   "empreinte": "4c0461aefaf6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Il n’est probablement pas recommandé d’utiliser en première intention de l’albumine au cours du sepsis ou du choc septique, comparativement aux cristalloïdes, pour diminuer la mortalité ou le recours à l’épuration extrarénale.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u18",
+   "empreinte": "c2701337dd5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces deux études ont démontré une augmentation de la mortalité et de l’incidence de l’insuffisance rénale aigüe lors de l’utilisation d’HEA de haut comme de bas poids moléculaires.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u19",
+   "empreinte": "a95a25562962",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts ne sont pas en mesure d’émettre une recommandation concernant l’utilisation d’albumine en seconde intention chez les patients atteints d’hypoalbuminémie majeure et/ou nécessitant des volumes de remplissage importants.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u20",
+   "empreinte": "b467e2ec529a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des patients en sepsis et choc septique qui nécessitent des volumes conséquents de solutés, les experts considèrent que le niveau de preuve est insuffisant pour émettre une recommandation à ce jour.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u21",
+   "empreinte": "df4fbdf2dd3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients atteints de sepsis ou de choc septique, il est probablement recommandé d’utiliser des solutés cristalloïdes balancés pour le remplissage vasculaire",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u22",
+   "empreinte": "64c9b88a1f5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette étude comparait l’effet de SB et de SSI parmi les patients en réanimation mais seuls 77 sur plus de 2000 patients présentaient un sepsis",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u23",
+   "empreinte": "8533c04f8e24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en situation de choc hémorragique, quel que soit le contexte, il n'est probablement pas recommandé d'utiliser un colloïde comme soluté de remplissage vasculaire",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u24",
+   "empreinte": "15a7b1da08c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Depuis 2014, la HAS a restreint l’utilisation des hydroxyéthylamidons et ne réserve leur indication qu’en deuxième intention en cas de pertes sanguines",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u25",
+   "empreinte": "ec44e3035c7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé d’utiliser des solutés cristalloïdes balancés en première intention plutôt que du NaCl 0,9% comme soluté de remplissage vasculaire",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u26",
+   "empreinte": "6d4a065dc527",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n’est pas recommandé d’administrer un soluté salé hypertonique à 3% ou 7,5% en première intention comme soluté de remplissage vasculaire pour diminuer la mortalité",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u27",
+   "empreinte": "89877dde7244",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les données disponibles sont insuffisantes pour recommander de façon formelle à ce jour (recommandation GRADE 1) un type de soluté cristalloïde au cours du choc hémorragique",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u28",
+   "empreinte": "92d2c7310d6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans les situations associant choc hémorragique et traumatisme crânien grave avec signe de focalisation, l’administration d’un bolus de SSH reste indiquée pour son effet osmotique",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u29",
+   "empreinte": "cb403bfa0f4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé d'utiliser des colloïdes, en particulier l’albumine, comme soluté de remplissage chez les patients cérébrolésés",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u30",
+   "empreinte": "c481013950ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d’utiliser des cristalloïdes isotoniques, en première intention, comme soluté de remplissage vasculaire chez les patients cérébrolésés",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u31",
+   "empreinte": "9904288b20ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ne peuvent pas se positionner sur une éventuelle supériorité des solutés isotoniques balancés par rapport au NaCl 0,9% dans la prise en charge des patients cérébrolésés",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u32",
+   "empreinte": "1caf9fc12239",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucune recommandation spécifique ne peut être émise concernant le choix du soluté de remplissage vasculaire à utiliser dans la prise en charge réanimatoire des femmes en péripartum",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u33",
+   "empreinte": "02a3db762801",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "il n'est probablement pas recommandé d'utiliser un colloïde comme soluté de remplissage vasculaire, comparativement aux cristalloïdes non hypertoniques",
+   "explication": "La fiche déclare les hydroxyéthylamidons « non recommandés » aussi au cours du choc hémorragique, alors que la source n'y formule qu'une recommandation optionnelle (« probablement pas recommandé », GRADE 2-) ; le GRADE 1- ne concerne que le sepsis.",
+   "page": 20
+  },
+  {
+   "id": "u34",
+   "empreinte": "e491e6482616",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
