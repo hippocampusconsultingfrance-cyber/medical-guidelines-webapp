@@ -1,0 +1,72 @@
+name: Vérifier les fiches (IA)
+
+# Lancement manuel uniquement (onglet Actions → « Vérifier les fiches (IA) »
+# → Run workflow). Lit les fiches publiées (lecture seule), télécharge leurs
+# sources, les fait vérifier par Claude et Gemini, chacune sans voir la
+# réponse de l'autre, et joint le rapport à l'exécution (section
+# « Artifacts »). Rien n'est écrit en base. Voir
+# scripts/verification/verifier-fiches.mjs.
+#
+# Secrets (Settings → Secrets and variables → Actions) : SUPABASE_DB_URL,
+# ANTHROPIC_API_KEY, GEMINI_API_KEY.
+on:
+  workflow_dispatch:
+    inputs:
+      fiches:
+        description: "Fiches à vérifier (clés séparées par des espaces)"
+        required: true
+        default: "remplissage sdra tabagisme lat_soins_critiques echo_acces_vasculaires"
+      ia:
+        description: "IA utilisées : claude,gemini ; claude ; gemini ; ou aucune (chiffres seulement)"
+        required: true
+        default: "claude,gemini"
+      gemini_model:
+        description: "Modèle Gemini : gemini-3.8-flash (sans facturation) ou gemini-3.1-pro-preview (facturation Google activée)"
+        required: true
+        default: "gemini-3.8-flash"
+      envoi:
+        description: "Source envoyée aux IA : pdf (tableaux et figures vérifiables) ou texte (moins cher)"
+        required: true
+        default: "pdf"
+
+# Moindre privilège : le jeton GitHub des tâches ne peut que lire le code.
+permissions:
+  contents: read
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: sudo apt-get install -y -qq postgresql-client poppler-utils
+      - name: Vérification
+        env:
+          DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ github.event.inputs.gemini_model }}
+          FICHES: ${{ github.event.inputs.fiches }}
+          IA: ${{ github.event.inputs.ia }}
+          ENVOI: ${{ github.event.inputs.envoi }}
+        run: |
+          options=""
+          if [ "$IA" = "aucune" ]; then options="--sans-ia"; else options="--ia=$IA"; fi
+          if [ "$ENVOI" = "texte" ]; then options="$options --texte"; fi
+          # $FICHES et $options sont découpés en mots volontairement.
+          node scripts/verification/verifier-fiches.mjs --sortie=rapport-verification $options $FICHES
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: rapport-verification
+          path: |
+            rapport-verification/rapport.md
+            rapport-verification/resultats.json
+          if-no-files-found: ignore
