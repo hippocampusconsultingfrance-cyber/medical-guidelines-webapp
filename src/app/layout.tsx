@@ -41,6 +41,13 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <div className="flex-1">{children}</div>
         <footer className="border-t border-slate-200 px-6 py-4 text-center text-xs text-slate-500">
+          <p className="mb-2 text-sm text-slate-700">
+            <b>Société savante&nbsp;?</b> Devenez notre partenaire : accès PREMIUM offert, statistiques anonymes de lecture
+            et signalements d&apos;erreurs sur vos fiches.{" "}
+            <a href="/partenaires" className="font-semibold text-[#1A74A6] hover:underline">
+              En savoir plus
+            </a>
+          </p>
           <a href="/mentions-legales" className="hover:underline">
             Mentions légales
           </a>

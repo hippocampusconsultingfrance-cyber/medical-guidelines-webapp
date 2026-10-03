@@ -32,7 +32,15 @@ export default async function AssistantPage() {
       <h1 className="mt-4 text-2xl font-semibold text-slate-900">
         Assistant de recherche <span className="text-sm font-normal text-slate-500">(bêta)</span>
       </h1>
-      <p className="mt-2 text-sm text-slate-600">
+      <div role="note" className="mt-4 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">
+        <p className="font-semibold">Réponses produites par une intelligence artificielle</p>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>Elles peuvent contenir des erreurs ou des oublis.</li>
+          <li>Elles ne remplacent pas votre jugement clinique.</li>
+          <li>Vérifiez toujours le passage dans la fiche et la source officielle citée avant toute décision.</li>
+        </ul>
+      </div>
+      <p className="mt-4 text-sm text-slate-600">
         Posez une question en langage courant : l&apos;assistant retrouve dans vos fiches les passages exacts qui y
         répondent, avec le lien vers la fiche et la source officielle. Il ne rédige pas de réponse et ne donne aucun
         avis sur un patient : la décision relève de votre jugement clinique.

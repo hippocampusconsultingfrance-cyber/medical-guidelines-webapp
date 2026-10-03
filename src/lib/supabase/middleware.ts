@@ -48,6 +48,8 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
     request.nextUrl.pathname === "/corrections" ||
     // Démarche et financement du site (public).
     request.nextUrl.pathname === "/demarche" ||
+    // Offre de partenariat aux sociétés savantes (public).
+    request.nextUrl.pathname === "/partenaires" ||
     request.nextUrl.pathname === "/sitemap.xml" ||
     // Appelé par Stripe (sans session) ; authentifié par sa signature.
     request.nextUrl.pathname === "/api/stripe/webhook" ||
