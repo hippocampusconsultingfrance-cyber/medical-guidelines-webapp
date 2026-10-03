@@ -52,3 +52,15 @@ update public.document_societies ds
  where d.id = ds.document_id
    and d.society_id = ds.society_id
    and ds.role <> 'auteur';
+
+-- Autres sociétés déjà rangées en France : code pays.
+update public.societies set country_code = 'FR'
+ where country_or_region = 'France' and country_code is null;
+
+-- Décisions du porteur de projet (03/10/2026) : nom officiel du CARO (logo
+-- de la société : « Collège », et non « Club ») ; sociétés créées par la
+-- vague 0 validées.
+update public.societies set full_name = 'Collège d''anesthésie-réanimation en obstétrique'
+ where acronym = 'CARO' and full_name = 'Club d''anesthésie-réanimation en obstétrique';
+update public.societies set vetting_status = 'valide'
+ where acronym in ('ARCOTHOVA', 'CFAR', 'CFRC', 'GRACE', 'SOFIA') and vetting_status = 'a_valider';

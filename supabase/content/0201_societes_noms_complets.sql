@@ -38,7 +38,7 @@ update public.societies s
     ('ASRA', 'American Society of Regional Anesthesia and Pain Medicine'),
     ('ATS', 'American Thoracic Society'),
     ('AWMF', 'Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften'),
-    ('CARO', 'Club d''anesthésie-réanimation en obstétrique'),
+    ('CARO', 'Collège d''anesthésie-réanimation en obstétrique'),
     ('CIAFU', 'Comité d''infectiologie de l''Association française d''urologie'),
     ('CIANE', 'Collectif interassociatif autour de la naissance'),
     ('CNCT', 'Comité national contre le tabagisme'),

@@ -71,8 +71,8 @@ Les vérifications automatiques de la base (`tests/base/parcours.sql`, section 2
 
 ## 3. Points à trancher par l’équipe éditoriale
 
-- **Noms complets** : la base et le référentiel divergent pour le CARO (« Club » dans la base, « Collège » sur le site officiel) et pour l’ANARLF. Le nom de la base est conservé jusqu’à vérification.
-- **Statut des sociétés** : il reste « à valider » ; leur validation (`vetting_status`) relève de l’équipe éditoriale.
+- **Noms complets** : le CARO est le « Collège d’anesthésie-réanimation en obstétrique » (corrigé le 03/10/2026). Le nom de l’ANARLF diffère encore entre la base et le site officiel ; celui de la base est conservé jusqu’à vérification.
+- **Statut des sociétés** : ARCOTHOVA, CFAR, CFRC, GRACE et SOFIA validées par le porteur de projet le 03/10/2026.
 - **Prochaines étapes du plan** :
   - T5 : profil juridique par société, hérité par chaque fiche ;
   - T9 : atelier multi-sociétés ;
