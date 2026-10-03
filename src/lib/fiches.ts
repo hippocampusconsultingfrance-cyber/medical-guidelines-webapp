@@ -317,8 +317,37 @@ const DECOMPTES: [RegExp, string][] = [
 const appliquer = (texte: string, regles: [RegExp, string][]) =>
   regles.reduce((t, [motif, remplacement]) => t.replace(motif, remplacement), texte);
 
+// Fiches citées dans les notes méthodologiques par leur clé technique (ou
+// par le script de l'atelier, « fiche_<clé>.py ») : remplacées par leur titre.
+// Seules des clés composées (avec « _ ») sont listées, jamais un mot courant.
+const FICHES_CITEES: Record<string, string> = {
+  anesth_pediatrique_structures: "Structures et matériel de l'anesthésie pédiatrique",
+  erreurs_medicamenteuses_ar_2016: "Prévention des erreurs médicamenteuses en anesthésie-réanimation (actualisation 2016)",
+  intubation_difficile_adulte: "Intubation difficile & extubation (adulte)",
+  postop_2006: "Les blocs périmédullaires chez l'adulte — Analgésie postopératoire (Q8/15)",
+  raac_lobectomie_pulmonaire_2019: "Réhabilitation améliorée après lobectomie pulmonaire",
+  raac_orthopedique_2019: "Réhabilitation améliorée — arthroplastie de hanche/genou",
+  resection_hepatique_2025: "Prise en charge péri-opératoire — Résection hépatique",
+  sujet_age_esf: "Anesthésie du sujet âgé — exemple de la FESF",
+  voies_aeriennes_adulte: "Voies aériennes en anesthésie adulte",
+};
+const CLE_CITEE = new RegExp(
+  // Jamais à l'intérieur d'une adresse (« /…/cle.pdf »).
+  `(?:<code>|<i>)?(?<![/\\w.-])(fiche_)?(${Object.keys(FICHES_CITEES).join("|")})(?:\\.py)?\\b(?![/.-]\\w)(?:</code>|</i>)?`,
+  "g",
+);
+const REFERENCES: [RegExp, string][] = [
+  [/ déjà git-trackée/g, ""],
+  [/\(grade_chip\)/g, "(étiquette de grade colorée)"],
+  [/le funnel_diagram de la fiche/g, "le schéma en entonnoir de la fiche"],
+  [/\(cf\. la fiche/g, "(voir la fiche"],
+];
+
 export function texteLisible(texte: string) {
-  return appliquer(texte, JARGON);
+  const cites = texte.replace(CLE_CITEE, (_tout, script: string | undefined, cle: string) =>
+    `${script ? "la fiche " : ""}« ${FICHES_CITEES[cle]} »`,
+  );
+  return appliquer(appliquer(cites, REFERENCES), JARGON);
 }
 
 export function methodologieLisible(texte: string) {
