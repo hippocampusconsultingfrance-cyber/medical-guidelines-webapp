@@ -1,0 +1,493 @@
+{
+ "cle": "gestion_traitements_chroniques_douleur_toxico_2009",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "5a1c57997acf",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "b26fef47f329",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "distance de l'intervention chirurgicale, dans un contexte de stabilité et lorsque l'intensité douloureuse a significativement diminué (grade C).",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u3",
+   "empreinte": "e1a4730e0e55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'administrer en préopératoire la dose habituelle de morphinique, ou la dose équianalgésique d'un autre opioïde (accord fort).",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u4",
+   "empreinte": "cbe6130c0df5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un patch de fentanyl ne doit pas être retiré dans la période périopératoire ou alors une substitution par un autre opioïde est nécessaire (accord fort).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "5b369da6f245",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "poursuivis, voire substitués par un autre opioïde, y compris du palier supérieur en tenant compte des doses équianalgésiques (accord fort).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u6",
+   "empreinte": "1dbd4fdd9212",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des opioïdes car ils peuvent entraîner un syndrome de sevrage (grade C).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u7",
+   "empreinte": "97911d4cb71e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "60 mg de D = 10 mg de morphine",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u8",
+   "empreinte": "93b7f71f4890",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "60 mg de C = 10 mg de morphine",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u9",
+   "empreinte": "6d03d06dc5a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "60 mg de DC = 20 mg de morphine",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u10",
+   "empreinte": "d95ff59d8142",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "50 à 60 mg de T = 10 mg de morphine",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u11",
+   "empreinte": "00ae7cfff5ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "50 mg de P = 10 mg de morphine",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u12",
+   "empreinte": "7dce27781c25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 mg de morphine intraveineuse = 3 mg de morphine orale",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u13",
+   "empreinte": "3d1c70405924",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 mg de morphine SC = 2 mg de morphine orale",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u14",
+   "empreinte": "937c16a46f9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5 mg d'O = 10 mg de morphine orale",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u15",
+   "empreinte": "5d05ecb9f8d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4 mg d'hydromorphine = 30 mg de morphine",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u16",
+   "empreinte": "1137b0a84b58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "0,2 mg de B = 6 mg de morphine orale",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u17",
+   "empreinte": "2bb03452f1e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fentanyl transdermique (FTD) variable",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u18",
+   "empreinte": "ef87d4540387",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10 mg de morphine intraveineuse = 1 mg de morphine par voie péridurale = 0,1 mg de morphine par voie intrathécale.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u19",
+   "empreinte": "c9c690eb9fda",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "où il est alors recommandé d'arrêter les AINS non sélectifs (grade B).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u20",
+   "empreinte": "db78be2cca75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans ces conditions, le maintien des coxibs (prescrits dans le respect des contre-indications) est recommandé en périopératoire (grade B).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u21",
+   "empreinte": "4d53f2e58b95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "longue demi-vie (oxicams, naproxène), sept à dix jours avant la chirurgie et 24 heures avant pour les AINS de demi-vie courte",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u22",
+   "empreinte": "62963df06e23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de poursuivre en périopératoire les traitements par antiépileptiques à visée antalgique (accord fort).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u23",
+   "empreinte": "382880d178c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de poursuivre en périopératoire les traitements par antidépresseurs à visée antalgique (accord fort).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u24",
+   "empreinte": "77e786ecda5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de poursuivre en périopératoire les traitements par benzodiazépines (accord fort).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u25",
+   "empreinte": "f23fc19b728b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La carbamazépine peut diminuer la durée d'action des curares.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u26",
+   "empreinte": "fa8d69271560",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas interrompre la perfusion des dispositifs thérapeutiques à visée analgésique tout au long de la période périopératoire",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u27",
+   "empreinte": "b6db7b27bff5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "médecin référent est souhaitable pour déterminer la stratégie (accord fort).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u28",
+   "empreinte": "17fe34e125ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas faire d'anesthésie et/ou d'analgésie périmédullaire (accord fort).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u29",
+   "empreinte": "238381c8be16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de données spécifiques, les précautions d'utilisation au bloc opératoire sont celles applicables aux stimulateurs cardiaques (accord fort).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u30",
+   "empreinte": "08d3ef1d3164",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé dans ce cas d'augmenter les posologies de morphiniques. Dans cette situation, la kétamine pourrait être d'un apport intéressant.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u31",
+   "empreinte": "4f8582fa682e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'intervention la dose quotidienne du traitement substitutif quelle que soit la technique d'anesthésie choisie (accord fort).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u32",
+   "empreinte": "bde0b0ffba6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la voie orale est impossible, il faut administrer la morphine par voie sous-cutanée ou intraveineuse",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u33",
+   "empreinte": "fc2b20a7039e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de poursuivre le traitement substitutif tout au long de l'hospitalisation, pour éviter un sevrage, en assurant les besoins de base en opiacés (accord fort).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u34",
+   "empreinte": "683064cf6160",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de favoriser chaque fois que possible une ALR axiale ou périphérique (accord fort).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u35",
+   "empreinte": "da03564185ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'augmenter les doses de morphine prescrites pour l'analgésie postopératoire (grade C).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u36",
+   "empreinte": "c67610e16c06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "m sont donc formellement contre-indiqués chez le patient sous traitement substitutif (grade C).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u37",
+   "empreinte": "343dd58a3152",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'arrêter la naltrexone au minimum dans les 24 à 48 heures qui précèdent une intervention chirurgicale.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u38",
+   "empreinte": "550910d3d719",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10 mg de sulfate de morphine oral",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u39",
+   "empreinte": "7de38a5bd9c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3,3 mg de sulfate de morphine parentéral (intraveineuse ou SC)",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u40",
+   "empreinte": "6304a2251264",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6–7 mg de méthadone orale",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u41",
+   "empreinte": "d465379a4f9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1,2–1, 4 mg de buprénorphine",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u42",
+   "empreinte": "769ee689921e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé comme pour le tabac, de s'abstenir de fumer ou de consommer du cannabis avant une chirurgie réglée (accord fort).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u43",
+   "empreinte": "67fa1dd9becd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "m donc sont formellement contre-indiqués chez l'héroïnomane (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u44",
+   "empreinte": "5cdaa4c89eb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tout en sachant qu'il faut fréquemment augmenter les doses des médicaments hypnotiques et morphiniques (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u45",
+   "empreinte": "de91dea6f945",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'ALR axiale, il est recommandé de demander au minimum un dosage des plaquettes (grade C).",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u46",
+   "empreinte": "71d7019b5707",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe un risque de crise convulsive lors d'un sevrage des benzodiazépines (grade C).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u47",
+   "empreinte": "126be7da4226",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'administrer des doses plus élevées de morphiniques pour l'anesthésie générale, ou pour l'analgésie postopératoire (grade B).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u48",
+   "empreinte": "603ae7488242",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "db2faea63bfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser avec prudence les médicaments anesthésiques tachycardisants (kétamine, pancuronium, atropine, éphédrine, adrénaline) ainsi que d'éviter l'halothane.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u50",
+   "empreinte": "9469a9040663",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser une induction en séquence rapide avec intubation trachéale.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u51",
+   "empreinte": "b6675a2dfa9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé un sevrage complet d'une semaine minimum avant une intervention pour éviter tout risque de complication grave périopératoire",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u52",
+   "empreinte": "c163fddf8f94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de surveiller les apports hydriques et le bilan hydroélectrolytique.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u53",
+   "empreinte": "855867319196",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de prescrire durant la période périopératoire une benzodiazépine afin de prévenir un syndrome de sevrage.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u54",
+   "empreinte": "3897cf6954db",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

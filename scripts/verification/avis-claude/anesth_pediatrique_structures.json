@@ -1,0 +1,241 @@
+{
+ "cle": "anesth_pediatrique_structures",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "cbe6ed24d759",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces recommandations n'ont pas pour but de créer un monopole pour l'anesthésie pédiatrique dans des grands centres mais d'avoir un standard pour l'anesthésie pédiatrique.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "041ea5e1baac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "0 à 1 mois : au minimum un médecin anesthésiste-réanimateur assisté d'un(e) infirmier (e) ou d'un autre médecin anesthésiste-réanimateur.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "6807f9c23eec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si les structures sont éloignées, il semble indispensable que le transfert soit assuré par une équipe mobile médicalisée équipée de matériels adaptés",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "044b5e9ea351",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il doit être > 1,5 emplacement par salle d'opération, probablement 2 par salle d'opération, et en tout cas adapté au flux de patients",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "ea4a1f2b593a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "abordés par la circulaire n°83-24 du 1er août 1983 concernant l'hospitalisation des enfants et par la charte de l'enfant hospitalisé",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "30e6b1c0dd0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ailleurs, la solution doit passer par une politique de réseau de correspondants formés à la pratique pédiatrique.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "970c8772d7ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut un chariot spécifique pour regrouper tout le matériel adapté au poids et à l'âge de l'enfant.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "86538c7a8346",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le nouveau-né, le masque rond à bourrelet permet une ventilation plus facile. Les tailles disponibles doivent aller de 00 à 4.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "a05ea281881b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle doit être disponible mais elle n'est pas obligatoire si la position de la langue n'obstrue pas le flux gazeux.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "71aa945265d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La disponibilité de ballons auto-gonflables adaptés à l'âge est impérative.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "8fd1cc3657c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En théorie, le circuit machine n'est pas utilisable pour l'induction des enfants de moins d'un an.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "833fb03c669f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un jeu de lames droites (Miller 0, 1 et 2) et courbes (Macintosh 1, 2 et 3) correspondantes à l'âge de l'enfant",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "153488e7d0ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La taille de la sonde d'intubation (tailles disponibles de 2,5 à 6,5) peut être définie par la formule suivante",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "b1c1a6607666",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La masque laryngé (tailles disponibles de 1 à 3) est une alternative au masque facial et à la sonde d'intubation.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "461b457eb633",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "délivrer des volumes courants faibles (< 50 ml), assurer des fréquences élevées (80 c/min).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "db10cf5db543",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute équipe anesthésique doit disposer d'un algorithme pour intubation difficile.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u17",
+   "empreinte": "948410cfe71a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les drains pleuraux doivent être disponible de la taille 8 à 14.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "9d04387a9436",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est indispensable de disposer de toute la gamme de taille de cathéters, depuis les plus petits (24 Gauge) jusqu'au plus grand (14 Gauge).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "c6116aaed1bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un défibrillateur avec palettes pédiatriques et réglage de l'intensité doit être disponible.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "05f48e3993e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessite de disposer d'un jeu complet de brassards (taille 1 à 4 et adulte). En pratique, on doit disposer d'un brassard couvrant les 2/3 du bras.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "5efea401b048",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut choisir le monitorage le plus distal, le débit aspiratif le plus élevé (> 150 ml/min) et l'analyse la plus rapide du prélèvement.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "9daaec3a8924",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance de la température nécessite une sonde thermique rectale ou mieux oesophagienne.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "2b3c3216f405",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contrôle de la température de la salle d'opération (20 à 26 °C) et limitation des allées et venues.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "8acf0764eb91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les nouveaux-nés et les nourrissons sont habituellement ventilés en mode \"pression contrôlée\", alors que les patients plus grands sont habituellement ventilés en mode \"volume contrôlé\".",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "c8b5a780c36d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un matériel de contrôle de débit de perfusion est indispensable pour des débits < 100 ml/h",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "31505e8a7a07",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "cle": "corticotherapie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b411d0d96449",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Leur traitement par les glucocorticoïdes est discuté depuis trente ans.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "75b88d13a953",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "3bedb8148f1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les phénomènes des phases 1 et 3 ne justifient pas de corticothérapie [1a].",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "c548fc147cb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La phase fibroproliférative ne justifie d un traitement que dans deux situations [2a] : - intensité excessive, - durée anormalement prolongée ( late ARDS ).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "e1e36766869c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est un processus de réparation physiologique aboutissant habituellement à la restauration d une architecture pulmonaire normale [b].",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "9ae8e8b37a54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le jury propose de retenir le seuil de cortisolémie de base à 10 µg/dl, soit environ 275 nmol/L, pour le diagnostic d IS absolue.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "cabefd147303",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le jury ne recommande pas la réalisation systématique de ce test car la réponse normale n est pas clairement définie au cours du choc septique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "eea4bc36e57a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d urgence absolue (ex : purpura fulminans), le traitement par les GC peut être débuté sans dosage préalable de la cortisolémie.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "eae4bcbc4785",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Son incidence est très variable (6 à 75 %) en fonction des seuils utilisés.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "ff9170faf7c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'existe aucun bénéfice au traitement précoce par les GC au cours du SDRA, contrairement à leur administration en cas de fibroprolifération prolongée et/ou excessive [a].",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "4864753d87ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le choc septique, seule l'utilisation de faibles doses d'hydrocortisone est bénéfique [a].",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "5e5640511ccc",
+   "verdict": "ecart",
+   "type_ecart": "population",
+   "citation": "Au cours du SDRA, la recherche d'une infection systémique ou d'un foyer infectieux, en particulier pulmonaire doit donc précéder systématiquement la corticothérapie.",
+   "explication": "La source formule la recherche systématique d'infection avant corticothérapie pour le SDRA ; la fiche l'étend au choc septique (« SDRA comme choc septique »).",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "865be8d8939f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les GC entraînant une intolérance glucidique, particulièrement chez l'enfant, la surveillance de la glycémie est nécessaire [2].",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "93b7b2b35bce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de neuromyopathie apparaît pour des doses cumulatives de GC supérieures à 1000-1500 mg de méthylprednisolone (MP), le plus souvent associées aux curares.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "2a1a50da2b45",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "5f44ca75b9a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La corticothérapie doit être envisagée chez les patients présentant un choc septique de gravité particulière car nécessitant des doses élevées et/ou croissantes d agents vaso-actifs",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "25d2d54855f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L hémisuccinate d hydrocortisone à la posologie de 200 à 300 mg/j, en perfusion continue ou répartis en 3 ou 4 injections intraveineuses",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "5cb580ff7721",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutefois, au-delà de 72 heures, l absence de réponse hémodynamique justifie l arrêt du traitement.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "d304e7a7f610",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La glycémie, la natrémie et la kaliémie doivent être surveillées.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "acdd50a5162c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une corticothérapie n est indiquée ni pour la prévention d un SDRA, ni à la phase initiale de son évolution [1a].",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u21",
+   "empreinte": "49960c92cc0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "évoluant depuis 7 jours au moins, avec LIS &Mac179; 2,5, sans amélioration malgré une prise en charge adéquate [2a].",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "fc030bc65018",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n y a pas de marqueur biologique validé pour poser l indication des GC [a].",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "2894af2593d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une biopsie pulmonaire systématique n est pas justifiée en raison des risques non négligeables et de l absence de bénéfice documenté [2b].",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "b2cafc269ddf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La posologie admise est de 2 mg/kg/j répartis en 4 injections intra-veineuses.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "097722c8022b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une biopsie pulmonaire systématique n est pas justifiée en raison des risques non négligeables et de l absence de bénéfice documenté [2b].",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "6482d92666a2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "cle": "hypothermie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "622ec21e2dda",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients opérés de chirurgie non cardiaque a montré que plus d'un patient sur 2 arrivait en SSPI avec une T°C inférieure à 36°C",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "061e24b1d171",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1 – Il est recommandé de lutter contre l'hypothermie péri-opératoire afin de diminuer la survenue des complications infectieuses, cardio-vasculaires et hémorragiques chez le patient anesthésié.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u3",
+   "empreinte": "be89aed95122",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2 – Il est probablement recommandé de maintenir une T°C ³ 36,5°C afin de diminuer les complications hémorragiques chez le patient anesthésié.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u4",
+   "empreinte": "63dbeb6d4d89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette méta-analyse incluait 14 études",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "041005976f98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3 – Il est probablement recommandé d'effectuer un réchauffement cutané actif avant l'induction de l'anesthésie (pré-warming)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u6",
+   "empreinte": "3e45c1eacb92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4 – Il est recommandé d'utiliser le réchauffement cutané actif pour diminuer les complications de l'hypothermie chez le patient anesthésié.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u7",
+   "empreinte": "6365582ca449",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5 – Il est probablement recommandé de privilégier le réchauffement cutané actif au réchauffement passif par l'isolation cutanée",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u8",
+   "empreinte": "4b4bbc3f6528",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En comparaison avec la 1ère période, la réduction du taux d'hypothermie était de 52 % en peropératoire et de 41 % en postopératoire au cours de la 2ème période.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u9",
+   "empreinte": "27407d386a38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6 – Il est recommandé, lorsque que le volume administré est important, de réchauffer les fluides i.v. avec un matériel dédié, et toujours en association avec un réchauffement cutané actif",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u10",
+   "empreinte": "a28b311ff5a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7 – Il est recommandé de réchauffer les produits sanguins labiles avec un matériel dédié pour les patients anesthésiés, et toujours en association avec un réchauffement cutané actif",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u11",
+   "empreinte": "e8c7e2366564",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Question 8 : Pour les patients anesthésiés, le réchauffement des fluides gazeux (gaz anesthésiques, CO2 pour cœlioscopie)",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u12",
+   "empreinte": "0e06edb0248a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réchauffement des fluides i.v. permettait de maintenir la T°C 0,5°C plus élevée que lors de l'absence de réchauffement",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u13",
+   "empreinte": "e42793830ca2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réchauffement des liquides d'irrigation seul est cependant insuffisant pour maintenir la T°C et doit être accompagné de techniques de réchauffement cutané actif.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u14",
+   "empreinte": "e10bbabece90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R9 – Il n'est probablement pas recommandé d'utiliser les aminoacides i.v. pour limiter la chute de la T°C et/ou de diminuer les complications hémorragiques des patients anesthésiés.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u15",
+   "empreinte": "a6f3ca72fb06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10 – Il est probablement recommandé d'utiliser les dispositifs de réchauffement actifs sans craindre une augmentation du risque infectieux attribuable à leur utilisation",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u16",
+   "empreinte": "046605f7364e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être accompagné de techniques de réchauffement cutané actif. Grade 2+, Accord faible",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u17",
+   "empreinte": "086267523223",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11 – Les experts suggèrent que les dispositifs de réchauffement actif peuvent être pourvoyeurs de complications à type de brûlure en cas d'usage inapproprié.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "b127d2628aff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne parait pas contre-indiqué de réchauffer les produits sanguins jusque 4345°C, la proportion d'hémolyse étant négligeable même à ses températures",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u19",
+   "empreinte": "b5a627bcde71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R12 – Il est recommandé, en cas d'hypothermie à l'arrivée en SSPI, d'utiliser un dispositif de réchauffement cutané actif pour atteindre la normothermie le plus rapidement possible.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u20",
+   "empreinte": "aebd74b544be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R13 – Il est probablement recommandé de préférer les dispositifs utilisant l'air chaud pulsé aux dispositifs à circulation d'eau chaude pour atteindre la normothermie.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u21",
+   "empreinte": "e8ea0378cd96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette méta-analyse (1) a inclus 11 essais contrôlés randomisés, soit 699 patients.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u22",
+   "empreinte": "34459e08a518",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R14 (schéma, p. 25) : T° salle 20°C à l'accueil et pendant l'induction ; pré-warming (2+) puis réchauffement cutané actif (1+), fluides i.v. (1+), PSL (1+), irrigation (2+) ; SSPI : réchauffement cutané actif (1+) par air pulsé (2+) ; objectifs 36,5°C, ne pas passer sous 36°C.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "981356cd6c99",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
