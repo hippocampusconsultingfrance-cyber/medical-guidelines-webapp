@@ -64,3 +64,5 @@ update public.societies set full_name = 'Collège d''anesthésie-réanimation en
  where acronym = 'CARO' and full_name = 'Club d''anesthésie-réanimation en obstétrique';
 update public.societies set vetting_status = 'valide'
  where acronym in ('ARCOTHOVA', 'CFAR', 'CFRC', 'GRACE', 'SOFIA') and vetting_status = 'a_valider';
+update public.societies set full_name = 'Association de neuro-anesthésie réanimation de langue française'
+ where acronym = 'ANARLF' and full_name = 'Association des neuro-anesthésistes réanimateurs de langue française';

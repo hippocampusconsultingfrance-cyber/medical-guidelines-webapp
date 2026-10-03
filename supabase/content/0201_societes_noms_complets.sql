@@ -11,7 +11,7 @@ update public.societies s
   from (values
     ('ACHBPT', 'Association de chirurgie hépato-bilio-pancréatique et transplantation'),
     ('ANAP', 'Agence nationale d''appui à la performance des établissements de santé et médico-sociaux'),
-    ('ANARLF', 'Association des neuro-anesthésistes réanimateurs de langue française'),
+    ('ANARLF', 'Association de neuro-anesthésie réanimation de langue française'),
     ('ARMPO', 'Conseil national professionnel d''anesthésie-réanimation et médecine péri-opératoire'),
     ('CARORL', 'Club d''anesthésie-réanimation en ORL'),
     ('CERES', 'Collectif écoresponsabilité en santé'),
