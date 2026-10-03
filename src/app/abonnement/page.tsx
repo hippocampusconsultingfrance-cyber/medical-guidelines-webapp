@@ -39,7 +39,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
   const [{ data: sub }, { data: premium }, isEditor, { data: demande }] = await Promise.all([
     supabase
       .from("subscriptions")
-      .select("status, current_period_end, canceled_at, stripe_customer_id")
+      .select("status, current_period_end, canceled_at, stripe_customer_id, stripe_subscription_id")
       .eq("user_id", user.id)
       .maybeSingle(),
     supabase.rpc("has_premium"),
@@ -181,7 +181,15 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
           <p className="text-lg font-semibold text-slate-900">Votre abonnement PREMIUM est actif.</p>
           <p className="mt-2 text-slate-600">
             Toutes les fiches de votre spécialité sont ouvertes
-            {fin ? (sub?.canceled_at ? ` jusqu'au ${fin} (résiliation enregistrée).` : ` ; prochain renouvellement le ${fin}.`) : "."}
+            {!sub?.stripe_subscription_id
+              ? fin
+                ? `, accès offert jusqu'au ${fin}.`
+                : ", accès offert sans date de fin."
+              : fin
+                ? sub.canceled_at
+                  ? ` jusqu'au ${fin} (résiliation enregistrée).`
+                  : ` ; prochain renouvellement le ${fin}.`
+                : "."}
           </p>
           {enabled && sub?.stripe_customer_id && (
             <form action={openPortal} className="mt-5">

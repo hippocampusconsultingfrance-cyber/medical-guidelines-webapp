@@ -47,7 +47,8 @@ type Membre = {
 
 // Liste des membres inscrits (administrateurs seulement) : identité, métier,
 // date d'inscription, dernière connexion, statut d'abonnement et activité.
-// Lue avec la clé service_role ; aucune donnée n'est modifiée ici.
+// Lue avec la clé service_role ; un clic sur le nom ouvre la fiche du membre
+// (modification, PREMIUM offert).
 export default async function MembresPage({ searchParams }: PageProps<"/bibliotheque/membres">) {
   const supabase = await createClient();
   const {
@@ -221,7 +222,9 @@ export default async function MembresPage({ searchParams }: PageProps<"/biblioth
                   {visibles.map((m) => (
                     <tr key={m.id}>
                       <td>
-                        <b>{m.nom}</b>
+                        <Link href={`/bibliotheque/membres/${m.id}`} style={{ fontWeight: 700 }}>
+                          {m.nom}
+                        </Link>
                         <br />
                         <span style={{ fontSize: "0.82rem", color: "var(--ink-muted)", wordBreak: "break-all" }}>{m.email}</span>
                       </td>
