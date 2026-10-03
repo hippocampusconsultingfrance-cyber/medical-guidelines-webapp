@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 // conseil juridique du porteur de projet (septembre 2026). Le médiateur de
 // la consommation est renseigné dans lib/legal.ts ; toute modification du
 // texte s'accompagne d'une nouvelle CGV_VERSION (lib/stripe.ts), enregistrée
-// avec chaque souscription.
+// avec chaque souscription. Version du 03/10/2026 : le §2 précise ce que
+// rémunère l'abonnement (le service, pas les documents des sociétés savantes).
 export default function CgvPage() {
   const h2 = "mt-8 text-lg font-semibold text-slate-900";
   return (
@@ -36,6 +37,12 @@ export default function CgvPage() {
           conditions générales d&apos;utilisation
         </a>
         ).
+      </p>
+      <p className="mt-2">
+        L&apos;abonnement rémunère le service : rédaction et relecture médicale des synthèses,
+        outils de recherche, alertes et hébergement. Les documents officiels des recommandations
+        ne sont ni vendus ni diffusés par le site : ils restent l&apos;œuvre et la propriété de
+        leurs auteurs, en accès libre sur leurs sites, vers lesquels chaque fiche renvoie.
       </p>
 
       <h2 className={h2}>3. Prix</h2>
