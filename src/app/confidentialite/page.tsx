@@ -74,7 +74,9 @@ export default function ConfidentialitePage() {
       <p className="mt-2">
         Sécurité du contenu : chaque ouverture d&apos;une fiche est journalisée (compte, fiche, date et
         heure) pendant 30 jours, afin de détecter une extraction automatisée ; un rythme anormal suspend
-        temporairement la lecture et prévient un administrateur. Tarif professionnel en formation : le justificatif
+        temporairement la lecture et prévient un administrateur. Base légale : intérêt légitime de
+        l&apos;éditeur à protéger le contenu du site contre la copie (article 6.1.f du RGPD) ; le journal est
+        effacé automatiquement chaque nuit au-delà de 30 jours. Tarif professionnel en formation : le justificatif
         déposé n&apos;est consulté que par un administrateur et il est supprimé dès la décision prise ; seuls
         le statut déclaré, l&apos;année universitaire et la décision sont conservés.
       </p>
@@ -94,8 +96,10 @@ export default function ConfidentialitePage() {
         <strong>3.2. Partage avec des partenaires commerciaux (facultatif).</strong>{" "}
         Si — et seulement si — vous avez coché la case dédiée lors de
         l&apos;inscription, vos données (nom, email, profession) peuvent être
-        transmises à des entreprises partenaires proposant des produits ou
-        services liés à votre activité professionnelle. Base légale :
+        transmises au partenaire suivant, qui propose des produits ou services
+        liés à votre activité professionnelle : LASKA CORPORATE SAS. Tout
+        nouveau partenaire sera ajouté à cette liste et votre accord vous sera
+        redemandé avant toute transmission. Base légale :
         consentement explicite (article 6.1.a du RGPD), recueilli
         séparément de l&apos;acceptation des CGU, jamais pré-coché, et
         retirable à tout moment sans affecter votre accès au service.
@@ -115,9 +119,11 @@ export default function ConfidentialitePage() {
         4. Durée de conservation
       </h2>
       <p className="mt-2">
-        Vos données sont conservées tant que votre compte est actif, puis
-        supprimées dans un délai de 12 mois après suppression du compte ou
-        après 3 ans d&apos;inactivité, sauf obligation légale contraire. Les
+        Vos données sont conservées tant que votre compte est actif. Elles
+        sont effacées immédiatement lorsque vous supprimez votre compte, et
+        au plus tard après 3 ans d&apos;inactivité (compte sans connexion
+        depuis 3 ans, hors abonnement en cours), sauf obligation légale
+        contraire. Les
         factures et les pièces relatives aux paiements sont conservées 10 ans
         (obligation comptable, article L123-22 du code de commerce).
       </p>
@@ -137,7 +143,8 @@ export default function ConfidentialitePage() {
         </a>{" "}
         (modification de vos informations, retrait du consentement, export
         de vos données, suppression du compte) ou en contactant
-        l&apos;éditeur du site. Vous disposez également du
+        l&apos;éditeur du site (contact@medical-guidelines.net). Nous
+        répondons dans un délai d&apos;un mois. Vous disposez également du
         droit d&apos;introduire une réclamation auprès de la CNIL
         (www.cnil.fr).
       </p>
@@ -175,8 +182,10 @@ export default function ConfidentialitePage() {
         Les e-mails de service (confirmation d&apos;inscription, mot de passe
         oublié) et les alertes e-mail (nouvelles recommandations des sociétés
         suivies, mises à jour de vos fiches, pour les abonnés PREMIUM qui les
-        ont activées) sont envoyés par Resend, qui agit en tant que
-        sous-traitant dans les mêmes conditions. Chaque alerte comporte un
+        ont activées), ainsi que la lettre mensuelle de veille adressée aux
+        abonnés PREMIUM qui ont activé les alertes, sont envoyés par Resend
+        (Resend, Inc., États-Unis), qui agit en tant que sous-traitant dans
+        les mêmes conditions. Chaque alerte comporte un
         lien de désinscription ; les alertes se désactivent aussi depuis la
         page « Mon compte ».
       </p>
@@ -219,6 +228,17 @@ export default function ConfidentialitePage() {
         Chaque changement de votre consentement au partage avec des
         partenaires est horodaté et conservé dans un historique consultable
         depuis la page « Mon compte ».
+      </p>
+
+      <h2 className="mt-8 text-lg font-semibold text-slate-900">
+        8. Cookies
+      </h2>
+      <p className="mt-2">
+        Le site ne dépose que des cookies strictement nécessaires à son
+        fonctionnement : les cookies de session qui vous maintiennent connecté
+        et sécurisent votre compte. Aucun cookie publicitaire, de mesure
+        d&apos;audience ou de réseau social n&apos;est utilisé ; ces cookies
+        étant exemptés de consentement, aucun bandeau n&apos;est affiché.
       </p>
     </div>
   );

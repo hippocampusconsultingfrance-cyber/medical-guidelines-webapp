@@ -6,7 +6,7 @@ import { isEditorialAccount } from "@/lib/roles";
 import { checkoutOpen, stripeEnabled, stripeMode } from "@/lib/stripe";
 import Logo from "../logo";
 import { STATUTS } from "@/lib/etudiants";
-import { demanderTarifEtudiant, openPortal, startCheckout } from "./actions";
+import { demanderTarifEtudiant, openPortal, resilier, startCheckout } from "./actions";
 
 export const metadata: Metadata = {
   title: "Abonnement PREMIUM — medical-guidelines.net",
@@ -26,6 +26,7 @@ const MESSAGES: Record<string, string> = {
   annule: "Paiement annulé : aucun montant n'a été débité.",
   cases: "Cochez les deux cases pour continuer.",
   code: "Ce code promotionnel n'est pas valable. Vérifiez-le, ou laissez le champ vide.",
+  resiliation: "Résiliation enregistrée : votre accès PREMIUM reste ouvert jusqu'à la fin de la période payée, sans renouvellement.",
   portail: "Espace de facturation indisponible pour ce compte : écrivez-nous à contact@medical-guidelines.net.",
 };
 
@@ -192,11 +193,20 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
                 : "."}
           </p>
           {enabled && sub?.stripe_customer_id && (
-            <form action={openPortal} className="mt-5">
-              <button className="rounded-lg border border-slate-300 px-5 py-2.5 font-semibold text-slate-800 hover:bg-slate-50">
-                Factures, moyen de paiement, résiliation
-              </button>
-            </form>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <form action={openPortal}>
+                <button className="rounded-lg border border-slate-300 px-5 py-2.5 font-semibold text-slate-800 hover:bg-slate-50">
+                  Factures et moyen de paiement
+                </button>
+              </form>
+              {sub.stripe_subscription_id && !sub.canceled_at && (
+                <form action={resilier}>
+                  <button className="rounded-lg border border-red-300 px-5 py-2.5 font-semibold text-red-800 hover:bg-red-50">
+                    Résilier mon abonnement
+                  </button>
+                </form>
+              )}
+            </div>
           )}
         </section>
       ) : (

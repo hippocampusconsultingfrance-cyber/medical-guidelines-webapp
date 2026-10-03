@@ -1,5 +1,6 @@
 "use client";
 
+import { CGU_VERSION } from "@/lib/legal";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -52,6 +53,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
           profession_autre: professionEstAutre ? professionAutre.trim() : null,
           specialty_slug: specialty,
           consent_service: true,
+          cgu_version: CGU_VERSION,
           consent_partners: consentPartners,
           en_formation: enFormation,
         },
@@ -372,9 +374,10 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
               className="mt-0.5 h-4 w-4 rounded border-slate-300"
             />
             <span>
-              J&apos;accepte que mes données soient partagées avec des
-              entreprises partenaires à des fins commerciales (offres,
-              produits ou services liés à mon activité professionnelle).{" "}
+              J&apos;accepte que mes nom, e-mail et profession soient
+              transmis à notre partenaire LASKA CORPORATE SAS à des fins
+              commerciales (offres, produits ou services liés à mon activité
+              professionnelle).{" "}
               <em>
                 Facultatif — vous pouvez créer votre compte sans cocher cette
                 case, et revenir sur ce choix à tout moment depuis la page

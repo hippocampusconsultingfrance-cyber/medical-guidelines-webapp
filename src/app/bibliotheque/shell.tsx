@@ -169,6 +169,10 @@ export default function Shell({
               <Link href="/bibliotheque/points-cles" style={{ color: "inherit" }}>
                 Points clés
               </Link>
+              {" · "}
+              <Link href="/bibliotheque/relecture" style={{ color: "inherit" }}>
+                Relecture
+              </Link>
               {lib.isAdmin && (
                 <>
                   {" · "}

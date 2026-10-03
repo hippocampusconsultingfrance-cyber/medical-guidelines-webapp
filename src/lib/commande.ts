@@ -9,7 +9,7 @@ import { escapeHtml } from "@/lib/fiches";
 //     version des CGV acceptée, demande d'accès immédiat et renonciation au
 //     droit de rétractation (art. L221-13 et L221-28 13° du Code de la
 //     consommation) ;
-//   - avis de renouvellement, environ 30 jours avant l'échéance : montant
+//   - avis de renouvellement, 35 à 45 jours avant l'échéance : montant
 //     de la prochaine année et moyen de résilier (art. L215-1).
 
 export const LOG_COMMANDE = "commande";
@@ -55,7 +55,7 @@ export function composerConfirmation(c: Commande, site: string): OutgoingEmail {
   const lignes = [
     `Merci pour votre abonnement PREMIUM à medical-guidelines.net, souscrit le ${jour(c.debut)}. Il ouvre toutes les fiches de votre spécialité et les alertes de mise à jour.`,
     `Montant payé : ${euros(c.montantCents)} TTC pour un an${c.fin ? `, jusqu'au ${jour(c.fin)}` : ""}. La facture vous est envoyée séparément par notre prestataire de paiement, Stripe.`,
-    `L'abonnement se renouvelle automatiquement chaque année au tarif alors en vigueur (50 € TTC par an aujourd'hui). Nous vous écrirons environ 30 jours avant chaque renouvellement. Vous pouvez le résilier à tout moment depuis la page « Abonnement » : l'accès reste ouvert jusqu'à la fin de l'année payée.`,
+    `L'abonnement se renouvelle automatiquement chaque année au tarif alors en vigueur (50 € TTC par an aujourd'hui). Nous vous écrirons un à trois mois avant chaque renouvellement. Vous pouvez le résilier à tout moment depuis la page « Abonnement » (bouton « Résilier mon abonnement ») : l'accès reste ouvert jusqu'à la fin de l'année payée.`,
     c.renonciation
       ? `Droit de rétractation : le ${jour(c.renonciation)}, vous avez demandé l'accès immédiat au service et renoncé expressément à votre droit de rétractation de 14 jours dès le début de l'accès (article L221-28 13° du Code de la consommation).`
       : `Droit de rétractation : l'accès au service étant immédiat, il ne s'applique plus dès le début de l'accès (article L221-28 13° du Code de la consommation).`,

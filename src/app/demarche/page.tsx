@@ -27,7 +27,7 @@ export default async function DemarchePage() {
       "L'abonnement ne sert pas à tirer profit des recommandations",
       [
         "L'abonnement PREMIUM n'est pas le prix d'une recommandation. Il sert à couvrir ce que coûte le site : l'hébergement sécurisé, les développeurs qui le construisent et le maintiennent, et les outils d'intelligence artificielle qui aident à extraire, structurer et tenir à jour les fiches.",
-        "L'intelligence artificielle aide, elle ne décide pas : chaque fiche est relue et validée par un médecin avant sa publication, et toute erreur signalée est corrigée publiquement dans le journal des corrections.",
+        "L'intelligence artificielle aide, elle ne décide pas : chaque fiche est relue par l'équipe médicale, et la date de cette relecture figure sur la fiche ; toute erreur signalée est corrigée publiquement dans le journal des corrections.",
       ],
     ],
     [
