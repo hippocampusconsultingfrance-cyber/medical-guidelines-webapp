@@ -572,4 +572,31 @@ select pg_temp.ok((select points_cles = '["Point un.", "Point deux.", "Point tro
 select pg_temp.ok(exists (select 1 from public.audit_log where action = 'points_cles_valides' and entity_id = :'pd'),
   'points clés : tracés au journal');
 
+-- ---------------------------------------------------------------------------
+-- 25. Référentiel des sociétés (plan d'intégration, T2 et T3) et vague 0.
+-- ---------------------------------------------------------------------------
+\i supabase/migrations/20261003100000_referentiel_societes.sql
+\i supabase/content/0202_societes_vague0.sql
+select pg_temp.ok((select count(*) = count(distinct slug) and count(*) = count(slug) from public.societies),
+  'sociétés : un slug unique pour chacune (migration rejouable)');
+select pg_temp.ok((select slug from public.societies where acronym = 'SFAR') = 'sfar', 'sociétés : slug tiré du sigle');
+insert into public.societies (acronym, country_or_region, country_code) values ('ASA', 'États-Unis', 'US');
+insert into public.societies (acronym, country_or_region, country_code) values ('ASA', 'Australie', 'AU');
+select pg_temp.ok((select string_agg(slug, ' ' order by slug) from public.societies where acronym = 'ASA') = 'asa asa-au asa-us',
+  'sociétés : un sigle homonyme reçoit le code pays');
+insert into public.societies (acronym, country_or_region) values ('ASA', 'Monde');
+select pg_temp.ok(exists (select 1 from public.societies where slug = 'asa-2'), 'sociétés : homonyme sans pays numéroté');
+select pg_temp.ok(pg_temp.refuse('update public.societies set country_code = ''usa'' where acronym = ''SFAR''', 'societies_country_code_check'),
+  'sociétés : code pays ISO à deux lettres');
+select pg_temp.ok((select count(*) from public.societies where acronym in ('SRLF', 'SFMU', 'ARCOTHOVA', 'CFRC', 'SOFIA') and country_code = 'FR') = 5,
+  'vague 0 : sociétés françaises présentes, code FR');
+select pg_temp.ok((select vetting_status from public.societies where acronym = 'ARCOTHOVA') = 'a_valider', 'vague 0 : nouvelles sociétés à valider');
+select pg_temp.ok(not exists (
+    select 1 from public.document_societies ds join public.documents d on d.id = ds.document_id
+     where d.society_id = ds.society_id and ds.role <> 'auteur'),
+  'rôles : la société porteuse est auteur');
+select pg_temp.ok(exists (select 1 from public.document_societies where role = 'co_auteur'), 'rôles : co-signataires co-auteurs');
+select pg_temp.ok(pg_temp.refuse('update public.document_societies set role = ''sponsor''', 'document_societies_role_check'),
+  'rôles : valeur hors liste refusée');
+
 select 'Parcours membre : toutes les vérifications sont passées.';
