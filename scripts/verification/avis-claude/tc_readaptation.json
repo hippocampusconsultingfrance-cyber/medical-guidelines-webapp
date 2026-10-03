@@ -1,0 +1,304 @@
+{
+ "cle": "tc_readaptation",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "c582d7225861",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "France, 12 000 personnes en meurent, 8 à 10 000 en gardent des séquelles, 1800 perdent leur autonomie.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "76b57da54a74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les recommandations correspondant à un « accord professionnel » n'ont pas fait l'objet de publication dans la littérature.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "5e7582cc14b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un état de non-réponse dans lequel le sujet repose les yeux fermés et ne peut être réveillé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "fb5192122f38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le meilleur moyen de coter rapidement les niveaux cliniques de passage du coma à l'éveil (accord professionnel).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "cddf09a1beef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Par rapport au GCS et à la durée du coma, c'est le meilleur index pronostique global à la période initiale (grade C).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "11f89726f27c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la Wessex Head Injury Matrix (WHIM) bénéficie d'une traduction française validée (grade B)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "89e9b95a1fad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permettre de distinguer état pauci-relationnel et végétatif (grade B).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "2e6e1d088bbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la durée du coma, la durée de la PTA et d'autre part, les résultats de la GOS (grade C).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "c6373170f5e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "successivement en charge du patient (accord professionnel).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "71249ca5efc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "devrait cependant intervenir plus précocement (accord professionnel).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "0cb6000004de",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "6d96e95a4ac7",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "La TDM constitue l'examen de l'admission (recommandation B) et de la 24e heure (avis d'experts).",
+   "explication": "La source distingue deux niveaux : TDM d'admission = recommandation B ; TDM de la 24e heure = avis d'experts. La fiche attribue « AE » à l'ensemble, ce qui sous-cote la TDM d'admission.",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "7e329fdaf8a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "parce que les informations diagnostiques qu'elle apporte ne modifient pas le processus de prise en charge précoce (avis d'experts).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "9feed483a730",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des PE cognitifs absents n'ont aucune valeur pronostique (grade A)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "41dc53cae9d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "possède une valeur pronostique quant à l'évolution ultérieure (grade B).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "84203929af90",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "587716991d05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La TDM reste le standard de suivi thérapeutique (grade A)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "3016e7acbcec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plusieurs types de lésions cérébrales (lésions axonales diffuses, hématomes) (grade B).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "914eb5522e87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour tout patient ayant subi un traumatisme crânien grave (avis d'experts).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "74e16d569b32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En phase subaiguë, la réapparition de PE cognitifs est prédictive du réveil dans les jours qui suivent (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u21",
+   "empreinte": "fb97cff85519",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le SPECT (scintigraphie de perfusion) n'est pas recommandé à la phase des soins initiaux et de l'éveil (accord professionnel).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "0250a466ec11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "IRM fonctionnelle peuvent apporter des éléments spécifiques d'individualisation de tableaux neurologiques complexes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "b47a5fce8a8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un décès a été observé dans l'étude concernant l'amantadine.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "bc00c4cc62b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les résultats des essais ont un faible niveau de preuve (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "1431a14f4eb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Leur traitement approprié, en tenant compte également de leurs effets secondaires (sédation) est donc à recommander.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "6247091cf481",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Son traitement ne s'appuie pas sur des protocoles validés à cette phase.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "c01d52e04177",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne permettent donc pas de proposer des recommandations précises quant aux approches à privilégier.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "90a3cb4f04ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C'est en quelque sorte une prédiction auto-accomplie (grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "7a9889e7b7a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "argument logique et compassion doivent élargir le temps de présence de la famille dans les limites de l'organisation des soins (accord professionnel).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "abc3f4a869a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conduit à recommander une information cohérente, adaptée au moment, pas à pas, donc évolutive et pédagogique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u31",
+   "empreinte": "eef8b040bb88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soumises à une charge émotionnelle parfois insupportable (avis d'experts).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u32",
+   "empreinte": "46e010985b49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les différentes composantes du préjudice subi par les familles soient également prises en compte (accord professionnel).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u33",
+   "empreinte": "045e9d748f60",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
