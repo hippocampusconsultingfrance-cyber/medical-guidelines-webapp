@@ -1,0 +1,259 @@
+{
+ "cle": "thrombectomie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "29e76f7ab730",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "b206048f0d38",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "be9c317a02b3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "83508b30c8bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de privilégier l'anesthésie générale avec intubation orotrachéale, réalisée par une équipe anesthésique, plutôt que l'anesthésie locale seule",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u5",
+   "empreinte": "d699141cca66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de ne pas privilégier une anesthésie générale, par rapport à une anesthésie locale sous surveillance par une équipe d'anesthésie",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "6d3c9f8ef14a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "ed48870dcc0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de ne pas privilégier une anesthésie générale par une équipe anesthésique par rapport à une sédation procédurale",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u8",
+   "empreinte": "5a1cb815c4cb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "f7f1c2131675",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de recanalisation TICI <2b, de maintenir une pression artérielle systolique post-procédure entre 130 et 180 mmHg",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u10",
+   "empreinte": "458bbc70fccb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de recanalisation TICI ≥2b, de maintenir une pression artérielle systolique post-procédure entre 130 et 160 mmHg",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u11",
+   "empreinte": "e6acb8fc8797",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de maintenir la SpO2 du patient ≥ 95% en per et post-procédure",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u12",
+   "empreinte": "f4ec60ab1ef1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de surveiller l'etCO2 et de le maintenir entre 35-40 mmHg",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u13",
+   "empreinte": "501343c1baf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin de surveiller la persistance de la ventilation spontanée du patient.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u14",
+   "empreinte": "b62497a54172",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de monitorer et traiter les épisodes d'hyperglycémie, tout en évitant les hypoglycémies",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u15",
+   "empreinte": "ea4dd2f4f555",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "5ab3520f3956",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez des patients ayant bénéficié préalablement d'une thrombolyse intraveineuse, afin de ne pas aggraver le pronostic à 3 mois.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u17",
+   "empreinte": "3c31aba0c8a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la littérature disponible ne permet pas de se prononcer sur un éventuel intérêt de l'héparinisation systémique",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u18",
+   "empreinte": "2c11b9df379c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de thrombolyse intraveineuse préalable, les experts suggèrent de ne pas administrer systématiquement à tous les patients une anti-agrégation plaquettaire",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u19",
+   "empreinte": "4c9e2060f895",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas administrer d'aspirine en per-procédure d'une revascularisation endovasculaire cérébrale",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u20",
+   "empreinte": "2602b87ebcb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser une antiagrégation plaquettaire (simple ou double) lors de la pose d'un stent pour éviter sa thrombose",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u21",
+   "empreinte": "beb23e4e0cf9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'après avoir éliminé une hémorragie cérébrale par imagerie de contrôle au cours des premières 24 heures suivant le geste",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u22",
+   "empreinte": "8166128df36b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "785f799cb84c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'arrêter les médicaments d'anesthésie dès la fin de la procédure de thrombectomie en l'absence de défaillance ventilatoire",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u24",
+   "empreinte": "9731694bf626",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La déglutition et la toux devront également être spécifiquement évaluées pour les occlusions de la circulation postérieure.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u25",
+   "empreinte": "b51b1a7af776",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne permet pas de se prononcer sur un éventuel intérêt de l'utilisation d'échelles ou de scores pour guider l'extubation précoce",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u26",
+   "empreinte": "d7950b02a4ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit admis en unité de soins critiques, en priorité en USINV, avec surveillance clinique (incluant la glycémie et la température)",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u27",
+   "empreinte": "571411426691",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas ré-adresser le patient immédiatement après la procédure de thrombectomie vers le centre adresseur",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u28",
+   "empreinte": "164b9b3e522d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

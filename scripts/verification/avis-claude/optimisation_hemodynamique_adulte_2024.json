@@ -1,0 +1,259 @@
+{
+ "cle": "optimisation_hemodynamique_adulte_2024",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "414d9033dec0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parmi les recommandations, 2 ont un niveau de preuve élevé (GRADE 1) et 8 un",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "91c1b03efc1e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "peropératoire inférieure à 60-70 mmHg, chez le patient non hypertendu chronique, afin de",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u3",
+   "empreinte": "ac5b9f42541c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de sa valeur habituelle ou une pression artérielle moyenne supérieure à 70 mmHg chez les",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u4",
+   "empreinte": "09ade95637a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pression artérielle sur la morbimortalité périopératoire chez les patients à risque faible à",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u5",
+   "empreinte": "40a3cacc30d8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "a900d41f19bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommandé de maintenir la pression artérielle systolique maternelle entre 90 et",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u7",
+   "empreinte": "04b1321b7448",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avant la rachianesthésie, les experts suggèrent de traiter cette hypotension artérielle sans délai",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u8",
+   "empreinte": "fdc6802e17c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin de diminuer la morbidité périopératoire chez les patients à risque élevé et très élevé.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u9",
+   "empreinte": "16db46a86375",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "artérielle (via un cathéter artériel), il est probablement recommandé d'associer la mesure d'un indice",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u10",
+   "empreinte": "a421ed2827ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'utilisation d'un indice dynamique seul pour diminuer la morbidité périopératoire chez les patients à",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u11",
+   "empreinte": "91c6079e25c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1.3 – Il n'est probablement pas recommandé d'utiliser un monitorage du volume d'éjection",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u12",
+   "empreinte": "67bbfc8f7c6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1. Chez les patients à risque très élevé, les experts suggèrent d'intégrer le dosage du lactate",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u13",
+   "empreinte": "2f55c0da4b57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2. Il n'est probablement pas recommandé d'utiliser le monitorage de la saturation veineuse",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u14",
+   "empreinte": "7c17b83a87bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "artério-veineuse en CO2 (DIVA-CO2) sur la morbi-mortalité périopératoire.",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u15",
+   "empreinte": "13dc970c831a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "perfusion/oxygénation tissulaire par spectrométrie dans le proche infrarouge (NIRS) en chirurgie",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u16",
+   "empreinte": "03f00c68bbd0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 - Il est probablement recommandé d'utiliser des solutés cristalloïdes balancés pour réaliser",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u17",
+   "empreinte": "a8e42c445208",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systolique a déjà été optimisé par l'expansion volémique, les experts suggèrent d'utiliser un",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u18",
+   "empreinte": "05a2fc94aac2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaire, les experts suggèrent de privilégier une perfusion de noradrénaline comparativement à une",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u19",
+   "empreinte": "d625602499d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent d'utiliser un inotrope dans le cadre d'une optimisation hémodynamique pour diminuer la",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u20",
+   "empreinte": "a117ce486bd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser la dobutamine en première intention pour diminuer la morbidité postopératoire.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u21",
+   "empreinte": "40a3cacc30d8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "a852e0171264",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas recommandé d'utiliser de l'éphédrine en traitement prophylactique en comparaison avec la",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u23",
+   "empreinte": "0d7a74ef9890",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'utiliser de la phényléphrine ou de la noradrénaline faiblement concentrée en",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u24",
+   "empreinte": "97b79d7690bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que la phényléphrine comme vasoconstricteur prophylactique.",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u25",
+   "empreinte": "a4688bd138fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent d'utiliser une expansion volémique rapide par cristalloïdes dès l'induction de",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u26",
+   "empreinte": "08783a310939",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1. Il est probablement recommandé chez le patient à risque élevé et très élevé d'optimiser",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u27",
+   "empreinte": "7e8f1f40d287",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "périopératoire sur les coûts liés aux soins.",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u28",
+   "empreinte": "15ceeafa1339",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

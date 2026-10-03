@@ -1,0 +1,277 @@
+{
+ "cle": "delivrance_information_2012",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "6f200106b347",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'information délivrée à la personne en fin de vie qui est régie par les règles issues de la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "29d8bdb031dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les informations permettant à cette dernière de prendre ses décisions en connaissance de cause. Il décrit le suivi proposé et répond aux questions posées.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u3",
+   "empreinte": "0f42cf0979fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "caractéristiques et son évolution habituelle avec et sans traitement, y compris en ce qui concerne la qualité de vie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u4",
+   "empreinte": "53e954efcacc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est essentiel de présenter les différents choix possibles, pour permettre à la personne de se représenter les enjeux de sa décision",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u5",
+   "empreinte": "c84f77796f16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "être synthétique, hiérarchisée, compréhensible par la personne et personnalisée",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u6",
+   "empreinte": "c24d83e2554c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'information porte également sur les risques spécifiques à la personne et les précautions particulières à prendre pour les éviter.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u7",
+   "empreinte": "933740b5bd1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le professionnel de santé indique la proposition qui a sa préférence, en expliquant ses raisons.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "4f2c6c7a28c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La délivrance de l'information, qui implique un dialogue, se fait toujours dans le cadre d'un entretien individuel.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "222da4679c1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cette volonté est respectée par le professionnel de santé, sauf lorsque des tiers sont exposés à un risque de transmission.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "73c95986e8e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est important de lui proposer que l'entretien soit en partie singulier, sauf si la personne s'y oppose.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "fe3bedfb98ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de faire appel à un assistant de communication.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "ed96ea7a0a7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "a choisi de se faire assister par elle lors de l'entretien, ce dernier a lieu en présence de la personne de confiance.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "f8b93a8cf249",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce document n'a pas à être signé par la personne et ne contient aucune formule l'invitant à y apposer une signature.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "01d206ec1547",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle indique les moyens mis en œuvre pour faire face aux complications éventuelles, ainsi que les signes d'alerte détectables par la personne",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "e6d886fa4bc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est souhaitable que des documents d'information soient disponibles dans les principales langues étrangères parlées en France",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "0dadc64d77d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un référent unique, professionnel de santé, remet à la personne une synthèse des données médicales la concernant",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "9d9ef4469c2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mentionne les informations majeures qui lui ont été délivrées, par qui et à quelle date",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "88952d19a59a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'y a pas lieu de demander à la personne une confirmation signée de la délivrance de l'information.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "5b01a308a5d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le dossier médical porte la trace de l'information donnée tant aux titulaires de l'autorité parentale qu'au mineur.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "5ac456b951cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il pourra être proposé, en fonction de l'âge de l'enfant, que l'entretien soit en partie singulier avec ce dernier.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "c225389565e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "professionnel de santé expose à celui-ci la nécessité d'informer l'autre titulaire de cette autorité, en particulier lorsque le couple est séparé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "53d61e0a7281",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il délivre à l'accompagnant une information strictement utile et nécessaire et expose la nécessité de la compléter en présence du ou des titulaires",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "5083b02b359a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaire qu'il la réitère ou la complète en présence du ou des titulaires de l'autorité",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "a0f456f6ab7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette dérogation aux règles sur l'autorité parentale ne concerne que le seul médecin, et non tout professionnel de santé",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "fb0181b2b8f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le juge peut prévoir, dans les cas où le majeur n'est pas en état de recevoir l'information, que le tuteur la reçoit seul",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u26",
+   "empreinte": "f99bafc84791",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il indique dans le dossier médical pourquoi il s'est trouvé dans la nécessité de les consulter et le contenu de l'information donnée.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u27",
+   "empreinte": "66cbf2014a5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fait l'objet d'une évaluation rétrospective par les établissements de santé, notamment dans le rapport des commissions des relations avec les usagers",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u28",
+   "empreinte": "93a763d9382b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une évaluation régulière des pratiques d'information devrait être mise en place.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u29",
+   "empreinte": "b010d079f770",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'aucune signature n'est demandée à la personne.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u30",
+   "empreinte": "02f06d6da77d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
