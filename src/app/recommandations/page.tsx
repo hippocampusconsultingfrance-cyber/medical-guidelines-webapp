@@ -10,14 +10,14 @@ import RechercheCatalogue from "./recherche";
 import DonneesStructurees from "../donnees-structurees";
 
 export const metadata: Metadata = {
-  title: "Recommandations médicales des sociétés savantes — fiches de synthèse | medical-guidelines.net",
+  title: "Fiches de synthèse indépendantes des recommandations médicales | medical-guidelines.net",
   description:
-    "Les recommandations des sociétés savantes françaises (SFAR, SRLF, SFMU, HAS…) en fiches de synthèse claires et sourcées, grades conservés : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
+    "Synthèses indépendantes des recommandations des sociétés savantes françaises (SFAR, SRLF, SFMU, HAS…), sourcées, grades conservés, avec le lien vers chaque texte officiel : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
   alternates: { canonical: `${SITE_URL}/recommandations` },
   robots: { index: INDEXABLE, follow: INDEXABLE },
   openGraph: {
-    title: "Recommandations des sociétés savantes en fiches de synthèse",
-    description: "Fiches claires et sourcées, grades conservés : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
+    title: "Fiches de synthèse indépendantes des recommandations médicales",
+    description: "Synthèses sourcées, grades conservés, avec le lien vers chaque texte officiel : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
     url: `${SITE_URL}/recommandations`,
     siteName: "medical-guidelines.net",
     locale: "fr_FR",
@@ -55,7 +55,7 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Recommandations des sociétés savantes en fiches de synthèse",
+          name: "Fiches de synthèse indépendantes des recommandations médicales",
           url: `${SITE_URL}/recommandations`,
           inLanguage: "fr",
           mainEntity: {
@@ -78,8 +78,10 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
               {fiches.length} recommandations en fiches de synthèse
             </h1>
             <p className="mt-3 max-w-2xl text-slate-600">
-              Recommandations des sociétés savantes françaises et partenaires, de la plus récente à la plus
-              ancienne. Chaque fiche garde les grades de la source et renvoie au document officiel.
+              Synthèses indépendantes des recommandations des sociétés savantes françaises, de la plus
+              récente à la plus ancienne. Chaque fiche garde les grades de la source et renvoie au document
+              officiel, en accès libre chez ses auteurs ; elle n&apos;est ni éditée ni validée par les sociétés
+              savantes.
             </p>
             <Link
               href={auth.user ? "/bibliotheque" : "/inscription"}

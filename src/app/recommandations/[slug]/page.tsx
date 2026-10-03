@@ -103,6 +103,9 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
         </p>
         <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]">{title}</h1>
         {c?.title && c.title !== fiche.title && <p className="mt-2 text-slate-600">{fiche.title}</p>}
+        <p className="mt-2 text-sm text-slate-500">
+          Synthèse indépendante, ni éditée ni validée par les sociétés savantes citées.
+        </p>
 
         <dl className="mt-6 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
           {fiche.societies.length > 0 && (
@@ -154,7 +157,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
         <section className="mt-10 rounded-2xl bg-[#EEF6FB] p-6">
           <h2 className="text-lg font-bold text-[#0E3A78]">Lire la fiche complète</h2>
           <p className="mt-2 text-sm text-slate-700">
-            Recommandations détaillées par thème, tableaux et grades tels qu&apos;ils figurent dans la
+            Recommandations détaillées par thème, avec leurs grades tels qu&apos;ils figurent dans la
             source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
           </p>
           {user ? (

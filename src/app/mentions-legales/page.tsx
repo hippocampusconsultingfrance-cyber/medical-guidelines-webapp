@@ -69,14 +69,17 @@ export default function MentionsLegalesPage() {
         l&apos;éditeur.
       </p>
       <p className="mt-2">
-        <b>Demande d&apos;un auteur ou d&apos;une société savante.</b> Toute
-        demande de correction, de mention, de modification ou de retrait
-        d&apos;une fiche peut être adressée à{" "}
+        <b>Demande d&apos;un titulaire de droits.</b> Tout auteur, société
+        savante ou éditeur peut demander la correction, la mention, la
+        modification ou le retrait d&apos;un contenu à{" "}
         <a href="mailto:contact@medical-guidelines.net" className="underline">
           contact@medical-guidelines.net
         </a>
-        . Elle est traitée en priorité ; la fiche concernée peut être retirée
-        du site immédiatement, le temps de l&apos;examen.
+        , en indiquant son identité et sa qualité, le document concerné, la
+        fiche du site et l&apos;objet de la demande. La demande est traitée en
+        priorité : la fiche visée est retirée du site, sur simple demande,
+        pendant l&apos;examen, et une réponse motivée est adressée sous 7
+        jours. Les demandes et leurs suites sont conservées.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
