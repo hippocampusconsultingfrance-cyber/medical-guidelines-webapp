@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# rapports de vérification des fiches (scripts/verification)
+/verification-fiches/
+/rapport-verification/

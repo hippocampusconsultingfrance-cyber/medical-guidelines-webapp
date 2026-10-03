@@ -73,6 +73,23 @@ brouillon ; l'outil refuse un script qui publierait directement. En
 production : GitHub → Actions → « Importer le contenu » → Run workflow
 (secret `SUPABASE_DB_URL` requis).
 
+## Vérification des fiches par IA (pilote)
+
+```bash
+DATABASE_URL=... npm run verifier:fiches -- --sans-ia remplissage sdra   # chiffres seulement
+DATABASE_URL=... ANTHROPIC_API_KEY=... GEMINI_API_KEY=... npm run verifier:fiches -- remplissage sdra
+```
+
+Chaque unité d'une fiche publiée (ligne de tableau, paragraphe, encadré) est
+comparée à sa source officielle : contrôle des chiffres sans IA, puis verdict
+de Claude et de Gemini, chacune sans voir la réponse de l'autre, avec un
+extrait de la source revérifié mot pour mot. Le rapport (`rapport.md`) classe
+les unités en rouge, orange ou vert pour orienter la relecture ; il ne valide
+rien et n'écrit rien en base. En production : GitHub → Actions → « Vérifier
+les fiches (IA) » → Run workflow (secrets `SUPABASE_DB_URL`,
+`ANTHROPIC_API_KEY`, `GEMINI_API_KEY`) ; le rapport est joint à l'exécution.
+Nécessite `psql` et `pdftotext` (poppler).
+
 ## Alertes e-mail
 
 Tâche planifiée Vercel (`vercel.json`), tous les jours à 6 h 10 UTC :
