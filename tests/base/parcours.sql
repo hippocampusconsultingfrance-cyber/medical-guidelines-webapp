@@ -590,7 +590,7 @@ select pg_temp.ok(pg_temp.refuse('update public.societies set country_code = ''u
   'sociétés : code pays ISO à deux lettres');
 select pg_temp.ok((select count(*) from public.societies where acronym in ('SRLF', 'SFMU', 'ARCOTHOVA', 'CFRC', 'SOFIA') and country_code = 'FR') = 5,
   'vague 0 : sociétés françaises présentes, code FR');
-select pg_temp.ok((select vetting_status from public.societies where acronym = 'ARCOTHOVA') = 'a_valider', 'vague 0 : nouvelles sociétés à valider');
+select pg_temp.ok((select vetting_status from public.societies where acronym = 'ARCOTHOVA') = 'valide', 'vague 0 : nouvelles sociétés validées');
 select pg_temp.ok(not exists (
     select 1 from public.document_societies ds join public.documents d on d.id = ds.document_id
      where d.society_id = ds.society_id and ds.role <> 'auteur'),
