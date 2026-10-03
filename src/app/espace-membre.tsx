@@ -12,6 +12,7 @@ import {
 } from "./bibliotheque/data";
 import { followSociety, unfollowSociety } from "./actions";
 import LogoutButton from "./logout-button";
+import { assistantOuvertAuxMembres } from "@/lib/assistant";
 import Logo from "./logo";
 
 // Espace membre (page d'accueil d'un compte connecté) : fiches mises à jour,
@@ -154,7 +155,7 @@ export default async function EspaceMembre({
 
       <section className="mt-8 rounded-2xl bg-gradient-to-br from-[#0E3A78] to-[#1C5FA8] px-5 py-7 text-white sm:px-8">
         <h1 className="text-2xl font-bold sm:text-3xl">
-          Bienvenue{profile?.prenom ? `, ${profile.prenom}` : ""}
+          Bienvenue{profile?.prenom ? `, ${profile.prenom.charAt(0).toLocaleUpperCase("fr") + profile.prenom.slice(1)}` : ""}
         </h1>
         <p className="mt-1 text-sm text-sky-100 sm:text-base">
           {[profile?.profession, lib.specialty && lib.specialty !== profile?.profession ? `spécialité consultée : ${lib.specialty}` : null]
@@ -649,6 +650,18 @@ function AccessCard({
         <Link href="/abonnement" className="mt-3 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
           Gérer mon abonnement →
         </Link>
+        {assistantOuvertAuxMembres() && (
+          <div className="mt-4 border-t border-slate-200 pt-4">
+            <h3 className="font-semibold text-[#0E3A78]">Assistant de recherche (bêta)</h3>
+            <p className="mt-1 text-sm text-slate-600">
+              Posez une question en langage courant : l&apos;assistant retrouve les passages exacts des fiches qui y
+              répondent, sans conseil médical.
+            </p>
+            <Link href="/assistant" className="mt-2 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
+              Poser une question →
+            </Link>
+          </div>
+        )}
       </section>
     );
   }

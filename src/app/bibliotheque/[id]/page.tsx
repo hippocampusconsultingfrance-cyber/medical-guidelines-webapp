@@ -110,6 +110,17 @@ type Recommendation = {
   status: string;
 };
 
+// Points clés validés (colonne lue avec la clé serveur). Une lecture
+// impossible (clé absente, migration manquante) ne doit jamais empêcher
+// d'afficher la fiche : l'encadré est alors simplement omis.
+async function lirePointsCles(id: string): Promise<{ data: { points_cles: unknown } | null }> {
+  try {
+    return await createAdminClient().from("documents").select("points_cles").eq("id", id).maybeSingle();
+  } catch {
+    return { data: null };
+  }
+}
+
 export default async function FichePage({
   params,
   searchParams,
@@ -326,7 +337,7 @@ export default async function FichePage({
     supabase.from("consultation_history").insert({ user_id: user.id, document_id: id }),
     chargerCorrections(supabase, id, 50),
     supabase.rpc("get_divergences", { doc_id: id }),
-    createAdminClient().from("documents").select("points_cles").eq("id", id).maybeSingle(),
+    lirePointsCles(id),
   ]);
   const divergences = (Array.isArray(divData) ? divData : []) as Divergence[];
   const pointsCles = Array.isArray(cles?.points_cles) ? (cles.points_cles as string[]) : [];
