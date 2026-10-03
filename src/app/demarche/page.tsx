@@ -72,6 +72,13 @@ export default async function DemarchePage() {
             est retirée du site sur simple demande pendant l&apos;examen, et une réponse motivée vous est
             adressée sous 7 jours.
           </p>
+          <p className="mt-3 leading-relaxed text-slate-700">
+            Nous proposons aussi aux sociétés savantes un partenariat gratuit : accès PREMIUM offert, statistiques
+            anonymes de lecture de leurs recommandations et signalements d&apos;erreurs des lecteurs sur leurs fiches.{" "}
+            <a href="/partenaires" className="font-semibold text-[#1A74A6] underline">
+              Devenir partenaire
+            </a>
+          </p>
           <p className="mt-3">
             <a href="mailto:contact@medical-guidelines.net" className="font-semibold text-[#1A74A6] underline">
               contact@medical-guidelines.net

@@ -347,6 +347,27 @@ export default function AccueilPublic({ recentes = [] }: { recentes?: PublicFich
           </div>
         </section>
 
+        {/* Sociétés savantes partenaires */}
+        <section aria-labelledby="partenaires" className="mx-auto max-w-5xl px-4 pb-16 sm:px-6">
+          <div className="flex flex-col gap-4 rounded-2xl border border-[#BFD9EA] bg-[#EEF6FB] p-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 id="partenaires" className="text-xl font-bold text-[#0E3A78]">
+                Vous êtes une société savante&nbsp;? Devenez notre partenaire
+              </h2>
+              <p className="mt-2 text-slate-700">
+                Accès PREMIUM offert, statistiques anonymes de lecture de vos recommandations et signalements
+                d&apos;erreurs des lecteurs sur vos fiches.
+              </p>
+            </div>
+            <Link
+              href="/partenaires"
+              className="shrink-0 rounded-lg bg-[#0E3A78] px-5 py-2.5 text-center font-semibold text-white hover:bg-[#0B2F63]"
+            >
+              Devenir partenaire
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section aria-labelledby="faq" className="bg-[#F4F8FB]">
           <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
