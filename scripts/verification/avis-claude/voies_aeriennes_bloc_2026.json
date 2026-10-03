@@ -1,0 +1,340 @@
+{
+ "cle": "voies_aeriennes_bloc_2026",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "248e9031c825",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Adopté par le Collège le 3 septembre 2026",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "a2053bb2c737",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'un laryngoscope direct pour augmenter le succès à la première",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u3",
+   "empreinte": "dcde8d477fce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'un laryngoscope direct pour diminuer les complications associées",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "8fc20b7cefde",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent d'administrer un curare lors de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "d271d099987d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rendent possible leur utilisation, il est recommandé de privilégier les",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "22cafd9ce135",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plein, requérant une chirurgie abdominopelvienne programmée, y",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u7",
+   "empreinte": "43a525296780",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "positifs supraglottiques de 2ème génération afin de diminuer l'incidence des douleurs pharyngées postopératoires.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u8",
+   "empreinte": "06d600c62a6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez la femme enceinte après 16 semaines d'aménorrhée, dans",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u9",
+   "empreinte": "238ba5394682",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez la femme enceinte avant 16 semaines d'aménorrhée, dans",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u10",
+   "empreinte": "d1f7baf14e33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas de conclure sur l'intérêt de l'échographie gastrique dans la décision d'induction en séquence rapide",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u11",
+   "empreinte": "049befbfb66e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin de diminuer l'incidence des épisodes de désaturation durant la",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u12",
+   "empreinte": "ddc4e3d3e255",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin de diminuer les interruptions de procédure et les manœuvres sur",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u13",
+   "empreinte": "32c3b4763125",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors d'un acte sur les voies aériennes réalisé en apnée et sans",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u14",
+   "empreinte": "ff5ecb2bd1ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors d'une sédation procédurale en ventilation spontanée, il est recommandé de monitorer la capnographie",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u15",
+   "empreinte": "4716e1eaa9e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent de réduire au maximum la durée d'apnée, même",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u16",
+   "empreinte": "5cc0cf985c2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "y compris chez le patient obèse ou estomac plein, il est recommandé, pendant la laryngoscopie",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u17",
+   "empreinte": "bf1a47241aee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "spontanée (intubation difficile prévue chez un patient a priori ventilable), les experts suggèrent, pendant la phase apnéique",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "3dfc59c19198",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser indifféremment l'intubation trachéale par",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u19",
+   "empreinte": "80438b000fa7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dispositif dédié à l'intubation (type LMA-Fastrach®) afin de restaurer",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u20",
+   "empreinte": "eedcf1a57c79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'utiliser un fibroscope, plutôt qu'une intubation trachéale à l'aveugle",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u21",
+   "empreinte": "837826d3fe99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en première intention une cricothyroïdotomie selon la technique SMS",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u22",
+   "empreinte": "fb8e934eb2d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans la formation initiale des internes d'anesthésie-réanimation et",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u23",
+   "empreinte": "2f86fb976d38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le cadre de la formation continue des médecins anesthésistes",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u24",
+   "empreinte": "6250ffeb3733",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gestion difficile des voies aériennes, les experts suggèrent de réaliser",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u25",
+   "empreinte": "fc6a471aa707",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de réaliser un briefing associant l'ensemble des acteurs",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u26",
+   "empreinte": "1efd0b950b4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent d'utiliser des techniques de préparation mentale",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u27",
+   "empreinte": "c566593e3bfa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de procéder à un « defusing » immédiatement après l'événement",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u28",
+   "empreinte": "f0a7395bb843",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser un « debriefing » et d'y associer l'ensemble des acteurs",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u29",
+   "empreinte": "030fc3d83a65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de procéder à une revue",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u30",
+   "empreinte": "4c2b718af663",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Proposition des experts concernant le nombre minimal de procédures attendues",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u31",
+   "empreinte": "93004eea9b11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Vidéo-laryngoscopie avec lame hyperangulée >15 procédures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u32",
+   "empreinte": "14b1a599c316",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": ">15 procédures Avis d'experts >12 procédures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u33",
+   "empreinte": "9fc5a912043b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fibroscopie pour intubation vigile >20 procédures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u34",
+   "empreinte": "ad70c76737a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fibroscopie pour intubation vigile",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u35",
+   "empreinte": "e3d2b0af4f90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fibroscopie à travers DSG >10 procédures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u36",
+   "empreinte": "3287e2968ea6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Technique SMS (ScalpelMandrin-Sonde) >3 procédures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u37",
+   "empreinte": "77fe73ae45d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un accord fort a été obtenu pour 27 recommandations.",
+   "explication": "",
+   "page": 39
+  }
+ ]
+}
