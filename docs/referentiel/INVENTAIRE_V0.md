@@ -71,7 +71,7 @@ Les vérifications automatiques de la base (`tests/base/parcours.sql`, section 2
 
 ## 3. Points à trancher par l’équipe éditoriale
 
-- **Noms complets** : le CARO est le « Collège d’anesthésie-réanimation en obstétrique » (corrigé le 03/10/2026). Le nom de l’ANARLF diffère encore entre la base et le site officiel ; celui de la base est conservé jusqu’à vérification.
+- **Noms complets** : le CARO est le « Collège d’anesthésie-réanimation en obstétrique » (corrigé le 03/10/2026). L’ANARLF est l’« Association de neuro-anesthésie réanimation de langue française » (corrigé le 03/10/2026).
 - **Statut des sociétés** : ARCOTHOVA, CFAR, CFRC, GRACE et SOFIA validées par le porteur de projet le 03/10/2026.
 - **Prochaines étapes du plan** :
   - T5 : profil juridique par société, hérité par chaque fiche ;
