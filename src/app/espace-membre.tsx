@@ -12,6 +12,7 @@ import {
 } from "./bibliotheque/data";
 import { followSociety, unfollowSociety } from "./actions";
 import LogoutButton from "./logout-button";
+import { assistantOuvertAuxMembres } from "@/lib/assistant";
 import Logo from "./logo";
 
 // Espace membre (page d'accueil d'un compte connecté) : fiches mises à jour,
@@ -649,6 +650,18 @@ function AccessCard({
         <Link href="/abonnement" className="mt-3 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
           Gérer mon abonnement →
         </Link>
+        {assistantOuvertAuxMembres() && (
+          <div className="mt-4 border-t border-slate-200 pt-4">
+            <h3 className="font-semibold text-[#0E3A78]">Assistant de recherche (bêta)</h3>
+            <p className="mt-1 text-sm text-slate-600">
+              Posez une question en langage courant : l&apos;assistant retrouve les passages exacts des fiches qui y
+              répondent, sans conseil médical.
+            </p>
+            <Link href="/assistant" className="mt-2 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
+              Poser une question →
+            </Link>
+          </div>
+        )}
       </section>
     );
   }
