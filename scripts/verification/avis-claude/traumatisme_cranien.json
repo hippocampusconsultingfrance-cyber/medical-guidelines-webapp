@@ -1,0 +1,619 @@
+{
+ "cle": "traumatisme_cranien",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ea05118aedee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVIS D’EXPERTS (ACCORD FORT)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u2",
+   "empreinte": "0aadd8ad201b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveillance clinique rapprochée dans un centre doté d’un service de",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u3",
+   "empreinte": "bcfaf0d75b7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 1.1 : Les experts suggèrent que chez le patient présentant un traumatisme cranioencéphalique grave, nécessitant théoriquement une craniotomie en urgence, mais",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u4",
+   "empreinte": "0ad8e7d4eb9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 1.2 : Les experts suggèrent qu’en période de permanence de soins, une «",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u5",
+   "empreinte": "3f55af02dc30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 2.1 : Chez un patient victime d’un traumatisme cranio-encéphalique grave",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u6",
+   "empreinte": "c643b4cbf7fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 2.2 : Les experts suggèrent que les scores (détaillés en annexes) suivant peuvent",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u7",
+   "empreinte": "272244a13ef8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 3 : Chez un patient présentant un traumatisme cranio-céphalique grave",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u8",
+   "empreinte": "d81c02d0f6f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 4. Chez un patient victime d’un traumatisme cranio-encéphalique grave",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u9",
+   "empreinte": "ac0ea65d6296",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 5.1. Chez les patients présentant un traumatisme crânio-encéphalique nécessitant",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u10",
+   "empreinte": "185320b133d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 5.2. Chez un patient présentant un traumatisme crânio-encéphalique grave,",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u11",
+   "empreinte": "5c952c3c1f11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présentant un hématome extra-dural et 6.6% (95% CI 1.8% to 14.1%) des patients",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u12",
+   "empreinte": "692f591fb3ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Défaillance cardiaque congestive (OAP)",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u13",
+   "empreinte": "e2c64fe9c792",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 6.1 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u14",
+   "empreinte": "fd4b95d6a4d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 6.2 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u15",
+   "empreinte": "df5203d6a734",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 6.3 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u16",
+   "empreinte": "ac4dd5d9b40a",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "surveillance clinique rapprochée dans un centre doté d’un service de",
+   "explication": "La source formule R6.4 « il est probablement recommandé » (tag AE) ; la fiche écrit « il faut », formulation plus impérative.",
+   "page": 14
+  },
+  {
+   "id": "u17",
+   "empreinte": "3577e5da92c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 6.5 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u18",
+   "empreinte": "49ec987e7f3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec HED, la courbe de croissance a montré que 98,1 % des HED atteignaient leur taille",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u19",
+   "empreinte": "77f62f0c5d88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 7.1 : Chez le patient présentant un traumatisme crânio-encéphalique associé à",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u20",
+   "empreinte": "38e145c1663e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 7.2 : Chez un patient présentant un traumatisme crânio-encéphalique associé à",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u21",
+   "empreinte": "22ddb90d256a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 7.3 : Chez un patient présentant un traumatisme crânio-encéphalique associé à",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u22",
+   "empreinte": "b0e443a3f942",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bilatérale, retrouvait chez ceux pris en charge pour HSDA une mortalité de 66.4% et une",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u23",
+   "empreinte": "e7a2e6b8e0be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 8.1 : Chez un patient présentant un traumatisme cranio-encéphalique associé à une",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u24",
+   "empreinte": "b40037baa2ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 8.2 : Chez un patient présentant un traumatisme cranio-encéphalique, associé à",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u25",
+   "empreinte": "6efeafd979df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 8.3 : Chez un patient présentant un traumatisme cranio-encéphalique non",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u26",
+   "empreinte": "535cb0f4ee2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 9.1 : Chez un patient présentant un traumatisme cranio-encéphalique, associé à",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u27",
+   "empreinte": "86165a2c4076",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 9.2 : Chez un patient présentant un traumatisme cranio-encéphalique, associé à",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u28",
+   "empreinte": "eb83573bf47f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 9.3 : Chez un patient présentant un traumatisme cranio-encéphalique, associé à",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u29",
+   "empreinte": "119a3cc7a93c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 9.4 : Chez un patient présentant un traumatisme cranio-encéphalique, associé à",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u30",
+   "empreinte": "e7acb5afea5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 9.5 : Chez un patient présentant un traumatisme cranio-encéphalique, les experts",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u31",
+   "empreinte": "946bc7c44aa9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1,3%/jour pendant les 15 premiers jours, puis 7,4%/semaine pendant le premier mois",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u32",
+   "empreinte": "3c77f32ccbc7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 10.1 : Chez un patient présentant un traumatisme crânien pénétrant, les experts",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u33",
+   "empreinte": "d2bff489f267",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 10.2 : Chez un patient présentant un traumatisme crânien pénétrant, associé à un",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u34",
+   "empreinte": "9291497bba95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 10.3 : La prise en charge neurochirurgicale doit être discutée au cas par cas pour",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u35",
+   "empreinte": "036a19788a7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 10.4 : Chez un patient présentant un traumatisme crânien pénétrant, les experts",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u36",
+   "empreinte": "72951cb76b7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 10.5 : Chez un patient présentant un traumatisme cranio-encéphalique pénétrant,",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u37",
+   "empreinte": "c48ad09a5209",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 11.1 : Chez le patient présentant un traumatisme crânio-encéphalique pénétrant,",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u38",
+   "empreinte": "066de92364fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 11.2 : Chez le patient présentant un traumatisme crânio-encéphalique pénétrant,",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u39",
+   "empreinte": "fd3ea8ab3a24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 11.3 : Chez le patient présentant un traumatisme crânio-encéphalique pénétrant",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u40",
+   "empreinte": "f6e6a086a609",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 11.4 : Absence de recommandation sur la modalité (endovasculaire ou",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u41",
+   "empreinte": "6fc31b0ce8d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 11.5 : Chez le patient présentant un traumatisme crânio-encéphalique pénétrant,",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u42",
+   "empreinte": "1a89e57104fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est élevé (77,8 %) [228]. Ces données incitent à proposer largement une prise en charge",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u43",
+   "empreinte": "ae31c4c428cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "SPIN score ≥ 35 : 98% de survie. SPIN score ≤ 20: 3% de survie",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u44",
+   "empreinte": "4b1e71b52370",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Trajectoire traversant le centre géographique du cerveau",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u45",
+   "empreinte": "6c21d6bcfff5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PIC = hydrocéphalie externe",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u46",
+   "empreinte": "12be5f2ae887",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 12.1 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u47",
+   "empreinte": "11f8ca669157",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 12.2 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u48",
+   "empreinte": "05eea4355851",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 12.3 : Chez le patient présentant un traumatisme cranio-encéphalique associé à",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u49",
+   "empreinte": "4e2e4b2a7788",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "amygdalien a concerné 7,1% des patients (21/295). Ces derniers survenaient",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u50",
+   "empreinte": "1f0942360435",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 13.1 : Chez le nouveau-né présentant un traumatisme crânio-encéphalique",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u51",
+   "empreinte": "cb4db9c45689",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 13.2 : Devant l’absence de consensus sur la technique chirurgicale optimale, les",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u52",
+   "empreinte": "fb7ce13f11ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 13.3 : Chez le nouveau-né présentant un traumatisme crânio-encéphalique",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u53",
+   "empreinte": "f2bbca10c77d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 14.1 : Chez le nourrisson présentant un traumatisme cranio-encéphalique non",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u54",
+   "empreinte": "800c9ea0d17a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 14.2 : Absence de recommandation sur l’utilisation de la craniectomie",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u55",
+   "empreinte": "a16cb1f06f25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 14.3: Chez le nourrisson présentant un traumatisme cranio-encéphalique non",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u56",
+   "empreinte": "27e37afcaf5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 15.1 : Chez le nourrisson présentant une embarrure type fracture « ping-pong », les",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u57",
+   "empreinte": "5077fee564ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 15.2 : Chez le nourrisson présentant une embarrure type fracture « ping-pong »,",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u58",
+   "empreinte": "6a15a578d4d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "petite taille (épaisseur < 20 mm), sans déviation de la ligne médiane ni signes de",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u59",
+   "empreinte": "5c3178e0cd8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVIS D’EXPERTS (ACCORD FORT)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u60",
+   "empreinte": "5bbb3b32a675",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u61",
+   "empreinte": "116d3faecb75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u62",
+   "empreinte": "ec14f0a2b10b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u63",
+   "empreinte": "e69206651a14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u64",
+   "empreinte": "6eb8df4d49f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u65",
+   "empreinte": "cbb3a4dc9984",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u66",
+   "empreinte": "1fbec2f01ffc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u67",
+   "empreinte": "a36d202cc967",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 Bonne récupération: niveau inférieur 8 Bonne récupération: niveau supérieur",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u68",
+   "empreinte": "e4131c15f799",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
