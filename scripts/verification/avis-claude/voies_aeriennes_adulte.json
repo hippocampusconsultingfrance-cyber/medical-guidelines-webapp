@@ -1,0 +1,592 @@
+{
+ "cle": "voies_aeriennes_adulte",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "51ef770edaa7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "médecine extrahospitalière, de l’urgence médicale hospitalière ou encore celle réalisée en anesthésie pédiatrique ou",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "a8dc8d8b8d0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A : 2 (ou plus…) études de niveau I",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "31655561e059",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La conférence d’experts de la Sfar 1996 définit qu’une",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "83b139f01df3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’association de ces items améliore la prédictibilité par rapport à chaque item pris isolément (Grade D)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "6fd4caf8ba14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thyromentale (< 65 mm), ouverture de bouche (< 35 mm)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "4943caf1c9ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cinq critères prédictifs d’une VMD sont retenus : âge >",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "38b6b271b6e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "susceptible de dépister les situations les plus critiques en",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "be3ee8c16f2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un plateau standard d’intubation peut rassembler : sonde(s) d’intubation à usage unique, laryngoscope, plusieurs",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "f64dc84595ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de choisir la plus petite taille de sonde",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "474a93e9157b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Masque facial, masques laryngés ou tube laryngé sont des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "35ec23805522",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En oxygène pur, le remplacement de l’azote alvéolaire par l’oxygène (dénitrogénation) et l’augmentation des réserves tissulaires en oxygène permettent de doubler le temps d’apnée",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "0d887c95eb1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La ventilation spontanée pendant trois min à FIO2 = 1 est",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "1927eba49b1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8 respirations profondes pendant 1 min), mais sont difficiles",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "9b4b7a049779",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "matériel doit être adapté et étanche, particulièrement au",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "eeac9ae74dcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La pré-oxygénation est impérative lors de l’induction",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "643d3bd58645",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de pratiquer une oxygénation préalable à",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "4b89267042fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permet pas d’apprécier correctement l’efficacité de la préoxygénation. Le monitorage de la FETO2 est recommandé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "42d4771740d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tissulaires en oxygène. Il est important de poursuivre la",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "402da291bb32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’identifier lors de la consultation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "d03df16545d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "simples (extension de la tête, sub-luxation antérieure de la",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "96e934daa955",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des pressions d’insufflation inférieures à 25 cmH2O en raison du risque d’insufflation gastrique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "2f8a1ca328ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation d’un curare améliore les conditions de l’intubation trachéale, sous réserve de l’administrer à dose suffisante",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "21bbbb8764fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "estimé au mieux par le monitorage de la curarisation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "1f96898c9918",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En présence d’un curare, les conditions d’intubation sont",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "21c82843d077",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "séquence d’administration doit être synchronisée de façon à",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "b76c8f7dac13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’association thiopental-succinylcholine reste le protocole de référence lors de l’induction en séquence rapide",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "e86bb0b64361",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "morphinique est utilisé, le choix d’un agent de court délai et",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "d9c181cd5c40",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "b753c488a740",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’intubation sans curare peut être proposée lorsque la",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "58db5925a2e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation d’un hypnotique seul n’est pas recommandée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "cc46b7250737",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et diminue, par exemple, de moitié les doses de propofol",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "3970754845c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce délai est > 6 min sous sévoflurane seul, et peut être",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "f49f5f8ca8b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "admis que la curarisation n’est pas nécessaire pour l’insertion du masque laryngé (Grade E)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "03683072c18c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dose de morphinique améliore significativement le taux de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "9ae58b02e70f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le sévoflurane est le seul agent halogéné pouvant être",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u36",
+   "empreinte": "38a02d002c37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’association d’un morphinique améliore",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u37",
+   "empreinte": "0831f80ac784",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "adrénergique à l’intubation ont été proposés pour en limiter",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u38",
+   "empreinte": "6f15961c75ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coussin sous la nuque pour rechercher une flexion du cou ne",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "fc52e498f8b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’intubation endotrachéale sous laryngoscopie directe",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "425fb3f16e68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La manœuvre de Sellick peut gêner l’exposition glottique",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u41",
+   "empreinte": "a8e25d1056d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du patient dans un mouvement d’abord postérieur puis",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u42",
+   "empreinte": "846d72cc0842",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’efficacité du mandrin long est supérieure au mandrin",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u43",
+   "empreinte": "0782580f911a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être visualisés et stables sur au moins 6 cycles",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "2359da5a7e8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’auscultation pulmonaire axillaire est le meilleur moyen",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "cf26b3f472b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorage de la pression du ballonnet (avec dégonflages",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u46",
+   "empreinte": "c0ccdb00554b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une pression de gonflage de 20 mmHg (soit 27 cmH2O",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u47",
+   "empreinte": "21686f1ef274",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation du LMA repose sur une analyse individuelle",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u48",
+   "empreinte": "bd985a124343",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’absence d’études prospectives, randomisées, multicentriques consacrées aux lésions liées à la prise en charge des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "d356da4659e5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "41cc5bf8628b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la consultation anesthésique pré-opératoire de fragilité",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u51",
+   "empreinte": "391cee6b345d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "choix d’une sonde d’intubation de la plus petite taille",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u52",
+   "empreinte": "9c849c7c416f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limitation de l’hyperextension du cou pour éviter les",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u53",
+   "empreinte": "bdd09ba0a80c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le dépistage des complications est clinique : douleur",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u54",
+   "empreinte": "0154c14c5560",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dysphonie, sa persistance au-delà de 48 h ou son association",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u55",
+   "empreinte": "117a5439f801",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "6a5997fae65d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de s’assurer d’une anesthésie profonde et ne pas multiplier les essais (Grade D)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u57",
+   "empreinte": "2c9cac4e3ef6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de choisir une taille de masque appropriée (Grade D)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u58",
+   "empreinte": "4d0127ee28a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’utiliser la méthode d’insertion « coussinet semi-gonflé » (Grade C), qui majore cependant le risque de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u59",
+   "empreinte": "997baa81aded",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de limiter la pression dans le ballonnet (Grade D)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u60",
+   "empreinte": "53ddfd7943e8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "7c6e40c73f8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le jeûne avec abstention de liquide clair et de solides",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u62",
+   "empreinte": "816ac3ef1262",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les situations prédisposant à l’inhalation, l’induction",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u63",
+   "empreinte": "7027b21f9a8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La protection des voies aériennes par le masque laryngé",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u64",
+   "empreinte": "fe33c2bccb4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patrick Ravussin, Président, (Hôpital Central-Sion, Suisse)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u65",
+   "empreinte": "c4d0d16021d2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
