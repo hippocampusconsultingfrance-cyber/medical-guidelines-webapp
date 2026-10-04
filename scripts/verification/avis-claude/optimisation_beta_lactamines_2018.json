@@ -1,0 +1,376 @@
+{
+ "cle": "optimisation_beta_lactamines_2018",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "11c7f109f4ef",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "fab6cedee6d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de tenir systématiquement et quotidiennement compte des nombreuses sources de variabilité pharmacocinétique",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "22370fa11cb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la clairance de la créatinine selon la formule UxV/P au début du traitement par bêtalactamines",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u4",
+   "empreinte": "440aa30de4a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "selon la formule UxV/P lors de la réalisation d'un dosage des bêta-lactamines pour aider à l'interprétation du résultat",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "e8ecfc74752a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'effectuer un suivi thérapeutique pharmacologique des bêta-lactamines chez les patients de soins critiques traités par épuration extra-rénale",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u6",
+   "empreinte": "8802e1b55329",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moins une fois au début du traitement par bêta-lactamines pour évaluer le degré d'hypoalbuminémie",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u7",
+   "empreinte": "804a62194a49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de doser l'albuminémie, et à défaut la protidémie, lors de la réalisation d'un dosage",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u8",
+   "empreinte": "cfe1c9bcfc4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fortiori chez les patients les plus graves et à fonction rénale conservée",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u9",
+   "empreinte": "9144f5df93b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bactérie incriminée (%fT > k xCMI) comme cible thérapeutique des bêta-lactamines",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u10",
+   "empreinte": "a1f8316b8ab2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'intervalle de dose (%fT ≥ 4 à 8xCMI à 100 %) pour optimiser les chances de guérison clinique dans les infections graves",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u11",
+   "empreinte": "70f2f4c8efff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'il est inutile, voire dangereux, de dépasser une concentration plasmatique de bêta-lactamines supérieure à 8 fois la CMI",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u12",
+   "empreinte": "ce3a84670469",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou continue en cas de CMI élevée de la bactérie responsable de l'infection pour augmenter les chances d'atteindre l'objectif PK-PD",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u13",
+   "empreinte": "ad44402b1eb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou continue chez les patients en état de choc et/ou dont le score de gravité est élevé",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u14",
+   "empreinte": "e8bd433219cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou continue chez les patients de soins critiques avec une infection respiratoire basse",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u15",
+   "empreinte": "1722f771620a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou continue chez les patients de soins critiques ayant une infection à bacilles à Gram négatif non-fermentant",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u16",
+   "empreinte": "5d4878612e95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'administration d'une dose de charge en bolus intraveineux lent au début du traitement",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u17",
+   "empreinte": "340985310dd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "variabilité pharmacocinétique est attendue et/ou ceux présentant des signes cliniques évocateurs d'une toxicité aux bêta-lactamines",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u18",
+   "empreinte": "f5643b88e2ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit réalisé par un dosage plasmatique de la concentration résiduelle en cas d'administration discontinue",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u19",
+   "empreinte": "3379623e4fa5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit réalisé 24 h à 48 h après l'initiation du traitement, après toute modification de posologie",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u20",
+   "empreinte": "3d5f7a456aef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "échantillons sanguin et de liquide cérébro-spinal prélevés de manière contemporaine",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u21",
+   "empreinte": "5a765d727f5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "technique chromatographique validée, avec un rendu des résultats au clinicien le plus rapide possible",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u22",
+   "empreinte": "2c7ff13558d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de considérer comme cibles thérapeutiques les concentrations plasmatiques indiquées dans le tableau ci-dessous",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u23",
+   "empreinte": "e57f526abf2a",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Soit d'augmenter la dose unitaire administrée de façon discontinue de 25 à 50 % en conservant la même fréquence d'administration, avec au besoin un bolus complémentaire",
+   "explication": "La fiche dit seulement « augmenter la dose unitaire ». Elle omet le chiffre (+25 à 50 %), le maintien de la fréquence et le bolus complémentaire si besoin.",
+   "page": 39
+  },
+  {
+   "id": "u24",
+   "empreinte": "b74e39348b1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "passer à une administration de la bêta-lactamine en perfusion continue ou prolongée associée à une augmentation de la dose journalière",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u25",
+   "empreinte": "5a7248398237",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intention la dose unitaire administrée de façon discontinue de 25 à 50 % en conservant la fréquence d'administration",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u26",
+   "empreinte": "f64d1bbf89d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de suspendre l'administration avec une reprise du traitement sous surveillance de la décroissance des concentrations",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u27",
+   "empreinte": "f35d3b82b862",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'envisager l'instauration d'une épuration extra-rénale si une insuffisance rénale aiguë est au moins en partie à l'origine d'un surdosage symptomatique",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u28",
+   "empreinte": "12661d63ee3c",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "40 mg/L soit une concentration libre estimée à 32 mg/L sachant que le pourcentage de fraction liée est de 20 %, 32 mg/L représentant 4 fois la concentration de la CMI seuil fixée à 8 mg/L",
+   "explication": "La fiche présente les plages chiffrées et la « CMI seuil » comme la colonne « infection documentée ». D'après les notes du Tableau 1 (* et £), ces plages calculées sur une CMI seuil correspondent à la colonne « infection non documentée / probabiliste ». En infection documentée, la cible est CminL ou CéqL ≥ 4× la CMI de la bactérie, sous un plafond (ex. < 80 mg/L).",
+   "page": 37
+  },
+  {
+   "id": "u29",
+   "empreinte": "687a93cbe519",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Amoxicilline ≈80% CminL ou CéqL ≥ 4x CMI Cmin ou Céq < 80 mg/L Cmin : 40 -80 mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u30",
+   "empreinte": "e3ab4cf990b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Céfazoline ≈15-20% CminL ou CéqL ≥ 4x CMI Cmin ou Céq < 80 mg/L Cmin : 40-80 mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u31",
+   "empreinte": "e402251bc410",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Céfépime 80% CminL ou CéqL ≥ 4x CMI Cmin <20mg/L Céq <35 mg/L Cmin : 5-20 mg/L Céq : 5-35 mg/L (Enterobactéries)",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u32",
+   "empreinte": "e108e49a1cfe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Céfotaxime ≈60-80% CminL ou CéqL ≥ 4x CMI Cmin ou Céq < 60 mg/L Cmin : 25-60 mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u33",
+   "empreinte": "f713ecea430b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ceftazidime ≈90% CminL ou CéqL ≥ 4x CMI Cmin ou Céq < 80 mg/L Cmin : 35-80 mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u34",
+   "empreinte": "ac10de5dc379",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ceftriaxone ≈10% CminL ≥ 4x CMI Cmin <100 mg/L Cmin : 20-100 mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u35",
+   "empreinte": "80a994c8398d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cloxacilline ≈10% CminL ou CéqL ≥ 4x CMI Cmin ou Céq < 50 mg/L Cmin : 20 -50 mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u36",
+   "empreinte": "4cc3a4205f45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ertapénème ≈10% CminL ou CéqL ≥ 4x CMI Cmin < 10 mg/L Cmin : 5-10mg/L",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u37",
+   "empreinte": "9f4f9355d78f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Imipénème ≈80% CminL ≥ 4x CMI Cmin < 5 mg/L Cmin : 2,5-5 mg/L",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u38",
+   "empreinte": "1cba72e40590",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Méropénème ≈100% CminL ou CéqL ≥ 4x CMI Cmin ou Céq < 16 mg/L Cmin : 8-16 mg/L",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u39",
+   "empreinte": "466b5a07d90e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pipéracilline ≈80% CminL ou CéqL ≥ 4x CMI Céq < 160 mg/L Céq : 80-160 mg/L",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u40",
+   "empreinte": "d7cf4d18924a",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "La CMI seuil considérée a été choisie en considérant le traitement par bêta-lactamines soit durant sa phase probabiliste, soit en cas de non documentation microbiologique",
+   "explication": "La note dit que la colonne « infection non documentée » n'est pas reproduite, alors que les plages reproduites sont précisément celles de cette colonne (cf. u28). L'avertissement u41 reprend la même inversion.",
+   "page": 37
+  },
+  {
+   "id": "u41",
+   "empreinte": "36efeb963c80",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

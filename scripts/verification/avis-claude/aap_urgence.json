@@ -1,0 +1,367 @@
+{
+ "cle": "aap_urgence",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b96952bbf73e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ces propositions ont été validées",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "37ca8cadebc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Inhibiteur irréversible de la COX-1",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "097fce650abe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Inhibiteur irréversible du récepteur plaquettaire P2Y12 de l'ADP Inhibiteur irréversible du",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "ee3d8da48cfe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ticagrelor : 6,7–9,1 h ; 1er métabolite : 8,5–12,4 h",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "eecf036c5482",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Inhibiteur réversible du récepteur plaquettaire P2Y12 de l'ADP",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "a427222e7806",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'existe pas au moment de l'écriture de ce texte d'antidote disponible pour les AAP",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "d512d682049f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préopératoire pour identifier des dysfonctions plaquettaires, quelles qu'en soient les causes (AAP ou autres), quand elles sont suspectées sur une base clinique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "2f6e73e941ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de chirurgie de pontage coronaire semi-urgente55, il est proposé d'utiliser un test fonctionnel plaquettaire pour raccourcir les durées d'arrêt",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u9",
+   "empreinte": "bb4e27889236",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en l'insérant dans une prise en charge incluant les algorithmes transfusionnels retenus localement",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u10",
+   "empreinte": "8345fb667239",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un consensus sur la méthode à utiliser n'a pas été encore obtenu",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "456296d74d9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de tenir compte du type d'AAP et de l'heure de la dernière prise",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u12",
+   "empreinte": "105b97cba114",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "actif disparaît de la circulation en moins de 2 heures",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u13",
+   "empreinte": "ea68b82228e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "elle pourrait être au moins le double, et plus importante pour le prasugrel que pour le clopidogrel",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u14",
+   "empreinte": "cb93740561bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de ne pas administrer de rFVIIa pour neutraliser le clopidogrel ou le prasugrel",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u15",
+   "empreinte": "02243e4a7278",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la dernière prise de ticagrelor date de plus de 24 heures, la transfusion plaquettaire pourrait permettre une neutralisation partielle",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u16",
+   "empreinte": "6f40bd4a4d4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé d'administrer de l'acide tranexamique pour son efficacité à réduire le saignement, que le patient soit ou non traité par AAP",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u17",
+   "empreinte": "be86e5d228ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de ne pas utiliser de desmopressine pour neutraliser les AAP",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u18",
+   "empreinte": "e786f4298290",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "être administré dans les trois premières heures suivant le traumatisme",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u19",
+   "empreinte": "40d22f110ce3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de séparer les procédures invasives non programmées en procédures de sauvetage",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u20",
+   "empreinte": "7af35ad0e29c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dernière prise de clopidogrel et de ticagrelor à j # 5, dernière prise de prasugrel à j # 7",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u21",
+   "empreinte": "0202e1edaf82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de débuter les procédures invasives non programmées non neurochirurgicales sans neutralisation (accord fort)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u22",
+   "empreinte": "7e922dbfb827",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 heures après la dernière prise de prasugrel ou de ticagrelor",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u23",
+   "empreinte": "bc6564b7b432",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est proposé de ne pas réaliser de gestes d'anesthésie locorégionale rachidienne (rachianesthésie, péridurale)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u24",
+   "empreinte": "9491f6b95e54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.229 (page PDF 12), encadré : « Fracture du col fémoral : un traitement par clopidogrel ne doit pas retarder la chirurgie »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "3f30213d77ba",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "3d10ae25919a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.229 (page PDF 12) : arbre sauvetage/urgente vs semi-urgente, branche neurochirurgicale → neutralisation, non neurochirurgicale → commencer puis neutraliser si saignement non contrôlable attribué à la bithérapie — conforme",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "c4c68c0a5f08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "instabilité hémodynamique : PAS < 90 mmHg ou diminution de 40 mmHg",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u28",
+   "empreinte": "e2100477c396",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lutte contre l'hypothermie et l'administration précoce d'acide tranexamique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u29",
+   "empreinte": "29cb46f3caa6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neurochirurgical urgent, il est proposé de neutraliser le traitement antiplaquettaire en préopératoire",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u30",
+   "empreinte": "157a621800ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Glasgow > 8 à l'arrivée. Dans les autres cas, aucune proposition ne peut être faite ni en faveur ni en défaveur de la neutralisation",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u31",
+   "empreinte": "04b37c317cb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de choc hémorragique chez les patients traités par bithérapie, il est proposé de neutraliser le traitement",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u32",
+   "empreinte": "dae4a538f05f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de persistance de l'hémorragie après échec des traitements étiologiques et symptomatiques",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u33",
+   "empreinte": "5ee01f329b8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est proposé de réaliser un traitement symptomatique, sans neutraliser le traitement antiplaquettaire",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u34",
+   "empreinte": "5d02035464d1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "95e74ac5a415",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.230 (page PDF 13) : 4 branches (intracrânienne GCS>8/≤8, choc/bithérapie, grave/échec, non grave) — conforme",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "d04bd6fafd68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, tableau : aspirine, transfusion plaquettaire à dose standard 0,5 à 0,7x10^11 pour 10 kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "e9016c1ad94e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, tableau : clopidogrel 2 x dose standard, efficacité réduite si <6h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "74bd6c4ec702",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, tableau : prasugrel > 2 x dose standard, efficacité réduite si <6h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "0d5801093de5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, tableau : ticagrelor <24h pas de proposition, transfusion inefficace, « discuter rFVIIa » ; >24h neutralisation partielle. Le texte précise que l'efficacité du rFVIIa n'est pas évaluée — cohérent",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "4b5c4435b8b6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
