@@ -1,0 +1,925 @@
+{
+ "cle": "transport_intrahospitalier",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a728c575a746",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure diagnostique, thérapeutique ou pour une admission dans une unité de soins spécialisée. « Accord fort »",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "3d8904a8780c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "selon la méthodologie dérivée de la RAND/UCLA, à deux tours de cotation après élimination des valeurs extrêmes (experts",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "ed86924008aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pouvant entraîner un risque vital, une prolongation de séjour, la nécessité de gestes invasifs et des séquelles invalidantes.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "b13c6934fc30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure diagnostique, thérapeutique ou pour une admission dans une unité de soins spécialisée. « Accord fort »",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "c0b3cf797f4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2) Les patients à risque vital regroupent l’ensemble des patients présentant au moins une défaillance ou menace de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "3bf7a2f64ace",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3) Il faut standardiser les définitions concernant les événements indésirables (EI) et leur évitabilité au cours du",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "0b5368f88920",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TIH. « Accord fort » 4) Les EI sont classés selon leur gravité en deux catégories :",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "a3888bac90fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pouvant entraîner un risque vital, une prolongation de séjour, la nécessité de gestes invasifs et des séquelles invalidantes.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "33ff93387553",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6) Les EPR sont définis par le décret sur l’accréditation des médecins exerçant dans les spécialités à risque. Ils regroupent",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "1537c10c7daf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7) Des incidents sans gravité surviennent régulièrement lors du transport, il est donc nécessaire de définir précisément ce",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "eef29b5997ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8) Les EI survenant pendant le transport et nécessitant une intervention thérapeutique et résolutifs après doivent être",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "a964aeda1d35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intervention thérapeutique qui ne permet pas de corriger l’anomalie selon l’objectif fixé par le clinicien doivent être",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "06c8a6171d09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10) Un EPR compliqué d’une auto-extubation et/ou d’un arrêt cardiaque est un EIG. « Accord fort »",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "7029e5709b6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "11) Une désaturation nécessitant une augmentation de FIO2 ou un autre réglage du ventilateur est un EPR. Elle doit",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "c0e77bf3a7ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12) Une baisse de la pression artérielle nécessitant un geste thérapeutique est un EPR. C’est un EIG dès lors que le",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "3a149646814d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13) Un état d’agitation ou une désadaptation du respirateur nécessitant un geste thérapeutique est un EPR. C’est un EIG dès",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "617410a4de9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modification de réglage, une ventilation au BAVU ou un changement de matériel est un EPR. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "d91bc0f7fc2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "15) Un problème lié au ventilateur qui se complique d’un événement clinique est un EIG. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "1bed955113ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16) Les arrachements de matériels (cathéters, drain, pression intracrânienne, . . .) sont des EPR quand ils n’ont",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "b2a88918ee54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "17) Un EI survenant lors du TIH doit être considéré comme inévitable lorsque l’ensemble de la procédure a été réalisé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "8461618f0463",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédures structurelles/organisationnelles qui préviennent, diminuent la fréquence de survenue ou atténuent les",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "26e2d4ae62fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8) Les EI survenant pendant le transport et nécessitant une intervention thérapeutique et résolutifs après doivent être",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "92e8f0cfc3a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1) Le choix de l’équipement doit prendre en compte son encombrement et son autonomie. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "c39bc86db9e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2) Il faut vérifier toutes les connexions entre les divers matériels de monitorage (par exemple, capteurs de pression",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "1abcca4a9b6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveillance de la fréquence cardiaque électrocardioscopique, de l’oxymétrie de pouls et de la pression artérielle non invasive.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "a3f9c665c6f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« Accord fort » 4) Chez le patient non ventilé, la fréquence ventilatoire doit",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "1bce23c8da76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients ayant une souffrance neurologique et pour ceux nécessitant un contrôle strict de la PaCO2. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "9a0ebfe74238",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6) Les principaux paramètres monitorés doivent être couplés à des alarmes dont le réglage doit être adapté à",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "ac5434ae6a11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7) Il faut un matériel dédié au TIH et identifié au niveau d’une structure de soins, d’un service ou d’un pôle. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "2f61714fa075",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8) Le ventilateur de transport doit disposer d’alarmes sonores et visuelles sur les principaux paramètres ventilatoires",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "1d860a83f935",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "disposer immédiatement d’un système d’aspiration au mieux sous la forme d’un appareil électrique autonome portable.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "0cb180c24999",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10) Il faut adapter l’autonomie en électricité et en gaz médicaux des appareils utilisés en fonction de la durée du TIH",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "95ffd08b51ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de transport, à la sévérité du patient et aux thérapeutiques utilisées selon une procédure écrite. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "1b0f8e69b969",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12) La ventilation manuelle au ballon autogonflable lors d’un TIH doit être évitée et n’être utilisée qu’en cas de panne du",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u35",
+   "empreinte": "27ed30a83f4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "transport doit permettre les mêmes paramètres de ventilation, y compris les modes de ventilation non-invasifs. « Accord fort »",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u36",
+   "empreinte": "e6d1ae9cc975",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "14) Tout patient ventilé lors d’un TIH doit pouvoir être repris à tout moment, en ventilation au ballon sur sa prothèse",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u37",
+   "empreinte": "acfa323242a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f ventilateur haute performance (modes volumétriques, barométriques dont VS-AI-PEP, large plage de réglage de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u38",
+   "empreinte": "1d715daac2e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16) La performance, le monitorage et les alarmes du ventilateur doivent être adaptés à la pathologie du patient :",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u39",
+   "empreinte": "263080dd2b26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ventilateur doit être compatible avec son utilisation à tout moment et doit avoir une autonomie électrique suffisante pour",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u40",
+   "empreinte": "05913843501f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "18) Le ventilateur utilisé doit disposer d’une alarme de défaut d’alimentation en gaz, en électricité et d’une alarme de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u41",
+   "empreinte": "75235ac45d3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "19) L’interface du ventilateur de transport ne doit pas permettre de déréglages accidentels des consignes machine.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u42",
+   "empreinte": "db240328dbcb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utiliser doit être privilégié ; \u000f le ventilateur ayant le circuit patient le plus simple doit être",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u43",
+   "empreinte": "a10ffb628792",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le ventilateur de transport doit être branché sur le patient cinq à dix minutes avant le départ réel de la chambre, sur les gaz",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "31f8fa173e3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "endroit accessible connu des utilisateurs avec ses accessoires : circuit complet avec ECH et raccord annelé, tuyau d’alimentation en gaz médicaux. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "5d28639b0842",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "23) Le circuit utilisé doit être en accord avec les recommandations du fabricant. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u46",
+   "empreinte": "310726f6831d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24) Lorsque le ventilateur le nécessite, il doit être étalonné en fonction du type de circuit utilisé. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u47",
+   "empreinte": "88ba08f04278",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antibactérien et ECH doit être systématiquement mis en place entre le raccord annelé et le circuit patient. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u48",
+   "empreinte": "3768c3800172",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "26) Le réglage des consignes machine et des alarmes du ventilateur de transport doivent faire l’objet d’une prescription",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u49",
+   "empreinte": "50f27d3c2465",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "27) Le monitorage de la ventilation par le ventilateur de transport doit comporter au minimum la surveillance de la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u50",
+   "empreinte": "3fc987301fe8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que la spirométrie expiratoire. « Accord fort » 28) Une auto-extubation doit pouvoir être identifiée",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u51",
+   "empreinte": "0cbf5d144209",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "29) L’analyse de la phase expiratoire du capnogramme peut être une aide à l’identification de certaines complications de la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u52",
+   "empreinte": "c48fc8a714f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "27) Le monitorage de la ventilation par le ventilateur de transport doit comporter au minimum la surveillance de la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u53",
+   "empreinte": "301a18810041",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "31) Certains ventilateurs de transport proposent des modes pouvant évoquer la VS-AI-PEP mais qui en réalité n’en sont pas.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u54",
+   "empreinte": "a300e63bf0d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "32) En mode CPAP, les systèmes à débit libre indépendants des ventilateurs doivent être utilisés en tenant compte de leur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u55",
+   "empreinte": "81697253f486",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pression artérielle doit être utilisé lors du TIH si le patient est traité par des agents vaso-actifs et/ou en cas d’instabilité",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u56",
+   "empreinte": "35bf11297c86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "34) Le monitorage de la pression veineuse centrale n’est pas recommandé lors du TIH. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u57",
+   "empreinte": "5e488cbd1b07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "35) Un stimulateur – défibrillateur doit être facilement accessible au cours du transport. Au mieux, il s’intègre dans un",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u58",
+   "empreinte": "647c07f86de7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "seuils de celui-ci doivent être impérativement vérifiés et adaptés ainsi que l’état de la batterie. Un pacemaker externe de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u59",
+   "empreinte": "e68768073328",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "37) En présence d’électrodes de stimulation péricardiques temporaires, un stimulateur de transport doit être impérativement connecté. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u60",
+   "empreinte": "d8d2e33a8b1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "38) Le remplacement dans les meilleurs délais d’un matériel indisponible (maintenance, panne) doit être organisé selon une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u61",
+   "empreinte": "05f8165f394c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "39) Les matériels utilisés pour le TIH doivent faire l’objet d’une procédure de contrôle régulière et tracée (check list).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u62",
+   "empreinte": "46027621a255",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "40) Après utilisation, le ventilateur doit être nettoyé et désinfecté selon une procédure écrite et tracée. « Accord",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u63",
+   "empreinte": "a26a783bb219",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de médicaments de réanimation pédiatrique doit accompagner l’enfant, notamment un ballon autogonflable, un masque facial",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u64",
+   "empreinte": "fa3fc7ea6f26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "transport en cas de ventilation manuelle d’un enfant intubé pour prévenir le risque d’hyperventilation. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u65",
+   "empreinte": "c8237fa2b15a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’avoir un ventilateur pouvant délivrer des volumes courants faibles, assurer des fréquences élevées et permettre le maintien",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u66",
+   "empreinte": "fc9fefdb3285",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "44) La taille et la compliance des tuyaux du circuit doivent être adaptées à l’âge et au poids de l’enfant pour réduire au",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u67",
+   "empreinte": "f01f5f2d1a22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient avant le départ pour un TIH et évaluer le bénéfice/ risque du transport. Ces éléments doivent être colligés dans le",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u68",
+   "empreinte": "9769afa29ced",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2) Il faut vérifier l’absence de contre-indication aux examens complémentaires. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u69",
+   "empreinte": "78c666274a67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "complémentaires. « Accord fort » 3) Le patient doit être porteur d’un bracelet d’identification.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u70",
+   "empreinte": "7a5d34c559de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4) Il faut au minimum un abord veineux perméable et, si nécessaire, une voie d’abord supplémentaire spécifiquement",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u71",
+   "empreinte": "75962f12dc91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5) Les pousse-seringues électriques doivent être identifiés et la quantité des thérapeutiques adaptées à la durée du TIH. Les",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u72",
+   "empreinte": "f6c58c74f471",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6) Chez les patients nécessitant un contrôle strict de la PaCO2, un prélèvement artériel devra être réalisé avant le TIH",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u73",
+   "empreinte": "5478a81f9541",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7) Le monitorage de la PPC doit être poursuivi au cours du transport chez les patients neurologiques. « Accord fort »",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u74",
+   "empreinte": "e66779c71c0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8) La position optimale du patient en réanimation doit être poursuivie pendant le TIH. « Accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u75",
+   "empreinte": "1fc5c65881a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "poursuivie pendant le TIH. « Accord fort » 9) Il faut anticiper, évaluer et traiter les douleurs pouvant",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u76",
+   "empreinte": "337b0f2f9a93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10) Il faut poursuivre la sédation et/ou l’analgésie durant le transport. Elle peut être modifiée le cas échéant. « Accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u77",
+   "empreinte": "df8b343f5adf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "11) La mobilisation du patient curarisé doit faire l’objet de précautions particulières. « Accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u78",
+   "empreinte": "aa2a41c78215",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12) Le matériel d’intubation complet (comprenant un mandrin d’Eschmann) doit être disponible immédiatement.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u79",
+   "empreinte": "859075eee644",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13) À chaque mobilisation du patient, la vérification de la bonne position des dispositifs invasifs doivent être effectuées.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u80",
+   "empreinte": "b6f36512638d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "14) Un BAVU avec masque adapté, réservoir d’oxygène, prolongateur d’O2 et filtre de rechange doivent accompagner le",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u81",
+   "empreinte": "418014ba17c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "15) Il faut prévenir l’hypothermie pendant le TIH notamment chez l’enfant ou la température devra être",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u82",
+   "empreinte": "1fe9b88ed682",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorée. « Accord fort » 16) Le matériel à usage unique doit être privilégié. « Accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u83",
+   "empreinte": "a6f77a540502",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "17) La pression du ballonnet du dispositif intratrachéal doit être vérifiée avant et au retour du TIH. « accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u84",
+   "empreinte": "607bec92e94c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "18) Un sac d’intervention d’urgence doit accompagner le patient. « Accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u85",
+   "empreinte": "dae2269481f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1) Une formation initiale et régulière est obligatoire pour l’ensemble des personnels assurant les TIH à la fois sur le",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u86",
+   "empreinte": "7823e925aad4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« Accord fort » 2) Il faut une formation au transport pédiatrique, initiale et",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u87",
+   "empreinte": "fb8c3c93eefd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3) La formation des personnels en charge des TIH peut se faire sous la forme d’une simulation d’un transport. « Accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u88",
+   "empreinte": "7a44d5889913",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4) L’appréciation du risque et les modalités liées au TIH sont sous la responsabilité du médecin senior en charge du patient.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u89",
+   "empreinte": "84f98510dab8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5) L’équipe de TIH d’un patient à risque vital doit être composée au minimum d’un médecin expérimenté et d’une",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u90",
+   "empreinte": "0d6982ec3439",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6) Une procédure d’appel à l’aide pour un renfort médical et/ou infirmier doit être disponible et connue de tous en cas de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u91",
+   "empreinte": "8e5ce2bea390",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7) Un perfusionniste ou équivalent qualifié doit faire partie de l’équipe de TIH lorsque le patient est sous CEC. « Accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u92",
+   "empreinte": "ac3e2f1cf252",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8) Si le TIH est confié à l’équipe médicale du Smur, celle-ci doit bénéficier d’une transmission complète et précise sur l’état",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u93",
+   "empreinte": "7847bdf1634c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1) L’horaire, le lieu de rendez-vous ainsi que la durée d’immobilisation du patient doivent être précisés et vérifiés",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u94",
+   "empreinte": "446b2f963a9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2) Le nom du médecin et les moyens techniques à disposition sur le lieu d’accueil du patient doivent être connus.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u95",
+   "empreinte": "53d0aa640f6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "connaissance du circuit emprunté et de l’accessibilité des couloirs et ascenseurs en privilégiant le chemin le plus court et",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u96",
+   "empreinte": "7f5f9afacc0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4) Le service d’accueil est prévenu de l’arrivée imminente du patient. « Accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u97",
+   "empreinte": "a83997f70aa9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent faire l’objet d’un recueil spécifique sur une feuille de surveillance qui sera ensuite intégrée au dossier du patient.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u98",
+   "empreinte": "320d318d3104",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6) Une traçabilité imprimable des données du monitorage au cours du TIH est souhaitable. « Accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u99",
+   "empreinte": "beab8700d843",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7) Si le médecin qui accueille le patient est compétent pour en assurer sa surveillance, l’équipe de TIH lui transmettra",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u100",
+   "empreinte": "a7d1de174e8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8) En l’absence d’un médecin compétent pour la surveillance du patient sur le lieu d’accueil, l’équipe du TIH en conservera la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u101",
+   "empreinte": "318689aa5da0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9) L’organisation du TIH doit faire l’objet d’une procédure institutionnelle. « Accord fort »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u102",
+   "empreinte": "b97e29d9567e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "institutionnelle. « Accord fort » 10) Le TIH doit être un acte valorisé en termes d’activité.",
+   "explication": "",
+   "page": 5
+  }
+ ]
+}
