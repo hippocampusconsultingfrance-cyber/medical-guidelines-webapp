@@ -1,0 +1,799 @@
+{
+ "cle": "allergie_prevention",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "00e373e5a5ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f Question 2. Mécanismes de la sensibilisation et de l’hypersensibilité immédiate aux anesthésiques – Physiopathologie du choc. \u000f Question 3. Conduite du bilan diagnostique de la réaction",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "aaa21652a564",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les niveaux de preuve et la force des recommandations retenus ont été établis à partir de la méthode GRADE, modiﬁés et agréés par",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "9713117db4ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000e plusieurs études de « bas niveau », dont certaines contradictoires, mais avec une majorité se dégageant pour un effet favorable ou défavorable ;",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "ea579e0038d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Réaction allergique : réaction immunologique pathologique lors d’un contact renouvelé avec un antigène survenant chez un",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "0a39186a8d9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.1. Parmi les réactions d’hypersensibilité immédiates survenant en situation d’anesthésie, environ 60 % sont IgE-dépendantes (réaction d’hypersensibilité immédiate allergique) (NP2).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "ccc4999c7f58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "peranesthésiques varie de 3 à 9 % selon les pays (NP2). La morbidité la plus sévère s’exprime par des séquelles anoxiques cérébrales",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "c295a3fe3f1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "partir des cas d’anaphylaxie publiés depuis 1980 dans la littérature de langues anglaise et française. Les curares représentent 62,6 %",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "c65cbf937aa1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réaction anaphylactique n’a été publiée avec les anesthésiques halogénés (NP2). D’autres substances peuvent induire une anaphylaxie en cours d’anesthésie : aprotinine, chlorhexidine, protamine,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "1535bddb9325",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "allergique (NP2). Les signes cliniques ne sont pas toujours au complet, et peuvent prendre des masques trompeurs. L’absence de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "fd7834357619",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mais l’allergène le plus fréquemment en cause est le latex, en particulier chez l’enfant multiopéré et porteur de spina biﬁda, ce",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "3528e258c550",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "allergène reconnu par les effecteurs du système immunitaire du patient allergique. La présentation antigénique va déterminer",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "c6efb9533574",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’acide arachidonique, le TNF alpha, et certaines enzymes (tryptase, notamment). Ils induisent une altération de la perméabilité capillaire (urticaire, œdème), une bronchoconstriction et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "640f17ed511b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "effondrement des résistances vasculaires systémiques par vasodilatation périphérique artériolaire provoquant une diminution du retour veineux et du débit cardiaque. Puis apparaı̂t un tableau de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "cba1d5519ca0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f déclarer l’accident au centre régional de pharmacovigilance si un médicament est suspecté, ou au responsable de la matériovigilance de l’établissement si le latex est suspecté.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "10e9129a0028",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présence d’une élévation des marqueurs que sont la tryptase sérique et l’histamine plasmatique (NP1), même si une concentration normale n’exclut pas totalement le diagnostic (NP3).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "9a8635d445c7",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "Vérifié sur l'image p. 4 : « sérique (> 25 µg L⁻¹) »",
+   "explication": "La source donne > 25 µg/L ; la fiche écrit « > 25 microg/mL » (unité 1000 fois trop grande). Le reste (grades 1-2) est conforme.",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "afc2b83a421c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.2.2. Les délais optimaux de prélèvement sont de 15 à 60 minutes pour les grades 1 et 2 ; 30 minutes à deux heures pour",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "27cc6531ce6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.3.2. Le pic d’histamine est observé dès la première minute qui suit la réaction. Le pic est d’autant plus élevé que la réaction est",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "cab4736f5e0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surtout en cas de réaction peu sévère. Pour les réactions cutanéomuqueuses isolées (grade 1), le délai idéal se situe moins",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "6df4d640cbea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "semestre de gestation (synthèse placentaire de diamine oxydase), et les patients recevant de l’héparine (augmentation de diamine",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "64fd9881be28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "spéciﬁques (en lien avec les allergènes suspectés) doivent être pratiqués avant l’arrêt de la réanimation plutôt qu’en post-mortem",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "d40c74e8b1c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient concerne principalement les ions ammonium quaternaire (curares), le thiopental, le latex, les ß-lactamines et la chlorhexidine. Il est possible de rechercher ces IgE antimédicaments dans le",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "96c401b75211",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.5.1. Les dosages d’histamine nécessitent un prélèvement sanguin de 5 mL sur tube EDTA, et pour la tryptase sur tube sec ou",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "ee8326fc3c9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "demi-vie plasmatique courte de certains des médiateurs, il est conseillé de disposer, au bloc opératoire, d’un sachet contenant les",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "d17070d5458b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’allergie dans les basophiles et mastocytes, les tests cutanés doivent être effectués quatre à six semaines après la réaction",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "2d6274d57a83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.6.4. Les tests cutanés sont pratiqués et ne peuvent être interprétés qu’en fonction des renseignements cliniques chronologiques et détaillés fournis par l’anesthésiste (Annexe I), idéalement accompagnés d’une copie de la feuille d’anesthésie et de la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "2f76d6d6fbd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de réaction de grade IV, le médicament soupçonné sera testé à partir du 1/100e de la solution mère dès le prick-test.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "d5047f8959c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avant-bras) est indifférent à condition que l’interprétation du résultat tienne compte de la réactivité normale de la peau au site de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "3f919b5fc1e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "entre chaque test. Les concentrations maximales à ne pas dépasser pour éviter les faux positifs ﬁgurent dans les Tableaux 3 et 4 (NP1).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "0af3a82e1a4f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "82b29ec31dfa",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "Vérifié sur l'image p. 6, en-tête du Tableau 3 : « Tests intradermiques … CM (µg mL⁻¹) »",
+   "explication": "La colonne « IDR CM » est en µg/mL dans la source ; l'en-tête de la fiche dit « IDR CM (mg/mL) ». Les valeurs elles-mêmes sont justes, mais affichées avec une unité 1000 fois trop grande (ex. atracurium 10 µg/mL et non 10 mg/mL). Les colonnes C et PT CM sont bien en mg/mL.",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "3312aa108105",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "a106e4089e41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "deb68a02e50c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "00684dd6f598",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "7ceb56d416b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "2111d1ed03f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "e925c16b5483",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "b8b3e15ac3fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "e65a8181c754",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "522d876ea5c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "903da14fa2c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "e1756fa3477d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "56f1de6048a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "f721f207b1cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "595dfa930884",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "28fbe63b94e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "99afefad234c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "72e86af90268",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "31143da88a57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "87f3a792b2ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "7ada1d7d4be6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3, p. 6 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "bcda5575d6f6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "6230f7e83650",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "Vérifié sur l'image p. 6, en-tête du Tableau 4 : « CM (µ mL⁻¹) » pour les IDR",
+   "explication": "Même erreur que pour le Tableau 3 : l'IDR CM est en µg/mL (chlorhexidine 50 µg/mL, povidone 10 000 µg/mL, bleu patenté 2500 µg/mL, bleu de méthylène 100 µg/mL) ; la fiche indique mg/mL.",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "3f97bc01dbcc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 heures après l’anesthésie, il est recommandé de réaliser des tests épicutanés (patch tests) à lecture retardée (\u0015 48 h), notamment en cas de symptôme cutané à type d’eczéma. Les allergènes",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u56",
+   "empreinte": "83e3ebaf6c42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.7.4. En cas de réaction \u0015 grade II et si les tests cutanés sont négatifs à tous les produits suspectés, on peut prescrire un test",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u57",
+   "empreinte": "fd55297a0cbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’hypersensibilité, en utilisant le médicament et la voie d’administration utilisés lors de la réaction. Il faut les réaliser sous haute surveillance, uniquement dans certains centres spécialisés associés",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u58",
+   "empreinte": "9400e8e0e6e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans le dossier médical du patient. Le double doit être adressé par l’allergologue au centre régional de pharmacovigilance, accompagné du descriptif clinique de l’accident (Annexe I), ainsi qu’au",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u59",
+   "empreinte": "70150b2a88d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.1. Patients à risque de réaction d’hypersensibilité. 4.1.1. Patients dont le diagnostic d’allergie à un des médicaments ou produits susceptibles d’être administrés pour l’anesthésie a été établi par un bilan allergologique préalable.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u60",
+   "empreinte": "5bcf38e01cd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.2. Dans la population générale, il n’y a pas lieu de pratiquer avant une anesthésie un dépistage systématique d’une sensibilisation au(x) médicament(s) et/ou produit(s) utilisé(s) en anesthésie.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u61",
+   "empreinte": "3d9da5ec407c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f protocole identiﬁé : tester les médicaments du protocole ancien et le latex (tests cutanés \u0006 IgE spéciﬁques). S’il s’agit d’anesthésiques locaux, effectuer un test de réintroduction après s’être assuré",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u62",
+   "empreinte": "1e76924cae0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pricks au latex \u0006 IgE spéciﬁques du latex. 4.3. Situations particulières et demande de bilan allergologique.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u63",
+   "empreinte": "34ca0327534e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.3.1.2. En cas d’urgence, il ne faut pas administrer d’AINS antiCOX-1. En revanche, les anti-COX-2 sont utilisables (célécoxib et parécoxib). Il est possible d’administrer du paracétamol, mais il",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u64",
+   "empreinte": "15d683fc2cbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d’intervention non urgente, il faut réaliser un bilan en milieu hospitalier spécialisé avec des tests d’introduction réalistes.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "f1297b5b8693",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas réinjecter de morphine ou de codéine, mais tous les autres morphiniques sont utilisables.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u66",
+   "empreinte": "34a3b0a1ab02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.3.4. En cas d’allergie alimentaire à l’œuf ou au soja. Un seul cas d’hypersensibilité au propofol chez un sujet",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u67",
+   "empreinte": "a499423bedb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’allergène en cause n’étant pas l’iode, les médicaments et badigeons iodés ne sont pas contre-indiqués (NP3).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u68",
+   "empreinte": "92732bb9f141",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Celle-ci doit être contrindiquée. Un cas de réaction anaphylactique à la protamine chez un sujet allergique au poisson a été rapporté, mas une récente revue de la littérature ne justiﬁe pas son",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u69",
+   "empreinte": "450ae53ddbdd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u70",
+   "empreinte": "16c037723434",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.1.2. La prévention primaire est impossible pour les agents anesthésiques, mais est réalisable avec certains matériaux comme",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u71",
+   "empreinte": "713daf1720fb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "c2b3043217a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.1. La meilleure prévention secondaire correspond à la nonadministration du médicament auquel un sujet est sensibilisé. Il faut déterminer l’allergène responsable d’une réaction d’hypersensibilité immédiate pour éviter une réaction d’hypersensibilité",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "e8341cca96c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.2. Les facteurs de risque de sensibilisation au latex sont : un terrain atopique, les sujets en contact répété par exposition",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u74",
+   "empreinte": "42d06d88238d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "première position sur le programme opératoire, dans un environnement exempt de latex. Il faut notiﬁer la sensibilisation du patient au latex pendant son séjour hospitalier (service d’hospitalisation, bloc opératoire, SSPI) (NP3) (Annexe V).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u75",
+   "empreinte": "0d430c4c27f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.4. On peut utiliser un questionnaire préopératoire pour dépister la sensibilisation au latex, lors de la consultation",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u76",
+   "empreinte": "0707f24f001d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.5. En cas de suspicion de sensibilisation au latex, il faut adresser le patient en consultation d’allergologie en préopératoire",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u77",
+   "empreinte": "ca44ae7d0cbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.6. Il faut établir des listes, régulièrement remises à jour, des matériels contenant du latex dans chaque service d’anesthésieréanimation, en collaboration avec la pharmacie (NP3).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u78",
+   "empreinte": "c5d6389b31f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.7. Il ne faut pas faire de recherche systématique préanesthésique d’une sensibilisation, en dehors des patients appartenant à un groupe à risque (NP2).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u79",
+   "empreinte": "65518fdaf648",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.8. Il faut adresser en consultation d’allergologie, avant une anesthésie, les patients présentant un risque de faire une réaction",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u80",
+   "empreinte": "1c0d96d59e5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.2.9. Il ne faut pas utiliser la méthode de la dose-test par voie intraveineuse pour détecter les sujets sensibilisés aux médicaments anesthésiques (NP4).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u81",
+   "empreinte": "d5b871467327",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une réaction d’hypersensibilité immédiate (NP4). Chez l’asthmatique prenant ce type de traitement au long cours, les corticoı̈des diminuent l’incidence de l’hyperréactivité bronchique lors d’une",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u82",
+   "empreinte": "a662843788bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "justiﬁant de multiples interventions. Ces patients présentent un risque plus élevé que les autres de présenter une réaction",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u83",
+   "empreinte": "5fb6e741e038",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.4. L’anesthésie des patients allergiques ou susceptibles de l’être.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u84",
+   "empreinte": "45ceeb9cb428",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préopératoire au bloc opératoire chez un patient monitoré et éveillé, avant l’induction anesthésique. Dans ce cas, l’imputabilité",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u85",
+   "empreinte": "2daff1406503",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du sujet et du type d’actes à pratiquer. En urgence, en l’absence de bilan allergologique, il faut privilégier les techniques d’anesthésie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u86",
+   "empreinte": "7efdce1fe8e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.4.3.4. Chez un sujet ayant présenté une réaction d’hypersensibilité immédiate allergique à un curare, il faut rechercher systématiquement une sensibilité croisée avec les autres curares",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u87",
+   "empreinte": "e8a168dd64ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6.7.3. Les particularités de la réanimation du choc anaphylactique s’appliquent à la femme enceinte (NP3) : 6.7.3.1. Oxygénation maternelle précoce et prise en charge des",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u88",
+   "empreinte": "cff498d56836",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
