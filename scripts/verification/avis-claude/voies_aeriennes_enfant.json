@@ -1,0 +1,565 @@
+{
+ "cle": "voies_aeriennes_enfant",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "7af8b7e58aef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plus de 50 % des événements critiques périopératoires de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "b1e3859b12b1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "afc78597d651",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "03724228d217",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "710cc9f9fa1f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "394cf6f09154",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "c86c19d8c21b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "619515319b52",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "f8180982bb23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supraglottique plutôt qu'une sonde d'intubation en cas de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "cb119e3ccc55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une étude randomisée contrôlée comparant la sonde d'intubation et le masque laryngé chez 181 nourrissons",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "ad464639f7ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pas de recommandation : Il n'y a pas d'argument en faveur du",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "39990dfe51e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que le décubitus latéral est préférable au décubitus dorsal, que",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "34d4cb491a9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2 – Lors d'une intervention pour amygdalectomie, il est",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "64ceca4603ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "française, qui était utilisée par 67 % des anesthésistes en 2010 et",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u15",
+   "empreinte": "8f1f40404b52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3 – En cas d'intubation et de ventilation difficiles non prévues, il",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "08e61eefaefd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gonflable et de limiter celle-ci à 40 cmH2O",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "f0b8b98c3170",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "incorrecte est à évaluer. Le nombre d'essais d'insertion d'un dispositif supraglottique doit être limité à 2 ou 3",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "207c94ff364a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorer la pression du ballonnet (sans dépasser 20 cmH2O)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "1e6be27d6b74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ventilation en bas débit de gaz frais et réduit la pollution du bloc",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "e4798c64d4f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une désaturation < 95 % impose l'arrêt des manœuvres",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "55d25c1828e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vidéolaryngoscope en première intention chez les patients avec",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "249e655e4b5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le cas de l'utilisation d'un vidéolaryngoscope sans gouttière latérale, le recours à un guide préformé non traumatique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "4446248d827d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommandé d'utiliser un curare non dépolarisant",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u24",
+   "empreinte": "42b83a777be5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'enfant est très majoritaire en France (92 %)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "062e90ff2d88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'utiliser un curare d'action rapide",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u26",
+   "empreinte": "21d72f9590cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "succinylcholine en première intention pour l'induction en",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "4f5243bbd704",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "succinylcholine en fonction de l'âge (< 1 mois : 1,8 mg/kg",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "711964afd429",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 mois << 1 an : 2 mg/kg, 1 an << 10 ans : 1,2 mg/kg",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "cd55f4555aeb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 mois << 1 an : 2 mg/kg, 1 an << 10 ans : 1,2 mg/kg",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "3a8054c15dc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 10 ans : 1 mg/kg). Le rocuronium à une dose supérieure",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "e970528cdaf7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cependant il faut rappeler que le sugammadex n'a pas l'autorisation de mise sur le marché en pédiatrie en 2018",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u32",
+   "empreinte": "52c497a3fc94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 – Les experts suggèrent de ne pas pratiquer de pression",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u33",
+   "empreinte": "34961729d2c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "idéalement < 15 cmH2O) dès que la SpO2 est inférieure à 95 %",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u34",
+   "empreinte": "d06860981040",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pas de recommandation : Chez un enfant intubé sans difficulté et",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u35",
+   "empreinte": "f2afe44a5602",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gaz halogéné, d'autres sur la fraction inspirée, mais tous préconisent au minimum 1 MAC d'halogéné lors de l'extubation du patient",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u36",
+   "empreinte": "2245b215f917",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pendant au moins 3 minutes, sous monitorage complet, en",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u37",
+   "empreinte": "8cedf6d6bc02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et al. notent 95 % de réussite de l'extubation, soit à l'issue d'une",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u38",
+   "empreinte": "f755532f811c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10 – Chez l'enfant enrhumé, il est recommandé d'utiliser le",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u39",
+   "empreinte": "0959c2f8ece9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pas de recommandation : Chez l'enfant enrhumé, dans les",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u40",
+   "empreinte": "f6df5cb70de8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11 – Chez l'enfant enrhumé, avant l'âge de 6 ans, il est",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u41",
+   "empreinte": "cdad86ec60fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R12 – Chez l'enfant enrhumé, il n'est probablement pas",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u42",
+   "empreinte": "5b34dda7a249",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2,5 mg pour les enfants dont le poids est inférieur à 20 kg, et de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u43",
+   "empreinte": "10cb54ce833a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5 – Chez l'enfant enrhumé, les experts suggèrent de ne pas",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u44",
+   "empreinte": "1a0edb037afb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "a3fa4e7cd0e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.4 : laryngoscopie difficile 2 essais → O2 100 % → appel à l'aide",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "2c03de4dbe16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.4 : 1re étape, 2 essais par sénior, vérifications, mandrin/glottiscope",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "0d78579131cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.4 : DSG 3 essais, chirurgie possible/impossible, fibroscopie via DSG 1 essai",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "41c20daeb733",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.4 : retour au masque facial → réveil ou algorithme CICO",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "a46cf7663897",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.4 : traumatisme laryngé, extubation difficile",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "63e70ae19689",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "febf61134935",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.5 : ventilation difficile → O2 100 % → appeler à l'aide",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "4a3391d19cd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.5 : position, équipement, profondeur d'anesthésie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "2a2314da8025",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.5 : canule, causes, CPAP, propofol, curare",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "590cc0d0c4bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.5 : DSG 3 essais, SpO2 > 80 % / < 80 %",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "34d28d1a6b47",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "661245c985de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.6 : échec d'intubation, ventilation inadéquate",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "31b489303c93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.6 : FiO2 100 %, canule ou DSG, 4 mains, sonde NG",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "f51b545ed625",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.6 : réveil si SpO2 > 80 %, sugammadex 16 mg/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "7e990d1ef937",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.6 : ORL, trachéotomie/bronchoscopie, cathéter cricothyroïdien, jet 1 s 12/min",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "10b1f4226e2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.6 : encadré ATTENTION < 8 ans",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "b2429de59ba2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gonflable et de limiter celle-ci à 40 cmH2O",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u62",
+   "empreinte": "411b2769710a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
