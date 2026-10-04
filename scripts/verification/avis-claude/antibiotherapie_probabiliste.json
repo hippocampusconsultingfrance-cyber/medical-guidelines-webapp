@@ -1,0 +1,781 @@
+{
+ "cle": "antibiotherapie_probabiliste",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9ea948937a1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En collaboration avec la Société de réanimation de langue française, Société de pathologie infectieuse de langue française, Société de microbiologie, Médecine militaire, Société de médecine d’urgence, Société française",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "3476b30040b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Études aléatoires avec un faible risque de faux positifs (α) et de faux négatifs (\u0002) (puissance élevée : (\u0002 = 5 à 10 %)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "b0c62a5c5e46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de faux négatifs (\u0002) (puissance élevée : (\u0002 = 5 à 10 %) Risque α élevé, ou faible puissance",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "3bbc57816afa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Risque α élevé, ou faible puissance Études non aléatoires. Sujets « contrôlés » contemporains",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "5f79b92b1119",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Risque α élevé, ou faible puissance Études non aléatoires. Sujets « contrôlés » contemporains",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "799515dc4cd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Études non aléatoires. Sujets « contrôlés » non contemporains Études de cas. Avis d’experts.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u7",
+   "empreinte": "74f850c9f5bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infections nosocomiales et leur grande variabilité de sensibilité aux antibiotiques, imposent une documentation la plus exhaustive possible de l’agent causal, avant tout traitement",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u8",
+   "empreinte": "6d96a11fca76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prise en compte notamment des paramètres pharmacocinétiques et pharmacodynamiques des différentes classes d’antibiotiques prescrites est indispensable pour permettre d’obtenir un traitement optimisé. Ainsi l’efficacité tempsdépendante des bêtalactamines plaide pour leurs administrations répétées, pouvant dans certains cas aboutir à justifier",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u9",
+   "empreinte": "713419276dca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients, de leur lourde mortalité en cas de retard thérapeutique, de la difficulté d’obtenir un diagnostic microbiologique et des données pharmacocinétiques particulières concernant l’antibiothérapie, notamment chez les neutropéniques.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "f36deb7acf7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plus rapide que chez l’adulte, avec le risque d’apparition souvent précoce d’une insuffisance circulatoire. L’administration urgente d’une antibiothérapie probabiliste est dans",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "447f79e9128d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méningite comateuse la ponction lombaire est réalisée avant l’antibiothérapie. L’examen direct du liquide céphalorachidien doit être pris en compte pour le choix de l’antibiothérapie probabiliste.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "41ab503b1eb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pupura fulminans = C3G (céfotaxime ou céftriaxone) i.v. immédiat",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "8343a9522e8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méningite avec signes de localisation le traitement antibiotique, associant céphalosporine de 3e génération (C3G) (céfotaxime ou ceftriaxone) et vancomycine, est débuté avant la TDM cérébrale qui précède la ponction lombaire. En cas de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "7d49345cd9f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Importance de l’examen direct du LCR C Cg + (pneumo) ⇒ C3G + vancomycine (40 à",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "9ca918e3b776",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont contre-indiquées et l’association amoxicilline–gentamicine au netilmicine peut être une alternative, surtout si un entérocoque est suspecté (importance de l’examen direct",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "4d61aad89159",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C Cg – (méningo) ⇒ C3G ou amoxicilline ; C Bg + (listéria) ⇒ amoxicilline (200mg/kg/jour) + gentamicine (3 à 5 mg/kg/jour) ;",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "6d1f682282d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C Bg + (listéria) ⇒ amoxicilline (200mg/kg/jour) + gentamicine (3 à 5 mg/kg/jour) ; C Bg – (Haemophilus. Influenzae) ⇒ C3G (céfotaxime",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "20af86403152",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C liquide trouble (PNN), glycorachie basse ⇒ C3G + vancomycine ;",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "c20a18b22c0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vancomycine ; C LCR clair lymphocytaire, glycorachie basse ⇒ amoxicilline + gentamicine + antibiothérapie antituberculeuse ;",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u20",
+   "empreinte": "803ccfde5d59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C LCR clair lymphocytaire, glycorachie basse ⇒ amoxicilline + gentamicine + antibiothérapie antituberculeuse ; C LCR lymphocytaire, glycorachie normale ⇒ aciclovir.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "7522a95cb856",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "raison de la faible spécificité des signes évocateurs. La documentation bactériologique par culture du LCR est indispensable dans ce contexte nosocomial. Du point de vue microbiologique, les staphylocoques (dont Staphylococcus epidermidis) et les bacilles à Gram négatif (dont les entérobactéries et Pseudomonas aeruginosa) sont le plus souvent",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "4f03e758964f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C L’examen bactériologique du LCR doit être systématique avant toute antibiothérapie ; C Céfotaxime + Fosfomycine en première intention. Mais",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "a6ee19a27228",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "imipénème, fluoroquinolones ou vancomycine. • Méningites post-traumatiques : amoxicilline.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "884bb64c1a3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La conférence de consensus sur les pneumopathies communautaires permet de recommander le schéma thérapeutique suivant : • Association d’antibiotiques administrées par voie intraveineuse :",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "99226c65e957",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C amoxicilline–acide clavulanique (2 g/8 heures) ou céfotaxime (2 g/8 heures) ou céftriaxone (2 g/jour) + érythromycine (1 g/8 heures) ou ofloxacine (200 × 2)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "8be22dccabb3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• En cas d’allergie prouvée à la famille des pénicillines et aux C3G : glycopeptide + ofloxacine ;",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "b2d1db2bd337",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Risque de P. aeruginosa (AtbTT fréquente, DDB, corticothérapie au long court) : bêtalactamine antipseudomonas + ciprofloxacine (400 mg/8 heures).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "ba5287be6d71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une antibiothérapie précoce adéquate diminue la mortalité des pneumonies acquises sous ventilation mécanique. Le début du traitement antibiotique probabiliste doit se faire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "555aa8629d60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• pneumopathie tardive acquise sous ventilation mécanique ≥ 7 jours de ventilation mécanique ou pneumopathie précoce mais avec antibiothérapie ou hospitalisation antérieure dans un service à risque : Le traitement comporte un bêtalactamine à activité anti-P. aeruginosa associé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "8c5031dec2b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• pneumopathie tardive acquise sous ventilation mécanique ≥ 7 jours de ventilation mécanique ou pneumopathie précoce mais avec antibiothérapie ou hospitalisation antérieure dans un service à risque : Le traitement comporte un bêtalactamine à activité anti-P. aeruginosa associé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "809954403b09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les infections urinaires (IU) parenchymateuses (pyélonéphrites et prostates) peuvent être responsables d’un syndrome septique grave, dans lequel les signes urinaires sont très rarement au premier plan. Le diagnostic repose sur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u32",
+   "empreinte": "8ccc837b9ade",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémodynamique. Pendant la grossesse, les fluoroquinolones sont contre-indiquées et l’association amoxicilline–gentamicine au netilmicine peut être une alternative, surtout si un",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "16e1b28ec6de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– la colonisation du patient, de l’écologie du service et de l’examen direct de l’ECBU ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "a63a8421d6c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’infection. Le traitement médical sera toujours associé au traitement chirurgical quand il est réalisable :",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "fc476780e229",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C céfotaxime ou ceftriaxone + aminoside ; C entérocoque : rôle pathogène reconnu. Pas de consensus pour le traitement.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u36",
+   "empreinte": "fff3da79634e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• péritonites nosocomiales et postopératoires : C pipéracilline–tazobactam (4,5 g × 4/jour) + amikacine",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u37",
+   "empreinte": "b4ffc5d568b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• péritonites primaires du cirrhotique : C amoxicilline–acide clavulanique (1,2 g/6 heures) ou céfotaxime (2 g/8 heures) ou céftriaxone (2 g/jour).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u38",
+   "empreinte": "64c0127ef428",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou prélèvements peropératoire, réalisés devant la survenue d’un état septique. • La faible diffusion des antibiotiques dans la nécrose pancréatique impose de tenir compte de données pharmacocinétiques, quand elles sont disponibles, pour guider le",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "9d545d1049ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "céfotaxime et métronidazole. • En cas d’antibiothérapie préalable, d’hospitalisation prolongée, de manœuvres endoscopiques ou de nécrosectomie antérieure, le choix se porte sur l’association imipénème, vancomycine et fluconazole.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "cd3646a56989",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "céfotaxime et métronidazole. • En cas d’antibiothérapie préalable, d’hospitalisation prolongée, de manœuvres endoscopiques ou de nécrosectomie antérieure, le choix se porte sur l’association imipénème, vancomycine et fluconazole.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u41",
+   "empreinte": "4422732787a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• En cas d’antibiothérapie préalable, d’hospitalisation prolongée, de manœuvres endoscopiques ou de nécrosectomie antérieure, le choix se porte sur l’association imipénème, vancomycine et fluconazole. • L’antibiothérapie sera adaptée secondairement à l’antibiogramme des bactéries retrouvées dans les prélèvements peropératoires ou par ponction percutanée.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u42",
+   "empreinte": "c521ea07232f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• gangrène périnéale communautaire : céfotaxime–ceftriaxone + métronidazole ou amoxicilline–acide clavulanique, associé avec de la gentamicine ou de la nétilmicine ; • gangrène postopératoire : pipéracilline–tazobactam ou",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u43",
+   "empreinte": "9fff258f17f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Angiocholite nosocomiale ou post CPRE : Cette situation représente un facteur de risque identifié",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "f63d68807782",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qui est retrouvée : anaérobies, entérobactéries, streptocoques, entérocoques et Staphylococcus aureus. Streptococcus pyogenes est retrouvé dans près de la moitié des prélèvements et dans 50 % des hémocultures prélevées chez des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u45",
+   "empreinte": "8f72ae150bb3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• atteinte des membres et de la région cervicofaciale : amoxicilline–acide clavulanique + gentamicine ou nétilmicine ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u46",
+   "empreinte": "ac92bd310283",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "amoxicilline–acide clavulanique + gentamicine ou nétilmicine ; • gangrène périnéale communautaire : céfotaxime–ceftriaxone + métronidazole ou amoxicilline–acide clavulanique, associé avec de la gentamicine ou de la nétilmicine ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "8c9e9fbfce2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C gangrène postopératoire : pipéracilline–tazobactam (16 g/jour) ou imipénème (1 g × 3/jour) + amikacine",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "9659a125db74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en ville, les EI sur valves prothétiques et les IPV sont fréquemment dues à des germes hospitaliers, le risque étant d’autant plus élevé que l’infection se révèle précocement",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "f1f6c7fa3d96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Valve native : C suspicion de staphylocoque communautaire : cloxacilline (2 g/4 heures) + gentamicine (1,5 mg/kg/12 heures)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "5e7798fe63e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou nétilmicine (3 mg/kg/12 heures) ; C sans élément d’orientation : amoxicilline–acide clavulanique (2 g/4 heures) + gentamicine (1,5 mg/kg/12 heures) ou nétilmicine (3 mg/kg/12 heures) ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u51",
+   "empreinte": "0c58d38e70dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C sans élément d’orientation : amoxicilline–acide clavulanique (2 g/4 heures) + gentamicine (1,5 mg/kg/12 heures) ou nétilmicine (3 mg/kg/12 heures) ; C si allergie vrai aux pénicillines : vancomycine",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u52",
+   "empreinte": "167c42d3295a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Valve prothétique quelque soit l’ancienneté de la chirurgie : C cas général : vancomycine (15 mg/kg/12 heures) +",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u53",
+   "empreinte": "f352876f0151",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(1,5 mg/kg/12 heures) ou nétilmicine (3 mg/kg/12 heures) ; C si échec ou contexte particulier : vancomycine",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u54",
+   "empreinte": "7ac951a6046a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une ligature-excision de la veine en cause notamment s’ils existent des signes locaux importants, une thrombophlébite ou sepsis sévère associé à des hémocultures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u55",
+   "empreinte": "a744b68e747a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C imipénème ou ceftazidime ou céfépime + amikacine + vancomycine ± métronidazole (inutile si imipénème).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u56",
+   "empreinte": "5cd84ca0e9b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• si facteurs de risque d’infection à levures : discussion de l’amphotéricine B ;",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u57",
+   "empreinte": "b764e57cac42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "justifiant le traitement : • infection communautaire : C3G (céfotaxime ou céftriaxone) + gentamicine ou nétilmicine + métronidazole ;",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u58",
+   "empreinte": "af1d91dc1c9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• infection nosocomiale (y compris les patients en institution ou hospitalisés dans les 30 jours précédents) : C imipénème ou ceftazidime ou céfépime + amikacine +",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u59",
+   "empreinte": "b2306d37f629",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "façon raisonnée et documentée une antibiothérapie probabiliste même à spectre large, puis de la simplifier secondairement, après l’avoir réévaluer. La nécessaire maîtrise de l’accroissement des résistances bactériennes impose cette",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u60",
+   "empreinte": "05cd7a781ff2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "responsables et leur profil de sensibilité est disponible le plus souvent, à condition d’avoir effectué initialement les prélèvements bactériologiques adéquats. Il faut parfois savoir",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u61",
+   "empreinte": "48daad3a590f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "d56fc256f0a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "a3433c3679e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "d9c955b6b0b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u65",
+   "empreinte": "82ba122886b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "d8ef2cc3f950",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u67",
+   "empreinte": "697fb804b60b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u68",
+   "empreinte": "c7be8e249506",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u69",
+   "empreinte": "67cdbddb852a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u70",
+   "empreinte": "91e0e81c8de6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u71",
+   "empreinte": "290f3c9ff977",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "ee4eb1dcd39a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u73",
+   "empreinte": "8106be057868",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u74",
+   "empreinte": "99538606b298",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u75",
+   "empreinte": "8f886d180d67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u76",
+   "empreinte": "aef1ce7222b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u77",
+   "empreinte": "d2c1cd946928",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u78",
+   "empreinte": "49136bf9903a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u79",
+   "empreinte": "43ee177977f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u80",
+   "empreinte": "a06e69ff89df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u81",
+   "empreinte": "bf8718c47ec2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u82",
+   "empreinte": "e6ae2c22fcd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u83",
+   "empreinte": "98831caddb17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u84",
+   "empreinte": "f4dc8d103b01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau « posologie de la première injection » de la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u85",
+   "empreinte": "f1912a827260",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "500 mg Posologie proposée uniquement chez l’adulte, dans la majorité des situations de sepsis grave.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u86",
+   "empreinte": "dcf61444cc34",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
