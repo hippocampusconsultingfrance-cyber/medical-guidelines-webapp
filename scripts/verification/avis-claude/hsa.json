@@ -1,0 +1,817 @@
+{
+ "cle": "hsa",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "1a702314daf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’hémorragie sous-arachnoïdienne (HSA) par rupture d’anévrysme est une pathologie importante à plusieurs titres. Elle concerne une population le plus souvent jeune et en bonne santé. Son pronostic",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "ed7cb84b8e09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "quelques exceptions près, la majorité des études le concernant comporte un faible niveau de preuve ce qui justifiait le choix méthodologique d’une « conférence d’experts ».",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "7d8dfb80a6ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "convulsions accompagnant la céphalée sont hautement évocatrices d’HSA. Le syndrome méningé peut apparaître plusieurs heures après l’HSA et peut donc faire défaut lors de l’admission aux",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "adb1d59984a2",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Tableau 1 : Classification de la World Federation of Neurological Surgeons (WFNS).",
+   "explication": "Le tableau WFNS de la source a 5 lignes : la fiche omet le grade I (Glasgow 15, sans déficit moteur) et commence au grade II.",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "083457cec82a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "beaa53e9b2eb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "34a71a885898",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "491817bac201",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "82d81c061a02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présent ou absent Tableau 2 : Classification de Hunt et Hess.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "b2f937a88047",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "87f820336b01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Anévrysme non rompu Asymptomatique ou céphalée minime",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "ac10a84ee6d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Asymptomatique ou céphalée minime Céphalée modérée à sévère, raideur de nuque",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "841d5816aa18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Céphalée modérée à sévère, raideur de nuque Somnolence, confusion, déficit focal minime",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "684d64286c32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Somnolence, confusion, déficit focal minime Coma léger, déficit focal, troubles végétatifs",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "f334100c4500",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Coma léger, déficit focal, troubles végétatifs Coma profond, moribond",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "08918853d63e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "privilégiée. Le score de Glasgow doit être utilisé (Grade E). Ces échelles et scores seront utilisés tout au long de l’évolution clinique pour quantifier la gravité de l’HSA.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "23af6d3b3732",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au long de l’évolution clinique pour quantifier la gravité de l’HSA. On retient la définition d’HSA grave pour des HSA cotées III à V dans l’échelle de la WFNS (Grade D).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "8e7561658db1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conséquences (hydrocéphalie, hématome, infarctus). La classification scanographique la plus utilisée est l’échelle de Fisher (tableau 3).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "9c4cd9fc9783",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "1fc0a90edf8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 Dépôts de moins de 1 mm d’épaisseur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "93bef500f928",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3 Dépôts de plus de 1 mm d’épaisseur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "c03ba2f27aa6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4 Hématome parenchymateux ou hémorragie ventriculaire",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "2db36d1e2795",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.1. Place du scanner cérébral Tout patient suspect d’HSA doit être exploré par un scanner cérébral, en urgence (Grade D). En cas",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "3619b4c60afa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout patient suspect d’HSA doit être exploré par un scanner cérébral, en urgence (Grade D). En cas de doute d’interprétation, les images feront l’objet d’une télétransmission vers un centre de référence",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "0f687c86db6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’intérêt de pratiquer un angio-scanner pour rechercher la cause de l’HSA en dehors d’un centre neurochirurgical est discutable (Grade E). Cet examen n’a qu’un intérêt préthérapeutique et n’est donc",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "576e1388470a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas utile pour la décision du transfert du patient. Toute dégradation neurologique impose la réalisation d’un nouveau scanner (Grade D).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "fb80cf17ea9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La ponction lombaire n’a aucune indication lorsque l’HSA est visualisée sur le scanner cérébral (Grade D). On y recourt pour éliminer le diagnostic d’HSA lorsque la symptomatologie est évocatrice",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "ee83de41ab9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le diagnostic d’HSA impose le transfert dans un centre de référence incluant des équipes de neurochirurgie, de neuroradiologie et de neuroanesthésie-réanimation. Le centre doit comporter une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "b00e6e871ccd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les facteurs prédictifs de l’hydrocéphalie sont l’âge, l’hémorragie intraventriculaire, l’importance de l’HSA et la localisation de l’anévrysme sur la circulation postérieure.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "64f298215020",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "cornes frontales au niveau des noyaux caudés ; B : diamètre cérébral au même niveau).",
+   "explication": "Deux problèmes. (1) La fiche dit que la valeur normale est « décroissant avec l'âge » ; dans la source elle augmente avec l'âge (≤ 30 ans < 0,16 ; 50 ans < 0,18 ; 60 ans < 0,19 ; 80 ans < 0,21 ; 100 ans < 0,25). (2) La phrase se termine par « : » mais le tableau des valeurs n'est pas reproduit.",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "a3c07f5ad1da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "responsable d’une HTIC. Dans ce cas, il doit être évacué chirurgicalement (Grade D). Ce geste sera associé au traitement chirurgical de l’anévrysme (Grade D). En cas d’engagement cérébral et si la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "46ef9aec7644",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "localisation de l’hématome au scanner est suffisamment informative, le traitement chirurgical de l’anévrysme peut être réalisé sans angiographie diagnostique car dans ces formes graves, le",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u33",
+   "empreinte": "77df7802f545",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– un œdème cérébral peut s’installer dans les heures qui suivent l’HSA. Il impose un monitorage de la PIC, au mieux par cathéter intraventriculaire (Grade E) ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u34",
+   "empreinte": "879b9750818e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faire évoquer une hydrocéphalie sont l’apparition d’une dilatation des cornes temporales ou l’augmentation de l’index bicaudé. Elle impose une dérivation ventriculaire externe (DVE) en urgence",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "3ec0e9629c34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(Grade E). Dans ce cas, et si un geste endovasculaire est envisagé, la DVE devrait être posée avant l’embolisation car l’héparinothérapie per- et post-embolisation gênera la pose ultérieure d’une DVE.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "33e3492aff1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’HSA et la localisation de l’anévrysme sur la circulation postérieure. En cas de doute, le Doppler transcrânien (DTC) peut permettre d’objectiver des signes d’HTIC",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "612c1e55b076",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ces conditions, le traitement de l’HTA relève d’un nécessaire compromis entre le risque de resaignement et celui d’hypoperfusion cérébrale (Grade E).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u38",
+   "empreinte": "443813180901",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2. Resaignement précoce L’objectif premier du traitement de l’anévrysme est d’éviter la récidive hémorragique par une exclusion",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u39",
+   "empreinte": "4364981a4dbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune donnée formelle ne permet de statuer sur la prophylaxie anti-épileptique. Une prophylaxie antiépileptique peut être envisagée chez les patients à haut risque de développer des crises convulsives, c’est-à-dire, en présence de sang dans les citernes, d’un infarctus cérébral ou d’une lésion focale, ou",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u40",
+   "empreinte": "fe428acae646",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "natrémie. En cas d’hyponatrémie, une hypovolémie doit être recherchée ainsi qu’une augmentation de la natriurèse. L’association de ces 3 éléments évoque un « Cerebral Salt Wasting Syndrome » (CSWS)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u41",
+   "empreinte": "b5a760cc6727",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "relativement peu spécifique du dysfonctionnement myocardique. Des taux élevés de troponine I doivent inciter à réaliser un bilan échocardiographique (Grade E). Une élévation du taux plasmatique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u42",
+   "empreinte": "c512edf3adcc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une défaillance cardiovasculaire et/ou respiratoire sévère peut nécessiter de différer le traitement étiologique de l’anévrysme, qui sera réalisé dès la situation contrôlée (Grade E).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u43",
+   "empreinte": "02802579d0c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la natriurèse. L’association de ces 3 éléments évoque un « Cerebral Salt Wasting Syndrome » (CSWS) et doit conduire à remplacer les pertes en eau et en sel et proscrire toute restriction hydrique (Grade E).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "1214f5644a77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’ADH est souvent évoqué à tort. En cas d’hyponatrémie symptomatique, une correction initiale rapide, ayant pour objectif d’atteindre une natrémie de 125 mmol/l, est recommandée (Grade E).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "f85d3f220669",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "urinaire < 1005). La correction de l’hypernatrémie ne doit pas être trop rapide (baisse de la natrémie inférieure à 12 mmol/l par 24 heures) ; elle peut majorer une éventuelle HTIC (Grade E).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "5b660ecec860",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traitement précoce (dans les 72 premières heures) (Grade E) du sac anévrysmal s’impose. Il a deux objectifs : mettre à l’abri du resaignement et permettre d’optimiser la PPC afin de prévenir les",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "ab7a1ffac285",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TRAITEMENT DE L’ANÉVRYSME Le traitement précoce (dans les 72 premières heures) (Grade E) du sac anévrysmal s’impose. Il a deux",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "23090dd96729",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conséquences ischémiques de l’HTIC. La décision du choix thérapeutique doit résulter d’une discussion entre chirurgiens, radiologues et neuro-anesthésistes (Grade E). Celle-ci doit tenir compte",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u49",
+   "empreinte": "b1308da57ed9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(monitorage de la PIC, drainage du LCS, monitorage hémodynamique, triple H thérapie précoce) améliore significativement leur pronostic (Grade D). Quand le traitement endovasculaire et chirurgical",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u50",
+   "empreinte": "122fcfd62d39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont tous deux possibles et en dehors des hématomes compressifs, le traitement endovasculaire est probablement l’option thérapeutique appropriée (Grade B) ; si on transpose aux patients en grade",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u51",
+   "empreinte": "104f7970ca0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement du sac anévrysmal doit être différé jusqu’à obtention d’une stabilisation de la fonction cardiaque. En revanche, ce choix ne doit pas retarder la mise en place d’une DVE (Grade E).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u52",
+   "empreinte": "d6a090b485f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "parasagittal. Le volet doit être large en raison de l’HIC souvent associée aux formes graves d’HSA (Grade E). L’objectif du traitement est d’exclure l’anévrysme par un ou plusieurs clips à ressort, non",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u53",
+   "empreinte": "d8be173b4534",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "difficiles ; il doit être le plus bref possible. L’hypotension artérielle est à proscrire, excepté dans des conditions de sauvetage sur rupture incontrôlable (Grade E).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u54",
+   "empreinte": "49a25d45091f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Durant le geste interventionnel, une héparinothérapie à dose efficace est nécessaire (Grade E). La nécessité de poursuivre un traitement anticoagulant et/ou d’instaurer un traitement antiplaquettaire au",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u55",
+   "empreinte": "47795b743cdd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de rupture durant la procédure, il convient de poursuivre le remplissage de la poche anévrysmale le plus rapidement possible (Grade E). Avant de reprendre un éventuel traitement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u56",
+   "empreinte": "4ed55385ebf3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anévrysmale le plus rapidement possible (Grade E). Avant de reprendre un éventuel traitement anticoagulant, un scanner de contrôle est indiqué (Grade E).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u57",
+   "empreinte": "e9edd9882544",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La survenue d’une thrombose en cours d’embolisation doit faire envisager un traitement par un fibrinolytique in situ ou par un agent antiplaquettaire (Grade E). En cas de déficits neurologiques",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u58",
+   "empreinte": "caca8bad06ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "apparaissant dans les suites de la procédure, une exploration tomodensitométrique doit être impérativement réalisée afin d’écarter l’hypothèse d’un resaignement (Grade E). Une thrombolyse peut",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u59",
+   "empreinte": "e5fc778b63c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "épuisement de l’héparine circulante, soit après antagonisation par protamine, ce qui n’est pas sans danger. Ceci explique pourquoi il est particulièrement indiqué de poser la DVE avant l’embolisation",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u60",
+   "empreinte": "1193e920a26f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d’HSA grave avec HTIC, l’anesthésie intraveineuse est clairement à préférer. L’injection de fortes doses de morphiniques en bolus est à éviter car elle est susceptible de provoquer une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u61",
+   "empreinte": "0675902828e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les principes de l’anesthésie pour le traitement endovasculaire sont les mêmes que ceux de la chirurgie (Grade E). Les deux objectifs principaux sont le maintien d’une PPC suffisante et l’immobilité",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u62",
+   "empreinte": "e53393b86ae8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les patients atteints d’HSA grave sont hospitalisés en réanimation et généralement ventilés. Dans ce contexte, ils ne présentent aucune contre-indication aux opiacés (Grade E). En dehors de cette",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u63",
+   "empreinte": "2e862dd523e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intéressante par son effet antipyrétique associé. Les AINS sont à discuter car ils induisent des risques mal documentés (Grade E).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u64",
+   "empreinte": "33463de62b29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "augmentation de la PIC (Grade D). Les curares, à l’exception de la succinylcholine, n’ont pas d’effet sur la circulation cérébrale et la pression intracrânienne.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "18221d1e5a69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le vasospasme est défini comme une réduction réversible de la lumière d’une artère de l’espace sousarachnoïdien débutant le plus souvent entre j4 et j14 après l’HSA. Un tel vasospasme est identifiable par angiographie, dans 30 à 70 % des cas. Le vasospasme peut avoir un retentissement clinique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u66",
+   "empreinte": "b73876acda20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La première étape du diagnostic par imagerie du vasospasme consiste à éliminer d’autres causes d’aggravation neurologique : l’ischémie postopératoire, l’hydrocéphalie, le resaignement, les troubles",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u67",
+   "empreinte": "66dde6503e1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La réalisation quotidienne d’un Doppler transcrânien est recommandée (Grade E). Seul le vasospasme de l’artère sylvienne peut être prédit avec une sensibilité et une spécificité suffisantes pour être validé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u68",
+   "empreinte": "3d5a35b0f36a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en pratique clinique. La valeur seuil de 120 cm/s pour la vitesse moyenne du flux sanguin au niveau de l’artère cérébrale moyenne est celle retenue habituellement (Grade E). Le rapport de la vitesse de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u69",
+   "empreinte": "81cd1f11eb45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "artères est peu fiable. Un accroissement des vitesses supérieur à 50 cm/s par jour est un facteur prédictif de déficit neurologique (Grade E).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u70",
+   "empreinte": "a2fdae96497b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de doute et pour pallier les limites du Doppler, l’IRM, le scanner de perfusion, ou toute imagerie évaluant le débit sanguin cérébral peuvent être utilisés, selon les possibilités locales (Grade E).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u71",
+   "empreinte": "55cf69b31baf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévention pharmacologique du vasospasme cérébral dans les suites d’une HSA est basée sur l’utilisation de nimodipine (Grade A). Le nombre de sujets à traiter pour observer une bonne évolution",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u72",
+   "empreinte": "7e121ae008ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "orale à la dose de 360 mg/j pendant 21 jours (Grade A). Cette durée pourrait être abrégée à 15 jours (Grade D). La voie intraveineuse (1 à 2 mg/h, selon le poids) est une alternative courante en France.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "529eec4269c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neurologique supplémentaire varie entre 7 et 13 patients. La nimodipine doit être administrée par voie orale à la dose de 360 mg/j pendant 21 jours (Grade A). Cette durée pourrait être abrégée à 15 jours",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u74",
+   "empreinte": "a9c2367f2ae4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle expose à un risque d’hypotension artérielle systémique chez certains patients, qui justifie d’atteindre progressivement la dose thérapeutique. L’hypotension doit impérativement être corrigée",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u75",
+   "empreinte": "14ddc0160920",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement hyperdynamique encore appelé « triple H therapy » (3-HT) dans la littérature anglo-saxonne associe hypervolémie, hypertension artérielle et hémodilution. Cependant, aucune étude contrôlée",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u76",
+   "empreinte": "e742c91c9215",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’hypertension contrôlée doit cependant être limitée en présence d’un infarctus cérébral constitué, pour réduire le risque de transformation hémorragique. Un objectif de PAM jusqu’à 100-120 mmHg",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u77",
+   "empreinte": "e977d9230d8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traitement hyperdynamique est administré en réanimation, sous monitorage continu approprié, comportant au minimum la mesure invasive de la pression artérielle et de la pression veineuse centrale.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u78",
+   "empreinte": "a6e5ebc32882",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’infusion intra-artérielle de vasodilatateur et/ou l’angioplastie sont deux techniques endovaculaires utilisables pour le traitement du vasospasme (Grade E). Elles font encore l’objet d’évaluation et leurs",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u79",
+   "empreinte": "68886a48f932",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les études disponibles montrent que l’efficacité de ce traitement est corrélée à la précocité de l’intervention (Grade E).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u80",
+   "empreinte": "349eaad673a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors de la nimodipine, aucun médicament (nicardipine, tirilazad, magnésium) n’a une efficacité démontrée dans la prévention du vasospasme après HSA.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u81",
+   "empreinte": "fe4c435568a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors de l’HSA par rupture anévrysmale, la protéine S100b mesurée dans le LCS et dans le sang périphérique augmente proportionnellement à la sévérité de l’hémorragie et est corrélée au pronostic",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u82",
+   "empreinte": "660d50f0cdb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La protéine S100b peut s’intégrer dans le monitorage multimodal des patients ayant une lésion une HSA d’origine anévrysmale (Grade E).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u83",
+   "empreinte": "21910a36068d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorage systématique de la PIC par une DVE ou à défaut, par capteur intraparenchymateux. La DVE sera utilisée avec une contre-pression de 15 cmH2O (Grade E).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u84",
+   "empreinte": "4af07c0d4ecf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pendant la phase aiguë, la réalisation d’un Doppler par jour est utile pour détecter l’apparition d’un vasospasme, sur le territoire sylvien principalement (Grade E). Il permet une surveillance accrue et une",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u85",
+   "empreinte": "96b0ccefad50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une filière de prise en charge permettant l’hospitalisation dans le centre de référence dans les plus brefs délais doit être préalablement établie dans chaque région. Pour ce faire, l’information des",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u86",
+   "empreinte": "adfc829df90a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le centre de référence doit traiter un nombre suffisant de patients souffrant d’HSA pour entretenir une filière interne efficace car entraînée à faire face aux nombreuses situations, tant cliniques que",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u87",
+   "empreinte": "ef19206f0652",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les différents médecins impliqués doivent converger vers le patient. Pour ce faire, cette filière doit prendre en compte les particularités propres à chaque établissement (Grade E).",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u88",
+   "empreinte": "026c79a45fde",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– en amont de l’hospitalisation, un diagnostic précoce de l’HSA qui repose sur la qualité de formation des médecins généralistes et urgentistes ;",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u89",
+   "empreinte": "e9abd1efb4a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’accord du centre de référence doit être obtenu avant transfert, par un échange téléphonique de senior à senior qui n’exclut en aucun cas la transmission d’un dossier circonstancié.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u90",
+   "empreinte": "ad53a7979127",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
