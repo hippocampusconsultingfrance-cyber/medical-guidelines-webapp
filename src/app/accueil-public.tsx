@@ -377,7 +377,8 @@ export default function AccueilPublic({ recentes = [] }: { recentes?: PublicFich
               </h2>
               <p className="mt-2 text-slate-700">
                 Les fiches ont déjà été relues deux fois par des outils d&apos;intelligence artificielle. Bénéficiez
-                d&apos;un accès gratuit au site ainsi que de 5 accès au choix.
+                d&apos;un accès gratuit et illimité au site, ainsi que de 5 accès gratuits illimités pour les
+                personnes de votre choix.
               </p>
             </div>
             <Link

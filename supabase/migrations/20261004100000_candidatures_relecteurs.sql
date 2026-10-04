@@ -1,6 +1,7 @@
 -- Médecins relecteurs : un médecin propose de participer à la correction des
 -- fiches (déjà relues deux fois par des outils d'intelligence artificielle),
--- en échange d'un accès gratuit au site et de 5 accès au choix.
+-- en échange d'un accès gratuit et illimité au site et de 5 accès gratuits
+-- illimités pour les personnes qu'il désigne (PREMIUM offert, attribué à la main).
 --
 --   - formulaire public (page /relecteurs), sans compte : nom, prénom,
 --     téléphone, e-mail, profession, spécialité dont il souhaite corriger

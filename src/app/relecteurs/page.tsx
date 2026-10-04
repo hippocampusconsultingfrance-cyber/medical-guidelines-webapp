@@ -8,7 +8,7 @@ import { envoyerCandidature } from "./actions";
 export const metadata: Metadata = {
   title: "Médecins relecteurs — medical-guidelines.net",
   description:
-    "Vous êtes médecin ? Participez à la correction des fiches, déjà relues deux fois par des outils d'intelligence artificielle : accès gratuit au site et 5 accès au choix.",
+    "Vous êtes médecin ? Participez à la correction des fiches, déjà relues deux fois par des outils d'intelligence artificielle : accès gratuit et illimité au site, plus 5 accès gratuits illimités pour les personnes de votre choix.",
 };
 
 const MESSAGES: Record<string, [string, boolean]> = {
@@ -29,7 +29,7 @@ const champ =
   "mt-1 block w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30";
 
 // Appel aux médecins relecteurs (page publique) : participer à la correction
-// des fiches en échange d'un accès gratuit et de 5 accès au choix.
+// des fiches en échange d'un accès gratuit et de 5 accès offerts aux personnes de son choix.
 export default async function RelecteursPage({ searchParams }: PageProps<"/relecteurs">) {
   const supabase = await createClient();
   const [{ data: auth }, { data }, params] = await Promise.all([
@@ -59,10 +59,10 @@ export default async function RelecteursPage({ searchParams }: PageProps<"/relec
           <h2 className="text-xl font-bold text-[#0E3A78]">Ce que nous vous offrons</h2>
           <ul className="mt-3 list-disc space-y-1 pl-5 text-slate-700">
             <li>
-              un <b>accès gratuit</b> au site ;
+              un <b>accès gratuit et illimité</b> au site ;
             </li>
             <li>
-              ainsi que <b>5 accès au choix</b>.
+              ainsi que <b>5 accès gratuits illimités</b> pour les personnes que vous désignez.
             </li>
           </ul>
           <p className="mt-3 text-sm text-slate-600">
