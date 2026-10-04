@@ -25,7 +25,7 @@ Ce rapport ne vaut pas validation médicale : chaque écart doit être confirmé
 ## Autres constats
 
 - **Bug de l'outil corrigé** : le texte compris entre « < » et « > » (ex. « <21 si >70 ans ») était effacé comme une balise HTML. Corrigé dans `scripts/verification/verifier-fiches.mjs`, `src/lib/assistant.ts`, `src/app/bibliotheque/reformulations/page.tsx` et `scripts/juridique/mesure_reprises.py`. Les faux écarts qu'il avait créés ont été retirés.
-- **Limite de l'outil** : les lignes de tableau de moins de 4 mots ne sont pas vérifiées automatiquement. J'ai contrôlé ces lignes à la main pendant la relecture, mais une future vérification automatique ne les couvrira pas.
+- **Limite de l'outil** : les lignes de tableau de moins de 4 mots ne sont pas vérifiées automatiquement. Pendant cette relecture, je les ai regardées au cas par cas (surtout avant de signaler un oubli), pas une par une ; une vérification automatique ne les couvre pas.
 - **Vocabulaire interne visible par le lecteur** dans environ 90 fiches (« disclosure », « chip », « vérifié par grep », « installment 8/n », « library_final.json », noms de scripts, « rendu à 400 dpi »…). Ce n'est pas une erreur médicale, mais ces notes de rédaction devraient être retirées ou reformulées. Liste détaillée : section « Vocabulaire interne » ci-dessous.
 - **Téléchargements** : 29 sources n'ont pas pu être téléchargées par le workflow automatique (délai dépassé). Le workflow devra être relancé pour elles.
 - **Deuxième avis** : relancer le workflow GitHub de vérification avec `ia=gemini` et `fiches=toutes` (après recharge du crédit Google AI Studio) pour obtenir un avis indépendant.
