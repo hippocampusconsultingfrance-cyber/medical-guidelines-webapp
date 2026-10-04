@@ -1,0 +1,520 @@
+{
+ "cle": "intubation_difficile_adulte",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d798dfc06a20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode GRADE, 13 recommandations ont été formalisées",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "ccfa1e977a29",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "76f074178127",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "16f7cc17e0a7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "d854112b3c56",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "17a6e481190a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "de42ff9f1dea",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "8f156d74329f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Il faut prévenir systématiquement la désaturation artérielle",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "dce6a0b7aa43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de préoxygénation (3 min/8 inspirations profondes), y compris",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "3b641ae77bf4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Dans certains cas, il faut probablement utiliser des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "2e1e9eab4003",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'IT représentaient 39 % des incidents liés au contrôle des voies",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "7057e34e9a3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une ouverture de bouche du patient < 2,5 cm",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "328c00079e23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 – Dans le cadre d'une chirurgie programmée, il faut utiliser",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u14",
+   "empreinte": "554a0c166540",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et un taux de complication plus bas avec un AirtraqTM qu'avec un",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u15",
+   "empreinte": "5cb3a391730e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Macintosh [38,42,44,45]. Ce paramètre étant aléatoire et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u16",
+   "empreinte": "cdf68bc65b42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "béquillé type Eschmann, appui laryngé externe BURP) pour",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "ec9ece722cdc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – Si une intubation difficile n'est pas prévue, Il faut",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "3ccc20eb20f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comptant 1427 échecs de laryngoscopie directe avec une lame",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u19",
+   "empreinte": "1b868b9d2fd6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'intubation impossible, la fibroscopie reste la méthode de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u20",
+   "empreinte": "3348a3b035fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Il faut probablement utiliser les vidéolaryngoscopes en",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u21",
+   "empreinte": "49054966432a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "difficile ou impossible et de ventilation au masque difficile. 558 (Grade 2+) Accord faible.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u22",
+   "empreinte": "dc3194968c13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vidéolaryngoscopie en ventilation spontanée avec des opérateurs",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u23",
+   "empreinte": "327a5e5701f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "propofol ou du rémifentanil en AIVOC s'accompagne d'un risque",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u24",
+   "empreinte": "751639419864",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est indispensable de s'assurer de la disponibilité des techniques",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "7269d77615a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 – Il faut maintenir un niveau d'anesthésie profond afin",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "085f02509e48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2 – En cas d'intubation difficile prévue, il faut probablement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u27",
+   "empreinte": "d0c3750fa8ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le rocuronium à la dose de 0,6 mg/kg ou 1,0 mg/kg en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u28",
+   "empreinte": "4157a0dfa367",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le TOF quantitatif est > 90 % [75]. L'absence d'un signal fiable",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u29",
+   "empreinte": "ac73202f847b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 – Il faut probablement adapter la prise en charge aux",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u30",
+   "empreinte": "53a11d114a56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 – Il faut probablement rechercher des facteurs de risque",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u31",
+   "empreinte": "aea965a7cc33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Seize cas sur trente-huit sont survenus dans un contexte de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u32",
+   "empreinte": "0ad01baea037",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.3 – Il faut probablement extuber un patient en suivant une",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u33",
+   "empreinte": "878ef955e4db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.4 – Il faut probablement prendre des mesures préventives en",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u34",
+   "empreinte": "3ef5528592f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas excéder 24 heures. Cette technique reconnaît des",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u35",
+   "empreinte": "cc9dc44fa88c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 – Il faut s'appuyer sur des arbres décisionnels ou algorithmes",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u36",
+   "empreinte": "49b1cf0e25b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intubation trachéale (en se limitant à 2 tentatives) et l'appel",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u37",
+   "empreinte": "b51c36218721",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "f3264f38f382",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 565 : évaluer ventilation au masque → maintien oxygénation → choix anesthésie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "7321cd42008f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 566 : apnée possible, 1 critère laryngoscope / ≥ 2 vidéolaryngoscope, 2 essais, échec → masque laryngé → intubation ± fibroscope / réveil",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "a32a93d9a54a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 566 : ventilation spontanée → masque laryngé / fibroscope → réveil, abord trachéal si réveil impossible",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "e4e5eb04678d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 568 : appel à l'aide + chariot + maintien anesthésie + leadership",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "b5a5d82f4d88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 568 : ventilation au masque efficace / inefficace",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "9e29794b18c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 568 : ventilation masque laryngé efficace → algorithme intubation, inefficace → algorithme oxygénation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "a50f467b4927",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 567 : appel à l'aide dans tous les cas + leadership",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "d61e12ba2b79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 567 : masque laryngé pour l'intubation → intubation/réveil ; échec/CI → O2 transtrachéal",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "0c0e1245fa87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 567 : O2 transtrachéal → succès / échec → cricothyroïdotomie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "e0b8677c4234",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 567 : autres techniques → intubation ; échec → réveil ou cricothyroïdotomie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "11db3c338f79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 562 : critères d'extubation et minimisation du risque d'inhalation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "00c992d11796",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 562 : facteurs locaux → guide échangeur, trachéotomie ou ML, report, VNI si SAOS",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "180ab36bd8b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 562 : BPCO, insuffisance cardiaque → oxygénothérapie, ONHD, CPAP/VNI",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "701de8f69575",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 562 : réanimation/soins continus/hospitalisation, durée de surveillance",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "635822e8b0ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 562 : actions → décision d'extuber (leadership+++) → transport et surveillance",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "ab5be57818a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 563 : leadership, deux professionnels, matériel, consensus",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "c31a2cfabe6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 563 : extubation simple ou sur guide creux, différée ; oxygénation ; lieu de surveillance",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "8210a1e73401",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 563 : maintien de l'anesthésie, trachéotomie ; transmettre par écrit",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "4be34532a4f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de préoxygénation (3 min/8 inspirations profondes), y compris",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u57",
+   "empreinte": "159365b48ffc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
