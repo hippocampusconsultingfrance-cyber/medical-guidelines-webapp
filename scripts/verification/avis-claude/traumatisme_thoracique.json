@@ -1,0 +1,538 @@
+{
+ "cle": "traumatisme_thoracique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "5114980f96ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode GRADE®, 60 recommandations ont été formalisées par le comité d'organisation. Après",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "0e17385ed0b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts recommandent de considérer comme éléments de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "e0a1063c13ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(chute de PAS > 30 % ou PAS < 110 mmHg) (G1+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "e52045b7f9c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les patients ne présentant pas de critère de gravité initiale (G2+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "9182ec56ac8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts recommandent un transport médicalisé pour tout",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "abbb9e507aed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisation des avis spécialisés (Avis d'experts)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "20d687a7796b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'un âge > 65 ans, majorent le risque de décès par 2 ou 3 lors",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "e2c7218ebc4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas retarder la prise en charge (G2+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "ad4b9bb71263",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thorax en première intention (G1+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "01e923f69ac8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la tomodensitométrie corps entier (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "858334e0e768",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bénigne isolée sans critère de gravité (G2+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "9080bd03407f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisation d'une tomodensitométrie thoracique injectée (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "7892515ab4ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "radiographie thoracique avec une sensibilité de 78,6 % (IC95",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "994017845516",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "environnement disposant d'une surveillance continue (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "6eeb68987353",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gazométrique à une heure (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "98391dd964b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "homogène du poumon traumatisé. La pression plateau doit être maintenue < 30 cmH2O (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u17",
+   "empreinte": "7553b28b6d25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "être au moins égale à 5 cmH2O (G2+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "234eb1ff4dc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un rapport PaO2/FiO2 < 200 mmHg), la ventilation non invasive",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "b7c114108afb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aussi lors de la toux et de l'inspiration profonde (G2+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "b233d6951fc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En présence d'une douleur intense une titration par morphine est",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "ba15c47c9a85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'utilisation de la kétamine (Avis d'experts)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u22",
+   "empreinte": "3fe4ee1dc168",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "analgésie sédation efficace (Avis d'experts)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u23",
+   "empreinte": "5c5d4559fe61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisable dans 96 % des cas, dans ce contexte",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "0eb43fb72fd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "inférieure ou égale à 2 (G2+)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "2d501631d9fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "douleur non contrôlée dans les 12 heures (G1+)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "9a7052f63239",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contrôle échographique pour la mise en place d'un cathéter (G2+)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "fb189b9a7aac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le geste devant être alors réalisé par un anesthésiste réanimateur",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "a2656b632369",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "efficacement un bloc paravertébral (G1+)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "77fb7a3c4778",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "morphine en systémique en présence d'une analgésie péridurale",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "5b1883746d1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supériorité de l'APD sur la PCA sur le risque développement de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u31",
+   "empreinte": "9e500a54cbe7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suspicion de tamponnade gazeuse (G1+)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "df22986d906c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'arrêt cardiaque et/ou en cas d'échec de l'exsufflation (G2+)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u33",
+   "empreinte": "b5003c616f0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pneumothorax complet, tout épanchement liquidien ou aérique",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u34",
+   "empreinte": "8653e26007ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à plus de 500 mL (critère échographique et/ou radio TDM)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u35",
+   "empreinte": "659c0485ad5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thoracique de contrôle à 12 h. En cas de nécessité d'une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u36",
+   "empreinte": "65f257689095",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisé par voie axillaire au 4e ou 5e EIC sur la ligne axillaire",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u37",
+   "empreinte": "30d69ce4b8b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent l'emploi de drains de faible calibre (18 à",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u38",
+   "empreinte": "96263cb9d932",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avant drainage thoracique dans le cas des traumatismes thoraciques fermés (G2 )",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u39",
+   "empreinte": "c2f24a11c272",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "malpositions des drains par rapport à l'abord antérieur (25 %",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u40",
+   "empreinte": "62825b6e113d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lésions traumatiques de l'isthme aortique en première intention",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u41",
+   "empreinte": "0e6555823af3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aortiques minimes (rupture intimo-médiale) bénéficient d'un avis",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u42",
+   "empreinte": "2e6ac6272617",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "possible à la chirurgie (G2+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u43",
+   "empreinte": "5d82b1caa9f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traumatisme thoracique fermé (G1 )",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u44",
+   "empreinte": "682daec0e104",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cardiopulmonaire dépasse 10 min sans récupération d'une activité",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u45",
+   "empreinte": "00c857a77700",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supérieur à 1500 mL d'emblée avec une poursuite du débit du",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u46",
+   "empreinte": "48021a6c3779",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "drainage thoracique bien conduit (G1+)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u47",
+   "empreinte": "227a0f31d629",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mécanique dans les 36 heures suivant leur admission (G1+)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u48",
+   "empreinte": "c4d129318e24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bénéficie d'un avis spécialisé (Avis d'experts)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u49",
+   "empreinte": "6ad6769ae4f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supériorité de ce traitement par rapport à la chirurgie ouverte ou",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u50",
+   "empreinte": "ba063a1f6209",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "instable ou stabilisé (G1+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u51",
+   "empreinte": "21e8662a3553",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intrathoraciques sont objectivées sur le bilan (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u52",
+   "empreinte": "73165e19f675",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients échappant aux mesures réanimatoires (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u53",
+   "empreinte": "785c469a50d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cardiopulmonaire dépasse 15 min sans signe de vie, et lors d'une",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u54",
+   "empreinte": "2766939706b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "péricardique compressif à l'échographie (G2+)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u55",
+   "empreinte": "05406ad3d74a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'hémothorax et de stabilité hémodynamique stricte après bilan",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u56",
+   "empreinte": "9f85259d5407",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 à 48 h, en fonction de la nature et de l'importance de la plaie",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u57",
+   "empreinte": "afa79655738d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de manière indépendante à la survie (RR = 4,70 IC95 [1,29–",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u58",
+   "empreinte": "1bbf148c084e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts recommandent de considérer comme éléments de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u59",
+   "empreinte": "187503773192",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
