@@ -1,0 +1,439 @@
+{
+ "cle": "urgences_transfusionnelles_obstetricales",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9cf9343db823",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans 84 % des cas, chez des femmes sans facteur de risque particulier",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "336de230e139",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "04a452319846",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "3d6bc7a20438",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le risque immunologique, lié au passage d'hématies fœtales pendant la grossesse",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "54bf083440b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le risque lié au retard à la transfusion : dans certains cas en péripartum, la disponibilité des produits sanguins labiles (PSL) doit être immédiate",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "2653398c7ce3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces recommandations ont été regroupées en quatre chapitres",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u7",
+   "empreinte": "5aa44870a016",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trois niveaux d'urgences, et d'en mesurer leurs conséquences en matière de distribution",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u8",
+   "empreinte": "1091f01022b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les concentrés de globules rouges (CGR) sont distribués immédiatement, éventuellement sans groupe sanguin s'il n'est pas disponible",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "a04e67226bc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'urgence vitale (UV), où l'obtention des PSL doit être inférieure à 30 minutes",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "de133f307b5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(dont la RAI si elle date de plus de 3 jours) et l'obtention de PSL isogroupes et au besoin compatibilisés",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "968369f36ec3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est possible de requalifier le niveau de l'urgence",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "66a7ace1d04a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le risque de passages fœto-placentaires se situe à la fin de la gestation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "64ab00f0a47e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "16d6c9a972f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "puis une deuxième détermination du groupe sanguin lors du 8ème (6ème examen prénatal) ou 9ème mois de grossesse",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "f7745690aecb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "f884c10d1faf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "puis aux sixième (4ème examen prénatal), huitième (6ème examen prénatal) et neuvième mois (7ème examen prénatal)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "62b0534984d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec une préférence au 9ème mois si la recherche était négative au 1er examen prénatal",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "ad81c1599c9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il convient d'évaluer au cas par cas l'opportunité d'une RAI supplémentaire",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "843dfbf170c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "serait à confirmer par une étude prospective sur la surveillance des immunisations post-natales",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "f9c611ef5a9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le rythme des examens ultérieurs sera décidé en fonction de la spécificité, du titre et de la concentration des anticorps",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "cf6e38fcfd28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en gardant à l'esprit que tout défaut de communication peut aggraver le risque",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "48ebe44ca744",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "1455fb2555b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dépister les usurpations d'identités et en cas de doute, ne pas hésiter à contrôler sur de nouveaux échantillons",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "d2ab49eb0cbe",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "03758136b25b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Prendre en compte un résultat de RAI négatif réalisé dans un autre laboratoire que celui du site distributeur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "5959f871b8fb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "bac1c90443d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 CGR O RH : -1-2-3 KEL : -1 (anciennement ccddee, K-) et de 2 CGR O RH : 12-3-45 KEL : -1",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "edf691a1e29a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est conseillé qu'elle soit hebdomadaire dans un premier temps, puis mensuelle, puis trimestrielle",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "554778a0fb64",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "3c6ace36d2f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avertir le moyen de transport accessible 24h/24 (interne ou externe à l'établissement)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u31",
+   "empreinte": "ae3f5e777389",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sang isogroupe, si disponible immédiatement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "aefe4e0366a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contrôle ultime au lit du patient et transfusion des PSL",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "da7f24f95a89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute procédure doit définir au moins",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "55be2bf442df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qui prescrit et qui pose l'indication de la transfusion",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "76627d138cca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les 3 niveaux d'urgence (UVI, UV et transfusion urgente)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u36",
+   "empreinte": "c821cab56880",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les documents nécessaires (les référencer et les faire apparaître en documents associés)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "bb25d433b41e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les identifiants de l'unité de distribution: le site transfusionnel ou le dépôt",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u38",
+   "empreinte": "33aed1827576",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le(s) correspondant(s) ayant en charge le transport",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "53153761a132",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le laboratoire IH: téléphone, fax, horaires, conditions de prise en charge des urgences",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u40",
+   "empreinte": "e13adba0734e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sans oublier les contrôles prétransfusionnels obligatoires (hémovigilance)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u41",
+   "empreinte": "41a8c9a74f78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conditions d'acheminement des documents et des prélèvements",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "4bb7f8494da2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Information du patient ! Modalités de réception des PSL",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u43",
+   "empreinte": "aa3d7c7ba3f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Modalités de réception des PSL",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "44af5bd2c69d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vérification des documents, contrôle ultime prétransfusionnel",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "dfc14f7d2bb9",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "La tenue du dossier transfusionnel ! La traçabilité ! Les contrôles post-transfusionnels",
+   "explication": "L'item « La traçabilité », entre « tenue du dossier transfusionnel » et « contrôles post-transfusionnels », manque dans la liste de la fiche.",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "05abce72b391",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les contrôles post-transfusionnels",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "4ab137afec6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'évaluation régulière des procédures mises en place (essentiellement pour l'urgence vitale)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "9bbe885f52b8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
