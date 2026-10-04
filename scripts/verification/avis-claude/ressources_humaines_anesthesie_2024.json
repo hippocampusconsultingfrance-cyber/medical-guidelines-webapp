@@ -1,0 +1,160 @@
+{
+ "cle": "ressources_humaines_anesthesie_2024",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "29d8821b6fc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces préconisations concernent l'acte d'anesthésie en dehors de l'urgence et des soins critiques, qu'il s'agisse d'une sédation, d'une anesthésie générale, d'une anesthésie locorégionale axiale et/ou périphérique",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "fe69335600ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts rappellent que l'acte d'anesthésie est sous la responsabilité exclusive d'un MAR (articles R 4311-12 et R 6153-1-2 du Code de Santé Publique).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u3",
+   "empreinte": "0e4dd668b2a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts rappellent que seuls les IADE sont habilités à accomplir les soins et à réaliser les gestes nécessaires à la mise en œuvre des techniques d'anesthésie et de réanimation peropératoire, sous le contrôle exclusif d'un MAR",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u4",
+   "empreinte": "5a117ff31b5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts rappellent que l'acte d'anesthésie peut être réalisé par un DJ-AR en autonomie supervisée (article R 6153-1-2 CSP).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u5",
+   "empreinte": "953397a875e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts rappellent qu'un professionnel de l'anesthésie doit être présent pour assurer la surveillance clinique continue du patient anesthésié",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "040012d2d850",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "e002c4b851bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La gestion de deux salles d'intervention, au cours de la progression dans l'année de phase de consolidation, est envisageable, après accord conjoint de l'interne, du responsable de terrain de stage et du médecin responsable du site d'intervention",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u8",
+   "empreinte": "2e5fea1426e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le MAR est seul habilité à décider s'il prend la responsabilité d'une ou de deux salles simultanées au maximum",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u9",
+   "empreinte": "ba8c9810d684",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le MAR est seul habilité à décider de s'adjoindre l'aide d'un IADE par salle ou d'un IADE pour deux salles",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u10",
+   "empreinte": "edf5044c737f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le MAR puisse prendre en charge plus de deux patients pendant la phase préinterventionnelle, sous réserve que ces patients soient surveillés de façon continue par un IDE formé à cette surveillance",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u11",
+   "empreinte": "c9786cd97c51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les deux salles soient suffisamment proches l'une de l'autre pour permettre son intervention sans délai.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u12",
+   "empreinte": "e2bc29447af3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A noter que la présence d'un IADE en salle d'intervention n'autorise pas une augmentation du nombre de patients pris en charge par un seul MAR",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u13",
+   "empreinte": "6e10c9b3d4fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de rédiger une procédure organisationnelle au sein de chaque établissement de santé, afin de garantir une surveillance clinique continue de l'anesthésie",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u14",
+   "empreinte": "132a5f0bb261",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décrivant l'organisation permettant le déclenchement d'un renfort pour faire face à une situation critique survenant sur le plateau interventionnel",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u15",
+   "empreinte": "3f03cd08d614",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'architecture proposée envisage un nombre de sites suffisant, à proximité les uns des autres, afin de faciliter l'organisation du recours humain en cas de complication",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u16",
+   "empreinte": "8858b1d521b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce recours sera idéalement un MAR. A défaut et en cas d'impossibilité dûment étayée d'avoir le recours d'un MAR, un médecin ayant des compétences en soins critiques peut être envisagé comme personne ressource.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u17",
+   "empreinte": "82c1a27d214d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

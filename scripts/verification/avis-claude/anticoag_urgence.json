@@ -1,0 +1,979 @@
+{
+ "cle": "anticoag_urgence",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a8ce0a55293f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 8 : Gestion des anticoagulants oraux directs pour une procédure invasive non programmée AVIS D’EXPERTS (Accord fort)",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u2",
+   "empreinte": "84267ad59acc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorétropéritoine, hémopéricarde, hématome musculaire profond ou syndrome de loge, hémorragie digestive aiguë, hémarthrose, rupture d'anévrysme aortique, dissection aortique…",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u3",
+   "empreinte": "64a0328d8086",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas connues, les experts suggèrent que l’activité anti-Xa (HNF/HBPM) et le temps de thrombine (TT) soient évalués en plus de la mesure du TP/INR associé au TCA, pour exclure ou détecter la présence d’un",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u4",
+   "empreinte": "bacfd39918aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HNF/HBPM/fondaparinux : activité anti-Xa avec calibration adaptée ; AOD : mesure de la concentration du médicament.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u5",
+   "empreinte": "15d751860b4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1.3 – Les experts suggèrent de ne pas utiliser les tests viscoélastométriques pour dépister et identifier un anticoagulant en circulation ou déterminer le niveau d’anticoagulation.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u6",
+   "empreinte": "41a928217e6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concentration. La mesure de l’activité anti-Xa - calibrée à l’aide d’un étalonnage HNF ou HBPM - est très sensible à la présence d'un AOD anti-Xa (apixaban et rivaroxaban), ce qui en permet le dépistage, les seuils",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u7",
+   "empreinte": "bba33011bad1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de débuter en urgence une prise en charge incluant l'arrêt de l'anticoagulant, la prise en charge symptomatique, hémostatique et étiologique du saignement, la mesure du niveau d'anticoagulation et",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u8",
+   "empreinte": "fab848bb723a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique, il est recommandé de réverser le traitement anticoagulant sans attendre le résultat des tests biologiques, sauf s’il est disponible en quelques minutes.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u9",
+   "empreinte": "b57b4df5d5bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1.3 – Chez un patient traité par anticoagulant et présentant une hémorragie non grave, les experts suggèrent de débuter un traitement hémostatique par des moyens usuels quand cela est possible, sans",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u10",
+   "empreinte": "fb8e928688a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent que la prise en charge soit ambulatoire si l’hémorragie est rapidement contrôlée et si l’environnement médico-social du patient le permet, sans majorer le risque de resaignement.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u11",
+   "empreinte": "7139bd055a0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’hémorragie et les facteurs de risque de surdosage ou d'accumulation en anticoagulant, incluant les comédications, une insuffisance rénale et/ou des contre-indications.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u12",
+   "empreinte": "14a35fa1c8fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1.6 – Il est probablement recommandé que des procédures organisationnelles pluridisciplinaires soient formalisées pour améliorer la rapidité et la qualité de prise en charge des patients traités par",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u13",
+   "empreinte": "e14582de1ae5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2.1 – Chez un patient traité par un anticoagulant et présentant une hémorragie, quelle que soit sa gravité, il est recommandé d’administrer de l’acide tranexamique selon les mêmes indications qu’un",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u14",
+   "empreinte": "4e9b2d97cf75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'hémorragie sous anticoagulant, si un geste hémostatique est réalisable immédiatement (chirurgie, embolisation, endoscopie, tamponnement, compression…), celui-ci doit être réalisé, quel que soit le niveau",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u15",
+   "empreinte": "304a5a760317",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au laboratoire ou par biologie délocalisée. En cas d'hémorragie grave, la mesure ne doit pas retarder la mise en route du geste hémostatique.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u16",
+   "empreinte": "4ba85846ff11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1,2 si hémorragie intracrânienne), il est recommandé d'arrêter le traitement anticoagulant et de l'antagoniser en urgence par l'administration de CCP (selon l’INR et le RCP du CCP utilisé, ou 25 UI/kg si",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u17",
+   "empreinte": "07f7651f4158",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de contrôler l'INR dans les 30 minutes à 6-8 heures et à 24 heures après l'antagonisation, pour décider d'une administration supplémentaire de CCP.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "89c72e27e969",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de rechercher et corriger un surdosage uniquement par vitamine K (sans antagonisation par CCP), de débuter un traitement symptomatique, puis de réévaluer l'effet du traitement.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u19",
+   "empreinte": "404bb6752d91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ensemble de ces arguments justifient de ne pas utiliser les PFC pour antagoniser un traitement par AVK. L’antagonisation par CCP expose à un risque thrombotique estimé comme faible (environ 1,8%) [5]. Il est",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u20",
+   "empreinte": "476271006939",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4.2 – Chez un patient traité par dabigatran et présentant une hémorragie grave, il est probablement recommandé de mesurer en urgence la concentration plasmatique en dabigatran pour déterminer le",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u21",
+   "empreinte": "26e14b4f0bdb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 50 ng/mL (> 30 ng/mL si hémorragie intracrânienne), ou si la mesure de la concentration n’est pas disponible rapidement, il est probablement recommandé d'antagoniser le traitement anticoagulant en",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u22",
+   "empreinte": "3185e085112b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'idarucizumab si la concentration initiale était supérieure à 200 ng/mL pour dépister un effet rebond et discuter d'une nouvelle administration d'idarucizumab. Ce contrôle doit être plus précoce (4 à 6 heures)",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u23",
+   "empreinte": "8fbcbe980727",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 50 ng/mL (> 30 ng/mL si hémorragie intracrânienne), ou si la mesure de la concentration n’est pas disponible rapidement, il est probablement recommandé d'antagoniser le traitement anticoagulant en",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u24",
+   "empreinte": "b5039ae73b05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de débuter un traitement symptomatique sans administrer d'idarucizumab et de réévaluer les modalités du traitement anticoagulant (posologie, adaptation à la fonction rénale, comédications).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u25",
+   "empreinte": "7ddd70ec3be0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.5.2 – Chez un patient traité par un AOD anti-Xa et présentant une hémorragie grave, il est probablement recommandé de mesurer en urgence la concentration plasmatique en AOD anti-Xa pour",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u26",
+   "empreinte": "6c6b864b961d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concentration > 50 ng/mL (> 30 ng/mL si hémorragie intracrânienne), ou si la mesure de la concentration n’est pas disponible rapidement, les experts suggèrent de réverser le traitement anticoagulant en",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u27",
+   "empreinte": "12f6519d35f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de débuter un traitement symptomatique sans administrer d'idarucizumab et de réévaluer les modalités du traitement anticoagulant (posologie, adaptation à la fonction rénale, comédications).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u28",
+   "empreinte": "3bcd14640696",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémostatique n’a été retrouvée. La principale limite de cette étude est l’absence de groupe contrôle [6]. Enfin, l'andexanet n'est pas disponible en France en date du 06/01/2024.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u29",
+   "empreinte": "043fb24b1150",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un choc hémorragique, il est probablement recommandé d'arrêter le traitement anticoagulant et de l'antagoniser en urgence par sulfate de protamine, en tenant compte de la dose administrée, de la voie",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u30",
+   "empreinte": "3fcf8e947795",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.3 – Chez un patient traité par HNF à dose curative et présentant une hémorragie grave (hors hémorragie intracrânienne ou choc hémorragique), les experts suggèrent d'arrêter le traitement",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u31",
+   "empreinte": "c7524ca03374",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.4– Chez un patient traité par HNF à dose curative et présentant une hémorragie non grave, les experts suggèrent de débuter un traitement symptomatique et de vérifier l'absence de surdosage par la",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u32",
+   "empreinte": "4e9829866c7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.5 – Chez un patient traité par HBPM et présentant une hémorragie grave, il est probablement recommandé de mesurer en urgence l’activité anti-Xa pour déterminer le niveau d'anticoagulation.",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u33",
+   "empreinte": "7ba3b38415d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou un choc hémorragique, il est probablement recommandé d'arrêter le traitement anticoagulant et de l'antagoniser en urgence par sulfate de protamine, en tenant compte du type d’HBPM, de la dose",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u34",
+   "empreinte": "ed0d812ddce0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.7 – Chez un patient traité par HBPM à dose curative et présentant une hémorragie grave (hors hémorragie intracrânienne ou choc hémorragique), les experts suggèrent d'arrêter le traitement",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u35",
+   "empreinte": "057d50a2cc2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.8 – Chez un patient traité par HBPM à dose curative et présentant une hémorragie non grave, les experts suggèrent de débuter un traitement symptomatique et de vérifier l'adaptation du traitement",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u36",
+   "empreinte": "7e658adbd4ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.9 – Chez un patient traité par héparine (HNF ou HBPM) et présentant une hémorragie, les experts suggèrent de ne pas administrer de sulfate de protamine si l’activité anti-Xa est inférieure à 0,2 UI/mL.",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u37",
+   "empreinte": "0e2c02781bb9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anti-Xa neutralisée par la protamine est variable selon l'HBPM : elle est supérieure à 80% pour la tinzaparine, 75% pour la dalteparine, 50% pour l'enoxaparine et la nadroparine, justifiant une dose de protamine",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u38",
+   "empreinte": "e650240b7c4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.7.1 – Chez un patient traité par fondaparinux à dose curative et présentant une hémorragie grave, s'il est décidé d'une réversion de l'anticoagulation, les experts suggèrent d'administrer des CCP (25-50 UI/kg)",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u39",
+   "empreinte": "bdb2bd41321a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.7.2 – Chez un patient traité par fondaparinux à dose curative et présentant une hémorragie non grave, les experts suggèrent de débuter un traitement symptomatique et de vérifier l'adaptation du traitement",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u40",
+   "empreinte": "b7cd2bbb1419",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.8.1 – Après survenue d'une hémorragie grave (hors hémorragie intracrânienne), il est probablement recommandé de reprendre l’anticoagulation curative après évaluation du risque hémorragique et du",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u41",
+   "empreinte": "2b92e2c063b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.8.2 – En cas d’hémorragie intracrânienne ou de situation complexe, les experts suggèrent de décider de la reprise du traitement anticoagulant dans le cadre d’une discussion multidisciplinaire pour réduire",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u42",
+   "empreinte": "ee60418c0256",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.8.3 – Après survenue d'une hémorragie grave dans le premier mois suivant une thrombose veineuse profonde proximale et/ou une embolie pulmonaire, il est probablement recommandé de discuter la mise",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u43",
+   "empreinte": "6eb22740dc22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "demi-vie du fondaparinux est particulièrement longue (17h) et l'élimination exclusivement rénale. Une accumulation du fondaparinux est possible en cas de DFG < 50 mL/min, et son administration est contreindiquée en cas de DFG < 30 mL/min. Un suivi biologique n'est pas nécessaire mais une mesure spécifique",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u44",
+   "empreinte": "0b2f341c6d7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1.2 – Chez les patients présentant un surdosage asymptomatique sous AVK, il n’est probablement pas recommandé d’administrer de concentrés de complexe prothrombinique ou de plasma.",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u45",
+   "empreinte": "fea81cd5fb0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour les surdosages avec INR entre 6 et 10. Dans l’étude de Kampouraki et al, la posologie fixe de 1 ou 2 mg de vitamine K est comparée à une dose ajustée en fonction de l’INR cible, de l’INR mesuré et de la surface",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u46",
+   "empreinte": "37c5d03be2e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un autre traitement antithrombotique (sauf aspirine seule), antécédent récent d’hémorragie ou d’AVC (< 1 mois), lésion évolutive à fort potentiel hémorragique).",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u47",
+   "empreinte": "7f185ec1151b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2.1 – Chez les patients présentant une intoxication supposée massive aux AOD et pour lesquels se discuterait l’administration de charbon activé pour en limiter l’absorption, les experts suggèrent de ne",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u48",
+   "empreinte": "7fa3af33c4fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommandé de rechercher systématiquement la cause du surdosage et d'effectuer une surveillance clinique du patient sans réversion.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u49",
+   "empreinte": "4e7c584bd0d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 – Chez les patients traités par anticoagulant injectable et présentant un surdosage asymptomatique, il n’est probablement pas recommandé de réverser le traitement anticoagulant.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u50",
+   "empreinte": "9dece056efb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Gestes neuraxiaux : ils incluent la ponction lombaire, la rachianesthésie, la péridurale et la péri-rachi combinée. Ils n’incluent pas la chirurgie rachidienne.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u51",
+   "empreinte": "1368994ec79e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1.2 - Chez les patients traités par AVK et nécessitant une procédure invasive non programmée à faible risque hémorragique, il n’est pas recommandé d’arrêter ou d’antagoniser le traitement par AVK avant",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u52",
+   "empreinte": "6b5147817a6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2.3- Chez un patient traité par dabigatran et nécessitant une procédure invasive non programmée à risque hémorragique élevé, les experts suggèrent de mesurer la concentration en dabigatran avant la procédure en",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u53",
+   "empreinte": "17e3ae758ade",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "considérant que le seuil de sécurité hémostatique est de 50 ng/mL (30 ng/mL pour la neurochirurgie intracrânienne et les gestes neuraxiaux).",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u54",
+   "empreinte": "ffb4a5ed3426",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique élevé, si l’INR est inférieur au seuil de sécurité hémostatique visé, il n’est pas recommandé d’antagoniser les AVK (ni CCP, ni vitamine K).",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u55",
+   "empreinte": "105090d7327b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vitamine K IV, de commencer la procédure et de contrôler l’INR dans les 30 minutes. Si le seuil de sécurité hémostatique n’est pas atteint, un complément de dose sera discuté (selon les préconisations du RCP).",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u56",
+   "empreinte": "731476226a28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préconisée dans le RCP, d’y associer 5 mg de vitamine K IV ou PO, et de contrôler l’INR dans les 30 minutes (idéalement avant le début de la procédure). Si le seuil de sécurité hémostatique n’est pas",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u57",
+   "empreinte": "41ebce664af5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vitamine K à la dose de 5 mg de préférence par voie IV lorsque cela est possible, de ne pas administrer de CCP et de contrôler l’INR avant la procédure pour vérifier que le seuil de sécurité hémostatique est",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u58",
+   "empreinte": "247dc4f9b100",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2.2- Chez un patient traité par un AOD et nécessitant une procédure invasive non programmée à faible risque hémorragique, il n’est probablement pas recommandé de doser la concentration en AOD, ni d’arrêter",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u59",
+   "empreinte": "2aee8602553a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concentration en AOD anti-Xa avant la procédure, en considérant que le seuil de sécurité hémostatique est de 50 ng/mL (30 ng/mL pour la neurochirurgie intracrânienne et les gestes neuraxiaux).",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u60",
+   "empreinte": "d038ed20cea2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique élevé, si la concentration en dabigatran est inférieure au seuil de sécurité hémostatique visé, il n’est probablement pas recommandé d’administrer d’idarucizumab ni de CCP avant de réaliser la",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u61",
+   "empreinte": "5217cdba4ba6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure invasive non programmée à risque hémorragique élevé, si la concentration en AOD anti-Xa est inférieure au seuil de sécurité hémostatique visé, il est probablement recommandé de réaliser la procédure",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u62",
+   "empreinte": "845e50a1b2fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’idarucizumab à la dose unique de 5g IV est le traitement de première intention des hémorragies graves sous dabigatran. Etablir localement une procédure permet de disposer d’idarucizumab à tout moment, soit",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u63",
+   "empreinte": "040a04421603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contrôler la concentration en dabigatran après la procédure, 12 à 24h après l'administration d’idarucizumab. En cas de ré-ascension de la concentration en dabigatran, une deuxième dose d’idarucizumab peut être",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u64",
+   "empreinte": "8f46172b0183",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’attendre que la concentration en dabigatran baisse et de réaliser une nouvelle mesure de cette concentration au moins 12h plus tard ou de se baser sur la demi-vie d’élimination estimée du dabigatran.",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u65",
+   "empreinte": "d7da9c631332",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- avant la procédure (50 UI/kg) : lorsque l’hémostase doit être normalisée car la procédure concerne un tissu ou un organe où le saignement aurait des conséquences fonctionnelles graves (par exemple : neurochirurgie)",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u66",
+   "empreinte": "3d0ccdaaef9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2.12- Chez un patient traité par AOD anti-Xa avec concentration iniitiale supérieure au seuil hémostatique visé, il n’est pas recommandé de réaliser un geste neuraxial (i.e. ponction lombaire, rachianesthésie,",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u67",
+   "empreinte": "f8b21ebd3af4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique, il est probablement recommandé de réaliser la procédure sans arrêter ni antagoniser le traitement anticoagulant, après avoir vérifié l’absence de surdosage par une mesure de l’activité anti-Xa",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u68",
+   "empreinte": "353eca1cc162",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique élevé, si la procédure ne peut pas être retardée, il est probablement recommandé d’administrer du sulfate de protamine pour neutraliser l’HNF résiduelle (Tableau 4).",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u69",
+   "empreinte": "8983a1f0f8a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique, il est recommandé de réaliser la procédure sans mesurer l’activité anti-Xa HBPM et sans arrêter ni réverser le traitement anticoagulant.",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u70",
+   "empreinte": "3582cc55e240",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure invasive non programmée à risque hémorragique élevé, les experts suggèrent de mesurer la concentration en AOD anti-Xa avant la procédure, en considérant que le seuil de sécurité hémostatique est",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u71",
+   "empreinte": "acb777b67800",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique élevé, si l’activité anti-Xa HBPM est inférieure à 0,2 UI/mL, les experts suggèrent de ne pas administrer de sulfate de protamine, quelle que soit la procédure. Il n’est pas possible de proposer un seuil",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u72",
+   "empreinte": "86c69c9be0ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas acceptable, les experts suggèrent d’attendre que l’activité anti-Xa HBPM diminue si la procédure peut être retardée de quelques heures sans perte de chance pour le patient.",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u73",
+   "empreinte": "d0806550cebb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas acceptable et si la procédure ne peut pas être retardée, les experts suggèrent de neutraliser partiellement les HBPM par l’administration de sulfate de protamine (injection lente de 10 minutes)",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u74",
+   "empreinte": "2e746fb50b46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.3.9- Chez un patient traité par HBPM, il n’est pas recommandé de réaliser de geste neuraxial, même après sulfate de protamine pour prévenir le risque d’hématome périmédullaire.",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u75",
+   "empreinte": "5fb34e4e62dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faible risque hémorragique, les experts suggèrent de réaliser la procédure sans mesurer l’activité anti-Xa fondaparinux et sans arrêter ni réverser le fondaparinux.",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u76",
+   "empreinte": "6ab43256a4be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique élevé, les experts suggèrent de réaliser la mesure de l’activité anti-Xa fondaparinux avant la procédure pour réduire les complications hémorragiques.",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u77",
+   "empreinte": "64af580bf7a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique élevé, si la procédure ne peut pas être retardée et s’il est décidé d’une réversion, les experts suggèrent d’administrer des concentrés de complexe prothrombinique ou du facteur VII activé",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u78",
+   "empreinte": "d6382e08c79e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique élevé, si la procédure peut être retardée sans perte de chance pour le patient, les experts suggèrent d’attendre que l’activité anti-Xa fondaparinux diminue, et de réaliser une nouvelle",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u79",
+   "empreinte": "c746935c2d75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVIS D’EXPERTS (Accord fort) R4.4.5 – Chez les patients sous fondaparinux, il n’est pas recommandé de réaliser de geste neuraxial",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u80",
+   "empreinte": "af483672aee0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.5.1 - En cas de fracture de l’extrémité supérieure du fémur, il n’est probablement pas recommandé de retarder la prise en charge chirurgicale du fait du traitement anticoagulant pour réduire les",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u81",
+   "empreinte": "40b417eebedf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVIS D’EXPERTS (Accord fort) R4.4.5 – Chez les patients sous fondaparinux, il n’est pas recommandé de réaliser de geste neuraxial",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u82",
+   "empreinte": "92ccbd70f451",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.6.2. Les experts suggèrent que les gestes neuraxiaux puissent être envisagés après réversion selon l’anticoagulant.",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u83",
+   "empreinte": "5bce3e6b501e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.6.3 - Chez un patient traité par AVK, si la réalisation d’un geste neuraxial parait indispensable, les experts suggèrent d’administrer des CCP associés à de la vitamine K et de vérifier que le seuil de sécurité",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u84",
+   "empreinte": "a43045ac47a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le geste doit alors être réalisé par un opérateur expérimenté. Si l’idarucizumab n’est pas disponible, l’administration de CCP ne garantit ni la normalisation de l’hémostase ni la réduction du risque",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u85",
+   "empreinte": "bcd4054a1f3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.6.5 - Chez un patient traité par apixaban, rivaroxaban, HBPM ou fondaparinux, la réversion par CCP, sulfate de protamine ou facteur VII activé recombinant pour réaliser ces gestes n’est pas recommandée.",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u86",
+   "empreinte": "301c01c544d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVK 5 jours (3 j pour l’acénocoumarol) et INR ≤ 1,2",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u87",
+   "empreinte": "cdd53bafd28e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AOD anti-Xa 5 jours Dabigatran 5 jours HBPM à dose curative 24 heures",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u88",
+   "empreinte": "6feed5dc6162",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HBPM à dose curative 24 heures",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u89",
+   "empreinte": "d198c9ea7199",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fondaparinux à dose curative 4 jours",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u90",
+   "empreinte": "013668191557",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces gestes neuraxiaux peuvent être secondairement réalisés une fois que l’anticoagulant a été éliminé. Les délais d’arrêt des anticoagulants recommandés pour un geste neuraxial sont rappelés dans le tableau cidessous en l’absence d’insuffisance rénale sévère (tableau 7) [3]. La mesure du niveau résiduel",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u91",
+   "empreinte": "25e8770adca4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.7.1 - Après une procédure invasive à risque hémorragique élevé, il est probablement recommandé de reprendre une anticoagulation curative dès que l’hémostase chirurgicale le permet (à titre indicatif :",
+   "explication": "",
+   "page": 64
+  },
+  {
+   "id": "u92",
+   "empreinte": "cd7200d18bbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.7.2 - Dans l’attente de la reprise de l’anticoagulation curative, il est recommandé de réaliser une thromboprophylaxie veineuse médicamenteuse postopératoire, dans les situations où elle est indiquée,",
+   "explication": "",
+   "page": 64
+  },
+  {
+   "id": "u93",
+   "empreinte": "68eb019d629d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.7.3 - Après une procédure invasive à risque hémorragique faible, il est probablement recommandé de reprendre l’anticoagulation curative aux horaires habituels, mais au moins 6 heures après la fin du",
+   "explication": "",
+   "page": 64
+  },
+  {
+   "id": "u94",
+   "empreinte": "9d4f502864f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.8.1 - Il est probablement recommandé de discuter la mise en place d’un filtre cave optionnel (i.e. retirable) dès que possible (en préopératoire ou postopératoire immédiat) lorsque la procédure doit",
+   "explication": "",
+   "page": 66
+  },
+  {
+   "id": "u95",
+   "empreinte": "57115948f53f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.8.2 – Les experts suggèrent de discuter la mise en place d’un filtre cave optionnel lorsque la procédure doit être réalisée 1 à 3 mois après une thrombose veineuse profonde proximale et/ou une",
+   "explication": "",
+   "page": 66
+  },
+  {
+   "id": "u96",
+   "empreinte": "9afa95857a6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.8.3 - Il est recommandé de retirer le filtre quand le traitement anticoagulant curatif a pu être repris sans complication et qu’un nouvel arrêt n’est pas prévu à court terme.",
+   "explication": "",
+   "page": 66
+  },
+  {
+   "id": "u97",
+   "empreinte": "fcf7e0a61620",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1.2 - Chez un patient traité par AVK et pris en charge pour un AVCi dans un délai le rendant éligible à une thrombolyse IV, il est recommandé de réaliser une thrombolyse en cas d’INR < 1,7.",
+   "explication": "",
+   "page": 68
+  },
+  {
+   "id": "u98",
+   "empreinte": "d9d4a0b5454a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.1.3 - Chez un patient traité par AVK et pris en charge pour un AVCi, en cas d’INR > 1,7, les experts suggèrent de ne pas réaliser de thrombolyse même après antagonisation des AVK.",
+   "explication": "",
+   "page": 68
+  },
+  {
+   "id": "u99",
+   "empreinte": "66e823ddc18e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "direct du facteur Xa dans les 48h précédant un AVCi dans un délai le rendant éligible à une thrombolyse IV",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u100",
+   "empreinte": "1ef076302f9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVCi dans un délai le rendant éligible à une thrombolyse IV, les experts suggèrent de ne pas administrer des CCP, ni d’andexanet alfa pour effectuer une thrombolyse.",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u101",
+   "empreinte": "0fbaf13b4f64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de ne pas réaliser une thrombolyse en cas de concentration de l’AOD ≥ 100 ng/mL.",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u102",
+   "empreinte": "722dc3cdd7dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une association entre le niveau d'anticoagulation et les évènements hémorragiques spontanés, notamment lorsque la concentration plasmatique en AOD anti-Xa est supérieure à 400 ng/mL [1,2]. En",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u103",
+   "empreinte": "56d3f811973d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser une thrombolyse IV en cas de concentration en dabigatran < 50 ng/mL (ou temps de thrombine < 60 secondes), ou après antagonisation par idarucizumab 5 g IV.",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u104",
+   "empreinte": "53886398744a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVIS D’EXPERTS (Accord fort) 5.1.9 - Chez un patient traité par HNF, HBPM ou fondaparinux à dose curative et pris en charge pour un AVCi",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u105",
+   "empreinte": "736f2460e3fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5.1.10 - Chez un patient traité par anticoagulant et pris en charge pour un AVCi, il est recommandé d’envisager une thrombectomie en cas d’occlusion proximale, que la thrombolyse ait été réalisée ou non.",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u106",
+   "empreinte": "98c168edbf99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION - Chez un patient traité par HNF à dose curative et pris en charge pour un AVCi, les données de la littérature ne permettent pas d’émettre de recommandations sur l’usage ou non de",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u107",
+   "empreinte": "1bab11c035bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rapport bénéfice/risque d’une thrombolyse IV, dont la décision est à prendre au cas par cas. Si seuls les tests standards (TP et TCA) sont disponibles, il est contre-indiqué de réaliser une thrombolyse IV [2].",
+   "explication": "",
+   "page": 70
+  },
+  {
+   "id": "u108",
+   "empreinte": "5e94f027ed8d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

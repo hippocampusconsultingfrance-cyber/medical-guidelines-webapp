@@ -1,0 +1,835 @@
+{
+ "cle": "mtev_perioperatoire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "28f0d060eb21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "veineux péri-opératoire. Ces évolutions ont conduit le Groupe d’Intérêt en Hémostase Périopératoire (GIHP) en collaboration avec la SFAR, la Société Française de Thrombose et d’Hémostase (SFTH) et la Société Française de Médecine Vasculaire (SFMV) à actualiser les",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u2",
+   "empreinte": "afa8b76194e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "inconnue dans cette situation à haut risque thrombotique. En 2010 les Britanniques ont modifié leurs recommandations de thromboprophylaxie après fracture de hanche, basculant",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u3",
+   "empreinte": "e72ef65895e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Figure : Prise en charge d’une thrombose distale post-opératoire Figure de synthèse",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "89347a5d39e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thromboprophylaxie veineuse pour réduire le risque de complications péri-opératoires. Ces protocoles incluent la déambulation précoce et la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u5",
+   "empreinte": "c0028fc4b08c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient présente un facteur de risque thromboembolique veineux majeur ou plusieurs facteurs de risque mineurs, il est proposé de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "5a58faa89123",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque thromboembolique élevé (antécédent personnel d’ETEV, thrombophilie majeure connue, obésité de classe III ou plus, cancer actif ou association de plusieurs facteurs de",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u7",
+   "empreinte": "e8739f7d13a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "survenue d’un ETEV post-opératoire était de 8 [IQR 5-13] jours [6]. Nous proposons une durée minimale d’une semaine pour couvrir la période la plus à risque, ce qui est en accord avec les",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "57e6c51fb8fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "** Facteurs de risque majeurs : antécédents personnels d’ETEV, thrombophilie majeure connue, cancer actif, obésité morbide (IMC ≥ 40kg/m2) (cf chapitre dédié p11)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u9",
+   "empreinte": "7246691b72e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans un parcours optimisé réussi. Un parcours optimisé (RAAC ou ambulatoire) comprend au moins trois conditions : une chirurgie < 120 min, une ambulation avec déroulé du pas dès les",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u10",
+   "empreinte": "d84c869c4fa9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "e63b2e291f1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "317b8e5df1aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "b6167c77395b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "254c69f66732",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "Figure 1, p. 16 (image) : grades en marge de l'encadré « Thromboprophylaxie par anticoagulant » : 1+ (anticoagulant), 2+ (débuter H12-H24), avis d'experts (H6-H12 si risque élevé), 1+ (durée PTG 14 j / PTH 35 j)",
+   "explication": "La fiche attribue un seul grade [2+] à tout l'encadré. Or la figure (et le tableau de recommandations juste au-dessus) donne 1+ à l'anticoagulant et à la durée, 2+ seulement au délai H12-H24, et « avis d'experts » au début H6-H12.",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "41c1513a1bc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "db2aff77bdb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "f80a33230f18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "6a8cfb5493b7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "b1d4f18e0fe3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après fracture de l’extrémité supérieure du fémur, le risque d’ETEV est augmenté en cas de chirurgie retardée [10,11]. L’initiation d’une thromboprophylaxie par HBPM en postopératoire est associée à une augmentation de la mortalité par rapport à une",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u20",
+   "empreinte": "2529822f0f39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que le placebo, l’aspirine n’a pas été comparée aux HBPM et son efficacité relative est inconnue dans cette situation à haut risque thrombotique. En 2010 les Britanniques ont",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u21",
+   "empreinte": "140fdc2d7925",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandée après chirurgie pour fracture de la diaphyse fémorale, du plateau tibial, de la rotule, du tibia, de la cheville, ou pour rupture du",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u22",
+   "empreinte": "ce401788d8ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient présente un facteur de risque thromboembolique veineux majeur ou plusieurs facteurs de risque mineurs, il est proposé de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "5ca703dc20b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thromboprophylaxie par HBPM, pour une durée minimale de 7 jours. Après chirurgie abdomino-pelvienne à faible risque thromboembolique",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u24",
+   "empreinte": "635a53fc2f5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "exemple, sigmoïdectomie pour maladie diverticulaire à distance d’une poussée inflammatoire, néphrectomie pour don vivant, hystérectomie vaginale pour fibrome [21,22].",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u25",
+   "empreinte": "380a6aeaf373",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thromboprophylaxie par HBPM, pour une durée minimale de 7 jours. Après chirurgie abdomino-pelvienne à faible risque thromboembolique",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u26",
+   "empreinte": "454f610bc761",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "optimale n’a pas été évaluée. Certaines recommandations internationales [24,25] suggèrent de la poursuivre jusqu'à un mois par analogie avec la chirurgie abdomino-pelvienne majeure,",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u27",
+   "empreinte": "50316cb91a9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proposé que la prescription d'une thromboprophylaxie dépende de l'existence de facteurs de risque liés au patient, de la durée de la chirurgie et de la survenue de complications postopératoires. Sa durée est alors de 7 jours minimum et les HBPM sont à privilégier [23,24].",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u28",
+   "empreinte": "c92d1cd82495",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "veineuse post-opératoire par HBPM est prescrite, le protocole prévoyait de décaler dans le temps l’introduc‰on du rivaroxaban à l’arrêt de l’HBPM (J5-J10) [4].",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u29",
+   "empreinte": "168e58f27e28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* : soit le lendemain matin pour la chirurgie programmée # : lié au patient : antécédent personnel d’ETEV, thrombophilie majeure connue, cancer actif, IMC ≥40",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u30",
+   "empreinte": "bdcdb391cdd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HNF SC 2h 4h Apixaban 12h * 36h",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u31",
+   "empreinte": "a1a9490d89f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "9a81450bdf64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "efb03c5b9012",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "83976d365d22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "1bf074506e64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "7e16f573b692",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Discuter d'allonger les délais ou de réaliser un dosage en cas d'insuffisance rénale (DFG<50 mL/min/1,73 m2), de petit poids et chez le sujet âgé",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u37",
+   "empreinte": "1ebc8719abf5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mais que les anticoagulants sont contre-indiqués. En cas de très haut risque thromboembolique veineux§, il est proposé",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u38",
+   "empreinte": "f0bdae24e5de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les contentions élastiques graduées ne sont pas recommandées pour la thromboprophylaxie péri-opératoire, quel que soit le risque",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u39",
+   "empreinte": "16e3cc3bd464",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par HBPM : l’ajout de contentions à une HBPM n’a apporté aucun bénéfice [3]. Ces données ont été confirmées par des données d’un registre médico-économique incluant 24273",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u40",
+   "empreinte": "4f9161d4951a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pré-opératoire d’une chirurgie à risque hémorragique lorsque celle-ci doit être réalisée moins d’un mois après une embolie pulmonaire et/ou",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u41",
+   "empreinte": "46bce98de607",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pharmacologique à la fonction rénale. En cas d’insuffisance rénale sévère, il est proposé d’utiliser les HBPM en",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u42",
+   "empreinte": "3f276840eacb",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Tableau « Thromboprophylaxie et fonction rénale », p. 52 (image) : cases colorées rouge / orange / vert pour HNF, tinzaparine, enoxaparine, fondaparinux 2,5 mg, apixaban/rivaroxaban, dabigatran",
+   "explication": "Les 6 lignes sont présentes dans la fiche, mais toutes les cases sont vides et sans couleur (seul « ½ dose » de l'enoxaparine est écrit). Or l'information du tableau est portée par la couleur (rouge = non recommandé AMM, orange = non recommandé GIHP, vert = recommandé). Tel quel, le tableau ne dit rien ; la note u46 ne couvre que les AOD et le fondaparinux.",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "1a394b8918fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau p. 52 (image), en-tête DFG 15 / 20 / 30 / 50",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "0d66daf99737",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau p. 52 (image) : enoxaparine « ½ dose » pour DFG 15-20 et 20-30",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "62f735fc12c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau p. 52 (image) : fondaparinux 2,5 mg rouge jusqu'à 50, vert > 50",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "33254cde20a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- L’apixaban et le rivaroxaban ne nécessitent pas d’ajustement posologique en cas de DFG entre 15 et 30 mL/mn/1,73 m2. Cependant les données de la littérature sont très limitées en",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u47",
+   "empreinte": "9037020d2113",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de petit poids, il est proposé de réduire les doses pour prévenir le risque d’accumulation et d’hémorragie. Ainsi, après 2 injections d’enoxaparine 4000 UI, un poids <45",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u48",
+   "empreinte": "cc831a139e3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les AOD, les RCP de l’apixaban et du rivaroxaban indiquent qu’aucune adaptation posologique n’est nécessaire en cas de petit poids. Celui du dabigatran précise que les",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u49",
+   "empreinte": "a5f2f1012346",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présence de plusieurs facteurs de risque thromboembolique veineux d’experts conduise à discuter au cas par cas le bénéfice-risque d’une",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u50",
+   "empreinte": "14b32e52748b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Par ailleurs, le risque hémorragique lié à une anticoagulation (prophylactique ou thérapeutique) chez l’enfant est conséquent : entre 0,4% et 3% de saignements majeurs, et",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u51",
+   "empreinte": "8c27ca111a80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les contentions élastiques graduées ne sont pas recommandées pour la thromboprophylaxie péri-opératoire, quel que soit le risque",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u52",
+   "empreinte": "d20f09098c60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’HNF en réanimation. Tableau 1 : Méta-analyse en réseau comparant une thromboprophylaxie par HBPM et HNF en",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u53",
+   "empreinte": "af7864197b53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "48cc22aba1e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "2aea12f82adb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "648bcd0bec1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "74b42a65948e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "52075e916677",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 : Résultats de l’analyse en sous-groupe de l’étude PROTECT comparant daltéparine et HNF pour la thromboprophylaxie en réanimation, selon la fonction rénale [3]",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u59",
+   "empreinte": "c911623f32a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "24f28fc0f662",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "fa33f46c00a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thromboprophylaxie. Le risque d’ETEV après chirurgie pour cancer du sein est bas, rapporté à moins de 0,5%, essentiellement dans le premier mois post-opératoire, probablement lié au",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u62",
+   "empreinte": "a86480af0b31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réanimation [2], l’utilisation d’HBPM était associée à moins d’ETEV sans augmentation du risque hémorragique (Tableau 1). Cette méta-analyse confirmait également le moindre risque",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u63",
+   "empreinte": "a4eb3513af9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "1a7e30338c77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u65",
+   "empreinte": "2789d0c8079d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "af9638cc3c8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u67",
+   "empreinte": "7e0b6539f1de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’administration d’acide tranexamique modifie-t-elle les modalités de thromboprophylaxie veineuse péri-opératoire ?",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u68",
+   "empreinte": "2465a92e6373",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie hémorragique et en traumatologie pour réduire le saignement et la transfusion [18]. L’ATX n‘augmente pas le risque d’ETEV péri-opératoire : des essais randomisés [1,3-8], et des méta-analyses [2,9] ont montré que l’ATX n’augmente pas l’incidence des ETEV après",
+   "explication": "",
+   "page": 66
+  },
+  {
+   "id": "u69",
+   "empreinte": "2e6424b01451",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’établissement pour définir le bon usage de la mesure du niveau d’experts d’anticoagulation (conditions du prélèvement, valeurs seuils) et la",
+   "explication": "",
+   "page": 67
+  },
+  {
+   "id": "u70",
+   "empreinte": "43c33a43da6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et hémorragiques post-opératoires, aucun essai randomisé n'a démontré le bénéfice d'une adaptation posologique de l’HBPM à l’activité anti-Xa pour réduire ces complications. Une",
+   "explication": "",
+   "page": 69
+  },
+  {
+   "id": "u71",
+   "empreinte": "574ae629e3da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par semaine entre le 4ème et le 14ème jour, puis une fois par semaine pendant un mois si le traitement est poursuivi.",
+   "explication": "",
+   "page": 70
+  },
+  {
+   "id": "u72",
+   "empreinte": "b68d65fd83e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’évaluer le risque d’extension thrombotique (TVPd bilatérale ou multiple (> 1 veine), antécédent de MTEV, cancer actif) et le risque",
+   "explication": "",
+   "page": 73
+  },
+  {
+   "id": "u73",
+   "empreinte": "647b8f62708d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les TVPd isolées des membres inférieurs sont déﬁnies anatomiquement comme des TVP souspoplitées, sans extension aux veines proximales ou embolie pulmonaire associée. Les veines profondes distales comprennent les troncs jambiers (‰biales antérieure et postérieure,",
+   "explication": "",
+   "page": 74
+  },
+  {
+   "id": "u74",
+   "empreinte": "c59a64c3a170",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u75",
+   "empreinte": "867a5e5f6d6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’évaluer le risque d’extension thrombotique (TVPd bilatérale ou multiple (> 1 veine), antécédent de MTEV, cancer actif) et le risque",
+   "explication": "",
+   "page": 73
+  },
+  {
+   "id": "u76",
+   "empreinte": "47d58f516316",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et 4,5% respec‰vement (p<0.001). Ces résultats suggèrent qu’en l’absence de facteur de risque d’extension, la poursuite de la thromboprophylaxie jusqu’à 35 jours réduit les complica‰ons",
+   "explication": "",
+   "page": 75
+  },
+  {
+   "id": "u77",
+   "empreinte": "139f5502bbc8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’âge sur le risque post-opératoire d’ETEV dépend de la présence d’autres comorbidités, de l’état fonctionnel du patient et du type de chirurgie. Un âge élevé était un facteur prédictif",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u78",
+   "empreinte": "af82ca48b182",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique est faible, il est proposé d’introduire un traitement anticoagulant à dose curative pendant 6 à 12 semaines.",
+   "explication": "",
+   "page": 73
+  },
+  {
+   "id": "u79",
+   "empreinte": "947721c3983c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique est faible, il est proposé d’introduire un traitement anticoagulant à dose curative pendant 6 à 12 semaines.",
+   "explication": "",
+   "page": 73
+  },
+  {
+   "id": "u80",
+   "empreinte": "d5e1fa064634",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas mettre de filtre cave et de contrôler l’écho-Doppler à J7 pour rechercher une extension proximale.",
+   "explication": "",
+   "page": 73
+  },
+  {
+   "id": "u81",
+   "empreinte": "55ac6e8e54cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "inconnue dans cette situation à haut risque thrombotique. En 2010 les Britanniques ont modifié leurs recommandations de thromboprophylaxie après fracture de hanche, basculant",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u82",
+   "empreinte": "bd51e18e71d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u83",
+   "empreinte": "ac456f22bb03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u84",
+   "empreinte": "522d8ef9126f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u85",
+   "empreinte": "a33416a17f2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u86",
+   "empreinte": "ff8bd77b7aba",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u87",
+   "empreinte": "9248040007f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u88",
+   "empreinte": "ad5332cb1bd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u89",
+   "empreinte": "4caa34461c84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u90",
+   "empreinte": "e7605288e39b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 79 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u91",
+   "empreinte": "1fd2bfbed90f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque thromboembolique élevé (antécédent personnel d’ETEV, thrombophilie majeure connue, obésité de classe III ou plus, cancer actif ou association de plusieurs facteurs de",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u92",
+   "empreinte": "5b62236e0c3d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

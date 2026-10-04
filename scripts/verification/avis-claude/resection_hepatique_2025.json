@@ -1,0 +1,691 @@
+{
+ "cle": "resection_hepatique_2025",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a77dcc577fc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Prise en charge péri-opératoire du patient adulte devant bénéficier d’une résection hépatique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u2",
+   "empreinte": "8169efcaf88d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "9b70bb8c13b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés de résection hépatique (considérée comme une chi- 1",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "0b8fb1d0c345",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "25d3240b1f74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé de 2",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u6",
+   "empreinte": "058ec47925f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés de résection hépatique présentant une dénutrition 2",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u7",
+   "empreinte": "d47df61c49c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie de résection hépatique, il n’est pas 1",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u8",
+   "empreinte": "65cc9d69f68e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés de résection hépatique et présentant un ictère obs- 2",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u9",
+   "empreinte": "27b55656ab1d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "586e6ac5c02b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé d’iden- 1",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u11",
+   "empreinte": "51778c233f33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé d’utili- 2",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u12",
+   "empreinte": "c63f894a64e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1 p.12 : préhabilitation (exercice, nutrition 1,5 g/kg/j, psychologie, optimisation médicale)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "580aaf1c729c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1 p.12 : préhabilitation (exercice, nutrition 1,5 g/kg/j, psychologie, optimisation médicale)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "0191e6b966e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1 p.12 : préhabilitation (exercice, nutrition 1,5 g/kg/j, psychologie, optimisation médicale)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "6ca9e1d728ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1 p.12 : préhabilitation (exercice, nutrition 1,5 g/kg/j, psychologie, optimisation médicale)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "4720d655c921",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 2 p.12 : MELD, Fib4, APRI, ALBI, FFR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "cafc1651f90e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 2 p.12 : MELD, Fib4, APRI, ALBI, FFR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "9330a1f16f1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 2 p.12 : MELD, Fib4, APRI, ALBI, FFR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "511705202918",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 2 p.12 : MELD, Fib4, APRI, ALBI, FFR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "b11cfdd200a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 2 p.12 : MELD, Fib4, APRI, ALBI, FFR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "f38f93f87443",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "8a2b1f13e710",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il n'est pas recommandé 2",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u23",
+   "empreinte": "e76d714572f2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "e2d7c8713432",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé d'ad- 2",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u25",
+   "empreinte": "1be25b1dfd31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En peropératoire de résection hépatique, il n’est pas recommandé d’adminis- 2",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u26",
+   "empreinte": "be01bd15c307",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il n'est pas recommandé 2",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u27",
+   "empreinte": "a437c03fcc65",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "2633d4cf9bbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, les experts suggèrent AE",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u29",
+   "empreinte": "b6d5d37a604f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Afin de prévenir les infections du site opératoire chez les patients opérés d’une AE",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u30",
+   "empreinte": "e084cb5f7bab",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "4cad2f97c6fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé d’utili- 2",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u32",
+   "empreinte": "d22e4ebf23dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Afin de réduire le saignement peropératoire et de diminuer la morbi-mortalité 2",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u33",
+   "empreinte": "fa5c99ed152f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, les experts suggèrent de AE",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u34",
+   "empreinte": "c89b8b6ca899",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En peropératoire d’une résection hépatique, les experts suggèrent de ne pas AE",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u35",
+   "empreinte": "b6c908ec3e41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En peropératoire d’une résection hépatique, il est recommandé d'utiliser des 2",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u36",
+   "empreinte": "48525b709754",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de formuler d’émettre une recommandation concernant l’administration d’albumine pour l’expansion volémique afin de diminuer la",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u37",
+   "empreinte": "363fb4f7d6dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 4 p.19 : 12 % < VVE < 20 %, PVC < 5, PAM > 65 ; post-résection bolus 250 mL",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "55d1cb7216f9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "eefbc65f1214",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé, pour 2",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u40",
+   "empreinte": "9210dff91ca1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "66224eb46a40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il n’est pas recommandé 2",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u42",
+   "empreinte": "a56a4809fe6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique n’ayant pas reçu d’admi- AE",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u43",
+   "empreinte": "771bbb5ebe21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, y compris carcinologique, 2",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u44",
+   "empreinte": "1761676050a7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "f80298f4c301",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique sur foie sain par laparos- 1",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u46",
+   "empreinte": "1bf06b753d98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, en cas de risque ou d’al- AE",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u47",
+   "empreinte": "0c9588c5684c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique par laparoscopie, il est 2",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u48",
+   "empreinte": "03ade9ac725b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique par laparotomie, il est re- 2",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u49",
+   "empreinte": "c99bfdfd218d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, les experts suggèrent de AE",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u50",
+   "empreinte": "dcf16fb8cb85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation concernant l’utilisation de la kétamine, le néfopam ou la lidocaïne intraveineuse pour diminuer la douleur postopératoire",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u51",
+   "empreinte": "d56b8cabf5e6",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Figure 2 p.20 : hépatectomie majeure → infiltration ou bloc périphérique (± cathéter), sans péridurale",
+   "explication": "La fiche regroupe « hépatectomie mineure sur foie sain ou majeure » avec l'option péridurale ; dans la figure, la péridurale n'est proposée que pour l'hépatectomie mineure sur foie sain (cohérent avec R2.7.5).",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "b31b7b78d6ac",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "de1847ee4ccd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé de ne 2",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u54",
+   "empreinte": "6ec6a72a1f64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, les experts suggèrent de AE",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u55",
+   "empreinte": "2af13f0cebf1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "f554dc500d15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique, il est recommandé de réaliser une 1",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u57",
+   "empreinte": "0414461e198a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients présentant une insuffisance hépatique après résection hé- AE",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u58",
+   "empreinte": "ae4a3ea04e78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique, il n’est pas recommandé d’utiliser 2",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u59",
+   "empreinte": "00c2f0fc1dfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la littérature, les experts ne sont pas en mesure d’émettre de recommandations sur l’utilisation de traitements spécifiques (glucocorticoïdes, terlipressine",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u60",
+   "empreinte": "f8890bd0ce74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique, les experts suggèrent de solliciter AE",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u61",
+   "empreinte": "9f5c44579a0d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "b3a9aa559259",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique carcinologique sans cirrhose sous- 1",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u63",
+   "empreinte": "a705412fde64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique carcinologique avec une cirrhose AE",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u64",
+   "empreinte": "fe81d43bb5d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique pour tumeur bénigne ou don vivant, 2",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u65",
+   "empreinte": "ab3053e46f7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de très haut risque thromboembolique veineux (chirurgie de résection 2",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u66",
+   "empreinte": "968fe9c39921",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u67",
+   "empreinte": "225e8ed7aa2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une résection hépatique, il est recommandé d’ins- 1",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u68",
+   "empreinte": "99a843bb13ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique, il n’est pas recommandé d’appliquer 2",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u69",
+   "empreinte": "d1f4952f26c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En postopératoire de résection hépatique, en cas de survenue d’une insuffi- 2",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u70",
+   "empreinte": "38e5a68ae64b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.24 : étape 1 comorbidité ou HTP → USIP",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u71",
+   "empreinte": "4c39395af78c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.24 : étape 2 défaillance → réanimation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "e70b1e17b8cb",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Figure 3 p.24 : la branche « bas grade » descend directement vers la SSPI (étape 5) puis le service de chirurgie, sans passer par l'étape 4",
+   "explication": "La fiche fait passer bas grade et grade intermédiaire par l'étape 4 ; seuls le grade intermédiaire et la cœlioscopie (grade élevé) y passent.",
+   "page": 0
+  },
+  {
+   "id": "u73",
+   "empreinte": "980966f5a998",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.24 : étape 4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u74",
+   "empreinte": "84384d1c35c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.24 : étape 5 lactatémie > 3 mmol/l",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u75",
+   "empreinte": "812f7ff78cab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.24 : légende (Child B, MELD > 9, liver stiffness > 8 kPa, ABRI)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u76",
+   "empreinte": "f9a9767a87ff",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

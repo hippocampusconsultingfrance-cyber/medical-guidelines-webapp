@@ -1,0 +1,520 @@
+{
+ "cle": "examens_pertinence_rea",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "48dd887fb7cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "DE LA RADIOGRAPHIE THORACIQUE EN REANIMATION RFE commune SFAR-SRLF",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "b1dc5616495f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "d46ed44f4db3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 - Les experts proposent de réduire autant que possible le nombre de prélèvements",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u4",
+   "empreinte": "cc7474424e43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 - Les experts proposent de rechercher systématiquement une éventuelle grossesse",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u5",
+   "empreinte": "a5bad174e981",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 - Il ne faut probablement pas réaliser de façon systématique et quotidienne l’ensemble des",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "1e5f1dc0db69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 - Il faut discuter la réalisation des examens biologiques à chaque évaluation clinique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "454af592096a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 - Il faut probablement réaliser un ionogramme sanguin et urinaire, une numération",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "9acba46f2a98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4 - Il faut probablement écrire un protocole de service afin de réduire le nombre d’examens",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "b3712c0c1e61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 – Les experts proposent que la procalcitonine (PCT), comme tout biomarqueur, ne doit pas",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "edd5ba3f0fb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 - Les experts proposent que compte tenu de son manque de spécificité, l’utilisation de la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "7e9e560bec03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 - Il ne faut pas doser la PCT dans les sepsis évidents dans le seul but d’en étayer le",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "e545074455fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.4 - Dans certaines situations particulières (patients chirurgicaux, infections intra",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "c368f184bdf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la cinétique de la PCT a pu être utilisée dans les infections confirmées ou fortement suspectées pour",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "0a00ce6cc723",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "f17aace1883b",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "Page 9 : « Revised cardiac risk index de Lee (RCRI) à 1 »",
+   "explication": "La source imprime « RCRI à 1 » ; la fiche écrit « ≤1 » (interprétation ajoutée, probablement juste mais non imprimée). Grade 1- conforme.",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "ef0e7b99667c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du risque cardiaque postopératoire, il faut doser systématiquement la troponine. La période",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u17",
+   "empreinte": "5b59e523e6db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dosage de la troponine aux éléments pronostiques usuels tels que les scores de gravité n’est pas connue",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u18",
+   "empreinte": "0a00ce6cc723",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "785a2e965a57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou à très haut risque cardiaque (RCRI>3)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u20",
+   "empreinte": "d2f668a7fd79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La littérature actuelle ne permet de formuler aucune recommandation sur l’utilisation du BNP",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u21",
+   "empreinte": "a85444e6a61f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 - Il faut probablement disposer d’un bilan d’hémostase comprenant TP, TCA, Plaq chez tout",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u22",
+   "empreinte": "d4b759d0d405",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.2 - Il ne faut probablement pas répéter systématiquement les examens d’hémostase, une fois",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u23",
+   "empreinte": "db60fb41c4a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.3 - Il faut répéter les examens d’hémostase au cours du séjour en cas d’anomalies ou de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u24",
+   "empreinte": "6a7e5c00b8ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.4 - Il ne faut pas effectuer systématiquement de surveillance biologique de l’activité",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u25",
+   "empreinte": "cad4c82a4e8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.5 - Il faut probablement surveiller l’effet anticoagulant d’un traitement par héparine non",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u26",
+   "empreinte": "20f9a2f4305b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La thrombopénie induite par l’héparine (TIH) est un effet indésirable compliquant jusqu’à 5% des traitements",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u27",
+   "empreinte": "0dc0f8904ea9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.1 - Il faut prélever des hémocultures devant tout sepsis",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u28",
+   "empreinte": "d81773bcdf75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.2 - Il ne faut probablement pas répéter ces prélèvements de manière systématique",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u29",
+   "empreinte": "fa55c6119ab6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "premières hémocultures restant négatives après 24 heures d’incubation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u30",
+   "empreinte": "d767d6df818a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.4 - Il faut probablement réduire le nombre de paires d’hémocultures à 2 ou 3 par épisode",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u31",
+   "empreinte": "16b1f7af7f81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "40 à 60 mL de sang et le repartir dans 4 à 6 flacons",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u32",
+   "empreinte": "8492b693b0be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de traitements interférant avec le monitorage de la température (tels que l’hypothermie",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u33",
+   "empreinte": "5520e6255a08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trois paires d’hémocultures permettent de détecter 98% des bactériémies contre 73% avec une",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u34",
+   "empreinte": "6ca8d268695c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "58a490a72ca6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.6 - Il faut réaliser des prélèvements microbiologiques pulmonaires uniquement en cas de",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u36",
+   "empreinte": "9b8fe2b27741",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.7 - Il faut probablement réaliser des prélèvements microbiologiques pulmonaires devant",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u37",
+   "empreinte": "fa778fc40539",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.8 - Il ne faut pas répéter les prélèvements microbiologiques pulmonaires en cas d’évolution",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u38",
+   "empreinte": "4b8a7ecfffd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« dépistage » systématiques, y compris chez les patients en SDRA",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u39",
+   "empreinte": "020873cd9035",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.10 - Il faut probablement dépister la grippe, même en situation nosocomiale, en cas de",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u40",
+   "empreinte": "53517cc70cf5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 7.2.5 concernant les modes de prélèvement, les experts revoient à la recommandation Q2 de la",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u41",
+   "empreinte": "68bca5861007",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "e8f9ac773de1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.12 - Il faut réaliser un ECBU à visée diagnostique dans les situations suivantes",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u43",
+   "empreinte": "1f8b75fd9a49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.13 - Il ne faut pas réaliser un ECBU de contrôle 48-72 heures après le début de",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u44",
+   "empreinte": "0dfe29787ead",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.14 - Il ne faut pas dépister de manière systématique les colonisations urinaires ni par",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u45",
+   "empreinte": "de7972836551",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.15 - Il faut réaliser une coproculture standard en cas de selles diarrhéiques uniquement si",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u46",
+   "empreinte": "d2fd0adef951",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.16 - Il ne faut pas réaliser de coproculture standard de contrôle en cas de première",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u47",
+   "empreinte": "512af2c622c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.17 - Il faut rechercher d’autres bactéries entéropathogènes si les résultats de la coproculture",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u48",
+   "empreinte": "98e52b3f915b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.18 - Il ne faut pas réaliser de coproculture standard chez le patient hospitalisé depuis plus",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u49",
+   "empreinte": "75d5dcbe3b58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Candida albicans, Clostridium perfringens producteur d’entérotoxine",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u50",
+   "empreinte": "5f6755b26ebe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.20 – Il faut rechercher le Clostridium difficile de façon spécifique et ne pas l’associer à la",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u51",
+   "empreinte": "356423e4b73d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.21 - Il ne faut pas réitérer la recherche de Clostridium difficile lorsqu’elle est positive",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u52",
+   "empreinte": "9d784c660f0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.1 - Il ne faut pas faire de RT au lit quotidienne systématique chez les patients intubés et",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u53",
+   "empreinte": "7d853892b60c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.2 – Il faut probablement réaliser une RT en cas d’altération des échanges gazeux",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u54",
+   "empreinte": "a4b4922ac119",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.3 - Il faut probablement faire une RT au décours de la mise en place de dispositifs invasifs",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u55",
+   "empreinte": "1a88e60c6d86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.4 - Il faut probablement envisager l’échographie thoracique comme alternative à la RT pour",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u56",
+   "empreinte": "e722a3fa92ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La RT systématique à l’admission des patients en détresse respiratoire ne se justifie pas non plus",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u57",
+   "empreinte": "7142775ec34d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

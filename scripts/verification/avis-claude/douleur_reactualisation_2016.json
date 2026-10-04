@@ -1,0 +1,367 @@
+{
+ "cle": "douleur_reactualisation_2016",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "35611839802e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "8eca2c7dde36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après 2 tours de cotations et divers amendements, un accord fort a été obtenu pour 14 recommandations",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "f4891feb4ab3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "11 sont fortes, 3 sont faibles et, pour 3 recommandations",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "5e3fde526855",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mis à part ces différents rappels, aucune donnée nouvelle ne permet la rédaction de recommandations plus précises",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "1614ee820496",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "1f1f958bce2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une durée de la chirurgie supérieure à 3 h",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "fde99a1a0359",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "consommation d'opiacés au long court, des facteurs chirurgicaux et psychiques tels que l'anxiété ou la dépression",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "74b79123d007",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser l'échelle Amsterdam Preoperative Anxiety and Information Scale",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "d754f88faa26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une douleur neuropathique précoce (au moyen d'une échelle DN4",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "538f82d529f7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "6cf838b3335d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une sensibilité de 87 % et une spécificité de 80 %",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "e0b0300f2fba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser une échelle d'autoévaluation à partir de l'âge de 5 ans",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "82bd39fc4d32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modifiée-handicap chez l'enfant et ALGOPLUS chez le vieillard",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "0da591c65926",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "b8dbb63d9572",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "non invasif (saturométrie, capnographie en SSPI) sont probablement suggérés pour les patients à risque",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "59b95e35644c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "3010d2e7804c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucune étude n'a été réalisée en postopératoire chez le patient « non communicant »",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "93b00d5e63f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "G1+, Accord faible. Absence de recommandation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "7081bebd2504",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "c91c4e60a1f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une étude ayant inclus plus de 8000 patients traités par anticoagulants",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u21",
+   "empreinte": "afaf169b497b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'associer un AINS non sélectif",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "9b1686540ce4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'utiliser un inhibiteur des cyclooxygénases de type 2 (ISCOX2) chez les patients ayant des antécédents athéro-thrombotiques",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "3e0885fceaa0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au-delà de 7 jours de traitement. G2–, Accord fort",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "a2dbb934732d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'associer des AINS-NS, à un traitement anticoagulant à dose curative. G1–, Accord faible",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "eecdaab817b8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "79fd01fba059",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5 mg d'oxycodone = 10 mg de sulfate de morphine",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "511c7cc2e5e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préférentiellement par voie orale, en cas de douleurs postopératoires sévères ou insuffisamment calmées",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "8f470d2cf123",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lidocaïne en intraveineux et en continu à la dose d'1 à 2 mg/kg en bolus intraveineux suivi de 1 à 2 mg/kg/h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "dffd698d5775",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'administrer la dexaméthasone IV à la dose de 8 mg",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "2919d2032a6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réduction de 30 % de l'incidence de la douleur chronique à trois mois après la chirurgie (niveau de preuve bas)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u31",
+   "empreinte": "51cf6797770e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients vulnérables à la douleur en particulier patients sous opioïdes au long cours ou présentant une toxicomanie aux opiacés",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "821c0907829a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation systématique des gabapentinoïdes en périopératoire n'est pas recommandée",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u33",
+   "empreinte": "ded6681fffe9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "0ecba263f77c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de mobilisation du cathéter (5 à 25 %) réduit potentiellement le bénéfice analgésique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "8b085f1533e7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "a74d7905392d",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Lidocaïne adrénalinée 7 Mépivacaïne 5 Lévobupivacaïne 3 Ropivacaïne 3",
+   "explication": "La fiche annonce le tableau des doses maximales (première injection, adulte ASA 1) mais ne le reproduit pas : lidocaïne adrénalinée 7, mépivacaïne 5, lévobupivacaïne 3, ropivacaïne 3 mg/kg.",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "f88ae4fff494",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de rester en deçà des doses maximales toxiques d'anesthésiques locaux",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u38",
+   "empreinte": "563d66c69a1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommandé de proposer la mise en place d'un cathéter cicatriciel pour infiltration continue",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "6d192c6124e6",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "analgésique au moyen d'un cathéter intra-articulaire en raison du risque toxique des anesthésiques locaux sur le cartilage",
+   "explication": "La recommandation est conforme, mais la précision « (toxicité directe sur les chondrocytes) » n'est pas dans la source. Ajout mineur.",
+   "page": 8
+  },
+  {
+   "id": "u40",
+   "empreinte": "5531bcf5b8dc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

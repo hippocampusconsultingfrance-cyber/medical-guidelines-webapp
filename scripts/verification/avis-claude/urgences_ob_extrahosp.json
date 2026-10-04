@@ -1,0 +1,1159 @@
+{
+ "cle": "urgences_ob_extrahosp",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "323ef2eb3ccb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6 Hypertension artérielle gravidique, prééclampsie, éclampsie 7 Menace d’accouchement prématuré (MAP)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "dae027814c76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "texte court de synthèse sous forme de recommandations. Le texte court a été coté et commenté par chaque membre du",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "521b4f48fe32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être effectuée par le médecin régulateur du samu, le 15 est le seul numéro d’appel à composer.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "64c355303252",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cours, l’appel doit bénéficier d’un départ réflexe d’une équipe Smur suivi d’une régulation médicale prioritaire.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "7530e2963f8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisé, en cours ou imminent. L’utilisation des scores d’aide à la régulation est recommandée (scores de Malinas, SPIA et",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "1fdfb1712baa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maman est sollicitée. L’urgence vitale maternelle impose le recours à la maternité la plus proche quel que soit le terme.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "74a8418aa5c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’intervalle. Le score de Malinas B indique la durée moyenne du travail dans une population générale. Dans l’accouchement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "05951effe50c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être transportée ceinturée en décubitus latéral, gauche ou droit. Le transport en décubitus dorsal est proscrit.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "479f06b7bf97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 Signes évoquant une urgence gynéco-obstétricale et justifiant l’envoi d’une équipe Smur, en fonction du terme de la grossesse.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "f506a3670926",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "grossesse 4 Hémorragie post-partum",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "56ce0bd4b8da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "évoquer une éclampsie jusqu’à preuve du contraire en prépartum, comme en post-partum. Des signes témoignant",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u12",
+   "empreinte": "cadc934bc16d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le médecin qui a réalisé l’accouchement doit rédiger le certificat de naissance et s’assurer que l’enfant est bien déclaré",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "42e8450a34a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’enfant est né Contraction, douleur abdominale (lombaire), métrorragie, envie de pousser, perte des eaux",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "88e8b1a1d2a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Antécédent de césarienne ou notion de traumatisme majeur, douleur abdominale intense, baisse des mouvements fœtaux actifs",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "6b88ed5a64b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Métrorragie peu abondante de sang noir Douleur abdominale intense et permanente",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "7a753582680c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Métrorragie abondante de sang rouge Avec caillots, contractions",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "7f36f17e6f3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avec caillots, contractions Céphalée, douleur abdominale, prise de poids, nausée, trouble visuel",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "75e018f06ee5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 de la source : 2e/3e trimestre, convulsion → éclampsie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "30bd2d31e7d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Malaise, douleur abdominale, métrorragie Grossesse extra-utérine rompue",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "25c778b1d828",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "apparaître à la vulve. C’est la garantie d’une dilatation cervicale complète et de la survenue d’efforts expulsifs maternels",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "391ddcb203ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour la présentation par le siège chez une primipare et pour des indications fœtales visant à l’accélération de l’expulsion du",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "86382b86c013",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "entre deux pinces. Une fois la tête dégagée, la patiente doit reprendre les efforts expulsifs pour assurer le dégagement de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "6712ae9aab45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compensation volémique rapide. Le clampage précoce du cordon ombilical participe également à la prévention de cette",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "c072403b6ea6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "directe lente à la sortie complète de l’enfant et au plus tard dans la minute qui suit son expulsion. La délivrance doit avoir lieu",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "027c521baf55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’analgésie préhospitalière dans un contexte d’accouchement inopiné hors maternité est possible par l’inhalation de MEOPA. En cas d’épisiotomie, l’infiltration locale du périnée est",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "e1f072fcd3bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit tourner en avant. En cas de relèvement des bras, il faut réaliser une manœuvre de Lovset. En cas de rétention de la tête",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "df522310d170",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une dystocie des épaules est le plus souvent une fausse dystocie, il faut réaliser la manœuvre de Mac Roberts.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "e57a3da60e7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sous oxygène, vers la maternité la plus proche avec un accueil au bloc opératoire obstétrical permettant d’extraire en",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "5b381ad4130a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pendant le transport, en position de Trendelenburg et en décubitus latéral, genoux contre poitrine. Les contractions",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "25997f6594cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors d’une grossesse gémellaire, l’accouchement hors maternité est une situation à haut risque : risque anoxique",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u31",
+   "empreinte": "aae8fbda10e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "couper et vérifier le cordon ombilical (deux artères, une veine), prévenir l’hypothermie, évaluer l’état clinique, prévenir une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u32",
+   "empreinte": "218166654248",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La section stérile du cordon est réalisée entre deux clamps à au moins 10 cm de l’ombilic.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "679310e3d370",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utiliser immédiatement un sac en polyéthylène sans séchage préalable, et toujours couvrir sa tête avec un bonnet. Le peau-àpeau avec la mère, doit être privilégié dans les suites de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "8a7f10d36031",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "SpO2, puis la circulation (fréquence cardiaque) à l’auscultation ou par la palpation du pouls ombilical. Le score d’Apgar n’a pas",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "7f5291dd6c23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nouveau-né est bien conscient et si le terme est supérieur à 34 SA. Dans tous les cas, le sérum glucosé à 30 % est contreindiqué. Si la patiente le souhaite, la mise au sein est",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u36",
+   "empreinte": "11829d72e155",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque l’enfant naît sans signe de vie, sa prise en charge doit suivre les recommandations de l’ILCOR. Une demande de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u37",
+   "empreinte": "23816180231f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’un nouveau-né qui va bien. Si une désobstruction est nécessaire, il faut utiliser un aspirateur à dépression réglable",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u38",
+   "empreinte": "73c46a037307",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’intubation de sauvetage est possible par voie orale sans sédation. Une ventilation au BAVU avec masque reste",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "3ecade2fe2de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un massage cardiaque externe associé à une ventilation efficace doit être pratiqué dès la constatation d’une bradycardie",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "8b0a614830c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l’état civil de la commune de naissance dans les trois jours ouvrables (quatre jours si dimanche ou jour férié). Il est",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "fa733c8909c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un examen gynécologique ou un rapport sexuel. Les autres causes sont beaucoup plus rares : la rupture utérine,",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "e76581cbdd09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute crise convulsive chez une femme enceinte doit faire évoquer une éclampsie jusqu’à preuve du contraire en",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u43",
+   "empreinte": "2c4e0f33192a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le bloc opératoire, l’obstétricien et l’anesthésiste réanimateur doivent être prévenus par la régulation du Samu et des produits sanguins doivent être disponibles dès l’arrivée à la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "cc894f8c5edb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prævia recouvrant hémorragique ou une suspicion de placenta accreta doit être dans la maternité la plus proche, idéalement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u45",
+   "empreinte": "e4f847def7d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucun examen ne doit retarder l’extraction fœtale si le fœtus est vivant.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u46",
+   "empreinte": "675ccedfd089",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diagnostiques permettant de différencier le placenta prævia de l’hématome rétroplacentaire sont résumés dans le Tableau 2.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "6802aa05be9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Rouge, modéré à abondant, avec ou sans caillots HTA gravidique, prééclampsie, traumatisme abdominal",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "b9c510d780cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HTA gravidique, prééclampsie, traumatisme abdominal Brutales, intenses, permanentes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "37b3380d3aba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Absentes ou peu intenses Souple, indolore en dehors des contractions",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "2daad24b207f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Souple, indolore en dehors des contractions Rouge, modéré à abondant, avec ou sans caillots",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u51",
+   "empreinte": "ba848ac6a607",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "première cause de mortalité maternelle en France. Les enquêtes montrent que plus de la moitié des morts maternelles",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u52",
+   "empreinte": "666540976135",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(notamment grossesse gémellaire), cicatrice utérine, hyperthermie pendant le travail, appartenance à une catégorie sociale défavorisée, hématome rétroplacentaire connu ou placenta",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u53",
+   "empreinte": "a15b26769312",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "critères de gravité sont l’hémorragie intarissable, un sang incoagulable ou des signes de chocs. Une perte sanguine",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u54",
+   "empreinte": "3bd48c1a3ecd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour constater le décollement placentaire est un facteur préventif reconnu des HPP, il ne faut jamais tirer fermement sur",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u55",
+   "empreinte": "b196b7827d63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lente, renouvelées et/ou complétées par des débits de perfusion intraveineuse de cinq à dix unités par heure sans",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u56",
+   "empreinte": "c2decfcae1c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une révision utérine, il ne faut pas recourir à l’ocytocine, sauf en cas de transport long avec une hémorragie objectivée.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u57",
+   "empreinte": "fd8649b97299",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compression de la veine cave inférieure par le décubitus latéral à toutes les étapes de la prise en charge jusqu’au bloc",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u58",
+   "empreinte": "07f4008d86af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 7 (658) (image) : algorithme HPP extrahospitalière",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "695ce7e6438e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 7 (658) (image) : algorithme HPP extrahospitalière",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "e998eb8c1973",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 7 (658) (image) : algorithme HPP extrahospitalière",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "80c25459e0d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 7 (658) (image) : algorithme HPP extrahospitalière",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "371dd92d2d65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 7 (658) (image) : algorithme HPP extrahospitalière",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "d818cc3a8461",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 7 (658) (image) : algorithme HPP extrahospitalière",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "8a645176304c",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "p. 6 (658) de la source, image : « La posologie habituelle du sulprostone est de 100 à 500 µg/h »",
+   "explication": "La dose retenue par la fiche (100 à 500 µg/h) est juste. Mais la note affirme que la source « imprime 100 à 500 mg/h » : c'est faux, le PDF porte bien « µg/h » (seule l'extraction texte perd le « µ »). La note cite aussi un nom de fichier interne (fiche_sujet_age_esf.py). À reformuler ou supprimer.",
+   "page": 0
+  },
+  {
+   "id": "u65",
+   "empreinte": "ef336032ac0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être maintenues jusqu’à la prise en charge hospitalière spécialisée. Tous les gestes endo-utérins requièrent une",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u66",
+   "empreinte": "22209634ea81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si l’hémorragie persiste, une lésion au niveau de l’épisiotomie, du périnée et du vagin doit être recherchée ; le méchage ou la compression doivent être réalisés et maintenus jusqu’à la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u67",
+   "empreinte": "d920762742fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "transfusion en urgence vitale immédiate. Elle ne doit pas retarder le transport. Il faut acheminer rapidement la patiente",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u68",
+   "empreinte": "53b5358f9d16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisée avant le transfert. Un état hémodynamique instable malgré une prise en charge bien conduite est une contreindication au transport et impose une chirurgie d’hémostase",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u69",
+   "empreinte": "0c3cf9b03bac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "brutalement plusieurs semaines après l’accouchement. L’examen est pauvre : pas de fièvre, pas de douleur, utérus involué, col utérin fermé, pertes inodores. Un placenta percreta ou",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u70",
+   "empreinte": "c95e606563fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rétroplacentaire. Les causes de mort fœtale sont essentiellement le décollement placentaire, le choc hémorragique maternel (80 % de mort fœtale) et la mort maternelle.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u71",
+   "empreinte": "8e3b12ad1704",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "homologuée à trois points de fixation est indispensable. Son association à des airbags améliore la sécurité des femmes",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u72",
+   "empreinte": "0571b4c9e9be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contractions utérines ou une rupture de la poche des eaux. Il faut penser à la possibilité de grossesse chez toute femme en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u73",
+   "empreinte": "882438441d88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la surface corporelle maternelle est augmentée pendant la grossesse. Il peut être nécessaire d’envisager l’interruption de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u74",
+   "empreinte": "5246b0c79d9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors d’une intoxication oxycarbonée, le retentissement fœtal est retardé, plus long et plus sévère que le retentissement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u75",
+   "empreinte": "9f667d859bcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d’électrisation et si le courant passe entre un membre supérieur et un membre inférieur, la surveillance fœtale doit",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u76",
+   "empreinte": "2b8508c6603e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3 Aide à la décision thérapeutique au cours des traumatismes pendant la grossesse, en fonction de l’âge de la grossesse et de l’état clinique de la mère.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u77",
+   "empreinte": "d89d8054da0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Test de grossesse positif chez une femme en période d’activité génitale ayant",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u78",
+   "empreinte": "fc3491715518",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "car une souffrance fœtale est possible alors que l’état maternel est rassurant. Une vitalité fœtale correcte avec des bruits du",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u79",
+   "empreinte": "76213c68c40c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compression de la veine cave inférieure par le décubitus latéral à toutes les étapes de la prise en charge jusqu’au bloc",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u80",
+   "empreinte": "6338711686ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "même que ne se manifestent des signes cliniques d’hypovolémie, car elle peut perdre entre 30 et 35 % de sa volémie sans présenter de signe clinique.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u81",
+   "empreinte": "f9359e8345d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f un décollement placentaire, fréquent même pour des traumatismes mineurs, et parfois retardé de 24 à 48 heures ;",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u82",
+   "empreinte": "e35e00510acc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’y a pas de contre-indication à l’analgésie chez une femme enceinte. Le paracétamol est l’analgésique de palier 1 utilisable",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u83",
+   "empreinte": "f9dadb008908",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaire en préhospitalier, il faut utiliser des concentrés érythrocytaires du groupe O rhésus négatif si possible Kell",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u84",
+   "empreinte": "d60efedcb9cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à estomac plein. Il faut toujours utiliser une technique d’induction anesthésique à séquence rapide avec une manœuvre de Sellick. La voie nasotrachéale doit être évitée. Il faut",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u85",
+   "empreinte": "f8096f632961",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000e retentissement fœtal ; \u000f éclampsie : crise convulsive tonicoclonique dans un contexte",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u86",
+   "empreinte": "84129dcb6db7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "position semi-assise. L’absence d’œdème localisé à des régions non déclives ou de prise de poids brutal n’élimine pas le",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u87",
+   "empreinte": "83f5656b4b0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f des signes d’éclampsie imminente : céphalées rebelles, troubles visuels, ROT polycinétiques ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u88",
+   "empreinte": "a905a3acd836",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’envoi rapide d’une équipe médicale par le médecin régulateur est recommandé en cas de suspicion d’une forme",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u89",
+   "empreinte": "3f5a5d069429",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "poumon, éclampsie, hématome sous-capsulaire du foie. Elles imposent des mesures thérapeutiques sur site, avant un",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u90",
+   "empreinte": "183e2af2e362",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mécanique, sont recommandés pendant toute la durée de la prise en charge préhospitalière.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u91",
+   "empreinte": "b4387030bd44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "circulation fœtale. L’administration par titration est recommandée. Il ne faut pas faire descendre la pression artérielle moyenne en dessous de 100 mmHg ou la pression artérielle",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u92",
+   "empreinte": "9bdd0f76e513",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u93",
+   "empreinte": "b7d97009bb77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u94",
+   "empreinte": "745761c8e7cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u95",
+   "empreinte": "850c9f81958c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u96",
+   "empreinte": "d81988786081",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u97",
+   "empreinte": "301c5aeb0c96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u98",
+   "empreinte": "e8ceb80cd902",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u99",
+   "empreinte": "aebdf21d3aca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u100",
+   "empreinte": "67c94a7b0d81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 11 (662) (image) : traitement de l'HTA de la grossesse",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u101",
+   "empreinte": "23b3d0f2094c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Associée au décubitus latéral, l’expansion volémique est possible en cas d’hypotension significative à l’instauration du",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u102",
+   "empreinte": "b6f0d6e7a139",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une détresse respiratoire est possible chez une patiente prééclamptique. Elle peut nécessiter une intubation. Dans ce",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u103",
+   "empreinte": "2c65e9668787",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "efficaces que le sulfate de magnésium dans le traitement de l’éclampsie, les benzodiazépines injectables et la phénytoïne",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u104",
+   "empreinte": "de511eb2fdc3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de prééclampsie sévère, le sulfate de magnésium en prévention primaire de l’éclampsie est indiqué devant l’apparition de troubles neurologiques persistants (céphalées, troubles",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u105",
+   "empreinte": "cb8e152c8086",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "FR < 10 min ou 12/min, troubles de conscience), il faut envisager l’arrêt de la perfusion et l’antagonisation par 1 g",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u106",
+   "empreinte": "0cef60193afa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pendant la grossesse. La morbi-mortalité néonatale est étroitement liée à l’âge gestationnel.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u107",
+   "empreinte": "c49ef4c31c1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "grossesse multiple, infection maternelle, métrorragies, notion de placenta prævia, de malformation utérine, de béance",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u108",
+   "empreinte": "c73db0ce925a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décubitus latéral en transport sanitaire vers la maternité la plus proche, de type adapté à l’âge gestationnel et selon",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u109",
+   "empreinte": "e7ce86321006",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La tocolyse peut être exceptionnellement initiée en préhospitalier en concertation avec l’équipe obstétricale",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u110",
+   "empreinte": "a5080eb78394",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une MAP, le médecin régulateur doit rechercher les contreindications essentiellement représentées par le risque d’accouchement pendant le transport et la souffrance fœtale aiguë patente. Il doit également rechercher les non-indications",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u111",
+   "empreinte": "a4df52543eb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant tout transport, le médecin régulateur doit s’assurer de la réalisation de la première cure de corticothérapie pour la",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u112",
+   "empreinte": "6e53ce12ac4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "secondaires cardiovasculaires potentiellement graves : hypotension artérielle, œdème aigu du poumon. Les bêtamimétiques entraînent des effets indésirables hémodynamiques fréquents",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u113",
+   "empreinte": "bce6620838c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systématiquement monitorées avec recueil et transmission d’un rapport de surveillance écrit à joindre au dossier médical.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u114",
+   "empreinte": "59d80f8675e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 Choix du vecteur selon l’état de la patiente (circulaire no DHOS 2006-273 du",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u115",
+   "empreinte": "7dc70c027cc7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "MAP sans tocolyse IV, y compris les gémellaires MAP d’une grossesse simple avec tocolyse IV par antagoniste de l’ocytocine",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u116",
+   "empreinte": "b25b929768e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "MAP d’une grossesse simple avec tocolyse IV par antagoniste de l’ocytocine Classe 2 : transport infirmier interhospitalier (T2IH)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u117",
+   "empreinte": "9710ea232314",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "MAP avec dilatation du col \u0015 4 cm et terme < 30 SA : à discuter avec le samu en conférence téléphonique avec demandeur et receveur",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u118",
+   "empreinte": "46cd5d4be3e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la périnatalité : samu, obstétriciens, néonatologues, anesthésistes réanimateurs, sages-femmes. Elle permet la",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u119",
+   "empreinte": "83f068e88971",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de transport maternel pour une pathologie non obstétricale, il est recommandé qu’une surveillance obstétricale adaptée puisse être réalisée dans la structure d’accueil.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u120",
+   "empreinte": "18297ced3047",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "significatives qui imposent une extraction sur place en urgence avec, si possible, un engagement anticipé du Smur",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u121",
+   "empreinte": "f1ec8c27d969",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000e instabilité hémodynamique, \u000e placenta prævia avec des métrorragies actives.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u122",
+   "empreinte": "6d5864fac4fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’indication de TIU avant 24 SA. Au-delà de 32 SA, le terme n’est pas en lui-même une justification à un transfert vers une",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u123",
+   "empreinte": "fd5efccb9e67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À partir de 32 SA, une dilatation du col à 4 cm ou plus est une contre-indication au transfert. En deçà de 32 SA, l’opportunité",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u124",
+   "empreinte": "77fec7a7d33c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "très prématuré entre 24 SA et 31 SA + six jours ou poids fœtal estimé inférieur à 1500 grammes, grossesse triple.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u125",
+   "empreinte": "beb79af9d187",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "auprès de la patiente) et le médecin receveur puis, si le transport est médicalisé, avec le médecin régulateur du samu et",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u126",
+   "empreinte": "081f6b3512d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le dossier obstétrical doit accompagner la parturiente. Une traçabilité écrite de la surveillance, des évènements intercurrents et des traitements pendant le transport doit toujours",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u127",
+   "empreinte": "0608b241a0b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sages-femmes, les néonatologues et les pédiatres, les anesthésistes réanimateurs et les médecins des Samu-Smur. Des protocoles doivent être établis au sein des réseaux pour la",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u128",
+   "empreinte": "6560cef2fb2c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

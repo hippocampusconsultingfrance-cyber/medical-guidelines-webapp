@@ -80,6 +80,16 @@ export default function ConfidentialitePage() {
         déposé n&apos;est consulté que par un administrateur et il est supprimé dès la décision prise ; seuls
         le statut déclaré, l&apos;année universitaire et la décision sont conservés.
       </p>
+      <p className="mt-2">
+        Candidature de médecin relecteur (page{" "}
+        <a href="/relecteurs" className="underline">
+          Médecins relecteurs
+        </a>
+        , sans compte) : nom, prénom, numéro de téléphone, adresse e-mail, profession, spécialité dont vous
+        souhaitez corriger les fiches et message facultatif. Ces données ne servent qu&apos;à vous recontacter au
+        sujet de cette proposition ; seul un administrateur y a accès. Base légale : votre consentement (article
+        6.1.a du RGPD), retirable à tout moment en écrivant à contact@medical-guidelines.net.
+      </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
         3. Finalités et bases légales
@@ -126,6 +136,10 @@ export default function ConfidentialitePage() {
         contraire. Les
         factures et les pièces relatives aux paiements sont conservées 10 ans
         (obligation comptable, article L123-22 du code de commerce).
+      </p>
+      <p className="mt-2">
+        Les candidatures de médecin relecteur sont effacées 6 mois après un refus, et au plus tard 3 ans après
+        leur envoi.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-slate-900">

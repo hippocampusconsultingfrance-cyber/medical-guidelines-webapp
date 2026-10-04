@@ -62,7 +62,8 @@ const sansBalises = (h: unknown) =>
   typeof h === "string"
     ? h
         .replace(/<br\s*\/?>/gi, " ")
-        .replace(/<[^>]+>/g, "")
+        // Seules les vraies balises : « <21 si >70 ans » est du texte.
+        .replace(/<\/?[a-z][^>]*>/gi, "")
         .replace(/&nbsp;/g, " ")
         .replace(/&amp;/g, "&")
         .replace(/&lt;/g, "<")

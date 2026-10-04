@@ -1,0 +1,448 @@
+{
+ "cle": "infections_intra_abdominales_2026",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "8b2550cae5fa",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "cb9a3249b475",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procéder le plus rapidement possible à un contrôle de la source infectieuse par voie chirurgicale, associé à un lavage",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u3",
+   "empreinte": "4dc2d90d21b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser une chirurgie de type « Damage Control » ou « Laparotomie écourtée »",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u4",
+   "empreinte": "425bf229c8b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de discuter la voie d'abord (coelioscopique ou laparotomie) entre le chirurgien et l'anesthésiste-réanimateur",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u5",
+   "empreinte": "4e2d5a407732",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intention à un traitement mini-invasif (endoscopie interventionnelle ou drainage percutané guidé par l'imagerie), notamment en cas de fistule secondaire",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u6",
+   "empreinte": "9255718dbfbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de ne pas réaliser un lavage péritonéal exclusif sans résection",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u7",
+   "empreinte": "437aa03e146b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser l'association d'une céphalosporine de 3ème génération (céfotaxime, ceftriaxone) au métronidazole",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u8",
+   "empreinte": "ffcb52c95da9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de prendre en compte les entérobactéries productrices de BLSE dans le traitement probabiliste",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u9",
+   "empreinte": "e0d9f4fca049",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "carbapénèmes uniquement en cas d'antécédent documenté de colonisation ou d'infection à entérobactéries productrices de BLSE dans les 6 mois",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u10",
+   "empreinte": "cf6fd56cba56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque de portage d'entérobactérie BLSE, il est recommandé d'initier un traitement par pipéracilline-tazobactam",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u11",
+   "empreinte": "87c056f00eb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'initier un traitement par carbapénème selon la prévalence locale des infections à BLSE",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u12",
+   "empreinte": "6d5369a38798",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser l'association céfépime et métronidazole pour réduire la morbi-mortalité. GRADE 1",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u13",
+   "empreinte": "464dfd80e523",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorage plasmatique du céfépime et selon l'écologie locale, les experts suggèrent d'utiliser l'association pipéracilline-tazobactam",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u14",
+   "empreinte": "f53f81db357b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au métronidazole (non active sur les entérocoques), les experts suggèrent d'ajouter une molécule active sur les entérocoques",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u15",
+   "empreinte": "e95d062ec76a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et de présence de facteur de risque d'entérocoque ampicilline-résistant",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u16",
+   "empreinte": "e211e616673a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de sepsis ou de choc septique, la présence d'un seul critère suffit à justifier le recours à un carbapénème",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u17",
+   "empreinte": "af3024956109",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moxifloxacine* (*après contrôle du QT corrigé)",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u18",
+   "empreinte": "1849746f589d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(3) tigécycline + ciprofloxacine ou éravacycline + ciprofloxacine",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u19",
+   "empreinte": "33ef1d99def1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "péritonéal est positif à levures, ou si au moins 3 des critères suivants sont retrouvés",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u20",
+   "empreinte": "185fa058054c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "08a3df9a4a2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Voyage en zone d'endémie dans les 3 mois",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u22",
+   "empreinte": "075c3bcfb1fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Récidive précoce (< 15 jours) d'une infection traitée par pipéracilline-tazobactam pendant au moins 3 jours",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u23",
+   "empreinte": "73492c5d18ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Péritonite d'origine suspectée hépato-biliaire",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u24",
+   "empreinte": "4f0269b07772",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une admission systématique en soins critiques est recommandée pour réduire la morbimortalité. GRADE 1",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u25",
+   "empreinte": "3388bbac2959",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Âge >60 ans, comorbidités, péritonite généralisée",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u26",
+   "empreinte": "eda1d62e487e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "CPIRO, le WSES Sepsis Severity Score ou le PIPAS Severity Score",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u27",
+   "empreinte": "ca61371ab3e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dosage systématique de la procalcitonine et de la CRP",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u28",
+   "empreinte": "660f422478e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de ne pas réaliser une tomodensitométrie abdominale systématique au cours des 5 premiers jours postopératoires",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u29",
+   "empreinte": "b50cfd3fbbbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas recommandé de prescrire une antibiothérapie postopératoire au-delà de l'antibioprophylaxie peropératoire (dose unique)",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u30",
+   "empreinte": "df7f0fd087ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'administrer une antibiothérapie probabiliste postopératoire de courte durée (2 jours)",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u31",
+   "empreinte": "8c293a1b6196",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de limiter la durée d'antibiothérapie à 4 jours pour réduire la morbi-mortalité, y compris en cas de sepsis initial",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u32",
+   "empreinte": "aa3559838e65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de limiter la durée d'antibiothérapie à 4 jours pour réduire la durée d'exposition aux antibiotiques",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u33",
+   "empreinte": "036dff5b1473",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de limiter la durée d'antibiothérapie à 8 jours pour réduire la durée d'exposition aux antibiotiques",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u34",
+   "empreinte": "2841522b9a26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limiter la durée de traitement antifongique à 8 jours afin de réduire l'exposition aux antifongiques",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u35",
+   "empreinte": "15e950f709fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts ne sont pas en mesure d'émettre une recommandation sur la durée de traitement",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u36",
+   "empreinte": "873432d81d11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dosage sanguin de B-D-glucane soit réalisé à J0 et à J3",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u37",
+   "empreinte": "fb7e3e380fc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de désescalader l'antibiothérapie après réception des résultats bactériologiques",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u38",
+   "empreinte": "74ffaeac1510",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "durée de traitement après la désescalade > 24 h",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u39",
+   "empreinte": "8970f10c97cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser un contrôle de la source en urgence pour réduire la morbi-mortalité. GRADE 2",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u40",
+   "empreinte": "6069a3cdd4cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'une approche mini-invasive, percutanée et/ou endoscopique soit envisagée",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u41",
+   "empreinte": "5ece9f88869e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A la phase précoce (≤72h), en cas de fièvre, ou d'un iléus, ou de la persistance de défaillance d'organe",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u42",
+   "empreinte": "0e356edab7d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De ne pas réaliser de dosage de CRP ou de PCT",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u43",
+   "empreinte": "1ed9f69403b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "scanner thoraco-abdomino-pelvien avec injection de produit de contraste",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u44",
+   "empreinte": "510caeba7ec3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(entérobactéries multirésistantes, dont les BLSE, P. aeruginosa, E. faecium)",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u45",
+   "empreinte": "4e3079f25e87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou les hémocultures seules (si prélèvements per-procéduraux non contributifs)",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u46",
+   "empreinte": "23fcdb804647",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en suivant pour les bêta-lactamines les recommandations SFAR /SFPT de 2018",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u47",
+   "empreinte": "59a587cf529d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une durée supérieure à 8 jours nécessite une discussion multidisciplinaire",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u48",
+   "empreinte": "63c1588246d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antifongique probabiliste systématiquement, en privilégiant les échinocandines",
+   "explication": "",
+   "page": 61
+  },
+  {
+   "id": "u49",
+   "empreinte": "d9ab093507f9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

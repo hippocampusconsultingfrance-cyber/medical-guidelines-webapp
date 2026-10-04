@@ -1,0 +1,457 @@
+{
+ "cle": "blocs_perimedullaires_neuro_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "bba78bd85d42",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "1a7ee0fe9599",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le migraineux, il n'y a pas de contre-indication à réaliser une APM (grade C).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u3",
+   "empreinte": "e1260b50a046",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut s'assurer de l'absence de lésions tumorales ou d'hypertension intracrânienne chez les patients céphalalgiques dont les signes sont récents ou intenses (grade B).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u4",
+   "empreinte": "657ac519119b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La présence d'un anévrisme intracrânien sans hypertension intracrânienne ne représente pas une contre-indication formelle à l'APM (grade C).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u5",
+   "empreinte": "ed226ba124e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM n'est pas contre-indiquée chez l'épileptique traité et équilibré (grade B).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u6",
+   "empreinte": "47d542887554",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un surdosage des AL doit être recherché chez les patients qui convulsent après une injection d'AL (grade C).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u7",
+   "empreinte": "4575d91b884c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les maladies dégénératives (maladie d'Alzheimer, maladie de Parkinson et affections apparentées, ataxie de Friedreich, chorées) ne sont pas des contre-indications",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u8",
+   "empreinte": "fd87d1906a91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut s'assurer que l'état psychique du patient, que les mouvements anormaux et les tremblements permettront de réaliser la chirurgie sous ce type d'anesthésie (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u9",
+   "empreinte": "ed27111e33b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez ces patients, il faut éviter l'injection d'atropine ou de scopolamine (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u10",
+   "empreinte": "3d330c6babad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une dysautonomie est fréquente dans la maladie de Parkinson. La réponse des patients aux vasoconstricteurs est imprévisible (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u11",
+   "empreinte": "d7155cf4ca4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM sans morphiniques peut être indiquée chez les patients porteurs d'un syndrome d'apnée du sommeil.",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u12",
+   "empreinte": "1db82af11b53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM est réalisable chez les patients ayant fait un accident vasculaire cérébral (grade C).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u13",
+   "empreinte": "57ae285e65d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les patients ayant les formes les plus graves opérées dès la naissance ont souvent une moelle « fixée » au niveau de la cicatrice méningée (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u14",
+   "empreinte": "74c00879b56b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La spina bifida n'est pas une contre-indication à la pratique de l'APM (grade B).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u15",
+   "empreinte": "9a09f30dce61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients porteurs de cette maladie (sans précision sur le type d'atteinte) ont déjà reçu une APM sans décompenser leur état neurologique (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u16",
+   "empreinte": "a3b819bb5729",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La recommandation d'indiquer une APM repose sur le risque de décompenser la pathologie neurologique selon le type d'atteinte neurologique (consensus professionnel).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u17",
+   "empreinte": "7680188b8fe7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il existe un risque de blessure des racines par les aiguilles de ponction (neuropathie tomaculaire, maladie de Dejerine-Sottas) [grade C].",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u18",
+   "empreinte": "8bcadf0d1c36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut cependant prévenir les variations tensionnelles par un remplissage vasculaire et utiliser les amines vasopressives avec précaution (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u19",
+   "empreinte": "0ce7cd33ed58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les APM ne sont pas contre-indiquées chez les patients atteints de tumeur du système nerveux central sans hypertension intracrânienne associée (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u20",
+   "empreinte": "4af326bd5246",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'éliminer la présence de ces lésions au site de ponction de l'APM (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u21",
+   "empreinte": "406008bd2d22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas de contre-indication à la pratique de l'APM chez les infirmes moteurs cérébraux, à condition que l'état général et que le comportement du patient permette",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u22",
+   "empreinte": "fb860856af9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La crainte d'une aggravation de la symptomatologie d'une hernie discale stabilisée n'est pas justifiée.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u23",
+   "empreinte": "bf4d32e52fdf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En phase aiguë d'une hernie discale paralysante, il faut éviter l'usage des anesthésiques locaux sur les racines fragilisées (consensus professionnel).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u24",
+   "empreinte": "661999fad44b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La rachianesthésie est souvent plus facile que l'APD (grade C).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u25",
+   "empreinte": "3dfc621a2a80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il existe un risque de blessure des racines par les aiguilles de ponction (neuropathie tomaculaire, maladie de Dejerine-Sottas) [grade C].",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u26",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "a6d8af5eb350",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cependant, le risque de brèche durale est élevé lors de l'anesthésie péridurale, et l'injection intrathécale minimise les anomalies de diffusion",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u28",
+   "empreinte": "88380ce92c63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cela évite la réaction sympathique associée à la stimulation chirurgicale qui dans son expression la plus grave peut conduire à l'arrêt cardiaque.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u29",
+   "empreinte": "cdfaa8934209",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les pathologies démyélinisantes ne sont pas des contreindications à la pratique d'une APM en dehors des poussées aiguës et des phases de récupération",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u30",
+   "empreinte": "4af05e6c6b94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut préférer l'APD à la rachianesthésie, les doses d'AL au contact des fibres nerveuses étant moins importantes (grade D).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u31",
+   "empreinte": "15217e1ed523",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(SEP) ou de syndrome de Guillain-Barré en dehors d'une poussée (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u32",
+   "empreinte": "5047c1fd0976",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une recrudescence des poussées de SEP est observée en post-partum, car l'expression de la maladie est ralentie pendant la grossesse (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u33",
+   "empreinte": "6c75190bd30e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le diabète, l'insuffisance rénale, l'alcoolisme ne sont pas des contre-indications à la pratique d'une anesthésie périmédullaire (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u34",
+   "empreinte": "337484ed171a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut être attentif aux variations de pression artérielle du fait de la dysautonomie fréquemment associée aux maladies métaboliques",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u35",
+   "empreinte": "d5dc5412aed7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Certains auteurs ont proposé de diminuer les doses d'AL (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u36",
+   "empreinte": "0d8cc4246fe3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM n'est pas contre-indiquée chez les patients porphyriques (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u37",
+   "empreinte": "dc110e658578",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un antécédent de neuropathie après injection d'un anesthésique local contre-indique l'injection ultérieure d'un AL",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u38",
+   "empreinte": "e3eef1eb606d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les neuropathies après infections virales ne sont pas des contre-indications à la pratique des anesthésies périmédullaires (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u39",
+   "empreinte": "5f5518407828",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces anesthésies sont réalisables et ne modifient pas l'évolution d'une infection par le virus VIH (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u40",
+   "empreinte": "9896676ac95c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la charge virale est élevée le blood-patch est contre-indiqué et il faut utiliser une autre solution (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u41",
+   "empreinte": "4d4926024b17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de pratiquer une APM quand l'atteinte postpolyomyélitique du motoneurone n'est pas stabilisée (grade C).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u42",
+   "empreinte": "e372eb3eeff8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut préférer l'APD à la rachianesthésie, les doses d'AL au contact des fibres nerveuses étant moins importantes (grade D).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u43",
+   "empreinte": "8fd182ab0baf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM est indiquée chez les myasthéniques (grade B).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u44",
+   "empreinte": "a465599ad1cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ont souvent une atteinte cardiaque et sont susceptibles de faire une crise d'hyperthermie maligne avec l'emploi des curares (grade B).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u45",
+   "empreinte": "8d44b4a88c78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est donc préférable de réaliser des injections intrathécales que des injections péridurales (consensus professionnel).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u46",
+   "empreinte": "d1a2a2c3edaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À la différence des anesthésies périnerveuses, les APM ne sont pas contre-indiquées chez les patients atteints de myopathies mitochondriales (grade C).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u47",
+   "empreinte": "b9038e0f770b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne sont pas contre-indiquées chez les patients atteints de canalopathie musculaire (dont la paralysie périodique) (grade C).",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u48",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "c1424e030d99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut éviter les doses élevées d'AL du fait de leurs effets systémiques. Il est donc préférable de réaliser une rachianesthésie plutôt qu'une APD.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u50",
+   "empreinte": "126f86b6186e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

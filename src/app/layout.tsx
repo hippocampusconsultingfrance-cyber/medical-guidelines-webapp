@@ -48,6 +48,12 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
               En savoir plus
             </a>
           </p>
+          <p className="mb-2 text-sm text-slate-700">
+            <b>Médecin&nbsp;?</b> Participez à la correction des fiches : accès gratuit au site et 5 accès offerts aux personnes de votre choix.{" "}
+            <a href="/relecteurs" className="font-semibold text-[#1A74A6] hover:underline">
+              Devenir relecteur
+            </a>
+          </p>
           <a href="/mentions-legales" className="hover:underline">
             Mentions légales
           </a>

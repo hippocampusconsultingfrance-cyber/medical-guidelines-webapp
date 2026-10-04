@@ -1,0 +1,511 @@
+{
+ "cle": "sepsis_hemodynamique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "f140da65edcb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Comme ce consensus se limite à la prise en charge circulatoire du sepsis grave",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "fbda8b6ad4a1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "ec51efaae933",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Temps de recoloration capillaire > 2 sec (A), > 5 sec",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "55b250f9bb92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Réponse inflammatoire systémique + infection présumée ou identifiée",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "00ff2f501f36",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "rénale (Créatininémie > 176 mmol/l (A), > 2X normale ou oligurie (E)",
+   "explication": "La source imprime « > 176 mmol/l » et « > 78 mmol/l ». La fiche les remplace par des µmol/l (correction probable d'une coquille, signalée en u8). Le reste de la ligne est conforme (thrombopénie < 10⁵ = 100 000, 8×10⁴ = 80 000). Cette correction éditoriale est à valider par le médecin relecteur.",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "8e57cec3902c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sepsis grave + hypotension artérielle (malgré le remplissage vasculaire : 20-40 ml/kg (A), > 40 ml/kg (E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "f9c3668d5d1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les valeurs propres à la pédiatrie sont en italique). (A) = adulte, (E) = enfant",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "bfb60503f504",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "6770d70136e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rénale et de la lactatémie au cours du traitement sont les seuls paramètres de surveillance de la microcirculation disponibles (grade E)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u10",
+   "empreinte": "ed64b955ce94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le remplissage vasculaire précoce est recommandé (grade B)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u11",
+   "empreinte": "c8f7574fafab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'existe pas de thérapeutique spécifique de la dysfonction vasculaire (grade B)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u12",
+   "empreinte": "5371e604dabd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Seuls 10 à 20 % des patients adultes évoluent vers la défaillance cardiaque",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u13",
+   "empreinte": "6286ffc73843",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "associée à une antibiothérapie très précoce, ces thérapeutiques sont recommandées (grade D)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u14",
+   "empreinte": "b1fb86f5fccf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutes les propriétés cardiaques, à l'exception du débit sanguin coronaire, sont potentiellement modifiées par le sepsis",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u15",
+   "empreinte": "4328d07d5faf",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "fd9d94376f69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'objectif recommandé est une PAM > 65 mmHg (grade C)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u17",
+   "empreinte": "b95864ed9d89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le recours aux agents vasopresseurs doit être immédiat quelle que soit la volémie (grade E)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u18",
+   "empreinte": "85d421d5c7ba",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "Si le remplissage vasculaire doit être poursuivi, il doit s'effectuer en utilisant des indices prédictifs dynamiques de l'état de réserve de précharge (grade D)",
+   "explication": "Cet énoncé porte un grade D dans la source. La fiche le présente comme une phrase de liaison non gradée, alors qu'il compte parmi les 2 énoncés de grade D.",
+   "page": 1
+  },
+  {
+   "id": "u19",
+   "empreinte": "eb34b743743f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "6b140e5f690f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Compte tenu d'un coût bien moindre et de leur innocuité, on peut recommander les cristalloïdes isotoniques",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u21",
+   "empreinte": "95df931ba715",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "500 ml de cristalloïdes isotoniques en 15 min (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u22",
+   "empreinte": "1dba8aafe2ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PAM > à 65 mmHg (grade B), en l'absence de signes d'œdème pulmonaire",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "c933c6529e0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le recours aux amines vasopressives est indiqué (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u24",
+   "empreinte": "2d9da60d3627",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "d44e0cf1813d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'objectif est d'obtenir un taux d'hémoglobine de 8 à 9 g/dl (grade C)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u26",
+   "empreinte": "474a38eeacf2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des taux différents peuvent être justifiés par une intolérance clinique et/ou la mesure de la SvcO2 (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u27",
+   "empreinte": "854d945f669a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "65f433bf84b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jusqu'à 60 ml/kg est recommandé car il réduit la mortalité (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u29",
+   "empreinte": "0fbba1d455ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les cristalloïdes sont préférés (grade B)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u30",
+   "empreinte": "6686dc7cf9f0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "d10df7497cee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si le remplissage vasculaire ne permet pas d'obtenir une PAM > 65 mmHg (grade B)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u32",
+   "empreinte": "231d18ea6062",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limiter la survenue des défaillances viscérales (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u33",
+   "empreinte": "1bb5c64ac42e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "elle doit être utilisée en première intention (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u34",
+   "empreinte": "cabb9f1b52fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La vasopressine (0,01 à 0,04 U/min) ou la terlipressine (bolus de 1 à 2 mg)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u35",
+   "empreinte": "7d6c54467c22",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "1d9bac84ff0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'adjonction systématique des inotropes n'est pas recommandée (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u37",
+   "empreinte": "e388fa542a14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la SvcO2 inférieure à 70 % (grade B)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u38",
+   "empreinte": "468d3a9d1726",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la baisse de la lactatémie et la surveillance des paramètres évaluant la fonction myocardique (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u39",
+   "empreinte": "d39ce5aab0b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'adrénaline apparaît aussi efficace mais ses effets métaboliques peuvent restreindre son utilisation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u40",
+   "empreinte": "d1a9b8c6ae79",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "1830885c9375",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La noradrénaline peut être recommandée en utilisation de première intention (grade E)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u42",
+   "empreinte": "8d8bf47d6dc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les inhibiteurs de la phosphodiestérase de type III peuvent être envisagés",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u43",
+   "empreinte": "4982c84654f0",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "de 250 µg d'ACTH (augmentation de la cortisolémie 9 µg/dl) (grade B)",
+   "explication": "La source ne porte aucun signe devant « 9 µg/dl » (symbole manquant). La fiche ajoute « < 9 µg/dl », ce qui est vraisemblable mais n'est pas lisible dans le document. À confirmer par le relecteur.",
+   "page": 3
+  },
+  {
+   "id": "u44",
+   "empreinte": "e4b5667c4a17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "200 à 300 mg/j, est recommandé pendant au moins cinq jours",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u45",
+   "empreinte": "631d8a1e11a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La protéine C activée, recombinée d'origine humaine ne doit pas être utilisée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u46",
+   "empreinte": "ad445cc57d9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation de l'hémofiltration n'est pas recommandée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u47",
+   "empreinte": "5ad5008cf953",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les autres techniques d'épuration des médiateurs ne sont pas recommandées (grade E)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u48",
+   "empreinte": "52129b23b7f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sélectifs de la NO synthase inductible car ils augmentent la mortalité (grade B)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u49",
+   "empreinte": "90106275e273",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de 1 mg/kg toutes les six heures (grade E)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u50",
+   "empreinte": "0905fc940390",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "f71e74c4942e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas détresse vitale (hypotension artérielle menaçante, insuffisance respiratoire aiguë, coma…), le patient est directement admis en réanimation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u52",
+   "empreinte": "56a4fbef6a17",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "4fba66526e69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cristalloïdes : 500 ml/15' répétés qsp PAM > 65 mmHg ou cf. âge",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u54",
+   "empreinte": "60cfae0b646e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Transfusion qsp Hb > 8 g/dl",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u55",
+   "empreinte": "10f8a0df6910",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arrêt corticoïdes si patient répondeur",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u56",
+   "empreinte": "67e56aab3495",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

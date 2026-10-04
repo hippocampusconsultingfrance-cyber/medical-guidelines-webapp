@@ -1,0 +1,448 @@
+{
+ "cle": "alr_douleur_chronique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "bf4051cc4862",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tandis qu'il n'existe aucune recommandation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "d612b0bc1d67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "selon les questions choisies. La méthodologie GRADE1 a été",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "1da1eb449720",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "1359edbf8577",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitements antalgiques systémiques et en l'absence d'alternative thérapeutique, par une administration continue intrathécale ou péridurale d'anesthésique local. Grade 2+.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "cfbfd8c42ba2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser la kétamine et le midazolam par voie périmédullaire, en raison de l'absence de données toxicologiques. Avis d'experts.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "5b827d8e127d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation sur l'utilisation de la clonidine par voie périmédullaire. Avis d'experts.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "b00e94a82019",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser la morphine en administration intrathécale chez des patients douloureux chroniques en cas d'échec des thérapies conventionnelles après sélection rigoureuse. Grade 1+.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "98e04e184806",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas réaliser une injection péridurale de corticoïdes pour douleur post-zostérienne. Grade 1–.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "62d738835ec5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "corticoïdes en cas de radiculalgie résistante au traitement médical et physiothérapique bien conduit, pour obtenir un soulagement à court terme.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "8f4a27737c61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser le ziconotide par voie intrathécale en première intention dans les douleurs chroniques réfractaires notamment si la composante neuropathique est prédominante.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "a1ff355dd420",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "61c6afe70314",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "blocs sympathiques par administration répétée d'anesthésiques locaux dans un contexte de douleur chronique non SDRC, chez l'adulte et chez l'enfant. Avis d'experts.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "1e5ec37bf177",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "blocs somatiques par administration intermittente d'anesthésiques locaux dans un contexte de douleur chronique non SDRC, chez l'adulte et l'enfant.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "ced83e611b0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les corticoïdes ou les morphiniques ne sont pas recommandés lors de la pratique d'un bloc nerveux périphérique (somatique ou sympathique) en douleur chronique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "194b2da9bc69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'utiliser une injection locale de corticoïdes en cas de canal carpien symptomatique. Grade 2+.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "8f0d5303ec91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé un maximum de 4 blocs itératifs réalisés avec des anesthésiques locaux.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u17",
+   "empreinte": "a3ccca129e37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation sur l'utilisation des blocs du grand nerf occipital dans la céphalée de tension.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "146f0a8d56cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser un blood-patch (injection péridurale de sang autologue) en cas de céphalées secondaires à une hypotension intracrânienne (primaire ou secondaire) ne répondant pas au traitement médical. Grade 2+.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "801842c48e41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de faire un bloc du nerf grand occipital en cas de céphalées secondaires à une hypotension intracrânienne iatrogène ne répondant pas à l'algorithme proposé",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "1a8bbf34a71f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser un bloc du nerf grand occipital (ou nerf d'Arnold) en cas de céphalées cervicogéniques. Grade 2+.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "265f03f8541c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser un bloc du nerf grand occipital (ou nerf d'Arnold) en cas d'algie vasculaire de la face ne répondant pas aux traitements spécifiques bien conduits.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "0e9a1b276b14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans le cadre de l'algie vasculaire de la face (épisodique ou chronique) rebelle en échec des traitements validés (oxygénothérapie, sumatriptan, vérapamil. . .) ou mal tolérés.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "5b276a11921e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser un bloc d'une ou plusieurs branches terminales du nerf trijumeau (V1, V2, V3) dans le cadre de la névralgie de la face rebelle aux traitements médicamenteux",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "a3d9e5fd86ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pratiquer à titre diagnostique, des infiltrations avec des anesthésiques locaux sur le système somatique et sympathique pelvien, à l'aide d'une technique de repérage adaptée et fiable, associée à une prise en charge globale. Grade 2+.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u25",
+   "empreinte": "aab98d454738",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation sur l'utilisation des infiltrations à visée thérapeutique sur le système nerveux somatique pelvien ainsi que sur le système sympathique pelvien. Avis d'experts.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u26",
+   "empreinte": "59f72bc08d90",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "1cf54756ece8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de répéter un bloc sympathique avec des anesthésiques locaux dans le traitement d'un SDRC, si le bénéfice analgésique et fonctionnel a été testé et qu'il persiste en cours de traitement.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "adab91bc62a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de pratiquer un bloc locorégional intraveineux (ALRIV) quel que soit l'agent médicamenteux, pour du traitement d'un SDRC. Grade 2–.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "a0227b0f7cdd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "continue par cathéter périnerveux pour le traitement des syndromes douloureux régionaux complexes en cas d'échec des autres traitements. Grade 2+.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "e7c6fc7ee356",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "complexe avec une ALR centrale ou périphérique chez les enfants en cas de résistance aux traitements systémiques conventionnels bien menés. Grade 2+.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u31",
+   "empreinte": "7621cfe9b312",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de pratiquer des blocs itératifs du ganglion stellaire pour le traitement des SDRC du membre supérieur chez les patients répondeurs.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u32",
+   "empreinte": "364b873d5c8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de pratiquer des blocs sensitivo-moteurs continus par cathéters pour faciliter la rééducation fonctionnelle",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u33",
+   "empreinte": "89fbe6c4b426",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut toujours associer aux blocs sympathiques et/ou sensitivo-moteurs des traitements adaptés intensifs de rééducation fonctionnelle lors du traitement des CRPS des membres. Grade 2+.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "cfa8f4c325fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de mettre en place une stimulation médullaire lors du traitement des CRPS des membres, en cas de résistance à la kinésithérapie",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "976de50e7d08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réaliser une analgésie locorégionale chez les patients amputés (chez les adultes et les enfants), car elle procure une analgésie postopératoire de qualité et diminue l'incidence des douleurs du moignon. Grade 1+.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u36",
+   "empreinte": "20a729bc36e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les données issues des recommandations de la Sfar sur la pratique des blocs locorégionaux incitent à privilégier les blocs analgésiques périphériques",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "2bcd3f3e7ba3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser précocement un bloc neurolytique splanchnique ou du plexus cœliaque chez les patients porteurs d'un cancer du pancréas",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u38",
+   "empreinte": "c94503db19ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser un bloc neurolytique du plexus hypogastrique chez les patients qui présentent des douleurs importantes en rapport avec un cancer du petit bassin.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u39",
+   "empreinte": "36d701dc6c0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandations sur la pertinence des autres blocs neurolytiques (impar, lombaire et thoracique) chez le patient cancéreux. Avis d'experts.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u40",
+   "empreinte": "33a66a5da270",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réaliser une analgésie intrathécale dans les douleurs chroniques cancéreuses réfractaires malgré un traitement antalgique bien conduit suivant les recommandations de l'OMS",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u41",
+   "empreinte": "a9e184927ebe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À l'exception des symptomatologies localisées, chez les patients ayant une espérance de vie courte, il n'est pas possible de recommander l'analgésie péridurale dans la douleur chronique cancéreuse réfractaire.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u42",
+   "empreinte": "7fd6ce246263",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser des cathéters externalisés. Grade 1–.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u43",
+   "empreinte": "cc0ffdeab643",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mise en place d'une pompe implantée est possible si la survie du patient est estimée au moins à trois mois.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u44",
+   "empreinte": "0f1ae39473ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La morphine est le traitement de référence par voie intrathécale, les anesthésiques locaux, la clonidine et le ziconotide peuvent également être utilisés en association.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u45",
+   "empreinte": "9692dd7e2259",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant atteint de cancer, il est possible de traiter des douleurs prolongées réfractaires aux traitements antalgiques conventionnels bien conduits",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u46",
+   "empreinte": "dcffef3a2fdc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation pour ce qui concerne la durée, l'intérêt des fenêtres thérapeutiques et le mode de sevrage d'un cathéter locorégional au long cours. Avis d'experts.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u47",
+   "empreinte": "799060ffdaa8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'envisager le recours à l'analgésie péridurale dès lors que l'administration de produit analgésique prévisible est inférieure à trois mois.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u48",
+   "empreinte": "8ba21f0a1bc0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas recommandé d'utiliser un cathéter péridural audelà de trois mois. Il est possible alors de mettre en place un cathéter intrathécal relié à un dispositif totalement implantable. Grade 2–.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u49",
+   "empreinte": "9cdd5f644b35",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

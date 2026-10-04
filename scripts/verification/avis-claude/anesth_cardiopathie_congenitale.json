@@ -1,0 +1,313 @@
+{
+ "cle": "anesth_cardiopathie_congenitale",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "f1162c50dc19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "significativement plus élevée chez les patients adultes porteurs de CC, variant entre 2 et 7%",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u2",
+   "empreinte": "c9b8afe2427e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une procédure sous ALR périphérique est considérée à score composite faible quel que soit le statut de la cardiopathie.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u3",
+   "empreinte": "8d92fa062c5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec un score composite intermédiaire ou élevé soit faite en centre expert pour diminuer la survenue des complications périopératoires.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u4",
+   "empreinte": "6e34fa6e294f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "6d825fda2378",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "fdb0625c48fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Absence de séquelles hémodynamique ou anatomique",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u7",
+   "empreinte": "f847c4a02bd0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arythmie ne nécessitant pas de traitement",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u8",
+   "empreinte": "e638aa6a2259",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dysfonction d'organe répondeuse au traitement",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u9",
+   "empreinte": "caab071a278e",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "Dilatation aortique sévère",
+   "explication": "Le statut D de la source (Tableau 3, d'après AHA 2018) liste : NYHA IV, dilatation aortique sévère, arythmie réfractaire, hypoxémie sévère, HTAP sévère, syndrome d'Eisenmenger, dysfonction d'organe réfractaire. « Dysfonction ventriculaire sévère » n'y figure pas ; elle est ajoutée par la fiche.",
+   "page": 21
+  },
+  {
+   "id": "u10",
+   "empreinte": "0c7119a61ecf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque chirurgical estimé est une approximation du risque de décès à 30 jours et d'infarctus du myocarde",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u11",
+   "empreinte": "a49d8c6386ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie de la thyroïde",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u12",
+   "empreinte": "7cdf3b38adf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie thoracique non majeure",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u13",
+   "empreinte": "c55088b3834f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Transplantation (foie ou poumon)",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u14",
+   "empreinte": "2fa13bf1d188",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de recourir à l'anesthésie locorégionale plutôt qu'à l'anesthésie générale chaque fois que possible",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u15",
+   "empreinte": "807e5131b3c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier l'anesthésie neuraxiale titrée ou continue par rapport à la technique non titrée",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u16",
+   "empreinte": "6eef3b83c736",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ajout d'un monitorage de la pression veineuse centrale continue en cas de circulation de Fontan",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u17",
+   "empreinte": "d87099c98482",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient systématiquement pris en charge en unité de soins critiques en postopératoire de chirurgie non cardiaque",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u18",
+   "empreinte": "8fab98f48f36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de chirurgie en urgence sans avis cardiologique spécialisé préalable.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u19",
+   "empreinte": "be81d9147b94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une évaluation de la cardiopathie congénitale en centre expert dès le début de la grossesse",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u20",
+   "empreinte": "c104a12b9528",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient prises en charge en péripartum dans un centre expert pour diminuer l'incidence des complications du péripartum.",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u21",
+   "empreinte": "0642cdaa7494",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de privilégier l'anesthésie loco-régionale titrée par rapport à l'anesthésie loco-régionale non titrée ou à l'anesthésie générale",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u22",
+   "empreinte": "9ec8d668814c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent une surveillance systématique en unité de soins critiques en",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u23",
+   "empreinte": "ae24b253526e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (fichier des fiches pratiques, p. 2) : Diurétiques — poursuite la veille, arrêt le matin ; contrôle de la kaliémie souhaitable, optimisation de la volémie.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "cfe4fcad7fe2",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Fiche pratique #1 (fichier des fiches pratiques, p. 2) : IEC — poursuite la veille, arrêt le matin ; « Poursuite en cas d'insuffisance cardiaque et/ou FE ventricule systémique < 40 % ».",
+   "explication": "Dans la fiche pratique #1, la mention « Arrêt ≥ 12h (Traitement de l'HTA) » figure sur la ligne « Inhibiteurs SRAA », pas sur la ligne IEC. La fiche l'a déplacée vers les IEC (u24) et l'a retirée des inhibiteurs SRAA (u26).",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "be1d85524efc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (p. 2) : Bêtabloquants — poursuite la veille et le matin ; en l'absence d'urgence, discuter l'arrêt avec le cardiologue congénitaliste référent.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "d1393d2cdf44",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Fiche pratique #1 (p. 2) : Inhibiteurs SRAA — poursuite la veille, arrêt le matin ; « Arrêt ≥ 12h (Traitement de l'HTA) » ; poursuite si insuffisance cardiaque et/ou FE < 40 %.",
+   "explication": "La mention « Arrêt ≥ 12h (traitement de l'HTA) » de la ligne SRAA est omise ici (elle a été placée sur la ligne IEC, u24).",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "88a207bd05e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (p. 2) : anti-arythmiques classe I (flécaïne) arrêt veille et matin ; classe II/III (cordarone) poursuite ; digoxine aucune recommandation, discuter l'arrêt avec le cardiologue référent.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "31a67afe5ef2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (p. 2) : sildénafil, bosentan, prostacycline — poursuite la veille et le matin.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "79380962f09c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (p. 2) : AOD — « Voir recommandations GIHP » ; en l'absence d'urgence, discuter l'arrêt avec le cardiologue référent.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "d323a4583f22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (p. 2) : AVK — interrompre 5 jours avant une chirurgie à risque hémorragique élevé, relais HBPM ou HNF selon la catégorie de risque ; discuter avec le cardiologue (ventricules uniques en prévention primaire).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "f4e2720cd9ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fiche pratique #1 (p. 2) : aspirine J-3, clopidogrel/ticagrelor J-5, prasugrel J-7 ; « Avis d'expert, arrêt sauf en cas de shunt systémico-pulmonaire (Blalock-Taussig, stent du canal artériel) » ; relais HBPM/HNF post-op à discuter.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "46dbbc78bd07",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "13dc0fe22042",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "048a9599d5a4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

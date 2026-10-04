@@ -1,0 +1,1069 @@
+{
+ "cle": "alr_pediatrie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "fe9fd25b780d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'actualisation intéresse surtout la pratique de l'ALR chez le nouveau-né, le nourrisson et le petit enfant. Chez les grands enfants et les adolescents, il faut probablement se rapprocher",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "708dbdab9525",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les ALx habituellement utilisés pour l'ALR pédiatrique sont les ALx du groupe des amino amides.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "a687e99597c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le nouveau né et le nourrisson, il faut utiliser des ALx moins concentrés que chez l'adulte.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "a5fd76a8dbbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant > 2 mois, il faut utiliser un volume d'ALx d'autant plus important par rapport au poids que l'enfant est jeune.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "afe527075264",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réduire les posologies d'ALx chez l'enfant < 2 ans en raison d'une fréquence cardiaque de base élevée qui augmente la vulnérabilité à la toxicité cardiaque des Alx.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "f99e976409c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lévobupivacaine utilisée dans ces mêmes indications provoque un bloc moteur moins intense que celui de la bupivacaine racémique. Le bloc moteur est équivalent",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "313f4a339a06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1-4-1 Injection unique 1-4-1-1 Anesthésie péridurale ou caudale",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "70317d479b58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il faut privilégier l'usage de la ropivacaine à 2 mg/ml ou de la lévobupivacaine à 2,5",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "7ddc70a01089",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'anesthésie caudale, il ne faut pas dépasser une posologie de 2 mg/kg pour la ropivacaine ou la lévobupivacaine.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "79fcce8cb0cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'anesthésie péridurale, il ne faut pas dépasser une posologie de 1,7 mg/kg pour la ropivacaine.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "67d2275fe71f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'anesthésie péridurale, il ne faut probablement pas dépasser 1,7 mg/kg de lévobupivacaine.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "ec6b08989165",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il faut adapter le volume injecté au niveau métamérique à atteindre.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "4e4cf0666b5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "métamères dorsaux inférieurs. - Formule de Schulte Steinberg pour l'anesthésie péridurale : volume par métamère à bloquer",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "47af4caab6f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement limiter l’usage de la bupivacaine racémique à la pratique de la rachianesthésie. La posologie recommandée est 1 mg/kg de bupivacaine à 0,5% chez",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "e092946fc6a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les blocs périphériques du tronc ou des membres, il ne faut probablement pas injecter plus de 0,5 ml/kg de ropivacaine à 2 mg/ml ou de lévobupivacaine à 2,5 mg/ml.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "55612bd0a79c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1-4-2 Entretien par administration continue (cathéter périnerveux ou analgésie péridurale)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "f30b4a810875",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’administration péridurale continue de ropivacaine, il faut utiliser des concentrations ≤ 2 mg/ml chez l’enfant et 1 mg/ml chez le nourrisson. Il ne faut pas",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "ab9ead8676aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement appliquer des recommandations identiques pour l’administration périnerveuse périphérique continue de ropivacaine.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "8128f014d203",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de données pharmacologiques suffisantes sur l'administration continue de lévobupivacacaine en pédiatrie, il faut probablement l'administrer aux",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "5a2e68e9e61e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas administrer plus de 2 μg/kg de clonidine lors de la réalisation d'une ALR chez l'enfant, des effets indésirables (somnolence, bradycardie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u21",
+   "empreinte": "42786ebd34c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas recourir à la clonidine péridurale ou intrathécale chez le nouveau-né et le nourrisson sans surveillance continue en raison d'un risque d'apnée postopératoire.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "52aea714297e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la plupart des blocs tronculaires, il est possible de prolonger la durée d’analgésie en ajoutant 1 à 2 μg/kg de clonidine à la solution d’ALx, mais on augmente l’incidence",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "21d035cd9666",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de prolonger l’analgésie de la péridurale caudale en ajoutant 1 μg/kg de clonidine à une solution d’ALx dont la concentration est ≥ 0,125%.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "05025e74fd0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'améliorer l'analgésie postopératoire de la péridurale lombaire en associant de la clonidine à la solution d'ALx. La posologie recommandée est soit de 1",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "5e0bdfe5e720",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant et l’adolescent, il est possible d'ajouter 1 à 2 μg/kg de clonidine à de la bupivacaine à 0,5% en solution hyperbare ou isobare pour améliorer l’analgésie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "9216b48b0beb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'effet pharmacologique des morphiniques administrés par voie périmédullaire chez le nouveau-né et le nourrisson n’est pas connu.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "62273037661a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● En cas d'administration périmédullaire de morphiniques, il faut éviter toute coadministration d’un morphinique par une autre voie.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u28",
+   "empreinte": "0c58ae1b76df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de prolonger la durée d'analgésie avec la morphine sans agent conservateur en administrant un bolus de 25-30 μg/kg d'une solution à 10 μg/ml pour",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "2b2016aec82a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'améliorer l'analgésie de la voie péridurale lombaire ou thoracique continue en associant du fentanyl ou du sufentanil à une solution d’ALx faiblement",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "aaf34b49efbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il ne faut pas attendre de bénéfice à l'utilisation de fentanyl ou de sufentanil par voie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "b70109255763",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de prolonger l’analgésie de la rachianesthésie en administrant du fentanyl à la dose de 2 μg/kg.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "75e5be1094a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précoce pour les dérivés lipophiles et tardive pour la morphine. Elle s'annonce en général par une sédation excessive. Le risque est plus élevé chez le nouveau-né et le",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "130cc148d645",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour traiter une rétention d'urine sans diminuer l'analgésie, il est possible d'administrer 1 μg/kg de naloxone ou 0,1 mg/kg de nalbuphine par voie intraveineuse.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u34",
+   "empreinte": "b00d279873c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour traiter les nausées et vomissements, plus fréquents avec la morphine qu’avec les dérivés lipophiles, il faut administrer un traitement symptomatique.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u35",
+   "empreinte": "32ccf6ed77ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour traiter un prurit, plus fréquent avec la morphine qu’avec les dérivés lipophiles, il faut administrer soit un bolus intraveineux de 1 à 2 μg/kg de naloxone suivi d'une",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "fc3152ba6845",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de diminuer le risque toxique des ALx d'action courte en utilisant des solutions adrénalinées à la concentration maximum de 5 μg/ml (1/200 000ème).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "d8ba9000ea5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "région dont la vascularisation artérielle est de type terminal (rachianesthésie, bloc pénien, bloc pudendal, bloc digital, bloc du lobe de l'oreille, certains blocs de la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u38",
+   "empreinte": "7b95d800ce00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas associer de l'adrénaline à un AL administré par voie caudale, périnerveuse ou locale pour prolonger l'analgésie.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u39",
+   "empreinte": "a8eff2fa7439",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’études de toxicité et d’inocuité, l’utilisation de tramadol, midazolam, néostigmine et kétamine n’est pas recommandée par voie périmédullaire chez",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u40",
+   "empreinte": "765fd09a512f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "adf540f57116",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En terme d'efficacité et par assimilation à l'adulte, il faut probablement utiliser un mandrin mixte ou liquide de volume < 5 ml pour détecter la perte de résistance chez",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "c83829d6471d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser de mandrin liquide, mixte ou gazeux en cas d'anesthésie caudale. C'est uniquement la perte de résistance due au franchissement de la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u43",
+   "empreinte": "9821924c4e6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser une aiguille à biseau court sans mandrin liquide, mixte ou gazeux pour détecter les pertes de résistance lors de la réalisation des blocs périphériques de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "59c56187a2ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour repérer un nerf par neurostimulation, y compris chez l'enfant anesthésié, il faut appliquer la même technique que chez l'adulte.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "691b9858a4b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'utiliser un stimulateur transcutané comme aide à la localisation des nerfs mixtes. Ce dispositif, probablement plus utile en pédiatrie où la croissance",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "e187660b9b88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement pratiquer l'ALR chez l'enfant en s'aidant d'un échographe. L'échographie permet de diminuer le délai d’installation, d'augmenter la durée du bloc",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "2662e2da2d53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut vérifier la position des cathéters dont un trajet aberrant pourrait avoir des conséquences graves (exemples : cathéters interscaléniques, cathéters",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u48",
+   "empreinte": "d64e38b2fd9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut privilégier l’usage des aiguilles figurant dans le tableau 1 en fonction des techniques, de l’âge et/ou du poids de l’enfant.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u49",
+   "empreinte": "7666f5e95d4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "929ff9209857",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "0e0cc52d5cd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "191df96f8e05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "71e6c8826a90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "3679ca92fb9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "3d0a1bd4618f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1, p. 8 (image) : aiguilles selon le bloc et l'âge/poids",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "020c8109d569",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* La réalisation d'un bloc neuraxial comporte un risque très faible d'introduction de cellules épidermiques dans l'espace péridural est susceptible de provoquer le développement d'une tumeur",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u57",
+   "empreinte": "b6935eb34de4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le petit enfant, il faut utiliser préférentiellement des cathéters en polyamide ou polyéthylène sans mandrin, gradués au moins en centimètres et à orifice d'injection",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u58",
+   "empreinte": "903d2f9df2e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il ne faut probablement pas mettre en place un cathéter thoracique par voie caudale.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u59",
+   "empreinte": "c1d4e3ece104",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas introduire une longueur de cathéter de plus de 1,5 à 3 cm pour un bloc nerveux périphérique.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u60",
+   "empreinte": "18bceb024b75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'utiliser des perfuseurs élastomériques pour les ALR périphériques continues. Ce dispositif améliore le confort et l'autonomie de l'enfant et permet les",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u61",
+   "empreinte": "e69be0f5d62f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il faut privilégier l'usage de sondes linéaires délivrant des fréquences de 8 à 14 Mhz.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u62",
+   "empreinte": "7be6a41fa373",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a aucune particularité pédiatrique avérée pour les autres matériels (neurostimulateurs, seringues et pompes électriques, systèmes de fixation, canules",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u63",
+   "empreinte": "c822eab28267",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "046224b248c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quel que soit le bloc réalisé, il faut impérativement faire un test d'aspiration avant d'injecter la solution anesthésique. Ce test sans sécurité absolue n'a de valeur que si il",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u65",
+   "empreinte": "0b0d3ab4873a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'injecter une dose test adrénalinée pour le bloc caudal, pour le bloc péridural lombaire ou thoracique et pour les blocs périphériques profonds, même",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u66",
+   "empreinte": "272cbca5fee4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut toujours injecter la solution d'ALx de manière lente, fractionnée et entrecoupée par des tests d'aspiration répétés.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u67",
+   "empreinte": "3cd5e144ff13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut administrer une émulsion lipidique en cas de manifestation toxique systémique cardiaque ou neurologique ne répondant pas rapidement aux manœuvres de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u68",
+   "empreinte": "83e8a84c655e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il ne faut pas que cette thérapeutique retarde les manœuvres de réanimation",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u69",
+   "empreinte": "b67655944c79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser l’intralipide®à 20 %. Sa posologie est probablement de 1,5 ml/kg en bolus suivi d'une perfusion rapide à la vitesse de 0,5 à 1 ml/kg/min en fonction de la",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u70",
+   "empreinte": "7ed0adf82ab3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence d'étude démontrant une relation entre neurotoxicité locale des Alx et stade de myélinisation en fonction de l'âge, aucune précaution liée à ce facteur n'est",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u71",
+   "empreinte": "4ed65bf129a4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "117fa9fbf477",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser des aiguilles sans biseau ou dont le biseau est le plus court possible pour diminuer le risque de lésion nerveuse.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u73",
+   "empreinte": "0fdac801dc73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut interrompre l'injection devant toute résistance inhabituelle pour diminuer le risque de lésion nerveuse.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u74",
+   "empreinte": "e69a43db8d9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'adolescent et le grand enfant et par assimilation à l'adulte, le recours à un mandrin gazeux pour réaliser une anesthésie péridurale augmente le risque de brèche",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u75",
+   "empreinte": "711c7206c743",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faut éviter d'introduire l'aiguille de ponction de plus de 1 cm dans le canal sacré tout en ponctionnant de façon précise au sommet du triangle équilatéral formé par le",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u76",
+   "empreinte": "35c8260cf856",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le nouveau né ou le petit nourrisson, il ne faut pas réaliser une rachianesthésie avec une aiguille dont l'orifice d'injection est décalé par rapport à la pointe en raison",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u77",
+   "empreinte": "3425f9bfd38e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● En cas de brèche méningée, l'enfant présente un risque de céphalée posturale",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u78",
+   "empreinte": "458d1b427469",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comparable à celui de l'adulte. Il faut le prendre en charge de façon similaire. 5-3 Complications hémorragiques : faut-il un bilan de coagulation avant une ALR chez",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u79",
+   "empreinte": "17f42266f9f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une coagulopathie congénitale ou acquise accroit le risque hémorragique lors de l’ALR. C'est une contre-indication absolue aux blocs périnerveux profonds, aux blocs",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u80",
+   "empreinte": "2d19c31db12c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quel que soit l’âge de l’enfant, avant de pratiquer toute ALR, il faut évaluer l’hémostase en procédant à un examen clinique complété par une anamnèse",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u81",
+   "empreinte": "d30aaa974919",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quelle que soit le type d'ALR envisagé, il ne faut pas pratiquer de bilan biologique systématique lorsque la marche est acquise et l’étape clinique totalement négative.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u82",
+   "empreinte": "127aba6a46b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la marche n’est pas acquise ou si un bilan biologique d’hémostase est nécessaire, il faut limiter ce bilan à un temps de céphaline avec activateur et une numération",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u83",
+   "empreinte": "c98b9850e1a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute anomalie du bilan initial persistant après contrôle doit être explorée après avis éventuel de l'hémobiologiste pour décider de l'attitude la plus appropriée en fonction",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u84",
+   "empreinte": "9592f473b4b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas de spécificité pédiatrique avérée pour la prise en charge de la prévention, du diagnostic et du traitement des complications septiques.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u85",
+   "empreinte": "fee9fb539e1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour éviter une erreur d'injection, il faut séparer les seringues qui contiennent la solution d’ALx et celles destinées aux injections systémiques. L'utilisation d'un chariot",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u86",
+   "empreinte": "9ac9ed1b386b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les mêmes raisons, il faut identifier clairement le circuit de perfusion IV et le circuit d'ALR continue (étiquettes, couleur de connexion....).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u87",
+   "empreinte": "b970f79d658f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent qu'une couleur unique et/ou une modification (inversion, détrompeur...) des connections Luer-Lock soit imposée pour la fabrication des",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u88",
+   "empreinte": "a9fed7a6e069",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u89",
+   "empreinte": "ce69add749d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour le confort des patients et pour la sécurité du geste, il faut privilégier l'association ALR/AG préalable chez les jeunes enfants. Chez les enfants plus grands, il est",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u90",
+   "empreinte": "7f021846ea08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ALR/AG préalable chez les jeunes enfants. Chez les enfants plus grands, il est possible de réaliser une ALR sans AG associée.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u91",
+   "empreinte": "1428295d7db2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● Il ne faut probablement pas réaliser d'anesthésie caudale chez les enfants > 20 kg.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u92",
+   "empreinte": "c75710b4892e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'ancien prématuré de 44 à 60 semaines d'âge conceptuel bénéficiant d'une chirurgie sous-ombilicale, il est probable qu'associer une AG et un bloc neuraxial au",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u93",
+   "empreinte": "591611bf0bd3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut être vigilant en cas d'association d'adrénaline aux ALx chez le nouveau né en raison d'une baisse significative de la tension artérielle.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u94",
+   "empreinte": "bfa4cf4bb8ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de cardiopathie, il ne faut pas contre indiquer de façon absolue la réalisation d'un bloc neuraxial par des ALx et/ou des morphiniques.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u95",
+   "empreinte": "bca01d6e7b81",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u96",
+   "empreinte": "148161ab35c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En terme de rapport bénéfice/risque, il faut réaliser un bloc périphérique plutôt qu'un bloc central dès que l'alternative se présente.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u97",
+   "empreinte": "ff1a7baa5b4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de chirurgie lourde viscérale ou ostéo-articulaire, il est possible d'assurer une analgésie postopératoire de qualité au moyen d'un bloc continu.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u98",
+   "empreinte": "07a3270490cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le bloc infra orbitaire est la technique d'ALR recommandée en cas de chirurgie isolée de la lèvre supérieure et notamment de réparation de fente labiale.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u99",
+   "empreinte": "edaa5edb7939",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la lèvre supérieure et notamment de réparation de fente labiale. 6-2-2 Chirurgie du membre supérieur",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u100",
+   "empreinte": "8c1de52fe117",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'assurer l'analgésie de l'épaule et du tiers supérieur du bras au moyen d'un bloc parascalénique. Le bloc interscalénique est une alternative qui présente plus",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u101",
+   "empreinte": "f82afeb2338a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En raison de sa faible morbidité, il faut privilégier le bloc axillaire avec ou sans cathéter pour assurer l'analgésie des deux tiers inférieurs du bras, du coude, de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u102",
+   "empreinte": "25fba06e9f8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de réaliser un bloc des nerfs médian, ulnaire ou radial au niveau du tiers inférieur de l’avant bras lorsque la chirurgie ne concerne qu'un seul territoire de la",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u103",
+   "empreinte": "40d4bd874247",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut privilégier la réalisation simple d'un bloc intrathécal en cas de chirurgie de la 3ème phalange des 2ème, 3ème et 4ème doigts.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u104",
+   "empreinte": "dd161311c33d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la chirurgie unilatérale de la hanche, il est possible de réaliser un bloc fémoral ou ilio fascial. Le bloc du plexus lombaire par voie postérieure est une alternative. En cas",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u105",
+   "empreinte": "0ad6e535cc86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ilio fascial. Le bloc du plexus lombaire par voie postérieure est une alternative. En cas d'abord bilatéral, il faut préférer l'analgésie péridurale lombaire.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u106",
+   "empreinte": "2561aa301572",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de chirurgie ou de traumatisme du fémur, il faut privilégier la réalisation d'un bloc ilio facial. Le bloc fémoral est une solution alternative.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u107",
+   "empreinte": "389910d6b604",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● En cas de chirurgie de la cheville et/ou du pied, il faut réaliser un bloc sciatique",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u108",
+   "empreinte": "8135896e822f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "morphine intrathécale. L'administration d'une solution anesthésique au moyen de cathéters périduraux mis en place par le chirurgien en fin d’intervention est une",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u109",
+   "empreinte": "0574a3441f8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’analgésie scrotale en cas d’orchidopexie. L'anesthésie péridurale caudale est une alternative chez l'enfant de petit poids ou en cas de chirurgie bilatérale.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u110",
+   "empreinte": "69fcd241e970",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de fermeture de hernie ombilicale ou de la ligne blanche et en cas de pylorotomie par abord ombilical strict, il est possible de réaliser un bloc para-ombilical.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u111",
+   "empreinte": "3cf83ea9415c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "● En terme de balance bénéfice/risque, il faut privilégier le bloc pénien pour les",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u112",
+   "empreinte": "67f1e54880ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "scrotum. Ce bloc périphérique peut aussi être utilisé pour la chirurgie péri-anale et la chirurgie gynécologique superficielle (vulve; petites lèvres, clitoris).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u113",
+   "empreinte": "62a8ba52127e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la cure de reflux vesico-urétéral, l'anesthésie péridurale caudale est la technique d'ALR la plus habituelle.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u114",
+   "empreinte": "d8ef2a4edc52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’abord rénal par lombotomie, il est possible d'utiliser un bloc paravertébral thoracique.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u115",
+   "empreinte": "89cfcb30b59b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'assurer l'analgésie de la chirurgie du thorax par une anesthésie péridurale thoracique ou par un bloc paravertébral thoracique.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u116",
+   "empreinte": "3f392d09834b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l'ALR de la chirurgie abdominale majeure, il faut choisir une analgésie péridurale continue.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u117",
+   "empreinte": "219d13e2dc4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'utiliser un bloc au triangle de JL Petit pour assurer l'analgésie de la paroi abdominale. Ce bloc est probablement efficace pour les prises de greffon",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u118",
+   "empreinte": "949fea71788b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

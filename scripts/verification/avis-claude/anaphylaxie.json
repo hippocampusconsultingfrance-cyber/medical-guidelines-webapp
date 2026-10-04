@@ -1,0 +1,1042 @@
+{
+ "cle": "anaphylaxie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a486223555f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez la femme enceinte, la réalisation des tests cutanés, voire de tests de provocation aux bêtalactamines semblent également sûre mais les principales études rapportant la sécurité de ces",
+   "explication": "",
+   "page": 61
+  },
+  {
+   "id": "u2",
+   "empreinte": "4da38b8d9bba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 - Il est probablement recommandé de se fonder sur la suspicion clinique d’hypersensibilité immédiate plutôt que sur l’utilisation de scores cliniques, pour adresser le patient en consultation",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u3",
+   "empreinte": "1dc4c08d4776",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 – Les experts suggèrent de considérer les caractéristiques cliniques de la réaction, le type de substance, la voie d’exposition et le délai entre l’exposition et la réaction, pour évaluer le degré",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u4",
+   "empreinte": "291ad1595012",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plus volontiers à prédominance cardio-vasculaire avec hypotension artérielle et syncope, tandis que l’urticaire, l’angiœdème et les symptômes respiratoires sont plus rares [3]. Le risque d’anaphylaxie",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u5",
+   "empreinte": "06b5637c65ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source : curares IV < 30 min (quelques min en général)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "c3964d3d990a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source : antibiotiques IV < 60 min après la fin de la perfusion",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "51dd5260a65d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cutanée/topique Quelques min à 60 min",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u8",
+   "empreinte": "d0bdb65be61f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du caractère variable de la résorption sous-cutanée. La majorité de ces réactions surviennent néanmoins dans les 60 minutes suivant l’exposition [9,10]. Quelques réactions après utilisation de colles biologiques",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u9",
+   "empreinte": "d2e453c325e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’exposition [6]. Les réactions aux colorants, utilisés pour le repérage des ganglions sentinelle en chirurgie carcinologique, et particulièrement le bleu patenté, sont plus difficiles à analyser, avec une grande",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u10",
+   "empreinte": "4dbd1afe68a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "négatif. Une seule étude s’est intéressée au lien entre délai exposition-réaction et mécanisme lié à la réaction. La survenue d'une réaction dans un délai de 5 minutes était en faveur d'une réaction d’HSI",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u11",
+   "empreinte": "6ece01d03c66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le 2ème dosage, au moins 24h après la résolution des symptômes pour mesurer le taux basal de tryptase.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u12",
+   "empreinte": "90c398a6ac92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la réaction d’hypersensibilité immédiate selon une formule prenant en compte le taux basal de tryptase pour définir une activation mastocytaire.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u13",
+   "empreinte": "77b99cf57b41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3.3 - Les experts suggèrent de ne pas prendre en compte les résultats des dosages de la tryptasémie pour décider d’adresser le patient en consultation d’allergo-anesthésie.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u14",
+   "empreinte": "20500f780c45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "après la réaction), dans les centres ayant la capacité de réaliser le test en respectant les conditions pré analytiques, afin d'améliorer",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u15",
+   "empreinte": "2456ebcd9d4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.5 – Il est probablement recommandé de doser la tryptase et l’histamine pendant, ou au plus tard à l’arrêt des manœuvres de réanimation cardio-pulmonaire, pour apporter des arguments en faveur du",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u16",
+   "empreinte": "d0efc0b77852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "était très évocatrice d’HSI périopératoire. Les seuils identifiés dans ce contexte étaient à 7,35 µg/l (sensibilité 92% (83-97) ; spécificité 92% (74-99)) pour la tryptase et 6,35 nmol/l (sensibilité 91% (82-96) ;",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u17",
+   "empreinte": "405f2855c5d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de doser les IgE spécifiques vis-à-vis des allergènes suspects, incluant en première intention les IgE spécifiques des ammoniums quaternaires, du latex et de la chlorhexidine, afin d’orienter le bilan",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u18",
+   "empreinte": "9f2e460fc591",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.6.2 – En ce qui concerne les dosages d’IgE spécifiques sériques, les experts suggèrent de réaliser ces tests dès que possible, sans délai minimal par rapport à la réaction d’hypersensibilité immédiate",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u19",
+   "empreinte": "03fc38881f3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.7.1 – Les experts suggèrent de réaliser un test d’activation des basophiles en deuxième intention, lors du bilan allergologique, pour améliorer la performance diagnostique de ce bilan.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u20",
+   "empreinte": "503d425a9fc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.7.2 – Les experts suggèrent de respecter un délai minimal de 4 jours après la réaction d’hypersensibilité immédiate périopératoire avant de réaliser un test d'activation des basophiles, pour",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u21",
+   "empreinte": "dc51f79cf5d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(allergologue, anesthésiste-réanimateur, biologiste) pour prendre en charge les patients suspects d’une réaction d’hypersensibilité immédiate périopératoire, afin d’améliorer la qualité du diagnostic et réduire",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u22",
+   "empreinte": "3c0175d827c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ampicilline et cefaclor) mais la sensibilité de ces tests est faible et très variable selon les études. Ces tests sont également associés à un risque de faux positif rendant leur utilisation en pratique clinique délicate [6].",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u23",
+   "empreinte": "79c4a5b95c0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des tests cutanés avec l’ensemble des substances auxquelles le patient a été exposé avant la survenue des signes cliniques afin d’identifier le ou les agent(s) responsable(s) de la réaction.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u24",
+   "empreinte": "87b88297269b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.9.2 – Il est recommandé de réaliser les tests cutanés aux concentrations recommandées afin d’éviter le risque de faux positifs dans l’identification du ou des agents responsables (cf. Annexe 4)",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u25",
+   "empreinte": "a15a27573f43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.9.3 – Lorsque les tests cutanés sont positifs au curare auquel le patient a été exposé, il est probablement recommandé de tester tous les autres curares disponibles pour identifier les",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u26",
+   "empreinte": "4c4b651d32f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.9.4 Les experts suggèrent de respecter un délai minimal de 4 semaines après la résolution de la réaction d’hypersensibilité immédiate périopératoire avant de réaliser les tests cutanés afin d'en",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u27",
+   "empreinte": "29f3a01e7a9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.9.5 En cas de nouvelle intervention urgente, les experts suggèrent de réaliser les tests cutanés dès le 4ème jour après la résolution de la réaction d’hypersensibilité immédiate périopératoire mais de ne",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u28",
+   "empreinte": "5ce7bc2b69c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.10.1 – Les experts suggèrent de ne pas réaliser de manière systématique un test de provocation aux agents anesthésiques intraveineux afin d’identifier la substance impliquée dans les réactions",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u29",
+   "empreinte": "f62660c593fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "uniquement lorsque le bilan allergologique bien conduit n’a pas permis d’identifier la substance en cause et que les éléments cliniques et biologiques sont très en faveur d’une réaction d’hypersensibilité",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u30",
+   "empreinte": "7e8f9456bc40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.10.3 – Les experts suggèrent de réaliser les tests de provocation aux anesthésiques généraux dans des centres experts en allergo-anesthésie, après concertation multidisciplinaire, sous surveillance d’un",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u31",
+   "empreinte": "0f6b0ae26b37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent d’autoriser la réutilisation des médicaments initialement suspectés, afin de limiter la morbidité liée au recours aux alternatives.",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u32",
+   "empreinte": "90b97fe2b60c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.11.2 Lorsque le bilan allergologique permet d’identifier une cause et que les autres molécules testées sont négatives, les experts suggèrent d’autoriser la réutilisation des autres molécules y compris les",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u33",
+   "empreinte": "0602f75bcd99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et/ou associée à une activation mastocytaire prouvée, les experts suggèrent de prendre une décision au cas par cas après avoir vérifié l’exhaustivité du dossier médical avec l’équipe présente au moment de la",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u34",
+   "empreinte": "47a051e68153",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.12.1 – Chez l'enfant, il est probablement recommandé de conduire un bilan allergologique d’hypersensibilité immédiate périopératoire de manière similaire à l'adulte, afin de réduire le risque",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u35",
+   "empreinte": "366342f70407",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.12.2 – Chez la femme enceinte, il est probablement recommandé de réaliser des tests cutanés de manière similaire pour les anesthésiques généraux et les anesthésiques locaux, afin de réduire le risque",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u36",
+   "empreinte": "e452388c6760",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "douteux (selon l'allergologue) ou n'ont pas été réalisés, les experts suggèrent de réaliser un test de réintroduction en présence d’un médecin anesthésiste–réanimateur, après évaluation de la balance",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u37",
+   "empreinte": "215b860e8956",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION - En l’absence de données dans la littérature, les experts ne sont pas en mesure d’émettre de recommandation sur la durée maximale à respecter pour la réalisation des tests",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u38",
+   "empreinte": "6415df03380c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la solution anesthésique locale non diluée et non adrénalinée par voie sous-cutanée. Le test est considéré négatif en l’absence de réaction compatible avec une HSI dans les 30 minutes suivant l’injection",
+   "explication": "",
+   "page": 62
+  },
+  {
+   "id": "u39",
+   "empreinte": "1f0c41f168af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'au moins un des facteurs de risque de survenue d’une réaction d’HSI périopératoire suivants pour les adresser en consultation d’allergo-anesthésie, afin de réduire le risque de réaction d’hypersensibilité",
+   "explication": "",
+   "page": 64
+  },
+  {
+   "id": "u40",
+   "empreinte": "5a4287405522",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rechercher de manière systématique les signes cliniques évocateurs d’allergie au latex (réaction lors de l'utilisation de préservatif, de ballons de baudruche, etc.) ou les facteurs de risque de sensibilisation au",
+   "explication": "",
+   "page": 67
+  },
+  {
+   "id": "u41",
+   "empreinte": "32c80a024856",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sensibilisation au latex. Des antécédents de spina bifida [2], d’opérations multiples (plus de 5 notamment) [3] surtout chez les enfants [4,5] et dans un contexte de malformations urologiques congénitales [6] sont",
+   "explication": "",
+   "page": 67
+  },
+  {
+   "id": "u42",
+   "empreinte": "6670863e1624",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Tableau 4, p. 68 (image) : Régulièrement (20-30 %) = kiwi, banane, avocat, papaye ; Occasionnellement (< 10 %) = châtaigne ; Rarement (< 1 %) = figue, fruits exotiques, tomate, pêche, sarrasin, poivron",
+   "explication": "Répartition fausse : la fiche met la châtaigne en « régulièrement » (source : occasionnellement) et oublie la papaye dans cette ligne (source : régulièrement).",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "cf6ed8f5f9d5",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Tableau 4, p. 68 (image) : Occasionnellement (< 10 %) = châtaigne seule",
+   "explication": "La fiche place papaye, figue, fruits exotiques et sarrasin en « occasionnellement » ; la source y met seulement la châtaigne (papaye = régulièrement ; figue, fruits exotiques, sarrasin = rarement).",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "b4a9dd33d7fb",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Tableau 4, p. 68 (image) : Rarement (< 1 %) = figue, fruits exotiques, tomate, pêche, sarrasin, poivron",
+   "explication": "La fiche ne cite que tomate, pêche, poivron ; figue, fruits exotiques et sarrasin manquent (placés à tort en « occasionnellement »).",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "a40163e56fed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- ou la prise ultérieure d’un même antibiotique sans manifestation d’hypersensibilité, - ou une clinique non évocatrice de réaction d’hypersensibilité (troubles digestifs isolés à type de",
+   "explication": "",
+   "page": 70
+  },
+  {
+   "id": "u46",
+   "empreinte": "f1f2ddb6da72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3.2 En cas d’éruption cutanée isolée dans l'enfance avant 6 ans, sans signe de gravité, suite à la prise confirmée d’une pénicilline, les experts suggèrent d'autoriser l’utilisation de la céfazoline en",
+   "explication": "",
+   "page": 70
+  },
+  {
+   "id": "u47",
+   "empreinte": "77588fd52c57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3.3 Les experts suggèrent de ne pas utiliser des scores cliniques (par ex. PEN-FAST) pour décider de l'administration d'une bêtalactamine en antibioprophylaxie chez des patients rapportant une allergie aux",
+   "explication": "",
+   "page": 70
+  },
+  {
+   "id": "u48",
+   "empreinte": "6be2b87e1ab9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que 22 % des patients ayant présenté une réaction d’HSI en périopératoire n’avaient jamais été exposés à cet antibiotique auparavant [16]. Dans la 11ème enquête du GERAP en France, 16% des patients ayant fait",
+   "explication": "",
+   "page": 72
+  },
+  {
+   "id": "u49",
+   "empreinte": "9dbe8e44cd19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 2.4.1 – Il n’est probablement pas recommandé d’exclure l’utilisation des curares chez les patients ayant consommé un sirop contenant de la pholcodine dans l’année précédant une anesthésie comprenant un",
+   "explication": "",
+   "page": 75
+  },
+  {
+   "id": "u50",
+   "empreinte": "0f786b9682d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 2.4.2 – Il n’est probablement pas recommandé de réaliser un bilan allergo-anesthésique chez les patients ayant consommé de la pholcodine dans l’année précédant une anesthésie comprenant un",
+   "explication": "",
+   "page": 75
+  },
+  {
+   "id": "u51",
+   "empreinte": "eff60ba2174b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.5 – En l’absence de facteur de risque de réaction de réaction d’hypersensibilité immédiate périopératoire (cf. R2.1), Il n’est pas recommandé de réaliser un bilan allergo-anesthésique de dépistage",
+   "explication": "",
+   "page": 78
+  },
+  {
+   "id": "u52",
+   "empreinte": "da0f1662b186",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.1 En cas de mastocytose systémique, les experts suggèrent d’adapter la stratégie anesthésique, en associant une prémédication systématique par antihistaminique H1 et en évitant l’utilisation des",
+   "explication": "",
+   "page": 80
+  },
+  {
+   "id": "u53",
+   "empreinte": "a69363e49914",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent une approche pluridisciplinaire associant anesthésistes-réanimateurs, chirurgiens, allergologues et le spécialiste référent du patient avant l’intervention, afin d’évaluer individuellement le",
+   "explication": "",
+   "page": 80
+  },
+  {
+   "id": "u54",
+   "empreinte": "57ef4cf91380",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(SAMA) ou d’alphatryptasémie héréditaire, en l’absence de données suffisantes dans la littérature, les experts ne peuvent pas conclure sur l’utilité d’une prémédication par antihistaminique H2 et corticoïdes",
+   "explication": "",
+   "page": 80
+  },
+  {
+   "id": "u55",
+   "empreinte": "bb7fae67ce49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TPSAB1 codant pour l’alpha-tryptase. Une élévation de la tryptasémie basale de plus de 8 µg/l, en dehors d’une maladie rénale ou d’un désordre mastocytaire clonal, doit faire rechercher une HaT. Il existe une",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u56",
+   "empreinte": "c429bc85cf1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou par l’usage de doses minorées, par exemple pour les produits de contraste iodés (PCI), la vancomycine, les opioïdes naturels, les anti-inflammatoires non stéroïdiens (AINS), etc.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u57",
+   "empreinte": "fbee6a28356b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 5: Médicaments déconseillés ou à utiliser avec précaution en cas de mastocytose avérée ou suspectée.",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u58",
+   "empreinte": "7546a5816967",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un seul système organique est impliqué érythème ou urticaire, avec ou sans œdème",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u59",
+   "empreinte": "54bc9d1f6c64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Signes cutanéomuqueux, tachycardie inhabituelle, hyperréactivité bronchique (bronchospasme, toux,",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u60",
+   "empreinte": "ea05e34c3b52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plus d'un système organique troubles du rythme cardiaque, bronchospasme",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u61",
+   "empreinte": "4980b8bc64ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "troubles du rythme cardiaque, bronchospasme cas de danger de mort avec arrêt",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u62",
+   "empreinte": "15f1ac751f86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 - Les experts suggèrent d’utiliser l’échelle de Ring & Messmer modifiée pour guider la prise en charge initiale des patients afin de réduire la morbi-mortalité liée à la réaction d’hypersensibilité immédiate",
+   "explication": "",
+   "page": 100
+  },
+  {
+   "id": "u63",
+   "empreinte": "7475c1f37e32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2. – Il est probablement recommandé de considérer une baisse de l'EtCO2 comme signe précoce dans les réactions d'hypersensibilité immédiate périopératoires sévères lorsque le patient est ventilé de",
+   "explication": "",
+   "page": 103
+  },
+  {
+   "id": "u64",
+   "empreinte": "dfd5b0eaf48d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3.1. Les experts suggèrent d’injecter de l’adrénaline sans délai afin de réduire la morbi-mortalité de la réaction d’hypersensibilité immédiate périopératoire pour les réactions de grade II à IV de la classification",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u65",
+   "empreinte": "549e828efe4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3.2 - Les experts suggèrent de ne pas utiliser la noradrénaline en 1ère intention à la place de l’adrénaline, afin de réduire la",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u66",
+   "empreinte": "4af7e4840d3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3.3. Les experts suggèrent de titrer l’adrénaline en intraveineuse, avec un monitorage continu comportant au minimum un suivi électrocardioscopique et la mesure automatisée de la pression",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u67",
+   "empreinte": "eedd168f50a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3.4. Dans les réactions de grade II, les experts suggèrent une titration d’adrénaline intraveineuse 10 à 20 µg chez l’adulte, et de 1 µg/kg chez l’enfant (avec un maximum de 10 µg), toutes les 2 minutes, afin",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u68",
+   "empreinte": "873b6d9a5452",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3.4. Dans les réactions de grade II, les experts suggèrent une titration d’adrénaline intraveineuse 10 à 20 µg chez l’adulte, et de 1 µg/kg chez l’enfant (avec un maximum de 10 µg), toutes les 2 minutes, afin",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u69",
+   "empreinte": "fb07623aded3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3.6. Dans les réactions de grade IV, les experts suggèrent de respecter les recommandations internationales sur l'utilisation de l'adrénaline en cas d'arrêt cardiorespiratoire, en considérant son",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u70",
+   "empreinte": "9c40ecff35d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémodynamique persistante malgré trois doses d’adrénaline intraveineuse, une administration intraveineuse continue d’adrénaline soit débutée avec un débit initial de 0,05-0,1 µg/kg/min, ajusté en",
+   "explication": "",
+   "page": 106
+  },
+  {
+   "id": "u71",
+   "empreinte": "bc0a96ac7013",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la cuisse (10 µg/kg jusqu’à 500 µg par dose administrée, pour les réactions de grade II et III) uniquement en l’absence de monitorage et/ou d’accès parentéral pour le traitement de l’anaphylaxie,",
+   "explication": "",
+   "page": 106
+  },
+  {
+   "id": "u72",
+   "empreinte": "1884b56a315c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "femme enceinte soit identique à celle des autres adultes, en y associant le déplacement de l’utérus sur la gauche à partir de 20 semaines d’aménorrhée pour améliorer le retour veineux, afin de réduire la morbimortalité de la réaction d’HSI périopératoire.",
+   "explication": "",
+   "page": 106
+  },
+  {
+   "id": "u73",
+   "empreinte": "ece5e2f8b69a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avancé (> 75 ans) et/ou de comorbidités cardiovasculaires importantes, l’utilisation des doses basses des fourchettes proposées est à privilégier (10 µg pour les grades II et 100 µg pour les grades III).",
+   "explication": "",
+   "page": 107
+  },
+  {
+   "id": "u74",
+   "empreinte": "70669ff7bb33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 4.4.1. Dans les réactions de grade II ou plus, il est recommandé de réaliser systématiquement un remplissage vasculaire avec un débit élevé en association au traitement par adrénaline, afin de réduire",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u75",
+   "empreinte": "b46b6ec219ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de 10 ml/kg dans les réactions de grade II et de 20 ml/kg dans les réactions de grades III et IV, dans les 30 minutes suivant le début de la réaction, afin de réduire la morbi-mortalité de la réaction",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u76",
+   "empreinte": "c0edfe86c7dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.4.3. En l’absence de stabilisation hémodynamique après le remplissage vasculaire initial, les experts suggèrent de réaliser, dès que possible, une échographie cardiaque et/ou de mettre en œuvre un",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u77",
+   "empreinte": "85ef803ed626",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.4.4. Les experts suggèrent de privilégier un soluté cristalloïde isotonique en première intention et de n’envisager un colloïde qu’en cas de persistance d’une hypovolémie malgré un remplissage vasculaire",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u78",
+   "empreinte": "f90ee80ce4fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comportant au minimum un suivi électrocardioscopique et la mesure automatisée de la pression artérielle pour adapter la titration à la réponse clinique, afin de réduire la morbi-mortalité de la réaction",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u79",
+   "empreinte": "f829043fc675",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "définition de l'état réfractaire est la persistance d'une instabilité hémodynamique malgré l'administration de plusieurs doses d'adrénaline et d'un remplissage vasculaire de 20 ml/kg.",
+   "explication": "",
+   "page": 117
+  },
+  {
+   "id": "u80",
+   "empreinte": "3b2d8cff1732",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "persistance d’une vasoplégie intense (après exclusion d'une hypovolémie persistante et/ou d'une dysfonction myocardique), les experts suggèrent d’associer au traitement initial, soit la noradrénaline,",
+   "explication": "",
+   "page": 116
+  },
+  {
+   "id": "u81",
+   "empreinte": "c13d4be648a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.5.2. En cas d’arrêt cardio-respiratoire lié à une anaphylaxie périopératoire, les experts suggèrent de considérer l’assistance par ECLS (Extracorporeal Life Support) dans les centres qui y ont accès, afin de",
+   "explication": "",
+   "page": 116
+  },
+  {
+   "id": "u82",
+   "empreinte": "1d945cd09b6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.5.3. Les experts suggèrent de ne pas utiliser le sugammadex en traitement de l’hypersensibilité immédiate réfractaire suspecte d’être liée au rocuronium, afin de réduire la morbi-mortalité de la",
+   "explication": "",
+   "page": 116
+  },
+  {
+   "id": "u83",
+   "empreinte": "8e9ea907c485",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION - En l’absence de données dans la littérature, les experts ne sont pas en mesure d’émettre de recommandation sur l’utilisation du glucagon par voie intraveineuse, afin de",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u84",
+   "empreinte": "06e7831c7825",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u85",
+   "empreinte": "2c9a54adb4db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u86",
+   "empreinte": "071ba20eca67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u87",
+   "empreinte": "6dbb82c85386",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u88",
+   "empreinte": "afc2b7a319d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u89",
+   "empreinte": "bbf6f58e8c54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u90",
+   "empreinte": "4f446dbcf86a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u91",
+   "empreinte": "94f0ab0f7b22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u92",
+   "empreinte": "607599e6942d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u93",
+   "empreinte": "1bb32d9ecd03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u94",
+   "empreinte": "d8ec4079bc14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 7, p. 140 (image) : algorithme de prise en charge par grade",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u95",
+   "empreinte": "0e9e282c4b77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concertation pluridisciplinaire en cas de réaction sévère, il n’est probablement pas recommandé d’interrompre systématiquement l’intervention chirurgicale, afin de limiter la morbidité liée au report de",
+   "explication": "",
+   "page": 123
+  },
+  {
+   "id": "u96",
+   "empreinte": "71eedd02c556",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.6.2 -En cas de poursuite de l’intervention, les experts suggèrent de ne pas réutiliser les classes pharmacologiques suspectées d’être à l’origine de la réaction afin de réduire le risque de récurrence de",
+   "explication": "",
+   "page": 123
+  },
+  {
+   "id": "u97",
+   "empreinte": "83fc6a6b4bcc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.6.3- En cas de poursuite de l’intervention, les experts suggèrent de passer systématiquement en environnement sans latex et de changer la classe d’antiseptique afin de réduire le risque de récurrence",
+   "explication": "",
+   "page": 123
+  },
+  {
+   "id": "u98",
+   "empreinte": "a305863114f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 4.7.1 - Les experts suggèrent de surveiller les patients dans une structure de soins critiques (ou en salle de surveillance post opératoire (SSPI) de manière prolongée) en postopératoire lorsque la réaction",
+   "explication": "",
+   "page": 126
+  },
+  {
+   "id": "u99",
+   "empreinte": "7247d6e7d5ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 4.7.2 - En cas d’admission en unité de soins critiques ou de maintien en salle de surveillance post opératoire (SSPI) prolongé, les experts suggèrent de surveiller les patients au moins 24h après la",
+   "explication": "",
+   "page": 126
+  },
+  {
+   "id": "u100",
+   "empreinte": "5094734660c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne plus utiliser les médicaments suspects pour prévenir le risque de récurrence. Le changement du circuit respiratoire et des tubulures de perfusion n'est pas nécessaire. Par ailleurs, l’utilisation d’une autre classe",
+   "explication": "",
+   "page": 124
+  },
+  {
+   "id": "u101",
+   "empreinte": "d4dae29e1f2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION : Compte tenu du manque de données dans la littérature, les experts ne peuvent pas émettre de recommandation sur l'administration des corticoïdes dans la",
+   "explication": "",
+   "page": 129
+  },
+  {
+   "id": "u102",
+   "empreinte": "31857bdce9e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'une précédente anesthésie locale ou locorégionale, les experts suggèrent une éviction des anesthésiques locaux du même groupe, ou de privilégier une anesthésie générale si le protocole est",
+   "explication": "",
+   "page": 95
+  },
+  {
+   "id": "u103",
+   "empreinte": "5c70965a4196",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "immédiate non-explorée aux anesthésiques locaux, lorsque la balance bénéfice-risque est très en faveur d'une anesthésie locale/locorégionale, les experts suggèrent de réaliser un test de réintroduction aux",
+   "explication": "",
+   "page": 95
+  },
+  {
+   "id": "u104",
+   "empreinte": "ca846a752a4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.5 – Il n’est probablement pas recommandé de prescrire systématiquement une prémédication aux patients à risque de réaction d’hypersensibilité immédiate périopératoire (hors mastocytose), afin de",
+   "explication": "",
+   "page": 98
+  },
+  {
+   "id": "u105",
+   "empreinte": "1512104d1553",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "souhaité, non dilué et non adrénaliné, en sous-cutané, chez un patient perfusé et monitoré. L'absence totale de réaction (cutanée et systémique) après 30 minutes de surveillance permet d'utiliser l'AL testé. Cette",
+   "explication": "",
+   "page": 96
+  },
+  {
+   "id": "u106",
+   "empreinte": "d5a76224b934",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- d'éviter autant que possible l'utilisation des curares, - et de réévaluer la balance-bénéfice risque pour l’utilisation des bêtalactamines, lorsque ces",
+   "explication": "",
+   "page": 92
+  },
+  {
+   "id": "u107",
+   "empreinte": "bb147a24885e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un risque de récurrence lors d’une anesthésie ultérieure ? Question : Le bilan allergologique d’une réaction d’hypersensibilité périopératoire",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u108",
+   "empreinte": "4cf082a82700",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésie générale (sans confirmation diagnostique) doit-elle entraîner une modification du protocole anesthésique ou chirurgical ?",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u109",
+   "empreinte": "a976c7789666",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aussi de l’éviction nécessaire de l’ensemble des médicaments utilisés dans l’attente du bilan allergologique, y compris les curares.",
+   "explication": "",
+   "page": 124
+  },
+  {
+   "id": "u110",
+   "empreinte": "e0b54f892f5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protocole anesthésique utilisé au décours de la réaction est connu, l'utilisation d'un curare d'une autre classe pharmacologique (benzylisoquinolines pour les curares stéroïdiens et inversement) permet de limiter",
+   "explication": "",
+   "page": 93
+  },
+  {
+   "id": "u111",
+   "empreinte": "0443a3ff44e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Question : En cas d’intervention urgente, l’existence d’une réaction suspecte d’HSI lors d’une précédente anesthésie locale ou locorégionale sans bilan de confirmation",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u112",
+   "empreinte": "1c1dfffcaa4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésie générale (sans confirmation diagnostique) doit-elle entraîner une modification du protocole anesthésique ou chirurgical ?",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u113",
+   "empreinte": "0eecace35571",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ressources matérielles et humaines. La réintroduction d’un anesthésique général doit se pratiquer en secteur d’anesthésie (SSPI, bloc opératoire, secteur de soins critiques), sous surveillance continue d’un",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u114",
+   "empreinte": "5ca28976d731",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque le patient est suspect d’une réaction d’HSI liée à un curare et que le test cutané au curare injecté est positif, l’ensemble des autres curares doit être testé afin d’identifier les réactivités croisées entre",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u115",
+   "empreinte": "bfc4de94a3f0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

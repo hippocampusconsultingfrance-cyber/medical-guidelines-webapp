@@ -1,0 +1,349 @@
+{
+ "cle": "echo_alr",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b71a00a58e4d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "cd3d99a3c29b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne signifie pas que le nonrecours à l'échographie constitue pour autant une mauvaise pratique médicale",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "750374630956",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La compréhension des bases physiques des ultrasons et des réglages de l'échographe « est recommandée »",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "fb14934e4df1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'avoir des connaissances anatomiques et de sonoanatomie pour identifier les structures concernées",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "818e0a6a5213",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un entraînement préalable « est recommandé » pour l'acquisition de la sonoanatomie",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "c2c939e96b76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« il est recommandé » de suivre sa propre courbe d'apprentissage",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u7",
+   "empreinte": "865459f0ea74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Des moyens complémentaires « sont recommandés » pour la réalisation du bloc",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u8",
+   "empreinte": "4801844dcd18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« il est recommandé » d'associer la neurostimulation à l'échoguidage",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u9",
+   "empreinte": "97faf4581c03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de disposer de sondes de fréquence et de forme adaptée à l'anesthésie réalisée",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u10",
+   "empreinte": "f9f337249445",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser la fréquence la plus élevée possible pour privilégier la résolution spatiale",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u11",
+   "empreinte": "93c7ececbfce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser les différentes fonctions proposées par l'échographe et d'adapter leurs réglages",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u12",
+   "empreinte": "d02b29bb70e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser, avant le geste anesthésique, une visualisation large et dynamique des éléments anatomiques",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "44a63d3baaeb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« Il est probablement recommandé » de visualiser les nerfs cibles en « petit axe » pour les blocs superficiels et profonds",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "38c57311837b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser des aiguilles dédiées à l'ALR",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "2f5298081f8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que soient mis en évidence et corrigés les mouvements intempestifs de la sonde",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "fc52266c7629",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« il est probablement recommandé » d'aborder le nerf tangentiellement",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "3983d6ad3aee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'interrompre l'injection de la solution anesthésique en l'absence de visualisation en temps réel",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "35f6ceb71262",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de retirer l'aiguille en cas d'injection intraneurale",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "2aa561fac1e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de bloquer le nerf sciatique, à partir de la région subglutéale, tout le long de son trajet sous échoguidage",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u20",
+   "empreinte": "301f771c1d63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'échoguidage« est probablement recommandé » pour les blocs interscalénique, supraclaviculaire, axillaire, fémoral",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "1a4142620bb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« est possible mais techniquement plus difficile » (profondeur de ponction), incitant à privilégier probablement un abord subglutéal",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u22",
+   "empreinte": "a71db0b1b19b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'échographie « est probablement recommandée » car elle permet d'administrer l'anesthésique local plus précisément",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "89b389ade31e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'échographie constitue « probablement » une aide à la procédure",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u24",
+   "empreinte": "db45962719e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'échographie est « probablement recommandée » pour optimiser le positionnement du cathéter périnerveux",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u25",
+   "empreinte": "d10fa1fda6b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est « probablement recommandé » de réaliser un bloc échoguidé chez un patient éveillé, calme et coopérant",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u26",
+   "empreinte": "3c705581589b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est possible de réaliser un bloc chez un patient sous anesthésie (générale ou régionale) ou sédation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u27",
+   "empreinte": "3a39f30f75d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Classement des dispositifs médicaux et niveaux de traitement requis",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u28",
+   "empreinte": "9e0f873e59ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Stérilisation ou usage unique stérile à défaut",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u29",
+   "empreinte": "4aae2fa72048",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Désinfection de niveau intermédiaire",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u30",
+   "empreinte": "de3b1af6bca5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du patient ou sans contact avec le patient",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u31",
+   "empreinte": "bd40379af7a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de respecter les mesures d'asepsie pour la sonde d'échographie",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "7d4a3c1dda67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avant chaque procédure que les sondes et les câbles soient essuyés, nettoyés, désinfectés",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "2d5e9d0bb6e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser une gaine de protection stérile à usage unique dédiée et adaptée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "f634537f40f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit au minimum celle correspondant à une désinfection de bas niveau",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u35",
+   "empreinte": "4f533034f160",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de rupture de la gaine ou de souillure de la sonde, que la désinfection soit de niveau plus élevé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u36",
+   "empreinte": "dffaa01d3b1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de nettoyer la sonde avec un détergent, de la rincer, de la sécher",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u37",
+   "empreinte": "3d9d19ae56a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de faire valider les différentes procédures de nettoyage et de désinfection par le CLIN",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u38",
+   "empreinte": "e20331693c3e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

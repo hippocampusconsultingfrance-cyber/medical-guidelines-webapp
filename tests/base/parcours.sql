@@ -670,4 +670,28 @@ select pg_temp.ok(pg_temp.refuse(format('update public.profiles set cgu_version 
   'CGU : version non modifiable par le membre');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 29. Candidatures de médecins relecteurs : écrites par le serveur seulement,
+--     limitées par adresse e-mail, effacées selon la durée de conservation.
+-- ---------------------------------------------------------------------------
+\i supabase/migrations/20261004100000_candidatures_relecteurs.sql
+select pg_temp.ok(not has_table_privilege('anon', 'public.candidatures_relecteurs', 'select')
+  and not has_table_privilege('anon', 'public.candidatures_relecteurs', 'insert')
+  and not has_table_privilege('authenticated', 'public.candidatures_relecteurs', 'select')
+  and not has_table_privilege('authenticated', 'public.candidatures_relecteurs', 'insert'),
+  'relecteurs : candidatures ni lisibles ni modifiables depuis le navigateur');
+set role service_role;
+insert into public.candidatures_relecteurs (nom, prenom, telephone, email, profession, specialite)
+select 'Martin', 'Claire', '06 12 34 56 78', 'claire.martin@test.fr', 'Anesthésiste-réanimateur', 'Anesthésie-réanimation'
+  from generate_series(1, 3);
+select pg_temp.ok(pg_temp.refuse($q$insert into public.candidatures_relecteurs (nom, prenom, telephone, email, profession, specialite)
+  values ('Martin', 'Claire', '0612345678', 'Claire.Martin@test.fr', 'Pédiatre', 'Pédiatrie')$q$, 'Trop de candidatures'),
+  'relecteurs : 3 candidatures par adresse e-mail et par 24 h');
+reset role;
+update public.candidatures_relecteurs set status = 'refusee', decided_at = now() - interval '7 months'
+ where id = (select id from public.candidatures_relecteurs where email = 'claire.martin@test.fr' limit 1);
+select public.purger_donnees_expirees();
+select pg_temp.ok((select count(*) from public.candidatures_relecteurs where email = 'claire.martin@test.fr') = 2,
+  'relecteurs : candidature refusée effacée après 6 mois, les autres gardées');
+
 select 'Parcours membre : toutes les vérifications sont passées.';

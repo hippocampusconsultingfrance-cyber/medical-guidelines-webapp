@@ -1,0 +1,1204 @@
+{
+ "cle": "alr_non_specialiste",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "5d8112c61adc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les ALR périmédullaires (rachianesthésie, analgésie péridurale) sortent clairement du cadre de ces recommandations. Les blocs du tronc, intercostaux, paravertébraux, interpleuraux et le multibloc laryngé sortent également de ce cadre",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "48d6c7556256",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Études aléatoires avec un faible risque de faux positifs (α) et de faux négatifs (\u0001)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "f7e826edb8db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(puissance élevée : (\u0001 = 5 à 10 %) Risque α élevé, ou faible puissance",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "a920892ff503",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Risque α élevé, ou faible puissance Études non aléatoires. Sujets « contrôlés » contemporains",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "a2e61c08ca22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Risque α élevé, ou faible puissance Études non aléatoires. Sujets « contrôlés » contemporains",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "4153f2e5159b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contemporains Études de cas. Avis d’experts.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "d5b56b4225dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grade E Deux (ou plus) études de niveau I",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "37842c37eb29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source (grades A à E)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "15a2549543c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source (grades A à E)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "54e097063cdd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source (grades A à E)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "a4c035f4aa79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source (grades A à E)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "be7b489b610f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qui transmettent l’influx nerveux. Ils se répartissent en deux familles : les aminoesters (procaïne, tétracaïne) et les aminoamides (lidocaïne, mépivacaïne, bupivacaïne, ropivacaïne, ar-",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u13",
+   "empreinte": "ea1fb51491af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésiques locaux de puissance faible (lidocaïne, prilocaïne et mépivacaïne) ont un délai d’action court (5 à 10 minutes selon le site) et une durée d’action d’une heure",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "1e332f264796",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(ropivacaïne et bupivacaïne) ont un délai d’action plus long (10 à 20 minutes) et une durée d’action de deux heures 30 à",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "ab46f9a9f87a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les facteurs diminuant la fixation protéique des anesthésiques locaux (acidose, hypoventilation, âge inférieur à un an ou au contraire très avancé) augmentent la toxicité systémique des anesthésiques locaux. La rapidité de l’injection des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "16a8e4a77140",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des risques liés à un phénomène d’absorption très précoce. L’enfant est particulièrement exposé à un",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "1e227a83adab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il convient d’être prudent pour les réinjections d’anesthésiques locaux, même espacées, en raison du risque toxique des doses cumulées.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "fcc9dba1e292",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "particulièrement la lidocaïne sont toxiques pour le nerf. Cependant, cette toxicité ne se manifeste que lors des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "3e1961979c23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec dépression cardiorespiratoire (Tableau 3). Le traitement doit être rapide : arrêt de l’injection, oxygénation et contrôle des voies aériennes, voire administration parentérale d’anticonvulsivants [D].",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "d5ae1d296716",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Aspects cliniques • la crise généralisée tonicoclonique de type grand mal (associée à des troubles neurovégétatifs : tachycardie, HTA, mydriase, sudation intense)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "71074e4b0984",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• signes subjectifs : paresthésies, fourmillements des extrémités, céphalées en casque ou frontales, goût métallique dans la bouche, malaise général avec angoisse, étourdissement, sensation ébrieuse, vertiges, logorrhée, hallucinations visuelles ou auditives, bourdonnements d’oreille",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "ce3cd411e6da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fasciculations au niveau des lèvres ou de la langue • conduite à tenir : arrêt de l’injection, vérification de la position du patient (décubitus dorsal) et du matériel de ventilation préparé (ballon autoremplisseur à valve unidirectionnelle branché sur une source d’oxygène).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "95f38f08333f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toxicité nerveuse centrale. Tous les agents sont capables d’induire des accidents convulsifs. Le rapport des toxicités",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "9b5f76c22a09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "torsade de pointes ou bradycardie extrême peuvent survenir. L’accident cardiotoxique peut survenir avant l’apparition des prodromes neurologiques avec la bupivacaïne. La toxicité est directement liée au blocage des canaux sodiques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "41192acc20f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les désordres électrolytiques (hyponatrémie sévère ou hyperkaliémie) augmentent le risque de cardiotoxicité. La réanimation de l’arrêt cardiaque survenant à la suite d’une injection fait appel aux techniques universellement recommandées. Toutefois, aucun des médicaments antiarythmiques habituellement préconisés dans l’arrêt cardiaque ne doit être utilisé [D].",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "c919033d1774",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une alternative intéressante à la bupivacaïne, dans les rares cas où un agent de longue durée d’action est requis [D].",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "c5d8eafb36f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Plus que l’usage de la dose-test adrénalinée, l’injection lente, fractionnée avec maintien du contact verbal représente la meilleure prévention. La ropivacaïne, réputée moins",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "55c332217bce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "amide est tout à fait exceptionnelle. Dans les rares cas avérés, le conservateur utilisé dans les solutions adrénalinées est plus souvent en cause que l’anesthésique local",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "ef1aa3a10ff1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Emla® contient de la prilocaïne, mais son emploi est dénué de ce risque quand elle est utilisée selon les recommandations du Tableau 4. Le traitement repose sur des injections",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "f595c95077fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "adrénalinées contiennent toutes un agent stabilisant, en général le métabisulfite, pouvant être responsable de réactions allergiques. Le passage intravasculaire rapide de l’adrénaline peut être source d’hypertension et de malaise pouvant être étiqueté à tort « allergie ».",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "a852a1dd0519",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les contre-indications à l’usage des anesthésiques locaux sont rares. Les contre-indications absolues sont l’allergie avérée à un agent de la classe correspondante (ou à un excipient), la porphyrie pour la lidocaïne et la ropivacaïne.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "6b017a2c5a4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "teils). Les contre-indications relatives sont les cardiopathies ischémiques mal compensées et la thyréotoxicose.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "90bf5f7ef76e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour minimiser les risques de toxicité systémique, il faut impérativement limiter les doses injectées, utiliser des solutions adrénalinées en l’absence de contre-indications (les",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "763a98a4cd80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "6d1f942c0701",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "ea5c28355afb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "4ab5674779e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "4fd3e4e6166e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "f8d1d39d7063",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "210d33eecb47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "b5af9b5926e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "4e275bcbeeaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "bee544b576b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Infiltration dose maximale 200 mg. Contient un conservateur.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "d9a7425e00e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nerveuses sensitives en appliquant l’agent anesthésique sur la peau ou les muqueuses. L’anesthésie par infiltration",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "19fc925a5951",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.1.2.1. Les muqueuses. Une analgésie efficace des muqueuses saines du nez, de la bouche, de la gorge, de l’arbre trachéobronchique, de l’œsophage et de l’appareil génito-urinaire,",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u46",
+   "empreinte": "c5618478bee9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• l’anesthésie avant chirurgie cutanée superficielle (incluant le paraphimosis) ; • l’anesthésie avant détersion mécanique des ulcères veineux ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "3f940837be64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du conduit auditif externe et de la membrane tympanique est indiquée pour l’ablation de corps étrangers. La perforation tympanique est une contre-indication à l’utilisation des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "d8a0052d6357",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "geste sans douleur. La Novesine® ne doit pas être poursuivie car elle peut induire des lésions graves de la cornée du fait de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "98f853f31175",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• l’utilisation de l’Emla n’est pas contre-indiquée chez l’enfant de moins de trois mois [B].",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "a9202b208d52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l’anesthésie topique, elle est d’installation plus rapide mais nécessite plus de produit. Pour les plaies étendues, la dose",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u51",
+   "empreinte": "29696ce676cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.1.3.1. Choix de l’agent. Les agents anesthésiques recommandés pour les infiltrations sont la lidocaïne et la mépivacaïne. La bupivacaïne ne dispose pas d’AMM pour cette indication",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u52",
+   "empreinte": "56584fa06f33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lente dans les berges de la plaie et de proche en proche [B]. Pour prévenir le risque septique, en cas de plaie manifestement contaminée, l’infiltration doit être réalisée en peau",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u53",
+   "empreinte": "e8c49bc634ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de distorsion des berges d’une plaie complexe fait préférer une anesthésie topique ou une ALR.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u54",
+   "empreinte": "8993c189c09b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les ALR périmédullaires (rachianesthésie, analgésie péridurale) sortent clairement du cadre de ces recommandations. Les blocs du tronc, intercostaux, paravertébraux, interpleuraux et le multibloc laryngé sortent également de ce cadre",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u55",
+   "empreinte": "ae715280fe0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De manière schématique, deux situations se prêtent à la mise en œuvre d’une ALR dans le cadre de ces recommandations : les traumatismes des membres et les traumatismes",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u56",
+   "empreinte": "c0a67d7b2ed7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bloc qui, de manière consensuelle, semble adapté à l’urgence extrahospitalière est le bloc du nerf fémoral [D].",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u57",
+   "empreinte": "9057ffe31418",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "extrahospitalière est le bloc du nerf fémoral [D]. 3.2.1. Contraintes et spécificités de l’urgence",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u58",
+   "empreinte": "7655f247ec0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’ALR respectées : infection locale, troubles majeurs de l’hémostase, exceptionnelle allergie aux anesthésiques locaux. L’interrogatoire, lorsqu’il est possible, doit rechercher",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u59",
+   "empreinte": "bd6b5eff7742",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méconnaître celles qui peuvent se décompenser ultérieurement. Il est indispensable, avant tout bloc, de consigner par écrit les données de l’examen neurologique (motricité, sensibilité) de la zone considérée [E]. Des questions simples",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u60",
+   "empreinte": "6232d04e295a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’hémostase, exceptionnelle allergie aux anesthésiques locaux. L’interrogatoire, lorsqu’il est possible, doit rechercher une anomalie constitutionnelle ou acquise de l’hémostase",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u61",
+   "empreinte": "021c524d221c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utile. Avant la réalisation d’une ALR (bloc fémoral ou iliofascial), un niveau élevé de douleur, spontanée ou induite par une éventuelle mobilisation du malade, justifie une analgésie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u62",
+   "empreinte": "0321f39b66ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bloc qui, de manière consensuelle, semble adapté à l’urgence extrahospitalière est le bloc du nerf fémoral [D].",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u63",
+   "empreinte": "c7b14eb33667",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de manière prévisible une analgésie d’excellente qualité, chez l’enfant comme chez l’adulte, pour l’urgence pré- et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u64",
+   "empreinte": "dc4bf5167bab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Indications [A]. Les indications sont l’analgésie pour fracture de diaphyse fémorale ainsi que pour les plaies du genou. Ils permettent, dans d’excellentes conditions d’analgésie, la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u65",
+   "empreinte": "0dbfad56bf4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "éventuelle d’une broche de traction. Ces blocs sont partiellement efficaces pour la prise en charge analgésique des fractures des extrémités supérieure ou inférieure du fémur",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u66",
+   "empreinte": "e1f19477a8a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Méthode. Le bloc iliofascial doit être recommandé comme la technique de référence dans le cadre de l’urgence",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u67",
+   "empreinte": "85e2b20d91bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’aiguille à biseau court doit franchir le fascia lata et le fascia iliaca, perçus comme deux ressauts successifs, avant de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u68",
+   "empreinte": "f3f922db3085",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "parvenir dans l’espace iliofascial où la solution d’anesthésique local est injectée. Avec cette technique, le taux de succès est de 88 % pour le nerf fémoral (nerf crural), de 90 %",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u69",
+   "empreinte": "d87097261154",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suffisants chez l’adulte pour obtenir une anesthésie des trois branches du plexus lombaire. Le recours à des volumes plus",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u70",
+   "empreinte": "e8a8e00ad313",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’enfant, à défaut d’information précise sur le poids, le volume de lidocaïne 1 % peut être estimé à 1 ml/année d’âge [C]. L’utilisation de la ropivacaïne n’est pas validée. L’analgésie débute entre la 5e et la 15e minute selon l’anesthésique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u71",
+   "empreinte": "6f74b44dcfc8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "[C]. L’utilisation de la ropivacaïne n’est pas validée. L’analgésie débute entre la 5e et la 15e minute selon l’anesthésique local. Dès que le bloc est installé, le membre doit être",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u72",
+   "empreinte": "73c906c9c84c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au-dessus de la pointe de la malléole latérale. Les autres blocs : le nerf tibial (nerf tibial postérieur), le rameau calcanéen médial du nerf tibial postérieur (nerf calcanéen interne) et fibulaire profond (nerf tibial antérieur) sont moins",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u73",
+   "empreinte": "0a350db78272",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.2.2. Blocs du pied. Ils sont proposés pour la prise en charge de plaies du pied [D]. Deux branches sciatiques",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u74",
+   "empreinte": "a6c46fd18e8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisés. 3.2.2.3. Blocs du membre supérieur. Seuls les blocs tronculaires périphériques ont été retenus. Ils permettent l’exploration et la suture de plaies n’intéressant qu’un ou deux",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u75",
+   "empreinte": "cfe848ed4e69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "médian est dans le canal carpien, entre les tendons des muscles fléchisseur radial du carpe (muscles grand palmaire)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u76",
+   "empreinte": "6c9d7654262d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une ligne transversale de trois centimètres est tracée à l’angle supérieur de la tabatière anatomique et 3 ml d’anesthésique local sont infiltrés en sous-cutané sur cette ligne.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u77",
+   "empreinte": "afb01bc84fb9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "centimètres au-dessus au bord médial interne du muscle fléchisseur ulnaire du carpe (muscle cubital antérieur).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u78",
+   "empreinte": "93174d77e756",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.2.3. Blocs du membre supérieur. Seuls les blocs tronculaires périphériques ont été retenus. Ils permettent l’exploration et la suture de plaies n’intéressant qu’un ou deux territoires de la main [D]. L’anesthésique local utilisé est la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u79",
+   "empreinte": "e8999639e9fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bloc de la gaine des fléchisseurs. Le bloc de la gaine des fléchisseurs paraît particulièrement intéressant pour les gestes courts sur les II, III et IVes doigts (sutures de plaies,",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u80",
+   "empreinte": "fd2f4d247edd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "local à utiliser est la lidocaïne non adrénalinée. Cette technique doit être adoptée en lieu et place de l’ancienne technique d’anesthésie des nerfs collatéraux des doigts [B], relativement douloureuse et incriminée dans la survenue",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u81",
+   "empreinte": "12f4504df711",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "locales de la face où l’on finit par infiltrer des volumes excessifs d’anesthésique local pour suturer des plaies aux",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u82",
+   "empreinte": "156ce9ba32e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la face représente une alternative de choix à l’anesthésie générale, chez des malades à l’estomac plein, pour sutures",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u83",
+   "empreinte": "14bdae2acfc3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.3.1. Blocs supra-orbitaire et supratrochléaire. Il permet de bloquer le nerf frontal, branche du nerf ophtalmique (V1), au",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u84",
+   "empreinte": "9bf77b289c87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.3.2. Bloc infra-orbitaire. Le nerf infra-orbitaire (nerf sousorbitaire) est une branche du nerf maxillaire (nerf maxillaire supérieur) (V2), qui peut être bloqué au niveau du foramen",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u85",
+   "empreinte": "365741ed5f33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "voie buccale ou transcutanée au niveau du foramen mentonnier (trou mentonnier) et l’anesthésie obtenue intéresse le menton et la lèvre inférieure.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u86",
+   "empreinte": "dbadb7765198",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lésion nerveuse lié à la technique de ponction, lorsqu’une sédation légère est associée, c’est-à-dire d’un niveau n’empêchant ni l’éventuelle survenue du signe d’alarme qu’est la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u87",
+   "empreinte": "b32b6a84de5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisation du bloc. L’échec partiel ou total d’un bloc ne constitue en aucun cas l’indication d’une sédation [E].",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u88",
+   "empreinte": "26b7bd7d303d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(patient coopérant, orienté et tranquille) est l’objectif souhaité [E]. L’utilisation de médicaments facilement antagonisables est un gage de sécurité. Parmi les agents sédatifs, le midazolam, qui induit anxiolyse et amnésie paraît la benzodiazépine la mieux adaptée au contexte de l’urgence. Le",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u89",
+   "empreinte": "c863b6020819",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "midazolam, qui induit anxiolyse et amnésie paraît la benzodiazépine la mieux adaptée au contexte de l’urgence. Le risque de dépression respiratoire est majoré par l’association à un morphinique [B], qui doit donc être évitée [E]. Il",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u90",
+   "empreinte": "dd55d1cfdb30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "midazolam, qui induit anxiolyse et amnésie paraît la benzodiazépine la mieux adaptée au contexte de l’urgence. Le risque de dépression respiratoire est majoré par l’association à un morphinique [B], qui doit donc être évitée [E]. Il",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u91",
+   "empreinte": "c33bd1530de7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La morphine est l’opiacé de référence pour assurer une analgésie préalable ou de complément [D]. Après un bolus",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u92",
+   "empreinte": "ddec425c2e4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mélange équimolaire d’oxygène et de protoxyde d’azote (MEOPA), par son action sédative et analgésique, peut également être utilisé en complément d’une ALR [E].",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u93",
+   "empreinte": "17d5afe1d75a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’ALR sont liées à des traumatismes ou à des lésions ischémiques par compression. Le bloc moteur et sensitif peut masquer des complications neurologiques (traumatisme initial ou secondaire lié à un défaut d’immobilisation, syndrome",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u94",
+   "empreinte": "1e9b2e67457e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fasciculations au niveau des lèvres ou de la langue • conduite à tenir : arrêt de l’injection, vérification de la position du patient (décubitus dorsal) et du matériel de ventilation préparé (ballon autoremplisseur à valve unidirectionnelle branché sur une source d’oxygène).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u95",
+   "empreinte": "af77064e7a1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "voie veineuse, administration à dose titrée d’adrénaline 5) Réanimation de l’arrêt",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u96",
+   "empreinte": "226fcec11b07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5) Traitement symptomatique de l’arrêt cardiaque 6) Aucun médicament antiarythmique en cas de troubles du rythme.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u97",
+   "empreinte": "0f97889fe32d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’opérateur doit avoir été formé pour la technique choisie.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u98",
+   "empreinte": "7df86b8f6343",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• C’est au médecin qui réalise l’acte d’évaluer le rapport bénéfice-risque de cette technique pour le patient.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u99",
+   "empreinte": "a9ce36fac507",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le choix de la technique d’anesthésie est fonction de l’indication, des comorbidités du patient, des circonstances de survenue des lésions et de l’avis du patient.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u100",
+   "empreinte": "e612066f12ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’information et la recherche du consentement sont nécessaires chaque fois que possible.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u101",
+   "empreinte": "bafa3c531205",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaires chaque fois que possible. • Lorsqu’un neurostimulateur est utilisé (ce que recommandent les experts pour les blocs distaux des membres (poignet, chevilles), il doit faire l’objet d’une maintenance et être vérifié avant chaque utilisation",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u102",
+   "empreinte": "ceb69aa570a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le patient doit être installé confortablement. • Les règles d’asepsie doivent être appliquées strictement.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u103",
+   "empreinte": "01e8170c2bb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Certaines procédures de sécurité sont nécessaires pour limiter la survenue d’erreurs (conditionnements spécifiques, étiquetage des seringues, etc.).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u104",
+   "empreinte": "2310c34a7dec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limiter la survenue d’erreurs (conditionnements spécifiques, étiquetage des seringues, etc.). • Le contact verbal doit être maintenu pendant la réalisation de l’AL ou l’ALR.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u105",
+   "empreinte": "ad107afa1219",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le contact verbal doit être maintenu pendant la réalisation de l’AL ou l’ALR. • L’utilisation d’aiguilles à biseau court est recommandée.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u106",
+   "empreinte": "61bf393238c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "locaux, un test d’aspiration réalisé avant l’injection et répété pendant l’injection, une injection lente et fractionnée, la recherche d’une tachycardie ou d’une hypertension survenant au cours de l’injection de solutions",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u107",
+   "empreinte": "7c6258fce00e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "adrénalinées. • La recherche de paresthésie est fortement déconseillée.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u108",
+   "empreinte": "a7a79824025c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La recherche de paresthésie est fortement déconseillée. • L’apparition d’une douleur fulgurante pendant la procédure impose l’arrêt immédiat de l’injection.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u109",
+   "empreinte": "f6ca519e0a75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’échec de la technique ne peut être envisagé qu’au-delà des délais d’installation. Il est alors nécessaire de prendre en compte le risque lié à la toxicité systémique de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u110",
+   "empreinte": "d0c7af78df9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et agents utilisés, au déroulement de l’acte, aux éventuels événements et au suivi sont à consigner par écrit. Une fiche spécifique peut être utilisée.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u111",
+   "empreinte": "57c7b898ec77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La chaîne de soins doit être organisée : procédures communes avec les anesthésistes-réanimateurs, procédure d’appel d’un praticien en recours.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u112",
+   "empreinte": "0312462cf302",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "invasive, SpO2) doit être disponible sans délai. Le choix des moyens de surveillance du patient, installés avant la réalisation du geste, est fonction des doses d’anesthésique local",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u113",
+   "empreinte": "fa5c2d5b0e12",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "seul fait que le milieu est difficile. Les problèmes spécifiques à prendre en considération sont multiples : conditions précaires d’évaluation préalable et de réalisation des ALR (sécurité, hygiène, climat...), durées de prise en charge, conséquences des techniques de relevage et de transport de ces",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u114",
+   "empreinte": "112502eec26e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutes les techniques d’anesthésie locale préconisées dans ces recommandations peuvent être utilisées sous couvert des règles habituelles de sécurité [E]. Le bloc iliofascial",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u115",
+   "empreinte": "14a9c79e41a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(patient incarcéré, victime en milieu périlleux...), une analgésie préalable par voie intraveineuse peut s’avérer nécessaire, mais ne contre-indique pas la réalisation ultérieure de l’ALR",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u116",
+   "empreinte": "93106822d0a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aux urgences. Les anesthésies tronculaires se limitent aux blocs fémoral ou iliofascial pour les fractures de fémur, et",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u117",
+   "empreinte": "d6e90c51d3a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La pharmacologie des anesthésiques locaux diffère fondamentalement, chez l’enfant de moins d’un an, de celle de l’adulte, du fait de l’immaturité des métabolismes hépatique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u118",
+   "empreinte": "1c7570d86bc0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rapportée au poids corporel de l’enfant. Comme chez l’adulte, le maintien du contact verbal est essentiel [C]. Le",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u119",
+   "empreinte": "58e5ad90ff59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cocaïne aux anesthésiques locaux doivent être évitées en raison de leurs dangers [D].",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u120",
+   "empreinte": "31c4e5be6080",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’enfant. L’objectif est d’atteindre un niveau de sédation consciente, en procédant par titration. Le mélange équimoléculaire oxygène–protoxyde d’azote est utilisable chez l’enfant de plus de quatre ans [C], en respectant ses contreindications habituelles.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u121",
+   "empreinte": "8c52ab9f5edf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "termes de monitorage et d’accès veineux. L’association à une sédation est souvent nécessaire chez l’enfant. Préalablement à celle-ci, il convient de rechercher une hypovolémie",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u122",
+   "empreinte": "9504773bec0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réglementation [1,9–11] et des recommandations de la Société française d’anesthésie et de réanimation [2–4] et après avoir bénéficié d’une formation reconnue, théorique et pratique, notamment au bloc opératoire.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u123",
+   "empreinte": "e9d8c7187e7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• une formation théorique et pratique initiale encadrée par des médecins anesthésistes–réanimateur ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u124",
+   "empreinte": "b370cb19ba69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par des médecins anesthésistes–réanimateur ; • une formation médicale continue accréditée ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u125",
+   "empreinte": "c6ed2171e185",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans une approche globale du patient en situation d’urgence intégrant les soins préhospitaliers, le service d’accueil et le bloc opératoire (de façon à ne pas interférer avec une technique d’anesthésie nécessaire à l’acte chirurgical) ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u126",
+   "empreinte": "11f6c5a7eddd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec une technique d’anesthésie nécessaire à l’acte chirurgical) ; • la mise en place de ces protocoles et procédures ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u127",
+   "empreinte": "d6abdf950478",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• la mise en place des moyens cliniques et biomédicaux de surveillance, de suppléance et de sécurité ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u128",
+   "empreinte": "1d7f9008fb57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveillance, de suppléance et de sécurité ; • la vérification du matériel avant chaque usage ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u129",
+   "empreinte": "643831397463",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• la rédaction d’une fiche de surveillance, indiquant les produits utilisés, et les variables de surveillance en",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u130",
+   "empreinte": "b600395b2a2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• une information (procédure utilisée, consignes de surveillance en cas de sortie) doit être donnée au patient ou, à défaut, la personne accompagnante ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u131",
+   "empreinte": "196d91546f1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou, à défaut, la personne accompagnante ; • l’évaluation régulière des pratiques.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u132",
+   "empreinte": "dc7bde57340b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésiques locaux et des techniques, acquérir l’expérience de leur utilisation et disposer des moyens, en particulier de surveillance, pour les mettre en œuvre. Ces connaissances doivent être régulièrement actualisées.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u133",
+   "empreinte": "c7fae64d573f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

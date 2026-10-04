@@ -179,6 +179,10 @@ export default function Shell({
                   <Link href="/bibliotheque/suggestions" style={{ color: "inherit" }}>
                     Suggestions des membres
                   </Link>
+                  {" · "}
+                  <Link href="/bibliotheque/relecteurs" style={{ color: "inherit" }}>
+                    Médecins relecteurs
+                  </Link>
                 </>
               )}
               {lib.isAdmin && (

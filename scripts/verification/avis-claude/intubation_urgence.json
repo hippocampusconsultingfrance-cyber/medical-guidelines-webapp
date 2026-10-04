@@ -1,0 +1,466 @@
+{
+ "cle": "intubation_urgence",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4bf7028e1ca9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour 32 recommandations. Parmi ces recommandations, 5 ont un niveau de preuve élevé (GRADE 1), 12 ont",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "72f4cd7ff3ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de réaliser une intubation trachéale en première intention plutôt que d'utiliser un dispositif supra-glottique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u3",
+   "empreinte": "d7f6f4acf5f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de réaliser une intubation trachéale par rapport à la pose d'un dispositif supra-glottique ou une ventilation au masque",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u4",
+   "empreinte": "b5049ae84d2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser une ventilation par un masque facial et un ballon autoremplisseur avec valve unidirectionnelle (BAVU) relié à une source d'oxygène",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u5",
+   "empreinte": "98724332fc2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients pris en charge pour un traumatisme crânien grave, il est probablement recommandé de réaliser une intubation trachéale",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u6",
+   "empreinte": "f677c1a45e18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la pression artérielle systolique reste constamment supérieure à 110 mmHg et que l'EtCO2 soit maintenue entre 35 et 45 mmHg",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u7",
+   "empreinte": "644af618c65f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de prioriser la libération des voies aériennes et l'oxygénation",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u8",
+   "empreinte": "e165b4624098",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas avoir recours à l'intubation trachéale systématique lors de la prise en charge d'un traumatisme thoracique pénétrant",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u9",
+   "empreinte": "938307b1820e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'éliminer la présence d'un pneumothorax à exsuffler ou à drainer avec les moyens disponibles",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u10",
+   "empreinte": "e32e2252dae4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est probablement pas recommandé d'intuber sur la seule indication du choc en l'absence d'autres indications formelles",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u11",
+   "empreinte": "1fa1ce0cb330",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Du fait de la multiplicité des étiologies possibles d'une obstruction",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u12",
+   "empreinte": "0689891137f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'impact de l'utilisation d'une check-list ou de l'utilisation d'aides cognitives",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u13",
+   "empreinte": "59452594db09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Kit de crico-thyrotomie pour technique avec Scalpel, Mandrin long béquillé et Sonde d'intubation",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "c17e475717b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'avoir à disposition immédiate le matériel d'intubation difficile",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u15",
+   "empreinte": "e1f9c031f7ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de considérer d'emblée l'intubation trachéale en urgence hors bloc opératoire et soins critiques comme une intubation potentiellement difficile",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u16",
+   "empreinte": "f3708671c379",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'intubation difficile développés pour les situations d'urgence (score LEMON, score HEAVEN, score PreDAIT…)",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u17",
+   "empreinte": "fd524b56c996",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'au moins 50 laryngoscopies directes réussies sur des patients",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u18",
+   "empreinte": "e8b74100216f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'au moins 15 vidéo-laryngoscopies réussies sur des patients",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u19",
+   "empreinte": "926d5c468459",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de procéder systématiquement à une pré-oxygénation du patient",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u20",
+   "empreinte": "bda99b3c91f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser une pré-oxygénation par ventilation non invasive (VNI)",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u21",
+   "empreinte": "2d9168c5e456",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est probablement pas recommandé d'utiliser une oxygénation apnéique après l'induction anesthésique et avant la laryngoscopie",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u22",
+   "empreinte": "85b57e618b24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ventilation manuelle au masque à FiO2 100%, à bas volume et basse pression",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u23",
+   "empreinte": "a285a63f5ba1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est probablement pas recommandé de réaliser de pression cricoïdienne",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u24",
+   "empreinte": "1c18ed28bd35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un seuil > 0,9 permet d'identifier les patients les plus à risque de développer un collapsus cardiovasculaire",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u25",
+   "empreinte": "239e8dcc1f29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent que l'éviction du propofol constitue une mesure de prudence",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u26",
+   "empreinte": "a0b550ef750d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'associer systématiquement un hypnotique suivi de l'injection d'un curare",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u27",
+   "empreinte": "5f38883e9bba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucune des stratégies préventives envisagées isolément n'a permis de démontrer une réduction de la morbimortalité",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u28",
+   "empreinte": "350df729b561",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un dispositif (stylet malléable ou mandrin long béquillé) pour guider le trajet de la sonde d'intubation trachéale",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u29",
+   "empreinte": "29ebab53b88b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En intrahospitalier, il est recommandé d'utiliser le vidéolaryngoscope en première intention",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u30",
+   "empreinte": "bef49757c448",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En préhospitalier, l'hétérogénéité des données actuelles (expérience",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u31",
+   "empreinte": "95aad55cdbcd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'échec de la première procédure d'intubation, les experts suggèrent de se référer à l'algorithme correspondant à la situation clinique",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u32",
+   "empreinte": "5490935a65f6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "2c9548f211ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 (page PDF 52) : au choix LD + stylet/mandrin ou VL + stylet/mandrin, maximum 2 tentatives en 2 min → échec, ventilation manuelle BAVU",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "cd06c2f3ba93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 : SpO2 > 90 % → technique alternative (maxi 1 tentative) : si VL → LD + mandrin long béquillé ; si LD → VL + stylet/mandrin",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "dcd17f080901",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 : SpO2 ≤ 90 % → ventilation manuelle BAVU, renfort possible ? → dispositif supra-glottique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "58f41d8fd609",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 : dispositif supra-glottique 2e génération permettant ventilation et intubation, maximum 1 tentative",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "af7a67297628",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 : SpO2 > 90 % → transport vers hôpital (SAUV ou déchoquage) +/- réveil si envisageable, après information du service receveur",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "35bad543dfa9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 : SpO2 ≤ 90 % → cricothyroïdotomie SMS (scalpel/mandrin/sonde) ; succès → contrôle capnographique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "08f3b0e2ae81",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "66dbbfdc2952",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 (page PDF 53) : vidéolaryngoscopie + stylet/mandrin, maximum 2 tentatives en 2 min ; si obstruction des VAS : discuter trachéotomie de sauvetage au bloc en VS sous AL avant toute induction",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "2c7e26870e0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : SpO2 > 90 % → laryngoscopie directe + stylet/mandrin OU fibroscope, maximum 1 tentative, choix fonction contexte/expertise",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "e1d7e76e797b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : SpO2 ≤ 90 % → ventilation manuelle BAVU, appel renfort expert → DSG",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "ace6217af32b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : dispositif supra-glottique 2e génération, maximum 1 tentative → échec, « réveil possible ? »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "2d108310e40f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : réveil possible oui → réveil",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "aaa6e1c3bada",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : réveil possible non → cricothyroïdotomie SMS",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "e1004e29eaec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figures 3 et 4, note : « si la procédure est prolongée (> 5 min) : évoquer la possibilité d'un complément d'induction anesthésique par hypnotique +/- curare »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "097bd3a5beb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser systématiquement la capnographie pour confirmer le bon positionnement de la sonde d'intubation trachéale, du dispositif supra-glottique ou de l'abord trachéal",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u48",
+   "empreinte": "773b5276a087",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser l'échographie trans-trachéale et pulmonaire pour vérifier le bon positionnement de la sonde",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u49",
+   "empreinte": "e5136f56c022",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent l'association d'un hypnotique et d'un morphinique pour la sédation d'un",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u50",
+   "empreinte": "50273e0a77d4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "a36c54b6ba3c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

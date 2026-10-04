@@ -1,0 +1,268 @@
+{
+ "cle": "raac_orthopedique_2019",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "6d6be1c3afaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "18 éléments ont été identifiés et classés en items pré, per et postopératoire.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "be69a0d7d2e6",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "insuffisantes pour que les experts émettent une recommandation sur l'intérêt de l'analgésie locale ou locorégionale pour diminuer la douleur et/ou la consommation d'opiacés en postopératoire d'arthroplastie de hanche",
+   "explication": "La source contient 4 mentions « ABSENCE DE RECOMMANDATION », pas 3 : outre Q2, Q3 et Q7, une 4e (juste après R10.2) porte sur l'analgésie locale/locorégionale après arthroplastie de HANCHE. Elle est absente de la fiche (u2, u5, u12, u29), qui ne garde que R10.2 (genou).",
+   "page": 29
+  },
+  {
+   "id": "u3",
+   "empreinte": "6e501a4455e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Il est recommandé de mettre en place un programme de récupération améliorée afin de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u4",
+   "empreinte": "50ed86e36a6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 – Il est probablement recommandé de mettre en place un programme de récupération",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u5",
+   "empreinte": "fa9cf7a8a84d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation concernant l'utilité de la préhabilitation sur la durée de séjour",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u6",
+   "empreinte": "9a3df6c00123",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2 – Il n'est probablement pas recommandé d'utiliser systématiquement les gabapentinoïdes",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u7",
+   "empreinte": "a40e3621e3b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez les patients ayant une anémie modérée avec une hémoglobinémie comprise entre 10 et 13 g/dL pour diminuer le risque transfusionnel.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u8",
+   "empreinte": "ca3dceabe297",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 – Il est probablement recommandé d'ajuster le nombre d'injections d'érythropoïétine en",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u9",
+   "empreinte": "0cd5b4a845e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 – Il n'est pas recommandé d'utiliser des dispositifs de récupération de sang en",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u10",
+   "empreinte": "d21ee942fe2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.4 – Il est recommandé d'utiliser l'acide tranexamique en périopératoire de chirurgie prothétique",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u11",
+   "empreinte": "f4279548340d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4 – Il n'est pas recommandé de réaliser un bilan infectieux systématique avant une",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u12",
+   "empreinte": "3c825d708be1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sur la gestion des apports liquidiens en peropératoire de chirurgie prothétique du membre inférieur",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u13",
+   "empreinte": "7d7b853dec93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5 – Il est probablement recommandé d'administrer de la dexaméthasone par voie",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u14",
+   "empreinte": "f94b688b8b17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6 – Il est recommandé de lutter contre l'hypothermie en péri-opératoire de chirurgie",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u15",
+   "empreinte": "efcdeb12a373",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7 – Il n'est probablement pas recommandé de privilégier un type d'anesthésie",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u16",
+   "empreinte": "822887529029",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8 – Il n'est probablement pas recommandé de privilégier une technique chirurgicale particulière",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u17",
+   "empreinte": "a3a12bcab0d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R9 – Il n'est probablement pas recommandé d'utiliser systématiquement un garrot pneumatique",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u18",
+   "empreinte": "d9342ca3a633",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10.1 – Il est probablement recommandé d'appliquer une stratégie d'épargne morphinique en",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u19",
+   "empreinte": "dae6e9189800",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "consommation de morphiniques en postopératoire d'arthroplastie de genou. GRADE 1+",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u20",
+   "empreinte": "d7d2cec9913f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10.3 – Il n'est probablement pas recommandé d'utiliser une rachianalgésie à la morphine ou",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u21",
+   "empreinte": "be34d2e5bba1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10.4 – Il est probablement recommandé, en l'absence de contre-indication, de prescrire des",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u22",
+   "empreinte": "ac6f69be7d4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11.1 – Il est recommandé d'administrer une thromboprophylaxie après arthroplastie de hanche",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u23",
+   "empreinte": "73149ad2c0f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11.2 – L'aspirine est probablement recommandée après arthroplastie de hanche ou de genou comme",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u24",
+   "empreinte": "f82e51d3fc03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11.3 – Les experts suggèrent que si le patient est inclus dans un programme de RAC après arthroplastie",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u25",
+   "empreinte": "e66115df51de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R12 – Il n'est probablement pas recommandé d'utiliser un drainage chirurgical systématique en",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u26",
+   "empreinte": "76364094f985",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R13 – Il est probablement recommandé d'utiliser une cryothérapie pour réduire la douleur",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u27",
+   "empreinte": "693e948cc908",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R14 – Il est probablement recommandé de lever les patients opérés d'une arthroplastie de",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u28",
+   "empreinte": "0e7722c90b37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R15 – Une rééducation précoce est probablement recommandée après arthroplastie de hanche",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u29",
+   "empreinte": "0daacbb11695",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,943 @@
+{
+ "cle": "blocs_peripheriques_membres",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "87748114e84e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13. Comment gérer la toxicité systémique des anesthésiques locaux ? 14. Comment gérer les complications neurologiques des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "ffcab5d6df7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandations relèvent de l’avis des experts, ceci est mentionné dans le texte.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "c4e4960293ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "générale. Il doit également informer de l’éventualité d’un changement de la technique, justifiée par la stratégie chirurgicale, et des risques de séquelles neurologiques ou d’accidents graves, même s’il s’agit d’événements exceptionnels.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "091f3a11e299",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésique proposé, de vérifier l’absence de contreindication et de mettre en place le cas échéant des thérapeutiques de substitutions. C’est le cas notamment chez les patients sous anticoagulants de manière chronique (Question 10), pour lesquels le rapport entre les risques d’arrêt",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "1090f83ff1b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.2. L’organisation du programme opératoire doit être établie en tenant compte des anesthésies",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "48a712b71500",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La prémédication avant la réalisation d’une ALR périphérique est sans particularité (D). • Le jeûne préopératoire est applicable selon les normes",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "a7a7db78172c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "obligatoirement l’installation d’un monitorage identique à celui d’une AG, qui doit être effective avant la réalisation du bloc (consensus professionnel).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "d5c98a456f52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "légère, avec réactivité conservée aux stimulations verbales chez des patients coopérants. • Les benzodiazépines, et probablement le propofol, évitent de mémoriser la réalisation du bloc (B) tandis que",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "c107fc0c2fa0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts s’accordent à ne réaliser qu’une sédation peropératoire légère, avec réactivité conservée aux stimulations verbales, chez des patients coopérants (C).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "04ab5c1cc61d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C ponction unique sans cathéter : pas de rasage, désinfection en deux temps ; C mise en place d’un cathéter : rasage extemporané ou",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "44806ccb0b30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’a de valeur que négative. La dose–test peut être recommandée pour les blocs profonds (bloc du plexus",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "ce27fc0a7bf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moteur doit être testé avant la mise en place des champs chirurgicaux. Une extension péridurale ou intrathécale doit toujours être recherchée lors de l’évaluation d’un bloc plexique proche du rachis (ex : bloc",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "de0fec51f5fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Il est recommandé de réaliser toute ALR chez un patient éveillé, ou éventuellement sous sédation légère",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "09c23ee882e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’ALRIV peut être indiquée pour une chirurgie brève du membre supérieur dans un contexte d’urgence ou en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "6226623293a1",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "la pression d’occlusion artérielle est calculée (POA= [(PAS-PAD) x circonférence du membre/ largeur du garrot x 3]+ PAD) (A)",
+   "explication": "La source écrit « largeur du garrot × 3 » dans la formule ; la fiche omet le « × 3 ». Le reste (garrot double, avant-bras, exsanguination, 50 mmHg, grades A/B) est conforme.",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "f0036733e231",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’agent considéré, soit 30 min pour la lidocaïne, la prilocaïne et la mépivacaïne, et 45 min pour la bupivacaïne, l’étidocaïne et la ropivacaïne (consensus professionnel).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u17",
+   "empreinte": "da6f61910bf9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "garrot. Le dégonflage progressif du garrot avec deux à trois regonflages de 30 s toutes les 15 s est recommandé car il allonge le temps maximal pour obtenir la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "5281bfc1778b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proposée (B), car elle améliore sensiblement la tolérance au garrot et potentialise l’analgésie postopératoire.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "6b5885f94b1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trente minutes après le lâcher du garrot et le contrôle de la réapparition du pouls radial est obligatoire (A).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "0630b173f209",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les ALRIV du membre inférieur ou les ALR intraartérielles ne sont pas recommandées (B). • La technique de l’ALRIV continue n’est pas recommandée (B).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u21",
+   "empreinte": "a70532ff00b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La comparaison de la monostimulation à la multistimulation (au moins trois stimulations) dans les blocs axillaires et ischiatique est en faveur des injections multiples (délai d’installation plus rapide, meilleure étendue d’anesthésie et moins de blocs complémentaires), pour",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "e938bb054196",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "solution anesthésique à un seuil fixé à 0,5 mA sans recherche préalable de l’intensité minimale de stimulation n’est pas sans risque. Un ensemble de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "46515f33571e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par une ponction haute, à 10 cm du pli cutané de flexion, pour s’assurer de la proximité des deux contingents (consensus professionnel). Dans l’abord poplité latéral, une double réponse, plus efficace qu’une stimulation unique, doit être recherchée (A).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "3e74eb92e7ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nerveuses qu’une aiguille à biseau long (12–15°) (C). Les aiguilles à biseau « pointe–crayon » ont le triple désavantage d’une mauvaise pénétration tissulaire, d’un point de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "980ed8417413",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "guide métallique souple, muni de 3 orifices latéraux, est recommandé pour la pratique de l’analgésie périnerveuse continue (B). Le cathéter à extrémité fermée est dessiné pour l’incorporation d’un guide métallique souple qui en facilite la mise en place.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "5c580d89e72e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6.1. Les AL de durée d’action courte à intermédiaire : lidocaïne et mépivacaïne • Le délai d’installation et la durée du bloc sont plus longs",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "8290ad429ac1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et bupivacaïne • À dose égale, la toxicité systémique, cardiaque et neurologique, de la ropivacaïne est moins importante que",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "eea59aade4fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C La toxicité cardiaque du mélange pourrait être moins importante que celle de la bupivacaïne seule (D) ;",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "ac598f761a5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 µg kg-1) prolonge la durée des blocs sensitif et moteur ainsi que l’analgésie postopératoire lorsqu’elle est associée à la mépivacaïne ou à la lidocaïne (B).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "6bd68e93b9d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La position semi-assise (beach chair) est indiquée pour l’installation en chirurgie de l’épaule, arthroscopie comprise",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u31",
+   "empreinte": "42ce0264280f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7.2. Pour la chirurgie du bras à partir du tiers moyen Les voies supraclaviculaires sont indiquées pour la chirurgie orthopédique et vasculaire du bras. Avant le début de la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "0a37c733919e",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "Le bloc axillaire avec deux stimulations a un taux de réussite supérieur sur le radial et un bloc moteur plus puissant par comparaison au bloc au canal huméral.",
+   "explication": "Écart mineur : la fiche attribue un « Grade E » aux 2 stimulations sur le radial, alors que dans la source cette phrase n'est pas gradée (le « (E) » qui précède porte sur le bloc infraclaviculaire). Le reste de l'unité est conforme.",
+   "page": 8
+  },
+  {
+   "id": "u33",
+   "empreinte": "7d9a1e46670e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sept nerfs : médian, ulnaire, radial, musculocutané, cutanés médiaux du bras et de l’avant-bras et intercostobrachial pour. • Le bloc axillaire, de préférence par technique de multistimulation, est efficace (C).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u34",
+   "empreinte": "2c55b86a721c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le bloc au canal huméral est couramment utilisé pour la chirurgie du membre supérieur (consensus professionnel). Cette technique permet de faire une anesthésie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u35",
+   "empreinte": "a3c8f99d6c1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "17ce433b5d46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "59014959f127",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "493f0ca2e3e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "cd21bbd196ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "df302fe9143c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "083b2e4f38fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "f36f821b582a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "6afd539b65c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "0d26ec957434",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "da36346137e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "ac6ab576c950",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "d32d53a50a9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "0e2b8071ee9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "b506f6114bbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "9ce973b3af66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "da1ffa5e7415",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "fb3a631f03b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "a00df0517cb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "a4120883a6b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "e0a8ecf8210f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "e00b422e6909",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "bf083d71ad0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prothèse intermédiaire, ostéosynthèse des fractures pertrochantériennes (C). Les blocs des nerfs de la crête pour les voies d’abord latérale ou postérieure, et un blocage complémentaire des nerfs ilio-hypogastrique, ilio-inguinal et génitofémoral pour les voies antérieures peuvent être associés au",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u58",
+   "empreinte": "0ff8ad45f21b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’association des blocs du plexus lombaire et du plexus sciatique est adaptée à la chirurgie de la cuisse et du fémur",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u59",
+   "empreinte": "c8394aa19284",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La voie parasacrée et la voie postérieure à la fesse assurent un bloc du nerf cutané postérieur plus constant que les voies antérieures ou latérales. Aucun travail, ne permet de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u60",
+   "empreinte": "59455774d7f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cheville (cutanée, veineuse, tendineuse, musculaire et osseuse) (A). Toute chirurgie en décubitus ventral implique une évaluation soigneuse de l’anesthésie avant incision",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u61",
+   "empreinte": "ab11974aa7da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgies du pied avec garrot à la cheville. Le bloc du nerf saphène peut le compléter pour limiter la douleur de garrot",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u62",
+   "empreinte": "d05a918b833f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fémoral (Scarpa) est adapté à la chirurgie des varices. Un bloc sciatique est associé lorsque le territoire chirurgical",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u63",
+   "empreinte": "8db14bf97189",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "injection unique est la technique analgésique de choix (A). Le bloc du nerf supra-scapulaire est une alternative",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u64",
+   "empreinte": "d79aa4ef0b95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après chirurgie ouverte de l’épaule, la mise en place d’un cathéter au-dessus de la clavicule est recommandée (A).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u65",
+   "empreinte": "5a0aa3e070e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après chirurgie majeure du coude (arthrolyse{), l’analgésie par cathéter axillaire est une technique sûre et efficace (E). Les abords périclaviculaires (supra et infra)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u66",
+   "empreinte": "2660e89622e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réimplantation de doigt{), la mise en place d’un cathéter axillaire procure une analgésie de qualité et une sympathoplégie, particulièrement intéressante en cas d’atteinte vasculaire ou de réimplantation digitale (B). La",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u67",
+   "empreinte": "e9de18233a59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cathéter fémoral est une technique appropriée (B). L’analgésie par bloc du plexus lombaire par voie postérieure est possible, mais en cours d’évaluation (E).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u68",
+   "empreinte": "ef508566fbf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après fracture du col du fémur, l’analgésie par bloc du nerf fémoral en injection unique peut être une technique efficace (C). La mise en place d’un cathéter, dès",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u69",
+   "empreinte": "eb5bbf448f49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après chirurgie ou traumatisme de la diaphyse fémorale, l’analgésie par bloc fémoral en injection unique est recommandée, l’utilisation d’un cathéter est licite",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u70",
+   "empreinte": "eb1a764f312c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(A.L., morphine, clonidine) est efficace (A). En cas d’anesthésie chirurgicale par bloc(s) nerveux périphérique(s), l’administration intra-articulaire d’AL ne peut",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u71",
+   "empreinte": "94911e574dbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après chirurgie arthroscopique lourde (ligamentoplastie), le bloc du nerf fémoral en injection unique (patient ambulatoire) ou par cathéter (patient hospitalisé) est",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u72",
+   "empreinte": "18640760d904",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "577 • Après chirurgie ouverte du genou, l’analgésie par cathéter fémoral est recommandée (A).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u73",
+   "empreinte": "6c8973bf49a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après chirurgie mineure du pied, le bloc sciatique en injection unique est la technique antalgique la plus efficace (C).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u74",
+   "empreinte": "8e14a692e2f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Après chirurgie majeure du pied, la mise en place d’un cathéter sciatique poplité est recommandée (C).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u75",
+   "empreinte": "35ac1dc174fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La survenue d’un hématome chez un patient sous traitement interférant avec l’hémostase après un bloc périphérique, quel qu’il soit, est exceptionnelle (D). • L’imputabilité n’est pas toujours certaine.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u76",
+   "empreinte": "d46e60f1e77f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La surveillance neurologique postopératoire doit tenir compte de la potentielle survenue d’une complication à",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u77",
+   "empreinte": "2b03d50ca278",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Les complications neurologiques périphériques sont plus fréquentes après AG qu’après ALR (B).",
+   "explication": "La fiche omet l'énoncé gradé B qui ouvre la question 11 (complications neurologiques périphériques plus fréquentes après AG qu'après ALR). Le reste (E, E/D, E, D, D, E) est conforme.",
+   "page": 11
+  },
+  {
+   "id": "u78",
+   "empreinte": "4b6ab1d1fdff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• les atteintes chroniques de la corne antérieure : amyotrophie spinale et séquelles de poliomyélite (E) ; • les neuropathies motrices multifocales avec blocs persistants de conduction motrice.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u79",
+   "empreinte": "17797d7e6e78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucun examen complémentaire spécialisé n’a de valeur indiscutable pour récuser un bloc périphérique. L’exploration électrophysiologique préopératoire n’a pas de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u80",
+   "empreinte": "8109985a4126",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’être bloqués (consensus professionnel), car ce diagnostic permet éventuellement une réinjection de complément. Plusieurs modalités peuvent être évaluées : motricité, sensibilité thermo-algique, sensibilité tactile épicritique, sympathique (température cutanée), sensibilité proprioceptive (perte du sens de position du",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u81",
+   "empreinte": "136bd0aa5ee0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la solution d’anesthésique local et élargit le territoire bloqué (A). À volume égal, l’augmentation de la concentration améliore l’intensité du bloc mais pas son étendue (B).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u82",
+   "empreinte": "281b6af623c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les repères anatomiques de surface et le bon positionnement du patient doivent être vérifiés. L’échec persistant recommande de changer de technique ou de faire appel à un",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u83",
+   "empreinte": "a2675a61e3e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une impossibilité d’injection Si un reflux sanguin survient lors du test d’aspiration, si",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u84",
+   "empreinte": "8f5b20525d32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "substitutif ou palliatif (E). Il est recommandé soit de réaliser un autre bloc par une autre voie soit de changer de technique (conversion en AG, rachianesthésie) (E).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u85",
+   "empreinte": "79c581c56d85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Un échec partiel du bloc Une anesthésie incomplète peut être suffisante pour réaliser la chirurgie si la zone chirurgicale et le garrot sont situés",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u86",
+   "empreinte": "8bf8ac8e32fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le pic d’absorption décroît selon l’ordre suivant : blocs cervical, intercostal, du plexus brachial, fémoral, ilio-inguinal,",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u87",
+   "empreinte": "4df9dd5ac080",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tous les agents sont susceptibles de provoquer des accidents convulsifs (1/800 à 1/1500 blocs). Les antécédents d’épilepsie ne sont pas une contreindication à l’ALR.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u88",
+   "empreinte": "b939b33d4bbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la femme enceinte (A). Les troubles de conduction auriculo-ventriculaire et l’insuffisance cardiaque ne sont pas des contre-indications à",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u89",
+   "empreinte": "c62b118b00ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lidocaïne est contre-indiquée en cas de porphyrie hépatique. Seuls les esters et la bupivacaïne sont utilisables.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u90",
+   "empreinte": "901c3bd4ee90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "peuvent provoquer des réactions allergiques. L’allergie est plus fréquente avec les esters, qui ne sont plus utilisés en",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u91",
+   "empreinte": "b36cb4647627",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’agent considéré, soit 30 min pour la lidocaïne, la prilocaïne et la mépivacaïne, et 45 min pour la bupivacaïne, l’étidocaïne et la ropivacaïne (consensus professionnel).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u92",
+   "empreinte": "2c2303d132be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La dose utilisée pour la deuxième injection doit correspondre au plus, au tiers de la dose initiale maximale autorisée après le temps précité, ou à la moitié de cette",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u93",
+   "empreinte": "96f55906e801",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13.6. Doses maximales utilisables pour la première injection chez un adulte jeune de classe ASA 1 (E)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u94",
+   "empreinte": "e8c7f27a87f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u95",
+   "empreinte": "b2c0ad57b4b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u96",
+   "empreinte": "989e390ca977",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u97",
+   "empreinte": "5c0b4ae96469",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u98",
+   "empreinte": "c1939ef01ea7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u99",
+   "empreinte": "b32773b33194",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque de blessure nerveuse par l’aiguille. Les aiguilles à biseau court et à pointe peu acérée sont recommandées, car moins traumatisantes que les aiguilles à biseau",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u100",
+   "empreinte": "36a17071e278",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La dose minimale efficace d’AL doit être utilisée. Tous les AL sont potentiellement neurotoxiques quand la",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u101",
+   "empreinte": "41fb8fde686e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rapport avec l’acte chirurgical (incidence des complications neurologiques liées à la chirurgie : 0,1% au membre supérieur, 1% à la hanche) (D). • Le syndrome de Claude-Bernard-Horner et la parésie",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u102",
+   "empreinte": "e3e6297eebe5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C le diabète, l’insuffisance rénale chronique, la dénutrition et l’alcoolisme chronique sont responsables de neuropathies (A). L’aggravation de ces pathologies par",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u103",
+   "empreinte": "a8c139532e3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Un avis neurologique rapidement obtenu est recommandé. • Un examen neurologique le plus complet possible (types de lésions et topographie) doit être consigné par",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u104",
+   "empreinte": "3bf8323430bb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

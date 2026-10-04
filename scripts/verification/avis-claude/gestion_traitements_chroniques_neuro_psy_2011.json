@@ -1,0 +1,349 @@
+{
+ "cle": "gestion_traitements_chroniques_neuro_psy_2011",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "de958f908275",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "6efa335e8103",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "09103b605490",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas arrêter le traitement antiparkinsonien en périopératoire en maintenant exactement le schéma habituel",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u4",
+   "empreinte": "12a5f4809c91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas arrêter le stimulateur cérébral et d'appliquer les mêmes précautions périopératoires que pour un stimulateur cardiaque (accord fort).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u5",
+   "empreinte": "4d6edf7dc848",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une stratégie de substitution doit être prévue en cas d'indisponibilité de la voie orale et/ou digestive (accord fort).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u6",
+   "empreinte": "9968d0dd41a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une anesthésie locorégionale a l'avantage de permettre le maintien du traitement antiparkinsonien",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u7",
+   "empreinte": "77e34068734d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'arrêt brutal expose au risque de récidive symptomatique de dépression (grade A).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u8",
+   "empreinte": "c63d11be54db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ils cèdent à la reprise du traitement à la dose antérieure",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u9",
+   "empreinte": "02be5a7eecd8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de maintenir les ATD jusqu'au matin de l'intervention et de les reprendre précocement (accord fort).",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u10",
+   "empreinte": "34b8e8e4b10a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sèche au toucher, mydriase, absence de bruits intestinaux (grade C).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u11",
+   "empreinte": "b9c0ca1d2dfd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "action anticholinergique peut provoquer un syndrome anticholinergique (grade B ou C).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u12",
+   "empreinte": "8aeab19f95fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hyperréflexie, clonus spontané ou provoqué, augmentation du tonus musculaire",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u13",
+   "empreinte": "d8df1c3715f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "péthidine, le fentanyl et le tramadol (grade C) et le linézolide (grade B) peut provoquer un syndrome sérotoninergique.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u14",
+   "empreinte": "eff24bcb3e85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "péthidine, le fentanyl et le tramadol (grade C) et le linézolide (grade B) peut provoquer un syndrome sérotoninergique.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u15",
+   "empreinte": "3845a2cdd753",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque d'interactions médicamenteuses peropératoires avec les imipraminiques apparaît faible pour les conséquences cardiovasculaires (grade B).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u16",
+   "empreinte": "5a9c1e56f744",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans la confusion postopératoire existe, mais est sans doute",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u17",
+   "empreinte": "e1ddf25ec830",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les imipraminiques peuvent être maintenus en période périopératoire chez les patients ASA I et II indemnes de pathologies",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u18",
+   "empreinte": "c09100c3911c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est souhaitable d'interrompre les imipraminiques chez les patients avec une pathologie cardiovasculaire",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u19",
+   "empreinte": "9101db4978eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "morphiniques peuvent être utilisés (grade B).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u20",
+   "empreinte": "d14b312ef2de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le linézolide peut être utilisé si nécessaire en présence d'un ISRS à condition d'encadrer sa prescription d'une surveillance",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u21",
+   "empreinte": "48f8237989a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le relais peut être fait sur avis psychiatrique dès la consultation préopératoire par substitution immédiate (grade D).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u22",
+   "empreinte": "9d7030bd3b5d",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "Un traitement par IMAO ancienne génération doit être maintenu avec une discussion pluridisciplinaire (accord fort).",
+   "explication": "La recommandation en accord fort est inconditionnelle (« doit être maintenu avec une discussion pluridisciplinaire ») ; la condition « si le risque de décompensation psychiatrique apparaît important » vient de la phrase suivante, gradée D (« peut être maintenu… »). La fiche fusionne les deux et attache la condition à l'accord fort.",
+   "page": 34
+  },
+  {
+   "id": "u23",
+   "empreinte": "f586b791d4e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'utilisation de péthidine, fentanyl et tramadol. Les autres morphiniques sont utilisables (grade D).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u24",
+   "empreinte": "72c2bc00c253",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'action du médicament (grade A).",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u25",
+   "empreinte": "b83d1bf0b67b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il peut être proposé, en accord avec un psychiatre, un relais avec un autre ATD",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u26",
+   "empreinte": "a159e84455f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un traitement par IMAO de nouvelle génération (moclobémide : Moclamine®) peut être maintenu en période périopératoire (accord fort).",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u27",
+   "empreinte": "b4843b4294b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prise en charge doit éviter de principe l'utilisation de péthidine, fentanyl et tramadol.",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u28",
+   "empreinte": "3ccef4814577",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation prudente des vasopresseurs est possible, par titration en commençant au tiers de la dose habituelle",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u29",
+   "empreinte": "0b49f664979c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "association doit être évitée en période périopératoire (grade D).",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u30",
+   "empreinte": "8f6072a909ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est nécessaire en consultation d'anesthésie de rechercher l'adhésion du patient à une phytothérapie car elle n'est pas",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u31",
+   "empreinte": "d408694998b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pouvant nécessiter des mesures correctrices ou une modification du protocole anesthésique (grade B).",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u32",
+   "empreinte": "3fd66f448f57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est d'interrompre la phytothérapie une dizaine de jours avant une anesthésie.",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u33",
+   "empreinte": "e5ef2fa5c27e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et doit être interrompue le plus précocement possible.",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u34",
+   "empreinte": "965ca8a8c699",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Concernant l'éphedra, une interruption thérapeutique de 24 heures précédant une anesthésie est conseillée.",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u35",
+   "empreinte": "ab215e8c46be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plaquettaire est proposé pour l'ail et d'au moins 36 heures pour le ginkgo.",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u36",
+   "empreinte": "0c3df15bc157",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plaquettaire est proposé pour l'ail et d'au moins 36 heures pour le ginkgo.",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u37",
+   "empreinte": "0c5355323308",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un arrêt thérapeutique d'au moins cinq jours est proposé si l'on souhaite s'affranchir",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u38",
+   "empreinte": "eebe3b051f9e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

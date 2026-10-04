@@ -1,0 +1,313 @@
+{
+ "cle": "transfusion_gr_anesth_2014",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "45b9bfce5c35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PARTIE 2 : ANESTHÉSIE, RÉANIMATION, CHIRURGIE,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "eb52776158c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le seuil critique ( aO2 crit) chez l'homme anesthésié est de l'ordre de 5 mlO2/kg/min.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u3",
+   "empreinte": "10e2c1a4aa81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le seuil transfusionnel soit plus élevé chez les personnes atteintes d'insuffisance",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u4",
+   "empreinte": "bcfb91efc5bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'insuffisance cardiaque avérée ou bêta-bloquées.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u5",
+   "empreinte": "6be1fa1fdf28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "transfusionnel de 8-9 g/dl chez les personnes ayant des antécédents cardio-vasculaires.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u6",
+   "empreinte": "712a689a45e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En présence d'une insuffisance coronarienne aiguë, le seuil transfusionnel est alors de",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u7",
+   "empreinte": "52887159ba77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hors traumatisme crânien et hors transfusion massive, le seuil transfusionnel",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u8",
+   "empreinte": "5e371cfd2224",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le seuil transfusionnel recommandé est de 7g/dl dans le cadre d'une hémorragie",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u9",
+   "empreinte": "0957c3c21f91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une stratégie de transfusion cherchant à maintenir une Hb entre 7 et 9 g/dl doit être privilégiée.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u10",
+   "empreinte": "bd9b59cceaab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune recommandation n'a pu être émise étant donné l'insuffisance des données et des résultats",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u11",
+   "empreinte": "846d9b7a792a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les données disponibles ne permettent pas de formuler des recommandations concernant l'âge",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u12",
+   "empreinte": "793375737f2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Urgence vitale (UV) : obtention des CGR en moins de 30 minutes.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u13",
+   "empreinte": "fffbc584cc63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le délai d'obtention des CGR prime sur celui des résultats d'examens immunohématologiques.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "7e3422bc1f3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que cette procédure soit discutée avec la structure de délivrance.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u15",
+   "empreinte": "ff7f9d1594de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le patient et ses examens n'est pas certain, il est recommandé de transfuser des CGR de",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u16",
+   "empreinte": "c0e7995a7143",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "RH :-1 KEL :-1 sont recommandés en première intention et dans les limites de leur disponibilité.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u17",
+   "empreinte": "20639c931a35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de communiquer les données d'identité les plus complètes possible et à",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u18",
+   "empreinte": "44637250b9c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "négatif ou inconnu, il n'est pas recommandé de transfuser des CGR RH :-1 de la naissance",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u19",
+   "empreinte": "be44b223957c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de transfusion massive, la disponibilité des CGR prime sur la compatibilité dans les",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u20",
+   "empreinte": "284419935967",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation du fer est recommandée chez les patients en anesthésie uniquement en",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u21",
+   "empreinte": "ea6f208c6592",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation systématique du fer n'est pas recommandée chez les patients en",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u22",
+   "empreinte": "5ceda875f6b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation d'EPO n'est pas recommandée en réanimation.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u23",
+   "empreinte": "ae4e3ff506e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation de l'EPO est recommandée en préopératoire de la chirurgie orthopédique",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u24",
+   "empreinte": "13c6b9a101dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation d'EPO dans le cadre péri-opératoire de la chirurgie colorectale",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u25",
+   "empreinte": "e2e370f3f895",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser l'acide tranexamique dans le cadre périopératoire en chirurgie hémorragique",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u26",
+   "empreinte": "a405d5de9524",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de 10 minutes suivie de l'administration de 1 gramme sur 8 heures.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u27",
+   "empreinte": "a56132b0d8dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration systématique du facteur VIIa recombinant n'est pas recommandée.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u28",
+   "empreinte": "0ca51c44496a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration systématique du facteur VIIa recombinant n'est pas recommandée en",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u29",
+   "empreinte": "715e45850984",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bénéfice/risque de l'acide tranexamique dans le cadre de l'hémorragie du post-partum.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u30",
+   "empreinte": "60c7ef3171d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cadre de l'hémorragie du post-partum étant donné l'insuffisance des données sur la preuve de",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u31",
+   "empreinte": "a4361d5a1891",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intraveineuse ne dépassent pas 1 000 ml par patient adulte.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u32",
+   "empreinte": "e3ef36b2813f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que la période de recueil de sang soit limitée aux 6 premières heures",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u33",
+   "empreinte": "3fa9db68baee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de proposer au patient une transfusion autologue programmée",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u34",
+   "empreinte": "0b025e5c266a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "cle": "facteurs_humains_2022",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "dd1c52cfed00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cotations, un accord fort a été obtenu pour 100 % des recommandations.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u2",
+   "empreinte": "0e456155fad0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser un briefing avant la prise en charge afin d'améliorer les performances de l'équipe",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u3",
+   "empreinte": "b0c1bff6d1d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilise une communication sécurisée et standardisée afin d'améliorer la morbi-mortalité et de limiter l'incidence des événements indésirables.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u4",
+   "empreinte": "b60defd6296a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalise un débriefing juste après la prise en charge afin d'améliorer les compétences techniques",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u5",
+   "empreinte": "86979fef8d9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "développent une conscience situationnelle individuelle puis collective d'équipe pour améliorer la qualité des soins et la sécurité du patient",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u6",
+   "empreinte": "13ea4d29f379",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "s'engagent dans une démarche visant à développer la culture de sécurité pour améliorer la qualité des soins",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u7",
+   "empreinte": "352ea26869c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "adoptent une organisation de travail en équipe reposant sur une identification claire d'un leader, un partage d'informations, une coordination",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u8",
+   "empreinte": "d07bf447318b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilise une aide cognitive de crise afin d'améliorer la qualité des soins et la sécurité du patient.",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u9",
+   "empreinte": "4497b59b59f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le matériel nécessaire à la prise en charge d'une situation critique soit disposé de façon logique",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u10",
+   "empreinte": "f2a96333fe82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que le réapprovisionnement et la vérification du matériel",
+   "explication": "",
+   "page": 56
+  },
+  {
+   "id": "u11",
+   "empreinte": "4bd275bfc991",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent qu'une formation à l'utilisation d'un nouveau matériel ou d'une interface numérique",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u12",
+   "empreinte": "fc722ec741b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent également qu'au moins un référent par service soit formé à l'utilisation avancée de ce matériel",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u13",
+   "empreinte": "de12254627b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que la notion d'utilisabilité des dispositifs complexes",
+   "explication": "",
+   "page": 59
+  },
+  {
+   "id": "u14",
+   "empreinte": "15ebd4e15e7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sauf si l'interruption permet de rattraper une erreur concernant la tâche en cours",
+   "explication": "",
+   "page": 60
+  },
+  {
+   "id": "u15",
+   "empreinte": "57f5071b6fba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les soignants n'interrompent pas les étapes aboutissant à l'administration d'une thérapeutique en situation critique",
+   "explication": "",
+   "page": 61
+  },
+  {
+   "id": "u16",
+   "empreinte": "8b42f024b63d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une attention particulière aux sources d'interruption de tâches d'origine technologique",
+   "explication": "",
+   "page": 65
+  },
+  {
+   "id": "u17",
+   "empreinte": "5fd4dccf9051",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de prendre en compte le risque de fatigue des professionnels de santé exposés aux situations critiques",
+   "explication": "",
+   "page": 66
+  },
+  {
+   "id": "u18",
+   "empreinte": "2744d2c3321b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'adapter la charge de travail aux effectifs présents, de la répartir parmi les membres de l'équipe",
+   "explication": "",
+   "page": 68
+  },
+  {
+   "id": "u19",
+   "empreinte": "3d67dd614000",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de maintenir une ambiance de travail adaptée, en particulier une communication apaisée et un niveau sonore optimal",
+   "explication": "",
+   "page": 70
+  },
+  {
+   "id": "u20",
+   "empreinte": "038242a1c73a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de limiter les facteurs responsables d'épuisement professionnel chez les soignants exposés aux situations de crise",
+   "explication": "",
+   "page": 73
+  },
+  {
+   "id": "u21",
+   "empreinte": "71d535d7215f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bénéficient d'une préparation psychologique à la gestion du stress pour améliorer leur vécu et leurs performances",
+   "explication": "",
+   "page": 75
+  },
+  {
+   "id": "u22",
+   "empreinte": "a061e4a6063f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient formées aux facteurs humains afin d'améliorer la qualité des soins et la sécurité du patient.",
+   "explication": "",
+   "page": 78
+  },
+  {
+   "id": "u23",
+   "empreinte": "5f0c129b7113",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 14 (p. 72), « Fiche de réaction immédiate » : étapes 1-3 (rester concentré sur les soins, ton calme/direct/honnête/respectueux/positif, intervenir quand l'autre est accessible émotionnellement).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "9e088e66cdc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 14 (p. 72) : étapes 4-8 (apaiser par une intention positive, écouter sans juger, reformuler, demander confirmation, encourager un compromis).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "808c83f8f90c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 14 (p. 72) : « 3 attitudes contre-productives » : éviter ou fuir, se montrer agressif en retour, répondre de façon sarcastique.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "f8baab780a8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 14 (p. 72) : méthode DESC en 4 étapes (décrire sans « tu »/« vous », exprimer avec « je », solutions centrées patient ouvrant à la négociation, conséquences positives pour les deux parties).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "4678078c9df0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

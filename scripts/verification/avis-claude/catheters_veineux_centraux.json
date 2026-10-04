@@ -1,0 +1,520 @@
+{
+ "cle": "catheters_veineux_centraux",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "725c99ddd6e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infections liées aux cathéters (ILC) de 1994. Ce texte de réactualisation",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "4b88adf65501",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "041012d0a59b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation justifiée par des preuves scientifiques indiscutables",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "cf93023caf7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation justifiée par des preuves scientifiques indiscutables",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "8128a6f73c71",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "144a8462985d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "2bece97fe352",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "f0700314fa33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coagulase négative ; BGN, bacilles Gram négatifs ; Éto, échographie transœsophagienne",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u9",
+   "empreinte": "86e96cd65281",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "micro-organismes à la surface interne et/ou externe du CVC",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "9bf1ba09df72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être abandonnée (1-b)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "be204af86e7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les cathéters de courte durée (< 14 j), le mode de contamination des cathéters est essentiellement extraluminal.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "02ed5a39fa44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une régression totale ou partielle des signes infectieux dans les 48 h suivant l’ablation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "9596b790711c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La confrontation des résultats microbiologiques et des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "dcdb2e7efb03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La confrontation des résultats microbiologiques et des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "bc2724a92610",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "exceptionnellement à la contamination d’un liquide de perfusion. La contamination endoluminale devient prépondérante",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "a5c006522b2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’adsorption de protéines plasmatiques à la surface du cathéter",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "0904e6a2513b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les bactériémies liées aux CVC représentent 1/3 des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "912c48a1a14f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moyenne de 7/1000 j-cathéter",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "cd03d4a1111f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "densité des soins (2-b) augmentent le risque",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "4d0bf256046b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "silicones entraînent moins d’ILC que les PVC",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "341aee836d74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "liées aux CVC augmente avec la durée de cathétérisation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "df853e876061",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "20 % et d’une prolongation de la durée de séjour de 5 à 20 j",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "5eabe73aed43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "héparinisation des solutions de perfusion réduit les complications thrombotiques et les bactériémies liées aux CVC de petits diamètres (< 5 Fr) insérés par voie fémorale (2-b).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "bd9a6bc5d241",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’infection des cathéters de moitié (1-a)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "eeeea772f25d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contact doit être d’au moins 2 min (1-b)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "08109976f403",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La voie sous-clavière doit être préférée dès que la durée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "8def71df6c0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pansement semi-perméable et transparent permet la surveillance visuelle et manuelle du site",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u28",
+   "empreinte": "06621019f8b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chlorhexidine sur la povidone iodée (1-a)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "73bad647c085",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prolongateur qui n’est pas changé (2-b)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "d336c0e80cf4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cathéters de Swan-Ganz ainsi que leur ablation la plus précoce possible sont des méthodes de prévention primaire",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "c7bb6f8ff099",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jugulaire soit préférable pour la surveillance hémodynamique péri-opératoire avec un cathéter de Swan-Ganz",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "6b8b8a685b44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "perfusion ou la prise d’échantillon sanguin n’est pas recommandée en dehors des séances de dialyse (2-c)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "333965c4c3fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’attitude diagnostique et le traitement initial d’une infection de CVC résultent de la confrontation de 3 éléments",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u34",
+   "empreinte": "b8d86f2a09c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en présence de signes locaux francs (cellulite, tunnelite",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u35",
+   "empreinte": "9022716afda2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tort un cathéter stérile est très élevée (80 % des cas) (1-b)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "d90e53efdb05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "celui-ci en place, au moins dans un premier temps",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "8e3b21fe8077",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fréquence élevée d’endocardite associée (évalué entre 5 et 20 %), et un Doppler",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u38",
+   "empreinte": "1550877814a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "souche de staphylocoque à coagulase négative sur le",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u39",
+   "empreinte": "02db3e8347e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bactériémie, ni tunnelite ou cellulite), nécessite un traitement local de désinfection par antiseptique",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u40",
+   "empreinte": "cc64bf2e2579",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "ffbd673ef19a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : choc/sepsis sévère/tunnelite → ablation + vancomycine ± β-lactamines + aminosides",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "906fcc33cc0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : pas de gravité → échange sur guide ou culture du point de ponction",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "34df253fa2ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : point de ponction négatif → surveillance, autre site",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "a333f2be76d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : point de ponction positif → HC couplées ratio > 5:1 / délai > 2 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "ead754199fa9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : HC négatives → autre infection",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "1a034b1cd49a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : HC positives → ILC certaine",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "cec4244e56b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : culture KT négative → autre infection",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "3a03014ab14d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : culture KT +, HC − → amélioration après ablation ?",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "ae97917ecb18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : culture KT +, HC + → ILC certaine",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "f6c67a763145",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : pas d'amélioration → colonisation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "a63e79711224",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : amélioration → probable ILC",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "c6c345030fe9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : S. aureus/Pseudomonas AB 7 j ?",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "a8ba3c235c6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : SCN/BGN/Candida pas d'AB sauf immunodépression/valvulopathie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "17fd987b06b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : ablation + AB 14-21 j",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "96c2339ab731",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : ablation + AB < 7 j ou maintien + AB 14-21 j",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "de68b851b827",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.7 : persistance > 3 j → ETO, endocardite 4-6 sem, thrombophlébite 4-6 sem, ostéomyélite 6-8 sem",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "373900413d16",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

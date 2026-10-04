@@ -1,0 +1,223 @@
+{
+ "cle": "blocs_perimedullaires_terrain_cardioresp_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "96ef21f7a878",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "35b60b53bdf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le retentissement hémodynamique devient majeur si le niveau de bloc dépasse T6 ou quand une anesthésie générale est associée.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u3",
+   "empreinte": "0585eeed962c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un vasoconstricteur (éphédrine ou phényléphrine). Les solutions colloïdes sont plus efficaces que les solutions cristalloïdes (grade C).",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u4",
+   "empreinte": "90eb16310507",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Comme il n'y a pas d'effet rebond à l'arrêt de ce type de médicament, il est recommandé de l'arrêter en préopératoire (grade B).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u5",
+   "empreinte": "f11d6e99884e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit par des bolus d'éphédrine (par dose de 3 mg), soit de phényléphrine (dose de 0,25 mg).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u6",
+   "empreinte": "5787c1064fd8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle est contre-indiquée en cas d'hypertension artérielle mal contrôlée par le traitement, instable, sévère (PAD > 110 mmHg) ou maligne",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u7",
+   "empreinte": "5f1dc5369691",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le blocage sympathique a des effets bénéfiques chez le coronarien instable et par l'analgésie postopératoire induite (grade B).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u8",
+   "empreinte": "6e30f5c46e7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un traitement par agent ß-bloquant pris au long cours n'aggrave pas le risque coronaire (grade C).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u9",
+   "empreinte": "35bf07f0b399",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucun travail n'a permis d'étudier les effets d'une APM chez les patients traités par ces médicaments.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u10",
+   "empreinte": "158d2377a70a",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "En cas de cardiopathie dilatée, la baisse de la postcharge du VG induite par ce type d'anesthésie peut améliorer le volume d'éjection systolique malgré une diminution de la précharge ventriculaire (grade C). À l'inverse, le bloc sympathique induit par une APD thoracique peut déstabiliser une insuffisance cardiaque",
+   "explication": "La fiche omet la mise en garde qui suit : une APD thoracique peut déstabiliser une insuffisance cardiaque en diminuant la contractilité myocardique.",
+   "page": 22
+  },
+  {
+   "id": "u11",
+   "empreinte": "1037978f13d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est cependant possible, surtout lors de césarienne, d'utiliser l'APM (accord professionnel).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u12",
+   "empreinte": "907df22e6df6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de valvulopathie sténosante, les APM sont en principe contre-indiquées (grade C).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u13",
+   "empreinte": "c14afa079374",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut préférer la lidocaïne aux autres AL administrés en péridurale (en sachant que la ropivacaïne et la lévobupivacaïne sont moins arythmogènes que la bupivacaïne) (grade C).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u14",
+   "empreinte": "f31704da17fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de valvulopathie régurgitante, le risque de l'APM est superposable à celui des patients insuffisants cardiaques.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u15",
+   "empreinte": "17d312c3a2e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ils sont peu importants chez le sujet normal. Cependant, ils peuvent être amplifiés par l'administration concomitante de sédatifs (grade A).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u16",
+   "empreinte": "8c475630473f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'anesthésie périmédullaire est recommandée chez l'asthmatique car elle évite l'intubation trachéale et ne modifie pas le seuil de réactivité bronchique",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u17",
+   "empreinte": "a423914ac649",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'association d'anesthésique local à faible concentration et d'un opiacé est la solution analgésique de choix permettant de réduire les effets moteurs des anesthésiques locaux",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "8de1d4a4cf2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présentent un risque accru d'intubation difficile et sont particulièrement sensibles aux effets dépresseurs des agents anesthésiques (grade A).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u19",
+   "empreinte": "95c8ffe634c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En évitant l'administration d'agents dépresseurs du système nerveux central, l'APM sans opiacé est une technique recommandable (grade C).",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u20",
+   "empreinte": "fd200513ccb3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le protocole de surveillance et du traitement des éventuelles complications doit être écrit et disponible pour tous les personnels prenant en charge les patients",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u21",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "98ee235ba1e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance sera poursuivie au minimum 24 heures après la dernière injection intrathécale de morphine et six heures après celle d'un opiacé liposoluble.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u23",
+   "empreinte": "c931a9a458a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle comprend la surveillance de l'état de conscience, de l'étendue du bloc sensitif en plus du recueil des paramètres vitaux habituels.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u24",
+   "empreinte": "165a6021ba0b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

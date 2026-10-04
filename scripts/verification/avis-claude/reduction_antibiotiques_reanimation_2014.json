@@ -1,0 +1,583 @@
+{
+ "cle": "reduction_antibiotiques_reanimation_2014",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "c7c045289cf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Q2- Quelles données microbiologiques et comment les utiliser pour un moindre usage des antibiotiques",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "0c783d6097c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’antibiotiques et résistance bactérienne (Accord fort)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u3",
+   "empreinte": "a74dc46abd74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2- Il faut utiliser des données françaises d’épidémiologie bactériennes globales et locales (Accord fort)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "c0604a53a9e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "globales et ciblées sur les classes à risque (carbapénèmes, fluoroquinolones notamment) (Accord faible)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "a4d1e93ca75c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des prélèvements bactériologiques si possible avant toute antibiothérapie (Accord fort)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "0cb2547a1d7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’exposition aux antibiotiques (Accord fort)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "bf85db6df83d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement pas débuter d’antibiothérapie probabiliste (Accord faible)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "b6905bfa49f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3- Dans les 24 heures qui suivent le prélèvement, il faut qu’un premier résultat de culture soit rendu",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "cbbe52118093",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à partir du flacon d’hémoculture (Accord fort)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "1f9a4014bfe4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’identification bactérienne le plus rapidement possible par spectrométrie de masse (Accord faible)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "497d8c8818e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandées par le CA-SFM (Accord fort)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "c11ce1f4481d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de positivité d’une antigénurie légionelle, il faut stopper la bêta-lactamine prescrite (Accord faible)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u13",
+   "empreinte": "38c0c88c88aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cas de négativité de l’antigénurie pneumocoque, il ne faut pas exclure le diagnostic de pneumopathie à",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u14",
+   "empreinte": "cd2e089b3571",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la détection de S. aureus et sa sensibilité à l’oxacilline (Accord fort)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u15",
+   "empreinte": "07de54b9708b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un prélèvement de colonisation ; ceci quel qu’en soit le type en particulier en cas d’aspiration trachéo",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u16",
+   "empreinte": "75f888e7d4d4",
+   "verdict": "ecart",
+   "type_ecart": "population",
+   "citation": "une pneumonie acquise sous ventilation mécanique (PAVM) ou une bactériémie nosocomiale (Accord faible)",
+   "explication": "La source limite la recommandation au choix de l'antibiothérapie probabiliste d'une PAVM ou d'une bactériémie nosocomiale ; la fiche ne reprend pas cette restriction.",
+   "page": 10
+  },
+  {
+   "id": "u17",
+   "empreinte": "9e8ac8bafb00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1- En traitement probabiliste, en cas d’infection bactérienne communautaire suspectée, il ne faut pas",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u18",
+   "empreinte": "80899db6c926",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et d’un sepsis sévère ou choc septique (Accord faible)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u19",
+   "empreinte": "c6a8f0e55fd8",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "mais plutôt considérer la présence d’au moins 2 des différents facteurs comme",
+   "explication": "La fiche omet la conduite positive : considérer un carbapénème si au moins 2 facteurs parmi C3G/FQ/TZP dans les 3 mois, portage BLSE ou P. aeruginosa caz-R < 3 mois, hospitalisation à l'étranger < 12 mois, EHPAD/SLD avec sonde ou gastrostomie, épidémie à BMR dont la seule option est un carbapénème.",
+   "page": 11
+  },
+  {
+   "id": "u20",
+   "empreinte": "d39ae07e4e3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "site infecté et après discussion entre microbiologistes et cliniciens (Accord fort)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u21",
+   "empreinte": "c90fe7847a98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infections osseuses et du pied diabétique APRES antibiogramme (Accord faible)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u22",
+   "empreinte": "0d2f41979a93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prostatites APRES antibiogramme (Accord fort)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u23",
+   "empreinte": "d3a2921eeab4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antérieures de FQ dans les 6 mois précédents quelle qu’en soit l’indication) (Accord fort)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u24",
+   "empreinte": "6d3cfa186461",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3- Il ne faut pas prescrire en probabiliste de FQ en monothérapie dans les infections nosocomiales sévères",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u25",
+   "empreinte": "86367d23bf06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "niveau (résistance à l’acide nalidixique et/ou acide pipémidique) (Accord fort)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u26",
+   "empreinte": "874ef2e1a7c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu’une FQ (Accord fort), y compris chez l’insuffisant rénal (Accord faible)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u27",
+   "empreinte": "4ac4c50ccc65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu’une FQ (Accord fort), y compris chez l’insuffisant rénal (Accord faible)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u28",
+   "empreinte": "b15b44674fcd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1- Il ne faut pas utiliser les anti-SMR dans le traitement probabiliste des infections communautaires vraies",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u29",
+   "empreinte": "54366a448a32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chroniques, d’un cathéter de longue durée et chez les patients de long séjour) (Accord fort)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u30",
+   "empreinte": "20f4d7168f50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infections nosocomiales acquises en réanimation (Accord fort)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u31",
+   "empreinte": "9599938a7240",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "blanc résistant à l’oxacilline (SEMR) (Accord fort)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u32",
+   "empreinte": "3d3ff56fffb9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mettre en route un traitement antiSMR devant la présence à concentration significative de SEMR dans une PAVM",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u33",
+   "empreinte": "472be867ee76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "SARM ayant une CMI à la vancomycine supérieure à 1 mg/L (Accord faible)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u34",
+   "empreinte": "1809cb718699",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4- Il faut probablement utiliser le linézolide dans les PAVM à SARM (Accord fort)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u35",
+   "empreinte": "a9cb4f9b3268",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement utiliser une alternative à la vancomycine (Accord fort)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u36",
+   "empreinte": "eb8de2c54a96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6- Il faut probablement discuter, selon le site infecté, l’intérêt d’une association anti-SARM (Accord faible)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u37",
+   "empreinte": "0a26a85bfa1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Dans le cadre du choc septique, il faut administrer une antibiothérapie probabiliste dans l’heure après la",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u38",
+   "empreinte": "19fc1bcfe5c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "éviter une prescription inutile (Accord faible)",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u39",
+   "empreinte": "ea7118b30bcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3. Dans la méningite bactérienne, il faut administrer les antibiotiques dans les 3h après l’admission à",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u40",
+   "empreinte": "78bd91fb3ce6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez les patients « fragiles » (splénectomisé fébrile, neutropénique fébrile, dermo-hypodermite bactérienne",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u41",
+   "empreinte": "8fe3e0ce5447",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pharmacocinétique importante et imprévisible, faire des dosages de certains antibiotiques (Accord fort)",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u42",
+   "empreinte": "4f9711dea29d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2- Il faut doser le pic plasmatique d’aminoside 30 min après la première dose perfusée en 30 minutes chez",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u43",
+   "empreinte": "48ed4d0b1144",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trop précoce chez tout patient sévère de réanimation, à fortiori en cas d’insuffisance rénale (Accord faible)",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u44",
+   "empreinte": "e38b717d0294",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4- Chez l’adulte, comme chez l’enfant, il faut doser la concentration de la vancomycine à l’équilibre en cas",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u45",
+   "empreinte": "fb0963a94dc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5- Il faut probablement mesurer la concentration de certaines bêta-lactamines à large spectre en résiduelle",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u46",
+   "empreinte": "e8902c549797",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concentrations plasmatiques de bêta-lactamines pendant au moins 70% du temps supérieures à la CMI pour",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u47",
+   "empreinte": "5dfe6daa0dd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2- Il faut probablement atteindre un objectif plus élevé (Cmin/CMI> 4 à 6) (Accord fort)",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u48",
+   "empreinte": "ce3d71777e15",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "méropénème et doripénème) en perfusion intraveineuse « allongée » sur 3 ou 4 heures (Accord fort)",
+   "explication": "La source recommande une perfusion « allongée » sur 3 ou 4 heures ; la fiche écrit « prolongée/continue », alors que la perfusion continue fait l'objet d'une recommandation distincte, plus restrictive (4a/4b : pas systématiquement, accord faible).",
+   "page": 20
+  },
+  {
+   "id": "u49",
+   "empreinte": "2998fd156880",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modélisations pharmacodynamiques (Accord faible). Il faut probablement réserver cette modalité",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u50",
+   "empreinte": "2d8324c5f134",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(foyers profonds, altération importante de la pharmacocinétique, CMI élevées) (Accord faible)",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u51",
+   "empreinte": "6fecedec3cb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5- Il faut probablement administrer la vancomycine en perfusion continue, après administration d’une dose",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u52",
+   "empreinte": "1f02b18e24ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aureus, P. aeruginosa, entérobactéries) (Accord faible)",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u53",
+   "empreinte": "86ece59e983b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pneumopathies nosocomiales en monothérapie (Accord faible)",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u54",
+   "empreinte": "eed53381cc4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2- Il faut traiter par une association probabiliste les patients en état de choc, neutropéniques ou suspects",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u55",
+   "empreinte": "113edc4c7588",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faire une désescalade en fonction de la situation clinique et des données microbiologiques (Accord fort)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u56",
+   "empreinte": "cd7a50d28296",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plasmatique a diminué de plus de 80% par rapport à la valeur maximale, l’antibiothérapie peut être",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u57",
+   "empreinte": "432efba4fa86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin de réduire l’exposition des patients aux antibiotiques en réanimation (Accord fort)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u58",
+   "empreinte": "1aab998d1893",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement doser la PCT toutes les 48h à 72h au-delà de J3 afin de réduire la durée de",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u59",
+   "empreinte": "221941dfe512",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients non immunodéprimés, il faut limiter la durée totale de l’antibiothérapie à 8 jours quelle(s) que",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u60",
+   "empreinte": "1e92d21f7194",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4- En dehors de situations cliniques particulières, il faut probablement limiter à 5-7 jours le traitement pour",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u61",
+   "empreinte": "5fe12456b135",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "négativent dans les trois premiers jours du traitement et que le cathéter a été retiré (Accord fort)",
+   "explication": "La fiche omet deux conditions de la source : hémocultures négativées dans les 3 premiers jours, et cathéter retiré.",
+   "page": 25
+  },
+  {
+   "id": "u62",
+   "empreinte": "d8c2bb14c1a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antibiothérapies, d'augmenter le taux de désescalade et de limiter leur consommation (Accord fort)",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u63",
+   "empreinte": "35e441be7d60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients et pour limiter l’émergence de résistances aux antibiotiques (Accord fort)",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u64",
+   "empreinte": "4614d613adb8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

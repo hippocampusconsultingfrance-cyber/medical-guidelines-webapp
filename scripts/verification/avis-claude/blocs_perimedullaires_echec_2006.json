@@ -1,0 +1,313 @@
+{
+ "cle": "blocs_perimedullaires_echec_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ab4bfc037718",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "58b6b1892344",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "On parle d'échec quand la réalisation d'une APM n'a pas permis de repérer l'espace ou de mettre en place le matériel pour faire l'anesthésie, ou en l'absence de bloc sensitif.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u3",
+   "empreinte": "890cc016a199",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "On parle de bloc incomplet quand l'injection de l'AL entraîne un bloc sensitif ou moteur incomplet et insuffisant pour la réalisation de l'acte chirurgical",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u4",
+   "empreinte": "3e5661a06345",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la durée d'action de l'AL peut être insuffisante si la durée de la chirurgie se prolonge.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u5",
+   "empreinte": "b96c67718dfd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut alors envisager une modification de la prise en charge anesthésique, en réalisant un complément d'injection pour une APD, une nouvelle APD ou convertir en AG.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u6",
+   "empreinte": "fff0843297b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il doit être fait le plus vite possible avant de débuter l'intervention chirurgicale ou l'analgésie obstétricale (consensus professionnel).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u7",
+   "empreinte": "a87e83b8bb03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une bonne corrélation entre le niveau d'analgésie cutanée au toucher et la qualité de l'analgésie chirurgicale (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u8",
+   "empreinte": "69bcd43dbb25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est très difficile de prévoir une insuffisance de l'analgésie péridurale (grade D).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u9",
+   "empreinte": "3a49f28c83ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avoir réalisé au minimum 30 à 50 APD et autant de rachianesthésies pour réduire significativement le taux d'échec de ces techniques (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u10",
+   "empreinte": "59f53aa4671c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'examen du dos a une bonne valeur prédictive de la difficulté de ponction (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u11",
+   "empreinte": "30e9a5be3109",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une chirurgie vertébrale postérieure ne contre-indique pas l'anesthésie rachidienne, mais la fibrose, la présence de matériels rendent la ponction plus difficile (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u12",
+   "empreinte": "c43a7a24de3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La voie médiane génère un plus fort taux d'échec de ces techniques, et la voie paramédiane plus douloureuse un plus grand risque de plaie vasculaire (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u13",
+   "empreinte": "26d89766c0dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le choix d'une posture favorable à la diffusion du produit vers la zone intéressée par l'intervention reste préconisé par beaucoup",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u14",
+   "empreinte": "c36193038f6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation de la technique de repérage de l'espace péridural utilisant un mandrin gazeux augmente le risque d'échec de l'APD (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u15",
+   "empreinte": "e3bbd974908d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'introduction du cathéter péridural avec le biseau en direction céphalique procure la meilleure analgésie au cours du travail (grade A).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u16",
+   "empreinte": "c3f3b6e19b5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dilatation de l'espace péridural avec du sérum physiologique peut faciliter la montée du cathéter (grade D).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u17",
+   "empreinte": "35ea07f95596",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "certains ont proposé d'injecter la première dose dans l'aiguille de Tuohy pour une anesthésie chirurgicale, et par le cathéter pour une péridurale analgésique",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u18",
+   "empreinte": "eb2e8db1424d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut vérifier l'efficacité du cathéter avant son utilisation (grade D).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u19",
+   "empreinte": "8764ff289be6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut suspecter une mauvaise distribution (« maldistribution » des AngloSaxons). Cela peut induire des lésions neurologiques irréversibles",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u20",
+   "empreinte": "e98699446ad5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'introduction d'une longueur trop importante de cathéter dans l'espace péridural (grade A)",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u21",
+   "empreinte": "0498791e13f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le passage transforaminal du cathéter ou la présence d'un septum dans l'espace (grade C), ou le passage sous-dural du cathéter péridural",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u22",
+   "empreinte": "31401c3f53a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Certains problèmes mécaniques (coudure, obstruction partielle ou complète, compression du cathéter",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u23",
+   "empreinte": "88bcf10019b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'APD avec cathéter, il est possible de réinjecter la même solution d'anesthésique local (effet volume) afin d'obtenir le niveau souhaité (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u24",
+   "empreinte": "183ebff6ef6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "possible de le retirer sur quelques centimètres (pour laisser 3 à 5 cm dans l'espace péridural) et de réinjecter une dose d'anesthésique (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u25",
+   "empreinte": "dd5b1405e7f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de rachianesthésie avec une solution hyperbare, la position déclive tête en bas peut permettre une diffusion céphalique de l'anesthésie (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u26",
+   "empreinte": "fd3085896db2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit procéder à une nouvelle APM en",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u27",
+   "empreinte": "5e8c5285e39a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'injection d'un adjuvant est la meilleure solution. On peut injecter un morphinique liposoluble (grade A)",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u28",
+   "empreinte": "d412aaf1bf96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou 50 à 75 µg de clonidine (grade A).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u29",
+   "empreinte": "d5eeab059b87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les changements de baricité de la solution AL et de position du patient sont des mesures constamment efficaces. Il est possible de recourir à une AG (grade D).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u30",
+   "empreinte": "f4d61ce616e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après un échec d'APD, la réalisation d'une rachianesthésie pour une césarienne reste controversée en raison du risque de bloc étendu (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u31",
+   "empreinte": "2d6739034e48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de passer en AG (consensus professionnel).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u32",
+   "empreinte": "e97b3ec42b0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si le bloc reste incomplet malgré les traitements proposés ci-dessus, il faut pratiquer une anesthésie générale (consensus professionnel).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u33",
+   "empreinte": "ab1b4a49cd41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un complément sédatif par voie intraveineuse peut être utilisé si on prend en compte l'anxiété du patient",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u34",
+   "empreinte": "7dddd89aaf1a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

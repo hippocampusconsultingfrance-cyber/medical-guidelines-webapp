@@ -1,0 +1,304 @@
+{
+ "cle": "relations_anesth_chir",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "37d5f407b409",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "entre anesthésistes-réanimateurs et chirurgiens, autres spécialistes ou professionnels de santé",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "6b617d244669",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "b25ead295f17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour toutes ces raisons, une actualisation des recommandations a paru indispensable.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "5c77566c9f65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il en résulte un incontournable consensus qui est la seule garantie pour le patient du bon",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "29d2dab7b306",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "On s'abstiendra, notamment en présence de tiers, de toute injure, insulte ou calomnie.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "ca089f73dad6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il suppose une information préalable entre praticiens qui doit être argumentée sur des éléments objectifs.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "ada0d329e391",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'opérateur doit tenir compte de l'avis de l'anesthésiste-réanimateur et ne peut lui imposer",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "17fff09171c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne doit pas supposer que d'autres que lui ont déjà donné cette information.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "6860d992ec47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "leurs complications et leurs risques éventuels, y compris exceptionnels",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "5626b8ecc3b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le dossier médical doit donc en conserver une trace écrite.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "e20540d9f4f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'anesthésiste-réanimateur, également consulté dans ce cadre, devra cependant s'assurer qu'il a bien été obtenu.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "6a52db060610",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il convient d'encourager les anesthésistes-réanimateurs, les chirurgiens et autres spécialistes ou professionnels de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "068f022b6c48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est nécessaire que les anesthésistes-réanimateurs et les chirurgiens d'une même",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "9d2fcc55feb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le médecin anesthésiste-réanimateur est responsable du fonctionnement de la salle",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u15",
+   "empreinte": "dcdc4e482f22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la privation de moyens indispensables à des patients (locaux, effectifs, équipements), ni l'établissement de contraintes abusives",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u16",
+   "empreinte": "8908a6d5049a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La multiplication injustifiée des intervenants dilue les responsabilités",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u17",
+   "empreinte": "3be97b08a800",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La décision finale de l'indication d'anesthésie et de ses modalités relève de la responsabilité du médecin anesthésiste-réanimateur.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u18",
+   "empreinte": "5685d2b4f90b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que le programme soit écrit, au plus tard, la veille et signé",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u19",
+   "empreinte": "d579e7c20528",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La sortie du patient de la salle de surveillance post-interventionnelle ne peut être",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u20",
+   "empreinte": "4bce81d6deb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est placé sous la responsabilité médicale de l'anesthésiste-réanimateur.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u21",
+   "empreinte": "e976a896302f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque l'opéré retourne en secteur d'hospitalisation, il se trouve placé sous la responsabilité de l'opérateur.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u22",
+   "empreinte": "666dfffd84eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En conclusion, soit un acte médical, quel qu'il soit, nécessite un médecin anesthésiste,",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u23",
+   "empreinte": "554160a52141",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "amplitude de l'ouverture des services limitée à 12 H",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u24",
+   "empreinte": "8df9feaa3687",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La responsabilité de la transfusion sanguine peut incomber au chirurgien, à",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u25",
+   "empreinte": "3ea154916c74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour tous les autres actes, la prescription d'intervention doit être",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u26",
+   "empreinte": "690d65af8594",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La décision de sa réalisation et de la technique est prise par le médecin anesthésiste",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u27",
+   "empreinte": "8d59b8380606",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à condition que la première injection ait été réalisée par le médecin lui-même.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u28",
+   "empreinte": "9a5bb232471e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne peut pas entreprendre seul une anesthésie de quelque type que ce soit en l'absence d'un",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u29",
+   "empreinte": "bc7fd0279597",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "immédiatement joignable et disponible à proximité de la salle d'opération.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u30",
+   "empreinte": "0a1f32999de4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la salle dispose d'une capacité égale ou supérieure à six postes occupés",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u31",
+   "empreinte": "e7a9c43c1c35",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "76a6cdf572ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la décision de sortie de la salle de surveillance post-interventionnelle.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u33",
+   "empreinte": "9cad20a7d7d7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

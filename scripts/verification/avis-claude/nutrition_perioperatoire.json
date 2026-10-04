@@ -1,0 +1,862 @@
+{
+ "cle": "nutrition_perioperatoire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "14098e515acb",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Néanmoins, afin de faciliter la lecture et l’assimilation de ce travail, les recommandations ont été rédigées selon les déclinaisons utilisées par la Sfar et la méthode GRADE.",
+   "explication": "La source dit avoir suivi une méthode « non formalisée des avis d'experts » et n'imprime aucun grade : seule la formulation (« il faut » / « il faut probablement ») porte la force. La fiche affiche des grades [1+]/[2+]/[1-]/[2-] sans préciser qu'ils sont déduits de la formulation. Les grades déduits sont cohérents avec le texte, mais il faudrait l'indiquer.",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "f8383dbc9235",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nutritionnelle. Une nutrition précoce est une nutrition débutée dans les 24 premières heures après la chirurgie.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "d6fabe4765c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "postopératoires. La dénutrition augmente la morbidité (infections, retard de cicatrisation), la mortalité, la durée",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "5e03ff95bdef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1 : Les facteurs pouvant induire une dénutrition doivent être recherchés (Tableau 1).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "6103b84690e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2 : Tout patient présentant au moins un facteur de risque de dénutrition doit bénéficier d’une évaluation de son état",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "836908382088",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3 : L’évaluation nutritionnelle doit comporter la mesure du poids actuel, l’estimation de la perte de poids (volontaire ou",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "b5bb55816143",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4 : La mesure de l’albuminémie peut être utile en cas de difficulté de l’évaluation nutritionnelle.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "03e12230d0eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5 : En cas de chirurgie majeure, la mesure de l’albuminémie en préopératoire est probablement recommandée.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "311f44a8493d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6 : Un patient est considéré à risque de dénutrition s’il présente au moins un des facteurs de risque de dénutrition",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "993d74a8ec45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un IMC  18,5 ou un IMC < 21 chez le sujet de plus de 70 ans ; ou une perte de poids récente d’au moins 10 %",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "5fff8d4bf9e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8 : En chirurgie digestive non oncologique, le seuil de l’albuminémie retenu pourrait être une concentration \u0014 à 35 g/L",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "cd4dbd84e43b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "entraîner des complications postopératoires et des conséquences médicoéconomiques. R9 : En chirurgie cardiaque, un patient peut être considéré",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "8578ac465e1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présente un IMC < 13 ou un amaigrissement > 20 % en trois mois ou des apports oraux négligeables pendant 15 jours ou plus.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "8e9b3581f096",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11 : Il faut probablement prendre en compte à la fois l’état nutritionnel, les différents facteurs de risque de dénutrition",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "463e5ea94931",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dénutrition et, si nécessaire, une évaluation de l’état nutritionnel du patient doivent être réalisées en préopératoire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "69046cf4b42a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R13 : Il faut intégrer les résultats de l’évaluation nutritionnelle et du risque nutritionnel dans le dossier du",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "3a8a515e4326",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R14 : Quand l’évaluation nutritionnelle n’a pas été faite en amont, elle doit être réalisée au cours de la consultation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "1bcf26ffc013",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R15 : Dans le rapport de la consultation d’anesthésie, la stratification du GN doit être mentionnée.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "ff279201e8b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 Facteurs de risque de dénutrition pré- et postopératoire.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u20",
+   "empreinte": "c60d618e0f3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Antécédent de chirurgie digestive majeure (grêle court, pancréatectomie, gastrectomie, chirurgie bariatrique)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "7c0637f0480a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dysphagie Nausée–vomissement–sensation de satiété précoce",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u22",
+   "empreinte": "31c7cb91063e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Facteurs de risques liés à un traitement (traitement à risque) Traitement à visée carcinologique (chimiothérapie, radiothérapie)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "d339e38cbeae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stratification du risque global est proposée et devrait être utilisée (grade nutritionnel [GN]) (Tableau 2).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "7f44c53ee71d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3 Protocole de soins du patient GN 1 (patient non dénutri et pas de facteur de risque de dénutrition et chirurgie sans risque élevé de morbidité).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "18e06091400e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 Protocole de soins du patient GN 2 (patient non dénutri et présence d’au moins un facteur de risque de dénutrition ou chirurgie à risque élevé de morbidité).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "0ec2f7b9031e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et chirurgie sans risque élevé de morbidité Patient non dénutri",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "7c41d8a6e0ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et chirurgie sans risque élevé de morbidité Patient non dénutri",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "c772fb5bb097",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "support nutritionnel préopératoire n’est pas pour autant recommandé en routine. Il doit être réservé à des groupes de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "3d2194625c13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f conseils diététiques et compléments nutritionnels (GN 2) ; \u000f compléments nutritionnels, nutrition entérale ou parentérale",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "c23cdc5173e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R17 : Tout patient de GN 4 doit recevoir une assistance nutritionnelle préopératoire (nutrition entérale ou nutrition",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "854004f4b4fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R18 : Lorsqu’une assistance nutritionnelle préopératoire est indiquée, la nutrition entérale est à privilégier chez tout patient",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "d6143b39fe39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R19 : Chez la personne âgée, les stratégies nutritionnelles préopératoires sont les mêmes que chez le sujet plus jeune. En",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "7c610e33e97c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R20 : La prise en charge nutritionnelle postopératoire doit être anticipée et le bilan préopératoire doit permettre de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "fab53828b080",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R21 : Lors de la chirurgie majeure sus-mésocolique, il faut choisir en préopératoire la voie d’abord digestive (sonde",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "b67773654040",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement combiné à la radiothérapie, la gastrostomie préthérapeutique est probablement la technique de choix.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u36",
+   "empreinte": "8527ab0328fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et six heures pour un repas léger. R24 : Chez les patients sans risque de régurgitation, la prise",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u37",
+   "empreinte": "674929d84235",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R24 : Chez les patients sans risque de régurgitation, la prise de liquides clairs sucrés sous forme de solution de glucose ou",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u38",
+   "empreinte": "1854c20d22ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R25 : L’état nutritionnel d’un patient opéré en urgence doit être évalué si possible avant l’intervention, sinon dans les",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "cee5f90bf8c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "possible, au cours des 24 premières heures postopératoires, une alimentation orale, selon la tolérance du patient, sauf",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "57307eba8575",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "durée d’une assistance nutritionnelle postopératoire, quand elle est requise, ne doit pas être inférieure à sept",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u41",
+   "empreinte": "6e347bba45be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R28 : Chez un patient non dénutri (GN 1 et 2), il est recommandé d’instaurer une assistance nutritionnelle quand",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "3892197a226b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R29 : Chez les patients non dénutris (GN 1 et 2), il faut probablement instaurer, une assistance nutritionnelle précoce",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u43",
+   "empreinte": "36d40424198f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R30 : Il faut instaurer, dès les 24 premières heures postopératoires, un support nutritionnel chez les patients",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "9db69a6eb4b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R31 : La prise en charge nutritionnelle postopératoire d’un patient opéré en urgence n’est pas différente de celle",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u45",
+   "empreinte": "131be87f4f91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R32 : Dans le cas d’une fracture de l’extrémité supérieure du fémur chez une personne âgée, il est recommandé d’atteindre les",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u46",
+   "empreinte": "2b88854e4874",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "s’agit de l’arginine, la glutamine, les micronutriments, les acides gras insaturés oméga-3, les nucléotides. Les études",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u47",
+   "empreinte": "cbdf6a7796d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préopératoire pendant cinq à sept jours, un mélange nutritif utilisable par voie digestive contenant une association de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u48",
+   "empreinte": "8c60693cc6e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R33 : En chirurgie digestive oncologique programmée, que le patient soit dénutri ou non, il est recommandé de prescrire en",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u49",
+   "empreinte": "ebe6d37376fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R35 : Chez le patient dénutri (GN 4) en chirurgie digestive oncologique programmée, il est recommandé de poursuivre en",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u50",
+   "empreinte": "ba2461d78fdd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R36 : En chirurgie carcinologique ORL, il faut probablement prescrire une pharmaconutrition selon les mêmes modalités",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u51",
+   "empreinte": "bc1410ada32a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R37 : En chirurgie cardiaque (pontage coronaire), il n’est pas établi que l’administration de pharmaconutriments isolés ou en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u52",
+   "empreinte": "2cd938311642",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R38 : Il ne faut pas prescrire de pharmaconutriments contenant de l’arginine chez le patient septique ou hémodynamiquement instable.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u53",
+   "empreinte": "c6c7811d57c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R39 : En chirurgie programmée non compliquée, il n’est probablement pas recommandé de prescrire systématiquement de la glutamine en périopératoire.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u54",
+   "empreinte": "e12e51d93dcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement pas recommandé de prescrire systématiquement de la glutamine en périopératoire. R40 : En cas de complications postopératoires majeures, il",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u55",
+   "empreinte": "adc88528a99b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jour est probablement recommandé en postopératoire d’une chirurgie abdominale majeure programmée.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u56",
+   "empreinte": "717c71b35379",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R42 : En l’absence de données en chirurgie, la prescription de micronutriments à dose pharmacologique pendant la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u57",
+   "empreinte": "3669bdbbad26",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "d211c232e3c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comme des facteurs de risques de mortalité postopératoire. En revanche, l’obésité est associée à une augmentation du risque",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u59",
+   "empreinte": "0b6710d5d6e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R44 : Pour la chirurgie bariatrique, l’obésité morbide avec des IMC > 50 ou 55 est probablement associée à une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u60",
+   "empreinte": "793934b19803",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R45 : Le patient obèse est un patient potentiellement dénutri.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u61",
+   "empreinte": "0bfc7b0a68ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R46 : Chez l’obèse, une perte de poids involontaire avant une intervention chirurgicale est un facteur de risque de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u62",
+   "empreinte": "b5127fe4134c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R47 : Il est recommandé de s’assurer que les besoins en protéines sont couverts chez le sujet âgé obèse en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u63",
+   "empreinte": "9683c7552539",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R48 : La prévalence de la carence en fer est plus élevée chez le sujet obèse. Un dépistage (fer sérique et ferritine) et une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u64",
+   "empreinte": "2182446dfba4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vitamine B1 chez le sujet obèse, il est recommandé de prévenir ce risque en cas de perfusion de sérum glucosé ou de troubles",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "aec145ce167f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie entraînant une malabsorption de cette vitamine (gastrectomie, résection iléale. . .) est plus élevé. Un ajustement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u66",
+   "empreinte": "77cfb99b76d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R51 : En cas d’amaigrissement avant un acte chirurgical, un bilan nutritionnel est souhaitable avant le geste opératoire afin",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u67",
+   "empreinte": "61c8e636eb46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R52 : Les régimes restrictifs entraînant une perte importante de masse maigre ne sont pas recommandés notamment chez",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u68",
+   "empreinte": "85906df98e71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R53 : Une perte de poids volontaire préopératoire n’est pas recommandée dans les jours et semaines qui précèdent un",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u69",
+   "empreinte": "bf0f15d4d616",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R54 : Si la perte de poids est nécessaire pour faciliter le geste opératoire (cure éventration par exemple), une phase de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u70",
+   "empreinte": "78cfb808185d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R55 : Avant une chirurgie bariatrique, le régime restrictif et/ ou une perte de poids préopératoire n’est pas recommandée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u71",
+   "empreinte": "b7876a57bc76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R56 : Pour estimer les besoins protéino-énergétiques périopératoires d’un patient obèse, il est probablement",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u72",
+   "empreinte": "9f35a8aae748",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R57 : Il est recommandé de ne pas utiliser le poids dit « idéal ».",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "ba73a4775539",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R58 : Le sujet obèse doit probablement recevoir en postopératoire un apport protéique élevé (environ 1,5 g/kg de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u74",
+   "empreinte": "6c7a87d21aac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R59 : Il n’est probablement pas recommandé de prescrire une alimentation hypocalorique chez un patient obèse en",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u75",
+   "empreinte": "d8c12fbd0193",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R60 : Après chirurgie bariatrique, comme après toute chirurgie viscérale, une reprise alimentaire précoce est",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u76",
+   "empreinte": "5c2a5af8be2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R61 : Après chirurgie bariatrique, la reprise alimentaire doit se faire progressivement en texture et en quantité, de façon",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u77",
+   "empreinte": "85ea1e01446d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R62 : Après chirurgie bariatrique, les aliments riches en protéines sont privilégiés ; un apport minimal de 60 g/j de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u78",
+   "empreinte": "dd4882d03357",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R63 : Le patient diabétique est un patient à haut risque de dénutrition.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u79",
+   "empreinte": "3caefbeb0603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R64 : En préopératoire, le diagnostic de dénutrition chez le sujet âgé doit faire rechercher systématiquement une hyperglycémie.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u80",
+   "empreinte": "5c4ed1f8de22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "besoins protéino-énergétiques du patient diabétique et d’optimiser en conséquence son traitement antidiabétique.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u81",
+   "empreinte": "707b80fd2831",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diabétique, aucune supplémentation spécifique n’est actuellement recommandée en périopératoire. Ces besoins doivent être couverts par une alimentation variée et diversifiée en préet en postopératoire.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u82",
+   "empreinte": "4ecc9658e3b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maltodextrines jusqu’à deux heures avant la prémédication n’est probablement pas recommandée chez le patient diabétique.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u83",
+   "empreinte": "8c76d2e6da63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nutritionnels oraux ou des produits de nutrition entérale spécifiques pour diabétique (index glycémique faible) facilite",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u84",
+   "empreinte": "0ce263312b38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R69 : La gastroparésie, plus fréquente chez le sujet diabétique, ne doit pas être un frein à la nutrition entérale",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u85",
+   "empreinte": "55c3d8dca6fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mais justifie probablement de contrôler les résidus gastriques, d’utiliser des prokinétiques et de mettre en place une sonde",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u86",
+   "empreinte": "e0a034284e7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R70 : Les apports en glucide doivent être adaptés aux besoins énergétiques du patient. Un contrôle du débit de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u87",
+   "empreinte": "a9e5d79ca16d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’hyperglycémie sous nutrition parentérale. Il est recommandé d’instaurer l’insulinothérapie selon des modalités précises, en",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u88",
+   "empreinte": "394287c7ac7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "opératoire attendu. Chaque fois qu’un groupe de patients (personne âgée, diabétique, obèse. . .) nécessitait une recommandation spécifique, celle-ci a été faite. La méthodologie choisie",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u89",
+   "empreinte": "d762302ec2d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’alimentation orale : apports 1,5 à 2,5L/24 h de solution de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u90",
+   "empreinte": "dda3c1e766e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Assistance nutritionnelle : \u000f par voie entérale si possible avec soluté hyperprotéiné à 25 à 30 kcal/kg par jour dont 1, 2 à 1,5 g/kg de protéines. Si sonde naso-gastrique, utiliser une sonde Charrière 10 en silicone ou polyuréthane. Pas de sonde de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u91",
+   "empreinte": "abd0056d711e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f par voie parentérale, 25 à 30 kcal/kg par jour dont 0,20 à 0,25 g d’azote/kg par jour avec ajout d’électrolytes (apports recommandés de 50 à 100 mmol de NaCl/ 24 h + 40 à 80 mmol de KCl/24 h), de vitamines et d’oligoéléments.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u92",
+   "empreinte": "af6fc2f62f35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "b 0,3 g/kg/j sans dépasser 21 jours de traitement.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u93",
+   "empreinte": "20643f6b5441",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "IMC  13, perte de poids > 20 % en trois mois, apports oraux négligeable pendant 15 jours ou plus.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u94",
+   "empreinte": "b37dc8375c9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oral Impact1 : 3 briquettes par jour pendant 5 à 7 jours avant le geste",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u95",
+   "empreinte": "20ff76aff695",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

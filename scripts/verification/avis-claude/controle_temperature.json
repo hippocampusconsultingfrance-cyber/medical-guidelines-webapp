@@ -1,0 +1,340 @@
+{
+ "cle": "controle_temperature",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "36302d132bc8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "681b2cc9fca6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "choc. Cela a permis de produire 30 recommandations : 3 recommandations sont fortes (grade 1),",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "2d86fce392c8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "18722729d834",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Chez les patients qui sont comateux après réanimation d'un AC",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "7789f561c56d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 – Chez les patients qui sont comateux après réanimation d'un AC",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "ff27a4ef2700",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Chez les patients qui sont comateux après réanimation d'un",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "dc28fe2ca72a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.4 – Chez les patients traités par CCT après AC, il faut probablement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "4d55a2570add",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il ne faut probablement pas débuter le CCT par perfusion de solutés froids pendant le transport vers l'hôpital",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "36d763d65440",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 pédiatrique – Chez les enfants comateux après réanimation",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "5a0b26d5a7e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 pédiatrique – Chez les enfants comateux après réanimation",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "db4f278bc117",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 – Chez les patients traumatisés crâniens graves, il faut",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "4d94a5db4a59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – Chez les patients traumatisés crâniens graves, il faut",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "abe961a81860",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faut probablement pratiquer un CCT entre 34 et 35 8C dans le",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "0ddcf24e736e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 pédiatrique – Chez l'enfant traumatisé crânien grave, il faut faire",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "69270d421006",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 pédiatrique – Chez l'enfant traumatisé crânien grave, il ne faut pas",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "8633617fdcca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neuroprotection par hypothermie thérapeutique chez les patients TC",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u17",
+   "empreinte": "4a5bdce9e4d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à la phase aiguë d'un AVC ischémique grave, il faut probablement pratiquer un CCT ciblant la normothermie.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "5515dd7217e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 – Chez les patients comateux avec hématome",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "6fb97032131e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 – Chez les patients comateux avec une hémorragie sousarachnoïdienne, il faut probablement réaliser un CCT pour faire",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "5f3b9b8cf46a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 pédiatrique – Chez l'enfant présentant une hémorragie sousarachnoïdienne, il faut probablement faire un CCT avec une température",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "4be5938ff5e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 – Chez les patients avec un état de mal épileptique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "b772c39376b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2 – Chez les patients dans le coma, avec une méningite ou",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "fa5584cb1b5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en absence d'HTIC, il ne faut probablement pas pratiquer d'hypothermie",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "9007d0cfbfae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients dans le coma avec une méningite bactérienne et une HTIC, il faut probablement pratiquer une hypothermie",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "8b4fb0311102",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant présentant un état de mal épileptique, il faut probablement réaliser un CCT (normothermie) à visée neuroprotectrice.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u26",
+   "empreinte": "ffff1c625bd9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "36b9c4712d6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 – Chez les patients en choc cardiogénique, il ne faut probablement",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u28",
+   "empreinte": "bc471adf27e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 – Chez les patients en choc septique, il ne faut probablement pas pratiquer un CCT ciblant une température inférieure à 36 8C",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "70d04b52d601",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.3 – Chez les patients en choc septique, il faut probablement",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u30",
+   "empreinte": "4ba4afad8c42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 – Chez les patients traités par CCT, il faut utiliser des",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u31",
+   "empreinte": "497bb42b1100",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.2 – Chez les patients traités par CCT, il faut probablement contrôler la",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u32",
+   "empreinte": "94a06e2d338f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.3 – Chez les patients traités par CCT, il faut probablement",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u33",
+   "empreinte": "c93c4e12130e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.4 – Chez les patients traités par CCT, il faut probablement",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u34",
+   "empreinte": "807eb4fc939e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 Pédiatrique – Chez les enfants pour lesquels le CCT a été retenu, il",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u35",
+   "empreinte": "dd08925ebb84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.2 Pédiatrique – Chez les enfants traités par CCT, il faut",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u36",
+   "empreinte": "39ee60cc7fff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "survenue d'hypokaliémie inférieure à 3,5 mmol/L",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u37",
+   "empreinte": "ce53aec9a346",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

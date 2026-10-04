@@ -1,0 +1,241 @@
+{
+ "cle": "gestion_traitements_chroniques_cardio_2009",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d82d53062a9d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "3f130d870636",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être administré le matin de l'intervention avec la prémédication et repris le plus rapidement possible (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "9dd37c44496b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement chronique par bêtabloquant est bien toléré au niveau hémodynamique lors de la période périopératoire (grade C)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "bff3e4fc8915",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La poursuite d'un traitement par inhibiteur calcique, à visée antiarythmique ou antihypertensive, durant la période périopératoire est actuellement recommandée (grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "62c7fbeebf29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation de bupivacaïne, (notamment par voie péridurale) chez les patients traités au long cours par vérapamil doit être évitée en raison de la survenue d'hypotension ou de bradycardie (grade C).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "a6495c67f14c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ainsi il semble préférable d'utiliser l'isoflurane, le desflurane ou le sévoflurane (grade B).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "09e71f12b728",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation de lidocaïne semble alors préférable pour toute ALR, bien que l'association diltiazem ou vérapamil et lidocaïne puisse augmenter de façon expérimentale la toxicité cardiaque de la lidocaïne (grade B).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "9d37f58ad3b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas administrer les diurétiques le matin de l'intervention (accord fort). Un contrôle de la kaliémie est souhaitable.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "8003d31b396f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas interrompre le nicorandil en préopératoire (accord fort).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "3fd63bc9b41d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le nicorandil à la posologie orale de 20 mg/j peut être poursuivi et administré en prémédication sans conséquence hémodynamique notoire lors de l'anesthésie (grade B).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "60126340d3f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'interrompre les inhibiteurs du SRAA au moins 12 heures avant une intervention lorsque ceux-ci constituent un traitement de fond de l'hypertension artérielle",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "6717d091b420",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de maintenir les inhibiteurs du SRAA lorsque ceux-ci sont prescrits dans le cadre d'une insuffisance cardiaque.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "36a23aec2f32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas interrompre les dérivés nitrés par voie orale en préopératoire (Accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "4deafe6ec370",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "celui-ci doit être administré le soir précédant l'intervention et repris le soir de l'intervention (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "1fa68d7f824d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'interruption du transit intestinal, et en absence de forme parentérale disponible, une administration par une sonde nasogastrique est recommandée (Grade C).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "a06086287f42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la fréquence des élévations des marqueurs musculaires biologiques n'est pas augmentée en cas de traitement chronique par statines (Grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u17",
+   "empreinte": "481fc5d05f68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'interrompre 24 heures avant une intervention chirurgicale programmée, un traitement oral par antiarythmique de classe 1 prescrit en prévention primaire de la fibrillation auriculaire.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "cead403fb072",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En raison de sa longue demi-vie d'élimination, l'amiodarone est poursuivie sans interruption jusqu'au matin de l'intervention (accord fort).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "bb20a8672ca0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le sotalol ne doit pas être interrompu brutalement avant une intervention chirurgicale, en raison du risque de troubles du rythme graves",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "8fac5946b07c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "3c4c3a9e6db8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'imagerie par résonance magnétique (IRM) expose à des IEM graves et est contre-indiquée.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u22",
+   "empreinte": "ecf322791790",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le courant de coagulation doit être le plus faible possible",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "487a1b7cde85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "peuvent avoir une fonction antiarythmique inhibée de manière permanente après application prolongée (supérieure à 30 minutes) d'un aimant sur le boîtier.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "afacddd4b88b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La fonction d'asservissement peut être déprogrammée pour limiter le risque d'interférence, mais cela ne fait pas l'objet d'un consensus.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "bfbf11be4518",
+   "verdict": "ecart",
+   "type_ecart": "population",
+   "citation": "chez un patient porteur d'un stimulateur ou d'un DCI dont la fonction antiarythmique est déprogrammée, les électrodes doivent être placées en position antéropostérieure.",
+   "explication": "La source réserve la position antéropostérieure des électrodes de CEE au porteur d'un stimulateur ou d'un DCI dont la fonction antiarythmique est déprogrammée ; la fiche écrit « porteur d'un DCI actif ».",
+   "page": 11
+  },
+  {
+   "id": "u26",
+   "empreinte": "5ea055dca9e4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

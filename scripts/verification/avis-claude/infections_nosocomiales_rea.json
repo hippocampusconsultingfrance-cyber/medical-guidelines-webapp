@@ -1,0 +1,718 @@
+{
+ "cle": "infections_nosocomiales_rea",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e58bd73259a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Prévention des infections nosocomiales en réanimation (transmission croisée et nouveau-né exclus)§",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "e61dbdf9eb14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "incubation, à l’admission. Un délai d’au moins 48 heures entre l’admission et l’état infectieux est retenu.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "cbb8929c2801",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut surveiller la survenue des IN dans les unités de réanimation.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "a06611a84386",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les IN prises en compte par les réseaux français (pneumopathies, infections urinaires, bactériémies et ILC),",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "87801f321421",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "755c08681c5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "leucopénie (< 4000 GB/mm3) ou hyperleucocytose (> 12 000 GB/mm3).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "afe6bc9493a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec sondage vésical ou autre abord de l’arbre urinaire, en cours ou dans les sept jours précédents : uroculture positive ( 105 microorganismes/ml) et au plus deux microorganismes différents.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "8e387be6fcbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou commensaux à potentiel pathogène comparable, pour lesquels deux hémocultures positives au même microorganisme, prélevées lors de ponctions différentes, à des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "562c4c691c8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f et une régression totale ou partielle des signes infectieux généraux dans les 48 heures suivant l’ablation du cathéter.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "8d698ab87ee5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cas 1 Écoulement purulent provenant d’un drain sous-aponévrotique ou placé dans l’organe ou le site ou l’espace.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "9c44219ad748",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 Épidémiologie descriptive des principales infections nosocomiales en réanimation (selon REA Raisin 2006 pour l’adulte).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "9315423a0520",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8,52 13,49 16,17 6,46 7,82 7,94",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "9a1edac5389b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8,52 13,49 16,17 6,46 7,82 7,94",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "ea99ac5ac30e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8,52 13,49 16,17 6,46 7,82 7,94",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "f2530a30e164",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cadre de la conférence de consensus, cette question est centrée sur le lien entre architecture et prévention des IN.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "2391d221f8db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prévient les IN. Une répartition des lits en sous-unités permet une meilleure sectorisation des patients et des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "badbf1282b8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moins 20 m2. Bien qu’il n’ait pas été formellement démontré de lien entre prévention des IN et chambres individuelles, ces",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "0c50df7d897d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "professionnels et aux patients puisque la qualité d’eau recommandée est identique pour l’hygiène des mains et la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "b8046d27f8fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le point d’eau doit être équipé d’une vasque large et profonde, de forme arrondie et sans aspérité, dépourvue de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "c27170cde21e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’un col de cygne démontable fixé au mur. Un filtre antibactérien n’est pas recommandé si la qualité de l’eau est",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "4ce95fe743d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une porte à commande autre que manuelle est souhaitable en tenant compte des conséquences potentielles pour le",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "1e018d03c27d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f patients à haut risque « aspergillaire » : surpression de 15 Pa, renouvellement d’air d’au moins 20 volumes par heure, filtre",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "b8e439906195",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser de l’eau stérile pour toutes les situations de soins à risque.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "74c66157e643",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plus étroit après réévaluation systématique du traitement entre les 24e et 72e heures, selon les résultats microbiologiques obtenus (germes et antibiogrammes). La désescalade est recommandée pour prévenir l’émergence des",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u25",
+   "empreinte": "d200d44f9c8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "germes résistants. Il faut probablement aussi l’appliquer pour prévenir les IN. Si l’infection n’est pas confirmée, le maintien",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u26",
+   "empreinte": "91ddad7d7406",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les PAVM, il faut réduire la durée de traitement antibiotique de 15 à huit jours en dehors des infections liées à",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "488d87bab39c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en place une politique restrictive d’utilisation des antibiotiques avec seniorisation de la prescription et collaboration étroite",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "d75968eea7d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "raison du risque d’émergence de résistance aux antibiotiques utilisés. En situation épidémique, il faut",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "747b56708a73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antibiotiques utilisés. En situation épidémique, il faut probablement l’utiliser en adoptant des cycles courts d’un",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "2b4a28ca518b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "programmée de l’antibiothérapie sur des patients consécutifs. Dans l’état actuel des connaissances, le jury ne peut se",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u31",
+   "empreinte": "9571c8950b3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(désescalade, durée de l’antibiothérapie, gestion d’une épidémie à BMR) afin d’améliorer les pratiques de prescription de l’antibiothérapie réduit l’émergence de résistances,",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "5202379fda96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f les PAVM tardives (supérieurs à cinq jours d’intubation), essentiellement liées aux germes de la flore hospitalière.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u33",
+   "empreinte": "59d149e5afac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une antibioprophylaxie après l’intubation diminue l’incidence des pneumopathies précoces mais reste sans effet sur la mortalité, la survenue de PAVM tardive et la durée de VM. Il ne",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "de8795961e08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "raison d’un rapport bénéfice/risque favorable, il faut probablement recommander cette pratique. L’utilisation",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "3e0054bb9f93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement recommander cette pratique. L’utilisation d’un antibiotique local – seul ou associé à l’antiseptique –",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u36",
+   "empreinte": "ebfb8e0cab3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "renforcée de l’écologie bactérienne du service. Son utilisation n’est probablement pas recommandée dans les unités à forte",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "436981e8d1bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant, l’efficacité de la DDS n’est pas prouvée. Elle ne peut donc pas être recommandée.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u38",
+   "empreinte": "4358aabd4e9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’antibiothérapie inhalée ou en instillation trachéale, l’utilisation de peptides antimicrobiens ne doivent pas être",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "6fc1ce910e24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sédation analgésie pour réduire la durée de ventilation mécanique. Une procédure prévenant les extubations non",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u40",
+   "empreinte": "a2f2fd81c122",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En raison de son bénéfice sur l’incidence des PAVM, notamment chez le patient BPCO, la ventilation non invasive",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u41",
+   "empreinte": "467e3b80ed20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faut probablement utiliser l’intubation orotrachéale pour diminuer la survenue des sinusites.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "d64f6a5cba3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque de micro-inhalations et expose à un risque plus élevé d’extubation accidentelle. Chez le nourrisson, l’intubation nasotrachéale doit être recommandée.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u43",
+   "empreinte": "bb8306adaa7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le maintien de la pression du ballonnet des sondes entre 25 et 30 cmH2O est recommandé afin de limiter les micro-inhalations",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "4514cc3e7b02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant, les sondes à ballonnet constituent une protection possible contre les micro-inhalations, sans augmentation du risque",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "76dca39a29d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permettant l’aspiration sous-glottique réduise l’incidence des PAVM précoces. L’aspiration discontinue doit a priori être",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "841a3c795940",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décubitus dorsal strict est à proscrire sauf indication particulière. Bien que le niveau idéal d’angulation ne soit pas",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "5e9b0dcfcf5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation du système clos d’aspiration trachéale n’est pas recommandée dans le seul objectif de prévenir les PAVM.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "42014c5c0997",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "différents systèmes d’humidification des gaz inspirés, le décubitus ventral, la nutrition entérale, n’influencent pas",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u49",
+   "empreinte": "2d56ce6619c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandée chez les patients asymptomatiques porteurs d’un cathéter vésical. En cas de bactériurie asymptomatique, il",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u50",
+   "empreinte": "0b9277d29306",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "raison du risque potentiel de bactériémie. Actuellement, il y a peu d’arguments pour préconiser une administration d’antibiotiques par voie systémique lors d’un changement de sonde.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u51",
+   "empreinte": "c8ee55776014",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est capital de discuter l’indication et de limiter au strict nécessaire l’exposition du patient au sondage urinaire en",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u52",
+   "empreinte": "e390a3649e58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des urines. Aucune donnée n’a montré une efficacité supérieure des sondes imprégnées (antiseptiques, antibiotiques, argent). Leur utilisation n’est donc pas recommandée.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u53",
+   "empreinte": "105a5b63ddb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’irrigation vésicale avec un antibiotique ou un antiseptique et l’adjonction d’un antimicrobien dans le système clos ne sont",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u54",
+   "empreinte": "2948483391cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systématique. Ils peuvent trouver leur indication dans les unités où l’incidence des ILC reste élevée malgré la mise en place des",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u55",
+   "empreinte": "270799bd7184",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La préparation cutanée impose une asepsie chirurgicale. Il faut utiliser les solutions antiseptiques alcooliques (chlorhéxidine ou povidone alcooliques). Les solutions aqueuses",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u56",
+   "empreinte": "a37d098ee912",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En raison du risque accru d’ILC en territoire cave inférieur, il est recommandé d’insérer les cathéters en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u57",
+   "empreinte": "2f1330f55702",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pansement plus d’une fois toutes les 72 heures sauf en cas de souillure ou de perte d’étanchéité. Le changement des lignes de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u58",
+   "empreinte": "258a292bd603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandées : antibioprophylaxie à l’insertion, pommade antibiotique, filtres antibactériens, boîtiers protecteurs, changement systématique du cathéter à intervalle régulier.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u59",
+   "empreinte": "97664dfcb260",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "insuffisantes pour recommander la tunnélisation systématique. L’utilisation de patch cutané à la chlorhéxidine réduit l’incidence des",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u60",
+   "empreinte": "bb7ca3a1d639",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’application répétée de povidone iodée étant contre-indiquée chez l’enfant de moins de 30 mois en raison du risque",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u61",
+   "empreinte": "deb359ae65b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pédiatrique. Quant à l’insertion de cathéters imprégnés d’antibiotique, l’association minocycline/rifampicine ne réduit pas l’incidence des infections mais retarderait leur survenue. Les verrous antibiotiques ou l’imprégnation antibiotique systématique des",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u62",
+   "empreinte": "a57fe4d8b5a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’y a pas de preuve qu’une prophylaxie antithrombotique prévienne la survenue d’ILC malgré l’association fréquente d’une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u63",
+   "empreinte": "b3d41e2215a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "études observationnelles conduisent de recommander le site radial pour les cathéters artériels.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u64",
+   "empreinte": "ab645ef6c787",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f patient communautaire admis en réanimation et devant être opéré : les règles d’antibioprophylaxie périopératoire",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "1d4c1e1cdc77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f patient déjà hospitalisé et devant être opéré : il faut probablement tenir compte de l’écologie bactérienne de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u66",
+   "empreinte": "c86808a72d17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient sous antibiothérapie et devant être opéré : il faut poursuivre l’antibiothérapie",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u67",
+   "empreinte": "7cc82091f665",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les données sont insuffisantes pour toutes les autres mesures visant à prévenir les ISO en réanimation (décontamination naso-oropharyngée par chlorhéxidine, nature et soins",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u68",
+   "empreinte": "02ec497a7d1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une infection à C. difficile est définie par la survenue d’une diarrhée ou d’un mégacolon toxique sans autre étiologie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u69",
+   "empreinte": "db353608cf56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les mesures préventives spécifiques consistent à éradiquer les spores par la désinfection du matériel et le nettoyage des surfaces par solutions chlorées. Si l’utilisation",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u70",
+   "empreinte": "f90a5e2ee570",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de traiter de façon préventive les patients sous antibiotiques ou porteurs asymptomatiques.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u71",
+   "empreinte": "4eb2bd3f7fbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant les colites à C. difficile sont exceptionnelles. La majorité des IN digestives est due au Rotavirus dont les seules",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u72",
+   "empreinte": "3f004034af88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour réduire la part évitable des IN. Le respect du ratio réglementaire des effectifs soignants est un prérequis",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "9418fa701e34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveillance épidémiologique, programme d’éducation multidisciplinaire, mesures générales (hygiène hospitalière, politique d’utilisation des anti-infectieux, réduction du risque d’exposition) et des mesures spécifiques. Ces interventions applicables",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u74",
+   "empreinte": "c52f5cc1d0c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’absence de données concernant les autres IN (infection urinaire, ISO), il faut probablement généraliser cette",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u75",
+   "empreinte": "bcd47ffd813c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pratiques au sein du service. Il est conseillé d’intégrer un réseau régional ou national de surveillance des IN.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u76",
+   "empreinte": "1b7ed65eadff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un programme de formation et d’éducation de tous les acteurs de soin aux règles d’hygiène élémentaire et à toutes les",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u77",
+   "empreinte": "ff2517b76b2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le respect des bonnes pratiques de soin en terme d’hygiène hospitalière de base (asepsie, port de gants, lavage des mains) est",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u78",
+   "empreinte": "67d96e535ec5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limitation des durées de traitement. Le contrôle glycémique permet probablement de limiter la survenue d’IN.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u79",
+   "empreinte": "ce98f35da1d0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

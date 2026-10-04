@@ -1,0 +1,601 @@
+{
+ "cle": "infections_intra_abdominales",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "24aca75e40e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode GRADE, 62 recommandations ont été initialement",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "aec10750a210",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diurèse < 0,5 mL/kg/h pendant plus de 2 heures malgré un",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "80ce4e8b5cb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "créatininémie > 2 mg/dL (176,8 mmol/L)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "c364313725ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bilirubinémie > 2 mg/dL (34,2 mmol/L)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "d03f78d5edd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "composé de 38 médecins anesthésistes-réanimateurs",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "89589b7d16f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(100 %) recommandations qui correspondent au matériel présenté ci-dessous. Parmi les recommandations, 10 sont fortes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "0b29b509027b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1 – Il ne faut probablement pas faire d'imagerie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "8353b00cd5c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2 – En cas de suspicion de péritonite par perforation d'ulcère gastroduodénal, l'indication",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "a1007a206652",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3 – Il faut opérer le plus rapidement possible un",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "f09b25d804e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4 – Il ne faut probablement pas utiliser la voie",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "38ca72d19fa3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5 – Il ne faut pas faire de voie d'abord laparoscopique en cas de péritonite stercorale d'origine diverticulaire (Hinchey IV) ou de péritonite",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "e05f9c3ef6fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6 – En l'absence d'instabilité hémodynamique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "d16194abdb85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7 – Il faut réaliser un contrôle du drainage par",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "487b8c0de16e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8 – Lorsque le traitement chirurgical a été jugé",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "9be3e880ab95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque suivants : état de choc à l'admission, score ASA III–IV",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "05c4aacbd28c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R9 – Dans les IIA communautaires, il faut probablement prélever les liquides péritonéaux",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "2acdb908883e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R10 – Dans les IIA communautaires, chez les",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u18",
+   "empreinte": "21f243fd6c72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R11 – Il faut établir les protocoles de traitement",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "e9361c6c1d34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R12 – Il ne faut probablement pas prendre en",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u20",
+   "empreinte": "e6aadf406c26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R13 – Compte tenu de l'évolution des profils de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u21",
+   "empreinte": "62f0f6e28ba2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R14 – Dans les IIA communautaires, en l'absence",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u22",
+   "empreinte": "5dc839f54754",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R15 – Dans les péritonites graves (communautaires ou associées aux soins), il faut probablement instaurer un traitement antifongique si au",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "fd4e52fb3591",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R16 – Il ne faut probablement pas prendre en",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u24",
+   "empreinte": "499f6a212b88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R17 – En première intention, il faut probablement utiliser l'un des schémas antibiotiques",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u25",
+   "empreinte": "caf1b2776396",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R18 – En cas d'allergie avérée aux ß-lactamines",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u26",
+   "empreinte": "fe9d6a688956",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R19 – En cas d'IIA grave, il faut que le traitement",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u27",
+   "empreinte": "d86b22db3d53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R20 – Chez un patient grave souffrant d'une IIA",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u28",
+   "empreinte": "25b066577f07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R21 – Chez un patient grave souffrant d'une IIA",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u29",
+   "empreinte": "1e1bc55c0dc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R22 – Chez un patient traité pour une IIA",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u30",
+   "empreinte": "817c272dcbb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R23 – Au cours des IIA communautaires localisées, il faut probablement faire une antibiothérapie pendant 2 à 3 jours.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u31",
+   "empreinte": "a00b974b7480",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R24 – Au cours des IIA communautaires généralisées, il faut probablement faire une antibiothérapie pendant 5 à 7 jours",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u32",
+   "empreinte": "3cb9c8310f30",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "9f250a46a073",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R25 – Il faut privilégier les examens iconographiques non irradiants.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u34",
+   "empreinte": "110c5f6b3160",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R26 – Il faut probablement prendre en compte",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u35",
+   "empreinte": "62c261eb0bda",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R27 – Il ne faut probablement pas prolonger la",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u36",
+   "empreinte": "02d4516049aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R28 – En cas de survenue ou d'aggravation d'une",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u37",
+   "empreinte": "33c8a37bf691",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R29 – À partir du quatrième ou cinquième jour",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u38",
+   "empreinte": "e8fd1a73bec0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R30 – L'apparition en postopératoire de chirurgie abdominale de signes de gravité sans autre",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u39",
+   "empreinte": "03928bd5ef87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R31 – Pour les abcès postopératoires, il faut",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u40",
+   "empreinte": "34ae6541760d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R32 – En cas de suspicion de péritonite postopératoire chez un patient stable, il faut probablement réaliser une tomodensitométrie",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u41",
+   "empreinte": "8b5d83482727",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R33 – En l'absence d'amélioration clinique ou",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u42",
+   "empreinte": "978806e10caa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R34 – Il ne faut probablement pas utiliser de",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u43",
+   "empreinte": "f58c961c7c70",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R35 – Il faut probablement proposer la ponction",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u44",
+   "empreinte": "5ca9067f48df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R36 – Dans les IIA associées aux soins, il faut",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u45",
+   "empreinte": "8e9145ac0621",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R37 – Dans les IIA associées aux soins, il faut",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u46",
+   "empreinte": "86c875b7cf79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R38 – Lors du premier épisode d'IIA associée aux",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u47",
+   "empreinte": "ad5bd4b8d694",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R39 – Chez les patients porteurs connus",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u48",
+   "empreinte": "e87703cb06ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R40 – Dans les péritonites associées aux soins,",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u49",
+   "empreinte": "20aa6bdb7d40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R41 – Dans les IIA associées aux soins, il faut",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u50",
+   "empreinte": "2b8e52a94d9e",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "vivant en EHPAD médicalisé ou soins de longue",
+   "explication": "Critère BMR n°4 : la source dit « EHPAD médicalisé ou soins de longue durée ET sonde à demeure et/ou gastrostomie » ; la fiche omet « ou soins de longue durée ». Reste de R42 conforme (grade 2+).",
+   "page": 22
+  },
+  {
+   "id": "u51",
+   "empreinte": "04109343f0cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R43 – En cas d'allergie avérée aux ß-lactamines,",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u52",
+   "empreinte": "9a967b6016e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R44 – Au cours des IIA nosocomiales ou postopératoires, il faut probablement faire une",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u53",
+   "empreinte": "7cf549147c6d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "b2d383c02d77",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "aa8d22ed22ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.24 : signes de gravité (préambule)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "6eac32973c55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.24 : Oui → chirurgie (laparoscopie/laparotomie)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "36974851dd9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.24 : Non → scanner → drainage radiologique ou chirurgie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "f3876922ce02",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "8d0a650a4cec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.24 : allergie → lévofloxacine + métronidazole + gentamicine ou tigécycline",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "c2642635ddbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.24 : gravité → TZP + gentamicine ; sinon amox-clav + genta ou C3G + métronidazole",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "d480bf775071",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 p.24 : antifongique → échinocandine",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "3eeae01b3d18",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "e83a9999005d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.25 : allergie → 3 schémas",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "a575f7ea9fd3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.25 : BMR → imipénème/méropénème ± amikacine ± vancomycine ; sinon TZP + amikacine ± vancomycine",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u65",
+   "empreinte": "4e02877474df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 p.25 : antifongique → échinocandine",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "85948dcb684a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "cle": "traumatisme_abdominal",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e244d97d4f7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cinq ont un niveau de preuve élevé (Grade 1 +/-), six ont un niveau de preuve faible",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "3baf485c7598",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas recommandé de se limiter à l'examen clinique pour affirmer ou infirmer la présence d'une lésion abdominale. Grade 1-",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u3",
+   "empreinte": "e31f57b6184c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé d'utiliser l'échographie de type FAST en préhospitalier pour diagnostiquer la présence d'un épanchement intra-péritonéal. Grade 2+",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u4",
+   "empreinte": "266ccb8ffa18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(ii) éliminer un hémopéritoine supérieur à 500 mL lorsqu'elle est négative. Grade 1+",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u5",
+   "empreinte": "a59861857761",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(ii) affirmer ou éliminer la présence d'un épanchement rétropéritonéal. Grade 1-",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "10445b668507",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'émettre une recommandation concernant l'impact de la réalisation de l'échographie de type FAST en pré-hospitalier sur la stratégie d'orientation",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u7",
+   "empreinte": "9622234a8ae4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser un scanner thoraco-abdomino-pelvien avec injection de produit de contraste pour faire le diagnostic des lésions abdominales traumatiques. Grade 1+",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "5f85035d9fb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé de réaliser un scanner corps entier avec injection de produit de contraste pour réduire la morbimortalité. Grade 2+",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u9",
+   "empreinte": "31986bad0ebe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut entre 20 et 40 patients scannés pour sauver un patient ; le bénéfice potentiel paraît donc bien supérieur au risque.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u10",
+   "empreinte": "13cedfd3efeb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser une laparotomie sans délai lorsque l'état hémodynamique après réanimation initiale du patient n'est pas compatible avec la réalisation d'un scanner injecté. Avis d'experts",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u11",
+   "empreinte": "82aa8c4a3f3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé d'effectuer une stratégie de type damage control afin de diminuer la mortalité. Grade 2+",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u12",
+   "empreinte": "66baa6fdbb56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "métabolique (pH<7,2), d'hypothermie (température<34°C) et/ou d'une coagulopathie",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u13",
+   "empreinte": "9febee172e1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une cœlioscopie diagnostique afin de rechercher une effraction péritonéale en l'absence de signe de péritonite ou d'éviscération. Grade 2+",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u14",
+   "empreinte": "9aefbd4c4236",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(ii) à distance, en complément du traitement non-opératoire (TNO). Avis d'expert",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u15",
+   "empreinte": "be79e137eebf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé de réaliser un traitement nonopératoire afin de réduire la morbi-mortalité. Grade 2+",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u16",
+   "empreinte": "53eaf917676a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une angioembolisation hémostatique en urgence afin de réduire la morbi-mortalité. Grade 2+",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u17",
+   "empreinte": "68f7f1bae528",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "reste controversée sur les traumatismes spléniques [14], et n'a pas démontré d'utilité sur les lésions rénales",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u18",
+   "empreinte": "364a682d3484",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est probablement recommandé de surveiller la pression intraabdominale en unité soins critiques afin de dépister précocement un syndrome du compartiment abdominal. Grade 2+",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u19",
+   "empreinte": "c32a4286cbc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une durée minimale de 3 à 5 jours, dans une unité de soins critiques au moins les 24 premières heures, puis dans un service de chirurgie.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u20",
+   "empreinte": "6d2155e1bd8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser un scanner abdominopelvien injecté de contrôle en cas de lésion abdominale à risque",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u21",
+   "empreinte": "6c06456e32d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "période, le maintien de l'alitement n'est pas nécessaire.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u22",
+   "empreinte": "17754f37a557",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "7eca18bcf6e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 30) : « Anticiper » — traumatisme abdominal grave jusqu'à preuve du contraire, signes de gravité TAS < 110 mmHg → culots globulaires, objectifs délais courts / traitement du choc / pré-alerte SAUV.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "f733c4de84ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 30) : T0-5 min — « Examen clinique peu fiable », identifier besoins et mesures immédiates → traiter détresse vitale.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "131cd6aee24b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 30) : T5-15 min — hypotension permissive (sauf TC), bolus cristalloïdes 250 mL, noradrénaline précoce, acide tranexamique 1 g, transfusion, PAS 80-90 (PAM 60-65) ; encadré FAST écho (ne pas retarder, répétable, négative n'élimine pas, positive = gravité).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "dda91d4f8fd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 30) : T15-30 min — pré-alerte si choc ou critère de gravité → orientation trauma center.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "33e14853bb7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 30) : T30-60 min — anticipation des moyens intra-hospitaliers (score d'activation) → radio-embolisation, chirurgie, damage control ; transmissions structurées.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "e41050c3dc4b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "5826afc32251",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (p. 31) : évaluation initiale clinique + FAST ; hémopéritoine abondant/scanner incompatible → traitement opératoire précoce ; scanner initial → opératoire précoce ou TNO (angio-embolisation ou surveillance) ; scanner secondaire → laparotomie/angio/cœlioscopie ; 3 évolutions.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "ef2d00836714",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (p. 31) : « Règles de damage control laparotomie : procédure écourtée + abord xypho-pubien + contrôle simple des sites hémorragiques + packing hépatique + coprostase + fermeture par VAC ou fermeture cutanée seule ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "cdfed30fcc28",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,538 @@
+{
+ "cle": "raac_colorectal",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4e5e00451ba8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maintien de la sonde nasogastrique ; le drainage chirurgical pour une chirurgie colique",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "02b1362c535d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "35 recommandations, 22 sont fortes (Grade 1 positif ou",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u3",
+   "empreinte": "bc7841cae79a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "programme de réhabilitation sont des obligations réglementaires. Loi no 2009-879 du 21 juillet 2009",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "a3bdc8c3ae2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préparation colique n’est pas recommandée de manière",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "b4ec48377a14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "données de la littérature ne permettent pas d’émettre",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "36157ec5f2d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’impact d’une prémédication anxiolytique. Accord Fort",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u7",
+   "empreinte": "2c449683966e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6 heures pour les solides) sont valides. Accord Fort",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "4e1f6c1a4ad0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "solution isotonique riche en carbohydrates aux patients",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "f4343df2a582",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vidange gastrique. (GRADE 1 ) Accord Fort",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "c168f3ca6185",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de prescrire une immunonutrition en préopératoire d’une",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "b614b9a56102",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "poursuivre une immunonutrition en postopératoire d’une",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "fa8f0b601b2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie colorectale programmée non carcinologique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "2087b2c0ae3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’est pas recommandé pendant le geste chirurgical",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "940e217b2c7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "paramètre hémodynamique reflétant la volémie, est",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u15",
+   "empreinte": "f69419244fa6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "unique de corticostéroïdes en préopératoire immédiat est",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "696ea69d4258",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "peropératoire est recommandée pendant la chirurgie",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "ead274d17309",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’administration d’une antibioprophylaxie couvrant les germes aérobies et anaérobies est recommandée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "e4fa10069ffe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vomissements est recommandée. (GRADE 1+)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "65a26555801f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation 17 – La chirurgie par laparoscopie est",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "58745e701d8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation ne peut être faite sur le type d’incision",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "8953d33da1b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "laisser une sonde nasogastrique après une chirurgie",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u22",
+   "empreinte": "1e23ee085a7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "agents antalgiques non morphiniques et/ou une technique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "1f2a91b58d83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque de survenue d’une fistule digestive. (GRADE 2+)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u24",
+   "empreinte": "99da37521487",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas recommandée. (GRADE 2 ) Accord Faible",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "37b21630eb1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "laparotomie, l’analgésie péridurale thoracique est une des",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u26",
+   "empreinte": "101ace65176d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "continue de lidocaïne est recommandée pour la chirurgie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u27",
+   "empreinte": "31c5eef740e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "perfusion d’anesthésique local est probablement recommandée après chirurgie colorectale",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u28",
+   "empreinte": "541ccd5dcdea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "transverse de l’abdomen (TAP Block) est probablement",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "da6d4c3f4f46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de bas poids moléculaire à dose prophylactique élevée est",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "6209f5b9ed98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mise en place d’un drainage n’est pas recommandée",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "23239a391c40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aspiratif est probablement recommandée. (GRADE 2+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u32",
+   "empreinte": "988e636a8cce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation 30 – Le lever précoce (avant h24) est",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u33",
+   "empreinte": "d32482e2966c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précocement (avant h24) une alimentation orale après",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u34",
+   "empreinte": "7c901137a3ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "durée du sondage vésical ne doit pas excéder 24 heures",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u35",
+   "empreinte": "a7a7e8d275bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rectum, requérant un drainage vésical supérieur à 4 jours",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u36",
+   "empreinte": "15319a8afaf6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’est pas recommandée. (GRADE 1 ) Accord Faible",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u37",
+   "empreinte": "6c089d6566b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(chewing-gum) est probablement recommandée",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u38",
+   "empreinte": "4421db0c7e0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : information et conseils, Oui (colonne principale)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "6a8062aa37e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : préparation colique non si colique ; chirurgie rectale en absence de recommandation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "3ffcc75a2fcd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : prémédication, absence de données",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "4c9e5e867252",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : solides 6 h, liquides 2 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "a34f1f3c97ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : oui si ASA 1-2, non si diabète/vidange",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "914b23a6a629",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Annexe p.12 : les trois lignes immunonutrition sont toutes dans la colonne « Recommandations principales »",
+   "explication": "La fiche classe « non en préop non carcinologique » et « non en postop » comme secondaires : classement absent du tableau source.",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "132c1fc6290e",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Annexe p.12 : « Non : apport excessif de solutés » est dans la colonne principale",
+   "explication": "La fiche le classe secondaire.",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "160c803d29d4",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Annexe p.12 : corticostéroïdes dans la colonne « Recommandations principales »",
+   "explication": "La fiche le classe secondaire.",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "77baeea00d31",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Annexe p.12 : hypothermie et antibioprophylaxie toutes deux dans la colonne principale",
+   "explication": "La fiche classe l'antibioprophylaxie secondaire.",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "f8f27874ad6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : NVPO oui, systématique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "222a52fc8ff6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : laparoscopie ; laparotomie en absence de recommandation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "b8dd3256254b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : sondes nasogastriques non",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "b948fe6c20e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : multimodale principale, AINS secondaire",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "673530c9ca89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : péridurale principale ; irrigation, lidocaïne, TAP secondaires",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "2ae6ecec3e14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : lidocaïne oui, péridurale non ; irrigation, TAP secondaires",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "c0aec979a850",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : HBPM dose prophylactique élevée",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "e5420d995757",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Annexe p.12 : « Oui si anastomose sous-péritonéale » et « Non si colique » tous deux colonne principale",
+   "explication": "La fiche classe l'anastomose sous-péritonéale secondaire.",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "cf087d5dc5ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : oui avant h24",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "7a0b0cac5971",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : oui avant h24",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "7b8d9565530c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe p.12 : < 24 h colique principale ; bas rectum sus-pubien secondaire",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "f6f07264c697",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Annexe p.12 : chewing-gum (oui) et naloxone (non) dans la colonne principale",
+   "explication": "La fiche les classe secondaires.",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "39a04a018f5f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "cle": "traumatisme_cranien_leger",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d11b70cbf6ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'élaboration de 13 recommandations. Après deux tours de cotation, un accord fort a été obtenu pour",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "b952c9dfb424",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "perte de conscience pendant 30 minutes ou moins",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u3",
+   "empreinte": "d8e5846644fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Score de 13 à 15 sur l'échelle de coma de Glasgow 30 minutes après la blessure ou plus tard",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u4",
+   "empreinte": "c2ef0b215e06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne soient pas orientés de façon systématique vers une structure des urgences s'ils peuvent être surveillés par une tierce personne",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u5",
+   "empreinte": "6eeb0a330b71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "estimé à seulement 0,9% (0,8% - 1,0%) des patients atteints de TCL.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "29404c0e8304",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de stratifier le risque d'aggravation clinique ou de lésion intracrânienne",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u7",
+   "empreinte": "c1aa1cdfea44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de réaliser un dosage sanguin de la protéine S100B, lorsque celui-ci est",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "3ce70f3a3ce6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de réaliser un dosage sanguin combinant UCH-L1 et GFAP lorsque ceux-ci",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u9",
+   "empreinte": "0d0500779004",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "[spécificité : 36,7% (34,5%-39%), sensibilité 97,3% (92,4%-99,4%), VPN 99,5% (98,7%-99,9%)]",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u10",
+   "empreinte": "67b5f15561a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Otorrhée ou rhinorrhée, ecchymose mastoïdienne, ecchymose périorbitaire",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u11",
+   "empreinte": "b4f9add2589f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Discontinuité palpable de la voûte, suspicion d'embarrure ouverte ou fermée du crâne",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u12",
+   "empreinte": "f66b69a14c70",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chute d'une hauteur supérieure à 5 marches ou supérieur à 2 m",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u13",
+   "empreinte": "c6db9267df54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au plus tard dans les huit heures pour les patients à risque intermédiaire d'aggravation clinique ou de lésion intracrânienne.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u14",
+   "empreinte": "ada926c30f16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de réaliser, après un scanner cérébral anormal, un Doppler Transcrânien",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u15",
+   "empreinte": "e875c6287c26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Question 2.3 : Quel est le délai optimal de réalisation de la TDM cérébrale pour exclure une lésion",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u16",
+   "empreinte": "69c1828590dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prédictive négative du DTC pour prédire l'aggravation neurologique était de 98 % (96 %-100 %), et 100%",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u17",
+   "empreinte": "6baacd539fee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "troubles de l'hémostase, en dehors de la prise d'aspirine seule.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u18",
+   "empreinte": "422837da5840",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de réaliser une réversion immédiate des anti-vitamine K chez les patients",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u19",
+   "empreinte": "218163a67cd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de réaliser une réversion immédiate des anticoagulants oraux directs chez",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u20",
+   "empreinte": "1b7b576a9477",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de discuter la conduite à tenir de façon collégiale chez les patients porteurs",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u21",
+   "empreinte": "8a562b80b531",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Apixaban ou rivaroxaban : CCP 50 UI/kg (maximum 5000 UI; antidote non disponible à ce jour).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u22",
+   "empreinte": "5750e43a9e84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de ne pas neutraliser l'aspirine chez un patient traité par aspirine avec",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u23",
+   "empreinte": "0758209e511c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation concernant une prise en charge spécifique des patients traités par un inhibiteur des récepteurs P2Y12",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u24",
+   "empreinte": "d1335d181815",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent d'autoriser un retour à domicile des patients depuis la structure des",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u25",
+   "empreinte": "4987bd248740",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'hémorragie (pooled OR 0,88 IC95%[0,34-2,28])",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u26",
+   "empreinte": "6bef6c8aef4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent que la persistance de symptômes jugés invalidants par le patient au-delà",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u27",
+   "empreinte": "26bad393181c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bénéficient d'une information éclairée écrite et orale standardisée sur les motifs devant amener à reconsulter aux urgences",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u28",
+   "empreinte": "24f024b1c8ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De récents travaux montrent que des plaintes cognitives chroniques (>3 mois) sont",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u29",
+   "empreinte": "3025a812ed4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de ne pas reprendre cette activité à risque dans les 15 jours.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u30",
+   "empreinte": "6c5ea7ea7a6d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "8b09df77a340",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

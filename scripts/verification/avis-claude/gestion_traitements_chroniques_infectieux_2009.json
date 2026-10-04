@@ -1,0 +1,340 @@
+{
+ "cle": "gestion_traitements_chroniques_infectieux_2009",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "1ad4bb777021",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "bd9b7a82aa0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aux mêmes posologies et par voie orale, ainsi que la supplémentation vitaminique associée (B1 et B6) (accord fort).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u3",
+   "empreinte": "b660559dc25f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de nécessité d'interruption prolongée du traitement, une prise en charge pluridisciplinaire est recommandée (accord fort).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u4",
+   "empreinte": "6c6878feead9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'administration de corticoïdes, il est recommandé d'augmenter la posologie de 30 à 50 %.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u5",
+   "empreinte": "2a312e5b9d13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antirétroviral, en période périopératoire, les arrêts de traitements doivent être évités (accord fort).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u6",
+   "empreinte": "a27625faf348",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(jeûne préopératoire) sera la plus courte possible et au plus de 48 heures maximum (accord fort).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u7",
+   "empreinte": "1bfc23bd199f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tous les médicaments antirétroviraux doivent être interrompus et repris simultanément (accord fort).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u8",
+   "empreinte": "d404c1598716",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout arrêt de traitement doit faire l'objet d'un avis spécialisé (accord fort).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u9",
+   "empreinte": "01630d498e9a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "66736f9896f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La poursuite de l'immunosuppression peut s'accompagner d'un risque plus élevé d'infections postopératoires (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u11",
+   "empreinte": "5925f98821a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un monitorage est donc indispensable et peut-être une diminution des doses (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u12",
+   "empreinte": "849ebfedef77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le midazolam et la lidocaïne diminueraient le métabolisme du tacrolimus (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u13",
+   "empreinte": "d09e4156d5f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont possibles en cas de remplissage massif périopératoire ou de circulation extracorporelle (grade C).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u14",
+   "empreinte": "eec90543839e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de surveiller les taux plasmatiques et la fonction rénale en concertation avec le spécialiste en charge de l'immunosuppression du patient (accord fort).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u15",
+   "empreinte": "2cf6fdc3fef1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La reprise précoce du traitement est nécessaire (par voie orale ou intraveineuse selon la situation) (accord fort).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u16",
+   "empreinte": "4f754b32fa33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la voie entérale est compromise, il est possible d'administrer le traitement par voie intraveineuse (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u17",
+   "empreinte": "c69e446901d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas donner la ciclosporine le matin de l'intervention en cas d'anesthésie générale. Le tacrolimus peut être poursuivi par voie sublinguale.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u18",
+   "empreinte": "1ef4bf378982",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas interrompre la thalidomide en tenant compte de la fréquence des neuropathies et du risque de maladie thrombœmbolique veineuse (accord fort).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u19",
+   "empreinte": "8271b210761a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décrite en particulier plus précocement sur les nerfs saphènes externes et médians",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u20",
+   "empreinte": "cdfc88cf68bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est fortement suspecté une toxicité médullaire et muqueuse du méthotrexate en présence de protoxyde d'azote (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u21",
+   "empreinte": "181f73378abd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est contre-indiqué d'utiliser des anti-inflammatoires non stéroïdiens pour l'analgésie en raison d'une potentialisation de la toxicité hématologique et rénale (grade C).",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u22",
+   "empreinte": "e5e6e2081957",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas interrompre le traitement. Il faut prendre en compte la toxicité hématologique et rénale",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u23",
+   "empreinte": "c835d19a0d71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de maintien ou de reprise précoce du méthotrexate, il est conseillé de ne pas utiliser de protoxyde d'azote durant l'anesthésie (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u24",
+   "empreinte": "9f1c80c58ebe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le taux d'infection postopératoire après induction de l'immunosuppression pour transplantation, n'est pas élevé (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u25",
+   "empreinte": "d1042fc21efa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le maintien de l'azathioprine n'est pas associé à un risque accru de complications postopératoires (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u26",
+   "empreinte": "47627fb5bc00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la posologie de curare semble pouvoir être identique à celle utilisée chez le sujet sain (grade C).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u27",
+   "empreinte": "61c60c1b4067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer le traitement avec la prémédication (accord fort).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u28",
+   "empreinte": "0b8d906420f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'interruption prolongée, il est recommandé de se concerter avec le spécialiste prenant en charge le patient pour ce traitement (accord fort).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u29",
+   "empreinte": "6e5b3eb0ae3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer le traitement avec la prémédication (accord fort).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u30",
+   "empreinte": "98b18ab9409e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'interruption prolongée, il est recommandé de se concerter avec le spécialiste prenant en charge le patient pour ce traitement (accord fort).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u31",
+   "empreinte": "9dcda05edde9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas d'intérêt au dosage de la molécule pour le suivi thérapeutique ou l'adaptation posologique (grade C).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u32",
+   "empreinte": "5506afd65ebd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'effet des curares dépolarisants peut être prolongé chez les patients ayant reçu du cyclophosphamide, même à distance de la prise (grade C).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u33",
+   "empreinte": "1ab5cb1b973f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer le traitement avec la prémédication (accord fort).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u34",
+   "empreinte": "2be1b3591bc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'interruption prolongée, il est recommandé de se concerter avec le spécialiste prenant en charge le patient pour ce traitement (accord fort).",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u35",
+   "empreinte": "a1a20b805191",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le cadre d'une chirurgie colique d'un patient porteur de maladie de Crohn ou de RCH, le traitement pourra être poursuivi (grade C).",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u36",
+   "empreinte": "cc978d57f28f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est conseillé de les arrêter une semaine avant la chirurgie. Le traitement pourra être repris la semaine suivant l'intervention en l'absence de complication.",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u37",
+   "empreinte": "42956fcb3fe0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

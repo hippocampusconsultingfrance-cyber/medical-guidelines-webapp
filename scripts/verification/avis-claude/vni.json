@@ -1,0 +1,439 @@
+{
+ "cle": "vni",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "bd7071fa87d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les particularités pédiatriques apparaissent en italique",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "cb59dd2e1ca3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le succès de mise en œuvre de la VNI impose le respect de ses contre-indications (tableau 1)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "24cf5916bf5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coma (sauf coma hypercapnique de l'insuffisance respiratoire chronique [IRC])",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "c519c99d068c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fibroscopie bronchique chez les patients hypoxémiques (G2+)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "5ef8033a8c4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pré-oxygénation avant intubation pour IRA (G2+)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "8609ffccadc3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du refus du patient ou de son mauvais pronostic (G2+)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "6e4f6e167bb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en fin de vie, la VNI ne se conçoit que si elle leur apporte un confort",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "55cf2f556aa2",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "Tableau 2 (page PDF 3) : « Intérêt certain — Il faut faire (G1+) » ne contient que « Décompensation de BPCO » et « OAP cardiogénique » ; « IRA hypoxémique de l'immunodéprimé » et « Post-opératoire de chirurgie thoracique et abdominale » sont dans la ligne G2+",
+   "explication": "La fiche classe l'IRA hypoxémique de l'immunodéprimé et le post-opératoire de chirurgie thoracique et abdominale en G1+ (« il faut faire »). La source les classe G2+ (« il faut probablement faire »), ce que confirment les recommandations de la Q2 (G2+).",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "b242cd7dc7c5",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Tableau 2 : la ligne G2+ commence par « IRA hypoxémique de l'immunodéprimé / Post-opératoire de chirurgie thoracique et abdominale »",
+   "explication": "Ces deux indications manquent dans la ligne G2+ de la fiche (déplacées à tort en G1+, cf. u8).",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "e6450777908c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pneumopathie hypoxémiante SDRA Traitement de l' IRA post-extubation Maladies neuromusculaires aiguës réversibles",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "7fd32554420a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Asthme Aigu Grave Syndrome d'obésité-hypoventilation Bronchiolite aiguë du nourrisson",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "03f4f0eea66f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La VNI (mode VS-AI-PEP) est recommandée dans les décompensations de BPCO avec acidose respiratoire et pH < 7,35 (G1+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "7a79865a3f0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La VS-PEP ne doit pas être utilisée (G2-)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "fa9e14651eaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas d'hypercapnie avec PaCO2 > 45 mmHg (G1+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "760121602f3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de signes cliniques de détresse respiratoire, sans attendre le résultat des gaz du sang (G2+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "0d280226ec33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être proposée en première intention en cas d'IRA (PaO2 / FIO2 < 200 mmHg) avec infiltrat pulmonaire (G2+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "79fbaa0ff8fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sans retarder la recherche et la prise en charge d'une complication chirurgicale",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "aea83f73063c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de rapport PaO2/FIO2 < 300 mmHg après abord sus-mésocolique, la VS-PEP peut être envisagée (G2+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "444c73db96fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de non-réponse au traitement médical",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "1fd67e5020e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en prévention de l'IRA après extubation chez le patient hypercapnique (G2+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "f51cbc774754",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les signes cliniques de lutte même frustres ou l'hypercapnie dès 45 mmHg constituent des indications formelles de VNI",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "19dd49e33ab0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La VS-AI-PEP doit être le mode ventilatoire de première intention dans les IRA des mucoviscidoses (G2+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "bfd1f4439ccc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au cours des IRA sur laryngo-trachéomalacie (mode VS-PEP) (G2+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "1c04857cc6d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un protocole de VNI peut être proposé en cas de rapport PaO2/FIO2 < 250 mmHg (G2+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "74257fc7e7b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la VNI est utilisée, le mode ventilatoire peut être la VS-PEP ou la VS-AI-PEP",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "9ec8a14bf48c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si une VNI est utilisée, le mode VS-AI-PEP doit être privilégié",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "b0ba0174bf4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le masque naso-buccal est recommandé en première intention (G2+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u28",
+   "empreinte": "b9b5cccea3f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par un humidificateur chauffant (privilégié en pédiatrie, G2+) ou un filtre échangeur de chaleur et d'humidité",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "9f7749ea4ae9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mesure répétée de la fréquence respiratoire (G1+), de la pression artérielle",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "1cbe2fc7df45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une pression inspiratoire totale dépassant 20 cmH2O expose à un risque accru d'insufflation d'air dans l'estomac",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "398f2ff0da2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la VNI se limite à la VS-PEP dans l'OAP (G1+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "682cb1dfb382",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est réservée aux équipes formées et entraînées disposant de respirateurs adaptés (G2+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "1be18b796a2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la VNI peut être envisagée pour les décompensations modérées de BPCO (pH ≥7,30)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u34",
+   "empreinte": "ae9fac8b7fd2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque principal de la VNI est le retard à l'intubation",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u35",
+   "empreinte": "e9f6a70bab15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "érythème, ulcération cutanée",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "9b7b723b6b52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "serrage adapté du harnais changement d'interface",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "2a4ed251804c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réinhalation du CO2 expiré",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u38",
+   "empreinte": "56d2d15584fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécrose des narines ou de la columelle (canules nasales)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u39",
+   "empreinte": "18ad2879303b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sécheresse des voies aériennes supérieures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u40",
+   "empreinte": "18c2527463d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réduction des pressions, sonde gastrique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u41",
+   "empreinte": "45919630cbbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "otalgies, douleurs naso-sinusiennes",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u42",
+   "empreinte": "43179d266970",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "drainage thoracique, arrêt de la VNI",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u43",
+   "empreinte": "2077da2e4d22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fuites, complications conjonctivales",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u44",
+   "empreinte": "6ca07b568e43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Score d'activité physique quotidienne défavorable",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "3792c15041e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "IRA post-opératoire par complication chirurgicale À la 1re heure",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "70d8f504c6bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les chances de succès de la VNI sont supérieures dans l'insuffisance respiratoire chronique, en particulier des BPCO",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "2b88d0aa7c20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La VNI ne doit pas être interrompue brutalement au-delà de la phase initiale de prise en charge de l'IRC décompensée",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "b16299cf2fd7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

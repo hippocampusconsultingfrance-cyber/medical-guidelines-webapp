@@ -1,0 +1,1240 @@
+{
+ "cle": "tih",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9945c03b4b7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Propositions du GIHP et du GFHT pour le diagnostic et la prise en charge d’une thrombopénie induite par l’héparine",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "24efa015656d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "niveau de preuve des études disponibles reste faible et le niveau de recommandation est donc assez bas, expliquant que notre groupe ait décidé, comme en 2002, de ne pas attribuer de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "7da0c67397cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Une thrombopénie bénigne (type I), d’origine non immune et d’apparition précoce, sans complication thrombotique et qui régresse malgré la poursuite du traitement par l’héparine ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "e21473bef910",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de distinguer trois stades différents de TIH selon son ancienneté : - TIH aiguë, qui correspond à une TIH récente, diagnostiquée depuis moins d’un mois,",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "80036bdc3658",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de définir le niveau de risque de TIH sous héparine comme étant : - Faible (inférieur à 0,1%) en cas de traitement par une héparine de bas poids",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "ff0646eb9429",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I, p. 8 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "19033e926cb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I, p. 8 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "a599e9759fdb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I, p. 8 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "8621409473ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I, p. 8 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "37ade7232ee1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I, p. 8 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "236aa7d3494b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I, p. 8 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "49850c89172f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Enfin, le risque de TIH est très faible chez tous les malades au-delà d’un mois de traitement par une héparine, quelle que soit la molécule administrée (HNF ou HBPM), et la posologie.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u13",
+   "empreinte": "311d8fdcde26",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "numération plaquettaire avant l’initiation du traitement (ou à défaut le plus tôt possible après la première injection (soit avant J4) (Accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "dec9b5fa4ec1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de ne pas surveiller la numération plaquettaire chez les patients ayant un risque faible de TIH. (Accord fort)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "a8248ddd8328",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveiller la numération plaquettaire une fois à deux fois par semaine entre le 4ème et le 14ème jour de traitement, puis une fois par semaine pendant un mois si",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u16",
+   "empreinte": "194a9588745a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveiller la numération plaquettaire une fois à deux fois par semaine entre le 4ème et le 14ème jour de traitement, puis une fois par semaine pendant un mois si",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u17",
+   "empreinte": "8e23e24f874c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "grande majorité des TIH surviennent durant cette période (10). Toutefois, quelques cas ont été rapportés au-delà de 15 jours de traitement, notamment sous HBPM (32), mais jamais au",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u18",
+   "empreinte": "f0f41c9891af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les thromboses veineuses profondes concernent jusqu’à 50 % des patients avec une TIH, ce qui peut justifier leur recherche systématique par un écho-Doppler veineux des",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u19",
+   "empreinte": "a2c7943468c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "clinique inattendu : apparition ou aggravation d’une thrombose veineuse ou artérielle, nécrose cutanée ou réaction inhabituelle après l’injection d’héparine",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u20",
+   "empreinte": "68d06aa2b19e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "B. La probabilité clinique de TIH est évaluée par le score des 4T (2, 41), qui repose sur 4 critères majeurs et pour chacun d’eux sont attribués 0, 1 ou 2 points (Figure 1).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u21",
+   "empreinte": "6bab3f6e9791",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "b00de0c6fae1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "f6bc8379fcb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "7b4ac045c005",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "5233d7072c7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "e770b0cafa7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "5424eb8116c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "60be8df44ae3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "962659b0bf97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "681b100095ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "928dffcc3d3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "7bd19799b0b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "7c7d07f229ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients ayant eu une chirurgie cardiaque avec CEC, ce score est plus difficile à appliquer et l’analyse du profil d’évolution post-opératoire des plaquettes plus performante. En",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u34",
+   "empreinte": "586482142280",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "syndrome des antiphospholipides (40), du purpura thrombotique thrombocytopénique et de la CIVD. Une thrombopénie et des thromboses peuvent aussi être observées chez des patients",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u35",
+   "empreinte": "0188a1903870",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de suspicion de TIH, il est proposé de définir la probabilité clinique de TIH à l’aide du score des 4T, en dehors d’un contexte de chirurgie cardiaque.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u36",
+   "empreinte": "e0727ba03ba9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de suspicion, il est proposé de rechercher le plus rapidement possible des anticorps anti-FP4 si la probabilité clinique de TIH est intermédiaire ou",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u37",
+   "empreinte": "98b5055ca28c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "radiomarquée ou SRA, considéré comme un « gold standard » et le test HIPA (HeparinInduced Platelet Activation), qui est peu utilisé en France. La recherche d’anticorps héparinedépendants peut aussi être réalisée sur sang total par une technique d’impédance (51). Néanmoins, les tests réalisés sur plaquettes lavées restent aujourd’hui considérés comme les",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u38",
+   "empreinte": "c83e70948f3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la probabilité pré-test est faible (4T ≤3), le diagnostic de TIH peut être exclu et le traitement par l’héparine peut être poursuivi, sans réaliser de tests biologiques",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u39",
+   "empreinte": "7ee1d0ddf113",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la probabilité pré test est intermédiaire (4T = 4 ou 5) ou élevée (4T ≥ 6), des tests biologiques doivent systématiquement être réalisés pour rechercher des anticorps antiFP4. (Accord fort).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u40",
+   "empreinte": "2554d69ac70f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la probabilité clinique est intermédiaire et la recherche d’anticorps anti-FP4 négative, le diagnostic de TIH est exclu et le traitement par héparine peut être poursuivi ou repris,",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u41",
+   "empreinte": "e20cec3aff46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "immédiatement arrêté et remplacé par un traitement anticoagulant non-héparinique à doses curatives, sans attendre les résultats des tests biologiques. (Accord fort)",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u42",
+   "empreinte": "570bc865041f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la probabilité clinique est intermédiaire ou élevée et qu’un titre significatif d’anticorps anti-FP4 est détecté, un test fonctionnel doit être réalisé. S’il est positif, le diagnostic",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u43",
+   "empreinte": "0826f1e59f85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "claire qui prenne en compte tous les éléments du dossier et il est obligatoire de déclarer chaque cas au centre régional de pharmacovigilance.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u44",
+   "empreinte": "0ac50b04a8f2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "a4446a750e34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "350e2443b3ec",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Figure 1, p. 18 (image), branche « 4-5 : probabilité intermédiaire » : « Si résultat en > 3h, arrêt héparine et relais par un anticoagulant non héparinique à dose curative » ; « Ac anti-FP4 + → Poursuivre ou prescrire un anticoagulant non héparinique → Test fonctionnel »",
+   "explication": "La fiche dit seulement « si résultat < 3 h, possibilité d'attendre ». Elle omet les deux consignes actives de la figure : arrêter l'héparine et passer à un anticoagulant non héparinique si le résultat demande plus de 3 h, et, si les anticorps sont positifs, poursuivre ou prescrire un anticoagulant non héparinique en attendant le test fonctionnel.",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "22a1178a53fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 18 (image) : score des 4T et algorithme diagnostique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "449c5be0d3d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les anticoagulants utilisables à la phase aiguë d’une TIH sont l’argatroban, la bivalirudine, le danaparoïde, le fondaparinux, et les anticoagulants oraux directs.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u49",
+   "empreinte": "edae412448d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le danaparoïde n’est pas recommandé en première intention pour le traitement d’une TIH en cas d’insuffisance rénale sévère. (Accord fort)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u50",
+   "empreinte": "1a03dd568fe5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une TIH à la phase aiguë. Des doses curatives administrées par voie IV sont plus efficaces et nécessitent une surveillance de l’activité anti-Xa (gamme",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u51",
+   "empreinte": "1f2cf98251a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’absence de correction de la numération plaquettaire, ou l’apparition ou l’extension d’une thrombose sous danaparoïde doit conduire à le remplacer par",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u52",
+   "empreinte": "a16cf6765030",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé d’utiliser l’argatroban en priorité pour le traitement d’une TIH en cas d’insuffisance rénale sévère. Cet anticoagulant est contre-indiqué en cas",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u53",
+   "empreinte": "fdcd0adf4c87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à 0,5 µg/kg/min chez les patients de réanimation, de chirurgie cardiaque et en cas d’insuffisance hépatique modérée (Child-Pugh B). (Accord fort)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u54",
+   "empreinte": "a3633473cf35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1,5 et 3 fois le témoin (sans dépasser 100 sec), ou de préférence sur d’autres tests plus spécifiques comme le temps de thrombine diluée ou un test à l’écarine",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u55",
+   "empreinte": "4acd4842aa5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne prescrire un AVK à la phase aiguë d’une TIH que lorsque la numération plaquettaire est corrigée (>150 G/L), avec relais sous couvert d’un",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u56",
+   "empreinte": "11625dd4ecff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "<30 ml/min), seul l’argatroban peut être utilisé. 5. Chez un patient avec une insuffisance hépatique sévère (Child-Pugh C), la",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u57",
+   "empreinte": "c60ed1bb3e11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Le danaparoïde sodique (Orgaran®) est un héparinoïde d’extraction (issu comme plusieurs HBPM de l’intestin de porc) qui contient de l’héparane sulfate, du dermatane sulfate et du",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u58",
+   "empreinte": "806711e2f335",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’activité anti-IIa est plus courte, environ 7 h, mais elle est allongée en cas d’insuffisance rénale, situation où l’argatroban est préférable. Les indications de l’AMM (RCP) incluent le",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u59",
+   "empreinte": "dd0c31716624",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Texte de la source, danaparoïde (posologies p. 20-21 et EER)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "04d9c112962b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Texte de la source, danaparoïde (posologies p. 20-21 et EER)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "43c2cda7ac23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Texte de la source, danaparoïde (posologies p. 20-21 et EER)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "31d149294f90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Texte de la source, danaparoïde (posologies p. 20-21 et EER)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "ce8c0f77fb78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Texte de la source, danaparoïde (posologies p. 20-21 et EER)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "aa10c769e34f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en résulter sont rares (54). Un traitement par danaparoïde peut donc être débuté sans recherche de réactivité croisée in vitro, mais il convient de surveiller la numération plaquettaire",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u65",
+   "empreinte": "f19e05b114ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cas d’insuffisance rénale sévère. Cet anticoagulant est contre-indiqué en cas d’insuffisance hépatique sévère (Child-Pugh C). Il doit être utilisé dans une",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u66",
+   "empreinte": "3b6bac0bdca7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 26 (image) : prescription et surveillance de l'argatroban",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u67",
+   "empreinte": "e52f0c792c4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 26 (image) : prescription et surveillance de l'argatroban",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u68",
+   "empreinte": "ae97df9ab62b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 26 (image) : prescription et surveillance de l'argatroban",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u69",
+   "empreinte": "e791bb353990",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2, p. 26 (image) : prescription et surveillance de l'argatroban",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u70",
+   "empreinte": "267269dfd1ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’obèse, la dose initiale est calculée sur le poids réel (65). Tableau II. Ajustement de la posologie d’argatroban selon les scores APACHE II (Acute",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u71",
+   "empreinte": "c464b61d126f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "862bfb28277c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u73",
+   "empreinte": "ccbe3e654ebb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u74",
+   "empreinte": "666a001a9853",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u75",
+   "empreinte": "f43b5ae3ee0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u76",
+   "empreinte": "9d52351ba954",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u77",
+   "empreinte": "0af2b77152f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u78",
+   "empreinte": "c500eaed9411",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u79",
+   "empreinte": "6b4f1f69c58b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u80",
+   "empreinte": "152869e672d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u81",
+   "empreinte": "305cc18e2a0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u82",
+   "empreinte": "3b0834eb1b00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II, p. 24 (image), d'après Alatri",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u83",
+   "empreinte": "7828a626b9be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4. Le relais argatroban-AVK est délicat car cette molécule antithrombine allonge le temps de Quick. Après introduction de l’AVK (coumadine), l’argatroban ne doit être arrêté que lorsque",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u84",
+   "empreinte": "102d86c999b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 27 (image) : relais argatroban-AVK",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u85",
+   "empreinte": "e436ae48becf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 27 (image) : relais argatroban-AVK",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u86",
+   "empreinte": "ecad4579a85b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3, p. 27 (image) : relais argatroban-AVK",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u87",
+   "empreinte": "f5f36f66d799",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quick. Après introduction de l’AVK (coumadine), l’argatroban ne doit être arrêté que lorsque l’INR est au moins égal à 4 selon l’algorithme ci-après (Figure 3).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u88",
+   "empreinte": "3b41f6be13d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La bivalirudine, molécule de synthèse, est un inhibiteur direct de thrombine (68), qui allonge aussi le temps de Quick et sa demi-vie d’élimination est courte, d’environ 25 min si la",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u89",
+   "empreinte": "cf54d9629b61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cas d’insuffisance rénale sévère. Cet anticoagulant est contre-indiqué en cas d’insuffisance hépatique sévère (Child-Pugh C). Il doit être utilisé dans une",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u90",
+   "empreinte": "729a9b4edba4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le rivaroxaban à doses curatives (15 mg x 2/j jusqu’à J21 ou correction complète et stable de la thrombopénie), puis 20 mg/j durant un mois au minimum, qu’il y ait ou non des complications",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u91",
+   "empreinte": "b688e3e915d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau IV, p. 29-30 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u92",
+   "empreinte": "85c7d36058ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau IV, p. 29-30 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u93",
+   "empreinte": "3996e9a31f4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau IV, p. 29-30 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u94",
+   "empreinte": "ad0afd519de4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau IV. Résultats principaux obtenus avec les AOD anti-Xa dans le traitement des TIH ; d’après Warkentin (77), Davis (78) et Cuker (4).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u95",
+   "empreinte": "8d7b0ae646f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de nécroses cutanées (79). Les AVK ne sont administrés que sous couvert d’un traitement anticoagulant parentéral efficace (danaparoïde sodique ou argatroban). La coumadine est",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u96",
+   "empreinte": "3b4a1b7bec87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La durée du traitement anticoagulant non-héparinique est au minimum de 4 semaines chez les patients avec une thrombopénie isolée, et de 3 à 6 mois au minimum dans les autres",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u97",
+   "empreinte": "3fd079ecf25f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas transfuser de plaquettes à la phase aiguë d’une TIH en absence de saignement menaçant le pronostic vital ou fonctionnel. (Accord",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u98",
+   "empreinte": "530d0c5e40ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas prescrire un agent antiplaquettaire oral pour traiter une TIH à la phase aiguë. (Accord fort)",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u99",
+   "empreinte": "b1a1fd9ce097",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de ne pas prescrire en première intention d’immunoglobulines polyvalentes par voie IV à la phase aiguë d’une TIH. (Accord fort)",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u100",
+   "empreinte": "ee22828245bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de ne pas mettre de filtre cave à la phase aiguë d’une TIH. (Accord fort)",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u101",
+   "empreinte": "902829b2b5da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cardiaque en urgence (4). 4. Les HBPM sont contre-indiquées en cas de TIH sous HNF, car elles entraînent souvent une",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u102",
+   "empreinte": "c4cf2bbddf42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toute chirurgie au-delà du premier mois suivant le diagnostic de TIH si cela ne génère pas de risque vital ou fonctionnel majeur pour le patient et d’en définir les",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u103",
+   "empreinte": "d88d761c48d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TIH aiguë (moins de 1 mois), il est proposé d’arrêter cet anticoagulant et de discuter un relais pré-opératoire par l’argatroban ou la bivalirudine, avec arrêt de",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u104",
+   "empreinte": "c19467b3f54f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En post-opératoire, en cas d’indication à une anticoagulation prolongée et lorsque le risque hémorragique est contrôlé il est proposé de traiter préférentiellement le",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u105",
+   "empreinte": "ce421a339b09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "B. Anesthésie loco-régionale La réalisation d'un geste neuraxial est contre-indiquée sous anticoagulant. Ces gestes incluent",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u106",
+   "empreinte": "8ef0037a5977",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "environ 17h (anti-Xa) dernière injection > 36 h avant la",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u107",
+   "empreinte": "50c5533b5d6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "arrêt de la perfusion ou dernière injection SC > 36 h avant la",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u108",
+   "empreinte": "5d0a0722fc43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "discuter un relais pré-opératoire par l’argatroban ou la bivalirudine, avec arrêt de la perfusion 4 heures avant l’intervention pour l’argatroban et 2 heures pour la",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u109",
+   "empreinte": "51f19e12f14a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "discuter un relais pré-opératoire par l’argatroban ou la bivalirudine, avec arrêt de la perfusion 4 heures avant l’intervention pour l’argatroban et 2 heures pour la",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u110",
+   "empreinte": "29535eb85c84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- pour les AOD : dernière prise à J-5 ou concentration plasmatique < 30 ng/mL, - pour le danaparoïde et le fondaparinux : l’objectif est d’obtenir des taux < seuil de détection",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u111",
+   "empreinte": "6e4124626d8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un traitement anticoagulant peut être repris à partir de la 6ème heure post-opératoire, après évaluation du risque hémorragique. Le choix du médicament à prescrire dépend de :",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u112",
+   "empreinte": "ba4b5b9a77b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant toute chirurgie cardiaque chez un patient ayant un antécédent documenté de TIH, il est proposé de rechercher systématiquement en ELISA des anticorps",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u113",
+   "empreinte": "6660818f369f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant toute chirurgie cardiaque avec CEC chez un patient ayant une TIH aiguë ou subaiguë (<3 mois), il est proposé de définir le protocole d’anticoagulation périopératoire dans le cadre d’une concertation pluridisciplinaire. (Accord fort)",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u114",
+   "empreinte": "2535de0c242c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’associer un agent antiplaquettaire IV (tirofiban ou cangrelor) et l’HNF, ou d’administrer une antithrombine directe IV (bivalirudine ou argatroban) avec une",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u115",
+   "empreinte": "ddb5fb5d3919",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u116",
+   "empreinte": "3a87e862857a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u117",
+   "empreinte": "649c09a1cf73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4, p. 38 (image) : chirurgie cardiaque avec CEC",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u118",
+   "empreinte": "7ae2e9b19e1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4, p. 38 (image) : chirurgie cardiaque avec CEC",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u119",
+   "empreinte": "41506cf14840",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4, p. 38 (image) : chirurgie cardiaque avec CEC",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u120",
+   "empreinte": "010a5018423a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La chirurgie cardiaque avec ou sans CEC peut être effectuée sous héparine, selon le protocole habituel. Il est toutefois recommandé d’effectuer une recherche d’anticorps anti-FP4, car leur",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u121",
+   "empreinte": "03045abd2532",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "éviter l’aspiration péricardique, préférer le cell saver, éviter la stase sanguine",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u122",
+   "empreinte": "de5e9f9202e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Traitement médical de la TIH (peu de données)",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u123",
+   "empreinte": "1b20e6dbc8f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bolus IV de 0,75 mg/kg puis perfusion IV à 1,75 mg/kg par heure pendant",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u124",
+   "empreinte": "1a65e2331a18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pendant l’intervention. Des ACT très allongés ont été observés, compliquant l’ajustement du débit de perfusion (64, 96).",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u125",
+   "empreinte": "bb290edb47e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant toute chirurgie cardiaque avec CEC chez un patient ayant une TIH aiguë ou subaiguë (<3 mois), il est proposé de définir le protocole d’anticoagulation périopératoire dans le cadre d’une concertation pluridisciplinaire. (Accord fort)",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u126",
+   "empreinte": "4292fe2933c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’iloprost (Ilomédine ) est encore parfois utilisé. Cet analogue de la prostacycline a une demivie de 15 à 30 min. Il peut être administré en perfusion de 6 à 12 ng/kg/min, arrêtée 20 minutes avant la protamine. Il expose cependant à des épisodes d’hypotension artérielle sévère.",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u127",
+   "empreinte": "3f41fb8035f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’argatroban est une option mais l’expérience est limitée et des complications hémorragiques et/ou thrombotiques (présence de caillots dans le réservoir de cardiotomie ou dans le",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u128",
+   "empreinte": "ee0f8ac78553",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec une TIH et un syndrome coronarien aigu (SCA) nécessitant une angioplastie transluminale en urgence. La bivalirudine (98) et l’argatroban (99, 100) ont été administrés",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u129",
+   "empreinte": "d850d14f1b82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de TIH, il est proposé pour une épuration extrarénale d’utiliser préférentiellement le citrate ou l’argatroban pour l’anticoagulation du circuit.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u130",
+   "empreinte": "7225281e0ee5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de TIH lors d’une grossesse, il est proposé de traiter les patientes préférentiellement par le danaparoïde ou si ce médicament n’est pas disponible,",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u131",
+   "empreinte": "7c4421a7bfdb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé que les modalités de surveillance de la numération plaquettaire des enfants traités par une héparine, soient identiques à celles préconisées pour",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u132",
+   "empreinte": "36df7a4573d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "danaparoïde sodique ou l’argatroban, avec une adaptation rigoureuse des doses selon le poids et le résultat des tests biologiques. (Accord fort)",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u133",
+   "empreinte": "91a6b94a25fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "orthopédique (23), ou après chirurgie cardiaque avec CEC (24). Chez les malades médicaux, le risque de TIH sous HNF est probablement plus faible mais il",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u134",
+   "empreinte": "43546bff06c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mois suivant le diagnostic de TIH et qu’une carte attestant cette complication, précisant le résultat des tests biologiques et préconisant l’éviction de tout",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u135",
+   "empreinte": "d3e34875eb8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(AVK ou AOD) ou le fondaparinux lorsqu’une anticoagulation prophylactique ou curative est indiquée. L’argatroban, la bivalirudine et le danaparoïde ne sont à",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u136",
+   "empreinte": "8318ff5ec825",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "b/ Réaliser un test biologique sensible (ELISA) permettant d’objectiver l’absence ou la persistance dans le sang d’anticorps spécifiques du FP4 avant toute nouvelle exposition à une",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u137",
+   "empreinte": "58ea4c6ef4cc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

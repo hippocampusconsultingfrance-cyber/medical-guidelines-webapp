@@ -1,0 +1,178 @@
+{
+ "cle": "impact_environnemental_ag",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "35f9a5593920",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à 17 recommandations. Pour l'ensemble des questions, la méthode GRADE® ne pouvant pas",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "909816e16fe7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour le desflurane la durée de vie atmosphérique est de 14 ans et le PRG100 est de 2540, pour l'isoflurane la durée de vie atmosphérique est de 3,2 ans et son PRG100 est égal à 510",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u3",
+   "empreinte": "2ed636a84a2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réchauffement climatique avec un PRG100 de 265 et une durée de vie dans l'atmosphère de 114 ans",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u4",
+   "empreinte": "c058675028c0",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "Les experts suggèrent qu'en cas d'utilisation du protoxyde d'azote lors d'une anesthésie inhalée, une alternative puisse être d'utiliser un système d'administration par bouteille plutôt qu'un système d'administration par cadres",
+   "explication": "La source présente la bouteille comme « une alternative » possible ; la fiche en fait une préférence (« préférer »).",
+   "page": 14
+  },
+  {
+   "id": "u5",
+   "empreinte": "fdb97075c893",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les professionnels d'anesthésie utilisent un bas débit de gaz frais lors de l'anesthésie inhalée",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u6",
+   "empreinte": "a19517dc2250",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'anesthésie inhalée à objectif de concentration (AINOC), d'utiliser préférentiellement le mode automatisé que le mode manuel pour diminuer le débit de gaz frais",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u7",
+   "empreinte": "800aa6395b1e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisent un monitorage de la profondeur d'anesthésie en association avec la fraction expirée en vapeur anesthésique, pour diminuer la consommation de vapeurs anesthésiques",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u8",
+   "empreinte": "a1f440f4af39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au propofol ; les premières ayant un impact environnemental par émission de gaz à effet de serre, mais la seconde ayant une écotoxicité pour le sol et les eaux.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u9",
+   "empreinte": "9c685e58cdab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les professionnels d'anesthésie préparent juste avant leur utilisation les médicaments uniquement nécessaires à l'anesthésie d'un patient donné, plutôt qu'une préparation systématique en amont",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u10",
+   "empreinte": "8de5440f53db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les professionnels d'anesthésie utilisent préférentiellement des seringues pré-remplies pour les médicaments à usage occasionnel lorsqu'ils en disposent",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u11",
+   "empreinte": "b707858e0748",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que lors de l'anesthésie générale totale intraveineuse, les professionnels d'anesthésie utilisent un monitorage de la profondeur d'anesthésie",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u12",
+   "empreinte": "40bfa6dd85cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les professionnels d'anesthésie privilégient au maximum les dispositifs médicaux réutilisables plutôt qu'à usage unique",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u13",
+   "empreinte": "8eec2b88db20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de mettre en place des procédures d'inventaire et d'exploitation qui garantissent que les dispositifs soient réutilisés dans la plus grande mesure possible",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u14",
+   "empreinte": "6f1c890f0335",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une combinaison de dispositifs à usage unique et multiple, en raison de l'effet additif de l'impact environnemental des deux types de dispositifs",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u15",
+   "empreinte": "80c20dd62858",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ils sélectionnent des modèles qui ne contiennent pas de diéthylhexyle phtalate (DEHP) et qu'ils passent commande auprès de fabriquants locaux",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u16",
+   "empreinte": "a94bc228df41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'anesthésie ne réalisent qu'un changement hebdomadaire des circuits de ventilateur plutôt qu'un changement quotidien",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u17",
+   "empreinte": "ddfa10352237",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les professionnels d'anesthésie mettent en place un programme de tri des déchets",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u18",
+   "empreinte": "7b3fb6616a20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les professionnels d'anesthésie mettent en place un programme de recyclage et valorisation des déchets",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u19",
+   "empreinte": "efa16887f32d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

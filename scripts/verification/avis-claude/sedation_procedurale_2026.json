@@ -1,0 +1,664 @@
+{
+ "cle": "sedation_procedurale_2026",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "c8283451d236",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "c5389a8137f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traumatologiques périphériques (réduction de luxation ou de fracture), les experts",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u3",
+   "empreinte": "c297b15f43ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "douloureux (hors gestes traumatologiques périphériques), les experts suggèrent de ne",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u4",
+   "empreinte": "be6dec7812b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1.1 : Chez les patients nécessitant une sédation procédurale en urgence, les experts",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u5",
+   "empreinte": "098103a72d53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2.1. Chez les patients en situation d’obésité morbide (IMC ≥ 40 kg/m²) nécessitant une",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u6",
+   "empreinte": "2feb8b55206d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en situation d’obésité morbide (IMC > 40kg/m2) les experts suggèrent",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u7",
+   "empreinte": "7a89545135a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3.1. Chez un patient connu ou suspecté de syndrome d’apnée hypopnée obstructive",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u8",
+   "empreinte": "a5313caf7632",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4.1. Chez les patients âgés nécessitant une sédation procédurale, les experts",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u9",
+   "empreinte": "ac50382d607c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent d’utiliser préférentiellement du propofol seul ou en association avec de la",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u10",
+   "empreinte": "9f59987010fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent de ne pas différer la sédation procédurale pour respecter le jeûne dans",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u11",
+   "empreinte": "4840b4c2e6cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6.1. Les données de la littérature ne permettent pas d’émettre de recommandation",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u12",
+   "empreinte": "3bdabfaf3495",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.7.1. Chez un patient ayant reçu plus de 0.15 mg/kg d’équivalent morphine",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u13",
+   "empreinte": "1850f60e24e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.7.2. Les experts suggèrent de ne pas administrer d’opioïde intraveineux ou",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u14",
+   "empreinte": "01f2203832ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA V Patient moribond, dont l’espérance de vie est inférieure à 24h sans",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u15",
+   "empreinte": "3e7283fdeb8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA V Patient moribond, dont l’espérance de vie est inférieure à 24h sans",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u16",
+   "empreinte": "81c4b0510f6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA V Patient moribond, dont l’espérance de vie est inférieure à 24h sans",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u17",
+   "empreinte": "4a9e56270e06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA V Patient moribond, dont l’espérance de vie est inférieure à 24h sans",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u18",
+   "empreinte": "2fcbc0209b8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA V Patient moribond, dont l’espérance de vie est inférieure à 24h sans",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u19",
+   "empreinte": "cd5389c0e240",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA V Patient moribond, dont l’espérance de vie est inférieure à 24h sans",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u20",
+   "empreinte": "b095f9a0667a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u21",
+   "empreinte": "61ad396c1d7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u22",
+   "empreinte": "efd5d3bc5ee4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u23",
+   "empreinte": "265b6a791679",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u24",
+   "empreinte": "7283727bbc13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u25",
+   "empreinte": "1045d7f28810",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u26",
+   "empreinte": "ba1603a6e916",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u27",
+   "empreinte": "5df77845d63f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Circonférence du cou > 41 cm (femme) ou > 43 cm",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u28",
+   "empreinte": "c8a3d41708c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1.1. Chez un patient nécessitant une sédation procédurale en urgence, les experts",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u29",
+   "empreinte": "d1ec1e026368",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est recommandé d’administrer une oxygénation par masque à haute concentration avant",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u30",
+   "empreinte": "543464960be0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent de réaliser une surveillance clinique attentive de la ventilation associée",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u31",
+   "empreinte": "68783f71e29a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypotension artérielle avec PAS < 90mmHg malgré un remplissage par 500 ml de",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u32",
+   "empreinte": "8ca4b9822128",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1.1. Chez un patient nécessitant une sédation procédurale en urgence, les experts",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u33",
+   "empreinte": "21f0ec122504",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1.2. Chez un patient nécessitant une sédation procédurale en urgence, les experts",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u34",
+   "empreinte": "26b59740beb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION - Du fait de l’absence de validation en structure de",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u35",
+   "empreinte": "68445c23df02",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "recommandé de ne pas utiliser l’association de midazolam et d’opiacés pour une sédation",
+   "explication": "Formulation négative (« il est recommandé de ne pas utiliser ») taguée GRADE 1 dans la source ; selon la convention, c'est un 1−, la fiche affiche [1+]. Le texte de la fiche est correct.",
+   "page": 45
+  },
+  {
+   "id": "u36",
+   "empreinte": "95079350f7d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'utiliser l'association kétamine-propofol en comparaison à la kétamine",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u37",
+   "empreinte": "6a128b9a7e80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "kétamine à 0,5 mg/kg et de propofol de 0,5 mg/kg (à titrer si besoin par palier de 0,25",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u38",
+   "empreinte": "acddc358a537",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent d’utiliser une injection intraveineuse lente (par exemple 30 secondes à 1",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u39",
+   "empreinte": "78171a2429f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent, en cas d’association de molécule pour la sédation procédurale, d’utiliser une",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u40",
+   "empreinte": "91b5a57b613e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION - Compte tenu des données de la littérature, les experts",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u41",
+   "empreinte": "c5febb20502e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "f4fbb8b5fe1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Morphine IV Injection 5–10 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u43",
+   "empreinte": "e79b736a14a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Morphine SC Injection 30–60 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u44",
+   "empreinte": "6f6a5e7c4da9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Morphine Orale Libération immédiate 30–90 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u45",
+   "empreinte": "a724ae3c0e88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Morphine Orale Libération prolongée 2–4 h",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u46",
+   "empreinte": "d874277800f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oxycodone Orale Libération immédiate 1–2 h",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u47",
+   "empreinte": "8d710a7e2296",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oxycodone Orale Libération prolongée 3–4 h",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u48",
+   "empreinte": "25f2da1c132d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fentanyl Buccal/Sublingual Comprimé/film 20–60 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u49",
+   "empreinte": "e8583dc5ca4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fentanyl Transdermique Patch 12–24 h (équilibre 48–72 h)",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u50",
+   "empreinte": "63a92bd6ffd3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fentanyl IV Injection 2–5 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u51",
+   "empreinte": "e66643ecf3a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hydromorphone Orale Libération immédiate 30–60 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u52",
+   "empreinte": "b464a351526c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hydromorphone IV Injection 5 min",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u53",
+   "empreinte": "ac96b39c8a95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de recourir à une sédation procédurale courte et titrée, afin de permettre la",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u54",
+   "empreinte": "0f3744e19d1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de ne pas utiliser de midazolam ou d’opioïdes afin d’améliorer la sécurité de la",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u55",
+   "empreinte": "2dbae81b7a44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de privilégier une monothérapie par propofol afin d’améliorer la sécurité de la",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u56",
+   "empreinte": "27328b0d4a33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent, pour le propofol, de réaliser une titration de 20 mg en 20 mg avec une vigilance",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u57",
+   "empreinte": "7e2bd5c0378f",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "invasive et SpO₂) afin de détecter efficacement des événements indésirables, notamment",
+   "explication": "La source dit « notamment pendant les 30 premières minutes » ; la fiche écrit « pendant au moins les 30 premières minutes », qui transforme une mise en avant en durée minimale. GRADE 2 conforme.",
+   "page": 53
+  },
+  {
+   "id": "u58",
+   "empreinte": "fbf98394dace",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.4.2. Les experts suggèrent d’utiliser la capnographie en complément de l’oxymétrie",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u59",
+   "empreinte": "e950d9b9a290",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.5.1. Les experts suggèrent d’utiliser le Modified Aldrete Score System (MASS) avec un",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u60",
+   "empreinte": "b78f4ad5ba27",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modifié (mPADSS) avec un seuil ≥ 9/10 pour aider à la décision de sortie de l’hôpital après",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u61",
+   "empreinte": "a9488c29f2ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protocole de service de sédation procédurale en structure de médecine d’urgence pour",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u62",
+   "empreinte": "f9f2a6c01243",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Capable de prendre une respiration profonde et de tousser = 2",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u63",
+   "empreinte": "cf62938cee58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Reste >92% en air ambiant = 2",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u64",
+   "empreinte": "ed286f64cda4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Peut-être éveillé si appelé = 1",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u65",
+   "empreinte": "9d7ffb84e098",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PA ± 20 mmHg = 2 PA ± 20 à 50 mmHg = 50",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u66",
+   "empreinte": "874656bac224",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Capable de bouger les quatre membres = 2",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u67",
+   "empreinte": "28e32179af31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Valeurs de la PA et de la Fc dans une marge de 20 % par rapport à la valeur de référence = 2",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u68",
+   "empreinte": "1502089c6f92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Démarche stable, pas de vertiges/d’étourdissements ou identique à l’état préopératoire = 2",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u69",
+   "empreinte": "575f6f686563",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Minime ou contrôlé avec un médicament par voie orale = 2",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u70",
+   "empreinte": "634f3c7ea0d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Minime ou modérée (score 0 à 3) = 2",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u71",
+   "empreinte": "744304d1ede2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Minime ou aucun changement de pansement requis = 2",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u72",
+   "empreinte": "84d1dec35a1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Vérification de l’identité et du côté de la lésion du patient (si applicable)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "a775db7f2bda",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

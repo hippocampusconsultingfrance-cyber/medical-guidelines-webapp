@@ -1,0 +1,178 @@
+{
+ "cle": "anemie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "1ab6dee3a5b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parmi les 10 recommandations formalisées, trois ont un niveau de preuve élevé (GRADE 1+/-), quatre un niveau de preuve faible (GRADE 2+/-) et trois sont des avis d'experts.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u2",
+   "empreinte": "1949f910cdad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'appliquer une stratégie de réduction des prélèvements sanguins (en volume et en nombre) pour diminuer l'incidence de l'anémie et la transfusion en soins critiques.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "4e955ac9f825",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les systèmes de restitution du volume de sang purgé sur les cathéters artériels permettent une réduction du volume prélevé de 19 à 80%.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "2bfa35e45b57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de suivre une stratégie transfusionnelle restrictive (seuil d'Hb à 7,0 g/dL) chez les patients de soins critiques en général, y compris chez les patients septiques",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "cd3fab678cc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de suivre une stratégie transfusionnelle restrictive (seuil transfusionnel d'Hb entre 7,5 et 8,0 g/dL) chez les patients de soins critiques en postopératoire de chirurgie cardiaque",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u6",
+   "empreinte": "ebbb48ecda8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de suivre une stratégie transfusionnelle libérale ciblant un objectif d'Hb > 10,0 g/dL afin de diminuer la morbi-mortalité chez les patients ayant un syndrome coronarien aigu, revascularisé ou non.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "23e29ea6db6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de suivre une stratégie transfusionnelle libérale ciblant un objectif d'Hb >10,0 g/dL pour diminuer la morbi-mortalité chez les patients cérébrolésés.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u8",
+   "empreinte": "1161f411ad2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est rappelé que ces cibles s'appliquent en dehors d'hémorragie active ou de mauvaise tolérance de l'anémie, notamment cardio-vasculaire.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u9",
+   "empreinte": "7aaffac5b1b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (image, p. 13) : bandes d'Hb cible d'environ 7 à 9 g/dL (réanimation générale, traumatisme, sepsis, GRADE 1), jusqu'à environ 9,5-10 pour lésions cérébrales et SCA (GRADE 2), 7,5-8 à 9 en chirurgie cardiaque (GRADE 1).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "9666465aa812",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de choisir les concentrés érythrocytaires en fonction de leur durée de stockage pour diminuer la morbi-mortalité chez les patients de soins critiques.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u11",
+   "empreinte": "6d0fbfadc368",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'adopter une stratégie transfusionnelle restrictive basée sur la transfusion d'un concentré érythrocytaire unitaire suivie d'une réévaluation de l'indication transfusionnelle",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u12",
+   "empreinte": "0aad95581dfd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Deux essais randomisés contrôlés de grande ampleur, ABLE (2 430 patients) et TRANSFUSE (4 828 patients), ont été réalisés chez des patients de soins critiques et n'ont pas retrouvé d'impact",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u13",
+   "empreinte": "67fcdf1a6212",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser des agents stimulants de l'érythropoièse chez les patients de soins critiques anémiques (Hb ≤ 10-12 g/dl) et/ou traumatisés, en l'absence de contre-indication",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u14",
+   "empreinte": "3a861b7121f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'arrêter les agents stimulants de l'érythropoïèse lorsque l'hémoglobine se stabilise entre 10,0 - 12,0 g/dL afin de réduire la morbi-mortalité.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u15",
+   "empreinte": "e0f94c9e8205",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "montre que la mortalité augmente en cas d'utilisation de cible haute d'Hb (≥12,0 g/dL) comparée à des cibles basse (10,0 - 12,0 g/dL) RR 1,17 (1,01 - 1,35)",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u16",
+   "empreinte": "39c82161a910",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en dehors d'une association avec un traitement par agent stimulant de l'érythropoièse, il n'est probablement pas recommandé d'administrer du fer pour réduire le recours à la transfusion érythrocytaire ou la morbi-mortalité.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u17",
+   "empreinte": "69b8e9fb55d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'a pas été possible de formuler de recommandation concernant l'administration de vitamines chez le patient de réanimation",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u18",
+   "empreinte": "b663d3cdaaf5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'incidence rapportée est de 68 pour 100 000 patients (57,8 - 78,7) pour le fer dextran et de 24 pour 100 000 patients (20,0 – 29,5) pour le fer sans dextran.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u19",
+   "empreinte": "99df7070d06d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

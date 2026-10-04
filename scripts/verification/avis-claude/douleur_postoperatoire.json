@@ -1,0 +1,1006 @@
+{
+ "cle": "douleur_postoperatoire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "0a54e7381d8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandations formalisées d’experts 2008. Prise en charge de la douleur postopératoire chez",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "d8bdddf188d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« recommandations fortes » (« il faut faire ou ne pas faire ou nous recommandons fortement de. . . ») et des recommandations « optionnelles » (« il est possible ou probable de faire ou",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "1e65b6ee0ace",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "institutionnelle avec des objectifs concernant la prise en charge de la douleur dans le projet de l’établissement. Il est",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "f43f70833709",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conjointement l’organisation d’équipes, la formation des personnels, la désignation de personnel référent, l’information",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "b50b28cbe19e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédures de soins. Il est recommandé de développer des postes d’infirmier référent douleur pour améliorer la prise en",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "afe1c8c802d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d’informer le patient oralement en pré-, puis postopératoire en s’aidant également d’un support écrit. Une",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "2ca804c7ee05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "associée à une évaluation de la sédation et de la ventilation. L’évaluation de la douleur doit être tracée dans le dossier.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "9afbcac9de22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de développer des protocoles de traitement, utilisant les techniques analgésiques efficaces, comme l’analgésie autocontrôlée (ACP) morphinique, l’analgésie multimodale",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "6b98b73bdb4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "secours doivent être prescrites sur des critères fiables comme un score d’intensité douloureuse. La standardisation,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "f855f9ad6345",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prérédaction, voire l’informatisation des prescriptions dans le cadre de procédures thérapeutiques sont recommandées.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "bf27c3506e57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour mesurer la qualité de la prise en charge de la DPO, il est recommandé d’évaluer parallèlement la structure, les procédures et les résultats pour le patient. Ce processus",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "cea383b7e6fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "structure, il est recommandé de recenser le nombre d’infirmières référentes douleur, les moyens financiers,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "60dbc2c0bc74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chemin clinique, l’intégration du thème douleur dans des réunions de morbi-mortalité, le suivi d’indicateurs, la réalisation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "e6586000a92b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de réaliser des enquêtes « patients » pour évaluer les résultats chez le patient. La satisfaction est un critère",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "059513cc3633",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’utiliser la morphine à libération immédiate par voie orale, en postopératoire immédiat ou en relais de la voie parentérale. En",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "781ed9ba6ce7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour la titration morphinique par voie orale en postopératoire immédiat. La titration i.v. est préférable.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "eddde1a8ca32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les morphiniques oraux sont un traitement de secours efficace en association avec l’analgésie multimodale. À titre",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "f02262c1624e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d’utiliser le dextropropoxyphène dans l’analgésie postopératoire. La codéine est probablement efficace après",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "62f66a4042af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "postopératoire. La codéine est probablement efficace après chirurgie à douleur faible ou modérée. Cependant, l’efficacité et",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "f7f6e20b75b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie à douleur modérée. Il n’est pas contre-indiqué en association avec la morphine.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "fbcdea5a3ff7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "association avec la morphine. 5.2. Bénéfices–risques de la titration intraveineuse",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "bac1c0f92e8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réaliser une titration i.v. en morphine à partir d’une valeur seuil d’intensité douloureuse, déterminée sur une échelle d’auto- ou",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "3b8c21787e2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’hétéroévaluation chez les patients non somnolents. Des bolus de 2 ou 3 mg toutes les cinq minutes sont probablement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "af085cd68efd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une somnolence et il est recommandé de surveiller les patients pendant la titration et jusqu’à une heure après la fin de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "7fa537e1bc87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "respiratoires. Une titration i.v. postopératoire en morphine n’est pas recommandée dans les unités d’hospitalisation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "b2840cd2d7c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "DPO. La morphine est l’opiacé de choix. Il n’existe aucun avantage à remplacer la morphine par le tramadol. Concernant",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "a73ec32a41a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "continue au mode bolus n’améliore pas la qualité de l’analgésie, mais majore le risque de dépression respiratoire. La seule",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "d579587de65c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nausées–vomissements (effet indésirable le plus fréquent), il est recommandé d’associer en première intention le dropéridol à",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "ed5e3ab27131",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modérée ou sévère prédictible, l’efficacité du dispositif analgésique transdermique iontophorétique est comparable à",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "9ba1b9ab5e68",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "f5011af395c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "titration selon les mêmes modalités chez le sujet âgé que chez le sujet plus jeune. La dose titrée doit être toutefois réduite audelà de 85 ans, en cas d’altération de la fonction rénale ou",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u32",
+   "empreinte": "ced8e1775b97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "programmation n’est pas différente, mais une oxygénothérapie systématique est indiquée ainsi qu’une dose limite horaire.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "e9d407c6dd34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parmi les antalgiques de palier II, il n’est pas recommandé d’utiliser le dextropropoxyphène chez le sujet âgé.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "22f7edcb0b73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’utiliser la morphine plutôt que les agonistes de palier II après chirurgie majeure chez le nouveauné, le nourrisson et l’enfant. Les doses de morphine, adaptées",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "acb2e189a29d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est suffisant, en pratique dès l’âge de six ou sept ans. Il n’est pas recommandé d’utiliser la morphine par voie sous-cutanée chez",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u36",
+   "empreinte": "71fd38be6e32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans l’espoir de renforcer l’analgésie postopératoire et/ou diminuer les besoins en analgésiques et leurs effets secondaires,",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u37",
+   "empreinte": "39f7d662ad90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d’associer au moins un analgésique non morphinique lorsque la morphine est utilisé en postopératoire par voie systémique.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u38",
+   "empreinte": "295403859d44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utiliser les AINS ou les coxibs dans les situations d’hypoperfusion rénale. Il est également recommandé de prendre en compte la majoration du risque hémorragique lors de la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "36175d658bed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "association avec la morphine dans les chirurgies à douleur modérée à sévère ni d’administrer le paracétamol par voie i.v.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "1e7b22d4b496",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le Néfopam est probablement recommandé après chirurgie à douleur modérée à sévère en association avec les",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u41",
+   "empreinte": "4df2d43c99b8",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "En dehors du syndrome de Fernand-Widal, on peut administrer des AINS aux enfants asthmatiques.",
+   "explication": "Écart mineur : la fiche regroupe sous un seul [Fort] deux phrases de force différente. « On peut administrer des AINS aux enfants asthmatiques » est, selon la règle de la source (« il est possible… »), une recommandation optionnelle ; seule « il est recommandé de corriger la déshydratation/hypovolémie » est forte. La fiche dit pourtant ne jamais fusionner deux forces.",
+   "page": 4
+  },
+  {
+   "id": "u42",
+   "empreinte": "3391c7a967bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(hors AMM). Il est probablement recommandé d’utiliser le diclofénac plutôt que l’acide niflumique par voie rectale. En",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u43",
+   "empreinte": "77253b6c2104",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas donner de recommandations concernant l’utilisation des coxibs chez l’enfant.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "9b46fdca29b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’analgésie postamygdalectomie, en raison d’une majoration du risque hémorragique conduisant à une reprise chirurgicale.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "c00149f4e3d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisable. Il n’est pas recommandé d’administrer le paracétamol par voie rectale compte tenu de la biodisponibilité faible et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u46",
+   "empreinte": "86d690f6c9f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "distingue l’hyperalgésie périphérique ou primaire (hyperexcitabilité du système nerveux périphérique) et l’hyperalgésie secondaire ou centrale (hyperexcitabilité du système nerveux",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u47",
+   "empreinte": "c6f54c723e03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de limiter la consommation d’opioïdes peropératoires afin de réduire le risque de tolérance aiguë à la morphine en postopératoire immédiat.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "724bf403144c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d’administrer le premier bolus de kétamine après l’induction, afin d’éviter les effets indésirables psychodysleptiques. Dans la période postopératoire, il n’est pas",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "d99f69b3d027",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "après l’induction, afin d’éviter les effets indésirables psychodysleptiques. Dans la période postopératoire, il n’est pas recommandé d’utiliser l’association morphine et kétamine dans",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "3fd3ec827504",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de magnésium n’est pas recommandée car elle ne limite pas les douleurs et la consommation de morphine postopératoires.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u51",
+   "empreinte": "42a59e78f794",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hyperalgésies postopératoires, ne peut être recommandée car ses effets indésirables hémodynamiques sont trop marqués.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u52",
+   "empreinte": "9cfe2e345d49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gabapentine en prémédication pour obtenir un effet d’épargne morphinique et une réduction des scores de douleur en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u53",
+   "empreinte": "84800b216ebe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’ALR, la lidocaïne i.v. est probablement recommandée pour l’analgésie après chirurgie abdominale.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u54",
+   "empreinte": "b7eafa8eec62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie, sans étiologie identifiée et sans continuité avec un problème préopératoire. L’incidence des DCPC est difficile à",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u55",
+   "empreinte": "23526c734781",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1039 possibilité d’une chronicisation de la douleur postchirurgicale",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u56",
+   "empreinte": "3ac415ecdd50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préopératoire, les facteurs de risque de chronicisation que sont notamment l’intensité de la douleur préopératoire, le type",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u57",
+   "empreinte": "9b991b50de81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de diagnostiquer et de prendre en charge rapidement une douleur neuropathique postopératoire. Il est",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u58",
+   "empreinte": "db56aa7d6584",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rapidement une douleur neuropathique postopératoire. Il est probablement recommandé d’utiliser le questionnaire DN4",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u59",
+   "empreinte": "708e548144af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f en cas de chirurgie très ou modérément douloureuse, il est recommandé d’utiliser en peropératoire de faibles doses de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u60",
+   "empreinte": "e513b8d296b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f l’infiltration d’anesthésiques locaux dans le site chirurgical limite probablement l’apparition de DCPC dans la chirurgie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u61",
+   "empreinte": "869fc6bf96cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f le bloc paravertébral est probablement recommandé pour réduire la DCPC après chirurgie majeure du sein.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u62",
+   "empreinte": "f888f0f4938b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont communément appelées « blocs » (par exemple, ilioinguinal/iliohypogastrique ou bloc du plexus cervical superficiel), alors qu’il s’agit d’injecter l’agent analgésique, sans repérage d’un nerf, dans un espace de diffusion où se situent les",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u63",
+   "empreinte": "339ef1c623bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maximales d’anesthésiques locaux. 9.1. Infiltrations en injection unique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u64",
+   "empreinte": "fdf141a7ede8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’infiltrer la cicatrice de cholécystectomie par laparotomie et d’utiliser le bloc des droits pour l’anesthésie et l’analgésie lors de la cure de hernie ombilicale.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u65",
+   "empreinte": "8f13fada7f71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trocarts et l’instillation intrapéritonéale sont recommandées. Pour les autres laparotomies abdominales, l’intérêt de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u66",
+   "empreinte": "b8f5982eda5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hernie inguinale avec un anesthésique local à longue durée d’action. L’injection dans les plans profonds ou le bloc ilioinguinal sont plus efficaces que l’injection sous-cutanée. Cela",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u67",
+   "empreinte": "ba25132821f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d’utiliser l’infiltration périanale « en quadrants » ou le bloc pudendal avec neurostimulation pour l’analgésie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u68",
+   "empreinte": "2959c1548a5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’infiltrer la cicatrice de thyroïdectomie avec des anesthésiques locaux à longue durée d’action.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u69",
+   "empreinte": "9a00e847f1a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sur la cicatrice des laparotomies sous-costales et médianes. Le cathéter de perfusion doit être placé dans les plans profonds de la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u70",
+   "empreinte": "35394ea48dcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’utiliser la perfusion continue cicatricielle après la chirurgie majeure du sein et dans les cicatrices de curage axillaire. Cette",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u71",
+   "empreinte": "a7c0dbe4736d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement pas utile d’utiliser une perfusion continue cicatricielle pour l’analgésie après cure de hernie inguinale bien",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u72",
+   "empreinte": "3afede622137",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’utiliser l’infiltration continue cicatricielle après chirurgie cardiaque. Le cathéter doit être placé sur la face antérieure du sternum. En chirurgie orthopédique et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u73",
+   "empreinte": "341b3db9d5d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "continue d’un anesthésique local par voie subacromiale après chirurgie de l’épaule. En chirurgie ouverte, le cathéter peut être",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u74",
+   "empreinte": "4323364b85c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une ALR plexique. De même, lors de la prise de greffon iliaque, il est recommandé d’utiliser l’infiltration continue à",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u75",
+   "empreinte": "643b700433be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie du genou. Les données actuelles suggèrent une efficacité analgésique limitée et un risque pour le cartilage.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u76",
+   "empreinte": "515c1f3cc09a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé, chaque fois que possible, de proposer une technique d’analgésie utilisant les anesthésiques locaux et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u77",
+   "empreinte": "4642f79a327b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ropivacaïne ou la lévobupivacaïne pour l’analgésie péridurale ou les blocs nerveux périphériques du fait d’une moindre toxicité",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u78",
+   "empreinte": "98115c05588b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être respectées pour l’information, la pose et la surveillance des cathéters nerveux ou périduraux pour",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u79",
+   "empreinte": "3019ac7e1b91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "multimodale à une ALR, afin de compléter l’efficacité et/ou prévenir la douleur à la levée du bloc.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u80",
+   "empreinte": "ed3d551c4548",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "injection unique, voire par cathéter, pour diminuer les scores de douleur et l’incidence des NVPO après chirurgie thoracique.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u81",
+   "empreinte": "dbd6102402a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f le bloc paravertébral est probablement recommandé pour réduire la DCPC après chirurgie majeure du sein.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u82",
+   "empreinte": "2ee42cc380f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas de contrebalancer le risque de résorption systémique des anesthésiques locaux. En conséquence, ce bloc ne peut être",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u83",
+   "empreinte": "deef6926f6e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’analgésie par cathéter nerveux périphérique est recommandée dès lors que la douleur prévisible modérée à sévère dure plus de 24 heures. Concernant les modalités de l’analgésie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u84",
+   "empreinte": "1adb013464af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "postopératoire, il est probablement recommandé d’utiliser le mode continu plus ACP périnerveuse pour l’administration",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u85",
+   "empreinte": "491e24f1cec1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de survenue d’un syndrome des loges n’est pas une contre-indication à la réalisation d’un bloc, sous réserve d’une",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u86",
+   "empreinte": "852d8badd3be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’analgésie postopératoire de la chirurgie de l’épaule, le bloc interscalénique est recommandé. En cas de contreindication, des techniques alternatives sont probablement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u87",
+   "empreinte": "3571a77a5858",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandées, comme le bloc suprascapulaire et les infiltrations intra-articulaires.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u88",
+   "empreinte": "45b2e308a46a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coude, les blocs supraclaviculaire ou infraclaviculaire sont probablement recommandés.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u89",
+   "empreinte": "616e0c1551e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’analgésie postopératoire de la chirurgie de l’avantbras, du poignet et de la main, les blocs axillaire ou au canal huméral sont probablement recommandés.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u90",
+   "empreinte": "84fbdfbf0a62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rééducation active est nécessaire, les blocs tronculaires distaux sont probablement recommandés.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u91",
+   "empreinte": "e257429d74bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé d’utiliser l’analgésie péridurale car les blocs périphériques sont aussi efficaces, mais avec moins",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u92",
+   "empreinte": "5380ccb77bb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’analgésie postopératoire après chirurgie de la hanche, il est probablement recommandé de réaliser un bloc fémoral.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u93",
+   "empreinte": "ce8b2066b54b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’analgésie postopératoire après chirurgie ou traumatisme de la diaphyse fémorale chez l’adulte et l’enfant, le bloc fémoral",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u94",
+   "empreinte": "82a8efe95560",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’analgésie postopératoire après chirurgie invasive du genou, telle que la prothèse totale de genou, il est recommandé",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u95",
+   "empreinte": "2beb0c2f1550",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "injection unique est probablement recommandé en complément du bloc du nerf fémoral. Pour la chirurgie ligamentaire du genou,",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u96",
+   "empreinte": "34fbd9a64551",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "injection unique est probablement recommandé en complément du bloc du nerf fémoral. Pour la chirurgie ligamentaire du genou,",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u97",
+   "empreinte": "d544893562ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’administration intra-articulaire d’anesthésique local plus ou moins adjuvant ou un bloc fémoral en injection unique sont",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u98",
+   "empreinte": "5c7adf274ecb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la cheville et du pied chez l’adulte et l’enfant, un bloc sciatique est recommandé.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u99",
+   "empreinte": "62caebe1ad44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mineure du pied. Un cathéter peut être inséré au niveau du nerf tibial à la cheville.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u100",
+   "empreinte": "b03687907dbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance d’une injection intrathécale de morphine peut être réalisée en secteur traditionnel si la dose injectée est",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u101",
+   "empreinte": "cde39782d20c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé pour l’analgésie péridurale d’utiliser des anesthésiques locaux à faible concentration avec un morphinique et d’insérer le cathéter au milieu de la zone des",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u102",
+   "empreinte": "e9c6f3d332c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie thoracique ou intra-abdominale majeure (gastrique, pancréatique, colique, chirurgie du grêle, œsophage, cystectomie), afin d’améliorer l’analgésie, réduire la durée de l’iléus",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u103",
+   "empreinte": "dc17c1b09059",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "péridurale après chirurgie vasculaire périphérique car elle n’a aucun impact sur l’analgésie, la morbidité respiratoire et",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u104",
+   "empreinte": "c8a8b6c6728b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser un bloc pénien pour assurer l’analgésie après circoncision chez l’enfant.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u105",
+   "empreinte": "41ae75c75f63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que les établissements ayant une activité chirurgicale ambulatoire développent une stratégie spécifique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u106",
+   "empreinte": "f44aa1f8f915",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modalités de l’analgésie orale soient expliquées dès la consultation spécialisée préopératoire (chirurgie, anesthésie).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u107",
+   "empreinte": "4c92746e838d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’anesthésie. Ces ordonnances d’antalgiques doivent préciser les horaires de prise d’antalgiques systématique et les",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u108",
+   "empreinte": "8545060b923d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "locorégionale que le médecin traitant en soit informé par avance et prévenu de la sortie du patient de la structure",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u109",
+   "empreinte": "b09572133a6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prête, d’utiliser les infiltrations et les blocs périphériques en injection unique pour la chirurgie ambulatoire. La sortie du",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u110",
+   "empreinte": "aeb872c0049c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à domicile, que ces dispositifs soient réservés aux interventions dont la DPO est totalement, ou dans sa plus grande partie, couverte par le bloc périnerveux. Il est recommandé",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u111",
+   "empreinte": "d68d76a87769",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

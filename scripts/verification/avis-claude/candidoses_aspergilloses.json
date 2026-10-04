@@ -1,0 +1,709 @@
+{
+ "cle": "candidoses_aspergilloses",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "0582dd13908f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et aspergilloses invasives de l'adulte avec la participation de la Société Française d’Hématologie",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "15e6ff8c1cde",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "6be2e57cf528",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "direct est crucial car il oriente le diagnostic et restera parfois le seul argument biologique",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "29ede5ae6592",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’a pas de valeur diagnostique (B3)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "6e3631f77183",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les hémocultures sont positives dans seulement 50 % des CI mais la positivité d’une seule suffit au",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "afca90d81dc8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à 30 °C pendant 21 jours, même si dans la majorité des cas, Candida sp. et Aspergillus sp. se",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "fd167b4d9e5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est répété, et spécifique s’il est confirmé par un deuxième prélèvement à 24-48 heures (A1)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "68f7859f968b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la méthode de référence NCCLS (B2). Elle permet de déterminer les concentrations minimales inhibitrices (CMI), pour Candida sp., du fluconazole",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "ea9337a04aca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en haute résolution est l’examen à réaliser précocément",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "8de5a2ff0bfa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les candidémies, l’examen ophtalmologique est systématique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "40c66915009a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quatre familles d’antifongiques sont disponibles",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "89ae884ded06",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "98e48c626fbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "c442710c33f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "932b9746c1e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "bf63830ac993",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "07d8f8bedf0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "81c8fdc70cee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "6c8c8f897225",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "5218f093a495",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "c22225a24d50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau spectre d'activité p.3",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "678429ed3220",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "6f50625b006d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "0c1aefc7a028",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "6cda7535fd94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "1c3cb0e4d4f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "4ccfb792f316",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "f32f003b94fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "5a17dbd886cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "e40d7a9e0edb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "e922390eeb09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau voies/effets indésirables p.4",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "fed597d22c90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’absorption et de métabolisme hépatique, interactions médicamenteuses fréquentes), le voriconazole (15 à 20 % de métaboliseurs lents chez",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "9d9777bd7aba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le voriconazole est contre-indiqué en co-prescription avec le sirolimus, les inducteurs enzymatiques",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "c10ad972ca99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les nouveaux antifongiques injectables sont coûteux (500 à 650 €/j) et si leur financement a été",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "b2e73579f88d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "05ecb2b7c1fa",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "95e3a4a2855a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "02e757506f9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "5133d4c79d88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "15a1c5876eda",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "262bc9b4b4e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "f4f3fc7cf39a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "a53a31366e68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "621d810232a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.1 p.5 (créatininémie, neutropénie, azolé, néphrotoxiques)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "80db8cf6686d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "8e06a9fe0fd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.2 p.5 (Triflucan-S / R-SDD, relais Vfend oral)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "dc09f98f227c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.2 p.5 (Triflucan-S / R-SDD, relais Vfend oral)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "5918f1574c99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.2 p.5 (Triflucan-S / R-SDD, relais Vfend oral)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "849093e2ba8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.2 p.5 (Triflucan-S / R-SDD, relais Vfend oral)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "07fdb936650c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.2 p.5 (Triflucan-S / R-SDD, relais Vfend oral)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "d0cd68afe81f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Arbre 1.1.2 p.5 (Triflucan-S / R-SDD, relais Vfend oral)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "f8746a87fa43",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "6b437259a088",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La durée de traitement est de 2 semaines après la dernière hémoculture positive et la disparition des symptômes (C3)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u54",
+   "empreinte": "0f90de2c4dcd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La durée du traitement est de 6 mois en moyenne",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u55",
+   "empreinte": "235bd88e8a60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proposée dans les localisations oculaires, méningées et cardiaques (B3)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u56",
+   "empreinte": "d95c1a0e2696",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "5d8a702eb131",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "autorise un traitement préemptif (idem schémas page précédente) (C3)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u58",
+   "empreinte": "f6e9a482e0e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’y a pas d’argument en faveur de l’utilisation d’une chimioprophylaxie (A2)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u59",
+   "empreinte": "46fd651991d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’incidence élevée et la mortalité importante (50 % à 90 %) des infections fongiques ont justifié",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u60",
+   "empreinte": "9bb7e3ba91b1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "f56035038840",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le fluconazole (400 mg/j) est recommandé dans l’allogreffe de cellules souches hématopoiétiques (CSH) car il réduit la fréquence des CI et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u62",
+   "empreinte": "00d90ae877f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aussi être prescrit dans l’allogreffe de CSH (A1)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u63",
+   "empreinte": "0822410b0e6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "restreindre sa prescription à certaines situations à risque : corticothérapie prolongée post- allogreffe de CSH (C3)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u64",
+   "empreinte": "6cf96decc2a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune donnée n’est actuellement disponible a",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u65",
+   "empreinte": "0eba146c2b2f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "357c1ab4f36e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "isolé ou suspecté et couvrir la période d’immunodépression (C3)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u67",
+   "empreinte": "95e25ccf41e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le mauvais pronostic de l’AI, avec une mortalité de 50 à 90 %, a été récemment amélioré",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u68",
+   "empreinte": "03d1207283e1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u69",
+   "empreinte": "22e3cf2379ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’AmB. Les autres études démontrent la meilleure tolérance des formes lipidiques (A)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u70",
+   "empreinte": "def661fdf000",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les azolés : le taux de réponse avec l’itraconazole (IV/PO) varie de 39 à 63% dans des essais",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u71",
+   "empreinte": "64a955123c3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rapporte 45 % de réponses favorables dans les formes réfractaires",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u72",
+   "empreinte": "6a2359b2db5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les associations d'antifongiques : leur efficacité clinique n’a pas été démontrée dans des études prospectives",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u73",
+   "empreinte": "938754e79b53",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u74",
+   "empreinte": "f7d81620512a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "voriconazole comme traitement de première ligne de l’AI (A1) mais cette stratégie repose sur",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u75",
+   "empreinte": "68a417363750",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’ABLp (3 ou 5 mg/kg/jour) et la caspofungine sont indiqués en deuxième intention",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u76",
+   "empreinte": "681c88a1c735",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "voriconazole ou de l’itraconazole (C3)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u77",
+   "empreinte": "d793f94c5596",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Certaines situations peuvent imposer un geste chirurgical : en urgence pour exérèse de lésions",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u78",
+   "empreinte": "f08e548fb4be",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

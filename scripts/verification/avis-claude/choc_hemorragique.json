@@ -1,0 +1,313 @@
+{
+ "cle": "choc_hemorragique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "24c26b89f172",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'hémorragie obstétricale ont été exclues du champ de cette RFE.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "1bfd06cb013c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "certain degré d'hypotension artérielle (pression artérielle systolique (PAS) = 80–90 mmHg, en",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "0d3e2f29d22f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "objectif de pression artérielle moyenne  80 mmHg, avant de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "9e4d0c49ce1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tant que le saignement n'est pas contrôlé, il faut limiter le remplissage au strict maintien des objectifs de pression artérielle recommandés (GRADE 1 +).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "c480798e24b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lactate artériel pour apprécier le degré d'hypoperfusion et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "d6ce91535c02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "disponibles rapidement (GRADE 1 +).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "6e77d9bf55a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration de noradrénaline est recommandée sur une voie",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "2725df8d0c5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement privilégier l'accès intraosseux au cathéter veineux central lorsqu'un abord veineux périphérique de bon calibre est impossible (GRADE 2 +).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "924750baa258",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser en première intention les solutés cristalloïdes lors de la prise en charge initiale du patient en choc hémorragique (GRADE 1 +).",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u10",
+   "empreinte": "def503b27fe0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser de solutés hypotoniques lors de la prise en charge initiale du patient en choc hémorragique avec traumatisme crânien grave (GRADE 1–).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "6144507e3c99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'existe pas assez d'études de bonne qualité pour savoir si ces recommandations doivent s'étendre aux autres colloïdes semi-synthétiques.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "f0f975d2d1fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas utiliser l'albumine lors de la prise en charge initiale du patient en choc hémorragique (GRADE 1 +).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u13",
+   "empreinte": "20750a49827e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement administrer un vasopresseur en cas de persistance d'une hypotension artérielle (PAS < 80 mmHg) (GRADE 2 +).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "c2c6aff4f0df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement administrer la noradrénaline en première intention (GRADE 2 +).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "5b19a80b4e98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement avoir un objectif d'hémoglobine entre 7 et 9 g/dL (GRADE 2 +).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u16",
+   "empreinte": "8fdcd2350351",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement des troubles de l'hémostase (GRADE 1 +).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u17",
+   "empreinte": "21236b2832c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé qu'une procédure locale de gestion de l'hémorragie massive soit élaborée dans chaque structure médicochirurgicale avec une approche multidisciplinaire (GRADE 1 +).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "8d36420951be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si on ne dispose pas de résultats immunohématologiques, des CGR O RH1 KEL-1 sont utilisés jusqu'à détermination",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "d9a1f7363341",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à la dose de 1 g en bolus intraveineux en 10 min suivi de 1 g perfusé sur 8 h chez les patients traumatisés.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "35f9fa4dd6a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement administrer l'acide tranexamique selon le même schéma chez les patients non traumatisés en choc",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "0d739cc55b3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "choc hémorragique (GRADE 1–).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "a4a6a873bfab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de débuter la transfusion de plasma rapidement, idéalement en même temps que celle des CGR (GRADE 1 +).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u23",
+   "empreinte": "06abb0b6f865",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement transfuser le plasma frais congelé en association avec les CGR avec un ratio PFC:CGR compris entre 1/ 2 et 1/1 (GRADE 2 +).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u24",
+   "empreinte": "667831670ce7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour maintenir la numération des plaquettes au-dessus de 50 G/L (GRADE 1 +).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "c831958b3506",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "crânien associé ou de persistance du saignement (GRADE 2 +).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u26",
+   "empreinte": "aba6c9b0cc45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement transfuser des plaquettes chez les patients présentant une hémorragie sévère et/ou une hémorragie intracrânienne traités par ticagrélor ou prasugel (GRADE 2 +).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u27",
+   "empreinte": "c251d5fd0e6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "déficit en fibrinogène fonctionnel (GRADE 2 +).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "77347590b71c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maintenue > 0,9 mmol/L par un apport de chlorure de calcium",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "4c1d6b43f22d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "initiale recommandée est de 80 mg/kg, et de 200 mg/kg en traumatologie.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "fd84c4e4d216",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(objectif d'un INR au moins < 1,5) doit être réalisée dans un délai le plus bref possible (quelques minutes). La réalisation d'un INR 30 min après administration du CCP est recommandée,",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "f39557219346",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit du FEIBA 30–50 U/kg, soit des CCP 50 U/kg, éventuellement renouvelés 1 fois à 8 h d'intervalle (GRADE 2 + ).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u32",
+   "empreinte": "cd7525e92c55",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "93909ab9c3f6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "564ac56c5cc7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

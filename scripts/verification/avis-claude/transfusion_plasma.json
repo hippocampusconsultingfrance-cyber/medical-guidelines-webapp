@@ -1,0 +1,538 @@
+{
+ "cle": "transfusion_plasma",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "2e9dba84d529",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Depuis l’abrogation le 13 juillet 2011 de l'arrêté du 3 décembre 1991, les recommandations de l’ANSM",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "27250eeeb962",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "par conséquent, chaque centre de chirurgie cardiaque doit établir son propre algorithme décisionnel (grade B)",
+   "explication": "Comptage des grades : la source porte 7 énoncés grade B (dont « arade B » pour les MAT, coquille), 11 grade C, 16 accord professionnel = 34, et non 6 B / 33. Sans effet sur les recommandations elles-mêmes.",
+   "page": 12
+  },
+  {
+   "id": "u3",
+   "empreinte": "5b350b96a92c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "choc hémorragique et situations à risque d’hémorragie massive, en association à des concentrés de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "e32c5b3369ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comme prophylaxie du saignement en cas d’altération mineure ou modérée de l’hémostase",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "15c89e8ad5fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "argument ni aucune étude ne démontre la supériorité d'une préparation plutôt qu'une autre en termes",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u6",
+   "empreinte": "2561a72490dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plasmas d’aphérèse de 100 donneurs de même groupe sanguin ABO",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "a1848602cb7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les 8 heures qui suivent le prélèvement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "b10f23fd1c32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conserver un plasma pendant un minimum de 60 jours",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "2d58527b4514",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le PLYO provient des plasmas de 10 donneurs différents au maximum, de groupes sanguins A, B et AB",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "ae338297132a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décongélation au bain-marie se fait en 30 minutes maximum pour les produits de volume inférieur à 400 mL",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "d3c9975b355f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sanguin ABO et ayant subi le même type de sécurisation (12 au maximum)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "59027a9cfb1e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le PFC autologue issu de sang total a un volume minimal de 120 mL pour « l'unité adulte » et de 50 mL pour",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "7e2ec734cdf2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "miroir par rapport aux règles de compatibilité des transfusions de CGR : le plasma AB est utilisable quel que",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u14",
+   "empreinte": "0483f9895b37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La seule contre-indication absolue au plasma quel qu’en soit le type est l’exceptionnelle présence d’un",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "548933af326a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "enfant dont la recherche d’anticorps anti-HLA I et II est négative sont admis comme donneurs de plasma",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "8f78c13ebc1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "grande majorité des coagulopathies acquises",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u17",
+   "empreinte": "81baf9bf2624",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas utiliser le plasma thérapeutique comme soluté de remplissage (grade C)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u18",
+   "empreinte": "9cd3179cd6eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ayant des concentrations normales ou modérément altérées de facteurs n’est pas indiquée (accord",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u19",
+   "empreinte": "08341202f757",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique (soit un TP de l’ordre de 40 %). Il est recommandé que l’administration de plasma",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u20",
+   "empreinte": "9b7c1eacc0cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le volume initial de plasma à prescrire est de 10 à 15 mL/kg (accord professionnel)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u21",
+   "empreinte": "64c3a41bafbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compris entre 1 : 2 et 1 : 1 (grade C)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u22",
+   "empreinte": "c7785cc0b395",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que la transfusion de plasma débute au plus vite, idéalement en même temps que celle",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "0db2b409b198",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la deuxième prescription transfusionnelle (grade C)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u24",
+   "empreinte": "c37a172e1e65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "massive dans les centres prenant en charge habituellement des patients présentant une hémorragie massive",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u25",
+   "empreinte": "016247d2aa72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en charge transfusionnelle afin de maintenir sa concentration à 1,5-2 g/L (grade C)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u26",
+   "empreinte": "f6c66b8aafee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement étiologique ne permet pas de contrôler rapidement l’hémorragie (accord professionnel)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "a3682e1f9fd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’hémorragie (grade C) et pour décider de la stratégie permettant de maintenir une concentration de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u28",
+   "empreinte": "0dd31731ac4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fibrinogène supérieure ou égale à 2 g/L (accord professionnel). Le monitorage biologique de l’évolution doit",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "007bd96d835a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "< 50 % lors de la surveillance du traumatisé crânien grave et < 60 % pour la pose d’un capteur de pression",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "08fb1ee3b4d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’association de deux éléments : persistance d’un saignement microvasculaire et déficit en facteurs de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u31",
+   "empreinte": "24031707edbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’un saignement, il n’y a pas d’indication au plasma (accord professionnel)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u32",
+   "empreinte": "6077891c77da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conséquent, chaque centre de chirurgie cardiaque doit établir son propre algorithme décisionnel (grade B)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u33",
+   "empreinte": "8faa7a121111",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une posologie initiale de 15 mL/kg est utilisée (accord professionnel)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u34",
+   "empreinte": "213b59da3d61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précoce avec une augmentation du ratio, jusqu’à 1 : 1 en peropératoire, s’accompagne d’une amélioration de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u35",
+   "empreinte": "161d24a7955c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’est pas recommandée en l’absence de saignement (accord professionnel)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u36",
+   "empreinte": "7c0eb10314cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas et non exposé à un geste vulnérant (accord professionnel). Il n’existe aucune preuve de son bénéfice",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u37",
+   "empreinte": "344dd570d68d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La transfusion de plasma comme soluté de remplissage chez le brûlé, n’est pas justifiée (accord",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u38",
+   "empreinte": "34c613438661",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "facteurs de la coagulation (TP inférieur à 35-40 %), associées à une hémorragie active ou potentielle (acte",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u39",
+   "empreinte": "64c2b059632e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cadre d’une situation d’urgence hémorragique (accord professionnel). La dose de plasma thérapeutique à",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u40",
+   "empreinte": "74e71f5a9ef3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des volumes importants, compris entre 40 et 60 mL/kg , soit 1 à 1,5 masse plasmatique (arade B)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u41",
+   "empreinte": "645dc97b32f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "immunomodulateurs peut diminuer la durée du traitement chez les patients en réponse sub-optimale (grade",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u42",
+   "empreinte": "91150d87d997",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "B). Par ailleurs, une plasmathérapie au long cours peut être nécessaire dans les PTT héréditaires récurrents",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u43",
+   "empreinte": "c85159155876",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plasmatiques constituent à ce jour le traitement de première ligne (accord professionnel), bien que cette",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u44",
+   "empreinte": "6b63fb061c07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précocement et en plus grande quantité (30 mL/kg). Enfin, chez les patients pour lesquels une intervention",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u45",
+   "empreinte": "7dc4effc6c59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "échanges plasmatiques sont réalisés (accord professionnel)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u46",
+   "empreinte": "04cbe4cac406",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les poussées aiguës d’œdème angioneurotique héréditaire (OAH) ne sont pas une indication de traitement",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u47",
+   "empreinte": "18acf3baae7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation du plasma thérapeutique est similaire à celle de l’adulte dans le cadre d’une CIVD, d’une",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u48",
+   "empreinte": "e082cd35a579",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de 10 à 20 mL/kg est recommandée, parallèlement au traitement de la cause",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u49",
+   "empreinte": "892da93aab02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’amorçage des circuits (grade B)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u50",
+   "empreinte": "42da7d1a7da8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est fréquemment utilisée lorsque les taux des facteurs de coagulation sont inférieurs à 20 %, même en",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u51",
+   "empreinte": "0a986dd433bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaire en cas de syndrome hémorragique sévère dans l’attente de l’effet du traitement par la vitamine K",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u52",
+   "empreinte": "18d6c5dc8699",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le SHU typique post-diarrhéique (STEC+) de l’enfant, la plasmathérapie n’est pas recommandée en",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u53",
+   "empreinte": "306157ff1891",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moyenne 170 mmoles/L de sodium, à prendre en compte dans le maintien de l’équilibre hydroélectrolytique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u54",
+   "empreinte": "03da7908d944",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces recommandations, qui demeurent parfaitement valides, stipulent qu’en cas d’hémorragie grave, la",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u55",
+   "empreinte": "a4e52460e294",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVK en cas d'hémorragie grave (grade B)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u56",
+   "empreinte": "2318bdf0ebd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'hémorragie grave chez un patient aux antécédents de thrombopénie induite par l'héparine (TIH)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u57",
+   "empreinte": "e4a6a3b92673",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "instabilité hémodynamique : PAS < 90 mmHg ou diminution de 40 mmHg par rapport à la PAS",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u58",
+   "empreinte": "16d4d3bc3a8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’existe pas d’étude définissant les indications du plasma autologue",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u59",
+   "empreinte": "56efe4a6a4c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "autologue comme produit de remplissage ne peut être recommandé",
+   "explication": "",
+   "page": 15
+  }
+ ]
+}

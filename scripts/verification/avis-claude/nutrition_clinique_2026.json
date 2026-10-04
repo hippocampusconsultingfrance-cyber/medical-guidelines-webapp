@@ -1,0 +1,574 @@
+{
+ "cle": "nutrition_clinique_2026",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ae06a714f089",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Adopté par le Collège le 3 septembre 2026",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "2de9326931cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie à risque intermédiaire ou élevé, il",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u3",
+   "empreinte": "cb32e7cb3591",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie à risque intermédiaire ou élevé, il",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u4",
+   "empreinte": "556ee478a015",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie à risque intermédiaire ou élevé, il",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u5",
+   "empreinte": "200088c50640",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.17 : diagnostic de la dénutrition",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "f670a7560717",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.17 : critères phénotypiques HAS (≥5 %/1 mois, ≥10 %/6 mois, IMC <18,5 / <22 si ≥70 ans, force, masse musculaire)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "04e0bed2cafb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figures 1 et 3 : critères étiologiques (prise alimentaire, malabsorption, agression)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "7c6c22b21f73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.17 : 1 critère phénotypique + 1 étiologique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "03e13c9f28f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figures 1 et 3 : albuminémie modérée 30-35, sévère ≤ 30 g/L",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "828636e8d84e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figures 1 et 3 : GNRI, CONUT ; soins critiques : pas de score spécifique, mNUTRIC",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "d3fb1bfad3ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie programmée à risque",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u12",
+   "empreinte": "fb11bc007c38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients dénutris opérés d’une chirurgie programmée à risque",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u13",
+   "empreinte": "1571f56474c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après analyse de la littérature, les experts ne sont pas en mesure",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u14",
+   "empreinte": "9db8e740a056",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après analyse de la littérature, les experts ne sont pas en mesure",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u15",
+   "empreinte": "42beb26d2244",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie à risque intermédiaire ou élevé,",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u16",
+   "empreinte": "023f3fbc1f46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie à risque intermédiaire ou élevé,",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u17",
+   "empreinte": "e9dc479d109d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie à risque intermédiaire ou élevé,",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u18",
+   "empreinte": "32cee3628bdc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients opérés d’une chirurgie programmée à risque",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u19",
+   "empreinte": "28d0e5969b02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients hospitalisés en soins critiques, il est recommandé de",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u20",
+   "empreinte": "b78452794379",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients hospitalisés en soins critiques, les experts suggèrent de",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u21",
+   "empreinte": "340bfff6690d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients hospitalisés en soins critiques, et en l’absence de contreindication, les experts suggèrent d’instaurer un support nutritionnel dans",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u22",
+   "empreinte": "d982ae201de8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en état de choc / défaillance multiviscérale, il est",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u23",
+   "empreinte": "2ae83195a03d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en état de choc / défaillance multiviscérale, les experts",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u24",
+   "empreinte": "4ad5fc043b6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en état de choc / défaillance multiviscérale, les experts",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u25",
+   "empreinte": "6c142617e1ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en état de choc / défaillance multiviscérale, il est",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u26",
+   "empreinte": "cc44b018ba24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en état de choc / défaillance multiviscérale, il n’est pas",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u27",
+   "empreinte": "e1ab1a8a441e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients stabilisés, il est recommandé de ne pas dépasser une",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u28",
+   "empreinte": "444f347a1609",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients stabilisés, les experts suggèrent d’augmenter",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u29",
+   "empreinte": "c1b38d37ba3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients stabilisés, il est recommandé de ne pas dépasser une",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u30",
+   "empreinte": "abf822321d43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients stabilisés, il est recommandé, à cible énergétique",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u31",
+   "empreinte": "513670a1eaee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en phase de réhabilitation, il est recommandé de mettre",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u32",
+   "empreinte": "18032e271d37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en phase de réhabilitation, les experts suggèrent de",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u33",
+   "empreinte": "a75d8b37821e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en phase de réhabilitation et présentant une insuffisance",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u34",
+   "empreinte": "83d038faeb2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients en phase de réhabilitation traités par épuration extrarénale, les experts suggèrent de viser un apport protidique de 1,5 g/kg/j",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u35",
+   "empreinte": "561bd6cdd454",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 5 p.23 : calories non nutritionnelles",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "69394a181018",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 5 p.23 : 1 g glucose 4 kcal, 1 mL propofol 1,1 kcal, 1 g citrate ≈ 3 kcal",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "30de969d5846",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 5 p.23 : 400 + 100 + 200 = 700 kcal/24h ≈ 10 kcal/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "30bccef9b401",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 5 p.23 : intégrer les calories non nutritionnelles, différer si dépassement",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "4ae6a0b8a1a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques présentant une intolérance digestive",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u40",
+   "empreinte": "b4278aaa8d23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques, il n’est pas recommandé de privilégier",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u41",
+   "empreinte": "e54b80f4a9be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques recevant une nutrition entérale et",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u42",
+   "empreinte": "bf6633549224",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques recevant une nutrition entérale, les",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u43",
+   "empreinte": "2ab3919ae184",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques recevant une nutrition entérale, il n’est",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u44",
+   "empreinte": "889d8a90b029",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques recevant une nutrition entérale et",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u45",
+   "empreinte": "75b3caddba75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de soins critiques sous nutrition entérale, les experts",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u46",
+   "empreinte": "028ed04cc432",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 7 p.25 : massages",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "b76168f1de04",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 7 p.25 : 4 étapes",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "d4e5a1dfc082",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 7 p.25 : matin et soir, 15 min, 3 jours, NE arrêtée 30 min",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "249776227b6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 7 p.25 : IDE/AS, contre-indications",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "79615a1be8f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients hospitalisés en soins critiques recevant une nutrition",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u51",
+   "empreinte": "74968493cca6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de réanimation recevant une nutrition entérale, il n’est",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u52",
+   "empreinte": "665d91c67f25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de réanimation, les experts suggèrent de mesurer",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u53",
+   "empreinte": "403ea0640ddd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients hospitalisés en soins critiques, les experts suggèrent de",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u54",
+   "empreinte": "9bbc55b32e00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après analyse de la littérature, les experts ne sont pas en mesure",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u55",
+   "empreinte": "3041a9212f86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts rappellent que l’équipe paramédicale doit inclure la présence Rappel à la",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u56",
+   "empreinte": "db4119ddee6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : SRI",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "3fe177d3db80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : définition et troubles",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "40d626a03c5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : manifestations",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "5feb59fe4438",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : facteurs de risque",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "a38e812b88b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : prévention 10 kcal/kg, 7-10 j, paliers 25 %, thiamine 200-300 mg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "b8d2b14f0d57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : baisse > 10-20 % Ph/K/Mg, > 0,16 mmol/L Ph",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "eaa4bfd251ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 9 p.27 : réduction ou arrêt 24-48 h, supplémentation IV",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "f650bec0d3f0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

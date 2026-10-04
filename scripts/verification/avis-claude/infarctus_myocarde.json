@@ -1,0 +1,511 @@
+{
+ "cle": "infarctus_myocarde",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "55d4d15a019c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "f44408e99510",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de précisions, les recommandations reposent sur un consensus exprimé par le jury",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u3",
+   "empreinte": "e153695e8969",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "repose sur une démarche de type bayesienne : l'évaluation clinique établit une probabilité initiale",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "e296a5079a07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Forte probabilité clinique de SCA Oui Non ECG contributif",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "3e5d29ebdfc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dosage de troponines positif",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "b9ab9205f469",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pas de stratégie invasive (Suivi médical, évaluation secondaire)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "e25c716e6b59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Stratégie invasive différée (24-48h)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "1f0178edc77f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pas de stratégie invasive (Suivi médical, évaluation secondaire)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "0202c6fa2e4a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "6a54d85d6da3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommande comme seuil décisionnel pour le délai porte à porte cardio une valeur de 45 minutes",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "1110ac9ad078",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le jury recommande l'utilisation préférentielle de la ténectéplase",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "ecbc40409d6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si ce délai est inférieur à 3 heures, le médecin auprès du patient peut proposer ou la fibrinolyse ou l'angioplastie primaire",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "9019ca35db84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si le délai depuis le début des symptômes est compris entre 3 et 12 heures, l'angioplastie primaire est privilégiée",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "c674d6bf290a",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Algorithme 2 (page PDF 8) : branche « > 45 min ou délai porte cardio-ballon non estimable » → stratégie identique → TL, avec « CI à la TL » → APL et « si échec fibrinolyse » → APL",
+   "explication": "La fiche ne mentionne, pour cette branche, que fibrinolyse puis angioplastie de sauvetage si échec. Elle omet qu'en cas de contre-indication à la thrombolyse, on fait une angioplastie primaire (même si le délai dépasse 45 min).",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "10c623252351",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est impératif que l'ensemble des structures d'urgences (SMUR et accueil des urgences) dispose des moyens de pratiquer une fibrinolyse",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "a3187f67bf93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "son bénéfice dans le traitement des SCA est largement démontré (grade A)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "899ef8855e9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec l'aspirine ou seul si celle-ci est contre-indiquée (grade A)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "3e39d2b60f3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'abciximab est utilisé en phase aiguë de SCA ST+ avant une angioplastie primaire",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "bd455252bef1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'énoxaparine est supérieure à l'héparine non fractionnée (HNF) chez les patients de moins de 75 ans",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "f23f601e57c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de poussée hypertensive, ils ne sont pas recommandés (grade C)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "806e99c86aec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le traitement de choix est la morphine en titration IV",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u22",
+   "empreinte": "5eda7b4e43be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "leur administration n'est pas préconisée de façon systématique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "8724fe34f96d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucun argument ne permet de les recommander",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u24",
+   "empreinte": "37e5500cffd2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La solution glucose-insuline-potassium n'est pas recommandée (grade A)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "bc1bff2498b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le jury recommande que le médecin régulateur du SAMU soit le « gardien du temps »",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u26",
+   "empreinte": "9528549c0a6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 3. Algorithme des filières de prise en charge d'un patient présentant une douleur thoracique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "614d2e10fb14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Association urgentistes Conférence à3 Service de soins",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "701cde4c64c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Médecin pompier + ECG Médecin libéral (accord préalable) + ECG + DSA systématique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "7ba4959fc9ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "SCDI opérationnelle USIC",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "887292298e17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un vecteur de transport avec au moins défibrillateur semi-automatique (DSA) et O",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u31",
+   "empreinte": "54c2e84e2b92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'HNF est préférée aux héparines de bas poids moléculaire (HBPM) chez le sujet de plus de 75 ans",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u32",
+   "empreinte": "05c9e4f57cd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La stratégie thérapeutique globale de l'IDM chez le diabétique ne diffère pas de celle des sujets non diabétiques (grade B)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u33",
+   "empreinte": "93a84ddda92f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les patients dans des sites avec plateau de cardiologie interventionnelle accessible doivent avoir une angioplastie primaire",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u34",
+   "empreinte": "1e675eec203c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le recours systématique en urgence à une coronarographie n'est licite qu'en cas de détection d'un sus-décalage du segment ST",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u35",
+   "empreinte": "da143e742a65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être associé à la correction des facteurs favorisants, notamment les dyskaliémies et l'hypoxie",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u36",
+   "empreinte": "5e3b88a1e9c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'isoprénaline n'est pas recommandée et l'adrénaline ne doit être utilisée qu'en dernier recours",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u37",
+   "empreinte": "66d2f49a09ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Plusieurs options thérapeutiques peuvent être envisagées (grade B)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u38",
+   "empreinte": "a35cadb075c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le patient en défaillance hémodynamique (hors contexte de tachycardie sinusale) nécessite la réalisation immédiate d'un CEE de préférence synchrone",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u39",
+   "empreinte": "3933d470db73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Administrer de l'oxygène en fonction de la SpO2 – Monitoring ECG",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u40",
+   "empreinte": "9847ddf829a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 (page PDF 12) : arrêt circulatoire → RCP médicalisée, CEE asynchrone",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "01da149c1b53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : état de choc cardiogénique / OAP massif → sédation si conscient, CEE synchrone si possible, gestes de réanimation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "fcef361f4752",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : autres signes d'intolérance Non → surveillance clinique et paraclinique (scope)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "bd8266afb45a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : FA rapide → amiodarone 300 mg en 20-60 min puis 900 mg/24 h ; si échec esmolol (500 µg/kg en 1 min puis 50-200 µg/kg en 4 min) ou aténolol (5 mg IV puis 75 mg PO)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "041913c42585",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : TV polymorphe → amiodarone, si échec CEE synchrone",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "9166242fe8f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : tachycardie sinusale → surveillance attentive",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "6d2f161c1698",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : TV → amiodarone, si échec CEE synchrone",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "e63ce439bad2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 4 : renvois « évoquer de principe » (FA avec conduction aberrante / flutter / TSV avec conduction aberrante) — conformes",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "42ae4fde497b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une réanimation prolongée (60 à 90 minutes après l'injection du fibrinolytique) est justifiée pour favoriser son efficacité",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u49",
+   "empreinte": "b0c5bd5852be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La contre-pulsion par ballonnet intra-aortique (CPBIA) favorise la stabilisation initiale",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u50",
+   "empreinte": "54ad9a88305a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "0fc11262e7ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les équipes du SMUR doivent être formées aux techniques d'assistance circulatoire",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u52",
+   "empreinte": "8f85cf9a4d9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Essais comparatifs randomisés de forte puissance",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u53",
+   "empreinte": "34ebe82979a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Études comparatives non randomisées bien menées",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u54",
+   "empreinte": "ea07fbe5e534",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "5e73747570c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de précisions, les recommandations reposent sur un consensus exprimé par le jury",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u56",
+   "empreinte": "71f428d5477a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

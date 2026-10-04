@@ -1,0 +1,322 @@
+{
+ "cle": "eclsa",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9ae312e12fc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "notre groupe d'experts (recommandations de niveau 5)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "94327832054b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Environ 50 000 arrêts cardiaques (AC) surviennent chaque",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "d2210806dca8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "9674dfc3db06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la crainte d'une inhomogénéité des critères d'assistance",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "37c46509c7ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "souligner à ce stade qu'il ne s'agit que d'indications potentielles",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "8d2a8b51d630",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "période d'au moins 30 min de RCP médicalisée en normothermie",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "84d780d67a3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "devient alors l'élément principal de la décision.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "afd348b0f72a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "circulatoire avant d'avoir pratiqué au moins 15 min de RCP",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "a96966f35aab",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "a9ed737ff5ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ayant l'impact le plus fort sur le pronostic neurologique du",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "917d2dc75bad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec moins de 10 % de survie au-delà de 100 min de RCP,",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "40a4277051bd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "443c462205b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l'exclusion des rythmes agoniques, doivent également amener le médecin à",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "7c35959ebda1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "RCP ne contre-indique pas formellement l'assistance circulatoire car c'est dans cette situation que des survies ont été",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "322ca3051817",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une valeur d'ETCO2 inférieure à 10 mmHg (mesurée après",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "09b456c6cd71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un algorithme simple, utilisable dans les conditions de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "cd167feb623b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fig. 1 (p. 184) : trois colonnes « Indication possible » / « Incertitude » / « Pas d'indication », départ « AC réfractaire ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "38ae309e8636",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fig. 1 : intoxication †, hypothermie † (≤ 32 °C), signes de vie per-RCP → « Indication possible » ; comorbidités → « Pas d'indication » ; puis évaluation de la durée de no-flow.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "787002f658dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fig. 1 : no-flow « 0-5 min » (descend vers l'évaluation du low-flow) / « > 5 min ou pas de témoin » (vers l'évaluation du rythme).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "7ec0950e9bc2",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Fig. 1 : depuis « Évaluation du rythme », une flèche « TV, TP, FV » rejoint « Évaluation de la durée de Low-flow » (colonne Incertitude) ; « Asystole / Rythme agonique » → pas d'indication.",
+   "explication": "Dans la figure, TV/TP/FV ne mènent pas directement à « Indication possible » : ils renvoient vers l'évaluation de la durée de low-flow (colonne centrale), comme une durée de no-flow 0-5 min. La fiche écrit qu'ils « réintègrent » la colonne Indication possible.",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "f5885c5c17da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fig. 1 : « ETCO2 ≥ 10 mmHg ET Low-flow ≤ 100 min » → indication possible ; « ETCO2 < 10 mmHg OU Low-flow > 100 min » → pas d'indication.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "4c233b5731d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une durée de RCP > 100 min peut être acceptée dans le cas des intoxications par les cardiotropes.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "f081053e15f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "requiert une coopération étroite entre les équipes préhospitalières et hospitalières.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "5235f3a6735c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'abord direct des vaisseaux",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "189a3e495ce1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "formé à cette technique est donc également recommandé.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "7085705999a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "gestion de l'assistance circulatoire requiert une équipe de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "d1a65046a9a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par un perfusionniste, bien que cette compétence puisse être",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "d50386262137",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les seules spécificités pédiatriques concernent les enfants",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "a8271683f0f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "favorables (par exemple, présence d'une poche d'air pour les",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "04d7a964b87c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ces recommandations ne sont basées que sur des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u31",
+   "empreinte": "b983473768ed",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "434302415001",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une évaluation de la qualité du débit cardiaque généré",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "1b7719d553df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permettre d'homogénéiser les pratiques en France en ce qui",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "3f61385c461e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "engager une campagne de formation auprès des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "451ec66d8e63",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

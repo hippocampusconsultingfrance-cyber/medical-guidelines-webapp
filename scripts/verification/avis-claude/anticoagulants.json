@@ -1,0 +1,1879 @@
+{
+ "cle": "anticoagulants",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d0650895913b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure invasive, quels sont les éléments à prendre en compte pour déterminer la gestion péri-procédurale des anticoagulants afin de réduire les complications",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u2",
+   "empreinte": "5792d7de1372",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- Les procédures à faible risque hémorragique sont définies comme des procédures responsables de saignements peu fréquents, de faible intensité ou aisément contrôlés. Elles",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u3",
+   "empreinte": "43cc1f7589ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- Les procédures à risque hémorragique élevé nécessitent l’arrêt de l’anticoagulant car leur réalisation chez des patients anticoagulés augmente le saignement.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u4",
+   "empreinte": "f6293485f7e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elles incluent la ponction lombaire, la rachianesthésie, la péridurale et la péri-rachianesthésie combinée. Elles n’incluent pas la chirurgie rachidienne.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "e0fb9d87d531",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les AVK et de contrôler l'INR dans la semaine précédant la procédure pour vérifier l'absence de surdosage.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u6",
+   "empreinte": "d7b56dea29f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hémorragique, il est proposé de sauter les prises de la veille au soir et du matin de la procédure, quel que soit le schéma thérapeutique (une prise",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u7",
+   "empreinte": "bd9f41c6ee26",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "48e0d91e0551",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "47c67ec20df6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "5a2ee0cb6734",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "les experts suggèrent d’arrêter les AOD avec une dernière prise à J-5",
+   "explication": "La partie « J-5 si risque hémorragique très élevé (neurochirurgie intracrânienne, neuraxial) » vient de R3.4, cotée Avis d'experts ; la fiche affiche [2+] pour toute la ligne (2+ ne vaut que pour J-3, R3.3).",
+   "page": 17
+  },
+  {
+   "id": "u11",
+   "empreinte": "3c2d4ded531b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de sa demi-vie en cas d’altération de la fonction rénale [21]. Depuis, plusieurs travaux ont montré qu’avec une fonction rénale normale, une dernière prise de dabigatran à J-3 permettait",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u12",
+   "empreinte": "e32d20b5465e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HBPM à dose curative 24 heures avant la procédure*",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u13",
+   "empreinte": "dbc3784603bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HBPM à dose curative 24 heures avant la procédure*",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u14",
+   "empreinte": "825059749b2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 heures avant la procédure# HNF IVSE à dose curative",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u15",
+   "empreinte": "d50960ce0752",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6 heures avant la procédure Fondaparinux à dose curative",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u16",
+   "empreinte": "7b902ce44a66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "insuffisante pour corriger l’INR [2,15]. La réponse à la vitamine K par voie intraveineuse est plus rapide que par voie orale, mais le risque anaphylactique, bien qu’extrêmement rare, a",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u17",
+   "empreinte": "5af0a9da6144",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "reprendre les AVK dans les 24 premières heures après la procédure, sans relais postprocédural par des héparines à dose curative. Dans le cas particulier mais fréquent des procédures à risque hémorragique élevé pour",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u18",
+   "empreinte": "f0f97dcd152c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une procédure invasive, il est proposé pour réduire le risque de récidive de différer la procédure au minimum au-delà du 3ème mois suivant cet AVC,",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u19",
+   "empreinte": "ed25f66082cd",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "il est proposé de ne pas réaliser de relais héparinique pré-procédural à l’arrêt des AOD",
+   "explication": "La fiche regroupe R3.3 (2+) et R5.5 sous un seul [2+] ; R5.5 (pas de relais héparinique, FA sous AOD) est cotée 2- dans la source (page 26).",
+   "page": 26
+  },
+  {
+   "id": "u20",
+   "empreinte": "2210c2d463b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "reprendre le traitement curatif par l’AOD du patient idéalement entre 48h et 72h après la procédure, à la posologie habituelle, sans relais héparinique à",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u21",
+   "empreinte": "4f97cbe67d0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans l’attente d’une anticoagulation curative, il est recommandé de réaliser une thromboprophylaxie veineuse post-procédurale",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u22",
+   "empreinte": "006be4b6cbba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 : délais d’arrêt des anticoagulants administrés à dose curative pour la réalisation d’une procédure à risque hémorragique élevé ............................................................................................................................. 20",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u23",
+   "empreinte": "27a7facbb2a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sans relais et arrêt avec relais pré et/ou post-procédural. Quand le risque thrombotique est temporairement très élevé, comme précocement après une embolie pulmonaire ou un",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u24",
+   "empreinte": "0b10417043e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HBPM à dose curative, avec une première injection le soir de J3 et une dernière injection au plus tard le matin de J-1, sans contrôle de l’activité anti-Xa le matin de l’intervention, et de",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u25",
+   "empreinte": "efe6d76e66ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure à la posologie habituelle, sans dose de charge. Si la reprise des AVK est impossible dans les 24 premières heures",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u26",
+   "empreinte": "27865dc3d623",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modalités de gestion du relais post-procédural : la modalité la plus fréquente inclut la reprise des AVK le soir de la procédure associée à des HBPM à dose curative débutées dans les 48",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u27",
+   "empreinte": "d42085865778",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HBPM à dose curative, avec une première injection le soir de J3 et une dernière injection au plus tard le matin de J-1, sans contrôle de l’activité anti-Xa le matin de l’intervention, et de",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u28",
+   "empreinte": "810b86fd9c01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 : Demi-vie des AVK et durée d’arrêt proposée pour l’obtention d’un INR ≤1,5 ................................. 18 Tableau 2 : délais d’arrêt des anticoagulants administrés à dose curative pour la réalisation d’une procédure",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "97c00db70c58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ailettes, en rythme sinusal et sans antécédent thrombotique lié à la valve, il est proposé de ne pas réaliser de relais par héparines à dose",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u30",
+   "empreinte": "a76027323740",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans certaines situations, des héparines à dose curative sont prescrites après la procédure (relais post-procédural). Elles sont débutées idéalement dans un délai de 48 à 72h. Leurs",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u31",
+   "empreinte": "9a9cf805176b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque de récidive est élevé au cours des trois premiers mois suivant une EP ou une TVP proximale et très élevé pendant le premier mois après l’ETEV [10-12]. Trois essais randomisés",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u32",
+   "empreinte": "54c64aadd0dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anticoagulant, qui n’est initié qu’en cas d’extension proximale documentée sur l’échographieDoppler de contrôle à J7 [6]. La prise en charge péri-procédurale d’une TVP distale symptomatique reste débattue [37]. Différer une procédure invasive au-delà du 1er mois",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u33",
+   "empreinte": "1b0ce066eed2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sans relais et arrêt avec relais pré et/ou post-procédural. Quand le risque thrombotique est temporairement très élevé, comme précocement après une embolie pulmonaire ou un",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u34",
+   "empreinte": "a792237c52f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proximale de moins d’un mois il est proposé d’établir une stratégie personnalisée de façon multidisciplinaire.",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u35",
+   "empreinte": "0f37dafad326",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les autres cas de MTEV traitée par AOD, il est proposé d’interrompre les AOD sans relais héparinique pré-procédural.",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u36",
+   "empreinte": "65fa71c3e389",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "reprendre le traitement curatif par l’AOD du patient idéalement entre 48h et 72h après la procédure, à la posologie habituelle, sans relais héparinique à",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u37",
+   "empreinte": "139401524f9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si le traitement curatif ne peut pas être repris par l’AOD habituel du patient, il est proposé d’initier une anticoagulation par héparines à dose curative",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u38",
+   "empreinte": "bea7d4cbc5ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les AVK, de réaliser un relais pré-procédural des AVK par une HBPM à dose curative, avec une première injection le soir de J3 et une dernière injection au plus tard le matin de J-1,",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u39",
+   "empreinte": "f1603d6af7ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure à risque hémorragique élevé, il est proposé de ne pas réaliser de relais héparinique pré-procédural à l’arrêt des AOD.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u40",
+   "empreinte": "b46488dc6e8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans certaines situations, des héparines à dose curative sont prescrites après la procédure (relais post-procédural). Elles sont débutées idéalement dans un délai de 48 à 72h. Leurs",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u41",
+   "empreinte": "5073fa50e4f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un retour de l’INR en zone thérapeutique en 5 à 7 jours chez la majorité des patients [1,2,10]. Dans les situations où un relais post-procédural n’est pas indiqué, les AVK sont repris seuls,",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u42",
+   "empreinte": "1b2b2613f3f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "AVK et procédures invasives programmées 1. Discuter la mise en place d’un filtre cave si la procédure est réalisée <1 mois après l’EP ou la TVP proximale.",
+   "explication": "",
+   "page": 63
+  },
+  {
+   "id": "u43",
+   "empreinte": "f3c532968d47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pré-procédurale d’un filtre cave optionnel au cours du 2ème ou 3ème mois après une EP ou une TVP proximale si la reprise d’une anticoagulation à dose curative ne peut pas être envisagée",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u44",
+   "empreinte": "ca02226ccbd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "symptomatique reste débattue [37]. Différer une procédure invasive au-delà du 1er mois suivant la thrombose quand cela ne génère pas de risque vital ou fonctionnel majeur pour le",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u45",
+   "empreinte": "b8fc5cca7735",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "élevé et un risque thromboembolique veineux élevé, Il est proposé de mettre une compression pneumatique intermittente en per et postprocédural en association à la thromboprophylaxie pharmacologique.",
+   "explication": "",
+   "page": 76
+  },
+  {
+   "id": "u46",
+   "empreinte": "ad0156558faa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7.15 Les contentions élastiques graduées ne sont pas recommandées pour la thromboprophylaxie péri-procédurale, quel que soit le risque",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u47",
+   "empreinte": "b3666d06c56d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "f4b4aceb5c1e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "3aee59b6d290",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "d452ce27531b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "HBPM sont alors préférées à l’HNF, et la première injection est faite le soir de J-3, quel que soit l’AVK.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u51",
+   "empreinte": "de1b0bd4d131",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patients traités par un AOD 2.2 Chez un patient traité par AOD (apixaban, edoxaban, rivaroxaban,",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u52",
+   "empreinte": "eb567044b704",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "5dad8eb7574f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "61d9903332d9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "e104582f8518",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "f001d17c494d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "c143e46b62b4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "c91538cc2e3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après la procédure, l’IRC ne modifie pas la stratégie de reprise des AOD par rapport à la population générale, que la procédure soit à risque hémorragique faible ou élevé. Cependant,",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u59",
+   "empreinte": "580ce2fbdb4d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "e41d78ff3cc8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "6d038530ee58",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "4dcbac66faae",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "0fe5d292abbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NR 1. 2,5 mg si 2 Facteurs de risque parmi : âge>80 ans ; poids<60 kg ; créatininémie >133µmol/l",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u64",
+   "empreinte": "60dfa7efaa3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- il est recommandé d’utiliser l’HNF IVSE débutée le soir de J-3 et arrêtée 6h avant la procédure. La surveillance biologique et",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u65",
+   "empreinte": "50184b311b10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "£ : par exemple, schéma posologique ajusté au poids corporel sans surveillance biologique : 1ère injection SC d’HNF calcique à 333 UI/kg le soir de J-3, puis 250 UI/kg toutes les 12 heures, avec une dernière injection SC le",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u66",
+   "empreinte": "62b153237f89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "injection le soir de J-2 (pas d’HBPM la veille de la procédure, soit 2 doses au total), sans surveillance biologique.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u67",
+   "empreinte": "9ee67afdd661",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la procédure, soit 2 injections au total), sans surveillance biologique. Les autres HBPM ne sont pas recommandées.",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u68",
+   "empreinte": "bd691aeb6549",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d’utiliser l’HNF à dose curative selon le schéma posologique et la surveillance habituellement utilisés dans la",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u69",
+   "empreinte": "908869fc2563",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’HBPM la plus évaluée dans ce cadre est l’enoxaparine (tableau 3). Avec un schéma utilisant la tinzaparine en une injection par jour, des évènements thromboemboliques ont été rapportés",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u70",
+   "empreinte": "56b3cbaf3ced",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveillance biologique de la tinzaparine à dose curative, avec mesure de l’activité antifacteur Xa lorsque la durée du traitement est supérieure à 72 heures (risque d’accumulation), pour vérifier que l’activité anti-facteur Xa mesurée 4 à 6 heures après",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u71",
+   "empreinte": "fd05c0c1ed4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d’IRC sévère et terminale ((DFGe <30 ml/min/1.73 m2), il est recommandé d’utiliser de l’héparine calcique SC à la posologie de",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u72",
+   "empreinte": "9074e4feb1de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’HBPM la plus évaluée dans ce cadre est l’enoxaparine (tableau 3). Avec un schéma utilisant la tinzaparine en une injection par jour, des évènements thromboemboliques ont été rapportés",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u73",
+   "empreinte": "4c5868b60985",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ayant une IRC terminale (DFGe < 15 /min/1.73 m2), les experts d’experts suggèrent d’utiliser la tinzaparine en alternative à l’HNF, à la",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u74",
+   "empreinte": "b0b38016ad95",
+   "verdict": "ecart",
+   "type_ecart": "population",
+   "citation": "un DFGe entre 30 et 49 ml/min/1,73 m2, il est proposé d’arrêter",
+   "explication": "La fiche écrit « AOD en IRC sévère (DFGe 30-49) » ; selon la classification de la fiche elle-même (u47) et la source, 30–49 correspond à l'IRC modérée (stade 3), la sévère étant 15–29. Délais et grades corrects.",
+   "page": 48
+  },
+  {
+   "id": "u75",
+   "empreinte": "0a67292a4064",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quelques procédures ont été associées à un risque hémorragique minime ou à un risque hémorragique très élevé. Ce classement est disponible en annexes.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u76",
+   "empreinte": "fc3ad23d7ef7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sciatique poplité, plexus lombaire par voie",
+   "explication": "",
+   "page": 80
+  },
+  {
+   "id": "u77",
+   "empreinte": "1160923f7683",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elles incluent la ponction lombaire, la rachianesthésie, la péridurale et la péri-rachianesthésie combinée. Elles n’incluent pas la chirurgie rachidienne.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u78",
+   "empreinte": "da32a32532c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas de données robustes pour classer les blocs périphériques profonds dans les procédures à risque hémorragique très élevé. La gestion pré-procédurale des anticoagulants",
+   "explication": "",
+   "page": 80
+  },
+  {
+   "id": "u79",
+   "empreinte": "3efa354017a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ponctions / drainages d’abcès superficiels [1,2]",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u80",
+   "empreinte": "dec9dfa8df5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Biopsies superficielles (thyroïde, sein, ganglion superficiel, parties",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u81",
+   "empreinte": "59c92a307c2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pose / échange de cathéters veineux tunnelisés / chambre",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u82",
+   "empreinte": "867ffd39ab49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Drainage d’abcès profonds (hépatique, rétropéritonéal, pelvien…) [1,2]",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u83",
+   "empreinte": "ac8b73ffc6bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Phlébographie diagnostique / cavographie sans thrombolyse [1]",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u84",
+   "empreinte": "25646b6c9958",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "discuter la mise en place pré-procédurale d’un filtre cave optionnel. Il est proposé de programmer le retrait du filtre cave lorsque le",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u85",
+   "empreinte": "78c7d74f5adb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Embolisation artérielle thérapeutique (hémorragie, TACE, fibromes,",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u86",
+   "empreinte": "dc2f94c8560c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Infiltration rachidienne si articulaire postérieur [1,2]",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u87",
+   "empreinte": "0ac89a09478c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Procédures portales complexes (TIPS, ponction portale, recanalisation)",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u88",
+   "empreinte": "771b5b9ada7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ablations tumorales percutanées (RFA, MWA, cryo-ablation)",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u89",
+   "empreinte": "58506897bc15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Vertebro/Kypho/consolidation osseuse periph",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u90",
+   "empreinte": "4eecfae65302",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Infiltration rachidienne si épidurale * * Gestes à risque de complication neurologique sévère, à considérer comme à risque hémorragique très élevé.",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u91",
+   "empreinte": "014ca66500dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* Gestes à risque de complication neurologique sévère, à considérer comme à risque hémorragique très élevé. Ces gestes pourront conduire à préférer un INR ≤1,2 pour les AVK ou une concentration en AOD nulle au moment",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u92",
+   "empreinte": "04832ed9fe0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Biopsie des glandes salivaires accessoires -Ponction-infiltration des articulations coxo-fémorales",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u93",
+   "empreinte": "12a6116b2a1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Infiltration de la branche médiale du rameau postérieur (à moduler selon la morphologie",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u94",
+   "empreinte": "3da351788164",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "articulations périphériques hors coxo-fémorales",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u95",
+   "empreinte": "8cf4c7c04a56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Injection intra musculaire dont toxines botuliques sur site profond (ex : glutéale)",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u96",
+   "empreinte": "9a7b6014df4a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u97",
+   "empreinte": "63e5d6079e24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Infiltration canalaire superficielle sous guidage",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u98",
+   "empreinte": "dcb261c7fe2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Blood patch* -Ponction-Infiltration rachidienne épidurale (voie",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u99",
+   "empreinte": "d52fbdb06257",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "également l’avantage pratique de correspondre à la présentation galénique maximale de ces HBPM et de ne faire qu’une seule injection sous-cutanée par administration alors qu’il en",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u100",
+   "empreinte": "10ec8ac4ee30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Injection intra-musculaire dont toxines botuliques sur site superficiel",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u101",
+   "empreinte": "7a97de2e167d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’angiome)* -Ponction Biopsie disco vertébrale*",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u102",
+   "empreinte": "d77ec8ff2da3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Ponction Biopsie disco vertébrale* -Infiltration canalaire profonde*",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u103",
+   "empreinte": "fd993630cd68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Aponévrotomie palmaire -Biopsie des glandes salivaires accessoires",
+   "explication": "",
+   "page": 82
+  },
+  {
+   "id": "u104",
+   "empreinte": "49dd78e21ebe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Infiltration rachidienne si épidurale * * Gestes à risque de complication neurologique sévère, à considérer comme à risque hémorragique très élevé.",
+   "explication": "",
+   "page": 81
+  },
+  {
+   "id": "u105",
+   "empreinte": "aa4cbb69952a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(AOD : pas de prise le matin ni la (Arrêt des anticoagulants pour veille au soir / AVK : en zone correction de l’hémostase)",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u106",
+   "empreinte": "2bd82f1b1273",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ablation endocavitaire par cathéter pour flutter et FA",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u107",
+   "empreinte": "fd9674e515b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ablation d’arythmie par voie épicardique",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u108",
+   "empreinte": "5b7305b408f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Défibrillateurs extravasculaires (voie sous costale)",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u109",
+   "empreinte": "2424cda6125d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Stimulateurs et défibrillateurs de tous types [2]",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u110",
+   "empreinte": "8c8dd9df1eb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Réparation mitrale percutanée (MitraClip)",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u111",
+   "empreinte": "ca4b8a694406",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(TAVI) (toutes voies d’abord) [4] Remplacement valvulaire mitral",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u112",
+   "empreinte": "265e3ddfd7ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fermeture percutanée du foramen ovale perméable",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u113",
+   "empreinte": "a53aacb93ab0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fermeture percutanée de communication",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u114",
+   "empreinte": "aa7069906371",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fermeture percutanée de fuite para-valvulaire",
+   "explication": "",
+   "page": 84
+  },
+  {
+   "id": "u115",
+   "empreinte": "5298dd36cbe1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’essai randomisé POPular PAUSE TAVI a montré que la poursuite des anticoagulants oraux durant la procédure de TAVI n’était pas « non-inférieure » à leur interruption (dernière prise",
+   "explication": "",
+   "page": 85
+  },
+  {
+   "id": "u116",
+   "empreinte": "178da834fcfd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(AOD : pas de prise le matin ni la (Arrêt des anticoagulants pour veille au soir / AVK : en zone correction de l’hémostase)",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u117",
+   "empreinte": "ef414905db42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie Tous les gestes (dont pose de",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u118",
+   "empreinte": "3abb60b4b25c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et changement de sonde, ablation des fils d’acier, reprise de scarpa",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u119",
+   "empreinte": "8df891697e4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédures endoveineuses toute la chirurgie veineuse et",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u120",
+   "empreinte": "d24427e5456e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La reprise de l’anticoagulation curative après chirurgie vasculaire est à moduler en fonction du geste. Elle peut être plus précoce après pontages périphériques distaux et plus tardive en cas",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u121",
+   "empreinte": "2400bedf34ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "£ Actes sans risque hémorragique pour lesquels une hémostase mécanique simple par compression est suffisante",
+   "explication": "",
+   "page": 95
+  },
+  {
+   "id": "u122",
+   "empreinte": "ea5181c03e62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "quadrants, implants zygomatiques -Élévation du sinus avec lambeau par voie latérale",
+   "explication": "",
+   "page": 87
+  },
+  {
+   "id": "u123",
+   "empreinte": "e9a03c577718",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Élévation du sinus avec lambeau par voie latérale -Chirurgie pré-orthodontique d’une dent enclavée, incluse,",
+   "explication": "",
+   "page": 87
+  },
+  {
+   "id": "u124",
+   "empreinte": "cc3ce130e0bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Bloc du nerf alvéolaire inférieur unilatéral -Greffe autologue : déconseillée en raison d’un site de",
+   "explication": "",
+   "page": 88
+  },
+  {
+   "id": "u125",
+   "empreinte": "ad4bb2a807b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "# Les gestes présentant un risque hémorragique dans le cas où le plateau technique et/ou l'expérience du chirurgien sont insuffisants (colle, éponge hémostatique) sont contre-indiqués",
+   "explication": "",
+   "page": 88
+  },
+  {
+   "id": "u126",
+   "empreinte": "58234eddd21e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* hémostase chirurgicale conventionnelle : hémostase mécanique (compression+ sutures + hémostatiques locaux résorbables (éponges collagène, gaze de cellulose) ± colle synthétique (colle de cyanoacrylate), bain de bouche passif/compresse à l’acide",
+   "explication": "",
+   "page": 88
+  },
+  {
+   "id": "u127",
+   "empreinte": "caa4ed7cfbe7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Préciser l’âge, l’indication, la dose, le nombre de prises par jour, l’horaire de la dernière de prise 2. En cas de facteur de risque hémorragique supplémentaire, il est proposé de sauter de la prise du matin de la",
+   "explication": "",
+   "page": 90
+  },
+  {
+   "id": "u128",
+   "empreinte": "223f9ae5f0ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Chirurgie des paragangliomes* -Voies trans-labyrinthiques* / rétro-sigmoides*",
+   "explication": "",
+   "page": 93
+  },
+  {
+   "id": "u129",
+   "empreinte": "da53ee4e49fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Cautérisation intra nasale (épistaxis) -Ligature d’artère sphéno-palatine (voie",
+   "explication": "",
+   "page": 94
+  },
+  {
+   "id": "u130",
+   "empreinte": "df21012d7aba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Injection endolaryngée (hors prélèvement de graisse abdominale)",
+   "explication": "",
+   "page": 94
+  },
+  {
+   "id": "u131",
+   "empreinte": "cd723a7ce343",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Chirurgie carcinologique avec lambeau libre ou pédiculé cervico-facial*",
+   "explication": "",
+   "page": 94
+  },
+  {
+   "id": "u132",
+   "empreinte": "be567ee7b181",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sommeil -Endoscopie sous sommeil induit£",
+   "explication": "",
+   "page": 94
+  },
+  {
+   "id": "u133",
+   "empreinte": "75a0e49d1173",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Chirurgies par voies externes du larynx et de la trachée de l’enfant (résections anastomoses",
+   "explication": "",
+   "page": 95
+  },
+  {
+   "id": "u134",
+   "empreinte": "4a3c36c43d77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* interventions à situation particulière (à très haut risque) soit nécessitant une reprise retardée (à 72h) soit l’utilisation d’un anticoagulant à durée de vie courte/antagonisable en relais de l’anticoagulation habituelle.",
+   "explication": "",
+   "page": 95
+  },
+  {
+   "id": "u135",
+   "empreinte": "5e9e13c98807",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Procédures diagnostiques# Polypectomie/Mucosectomie/",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u136",
+   "empreinte": "d85b938baabe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pancréatiques (CPRE) avec sphinctérotomie",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u137",
+   "empreinte": "6c15b4e5e69a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Entéroscopie simple ou double Échoendoscopie avec biopsie",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u138",
+   "empreinte": "6a89ebec8532",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Échoendoscopie thérapeutique Pose de stent oesophagien,",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u139",
+   "empreinte": "859e6e35801b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u140",
+   "empreinte": "bc7c86d67a73",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u141",
+   "empreinte": "22443d3da521",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Électrocoagulation au plasma Argon (APC)",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u142",
+   "empreinte": "d76d21094c84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Entéroscopie spiralée Traitement des fistules post opératoires",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u143",
+   "empreinte": "c121265ab966",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* À l’exception de l’ampullectomie, les gestes endoscopiques, y compris ceux à haut risque hémorragique, peuvent être réalisés sous aspirine",
+   "explication": "",
+   "page": 101
+  },
+  {
+   "id": "u144",
+   "empreinte": "50ea025307d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie colorectale bénigne et maligne",
+   "explication": "",
+   "page": 102
+  },
+  {
+   "id": "u145",
+   "empreinte": "dfbb6f41566b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- L’Association de Chirurgie Hépato-Bilio-Pancréatique et Transplantation Hépatique (ACHBPT)",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u146",
+   "empreinte": "9bc7df1d7013",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "oméga, dérivation biliopancréatique avec switch duodénal, Nissen-Sleeve,",
+   "explication": "",
+   "page": 102
+  },
+  {
+   "id": "u147",
+   "empreinte": "a5d17201d3fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cure de hernie (inguinale, fémorale, ombilicale, de la ligne blanche),",
+   "explication": "",
+   "page": 102
+  },
+  {
+   "id": "u148",
+   "empreinte": "899b7c830cb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "données conduisent à différer la reprise d’une anticoagulation curative après chirurgie de hernie ou d’éventration complexe, par exemple, après la 48ème heure chez les patients à risque",
+   "explication": "",
+   "page": 103
+  },
+  {
+   "id": "u149",
+   "empreinte": "755ad0710bca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Electrocoagulation d'une condylomatose extensive",
+   "explication": "",
+   "page": 104
+  },
+  {
+   "id": "u150",
+   "empreinte": "41fefdafc12d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Exérèse de tumeur rectale par voie trans anale",
+   "explication": "",
+   "page": 104
+  },
+  {
+   "id": "u151",
+   "empreinte": "85ae607c5534",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgies impliquant des résections cutanéo-muqueuses extensives en zone hémorroïdaire telles que la résection de tumeur du bas rectum, le drainage de suppuration complexe (laissant",
+   "explication": "",
+   "page": 106
+  },
+  {
+   "id": "u152",
+   "empreinte": "37264e742464",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Traitement par laser ou radiofréquence d'un sinus",
+   "explication": "",
+   "page": 104
+  },
+  {
+   "id": "u153",
+   "empreinte": "c636253938e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Traitement par laser ou radiofréquence d'un sinus",
+   "explication": "",
+   "page": 104
+  },
+  {
+   "id": "u154",
+   "empreinte": "789ce5c92e48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "-Drainage et/ou mise à plat d'une fistule anale",
+   "explication": "",
+   "page": 104
+  },
+  {
+   "id": "u155",
+   "empreinte": "23ee3068ea98",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u156",
+   "empreinte": "709714a8df1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "relais à dose préventive, différence NS) [4]. Chez les patients à faible risque thromboembolique, une reprise tardive des AOD (> J15) ou un relais à dose",
+   "explication": "",
+   "page": 105
+  },
+  {
+   "id": "u157",
+   "empreinte": "44b9e56ac7f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie Hors bloc : hystéroscopie Chirurgie voie vaginale par voie diagnostique, polypes, synéchie, endoscopique : résection de fibrome",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u158",
+   "empreinte": "ae3073cfb277",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "superficielle incontinence TOT, TVT, fistule, plasties (lymphocèle…) Drainage d’abcès vulvaires,",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u159",
+   "empreinte": "bd8aa3d13ffa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "superficiels type bartholinite, abcès conisation, amputation col… mammaire",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u160",
+   "empreinte": "4c00ae8d3801",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coelioscopie surtout si trocart de 3- hystérectomie, kystectomie,",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u161",
+   "empreinte": "e949742b5546",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "endométriose, annexectomie [5] Biopsie col, endomètre, vulve, sein* Chirurgies voie haute toutes les",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u162",
+   "empreinte": "7ed0e727b87c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "agents comblants, toxine botulique mastectomies partielles sentinelles, Sénologie",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u163",
+   "empreinte": "32630ec95654",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "local curages RMI, lipomodelage … tumorectomie superficielle (de type",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u164",
+   "empreinte": "e5621a65b24f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lésion cutanée* Chambre implantable percutanée*",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u165",
+   "empreinte": "291421dca4f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "*Les gestes de biopsies cutanées, seins, CIP, orifices de trocarts peuvent nécessiter des compressions. # : pas de consensus évident, plutôt arrêt des anticoagulants pour toutes les coelioscopies mais dans le cas des",
+   "explication": "",
+   "page": 108
+  },
+  {
+   "id": "u166",
+   "empreinte": "53272cc4f245",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie abdominale ou rétropéritonéale (ouvert ou coelio – inclut AVH et transplantation rénale)",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u167",
+   "empreinte": "a27de8ef8f82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coelio – inclut AVH et transplantation rénale) Chirurgie par voie vaginale (incontinence ou prolapsus)",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u168",
+   "empreinte": "cd2d7c13f405",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie par voie périnéale (chirurgie de l’urètre, pénectomie, sphincter homme, implant pénien, etc.)",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u169",
+   "empreinte": "472376f06789",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pénectomie, sphincter homme, implant pénien, etc.) Chirurgie scrotale ou inguinale (dont vasectomie)",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u170",
+   "empreinte": "6979719b0c7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Changement de cystostomie Changement de sonde de néphrostomie",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u171",
+   "empreinte": "205a80072b90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pose de PM ou DAI épicardique, et changement de sonde, ablation",
+   "explication": "",
+   "page": 86
+  },
+  {
+   "id": "u172",
+   "empreinte": "dc9f889f19be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pose/changement de sonde JJ Pose/changement de sonde urétérale",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u173",
+   "empreinte": "ff5e0a0bc540",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u174",
+   "empreinte": "646dc817af95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Urétrocystoscopie Drainage d’une collection superficielle",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u175",
+   "empreinte": "420f6fbad78b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Drainage d’une collection profonde # Biopsie prostatique transrectale",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u176",
+   "empreinte": "a680d3121cea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Biopsie rénale RTUV/RTUP/Incision cervico-prostatique",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u177",
+   "empreinte": "b123e534c327",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Photovaporisation prostatique * Traitements mini-invasifs de l’HBP",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u178",
+   "empreinte": "d085c9c8ac61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Traitements mini-invasifs de l’HBP Neuromodulation des racines sacrées (test, implantation,",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u179",
+   "empreinte": "32f99f7d0704",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ablation électrode) Injection intradétrusorienne de toxine bolutique",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u180",
+   "empreinte": "ee47379d2008",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- NLPC avec ponctions multiples, saignement per- ou post-opératoire, hématurie persistante - Saignement non contrôlé 48-72h après toute chirurgie urologique",
+   "explication": "",
+   "page": 109
+  },
+  {
+   "id": "u181",
+   "empreinte": "465a136f7844",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie dermatologique avec Chirurgie plastique et reconstructrice résection suture sans greffe de de la face, du sein ou de la silhouette#",
+   "explication": "",
+   "page": 111
+  },
+  {
+   "id": "u182",
+   "empreinte": "9daf1b8a1078",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* une prise en charge ambulatoire n’est pas recommandée ; une hospitalisation est à préférer pour surveillance # la reprise post-procédurale est le plus souvent réalisée par les héparines à dose curative, avec une reprise",
+   "explication": "",
+   "page": 111
+  },
+  {
+   "id": "u183",
+   "empreinte": "98467daf13a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Biopsie per-cutanées# (trucut / trocart sous échographie ou scanno-guidé)",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u184",
+   "empreinte": "86a29950d710",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie du rachis : toutes les chirurgies d’arthrodèses ou de",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u185",
+   "empreinte": "92e5a48117b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutes les chirurgies de hanche et de genou",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u186",
+   "empreinte": "9f245b5b1547",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "classé à risque élevé car des hématomes extraduraux ont été rapportés lors de la mise en place du halo par perforation de la table interne.",
+   "explication": "",
+   "page": 113
+  },
+  {
+   "id": "u187",
+   "empreinte": "4878ae1c8079",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Epaule : Arthroscopie diagnostique Décompression sous acromiale",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u188",
+   "empreinte": "667ae8c813a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ponction ou infiltration de hanche* Epaule : Arthroscopie diagnostique",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u189",
+   "empreinte": "e412dc5f8c6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Genou : Arthroscopie diagnostique Méniscectomie simple",
+   "explication": "",
+   "page": 112
+  },
+  {
+   "id": "u190",
+   "empreinte": "050bb7903286",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cheville : Ligamentoplastie",
+   "explication": "",
+   "page": 113
+  },
+  {
+   "id": "u191",
+   "empreinte": "8d1dbdaa6f13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "greffes de lunatum ou de scaphoïde ou autre geste osseux important",
+   "explication": "",
+   "page": 113
+  },
+  {
+   "id": "u192",
+   "empreinte": "1a216abf8609",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La reprise de l’anticoagulation curative peut être réalisée dans un délai de 48-72h après ces procédures, incluant la chirurgie des tumeurs (avis d’experts) et l’arthroscopie (avis d’experts),",
+   "explication": "",
+   "page": 113
+  },
+  {
+   "id": "u193",
+   "empreinte": "1c3ca048ac6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au total, les données publiées étant fragiles, la gestion doit être définie localement et individualisée avec une reprise entre J3 et J7, adaptée au profil de risque thrombotique et de",
+   "explication": "",
+   "page": 114
+  },
+  {
+   "id": "u194",
+   "empreinte": "a6b2db9501b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune procédure programmée de neurochirurgie n’est réalisée sous anticoagulation curative, pas même un changement de boitier de neuro stimulation.",
+   "explication": "",
+   "page": 115
+  },
+  {
+   "id": "u195",
+   "empreinte": "40575eb699fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont d’emblée sévères, rendant indispensable une hémostase optimale. Cela correspond à toute la chirurgie crânienne et à la chirurgie rachidienne avec ouverture durale. Pour ces",
+   "explication": "",
+   "page": 115
+  },
+  {
+   "id": "u196",
+   "empreinte": "ae00995f4327",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toute la chirurgie crânienne et à la chirurgie rachidienne avec ouverture durale. Pour ces procédures la gestion pré-procédurale des anticoagulants est modifiée par rapport au schéma",
+   "explication": "",
+   "page": 115
+  },
+  {
+   "id": "u197",
+   "empreinte": "cdd669ed0c17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La reprise de l’anticoagulation curative dépend du risque hémorragique. Chirurgie intracrânienne : la reprise est réalisée le plus souvent vers J10",
+   "explication": "",
+   "page": 115
+  },
+  {
+   "id": "u198",
+   "empreinte": "83cd9a844270",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’imagerie cérébrale. - Respecter l’hypertension artérielle jusqu’à 220/120 mmHg.",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u199",
+   "empreinte": "ab48c70cb96b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9.2 Après un accident vasculaire cérébral ischémique, il est proposé de reprendre une anticoagulation à dose curative par AOD dans",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u200",
+   "empreinte": "768d1edd9801",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure à la posologie habituelle, sans dose de charge, et sans relais héparinique à dose curative.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u201",
+   "empreinte": "5038b11cbb8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique élevé, il est proposé de réaliser un relais préprocédural des AVK par une HBPM à dose curative, avec une première injection le soir de J-3 et une dernière injection au plus tard le matin de",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u202",
+   "empreinte": "da73760ceb5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’utiliser les HBPM à doses curatives sans surveillance biologique en 1ère intention et de n’utiliser l’HNF qu’en 2ème",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u203",
+   "empreinte": "1a0370e201c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tinzaparine Daltéparine Nadroparine Enoxaparine Poids moléculaire",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u204",
+   "empreinte": "ecfb9968f5f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédural par l’HNF curative IVSE, les experts proposent de d’experts débuter avec des posologies réduites par rapport au schéma",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u205",
+   "empreinte": "c9aa21c875e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "péri-procédural des anticoagulants oraux, il est proposé d’utiliser les HBPM à doses curatives en 1ère intention, ajustées",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u206",
+   "empreinte": "211e9012c2c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "* les AOD se prescrivent chez les patients de poids corporel >100 kg selon les mêmes modalités posologiques et de surveillance que pour la population générale quels que soient le poids corporel et l’IMC. Chez les patients <50",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u207",
+   "empreinte": "37605b0c41ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "insuffisante pour corriger l’INR [2,15]. La réponse à la vitamine K par voie intraveineuse est plus rapide que par voie orale, mais le risque anaphylactique, bien qu’extrêmement rare, a",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u208",
+   "empreinte": "a90abe52f764",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

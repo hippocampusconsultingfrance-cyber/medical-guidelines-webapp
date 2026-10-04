@@ -1,0 +1,457 @@
+{
+ "cle": "douleur_accouchement_2025",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4f0cb00e2cd0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "bf55201b64b8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "7ab60901d3a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'utiliser le repérage échographique de l'espace 2 périmédullaire de manière systématique",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u4",
+   "empreinte": "7d8573719dfe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser le repérage échographique de l'espace 1 périmédullaire pour les patientes obèses et les rachis difficiles",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u5",
+   "empreinte": "914153c18c02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "privilégier la pose en décubitus latéral par rapport à la position assise",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "da3bca45cf7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandation sur l'intérêt du monitorage systématique maternel et du rythme cardiaque fœtal pendant la pose",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "cd4129af8a41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans tous les cas, si la pose de l'analgésie périmédullaire excède 30 AE minutes",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u8",
+   "empreinte": "3267824fa8f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune recommandation ne peut être formulée spécifiquement sur le port ABS de la casaque stérile",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u9",
+   "empreinte": "c003608b6c20",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "cf2e922f3bfa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'interrompre le traitement par une HBPM à dose pro- 1 phylactique ou curative",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u11",
+   "empreinte": "c27ac873cc94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moins 12 heures après la dernière injection d'HBPM à dose prophylactique et au moins à 24 heures",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u12",
+   "empreinte": "17ab0a8ec178",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas d'insuffisance rénale modérée à sévère (DFG < 50 mL/min)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u13",
+   "empreinte": "3384664b4865",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de proposer une technique avec ponction durale en comparaison avec une analgésie périmédullaire classique",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u14",
+   "empreinte": "413faa0c9607",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'accéder à une demande d'analgésie périmédullaire précoce",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u15",
+   "empreinte": "d2d362b83269",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de proposer une analgésie périmédullaire précoce dans AE les populations à risque",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u16",
+   "empreinte": "712accc3123f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de réaliser une “dose test à la lidocaïne”",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u17",
+   "empreinte": "e179610e361c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser un bolus initial avec l'anesthésique local du 1 mélange analgésique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u18",
+   "empreinte": "f66388b9b452",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mandé d'utiliser le mode bolus intermittent programmé comparativement au mode débit continu",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u19",
+   "empreinte": "9d260b4727c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les patientes qui le souhaitent puissent bénéficier de AE la déambulation",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u20",
+   "empreinte": "60f838e580f2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "d0d4de29f568",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisées à partir de 30 minutes après administration du bolus initial",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u22",
+   "empreinte": "3cdf6a452b99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'évaluer toutes les heures l'efficacité de l'analgésie",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u23",
+   "empreinte": "e7b6a002a18c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de demander aux femmes de rester dans une 2 position spécifique",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u24",
+   "empreinte": "d7691f3b0b74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandations sur l'organisation des soins d'anesthésie qui permettrait de limiter la survenue",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u25",
+   "empreinte": "da7f42f16c1c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "a3066d2e2074",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de privilégier un anesthésique local plutôt qu'un 1 autre, entre bupivacaïne, lévobupivacaïne et ropivacaïne",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u27",
+   "empreinte": "55f52e9c6a00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'associer systématiquement du sufentanil comme 1 morphinique liposoluble",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u28",
+   "empreinte": "45da2ee7ceac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'utiliser en première intention la clonidine associée 1",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u29",
+   "empreinte": "9cfbc09fd32b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'utiliser l'adrénaline en association aux 2",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u30",
+   "empreinte": "2bc64e760f31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'administration d'un bolus, répété si besoin, du mélange analgésique administré en entretien",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u31",
+   "empreinte": "7f8527063a1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent l'utilisation du même anesthésique local à plus forte concentration",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u32",
+   "empreinte": "1813fcb857af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'injection de sufentanil ou de clonidine pour améliorer l'efficacité",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u33",
+   "empreinte": "b694d0afb1a4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "572e0333cb1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "complétée par une évaluation du niveau métamérique du bloc sensitif à la méthode du test au froid",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u35",
+   "empreinte": "c70b8a65ad39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de conduire des mesures correctrices (Figure 4), et d'en évaluer l'efficacité dans les 30 à 45 minutes",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u36",
+   "empreinte": "039587cb8961",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de poser à nouveau un cathéter péridural en cas d'échec 1 d'analgésie à 45 minutes",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u37",
+   "empreinte": "db881f669a02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "échec soit effectuée par un médecin anesthésiste-réanimateur expérimenté",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u38",
+   "empreinte": "3ed71ad8dafb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser une technique avec ponction durale en cas de 2 nouvelle pose à dilatation cervicale avancée",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u39",
+   "empreinte": "4b60d74ad1bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'impact d'une position maternelle spécifique dans le but de corriger une insuffisance",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u40",
+   "empreinte": "727a356413d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'efficacité de l'hypnose et du soutien continu",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u41",
+   "empreinte": "f52bf111fb20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 (page PDF 20) : pose — asepsie (antiseptique coloré), échorepérage si pose difficile, monitorage RCF+FC+PA/5 min si > 30 min, délai HBPM ≥ 12 h / ≥ 24 h (+ « connectique NRFit » non reprise)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "1237f4aae8d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : PRC ou APD/PPD, bolus initial AL ≤ 1 mg/mL ; > T6 + bloc moteur = intrathécal ; > T6 + mosaïque ± C.B.-Horner = sous-dural → arrêt, attente récupération, repose (MAR expérimenté, PRC ou PPD si travail avancé/hyperalgique)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "434d5395e341",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Figure 4 : « SIGNES DE TOXICITÉ AUX AL ± absence de niveau » et « DOULEURS PERSISTANTES / NIVEAU ABSENT > 45 min (mesures correctrices inefficaces) » renvoient par la ligne rouge vers la case « REPOSE »",
+   "explication": "La fiche écrit « → arrêt et réévaluation complète ». Dans l'algorithme, ces deux situations mènent à la repose du cathéter (MAR expérimenté, PRC/PPD si travail avancé). Le reste du bloc (BIP + PCEA, objectif T10 sans bloc moteur, évaluation à 30 min puis toutes les heures) est conforme.",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "e9a125938519",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 4 : insuffisance — < T10 (problème technique, effet volume, repère à la peau) ; latéralisation (effet volume puis retrait 1 cm si échec à 15 min) ; puissance insuffisante (effet concentration puis clonidine ou sufentanil) ; réévaluation 30-45 min",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "441d648e8df4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de recourir à l'analgésie périmédullaire par rapport aux 1 alternatives médicamenteuses de type opioïdes en mode PCA",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u46",
+   "empreinte": "766d5c127e2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'utiliser le rémifentanil en administration intraveineuse, mode autocontrôlé",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u47",
+   "empreinte": "2a764db18c7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "clinique (échelle de sédation, fréquence respiratoire) et paraclinique (SaO2, CO2 expiré)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u48",
+   "empreinte": "080583abdf3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent qu'un supplément d'oxygène soit apporté tout au long AE de la période d'administration de la PCA de rémifentanil",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u49",
+   "empreinte": "045a6be38cbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'utiliser le protoxyde d'azote",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u50",
+   "empreinte": "2b696137379a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

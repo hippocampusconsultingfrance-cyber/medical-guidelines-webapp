@@ -1,0 +1,1015 @@
+{
+ "cle": "blocs_perimedullaires_postop_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "db033b968764",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "f96fb4d55781",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après injection péridurale, la quantité d'AL qui traverse la dure-mère est de l'ordre de 10 %.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u3",
+   "empreinte": "a1b1863d16ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lidocaïne, retirée du marché dans cette indication, est contre-indiquée (grade A).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u4",
+   "empreinte": "a9a14446e50b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe de nombreuses alternatives pour une même efficacité clinique (grade A).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u5",
+   "empreinte": "fef45f07d90e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La bupivacaïne est un mélange racémique. Expérimentalement, c'est la molécule la plus cardiotoxique (grade A).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u6",
+   "empreinte": "7b4e20624527",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "estimé à 0,06 mg par centimètre de taille. L'utilisation de doses plus faibles impose l'association à un adjuvant (grade A).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u7",
+   "empreinte": "d017b574e6b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dant, elle est augmentée en cas de dystocie obstétricale ou en fin de travail où elle est estimée à 0,140 % (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u8",
+   "empreinte": "c508f5486d6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La ropivacaïne, AL de longue durée d'action, est expérimentalement la moins cardiotoxique (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u9",
+   "empreinte": "3bc239ff7ed9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lévobupivacaïne occupe une position intermédiaire entre la bupivacaïne et la ropivacaïne en termes de cardiotoxicité (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u10",
+   "empreinte": "61e38509a469",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les associations d'AL entraînent des résultats cliniques intermédiaires, inférieurs à ceux de la molécule la plus puissante",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u11",
+   "empreinte": "0237b05779ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les opioïdes et les AL ont une action analgésique synergique par voie intrathécale et péridurale (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u12",
+   "empreinte": "1f930fd39637",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permettant de réduire la concentration minimale efficace des AL (MLAC) (grade B).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u13",
+   "empreinte": "86b9420a215d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La morphine, hydrosoluble, a une action plus spécifiquement spinale et un temps de résidence prolongé dans le LCR (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u14",
+   "empreinte": "b4a25f207b2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procure une analgésie d'une durée moyenne de 10 à 12 heures (voire 24 heures), avec un délai d'action plus long que celui des opioïdes liposolubles (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u15",
+   "empreinte": "d8fc3a60e2e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les opioïdes liposolubles ont avant tout une action systémique, bien qu'une action segmentaire, au niveau des ganglions rachidiens, ne puisse être exclue (grade B).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u16",
+   "empreinte": "66d996880e4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "auraient une action segmentaire spinale préférentielle lorsqu'ils sont administrés en bolus et systémique lorsqu'ils sont administrés à débit continu (grade C).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u17",
+   "empreinte": "4caa03dd3ee3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les opiacés liposolubles ont un délai plus rapide et une durée d'action plus courte (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u18",
+   "empreinte": "9314bf934d0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation d'un mélange morphine + opioïde liposoluble + AL permet de réduire les doses de chacun des agents utilisés",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u19",
+   "empreinte": "dd9f1880ce9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "alors qu'il est maximal à 20 minutes pour le fentanyl et le sufentanil, pour une durée de six à huit heures (grade B).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u20",
+   "empreinte": "7d4a4bce4262",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "df2d9d087170",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dose recommandée est de 1 à 4 mg en péridural et de 100 à 300 µg en intrathécal.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u22",
+   "empreinte": "26994729e70d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la voie intrathécale, les doses habituellement recommandées sont de 10 (5–25) µg pour le fentanyl et de 5 (5–10) µg pour le sufentanil.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u23",
+   "empreinte": "b01437ee774d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nausées et vomissements sont plus fréquents avec la morphine qu'avec les morphiniques liposolubles.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u24",
+   "empreinte": "55d08069be33",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "2d7388115f19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'adrénaline diminue le temps d'installation du bloc après l'administration intrathécale d'AL (grade B).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u26",
+   "empreinte": "8c1c64bf18b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de neurotoxicité en fait un complément de choix des morphiniques (grade A).",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u27",
+   "empreinte": "7f1f2d0a350b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La kétamine ne peut être utilisée par voie périmédullaire en raison de la neurotoxicité du chlorobutanol, utilisé comme conservateur (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u28",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "c028089ab71c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limitent donc les doses utilisées à 15 à 75 µg par voie intrathécale et à 4 à 5 µg/ml par voie péridurale.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u30",
+   "empreinte": "40d5ae360d0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La qualité et la fiabilité de l'analgésie péridurale en font une référence à laquelle les autres techniques d'analgésie aspirent.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u31",
+   "empreinte": "1cb27d2d5b91",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "b38cff490b5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'APD associe des AL à faible concentration à un morphinique (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u33",
+   "empreinte": "1b24180b1f91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la zone des dermatomes à bloquer, le plus souvent au niveau thoracique (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u34",
+   "empreinte": "884f30549cb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration des médicaments est adaptée au mieux par le patient lui-même (PCA) (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u35",
+   "empreinte": "c0bd69a0ab27",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "71dfe6422cd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thoracique aux AL, plus ou moins associés à un morphinique, est la technique la plus efficace (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u37",
+   "empreinte": "593e2490e8c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Deux études ont comparé le bloc paravertébral et l'APD thoracique après thoracotomie (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u38",
+   "empreinte": "2d230c4f879f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "complications pulmonaires était diminuée (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u39",
+   "empreinte": "40de225f69ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diminuait l'incidence des troubles du rythme cardiaque (grade C)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u40",
+   "empreinte": "8487c782c2fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et des douleurs chroniques postthoracotomie (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u41",
+   "empreinte": "ad1d8b7839ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procurent une analgésie d'excellente qualité, supérieure à la voie parentérale (grade A)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u42",
+   "empreinte": "cd6ccebc3b06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Seule l'APD diminue la morbidité postopératoire (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u43",
+   "empreinte": "5cdb594b170d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APD diminue la réaction au stress (grade C)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u44",
+   "empreinte": "741fc81cacd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'incidence des troubles du rythme cardiaque (grade B), des complications respiratoires (grade B)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u45",
+   "empreinte": "4671dc0f85b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des complications respiratoires (grade B) et neurologiques (grade B)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u46",
+   "empreinte": "b328eec2f16b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et neurologiques (grade B) et la durée de ventilation postopératoire (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u47",
+   "empreinte": "c902bf2c6d78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et la durée de ventilation postopératoire (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u48",
+   "empreinte": "b7b420bdee19",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "ebfc19f99479",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après chirurgie de l'œsophage, l'APD diminue la douleur postopératoire (grade A)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u50",
+   "empreinte": "c3b4e40a0c8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réaction au stress (grade C) et l'incidence des complications respiratoires (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u51",
+   "empreinte": "31d5f1e76cbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'incidence des complications respiratoires (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u52",
+   "empreinte": "4209f9132c13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permet de réduire la durée de ventilation postopératoire (grade C)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u53",
+   "empreinte": "bab20e75fe1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et la durée totale d'hospitalisation (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u54",
+   "empreinte": "317ca0c4cfa3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procure une analgésie supérieure à la morphine péridurale seule qui elle-même est supérieure ou équivalente à la morphine parentérale (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u55",
+   "empreinte": "f3cc0eb75592",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette association diminue les scores de douleur d'environ 15 mm pendant les 48 premières heures par comparaison à la morphine parentérale (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u56",
+   "empreinte": "93151900cf1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moindre (environ une vingtaine d'heures en l'absence de réinjections) (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u57",
+   "empreinte": "6657b835108a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la glycémie et la tolérance aux sucres sont normales (grade C)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u58",
+   "empreinte": "4841514ee208",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le catabolisme et la consommation d'oxygène sont diminués, le bilan azoté devient positif (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u59",
+   "empreinte": "1e0bbde88a51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mais l'effet sur la fonction rénale reste minime (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u60",
+   "empreinte": "6371e7914d4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diminue l'incidence des épisodes d'ischémie myocardique et des troubles du rythme, par comparaison à une analgésie par voie parentérale (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u61",
+   "empreinte": "fcb9748fd3ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diminuée par l'APD après chirurgie abdominale ou thoracique (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u62",
+   "empreinte": "b8b8a6410603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'oxygénation artérielle (grade A)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u63",
+   "empreinte": "bca6dc0ebfa3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et la mécanique respiratoire (grade C) sont améliorées par l'APD.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u64",
+   "empreinte": "023ba49f9725",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "graves après chirurgie thoracoabdominale majeure (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u65",
+   "empreinte": "c1176eae2e51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle permet en outre une extubation plus précoce (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u66",
+   "empreinte": "68225f82110f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la ponction est au niveau lombaire, la reprise du transit n'est pas accélérée par l'APD (grade C).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u67",
+   "empreinte": "f3ad944d0cf4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supérieure ou égale à 48 heures, accélère la reprise du transit (grade A).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u68",
+   "empreinte": "9778ca841b38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le statut neurologique postopératoire peut-être amélioré (grade B).",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u69",
+   "empreinte": "e6ddd16a1d61",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u70",
+   "empreinte": "a29897a15455",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la particularité des hépatectomies est due aux risques de troubles de l'hémostase postopératoire",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u71",
+   "empreinte": "54dd6b17fc4a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "10480dffea9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une réduction de l'iléus postopératoire, une moindre fatigue et une déambulation plus rapide (grade B).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u73",
+   "empreinte": "e2d99e805ea0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prolongation postopératoire offre un effet analgésique de meilleure qualité que par voie systémique (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u74",
+   "empreinte": "760782d0b7b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après chirurgie de l'aorte abdominale, l'APD est utile pour l'analgésie (grade A)",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u75",
+   "empreinte": "062c367dc17d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et réduit l'incidence des complications respiratoires (grade A)",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u76",
+   "empreinte": "aa7a45e1233a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et la durée de ventilation (grade A).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u77",
+   "empreinte": "c29e45d15286",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n'y a pas d'impact sur les complications cardiovasculaires (grade A).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u78",
+   "empreinte": "cf42cce14b78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Des complications à type d'hématome péridural sont possibles (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u79",
+   "empreinte": "de0f19fdaa33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "a aucun impact sur la mortalité, ni sur les complications cardiaques et respiratoires (grade B).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u80",
+   "empreinte": "e1c7c24e795d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle exerce un effet protecteur sur la thrombose du greffon (grade A).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u81",
+   "empreinte": "2ef32497a41a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation peropératoire est inutile (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u82",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u83",
+   "empreinte": "0874120d9dbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APD est donc potentiellement indiquée pour la chirurgie transpéritonéale comme la cystectomie.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u84",
+   "empreinte": "49ccea57c474",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La rachianalgésie, avec de faibles doses de morphine (< 0,1 mg), est possible.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u85",
+   "empreinte": "932e1ddec590",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le cathéter doit être posé en préopératoire du fait de l'anticoagulation peropératoire ; son utilisation peropératoire n'est pas utile.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u86",
+   "empreinte": "a2946b606c62",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u87",
+   "empreinte": "07838412860a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u88",
+   "empreinte": "a70ec22dbeea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En chirurgie orthopédique, l'utilisation peropératoire de l'APD réduirait le saignement et la thrombose veineuse (efficacité inférieure aux HBPM).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u89",
+   "empreinte": "3717849feb0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'APD postopératoire n'est pas indiquée après arthroplastie totale de hanche (PTH).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u90",
+   "empreinte": "88761904ecb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'amputation de membre, l'APD est utile pour l'analgésie postopératoire immédiate (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u91",
+   "empreinte": "a5489e3308a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas si elle permet une prévention des douleurs de membre fantôme (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u92",
+   "empreinte": "dd047ccacaa4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation pré- et peropératoire est souhaitable (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u93",
+   "empreinte": "a6e8976aeffa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après arthroplastie totale de genou, l'APD postopératoire immédiate est utile (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u94",
+   "empreinte": "3713087de3d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle permet une rééducation plus efficace et réduit la durée de séjour (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u95",
+   "empreinte": "bd6691cca253",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation peropératoire est souhaitable pour limiter la thrombose (grade C).",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u96",
+   "empreinte": "287c996adfdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u97",
+   "empreinte": "e69824f92526",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le bloc fémoral est plus facile et tout aussi efficace. La rachianalgésie est une alternative moins intéressante.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u98",
+   "empreinte": "34eb73183139",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supérieure aux autres techniques d'APO, à l'exception des blocs périphériques en chirurgie orthopédique et du bloc paravertébral en chirurgie thoracique.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u99",
+   "empreinte": "9f909fe10cd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les recommandations reposent sur la réglementation, d'une part, et sur un consensus professionnel d'autre part.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u100",
+   "empreinte": "00fbbeaf3c8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit s'efforcer de soulager les souffrances de son malade, et l'assister moralement",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u101",
+   "empreinte": "d1f4b8f3c05b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toute personne a le droit de recevoir des soins visant à soulager sa douleur",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u102",
+   "empreinte": "b87adb92ec10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chaque établissement de santé doit donc définir dans son projet d'établissement un programme",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u103",
+   "empreinte": "a2c90ac69e74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "injections de médicaments à des fins analgésiques dans des cathéters périduraux et intrathécaux",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u104",
+   "empreinte": "2e1bead5ad68",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u105",
+   "empreinte": "7ad74ae2198f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le mode d'évaluation de la douleur sera adapté au patient (EVA, EVS).",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u106",
+   "empreinte": "63a65594c9c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En fin d'intervention, la prescription est personnalisée, nominative, horodatée et paraphée par le médecin qui a réalisé l'anesthésie.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u107",
+   "empreinte": "07954555064f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u108",
+   "empreinte": "dcdd3890be10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette surveillance est rapprochée dans l'heure qui suit l'installation ou le changement éventuel de dose, puis toutes les deux à quatre heures",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u109",
+   "empreinte": "e156e87f87a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'évaluation des blocs sensitif et moteur (étendue et intensité) doit être réalisée au moins une fois par équipe infirmière.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u110",
+   "empreinte": "ed46a90abbd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l'exception des patients ayant reçu une dose inférieure à 0,2 mg de morphine.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u111",
+   "empreinte": "502b5f9a689e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les feuilles de surveillance doivent comporter les items concernant les niveaux d'analgésie (EVA, EVS, au repos et à la mobilisation) et de sédation",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u112",
+   "empreinte": "6c5542fe4222",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

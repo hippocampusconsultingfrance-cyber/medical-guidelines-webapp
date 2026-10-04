@@ -1,0 +1,1132 @@
+{
+ "cle": "coronarien",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d6614420f09d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "optimisation du traitement médical ou revascularisation coronaire (angioplastie ou pontage chirurgical) avant la chirurgie non cardiaque prévue. Le choix précis du type d’examen à",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u2",
+   "empreinte": "9c1a3cb44910",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode DELPHI. Si tous les experts (sauf un) ont coté la recommandation entre la note 7 et 9, un accord fort est alors",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "9f768d70878a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser de manière répétée dans les 48 premières heures postopératoires, chez le patient",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "189c60c15266",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de réaliser chez le patient à risque de maladie coronaire et opéré d’une intervention",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "67d234040b1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "! risque lié à l’état cardiaque du patient ; ! capacité à effectuer un effort.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "78bdade7b234",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préopératoires de BNP et/ou de NT-proBNP, de troponine, de CRP et/ou de hsCRP pour évaluer le risque",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u7",
+   "empreinte": "2136e04116a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intermédiaire (fréquence d’événements cardiaques périopératoires entre 1 et 5 %) les chirurgies intra- ou rétropéritonéales, thoraciques, carotidiennes, de la tête et du cou, orthopédiques, prostatiques et les chirurgies à fort potentiel hémorragique.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "27660b8dbf0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "clinique $ 2) et opéré d’une intervention de chirurgie non cardiaque à risque intermédiaire ou élevé (GRADE 1+",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "ed6a3517e3af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 point Chirurgie à haut risque définie par une chirurgie vasculaire supra-inguinale, intrathoracique ou intrapéritonéale",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "6a7a296ea388",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Coronaropathie définie par un antécédent d’infarctus du myocarde, un angor clinique, une utilisation de nitrés, une onde Q sur l’ECG ou un test non invasif de la circulation coronaire positif",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "f30fdf357f21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Insuffisance cardiaque définie par un antécédent d’insuffisance cardiaque congestive, d’œdème pulmonaire, une dyspnée nocturne paroxystique, des crépitants bilatéraux ou un galop B3, ou une redistribution vasculaire",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "e2b61a42b93e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 de la source (score de Lee)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "fbb072dfe2e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 de la source (score de Lee)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "3e2829f5a13d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 point Insuffisance rénale chronique définie par une créatinine > 2,0 mg/dL (177 mmol/L)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "9dbb81ee7cc9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’incidence des complications cardiaques majeures après une chirurgie non cardiaque programmée chez des patients de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "2ee27b4b1770",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 Estimation de la capacité à l’effort (adapté de l’échelle de Dukes).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "6f6fc291bccf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2, p. 6 (e10) (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "493512351321",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Gros travaux d’entretien dans la maison Courir sur une courte distance",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "10cfd36ca94c",
+   "verdict": "ecart",
+   "type_ecart": "ajout",
+   "citation": "Tableau 2, p. 6 (e10) (image) : ligne « Modérée 4–7 MET, monter 1 à 2 étages, faire du ménage », colonne « Risque chirurgical estimé » vide",
+   "explication": "Écart mineur : la fiche ajoute « risque chirurgical estimé faible » à la ligne « Modérée » ; dans la source, cette case est vide (« Faible » n'est imprimé que pour « Excellente », « Intermédiaire à élevé » pour « Faible »).",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "5c439cf429da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’interaction entre le type de chirurgie (risque faible, intermédiaire, élevé) et les facteurs de risque cliniques. La",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u21",
+   "empreinte": "f72b60e1225c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2, p. 6 (image) : « Non évaluable ? ? Aucune » ; texte : bonne capacité physique (≥ 4 MET) → chirurgie d'emblée",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "4821faf89a24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces examens ne se justifient que chez les patients à haut risque clinique périopératoire (plus de deux facteurs de risque",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "7613e9af79b5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "908c4de9b6a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "complémentaires spécialisés (échocardiographie dobutamine et scintigraphie thallium persantine) lorsque les résultats de ces examens ne sont pas susceptibles de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "d41da3232cbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systématique, quelle que soit la chirurgie, un examen de dépistage de la coronaropathie chez un patient",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "d7760c3c299b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un patient coronarien, de refaire un ECG ou une autre exploration, en l’absence d’événement intercurrent ou",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u27",
+   "empreinte": "1ec3bc0f1281",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une chirurgie vasculaire artérielle pour maladie athéromateuse et présentant des facteurs de risque",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u28",
+   "empreinte": "0ce5ba4ace60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vasculaire pour maladie athéromateuse même lorsqu’ils n’ont pas de facteurs de risque dans le score de Lee, afin",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u29",
+   "empreinte": "6efc69fd8ae1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutes les études sont en faveur de la pratique préopératoire d’un ECG 12 dérivations de repos chez les patients ayant plus d’un facteur de risque du score de Lee (une histoire",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u30",
+   "empreinte": "09056e94c0c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de réaliser systématiquement un ECG pour une chirurgie à risque faible (GRADE 1\"",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u31",
+   "empreinte": "18d1d897fea3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "périopératoire (accompagné de V3R, V4R, V7-V9) chez tout patient ayant une symptomatologie cardiologique",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "aad445c78761",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 3 Indication d’un ECG préopératoire en fonction du risque lié au patient et du",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u33",
+   "empreinte": "98a9422273e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’interaction entre le type de chirurgie (risque faible, intermédiaire, élevé) et les facteurs de risque cliniques. La",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "f4f27399a967",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’interaction entre le type de chirurgie (risque faible, intermédiaire, élevé) et les facteurs de risque cliniques. La",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "35904a39c866",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’interaction entre le type de chirurgie (risque faible, intermédiaire, élevé) et les facteurs de risque cliniques. La",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u36",
+   "empreinte": "f3b2511fd42c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "ed035bbd0927",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de prescrire un Holter ECG pour la prédiction du risque d’événement cardiaque périopératoire (GRADE 1\" Accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u38",
+   "empreinte": "83439b5af8aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de réaliser un ECG d’effort, en particulier si celui-ci risque d’être sous-maximal (< 85 %",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u39",
+   "empreinte": "c717ffae6be3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de prescrire une échocardiographie de repos pour évaluer le risque coronaire périopératoire d’un patient (GRADE 1\" Accord fort).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u40",
+   "empreinte": "4a7451066bc3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stress, si le niveau de risque impose un dépistage et si cet examen peut être réalisé et interprété selon les",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u41",
+   "empreinte": "91a0f42579d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de rediscuter l’indication de la chirurgie et de proposer un complément d’investigation si",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u42",
+   "empreinte": "212d446958ed",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "19a2a2f95f6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "niveau de risque impose un dépistage et si cet examen peut être réalisé et interprété dans le centre en question",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u44",
+   "empreinte": "d70855e951dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’investigation, en tenant compte du contexte chirurgical, si la scintigraphie retrouve un défect perfusionnel",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u45",
+   "empreinte": "0bf245ee7e51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de discuter l’indication d’un test d’ischémie (échocardiographie de stress ou scintigraphie)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u46",
+   "empreinte": "7fef63c41178",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’examen propose à l’équipe d’anesthésie- réanimation des éléments de la prise en charge (optimisation du",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u47",
+   "empreinte": "dbc56ff3fc50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "première intention, une coronarographie comme examen complémentaire pour prédire le risque de complication",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u48",
+   "empreinte": "3cc34124f1da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cardiaque soit le fruit d’une décision collégiale dont l’argumentation sera tracée dans le dossier (GRADE 1+",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u49",
+   "empreinte": "ae38a808c736",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dépister le risque coronaire d’un patient pendant la période préopératoire (GRADE 1\" Accord fort).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u50",
+   "empreinte": "c4c16bd560a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "place, associé à une mauvaise observance ou très coûteux, celuici peut être intégré dans une recommandation optionnelle (GRADE 2) même s’il a été évalué avec des études ayant une",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u51",
+   "empreinte": "0576b9e92ba9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Revascularisation myocardique préopératoire Indications de la revascularisation préopératoire",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u52",
+   "empreinte": "914b7148402a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La décision de revascularisation myocardique avant une chirurgie non cardiaque doit être consensuelle entre les",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u53",
+   "empreinte": "7086a1ecd2c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La revascularisation myocardique en préalable à un geste de chirurgie non cardiaque doit rester exceptionnelle",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u54",
+   "empreinte": "f5b97b9eb504",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "# la survenue d’un syndrome coronaire aigu préo- pératoire, avec ou sans sus-décalage du segment ST",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u55",
+   "empreinte": "ebe579d06fb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "# l’existence d’une coronaropathie stable avec statut anatomique ou ischémique mettant en jeu un",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u56",
+   "empreinte": "66967a429fc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "# l’existence d’une atteinte du tronc commun coronaire gauche ou des trois troncs coronaires si le patient est",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u57",
+   "empreinte": "f7851afa59e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "# l’existence d’une occlusion d’un tronc coronaire s’intégrant dans un statut anatomique général",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u58",
+   "empreinte": "499e365e18a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors de ces situations, il n’est pas recommandé de réaliser une revascularisation, notamment en cas d’occlusion artérielle chronique associée à une ischémie et/ou",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u59",
+   "empreinte": "5c80982119b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "onstration du bénéfice de la revascularisation préopératoire (GRADE 1\" Accord fort). Choix de la technique de revascularisation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u60",
+   "empreinte": "cbbba25b322e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La chirurgie de pontage aortocoronaire est la technique de revascularisation de référence avant une chirurgie",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u61",
+   "empreinte": "6fbe678423fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’angioplastie coronaire préopératoire n’est pas recommandée dans la prévention des événements ischémiques périopératoires en dehors des situations cliniques",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u62",
+   "empreinte": "7e0f42d1c37b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisée avant une chirurgie non cardiaque (Accord fort) : ! il est recommandé de mettre en place une endoprothèse",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u63",
+   "empreinte": "b0356ec527ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "! la chirurgie après mise en place d’une endoprothèse nue doit être réalisée au minimum six semaines plus tard,",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u64",
+   "empreinte": "d0b391be9a09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "endoprothèse recouverte, car elle impose une double antiagrégation plaquettaire prolongée (au moins un an,",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u65",
+   "empreinte": "6f4538e88e8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "! de chirurgie ou geste à très faible risque hémorragique pouvant être réalisée sous double antiagrégation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u66",
+   "empreinte": "2ec444267835",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conduite à tenir en ce qui concerne le traitement périopératoire par antiplaquettaire doit être discutée et",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u67",
+   "empreinte": "0e893690ee33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour tout traitement par un bêtabloquant, la posologie doit être ajustée pour obtenir une cible de fréquence",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u68",
+   "empreinte": "d49bc6831efb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "périopératoire un traitement bêtabloquant lorsqu’il est prescrit pour une insuffisance coronaire, associée ou non à",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u69",
+   "empreinte": "d5f8498c1cc7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bêtabloquant est recommandée chez les patients ayant une insuffisance coronaire clinique ou des signes",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u70",
+   "empreinte": "83da0dfdf2bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la chirurgie à risque intermédiaire ou à risque élevé, l’âge à partir duquel l’ECG peut être recommandé est supérieur",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u71",
+   "empreinte": "9b989a040faa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de réaliser systématiquement un ECG pour une chirurgie à risque faible (GRADE 1\"",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u72",
+   "empreinte": "c55ca8447f02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients stratifiés à faible risque, la mise en route préopératoire d’un traitement bêtabloquant n’est pas",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u73",
+   "empreinte": "2d1a2e97618d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsqu’un traitement est débuté en préopératoire, un agent cardiosélectif sans activité sympathique intrinsèque",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u74",
+   "empreinte": "3f0ff227a9d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une cible de fréquence cardiaque adaptée. Le traitement doit être administré lors de la prémédication, à la dose habituelle (GRADE 1+ Accord fort).",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u75",
+   "empreinte": "8b1117205fbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de traiter une hypotension artérielle et/ou une bradycardie par les mesures appropriées.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u76",
+   "empreinte": "9e3eaf1637d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(\"28 à \"35 %) et le risque d’ischémie myocardique (\"64 %), mais restent sans effet sur la mortalité CV. L’étude POISE a",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u77",
+   "empreinte": "94526703e5a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bien que les alpha 2-agonistes réduisent le risque de décès et d’IDM postopératoire chez les coronariens opérés de",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u78",
+   "empreinte": "9ea260562bb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé de prescrire une échocardiographie de repos pour évaluer le risque coronaire périopératoire d’un patient (GRADE 1\" Accord fort).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u79",
+   "empreinte": "b625cccec737",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au patient, il est recommandé de le débuter avant une chirurgie vasculaire, si possible au moins une semaine",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u80",
+   "empreinte": "8edab09fdfe2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les patients devant subir une chirurgie vasculaire artérielle pourraient bénéficier de l’introduction d’un traitement par",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u81",
+   "empreinte": "d594ba33a522",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chronique. Celui-ci doit être administré le soir précédant l’intervention et repris le soir de l’intervention (GRADE 1+",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u82",
+   "empreinte": "ecb2129eaed1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’y a pas d’indication ni de bénéfice démontré à la prescription périopératoire d’un hypolipémiant autre",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u83",
+   "empreinte": "0179dbe3e1b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mise en place d’une endoprothèse recouverte dans les 12 mois précédents implique la poursuite de la double",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u84",
+   "empreinte": "4ca17c9d5b53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mise en place d’une endoprothèse nue implique une double antiagrégation pendant quatre à six semaines",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u85",
+   "empreinte": "7eecd1952064",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La survenue d’un syndrome coronaire aigu implique si possible une double antiagrégation pendant un an. Dans",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u86",
+   "empreinte": "ef33b2932256",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d’arrêt d’un AAP (aspirine, clopidogrel), il est recommandé de réaliser la chirurgie après cinq jours",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u87",
+   "empreinte": "4307d8ab1303",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de poursuivre le traitement, sauf en cas de contre-indication liée à un très haut risque",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u88",
+   "empreinte": "9c6f45823481",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la chirurgie ne peut pas être réalisée sous ce médicament, il est recommandé de le remplacer par de l’aspirine, en",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u89",
+   "empreinte": "aa08f58d0b49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de conserver au moins un AAP, idéalement l’aspirine, sauf contre-indication liée à un risque",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u90",
+   "empreinte": "e4df9aee74d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thiénopyridine pour diminuer le risque ischémique. Après la chirurgie et en concertation avec le chirurgien, il",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u91",
+   "empreinte": "0b4826fef6d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 Gestion des agents antiplaquettaires (AAP) dans la période périopératoire.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u92",
+   "empreinte": "f1834c4ac8f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque hémorragique est élevé, intermédiaire ou faible : ce risque est défini a priori lorsque les sociétés savantes ont déterminé une liste de gestes réalisables sous agents antiplaquettaires. En l’absence d’une telle liste, le risque hémorragique doit être jugé acceptable ou inacceptable face au risque lié à l’arrêt des agents",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u93",
+   "empreinte": "19bfcc5dbafc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(b) Réaliser le geste sous au moins un agent antiplaquettaire (considérer que le sur-risque",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u94",
+   "empreinte": "d983266db448",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "! de chirurgie ou geste à très faible risque hémorragique pouvant être réalisée sous double antiagrégation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u95",
+   "empreinte": "94a3295e1a77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque hémorragique est élevé, intermédiaire ou faible : ce risque est défini a priori lorsque les sociétés savantes ont déterminé une liste de gestes réalisables sous agents antiplaquettaires. En l’absence d’une telle liste, le risque hémorragique doit être jugé acceptable ou inacceptable face au risque lié à l’arrêt des agents",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u96",
+   "empreinte": "e58fc639d808",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "! de chirurgie ou geste à très faible risque hémorragique pouvant être réalisée sous double antiagrégation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u97",
+   "empreinte": "873813c6a926",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque hémorragique est élevé, intermédiaire ou faible : ce risque est défini a priori lorsque les sociétés savantes ont déterminé une liste de gestes réalisables sous agents antiplaquettaires. En l’absence d’une telle liste, le risque hémorragique doit être jugé acceptable ou inacceptable face au risque lié à l’arrêt des agents",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u98",
+   "empreinte": "729a7698daec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antagoniste du récepteur de l’angiotensine 2 (ARA2), dérivés nitrés, inhibiteur calcique.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u99",
+   "empreinte": "66eeac8580dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort). Si le traitement est maintenu, le risque d’hypotension artérielle en cas de chirurgie majeure ou de rachianesthésie doit alors être pris en compte.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u100",
+   "empreinte": "b4035cebf431",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’interrompre un IEC ou un ARA2 au moins 12 heures avant une intervention lorsque ceux-ci",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u101",
+   "empreinte": "eea95046b5b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cardiaques périopératoires de dérivés nitrés, quelle que soit la voie d’administration, n’est pas recommandée",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u102",
+   "empreinte": "a19f9a64cb90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas recommandé d’administrer un inhibiteur calcique pour la prévention des complications cardiaques",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u103",
+   "empreinte": "d16ef91c4077",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précédemment une angioplastie coronaire. La recommandation est la suivante : lorsque cette chirurgie doit être réalisée dans le mois après implantation d’un stent nu, ou dans",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u104",
+   "empreinte": "c4f330bf1376",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "e23 Fig. 1. Algorithme général de prise en charge du coronarien avant chirurgie non cardiaque.Pour explications détaillées et définitions, voir texte.* Score de Lee",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u105",
+   "empreinte": "78a4cb9d5f14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 19 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u106",
+   "empreinte": "a926be58df83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 19 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u107",
+   "empreinte": "c949da4dfd4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 19 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u108",
+   "empreinte": "179270c73475",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Figure 1, p. 19 (e23) (image) : risque intermédiaire/élevé, patient stable → score de Lee d'abord ; seuls les patients à Lee ≥ 2 (vasculaire) ou ≥ 3 (non vasculaire) passent ensuite par la capacité fonctionnelle (MET) : bonne → chirurgie ; mauvaise → tests d'ischémie",
+   "explication": "L'ordre des étapes est inversé. Dans la figure, on stratifie d'abord par le score de Lee, puis on évalue les MET seulement si le Lee est élevé. La fiche fait l'inverse (MET d'abord, puis Lee si < 4 MET). Le résultat diffère dans certains cas (voir u109).",
+   "page": 0
+  },
+  {
+   "id": "u109",
+   "empreinte": "74718f0cb786",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Figure 1, p. 19 (image) : « Score de Lee clinique 0-1 (vasculaire) ou 0-2 (non vasculaire) » → chirurgie sans examen spécialisé",
+   "explication": "La fiche écrit « 0-1 facteur de Lee » sans distinguer vasculaire / non vasculaire. Elle omet qu'en chirurgie non vasculaire un score de 2 permet d'opérer sans examen ; avec la fiche, ce patient (Lee 2, non vasculaire, < 4 MET) ne relève d'aucune branche.",
+   "page": 0
+  },
+  {
+   "id": "u110",
+   "empreinte": "45d2fec4e41d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 19 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u111",
+   "empreinte": "9e7c7e58016e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1, p. 19 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u112",
+   "empreinte": "82c2ef8d5c8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proposer une prise en charge adaptée, médicamenteuse et Fig. 2. Gestion du traitement antiagrégant plaquettaire après angioplastie préalable à une chirurgie non cardiaque.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u113",
+   "empreinte": "f7e87364abf6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "15 jours après une angioplastie, sinon le risque d’évolution « catastrophique » est élevé ; si cette chirurgie programmée est",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u114",
+   "empreinte": "7c1f37c1b079",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ballon simple pourrait être pratiquée. La chirurgie non cardiaque peut être pratiquée sous monothérapie antiagrégante 14 à 28 jours après l’angioplastie. Cela correspond",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u115",
+   "empreinte": "d0d99a4b213f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antiagrégant double pour quatre semaines ; la chirurgie est réalisée une semaine à dix jours plus tard. L’utilisation des",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u116",
+   "empreinte": "2680c62021e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stents actifs est contre-indiquée chez des patients pour lesquels une chirurgie non cardiaque est programmée dans l’année qui",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u117",
+   "empreinte": "130c772d69a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la réaliser sous l’association clopidogrel–aspirine, même après angioplastie au ballon ou au stent nu.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u118",
+   "empreinte": "4a6c32289596",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la réaliser sous l’association clopidogrel–aspirine, même après angioplastie au ballon ou au stent nu.",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u119",
+   "empreinte": "f68b31cf4e8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie non cardiaque peut être considéré à risque intermédiaire ou élevé (selon le nombre de facteurs cumulés)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u120",
+   "empreinte": "ef2d57c5306d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "présentent un syndrome coronarien aigu ou un angor sévère de classe 3 ou 4 (selon la classification canadienne, Annexe 1). La",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u121",
+   "empreinte": "73c1f688d32e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les efforts physiques de la vie courante (par exemple marcher ou monter les escaliers) n’entraînent pas d’angor. L’angine de poitrine n’apparaît que lors d’efforts intenses,",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u122",
+   "empreinte": "5dc4c359c9f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en côte, notamment après les repas, au froid ou à l’occasion d’une émotion, au primo décubitus, ou encore à vitesse habituelle à la marche de plus de 2 blocs, où après",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u123",
+   "empreinte": "f4cd4144c865",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une limitation marquée pour les efforts de la vie courante. Ainsi l’angine de poitrine apparaît à un ou 2 blocs de marche à plat, ou à un étage de montée des",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u124",
+   "empreinte": "564a0a29d46d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Impossibilité de réaliser tout effort physique sans l’apparition de l’angine de poitrine. Cette angine de poitrine peut apparaître même au repos",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u125",
+   "empreinte": "b4d866de47f9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,331 @@
+{
+ "cle": "alr_pediatrique_2026",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "86ce7d86b3f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le Conseil d'Administration de la SFAR le 21/05/2026 et le Conseil d'Administration de l'ADARPEF le",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "d562046125f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser l'échoguidage pour améliorer l'efficacité analgésique de l'anesthésie locorégionale. GRADE 1",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u3",
+   "empreinte": "34aaabcc5746",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser l'échoguidage pour améliorer la sécurité du geste (faciliter sa réalisation et réduire ses complications) GRADE 2",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u4",
+   "empreinte": "19dc4f170e36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concernant l'utilisation de l'échographie pour réaliser une anesthésie péridurale par voie lombaire ou thoracique, ou une rachianesthésie chez l'enfant.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u5",
+   "empreinte": "c9c318dccb09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser la clonidine ou la dexmédétomidine par voie locorégionale à la posologie de 1µg/kg",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u6",
+   "empreinte": "5f831ae9f495",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'efficacité et la sécurité de l'association d'un agent alpha-2 agoniste administré par voie locorégionale avec un agent de la même classe pharmacologique",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u7",
+   "empreinte": "159a478f4ec4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'utiliser la dexaméthasone par voie intraveineuse lorsqu'une efficacité analgésique prolongée est souhaitée. GRADE 2",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u8",
+   "empreinte": "deb705187e0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(avec un maximum de 0,5 mg/kg et une dose totale plafonnée à 10 mg)",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u9",
+   "empreinte": "c0d81dbb558d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune donnée pédiatrique ne permet de justifier ou de contre-indiquer l'association de la dexaméthasone avec un agoniste alpha-2",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u10",
+   "empreinte": "0b873b5ba615",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser une anesthésie locorégionale pour améliorer l'analgésie périopératoire. GRADE 1",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u11",
+   "empreinte": "16bd050bd905",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier le bloc maxillaire par voie suprazygomatique ou le bloc infraorbitaire",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u12",
+   "empreinte": "d171dec4d2f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré d'une fente palatine ou labiopalatine, les experts suggèrent de",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u13",
+   "empreinte": "3c556fc8d981",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser un bloc du scalp ou une infiltration d'anesthésiques locaux pour améliorer l'analgésie périopératoire. GRADE 2",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "8b8c5eddc35f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré d'une chirurgie thoracique, il est recommandé de réaliser une anesthésie locorégionale pour améliorer l'analgésie périopératoire. GRADE 2",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u15",
+   "empreinte": "5ba4f0f742f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier l'anesthésie péridurale ou le bloc paravertébral",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u16",
+   "empreinte": "85ebd396bab8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré d'une chirurgie thoracique par thoracoscopie, les experts suggèrent de privilégier le bloc paravertébral",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u17",
+   "empreinte": "b5a7f630b72b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en complément d'un protocole d'analgésie multimodale pour limiter l'apparition de douleur chronique postopératoire. AVIS D'EXPERTS",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u18",
+   "empreinte": "778945e13a00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser une injection de morphine par voie intrathécale pour améliorer l'analgésie des premières 24h postopératoires. GRADE 1",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u19",
+   "empreinte": "82008d606015",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent une posologie de 3 à 5 µg/kg de morphine intrathécale, ne dépassant pas 250 µg",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u20",
+   "empreinte": "2de9df8eafa4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser une anesthésie péridurale si l'objectif est d'assurer l'analgésie locorégionale postopératoire au-delà des premières 24 heures.",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u21",
+   "empreinte": "e2707e9607c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser un bloc du plan des muscles érecteurs du rachis",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u22",
+   "empreinte": "2e7b6a0ff181",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concernant l'association de l'injection de morphine intrathécale et l'anesthésie locorégionale pour améliorer l'analgésie au-delà des premières 24 heures postopératoires.",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u23",
+   "empreinte": "341cb4d6e6f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "associée ou non à une anesthésie locorégionale, en complément d'un protocole d'analgésie multimodale",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u24",
+   "empreinte": "c99ce1b1d3e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré de chirurgie abdominale profonde, il est recommandé de réaliser",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u25",
+   "empreinte": "adb1f1050d12",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de choisir l'anesthésie locorégionale en fonction du type de chirurgie selon la fiche pratique 2",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u26",
+   "empreinte": "46c00b3762cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré d'une chirurgie abdominale pariétale, il est recommandé de",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u27",
+   "empreinte": "dde225f67b0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bloc du muscle carré des lombes ou d'un bloc du plan abdominal transverse postérieur ou d'un bloc ilio inguinal ilio hypogastrique",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u28",
+   "empreinte": "c343e4adbd52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier la réalisation d'un bloc de la gaine des muscles grands droits",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u29",
+   "empreinte": "ff9f0f3c82b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'ancien prématuré opéré d'une chirurgie de hernie inguinale avant 60 semaines",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u30",
+   "empreinte": "6b0ec8eb849e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré d'une chirurgie des organes génitaux externes, il est recommandé de",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u31",
+   "empreinte": "c65b4ef95aa1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré de posthectomie, les experts suggèrent de réaliser un bloc pénien ou",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u32",
+   "empreinte": "ffd2f24b6f30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de réaliser un bloc pudendal pour améliorer l'analgésie périopératoire.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u33",
+   "empreinte": "48d1634bb40d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant opéré d'une chirurgie de la hanche, il est recommandé de réaliser une",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u34",
+   "empreinte": "2bd75c13c93f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de privilégier l'analgésie péridurale lombaire pour améliorer l'analgésie périopératoire.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u35",
+   "empreinte": "e9f1704f8a06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la littérature ne permet pas de privilégier une technique d'anesthésie locorégionale plutôt qu'une autre.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u36",
+   "empreinte": "3fb117fcc790",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plusieurs amendements, un accord fort a été obtenu pour 34 recommandations.",
+   "explication": "",
+   "page": 4
+  }
+ ]
+}

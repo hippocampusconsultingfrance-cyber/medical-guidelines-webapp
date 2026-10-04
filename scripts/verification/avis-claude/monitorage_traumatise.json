@@ -1,0 +1,610 @@
+{
+ "cle": "monitorage_traumatise",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "aec7a93be992",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette conférence d’experts s’adresse à l’ensemble des médecins exerçant en médecine",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "406c95db9639",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hospitalière la plus adaptée. L’analyse de la littérature montre que 20% des patients décédés",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u3",
+   "empreinte": "4e0df879090a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sur le plan clinique. Seule la mise en place systématique d’un oxymètre de pouls permet de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "7c6692df9c01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ventilation sont optimisés par l’utilisation de la capnographie (Grade D)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "ca52aafa9524",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réalisation de gestes potentiellement délétères comme un drainage thoracique iatrogène. La",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "2f25b405efd6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "douloureuse par les échelles d’autoévaluation (échelle visuelle analogique ou échelle",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u7",
+   "empreinte": "ae60b286de65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance électrocardioscopique est indispensable (Grade D)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "7eb4297702fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ECG est recommandée en cas de traumatisme grave (Grade E)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "3493fef48802",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’utilisation d’un brassard de taille adaptée au bras du patient et son positionnement correct",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "6390ad2d9dd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "elle n’est pas fiable en cas d’hypotension, de frissons, d’arythmie, de mobilisation du patient",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "b79d25631300",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une mesure fiable et continue même en cas d’hypotension sévère ou de mobilisation du",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "c40f5b16ee8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du cathéter est réalisée sur un seul site artériel et dans un délai maximal de 10 min (Grade D)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "f1e5302fa640",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "apprentissage préalable et un entraînement régulier de toute l’équipe sont indispensables pour",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "b48a5dcf1aec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il permet d’améliorer le triage des patients en cas de victimes multiples (Grade D)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u15",
+   "empreinte": "3bec750d242f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "technique se situant entre 20 et 50 (Grade D)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "2763e158ebd8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fréquente chez le traumatisé grave, est associée à une forte mortalité (grade C)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "a7997cfb2311",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "son accessibilité difficile, la voie rectale est peu utilisée (Grade E)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "343db0bfb39e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "E). En cas d’hypothermie majeure la voie oesophagienne est contre-indiquée en raison des",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "7758708eec67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la température buccale ou axillaire, trop influencée par les conditions environnantes, doit être",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "60a214ee29a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez le traumatisé crânien grave, l’utilisation d’une hypothermie thérapeutique reste débattu",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "469e5a69d807",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permet une détection plus précoce et plus fiable de l’hypoxémie par rapport à l’évaluation",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u22",
+   "empreinte": "342af7009c6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prennent en compte les valeurs de SpO2, notamment chez le patient traumatisé (Grade E)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u23",
+   "empreinte": "e276be78a521",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des épisodes d’hypoxémie sévère (Grade E)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u24",
+   "empreinte": "b594f88b3d88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pronostique de gravité en traumatologie, permettant d’intégrer ce paramètre dans le triage des",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "a84618e0a5c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "constante pour un patient donné. Un seuil de SpO2 au moins égal à 94 % doit donc être ciblé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u26",
+   "empreinte": "1a31386596b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trachéales liées à l’intubation (Grade B)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u27",
+   "empreinte": "635090fdbc63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maximale et minimale, ainsi que celles de spirométrie (Grade E)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u28",
+   "empreinte": "7f61633f463e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réalisation de l’intubation trachéale (Grade D). C’est la méthode de référence pour détecter",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u29",
+   "empreinte": "edf94a89c07d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est souhaitable (Grade E). La capnographie permet d’optimiser rapidement et de façon non",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u30",
+   "empreinte": "4636ea082a0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "invasive la ventilation en préhospitalier (Grade B)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u31",
+   "empreinte": "d602ba15ad5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ventilé, mais les limites de la technique doivent être connues (Grade E)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u32",
+   "empreinte": "4e52cff19520",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorage doit être complété par une mesure des gaz du sang (GDS) dès que possible (Grade",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u33",
+   "empreinte": "7cfdad4526a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réanimation en cas d’arrêt cardiaque (Grade D)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u34",
+   "empreinte": "daeaee3f2557",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "volume expiré indique les volumes réellement reçus par le patient et non ceux réglés sur le",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u35",
+   "empreinte": "7822a4d00858",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ACSOS passe avant tout par la prévention et le traitement des épisodes d’hypotension et",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u36",
+   "empreinte": "b743bf462a64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’hypoxie (Grade D). Le maintien de la PaCO2 entre 35 et 40 mmHg (Grade B) et le maintien",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u37",
+   "empreinte": "01ad4dea9852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’osmolarité plasmatique sont également recommandés (Grade E)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u38",
+   "empreinte": "ec9f5aecf263",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "actuellement utilisée pour le traitement et le suivi thérapeutique en intrahospitalier (Grade D)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u39",
+   "empreinte": "01c92ce6a139",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "graves ne doit s’envisager que dans le cadre de la recherche",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u40",
+   "empreinte": "4a4f3fcd6352",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hémocue® est préférable par rapport à la mesure de l’hématocrite par microméthode (Grade",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u41",
+   "empreinte": "455154205141",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la mesure de la PETCO2 (Grade D)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u42",
+   "empreinte": "e19301c7617d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est susceptible d’entraîner des adaptations thérapeutiques. Le dosage de la glycémie et de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u43",
+   "empreinte": "3919277bb954",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "devant une instabilité hémodynamique, une échographie abdominale et pleurale est une aide à",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u44",
+   "empreinte": "ced78ca09819",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "capnographie est indispensable (Grade B)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u45",
+   "empreinte": "03cfc567e54d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fonction du contrôle gazométrique effectué sous ventilation par le respirateur de transport",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u46",
+   "empreinte": "09325ab90f6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "crânien grave et/ou une hémorragie (Grade E)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u47",
+   "empreinte": "a1a6ebfd6cdb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans ce contexte de traumatisme grave, l’équipement comprend au minimum un",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u48",
+   "empreinte": "ba03e6b6091b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(RCF) est l’élément clé de la surveillance de la vitalité fœtale (Grade C)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u49",
+   "empreinte": "6a560855ccee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préhospitalier est faisable (Grade D) et souhaitable (Grade E)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u50",
+   "empreinte": "ccf0d101e733",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préhospitalier est faisable (Grade D) et souhaitable (Grade E)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u51",
+   "empreinte": "3eb978d9f431",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’oxymétrie pulsée et de la capnographie est recommandée pour tous les enfants, et nécessite",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u52",
+   "empreinte": "f75dc98f0ee1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pressions de crête, et de la spirométrie expirée est souhaitable (Grade E)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u53",
+   "empreinte": "23ca2f5e9387",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trachéales ischémiques (Grade D)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u54",
+   "empreinte": "1943767602b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "corporelle, la concentration en hémoglobine, la glycémie et l’intensité de la douleur sur une",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u55",
+   "empreinte": "a02802ab871b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traumatisme est la première cause de mortalité maternelle d’origine non obstétricale",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u56",
+   "empreinte": "a3d623744861",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorage de la température doit donc être systématique (Grade E)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u57",
+   "empreinte": "1736f2492fed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le patient n’est pas en arrêt circulatoire, le site de mesure privilégié en terrain périlleux est le",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u58",
+   "empreinte": "2e9e238bb75a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "extracorporelle de réchauffement (Grade D)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u59",
+   "empreinte": "97ab72e77112",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "s’avérer utile bien que la mesure de la SpO2 dans ces conditions soit soumise à de nombreux",
+   "explication": "La source dit que l'oxymètre « peut s'avérer utile » et que la dotation « pourra être complétée » d'un mini-tensiomètre et d'un mini-cardioscope/DSA ; la fiche parle d'une « dotation minimale », plus impérative que le texte.",
+   "page": 14
+  },
+  {
+   "id": "u60",
+   "empreinte": "ad9c5cc38115",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "monitorage employés dans ces conditions devront être dotés d’alarmes sonores, d’une",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u61",
+   "empreinte": "9911ff8ec70e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préférentiellement réalisé à l’aide d’un brassard automatique (Grade E)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u62",
+   "empreinte": "76ba753c017f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’utilisation d’indicateurs colorimétriques et/ou par un test à la seringue (Grade D)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u63",
+   "empreinte": "4851bf1ed171",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "épanchement pleural ou péritonéal (Grade D)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u64",
+   "empreinte": "a2208db04ba7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avoir un intérêt afin d’évacuer ces patients en priorité (Grade E)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u65",
+   "empreinte": "71ef32355800",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La principale préoccupation des interventions en ambiance nucléaire, radiologique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u66",
+   "empreinte": "478d8edcd938",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "constante pour un patient donné. Un seuil de SpO2 au moins égal à 94 % doit donc être ciblé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u67",
+   "empreinte": "0f260e2bc6d3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

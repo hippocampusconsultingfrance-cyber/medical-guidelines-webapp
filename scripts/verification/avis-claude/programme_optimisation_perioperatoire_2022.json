@@ -1,0 +1,313 @@
+{
+ "cle": "programme_optimisation_perioperatoire_2022",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "88228ebd0dd2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "niveau de preuve élevé (16 GRADE 1+ et 3 GRADE 1-), 10 ont un niveau de preuve faible (10",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "46ceb5eaf9ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place et d'appliquer un programme d'optimisation",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "dd4ca856704b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concernant la place de la médecine de ville dans les périodes pré et postopératoire d'un programme d'optimisation périopératoire.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u4",
+   "empreinte": "0c9998886b5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient effectués par équipe pluriprofessionnelle, avec du temps dédié pour la coordination du parcours patient.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "dd52c3a212ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'inclure tous les patients dans un programme d'optimisation",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u6",
+   "empreinte": "2d372ba5c319",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de mettre en œuvre un programme de préhabilitation avant chirurgie",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u7",
+   "empreinte": "93f1e03621ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jusqu'à 2 heures avant la chirurgie pour réduire l'anxiété préopératoire et la durée de séjour. GRADE 1+",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u8",
+   "empreinte": "94058252b4cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de prescrire systématiquement une prémédication sédative",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u9",
+   "empreinte": "6f9d11256c72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'admettre les patients le jour de l'intervention pour",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u10",
+   "empreinte": "71e0c989632f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de mettre en place un programme de gestion",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u11",
+   "empreinte": "90ae3b86072e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de privilégier une modalité d'anesthésie générale",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u12",
+   "empreinte": "cd0e15ec083f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de privilégier un type d'anesthésie (anesthésie locorégionale",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u13",
+   "empreinte": "c671cda834cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une pression expiratoire positive (PEP) d'au moins 5 cmH2O et des manœuvres de recrutement alvéolaire itératives",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u14",
+   "empreinte": "a6538af15ae7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer des anesthésiques locaux par voie péri-nerveuse afin de réduire la survenue de complications postopératoires en chirurgie des membres. GRADE 1+",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u15",
+   "empreinte": "a640cf98f609",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser une analgésie locorégionale après une chirurgie thoracique ou abdominale majeure (y compris vasculaire) par voie ouverte",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u16",
+   "empreinte": "9b90114bc131",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une chirurgie pariétale thoraco-abdominopelvienne ou une chirurgie rachidienne, afin de réduire l'incidence des complications postopératoires. GRADE 2+",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u17",
+   "empreinte": "a097079962b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser la lidocaïne par voie intraveineuse en",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u18",
+   "empreinte": "128006bb7cf5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'optimiser les apports liquidiens peropératoires en",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u19",
+   "empreinte": "3955d6334c0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser un monitorage de la profondeur",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u20",
+   "empreinte": "4b67299e184c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne permet pas d'émettre de recommandation concernant les moniteurs d'analgésie.",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u21",
+   "empreinte": "19a0b6f60ea0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de lutter contre l'hypothermie péri-opératoire afin de diminuer la",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u22",
+   "empreinte": "780a65b8234c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place un protocole de prévention des nausées et",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u23",
+   "empreinte": "bbc87c4169f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer de la dexaméthasone intraveineuse à la dose de 4 ou 8 mg lors de chaque anesthésie générale",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u24",
+   "empreinte": "ebaa28eeb5aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de chirurgie majeure et/ou à risque hémorragique afin de réduire les complications hémorragiques",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u25",
+   "empreinte": "4aa96147c1a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer une antibioprophylaxie en respectant les indications",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u26",
+   "empreinte": "c73a6cc26ff1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de monitorer la curarisation et de respecter les recommandations",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u27",
+   "empreinte": "91f0ddc21b69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser une analgésie multimodale qui associe des antalgiques non",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u28",
+   "empreinte": "887e990e1b4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces protocoles incluent la déambulation précoce, la thromboprophylaxie médicamenteuse et les compressions pneumatiques intermittentes",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u29",
+   "empreinte": "375bfec934b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "notamment la reprise des boissons, la déambulation, et le retrait des cathéters et de sonde urinaire",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u30",
+   "empreinte": "e5f7fe7ea6d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(hors chirurgie carcinologique de l'oropharynx et en l'absence de contre-indication chirurgicale). GRADE 1+",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u31",
+   "empreinte": "02c2223bb951",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et dans tous les cas avant la 24e heure postopératoire pour réduire la durée de séjour. GRADE 1+",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u32",
+   "empreinte": "cdc74d612820",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et dans tous les cas avant la 24e heure postopératoire pour réduire les complications postopératoires. GRADE 2+",
+   "explication": "",
+   "page": 54
+  },
+  {
+   "id": "u33",
+   "empreinte": "569b89132957",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'établir une liste de critères de sortie",
+   "explication": "",
+   "page": 57
+  },
+  {
+   "id": "u34",
+   "empreinte": "303adf6b6d89",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

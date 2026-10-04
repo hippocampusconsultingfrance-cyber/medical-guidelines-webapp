@@ -1,0 +1,583 @@
+{
+ "cle": "intubation_reanimation",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "2406be6837a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode GRADE, 32 recommandations adultes ont été formalisées ainsi que 2 algorithmes de synthèse",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "9a03e9535cef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 - Il faut considérer tous les patients de réanimation à risque",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u3",
+   "empreinte": "abc9c0f4b536",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 - Afin d'en réduire l'incidence, il faut que les complications",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "7712f8ecc70c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 - Il faut différencier les facteurs prédictifs d'intubation",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "de4d4dd619f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "élevée de complications (20 à 50 %) pouvant menacer le",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "5f9ab22f8963",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "élevée de complications (20 à 50 %) pouvant menacer le",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "b30b403119ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "élevée de complications (20 à 50 %) pouvant menacer le",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "4e03985e6ec3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "M. Mallampati score III ou IV (5)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u9",
+   "empreinte": "66393cb92705",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A. Apnées du sommeil (2) [182,186,187,188]",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u10",
+   "empreinte": "7a5671a5ae9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C. Cervicale (mobilité rachidienne réduite) (1)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u11",
+   "empreinte": "a87d07b80b44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "O. Ouverture de bouche < 3 cm (1)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u12",
+   "empreinte": "ee18ea4bedd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A. non-Anesthésiste ou Anesthésiste non entraîné (1)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u13",
+   "empreinte": "211792b209fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "validation) et bonne une sensibilité (respectivement 76 % et 73 % dans les cohortes originales et de validation).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "9a4208e9fd78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 - Il faut mettre en œuvre un contrôle capnographique de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u15",
+   "empreinte": "20dee4a55a10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 - Il faut disposer d'un chariot d'intubation difficile et d'un",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "a6f0022cd728",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 - Il faut employer des lames métalliques pour les",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u17",
+   "empreinte": "bdb4707a697e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4 - Pour limiter les échecs d'intubation, il faut probablement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "763e999d7168",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.5 - Il faut utiliser les dispositifs supra-glottiques (DSG) dans la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "6075b3f2b1fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6 - Les connaissances théoriques et pratiques en matière",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "8df6ed20daea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "capnographie a contribué à 74 % des cas de décès ou de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "a3eb3e6fb9fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 - Il faut probablement choisir un hypnotique (étomidate,",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u22",
+   "empreinte": "ed5f3bf283be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 - Chez le patient de réanimation, il faut probablement",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u23",
+   "empreinte": "71a60daedae0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 - Il faut utiliser le rocuronium à une dose supérieure",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u24",
+   "empreinte": "07c86a7679d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "revue Cochrane récente constituée de 50 essais cliniques a conclu",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u25",
+   "empreinte": "30ac3208a8d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 - Il faut probablement utiliser la VNI pour la préoxygénation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u26",
+   "empreinte": "edac07f9beea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2 - Il est possible d'utiliser l'oxygénothérapie nasale haut débit",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u27",
+   "empreinte": "cf0e1df8d067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3 - Il faut probablement utiliser un protocole d'intubation",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u28",
+   "empreinte": "3f9a2e8a8619",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.4 - Il faut probablement utiliser une manœuvre de",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u29",
+   "empreinte": "ca2f9b510e58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.5 - Il faut probablement appliquer une PEEP d'au moins 5 cm",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u30",
+   "empreinte": "f421e38d0c3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.6 - Il faut probablement utiliser un protocole hémodynamique,",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u31",
+   "empreinte": "a9ee256623c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une seule étude avant/après réalisée sur 244 patients inclus dans",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u32",
+   "empreinte": "1d43a1c92933",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "26b50a3297c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme IOT p.14 : installation, expansion volémique, matériel, personnel 2 médecins + 1 IDE, MACOCHA",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "435210f9261e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme IOT p.14 : hypoxémique → VNI ; non hypoxémique → BAVU ou ONHD",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "9bf8b80f8899",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme IOT p.14 : ISR kétamine/étomidate/propofol, succinylcholine 1 mg/kg, rocuronium 1,2 mg/kg, Sellick",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "82d3d5e9faf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme IOT p.14 : < 3 → laryngoscopie directe → VL → DSG",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "21b4ffdc0fea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme IOT p.14 : ≥ 3 → VL ou LD → DSG → abord cervical direct",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "c7663674ba5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme IOT p.14 : PEEP 5, recrutement FiO2 100 % Paw 40 cmH2O 30 s, PAD < 35 mmHg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "081c8b8d76aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 - Il faut réaliser une épreuve de sevrage en VS avant toute",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u40",
+   "empreinte": "e241cf3bb7fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 - L'épreuve de sevrage n'étant pas suffisante pour dépister",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u41",
+   "empreinte": "5cddb5cb9f90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'extubation [8,98]. En effet, 30 à 40 % des patients extubés",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u42",
+   "empreinte": "b9817135d99f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 - Il faut probablement effectuer un test de fuite avant",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u43",
+   "empreinte": "65e6f5aa96f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.2 - Il faut réaliser le test de fuite chez les patients de",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u44",
+   "empreinte": "2d0fe2bb8548",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.3 - Il faut probablement mettre en œuvre des mesures",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u45",
+   "empreinte": "6a2ec11ec9e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.4 - Si le volume de fuite est faible ou nul, il faut",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u46",
+   "empreinte": "926968d8ea06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.5 - Lorsqu'elle est décidée, la corticothérapie doit être débutée",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u47",
+   "empreinte": "63d15b50228f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les plus fréquemment utilisés sont < 110 mL de volume absolu",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u48",
+   "empreinte": "cfea138608da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.1 - En préventif, il faut probablement utiliser l'oxygénothérapie",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u49",
+   "empreinte": "6500e49f3ae1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.2 - En préventif, il faut probablement utiliser l'oxygénothérapie",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u50",
+   "empreinte": "e4a4e439780b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.3 - En préventif, il faut probablement utiliser la VNI",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u51",
+   "empreinte": "ac98bc2e5ff0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.4 - En curatif, il faut probablement utiliser la VNI curative en",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u52",
+   "empreinte": "0f846f1c0b3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 7.5 - En curatif, il ne faut probablement pas utiliser la VNI",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u53",
+   "empreinte": "78946fa1ea1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.6 - Il faut probablement faire un intervenir un",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u54",
+   "empreinte": "3ad9c2721881",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.7 - Il faut probablement faire intervenir un kinésithérapeute au",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u55",
+   "empreinte": "7d0660180d4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R 7.5 - En curatif, il ne faut probablement pas utiliser la VNI",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u56",
+   "empreinte": "c7d98b2c34f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "OR à 0,63, IC 95 % (0,45–0,87) (p = 0,003)",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u57",
+   "empreinte": "653cfe62aa55",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "10dfe5b10475",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme extubation p.20 : épreuve de sevrage en VS, succès",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "02ccfd89cf70",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme extubation p.20 : facteurs de risque, différer 12 à 24 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "4b848947b41c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme extubation p.20 : test de fuite, < 110 mL ou < 10-13 %, corticothérapie ≥ 6 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "562a6eaf09bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme extubation p.20 : expliquer, aspirer la bouche, pas d'aspiration trachéale, pas de pré-oxygénation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "20ef7865ef2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme extubation p.20 : ONHD risque faible, VNI prophylactique haut risque",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "fbf7b2882602",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 - Il faut considérer tous les patients de réanimation à risque",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u64",
+   "empreinte": "ccd74cf0b33c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

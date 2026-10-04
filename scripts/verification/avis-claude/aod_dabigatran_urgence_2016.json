@@ -1,0 +1,250 @@
+{
+ "cle": "aod_dabigatran_urgence_2016",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "2d3b2fdd7e51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un complément sera proposé ultérieurement lorsqu'un antidote spécifique des AOD anti-Xa sera disponible.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "05476544a272",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "Il est donc recommandé de mesurer la concentration de dabigatran avant et 12 à 18 heures après la première administration d'idarucizumab",
+   "explication": "Dose, absence d'ajustement et 2e dose conformes. Mais la source recommande la mesure de la concentration AVANT l'antidote (« prélèvement… doit être réalisé le plus tôt possible », sans retarder l'administration) ; seule la nouvelle mesure à 12-18 h est « envisagée si la situation l'exige ». La fiche applique « si la situation l'exige » aux deux mesures.",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "570e6a8b5ece",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des CCP non activés (CCP 50 U/kg) ou activés (FEIBA 30 à 50 U/kg) doivent être administrés",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "40922df0b6e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la place de la dialyse n'est à ce jour pas clairement établie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "de3066696046",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du fait de sa grande sensibilité, un TT normal permet d'exclure la présence de dabigatran à une concentration significative.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u6",
+   "empreinte": "1b0cd8674b83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 15) : organe critique ou choc hémorragique → « Idarucizumab ou si indisponible, CCP ou FEIBA » ; critères de concentration > 50 ng/mL ou inconnue et DDP ≤ 24 h ou ClCr ≤ 50 (texte p. 14).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "4460f5bfc616",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si une mesure de la concentration a pu être réalisée et qu'elle est inférieure à 50 ng/ml, il n'y a pas lieu d'attribuer le saignement actif",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "44fc1a658d15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "celui-ci doit être privilégié quelle que soit la concentration de dabigatran.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u9",
+   "empreinte": "eb8073871029",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 15) : hémorragie grave, geste non indiqué ou saignement persistant, conc > 50 ng/mL ou inconnue et DDP ≤ 24 h ou ClCr ≤ 50 → idarucizumab ou si indisponible CCP ou FEIBA.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "09815b6930f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (p. 15) : conc ≤ 50 ng/mL ou inconnue et DDP > 24 h et ClCr > 50 → mesures non spécifiques.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "78e6f4a7081c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'y a pas lieu de neutraliser le dabigatran par l'administration d'antidote ou de CCP, quelle que soit la concentration du dabigatran.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u12",
+   "empreinte": "a5a07c7884b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessité d'un geste hémostatique urgent : chirurgie, radiologie interventionnelle, endoscopie",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u13",
+   "empreinte": "be0798024468",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (p. 20) : risque très élevé « hémostase incontrôlable : ex. neurochir, hépatique » ; risque élevé « hémostase contrôlable : ex. péritonite, orthopédie » ; risque faible.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "695b21f1160f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si le geste ne peut être retardé (≤ 8 heures ou chirurgie d'hémostase), il est proposé d'administrer au préalable de l'idarucizumab",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u15",
+   "empreinte": "4f303fd8571e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (p. 20) : risque très élevé, PEC > 8 h → « Reporter et mesure de la concentration » ou idarucizumab (ou CCP/FEIBA) puis réaliser le geste.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "164a619ca9b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (p. 20) : risque élevé, PEC ≤ 8 h → « Réaliser le geste et si saignement per/postop attribuable au dabigatran : idarucizumab ou si indisponible CCP ou FEIBA ».",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "6018c1655611",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (p. 20) : risque élevé, PEC > 8 h → « Reporter et mesure de la concentration » ou réaliser le geste avec la même conduite.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "cae0f2a97ac4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans ces conditions, le saignement s'il est observé au cours de l'intervention, ne peut pas être raisonnablement attribué au dabigatran",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u19",
+   "empreinte": "506225defff0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces agents doivent être administrés en per-opératoire dans les cas où le saignement n'est pas contrôlable par le chirurgien plutôt qu'une administration pré-opératoire prophylactique.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u20",
+   "empreinte": "52572f1d3244",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'anesthésie périmédullaire (rachianesthésie et péridurale) est contre-indiquée sous anticoagulants38-40, ce qui conduit à préférer l'anesthésie générale.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u21",
+   "empreinte": "2bff79adc936",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 (p. 20) : bloc superficiel, conc > 30 ng/mL ou inconnue → rapport bénéfice/risque favorable : oui → réaliser le geste ; non → autres techniques.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "ecc7c1a2019d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 (p. 20) : conc ≤ 30 ng/mL → réaliser le geste (bloc superficiel comme périmédullaire/bloc profond).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "760451fd288c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé de ne réaliser ces blocs que si la concentration de dabigatran est ≤ 30 ng/mL.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u24",
+   "empreinte": "700d09be1b5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 3 (p. 20) : périmédullaire ou bloc profond, conc > 30 ng/mL ou inconnue → contre-indication aux autres techniques : oui → Idarucizumab*** puis réaliser le geste ; non → autres techniques.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "014ea0c18957",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans tous les cas, il est recommandé de réaliser ces blocs (superficiels ou profonds), par échoguidage et par un opérateur expérimenté.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u26",
+   "empreinte": "d1b745469280",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la réalisation de la PL parait indispensable compte tenu de sa valeur diagnostique, chez un patient traité par dabigatran, l'administration d'idarucizumab peut être proposée avant la réalisation du geste.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u27",
+   "empreinte": "eceda8df7a8d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

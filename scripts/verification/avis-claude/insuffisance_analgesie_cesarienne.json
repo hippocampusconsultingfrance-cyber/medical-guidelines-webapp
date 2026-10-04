@@ -1,0 +1,439 @@
+{
+ "cle": "insuffisance_analgesie_cesarienne",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a9f368b332e6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "e25024afcf0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts ont ensuite retenu 24 préconisations, dont 10 ont été jugées fondamentales",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u3",
+   "empreinte": "e7f3a7cdeb4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "P1. 8 – Les experts suggèrent qu'une analgésie péridurale imparfaite pendant le travail obstétrical",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u4",
+   "empreinte": "40c9db7e627c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une évaluation des pratiques soit réalisée avec comme indicateurs le taux et les indications des césariennes en extrême urgence",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "4049b35cefd8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comme toute anesthésie périmédullaire conduisant à un complément nécessaire par la patiente",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "8dabe6b09c52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le confort exprimé par la patiente est tout aussi important que l'évaluation du niveau d'anesthésie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u7",
+   "empreinte": "eb32d247bbf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un niveau sensitif supérieur bilatéral et symétrique en T6 au toucher ± en T3 au froid est requis",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u8",
+   "empreinte": "2f7e5eccdbc8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "test de pincement cutané par l'obstétricien doit être systématiquement réalisé, même en situation d'urgence",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u9",
+   "empreinte": "ddd545b24e52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bupivacaïne hyperbare (HB) supérieure à 10 mg limiterait le risque d'échec",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u10",
+   "empreinte": "7f6100399d11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la rachianesthésie-péridurale combinée (RPC) peut limiter le risque d'échec par la présence du cathéter péridural",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u11",
+   "empreinte": "3f7b7bd49d99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "P1. 7 – Les experts suggèrent qu'une analgésie péridurale imparfaite pendant le",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u12",
+   "empreinte": "65b4a67fbaaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "P1. 8 – Les experts suggèrent qu'une analgésie péridurale imparfaite pendant le",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u13",
+   "empreinte": "e56a00c8fa4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'échec peut également survenir lors d'une césarienne programmée avec une rachianesthésie",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u14",
+   "empreinte": "902792ef9c68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'adjonction d'un morphinique liposoluble type sufentanil (2,5 µg à 5 µg)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u15",
+   "empreinte": "ef4ef951d9e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau: Facteurs de risque d'échec des différentes techniques d'APM",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u16",
+   "empreinte": "daf375001bc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ponction « à cheval » : orifice de l'aiguille de rachi entre la dure-mère et l'arachnoïde",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u17",
+   "empreinte": "38c2d8e5b885",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Scores de douleur élevés (EVA ≥ 4) dans les 2 h précédent la césarienne",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u18",
+   "empreinte": "51b9d7d82fb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'obstétricien décide du degré d'urgence de la césarienne et communique de manière intelligible",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "f249503a576e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "P2. 2 – Les experts suggèrent que dans chaque maternité, les procédures de transfert",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u20",
+   "empreinte": "38e364078adc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est une préconisation forte du CNGOF et du CNEMM",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u21",
+   "empreinte": "68defd445d7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le taux de conversion en anesthésie générale suite à un échec d'APM",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u22",
+   "empreinte": "83b1e0205745",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "était 40 fois plus fréquent dans les césariennes codes rouges",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u23",
+   "empreinte": "e833ac50fc4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser une pause opératoire en cas de douleur",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u24",
+   "empreinte": "df7e4e78249b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas d'échec constaté d'une APM juste avant ou dès l'incision pour césarienne code rouge",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u25",
+   "empreinte": "5869e2c56b76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'un opioïde de courte durée d'action (alfentanil ou rémifentanil)",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u26",
+   "empreinte": "3e59cb0c6361",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas d'échec de la gestion médicamenteuse de la douleur, même avant le clampage du cordon",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u27",
+   "empreinte": "e926c478d060",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'efficacité de toute action de complément d'anesthésie doit être réévaluée",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u28",
+   "empreinte": "74fa0c1f412b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le délai décision-extraction de 15 à 30 minutes restreint le choix de la technique",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u29",
+   "empreinte": "5c98bfd6fc48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l'éventualité d'une analgésie insuffisante et des solutions possibles alors mises en œuvre, y compris en cas de césarienne",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u30",
+   "empreinte": "3edfd5005da3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de tracer l'insuffisance d'analgésie en cours de césarienne, de renforcer l'anesthésie locorégionale et/ou générale",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u31",
+   "empreinte": "181d508fe290",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'identifier la sidération et le soin psychique d'urgence (defusing) en postpartum",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u32",
+   "empreinte": "36bd38ed0b6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le témoignage du conjoint peut contribuer à la détection de sidération",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u33",
+   "empreinte": "94f43a112eef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est le fondement d'un consentement libre et éclairé aux actes",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u34",
+   "empreinte": "f6b175c1cd35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'article L 1110-5-3 du Code de la Santé Publique",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u35",
+   "empreinte": "9676a4bde2af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'en terme de préjudice corporel, les dommages les plus",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u36",
+   "empreinte": "d2ebbb301091",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "c4d562b82458",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe (page PDF 25) : Informer — fréquence 5 à 10 % ; Surveiller — dose 15 à 20 ml de lidocaïne 2 % adrénalinée, T6 au toucher / T3 au froid, test à la pince",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "6455cfcd1da4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : pause opératoire, évaluation MAR/obstétricien du délai d'extraction ; 3 types de césarienne ; « réaliser selon contexte »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "dd38155b8f03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : échec complet à 30 min → privilégier PRC, sinon 2nd RA (dose idem) ou AG",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "6588fe96bd55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : bloc partiel à 30 min → PRC bupivacaïne minorée (5 mg) puis AL en APD ; APD ; rachi HB minorée 7-8 mg ; AG ISR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "28de51322061",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : urgence → communication avec obstétricien ; APD poursuite extension ; AG ISR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "bf6b724d48cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : urgence extrême → AG : informer, préoxygénation, ISR",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "11ceb68f6d22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : insuffisance pendant la césarienne → pause opératoire, évaluation intensité douleur",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "4ba239d82808",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : alfentanil 5-10 µg/kg ; rémifentanil bolus 0,3 µg/kg en 1 min puis 0,1 µg/kg/min ; kétamine, propofol ; prévenir pédiatre",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "f13effd8b316",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : anesthésie générale en induction séquence rapide",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "f9ca878ca293",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : savoir accepter l'échec, tracer, débriefer, visite post-op, identifier ESPT",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "d8489e511888",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe : légende APM, APD, RA, AG, PRC (péri-rachi combinée), KT, VS",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "4be6042b8cdd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

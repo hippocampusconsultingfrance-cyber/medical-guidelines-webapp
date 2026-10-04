@@ -1,0 +1,475 @@
+{
+ "cle": "ira",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4147be34b29d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "méthode GRADE, 33 recommandations ont été formalisées",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "afc77ac3d91e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "augmentation de la créatinine plasmatique 1,5 fois la valeur de base au cours des 7 derniers jours",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "575c8cd31bb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser la classification KDIGO pour caractériser la gravité d'une IRA",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "d628bc3319f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Si l'on souhaite estimer le débit de filtration glomérulaire",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "ec42e39a5f7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.4 – Si l'on souhaite estimer le DFG, il faut probablement utiliser",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "b74868d25cc7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la créatinine diminuée d'au moins 25 %, ou une diurèse < 0,5 ml/kg/h pendant 8 heures",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "5472e29c39a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 pédiatrique – Chez l'enfant, il faut probablement évaluer la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "9dea39bd7c93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec un recueil des urines d'au moins 1 heure",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "ec68a6d46203",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "8ae1dd30c92e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plasmatique 354 mmol/L ou mise en route de l'épuration extra-rénale",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "522760eafb35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "< 0,5 mL/kg/h pendant > 8 h Injury (atteinte) Diminuée de > 50 % < 0,5 mL/kg/h pendant > 16 h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "5a4b7911f942",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser les biomarqueurs rénaux pour faire le",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u13",
+   "empreinte": "f39b5e9f21eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas utiliser l'index de résistance",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "dc00c4fd7676",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neutrophil gelatinase-associated lipocalin (NGAL), FAB,",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u15",
+   "empreinte": "6a4b368b776e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut rechercher les facteurs de risque d'IRA liés au terrain",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "a1ee4b25613d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement, dans les situations à risque, surveiller",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u17",
+   "empreinte": "d695b32d2d92",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "3c01ca8fa6da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Origine ethnique africaine Obésité (IMC > 40 kg/m2)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "b6af471e96c3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "3d8cfc8a6c50",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "9272f2a2b0f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ciclosporine, tacrolimus",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "da3d5361ce72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En réanimation, il ne faut pas utiliser les",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "b7d74ae0d248",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement préférer les cristalloïdes aux colloïdes",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "cf3b30a3dbbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement préférer les solutés balancés en cas",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "16089d8a7c6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut maintenir un niveau minimal de PAM compris entre 60 et 70 mmHg pour prévenir et traiter l'IRA",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u26",
+   "empreinte": "c6d029e176e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypertendus requièrent un objectif de PAM > 70 mmHg",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u27",
+   "empreinte": "4aa07cb9dce2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut monitorer et optimiser le volume d'éjection",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u28",
+   "empreinte": "13919c144a0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.7 – Il faut probablement appliquer les mêmes",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "2e9612437939",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après stabilisation hémodynamique, il faut probablement",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u30",
+   "empreinte": "85cae660b82f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si un vasoconstricteur est nécessaire, il faut probablement",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u31",
+   "empreinte": "ba44a05d80c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.10 – Il ne faut probablement pas retarder la réalisation",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u32",
+   "empreinte": "5f9f0f4990cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recours à l'épuration extra-rénale (4,8 % vs 1 %, p < 0,05) plus",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u33",
+   "empreinte": "e6381b2bde67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contraste et poursuivre cette dernière pendant 6 à 12 heures",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u34",
+   "empreinte": "65a82210852e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas utiliser la N-acétylcystéine et/",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u35",
+   "empreinte": "66db2594943c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "administrer au maximum 3 jours à chaque fois que possible",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u36",
+   "empreinte": "6371d1fa6f86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement ne pas utiliser les anti-inflammatoires",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u37",
+   "empreinte": "975818666571",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'IRA, d'où l'intérêt de limiter l'usage à 3 jours, ce qui couvre la",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u38",
+   "empreinte": "59ed228a08d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.1 – Il ne faut pas utiliser de diurétiques dans l'objectif de",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u39",
+   "empreinte": "3265e4c3be2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sodium pour prévenir ou traiter une IRA. de l'adénosine. (Grade 2–)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u40",
+   "empreinte": "98fd89df7fb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser les traitements suivants dans l'objectif de prévenir ou traiter une IRA : mannitol, dopamine",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u41",
+   "empreinte": "0369146ff73d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "1bd776ca9bfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement appliquer les mêmes règles de",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u43",
+   "empreinte": "a397b2eb8f5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas limiter les apports nutritionnels dans le seul",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u44",
+   "empreinte": "bce5106da55c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement adapter les apports",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u45",
+   "empreinte": "6fc2a48daceb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protéique de 1,5 g/kg/j en l'absence d'épuration extrarénale",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u46",
+   "empreinte": "8b61c39c25ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut considérer à risque de survenue d'insuffisance rénale",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u47",
+   "empreinte": "5580dcea8129",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement évaluer la fonction rénale des",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u48",
+   "empreinte": "d3a68916efdb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "créatinine plasmatique de plus de 25 % de la valeur de base ou",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u49",
+   "empreinte": "6396b81b3f2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "meilleure comparés à un groupe contrôle apparié (RR 0,76, 95 %",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u50",
+   "empreinte": "8d0c25ad418c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "48d3587ccd81",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "9d415849e21c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

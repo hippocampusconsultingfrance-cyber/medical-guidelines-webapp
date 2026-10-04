@@ -1,0 +1,412 @@
+{
+ "cle": "ponction_lombaire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "32dd4b29ec4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La ponction lombaire (PL) est un acte diagnostique ou thérapeutique fréquent, invasif, réalisable par tout médecin",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "827280ca1e74",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "a6b083c57bbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le repos forcé au lit et l'hyperhydratation n'ont pas d'indication",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "7dd9826f343a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les indications suivantes sont donc listées à titre indicatif et de manière non exhaustive",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "3c0759f67b95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mesure de pression du liquide cérébro-spinal (LCS) en cas de suspicion de troubles de la cinétique du LCS",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "9e5a6cdd4379",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ponction lombaire évacuatrice : hydrocéphalie à pression normale, après interventions neurochirurgicales",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "1acd6b1c2b32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Outre le refus explicite ou présumé du patient, les contre-indications formelles sont les suivantes",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "95d7f20f4c85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la normalité d'un examen neurologique minutieux permet de se passer de l'imagerie",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "d6dd49b23654",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Infections au point de ponction. Thrombopénie sévère",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u10",
+   "empreinte": "655188fe9893",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une thrombopénie stable ≥ 30 G.L-1 peut être tolérée",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "ee04e48d974c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un traitement anticoagulant à dose thérapeutique ou antiplaquettaire (sauf aspirine et antiinflammatoires non stéroïdiens",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "4a6d8cf31355",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réalisation de la PL ne justifie pas, à elle seule, une hospitalisation de plus de 24 heures",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "aaaa9b1791a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le choix de la position assise ou allongée est laissé à l'appréciation du médecin et du patient",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "396a5c76fb28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ponctionner en dessous de la ligne horizontale tracée entre les crêtes iliaques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "1d6a5b7ef5c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "désinfection cutanée en deux temps avec un antiseptique (antiseptique alcoolique) et utilisation d'un champ stérile",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "2223950569cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La pose d'un patch d'anesthésique local peut être proposée au patient en dehors de l'urgence (délai d'1 heure)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "fb5f0db15d62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'un diamètre maximal de 22 Gauge (code couleur noir)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "5e12c53313bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réintroduire complètement le mandrin dans l'aiguille avant de la retirer",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "74a9bae64024",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'incidence des syndromes post-PL immédiats augmente pour un volume prélevé supérieur à 30 ml",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "ea9b9818e622",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les aiguilles doivent être collectées dans un conteneur à disposition et prévu à cet effet",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "efdae2bb19c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la formation pratique à la PL par simulation est recommandée",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "8891422b35a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans le cadre de l'accréditation des médecins et des équipes",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "a15f51913404",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après formation par simulation, il est recommandé que le médecin soit accompagné pour la réalisation des premières PL",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "bd7980eab7fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hématomes, infections, douleurs lombaires, voire paraplégie ou décès de manière très exceptionnelle",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "b72495f0eb8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Apparaissant habituellement dans les 2 à 4 jours après une PL (mais parfois plus tardive)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "2dbdf213db3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "inférieure à 10 % en cas d'utilisation d'aiguilles atraumatiques alors qu'elle peut aller jusqu'à 35 %",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "6232433f2e75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La baisse de l'acuité visuelle doit faire évoquer une autre étiologie car il s'agit d'une complication exceptionnelle",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u28",
+   "empreinte": "114cd4c9edac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ils sont favorisés par les troubles de la coagulation, les traitements modifiant l'hémostase et les ponctions multiples",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "03f06f365411",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Exceptionnelles et liées au non-respect des règles d'asepsie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "aadc18cb9958",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Possibles après PL, elles sont habituellement banales",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "0d3edc1e56ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il s'agit du traitement le plus efficace en cas de non-guérison spontanée du syndrome post-PL dans les 48 à 72 heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "3a7366029a87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le blood-patch doit être envisagé après échec des traitements non invasifs et réalisé",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "9a7b9eb3329d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en garantissant un temps de surveillance et de décubitus pour le patient d'au moins 2 heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u34",
+   "empreinte": "dcabde7119da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mais pas de 3e blood-patch sans imagerie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u35",
+   "empreinte": "e1cbdd596de9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le syndrome post-PL existe chez l'enfant et doit faire l'objet d'une prévention",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "f6cfc045fafd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le nourrisson, la position assise sans flexion de hanche et sans flexion de nuque",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "58efabab0820",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Certaines s'utilisent sans introducteur (22, 24 et 25 Gauge) et d'autres avec introducteur (22, 25 et 27 Gauge)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u38",
+   "empreinte": "65776985a4b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'angle de pénétration de l'aiguille permettant d'accéder le plus efficacement au LCS est compris entre 50° et 60°",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u39",
+   "empreinte": "5d530a6dc71c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le sérum glucosé 30 % per os chez le nourrisson jusque 6 mois",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u40",
+   "empreinte": "9e4cae02143e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "679525fe44ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "identique à celle de l'adulte avec une incidence de 2 à 15 % selon les études",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "41b1c2517ff6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "5506a692e292",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la position du biseau parallèle à l'axe du rachis",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "dcac8b699764",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le seul traitement ayant montré son efficacité en cas de syndrome post-PL persistant et/ou sévère est le blood-patch",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "803a1162924b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

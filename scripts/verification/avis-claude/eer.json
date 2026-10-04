@@ -1,0 +1,763 @@
+{
+ "cle": "eer",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "98ddb73c85aa",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "Coordinateur d’experts : Christophe VINSONNEAU (Melun)",
+   "explication": "La fiche annonce « 78 recommandations numérotées » ; le décompte des numéros de la source (champ 1 : 5, 2.1 : 12, 2.2 : 5, 2.3 : 10, 2.4 : 1, 3.1 : 3, 3.2 : 3, 3.3 : 5, 3.4 : 10, 4.1 : 2, 4.2 : 7, 4.3 : 15) donne 83. Le reste (18 experts, RAND/UCLA, 2 tours) est conforme.",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "1db8a67b8ea6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévalence de l’insuffisance rénale aiguë (IRA) en réanimation, dans une population non sélectionnée, est particulièrement élevée de l’ordre de 40 % et requiert une technique d’épuration extrarénale (EER) dans un peu moins de 20 %",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "49c9f22a6f91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.1 Il faut initier sans délai l’épuration extrarénale dans les situations mettant en jeu le pronostic vital (hyperkaliémie, acidose métabolique, syndrome de lyse, œdème pulmonaire réfractaire au traitement médical). (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u4",
+   "empreinte": "8fff2daf7f5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.2 Les données disponibles sont insuffisantes pour définir le délai optimal avant instauration de l’épuration extrarénale en dehors des situations mettant en jeu le pronostic vital. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "ba43d182964a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.3 Chez l’enfant, il faut probablement considérer la surcharge hydrosodée de plus de 10 % et très probablement de plus de 20 % parmi les critères d’instauration d’une épuration extrarénale. (Avis d’experts) Accord faible",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "3bfbdb06840c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.4 Il faut considérer « précoce » l’initiation d’une épuration extrarénale, au stade KDIGO 2 ou dans les 24 heures suivant l’apparition d’une insuffisance rénale aiguë dont la réversibilité semble peu probable. (Avis d’experts) Accord faible",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u7",
+   "empreinte": "56cad9ca9979",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.5 Il faut considérer « tardive » l’initiation de l’épuration extrarénale à plus de 48 heures de la survenue d’une insuffisance rénale aiguë KDIGO 3 ou lors de l’apparition d’une situation mettant en jeu le pronostic vital et en rapport avec l’insuffisance rénale aiguë.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "0b8bd1646877",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et al. montre qu’une surcharge hydrique de plus de 10 % suffit à augmenter la mortalité, mais uniquement dans le groupe d’enfants ayant plus de trois défaillances d’organe [25]. Si",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "c75c143464d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.1 Il faut éviter le recours au site sous‑clavier. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "715c4a49ec02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.5 Il faut probablement réserver le site jugulaire interne gauche comme troisième choix. Accord fort",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "8e9caa1790f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infectieuses. Accord fort 2.1.3 Il faut probablement utiliser le site jugulaire interne pour diminuer le risque infectieux lié au cathéter pour les patients avec un",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "f9bcca203b8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jugulaire interne droite ou gauche par rapport à celui du cathéter positionné en voie fémorale [43]. Dans cette analyse de sous‑groupe, le risque de dysfonction du cathéter",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "094b2128cfe8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.5 Il faut probablement réserver le site jugulaire interne gauche comme troisième choix. Accord fort",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "faa02f754d32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.6 Chez l’enfant, il faut probablement préférer l’abord jugulaire interne droit à l’abord fémoral pour l’enfant de moins de 20 kg (ou si le cathéter est < 10F). Accord faible",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "0db48fc05c1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "logie et au poids de l’enfant. (Avis d’experts) Accord fort 3–6 kg → 6,5–7 F",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "aa11f4bc475d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.8 En site fémoral, il faut utiliser de cathéters de diamètre supérieur à 12 F et de longueur supérieure ou égale à 24 cm. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "bdf5e43476b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.9 Il faut utiliser l’échoguidage pour la mise en place des cathéters d’EER par voie jugulaire interne. Accord fort",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "60f34105f437",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.10 Il faut probablement utiliser l’échoguidage pour la mise en place des cathéters d’épuration extrarénale par voie fémorale. Accord faible",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "8ac4590bdb7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1.11 Il faut procéder à l’ablation des cathéters d’épuration extrarénale dès que ceux‑ci ne sont plus nécessaires. (Avis d’experts). Accord fort",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u20",
+   "empreinte": "7404bedb43bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Accord fort 2.1.12 Il ne faut pas utiliser les fistules artérioveineuses en l’absence d’expertise dans le domaine. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u21",
+   "empreinte": "a06a0342ae5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jugulaire interne droite ou gauche par rapport à celui du cathéter positionné en voie fémorale [43]. Dans cette analyse de sous‑groupe, le risque de dysfonction du cathéter",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "2afeb5546a98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.2.1 Il ne faut probablement pas utiliser de membranes en cellulose non modifiée (cuprophane) pour la prise en charge des patients en insuffisance rénale aiguë. Accord fort",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "eb817f71a921",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.2.2 Il faut utiliser des membranes à haute perméabilité hydraulique (coefficient d’ultrafiltration élevé) pour des techniques convectives d’épuration (hémofiltration). (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "98a82d1066be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.2.3 En hémodialyse intermittente, Il ne faut pas utiliser des membranes à haute perméabilité hydraulique en absence de dialysat ultrapure. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "7e859b10ce2b",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "septique. (Avis d’experts) Accord fort",
+   "explication": "La source porte « (Avis d’experts) » sur 2.2.4 ; la fiche, qui dit conserver cette mention verbatim, l'omet. Texte et accord conformes.",
+   "page": 6
+  },
+  {
+   "id": "u26",
+   "empreinte": "c28c7cb9938f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.2.5 Il ne faut probablement pas utiliser de membrane couverte par l’héparine ou captant l’héparine dans le but de diminuer l’anticoagulation du circuit d’épuration extrarénale. Accord fort",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "6a7901c55788",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas établi. De même, il n’existe aucune étude comparative comparant la survie des patients selon les capacités d’adsorption des membranes utilisées. On ne peut donc recommander aucune membrane spécifique dans la prise en charge",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "f0412192d32b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.1 Chez le patient à haut risque hémorragique ou pré‑ sentant une coagulopathie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "4f4c033d7990",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.1.1 En épuration intermittente, il faut probablement ne pas faire d’anticoagulation systémique. Accord faible",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "d5810c40db9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.1.2 En épuration continue, il faut probablement privilégier, sauf contre‑indication, le recours à l’anticoagulation régionale au citrate par rapport à l’absence d’anticoagulation. Accord fort",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u31",
+   "empreinte": "3267369b17f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.1.3 En épuration continue, il faut probablement privilégier l’absence d’anticoagulation s’il existe une contre‑indication au citrate. (Avis d’experts) Accord faible",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "b0a91610b2c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.1.4 Chez l’enfant, il est possible de réaliser l’épuration extrarénale continue sans anticoagulation ou par anticoagulation régionale au citrate, le choix étant guidé par l’expérience de l’équipe. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u33",
+   "empreinte": "41d8187a427e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2 Chez le patient à faible risque hémorragique ne nécessitant pas d’anticoagulation systémique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "a12b88912dde",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2.1 En épuration intermittente, il faut probablement privilégier l’héparine non fractionnée ou de bas poids moléculaire par rapport à d’autres anticoagulants systémiques. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u35",
+   "empreinte": "cb161c1161e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2.2 En épuration continue, chez l’adulte, il faut probablement privilégier, sauf contre‑indication, l’anticoagulation régionale au citrate, dans le but de prolonger la durée de vie du circuit. Accord faible",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u36",
+   "empreinte": "5f8d88342242",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2.3 En épuration continue, en présence d’une contre‑indication au citrate, il faut probablement privilégier le recours à une anticoagulation par héparine non fractionnée. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "1bbe6a49d685",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2.4 Chez l’enfant, en épuration extrarénale continue, il faut utiliser une anticoagulation soit par citrate soit par héparine non fractionnée, le choix étant guidé par l’expérience de l’équipe. Accord fort",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u38",
+   "empreinte": "1a16111c9f17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2 Chez le patient à faible risque hémorragique ne nécessitant pas d’anticoagulation systémique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "8b7ef5c180c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.3 Chez le patient nécessitant une anticoagulation systémique 2.3.3.1 Il faut probablement privilégier l’anticoagulation systémique par héparine aux autres anticoagulants. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u40",
+   "empreinte": "1e09947a61ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.3.2 Chez les patients avec thrombopénie induite à l’héparine (TIH) suspectée ou avérée, en plus de l’interruption du traitement par héparine il est possible d’utiliser une anticoagulation régionale au citrate en complément de l’anticoagulation de la TIH. (Avis",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u41",
+   "empreinte": "cb82d876e5cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cohorte de 138 patients (93 héparine, 37 citrate, 8 sans anticoagulation) montrait une augmentation des complications hémorragiques sous héparine, une durée de filtre identique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "4846cc435fad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.4.1 Il faut élaborer une démarche qualité pour la surveillance de l’eau osmosée dans le respect des normes réglementaires. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u43",
+   "empreinte": "25b9f130c1c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vigueur pour l’hémodialyse chronique. Les contrôles réguliers et la gestion de la qualité de l’eau sont placés sous la responsabilité du pharmacien en lien avec le médecin réanimateur. La maîtrise de la qualité de l’eau produite doit",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u44",
+   "empreinte": "fddd0df2bc69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.1.1 Les techniques d’épuration extrarénale continues et intermittentes, peuvent être utilisées indifféremment, mais en tenant compte de la disponibilité de la technique et de l’expérience de l’équipe. Accord fort",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u45",
+   "empreinte": "dd6bb1fc2a95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compte de la disponibilité de la technique et de l’expérience de l’équipe. Accord fort 3.1.2 Les techniques d’épuration extrarénale diffusives ou convectives peuvent être utilisées indifféremment, mais en tenant compte",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u46",
+   "empreinte": "39ee4e7c637a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.1.3 Chez les patients cérébrolésés à risque d’hypertension intracrânienne, il faut probablement préférer une technique d’épuration continue ou prolongée à faible clairance (SLED). (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u47",
+   "empreinte": "66758dba1e01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les variations osmotiques induites par les techniques discontinues peuvent, contrairement aux techniques continues [117], entraîner un œdème cérébral (syndrome de déséquilibre dialytique) [117,118]. Chez les traumatisés",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u48",
+   "empreinte": "ab5eef32ca9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.1 En pédiatrie et chez le nouveau‑né, il est possible de faire de la dialyse péritonéale, en particulier en période postopératoire de chirurgie cardiaque à but de déplétion, en raison de sa facilité d’utilisation. Accord faible",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u49",
+   "empreinte": "c8d3016b712d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.2 En pédiatrie et chez le nouveau‑né, il est possible de faire de la dialyse péritonéale à but d’épuration lors d’une insuffisance rénale aiguë sans critère de dialyse en urgence absolue. Accord faible",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u50",
+   "empreinte": "a34c9f02e394",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2.3 Chez l’adulte, il ne faut probablement pas recourir à la dialyse péritonéale en première intention. Accord fort",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u51",
+   "empreinte": "2b913478ba48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la DP dans la stratégie de prise en charge de l’IRA relevant d’une EER. Les trois seules études disponibles sont contradictoires concernant la mortalité [134–136]. En revanche, le délai nécessaire pour obtenir un contrôle métabolique satisfaisant et un contrôle volémique adéquat à l’aide",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u52",
+   "empreinte": "c3159c5469eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.1 En épuration extrarénale intermittente, il faut probablement que la dose de dialyse minimale délivrée soit de 1) trois séances par semaine de quatre heures au moins avec un débit sang > 200 ml/min et un débit dialysat > 500 ml/min, ou 2) l’obtention d’un",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u53",
+   "empreinte": "71869f3d6179",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.2 En épuration extrarénale continue, il faut probablement que la dose de dialyse minimale délivrée soit de 20–25 ml/kg par heure d’effluent, obtenus par filtration et/ou diffusion. Accord fort",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u54",
+   "empreinte": "8dbf3f90b852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.3 Il faut adapter la dose de dialyse délivrée aux besoins du patient en termes de contrôle du métabolisme, d’équilibre électrolytique et acido‑basique. Il faut prévenir la survenue d’une hypokaliémie et/ou d’une hypophosphatémie. Il faut adapter la posologie des",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u55",
+   "empreinte": "472bfe859dbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.4 En épuration extrarénale intermittente, il faut probablement augmenter la durée et/ou la fréquence des séances en cas d’hypercatabolisme et/ou de désordre métabolique sévère et/ou d’une indication à une déplétion hydrosodée. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u56",
+   "empreinte": "bf13096803f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et/ou de désordre métabolique sévère et/ou d’une indication à une déplétion hydrosodée. (Avis d’experts) Accord fort 3.3.5 En épuration extrarénale continue, il ne faut pas, sur la seule présence d’un sepsis, intensifier la dose d’épuration. Accord fort",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u57",
+   "empreinte": "24a276c9c4f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plutôt qu’il existe une dose minimale, celle utilisée dans les bras témoins de ces trois études, au‑delà de laquelle une",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u58",
+   "empreinte": "734b0bc5d8f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Champs 3.4 : Réglages 3.4.1. Il ne semble pas nécessaire d’utiliser d’héparine pour le rinçage des circuits d’d’épuration extrarénale. (Avis d’experts) Accord faible",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u59",
+   "empreinte": "4f8d9ff6cc6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.1. Il ne semble pas nécessaire d’utiliser d’héparine pour le rinçage des circuits d’d’épuration extrarénale. (Avis d’experts) Accord faible 3.4.2 Il ne faut pas réduire les apports nutritionnels chez les patients en épuration extrarénale (avis d’experts). Accord fort",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u60",
+   "empreinte": "b53a20b17996",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.2 Il ne faut pas réduire les apports nutritionnels chez les patients en épuration extrarénale (avis d’experts). Accord fort 3.4.3 En hémofiltration réalisée en post‑dilution, il faut ajuster le débit sanguin de façon à garder une fraction de filtration inférieure",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u61",
+   "empreinte": "5c1bd86c094a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.4 En hémodialyse intermittente d’une durée < 6 heures, le débit sanguin en dialyse doit être entre 200 et 300 ml/min et le débit dialysat ≥ 500 ml/min pour la plupart des patients. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u62",
+   "empreinte": "3384296624ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.5 Chez l’enfant, en hémodialyse intermittente d’une durée < 6 heures, le débit sanguin doit débuter à 3 ml/kg par minute pour atteindre 5 ml/kg par minute lors des sessions suivantes et le débit de dialysat doit être au minimum de 300 ml/min jusqu’à deux fois",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u63",
+   "empreinte": "6f4cbe6fdf13",
+   "verdict": "ecart",
+   "type_ecart": "force",
+   "citation": "clairance (SLED), il faut utiliser des débits sang et dialy‑ sat inférieurs. (Avis d’experts) Accord fort",
+   "explication": "Source prescriptive (« il faut utiliser des débits inférieurs ») ; la fiche est descriptive (« les débits sont plus bas »). Écart mineur.",
+   "page": 12
+  },
+  {
+   "id": "u64",
+   "empreinte": "207a1f0ea488",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.7 Il faut que le branchement des lignes artérielles et veineuses soit réalisé de façon simultanée pour éviter la déplétion volémique. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u65",
+   "empreinte": "9f5d9fa736ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.8 En hémodialyse intermittente, il faut probablement recommander la baisse de la température dans le dialysat pour améliorer la tolérance hémodynamique. Accord fort",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u66",
+   "empreinte": "799a36889f3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4.9 En hémodialyse intermittente, il faut probablement augmenter la concentration en sodium dans le dialysat (conductivité) > 145 mmol/l pour améliorer la tolérance hémodynamique ou lorsque l’urée est très élevée. Accord fort",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u67",
+   "empreinte": "9f32703ef620",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 145 mmol/l pour améliorer la tolérance hémodynamique ou lorsque l’urée est très élevée. Accord fort 3.4.10 En hémodialyse intermittente, il faut probablement utiliser un tampon bicarbonate. Accord fort",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u68",
+   "empreinte": "d76ae5088a11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de filtration inférieure à 25 % en cas d’anticoagulation à l’héparine non fractionnée (pas d’étude disponible). Cependant, le meilleur indice de viscosité à l’intérieur du filtre",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u69",
+   "empreinte": "a4b9a4077cf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "minimum une prescription et une surveillance spécifiques, la description de la réalisation technique de la séance et des mesures d’hygiène à prendre pour les manipulations et la désinfection des moniteurs/générateurs. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u70",
+   "empreinte": "251c88e82893",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.1.2 Les équipes médicales et paramédicales doivent être formées, en accord avec les référentiels métiers, pour acquérir les compétences nécessaires à l’utilisation des moniteurs/générateurs d’épuration extrarénale, à la prévention et au traitement des complications",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u71",
+   "empreinte": "d06aa0f324bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Champs 4.2 : Gestion du cathéter de dialyse 4.2.1 Il faut réserver l’utilisation d’un cathéter de dialyse à l’épuration extrarénale. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u72",
+   "empreinte": "2e54e7de2082",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.2 Il faut gérer les cathéters d’épuration extrarénale suivant les mêmes recommandations que celles des cathéters veineux centraux. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u73",
+   "empreinte": "1a9411c3f5a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.3 Il faut probablement considérer comme critère de dysfonction du cathéter d’épuration extrarénale l’impossibilité d’atteindre ou de maintenir un débit de pompe sang nécessaire et suffisant pour délivrer une dose adéquate de traitement. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u74",
+   "empreinte": "1eb0bc995f71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.4 Il faut éliminer une hypovolémie en présence d’une dysfonction de cathéter. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u75",
+   "empreinte": "b94f7940ab4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.4 Il faut éliminer une hypovolémie en présence d’une dysfonction de cathéter. (Avis d’experts) Accord fort 4.2.5 Il faut éliminer une thrombose en présence d’une dysfonction de cathéter non liée à une hypovolémie. (Avis d’experts)",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u76",
+   "empreinte": "b45b0d3e8c2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.6 En hémodialyse intermittente, chez l’adulte, il faut changer le cathéter d’épuration extrarénale dès que possible s’il y a eu nécessité d’inverser les lignes, en l’absence d’hypovolémie. (Avis d’experts) Accord fort.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u77",
+   "empreinte": "05f3657b719f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2.7 Il n’est pas possible de recommander un type de verrou plutôt qu’un autre (sérum physiologique, héparine, citrate…). (Avis d’experts) Accord faible",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u78",
+   "empreinte": "44b35952d04a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque de dysfonction si son extrémité distale n’atteint pas l’oreillette droite [183]. Les dysfonctions tardives de cathéter sont principalement liées à des problèmes de thrombose",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u79",
+   "empreinte": "f2972fbab804",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "séances d’EER sont toutes des avis d’experts fondés sur des règles de bonnes pratiques. Aucune publication scientifique n’en a évalué l’impact. Il est cependant apparu nécessaire à la pratique clinique d’apporter des éléments concrets",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u80",
+   "empreinte": "ab47d69cda6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.3.1.1 Avant le branchement, il faut vérifier la perméabilité de l’abord vasculaire. (Avis d’experts) Accord fort 4.3.1.2 Il faut deux personnes pour réaliser le branchement des lignes du cathéter. (Avis d’experts) Accord fort",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u81",
+   "empreinte": "846ea37a9bde",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.3.2 : Pendant la séance 4.3.2.1 Il faut surveiller étroitement les pressions du circuit (artérielle, veineuse, transmembranaire) et la perte de charge.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u82",
+   "empreinte": "e708ce45b54b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.3.3.2 Lors du débranchement, il faut installer le patient en décubitus dorsal pour réduire le risque d’embolie gazeuse. (Avis d’experts) Accord faible",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u83",
+   "empreinte": "fa88afeb81df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3.2.2 En épuration continue, chez l’adulte, il faut probablement privilégier, sauf contre‑indication, l’anticoagulation régionale au citrate, dans le but de prolonger la durée de vie du circuit. Accord faible",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u84",
+   "empreinte": "030bc9ee44ed",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

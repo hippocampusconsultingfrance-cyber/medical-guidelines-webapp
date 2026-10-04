@@ -1,0 +1,259 @@
+{
+ "cle": "blocs_perimedullaires_hemostase_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4a172e9ccee0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "865f43d4da3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce risque s'élève significativement à 1/1500 péridurales, à 1/3600 rachianesthésies en cas d'administration d'héparine non fractionnée, et à 1/3000 péridurales et 1/40 000 rachianesthésies",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u3",
+   "empreinte": "68ed475c2ddf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'APM doit rester exceptionnelle, et d'une manière générale n'est pas recommandable (consensus professionnel).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u4",
+   "empreinte": "e2a0f0d0e707",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "75 000 plaquettes/ml ou l'existence d'une thrombopathie associée contre-indiquent la réalisation d'une APM",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u5",
+   "empreinte": "46668870a1b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prise isolée d'antiagrégants, aspirine ou anti-inflammatoires non stéroïdiens, n'est pas une contre-indication à la réalisation d'une anesthésie périmédullaire",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u6",
+   "empreinte": "0751678361f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est nécessaire d'interrompre ces traitements au moins dix jours avec le clopidogrel et la ticlopidine (consensus professionnel).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u7",
+   "empreinte": "fca2b6b424c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut interrompre au moins 24 heures l'eptifibatide et le tirofiban, et 24–48 heures l'abciximab",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u8",
+   "empreinte": "a148d25f9854",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne peut pas être pratiquée avant un délai de 12 heures suivant la dernière injection sous-cutanée d'héparine non fractionnée à dose curative ou prophylactique",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u9",
+   "empreinte": "4f09d1b0c062",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la réaliser avant 12 heures, il est nécessaire de vérifier la normalité du TCA. La reprise du traitement peut être envisagée six à huit heures après l'APM (grade B).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u10",
+   "empreinte": "4246f977947e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'après un délai d'au moins quatre heures après la fin de l'administration d'héparine intraveineuse à dose curative",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u11",
+   "empreinte": "2b754a5215be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l'héparine peut être diminuée (consensus professionnel). La reprise du traitement peut être envisagée six à huit heures après l'APM (grade B).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u12",
+   "empreinte": "2b352bb6e852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'indication d'une anesthésie périmédullaire peut être posée si le bénéfice attendu de l'anesthésie est supérieur au risque d'hématome en postopératoire",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u13",
+   "empreinte": "c38575a1538c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut attendre au moins 12 heures après l'anesthésie avant d'injecter de nouveau de l'héparine (grade B, consensus professionnel).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u14",
+   "empreinte": "2b24c023fb48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est préférable de reporter l'intervention en cas de brèche vasculaire lors de la réalisation de l'anesthésie",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u15",
+   "empreinte": "7ca244aa1b54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est nécessaire d'attendre 24 heures avant de réaliser l'anesthésie périmédullaire (consensus professionnel).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u16",
+   "empreinte": "bafb806e57d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'évaluation de l'activité anti-Xa ne permet pas de prédire le risque hémorragique (grade C).",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u17",
+   "empreinte": "0e875e9cfa1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut respecter un délai de 10 à 12 heures d'arrêt avant la réalisation de l'APM en cas de dose unique quotidienne et de 24 heures lorsque le patient reçoit deux doses quotidiennes.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u18",
+   "empreinte": "c7f8132c71db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit avec de la vitamine K (dose d'au moins 2 mg, délai minimum 12 heures), soit par l'injection intraveineuse de concentrés prothrombiniques (PPSB). L'INR inférieur à 1,5 permet",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u19",
+   "empreinte": "bc7e58065db2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est nécessaire d'attendre impérativement 24 heures après l'utilisation d'un thrombolytique pour pratiquer une APM.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u20",
+   "empreinte": "002aea069bd8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est prudent d'appliquer les mêmes règles de prescription que celles des HBPM pour la réalisation de l'APM.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u21",
+   "empreinte": "dd7602a0b2db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les signes sont souvent retardés après la réalisation de l'anesthésie ou le retrait du cathéter péridural, parfois de plusieurs jours (grade C).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u22",
+   "empreinte": "8608f352dba7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'absence d'IRM ne doit pas faire retarder la prise en charge chirurgicale (consensus professionnel).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u23",
+   "empreinte": "a693c7dd9a6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elles sont compromises si l'intervention chirurgicale est entreprise plus de six heures après l'apparition des signes cliniques (grade C).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u24",
+   "empreinte": "2027f08e0ed7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "car la complication est observée dans la moitié des cas au décours de son retrait (consensus professionnel).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u25",
+   "empreinte": "8c6161809d1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réalisation d'un bilan systématique de la coagulation n'est pas nécessaire (grade B).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u26",
+   "empreinte": "959742cdf604",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez la femme enceinte, il n'est pas recommandé de répéter la mesure de la numération plaquettaire effectuée au sixième mois",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u27",
+   "empreinte": "76a9b79fbbb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stable avec des valeurs supérieures à 80 000 plaquettes/ml pour la péridurale et supérieures à 50 000 plaquettes/ml pour la rachianesthésie",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u28",
+   "empreinte": "01203203fcad",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

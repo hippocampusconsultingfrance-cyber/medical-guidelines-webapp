@@ -1,0 +1,1816 @@
+{
+ "cle": "securisation_proc",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a85e32877309",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque infectieux exclu Experts recommendations on safety practices for ICU patients",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "17a039dd9f07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "formalisée selon la méthode SRLF-SFAR dérivée de la RandUcla approppriateness method (RAM) à l’aide d’une échelle continue graduée de 1 à 9 (1 signifie un désaccord total et 9 un",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "0a9ff79fa3fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "potentiellement source de dommage. Cette définition inclut les erreurs humaines médicales et paramédicales (procédures) et",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "5494d36604b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’erreur humaine est un écart par rapport à un objectif qui n’a pas été réalisé lors d’une séquence programmé d’activité",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "4f39d5b8bf5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décret sur l’accréditation des médecins dans les spécialités à risque sont des EI (à l’exclusion des EI graves) (accord faible).",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "e337b7dca922",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un événement indésirable patient est une complication directement liée aux soins et non à la pathologie sous-jacente du",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u7",
+   "empreinte": "2a59d0de35ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un événement indésirable grave patient est une complication directement liée aux soins entraı̂nant un risque vital, une prolongation de séjour, la nécessité de gestes invasifs, des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "3ddcb867c5fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un EI ou un EPR doit être considéré comme inévitable lorsque les soins ont été délivrés conformément à l’état de l’art",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "f27a22dd01aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f une ou plusieurs erreurs médicales associées ou non à un ou plusieurs défauts système (touchant la structure, l’organisation et ou le management) ;",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "87de371f237b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors des situations caricaturales, seule une analyse fine pourra réaliser la distinction entre EI évitables et ceux qui ne le",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "900ec6e594c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les procédures à risques pour le patient en réanimation sont principalement des procédures invasives (accord faible).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "37699912aefa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qui permet d’identifier et de traiter les différentes sources de risques afin de réduire au minimum le risque pour les patients",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "8f37e3b5ffa7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédures structurelles/organisationnelles qui préviennent, diminuent la fréquence de survenue ou atténuent les",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "6052852a659a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mise en place d’un indicateur nécessite au préalable d’avoir défini l’objectif de sécurisation des soins surveillé par",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "688b3fdee3b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un indicateur doit être analysé systématiquement et de façon régulière.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "6542e4277185",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de variation d’un indicateur susceptible d’être le témoin d’un EPR, une analyse systémique doit être réalisée afin",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "b97c5784a7ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un indicateur doit être acceptable, valide, pertinent, fiable et compréhensible.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "4f943d16c9b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les indicateurs concernant la sécurisation d’une procédure de soins doivent être en nombre limité.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "ec982012d69b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut standardiser les définitions concernant les erreurs médicales, les événements EI et leur évitabilité (accord",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u20",
+   "empreinte": "610d29433b78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les erreurs médicales et les EI patients doivent être classés en fonction de leur gravité (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "8c20a85e38d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La standardisation de la méthode de recueil des erreurs médicales et des évènements indésirables patients est nécessaire (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u22",
+   "empreinte": "15144e62bbb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quelle que soit la méthode, il est recommandé que ce recueil soit non punitif, confidentiel et indépendant (accord faible).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "eb3c92eedb3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le recueil régulier par la déclaration volontaire, bien que source de biais, permet de développer une culture sécurité",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u24",
+   "empreinte": "1332916dda93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de privilégier l’analyse des erreurs médicales et les EI patients évitables (accord faible).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u25",
+   "empreinte": "07bb8f279d87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est important de pouvoir identifier indépendamment les erreurs des EI patients (accord faible).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u26",
+   "empreinte": "dfb57496c47d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est important d’étudier les facteurs permettant la détection et la récupération de ces erreurs (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u27",
+   "empreinte": "aaee45d7db85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service de réanimation doit comporter (accord fort) : \u000f des chambres individuelles ;",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u28",
+   "empreinte": "cf4e99530fe8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "biologiques fiables, obtenus rapidement et dont la traçabilité est assurée (pneumatique, biologie délocalisée) (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u29",
+   "empreinte": "e3de502c35ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "assurée (pneumatique, biologie délocalisée) (accord fort). Il existe une procédure chariot d’urgence (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u30",
+   "empreinte": "bcb2e34375ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une procédure chariot d’urgence (accord fort). Informatisation de l’unité de soins (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u31",
+   "empreinte": "415673ab48b4",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "c510cae8a66c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’informatisation du dossier médical et de la prescription doit être développée.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u33",
+   "empreinte": "aa34f3094ce3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "b77709efbf88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les résultats des examens biologiques et d’imagerie médicale sont disponibles dans le service.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u35",
+   "empreinte": "94aab2c92151",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une procédure partagée avec le plateau médicotechnique pour la transmission des résultats urgents (par exemple : hyperkaliémie).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u36",
+   "empreinte": "c2797e4ff86e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une relation entre le volume d’actes réalisés et la performance en termes de sécurité patient.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u37",
+   "empreinte": "b9dc3e89cbc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsqu’une technique médicale n’est pas disponible localement celle-ci doit faire l’objet d’une convention",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u38",
+   "empreinte": "bf8c078fa58b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le responsable médicale du service et/ou du pôle doit être impliqué dans la gestion du recrutement du personnel soignant",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u39",
+   "empreinte": "5fe2ca3c767e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les compétences médicales et paramédicales doivent être identiques en réanimation et en USC (accord faible).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u40",
+   "empreinte": "587505d4bef8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si le médecin de garde ne fait pas partie de l’équipe médicale du service un médecin de cette équipe doit pouvoir être consulté",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u41",
+   "empreinte": "048295ee36b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une procédure d’appel du médecin réanimateur",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u42",
+   "empreinte": "e11e74794299",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe un programme de formation dans le service concernant les internes et les médecins de l’équipe.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u43",
+   "empreinte": "3298a5e6b664",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.3.2. Organisation du travail des soignants (accord fort) Il existe un cadre de santé de proximité dont l’activité est",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u44",
+   "empreinte": "9e0b0b2d5cff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La présence d’un infirmier tuteur est souhaitable durant cette période d’intégration.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u45",
+   "empreinte": "193cf41824a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une attention particulière doit être portée sur les équipes de nuit qui doivent bénéficier soit de formations spécifiques, soit",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u46",
+   "empreinte": "ade7d4b98fb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les transmissions entre équipes médicales et/ou soignantes doivent être formalisées.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u47",
+   "empreinte": "156bcaafce29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est nécessaire d’identifier, selon la dimension du service, un ou plusieurs agents responsables de la logistique (matériel,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u48",
+   "empreinte": "0f44ee48e04b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est souhaitable que le service dispose d’outils permettant l’évaluation ponctuelle de la charge de travail.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u49",
+   "empreinte": "78edbce63cbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "appropriation locale s’il s’agit de protocoles extérieurs ; \u000f doivent faire l’objet de fréquents rappels (affiches, aide",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u50",
+   "empreinte": "12a75ff68878",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "périodiquement faire l’objet de procédures de formation (prise en charge de l’arrêt cardiorespiratoire, de l’intubation difficile,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u51",
+   "empreinte": "5863fb96df53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces situations doivent faire l’objet, a posteriori, de réunions de débriefing de l’ensemble de l’équipe médicale et paramédicale.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u52",
+   "empreinte": "c7eb315184dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "D’une manière générale, le service doit disposer de checklists pour les procédures à risques reconnues et identifiées localement, a fortiori, lorsqu’elles ont fait l’objet de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u53",
+   "empreinte": "a7dac84cc2a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service doit disposer d’une procédure écrite de régulation d’admission des patients.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u54",
+   "empreinte": "a0909970ac67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service doit disposer d’une procédure écrite de sortie des patients qui comporte impérativement une fiche de liaison IDE",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u55",
+   "empreinte": "2b7dabd6678d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4. Démarche qualité et culture sécurité (accord fort) Le service de réanimation doit organiser périodiquement des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u56",
+   "empreinte": "ead948b91a4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.4. Démarche qualité et culture sécurité (accord fort) Le service de réanimation doit organiser périodiquement des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u57",
+   "empreinte": "1db1daf6324f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Certaines procédures à risque doivent faire l’objet d’une réflexion bénéfice/risque dont la traçabilité est assurée dans le",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u58",
+   "empreinte": "25e9b19af85a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les audits de soins peuvent être intégrés dans l’évaluation des pratiques professionnelles (EPP) pour le personnel médical.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u59",
+   "empreinte": "6252d31eb5a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service doit disposer d’indicateurs d’alerte d’épuisement professionnel (demandes de changement, absentéisme).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u60",
+   "empreinte": "322fa1bd913e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une procédure d’aide pour les agents en difficultés (raisons personnelles ou professionnelles).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u61",
+   "empreinte": "8a3996ce49a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il existe une formalisation et une traçabilité dans le dossier du patient des décisions de limitations et d’arrêt des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u62",
+   "empreinte": "ed29f7b033f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service de réanimation tient un registre des refus d’admission indiquant les motifs (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u63",
+   "empreinte": "a98d874b677a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service de réanimation dispose d’indicateurs de procédures et de résultats spécifiques concernant la sécurité",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u64",
+   "empreinte": "2eaf9a378339",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le service de réanimation dispose d’indicateurs de résultats permettant une comparaison interne ou externe (accord",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u65",
+   "empreinte": "9cc5977a4338",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risques de leur conception à leur mise au rebut, notamment le risque d’erreurs humaines qui doivent être maı̂trisées (accord",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u66",
+   "empreinte": "a69f53b6c5c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "D’une manière générale, les principaux éléments de sécurisation doivent reposer sur la formation des utilisateurs,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u67",
+   "empreinte": "ffdeafe25197",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une collaboration entre services cliniques et services biomédicaux est nécessaire (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u68",
+   "empreinte": "31e2f65965f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "DM doivent être : un référent biomédical ingénieur par service (ou pôle) et/ou par type de matériel, un référent",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u69",
+   "empreinte": "9773878c2b6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place une gestion informatisée du parc des DM (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u70",
+   "empreinte": "3f7936115d35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stockage, l’agenda de maintenance et de mise à niveau, la notification des pannes (type fréquence et durée d’immobilisation) enfin la fréquence des défauts utilisateurs (accord",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u71",
+   "empreinte": "a4295fc0dc8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une collaboration entre services cliniques et services biomédicaux est nécessaire (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u72",
+   "empreinte": "2777931a0898",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "garantie, contrat de maintenance, proximité et disponibilité du service après vente.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u73",
+   "empreinte": "a593f4f8c070",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les certificats de conformité aux textes réglementaires applicables à la classe du dispositif doivent être exigés.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u74",
+   "empreinte": "92c168e4fb14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sur site en conditions réelles avec un panel représentatif d’utilisateurs pour identifier les situations locales spécifiques à",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u75",
+   "empreinte": "a783ca4ccd6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de prêt de matériel, une fiche de mise à disposition doit être validée et signée par la Société, les services cliniques",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u76",
+   "empreinte": "84f66caf394a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut programmer et effectuer la formation des services cliniques et biomédicaux avant la réception du DM.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u77",
+   "empreinte": "36296083739f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À la livraison, il faut vérifier que l’équipement correspond à l’intégralité de la commande (accessoires et consommables",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u78",
+   "empreinte": "4e195b807230",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "éventuels). Le DM doit être inscrit à l’inventaire du service.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u79",
+   "empreinte": "97640f3fae96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de déterminer son périmètre fonctionnel (par exemple établissement d’une convention d’utilisation).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u80",
+   "empreinte": "b9432511b140",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permettant d’identifier au minimum l’opérateur, la date, le type de dysfonctionnement et préciser la liste des fonctionnalités non opérationnelles « bloquantes ».",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u81",
+   "empreinte": "498d8c778949",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si des check-lists de contrôle sont prévues par le constructeur et intégrées au logiciel du matériel, il faut les",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u82",
+   "empreinte": "e00d754f054b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut rédiger une fiche d’alerte incidente pour tout dysfonctionnement, panne ou arrêt intempestif, information",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u83",
+   "empreinte": "9e6205341e63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les maintenances préventives et curatives doivent être organisées par le service biomédical et faire l’objet de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u84",
+   "empreinte": "2e242c3455b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une procédure en cas de panne, adaptée à chaque type de matériel doit être prévue par le service biomédical et comporter",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u85",
+   "empreinte": "721c05d099ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de fréquence anormale du nombre de défauts utilisateurs ou lors de mise à niveau des matériels.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u86",
+   "empreinte": "d4beab81160b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anticipant le remplacement du DM quand nécessaire (année de mise en service, nombre d’heures d’utilisation, concept dépassé",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u87",
+   "empreinte": "e95e78971114",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors de la réforme du DM, il faut retirer également les consommables pour éviter toute confusion avec d’autres DM de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u88",
+   "empreinte": "69180037f77b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chaque unité de réanimation doit disposer d’un chariot d’intubation dont la composition vérifiée quotidiennement est",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u89",
+   "empreinte": "95e22e157ffe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f vérifier le bon fonctionnement du respirateur auquel le patient sera branché immédiatement après l’intubation ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u90",
+   "empreinte": "6b10c5eda385",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "S’il n’y a pas de contre-indications, un remplissage vasculaire est souhaitable (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u91",
+   "empreinte": "bdfd3c49903c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vasculaire est souhaitable (accord faible). Deux opérateurs (deux médecins ou un médecin et une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u92",
+   "empreinte": "26cf739379cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si l’indication d’une sédation continue a été posée celle-ci doit être préparée avant et administrée immédiatement après",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u93",
+   "empreinte": "9578ec52953e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’intubation (accord faible). Il est préférable d’utiliser une lame métallique pour la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u94",
+   "empreinte": "01d1138a38f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut assurer une traçabilité dans le dossier médicale de toutes les intubations (en particulier difficiles) (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u95",
+   "empreinte": "b13090bdd2d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors des contre-indications, il faut utiliser l’induction à séquence rapide (ISR) (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u96",
+   "empreinte": "9ed6d9590f31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le contrôle de la bonne position de la sonde d’intubation à l’aide d’un capnographe (EtCO2) doit être privilégié si le",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u97",
+   "empreinte": "6f29f0c65907",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les paramètres de la ventilation mécanique doivent être réadaptés à distance de l’intubation (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u98",
+   "empreinte": "bdd7085038ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La trachéotomie doit être réalisée sous anesthésie générale avec curarisation appropriée (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u99",
+   "empreinte": "dd35fcbc2229",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la technique percutanée a été choisie, un fibroscope bronchique doit être utilisé (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u100",
+   "empreinte": "28dc366c9a5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "posée, il faut s’assurer qu’un chirurgien (ORL si possible) puisse en cas d’échec réaliser en urgence une trachéotomie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u101",
+   "empreinte": "aa2d9c29a4ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’hémostase doit être vérifiée (TP > 50 % et TCA < 1,5 le témoin, plaquettes > 50 000/mm3 et l’héparinothérapie standard curative interrompue de manière momentanée, respect",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u102",
+   "empreinte": "78b81733dc75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un plateau d’intubation doit être prêt en cas de difficultés ainsi qu’une boı̂te chirurgicale si la technique percutanée a été",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u103",
+   "empreinte": "52e1b8d6a860",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le système d’aspiration murale avec canule d’aspiration stérile doit être vérifié (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u104",
+   "empreinte": "cad09e597459",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vérification et sa traçabilité dans un carnet de bord daté signé est assurée quotidiennement ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u105",
+   "empreinte": "165a8b6f7f98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f une procédure d’aspiration propre (sonde à usage unique, port de gants) ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u106",
+   "empreinte": "339c983c8193",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’optimisation de la ventilation mécanique en termes de sécurité patient nécessite (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u107",
+   "empreinte": "6d729852379b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le processus de sevrage doit être envisagé aussitôt que possible dans la prise en charge d’une IRA (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u108",
+   "empreinte": "3b2ad4ec7422",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont remplis car ce sont les deux étapes essentielles à l’identification des patients susceptibles d’être sevrés.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u109",
+   "empreinte": "18b213a6c9a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les critères prédictifs de l’issue du sevrage ne doivent pas être attendus et/ou obtenus pour réaliser l’épreuve de sevrage",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u110",
+   "empreinte": "e713576b78ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La tolérance clinique d’une épreuve de sevrage doit être considérée comme le meilleur test pour juger a priori des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u111",
+   "empreinte": "d6420ca208bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’épreuve de sevrage doit être réalisée sur pièce en T (VS/T) ou en aide inspiratoire (AI) d’un niveau minimal de 7 cmH2O",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u112",
+   "empreinte": "fd9ec50229c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le succès de l’épreuve de sevrage doit faire procéder à l’extubation dans les suites immédiates après avoir éliminé des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u113",
+   "empreinte": "1cb0755b6201",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’échec de l’épreuve de sevrage doit faire imposer d’en rechercher la ou les causes et leur éventuelle réversibilité",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u114",
+   "empreinte": "dad86e07399c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le patient difficile ou potentiellement difficile à sevrer, la sécurisation du sevrage doit comprendre (accord faible) :",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u115",
+   "empreinte": "3fd428630d6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La VNI peut être utilisé comme technique de sevrage permettant l’extubation précoce chez les patients BPCO",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u116",
+   "empreinte": "60cbd7b6e46a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il peut être utile de mettre en place des protocoles de sevrage (accord faible).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u117",
+   "empreinte": "adc359464a08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord faible). Il peut être utile d’utiliser des logiciels informatisés (accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u118",
+   "empreinte": "f43f6328200e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant d’envisager une extubation, il faut évaluer la capacité du patient à tousser et à évacuer ses sécrétions (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u119",
+   "empreinte": "54688f9e722a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’y a pas lieu de réaliser systématiquement un test de fuite lors de l’extubation des patients de réanimation (accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u120",
+   "empreinte": "ae257587ed7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le test de fuite est recommandé chez les patients à risque (accord fort).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u121",
+   "empreinte": "6ebe469c39d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à très haut risque, chez qui la réalisation d’une trachéotomie peut être difficile, il faut discuter la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u122",
+   "empreinte": "8dc90452092d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La VNI doit représenter la stratégie ventilatoire sécuritaire pour la prise en charge de l’IRA hypercapnique des patients",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u123",
+   "empreinte": "0c91fb991118",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "poumons antérieurement sains), l’analyse du rapport bénéfices/ risques doit prendre en compte le risque accru de mortalité en",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u124",
+   "empreinte": "6d19f5895c36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’application de la VNI à l’IRA hypoxémique doit dans tous les cas être menée dans un milieu sécurisé de réanimation pour",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u125",
+   "empreinte": "8d6643294348",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quel que soit le type d’IRA (hypercapnique ou hypoxémique), les patients les plus graves sous VNI doivent être pris en charge et surveillés en réanimation.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u126",
+   "empreinte": "9959e6887d2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "médicales et des évènements indésirables patients est nécessaire (accord fort). Le service de réanimation doit comporter (accord fort) :",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u127",
+   "empreinte": "ea35b2c15b2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La pratique de la VNI implique une bonne connaissance des indications, des contre-indications et des facteurs prédictifs",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u128",
+   "empreinte": "7c26316483c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’élaboration de protocoles de soins, propre au service, est recommandée pour favoriser l’implantation de la technique et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u129",
+   "empreinte": "9967c51b455f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le matériel de VNI disponible (masques, ventilateurs, humidificateurs) doit être adapté à la pathologie et à la gravité",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u130",
+   "empreinte": "254eded0a106",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jusqu’au réglage optimal ; \u000f le réglage du trigger inspiratoire, de la pente de pressurisation, du niveau d’AI et du cyclage inspiration/expiration",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u131",
+   "empreinte": "c0d759ad5a02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "initialement jusqu’à une amélioration clinique et gazométrique franche avant d’envisager un mode séquentiel (alternance",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u132",
+   "empreinte": "51437666d19a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les risques d’échec de la VNI doivent imposer une surveillance initiale rapprochée au cours des premières heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u133",
+   "empreinte": "1b9d92eaf192",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance de la VNI doit être avant tout clinique mais doit s’aider des gaz du sang, des paramètres et des courbes du",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u134",
+   "empreinte": "a9e74158ca84",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "l’arrêt de la VNI suppose au préalable une évaluation clinique et gazométrique de l’autonomie ventilatoire du patient en VS sur une période de six à 12 h",
+   "explication": "La source ne donne aucune cotation pour cette phrase (la cotation « accord fort » précédente porte sur la surveillance de la VNI) ; la fiche affiche [Fort]. Par cohérence avec les lignes 3.1 sans cotation, afficher [?] ou « non coté ».",
+   "page": 6
+  },
+  {
+   "id": "u135",
+   "empreinte": "892e8f651537",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le rangement des drogues vasoactives doit tenir compte du risque de confusion entre différentes ampoules. De même,",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u136",
+   "empreinte": "f8f28a9a5d02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les médicaments vasoactifs doivent être administrés par voie intraveineuse et de façon continue grâce à une seringue",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u137",
+   "empreinte": "b6808b508b72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f centrale doit toujours être privilégiée ; \u000f veineuse périphérique : possible pour la dopamine et pour la",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u138",
+   "empreinte": "1913c920aa24",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u139",
+   "empreinte": "e07107c4b562",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la voie de perfusion principales doit se faire par l’intermédiaire d’une tubulure de petit calibre et le plus près possible du",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u140",
+   "empreinte": "7b6071e73bdd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les systèmes utilisés pour le relais des seringues destinées à l’administration de drogues vasoactives doivent être munis",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u141",
+   "empreinte": "a1c779bcda46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le relais des seringues doit faire l’objet d’une procédure de soins standardisée dans le service de réanimation.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u142",
+   "empreinte": "94a9808e11c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dilution des drogues vasoactives doit faire l’objet d’une procédure de soins standardisée dans le service de réanimation.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u143",
+   "empreinte": "4d26689a0bb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser du matériel entièrement transparent permettant d’identifier clairement les bulles présentes dans",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u144",
+   "empreinte": "92f771a67708",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "central artériel ou veineux doivent utiliser un système à vis (de type Luer-Lock) (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u145",
+   "empreinte": "56fced192884",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "artériel ou veineux doivent être clairement identifiés afin d’éviter le risque d’injections accidentelles sur cette ligne",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u146",
+   "empreinte": "1cb7cc97e20f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après l’ablation d’un cathéter central artériel ou veineux, il faut vérifier qu’il a été retiré dans son ensemble (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u147",
+   "empreinte": "86de46355d29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un cathéter artériel ne doit pas être posé sur une artère terminale (artère humérale).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u148",
+   "empreinte": "710c3d7e5b63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les sites d’insertion possible d’un cathéter artériel sont les artères radiales, fémorales et pédieuses.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u149",
+   "empreinte": "0760019ed990",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "test d’Allen est un préalable à la pose d’un cathéter artériel par voie radiale. Ce test peut être remplacé par le signal de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u150",
+   "empreinte": "b8ea127a80fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vascularisation d’aval doit être explorée et régulièrement surveillée. Il faut privilégier les cathéters de petite longueur (3 à",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u151",
+   "empreinte": "efac1c07b38b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser un système de purge du cathéter artériel assurant un débit continu, au minimum, de 2 ml/h incluant la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u152",
+   "empreinte": "2437614125c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’y a pas d’argument pour pratiquer une anticoagulation systématique de la ligne artérielle.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u153",
+   "empreinte": "8151a8f826af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après l’ablation du cathéter artériel, il faut comprimer le point de ponction pendant quelques minutes jusqu’à l’arrêt de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u154",
+   "empreinte": "10c32e4376cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le cathétérisme veineux central doit être effectué par ou avec l’aide d’un opérateur expérimenté (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u155",
+   "empreinte": "dba35cead1e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La voie sous-clavière doit être évitée en cas d’anomalie de l’hémostase, en cas d’hypoxémie sévère (PaO2/FiO2 < 200) et",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u156",
+   "empreinte": "7b6e72e4e1e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d’anomalie importante de l’hémostase, la voie fémorale doit être préférée pour le cathétérisme veineux central",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u157",
+   "empreinte": "8648f4337237",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la deuxième tentative de ponction veineuse a échoué, il est conseillé de changer de site, d’opérateur ou de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u158",
+   "empreinte": "13ed5c6f5854",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "succès du cathétérisme veineux, surtout pour la voie jugulaire interne, sans augmenter le temps de cathétérisme (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u159",
+   "empreinte": "cfc08f32b8f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un contrôle de la radiographie du thorax doit être effectué après la pose d’un cathéter veineux sous-clavier afin de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u160",
+   "empreinte": "da4c4b429cd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "position du cathéter (accord fort). Afin d’éviter toute érosion endovasculaire et effraction intrapéricardique, l’extrémité des cathéters veineux insérés dans le",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u161",
+   "empreinte": "661f440379ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "veineux central s’applique à la pose du désilet préalable à l’insertion du cathéter artériel pulmonaire (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u162",
+   "empreinte": "a76ce73ff0c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’insertion du cathéter artériel pulmonaire (accord fort). L’utilisation du cathéter artériel pulmonaire est contreindiquée par la présence d’une sonde d’entraı̂nement intracardiaque (accord faible).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u163",
+   "empreinte": "c83d24b44dbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation du cathéter artériel pulmonaire est contreindiquée par la présence d’une sonde d’entraı̂nement intracardiaque (accord faible). Lors de l’introduction du cathéter dans les cavités cardiaques,",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u164",
+   "empreinte": "bc45b35df73d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un contrôle de la radiographie de thorax doit être effectué après l’insertion du cathéter artériel pulmonaire afin de vérifier",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u165",
+   "empreinte": "46e15a7ce7b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’insertion du cathéter artériel pulmonaire (accord fort). L’utilisation du cathéter artériel pulmonaire est contreindiquée par la présence d’une sonde d’entraı̂nement intracardiaque (accord faible).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u166",
+   "empreinte": "8e75f5a320fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’un trouble du rythme et d’un trouble conductif doivent être disponibles rapidement lors de la pose d’un cathéter artériel",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u167",
+   "empreinte": "f8ea80ab288c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le cathéter artériel pulmonaire doit être maintenu en place le moins longtemps possible. Une durée maximale de trois jours",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u168",
+   "empreinte": "55564d188928",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La calibration du zéro de référence doit se faire au niveau de l’oreillette droite et sa recalibration doit s’effectuer régulièrement et en cas de doute, des mesures de pression affichées",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u169",
+   "empreinte": "9e2ece99b7b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mesure de SvO2 nécessite une calibration régulière par co-oxymétrie (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u170",
+   "empreinte": "d731758a2f8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sonde n’est pas nécessaire. En cas de toute anomalie d’obtention du tracé, la radiographie de thorax de contrôle",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u171",
+   "empreinte": "31e5f1460b29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À l’ablation du cathéter artériel pulmonaire, il faut vérifier son intégrité (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u172",
+   "empreinte": "8d4dc0127d60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prescription d’une séance d’épuration extra-rénale (EER) intermittente ou continue doit comporter au minimum (accord",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u173",
+   "empreinte": "b7b69e05c679",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La structure de la membrane utilisée pour la réalisation d’une EER doit être en cellulose modifiée ou synthétique (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u174",
+   "empreinte": "2c6697667566",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au cours de l’EER (intermittente ou continue) la filtration à travers la membrane doit être gérée par un contrôle automatisé",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u175",
+   "empreinte": "01464136b889",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "surveillée en continu et la filtration être interrompue lors des situations à risque de chute du débit sanguin (nursing) (accord",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u176",
+   "empreinte": "26b0d0861b7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant toute mise en route d’une EER et en particulier pour l’hémofiltration, il est nécessaire de (accord fort) :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u177",
+   "empreinte": "c3d482c56358",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aux recommandations du CLIN concernant la prévention du risque infectieux au cours de la mise en place des cathéters",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u178",
+   "empreinte": "4bd4d9489c82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f une évaluation quotidienne et après chaque modification de posologie de l’activité systémique du traitement anticoagulant au cours de l’EER continue ;",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u179",
+   "empreinte": "08825e21f19e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le cas particulier d’un traitement antithrombotique au citrate, il faut doser toutes les quatre heures en état stable le",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u180",
+   "empreinte": "c98a1764e905",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en sus de la surveillance clinique déjà décrite la mise en place d’une procédure écrite, facilement disponible (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u181",
+   "empreinte": "4e960403d5e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette procédure doit comporter en sus de la surveillance déjà décrite la description (accord fort) :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u182",
+   "empreinte": "3fcad3aa1480",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une procédure de désinfection interne des générateurs entre les séances d’hémodialyse doit être mise en place (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u183",
+   "empreinte": "9a6dd551cdc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fabriquant un dialysat à partir de l’eau de distribution publique doivent faire partie des acteurs impliqués dans le processus de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u184",
+   "empreinte": "3533fd5f88c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "procédure d’alerte en cas de non-conformité chimique ou microbiologique de l’eau pour hémodialyse (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u185",
+   "empreinte": "04287e85ca2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La recherche d’un résidu de solution désinfectante dans le dialysat doit être systématique avant tout branchement d’une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u186",
+   "empreinte": "7cf710500beb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 8 (image) : « la dose (µg/min) (accord fort) » ; le texte extrait rend µ par m",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u187",
+   "empreinte": "da4fc497c702",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le matériel de monitorage doit être doté d’alarmes adaptées à l’âge de l’enfant (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u188",
+   "empreinte": "8463a5c0b6ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsqu’une voie fémorale a été mise en place dans un contexte d’urgence, son maintien doit être reconsidéré au bout",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u189",
+   "empreinte": "aefbaed9a500",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les lignes de perfusion artérielle doivent toujours être raccordées à une tête de pression (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u190",
+   "empreinte": "513c298de4c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un matériel spécifique (pompes, tubulure et sondes), adapté et clairement identifié doit être utilisé pour éviter le risque de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u191",
+   "empreinte": "a0dae5a4728d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une boı̂te d’intubation pédiatrique doit comporter des lames droites et des lames courbes de toutes les tailles existantes",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u192",
+   "empreinte": "75df25eda8b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’usage de l’aspiration en système clos doit être strictement limité aux situations où le dérecrutement a des conséquences",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u193",
+   "empreinte": "6bc725d0b756",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout pôle de réanimation pédiatrique doit être équipé de masques de ventilation manuelle adaptés à la taille de l’enfant",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u194",
+   "empreinte": "3ec72e123af5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "significatives et persistantes sur l’oxygénation (accord fort). Tout pôle de réanimation pédiatrique doit être équipé de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u195",
+   "empreinte": "1b0090cfe4a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les techniques d’EER (cathéters, moniteur, volume extracorporel, débit) doivent être adaptées à la taille de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u196",
+   "empreinte": "faea980fa24e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dialyse péritonéale est une méthode d’EER qui reste utilisable en réanimation pédiatrique (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u197",
+   "empreinte": "2fcda37f9b1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le maintien de l’expertise du personnel pédiatrique en technique d’EER fait partie d’une formation continue",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u198",
+   "empreinte": "3363d17a4097",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les trois propositions suivantes ont été scorées par les experts dans la zone d’indécision :",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u199",
+   "empreinte": "ddb01ba38bd6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f l’administration de corticoı̈des par voie IV au moins six heures avant l’extubation peut être proposée ;",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u200",
+   "empreinte": "d01d654cfe18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f si une extubation est prévue, il peut être proposé d’utiliser un guide échangeur pour faciliter la réintubation éventuelle ;",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u201",
+   "empreinte": "05b5bb812a0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u000f lorsqu’il est réalisée une déplétion chez un patient à risque, il est nécessaire de mettre en place un monitorage de la",
+   "explication": "",
+   "page": 9
+  }
+ ]
+}

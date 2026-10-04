@@ -1,0 +1,340 @@
+{
+ "cle": "raac_lobectomie_pulmonaire_2019",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "ece8c607c70d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à faible (18 GRADE 2+ et 5 GRADE 2-) et 2 sont des avis d'experts.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u2",
+   "empreinte": "5560a7c37e42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Il est probablement recommandé d'opérer les patients de lobectomie pulmonaire dans un",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u3",
+   "empreinte": "740b2be7dc69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2.1 – Il n'est probablement pas recommandé d'hospitaliser systématiquement en réanimation",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "0559707ef506",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2.2 – Les experts suggèrent de discuter l'hospitalisation en unité de soins continus des patients",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u5",
+   "empreinte": "e63e399b63fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Il est recommandé de délivrer une information de qualité à l'aide de plusieurs supports avant",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u6",
+   "empreinte": "379e3c1c75e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1.1 – Il est probablement recommandé de dépister la dénutrition avant chirurgie de lobectomie",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "e85db6ba8185",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1.2 – Les experts suggèrent de corriger une dénutrition dépistée en préopératoire par une",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u8",
+   "empreinte": "d42fd0809b21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – Il est recommandé d'encourager systématiquement l'arrêt préopératoire du tabac,",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u9",
+   "empreinte": "d7272256a8fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de preuve spécifique à la chirurgie thoracique, aucune recommandation",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u10",
+   "empreinte": "ca67750d2983",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Il est probablement recommandé de proposer un programme de réhabilitation",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u11",
+   "empreinte": "019c5e0449fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4 – Il est probablement recommandé de réaliser une désinfection oropharyngée préopératoire",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u12",
+   "empreinte": "50cab14f248c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Concernant l'éradication du portage nasal de Staphylococcus aureus, il n'existe pas de donnée",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u13",
+   "empreinte": "b7b7d5574616",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.5.1 – Il est probablement recommandé de poursuivre le traitement habituel par inhibiteurs",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u14",
+   "empreinte": "d9335d708dca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.5.2 – Il est probablement recommandé d'introduire en peropératoire ou en postopératoire",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u15",
+   "empreinte": "e34471959b57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 – Il n'est probablement pas recommandé de privilégier l'entretien de l'anesthésie par une",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u16",
+   "empreinte": "95758bec154a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protectrice associant un volume courant inférieur ou égal à 6 mL/kg de poids idéal théorique",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u17",
+   "empreinte": "7551949b247f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "base compris entre 2 et 6 mL/kg/h pour diminuer la survenue de complications respiratoires",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u18",
+   "empreinte": "576a8cf5c5d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'un monitorage hémodynamique, en privilégiant le Doppler œsophagien",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u19",
+   "empreinte": "945bfaa45217",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.4.1 – Il est recommandé d'utiliser une technique d'analgésie locorégionale en postopératoire",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u20",
+   "empreinte": "85cf49735c60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.4.2 – Il est probablement recommandé d'utiliser une technique d'analgésie locorégionale en",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u21",
+   "empreinte": "7ea162e4311e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.5 – Il est probablement recommandé de privilégier en première intention le bloc paravertébral",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u22",
+   "empreinte": "4074cffd5c02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.6 – Il est probablement recommandé d'utiliser des anti-inflammatoires non stéroïdiens en cure",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u23",
+   "empreinte": "180e16f8844f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.7 – Il est probablement recommandé d'utiliser une analgésie intraveineuse contrôlée par le",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u24",
+   "empreinte": "d7b6a14c6083",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 – Il est probablement recommandé de favoriser les approches minimalement invasives par",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u25",
+   "empreinte": "fa994cee5d49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2 – En cas de chirurgie par thoracotomie, il n'est probablement pas recommandé de privilégier",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u26",
+   "empreinte": "608f5a907923",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3 – Il est recommandé d'utiliser un dispositif à visée aérostatique (colle ou patch) chez les",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u27",
+   "empreinte": "ad24607a19e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.4.1 – Il est recommandé de ne placer qu'un seul drain thoracique pour la gestion des",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u28",
+   "empreinte": "612b25149cd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.4.2 – Il est probablement recommandé d'utiliser un système d'aspiration électronique",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u29",
+   "empreinte": "e2f241517878",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du fait de données discordantes dans la littérature.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u30",
+   "empreinte": "e0ab6657c667",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.4.3 – Il est recommandé d'enlever le (ou les) drain(s) thoracique(s) le plus rapidement possible",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u31",
+   "empreinte": "568e667303b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "a plus de fuite aérique et un débit liquidien non sanglant non chyleux ≤300 mL/j",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u32",
+   "empreinte": "963e8a090b38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 – Il n'est probablement pas recommandé d'utiliser la ventilation non-invasive préventive chez",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u33",
+   "empreinte": "29d4548e0eec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 – Il n'est probablement pas recommandé d'utiliser l'oxygénothérapie à haut débit préventive",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u34",
+   "empreinte": "78225840f9f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.3 – Il est probablement recommandé d'utiliser la ventilation non-invasive ou l'oxygénothérapie",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u35",
+   "empreinte": "5ef19eea6e55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.4 – Il est recommandé d'utiliser un programme de réhabilitation amélioré après chirurgie,",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u36",
+   "empreinte": "3cdfcb4cc8f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.5 – Il est probablement recommandé de réaliser de la kinésithérapie multimodale",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u37",
+   "empreinte": "25bda6e4dd8c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

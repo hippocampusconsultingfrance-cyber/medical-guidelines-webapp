@@ -1,0 +1,178 @@
+{
+ "cle": "aap_endoprotheses_coronaires",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "db4adf507540",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le double traitement par agents antiplaquettaires (AAP) doit être maintenu au moins quatre à six semaines après l'implantation d'une endoprothèse coronaire (EC) nue",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "1b90fe1f503d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette proposition repose sur des avis d'expert, en l'absence d'étude de haut niveau de preuve.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "7c658e186ab8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le double traitement par agents antiplaquettaires (AAP) doit être maintenu au moins quatre à six semaines après l'implantation d'une endoprothèse coronaire (EC) nue, et au moins 6 à 12 mois en cas d'EC pharmacoactive",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "1c5b6255e025",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'arrêt des AAP est un facteur de risque majeur de thrombose pour tous les stents, mais en particulier de thrombose tardive pour les EC pharmacoactives",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "ee1ee0cdeab1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans l'optique d'une intervention chirurgicale dans les 6 à 12 mois, la pose d'une EC nue est préférable.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "26ab740ae930",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il s'agit en particulier des patients ayant interrompu les AAP dans les 6 à 12 mois après la pose de l'EC, des patients avec des antécédents de thrombose de stent",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u7",
+   "empreinte": "73f07ef26f64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle doit inclure le cardiologue, le spécialiste de l'hémostase, le chirurgien ou le médecin réalisant l'acte invasif (endoscopie, par exemple) et l'anesthésiste–réanimateur.",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u8",
+   "empreinte": "362b724a595a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il a été convenu que la poursuite de l'aspirine était hautement souhaitable et qu'une fenêtre très courte de cinq jours d'arrêt du clopidogrel pouvait être retenue",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "527f6cd343e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "quel que soit le délai de l'implantation de l'EC, il est préférable d'opérer le patient sous aspirine",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "c6c52304316b",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "L'interruption totale des AAP, si elle est choisie, pourra éventuellement conduire à une substitution même si cette attitude ne repose que sur une recommandation d'experts. Dans ce cadre là, il n'existe pas plus d'argument en faveur d'une substitution par anti-inflammatoire",
+   "explication": "La source admet une substitution possible après arrêt total (avis d'experts) et dit seulement qu'aucune des deux options (AINS ou HBPM) n'est préférable ; la fiche dit qu'aucun argument ne plaide pour une substitution.",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "4a0a18027e50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est proposé de mettre en place un registre sur la survenue d'événements périopératoires chez ces patients porteurs de stent.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "41fa202aba53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2) : EC pharmaco-active ; risque hémorragique à évaluer avec le responsable du geste invasif ou le chirurgien ; risque de thrombose à évaluer avec le cardiologue.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "7d3cac2e88f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2) : en-têtes Risque de thrombose du stent (lignes) / Risque hémorragique Majeur, Intermédiaire, Mineur (colonnes).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "aa98f2713dc9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2), ligne Majeur : reporter au-delà de 6 mois à 1 an ; si impossible arrêt aspirine-clopidogrel 5 jours ou 10 jours maxi et substitution / maintien aspirine arrêt clopidogrel 5 jours / maintien aspirine et clopidogrel.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "0e8778202032",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2), ligne Modéré : arrêt aspirine-clopidogrel 5 jours ou 10 jours maxi et substitution / maintien aspirine arrêt clopidogrel 5 jours / maintien aspirine et clopidogrel ou maintien aspirine arrêt clopidogrel 5 jours.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "4ee5b1cb2f04",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2), légende Risque hémorragique : Majeur intervention ne pouvant être réalisée sous AAP ; Modéré sous ASA seule ; Mineur sous ASA et clopidogrel.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "8b60b28adb9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2), légende Risque de thrombose d'EC pharmaco-active : Majeur moins de 6 mois à 1 an, ou aspirine-clopidogrel nécessaire, ou facteur de risque ; Modéré plus de 6 mois à 1 an.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "ab967d1382b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 (image, p. 2) : Dans tous les cas, l'intervention doit être reportée au-delà de six semaines d'un syndrome coronaire aigu dans la mesure du possible.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "d96c9030931c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

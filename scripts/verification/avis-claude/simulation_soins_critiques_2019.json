@@ -1,0 +1,241 @@
+{
+ "cle": "simulation_soins_critiques_2019",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "5a6cc61a0e1f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "c7aaac3b9010",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour l'apprentissage des gestes techniques en formation initiale afin d'en améliorer l'acquisition.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "aa9a50f61ffd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour maintenir la compétence des professionnels en exercice lors de la formation continue",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "0aaa6c6d04b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser préférentiellement la simulation basse fidélité, plutôt que haute fidélité pour l'apprentissage des gestes techniques.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "df34e42cf6f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'évaluer systématiquement l'impact de la simulation sur l'apprentissage des apprenants à l'aide d'indicateurs spécifiques.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "d9658d6e4b5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas utiliser la simulation comme méthode pédagogique unique, sans intégration à un curriculum de formation.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "0a6af775d4c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'adapter la liste de compétences techniques devant être enseignée par la simulation en formation initiale aux conditions spécifiques d'exercice",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u8",
+   "empreinte": "a971855f6c19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour l'apprentissage de la gestion des voies aériennes en formation initiale",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u9",
+   "empreinte": "e3be31a83997",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour l'apprentissage de la pose des cathéters veineux centraux",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u10",
+   "empreinte": "736361996c9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation basse fidélité pour l'apprentissage en formation initiale du cathétérisme artériel",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u11",
+   "empreinte": "e05d056d1d03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour la formation initiale à la pose d'un drain pleural",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u12",
+   "empreinte": "0f42b2151f01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour mieux développer et structurer l'apprentissage des compétences non techniques lors de l'intégration des novices",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u13",
+   "empreinte": "4899e81ada5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation haute fidélité pour développer les compétences non techniques en soins critiques",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u14",
+   "empreinte": "28001ddc4cff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation haute fidélité pour améliorer le travail en équipe pluri-professionnel dans la gestion de crises en soins critiques.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u15",
+   "empreinte": "42ba20f1aed3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour améliorer les compétences en communication entre professionnels en soins critiques",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u16",
+   "empreinte": "77deb6e51e22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pour développer les compétences en communication avec les patients et leurs proches",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u17",
+   "empreinte": "4c8b0585bb81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation afin d'évaluer les connaissances antérieures et corriger les erreurs cognitives des apprenants en soins critiques.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "1549f4372f0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en soins critiques, en formation initiale et continue, médicale et paramédicale.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u19",
+   "empreinte": "cbd92f00fcee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prise de décision en soins critiques pour la formation initiale et continue médicale.",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u20",
+   "empreinte": "315a34e2dcbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "relationnelles (en particulier la gestion des désaccords et des conflits) pour les médicaux et paramédicaux",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u21",
+   "empreinte": "590419b80503",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser la simulation pluri-professionnelle ou inter-professionnelle pour développer les compétences non techniques en soins critiques.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u22",
+   "empreinte": "b0ac4d98b529",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'utiliser des outils d'évaluation spécifique du travail d'équipe lors des formations par simulation centrées sur les compétences non techniques",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u23",
+   "empreinte": "1f5f92e6a0fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de faire un débriefing afin d'améliorer l'apprentissage par simulation des compétences non techniques des soins critiques.",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u24",
+   "empreinte": "28c70c812dbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à la prise en charge des situations sanitaires exceptionnelles, sans qu'un outil particulier puisse être privilégié.",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u25",
+   "empreinte": "8c8a62457c7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'améliorer les pratiques professionnelles pour le tri des victimes lors de situations sanitaires exceptionnelles.",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u26",
+   "empreinte": "a4a316fe437a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

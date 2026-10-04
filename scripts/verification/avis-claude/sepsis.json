@@ -1,0 +1,1870 @@
+{
+ "cle": "sepsis",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "83c685a80ce8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "c. Respecter les recommandations de la Surviving Sepsis Campaign HAS • Prise en charge du sepsis du nouveau-né, de l’enfant et de l’adulte : recommandations pour un parcours de soins intégré •",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u2",
+   "empreinte": "05ad8b8a8f6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conceptuellement, le sepsis est une dérégulation de la réponse immunitaire à une infection entraînant un dysfonctionnement vital d’organes, mesuré, chez l’adulte, par un score Sepsis-related Organ Failure Assessment (SOFA) > 2 points (sur un maximum de 24), chez l’enfant par un score Phoenix de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "2bc0fcc81025",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sepsis ≥ 2 points (sur un maximum de 13). Le choc septique est défini, chez l’adulte, par la nécessité d’un traitement vasopresseur pour maintenir une pression artérielle moyenne à 65 mmHg et une lactatémie ≥ 2 mmol/L, chez l’enfant, par la présence d’une défaillance hémodynamique définie par un",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u4",
+   "empreinte": "a86e52a2ed38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "score Phoenix hémodynamique ≥ 1 point (nécessité d’un traitement vasoactif ou une lactatémie ≥ 5 mmol/l, ou hypotension artérielle définie selon l’âge). Le quick SOFA (qSOFA), composé de trois points",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u5",
+   "empreinte": "83e28f8288cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "attribués à une pression artérielle systolique < 100 mmHg, une fréquence respiratoire > 22 cycles/min, et une altération des fonctions neurologiques centrales (score de Glasgow <15), a été introduit afin",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "9ec04ce7da7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "b. Température >38°C c. Pression artérielle systolique ≤110 mmHg",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u7",
+   "empreinte": "13329ee2de36",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "43740006541c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "cda208027ff7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "a. Troubles de conscience ou changement de comportement b. Signes de mauvaise perfusion périphériques : TRC allongé, marbrures, extrémités froides",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "c8e9f8997e0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 34 (image), respiratoire 0 à 3 points : seuils PaO2/FiO2 et SpO2/FiO2 identiques",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "03cc57325479",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Page 34 (image), Annexe 1, ligne cardiovasculaire : 1 point par item (jusqu'à 3) = 1 traitement vasoactif OU lactate 5–10,9 mmol/L ; 2 points par item (jusqu'à 6) = ≥ 2 traitements vasoactifs OU lactate ≥ 11 mmol/L ; colonne 3 points vide",
+   "explication": "La fiche place « Lactate ≥ 11 mmol/L » dans la colonne 3 points (la source le compte 2 points) et omet le palier lactate 5–10,9 mmol/L = 1 point. Le score cardiovasculaire calculé avec la fiche est donc faux pour le lactate.",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "f0f164b851dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 34 (image), coagulation : 1 point pour chaque critère anormal (maxi 2) — plaquettes < 100×10³/µL, INR > 1,3, D-dimères > 2 mg/L, fibrinogène < 100 mg/dL",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "7e2813b32a05",
+   "verdict": "ecart",
+   "type_ecart": "chiffre",
+   "citation": "Page 34 (image), neurologique : Glasgow ≤ 10 = 1 point ; pupilles fixes bilatérales = 2 points",
+   "explication": "la source donne 1 point pour Glasgow ≤ 10 et 2 points pour pupilles fixes ; la fiche met Glasgow ≤ 10 dans la colonne 2 points.",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "dca882f4b7a0",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Page 34 (image), PAM selon l'âge : 1 point = 17-30 / 25-38 / 31-43 / 32-44 / 36-48 / 38-51 mmHg ; 2 points = < 17 / < 25 / < 31 / < 32 / < 36 / < 51 mmHg",
+   "explication": "La fiche ne donne que le seuil du 1 point (« < 30 », « < 38 »…) et omet les seuils du 2 points (< 17, < 25, < 31, < 32, < 36, < 51 mmHg). Le sous-score cardiovasculaire peut donc être sous-estimé.",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "69c72524d6e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "score Phoenix hémodynamique ≥ 1 point (nécessité d’un traitement vasoactif ou une lactatémie ≥ 5 mmol/l, ou hypotension artérielle définie selon l’âge). Le quick SOFA (qSOFA), composé de trois points",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u16",
+   "empreinte": "faa0bfb100d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 36 (image) : Annexe 2, feux tricolores NICE, ligne identique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "b40e51859181",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 36 (image) : Annexe 2, feux tricolores NICE, ligne identique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "7d71c9b1af63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 36 (image) : Annexe 2, feux tricolores NICE, ligne identique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "c9598c1f2bc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 36 (image) : Annexe 2, feux tricolores NICE, ligne identique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "401d0e3d3b2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- Fièvre depuis plus de 5 jours - Raideur d’un membre",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u21",
+   "empreinte": "a0e743e17ed4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- Crise focale Certaines vaccinations peuvent induire de la fièvre chez l’enfant de moins de 3 mois",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u22",
+   "empreinte": "bf5ccd0044bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "6aa0f1889c9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "44b98c86ee77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "d8dd0bafb6e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "6e4831328b53",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "24441e17e1aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "757307d91250",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "37b446d8a06c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "67e09bf19ba0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 3 (ERC) : valeurs identiques ; pas de valeur à 2 ans pour la pression artérielle dans la source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "7bb6953a0766",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Respecter le calendrier vaccinal, à tous les âges 2. Connaître les facteurs de risque, en cas d’infection, d’évolution vers un sepsis",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "066883fe1fd0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mieux dépister le sepsis, c’est : 1. Promouvoir des stratégies d’information et de communication afin d’identifier précocement les signes de sepsis, en particulier chez les patients ayant des facteurs de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u33",
+   "empreinte": "dc1a1749da1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Mieux prendre en charge précocement le sepsis, c’est : 1. Agir sans délai",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u34",
+   "empreinte": "e776cf898346",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "b. Ne pas réaliser d’examen complémentaire chez l’enfant c. Prélever, chez l’adulte en ambulatoire, avec facteur de risque de sepsis, hémoculture (au",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u35",
+   "empreinte": "d950dfad2dc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3. A l’hôpital a. Appliquer au mieux dans la première heure, un groupe d’actions coordonnées et standardisées comprenant :",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u36",
+   "empreinte": "79619741756a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par une évaluation hémodynamique clinique et échographique, et comportant un remplissage vasculaire de 10 à 20ml/kg en 15-20 min et l’introduction d’agents vaso-inotropes en cas de non-réponse ou de mauvaise tolérance au remplissage vasculaire",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u37",
+   "empreinte": "805651ad3f7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "b. Admettre en soins critiques en l’absence de résolution des variables cliniques après traitement initial c. Respecter les recommandations de la Surviving Sepsis Campaign",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u38",
+   "empreinte": "cb9d525cf7d9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "b7952e4a7f39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez un patient avec sepsis en phase post-aiguë, avant le retour au domicile, nous recommandons que l’équipe mobile comprenne un médecin de médecine physique et de réadaptation, un kinésithérapeute, un orthophoniste, un ergothérapeute, un diététicien, un assistant de service social et un psychologue (recommandation forte, très faible niveau de certitude).",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u40",
+   "empreinte": "1a09fd0c2a91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "c. Organiser la consultation de suivi dans les 3 mois qui suivent la sortie d’hospitalisation Mieux accompagner au long cours, c’est :",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u41",
+   "empreinte": "853ae45e3c04",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Réaliser une évaluation psychologique systématique après le retour à domicile et la poursuite d’un suivi selon l’évaluation initiale",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u42",
+   "empreinte": "a48e87f7c314",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La pratique d’une seule hémoculture (2 flacons) par période de prélèvement (24 h), appelée « hémoculture solitaire » doit être découragée en raison du fort impact négatif sur la sensibilité de l’examen et constitue un indicateur négatif qualité.",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u43",
+   "empreinte": "887e59114b03",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Volume de sang à mettre en culture en fonction du poids",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u44",
+   "empreinte": "43fab4adc6b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : tableau des volumes de sang par poids, identique (colonne « % volume sanguin » non reprise)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "bca738e7200e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "2961df47a8c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "9194019148b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "505c3db8c991",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "99d87b20b540",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "265916cde22c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "37358fb78eca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "708c462d74a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 52 (image) : ligne de poids identique au tableau source",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "ffbe53a25514",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’enfant pour adapter le volume (plus le poids de l’enfant est élevé, plus le volume prélevé doit se rapprocher du volume supérieur proposé). Lorsqu’un seul flacon est ensemencé (patient ≤ 8 kg), le",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u54",
+   "empreinte": "c188c58c9810",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Immunodépression (cancer hématologique actif, transplantation, chimiothérapie, radiothérapie, utilisation chronique de stéroïdes (prednisone ≥ 25 mg/jour), splénectomie, maladies auto-immunes",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u55",
+   "empreinte": "49abe389df50",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prise en charge aiguë, nous recommandons de doser les concentrations sériques de lactate pour stratifier le risque de sepsis ou de choc septique (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u56",
+   "empreinte": "03d721fa5f51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 5. Recommandations de la Surviving Sepsis Campaign (SSC) 2021 pour les adultes validées pour le contexte français",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u57",
+   "empreinte": "a6993ea45966",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Nous recommandons l’adoption par les hôpitaux d’un programme d’amélioration des performances dans la prise en charge du sepsis. Cela inclut un protocole de détection des patients graves et à haut risque de mortalité, ainsi que la mise",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u58",
+   "empreinte": "464ab4554c16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2. Nous recommandons de ne pas utiliser un score unique comme le qSOFA, le SIRS ou autre « early warning score » comme seul outil de dépistage du sepsis et du choc septique.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u59",
+   "empreinte": "8d16b689d3cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comme seul outil de dépistage du sepsis et du choc septique. 3. Chez les patients adultes avec suspicion de sepsis, nous recommandons la mesure du lactate sérique.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u60",
+   "empreinte": "0811a7c0a9c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4. Le sepsis et le choc septique sont des urgences médicales, et nous recommandons qu’un traitement et une réanimation débutent immédiatement.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u61",
+   "empreinte": "53e72a94c0b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6. Pour les patients adultes en sepsis ou en choc septique, nous suggérons l’utilisation des paramètres dynamiques pour guider le remplissage vasculaire, par rapport à l’examen physique, ou les paramètres statiques seuls.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u62",
+   "empreinte": "3112669c78a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7. Pour les patients adultes en sepsis ou en choc septique, nous suggérons de guider la réanimation sur la diminution de la lactatémie sérique chez les patients dont la lactatémie sérique est augmentée, par rapport à la non-utilisation du lactate.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u63",
+   "empreinte": "3a86d410481f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8. Pour les patients adultes en sepsis ou en choc septique, nous suggérons l’utilisation de temps de reperfusion capillaire pour guider la réanimation comme mesures adjonctives aux autres mesures de perfusion.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u64",
+   "empreinte": "a806692e83ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9. Pour les patients adultes en sepsis ou en choc septique, nous recommandons un objectif initial de pression artérielle moyenne à 65 mmHg par rapport à des objectifs supérieurs.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u65",
+   "empreinte": "4da73de5ab3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10. Pour les patients adultes en sepsis ou en choc septique qui nécessitent une admission en réanimation, nous suggérons une admission des patients en réanimation dans les 6 heures.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u66",
+   "empreinte": "d4aef90aa7f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une réévaluation permanente et la recherche de diagnostics alternatifs et l’interruption des antimicrobiens probabilistes si une cause alternative de la maladie est démontrée ou fortement suspectée.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u67",
+   "empreinte": "63b85ee1ea82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12. Pour les patients adultes avec un choc septique possible ou une forte probabilité de sepsis, nous recommandons l’administration immédiate d’antimicrobiens, idéalement dans l’heure suivant l’identification.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u68",
+   "empreinte": "6cd530a3edc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13. Pour les patients adultes avec un sepsis possible sans choc, nous recommandons une rapide réévaluation de la probabilité des causes infectieuses versus non infectieuses de la maladie aigue (cf. annexe 6 sur les bonnes pratiques de",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u69",
+   "empreinte": "6724d15f0288",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "14. Pour les patients adultes avec un sepsis possible sans choc, nous suggérons une durée limitée d’investigation rapide et si le problème persiste, l’administration d’antimicrobiens dans les 3 heures à partir du moment où le sepsis a été identifié.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u70",
+   "empreinte": "07172e50ea14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et si le problème persiste, l’administration d’antimicrobiens dans les 3 heures à partir du moment où le sepsis a été identifié. 15. Pour les patients adultes avec une faible probabilité d’infection et sans choc, nous suggérons de différer les antimicrobiens tout en poursuivant une surveillance rapprochée du patient.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u71",
+   "empreinte": "9577e79704d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16. Pour les patients adultes en sepsis ou en choc septique, nous suggérons de ne pas utiliser la procalcitonine plus l’évaluation clinique pour décider quand débuter les antimicrobiens, par rapport à l’évaluation clinique seule.",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u72",
+   "empreinte": "5cfd7c6a27dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "17. Pour les patients adultes en sepsis ou en choc septique à haut risque d’infection par SARM, nous recommandons l’utilisation d’antimicrobiens probabilistes couvrant le SARM, par rapport à l’utilisation d’antimicrobiens ne couvrant pas le",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u73",
+   "empreinte": "7e4e533685a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "18. Pour les patients adultes en sepsis ou en choc septique à faible risque d’infection par SARM, nous suggérons de ne pas utiliser d’antimicrobiens probabilistes couvrant le SARM, par rapport à l’utilisation d’antimicrobiens ne couvrant pas le",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u74",
+   "empreinte": "41af18300c7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "20. Pour les patients adultes en sepsis ou en choc septique à faible risque d’infection par une BMR, nous recommandons de ne pas utiliser 2 antimicrobiens probabilistes couvrant les bactéries à Gram négatif par rapport à l’utilisation d’1 seul",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u75",
+   "empreinte": "9cfc1fda3ce2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "21. Pour les patients adultes en sepsis ou en choc septique, nous suggérons de ne pas utiliser une double couverture par antimicrobien à partir du moment où le micro-organisme et son profil de sensibilité sont identifiés.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u76",
+   "empreinte": "7d0108af16de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "22. Pour les patients adultes en sepsis ou en choc septique à haut risque d’infection fongique, nous suggérons l’utilisation d’un traitement antifongique probabiliste par rapport à l’absence de traitement antifongique.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u77",
+   "empreinte": "e9a6245b7d58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "23. Pour les patients adultes en sepsis ou en choc septique à faible risque d’infection fongique, nous suggérons de ne pas utiliser un traitement antifongique probabiliste.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u78",
+   "empreinte": "1446ac0c5572",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utiliser un traitement antifongique probabiliste. 24. Nous ne faisons pas de recommandation sur l’utilisation des agents antiviraux.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u79",
+   "empreinte": "72810837e0c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "25. Pour les patients adultes en sepsis ou en choc septique, nous suggérons l’utilisation de perfusions prolongées de bêtalactamines après le bolus initial par rapport à une perfusion en bolus conventionnelle.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u80",
+   "empreinte": "342e78825ff0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "27. Pour les patients adultes en sepsis ou en choc septique, nous recommandons l’identification rapide ou l’exclusion d’un diagnostic anatomique spécifique d’infection qui nécessite un contrôle du foyer urgent et la mise en œuvre d’une intervention de contrôle du foyer dès que médicalement et logistiquement possible.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u81",
+   "empreinte": "5919a026c8ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diagnostic anatomique spécifique d’infection qui nécessite un contrôle du foyer urgent et la mise en œuvre d’une intervention de contrôle du foyer dès que médicalement et logistiquement possible. 28. Pour les patients adultes en sepsis ou en choc septique, nous recommandons un retrait rapide des dispositifs intravasculaires qui sont un foyer possible de sepsis ou choc septique après que d’autres accès vasculaires ont été mis en",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u82",
+   "empreinte": "a3ed83e3c1df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "29. Pour les patients adultes en sepsis ou en choc septique, nous suggérons la réévaluation quotidienne en vue d’une désescalade des antimicrobiens plutôt que l’utilisation de durées fixes de traitement sans réévaluation quotidienne de",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u83",
+   "empreinte": "2a1b01aa0ea8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infectieux pour lesquels la durée optimale est indéterminée, nous suggérons l’utilisation de la procalcitonine et l’évaluation clinique pour décider d’interrompre les antimicrobiens par rapport à l’évaluation clinique seule.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u84",
+   "empreinte": "a4041320dff1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "32. Pour les patients adultes en sepsis ou en choc septique, nous recommandons l’utilisation de cristalloïdes comme première ligne de réanimation liquidienne.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u85",
+   "empreinte": "20e9245597aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "33. Pour les patients adultes en sepsis ou en choc septique, nous suggérons l’utilisation de cristalloïdes « balancés » plutôt que de sérum salé.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u86",
+   "empreinte": "5ae4e058aaf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "34. Pour les patients adultes en sepsis ou en choc septique, nous suggérons l’utilisation d’albumine chez les patients ayant reçu de grands volumes de cristalloïdes.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u87",
+   "empreinte": "ab4f391d96a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "reçu de grands volumes de cristalloïdes. 35. Pour les patients adultes en sepsis ou en choc septique, nous recommandons de ne pas utiliser des hydroxy-éthylamidons pour le remplissage vasculaire.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u88",
+   "empreinte": "8a44512e66f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "35. Pour les patients adultes en sepsis ou en choc septique, nous recommandons de ne pas utiliser des hydroxy-éthylamidons pour le remplissage vasculaire. 36. Pour les patients adultes en sepsis ou en choc septique, nous suggérons de ne pas utiliser des gélatines pour le",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u89",
+   "empreinte": "3713afee9038",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "37. Pour les patients adultes en sepsis ou en choc septique, nous recommandons l’utilisation de noradrénaline comme traitement de première ligne par rapport aux autres vasopresseurs.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u90",
+   "empreinte": "0c63cf44e540",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "traitement de première ligne par rapport aux autres vasopresseurs. 40. Pour les patients adultes en choc septique, nous suggérons de ne pas utiliser de terlipressine.",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u91",
+   "empreinte": "cd3d8f6e836c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "41. Pour les patients adultes en choc septique et dysfonction cardiaque avec une hypoperfusion persistantes en dépit d’un statut volémique et d’une pression artérielle adéquats, nous suggérons d’ajouter de la dobutamine à la noradrénaline ou",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u92",
+   "empreinte": "9cbc9f31ce86",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u93",
+   "empreinte": "01d7ff08e304",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à un monitoring non invasif, dès que réalisable et si les conditions le permettent. 44. Pour les patients adultes en choc septique, nous suggérons l’initiation du vasopresseur sur une voie veineuse périphérique pour rétablir la pression artérielle moyenne plutôt que de retarder son initiation jusqu’à ce qu’une voie veineuse",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u94",
+   "empreinte": "97590f794949",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "44. Pour les patients adultes en choc septique, nous suggérons l’initiation du vasopresseur sur une voie veineuse périphérique pour rétablir la pression artérielle moyenne plutôt que de retarder son initiation jusqu’à ce qu’une voie veineuse centrale soit sécurisée.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u95",
+   "empreinte": "e454de5b850b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "46. Il y a un niveau de preuve insuffisant pour faire une recommandation sur les objectifs d’oxygénation dans l’insuffisance respiratoire hypoxémique induite par le sepsis.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u96",
+   "empreinte": "2b96ecc2e133",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "47. Pour les patients adultes en insuffisance respiratoire hypoxémique induite par le sepsis, nous suggérons l’utilisation d’oxygène nasal à haut débit par rapport à la ventilation non invasive.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u97",
+   "empreinte": "cc4f9c63a144",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "47. Pour les patients adultes en insuffisance respiratoire hypoxémique induite par le sepsis, nous suggérons l’utilisation d’oxygène nasal à haut débit par rapport à la ventilation non invasive.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u98",
+   "empreinte": "48fe15574db2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "49. Pour les patients adultes en SDRA induit par un sepsis, nous recommandons l’utilisation d’une stratégie de ventilation à petits volumes courants (6 mL/kg), par rapport à une stratégie à grands volumes (>10 mL/kg).",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u99",
+   "empreinte": "fcd4cb45aeba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "50. Pour les patients adultes en SDRA induit par un sepsis, nous suggérons l’utilisation d’un objectif de limite haute de pression de plateau à 30 cm H2O, par rapport à des pressions de plateau supérieures.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u100",
+   "empreinte": "34fefd1ad6e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "52. Pour les patients adultes en détresse respiratoire induit par un sepsis (sans SDRA), nous suggérons l’utilisation d’une ventilation à petits volumes par rapport à des grands volumes.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u101",
+   "empreinte": "2f8ccdc4dd11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "54. Si des manœuvres de recrutement sont utilisées, nous recommandons de ne pas utiliser de titration incrémentale de la PEEP.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u102",
+   "empreinte": "62c00fe4cba9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "55. Pour les patients adultes en SDRA modéré à sévère induit par un sepsis, nous recommandons l’utilisation du décubitus ventral pour des périodes supérieures à 12 heures.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u103",
+   "empreinte": "c14af7224cf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "56. Pour les patients adultes en SDRA modéré à sévère induit par un sepsis, nous suggérons l’utilisation intermittente de bolus de curares non dépolarisants par rapport à la perfusion continue de curares non dépolarisants.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u104",
+   "empreinte": "714c6ee92f9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "57. Pour les patients adultes en SDRA sévère induit par un sepsis, nous suggérons l’utilisation de l’ECMO veino-veineuse quand la ventilation mécanique conventionnelle est en échec ; l’ECMO est réalisée dans des centres expérimentés avec",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u105",
+   "empreinte": "6a816344ff9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "58. Pour les patients adultes en choc septique et avec des besoins en vasopresseurs en augmentation, nous suggérons l’utilisation de corticoïdes intraveineux.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u106",
+   "empreinte": "534c6ab5b233",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’utilisation de corticoïdes intraveineux. 59. Pour les patients adultes en sepsis ou choc septique, nous suggérons de ne pas utiliser l’hémoperfusion de polymyxine",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u107",
+   "empreinte": "abc9217ed8b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "60. Il y a un niveau de preuve insuffisant pour faire une recommandation sur l’utilisation des autres techniques d’épuration sanguine.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u108",
+   "empreinte": "478d2031fbec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "61. Pour les patients adultes en sepsis ou choc septique, nous recommandons l’utilisation d’une stratégie de transfusion restrictive (par rapport à sans limite imposée/libéral).",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u109",
+   "empreinte": "3c65235b86ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "IMMUNOGLOBULINES 75. Nous suggérons de ne pas utiliser en routine les immunoglobulines intraveineuses chez les enfants en sepsis ou choc",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u110",
+   "empreinte": "99a9216d5ce0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "63. Pour les patients adultes en sepsis ou choc septique, et qui ont des facteurs de risque de saignement gastrointestinal, nous suggérons l’utilisation d’une prophylaxie de l’ulcère de stress.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u111",
+   "empreinte": "c58d9f856d61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "64. Pour les patients adultes en sepsis ou choc septique, nous recommandons l’utilisation d’une prophylaxie contre la maladie thromboembolique veineuse en dehors de contre-indications existantes.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u112",
+   "empreinte": "0fc09a559292",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "64. Pour les patients adultes en sepsis ou choc septique, nous recommandons l’utilisation d’une prophylaxie contre la maladie thromboembolique veineuse en dehors de contre-indications existantes.",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u113",
+   "empreinte": "93dd3044d585",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "66. Pour les patients adultes en sepsis ou choc septique, nous suggérons de ne pas utiliser la méthode de compression mécanique intermittente en prévention de la maladie thromboembolique, en plus de la prophylaxie pharmacologique, par",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u114",
+   "empreinte": "33931402bebf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "67. Pour les patients adultes en sepsis ou choc septique et en insuffisance rénale aigue, nous suggérons l’utilisation de l’épuration extra-rénale soit continue soit intermittente.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u115",
+   "empreinte": "cbed6a75a591",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "68. Pour les patients adultes en sepsis ou choc septique et en insuffisance rénale aigue, sans indication définie d’épuration extra-rénale, nous suggérons de ne pas utiliser l’épuration extra-rénale.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u116",
+   "empreinte": "7fcce2a85682",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "69. Pour les patients adultes en sepsis ou choc septique, nous recommandons l’initiation d’une insulinothérapie à une concentration sanguine de glucose supérieure ou égale à 10 mmol/L.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u117",
+   "empreinte": "e360e8c19a75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concentration sanguine de glucose supérieure ou égale à 10 mmol/L. 70. Pour les patients adultes en sepsis ou choc septique, nous suggérons de ne pas utiliser de vitamine C intraveineuse.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u118",
+   "empreinte": "b7a0cd1a0f4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "71. Pour les patients adultes en choc septique et en hypoperfusion induite par une acidose lactique, nous suggérons de ne pas utiliser un traitement par bicarbonate de sodium pour améliorer l’hémodynamique ou réduire les besoins en vasopresseurs.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u119",
+   "empreinte": "df0be3cca7cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne pas utiliser un traitement par bicarbonate de sodium pour améliorer l’hémodynamique ou réduire les besoins en vasopresseurs. 72. Pour les patients adultes en choc septique et en acidose métabolique sévère (pH inférieur ou égal à 7,2) et en insuffisance rénale aigue (score AKIN à 2 ou 3), nous suggérons l’utilisation d’un traitement par bicarbonate de sodium.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u120",
+   "empreinte": "099bb258b056",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "73. Pour les patients adultes en sepsis ou choc septique qui peuvent recevoir une alimentation entérale, nous suggérons une initiation précoce (dans les 72 heures) de l’alimentation entérale.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u121",
+   "empreinte": "20d1e157b505",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "74. Pour les patients adultes en sepsis ou choc septique, nous recommandons une discussion sur les objectifs de soins et le pronostic avec les patients et leurs entourages, par rapport à l’absence de discussion.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u122",
+   "empreinte": "ed75e1167cde",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "75. Pour les patients adultes en sepsis ou choc septique, nous suggérons de définir les objectifs des soins précocement (dans les 72 heures) par rapport à tardivement (à 72 heures ou après).",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u123",
+   "empreinte": "a6338bba0c73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "76. Pour les patients adultes en sepsis ou choc septique, le niveau de preuve est insuffisant pour faire une recommandation sur des critères standardisés et spécifiques pour décider d’entamer une discussion sur les objectifs des soins.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u124",
+   "empreinte": "2792e08f856d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "77. Pour les patients adultes en sepsis ou choc septique, nous recommandons que le principe de soins palliatifs (qui peut inclure une consultation de soins palliatifs basée sur le jugement médical) soit intégré dans le plan de traitement, si approprié, pour définir les symptômes et souffrance du patient et de son entourage.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u125",
+   "empreinte": "66092c03e49b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "inclure une consultation de soins palliatifs basée sur le jugement médical) soit intégré dans le plan de traitement, si approprié, pour définir les symptômes et souffrance du patient et de son entourage. 78. Pour les patients adultes en sepsis ou choc septique, nous suggérons de ne pas d’organiser une consultation formalisée de soins palliatifs de façon systématique par rapport à une consultation basée sur le jugement médical.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u126",
+   "empreinte": "e89406c8e4dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "79. Pour les patients adultes survivants à un sepsis ou choc septique et leurs entourages, nous suggérons une orientation vers des groupes de soutien par rapport à l’absence de ce type d’orientation.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u127",
+   "empreinte": "215d58cbf871",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "80. Pour les patients adultes en sepsis ou choc septique, nous suggérons l’utilisation d’une fiche de transmission avec les informations importantes pour la poursuite de la prise en charge par rapport à l’absence de fiche de transmission.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u128",
+   "empreinte": "c6f5729f9472",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "81. Pour les patients adultes en sepsis ou choc septique, le niveau de preuve est insuffisant pour faire une recommandation sur l’utilisation d’un modèle particulier de fiche de transmission par rapport à une fiche de transmission conventionnelle.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u129",
+   "empreinte": "7e53e743e5e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "82. Pour les patients adultes en sepsis ou choc septique, nous recommandons d’évaluer systématiquement les besoins éventuels d’un soutien économique et social (incluant un soutien immobilier, alimentaire, financier et psychologique), et",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u130",
+   "empreinte": "86dca45338b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "83. Pour les patients adultes en sepsis ou choc septique et leurs entourages, nous suggérons une éducation orale et écrite sur le sepsis (diagnostic, traitement, syndrome post-sepsis/post-réanimation) avant la sortie de l’hôpital et lors du suivi.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u131",
+   "empreinte": "959f2e9e3aa5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "84. Pour les patients adultes en sepsis ou choc septique et leurs entourages, nous recommandons que l’équipe soignante participe aux décisions au cours du séjour post-réanimation pour que la planification de sortie d’hôpital soit acceptable et",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u132",
+   "empreinte": "b007164b676c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "85. Pour les patients adultes en sepsis ou choc septique et leurs entourages, nous suggérons l’utilisation d’un programme de transition, par rapport au soins standards, lors du transfert dans un service de soins non critiques.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u133",
+   "empreinte": "322800b57514",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "86. Pour les patients adultes en sepsis ou choc septique, nous recommandons la reprise des traitements usuels à la sortie de réanimation et de l’hôpital.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u134",
+   "empreinte": "6439cc733447",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "87. Pour les patients adultes survivants d’un sepsis ou choc septique et leurs entourages, nous recommandons une information formalisée sur le séjour en réanimation, le sepsis, les diagnostics associés, les traitements et les troubles habituels après un sepsis dans un résumé de sortie oral et écrit.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u135",
+   "empreinte": "f41118d919ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "88. Pour les patients adultes en sepsis ou choc septique qui développent de nouveaux troubles, nous recommandons un plan lors de la sortie de l’hôpital incluant un suivi par des cliniciens à même de prendre en charge ces nouvelles séquelles",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u136",
+   "empreinte": "586eda0633b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "89. Pour les patients adultes en sepsis ou choc septique et leurs entourages, le niveau de preuve est insuffisant pour faire une recommandation sur le suivi précoce après la sortie de l’hôpital, par rapport à un suivi de routine après sortie de",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u137",
+   "empreinte": "5bda6f313cdb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "90. Pour les patients adultes en sepsis ou choc septique, le niveau de preuve est insuffisant pour faire une recommandation pour ou contre les thérapies cognitives précoces.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u138",
+   "empreinte": "a1a13ea78fcb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "91. Pour les patients adultes en sepsis ou choc septique et leurs entourages, nous recommandons une évaluation et un suivi des problèmes physiques, cognitifs, et émotionnels après la sortie de l’hôpital.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u139",
+   "empreinte": "264d9d9bdd14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "92. Pour les patients adultes survivants d’un sepsis ou choc septique, nous suggérons une orientation vers un programme de suivi des maladies post-réanimation, lorsque celui-ci existe.",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u140",
+   "empreinte": "44fdad410b97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "93. Pour les patients adultes en sepsis ou choc septique recevant une ventilation mécanique de plus de 48 heures ou un séjour en réanimation de plus de 72 heures, nous suggérons une orientation vers un programme de réadaptation",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u141",
+   "empreinte": "ecbe89bc1fe1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 6. : Recommandations de la Surviving Sepsis Campaign (SSC) 2020 pour les enfants (y compris nouveau-nés) validées dans le contexte français",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u142",
+   "empreinte": "ac7b5de4b128",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3. Nous recommandons la mise en place et l’application de protocoles de prise en charge d’un enfant en choc septique ou en défaillance d’organe lié au sepsis (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u143",
+   "empreinte": "499895b9a6a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4. Nous recommandons la réalisation d’au moins une hémoculture d’au moins 2ml avant d’initier une antibiothérapie dans toutes les situations où cela n’induit pas de retard d’administration (cf. annexe 5 sur les bonnes pratiques de l'hémoculture)",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u144",
+   "empreinte": "b678c52315f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TRAITEMENT ANTI-MICROBIEN 5. Nous recommandons, en cas de choc septique, de débuter une antibiothérapie aussi vite que possible, dans l’heure",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u145",
+   "empreinte": "22ce3558daf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6. Nous suggérons, en l’absence de choc, de débuter une antibiothérapie aussi vite que possible, dans l’heure suivant la reconnaissance du choc septique (recommandation conditionnelle, très faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u146",
+   "empreinte": "5d8123a7b10b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7. Nous recommandons un traitement empirique à large spectre avec un ou plusieurs agents antimicrobiens couvrant les agents pathogènes les plus probables (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u147",
+   "empreinte": "66116a6610f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "agents pathogènes les plus probables (recommandation forte, faible niveau de certitude). 8. Dès que le pathogène et sa sensibilité sont connus nous recommandons de réduire le spectre antimicrobien des traitements empiriques (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u148",
+   "empreinte": "ab21d474e951",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9. En l’absence d’agent pathogène identifié, nous recommandons de réduire le spectre ou d’arrêter les traitements empiriques en fonction de l’état clinique du patient, son évolution, du site d’infection, des facteurs de risque de forme grave liés au patient, en lien avec les médecins infectiologues (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u149",
+   "empreinte": "dd78b7c7d51e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au patient, en lien avec les médecins infectiologues (recommandation forte, faible niveau de certitude). 11. Chez les enfants avec immunodépression et/ou à très haut risque de germe multirésistant nous recommandons d’utiliser une association d’antibiotiques probabilistes en cas de choc septique ou de défaillance d’organe liée à un sepsis.",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u150",
+   "empreinte": "21c4224d7816",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(recommandation forte, faible niveau de certitude). 12. Nous recommandons les stratégies de dosage d’antibiotiques dont les principes pharmacocinétiques/pharmacodynamiques ont été validés tout en tenant compte des propriétés spécifiques des médicaments utilisés (recommandation forte,",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u151",
+   "empreinte": "bb9af29604d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandons d’évaluer quotidiennement (évaluation clinique et biologique) la possibilité de faire une désescalade de l’antibiothérapie (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u152",
+   "empreinte": "3393d79f4f6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "14. Nous recommandons de déterminer la durée d’antibiothérapie en fonction du site d’infection, de l’agent causal, de la réponse au traitement et de la capacité à contrôler la source de l’infection (recommandation forte, faible niveau de certitude).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u153",
+   "empreinte": "2e98f32295f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisés. De même, l’avis auprès d’équipes spécialisées (infectiologie, chirurgie…) devrait être demandé, quand cela est nécessaire, dans le but de prioriser les interventions nécessaires pour contrôler la source de l’infection.",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u154",
+   "empreinte": "bad37e7ea9c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16. Nous recommandons le retrait d’un dispositif intravasculaire qui a été confirmé comme étant la source de l’infection ayant engendré le sepsis ou le choc septique, après qu’un autre dispositif ait été mis en place et tout en prenant en compte",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u155",
+   "empreinte": "2acf47118f2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "REMPLISSAGE VASCULAIRE 20. Nous recommandons l’usage de cristalloïdes plutôt que d’albumine pour la réanimation initiale des enfants en choc",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u156",
+   "empreinte": "4f87edc99c6f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "21. Nous suggérons d’utiliser préférentiellement les solutés de cristalloïdes « balancés » plutôt que le sérum sale à 0,9% pour le remplissage vasculaire des enfants en choc septique ou en défaillance d’organe liée au sepsis, en particulier pour",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u157",
+   "empreinte": "895e96a1c2d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "niveau de certitude). 22. Nous recommandons de ne pas utiliser les dérivés de l’amidon comme soluté de remplissage dans la réanimation",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u158",
+   "empreinte": "5ddabc8e8430",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "certitude). 23. Nous suggérons de ne pas utiliser les gélatines comme soluté de remplissage dans la réanimation aigue des enfants",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u159",
+   "empreinte": "bf7168b722f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24. Il n’a pas été possible d’émettre une recommandation concernant la cible de pression artérielle moyenne au cinquième ou cinquantième percentile pour l’âge chez les enfants en choc septique ou défaillance d’organe liée au sepsis.",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u160",
+   "empreinte": "e57369baee43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou cinquantième percentile pour l’âge chez les enfants en choc septique ou défaillance d’organe liée au sepsis. 25. La catégorisation clinique seule en choc septique « chaud » et choc septique « froid » n’est pas recommandée (recommandation conditionnelle, très faible niveau de certitude).",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u161",
+   "empreinte": "3daea857d80f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "26. Nous suggérons la mesure de variables hémodynamiques avancées, au mieux par échographie, quand elles sont disponibles, en complément des variables cliniques obtenues au lit du malade pour guider la réanimation des enfants en",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u162",
+   "empreinte": "b115b0098d92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TRAITEMENTS VASOACTIFS 28. Nous suggérons d’utiliser l’adrénaline plutôt que la dopamine chez les enfants en choc septique (recommandation",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u163",
+   "empreinte": "4a8097600d1e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conditionnelle, faible niveau de certitude). 29. Nous suggérons d’utiliser la noradrénaline plutôt que la dopamine chez les enfants en choc septique (recommandation",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u164",
+   "empreinte": "89ea80aed8ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conditionnelle, très faible niveau de certitude). 30. Il n’y a pas suffisamment d’éléments pour recommander l’usage d’un vasopresseur plus qu’un autre en première ligne",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u165",
+   "empreinte": "243c1adf7926",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "33. Aucune recommandation ne peut être faite quant à l’adjonction d’inotrope vasodilatateur chez les enfants en choc septique et dysfonction cardiaque malgré l’usage d’autres agents vasoactifs.",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u166",
+   "empreinte": "ab2652e29477",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "34. Aucune recommandation ne peut être faite concernant le moment exact pour intuber les enfants en choc septique réfractaire aux remplissages vasculaires et aux catécholamines.",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u167",
+   "empreinte": "faf2ce2530e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réfractaire aux remplissages vasculaires et aux catécholamines. 35. Nous suggérons de ne pas utiliser l’étomidate pour l’intubation d’enfants en choc septique ou avec défaillance d’organe",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u168",
+   "empreinte": "8d95e5dc51c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "36. Nous suggérons un essai de ventilation non-invasive chez les enfants présentant un SDRA induit par le sepsis sans indication claire d’intubation et qui a répondu à la réanimation initiale (recommandation conditionnelle, très faible niveau",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u169",
+   "empreinte": "92708d1e3c10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que des effets hémodynamiques délétères des hauts niveaux de PEEP semblent plus marqués chez les enfants en choc septique.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u170",
+   "empreinte": "2f4d6e4a3076",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "38. Aucune recommandation ne peut être faite concernant les manœuvres de recrutement dans le SDRA induit par le sepsis avec hypoxie réfractaire.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u171",
+   "empreinte": "428579c7745a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "39. Nous suggérons un essai de position ventrale chez les enfants avec sepsis et SDRA sévère (avec hypoxémie ne répondant aux autres thérapeutiques) (recommandation conditionnelle, faible niveau de certitude).",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u172",
+   "empreinte": "47b450a9f6a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16h ont montré une amélioration de la mortalité dans le SDRA. 40. Nous recommandons de ne pas utiliser en routine le NO inhalé chez tous les enfants avec SDRA induit par le sepsis",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u173",
+   "empreinte": "313f0e85ee2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "41. Nous suggérons d’utiliser le NO inhalé comme traitement de dernier recours chez les enfants en hypoxie réfractaire et en défaillance cardiaque droite au cours d’un SDRA induit par le sepsis une fois que les autres stratégies d’oxygénation",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u174",
+   "empreinte": "0803ed7e0676",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Remarque : Si la VOHF est utilisée, elle ne doit l’être qu’en cas d’hypoxie réfractaire, une fois toutes les autres thérapeutiques d’oxygénation testées et en attente d’un transfert vers un centre capable d’initier une assistance extracorporelle. 43. Nous suggérons d’utiliser les curares chez les enfants présentant un SDRA grave lié au sepsis (recommandation",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u175",
+   "empreinte": "757d9da2c00c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Remarque : Si la VOHF est utilisée, elle ne doit l’être qu’en cas d’hypoxie réfractaire, une fois toutes les autres thérapeutiques d’oxygénation testées et en attente d’un transfert vers un centre capable d’initier une assistance extracorporelle. 43. Nous suggérons d’utiliser les curares chez les enfants présentant un SDRA grave lié au sepsis (recommandation",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u176",
+   "empreinte": "09e82f2dcd21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "CORTICOSTEROIDES 44. Nous suggérons de ne pas utiliser l’hydrocortisone intraveineuse pour traiter des enfants en choc septique si le remplissage vasculaire et le traitement vasopresseur ont permis de restaurer l’état hémodynamique (recommandation conditionnelle, faible niveau de certitude).",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u177",
+   "empreinte": "a59031ff2191",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "45. Nous suggérons l’administration ou non d’hydrocortisone intraveineux en cas d’échec du remplissage vasculaire associé à un traitement vasopresseur (recommandation conditionnelle, faible niveau de certitude). Remarques : Ce traitement étant recommandé chez l’adulte avec un niveau de preuve élevé, son usage peut cependant",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u178",
+   "empreinte": "c4961b9e01ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "46. Nous recommandons de ne pas instituer de traitement par insuline pour maintenir le glucose à un taux inférieur ou égal à 7,8 mmol/l (140 mg/dL) (recommandation forte, niveau modéré de certitude).",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u179",
+   "empreinte": "44c0f50290f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "47. Il n’a pas été possible d’établir une recommandation sur le niveau de glucose à cibler pour les enfants en choc septique ou autre défaillance d’organe liée au sepsis. Toutefois, dans notre expérience, un consensus existait pour cibler une glycémie inférieure à 10 mmol/L (180 mg/dL), mais sans qu’il y ait de consensus sur une borne inférieure à ne pas dépasser.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u180",
+   "empreinte": "9f3d974b95e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en choc septique ou autre défaillance d’organe liée au sepsis. Toutefois, dans notre expérience, nous ciblons souvent des niveaux normaux de calcémie dès lors qu’un traitement vasopresseur est nécessaire.",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u181",
+   "empreinte": "db9cacb7c005",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "49. Nous suggérons de ne pas utiliser en routine la lévothyroxine chez les enfants avec choc septique ou autre défaillance d’organe liée au sepsis, dans une situation d’euthyroïdie (recommandation conditionnelle, faible niveau de certitude).",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u182",
+   "empreinte": "212181ba4f71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nous suggérons soit un traitement antipyrétique soit une attitude",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u183",
+   "empreinte": "0adb3da1ce95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "51. Nous n’avons pas pu établir de recommandation concernant une alimentation entérale trophique précoce suivie d’une augmentation lente de l’alimentation entérale versus une alimentation entérale précoce complète précoce chez les enfants",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u184",
+   "empreinte": "b752a1fa74fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contre-indication à la nutrition entérale, et à augmenter la nutrition entérale par étapes jusqu’aux objectifs nutritionnels. 52. Nous suggérons de ne pas interrompre une alimentation seulement sur la base de l’usage de traitement vasoactif",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u185",
+   "empreinte": "aaff92bdb110",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "53. Nous suggérons que l’alimentation entérale soit le mode privilégié d’alimentation par rapport à la nutrition parentérale dans les 7 premiers jours suivant l’admission pour sepsis ou choc septique (recommandation conditionnelle, niveau modéré de certitude).",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u186",
+   "empreinte": "90079e6f3a2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez un patient nouveau-né, et notamment chez le prématuré, avec sepsis, recevant une nutrition parentérale au moment du sepsis, les données sont insuffisantes pour établir une recommandation",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u187",
+   "empreinte": "0a781084e53f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "émulsion lipidique en cas de sepsis. 55. Nous suggérons de ne pas surveiller en routine le volume de résidu gastrique chez les enfants en sepsis ou choc",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u188",
+   "empreinte": "5259f4dc5b81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "56. Nous suggérons d’administrer une nutrition entérale par une sonde gastrique, plutôt que par une sonde positionnée en transpylorique aux enfants en sepsis ou choc septique qui n’ont pas de contre-indications à l’alimentation entérale",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u189",
+   "empreinte": "f09058639c64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(recommandation conditionnelle, faible niveau de certitude). 57. Nous suggérons de ne pas administrer de prokinétiques en routine pour le traitement de l’intolérance alimentaire chez",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u190",
+   "empreinte": "724bbc1eaafa",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u191",
+   "empreinte": "b530566951cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conditionnelle, faible niveau de certitude). 59. Nous suggérons de ne pas administrer de supplémentation en glutamine chez les enfants en sepsis ou choc septique",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u192",
+   "empreinte": "5b45dbe6c9bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(recommandation conditionnelle, faible niveau de certitude). 60. Nous suggérons de ne pas administrer de supplémentation en arginine chez les enfants en sepsis ou choc septique",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u193",
+   "empreinte": "45f50041d219",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(recommandation conditionnelle, très faible niveau de certitude). 61. Nous suggérons de ne pas administrer de supplémentation en zinc chez les enfants en sepsis ou choc septique (recommandation conditionnelle, très faible niveau de certitude).",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u194",
+   "empreinte": "e8a86f6df221",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "61. Nous suggérons de ne pas administrer de supplémentation en zinc chez les enfants en sepsis ou choc septique (recommandation conditionnelle, très faible niveau de certitude). 62. Nous suggérons de ne pas administrer de supplémentation en vitamine C chez les enfants en sepsis ou choc septique",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u195",
+   "empreinte": "31fe16299416",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(recommandation conditionnelle, faible niveau de certitude). 63. Nous suggérons de ne pas administrer de supplémentation en thiamine chez les enfants en sepsis ou choc septique",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u196",
+   "empreinte": "da6092cbea3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "61. Nous suggérons de ne pas administrer de supplémentation en zinc chez les enfants en sepsis ou choc septique (recommandation conditionnelle, très faible niveau de certitude). 62. Nous suggérons de ne pas administrer de supplémentation en vitamine C chez les enfants en sepsis ou choc septique",
+   "explication": "",
+   "page": 49
+  },
+  {
+   "id": "u197",
+   "empreinte": "4a84f30fe021",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le nouveau-né, le seuil de transfusion de globules rouges est variable et doit être adapté au terme, à l’âge post natal, aux pathologies associées (canal artériel persistant notamment) et à l’état respiratoire du patient.",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u198",
+   "empreinte": "bb444012a51f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "66. Il n’est pas possible d’établir une recommandation sur le seuil transfusionnel de globules rouges pour les enfants en choc septique instables.",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u199",
+   "empreinte": "045d2a546233",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "choc septique instables. 67. Nous suggérons de ne pas transfuser en prophylaxie des plaquettes si elle n’est basée que sur le seul taux de plaquettes, chez des enfants sans signes hémorragiques, en sepsis ou choc septique (recommandation conditionnelle, très",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u200",
+   "empreinte": "17f868a581a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "choc septique instables. 67. Nous suggérons de ne pas transfuser en prophylaxie des plaquettes si elle n’est basée que sur le seul taux de plaquettes, chez des enfants sans signes hémorragiques, en sepsis ou choc septique (recommandation conditionnelle, très",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u201",
+   "empreinte": "885f5a9b1b9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "69. Nous suggérons de ne pas faire d’échanges plasmatiques chez les enfants en sepsis ou choc septique sans syndrome de thrombopénie associée à une défaillance multi-organe (TAMOF) (recommandation conditionnelle, très faible niveau de",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u202",
+   "empreinte": "876b389b78f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "69. Nous suggérons de ne pas faire d’échanges plasmatiques chez les enfants en sepsis ou choc septique sans syndrome de thrombopénie associée à une défaillance multi-organe (TAMOF) (recommandation conditionnelle, très faible niveau de",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u203",
+   "empreinte": "060a5bd1584b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "71. Nous suggérons le recours à une épuration extrarénale pour prévenir ou traiter une surcharge hydrique chez les enfants en sepsis ou choc septique qui ne répondent pas à la restriction hydrique et au traitement diurétique (recommandation",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u204",
+   "empreinte": "d8f21736fb8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Remarque : dans la situation de choc toxique streptococcique réfractaire aux amines vasopressives et/ou inotropes, les immunoglobulines peuvent être utilisées en l’absence de contre-indication et si elles sont disponibles.",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u205",
+   "empreinte": "5c3c1c79426f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Remarques : Chez des patients à très haut risque un traitement prophylactique est justifié (risque d’au moins 13%). 77.Nous suggérons de ne pas faire en routine de prophylaxie contre la thrombose veineuse profonde (mécanique ou",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u206",
+   "empreinte": "370749718b8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "77.Nous suggérons de ne pas faire en routine de prophylaxie contre la thrombose veineuse profonde (mécanique ou pharmacologique) chez les enfants en sepsis ou choc septique, mais certaines populations spécifiques peuvent avoir des",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u207",
+   "empreinte": "8d45680b816f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

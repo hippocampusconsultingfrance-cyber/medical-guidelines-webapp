@@ -1,0 +1,331 @@
+{
+ "cle": "blocs_perimedullaires_cesarienne_2006",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d273f04ffa20",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "b096cdc544ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Avant une césarienne programmée, un jeûne de six à huit heures concernant les solides est recommandé (grade C).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u3",
+   "empreinte": "b1b220fb2890",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration systématique d'agents anti-H2 (cimétidine ou ranitidine) combinés à du citrate de sodium (forme effervescente) est recommandée avant la césarienne (grade C).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u4",
+   "empreinte": "34c89c086b23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est essentiel d'avoir le matériel d'évaluation du RCF tou-",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u5",
+   "empreinte": "dea819a84ae9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La période d'instabilité qui suit l'induction de l'anesthésie justifie une surveillance toutes les minutes lors de la rachianesthésie pour césarienne.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u6",
+   "empreinte": "da2719a1f4b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un décubitus latéral gauche d'au moins 10° est recommandé jusqu'à l'extraction fœtale",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u7",
+   "empreinte": "ea527e32a4b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'intérêt de l'administration d'oxygène est documenté dans les situations maternelles ou fœtales pathologiques (grade C).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "d1a06f1be7d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé d'associer systématiquement un morphinique liposoluble à l'AL utilisé (grade A).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u9",
+   "empreinte": "29ed1086dc4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce test est un critère prédictif fiable d'une chirurgie indolore lorsque le niveau atteint au moins T5.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u10",
+   "empreinte": "960474d64aa3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'anesthésie périmédullaire doit être privilégiée chaque fois que possible et tout particulièrement en situation non programmée (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u11",
+   "empreinte": "0524c225c29c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C'est la technique de choix pour les césariennes programmées (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u12",
+   "empreinte": "678bf2ad9f13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les aiguilles pointe-crayon doivent être systématiquement utilisées en obstétrique, et leur diamètre doit être inférieur ou égal à 25 G (grade A).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u13",
+   "empreinte": "9532c2c0a53b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dose optimale de fentanyl intrathécal à injecter avec de la bupivacaïne (ou à la ropivacaïne) est de l'ordre de 10 µg (grade B), celle du sufentanil est de 2,5 à 5 µg (grade B).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u14",
+   "empreinte": "effad5279edf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dose de bupivacaïne recommandée est alors d'environ 10 mg pour conserver un taux de rachianesthésie permettant une césarienne proche de 100 % (grade B).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u15",
+   "empreinte": "8c27565ef4e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La forme hyperbare est la plus couramment utilisée, mais la forme isobare donne une anesthésie similaire, et constitue une alternative possible (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u16",
+   "empreinte": "9942ab5f7688",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dose de ropivacaïne intrathécale efficace doit être majorée de 50 % (soit environ 15 mg) par rapport à la bupivacaïne",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u17",
+   "empreinte": "2ea1c0ddc3e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l'analgésie postopératoire, la dose de morphine intrathécale recommandée est de 100 µg.",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u18",
+   "empreinte": "25c7afa6443e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'injection de 15 à 20 ml de lidocaïne 2 % adrénalinée (1 : 200 000) permet d'atteindre un niveau d'anesthésie chirurgicale en dix minutes",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u19",
+   "empreinte": "711de5864e42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'addition d'un morphinique liposoluble en bolus est recommandée, surtout s'il n'a pas été utilisé préalablement pendant le travail (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u20",
+   "empreinte": "67840dc12af4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n'est pas recommandée, car elle comporte un risque important de rachianesthésie extensive (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u21",
+   "empreinte": "ab44d1fb6bbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Selon l'objectif recherché, elle peut être utilisée de deux façons (grade C)",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u22",
+   "empreinte": "d51de93ff034",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'échec du bloc, il faut convertir en AG, sans attendre l'incision (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u23",
+   "empreinte": "85e666b72139",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'échec de ces compléments, ou quand le délai d'extraction est urgent, il faut recourir à l'anesthésie générale (grade C).",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u24",
+   "empreinte": "7780e50efca2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fig. 1 (image, p. 15) : algorithmes césarienne non programmée (cathéter en place : SFA → AG ou cathéter selon urgence ; pas de SF → cathéter ; pas de cathéter : urgence immédiate → AG, sinon rachi ± péridurale) et programmée (rachi A, rachi-péri combinée ou péridurale, AG si CI).",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "d80dd714e7d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ALR périmédullaire peut être contre-indiquée lorsqu'il existe des troubles de la coagulation induits par la patholo-",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u26",
+   "empreinte": "63fe2b205b39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est donc licite d'utiliser la rachianesthésie ou la RPS en cas de prééclampsie même sévère (grade C).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u27",
+   "empreinte": "a32cfaf2a93a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'éclampsie, l'existence d'une hypertension intracrânienne patente et/ou de signes de localisation demeure une contre-indication incontournable à l'ALR",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u28",
+   "empreinte": "7eaf889f27c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'anesthésie périmédullaire est souhaitable lorsque le placenta est postérieur ou latéral, même si un saignement minime ou modéré est en cours (grade C).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u29",
+   "empreinte": "cc39a24f9f56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de placenta antérieur sur un utérus cicatriciel ou de saignement actif en cours ou d'imagerie évoquant un placenta accreta, l'anesthésie générale est recommandée (grade C).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u30",
+   "empreinte": "af13009cce08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La clonidine par voie péridurale ou intrathécale augmente la qualité et la durée de l'analgésie postopératoire, mais induit également une sédation.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u31",
+   "empreinte": "7904dcf12067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La voie périmédullaire est supérieure à la voie systémique pour la qualité de l'analgésie et la moindre sédation lorsqu'elle est utilisée en monothérapie (grade A).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u32",
+   "empreinte": "0a703b239047",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le risque de survenue d'une dépression respiratoire est documenté pour des doses supérieures à 250 µg ou à 3 mg respectivement (grade B).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u33",
+   "empreinte": "e07f2ad7fdce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dose optimale de morphine péridurale en bolus se situe entre 3 à 3,75 mg en monothérapie",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u34",
+   "empreinte": "a8184ddf4c7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une efficacité équivalente peut être obtenue avec 1 à 2 mg de morphine péridurale, lorsqu'un AINS est associé par voie systémique (grade B).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u35",
+   "empreinte": "d68a90d1cb76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas de bénéfice à utiliser une dose plus forte car les effets secondaires sont alors majorés (grade A).",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u36",
+   "empreinte": "b83b06ed6d1a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

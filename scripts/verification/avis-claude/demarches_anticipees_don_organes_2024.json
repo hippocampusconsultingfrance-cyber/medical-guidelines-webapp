@@ -1,0 +1,286 @@
+{
+ "cle": "demarches_anticipees_don_organes_2024",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b44621700dd3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La démarche anticipée1 est un processus qui conduit à l'admission en réanimation d'un patient en coma grave",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u2",
+   "empreinte": "add303add777",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "21718abedf96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patient avec dommage cérébral et signe de gravité identifié (score de Glasgow < 8) sans contre-indication",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u4",
+   "empreinte": "2e6ebd2672c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réflexion institutionnelle préalable sur l'information et la formation des professionnels. (accord fort)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u5",
+   "empreinte": "8e4cb34d0d7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La coordination hospitalière des prélèvements d'organes et de tissus (CHPOT) identifie les services",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "24024b1c0a96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette procédure locale permet de définir collégialement les critères",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "331d5b1c88dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l'établissement autorisé au prélèvement dans lequel le décès a été déclaré, qu'il y ait eu ou non",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "cc3529c0fda8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour finalité exclusive un possible prélèvement d'organes et de tissus.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "3afbb7344e00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne plus utiliser le terme « abord anticipé ».",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "87f01a4c4b44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une décision de limitation des traitements est actée collégialement, conformément à la règlementation",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "1ec48e479d9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un patient en coma grave (score de Glasgow < 8 ou coma d'aggravation rapide)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "aca77d3479a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réalisation de gestes invasifs (dont l'intubation) peut être envisagée de façon collégiale dans",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "78e67d943bce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce repérage doit déclencher l'appel à la CHPOT.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "02ba843ef169",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour le patient pris en charge en préhospitalier, aucun entretien pour le don ne doit être réalisé",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "c3d79593cabc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dès le premier appel à la CHPOT, le déplacement d'un soignant de la CHPOT sur site dans le service",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u16",
+   "empreinte": "1c2674bfc0f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le régulateur de l'Agence de la biomédecine peut être appelé pour avis. (accord fort)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u17",
+   "empreinte": "bc6c985e7f84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À ce stade, l'entretien anticipé2 avec les proches est possible. (accord fort)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u18",
+   "empreinte": "d9ded1798634",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La vérification de la compréhension par les proches de la gravité, du pronostic vital engagé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "e085612a1206",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NB : Le RNR ne peut être interrogé qu'après la déclaration de décès du patient.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "dfe8923e9871",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(habituellement de 3 à 6 jours)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "4b061f64f095",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La situation sera réévaluée avec les proches en fonction de leur vécu et de l'évolution clinique du patient.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "c6211314ade8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sa présence doit être systématique dans les ES autorisés au prélèvement et privilégiée dans les ES du ROP.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "beb4f2233e38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aménagée pour recevoir l'ensemble des proches et soignants, confortable, calme et dédiée à l'entretien.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "46aff3acce2d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un entretien en journée est à privilégier.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "011761186852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cet entretien doit concilier transparence des informations délivrées et incertitude de l'aboutissement",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u26",
+   "empreinte": "bb02fd890082",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque le proche transmet l'opposition du patient, la coordination hospitalière de prélèvement la retranscrit",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "63ba73a579ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le transfert vers la réanimation est médicalisé.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u28",
+   "empreinte": "015039a8ed71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La présence des proches doit être facilitée dans ce contexte de fin de vie.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "2df37acdddce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un arrêt des traitements de maintien en vie est mis en œuvre selon le protocole en vigueur dans le service de réanimation",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u30",
+   "empreinte": "ca42877e57b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "leur participation aux différentes étapes de la démarche anticipée1 est indispensable.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u31",
+   "empreinte": "c6afe86472ff",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

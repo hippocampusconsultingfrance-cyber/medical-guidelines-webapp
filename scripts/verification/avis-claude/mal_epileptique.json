@@ -1,0 +1,1447 @@
+{
+ "cle": "mal_epileptique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "566103db09a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts selon la méthodologie dérivée de la RAND/UCLA, à deux tours de cotation après élimination des valeurs",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "5c1d3d03ecb0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "b865d7cd697d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comprise entre 10 et 41 pour 100 000 habitants. L’incidence est plus élevée chez l’enfant et chez les adultes de plus de 60",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "f0e8f509771c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "disparition des manifestations motrices chez un patient comateux contrastant avec la persistance d’un EME électrique (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "72850c91be6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une classiﬁcation « opérationnelle » basée sur le pronostic et donc sur le degré d’urgence thérapeutique est indispensable dans la pratique quotidienne (accord fort).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "9c298e17bdc8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• EME avec pronostic vital engagé à court terme ; ◦ EME convulsif généralisé tonicoclonique (d’emblée ou",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "c336ce6cf879",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• EME avec pronostic vital et/ou fonctionnel engagé à moyen terme ;",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "0dc1ff17de9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "◦ EME confusionnel partiel complexe (accord faible), ◦ EME convulsif focal avec ou sans marche BravaisJacksonienne (accord faible),",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "333e7f1cbe65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• EME n’engageant pas le pronostic vital à court terme ; ◦ EME convulsif généralisé myoclonique (accord faible),",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "fe75a1d539e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "◦ EME à symptomatologie élémentaire donc sans rupture de contact (hallucinations, aphasie . . .) (accord faible),",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "843077990393",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de contact (hallucinations, aphasie . . .) (accord faible), ◦ épilepsie partielle continue (accord faible).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "f4927d952f48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’enfant comme chez l’adulte, il faut savoir tolérer les EME toniques (que les benzodiazépines peuvent aggraver), cloniques ou myocloniques et ne pas avoir systématiquement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "36c99dd9f4b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout patient hospitalisé pour un EME doit être secondairement réévalué par un neurologue, aﬁn de préciser, à distance de l’épisode aigu, le diagnostic positif, syndromique et différentiel de l’EME, et d’adapter les éventuels",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "2f9637d371bb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "4cf2ac5fa1f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Face à des manifestations motrices prolongées atypiques suggérant un EME convulsif, il convient systématiquement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "57bb8dff5525",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diagnostic doivent être connus de tout médecin prenant en charge un EME tonicoclinique : fermeture des yeux, résistance à l’ouverture des yeux, atypie des mouvements et",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "d4c8ecb70a23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de doute diagnostique, l’EEG (idéalement couplé à un enregistrement vidéo) est utile pour distinguer un EME",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "e1d49b042a30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de mouvement anormal dont l’origine épileptique est suspectée, chez un patient en réanimation, l’enregistrement d’un EEG devrait comporter au moins une",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "fb2eadff4175",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La suppression d’un mouvement anormal par l’injection de benzodiazépine ne prouve pas son origine épileptique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "0bf7efb26a32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "myoclonies non épileptiques d’importance variable, typiquement à prédominance axiale, parfois déclenchées par des stimulations sonores et tactiles. Elle ne s’accompagne",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "c48e3626e333",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des anomalies variées, en particulier des pointes périodiques généralisées qui ne doivent pas faire évoquer des crises voire un état de mal. Des myoclonies non épileptiques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "12a438029f24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans un contexte d’anoxie cérébrale, des pointes périodiques généralisées sur l’EEG, qui ne s’organisent pas en décharge rythmique, et sans symptôme clinique autre qu’un",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "e5722a55d346",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le diagnostic différentiel chez l’enfant entre crise d’épilepsie occipitale prolongée et migraine avec aura est",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "5771fbfebf66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traitement d’un EME dont le diagnostic est évident doit débuter sans attendre l’EEG (accord fort). Celui-ci devrait",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "481d91ba1c60",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "37101dda001b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un EEG en urgence est indiqué : • dans les EME convulsifs généralisés sans en retarder la",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "65af99e6393a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• en cas de suspicion d’EME non convulsif à expression confusionnelle (accord fort) ;",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "96b9d2b9fe47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• en cas de doute persistant sur un pseudo état de mal (accord faible).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "a20e408f76fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout patient hospitalisé pour un EME doit bénéﬁcier d’un EEG le plus tôt possible (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "40f4056e352f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "voies, et idéalement 21 voies, durant au moins 20 minutes, et au mieux 30 minutes, est l’examen de référence (accord",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "ba454eb4cd20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort). Il doit être au mieux couplé à un enregistrement vidéo (accord faible). Il permet de conﬁrmer le diagnostic d’EME,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "15defb2a3f55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’écarter les diagnostics différentiels, de préciser le cas échéant le diagnostic syndromique voire étiologique, de guider la prise en charge thérapeutique, et de participer au",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "97db1de69e31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "s’il corrige les anomalies EEG et améliore cliniquement le patient. Ce test thérapeutique doit se faire en présence d’un",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "a1225ca00c9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’interprétation de l’EEG doit utiliser un vocabulaire facilement compréhensible et comporter une conclusion qui stipule la présence (ou la persistance) ou non d’un EME",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u35",
+   "empreinte": "f4e6d96b8245",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). Il ne s’interprète qu’à la lumière des données cliniques et des différents traitements reçus par le patient (accord fort). L’expertise visuelle est plus ﬁable que",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u36",
+   "empreinte": "a7e376bec82d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient (accord fort). L’expertise visuelle est plus ﬁable que les logiciels d’analyse de l’EEG (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u37",
+   "empreinte": "1b11b6e4926e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "évoquer le diagnostic d’EME non convulsif, mais plutôt différents types d’encéphalopathies (postanoxique, métabolique, infectieuse, toxique et spongiforme) (accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u38",
+   "empreinte": "7630d988e529",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’évoluant pas de façon rythmique, en décharge, mais de façon périodique, même si elles sont très fréquentes, ne",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "57962d60c82c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant, l’EEG de longue durée (>12 heures) est très utile au diagnostic positif d’EME non convulsif et pour",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "a7fc296d4411",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sans retarder ni la mise en œuvre du traitement antiépileptique ni les manœuvres de réanimation (accord fort). Un EME répond souvent à plusieurs étiologies (accord faible). Si",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u41",
+   "empreinte": "a66112604128",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La recherche de certains troubles métaboliques est incontournable (accord fort). Une hypoglycémie, une hyponatrémie et une hypocalcémie doivent être recherchées et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u42",
+   "empreinte": "74250515e081",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le patient épileptique connu : • la première cause d’EME est un sevrage de médicaments",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u43",
+   "empreinte": "68ec1dca981d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• les principales autres causes sont l’intoxication ou le sevrage alcoolique, la prescription de médicaments proconvulsivants et les infections intercurrentes (accord",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "f022bd426283",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doute étiologique ou d’EME persistant, l’enquête doit être identique à celle réalisée devant un EME inaugural, du fait",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "cc7268e8b05f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• les souffrances cérébrales aiguës, qu’elles soient structurelles (méningoencéphalites, accidents vasculaires cérébraux, traumatismes. . .) ou fonctionnelles (hyponatrémie aiguë, intoxications médicamenteuses ou par",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u46",
+   "empreinte": "cddd08482f48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• plus rarement, car dans ces cas le patient peut déjà avoir présenté des crises, les lésions cérébrales subaiguës évolutives (comme les tumeurs, la toxoplasmose cérébrale),",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u47",
+   "empreinte": "eda21aacdaa6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cicatricielles (comme les séquelles d’accident vasculaire cérébral et de traumatisme) (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u48",
+   "empreinte": "2bfec001d148",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cérébral et de traumatisme) (accord fort). Dans moins de 10 % des cas, l’enquête est négative",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u49",
+   "empreinte": "e80f4c33acfa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les indications de l’imagerie cérébrale doivent rester larges (accord fort). Il faut tenir compte, chez le patient",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u50",
+   "empreinte": "6e810ed926b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’imagerie cérébrale (scanner cérébral sans et avec injection ou IRM) est indiquée en urgence en tenant compte",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u51",
+   "empreinte": "d6daedf5b818",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• si le début électro-clinique de l’EME est partiel (accord faible) ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u52",
+   "empreinte": "c23725fe55af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une ponction lombaire, en dehors de ses contreindications, est préconisée dans un contexte infectieux (accord fort), en cas d’immunodépression (accord fort) et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u53",
+   "empreinte": "8a910755977e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en cas de négativité de la recherche étiologique (accord faible). Chez l’adulte et plus encore chez l’enfant, en cas",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u54",
+   "empreinte": "9e1ad8aade02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne peut être réalisée immédiatement, il est recommandé de débuter sans délai par voie veineuse, un traitement antibiotique probabiliste et de l’acyclovir vis-à-vis d’une possible",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u55",
+   "empreinte": "e0ff39639f64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La persistance de l’EME sans étiologie identiﬁée impose la poursuite des examens, en s’aidant dès que possible des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u56",
+   "empreinte": "fbbbedf55eb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant, une hypocalcémie profonde (calcémie ionisée < 0,8 mmol/l) ou une hypomagnésémie (< 0,5 mmol/l) peuvent être responsables d’un EME ; sa",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u57",
+   "empreinte": "62b39cf8e01a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence de cause évidente à un EME convulsif chez un nourrisson, une injection de pyridoxine doit être proposée (50 à 100 mg/kg) en milieu de réanimation sous",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u58",
+   "empreinte": "700f7217a596",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mortalité des EME est mieux étudiée que leur morbidité. Elle est comprise entre 8 et 39 % des cas (décès survenant",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u59",
+   "empreinte": "830d29028851",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "difﬁcile à déterminer indépendamment des facteurs étiologiques sous-jacents et des complications liées à la prise en charge (accord fort). Chez l’adulte comme chez l’enfant,",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u60",
+   "empreinte": "7dd1c3c8fb5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "généralisé est une urgence. Elle nécessite, en préhospitalier, l’intervention d’une équipe médicale d’urgence. L’hospitalisation est systématique. Le transfert en réanimation est indiqué en cas de persistance des crises, du trouble",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u61",
+   "empreinte": "800d7678159d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans tous les cas, le contrôle des facteurs d’agression cérébrale est impératif, ce d’autant que l’EME est consécutif",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u62",
+   "empreinte": "bb00b040967d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mise en place d’une voie veineuse périphérique avec perfusion de sérum physiologique, la mesure de la glycémie capillaire et la correction d’une éventuelle hypoglycémie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u63",
+   "empreinte": "8dcc03c20b29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’intubation et la ventilation mécanique ne sont pas systématiques d’emblée. Elles sont indiquées en cas de recours à des agents anesthésiques, de détresse respiratoire aiguë",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u64",
+   "empreinte": "d8bbc126e263",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la sécurité du transport autorise un délai plus court de recours à la ventilation mécanique (accord faible). La technique d’induction anesthésique recommandée est celle de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u65",
+   "empreinte": "23c47ce555e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la procédure à séquence rapide. L’utilisation de succinylcholine est recommandée. Les curares de longue durée d’action doivent être évités. Le thiopental, le propofol, ou",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u66",
+   "empreinte": "4e7c05c6e84f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utile. Les curares de longue durée d’action doivent être évités aﬁn de ne pas masquer des convulsions (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u67",
+   "empreinte": "6c61451c54ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors des situations d’hypertension intracrânienne, l’interruption de la sédation est conseillée à l’arrivée du",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u68",
+   "empreinte": "b9d962e06686",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort). Chez le malade intubé et ventilé, le recours à une curarisation ponctuelle peut s’avérer nécessaire pour éliminer les artéfacts musculaires sur l’EEG et pour réaliser une",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u69",
+   "empreinte": "08556f2baa31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’objectif est d’obtenir une normoxie et une normocapnie (35 à 40 mmHg). La ventilation en hypocapnie est contreindiquée, y compris en cas d’œdème cérébral (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u70",
+   "empreinte": "44093cef5bfd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de maintenir une pression artérielle moyenne entre 70 et 90 mmHg (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u71",
+   "empreinte": "8a66357b8669",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La surveillance continue du tracé électrocardiographique et la réalisation dès que possible d’un électrocardiogramme",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u72",
+   "empreinte": "eff8ac9b1aaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "partie intégrante de la prise en charge de l’EME. Les vertus neuroprotectrices de l’hypothermie n’ont pas été conﬁrmées en pratique clinique (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u73",
+   "empreinte": "9634d005388f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le monitorage et le contrôle de la glycémie (en prévenant tout épisode d’hypoglycémie) et celui de la natrémie sont systématiques (accord fort). L’acidose métabolique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u74",
+   "empreinte": "6118aa24a69e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’éthylique connu ou suspecté, l’injection de thiamine (vitamine B1 : 100 mg en intraveineux lent) est",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u75",
+   "empreinte": "8067951b36e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avérée (traumatisme crânien, pathologie cérébrale vasculaire, infectieuses, tumorale. . .), l’EME est considéré comme un véritable facteur d’agression secondaire susceptible",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u76",
+   "empreinte": "aa683fd4c821",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucune molécule à visée neuroprotectrice ne peut être recommandée actuellement (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u77",
+   "empreinte": "3dc4bd02d6b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la comparaison entre les molécules en ce qui concerne l’équipotence. Ainsi, le choix d’un agent et/ou d’une stratégie repose sur une opinion consensuelle d’experts.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u78",
+   "empreinte": "11ac80962939",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un traitement antiépileptique doit être, une fois le diagnostic établi, administré en urgence devant des crises convulsives généralisées continues ou subintrantes persistant au moins cinq minutes (accord fort). La pérennisation",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u79",
+   "empreinte": "4ec5fe6135ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’EME larvé nécessite une prise en charge immédiate sans attendre l’EEG si l’histoire clinique et les manifestations",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u80",
+   "empreinte": "4c5fbfcb38da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans tous les cas, un monitorage de la fréquence cardiaque et respiratoire, de la pression artérielle et de la saturation en oxygène est mis en place (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u81",
+   "empreinte": "016f06d55685",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La survenue d’une hypotension ou de troubles du rythme cardiaque impose la diminution du débit de perfusion de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u82",
+   "empreinte": "b76a3becb57e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quand le patient est pris en charge entre cinq et 30 minutes après le début des convulsions, une benzodiazépine en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u83",
+   "empreinte": "ceb566d0d078",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de persistance des convulsions au bout de cinq minutes, on procédera à une seconde injection de la même benzodiazépine, à la même dose, associée à un autre médicament",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u84",
+   "empreinte": "70cfd931e46e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou du phénobarbital. Le choix tiendra compte de leurs contre-indications, de l’appréciation de leurs risques iatrogènes et de leur rapidité d’action. Dans des situations",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u85",
+   "empreinte": "87ae10a517dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quelle que soit l’évolution des convulsions, y compris une éventuelle cessation, l’intégralité de la dose prescrite doit",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u86",
+   "empreinte": "80916faa027a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le schéma proposé pour l’EME larvé est celui décrit pour l’EME convulsif évoluant depuis plus de 30 minutes (accord",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u87",
+   "empreinte": "8ea9da2823eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de persistance des convulsions 20 minutes après le début de la perfusion de phénobarbital ou",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u88",
+   "empreinte": "6b79a47768ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le recours au médicament antiépileptique non utilisé en première intention (phénobarbital après phénytoïne/fosphénytoïne, et vice versa) si toutes les conditions suivantes sont satisfaites (accord fort),",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u89",
+   "empreinte": "f19d1d3de886",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort) • Le recours au médicament antiépileptique non utilisé en première intention (phénobarbital après phénytoïne/fosphénytoïne, et vice versa) si toutes les",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u90",
+   "empreinte": "a2c3e4b53b2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• dans les autres situations, le recours à un traitement par thiopental, midazolam ou propofol, sous couvert d’une",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u91",
+   "empreinte": "d125f0b27914",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le valproate de sodium peut être utilisé dans des situations où la mise en œuvre d’une anesthésie générale avec ventilation mécanique est déraisonnable (limitation de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u92",
+   "empreinte": "0cb759573cbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dose de phénytoïne, fosphénytoïne ou phénobarbital ne repose sur aucune donnée clinique validée (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u93",
+   "empreinte": "d446e6f5ab4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "repose sur aucune donnée clinique validée (accord fort). Après le contrôle de l’état de mal",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u94",
+   "empreinte": "b877b500aeb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "discontinue est indispensable. Ce relais doit être immédiat si l’EME a été contrôlé par une seule dose de diazépam ou",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u95",
+   "empreinte": "7bb16fe11fe6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). Pour l’instauration ou l’adaptation d’un éventuel traitement antiépileptique de fond, un avis spécialisé devra être pris pour choisir le médicament antiépileptique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u96",
+   "empreinte": "3363e04e9557",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La durée d’action prolongée de plusieurs heures du clonazépam amène à privilégier son utilisation en France (accord fort). S’il n’est pas disponible, le diazépam sera",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u97",
+   "empreinte": "749f8b855ada",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). S’il n’est pas disponible, le diazépam sera utilisé (accord fort). La posologie du clonazépam est de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u98",
+   "empreinte": "17595c5d0eb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "validée dans des essais contrôlés n’est pas disponible en France, sauf dans le cadre de l’ATU (accord fort). La posologie du lorazépam est de 0,1 mg/kg (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u99",
+   "empreinte": "ba64900950da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intraveineuse est impossible, le midazolam en intramusculaire (0,15 mg/kg) ou par voie buccale (0,3 mg/kg) peut être employé (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u100",
+   "empreinte": "805de0640532",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le phénobarbital est utilisé en intraveineux à la posologie de 15 mg/kg à un débit de perfusion maximum de 100 mg/min",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u101",
+   "empreinte": "f2f64c0bb660",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). Il est contre-indiqué chez l’insufﬁsant respiratoire sévère (accord fort). Il induit une dépression de la vigilance, qui peut gêner l’appréciation de l’état neurologique, et une dépression respiratoire modérée (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u102",
+   "empreinte": "5a680a5fbaac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le phénobarbital a un délai d’action rapide qui permet de juger en pratique de sa pleine efﬁcacité 20 minutes après le",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u103",
+   "empreinte": "41c74d0f5f0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La fosphénytoine (ampoules de 500 mg en équivalents de phénytoïne sodique) est utilisée à la posologie de 20 mg/kg",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u104",
+   "empreinte": "5d8b81cbe644",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coronarien) (accord fort). La phénytoïne (ampoules de 250 mg) est utilisée à la posologie de 20 mg/kg avec un débit de perfusion maximum de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u105",
+   "empreinte": "7b86bf284ccd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La phénytoïne et la fosphénytoïne sont contre-indiquées en cas de troubles de la conduction ou de cardiopathie",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u106",
+   "empreinte": "295015f669e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). La phénytoïne nécessite un cathéter périphérique de gros calibre et une voie unique. La meilleure tolérance locale et la facilité d’administration de la fosphénytoïne (compatibilité avec les solutés de perfusion et",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u107",
+   "empreinte": "76370d8173fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La phénytoïne et la fosphénytoïne, bien qu’administrées à un débit différent (trois fois plus rapide pour la fosphénytoïne), agissent dans le même délai. En pratique, leur pleine",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u108",
+   "empreinte": "b7bc507977f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le valproate de sodium en intraveineux est indiqué en première intention (associé aux benzodiazépines) à la dose de 25 mg/kg en dose de charge puis, selon les taux sanguins, de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u109",
+   "empreinte": "7bb7546d7707",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à un sevrage en valproate de sodium (accord fort). Il est contre-indiqué en cas d’hépatopathie préexistante (accord",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u110",
+   "empreinte": "1e1834c40a69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort). Particularités liées à certaines étiologies",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u111",
+   "empreinte": "c75f7750e871",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’extraction du fœtus en urgence, il est recommandé d’associer du sulfate de magnésium (4 g en 20 minutes puis",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u112",
+   "empreinte": "f900b4fdc702",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors des crises aiguës de porphyrie, on utilise le clonazépam ou le lorazépam. L’intérêt potentiel du propofol doit être souligné. Sont notamment contre-indiqués le",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u113",
+   "empreinte": "680780f84f30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors des intoxications par médicaments ou substances illicites, les benzodiazépines puis les barbituriques (si nécessaires) sont conseillés (accord fort).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u114",
+   "empreinte": "c773e630b200",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant Les posologies des benzodiazépines sont les suivantes :",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u115",
+   "empreinte": "c76c23debf18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "0,4 mg/kg pour le diazépam (maximum : 5 mg chez l’enfant de moins de cinq ans, 10 mg pour l’enfant de cinq ans et plus)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u116",
+   "empreinte": "d6e718f469ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). Lorsque l’administration d’une benzodiazépine est impossible par voie intraveineuse, peuvent être utilisés le diazépam par voie intrarectale (0,3 à 0,5 mg/kg),",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u117",
+   "empreinte": "c3352002690a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le phénobarbital est utilisé en intraveineux à la posologie de 15 mg/kg à un débit de perfusion maximum de 100 mg/min",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u118",
+   "empreinte": "53e40f7ea69b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dose de charge de phénytoïne par voie veineuse est de 20 mg/kg (maximum 1 g) sans dépasser un débit de perfusion",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u119",
+   "empreinte": "72ba048c5fea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cliniques sufﬁsamment fortes pour recommander d’utiliser la fosphénytoine à la place de la phénytoïne. La fosphénytoine n’a l’AMM que chez l’enfant de plus de cinq ans",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u120",
+   "empreinte": "b5b5b80b569e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). Elle est utilisée à la posologie de 20 mg/kg d’équivalent phénytoïne avec un débit de perfusion maximum de 3 mg/kg par minute d’équivalent phénytoïne",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u121",
+   "empreinte": "0a00ba445938",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En général, il n’est pas indiqué d’induire un coma médicamenteux dans les EME réfractaires non convulsifs et partiel moteur. Un avis spécialisé est nécessaire (accord",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u122",
+   "empreinte": "210d69e2b475",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’existe pas de déﬁnition consensuelle de l’EME réfractaire (accord fort). En général, on peut déﬁnir un EME comme",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u123",
+   "empreinte": "bde9db368f53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réfractaire lorsqu’il existe une résistance à au moins deux médicaments antiépileptiques différents administrés",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u124",
+   "empreinte": "2a1ebefc42cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "convulsif intubés ventilés, n’ayant pas reçu l’association benzodiazépine—autre médicament antiépileptique telle",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u125",
+   "empreinte": "da141d20004f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les diagnostics de pseudo état de mal (origine psychogène) ou de mouvements anormaux d’autre étiologie qu’épileptique doivent être considérés avant de retenir le",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u126",
+   "empreinte": "52ad93b01c97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contexte d’encéphalopathie postanoxique, les myoclonies sont rarement en rapport avec un état mal réfractaire nécessitant un traitement antiépileptique (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u127",
+   "empreinte": "e8e1c8d6ed38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’y a pas de donnée comparative contrôlée concernant les barbituriques, le propofol et le midazolam lors de leur utilisation en cas d’état de mal réfractaire (accord fort). Il",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u128",
+   "empreinte": "558d6f6497d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faut toujours associer des médicaments antiépileptiques aux agents anesthésiques et s’assurer de taux sanguins efﬁcaces",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u129",
+   "empreinte": "fc5c5282c185",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les barbituriques ont l’avantage d’être connus depuis de nombreuses années, et le désavantage de présenter une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u130",
+   "empreinte": "693908a9cdb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bolus de 2 mg/kg en 20 secondes toutes les cinq minutes jusqu’à arrêt des convulsions et selon la tolérance hémodynamique, puis en attendant l’EEG, avec un débit de 3 à",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u131",
+   "empreinte": "bb6269b81ee5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou Propofol Infusion Syndrome « PRIS ») (accord fort). Le « SPP » constitue une complication probablement rare mais",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u132",
+   "empreinte": "d89be5d1215c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à un débit de 2 à 5 mg/kg par heure (parfois transitoirement jusqu’à 10 mg/kg par heure). La dose d’entretien sera adaptée sur les données EEG. Il est recommandé d’y associer des benzodiazépines et de ne pas dépasser la dose",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u133",
+   "empreinte": "3c7ba7d1e4cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation du propofol, particulièrement à des fortes posologies et au delà de 48 heures, impose une détermination au moins biquotidienne des lactates, des triglycérides et des",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u134",
+   "empreinte": "24d676d3743f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le midazolam induit une tachyphylaxie importante lors de l’administration prolongée (accord fort). Le midazolam",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u135",
+   "empreinte": "baceaac3a6a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bolus de 2 mg/kg en 20 secondes toutes les cinq minutes jusqu’à arrêt des convulsions et selon la tolérance hémodynamique, puis en attendant l’EEG, avec un débit de 3 à",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u136",
+   "empreinte": "ecc681bc599b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "usuels (barbituriques, propofol, midazolam), il peut être utile de les associer entre eux. Le topiramate, le lévétiracétam, la kétamine (contre-indiquée en cas d’hypertension",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u137",
+   "empreinte": "7e732dc6dc05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La durée de l’administration des médicaments anesthésiques et la cinétique de leur décroissance ne sont pas déterminées (accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u138",
+   "empreinte": "184cb0b827d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est bien entendu indispensable d’obtenir la suppression clinique de l’EME convulsif.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u139",
+   "empreinte": "27d0f92a5455",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(accord fort). La profondeur optimale de la suppression électroencéphalographique : seule suppression des crises, boufféessuppressions (burst-suppression) ou tracé isoélectrique ne",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u140",
+   "empreinte": "245ad912f940",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’administration d’un médicament anesthésique ayant pour cible EEG un tracé de bouffées-suppressions (burst-",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u141",
+   "empreinte": "abf8326734a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de reprise de l’EME au décours de l’arrêt du traitement, on peut soit reprendre l’administration du traitement déjà utilisé, soit passer à une autre substance (accord",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u142",
+   "empreinte": "4910b10bd808",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort). La poursuite du traitement même après plusieurs semaines d’EME réfractaire, est justiﬁée tant qu’il n’y a",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u143",
+   "empreinte": "5c759eb301fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les plus rebelles et de débuter par une perfusion continue de benzodiazépines à fortes doses (accord fort). La posologie de thiopental proposée est identique à celle de l’adulte",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u144",
+   "empreinte": "3a61b783665d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mais le diazépam semble aussi efﬁcace. Les posologies de midazolam proposées comportent une dose de charge",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u145",
+   "empreinte": "1d3469f56d5c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par paliers jusqu’à 1,4 mg/kg par heure (accord fort). La facilité d’emploi du midazolam (hydrosoluble, demi-vie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u146",
+   "empreinte": "a2c5d5fbc57e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aux autres traitements et du risque d’accident mortel lié au syndrome de perfusion de propofol, plus fréquent chez",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u147",
+   "empreinte": "fbbbd22561f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’expression clinique d’un EME non convulsif est le plus souvent une confusion mentale d’intensité variable (accord",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u148",
+   "empreinte": "b4b0b6c23797",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort). Une collaboration étroite entre le médecin qui demande l’EEG et celui qui l’interprète est indispensable",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u149",
+   "empreinte": "0d657ba7b81f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "benzodiazépine au cours de l’EEG constitue un test diagnostique et thérapeutique qui est positif lorsqu’il normalise l’EEG et fait céder la confusion ou les signes neurologiques.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u150",
+   "empreinte": "568f93c5d8e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "benzodiazépines ou une imprégnation chronique en médicaments psychotropes (accord fort). Il faut savoir évoquer chez un sujet épileptique qui présente des états d’absence",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u151",
+   "empreinte": "a994281d2bc9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "benzodiazépines ou une imprégnation chronique en médicaments psychotropes (accord fort). Il faut savoir évoquer chez un sujet épileptique qui présente des états d’absence",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u152",
+   "empreinte": "ee329d5bf2b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le bilan étiologique d’un EME partiel non convulsif inaugural impose de rechercher en premier lieu une affection aiguë du système nerveux central (accord fort).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u153",
+   "empreinte": "097e1bf8c5ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La résistance aux benzodiazépines concerne essentiellement les états de mal partiels non convulsifs. Une approche graduelle doit être privilégiée. La phénytoïne ou la fosphénytoïne semblent être les molécules de choix (accord fort).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u154",
+   "empreinte": "fca6d1056b01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "graduelle doit être privilégiée. La phénytoïne ou la fosphénytoïne semblent être les molécules de choix (accord fort). Coma et anomalies paroxystiques diffuses à l’EEG",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u155",
+   "empreinte": "8f7321874ed5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les comas dus à des encéphalopathies ou agressions cérébrales sévères qui s’accompagnent d’anomalies paroxystiques diffuses à l’EEG doivent être exclus du cadre nosographique des états de mal non convulsifs. La présence d’activités EEG paroxystiques généralisées peut en",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u156",
+   "empreinte": "e09ca00ee32b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rencontrées lors d’un coma consécutif à une agression cérébrale sévère (post-traumatique, postanoxique,. . .) sont à différencier de l’EME larvé, terme évolutif d’un EME convulsif généralisé non ou insufﬁsamment traité, et surtout de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u157",
+   "empreinte": "27860bcb244a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "paroxystiques généralisées parfois rencontrées lors d’un coma postagression cérébrale n’est pas codiﬁée. Si un traitement antiépileptique devait être instauré, en particulier",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u158",
+   "empreinte": "685e068e0411",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La mise en place de protocoles dans les diverses structures amenées à prendre en charge des EME est recommandée (accord fort).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u159",
+   "empreinte": "48d07320c006",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces recommandations établies début 2008 devront être réactualisées dans un délai maximum de trois ans (accord",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u160",
+   "empreinte": "dfcb2bfe5741",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

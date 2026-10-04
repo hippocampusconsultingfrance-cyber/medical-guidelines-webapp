@@ -1,0 +1,1411 @@
+{
+ "cle": "mort_encephalique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "deddc8509d27",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Prise en charge des sujets en état de mort encéphalique dans l’optique d’un prélèvement",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "f7ff24eba4c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fond que sur la forme. Les recommandations nécessitant une validation ont été cotées individuellement par chacun des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "d1a7ff3d1010",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Depuis sa description initiale en 1959, la ME a permis les prélèvements d’organes et/ou de tissus chez le cadavre à",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "5ee218ee1172",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "restent fonctionnels à la condition que la réanimation soit adaptée. La destruction encéphalique supprime la commande centrale de la respiration, ainsi que la régulation de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "24ac0f945ab9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une anamnèse cohérente complète et un examen clinique neurologique sans ambiguïté sont essentiels pour porter le diagnostic de ME. Ces éléments doivent être",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "25f216c64033",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’élimination de facteurs confondants cliniques est systématique : notamment l’hypothermie (température centrale inférieure à 35 °C), l’imprégnation médicamenteuse ou toxique susceptible d’interférer avec l’examen clinique",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "6de8bbfc29f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• En l’absence de ces facteurs confondants, l’examen neurologique permet d’observer un coma non réactif (score de Glasgow à 3) associé à l’abolition des réflexes du tronc",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "886722c02f54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pour vérifier la réalité de l’absence de ventilation spontanée, l’épreuve d’hypercapnie doit être effectuée sous couvert d’une oxygénothérapie efficace contrôlée par",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "92bf87ed6038",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réactifs pendant 30 minutes et effectués à quatre heures d’intervalle, soit une angiographie cérébrale objectivant",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "b599bbba7d16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La vélocimétrie Doppler transcrânienne n’a pas de valeur réglementaire pour le diagnostic de la ME. Cependant,",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "b2f3301089a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Lorsque l’examen clinique est compatible avec le diagnostic de ME, l’examen Doppler peut permettre d’évoquer de manière rapide et précoce le diagnostic d’arrêt circulatoire cérébral (7). Cela permet la mise en route sans",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "739693c31dc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de manière rapide et précoce le diagnostic d’arrêt circulatoire cérébral (7). Cela permet la mise en route sans retard des procédures réglementaires de confirmation de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "a8ecc558d142",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est un test de confirmation de la ME prévu par la réglementation, à la condition d’exclure l’influence possible de la sédation ou de troubles métaboliques (9). Avant d’utiliser les deux EEG comme moyen paraclinique, il convient",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "5ab08c59ab33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la sédation ou de troubles métaboliques (9). Avant d’utiliser les deux EEG comme moyen paraclinique, il convient de s’assurer que les dosages sanguins et urinaires ne",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "daaf06294dae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "décèlent aucun médicament du système nerveux central présent à des doses susceptibles d’interférer avec l’interprétation de l’EEG. L’hypothermie modérée (température voisine de 30 °C) n’empêche pas l’interprétation de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "37dd9bf2b787",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’EEG (7). Cependant, en l’absence de donnée confirmant ce fait dans le contexte de la mort encéphalique, une",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "dfd6ecd97752",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la ME, intéressante chez les patients sédatés, n’a pas de valeur réglementaire en France.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "7fc6a4319af2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par la réglementation. L’angioscanner par voie veineuse est recommandé comme moyen de confirmation de l’arrêt circulatoire encéphalique (8).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "bbe970a2516b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Dans tous les cas, le compte rendu écrit de l’examen électrophysiologique ou de l’angiographie doit être signé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "7925929f36d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• En cas de ME clinique, les méthodes de réanimation doivent être adaptées sans délai et la coordination hospitalière contactée, car ce patient est un « donneur potentiel » (9). La décision d’amener le sujet au prélèvement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "bc2d1954ae2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être adaptées sans délai et la coordination hospitalière contactée, car ce patient est un « donneur potentiel » (9). La décision d’amener le sujet au prélèvement relève de la responsabilité du médecin du donneur car",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "024fa8d19b47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compte de ses convictions religieuses et de ses différences culturelles. La qualité de l’accueil des familles et des proches est déterminante pour l’acceptation ou le refus",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "04b26da3b1ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les entretiens doivent se dérouler dans un local décent, permettant de faire asseoir les participants et de préserver l’intimité et la confidentialité (9). Ils interviennent",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "8d8bc0ea62c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "après confirmation paraclinique de la ME et assurance par la coordination de la faisabilité des prélèvements (8). Ils",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "715f19b06862",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C d’informer sur la ME, le don et sa finalité ; C de rechercher le refus du prélèvement du défunt exprimé de son vivant.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "d870e65767ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C de rechercher le refus du prélèvement du défunt exprimé de son vivant. • L’entretien doit au mieux être mené à deux : le réanimateur et un membre de l’équipe de la coordination hospitalière, ils doivent se présenter à la famille (9).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "9fd2b45fe29c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Au cours de la ME, l’instabilité hémodynamique est fréquente et multifactorielle. Elle résulte de la disparition du contrôle nerveux par le système sympathique avec l’association de phénomènes inflammatoires, d’ischémie–reperfusion, de troubles hormonaux, voire d’hypothermie.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "ce94bbc4fe43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "être précoce afin de permettre la mise en route de mesures thérapeutiques immédiates. Pour ce faire, tout",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "d75e7593d6c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Il n’existe pas de signe clinique de l’hypovolémie spécifique à la ME et elle doit être dépistée précocement. Bien que non validée au cours de la ME, l’utilisation des critères dynamiques de réponse au remplissage vasculaire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "88fbf407c38c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une meilleure prise en charge du donneur potentiel tout en évaluant la qualité du greffon cardiaque éventuel.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "06579b73e38e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’intérêt des marqueurs biologiques pour la reconnaissance d’une dysfonction myocardique telle que l’utilisation de la créatinine kinase et de sa fraction MB, de la troponine Ic, du brain natriuertic peptide (BNP ou",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "70edf745ffd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recours à une technique d’exploration hémodynamique (échocardiographie, cathétérisme cardiaque droit, Doppler œsophagien, système Picco...), laissé au choix de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "0fb393045a7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C pression artérielle moyenne comprise entre 65 et 100 mmHg (9) ;",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "e5a63955c605",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C diurèse comprise entre 1 et 1,5 ml/kg par heure (9)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "dcdef1b41fae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C température comprise entre 35°5 et 38° (9)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u36",
+   "empreinte": "18b80d730e00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C PaO2 supérieure à 80 mmHg (9)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u37",
+   "empreinte": "3940a8b3ba11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C hémoglobine supérieure à 7 g/dl (9)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u38",
+   "empreinte": "6a904a6c2f78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C hémoglobine supérieure à 7 g/dl (9) ; C lactate artériel normal (7).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u39",
+   "empreinte": "383e39f0fa87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Parallèlement, pour surveiller l’apparition ou l’évolution d’un diabète insipide, l’évaluation régulière du bilan entrées–sorties, de la densité urinaire ainsi que des ionogrammes sanguins et urinaires sont nécessaires (9).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u40",
+   "empreinte": "040d75841136",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "à la posologie maximale de 30 ml/kg par jour peuvent être utilisés indifféremment aux gélatines, sans risque d’atteinte rénale (7).",
+   "explication": "Le remplissage (7,5) est conforme, mais la fiche omet l'énoncé coté 7 qui suit : les hydroxyéthylamidons de dernière génération (≤ 30 ml/kg/j) utilisables comme les gélatines, sans risque rénal, données à confirmer.",
+   "page": 4
+  },
+  {
+   "id": "u41",
+   "empreinte": "0cc924bf8ad9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "associé à la correction de la vasoplégie par des vasopresseurs. Le contrôle précoce du diabète insipide permet d’éviter un RV massif, délétère pour un éventuel prélèvement pulmonaire. Les transfusions sanguines et éventuellement les traitements substitutifs compléteront cette",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u42",
+   "empreinte": "dcf30cb4d489",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ces données doivent être confirmées par d’autres publications. Par ailleurs, le recours aux vasopresseurs peut être nécessaire et repose en première intention sur la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u43",
+   "empreinte": "84fa8c4488e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaire, la compensation de la diurèse par un soluté adapté à l’osmolalité sanguine (9).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "b6b1d3b0fdaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• En cas de dysfonction myocardique, l’adjonction d’un inotrope (dobutamine) ou le remplacement de la noradrénaline par de l’adrénaline sont recommandés (9).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "406135c74d65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Certaines études montrent que l’hormonothérapie substitutive (hormone thyroïdienne, cortisol et arginine–vasopressine) apporterait un bénéfice hémodynamique chez le donneur et sur la qualité des greffons (7). De plus,",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u46",
+   "empreinte": "433e9a3502c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’arginine–vasopressine pourrait permettre une réduction des besoins en catécholamines (6). Néanmoins, des études complémentaires prospectives sont nécessaires avant",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u47",
+   "empreinte": "3e8e95e79c79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des besoins en catécholamines (6). Néanmoins, des études complémentaires prospectives sont nécessaires avant d’apporter une recommandation forte concernant l’utilisation d’une hormonothérapie substitutive.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u48",
+   "empreinte": "4b31c55376e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Tous les donneurs d’organes sont des donneurs potentiels de poumon et l’optimisation de la prise en charge d’un donneur limite au cours de la réanimation peut",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u49",
+   "empreinte": "da2dcdbc66cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C une PaCO2 entre 35 et 40 mmHg (9)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u50",
+   "empreinte": "9469919d3c6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C une PaCO2 entre 35 et 40 mmHg (9) ; C une PaO2 entre 80 et 100 mmHg avec la FiO2 minimale",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u51",
+   "empreinte": "a41a19fc8078",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C en utilisant une PEP minimale (environ 5 cmH2O)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u52",
+   "empreinte": "64a0ea7ce9de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C le rapport PaO2/FiO2 doit être contrôlé régulièrement au cours de la réanimation et avant transfert au bloc",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u53",
+   "empreinte": "bdb60b6e4519",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "opératoire ; C les manœuvres de recrutement alvéolaire sont recommandées (8,5).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u54",
+   "empreinte": "db9f37137dbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cette indication, mais le suivi radiologique thoracique au cours du séjour peut permettre d’anticiper sur les mesures correctives à prendre en cas de dégradation.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u55",
+   "empreinte": "206bd1e3d580",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’hématose (atélectasie, corps étranger). Le prélèvement pulmonaire n’est pas contre-indiqué en cas de positivité de l’examen bactériologique direct de l’aspiration bronchique, en l’absence de pneumonie.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u56",
+   "empreinte": "0e7db43ee263",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La connaissance de la flore bactérienne du donneur permet d’orienter l’antibiothérapie prophylactique et curative chez les receveurs, en cas de pneumonie bactérienne postopératoire précoce. La surveillance des répercussions potentielles, du remplissage vasculaire sur les poumons devra être systématique.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u57",
+   "empreinte": "4b5cf30c0af2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les perturbations de l’hémostase (CIVD, fibrinolyse, fibrinogénolyse) sont fréquentes au cours de la ME et sont liées à l’atteinte cérébrale (8). L’exploration de l’hémostase d’un patient en ME repose sur les dosages suivants :",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u58",
+   "empreinte": "5e49cc5fbefe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "liées à l’atteinte cérébrale (8). L’exploration de l’hémostase d’un patient en ME repose sur les dosages suivants : C TP, TCA, fibrinogène, facteur V, plaquettes (9) ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u59",
+   "empreinte": "f4322ad64eb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C D-Dimères, complexes solubles (7). • Les facteurs de l’hémostase doivent être maintenus au",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u60",
+   "empreinte": "4e61a04e38cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C plaquettes > 50 G/l (8) ; C fibrinogène > 1 g/l (8)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u61",
+   "empreinte": "9ae91db5c022",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C plaquettes > 50 G/l (8) ; C fibrinogène > 1 g/l (8)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u62",
+   "empreinte": "dbc34a8e2d75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C plaquettes > 50 G/l (8) ; C fibrinogène > 1 g/l (8) ; C TP > 40 % et TCA ratio < 1,5",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u63",
+   "empreinte": "a1b2a6779743",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La desmopressine augmente le taux de vWF et F VIII ainsi que l’agrégabilité plaquettaire. Elle entraîne une action",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u64",
+   "empreinte": "c8df7d8e3ccd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’acceptabilité du donneur atteint d’une affection bactérienne ou fongique reste encore un sujet controversé. En tout état de cause, les prélèvements bactériologiques",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u65",
+   "empreinte": "bf313025b8d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’existence d’une infection avérée chez le donneur potentiel n’est pas une contre-indication formelle au prélèvement, si l’agent pathogène est isolé, et un traitement efficace instauré pendant une durée d’au moins 24 à",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u66",
+   "empreinte": "9249fd34bdaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "notamment pour les germes à tropisme vasculaire (9)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u67",
+   "empreinte": "6aee91b4b304",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du bénéfice risque, notamment pour les germes à tropisme vasculaire (9). En cas de prélèvement de poumons ou cœur–poumons, l’administration d’une antibiothérapie par amoxicilline–acide clavulanique 1 g/8 heures est",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u68",
+   "empreinte": "f17a7b0329a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cas d’ischémie–anoxie cérébrale où une période d’observation plus longue est recommandée. Au-delà d’un an, les critères sont ceux de l’adulte. La réanimation d’un enfant",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u69",
+   "empreinte": "45dff4380e2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« limites ». Il est donc recommandé pour tout donneur potentiel de réaliser dès que possible, et pour chaque organe, un bilan précis clinique et paraclinique de façon à",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u70",
+   "empreinte": "0926aa5ed267",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de sécurité sanitaire ; ESB ou de maladie équivalente, infection par le VIH, HCV ou HBV, tuberculose active",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u71",
+   "empreinte": "041cc6f5c124",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C d’autres sont d’ordre médical comme les cancers avérés ou métastasés Les tumeurs cérébrales peuvent faire exception pour certaines d’entre elles.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u72",
+   "empreinte": "baff34ca62f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C les maladies de systèmes, les allergies, la plupart des intoxications, et les infections bactériennes rentrent",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u73",
+   "empreinte": "18e3fdc71396",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Dans tous les cas, on doit disposer pour chaque organe de données morphologiques. Si un scanner cérébral est",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u74",
+   "empreinte": "3ce462fad80c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont pas suffisamment sensibles et spécifiques (9). Il est donc recommandé d’évaluer la fonction et la structure du",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u75",
+   "empreinte": "42eee6585fb0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les arythmies ventriculaires répétitives sans anomalies hydroélectrolytiques évidentes sont en revanche de mauvais pronostic.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u76",
+   "empreinte": "793d580b1549",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’absence de coronarographie au-delà de 55 ans ne doit pas être une contre-indication au prélèvement (8).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u77",
+   "empreinte": "966b628ff866",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’utilisation des catécholamines n’est plus en soi une contre-indication au prélèvement cardiaque et il est impossible actuellement de définir une dose seuil qui permettrait de le faire (9).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u78",
+   "empreinte": "91865b340370",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Devant une altération de la fonction systolique chez un patient de < 55 ans, en l’absence de facteur de risque de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u79",
+   "empreinte": "4a07a5325e25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(9). Il est recommandé dans ce cas de pratiquer une nouvelle échographie cardiaque après chaque ajustement",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u80",
+   "empreinte": "28140e4836a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C les hypoxémies sévères (SaO2 < 80 %) (7,5) ; C un infarctus du myocarde documenté (quelle que soit",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u81",
+   "empreinte": "e348abdb827f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C les hypoxémies sévères (SaO2 < 80 %) (7,5)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u82",
+   "empreinte": "d9600ae07d4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Compte tenu de la rareté des prélèvements pulmonaires, il est particulièrement recommandé de tenir compte de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u83",
+   "empreinte": "bbee93909c25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de tabagisme ainsi qu’un examen clinique détaillé sont indispensables mais insuffisants pour évaluer la sélection",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u84",
+   "empreinte": "d8f2f6765fb3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La durée de ventilation n’est plus un critère de non prélèvement, mais une analyse au cas par cas des condi-",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u85",
+   "empreinte": "c3536ca43eae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une radiographie thoracique ou un scanner thoracique normal est un excellent critère de prélèvement (8).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u86",
+   "empreinte": "bef29cc57483",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une optimisation de la ventilation mécanique doit être effectuée avant l’utilisation des critères d’imagerie et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u87",
+   "empreinte": "85698fe2d8ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’utilisation de catécholamines n’est plus un critère de non prélèvement (9).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u88",
+   "empreinte": "6737caca3d51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C la présence d’opacités alvéolaires bilatérales non réversibles après fibroaspiration, déplétion hydrosodée et optimisation de la ventilation (9) ;",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u89",
+   "empreinte": "446d4673091a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "C des antécédents de maladie respiratoire chronique non réversible ;",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u90",
+   "empreinte": "40b7725a660d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(9) ; C une durée d’ischémie froide supérieure à 8 heures (8).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u91",
+   "empreinte": "5ac7cd8d5e7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La bonne qualité du greffon fourni par certains patients âgés de 80 ans ou plus a été largement démontrée (8,5).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u92",
+   "empreinte": "e5c888394af8",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "La notion d’éthylisme chronique ne contre-indique pas le prélèvement si le foie est macroscopiquement normal et si la biologie ne montre pas d’altérations majeures (8).",
+   "explication": "La fiche marque cette ligne « — » (non cotée) ; dans la source, la phrase sur l'éthylisme chronique porte une cotation (8). Le reste (diabète, HTA, cytolyse : non cotés) est conforme.",
+   "page": 6
+  },
+  {
+   "id": "u93",
+   "empreinte": "7102f5dab6a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si la biologie ne montre pas d’altérations majeures (8). • Une natrémie > 170 mmol/l peut être une contreindication au prélèvement hépatique (7).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u94",
+   "empreinte": "6327812a1578",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les infections virales nécessitent une attention particulière compte tenu du tropisme particulier pour le foie mais ne contre-indiquent pas systématiquement le prélèvement (8).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u95",
+   "empreinte": "1305763a5723",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une imagerie hépatique et abdominale est indispensable (échographie et ou scanner) pour rechercher une stéatose ou une tumeur parenchymateuse.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u96",
+   "empreinte": "3493bdf1a73f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(échographie et ou scanner) pour rechercher une stéatose ou une tumeur parenchymateuse. • La biopsie hépatique s’impose en cas de maladie inflammatoire de l’intestin (8), d’obésité morbide (8) et lorsque",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u97",
+   "empreinte": "1310ffc0cc84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La biopsie hépatique s’impose en cas de maladie inflammatoire de l’intestin (8), d’obésité morbide (8) et lorsque le foie est macroscopiquement douteux (9). La stéatose",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u98",
+   "empreinte": "bd896cd8989b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "microvésiculaire même massive ne contre-indique pas le prélèvement. La stéatose macro-vacuolaire peut contreindiquer la greffe, dès qu’elle dépasse 30 à 60 %, selon le",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u99",
+   "empreinte": "d0a52309e519",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prélèvement. La stéatose macro-vacuolaire peut contreindiquer la greffe, dès qu’elle dépasse 30 à 60 %, selon le degré d’urgence de la transplantation (7,5).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u100",
+   "empreinte": "521cc95e2fbf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "degré d’urgence de la transplantation (7,5). • En cas de doute, la décision relève de l’équipe de transplantation (9).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u101",
+   "empreinte": "4a004111b8c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’âge du donneur, même très avancé, n’est pas une contre-indication au prélèvement (9). La qualité du greffon devra être analysée au vu des autres comorbidités du",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u102",
+   "empreinte": "a05e5d9816a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une HTA de plus de dix ans est à prendre en compte pour la décision de prélèvement (8).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u103",
+   "empreinte": "f1277f7794ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les examens indispensables pour l’évaluation des reins sont : la créatininémie, l’ECBU, l’étude du sédiment urinaire et l’imagerie rénale par échographie ou scanner (9).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u104",
+   "empreinte": "1874675dfa57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le taux de la créatininémie à l’admission, ou dans les jours précédents, ainsi que le calcul de la clairance de la créatinine par la formule de Cockcroft, sont des critères déterminants de la qualité du greffon (9).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u105",
+   "empreinte": "ee6037fd8b08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une hématurie et une protéinurie modérées ou une insuffisance rénale aiguë apparue en réanimation ne",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u106",
+   "empreinte": "5d1952f67f7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "instabilité hémodynamique, même avec des doses élevées de catécholamines ne contre-indiquent pas le prélèvement.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u107",
+   "empreinte": "b4546c47375a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "iodés chez le donneur doit inciter à ne pas multiplier les actes d’imagerie avec opacification vasculaire (7,5).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u108",
+   "empreinte": "6efb12df5753",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les contre-indications au prélèvement rénal sont : C une clairance de la créatinine < 30 ml/minute (9) ;",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u109",
+   "empreinte": "ff404a57f7c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pour les prélèvements de pancréas total l’âge du donneur devra être inférieur à 45 ans, sauf pour les traumatisés",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u110",
+   "empreinte": "88967229ded9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pour les îlots de Langerhans l’âge peut être choisi entre 18 et 70 ans, le meilleur résultat étant obtenu au-delà de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u111",
+   "empreinte": "14a41443a2e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pour une double greffe rein–pancréas l’index de masse corporelle doit être préférentiellement < 27.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u112",
+   "empreinte": "e95fdba38fc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "corporelle doit être préférentiellement < 27. • Un taux d’amylase égal au double de la norme ne contreindique pas le prélèvement (8).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u113",
+   "empreinte": "d3a3e411f7ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Un taux d’amylase égal au double de la norme ne contreindique pas le prélèvement (8). • Une imagerie pancréatique est recommandée avant le",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u114",
+   "empreinte": "9acc030c5431",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’instabilité hémodynamique et l’arrêt cardiaque sont des facteurs de risque de pancréatite aiguë et de thrombose",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u115",
+   "empreinte": "25605515fa3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La durée de séjour en réanimation avant prélèvement ne devrait pas dépasser cinq jours, au-delà une discussion au",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u116",
+   "empreinte": "20369594a1cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’ischémie froide doit être inférieure à huit heures pour les îlots de Langerhans et < 18 heures pour le pancréas",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u117",
+   "empreinte": "e474dcf0293b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’aspect macroscopique du pancréas au bloc opératoire est en fait le critère final déterminant pour le prélèvement.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u118",
+   "empreinte": "c4136aa17e97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pour une greffe isolée d’intestin le poids du donneur doit être inférieur à quatre fois celui du receveur, pour une",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u119",
+   "empreinte": "892383b0b458",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Une laparotomie antérieure ne contre-indique pas le prélèvement (8).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u120",
+   "empreinte": "10462b6a3c4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Des antécédents de maladie chronique de l’intestin contre-indiquent le prélèvement (9).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u121",
+   "empreinte": "c5001fe85b91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pour les greffes combinées foie + intestin le taux des transaminases doit être inférieur à trois fois la normale et",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u122",
+   "empreinte": "0d31c79043e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Un arrêt cardiaque prolongé et ou une instabilité hémodynamique sont des contre-indications au prélèvement en raison du risque d’ischémie mésentérique (8).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u123",
+   "empreinte": "60e141d5e152",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• De même l’utilisation d’adrénaline ou de noradrénaline au-delà de 2 µg/kg par minute doit faire contre-indiquer le",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u124",
+   "empreinte": "63acc26b1c94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prélèvement (7,5). • L’existence d’une hypernatrémie au moment du prélèvement est associée à un taux élevé de perte de greffons.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u125",
+   "empreinte": "3610b5739b23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• De nombreux tissus peuvent être prélevés : cornées, membranes amniotiques, os massifs, tissus mous de l’appareil locomoteur, vaisseaux, valves cardiaques, peau.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u126",
+   "empreinte": "54e22fcdee3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Un contrôle de qualité de chaque greffon est réalisé au niveau de la banque de tissus qui réceptionne le prélèvement.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u127",
+   "empreinte": "f8f3e5db9c93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les antécédents de cancer solide ne contre-indiquent pas le prélèvement de cornée (9). Les infections virales ne",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u128",
+   "empreinte": "5d0515349bed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le prélèvement de cornée (9). Les infections virales ne sont pas une contre-indication systématique au prélèvement de tissus (8).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u129",
+   "empreinte": "b2fb92abdf6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les échantillons sanguins prélevés après le décès pour vérifier la sécurité sanitaire doivent être au mieux centrifugés dans les plus brefs délais pour éviter des erreurs",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u130",
+   "empreinte": "ed13e3ddcafe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Il est souhaitable de développer les réseaux de prélèvement et les échanges interbanque de tissus, notamment pour les cornées (9).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u131",
+   "empreinte": "0670a8792cb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "médicale dans laquelle tous les centres hospitaliers doivent s’inscrire. L’activité de prélèvement d’organes et de tissus doit faire l’objet d’une organisation précise reposant sur l’unité de coordination hospitalière. Cette organisation doit être formalisée par des procédures écrites",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u132",
+   "empreinte": "2a690ee10c73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’unité de coordination hospitalière doit être structurée et visible, en individualisant les tâches respectives de",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u133",
+   "empreinte": "56af50621628",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’appui, en temps réel, dès qu’il y a intention de prélever (9) ; C la vérification de la réalité de l’intégration du prélèvement d’organes dans l’activité chirurgicale d’urgence",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u134",
+   "empreinte": "241cdcc9541c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vérifier la qualité de la restitution du corps, elle accompagne la famille dans les procédures liées au décès et au prélèvement d’organes. Enfin, elle reste disponible pour",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u135",
+   "empreinte": "11e98592c3bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sanitaire des greffons. Au niveau inter-régional, par l’intermédiaire du SRA, elle valide la procédure de prélèvement, participe à la qualification des greffons, repartit et attribue",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u136",
+   "empreinte": "11e6b71921c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réanimation et le bloc opératoire est une période à risque maximum, le sujet doit être monitoré, accompagné par",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u137",
+   "empreinte": "6dfd6a4e5d57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• L’utilisation d’analgésiques et de myorelaxants chez un sujet en ME est justifiée (9).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u138",
+   "empreinte": "ec6a13f79792",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être maintenue en période peropératoire. De plus, comme l’état hémodynamique est évolutif, il peut nécessiter la mise en place d’un monitorage supplémentaire",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u139",
+   "empreinte": "98e8f5ba9427",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le chirurgien doit avoir été formé spécifiquement à la technique du PMO (9).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u140",
+   "empreinte": "ab922db191c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le PMO est une urgence chirurgicale qui ne doit passer qu’après les urgences hémorragiques et obstétricales.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u141",
+   "empreinte": "c3cc1fd97996",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Sur le plan pratique, il faut veiller à ce que l’installation du malade convienne à toutes les équipes chirurgicales (9).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u142",
+   "empreinte": "94567c9583f1",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "La chronologie du PMO est la suivante : C exploration et préparation de l’étage abdominal ; C exploration et préparation de l’étage thoracique ; C héparinisation dix minutes avant le clampage et perfusion in situ (9)",
+   "explication": "La fiche annonce « Chronologie du PMO (telle que décrite par le texte source) » mais n'en reproduit aucune étape. Manquent les 7 étapes, dont « héparinisation dix minutes avant le clampage et perfusion in situ » (cotée 9).",
+   "page": 8
+  },
+  {
+   "id": "u143",
+   "empreinte": "8af0d352cc3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Aucun geste à fort risque hémorragique ne doit être réalisé tant que les différentes équipes ne sont pas prêtes",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u144",
+   "empreinte": "a86eee4ac43e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La gestion des prélèvements à visée immunologique doit viser à raccourcir au maximum la durée d’ischémie froide.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u145",
+   "empreinte": "197223992704",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les prélèvements sanguins et tissulaires pour les tests immunologiques et les sérologies réglementaires (typage",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u146",
+   "empreinte": "a269d4e968d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "emballage stérile, placés dans la glace, et accompagnés d’un tube de sang (à température ambiante) pour vérification ultime du groupe sanguin (9).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u147",
+   "empreinte": "98d7324be77a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "même solution de conservation doit être utilisée pour le prélèvement simultané des viscères intra-abdominaux",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u148",
+   "empreinte": "22cadcd6b03c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Pendant toute la durée de l’ischémie froide, la température de conservation des greffons doit être strictement maintenue entre 2 et 4 °C.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u149",
+   "empreinte": "a40282b537a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Un prélèvement à visée bactériologique et mycologique du liquide de conservation doit être réalisé avant l’implantation de chaque greffon (9).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u150",
+   "empreinte": "a524c458ebea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Avant toute transplantation rénale ou pancréatique, le cross-match doit être réalisé en urgence (9).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u151",
+   "empreinte": "908616dae96c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Avant tout prélèvement à des fins thérapeutiques, la qualification des organes repose sur la recherche de",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u152",
+   "empreinte": "8f15d27eb7db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stricts des donneurs et des receveurs, procure aux équipes entraînées des résultats, en termes de survie et de fonction des greffons rénaux, comparables à ceux observés en cas de prélèvements sur donneurs à cœur battant",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u153",
+   "empreinte": "0e620f9119a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Celui-ci considère que ces gestes sont possibles dès le constat du décès et dans l’attente de l’entrevue avec la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u154",
+   "empreinte": "d16a9e642c39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Les prélèvements à cœur arrêté supposent des aménagements réglementaires en cours de développement et ne concerneront pas les donneurs relevant de la catégorie III",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u155",
+   "empreinte": "7a48620c2e13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(arrêt de soins) de la classification de Maastricht. • Le choix de ce type de prélèvement nécessite une organisation médicale et paramédicale spécifique (8).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u156",
+   "empreinte": "4c9fb3894aba",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

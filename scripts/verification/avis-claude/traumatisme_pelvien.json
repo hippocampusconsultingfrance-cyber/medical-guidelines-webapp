@@ -1,0 +1,322 @@
+{
+ "cle": "traumatisme_pelvien",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "076a73a5dba9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts. Pour 9 questions posées, la méthode Grade ne",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "efb4778145fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque le patient est inconscient ou choqué, il doit être considéré systématiquement comme suspect d'un traumatisme pelvien. (GRADE 1+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "3c85eb9ab150",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de considérer comme critères cliniques de gravité d'un traumatisme pelvien : un traumatisme pelvien ouvert",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "3271140d780b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place le plus tôt possible une contention externe du bassin chez tout patient suspect d'un traumatisme pelvien grave. (GRADE 1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "6d56d627ab12",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ceinture pelvienne, sans qu'un type particulier ne soit recommandé (à l'exclusion de draps noués).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "5a632286589f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de transférer par transport médicalisé tous les patients présentant un traumatisme pelvien grave vers un centre de référence",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "fa29c5d2a778",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "abdominal sévère (OR = 5,54, IC95 % [1,61–18,37])",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "ea2226236b74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de réaliser une radiographie de bassin de face dès l'admission si le patient est instable sur le plan hémodynamique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "f4156736839f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tomodensitométrie thoracoabdomino-pelvienne avec injection de produit de contraste pour bilan vasculaire et osseux complet du pelvis étant alors préférée.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "539ad704f99c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Il est probablement recommandé de réaliser une eFAST",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "99d00cecd6b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "initiale était jugée appropriée dans 98 % des cas (IC95 % : 97–99).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "799007af1a5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4 – Il est recommandé de réaliser une tomodensitométrie",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u13",
+   "empreinte": "7d37180b81c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de réaliser à titre systématique une imagerie dédiée pour le bas appareil urinaire",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "8b88b99de322",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en particulier avant tout sondage chez l'homme. (GRADE 2+)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "a933c54073e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "respectivement de 93,9 %, 77,8 %, 88,6 % et 87,5 %",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "d598545ad6c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'existence d'une extravasation de produit de contraste au temps artériel observée sur une angioscanographie ou une tomodensitométrie. (GRADE 2+)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "b923b124cc63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et nécessitent d'être significativement plus transfusées",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u18",
+   "empreinte": "e7c01fdb7b45",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "73a3fff82f6d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "2ae1c9ff20c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le geste d'hémostase peut être une artériographie avec embolisation ou un tamponnement chirurgical pelvien pré-péritonéal de sauvetage réalisé par une équipe entraînée. (GRADE 1+)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "f922a37e30e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que le délai entre l'admission hospitalière et le geste d'hémostase ne dépasse pas 60 minutes, quelle que soit la technique utilisée. (GRADE 1+)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "305862dc1033",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chaque tranche de 3 minutes perdue, la mortalité augmente de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "e651e2cda30a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.10 – Les experts recommandent de réaliser une embolisation",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u24",
+   "empreinte": "eae1f21c57b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de réaliser un contrôle artériographique systématique chez tous les patients ayant bénéficié d'une artério-embolisation",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "0667a46555cd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "a2399b0145fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réalisation d'une artériographie-embolisation dans un délai de 60 minutes à partir du diagnostic. (GRADE 2+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "2107805b6d04",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La fixation externe peut être réalisée par un Clamp de Ganz ou un fixateur externe antérieur. (GRADE 1+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "b8419cd3ca82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ascensionné (15 % du poids corporel). Il peut être placé en salle",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "acd94fe596ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.15 – Il est recommandé d'utiliser un fixateur externe pour",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u30",
+   "empreinte": "ececfc629781",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u31",
+   "empreinte": "635a3be091eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.16 – Il est probablement recommandé d'assurer la prise en",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u32",
+   "empreinte": "061051ec276d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le contrôle de l'hémorragie et de la contamination périnéale. (GRADE 1+)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u33",
+   "empreinte": "022b803a8e07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "52 étaient ouvertes, soit 1,7 %",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u34",
+   "empreinte": "e3c061e7a685",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "ce66da661c85",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

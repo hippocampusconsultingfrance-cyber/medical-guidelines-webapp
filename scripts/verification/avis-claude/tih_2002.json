@@ -1,0 +1,682 @@
+{
+ "cle": "tih_2002",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "380396bcd12c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. la thrombopénie de type I, bénigne, d’origine non immune et d’apparition précoce sans complications",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "870bf3704445",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "6c93d98b781f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "niveau le plus bas. Les experts ont donc estimé inutile",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "c0007737c5ad",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "a2a681b7d94c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2. la thrombopénie de type II, potentiellement grave,",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "7297aeb216a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plupart des cas le facteur 4 plaquettaire (F4P) modifié par",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "264c0869fda4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moyenne, qu’en milieu médical, environ 1 % en moyenne",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "fa00d843ec2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "après la suspicion. Il ne doit jamais retarder l’arrêt de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "d42cfb4c7879",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2. Le délai de survenue de la thrombopénie est typiquement de 5 à 8 j, après le début de l’héparinothérapie",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "c1337ae3d2c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2. Le délai de survenue de la thrombopénie est typiquement de 5 à 8 j, après le début de l’héparinothérapie",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "f9cc95a1c015",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "numération plaquettaire initiale > 40 %. La thrombopénie est comprise entre 30 et 70 g l–1 chez 80 % des",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "61a67bdb2900",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9,5 % des patients et comprennent par ordre de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "39cd07162ff5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont des nécroses cutanées aux points d’injection de",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "afe4672e666b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "urgente et exige un prélèvement sur tube citraté et/ou",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "9fc174163fd0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et ont une sensibilité de l’ordre de 95 %. Les anticorps",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "e8720c533eb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pouvant atteindre 80 %. La sensibilité du test est améliorée et peut atteindre 91 % avec les plaquettes de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "391d086194f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de correction au-dessus de 150 g l–1 est de 4 à 7 j",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "2af5b050d6cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et des traitements associés (antibiotiques, diurétiques...) potentiellement thrombopéniants",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "957f093eaad7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9. Les deux types de tests (Elisa et activation plaquettaire) sont complémentaires et permettent d’améliorer le diagnostic de TIH",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "becff9dbc315",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pharmacovigilance toute suspicion de TIH",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "0bf431369749",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "numération plaquettaire par rapport à l’administration ou la réadministration de l’héparine",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "e3bc9fc2c67a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le purpura post-transfusionnel, lié à une alloimmunisation, ne doit pas être méconnu (typiquement",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "402288ac89fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisation des héparines uniquement dans les indications validées",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "bc5ad7749762",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour chaque patient d’un certificat médical attestant le",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "6063173a7548",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "puis, à partir du 5e j, au moins 2 fois par semaine",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "15f406c1adf1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "19e0f7cc7407",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "1299d508e3cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Le danaparoïde sodique est un héparinoïde dont l’activité antithrombotique semble principalement liée à",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "052ccf8d13ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2. La demi-vie d’élimination de l’activité anti-Xa est d’environ 25 h et celle de l’activité anti-IIa est plus courte",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "a91a66c36a81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3. La désirudine est indiquée (AMM) dans la prévention",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u31",
+   "empreinte": "685b5c21f9e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1250 U IV si poids ≤ 55 kg 2500 U IV si 55 < poids ≤ 90",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "340fd21155e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "TCA est surveillé en cas d’insuffisance rénale (TCA",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "eb3b9e005097",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "clairement définie et les experts ne peuvent recommander de solution sinon que le danaparoïde sodique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u34",
+   "empreinte": "720fcc752760",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la zone thérapeutique 2 j de suite et après un minimum de 72 h d’AVK",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "58bef9bc2f3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Il n’existe aucune étude comparative directe entre ces",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "443c29acb7f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Les HBPM sont formellement contre-indiquées en cas",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "0bbe619df7a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3. Les AVK ne doivent jamais être utilisés seuls",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u38",
+   "empreinte": "250bbc24020d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sous quelque forme ou dose que ce soit en particulier dans les 3",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "df1728d3077a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de rechercher systématiquement une thrombose veineuse profonde",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u40",
+   "empreinte": "b533745a46b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par danaparoïde sodique à doses au moins prophylactiques au minimum",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u41",
+   "empreinte": "774cdee1b36e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou lépirudine à doses dites curatives. Ces 2 médicaments semblent",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u42",
+   "empreinte": "45afd3d5fa99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ils ne doivent jamais être utilisés seuls à la phase aiguë",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u43",
+   "empreinte": "0177a17c5dae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comportant des risques d’hypotension sévère, ne sont",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "2c98701c39ef",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "5415c7e37255",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4. Immunoglobulines, plasmaphérèses",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "625aac52bc13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’interruption cave par la pose d’un filtre peut être",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "212587ae7b43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La thromboembolectomie chirurgicale appartient à",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "bbf67c009b28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8. Le pentasaccharide ou fondaparinux sodium (Arixtra®)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u49",
+   "empreinte": "2a068dde4497",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En première intention il existe 2 possibilités : HNF associée à un antiplaquettaire puissant ou lépirudine. Le choix est",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u50",
+   "empreinte": "e3a19c4db1c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’usage préférentiel du danaparoïde sodique est recommandé",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u51",
+   "empreinte": "eeb026116f8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La lépirudine est recommandée. L’utilisation du danaparoïde sodique est possible",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u52",
+   "empreinte": "693640991356",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "on peut utiliser le danaparoïde sodique, avec une surveillance biologique étroite ; l’activité anti-Xa résiduelle",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u53",
+   "empreinte": "aaf3e7e746dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation du danaparoïde sodique paraît la solution la",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u54",
+   "empreinte": "64840e18568d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les chambres implantables l’absence d’anticoagulation peut être proposée, sinon le citrate de sodium",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u55",
+   "empreinte": "a98e7e51d637",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le danaparoïde sodique ne passant pas la barrière",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u56",
+   "empreinte": "c2fa1a5c8aa4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le danaparoïde sodique ou la lépirudine sont utilisables",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u57",
+   "empreinte": "1290048ebb4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proposés pour la chirurgie aortique si celle-ci nécessite une",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u58",
+   "empreinte": "219274152375",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La désobstruction chirurgicale ou la thrombolyse doivent",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u59",
+   "empreinte": "a967692a81ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie de la prothèse de hanche et du genou où la désirudine peut",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u60",
+   "empreinte": "8ffc5f3d35b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "disparition des anticorps",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u61",
+   "empreinte": "1ff668b4efab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par danaparoïde sodique à doses au moins prophylactiques au minimum",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u62",
+   "empreinte": "0b45180550d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou lépirudine à doses dites curatives. Ces 2 médicaments semblent",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u63",
+   "empreinte": "5709f3eb2d3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un barrage cave peut être discuté",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u64",
+   "empreinte": "4cc00bc27249",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En première intention il existe 2 possibilités : HNF associée à un antiplaquettaire puissant ou lépirudine. Le choix est",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "02af9a3b3e8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’anesthésie à des doses de 3 ng kg–1 min–1 augmentées par paliers afin d’obtenir l’inhibition de l’agrégation",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u66",
+   "empreinte": "6c27e4551c3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maintenir un ACT supérieur à 480 s",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u67",
+   "empreinte": "8e774c8b6027",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La posologie de lépirudine pour l’anticoagulation perCEC est la suivante : bolus au patient de 0,25 mg kg–1",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u68",
+   "empreinte": "dd3cf864e067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Compte tenu de la demi-vie longue (environ 25 h pour",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u69",
+   "empreinte": "1a815dd138f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "0,05–0,1 mg kg–1 h–1 qui doit être adaptée aux résultats",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u70",
+   "empreinte": "08ea6a8d8a9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anticoagulant autre que l’HNF, les circuits pré-héparinés ne",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u71",
+   "empreinte": "2dd9f2015b74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fonction rénale normale : HNF et antiplaquettaire puissant ou lépirudine, voire danaparoïde sodique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u72",
+   "empreinte": "25e4d5942726",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patient sans anticorps anti-F4P–héparine détectables : l’HNF",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "43424bd353df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour obtenir un ACT > 400 s. Après l’arrêt de la CEC",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u74",
+   "empreinte": "c78ab9f55f36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cible thérapeutique est 0,6 U anti-Xa·ml–1",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u75",
+   "empreinte": "a9ecb04752a8",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

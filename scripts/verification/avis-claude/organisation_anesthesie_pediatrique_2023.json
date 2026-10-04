@@ -1,0 +1,340 @@
+{
+ "cle": "organisation_anesthesie_pediatrique_2023",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e0a6378f7cd0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "72a50c5ea8ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que l'anesthésie pédiatrique soit réalisée dans une salle d'intervention",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "080d060355ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'identifier un secteur pédiatrique en salle de surveillance postinterventionnelle",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u4",
+   "empreinte": "d63ab22bc3b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que l'hospitalisation des enfants en pré et postopératoire doit se faire",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "7bfd94c91b13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que la consultation d'anesthésie doit se faire dans un lieu dédié et adapté",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u6",
+   "empreinte": "6af155435fae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.4.1 – Les experts suggèrent que tout établissement ayant une activité pédiatrique programmée et/ou",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u7",
+   "empreinte": "77780f3df0ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.4.2 – Les experts suggèrent que tout établissement ayant une activité pédiatrique programmée et/ou",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "d54a1ef96e48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que tout le matériel d'assistance respiratoire",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u9",
+   "empreinte": "6de96a53b8d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les salles non dédiées à la pédiatrie, les experts suggèrent d'utiliser un chariot mobile",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u10",
+   "empreinte": "aea57f6eb9db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'accès vasculaire étant indispensable lors de l'anesthésie, les experts suggèrent d'utiliser un",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u11",
+   "empreinte": "4a7bfed34c8b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de disposer dans tous les lieux participant à l'activité d'anesthésie",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u12",
+   "empreinte": "3be5fac2a686",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un soluté glucosé à 5%, contenant au moins 4 g de NaCl par litre pour les nouveau-nés",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u13",
+   "empreinte": "ce202cd7068d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et en cas d'hypovolémie persistante, de l'albumine, en particulier chez le nouveau-né et le nourrisson.",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u14",
+   "empreinte": "c0fd3fb76c0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de disposer d'un chariot d'urgence pédiatrique comportant les aides",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u15",
+   "empreinte": "0633effa7173",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quel que soit le monitorage envisagé, les experts suggèrent d'utiliser un monitorage dont",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u16",
+   "empreinte": "17730ea92e98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les nouveau-nés et nourrissons opérés de chirurgies majeures, les experts suggèrent de",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u17",
+   "empreinte": "2bd03ea2cbd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser un monitorage systématique de la température en périopératoire chez l'enfant",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u18",
+   "empreinte": "6e78a4e4c204",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de prévenir l'hypothermie des enfants pendant le transport vers le",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u19",
+   "empreinte": "6d4931bcf851",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "délivrant des fréquences de 8 à 14 Mhz pour les abords vasculaires et l'anesthésie loco-régionale chez l'enfant",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u20",
+   "empreinte": "53a6a7f4f01c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suivent une période minimum de 3 mois de formation en anesthésie pédiatrique dans un centre spécialisé",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u21",
+   "empreinte": "4ed47df4212c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(au minimum une demi-journée par semaine)",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u22",
+   "empreinte": "1937b01c1c19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de promouvoir la mise en place de programmes de formation basés",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u23",
+   "empreinte": "ead0bab073fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les centres de proximité et les centres spécialisés ayant une",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u24",
+   "empreinte": "124fc97ca0fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que l'organisation en réseaux évoquée à la R4.1.1 soit formalisée par",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u25",
+   "empreinte": "18e78b539ae9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'ancien prématuré de moins de 60 semaines d'âge post-conceptionnel ainsi que les patients ASA 3 à 5",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u26",
+   "empreinte": "6f9399dfdef7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent néanmoins que certains patients ASA 3 puissent être pris en charge en",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u27",
+   "empreinte": "79a46f1ac2e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comprenant au moins un MAR avec activité régulière et formation complémentaire en anesthésie pédiatrique assisté d'un second professionnel",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u28",
+   "empreinte": "2231420acb8b",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Lorsqu'une situation à risque élevé de complication respiratoire sévère est identifiée, les experts suggèrent que, quelle que soit l'organisation choisie, deux professionnels de l'anesthésie en pédiatrie dont au moins un MAR soient présents à l'induction et au réveil.",
+   "explication": "Les deux organisations possibles pour les 1-3 ans sont bien reprises, mais la dernière phrase de R4.3.2 manque : en cas de risque élevé de complication respiratoire sévère, deux professionnels de l'anesthésie pédiatrique (dont au moins un MAR) doivent être présents à l'induction et au réveil, quelle que soit l'organisation.",
+   "page": 35
+  },
+  {
+   "id": "u29",
+   "empreinte": "b9809fe04490",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les enfants âgés de 3 à 10 ans, les experts suggèrent que leur prise en charge soit",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u30",
+   "empreinte": "3effa9db821b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aux mêmes règles organisationnelles que chez l'adulte, pour garantir la sécurité des soins.",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u31",
+   "empreinte": "7a6001799156",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "7f206ac053e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent la présence permanente en SSPI, d'une infirmière (IDE, IADE ou",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u33",
+   "empreinte": "1a7c1c221d1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent d'associer systématiquement la présence d'un second professionnel",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u34",
+   "empreinte": "b6af76715c1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lorsque la SSPI dispose d'une capacité égale ou supérieure à six postes.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u35",
+   "empreinte": "f9c0ed4307ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Quand une équipe a une pratique mixte d'anesthésie adulte et pédiatrique, les experts",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u36",
+   "empreinte": "f59bf8baab43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que les services qui réalisent des anesthésies pédiatriques collectent les",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u37",
+   "empreinte": "d665874083aa",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

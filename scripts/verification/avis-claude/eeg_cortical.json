@@ -1,0 +1,313 @@
+{
+ "cle": "eeg_cortical",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "fa2d22f5c3e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le groupe de travail a souhaité rédiger une partie explicative (Module A) qui résume",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "5fe23a34ee23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La performance diagnostique et prédictive de l'EEG de surface analysé seul, n'est pas suffisante",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "191859f28b4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la composante EMG) qui permettent d'améliorer sensiblement le raisonnement médical.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "e1eb0dd5cc42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suffisamment importantes pour rendre difficile l'extrapolation des résultats des publications d'un moniteur à un autre",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u5",
+   "empreinte": "ea2c2b12127e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne modifient pas (ou très peu) les valeurs des index malgré des signes cliniques compatibles avec",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u6",
+   "empreinte": "9b6f5d17cf3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "peut être interprétée comme une analgésie insuffisante pour un niveau donné de la composante hypnotique.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u7",
+   "empreinte": "afbd3181e2d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les curares, en atténuant/ supprimant le signal EMG frontal peuvent modifier les valeurs des index",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "932e61bd9d08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Graphique « Courbes doses réponse des halogénés » (p. 6) : BIS en fonction de la CAM (0-3) pour desflurane, isoflurane, sévoflurane ; profils décrits cohérents avec le graphique.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "63f2b419bdc8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Graphique p. 6 : desflurane ≈ 52 (0,5), 48 (1), 42 (1,5), 35 (2), fin ≈ 29 à 2,5 CAM.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "18fcdfbaacf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Graphique p. 6 : isoflurane ≈ 65 (0,5), 41 (1), 41 (1,5), 38 (2), fin ≈ 12 à 2,8 CAM.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "c4b0d0171281",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Graphique p. 6 : sévoflurane ≈ 47 (0,5), 43 (1), 38 (1,5), 31 (2), fin ≈ 27 à 2,3 CAM.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "9f20de5941a7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "83d9142f5ba0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "détecter un sous- ou un surdosage anesthésique (avis d'experts)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "4c75ee240cfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diminution de 10-40 % des doses cumulées d'hypnotiques mais pas dans toutes les études ni dans toutes les situations cliniques.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "8a15cb25da64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne permet de diminuer l'incidence des NVPO chez les patients bénéficiant d'une prévention systématique des NVPO.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u16",
+   "empreinte": "24bd57c1eeb8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ASA 4 /5 Rétrécissement aortique sévère Maladies respiratoires graves",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u17",
+   "empreinte": "c916b5823818",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "e4b90e63cda3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Traitement chronique prolongé par antiépileptiques, morphiniques, BDZ ou toxicomanie à la cocaïne",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u19",
+   "empreinte": "b07d7577cd48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Consommation quotidienne d'alcool",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u20",
+   "empreinte": "f6e641c11f2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Utilisation pré-opératoire de b-bloquants",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u21",
+   "empreinte": "a2ce69f5cf10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Consommation quotidienne d'alcool Utilisation pré-opératoire de b-bloquants FEVG",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u22",
+   "empreinte": "2f568ccd8b2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ATCD de mémorisation explicite",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "7a60ef363db1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ATCD d'IOT difficile ou IOT difficile prévue",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "79eae76c1e5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Faible tolérance à l'effort",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "5be71fb2e2dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Faible tolérance à l'effort HTAP",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u26",
+   "empreinte": "5d5f38a4f613",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "3a4caf7f6832",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie cardiaque (avec ou sans CEC)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "236022db0a6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patients polytraumatisés avec hypovolémie",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "9cf92a2be918",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Traitement par inhibiteurs des protéases",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "dbfdefa955d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hypotension artérielle per-opératoire nécessitant un traitement",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "932ce20b60d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La concentration d'hypnotiques requise pour obtenir un effet cérébral cortical donné (ou une valeur de BIS) semble plus importante",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u32",
+   "empreinte": "c5d5083b251e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'enfant de plus de 2 ans dans le contexte de l'anesthésie totale intraveineuse.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u33",
+   "empreinte": "81cfe499eea5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucune étude ne permet à l'heure actuelle, de recommander son utilisation chez l'enfant de moins de 2 ans",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u34",
+   "empreinte": "5b627b56da05",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

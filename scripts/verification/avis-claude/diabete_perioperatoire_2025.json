@@ -1,0 +1,628 @@
+{
+ "cle": "diabete_perioperatoire_2025",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9ba35e968cb7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "d87c7fa89aa2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Maladie auto-immune conduisant à une insulinopénie majeure",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "57737b6feecb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Régime puis antidiabétiques (AD) non insuliniques",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "1374db3e962a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Risque VITAL si arrêt de l’insuline basale (acidocétose)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "d7a9a0aed93e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie pancréatique : le patient se comporte comme un",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "404831be0654",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Objectifs glycémiques en péri opératoire : 5 à 10 mmol/L (0,9 à 1,8 g/L)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "f7a69654813e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "a6005241ecd0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 2 : échelle HbA1c 5-6 % → avis MG/diabétologue",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "52a409a1bd71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 2 : 6-8 % → intervention possible",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "6291cd729d77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 2 de la source (image) : échelle HbA1c, 8-9 % « Avis médecin généraliste / diabétologue »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "a0cb1d0c3a0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NE JAMAIS ARRÊTER L’INSULINE LENTE",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "6cb0136e6c84",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "31f69a73e483",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : metformine pas d'arrêt / pas de prise le matin / arrêt",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "30ad1a877088",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : sulfamides, glinides, α-glucosidases, DPP-4 idem",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "5fb80d5f08d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : GLP-1 pas d'arrêt (échographie gastrique +/- ISR), arrêt si urgent",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "02d09334f3d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : SGLT2 dernière prise 3 j avant",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "6a08efb301c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : insulines SC",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "8cebd198fe25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : pompe à insuline",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "0fddbea3d827",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : conditions de maintien de la pompe",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "24f7040efbe5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : règles de jeûne, G10 % 40 mL/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "acc460fd497f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : bandes de glycémie capillaire",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "73266e2ca1fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : avant le repas du soir 15 g / 3 / 4 / 6 UI + cétose",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "195f794903c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : coucher / 3h-4h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "70ac5fc102e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : 6h-7h, VVP NaCl 0,9 % si > 3 g/L",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u25",
+   "empreinte": "183d420c23f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : pré-op G10 % 60 mL/h, 3/4 UI, IVSE réa différer bloc",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "3d72d65139e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 3 : 19-20h repas normal",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "8ed13f49b9b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recherche cétose en préférant la cétonémie à la cétonurie",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "6a0f7087237d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Faire 6 UI SC d’analogue rapide de l’insuline",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "40be3a31d561",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Faire 10 UI SC d’analogue rapide de l’insuline",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "fd1ce4841ef3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Faire un GDS artériel pour rechercher une acidose",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "ece194d3d09a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "cd29e187d058",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 4 : cétonémie < 0,5 → si hyperglycémie cf. CAT, cétonémie à H12",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "cee007d7f5c5",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Page 4 : la flèche « Si pH > 7,20 » part de la branche cétonémie > 1,5 vers le tableau de doses",
+   "explication": "Dans la source, la branche 0,5-1,5 mmol/L va directement au tableau (4/6/10 UI, sans GDS), et c'est la branche > 1,5 mmol/L avec pH > 7,20 qui rejoint ce tableau. La fiche attache « si pH > 7,20 au GDS » à la ligne 0,5-1,5 et ne dit pas que cétonémie > 1,5 avec pH > 7,20 se traite par le tableau. Surveillance glycémie + cétonémie à H4 non reprise.",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "bfc9f6a4c578",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 4 : cétonémie > 1,5 → GDS, autre cause ; pH ≤ 7,20 → USC IVSE",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "6ecb5b58eb4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 6 : conscient < 3,3 → 3 sucres ou 20 cL jus",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "41e1e38631a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 6 : inconscient 2,2-3,3 → 3 g G30 %",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "4493ddf937fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 6 : inconscient < 2,2 → 6 g G30 %",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "fbc5134280f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 6 : contrôle à 15 min puis 1 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "b93b4d36dd98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : objectifs, dilution 1 UI/mL, voie, G10 % 40 mL/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u40",
+   "empreinte": "9bd2391b593d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : < 2,2 → arrêt, 15 min, 2 amp",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "949a2137255c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : 2,2-3,3 → 30 min, 1 amp",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "249d3a329319",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : 3,3-5 → 1 h, -1 UI/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "c77b5bca49a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : 5-6 → 1 UI/h DT1 / 0 DT2, 1 h, -1 UI/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "d2813c3714c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : 6-10 → 2 h, idem",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "2eba88364262",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : 10-14 → 3 UI, 2 UI/h, +1",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "b259887892e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : 14-16,5 → 4 UI, 3 UI/h, +2",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "ac29ac542c6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : > 16,5 → 6 UI, 4 UI/h, bolus 6 UI",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "5aa988459a2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 7 : remarques kaliémie 4-4,5, pas de relais si > 4 UI/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u49",
+   "empreinte": "aee37466fd1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 8 : indications au relais",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "f42ea89a771b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 8 : contre-indications",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "4f8f7db93fb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 8 : pas de relais si ≤ 0,5 UI/h non insulinotraité",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "1c367c9ea470",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 8 : calcul de dose 0,3 UI/kg/24h ou 1/2 dose IVSE",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u53",
+   "empreinte": "b61888d1aadd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 8 : schéma 3/4, 1/2, 1/4, dose de 20h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u54",
+   "empreinte": "8c10b06781a6",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Page 9 : encadré PRESCRIPTIONS « INSULINE LENTE ... UI SC à 20h (30 UI maximum à l'initiation) »",
+   "explication": "Basal 0,3 UI/kg/j et adaptation ±2 UI conformes, mais la fiche omet le plafond de 30 UI à l'initiation.",
+   "page": 0
+  },
+  {
+   "id": "u55",
+   "empreinte": "9eea00dab1bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 9 : bolus repas 0,1 UI/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u56",
+   "empreinte": "60aeee7e74f0",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Page 9 : échelle du bolus correcteur, « 1 amp G30% IV ou 15 g sucre PO » sous 3,3 mmol/L (0,6 g/L)",
+   "explication": "La source place « 1 ampoule G30 % IV ou 15 g de sucre PO » dans la bande < 3,3 mmol/L (hypoglycémie). La fiche l'attache à la bande > 16,5 mmol/L (« 6 UI SC, ou 1 ampoule G30 % … si hypoglycémie associée »), ce qui est incohérent et peut induire en erreur. La bande < 3,3 mmol/L manque.",
+   "page": 0
+  },
+  {
+   "id": "u57",
+   "empreinte": "e8080eb5454b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 10 : alimentation orale suffisante et glycémie < 12 mmol/L depuis > 24 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u58",
+   "empreinte": "70a5c72123e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 10 : > 60 mL/min reprise de tous les AD",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u59",
+   "empreinte": "92de3123c225",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 10 : 30-60 sauf metformine",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u60",
+   "empreinte": "55d6010b6848",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 10 : < 30 pas de reprise, endocrinologie",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u61",
+   "empreinte": "a75bfe14d831",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 10 : arrêt Basal Bolus selon 16 UI/j",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u62",
+   "empreinte": "4ecbbd9da0af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : différer si HbA1c > 9 %",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "7d47065b966c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : 0 repas → poursuite",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "79f5174aeaa2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : avant 10h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u65",
+   "empreinte": "d69fa4287096",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : 10h-12h, G10 % 40 mL/h si insuline ou sulfamide",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "ab94794679ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : après 12h, petit-déjeuner léger",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u67",
+   "empreinte": "db425baf3268",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : 2 repas → fiches DT1/DT2",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u68",
+   "empreinte": "f8aa21f54adc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 11 : bolus correcteur et post-opératoire",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u69",
+   "empreinte": "85e7e0e01da1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

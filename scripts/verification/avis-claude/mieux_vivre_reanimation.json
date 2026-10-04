@@ -1,0 +1,277 @@
+{
+ "cle": "mieux_vivre_reanimation",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "5968a39e72ab",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "7a5a1d5f6dd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le sigle RC, en tant que recommandations consensuelles élaborées par le jury",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "1ccf4722e7da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Celui-ci survient chez un tiers des patients de réanimation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "2eea074f1ee0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le recours à une assistante sociale doit être proposé très précocement.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "34e7857eccd0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une enquête révèle que la moitié des médecins réanimateurs et un tiers des infirmier(e)s en sont atteints",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "d936832b5fdd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réduire le niveau de bruit, toujours excessif en réanimation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "1c877f5a5b4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut favoriser l'alternance de lumière entre le jour et la nuit",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "c65c1bbb8002",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut que le patient bénéficie d'une chambre particulière.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "043f337c0d3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elle doit être prescrite quotidiennement (HAS).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "4398b5111511",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut que la présence des proches soit rendue possible sans restriction d'horaires.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "4252a6ecf52d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les rideaux (ou tout moyen d'isolement visuel) et la mise en place de pancartes signalétiques peuvent être utilisés pour améliorer l'intimité",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "f6c031c656ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut mettre en place et appliquer un programme de réhabilitation précoce.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "74bbf005a96d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible d'utiliser les massages à visée anxiolytique et antalgique en réanimation.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "a7eda34eb6c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de faire écouter de la musique aux patients afin de diminuer leur anxiété.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "54a3408c36a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hors contre-indication absolue, il faut probablement dépister et traiter la soif par l'administration de liquides clairs.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "5c24ce14cb25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de diminuer les doses de BZD utilisées pour la sédation sans majoration du risque d'anxiété",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "b77359694470",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement appliquer une stratégie conduisant à ne pas pratiquer d'aspirations trachéales systématiques",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "29891f051e02",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement impliquer les familles dans certains soins, en particulier en pédiatrie.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "2444bda5dd89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de mettre en place un journal de bord pour le patient et sa famille",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "55646ec6d7d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut que le médecin soit disponible pour permettre un temps d'information adéquat.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u21",
+   "empreinte": "0c36b9ca250c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut repérer le syndrome d'épuisement professionnel qui concerne 50 % des médecins et 30 % des infirmières",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "8a1e73f534fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est alors nécessaire de former les familles et d'obtenir l'accord du patient",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "e3e7f156d708",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La remise d'un livret expliquant le fonctionnement du service d'accueil peut améliorer le vécu des proches",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "d75a98ca5257",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les décisions ne sont pas figées mais sont actualisées selon l'évolution",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u25",
+   "empreinte": "fa3e6799d027",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas de score d'évaluation de la compétence validé en réanimation.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u26",
+   "empreinte": "8fc6b093d3f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut respecter aussi un éventuel désir de ne pas participer aux décisions",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "d082ce967f0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le processus décisionnel implique non seulement le médecin référent mais l'équipe médicale et soignante dans une démarche collégiale.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "544ea0030ee6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce processus doit aboutir à une décision consensuelle sous la responsabilité du médecin.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u29",
+   "empreinte": "f7bf5fdfeb91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'organisation du processus décisionnel ne doit pas retarder la mise en route d'une suppléance de fonction",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "b07bfdc1119c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

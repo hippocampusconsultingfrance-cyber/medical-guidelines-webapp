@@ -1,0 +1,880 @@
+{
+ "cle": "nutrition",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b35b9a431b61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Société francophone nutrition clinique et métabolique (SFNEP) Présidents : Jean-Yves Lefrant (Sfar), Dominique Hurel (SRLF),",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "e33e5a59a36a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par jour après stabilisation (Accord faible). Encadré 4.7 – En l’absence de calorimétrie indirecte, il faut",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "7ee159fd5f0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "durée présumée supérieure à 3 jours est à risque de dénutrition. Cette dernière augmente la morbi-mortalité",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "0b01685a28cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "énergétique d’un patient de réanimation, il faut utiliser la calorimétrie indirecte (méthode de référence en tenant",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "bf7c86ee1a49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "énergétique précoce (dépenses moins apports cumulés) durant la première semaine pour réduire la morbi-mortalité",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "1b568e7b1923",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 3.1 – Il faut probablement évaluer l’état nutritionnel des patients à l’admission au minimum en calculant l’IMC et en",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "20a4931fd2c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "semaine (> 100 kcal/kg cumulés) [19–22]. Limiter plus que corriger complètement ce déficit énergétique précoce constitue probablement la stratégie d’assistance nutritionnelle la plus",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "d01dadc0557b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "heures, un support nutritionnel entéral aux patients dénutris ou jugés incapables de s’alimenter suffisamment dans les",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "54165b958acc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.2 – Il faut utiliser la nutrition entérale (NE) plutôt que la nutrition parentérale (NP), en l’absence de contreindication formelle (Accord fort).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "74b9c65a9129",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "amont d’une fistule digestive de haut débit, en cas d’occlusion intestinale, d’ischémie du grêle ou d’hémorragie",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "7c7485d79afb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lorsque la NE n’atteint pas la cible calorique choisie au plus tard après 1 semaine de séjour en réanimation (Accord",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "a0886cfe0162",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.5 – En cas d’utilisation de calorimétrie indirecte, il ne faut probablement pas dépasser la dépense énergétique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "c6dc66838abb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.6 – En l’absence de calorimétrie indirecte, il faut probablement avoir un objectif calorique total de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "eb4b865b5f14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.7 – En l’absence de calorimétrie indirecte, il faut tenir compte du poids habituel ou à défaut du poids à",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "b83cdf4950e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.8 – Il faut répartir les apports caloriques non protéiques en 60–70 % d’apports glucidiques et 30–40 % de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "981ddc32bbec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.9 – Il faut apporter 1,2 à 1,5 g/kg par jour de protéines (Accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "e8d213249e2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 4.10 – En cas de limitation ou arrêt thérapeutique, il faut discuter de l’opportunité du support nutritionnel",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "c4f7ddfd46c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’excès d’apports caloriques (> 100 %) n’améliore pas la balance protéique et peut avoir des conséquences délétères",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "a28b29decd11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "insuffisante, il faut probablement ajouter des compléments nutritionnels oraux, en dehors des heures de repas (Accord",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "7ff89f13b4c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez les patients ne couvrant pas leurs besoins énergétiques [19]. Il ne faut probablement pas prescrire de CNO spécifiques.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "aff4fdea93ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.1 – Il ne faut pas mesurer le volume résiduel gastrique (Accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "c9a0682b78da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.2 – Il faut probablement privilégier la sonde d’alimentation naso- ou oro-gastrique en première intention en raison de sa simplicité d’utilisation et du moindre",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "cc3530577df1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.3 – Il faut envisager l’administration de prokinétiques (métoclopramide et/ou érythromycine) pour",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "c2ab4b70ce11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.4 – Il faut probablement envisager le site postpylorique en cas de trouble persistant (malgré les prokinétiques) de la vidange gastrique (Accord faible).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "c75c0ed99d0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de différence franche d’effets secondaires digestifs (vomissements, diarrhées) entre nutrition en site gastrique ou postpylorique [71–82,95–98]. Encadré 6.5 – Il faut installer le patient en position semiassise (> 308) pendant le NE (Accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "4bfeb536172d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.6 – Il faut instituer une stratégie multidisciplinaire formalisée de NE (Accord faible).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "c07ad250c040",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.7 – Il faut probablement poser une gastrostomie lorsque la durée anticipée d’une NE dépasse 4 semaines",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u28",
+   "empreinte": "8a8c2971b39d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.8 – Il faut utiliser des mélanges polymériques pour débuter une NE (Accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "af3b8739662e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.9 – Il faut probablement réserver les mélanges semi-élémentaires à certaines situations digestives spécifiques (grêle court) (Accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "f5f8f9c3668a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.10 – Il ne faut pas utiliser de mélanges polymériques spécifiques (diabète, insuffisance respiratoire)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "a44120be2f7c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.11 – Il faut administrer le mélange nutritif entéral de manière continue 24 h/24 à l’aide d’une pompe (Accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "98e6a11538e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.12 – Il faut probablement adapter le débit d’administration en vue d’atteindre la cible nutritionnelle en",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "66fb919c6814",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 6.13 – Il faut probablement utiliser les mélanges contenant des fibres extraites de la gomme de guar en cas",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u34",
+   "empreinte": "d41d5c6fdd35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "apports par voie entérale en résulte, du fait des interruptions requises pour la mesure du volume résiduel gastrique [66–70].",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "468b3bb77d21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 7.1 – Il faut utiliser les mélanges prêts à l’emploi plutôt que les flacons séparés (Accord fort).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "073b014e3691",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 7.2 – Il faut supplémenter le patient en vitamines et éléments traces en cas de nutrition parentérale (Accord",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u37",
+   "empreinte": "da9621185f0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 7.3 – Il ne faut pas excéder un apport lipidique de 1,5 g/kg par jour (Accord fort).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u38",
+   "empreinte": "ddf69202c693",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "continu à l’aide d’une pompe électrique à nutrition avec régulation du débit et éviter son administration cyclique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u39",
+   "empreinte": "1a604acf0f35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 7.5 – Il faut utiliser un abord veineux central en cas d’administration de solutés hyperosmolaires (> 850 mOsm/l)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u40",
+   "empreinte": "ccd995e74598",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 7.6 – Il faut probablement privilégier l’administration de la nutrition parentérale sur une voie dédiée du cathéter veineux central (Accord faible).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u41",
+   "empreinte": "37fc9f02e1e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bilan biologique (transaminases, bilirubine, gamma-GT, PAL, ionogramme sanguin, phosphore, glycémie, triglycérides)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u42",
+   "empreinte": "9e2886e64e3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Des apports inappropriés peuvent être responsables de complications métaboliques (syndrome de renutrition, stéatose hépatique, cholestase, dysrégulation glycémique, hypertriglycéridémie) qui doivent être systématiquement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u43",
+   "empreinte": "21bf25299945",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 8.1 – Si le patient a bénéficié d’une pharmaconutrition préopératoire (chirurgie carcinologique digestive), il faut la poursuivre en période postopératoire chez le patient",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "d0843ed8dc06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 8.2 – Il ne faut pas administrer de solution entérale enrichie en arginine chez le patient en sepsis sévère (Accord",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u45",
+   "empreinte": "c068d476abd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 8.3 – Il faut probablement associer à la nutrition parentérale exclusive de la glutamine intraveineuse à la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u46",
+   "empreinte": "59a071e04eb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient septique augmente le risque de complications, allonge les durées de séjour et, dans certaines études, accroît la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u47",
+   "empreinte": "a641ea06b292",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9.1. Polytraumatisé Aucune spécificité nécessitant des recommandations particulières dans ce champ.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u48",
+   "empreinte": "bdd586c86b11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9.2. Insuffisant rénal épuré (tous modes d’épuration extrarénale)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u49",
+   "empreinte": "e32860173322",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.2.1 – Il faut probablement majorer l’apport protéique quotidien du patient sous épuration extrarénale",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u50",
+   "empreinte": "99d1c99f25ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.2.2 – Si une supplémentation en glutamine est indiquée, il faut probablement la majorer (Accord faible).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u51",
+   "empreinte": "98c259cb099b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "B1 et C) et en éléments trace (Sélénium, Cuivre) chez les patients sous épuration extra rénale continue (Accord faible).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u52",
+   "empreinte": "18c421a3071e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0002 la glutamine représente 30 % de la perte totale en acides aminés en cours d’épuration extra rénale continue, soit en",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u53",
+   "empreinte": "55f6fc902927",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concerne l’apport calorique, en dehors du risque hypoglycémique accru qui nécessite l’administration de 2 à 3 g/kg par jour de glucose.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u54",
+   "empreinte": "0ddbf3bb2fe3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.3.2 – Il ne faut probablement pas diminuer l’apport d’acides aminés chez le patient insuffisant hépatique",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u55",
+   "empreinte": "988cf6d00b65",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.4.1 – Il ne faut pas interrompre systématiquement la nutrition entérale lors de la mise en décubitus ventral",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u56",
+   "empreinte": "a0bdf784a573",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "multiviscérale Aucune spécificité nécessitant des recommandations particulières dans ce champ.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u57",
+   "empreinte": "71b8163a854a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "[165–167]. Le poids idéal théorique peut être estimé par la formule suivante : PIT (kg) = 25 \u0004 [taille(m)]2.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u58",
+   "empreinte": "a0b7145f17c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.6.1 – Il ne faut pas calculer les apports en fonction du poids réel (Accord fort).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u59",
+   "empreinte": "bb18d1b16358",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.6.2 – Il faut probablement calculer les apports nutritionnels en fonction du poids ajusté (poids idéal",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u60",
+   "empreinte": "680510cec50b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.6.3 – En tenant compte de ce poids ajusté, il faut probablement apporter 20 kcal/kg par jour dont 2 g/kg par",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u61",
+   "empreinte": "3349143fe0d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "métaboliques et couvrir les pertes azotées [168–170]. 9.7. Dénutrition grave et syndrome de renutrition",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u62",
+   "empreinte": "4d18372e67e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.7.1 – En cas de dénutrition sévère et/ou de jeûne prolongé de plus d’une semaine, il faut probablement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u63",
+   "empreinte": "9e4c7708fb71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.7.2 – Il faut supplémenter systématiquement en vitamines (B surtout), éléments trace et phosphore (Accord",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u64",
+   "empreinte": "7771ba0e784a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "phosphatémie au moins une fois par jour ; il faut suspecter un syndrome de renutrition s’il apparaît une hypophosphatémie. Dans ce cas, il faut stopper temporairement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "bee86db44c5b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comportent des risques de troubles hydroélectrolytiques, notamment hypophosphatémie, hypokaliémie et hypomagnésémie et de déficit en vitamines hydrosolubles. Tous ces troubles",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u66",
+   "empreinte": "d3fa0e4be1ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.8.1 – Les besoins énergétiques du patient gravement brûlé sont fortement augmentés, mais variables",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u67",
+   "empreinte": "7343339370ef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "déterminer les besoins énergétiques avec la formule de Toronto car les formules fixes conduisent à une sous ou à",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u68",
+   "empreinte": "a8666158970a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nutritionnelles pour atténuer l’hypermétabolisme et l’hypercatabolisme tant chez l’adulte que chez l’enfant (température ambiante, chirurgie d’excision précoce, bêtabloquants non sélectifs, oxandrolone). Contrairement à l’adulte, il faut",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u69",
+   "empreinte": "06b32fefbf00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protéiques aux alentours de 1,5 à 2 g/kg par jour (respecter une proportion de l’apport énergétique total chez l’enfant)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u70",
+   "empreinte": "156e4d890eff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.8.5 – Il faut probablement supplémenter en glutamine ou en alpha-cétoglutarate d’ornithine (Accord",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u71",
+   "empreinte": "a7527ee2fa8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 9.8.6 – Il ne faut probablement pas supplémenter en arginine (Accord faible).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u72",
+   "empreinte": "aa9ec0e1eccd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probablement associer une supplémentation en zinc, cuivre et sélénium (Accord faible).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u73",
+   "empreinte": "f7f42d29f865",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nutritionnelles pour atténuer l’hypermétabolisme et l’hypercatabolisme tant chez l’adulte que chez l’enfant (température ambiante, chirurgie d’excision précoce, bêtabloquants non sélectifs, oxandrolone). Contrairement à l’adulte, il faut",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u74",
+   "empreinte": "c798839a521a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u75",
+   "empreinte": "febfa506a54d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "variables selon l’âge statural. 10.1. Évaluation de l’état nutritionnel de l’enfant en",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u76",
+   "empreinte": "06f66fef1d62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.1.1 – Il faut dépister la dénutrition protéinocalorique à l’admission et surveiller sa survenue en cours de séjour (Accord fort).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u77",
+   "empreinte": "532b09e4c5a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.1.2 – Il faut rechercher une évolution récente des courbes de croissance (cassure de la courbe de Poids",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u78",
+   "empreinte": "d19179da5b9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.1.3 – Il faut mesurer le poids, la taille, le périmètre crânien (PC) et le périmètre brachial (PB), afin de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u79",
+   "empreinte": "47162ab9f547",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.1.4 – Il faut probablement estimer la taille des patients de plus d’un mètre, alités, rétractés ou déformés",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u80",
+   "empreinte": "7d881926cae3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En Europe, la prévalence de la dénutrition à l’admission en réanimation pédiatrique est de 16 à 24 % [215,216]. L’incidence",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u81",
+   "empreinte": "2f34ad1ea26a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "F : féminin). 10.2. Besoins énergétiques et en macronutriments",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u82",
+   "empreinte": "906f6d95855b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.2.1 – Il faut fournir au moins les apports protidiques et caloriques adaptés au poids et à l’âge de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u83",
+   "empreinte": "5fa74dfc80ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.2.2 – Il faut probablement majorer les apports caloriques et protidiques en cas d’augmentation importante",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u84",
+   "empreinte": "27e3ca861542",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.2.3 – Il faut fournir des apports lipidiques permettant de couvrir 30 à 40 % des apports caloriques",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u85",
+   "empreinte": "3308328d36a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.2.4 – En situation normale d’hydratation, il faut fournir les apports liquidiens suivants : 120 à 150 mL/kg par",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u86",
+   "empreinte": "23dbb3c5ca63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.2.5 – Il faut assurer les apports recommandés en vitamines et éléments trace en fonction de l’âge de l’enfant",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u87",
+   "empreinte": "1c6742d0b3a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "[225]. La capacité maximale d’oxydation des lipides est atteinte pour des apports de 3 à 4 g/kg par jour chez le nourrisson et",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u88",
+   "empreinte": "6ac616664b2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10.3. Stratégie générale du support nutritionnel en réanimation pédiatrique",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u89",
+   "empreinte": "9f1ebfba1cb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.3.1 – Il faut nourrir tous les enfants hospitalisés en réanimation (Accord fort).",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u90",
+   "empreinte": "3f8b34e805a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.3.2 – Il faut utiliser la voie entérale en première intention chez l’enfant présentant un tube digestif",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u91",
+   "empreinte": "c4a7e2a0ccaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.3.3 – Il faut probablement instaurer une nutrition parentérale entre les 3e et 5e jours afin d’obtenir",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u92",
+   "empreinte": "94317cddb592",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.3.4 – Il faut utiliser des solutés de nutrition entérale et de nutrition parentérale spécifiquement destinés",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u93",
+   "empreinte": "413800d8d4db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encadré 10.3.5 – Il faut augmenter les apports énergétiques de manière progressive, en particulier les apports glucosés",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u94",
+   "empreinte": "6f7685cfbdc7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compte de la rupture du cycle entéro-insulaire et de la capacité maximale d’oxydation du glucose [228] (Tableau 2).",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u95",
+   "empreinte": "50fecb9416b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 de la source (texte extrait, colonnes réalignées)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u96",
+   "empreinte": "3cf984f3b3ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "semaine (> 100 kcal/kg cumulés) [19–22]. Limiter plus que corriger complètement ce déficit énergétique précoce constitue probablement la stratégie d’assistance nutritionnelle la plus",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u97",
+   "empreinte": "ee97366e719e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

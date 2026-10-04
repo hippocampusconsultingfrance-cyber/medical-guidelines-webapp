@@ -1,0 +1,331 @@
+{
+ "cle": "organisation_usc_2018",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "5490c713835f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "8ed1649638f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être sélectionnés dans un objectif de sécurité médicale et non pas d'éligibilité à un tarif.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "c65e359fedd3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Elles doivent pouvoir faire face le cas échéant à la défaillance quand elle survient et préparer le patient pour son transfert rapide en réanimation.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "8e13185d50aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les centres sans réanimation, la typologie des patients admis doit tenir compte des délais de transfert",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u5",
+   "empreinte": "fcb0dd6bfefe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les USC n'ont pas pour mission d'assurer la ou les suppléances d'organe",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u6",
+   "empreinte": "1ac5e032a813",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les USC ne doivent pas recevoir des patients pour engager le processus de fin de vie.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u7",
+   "empreinte": "e0d62001d831",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'existence de lits d'USC dans une structure hospitalière devrait être soumise à autorisation.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u8",
+   "empreinte": "35e9badd2260",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'USC doit être placée sous la même autorité médicale et paramédicale que le service ou l'unité de réanimation.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u9",
+   "empreinte": "7cc446a6c898",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une USC doit avoir un projet médical et paramédical spécifique à l'USC.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u10",
+   "empreinte": "cd60720dd762",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intégrés au projet médical des soins critiques du GHT dont fait partie l'établissement.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u11",
+   "empreinte": "1ae3ab4bc94e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les lits d'USC peuvent être soit intégrés à l'unité de réanimation soit constituer une unité distincte",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u12",
+   "empreinte": "1c60a784df34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les lits de soins critiques doivent être le plus possible regroupés.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u13",
+   "empreinte": "37fe01cf9d25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la taille d'une USC ne doit pas être inférieure à 6 lits.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u14",
+   "empreinte": "364bf5d863e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'équipe paramédicale d'une USC doit faire l'objet d'une organisation et d'un projet de soins spécifiques.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u15",
+   "empreinte": "44a6ffd2591c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent recevoir une formation d'adaptation à l'emploi spécifique aux patients à risque de défaillance vitale",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u16",
+   "empreinte": "fd6b4e4d38bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La formation des paramédicaux doit aborder les aspects techniques, les aspects de prévention et de maîtrise de la qualité",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u17",
+   "empreinte": "162dd78d3a89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "physiquement présents et affectés aux soins doit être au moins de 0,4 par lit ouvert.",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "fc7252ef3f4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le planning IDE doit être mutualisé entre USC et réanimation",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u19",
+   "empreinte": "78823b5b9337",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les médecins exerçant en USC doivent faire l'objet d'une formation initiale ou attestée à l'activité des soins critiques",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u20",
+   "empreinte": "759c2b4cd692",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être sous la même responsabilité que le service ou l'unité de réanimation.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u21",
+   "empreinte": "b8b5596ce0b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être sous la responsabilité d'un médecin qui exerce à temps majoritaire dans l'USC.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u22",
+   "empreinte": "65623a066bf2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toute unité d'USC nécessite la présence d'un médecin sur site hospitalier 24h/24h 7j/7j.",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u23",
+   "empreinte": "33d20bf7ee9b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "devrait être assurée en coopération avec le réseau de soins critiques du GHT",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u24",
+   "empreinte": "da32293e788d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les GHT doivent organiser la filière de soins critiques intégrant les USC",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u25",
+   "empreinte": "a13ba1cad487",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les USC doivent établir une convention avec l'unité de réanimation au sein du GHT.",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u26",
+   "empreinte": "900c204f9fca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une USC doit avoir un projet d'unité qui précise ses missions au sein du GHT",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u27",
+   "empreinte": "888ba828cec4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est suggéré de favoriser le partage de temps médical avec des réanimations partenaires",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u28",
+   "empreinte": "387a749c1b85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Décompensation cardiaque modérée (classe NYHA 1/2).",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u29",
+   "empreinte": "ab6a3cf0a161",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sevrage de la ventilation mécanique avec soins chroniques",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u30",
+   "empreinte": "420264065cf6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Trauma crânien aigue avec score de Glasgow > 9 nécessitant surveillance",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u31",
+   "empreinte": "e07b7524f80c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Indications de surveillances cardiaque / pulmonaire ou neurologique après intoxication",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u32",
+   "empreinte": "71a1cf3e45f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Rupture de VO de faible intensité chez un patient stable",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u33",
+   "empreinte": "28e760d2b83c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Décompensation diabétique hyperosmolaire sans coma",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u34",
+   "empreinte": "1aa04534f218",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Transfusion sanguine / remplissage vasculaire postopératoire chez un patient stable",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u35",
+   "empreinte": "c1b879418b86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sepsis stable sans choc ni défaillance d'organe",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u36",
+   "empreinte": "51a1fc827b39",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

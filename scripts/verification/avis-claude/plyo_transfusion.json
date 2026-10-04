@@ -1,0 +1,295 @@
+{
+ "cle": "plyo_transfusion",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "547da1b101ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le comité a étudié six questions relatives à l'utilisation des PLYO",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "6182eebfc023",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'élaboration de huit recommandations d'experts.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u3",
+   "empreinte": "70d8051a4363",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour une hémorragie sans urgence vitale, nécessitant une transfusion de plasma, les experts suggèrent d'utiliser des PFC.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u4",
+   "empreinte": "3368b308672a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est considéré que le volume initial de plasma à prescrire doive usuellement être de l'ordre de 10 à 15 mL/kg.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u5",
+   "empreinte": "9f500b9b8993",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lorsque la durée de transport vers le centre hospitalier le plus adapté est supérieur à 20 min.",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u6",
+   "empreinte": "08d90ef06d7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser une transfusion de 2 à 4 PLYO seuls ou avec des concentrés de globules rouges (si disponibles immédiatement).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u7",
+   "empreinte": "e3d1e4aa0bff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en particulier lorsque le centre hospitalier le plus adapté n'est pas à proximité.",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u8",
+   "empreinte": "94ca48b78edd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser une transfusion initiale de 10 à 15 mL/kg de PLYO, seuls ou avec des concentrés de globules rouges",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u9",
+   "empreinte": "b5c07c722ba6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ces 4 unités une fois reconstituées permettent d'obtenir un volume de 840 ml de",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u10",
+   "empreinte": "9d045a6332d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de débuter, immédiatement, la transfusion de 2 à 4 plasmas lyophilisés pour tout adulte présentant un choc hémorragique",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u11",
+   "empreinte": "a21656288b4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de débuter, immédiatement la transfusion de 10 à 15 mL/kg de PLYO pour tout enfant ou nourrisson",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u12",
+   "empreinte": "233d38b4f3f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10-30 kg = 2 packs, >30 kg = 3 packs",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u13",
+   "empreinte": "cea2dcc29689",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le choix entre PLYO ou PFC étant guidé par des raisons logistiques, notamment de disponibilité immédiate.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u14",
+   "empreinte": "4c8119b81bb9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La plupart des HPP de volume et de débit intermédiaire (<2500",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u15",
+   "empreinte": "1ff6c3237169",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systématique avant toute transfusion de produit sanguin labile y compris de PLYO, si aucun résultat n'est disponible immédiatement.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u16",
+   "empreinte": "c6c4d33e5530",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sensibilisation aux composants du PFC-IA, et notamment à l'amotosalen et aux psoralènes.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u17",
+   "empreinte": "8daff9b4f8da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le PLYO étant un PSL, les experts suggèrent qu'il réponde aux mêmes règles de circuit que les autres PSL",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "d75745f78c74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le degré d'urgence : urgence vitale immédiate",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u19",
+   "empreinte": "a7275421f09e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comprise entre + 2° C et + 25 °C pendant une durée maximale de 2 ans après lyophilisation",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u20",
+   "empreinte": "26a35a176fa7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Reconstitution : par addition de 200 ou 250 mL d'eau pour préparation injectable.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u21",
+   "empreinte": "e0b674d3a8a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour une durée minimale de 2 heures après transfusion",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u22",
+   "empreinte": "ba206f10170a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les produits arrivés à péremption ne sont pas repris et restent à charge du site",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u23",
+   "empreinte": "c693d6e31f54",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une posologie initiale de 15 mL/kg est utilisée (accord professionnel).",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u24",
+   "empreinte": "ff9d9aedf9d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Volume sanguin nouveau-né, prématuré : 90-100ml kg-1",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u25",
+   "empreinte": "b3aec6188b4c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "6bccd8979cb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 mois 35 (55) 120 (175) 60 (50) 45 (35)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u27",
+   "empreinte": "9bb5fc992b46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 an 30 (40) 110 (170) 80 (70) 55 (40)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u28",
+   "empreinte": "41a6b927b3f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 ans 25 (30) 100 (160) 90 + 2* âge 55 + 1.5*âge",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u29",
+   "empreinte": "9224dec72526",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6 ans 20 (25) 90 (130) 90 + 2* âge 55 + 1.5 *âge",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u30",
+   "empreinte": "fe10b430975c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12 ans 15 (20) 80 (100) 120 (90) 80 (65)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u31",
+   "empreinte": "8b963dc26306",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u32",
+   "empreinte": "1d92b384f07e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

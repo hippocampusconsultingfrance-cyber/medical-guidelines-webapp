@@ -1,0 +1,196 @@
+{
+ "cle": "antibioprophylaxie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "03014880887f",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "V3.1 du 10/07/2026 : amendement du schéma pour les chirurgies digestives néonatales grêliques ou colorectales",
+   "explication": "La fiche cite la V3.0 du 04/05/2026 comme version courante ; la source en ligne est désormais la V3.1 du 10/07/2026 (amendement du Champ 3 pédiatrique, non couvert par la fiche).",
+   "page": 6
+  },
+  {
+   "id": "u2",
+   "empreinte": "2af8346ed9da",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "ce1c2d897919",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de s'écarter au niveau local en cas de spécificités de centre et après réflexion et justification",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "85ce62b9b3bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "alternatives en cas d'allergie, hors vancomycine) au plus tôt 60 minutes avant et au plus tard avant l'incision chirurgicale ou le début de la procédure interventionnelle",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u5",
+   "empreinte": "63211acfaaa9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "administration dans les intervalles 60-30 minutes et 30-0 minutes avant l'incision",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u6",
+   "empreinte": "f0be84c6e1ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à une posologie de la moitié de la dose initiale, toutes les deux demi-vies de l'antibiotique utilisé",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u7",
+   "empreinte": "911cd38ffe24",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "9ca4717aea44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toutes les 2 heures pour la céfoxitine (1 g), le céfuroxime (0,75 g) et l'amoxicilline/clavulanate",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u9",
+   "empreinte": "7adec87459dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts soulignent néanmoins qu'une réadministration d'antibiotique doit être discutée en cas de situation hémorragique peropératoire, même si le délai normalement prévu",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u10",
+   "empreinte": "b5fe6e378689",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé, dans la très grande majorité des cas (et hors exceptions mentionnées dans chaque tableau), de prolonger l'administration de l'antibioprophylaxie au-delà de la fin de la chirurgie",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u11",
+   "empreinte": "6f59fa7819f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie cardiaque et la chirurgie orthognatique pourraient être deux exceptions",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u12",
+   "empreinte": "a007a8845867",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisée en antibioprophylaxie chez le patient obèse pour diminuer l'incidence des infections du site opératoire, en dehors de cas particuliers (notamment IMC supérieur à 50 kg/m2).",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u13",
+   "empreinte": "c24c31a61c35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'amoxicilline sont des molécules hydrophiles, dont le volume de distribution n'augmente pas dans",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u14",
+   "empreinte": "95dc4f03655f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "dcab9321132b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "clindamycine : 900 mg pour des IMC entre 30 et 45 kg/m2 ; 1200 mg pour des IMC entre 46 et 60 kg/m2 ; 1600 mg pour des IMC > 60 kg/m2",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u16",
+   "empreinte": "0745a3aacf18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(Poids ajusté = Poids idéal + 0,4 x [Poids total – Poids idéal])",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u17",
+   "empreinte": "c5b84f0164df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "vancomycine : 20 mg/kg de poids total (comme chez le non-obèse).",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u18",
+   "empreinte": "9df32fffbb93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Du fait de l'absence de donnée dans cette population, la teicoplanine n'est pas recommandée",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u19",
+   "empreinte": "2cad176e04d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "colorectale est supérieure ou égale à 10%, les experts suggèrent de réaliser un dépistage de la colonisation rectale à E-BLSE chez ces patients, dans le mois précédant la chirurgie",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u20",
+   "empreinte": "ebada1909688",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'ertapénème (2g en intraveineux lent en dose unique quelle que soit la durée de la",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u21",
+   "empreinte": "5206d7b8461e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

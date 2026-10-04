@@ -1,0 +1,457 @@
+{
+ "cle": "chir_ambu_proctologie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a380bac5dd15",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "483b8b0a16c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'absence de gradation ne signifie pas que les recommandations ne sont pas pertinentes et utiles",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "33e45d66bd15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de privilégier le mode d'hospitalisation ambulatoire lorsque les conditions médicales et psycho-sociales",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "dd52214e9bcb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'identifier le médecin traitant et, dans l'entourage du patient, les personnes susceptibles",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "5bc0455886bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que le délai pour atteindre une structure d'urgence ne soit pas supérieur à 1 heure",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "ed7ae40bda2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une déficience physique ou intellectuelle n'interdit pas la prise en charge ambulatoire",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "fadb2fd5f69d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le grand âge n'interdit pas la prise en charge ambulatoire lorsque les conditions d'éligibilité sont réunies",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "3b0c55e2f806",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La consultation de programmation opératoire est un temps essentiel pour optimiser le parcours ambulatoire",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "f6134ef85f2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une organisation basée sur la gestion des flux",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "87f0bb1a9df1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ambulatoire (UCA) soit sensibilisée, expérimentée et formée à la pratique de l'ambulatoire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "2db56ae16146",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé qu'elle soit située à proximité immédiate du bloc opératoire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "7dcc48e5d879",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place au sein de l'UCA une démarche de gestion des risques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "de9b5fb691ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une démarche qualité concernant l'activité de chirurgie proctologique ambulatoire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "4ce8cc67c87f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé que le médecin anesthésiste réanimateur soit informé par l'opérateur du choix d'un mode d'hospitalisation ambulatoire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "e14670de8f30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'opérateur soit informé en cas de réserve sur le mode d'hospitalisation ambulatoire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "ef6c4c9c9b55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sont de 6 heures pour les solides et de 2 heures pour les liquides clairs sans pulpe ni gaz",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "502835a2e978",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de limiter les perfusions intraveineuses (grade A)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "36d2ec749989",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "local de courte durée d'action et de proscrire l'administration d'un morphinique intrathécal. (grade A)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "5fe2dfbb7fac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de prévenir dès la période opératoire la douleur postopératoire par l'administration d'antalgiques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "1b886cbafd44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'informer le médecin traitant du caractère ambulatoire de la prise en charge chirurgicale dès la consultation de programmation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "8fbdc25125f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de transmettre au médecin traitant tous les éléments utiles à la prise en charge post-interventionnelle",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "1056a1e752c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'expliquer au patient les modalités de la chirurgie ambulatoire et de recueillir son assentiment",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "197673e1a767",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être organisées par l'UCA en collaboration avec l'opérateur et l'anesthésiste et formalisées par écrit",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "d61563070179",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les mesures à prendre à la sortie de l'hospitalisation (ordonnances et consignes de sortie, rendez-vous postopératoire)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "93ffbc518a6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un dossier de liaison dans lequel sont communiquées les informations sur la nature du geste pratiqué",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "9eca10afc0ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de formaliser la procédure de contact (numéro de téléphone) pour la continuité des soins",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "6b4a0eebc1cb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des consignes préopératoires par un appel téléphonique ou SMS avant l'admission",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "f23641b90038",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(rétention d'urines, hémorragie, douleur non contrôlée, fécalome)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "ee112afd0728",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en préopératoire une information complète et détaillée sur la douleur postopératoire",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "e2b4c81471ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de n'autoriser le retour à domicile que pour les patients qui ont un score de douleur faible",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u31",
+   "empreinte": "d22dfee7b6b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'action (infiltration périnéale et/ou bloc pudendal), en concertation avec le médecin anesthésiste-réanimateur. (grade A)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u32",
+   "empreinte": "33c48a6c48f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas nécessaire d'attendre la levée du bloc pudendal pour autoriser la sortie du patient",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "9be88c7af2df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'analgésiques non opiacés (AINS, paracétamol) pour réduire la consommation d'opiacés",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "c06f8704cc66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'utiliser les opiacés en cas de contrôle incomplet de la douleur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u35",
+   "empreinte": "3d1b94e0ca12",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "s'assurer que le patient ait anticipé l'achat des antalgiques",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "106d50cef56a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Compte tenu du risque élevé de rétention urinaire, il est recommandé d'en informer le patient",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u37",
+   "empreinte": "0ba7e227a914",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'obtenir une miction en préopératoire immédiat",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u38",
+   "empreinte": "895376d99df8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "morphiniques et anticholinergiques (nefopam)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u39",
+   "empreinte": "31e842a1af95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de limiter les perfusions intraveineuses (grade A, cf. supra)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u40",
+   "empreinte": "99b97f534cf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas nécessaire d'attendre la reprise mictionnelle pour décider de la sortie sous réserve d'une évaluation du volume vésical",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "22019e6ae325",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de quantifier la miction et d'évaluer le résidu postmictionnel",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "b47a088a9c52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est possible de choisir entre un sondage évacuateur ou le maintien d'un cathéter uréthral",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u43",
+   "empreinte": "e782aa6950f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en l'absence de miction dans les 12 heures",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "ed8805ca1244",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "3020f09acf87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque hémorragique précoce et tardif (jusqu'à 3 semaines après la chirurgie)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u46",
+   "empreinte": "5f1c5808477e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient discutés par tous les intervenants (cardiologue, opérateur, anesthésiste)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "c8383662553a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des laxatifs et une alimentation enrichie en fibres pour améliorer le transit postopératoire",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u48",
+   "empreinte": "c746e26bd6af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de remettre avant l'intervention des conseils écrits dans l'éventualité d'une constipation postopératoire",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u49",
+   "empreinte": "7f429b355efd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un référent médical en l'absence d'évacuation de selles dans les 72 heures",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u50",
+   "empreinte": "171e08767d8e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

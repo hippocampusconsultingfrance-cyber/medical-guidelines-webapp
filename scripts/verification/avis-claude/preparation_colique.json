@@ -1,0 +1,187 @@
+{
+ "cle": "preparation_colique",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e7d2ff3e42d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La grande majorité des coloscopies est réalisée en France sous anesthésie générale (3). Une collaboration étroite entre anesthésistes et gastroentérologues est donc nécessaire",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "6737e5c55caa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une méta-analyse regroupant 47 essais contrôlés utilisant différents types de préparation montrait elle aussi une nette supériorité en termes de qualité et de tolérance pour la prise fractionnée avec pause nocturne",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "006ce294da38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la coloscopie est réalisée l'après-midi, l'administration de l'ensemble de la préparation le matin de l'examen peut être envisagée.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "f85144d66787",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce délai optimal de 3 à 5 heures entre la fin de la purge et le début de la coloscopie concernait tous les segments coliques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "2cf673f6fd8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les liquides de préparation colique se comportent comme des liquides clairs.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "f5f5b8d2ed78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un délai de 3h entre la dernière prise de préparation et la réalisation de l'induction anesthésique paraît répondre aux exigences de sécurité chez des patients ne présentant pas de retard à la vidange gastrique.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "01b7ec26827f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le volume gastrique résiduel critique augmentant le risque de régurgitation passive se situe entre 25 et 200 ml",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "56d2a5b0b20a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "e0dcc9f25daf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau I : principales situations s'accompagnant d'un ralentissement de la vidange gastrique Douleur aigüe Prise d'opiacés Sclérodermie Tétraplégie Amylose Maladie de Parkinson",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "ffd377491de2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Contrairement au tabagisme chronique le port de patch nicotinique ne modifie pas la vidange gastrique",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "13e5cf8e41d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le phosphate de sodium est contre-indiqué chez les sujets de moins de 18 ans et de plus de 65.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "92797682862f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les préparations à base de PEG doivent être ingérées à au moins deux heures de distance de toute autre prise médicamenteuse.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "68fd9f85496e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un délai de 3h entre la dernière prise de préparation et l'induction anesthésique semble raisonnable pour garantir l'absence de risque d'inhalation",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u14",
+   "empreinte": "024f07074e2b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "33d2b7980ff3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Alimentation légère Préparation colique jusqu'à : Jusqu'à : 2h 4h 6h 8h 10h 5h 7h 9h 11h 13h Autres liquides clairs : eau, thé, café, tisane sucrés, jus de pomme ou de raisin, jusqu'à : 6h 8h 10h 12h 14h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u16",
+   "empreinte": "af4da656264f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Alimentation légère Préparation colique jusqu'à : Jusqu'à : 2h 4h 6h 8h 10h 5h 7h 9h 11h 13h Autres liquides clairs : eau, thé, café, tisane sucrés, jus de pomme ou de raisin, jusqu'à : 6h 8h 10h 12h 14h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "7e39dfd8b658",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Alimentation légère Préparation colique jusqu'à : Jusqu'à : 2h 4h 6h 8h 10h 5h 7h 9h 11h 13h Autres liquides clairs : eau, thé, café, tisane sucrés, jus de pomme ou de raisin, jusqu'à : 6h 8h 10h 12h 14h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "ad5dca8d2852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Alimentation légère Préparation colique jusqu'à : Jusqu'à : 2h 4h 6h 8h 10h 5h 7h 9h 11h 13h Autres liquides clairs : eau, thé, café, tisane sucrés, jus de pomme ou de raisin, jusqu'à : 6h 8h 10h 12h 14h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "8d22056c6ef0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Alimentation légère Préparation colique jusqu'à : Jusqu'à : 2h 4h 6h 8h 10h 5h 7h 9h 11h 13h Autres liquides clairs : eau, thé, café, tisane sucrés, jus de pomme ou de raisin, jusqu'à : 6h 8h 10h 12h 14h",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "0b6ba1f79681",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

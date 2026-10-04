@@ -1,0 +1,736 @@
+{
+ "cle": "curares",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9933e579bfd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le travail de synthèse des experts et l’application de la méthode GRADE ont abouti à trente recommandations. Parmi les recommandations formalisées, 11 ont un niveau de preuve élevé",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "09ce04f12afc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "69b48ffa5e38",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "37bb2ed7aecc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "8107e15683dc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "9ed6e451835d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "172085b956b2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "c130d35684f1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "531ada84f2c5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "4c7eac5c29da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "groupes distincts étaient confirmés : la succinylcholine et le rocuronium avec des taux de notification plus élevés et les autres curares avec des taux de notification plus",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "1388a3bb10f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Il n’est probablement pas recommandé de tester la possibilité de ventiler au masque avant d’administrer un curare.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u12",
+   "empreinte": "47ae20e79706",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 – Il est probablement recommandé d’administrer un curare pour faciliter la ventilation au masque facial.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u13",
+   "empreinte": "dac8d558603f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La situation d’avoir à réveiller un patient pour intubation impossible est extrêmement rare et peu documentée : deux cas sur 100 intubations difficiles parmi 11257 intubations [1] et",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u14",
+   "empreinte": "a50278fe2592",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "œsophagienne, pneumopathie d’inhalation, réaction allergique. R2.1 – Il est recommandé d’administrer un curare pour faciliter l’intubation de la trachée.",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u15",
+   "empreinte": "e59d94636008",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – Il est recommandé d’administrer un curare pour réduire les traumatismes du pharynx et/ou du larynx.",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u16",
+   "empreinte": "51bfe949f96f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Il est probablement recommandé d’administrer un curare à délai d’action court pour l’induction en séquence rapide.",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u17",
+   "empreinte": "6442e34404e0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "taux de 24,6% (analyse meilleur protocole : 25,9%). Avec curare, 51 patients (4,1%) ont des mauvaises conditions d’intubation. La cohorte comporte sur 103 784 patients, dont 28 201",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u18",
+   "empreinte": "4541e0302511",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 – Il n’est probablement pas recommandé d’administrer systématiquement un curare pour faciliter la pose d’un dispositif supra-glottique.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u19",
+   "empreinte": "78be842dd167",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 – Il est probablement recommandé d’administrer un curare en cas d’obstruction des voies aériennes liée à un dispositif supra glottique.",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u20",
+   "empreinte": "a2ef1406dc9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(4 mg/kg) [7,8]. Chez l’enfant de moins de 3 ans, il est d’usage d’y associer de l’atropine 0,02 mg/kg pour éviter la bradycardie voire l’arrêt cardiaque [5]. Il est essentiel de",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u21",
+   "empreinte": "0443523e1129",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PAS DE RECOMMANDATION : Les données de la littérature sont insuffisantes pour établir une recommandation sur l’utilisation d’un monitorage instrumental de la curarisation lors",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u22",
+   "empreinte": "84d9423b87ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisé, le muscle sourcilier soit le site utilisé du fait de sa sensibilité aux curares et de sa cinétique de curarisation comparables à celles des muscles laryngés.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u23",
+   "empreinte": "35a818a6d30e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Argumentaire : Les conditions d’intubation sont moins bonnes lorsque l’orbiculaire de l’œil est utilisé pour décider du moment pour réaliser l’intubation orotrachéale comparées au",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u24",
+   "empreinte": "f61d3dbe06f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 – Il est recommandé d’administrer un curare pour faciliter l’acte opératoire en chirurgie abdominale par laparotomie ou par laparoscopie.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u25",
+   "empreinte": "e34dee331f48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 – Il est probablement recommandé d’administrer un curare pour faciliter l’acte opératoire en chirurgie ORL sous laser.",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u26",
+   "empreinte": "fef662de6d3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PAS DE RECOMMANDATION : Les données de la littérature sont insuffisantes pour établir une recommandation sur le niveau de bloc neuromusculaire à atteindre (modéré versus",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u27",
+   "empreinte": "e1156dceec13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mouvements peropératoires des cordes vocales et la sécheresse buccale postopératoire ; mais sans différences pour les évènements indésirables postopératoires [7,8].",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u28",
+   "empreinte": "94f0c13908d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neuromusculaire R6.1 – Il est recommandé de monitorer la curarisation en peropératoire.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u29",
+   "empreinte": "cf0776b9dcc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R6.2 – Il est probablement recommandé d’utiliser la stimulation par train de quatre du nerf ulnaire à l’adducteur du pouce pour monitorer la curarisation peropératoire.",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u30",
+   "empreinte": "fc705438ef47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l’adducteur du pouce témoigne d’une paralysie complète des muscles abdominaux [3]. La stimulation du nerf facial par train de quatre et estimation visuelle de la réponse au muscle",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u31",
+   "empreinte": "d7e84ffa6ea6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.1 – Il est probablement recommandé d’utiliser un monitorage quantitatif de la curarisation à l’adducteur du pouce pour le diagnostic de la curarisation résiduelle et",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u32",
+   "empreinte": "ed62e7ebc264",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Argumentaire : Aucun test clinique n’est suffisamment sensible pour dépister une curarisation résiduelle [1]. La mesure qualitative du rapport entre la 4ème et la 1ère réponse",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u33",
+   "empreinte": "d3b787d24612",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une décurarisation spontanée égale à quatre réponses musculaires à l’adducteur du pouce après une stimulation en train de quatre au nerf ulnaire avant d’injecter de la",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u34",
+   "empreinte": "fe3dc40913e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.3 – Il est recommandé d’administrer la néostigmine sous couvert d’un monitorage de la curarisation à l’adducteur du pouce, d’administrer une dose comprise entre 40 et 50",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u35",
+   "empreinte": "8fe3cf26da12",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.4 – Il est probablement recommandé de réduire la dose de néostigmine de moitié en cas de bloc résiduel très faible.",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u36",
+   "empreinte": "1c5e85d47d51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.5 – Il est recommandé de poursuivre le monitorage quantitatif de la curarisation après l’administration de la néostigmine jusqu’à l’obtention d’un rapport du train de quatre",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u37",
+   "empreinte": "df92e1833bb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’évaluer les effets de la néostigmine sur la perméabilité des voies aériennes supérieures et l’activité électromyographique du muscle génio-glosse (dilatateur du larynx). Les",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u38",
+   "empreinte": "5383b36272b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’adducteur du pouce après stimulation par train de quatre. La présence d’une à deux réponses au train de quatre à l’adducteur du pouce témoigne d’une récupération d’environ",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u39",
+   "empreinte": "a2d145d23a10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’anesthésie Recontrôler plus tard le Td4",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u40",
+   "empreinte": "6ae7428f8103",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "µg/kg de néostigmine : une, deux, trois ou quatre réponses. La curarisation était provoquée par du cis-atracurium. Le délai pour obtenir un rapport du train de quatre égal à 90 % était",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u41",
+   "empreinte": "b6c991413e3b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.6 – Il est recommandé d’ajuster la dose de sugammadex sur la masse idéale et en fonction du degré de bloc neuromusculaire induit par le rocuronium.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u42",
+   "empreinte": "3695105c217f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.7 – Il est probablement recommandé de poursuivre le monitorage quantitatif de la curarisation après l’administration de sugammadex afin de détecter une recurarisation.",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u43",
+   "empreinte": "6de88af845f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recurarisation. L’efficacité du sugammadex est ralentie chez le patient âgé [10] et le patient insuffisant rénal sévère (clairance de la créatinine inférieure à 30 mL/min) [11]",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u44",
+   "empreinte": "8dfa3a34e245",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau sugammadex de la source : bloc très modéré 0,22 mg/kg, < 5 min",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "2a9d5617d503",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le rocuronium en moins de cinq minutes. Une dose de 0,5 mg/kg est également efficace mais plus lentement (dix minutes) [2].",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u46",
+   "empreinte": "b6c1adfe1de6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bloc modéré : 2 mg/kg, < 5 min",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "54f67ba2f11e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du rocuronium en moins de cinq minutes [3,4]. 3. un bloc profond (une à deux réponses au compte post-tétanique) : pour décurariser un",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u48",
+   "empreinte": "2327e22a865e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4. un bloc très profond : pour décurariser un bloc très profond (trois et quinze minutes après de fortes doses de rocuronium 1 ou 1,2 mg/kg) en moins de cinq minutes, une",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u49",
+   "empreinte": "a9f333b6c155",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au train de quatre à l’adducteur du pouce) ou profonde (5 réponses maximum au compte post-tétanique à l’adducteur du pouce). L’essai randomisé de Madsen et coll. de faible",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u50",
+   "empreinte": "65049225cca4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 2 : N ≥ 2 → sugammadex 2 mg/kg, TDQ > 0,9 en 3-5 min",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "8c5e6c844918",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme 2 : CPT 1-2 → sugammadex 4 mg/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u52",
+   "empreinte": "88957a41c0eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à la dose 0,04 mg/kg en combinaison avec de l’atropine 0,02 mg/kg est associée à un délai de décurarisation plus long chez les obèses par rapport aux non obèses [1]. Le sugammadex",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u53",
+   "empreinte": "f8e41b785b7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.1 – Il est probablement recommandé d’administrer un curare à délai d’action court pour l’électro convulsivothérapie.",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u54",
+   "empreinte": "6d6c982766f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conséquences motrices de la convulsion généralisée telles que morsure de langue, chute, luxation, fracture. Le cahier des charges est celui d’un curare à délai d’action rapide,",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u55",
+   "empreinte": "91905dc84dc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.2 – Il est probablement recommandé chez l’obèse massif (IMC ≥ 40 kg/m²) d’administrer un curare à délai d’action court pour faciliter l’intubation de la trachée.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u56",
+   "empreinte": "4e461886cb2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.3 – Il est probablement recommandé d’administrer la succinylcholine à la dose de 1 mg/kg adaptée sur la masse réelle de l’obèse.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u57",
+   "empreinte": "4e848b9fcbd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.4 – Les experts suggèrent d’administrer le curare non dépolarisant à une dose calculée sur la masse maigre du patient obèse.",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u58",
+   "empreinte": "33315ef7e0f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PAS DE RECOMMANDATION : Les données sont insuffisantes pour formuler des recommandations sur l’intérêt du bloc profond en chirurgie par laparoscopie chez l’obèse.",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u59",
+   "empreinte": "dcda74c94563",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "idéale en cas d’utilisation de rocuronium chez l’obèse massif (IMC ≥ 40 kg/m²) compte tenu de l’allongement du délai de décurarisation et du risque de recurarisation avec la",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u60",
+   "empreinte": "09f61ecec4c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Argumentaire : La succinylcholine permet d’offrir des conditions d’intubation excellentes chez l’obèse lorsqu’elle est administrée à la posologie de 1 mg/kg adaptée sur la masse",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u61",
+   "empreinte": "2c99ca770079",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.6 – Hors situations relevant d’une indication à une induction à séquence rapide et à l’utilisation d’un curare dépolarisant, il est probablement recommandé d’utiliser un",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u62",
+   "empreinte": "2e285a7da14a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.7 – Dans l’induction en séquence rapide classique, il est recommandé d’utiliser un curare d’action rapide chez l’enfant.",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u63",
+   "empreinte": "4b01ab444d55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.8 – Dans l’induction en séquence rapide classique, Il est probablement recommandé d’utiliser chez l’enfant la succinylcholine en première intention pour l’induction en",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u64",
+   "empreinte": "32708b7fc062",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des recommandations concernant l’administration de curare pour faciliter la ventilation au masque facial, la mise en place et la gestion des complications des dispositifs supraglottiques, faciliter le geste chirurgical, l’intérêt du monitorage de la curarisation pour",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u65",
+   "empreinte": "4f5243bbd704",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Doses pédiatriques de succinylcholine (< 1 mois 1,8 mg/kg)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "711964afd429",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 mois-1 an : 2 mg/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u67",
+   "empreinte": "cd55f4555aeb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1-10 ans : 1,2 mg/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u68",
+   "empreinte": "3a8054c15dc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 10 ans : 1 mg/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u69",
+   "empreinte": "b1ebeb2c0fa5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l’alerte de l’ANSM du 15/12/2017 (ansm.sante.fr) sur le suxamethonium, un curare dépolarisant ne doit pas être utilisé pour l’induction intraveineuse ne relevant pas d’une",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u70",
+   "empreinte": "8479a7c0e788",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "primitive (myopathies) ou de dérégulation haute du récepteur nicotinique à l’acétylcholine de la plaque motrice (déficit moteur chronique).",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u71",
+   "empreinte": "19e5cec839a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.10 – Il est probablement recommandé de monitorer la curarisation en cas d’administration de curare chez un patient atteint d’une maladie neuromusculaire.",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u72",
+   "empreinte": "83c0caeafc5e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.11 – Il est probablement recommandé d’administrer du sugammadex pour le traitement d’une curarisation résiduelle en cas d’administration de curare stéroïdien chez",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u73",
+   "empreinte": "b1d987b6f2d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Argumentaire : Dans ces deux situations la succinylcholine est formellement contreindiquée. Dans les atteintes musculaires pures (myopathie, myotonie) elle induit une contracture généralisée avec rhabdomyolyse [1]. Dans l'atteinte du récepteur nicotinique à",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u74",
+   "empreinte": "12b6311edb80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le délai d’installation et de récupération étaient significativement plus long en cas de dystrophie musculaire de Duchenne par rapport à des témoins [6]. En cas de dérégulation",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u75",
+   "empreinte": "4e38ac31e8d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.12 - Il est probablement recommandé d’utiliser un curare de type benzylisoquinolines (atracurium/cis-atracurium) en cas d’insuffisance rénale ou hépatique.",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u76",
+   "empreinte": "2b5624d49ef1",
+   "verdict": "ecart",
+   "type_ecart": "grade",
+   "citation": "R8.13 – Il est recommandé de ne pas modifier la dose initiale en cas d’insuffisance rénale",
+   "explication": "Formulation négative (« il est recommandé de ne pas modifier ») de grade fort ; par la convention du document, c'est un 1−, la fiche affiche [1+]. Texte conforme.",
+   "page": 47
+  },
+  {
+   "id": "u77",
+   "empreinte": "0749bab3b1dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R8.14 – En cas d’utilisation du sugammadex chez l’insuffisant rénal, il est probablement recommandé de l’utiliser aux doses habituelles.",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u78",
+   "empreinte": "2c065b0d9fd8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PAS DE RECOMMANDATION : Les données de la littérature sont insuffisantes pour établir une recommandation sur l’utilisation des curares chez le sujet âgé.",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u79",
+   "empreinte": "d75b456b6020",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "était préservée en cas d’insuffisance rénale, aux mêmes doses que chez les sujets à fonction rénale normale, sans que soient observés de signes de recurarisation [2]. Le sugammadex",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u80",
+   "empreinte": "4c94d8cbcca9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R7.1 – Il est probablement recommandé d’utiliser un monitorage quantitatif de la curarisation à l’adducteur du pouce pour le diagnostic de la curarisation résiduelle et",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u81",
+   "empreinte": "159365b48ffc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

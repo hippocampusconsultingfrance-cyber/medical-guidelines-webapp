@@ -1,0 +1,358 @@
+{
+ "cle": "urgences_obstetricales",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "15191d190cd9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "58c522f224d6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "multiparité, antécédent d'accouchement rapide voire d'accouchement extrahospitalier, contractions utérines douloureuses",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "510fe454ce2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de réaliser un toucher vaginal avant de prendre contact avec l'équipe obstétricale d'accueil",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u4",
+   "empreinte": "6da407d492eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent que le soignant choisisse avec la patiente la position dans laquelle ils sont tous les deux le plus à l'aise",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u5",
+   "empreinte": "875ba03f4bb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la manœuvre de Mc Roberts : patiente en décubitus dorsal, cuisses hyperfléchies sur le tronc",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "83446ef9af1b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas réaliser d'épisiotomie systématiquement en dehors des structures spécialisées",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u7",
+   "empreinte": "e90fae87e0c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ni le score de Malinas ni le SPIA n'ont été réellement validés",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u8",
+   "empreinte": "9189b3e2aebd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le positionnement d'une main (hands-on) en protection sur le périnée",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u9",
+   "empreinte": "a14c31fb45a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'accouchement hors maternité à plus de 37 SA, le clampage tardif du cordon réduit-il la",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u10",
+   "empreinte": "a69e4999a791",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'administrer 5 à 10 UI d'oxytocine, en IVL ou en IM, au dégagement des épaules",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u11",
+   "empreinte": "7f653ea24d24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne pas réaliser de délivrance artificielle pour réduire le risque d'hémorragie du postpartum, sauf en cas de survenue d'une hémorragie du post-partum sévère non contrôlable",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u12",
+   "empreinte": "a82f050f422d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'administrer 1g d'acide tranexamique en intraveineux dans un délai maximal d'1h à 3h après le début du saignement",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u13",
+   "empreinte": "564833e95496",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts ne peuvent se prononcer sur les modalités et la temporalité du transfert inter-hospitalier",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u14",
+   "empreinte": "a3fc204ffd39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mener une discussion collégiale permettant de décider si le plus grand bénéfice est une prise en charge de la patiente dans l'établissement de départ",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u15",
+   "empreinte": "3cee74da81b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de ne pas médicaliser systématiquement les transferts interhospitaliers",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u16",
+   "empreinte": "0462b32c6de4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'existence d'un risque d'accouchement pendant le transport constitue une contre-indication au transfert in utero",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u17",
+   "empreinte": "933e6b8ccc8d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'indication de médicalisation du transport des patientes avec pré-éclampsie sévère doit être systématiquement discutée avec le médecin régulateur du SAMU",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u18",
+   "empreinte": "0c5168d126f6",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "une PAS≥160mmHg et/ou une PAD≥110mmHg au repos et persistant durant plus de 15 minutes",
+   "explication": "Décalage de numérotation : dans la source, R4.1 cite la R2.1 2020 (antihypertenseur si PAS ≥160 / PAD ≥110). La fiche ne donne pour R4.1 que l'argumentaire, et place le contenu de la R2.1 sous R4.2.",
+   "page": 22
+  },
+  {
+   "id": "u19",
+   "empreinte": "81f63a546e43",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "R4.2 - En l'absence de spécificité liée au contexte hors maternité, les experts suggèrent d'appliquer lors de la prise en charge d'une patiente pré-éclamptique sévère",
+   "explication": "Dans la source, R4.2 cite la R2.8 2020 (MgSO4 anténatal si pré-éclampsie sévère avec signe de gravité), pas la R2.1. Les R4.x sont des avis d'experts qui citent des recommandations GRADE 1+.",
+   "page": 22
+  },
+  {
+   "id": "u20",
+   "empreinte": "58888f33dbd2",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "R4.3 – En l'absence de spécificité liée au contexte hors maternité, les experts suggèrent d'appliquer lors de la prise en charge d'une patiente présentant une éclampsie",
+   "explication": "Dans la source, R4.3 ne cite que la R2.12 (MgSO4 après éclampsie) ; la R2.8 appartient à R4.2.",
+   "page": 23
+  },
+  {
+   "id": "u21",
+   "empreinte": "daa792ad2f1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "retenus étaient (R1.3) : une pression artérielle systolique ≥180 mmHg",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u22",
+   "empreinte": "1ff766491259",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "survenu chez une femme enceinte de plus de 20 SA",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u23",
+   "empreinte": "2eeecc78918e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une durée de surveillance de 4 à 6 heures semble suffisante (niveau de preuve intermédiaire)",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u24",
+   "empreinte": "7953872755a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser une tomodensitométrie thoraco-abdominopelvienne",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u25",
+   "empreinte": "cb53e76b8d2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "elle ne devrait pas être évitée au seul motif que la patiente est enceinte",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u26",
+   "empreinte": "aaece5bed47e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l'ordre de 13 à 25 mGy et 0,01 à 0,66 mGy, respectivement",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u27",
+   "empreinte": "afd6409eae78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l'ordre de 13 à 25 mGy et 0,01 à 0,66 mGy, respectivement",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u28",
+   "empreinte": "1e04c7a612e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une dose d'exposition fœtale inférieure à 50 mGy, le risque non carcinologique",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u29",
+   "empreinte": "ca136428a474",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "inférieure à 100 mGy ne devrait pas entrer en considération pour envisager une interruption",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u30",
+   "empreinte": "3006f2d62dcd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une irradiation fœtale > 50 mGy est associée à un doublement du risque relatif de décès par cancer durant l'enfance",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u31",
+   "empreinte": "b3ffce14ea47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "estimé à une perte de 0,025 point de QI par 1 mGy d'exposition au-delà de 100 mGy",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u32",
+   "empreinte": "c7d1510ff1df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de malformation augmente pour des doses d'exposition fœtale supérieure à 150 mGy",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u33",
+   "empreinte": "ce81f4c051de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "200 voire de 500 mGy est suggéré pour envisager une interruption médicale de la grossesse",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u34",
+   "empreinte": "a3536db7871c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "imagerie avec produit de contraste pendant la grossesse doit être signalée au pédiatre à la naissance",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u35",
+   "empreinte": "3383cae3c1a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts ne peuvent pas se prononcer sur la pertinence de réaliser une extraction fœtale hors structure spécialisée",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u36",
+   "empreinte": "116e1c03f8bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un membre de l'équipe doit être désigné pour déplacer en continu l'utérus gravide sur la gauche, par traction des deux mains",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u37",
+   "empreinte": "e72de93ec202",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "via la simulation, incluant les situations difficiles dont les dystocies mécaniques et les dystocies dynamiques",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u38",
+   "empreinte": "f743d4fc5754",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "simulation sur les situations obstétricales difficiles (accouchement par le siège, grossesses gémellaires)",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u39",
+   "empreinte": "0f7116b9cd97",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

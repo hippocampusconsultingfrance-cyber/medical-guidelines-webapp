@@ -1,0 +1,457 @@
+{
+ "cle": "civd",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "6446bfbccbae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le score pour les recommandations se composait de trois niveaux",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u2",
+   "empreinte": "094064d3b28e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La CIVD s'inclut dans un processus complexe qui commence par un syndrome d'activation systémique de la coagulation (SASC)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "9561c86af1eb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les termes de CIVD compensée/décompensée, latente/patente, subclinique/symptomatique doivent être abandonnés",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "8bed89bb4b5b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "ee219ecd737d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comme témoin indirect de la formation excessive de thrombine : l'élévation des D-dimères",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "81592156d3a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le contact entre le facteur tissulaire (FT) et le facteur VII activé (FVIIa) est l'événement-clé",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "bfa680e2aaf3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "telles qu'hypothermie et hyperthermies malignes ou le choc hémorragique) (c)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "7e3542cd287b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les brûlures, les pancréatites, les complications transfusionnelles et les hémolyses (c)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "d68ae6e40477",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il s'agit des cancers métastasés et des hémopathies malignes (c)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u10",
+   "empreinte": "8ad92bb2ea49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "substances \"thrombin-like\" des venins de serpents",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u11",
+   "empreinte": "a82ef5d445ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'association de polymorphismes génétiques avec la CIVD reste du domaine de la recherche (c)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u12",
+   "empreinte": "a971463d9a3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le purpura fulminans néonatal est une situation exceptionnelle qui doit faire évoquer un déficit constitutionnel en protéine C ou S",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u13",
+   "empreinte": "058a72664c3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Par définition la CIVD comporte des anomalies biologiques non associées (CIVD biologique)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "f3e4542f8082",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "majeur ou deux critères mineurs de consommation (c, 2)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "a38cec97ae52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Numération plaquettaire (G/L) ≤ 50 50 < - ≤ 100",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "84b08b8c56e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Taux de prothrombine (%) < 50 50 ≤ - < 65",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "ceaeae7eeeb9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Concentration en fibrinogène (g/L) –– ≤1",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "796379717c2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou 2 critères mineurs (50 G/L < plaquettes < 100 G/L, 50 % < TP < 65 %, fibrinogène < 1 g/L)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "09d2a4ee03dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les manifestations thrombotiques prédominent dans le PF",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "3a1dc28c84b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la notion d'imputabilité directe de la CIVD dans les défaillances d'organe n'est pas démontrée (b)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "03d7f33b8904",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le diagnostic formel de CIVD au cours de l'insuffisance hépatocellulaire n'est pas possible",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "f3e4f541cec3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traitement étiologique de la CIVD est fondamental",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "760820ca18c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "thrombopénie inférieure à 50 G/L et de facteurs de risque hémorragique (acte invasif, thrombopathie associée)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "004f8208f8a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La transfusion de PFC (10 à 15 ml/kg) est indiquée dans les CIVD avec effondrement des facteurs de la coagulation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "e53f4f586b43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas d'indication démontrée à l'utilisation du fibrinogène dans la CIVD (d)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "ee8662929b10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le complexe prothrombique (PPSB), potentiellement thrombogène, est contre-indiqué au cours des CIVD (d)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "7669923a8e3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les inhibiteurs de la voie du facteur tissulaire n'ont pas été testés dans le traitement de la CIVD",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "95bee17a27fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'administration de concentrés de proteine C (PC) n'est pas validée dans le traitement de la CIVD (c)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "289d9eb147aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'y a pas d'information sur l'efficacité du recombinant activé de la PC (drotrecogine α)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "2fe223f06efd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'antithrombine (AT) améliore la CIVD au cours du sepsis (a)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u31",
+   "empreinte": "b63acde03548",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'efficacité des héparines dans le traitement de la CIVD n'est pas démontrée (c)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u32",
+   "empreinte": "1ef7980d1126",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'efficacité des modulateurs de la fibrinolyse dans le traitement de la CIVD n'est pas démontrée (c)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "99e23326388a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le traitement optimal de la cause est la condition sine qua non de l'efficacité du traitement",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "fbfc13c351a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "STRATÉGIE DEVANT UN SYNDROME D'ACTIVATION SYSTÉMIQUE DE LA COAGULATION (SASC)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "c6f1aeafdb39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "SYNDROME D'ACTIVATION SYSTÉMIQUE DE LA COAGULATION (SASC)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u36",
+   "empreinte": "984b3f1b5b60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(Critères spécifiques chez le nouveau-né) = CIVD BIOLOGIQUE",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u37",
+   "empreinte": "bdebacb569fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "= CIVD BIOLOGIQUE CIVD clinique CIVD compliquée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u38",
+   "empreinte": "8c665e909cf0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Syndrome hémorragique, acte invasif Syndrome thrombotique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u39",
+   "empreinte": "10406799fa53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucun traitement spécifique de la CIVD Héparines, fibrinolytiques, AT, PC, PCa, non recommandés",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u40",
+   "empreinte": "4b58dcf7f15f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PFC si TP < 35 %, Concentrés plaquettaires si plaquettes < 50 G/L",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "e03c0ec02fcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Seuil obtenu avec un test d'agglutination au latex avec lecture automatisée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "7b6ba55da812",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les moyens sont la transfusion de concentrés plaquettaires et de PFC jusqu'à arrêt",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u43",
+   "empreinte": "5b11799127b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de procédure invasive ces produits doivent être transfusés immédiatement avant sa réalisation (c, 2)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "f44e59793148",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fulminans ou certaines CIVD obstétricales (c, 3)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u45",
+   "empreinte": "cbce0ce2a869",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Héparines, fibrinolytiques, antifibrinolytiques, AT, PC, PCa ne sont pas recommandés (c, 2)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u46",
+   "empreinte": "b0a016f896e7",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "f97ec7b419db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'utilisation de l'aprotinine est fréquente en cas de défibrination",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "979bb575ff85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans l'embolie amniotique, l'héparinothérapie est habituellement utilisée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "d19f9de1a0ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les purpura fulminans post-infectieux, l'héparinothérapie est souvent utilisée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "d8875e42b432",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

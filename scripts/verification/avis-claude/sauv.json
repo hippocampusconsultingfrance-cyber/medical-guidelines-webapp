@@ -1,0 +1,331 @@
+{
+ "cle": "sauv",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "db1287743e06",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Reçu et accepté le 5 novembre 2003",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "234167f0450a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "a870b2151f88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bien que les urgences vitales ne constituent qu'une minorité des cas dans un service d'urgence",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "9d7df394fcb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces recommandations excluent la prise en charge des urgences pédiatriques",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "3bc650affef1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "3856a61a933d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la SAUV ne correspond ni à un lit de réanimation ni à un lieu d'hospitalisation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "c1d98d0ec7be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La SAUV ne se substitue pas à ces structures et ces structures ne se substituent pas à la SAUV.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "ba81d4f16289",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prise en charge des urgences internes de l'établissement dans la SAUV doit rester exceptionnelle.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "094c4b0328bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La SAUV doit être située de préférence dans l'enceinte du service des urgences, sinon à proximité immédiate.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "c3479076620b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une signalétique spécifique de la SAUV doit être mise en place dès l'arrivée au service des urgences.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "7bc8f341f744",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le nombre d'emplacements dans la SAUV doit être adapté à son activité",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "0e00921c6aea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une SAUV ne doit pas avoir une surface inférieure à 25 m2.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "a86034165cf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Deux niveaux d'équipement minimum sont recommandés",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u14",
+   "empreinte": "03f1af5fa183",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un appareil permettant la mesure du débit expiratoire de pointe (PP)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u15",
+   "empreinte": "01f845089af7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un aimant pour contrôle des dispositifs implantés (PS)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u16",
+   "empreinte": "f862d17a9886",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les antibiotiques, les catécholamines, les thrombolytiques, et les principaux antidotes.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "5918c0fff3c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un matelas à dépression et/ou un dispositif de transfert",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "2bf25d3a7edd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un dispositif de drainage urinaire, y compris un dispositif de drainage sus-pubien (PP)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "170f35a4d4db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au moins un ventilateur dit de réanimation, permettant plusieurs modes ventilatoires, en volume ou en pression",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "6274d8946b12",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prise en charge immédiate, continue, et coordonnée du patient pour la remise en disponibilité rapide de la SAUV.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "7cdf9325367f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'équipe du Smur ne quitte le patient que lorsque l'ensemble des transmissions est effectué",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "e06cbc9fd510",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "64a28403414d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'anesthésiste-réanimateur et/ou le réanimateur doit venir renforcer la SAUV à la demande de l'équipe de la SAUV.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "6feb9538b95b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La SAUV doit disposer des listes actualisées de gardes et d'astreintes de l'ensemble des spécialistes de l'établissement",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "49c96fa6c931",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une biologie délocalisée est mise en place s'il n'y a pas d'alternative dans l'établissement.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "e60f2bbb935f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les patients présents dans la SAUV doivent être acceptés en priorité et sans délai",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "3f4ad61143db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protocole d'accord validé par les instances médicoadministratives de l'établissement.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "7fc6a2ff127b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un médecin nominativement identifié est en permanence mobilisable",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "8d5970394838",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tout personnel affecté à la SAUV doit avoir bénéficié d'une formation d'adaptation à l'emploi.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "f3b5a42ddcf1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au minimum d'un médecin, d'un(e) infirmier(e), et d'un(e) aide-soignant(e) ou agent hospitalier par SAUV",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "f5e98c451b7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'identification d'un chef d'équipe lorsqu'un évènement survient.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "198cd6029dc2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "77043d3ed162",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contenu des informations à transmettre avec le patient",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u34",
+   "empreinte": "a034a34a88b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le matériel est vérifié après chaque utilisation et au moins une fois par jour.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "b9b6d6b6f1a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "devenir et orientation du patient.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "3699a209d88b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,322 @@
+{
+ "cle": "tracheotomie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "44345162d64e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "élevé (Grade 1+/ ), et 6 un niveau de preuve faible (Grade 2+/ ).",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "64202e2390b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "équipes, aussi bien en termes de fréquence (de 5 à 54 %)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "0390e55c4276",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "970d3abbed1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 - Les experts suggèrent que la trachéotomie soit proposée en cas",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "433ab6488397",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2 - Les experts suggèrent que l'indication de la trachéotomie chez",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "2444300ce078",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 - Il ne faut pas réaliser de trachéotomie en réanimation avant le",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "b31beab0960d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.4 - Les experts suggèrent que la trachéotomie (percutanée ou",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "12c9009abae1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "troubles de l'hémostase non corrigés (plaquettes < 50 000/mm et/ ou INR > 1,5 et/ou TCA > 2 fois la normale)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "a9964f319df1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mécanique est prolongé : sevrage non effectif plus de 7 jours après la",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "551d5371a60e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 - Il faut privilégier la trachéotomie percutanée comme la méthode",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u11",
+   "empreinte": "d670a0622080",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 - Les experts suggèrent qu'une concertation médicochirurgicale",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "7840508d15ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 - Il faut probablement privilégier la technique de trachéotomie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u13",
+   "empreinte": "3c0b38d88cde",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "026336a12a70",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 - Il faut probablement réaliser une fibroscopie avant et pendant la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u15",
+   "empreinte": "a0a0f4aced2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 - Il ne faut probablement pas recourir à la pose d'un masque",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "95d7d47f7a9e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 - Il faut probablement réaliser une échographie cervicale lors de la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u17",
+   "empreinte": "265d801ea4a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.4 - Les experts suggèrent de ne pas prescrire d'antibioprophylaxie",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "7c453e3757f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.5 - Les experts suggèrent qu'une procédure standardisée soit mise",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "e5ce9253ef07",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "47 % des complications précoces liées à la trachéotomie (IC 95 % : 23–64).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u20",
+   "empreinte": "fbd74ac039d3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 médecins (1 opérateur + 1 pour la fibroscopie)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "91d7317aa6e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.1 - Les experts suggèrent que les services de réanimation disposent",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "be8d39a30e66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.2 - Les experts suggèrent de réaliser une humidification des voies",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "3e0694b06567",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R4.3 - Les experts suggèrent de ne pas changer la canule de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "18565f13ca72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est proposé de surveiller la pression du ballonnet sans dépasser 30 cmH2O",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "07a969430198",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "située 4 à 6 cm de la carène en pleine lumière trachéale, de la",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u26",
+   "empreinte": "c505ce987f59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pansement refait au sérum physiologique 3 fois par 24 heures",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "310f0ebfc959",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contrôle de la cicatrice tous les jours",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "39b42997dcbd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.1 - Les experts suggèrent qu'un protocole multidisciplinaire de",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u29",
+   "empreinte": "41f8567b7139",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.2 - Il faut probablement envisager de dégonfler le ballonnet de la",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u30",
+   "empreinte": "d5dd6857b9b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R5.3 - Il faut probablement réaliser un examen pharyngolaryngé lors ou",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u31",
+   "empreinte": "0ea0dc85c205",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le taux de recanulation était de 1,9 %.",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u32",
+   "empreinte": "c93e152f9e72",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aucune anesthésie afin de ne pas générer de troubles de déglutition",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u33",
+   "empreinte": "78ec1900828e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Protocole R5.1 (p. 518, schéma) : 5 étapes séquentielles (sécrétions salivaires, déglutition spontanée < 1/min, sensibilité laryngée/toux, bolus consistant « purée », bolus liquide) ; « Si OUI, pas de décanulation » ; si NON à chaque étape → décanulation.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "06b1a553a3cf",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "279406571819",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

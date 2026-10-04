@@ -1,0 +1,574 @@
+{
+ "cle": "chir_ambu_urologie_2013",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "f1d9b8040e70",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "6802d9d2e358",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1 – Il est recommandé d’appliquer les recommandations",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u3",
+   "empreinte": "4c609530bd9a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 – Il est recommandé de privilégier le mode d’hospitalisation ambulatoire lorsque les conditions d’éligibilité du",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u4",
+   "empreinte": "b7431e29c760",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3 – Il est recommandé d’identiÀer dans l’entourage du",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u5",
+   "empreinte": "c8adcc771bac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4 – Il est recommandé de vériÀer la conformité des conditions requises pour la pratique de l’ambulatoire à toutes les",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u6",
+   "empreinte": "17919fd7f01a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5 – Une déÀcience physique ou intellectuelle n’interdit",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u7",
+   "empreinte": "06a31e11e1fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6 – Les enfants sont d’excellents candidats à la prise en charge",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u8",
+   "empreinte": "9a70a6319cfe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7 – Le grand âge en soi est une bonne indication à la prise",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u9",
+   "empreinte": "dc659c2d67a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8 – La consultation de programmation opératoire est un",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u10",
+   "empreinte": "9e1c7803eacd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "9 – Il est recommandé au cours des différentes étapes de",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u11",
+   "empreinte": "6ecd2e358e95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10 – Il est recommandé que l’équipe de l’UCA soit sensibilisée, expérimentée et formée à la pratique de l’ambulatoire",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u12",
+   "empreinte": "8bb6f76f8572",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "11 – Il est recommandé de mettre en place au sein de l’UCA",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u13",
+   "empreinte": "2307f81a7ca1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12 – Il est recommandé que le médecin anesthésiste",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u14",
+   "empreinte": "8efb45426506",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13 – Il est recommandé qu’à l’issue de la consultation",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u15",
+   "empreinte": "2888d663d558",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "14 – Il est recommandé d’hydrater par voie orale les patients",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u16",
+   "empreinte": "42c98a978039",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "15 – Il est recommandé de déterminer pour chaque",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u17",
+   "empreinte": "bfd8aec5c8cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16 – Il est recommandé d’informer le médecin traitant",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u18",
+   "empreinte": "2ea001c67c4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "17 – Il est recommandé que le médecin traitant échange",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u19",
+   "empreinte": "ebd5b2b19173",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "18 – Il est recommandé d’expliquer au patient les",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u20",
+   "empreinte": "d4043df49907",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "19 – Selon les textes réglementaires 5, les conditions",
+   "explication": "",
+   "page": 65
+  },
+  {
+   "id": "u21",
+   "empreinte": "506b52462b1e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "20 – Il est recommandé lors des consultations préopératoires d’organiser par anticipation les mesures à",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u22",
+   "empreinte": "3fc5a035dba4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "21 – Il est recommandé de communiquer au patient (et éventuellement aux personnes ressources6 dans le respect du secret",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u23",
+   "empreinte": "b0885b4d5462",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "22 – Il est recommandé de formaliser la procédure de",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u24",
+   "empreinte": "ebb3847831c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "23 – Il est recommandé d’informer le patient (et éventuellement les personnes ressources) des signes qui feraient",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u25",
+   "empreinte": "54cf4c754189",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "faf57dab019b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 – Il est recommandé d’apporter une attention particulière à l’évaluation préopératoire du sujet âgé (antécédents,",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u27",
+   "empreinte": "7629c29f331a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "25 – Il est recommandé de surveiller particulièrement les",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u28",
+   "empreinte": "52f7f392d524",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "26 – Il est recommandé d’évaluer le risque de rétention",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u29",
+   "empreinte": "56575da4e184",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "27 – Il est recommandé de maintenir un traitement alphabloquant en périopératoire sauf contre-indication (chirurgie",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u30",
+   "empreinte": "36a5a929a41c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "28 – Il est recommandé de ne pas limiter les apports",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u31",
+   "empreinte": "617e18b8594c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "29 – Il est recommandé d’obtenir une miction avant toute",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u32",
+   "empreinte": "bc3bfc552d20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "30 – Il est recommandé de cathétériser la vessie en début",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u33",
+   "empreinte": "bf032498c280",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "31 – L’anesthésie générale présente moins de risques",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u34",
+   "empreinte": "3b7e85149c7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "32 – Il est recommandé de limiter l’utilisation de",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u35",
+   "empreinte": "75c7cb3981dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "33 – Chez un patient à faible risque rétentionnel, il n’est",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u36",
+   "empreinte": "c5df6946b2b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "34 – Chez un patient à risque rétentionnel élevé, il est",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u37",
+   "empreinte": "347f45de04fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "35 – En chirurgie ambulatoire, il est possible de laisser",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u38",
+   "empreinte": "be1e5c418405",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "36 – En l’absence de sonde à demeure, il est recommandé",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u39",
+   "empreinte": "6f717e9c0198",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "37 – L’interprétation de l’ECBU relève de l’urologue. Le",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u40",
+   "empreinte": "d03e574bf424",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "38 – Si un ECBU préopératoire est nécessaire à la chirurgie, il est recommandé de vériÀer son résultat et la conduite",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u41",
+   "empreinte": "298e2a94f67b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "39 – En présence d’une colonisation sur sonde, il est",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u42",
+   "empreinte": "ba1c2e0f0f57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "40 – En cas de colonisation urinaire non traitée, il est",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u43",
+   "empreinte": "6715b09eabee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "41 – L’antibioprophylaxie doit être adaptée au site opératoire et à l’intervention conformément aux recommandations",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u44",
+   "empreinte": "2463b7b9b86d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "42 – En cas d’antibiothérapie préopératoire pour une",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u45",
+   "empreinte": "b28094ac36b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "43 – Il est recommandé de favoriser l’arrêt du tabagisme",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u46",
+   "empreinte": "efc15504e98b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "44 – Il est recommandé de tenir compte de l’état nutritionnel avant l’acte chirurgical. (AE)",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u47",
+   "empreinte": "b1e9f12b60f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "45 – Concernant la préparation cutanée, il est recommandé que la douche antiseptique soit réalisée au plus près",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u48",
+   "empreinte": "7408627266d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "46 – Lorsqu’un drainage du site opératoire est indispensable, il est recommandé de privilégier un drainage aspiratif",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u49",
+   "empreinte": "56ff1a4daefd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "70428ea71545",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "47 – Il est recommandé de ne pas recourir à une endoprothèse urétérale de manière systématique après une",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u51",
+   "empreinte": "87352c530921",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "48 – Il est recommandé de ne pas recourir de façon",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u52",
+   "empreinte": "6e9d9d2a0688",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "49 – Il est recommandé de donner au patient en préopératoire une information sur la douleur postopératoire et sa",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u53",
+   "empreinte": "796a8c0c6d91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "50 – Il est souhaitable de dépister les terrains d’hyperalgésie aÀn de proposer une prise en charge spéciÀque de",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u54",
+   "empreinte": "9e25ac5bb0f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "51 – Il est recommandé de diagnostiquer, d’évaluer (EVA)",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u55",
+   "empreinte": "47ab8fd00a76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "52 – Il est recommandé de prendre en charge efÀcacement",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u56",
+   "empreinte": "bb7029c8b72e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "53 – Il est recommandé de privilégier l’analgésie multimodale notamment par l’utilisation d’anesthésiques locaux",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u57",
+   "empreinte": "f0ce6799f9f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "54 – La gestion du risque hémorragique en chirurgie ambulatoire doit être une préoccupation majeure des différents",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u58",
+   "empreinte": "970e444a6e99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "55 – Une gestion périopératoire clairement déÀnie,",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u59",
+   "empreinte": "927dc3596c16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "56 – Il est recommandé qu’un échange d’information",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u60",
+   "empreinte": "e1c2048e2cb7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "57 – Il est recommandé d’organiser entre le médecin",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u61",
+   "empreinte": "54d863c09455",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "58 – Il est recommandé de vériÀer lors de l’appel de la",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u62",
+   "empreinte": "fce76f2a8489",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "59 – Il est recommandé de prendre en compte une anémie",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u63",
+   "empreinte": "0a084ca320af",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

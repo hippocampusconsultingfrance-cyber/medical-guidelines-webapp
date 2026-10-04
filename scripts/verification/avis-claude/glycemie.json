@@ -1,0 +1,781 @@
+{
+ "cle": "glycemie",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "024515f6408b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandations formalisées d’experts. Contrôle de la glycémie en réanimation et en anesthésie",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "fd5452b57719",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "physiopathologie ne pouvaient pas faire l’objet de recommandations avec de vraies cotations, mais qu’ils seraient résumés sous forme de points forts élaborés par les experts. Les six",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "2595f597cc22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sous forme de points forts élaborés par les experts. Les six derniers champs ont conduit à l’élaboration de 74 recommandations, dont 73 ont fait l’objet d’un accord (fort ou faible) et",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "35f727e9bf36",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "physiopathologie ne pouvaient pas faire l’objet de recommandations avec de vraies cotations, mais qu’ils seraient résumés sous forme de points forts élaborés par les experts. Les six",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "f010aae463a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "métabolites vers d’autres voies : voie non oxydative de production de lactate, shunt des pentoses, voie des hexosamines, voie des polyols. Les mécanismes de ces anomalies",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "91392f9eb11a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En revanche, le glucose devient le substrat le plus rentable en situation d’hypoxie puisqu’il consomme un litre d’O2 pour",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "e18f0daf7323",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de réanimation, il faut probablement un seuil glycémique inférieur à 3,3 mmol/l (0,6 g/l) pour définir une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "a9543903d306",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de réanimation, il faut probablement un seuil glycémique inférieur à 3,3 mmol/l (0,6 g/l) pour définir une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "2fa8a1349afd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Par analogie avec le patient diabétique, il est probable que le caractère prolongé d’une hypoglycémie se définisse pour une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "c5b9cf70c2f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible que l’application de stratégies publiées de contrôle glycémique strict expose à une augmentation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "34f829a24cc7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible que l’application de stratégies publiées de contrôle glycémique strict expose à une augmentation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "cde1a3d73e7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une hypoglycémie sévère et prolongée peut induire des lésions cérébrales irréversibles (NGP fort) (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "39e2e1efdebf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients de réanimation ne pouvant pas s’exprimer, il ne faut pas se baser uniquement sur les signes cliniques",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "b66ca4006edb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit associée à un risque de surmortalité, sans lien démontré de causalité entre les deux (NGP modéré) (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "6db7b4528d17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible que les lésions neurologiques observées au décours des hypoglycémies soient en partie liées à la recharge",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "5a4c7945693b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le cadre d’une stratégie de contrôle glycémique strict, il faut réaliser une surveillance rapprochée des mesures de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "96f9da503431",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypoglycémie, l’utilisation d’échantillons artériels ou veineux est plus appropriée que celle réalisée sur l’échantillon capillaire",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "e07c40d41fbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement exercer un contrôle du niveau glycémique avec une cible inférieur à 6,1 mmol/l (1,1 g/l) chez",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "15f9bac2081e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut exercer un contrôle strict de la glycémie (< 6,1 mmol/ l ou 1,1 g/l) chez les patients adultes chirurgicaux en",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "72df85ad7888",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut maintenir une glycémie inférieure à 6,1 mmol/l (1,1 g/l) chez les patients de chirurgie cardiaque en réanimation (NGP",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "887281a3a238",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’est pas raisonnable de recommander un contrôle strict de la glycémie en urgence (NGP faible) (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "acf8c341853c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En réanimation, il faut probablement éviter les variations glycémiques trop importantes (NGP faible) (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u23",
+   "empreinte": "219c149a0a75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors de l’insuline intraveineuse, il n’est pas possible d’utiliser d’autres moyens pour le contrôle glycémique en",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u24",
+   "empreinte": "6bcc550aaf47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La perfusion de glucose-insuline-potassium (GIK), n’a probablement pas d’effet bénéfique si le niveau glycémique",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u25",
+   "empreinte": "ab48001f96f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "périopératoire, peut apparaître dans les premières heures de l’intervention et se prolonger au moins deux à trois semaines",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "3713b7395fde",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "induite par l’insulinorésistance en apportant de l’insuline exogène durant cette période (NGP fort) (accord faible).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "b3399bb18b38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est possible de diminuer la durée de séjour postopératoire en limitant l’insulinorésistance périopératoire avec maintien",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "cbbe1ee01252",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut lutter contre l’hypothermie, les pertes sanguines, l’agression chirurgicale intense qui accentuent l’insulinorésistance périopératoire (NGP modéré) (accord fort).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "24386b488c7b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’agression chirurgicale intense qui accentuent l’insulinorésistance périopératoire (NGP modéré) (accord fort). Il faut favoriser la réhabilitation postopératoire précoce de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "aae6820e60e9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aggrave l’insulinorésistance périopératoire. Il faut le limiter, quand cela est possible, en autorisant les liquides clairs jusqu’à",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "7b0ce493cabd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préopératoire (100 g la veille et 50 g trois heures avant l’intervention) peut être recommandé afin de limiter l’insulinorésistance périopératoire (NGP modéré) (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "b5324fcd371f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En dehors des patients diabétiques et des nourrissons, il ne faut probablement pas administrer d’hydrates de carbone en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u33",
+   "empreinte": "1d42bf1160c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au cours de la chirurgie à risque (cardiovasculaire, obèse, âgé, chirurgie de longue durée ou urgente), il faut probablement",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u34",
+   "empreinte": "4f4af3dcd040",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’insulinothérapie peropératoire doit être intraveineuse continue et impose un contrôle glycémique toutes les",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "0b3b995598a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut adapter les valeurs cibles de glycémie périopératoire aux ressources disponibles et à l’expérience de l’unité en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "007049b1031a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement mesurer la glycémie peropératoire au cours des interventions à risque (NGP faible) (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u37",
+   "empreinte": "91ed79a24f40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à risque, il faut réaliser une mesure de glycémie durant le séjour en salle de surveillance postinterventionnelle (SSPI).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u38",
+   "empreinte": "ad1ddc3f86f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à risque, il faut réaliser une mesure de glycémie durant le séjour en salle de surveillance postinterventionnelle (SSPI).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u39",
+   "empreinte": "3492a9d00af6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "6. CHAMP 8 – RÉALISATION PRATIQUE DU CONTRÔLE GLYCÉMIQUE",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u40",
+   "empreinte": "598ed7881657",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’insuline intraveineuse à la seringue électrique doit probablement être interrompue lorsque le patient a repris",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "575aa35c3971",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Durant la phase aiguë, la quantité maximale de glucose intraveineux ne doit pas dépasser 100 g/24 h ; la quantité totale",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "44488f2db438",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Durant la phase aiguë, chez tous les patients et y compris chez le cérébrolésé, il ne faut probablement pas proscrire",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u43",
+   "empreinte": "4a14f09bde67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la nutrition entérale et du débit de perfusion d’insuline puisse améliorer l’observance de la cible glycémique (NGP",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "5ce5952adb6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "compte les apports d’hydrate de carbone pour la détermination du débit d’insuline (NGP modéré) (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u45",
+   "empreinte": "708f91aa0253",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "4f484e7b7c98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut considérer que la glycémie mesurée au laboratoire est actuellement la valeur de référence (NGP fort) (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "40b1ab299278",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement privilégier dans l’ordre, le prélèvement artériel, puis veineux, puis capillaire (NGP fort) (accord",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "dda840589be4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Du fait des différences de valeur entre sang total et plasma, il faut connaître les caractéristiques précises du",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "76c1ee2fe302",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Du fait de nombreuses interférences physicochimiques endogènes et exogènes, il faut connaître les caractéristiques",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "aa95ea506340",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "308671b26335",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au sein d’une équipe, il faut choisir le même protocole formalisé de contrôle glycémique (NGP fort) (accord fort).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u52",
+   "empreinte": "c0a2cf44114b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout protocole de contrôle glycémique strict doit inclure au minimum des recommandations relatives à l’utilisation d’une",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u53",
+   "empreinte": "69bf633c981b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout protocole de contrôle glycémique strict doit inclure au minimum des procédures de correction et de surveillance des",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u54",
+   "empreinte": "212a76dc224c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement privilégier l’utilisation d’une voie permettant d’assurer un débit constant pour administrer",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u55",
+   "empreinte": "84475916d391",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parmi les différents protocoles de contrôle glycémique strict existants, il est impossible d’en privilégier un par rapport aux",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u56",
+   "empreinte": "a65c0fd318bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut abandonner les protocoles de contrôle glycémique statiques qui déterminent le débit d’insuline uniquement",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u57",
+   "empreinte": "b4d042591d18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tout protocole de contrôle glycémique devrait prendre en compte les apports d’hydrate de carbone pour la détermination",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u58",
+   "empreinte": "ab8650c389cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un protocole de contrôle glycémique strict basé sur plus de deux paramètres d’entrée et de sortie devrait être géré par un",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u59",
+   "empreinte": "c15554bf6881",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’augmentation de charge de travail paramédical doit être prise en compte lors de la mise en œuvre d’un protocole de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u60",
+   "empreinte": "924dd8d36881",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut prévoir un temps de formation du personnel soignant pour mettre en route un protocole de contrôle glycémique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u61",
+   "empreinte": "ffb76c3408bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "formation, performance du contrôle, risque d’hypoglycémie sévère, taux moyen d’erreur, charge en soins infirmiers (NGP",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u62",
+   "empreinte": "a3ea5d5ba212",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suivants : pourcentage de temps passé dans la cible glycémique et au dessus de cette cible, index d’hyperglycémie, variabilité de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u63",
+   "empreinte": "35f54407ffd6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La glycémie doit être surveillée régulièrement chez tout patient diabétique admis en réanimation (NGP fort) (accord",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u64",
+   "empreinte": "01ab3b86ab38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez le patient diabétique admis en réanimation, l’impact d’un contrôle strict de la glycémie (4,4–6,1 mmol/l ou 0,8–1,1 g/l)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u65",
+   "empreinte": "edadaba1f5be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est indispensable de proposer un traitement de l’hyperglycémie pour tout patient diabétique admis en réanimation dont la glycémie est supérieure à 10 mmol/l (1,8 g/l). Entre 8,3",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u66",
+   "empreinte": "040e8414c8fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "diabétiques admis en réanimation n’est pas formellement défini. Néanmoins, des valeurs de glycémie inférieures à",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u67",
+   "empreinte": "6256523825e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En peropératoire, il faut probablement maintenir un niveau glycémique inférieur à 8,3 mmol/l (1,5 g/l) chez les patients",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u68",
+   "empreinte": "37325bf93264",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’admission postopératoire en réanimation. Il ne faut probablement pas modifier l’insulinothérapie périopératoire du patient diabétique bien équilibré bénéficiant d’une chirurgie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u69",
+   "empreinte": "fc9ed4829d97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antidiabétiques oraux, la reprise orale du traitement doit être réévaluée après la phase aiguë de réanimation, en respectant les",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u70",
+   "empreinte": "a6d8a42073e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les patients diabétiques traités antérieurement par insuline, il est impératif de ne jamais interrompre ce traitement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u71",
+   "empreinte": "f2666f864585",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les patients admis en réanimation avec une hyperglycémie persistante, mais sans notion de diabète, devraient bénéficier",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u72",
+   "empreinte": "39e62e660afc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "À la sortie de la réanimation et avant la sortie de l’hôpital, une prise en charge optimale du contrôle glycémique doit",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u73",
+   "empreinte": "ae6ada6dcade",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le risque d’hypoglycémie est d’autant plus important que l’enfant est jeune et que la période de jeûne se prolonge (NGP",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u74",
+   "empreinte": "5d285a13286d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut rechercher les signes d’alerte d’hypoglycémie, difficiles à détecter chez le jeune enfant incapable d’exprimer une",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u75",
+   "empreinte": "bf9e4a8a66b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La survenue d’hypoglycémies sévères et récidivantes chez le jeune enfant peut altérer définitivement le développement",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u76",
+   "empreinte": "1f9cf4b7a151",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "période périopératoire repose sur l’administration intraveineuse d’un bolus de 2 à 5 mg/kg de soluté glucosé à 10 % (0,2 à 0,5 g/kg), renouvelable selon le contrôle effectué 30 minutes",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u77",
+   "empreinte": "fc7ab699dacf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les besoins de base en glucose sont deux à trois fois plus importants chez le nourrisson (5–8 mg/kg par minute) que chez",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u78",
+   "empreinte": "0548d3a97ab4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au moins une fois par jour pendant la phase aiguë en réanimation chez l’enfant, même en l’absence d’insulinothérapie (NGP fort) (accord fort).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u79",
+   "empreinte": "777ec85668d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant, une alimentation parentérale ne doit pas être brutalement interrompue (NGP faible) (accord faible).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u80",
+   "empreinte": "b01a7ff95aca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pédiatrie une stratégie de contrôle glycémique strict par insulinothérapie en réanimation ou en période périopératoire",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u81",
+   "empreinte": "4ee585017b8a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "heures) ou de chirurgie longue (plus d’une heure), une mesure de la glycémie peropératoire doit être faite (NGP faible) (accord",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u82",
+   "empreinte": "08d7bea8b45e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les apports hydroélectrolytiques du nourrisson au cours d’une chirurgie longue doivent être basés sur la perfusion de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u83",
+   "empreinte": "86ecd02d0dba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut jamais prescrire de solutions glucosés sans ions chez le nourrisson et l’enfant, quel que soit l’âge, en raison du",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u84",
+   "empreinte": "6061ecffaf2f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En situation aiguë, les posologies d’insuline à action rapide en perfusion intraveineuse varient de 0,02 à 0,15 UI/kg par heure.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u85",
+   "empreinte": "4998bf0d21d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’acidocétose diabétique doit être prise en charge en tenant compte d’un risque particulièrement important de survenue",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u86",
+   "empreinte": "e7cc20a54d91",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
