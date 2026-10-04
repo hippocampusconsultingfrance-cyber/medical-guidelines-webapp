@@ -1,0 +1,835 @@
+{
+ "cle": "asthme_aigu_grave",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "e0e20f86f681",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "consensus. Les particularités pédiatriques ont été incluses dans cette révision. Il n’y a pas de score validé permettant de prédire la gravité d’une crise d’asthme dès l’admission. Les bêta-2 mimétiques administrés par voie inhalée",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "dc5fc0e6943c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "certains points soulignés par le jury de l’époque étaient restés sans réponse. Depuis cette date, pour la seule",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "59635606d160",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la mesure où sa définition elle-même n’est pas univoque. À partir des données de la littérature, on peut évaluer entre 50 000 et 100 000 le nombre d’hospitalisations annuelles en France pour exacerbations aiguës",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "b1d026abd46a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il reste fondamental devant toute crise d’asthme d’en reconnaître la gravité. Cette évaluation est détaillée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "fc2396d656f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "E. L’Her Tableau I. Critères de gravité d’un AAG d’après la conférence de consensus de 1988, adaptée à la pédiatrie.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "17a16af44d30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• troubles de la conscience, pause respiratoire, collapsus, silence auscultatoire ; Chez l’enfant : une augmentation de la fréquence respiratoire > 50 % pour l’âge",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "9686245c2532",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant : une augmentation de la fréquence respiratoire > 50 % pour l’âge – Facteurs liés au terrain : asthme ancien, instable, sous traité, déjà hospitalisé pour une crise grave ; enfant très jeune (< 4 ans) et adolescents ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "9f464559d19f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Facteurs liés aux faits récents : augmentation de la fréquence et de la sévérité des crises, moindre sensibilité aux thérapeutiques usuelles, épisodes intercritiques de moins en moins « asymptomatiques ». Ces faits constituent un syndrome de menace qui, reconnu à temps,",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "2ac17a744475",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• crise ressentie par le malade comme inhabituelle par son évolution rapide et par la présence de signes cliniques de gravité ; • difficulté à parler, à tousser ; orthopnée ; agitation ; sueurs ; cyanose ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "958927f0d504",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• fréquence respiratoire. > 30/min chez l’adulte et l’enfant de plus de 5 ans ;",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "a3130687ffc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 120 battements/min chez l’adulte ; chez l’enfant, une tachycardie, à condition qu’elle reste inférieure à 200 c/min n’est pas toujours un signe de gravité",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "51c771161eb3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez l’enfant, une tachycardie, à condition qu’elle reste inférieure à 200 c/min n’est pas toujours un signe de gravité • tension artérielle chez l’enfant* inférieures à :",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "72be21237e0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Le débit expiratoire de pointe (DEP) : chez l’adulte toute valeur < 150 L/min témoigne d’une crise grave. chez l’enfant, un DEP < 50 % de la valeur prédite ou habituelle témoigne",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "3fb2df1d1bb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’une crise aiguë sevère et un DEP < 33 % d’une crise grave • La constatation d’une normo ou d’une hypercapnie est un signe de gravité indiscutable",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "63e0f628b768",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• La constatation d’une normo ou d’une hypercapnie est un signe de gravité indiscutable * Valeurs chez le garçon ; valeur moyenne – 2 DS.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "ecd4b144ba13",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’asthme aiguë. Son intérêt réel est peu probable, compte-tenu de nombreuses difficultés et erreurs potentielles de mesure sur le terrain et son recueil peut être",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u17",
+   "empreinte": "448a61518b64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une hospitalisation pour crise d’asthme durant l’année précédente ; un antécédent d’intubation ; une corticothérapie dans les trois mois précédents pour crise",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u18",
+   "empreinte": "96e67fbcf645",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précédente ; un antécédent d’intubation ; une corticothérapie dans les trois mois précédents pour crise d’asthme. Le tabagisme (b) et l’abus de sédatifs, hypnotiques, stupéfiants (c) peuvent également être considérés comme des facteurs de risque d’AAG.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u19",
+   "empreinte": "20f31010ebfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précédente ; un antécédent d’intubation ; une corticothérapie dans les trois mois précédents pour crise d’asthme. Le tabagisme (b) et l’abus de sédatifs, hypnotiques, stupéfiants (c) peuvent également être considérés comme des facteurs de risque d’AAG.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u20",
+   "empreinte": "af26eed3808e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "n’existe toujours pas de score clinique validé permettant de prédire la gravité d’une crise d’asthme dès l’admission. Le suivi évolutif du débit expiratoire de pointe",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u21",
+   "empreinte": "a0657c2e3660",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de prédire la gravité d’une crise d’asthme dès l’admission. Le suivi évolutif du débit expiratoire de pointe (DEP) mesuré 30 min à 2 h après un traitement initial",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "6fc7d330cb6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant : en dehors des particularités de l’examen clinique (tableau I), les critères de gravité, en particulier l’importance du caractère évolutif du DEP",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "ef467bac831a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "observés chez l’adulte. Chez l’enfant de plus de six ans, l’utilisation du DEP est indispensable (2) ; elle est",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "a3c53438068c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "possible chez plus de la moitié des enfants âgés de cinq à neuf ans et chez les 3/4 des enfants de plus de dix ans",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "3767a88c2ef0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les bêta-2 mimétiques sont les bronchodilatateurs les plus puissants et les plus rapides. Ils ont un index",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u26",
+   "empreinte": "e84b8560cec9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bêta-2 mimétiques, tant pour la forme inhalée que parentérale (a). Les effets systémiques semblent modérés en cas d’utilisation de la voie nébulisée (b), pour des",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "823635021060",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les bêta-2 mimétiques d’action prolongée (formotérol, salmétérol) ainsi que les formes orales n’ont pas leur",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "c2f7c16cc5b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "voie intraveineuse est établie, en terme de rapport efficacité/tolérance, dans le traitement initial de l’AAG",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "92736deee67c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "coopération du patient. Elle peut être utilisée même en cas d’obstruction bronchique majeure ou de troubles de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "49d7ee38875e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "posologie de trois fois 5 mg de salbutamol ou de terbutaline, durant la première heure de prise en charge (2-a), puis une nébulisation de 5 mg toutes les 3 h ou 2,5 mg/h",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u31",
+   "empreinte": "1c38c48fa676",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "posologie de trois fois 5 mg de salbutamol ou de terbutaline, durant la première heure de prise en charge (2-a), puis une nébulisation de 5 mg toutes les 3 h ou 2,5 mg/h",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u32",
+   "empreinte": "b41046439570",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "exister de différence significative entre nébulisation continue et intermittente, à posologie cumulée identique (a). L’utilisation du mélange gazeux héliumoxygène comme gaz vecteur ne semble pas supérieure à",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u33",
+   "empreinte": "ef3cdc1d430b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(dose minimale : 0,5 à 1,5 mg). Des doses de 2,5 mg (enfant < 20 kg) et de 5 mg (enfant > 20 kg) sont communément utilisées. La nébulisation continue est pro-",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u34",
+   "empreinte": "d958008f1a9f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ils n’ont pas leur place dans cette situation en raison d’un maniement difficile et d’une efficacité limitée par",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "4d176e285887",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessité d’une aide pour tenir la chambre chez les patients les plus graves est un obstacle éventuel à leur",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "b2dfcd14061a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant : L’administration des bronchodilatateurs par chambre d’inhalation avec aérosols doseurs sont à proposer en première intention (1-a). Les posologies préconisées sont de cinq à dix bouffées de 100 µg",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u37",
+   "empreinte": "5bd2a7c2bc83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à renouveler. Une utilisation adéquate des dispositifs disponibles et la coopération de l’enfant sont des conditions nécessaires à leur utilisation (c).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u38",
+   "empreinte": "5698758ed22a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La place de l’injection sous-cutanée semble marginale dans la prise en charge des AAG par les équipes médicalisées. Cette voie pourrait être utile en médecine de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u39",
+   "empreinte": "94ef99c1ae51",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau II. Agonistes bêta-2 mimétiques utilisables dans l’asthme aigu grave.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u40",
+   "empreinte": "4d131327abef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Salbutamol – En solution injectable :",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "17b8f87af14b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En solution pour aérosoliseur : • Ventoline 0.5%t 50 mg dans un flacon de 10 mL",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "9061598f86e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En aérosol doseur (pour utilisation dans une chambre d’inhalation) • Ventolinet 200 bouffées à 100µg",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u43",
+   "empreinte": "d1028b5e6dc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En aérosol-poudre : • Asmasal clickhalert 200 bouffées à 90 µg",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "298efe3a4ad6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Terbutaline – En solution injectable (par voie sc ou iv) :",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u45",
+   "empreinte": "56c24f40cdc0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En solution pour aérosoliseur : • Bricanyl unidoset : 5 mg dans une unidose de 2,5 ml",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u46",
+   "empreinte": "c5a6ba477323",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En aérosol doseur (pour utilisation dans une chambre d’inhalation) • Ventolinet 200 bouffées à 100µg",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "c60d0167123d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En aérosol-poudre : • Bricanyl turbuhalert : 200 bouffées à 500 µg",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u48",
+   "empreinte": "08bc8a335d09",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Adrénaline – En solution injectable :",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u49",
+   "empreinte": "1b6145e472c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Autres molécules également disponibles • Fénotérol (Bérotect) aérosol doseur 100 µg",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u50",
+   "empreinte": "7146d5d7b13d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• Aérosol poudre : 30 doses à 100 / 40 µg – Salbutamol + ipratropium (Combiventt) : 200 bouffées à 50 /",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u51",
+   "empreinte": "666789f370a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1988. L’indication de l’oxygène (O2) est formelle, à un débit ≥ 6-8 L/min (2). L’administration se fera préférentiellement au masque à réserve. L’hypoxémie est liée",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u52",
+   "empreinte": "2b4647b77d29",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypoxémie est corrigée sans difficulté par un enrichissement en O2 du gaz inspiré. L’aggravation potentielle de l’hypercapnie n’est que théorique (c). Un monitorage de la SpO2 est indispensable, tant que persistent les",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u53",
+   "empreinte": "be1a39ce0f9d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’hypercapnie n’est que théorique (c). Un monitorage de la SpO2 est indispensable, tant que persistent les signes de gravité (3).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u54",
+   "empreinte": "dee58c2a6eae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "arguments physiopathologiques bien établis : effets antiinflammatoires, augmentation du nombre des récepteurs bêta-2 à la surface des membranes cellulaires et de leur affinité aux bêta-2 agonistes, efficacité clinique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u55",
+   "empreinte": "b0fb240d8c45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les questions laissées en suspend concernaient essentiellement la dose, la durée du traitement et, éventuellement, la voie d’administration. Les posologies élevées sont inutiles (1-a). Les posologies recommandées sont de 1 à 2 mg/kg/j d’équivalent",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u56",
+   "empreinte": "525259bdfba0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les posologies élevées sont inutiles (1-a)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u57",
+   "empreinte": "4b6d250bf9c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la voie intraveineuse reste la voie la plus utilisée, de nombreuses études tendent à prouver une équivalence",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u58",
+   "empreinte": "a260cf781075",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la voie orale (a). En l’absence de contre-indication, la voie orale peut donc être utilisée (2-a). Elle permet",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u59",
+   "empreinte": "eafa70a6e27e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas leur place chez l’adulte. Chez l’enfant, Il n’y a pas suffisamment de preuves démontrant que les corticoïdes inhalés soient aussi efficaces que les corticoïdes",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u60",
+   "empreinte": "82431c39c0f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Leur effet bronchodilatateur est moins puissant et plus progressif que celui des bêta-2 mimétiques. Il est maximal entre 30 et 90 min après l’inhalation et persiste",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u61",
+   "empreinte": "c83b023252bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas attendre de réponse clinique et fonctionnelle spectaculaire, mais il semble que les formes les plus graves répondent mieux (b). Les effets secondaires sont minimes, même à doses élevées (b).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u62",
+   "empreinte": "ef0a98943dfb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans la première heure, couplées aux nébulisations de bêta-2 mimétique (3-c). Il n’existe pas de données",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u63",
+   "empreinte": "cbadaddc3a7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou de 500 µg (> 6 ans) de bromure d’ipratropium dans la première heure, en association aux béta-2 mimétiques peuvent être proposées (1-a). Il n’existe pas de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u64",
+   "empreinte": "931855f8362a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "quelconque supériorité de l’adrénaline par rapport aux bêta-2 mimétiques, tant pour la forme inhalée que",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u65",
+   "empreinte": "eb88bbd69db1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "parentérale (a). Les effets systémiques semblent modérés en cas d’utilisation de la voie nébulisée (b), pour des posologies inférieures à 3 mg. L’effet moins prolongé",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u66",
+   "empreinte": "8436ff499012",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "graves résistantes aux traitements initiaux, l’administration d’adrénaline par voie intraveineuse continue à la seringue électrique est proposée par certaines équipes",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u67",
+   "empreinte": "f87ef6b7bf2a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation des dérivés xanthiques est injustifiée chez l’adulte compte tenu d’un index thérapeutique faible et",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u68",
+   "empreinte": "877d283e0a8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "place pour certaines équipes, en deuxième intention (3-b). Un traitement d’attaque sur une heure à la posologie de 6 à 10 mg/kg d’aminophylline et une dose",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u69",
+   "empreinte": "fc99830c85a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "crise grave (DEP < 30 % de la valeur théorique, et/ou non réponse au traitement initial bien conduit) (3-b).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u70",
+   "empreinte": "ca4ea97ac581",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’hélium est un gaz rare, dénué d’effet biologique et de propriété bronchodilatatrice. Son intérêt potentiel au",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u71",
+   "empreinte": "f919b1721e7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les antibiotiques sont à réserver aux patients présentant une infection broncho-pulmonaire patente (2-b). En",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u72",
+   "empreinte": "bacb1202470b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une infection broncho-pulmonaire patente (2-b). En dehors d’allergie vraie antérieurement connue, les bêtalactamines sont préférentiellement utilisées (1-c). Il",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u73",
+   "empreinte": "22668002813e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faut cependant évoquer la présence d’un microorganisme atypique (Mycoplasma pneumoniae) chez l’enfant âgé de plus de quatre ans.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u74",
+   "empreinte": "bf8e7f31c42c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "biologique, polypnée (3-c). La kinésithérapie n’a pas démontré d’efficacité spécifique (c). Les agents mucolytiques ne sont pas recommandés car ils peuvent diminuer les possibilités de toux et aggraver l’obstruction",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u75",
+   "empreinte": "81447c6b52e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "démontré d’efficacité spécifique (c). Les agents mucolytiques ne sont pas recommandés car ils peuvent diminuer les possibilités de toux et aggraver l’obstruction bronchique, voire même majorer le bronchospasme, en",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u76",
+   "empreinte": "45c201c48803",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "imposent le transfert en milieu hospitalier de toute crise d’asthme présentant des signes de gravité (1-b). Ces",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u77",
+   "empreinte": "456b1e1d800b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients doivent être pris en charge en préhospitalier par une équipe médicalisée, envoyée dans les plus brefs",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u78",
+   "empreinte": "ba43df5eb29b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La réponse au traitement complémentaire est évaluée trois à quatre heures plus tard. Elle est classée en trois",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u79",
+   "empreinte": "60379d491958",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’AAG. En aucun cas, un patient ayant présenté des signes cliniques de gravité ne peut être renvoyé directement à domicile.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u80",
+   "empreinte": "1c6a519f9cfd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prise en charge sera poursuivie en milieu pneumologique, afin d’optimiser la fonction respiratoire, d’initier un traitement de fond si celui ci est absent et d’entreprendre l’éducation du patient.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u81",
+   "empreinte": "e7ac016c73f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– absence de tirage ou de battement des ailes du nez ; – l’enfant en âge de parler dit clairement qu’il se sent",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u82",
+   "empreinte": "41faafba9067",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "malgré un traitement conventionnel bien conduit ou lorsque la présentation est grave d’emblée (trouble signi-",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u83",
+   "empreinte": "0983418f6155",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’arrêt circulatoire, l’intubation est réalisée en décubitus dorsal, précédée d’une préoxygénation et d’une induction en séquence rapide en position assise (2-c). L’utilisation de la kétamine comme",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u84",
+   "empreinte": "38280793e57a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation d’une sonde endotrachéale à ballonnet du plus grand diamètre possible est recommandée même",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u85",
+   "empreinte": "9b547bcfa36d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "élément de décision. Le mode volumétrique est préféré par certaines équipes à un mode en pression contrôlée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u86",
+   "empreinte": "7b27f9503e90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sédaté au préalable de façon optimale. Dans ce cas, la relation étroite entre le risque d’atteinte neuromyopathique et la dose totale de curares administrés, suggère",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u87",
+   "empreinte": "66fb86c2cc1d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "conditions techniques : aérosols doseurs avec chambre d’inhalation sur le circuit inspiratoire, nébuliseurs pneumatiques ou ultrasoniques. Les rares études comparatives plaident pour l’utilisation des dispositifs",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u88",
+   "empreinte": "bdfe4cc11458",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "difficultés de sevrage se manifestant alors que l’obstruction des voies aériennes est levée doivent faire évoquer une atteinte neuro-myopathique. Les mécanismes étiologiques de cette atteinte neurologique particulière sont",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u89",
+   "empreinte": "9099dfeab852",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’utilisation de l’Isoflurane est bien évaluée en réanimation. Son effet bronchodilatateur est important et rapide. L’utilisation des agents anesthésiants halogénés",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u90",
+   "empreinte": "cecf6581e2b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cliniques, les difficultés pratiques de sa réalisation chez un patient asthmatique, ainsi que le caractère anecdotique des études disponibles font que son utilisation au",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u91",
+   "empreinte": "e6d1d0c33774",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En conclusion, cette réactualisation permet de répondre à un bon nombre de questions restées en suspend lors de la conférence de consensus initiale. Il n’y a",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u92",
+   "empreinte": "78eaf112bdd6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
