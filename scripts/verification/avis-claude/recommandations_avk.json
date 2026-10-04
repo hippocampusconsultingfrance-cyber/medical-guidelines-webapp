@@ -1,0 +1,799 @@
+{
+ "cle": "recommandations_avk",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "506dd7a22bcf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Prise en charge des surdosages en antivitamines K, des situations à risque hémorragique et des accidents hémorragiques chez les patients traités par",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "d1fd9febffda",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’études, les recommandations sont fondées sur un accord professionnel au sein du groupe de travail réuni par la HAS, après consultation du groupe de lecture. Dans",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u3",
+   "empreinte": "b24a5bede01c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de privilégier une prise en charge ambulatoire, si le contexte médical et social le permet. L’hospitalisation est préférable s’il existe un ou plusieurs facteurs de risque hémorragique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u4",
+   "empreinte": "730a01e32d49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1. Mesures correctrices recommandées en cas de surdosage en AVK, en fonction de l’INR mesuré et de l’INR cible.",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u5",
+   "empreinte": "8ccdb62af99a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas de saut de prise pas d’apport de vitamine K",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "1f13406c52bf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas de saut de prise pas d’apport de vitamine K",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "0641176ce317",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de vitamine K par voie orale (1/2 à 1 ampoule buvable forme",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "34b35d7332c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de vitamine K par voie orale (1/2 à 1 ampoule buvable forme",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u9",
+   "empreinte": "424ae5ad2bfe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.3 A faire dans tous les cas La cause du surdosage doit être recherchée et prise en compte dans l’adaptation",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u10",
+   "empreinte": "aee06a3eb0dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessité de transfusion de culots globulaires ; localisation menaçant le pronostic vital ou fonctionnel, par exemple :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "d046fd66e517",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2 Conduite à tenir en cas d’hémorragie non grave Une prise en charge ambulatoire par le médecin traitant est recommandée si :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "b82357279924",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(durée, reprise, etc.) par les moyens usuels peut être considérée comme un critère de gravité, et est à ce titre une indication de prise en charge hospitalière pour une",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "c68fc7695075",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PPSB, dont les deux spécialités commercialisées en France en avril 2008 sont Kaskadil® et Octaplex®) sont les moyens médicamenteux les plus appropriés. Les posologies des",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "f57785ecaa60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Sauf en cas d’indisponibilité d’un CCP, il est recommandé de ne pas utiliser le plasma dans le seul but d’antagonisation des effets des AVK (grade B).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "e9f3fd9bb7d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas utiliser le facteur VII activé recombinant (eptacog alpha, disponible en avril 2008 sous le nom NovoSeven®) dans le but d’antagonisation des effets",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "64933d51cf16",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une hémorragie grave nécessite une prise en charge hospitalière. L’existence de procédures organisationnelles pluridisciplinaires améliore la rapidité et la qualité de prise",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "c6628b60c1f8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A l’admission du patient, il est recommandé de mesurer l’INR en urgence. La mise en route du traitement ne doit pas attendre le résultat de l’INR, s’il ne peut pas être obtenu",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "26f3fd3ecc11",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "037293649d18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0001 d’administrer en urgence du CCP et de la vitamine K (grade C) ;",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "86dd7d504ba7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’assurer simultanément le traitement usuel d’une éventuelle hémorragie massive (correction de l’hypovolémie, transfusion de culots globulaires si besoin, etc.)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "ffe31768e9a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l’absence d’un circuit d’approvisionnement rapide, il est recommandé qu’il existe, en accord avec la pharmacie et dans le respect de la traçabilité, une réserve de quelques",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "b9d1e3951730",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "- si l’INR contemporain de l’hémorragie n’est pas disponible : administrer une dose de 25 UI/kg d’équivalent facteur IX, soit 1 ml/kg dans le cas de",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "1c64511aeeaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fabricants est de 4 ml/min. Toutefois, des données préliminaires indiquent qu’une administration en bolus (3 minutes) permet d’obtenir le même taux de correction",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u24",
+   "empreinte": "51aa51f16674",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "administration de vitamine K : administration concomitante de 10 mg de vitamine K par voie orale ou intraveineuse lente, quel que soit l’INR de départ (grade C) ;",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "60e46a964ea1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la mesure de l’INR 6 à 8 heures plus tard, puis quotidiennement pendant la période critique, est recommandée.",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u26",
+   "empreinte": "e95fb74c29e7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mesurer l’INR en urgence et d’adopter la même conduite que celle définie pour les hémorragies spontanées, graves ou non graves, suivant la nature du",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u27",
+   "empreinte": "9b9c96e9f8cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0001 l’hospitalisation systématique pour surveillance pendant au moins 24 heures ;",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u28",
+   "empreinte": "608f1f6688a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0001 dans un délai rapide (4 à 6 heures) dans les autres cas (grade C).",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u29",
+   "empreinte": "78dac6dea801",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hospitalier, sous surveillance clinique et biologique. Les modalités sont fonction du siège de l’hémorragie et de l’indication des AVK.",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "2e059c97294a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0001 Chez un patient porteur d’une prothèse valvulaire mécanique (PVM) :",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "ea7cf4efdc14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une discussion multidisciplinaire pour fixer la durée de cette fenêtre est proposée ;",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u32",
+   "empreinte": "03b9782e4c60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "complète par fibrillation auriculaire [ACFA]) : l’arrêt définitif du traitement anticoagulant en cas d’hémorragie intracrânienne à localisation hémisphérique et",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u33",
+   "empreinte": "35486a4b0b20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0001 une fenêtre thérapeutique de normocoagulation de 1 à 2 semaines est proposée",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u34",
+   "empreinte": "03524b0c5823",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une fenêtre thérapeutique de 48 à 72 heures, à moduler en fonction du risque thromboembolique, est proposée. La reprise de l’anticoagulation est d’autant plus précoce qu’un geste hémostatique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u35",
+   "empreinte": "2e7b1c3c0761",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients traités par un AVK dans la zone thérapeutique usuelle (INR compris entre 2 et 3). Le traitement par AVK peut alors être poursuivi après avoir vérifié l’absence de",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u36",
+   "empreinte": "a9a573cfe745",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fréquents, de faible intensité ou aisément contrôlés, peuvent être réalisés chez des patients traités par un AVK dans la zone thérapeutique usuelle (INR compris entre 2 et 3).",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u37",
+   "empreinte": "463b80e5d722",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "\u0001 les actes de rhumatologie de faible risque hémorragique (cf. annexe 1) ;",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u38",
+   "empreinte": "84d23dfd2c3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est rappelé que les injections sous-cutanées peuvent être réalisées sans interruption des AVK, mais que les injections intramusculaires présentent un risque hémorragique et",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u39",
+   "empreinte": "280d3894a74b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les autres cas, le relais postopératoire par une héparine à dose curative est recommandé lorsque la reprise des AVK dans les 24 à 48 heures postopératoires n’est",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u40",
+   "empreinte": "7ab0950d7f38",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients porteurs de PVM cardiaques : le relais pré et postopératoire des AVK par les héparines est recommandé (grade C), quel que soit le type de PVM.",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u41",
+   "empreinte": "9f27961cce79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le relais pré et postopératoire des AVK par les héparines est recommandé chez les patients à haut risque thrombo-embolique, défini (niveau de preuve 2) par un",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u42",
+   "empreinte": "0eba412640ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans les autres cas, l’anticoagulation par AVK peut être interrompue sans relais préopératoire (grade C), mais l’anticoagulation est reprise dans les 24-48 heures",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u43",
+   "empreinte": "01bcdff76369",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "moins de 3 mois, ou une maladie thrombo-embolique récidivante idiopathique (nombre d’épisodes ≥ 2, au moins un accident sans facteur déclenchant) ;",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u44",
+   "empreinte": "72b720f1d74d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans les autres cas, l’anticoagulation par AVK peut être interrompue sans relais préopératoire (grade C), mais l’anticoagulation est reprise dans les 24-48 heures",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u45",
+   "empreinte": "10ebd22d7116",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si l’INR est en zone thérapeutique, il est recommandé d’arrêter l’AVK 4 à 5 jours avant l’intervention et de commencer l’héparine à dose curative 48 heures après la",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u46",
+   "empreinte": "e6533eed0118",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• la prévention postopératoire précoce de la MTEV doit être réalisée jusqu’à ce que l’INR soit dans la zone thérapeutique (ou la reprise des héparines à dose curative) ;",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u47",
+   "empreinte": "7e6059af21cc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’indication du traitement anticoagulant ► Patient porteur d’une valve mécanique cardiaque",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u48",
+   "empreinte": "c986506ee810",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• le relais des AVK par des héparines est recommandé en périopératoire (grade C) ;",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u49",
+   "empreinte": "0dd930c56207",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "électrique, ou par HNF sous-cutanée (2-3 injections/jour) à dose curative. Ces trois options sont possibles (grade B). Les HBPM étudiées dans cette situation sont",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u50",
+   "empreinte": "a5dd84863a42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en l’absence de données dans la littérature en périopératoire, pour les procédures à risque hémorragique modéré ou élevé, l’utilisation à dose curative d’HBPM en une",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u51",
+   "empreinte": "43e59e42849c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "► Patient traité par AVK pour une arythmie chronique par fibrillation auriculaire (ACFA)",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u52",
+   "empreinte": "7e4d5ae4a97a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à risque thrombo-embolique élevé Un relais préopératoire des AVK par HBPM ou HNF à dose curative est recommandé",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u53",
+   "empreinte": "4d945315f402",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque le risque thrombo-embolique, fonction de l’indication du traitement AVK, est élevé, un relais pré et postopératoire par une héparine à dose curative (HNF ou HBPM",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u54",
+   "empreinte": "d3e22eff899a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à risque thrombo-embolique faible ou modéré L’anticoagulation par AVK peut être interrompue sans relais préopératoire (grade C).",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u55",
+   "empreinte": "4268ca49a911",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans tous les cas, en l’absence de données de la littérature en périopératoire, pour les procédures à risque hémorragique modéré ou élevé, l’utilisation à dose curative d’HBPM",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u56",
+   "empreinte": "9923e69bd5b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "être réalisée selon les modalités habituelles. ► Patient traité par AVK pour une arythmie chronique par fibrillation auriculaire",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u57",
+   "empreinte": "fe5fa775b665",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de récidive Il est recommandé de différer une chirurgie réglée si cela est possible, au minimum audelà du 1er mois suivant un épisode thrombo-embolique veineux, de préférence au-delà",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u58",
+   "empreinte": "274cb6bb3ad1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si la chirurgie a lieu dans le 1er mois après un épisode thrombo-embolique veineux, la mise en place d’un filtre cave en préopératoire doit être discutée (grade C), ainsi que le",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u59",
+   "empreinte": "2d93175b6f04",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un relais préopératoire des AVK par HBPM à dose curative ou par HNF intraveineuse à la seringue électrique ou sous-cutanée (2-3 injections/jour) est recommandé (grade C).",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u60",
+   "empreinte": "91bbb668f543",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans les autres cas, l’anticoagulation par AVK peut être interrompue sans relais préopératoire (grade C), mais l’anticoagulation est reprise dans les 24-48 heures",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u61",
+   "empreinte": "acdd3778fcb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• la prévention postopératoire précoce de la MTEV doit être réalisée jusqu’à ce que l’INR soit dans la zone thérapeutique (ou la reprise des héparines à dose curative) ;",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u62",
+   "empreinte": "0238d5b9caa6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un acte urgent est défini par sa réalisation indispensable dans un délai qui ne permet pas d’atteindre le seuil hémostatique (objectif d’un INR < 1,5 et 1,2 en cas de neurochirurgie)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u63",
+   "empreinte": "123f6795fa1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "être rapidement discutée avec les chirurgiens et les radiologues. A l’admission du patient, il est recommandé de mesurer l’INR en urgence. La mise en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u64",
+   "empreinte": "9b5dcb8a9f35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2 Conduite à tenir en cas d’hémorragie non grave Une prise en charge ambulatoire par le médecin traitant est recommandée si :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u65",
+   "empreinte": "1456a6230a92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d’associer 5 mg de vitamine K à l’administration des CCP, sauf si la correction de l’hémostase est nécessaire pendant moins de 4 heures (grade C).",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u66",
+   "empreinte": "8af588678123",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "correction de l’hémostase est nécessaire pendant moins de 4 heures (grade C). L’administration par voie entérale doit être privilégiée, lorsqu’elle est possible (grade A).",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u67",
+   "empreinte": "9d38886c88b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "CCP et avant la réalisation de la chirurgie ou de l’acte invasif. En cas d’INR insuffisamment corrigé, il est recommandé d’administrer un complément de dose de CCP,",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u68",
+   "empreinte": "3974d7f85d58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque l’acte peut être réalisé dans un délai compatible avec la réversion par la seule vitamine K (6 à 24 heures suivant le niveau de l’INR) :",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u69",
+   "empreinte": "a10206a108ca",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Annexe 1, p. 16 (image) : 23 lignes dont « Infiltrations périarticulaires 3 », « Tenotomie percutanée 2 », « Biopsie synoviale 2 », « Biopsie osseuse 2 », « Cimentoplastie 1 », « Capsulodistension 2 »",
+   "explication": "Les 17 lignes reprises par la fiche ont la bonne cotation, mais 6 lignes de la source manquent, dont la cimentoplastie (risque élevé = 1). La fiche annonce pourtant reprendre l'intégralité.",
+   "page": 0
+  },
+  {
+   "id": "u70",
+   "empreinte": "a874c5d3eb32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u71",
+   "empreinte": "f5edc63c48a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u72",
+   "empreinte": "4322bfa9f174",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u73",
+   "empreinte": "222924957b7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u74",
+   "empreinte": "b50ac95fc9f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u75",
+   "empreinte": "a33f24bf19c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u76",
+   "empreinte": "098fcc04355c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u77",
+   "empreinte": "2a4d03b03f44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u78",
+   "empreinte": "940f20fcc4f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u79",
+   "empreinte": "9af34e28e334",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u80",
+   "empreinte": "99ba75023326",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u81",
+   "empreinte": "022053372d34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u82",
+   "empreinte": "483f775b844b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u83",
+   "empreinte": "59036e8ef07e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u84",
+   "empreinte": "1b7b6105d4b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u85",
+   "empreinte": "270213586158",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u86",
+   "empreinte": "e257859034ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en l’absence de données dans la littérature en périopératoire, pour les procédures à risque hémorragique modéré ou élevé, l’utilisation à dose curative d’HBPM en une",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u87",
+   "empreinte": "a080421ffa6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "J-4 : pas de prise d’AVK J-3 : première dose d’HBPM curative sous-cutanée (SC) ou HNF SC le soir",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u88",
+   "empreinte": "900650d4b0b1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
