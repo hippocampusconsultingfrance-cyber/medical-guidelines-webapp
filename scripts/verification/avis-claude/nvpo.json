@@ -1,0 +1,628 @@
+{
+ "cle": "nvpo",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "2e729e95627e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Approximativement 30 % de l’ensemble des patients sont",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "515395cf9e7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’être non-fumeur est le deuxième facteur lié au patient",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "9bb317557410",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NVPO d’un patient donné (G1+)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "9d95167697f9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 p.3 : scores d'Apfel et de Koivuranta, risques par nombre de facteurs",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "8bf4ed01f8a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandations : l’administration prophylactique systématique d’AR-5HT3 n’est pas recommandée (G1–)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "fde6f690d41a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’administration prophylactique d’un AR-5HT3 est recommandée en fin d’intervention chez les patients à risque",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "6b91fe92bc39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’approche multimodale des NVPO (G1+)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "c7438f88218a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans le traitement curatif de première intention des NVPO",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "103e42592ca7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "12,5 mg pour le dolasétron, 0,1 mg pour le granisétron et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "43358995dbaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Posologie dans les NVPO (adulte) (mg)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "80b9b5e3b81c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients à risque élevé, l’association à un AR5HT3 et/ou au dropéridol est recommandée (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "f1e107fc0e80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suffisante pour se substituer à l’ajout de dropéridol dans la",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "28e8b9065758",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : la dexaméthasone ne doit pas",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "d5ccc927b9ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comprise entre 4 et 8 mg (G1+)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "0d19c0794550",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ne peut pas être recommandée (G2–)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "57d2d78449dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dexaméthasone est plus efficace que le métoclopramide en",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "8d915e8f2c58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prophylaxie des NVPO chez les patients à risque (G1+) et",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "3a732d1b76dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour le traitement (G2+) des NVPO",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "e18304fd3213",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "induits par la morphine administrée en ACP (G1+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "3b795ea39c5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "syndromes du QT long congénitaux ou acquis (G2–)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "ae5a22a476af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "minimale efficace de dropéridol (G2+)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "1a6892d8d446",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "semble comprise entre 0,015 et 0,050 mg de dropéridol par mg",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "2389f1af6b56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "heures avant l’intervention) peut être utilisé pour la",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u24",
+   "empreinte": "c1e7f4db1e56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’utilisation chez les patients de moins de 18 ans n’est pas",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "2260734ab0d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "médicamenteuses. La forme injectable de l’aprépitant n’est pas",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "4cf46e4d9163",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par stimulation de points d’acupuncture peut être",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "b45720460ec7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : ni la relaxation, ni l’hypnose ne peuvent",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "6f586fd9f616",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : les cannabinoïdes ne doivent pas être",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "7799bdbae267",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : l’aromathérapie ne peut être recommandée pour le contrôle des NVPO (G2–)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "0aa96bb1951d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NVPO qu’elle soit réalisée en peropératoire (G1–) ou en",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u31",
+   "empreinte": "6810b1a0fd82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NVPO qu’elle soit réalisée en peropératoire (G1–) ou en postopératoire (G2–)",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u32",
+   "empreinte": "b5915e4e1891",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : la période de jeûne doit être compensée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u33",
+   "empreinte": "99b031c6584f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ligne pour le contrôle des NVPO (G1–)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u34",
+   "empreinte": "afbef0012830",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : l’halopéridol à petites doses peut être",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u35",
+   "empreinte": "1b5500ed9966",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(G2+) ; cependant, l’halopéridol ne peut pas être considéré",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u36",
+   "empreinte": "b9f37be2d3cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "scopolamine transdermique peut être considérée en tant",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u37",
+   "empreinte": "b1d0fa5d56d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Recommandation : les anesthésistes peuvent envisager le",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u38",
+   "empreinte": "c6d505b12703",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "NVPO les AR-H2 ne peuvent être recommandés (G2–)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u39",
+   "empreinte": "bedd4dbaaea8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suffisantes, le groupe ne peut recommander le gingembre",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u40",
+   "empreinte": "82839952c5f6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "midazolam en tant qu’alternative lorsque d’autres antiémé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u41",
+   "empreinte": "a75176aacd3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "perfusion de propofol à petites doses subanesthésiques",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u42",
+   "empreinte": "1fe9497a96dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "données validées à l’heure actuelle, le groupe n’a pas été en",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u43",
+   "empreinte": "bcd12f0d8e56",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rapidement efficace peut être assuré sans délai (G2+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u44",
+   "empreinte": "e3a23a69a692",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des NVPO chez les patients présentant des risques modérés ou élevés de NVPO (G1+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u45",
+   "empreinte": "a08e9e6d426f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "bénéficier d’une approche multimodale de prévention des",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u46",
+   "empreinte": "436d86625626",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intention des NVPO (G1+). Si une prophylaxie a échoué",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u47",
+   "empreinte": "85721a88708e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour la prophylaxie (G2+). Il paraît raisonnable dans cette",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u48",
+   "empreinte": "169e524cd30d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "supériorité d’un algorithme par rapport aux autres. Le",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u49",
+   "empreinte": "0735929a0b61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.11 : faible → expectative armée ; moyen → dexaméthasone 4 mg + autre ; élevé → AG IV + dexa + autre ; secours",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "92bbac0f4696",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "algorithme pour la prise en charge des NVPO (G1+) et",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u51",
+   "empreinte": "039e1803f55e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cadre général d’un programme qualité institutionnel",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u52",
+   "empreinte": "f8185ff4d8ed",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "où les vomissements entraînent un risque particulier pour",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u53",
+   "empreinte": "a358ca0a8cbe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pédiatrie, tout type chirurgical et tous âges confondus. La",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u54",
+   "empreinte": "1056876b1dd2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "préventive des VPO de l’enfant (G2+). La prise en charge",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u55",
+   "empreinte": "5aa582687c95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas indiquée (GI -). Il est recommandé de réduire autant que",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u56",
+   "empreinte": "44ca8399f1ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésique la moins émétisante possible (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u57",
+   "empreinte": "ee8883e046d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "secondaires et du coût (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u58",
+   "empreinte": "dec572692107",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tique préconisée en première intention combine un AR5HT3 à la dexaméthasone (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u59",
+   "empreinte": "e44773ad8e44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "établis ou de leur récidive est extrapolé de celui de l’adulte",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u60",
+   "empreinte": "82005f16c028",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’utiliser une autre classe antiémétique que celle déjà mise en œuvre (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u61",
+   "empreinte": "cf07cb9d4cc6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "antiémétique après une durée de six heures (G2+) mais il",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u62",
+   "empreinte": "0e00ddb6c403",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est recommandé de ne pas réadministrer la dexaméthasone (G2–)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u63",
+   "empreinte": "e06ee3a2a22b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’échec des autres classes et seulement si le patient est hospitalisé (G2+)",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u64",
+   "empreinte": "676bda4fcb7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Antécédent de NVPO/mal des transports, personnel ou familial",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u65",
+   "empreinte": "af97971865ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 4 p.12 : dropéridol 50-75 µg/kg max 1,25 ; dexa 150 max 5 ; ondansétron 50-100 max 4 ; dolasétron 350 max 12,5",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u66",
+   "empreinte": "d801b274c810",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une hydratation par voie intraveineuse suffisante",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u67",
+   "empreinte": "c07964213229",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients ambulatoires identifiés à haut risque de NVPO",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u68",
+   "empreinte": "603f2d5c7f44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prescription d’antiémétiques validés en prophylaxie, en",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u69",
+   "empreinte": "52a9fb025e28",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
