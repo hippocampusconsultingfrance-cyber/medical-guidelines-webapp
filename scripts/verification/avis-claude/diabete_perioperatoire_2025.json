@@ -87,10 +87,10 @@
   {
    "id": "u10",
    "empreinte": "6291cd729d77",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "Page 2 : échelle HbA1c 4-5 % « Différer » et 9-10 % « Différer »",
-   "explication": "Le tableau de la fiche s'arrête à 5-9 % et omet les deux bandes « Différer » de la source (HbA1c < 5 % et > 9 %) ; seule la fiche « courte durée » mentionne > 9 %.",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page 2 de la source (image) : échelle HbA1c, 8-9 % « Avis médecin généraliste / diabétologue »",
+   "explication": "",
    "page": 0
   },
   {
