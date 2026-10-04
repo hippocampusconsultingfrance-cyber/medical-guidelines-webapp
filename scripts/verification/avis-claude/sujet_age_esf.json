@@ -1,0 +1,403 @@
+{
+ "cle": "sujet_age_esf",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "921e29f8a632",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En France, la FESF concerne plus de 65 000 personnes",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "eb56bf4643bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'insuffisance rénale aigue¨ en périopératoire et en réanimation. GRADE 2+ (ACCORD FAIBLE)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u3",
+   "empreinte": "b4ce1c552b55",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "2657888f83ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réaliser un score de Lee classique pour évaluer le",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "40780a4c1cbc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chirurgie à risque majeur et dont la capacité à l'effort est difficilement évaluable par l'interrogatoire, il faut probablement affiner le risque postopératoire par le dosage de biomarqueurs",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "0a25f2c036c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent d'évaluer le risque de confusion ou de troubles cognitifs postopératoires",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "e21d762e518d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'interrompre les médicaments antihypertenseurs au long court durant les 48–72 h entourant la chirurgie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "9dfa8cd30ae7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut une prise en charge multidisciplinaire spécialisée périopératoire associant urgentistes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "a33bff7acda4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de privilégier la chirurgie ambulatoire chez le patient âgé quel que soit son âge",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "c9c666fb40cb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "ef499c5c0154",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neuroleptiques, les morphiniques), et il faut alléger les traitements anticholinergiques et sédatifs",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u12",
+   "empreinte": "85ab3de8edca",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "42cb489c089b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "nécessaire car l'hétéro-évaluation est peu efficiente : chirurgiens et anesthésistes surestiment notablement l'anxiété",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u14",
+   "empreinte": "3488514c6d99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l'anxiolyse, il ne faut probablement pas utiliser d'agent médicamenteux. GRADE 2+",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u15",
+   "empreinte": "b4d01fa7d54a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il ne faut probablement pas administrer de l'hydroxyzine, de la gabapentine et de la prégabaline",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u16",
+   "empreinte": "01e93d12d061",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si une prémédication médicamenteuse est requise, il faut probablement privilégier une benzodiazépine ou apparentée",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u17",
+   "empreinte": "7bc60d4efca0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réaliser la chirurgie d'une FESF dans les 48 heures suivant l'admission du patient afin de réduire la mortalité postopératoire",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "4940d899b16e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Délai d'intervention des FESF. Références Proportion de patients opérés dans les 24 h",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u19",
+   "empreinte": "ab9c9b140c69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Siegmeth et al., 2005 [77] 74",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u20",
+   "empreinte": "d426990a9d87",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Smektala et al., 2005 [78] 64",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "15fd9084ed42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "MacKenzie et al., 2006 [79] 60",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u22",
+   "empreinte": "a8675df33a3e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Beringer et al., 1996 [80] 57",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u23",
+   "empreinte": "aad25fa86bd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bottle et al., 2006 [81] 56 Boddaert et al., 2014",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u24",
+   "empreinte": "b9c049ddc90f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Boddaert et al., 2014 [67] > 50",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u25",
+   "empreinte": "9d1c40856833",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Charalambous et al., 2003 [82] 44",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u26",
+   "empreinte": "f2f7172c60c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Parker et al., 1992 [83] 34 de ces patients",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u27",
+   "empreinte": "55d062be45d1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "ceb0ccb2a349",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "systématique du débit cardiaque pour diriger le remplissage vasculaire peropératoire chez les patients âgés présentant une fracture de l'extrémité supérieure du fémur",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u29",
+   "empreinte": "8069a64fbacf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à 70 % de la pression artérielle moyenne de référence mesurée avant l'intervention",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u30",
+   "empreinte": "5dde84c11573",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement traiter sans délai toute hypotension peropératoire chez le sujet âgé",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u31",
+   "empreinte": "445f184babd6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas utiliser en routine chez le sujet âgé un monitorage de l'oxygénation cérébrale",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u32",
+   "empreinte": "b3af8daa9453",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut monitorer la température centrale de tout sujet âgé",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u33",
+   "empreinte": "69aebc8baeb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas privilégier une technique d'anesthésie (AG vs ALR) pour diminuer la mortalité après chirurgie de la FESF",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u34",
+   "empreinte": "dd8688026596",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'effectuer une titration avec des agents anesthésiques de courte durée d'action, à des doses adaptées à la pharmacologie du patient âgé",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u35",
+   "empreinte": "841fc2f129d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut réduire, ou titrer, les doses d'anesthésiques locaux lors d'une rachianesthésie pour réduire les hypotensions peropératoires",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u36",
+   "empreinte": "041a4537f5ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'incidence du syndrome confusionnel postopératoire varie entre 26 et 52 % chez celui-ci",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u37",
+   "empreinte": "d5f4fcd33c30",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : R7.1 « Il faut probablement mettre en place un programme de prévention non médicamenteuse de la confusion postopératoire… » — imprimé GRADE 1+ (ACCORD FORT), reproduit tel quel",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "1f02862bbf57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de confusion, il faut probablement identifier les",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u39",
+   "empreinte": "54c8ba95d178",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à demi-vie courte ou un neuroleptique de dernière génération en",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u40",
+   "empreinte": "e9f4bcb3a14d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts proposent de n'utiliser la contention physique",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u41",
+   "empreinte": "036700e4badf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "maximale est de 3 g/jour et pour un poids",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u42",
+   "empreinte": "3490e00b9d39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas infiltrer en intra-articulaires et/ou en sous-cutané avec des anesthésiques locaux",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u43",
+   "empreinte": "b75c6951c1a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement réaliser un bloc fémoral ou iliofascial pour assurer l'analgésie en cas de FESF",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u44",
+   "empreinte": "d9e9303bc3a3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

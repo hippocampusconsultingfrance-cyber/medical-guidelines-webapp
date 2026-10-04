@@ -1,0 +1,403 @@
+{
+ "cle": "pavm",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "fa27d3481d28",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ont abouti à 15 recommandations (et deuxrecommandations spécifiques de la population pédiatrique) et quatre protocoles de soins",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u2",
+   "empreinte": "34f8613e8705",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des PAVM se situe entre 1,9 et 3,8 par 1000 jours de ventilation mécanique aux États-Unis et excède 18 pour 1000 jours",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "e48e2ff3a009",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence d'antécédents de cardiopathie ou de maladie pulmonaire sous-jacentes, un seul examen radiologique suffit",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "20bbc6514c4c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "infections survenant après 48 h d'hospitalisation ou de ventilation mécanique, respectivement",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "edc8e2bd3a08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "trois ont un niveau de preuve élevé (GRADE 1 ) et 11 un niveau de preuve faible",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "ad185434ef4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser une approche standardisée multimodale de prévention des pneumonies associées aux soins pour diminuer la morbidité des patients hospitalisés en réanimation. GRADE 1+",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "dcabe457a335",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "standardisée multimodale visant la prévention des pneumonies associées aux soins pour diminuer la morbidité des patients hospitalisés en réanimation pédiatrique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u8",
+   "empreinte": "d960e686e530",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "topique antiseptique par voie entérale et une antibioprophylaxie",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u9",
+   "empreinte": "c3cd7b2e5bb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réaliser une aspiration sous-glottique (toutes les 6–8 heures)",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u10",
+   "empreinte": "c801a816dc5f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisation des systèmes clos d'aspiration endotrachéale",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u11",
+   "empreinte": "0a13d1085ec1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au cours du sevrage des patients BPCO, il faut probablement utiliser la ventilation non invasive",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u12",
+   "empreinte": "02295e37d0f3",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "30605d196c5d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (page PDF 8) : « 1 - Favoriser la ventilation non-invasive (notamment en post-opératoire de chirurgie digestive et chez le BPCO) »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "d3a7ac5b0021",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : « 2 - Appliquer un protocole de décontamination digestive sélective avec une antibiothérapie systémique < 5 jours si prévalence de BMR faible (< 20%) »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "8c8b77ff8ef9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : 3 - méthodes de 1re intention + NB proclive > 30° et/ou décontamination oro-pharyngée à la chlorhexidine 0,12 ou 0,2 %",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "f8de7f056007",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : 4 - Éviter d'utiliser les méthodes suivantes (10 items) — conforme",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "6e86d349a9ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Administration intraveineuse d'une antibioprophylaxie pendant 48 à 72 heures chez les patients ne nécessitant pas d'antibiothérapie curative",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "21c47a7d3007",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Préparation officinale pour décontamination digestive sélective (Information donnée à titre indicatif)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "bf5685bc1991",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Méthylparahydroxybenzoate 0,3 g Propylène glycol 50 mL Alcool mentholé 6 mL",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "ac9166e60c42",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas utiliser les scores cliniques (CPIS, CPIS modifié)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "6eae8ea274fb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "microbiologiques des voies aériennes, quel que soit le type, avant toute introduction ou modification de l'antibiothérapie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u22",
+   "empreinte": "ccb7780d984a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 Pédiatrique – Il faut probablement réaliser des prélèvements",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "799204510f2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plasmatiques de procalcitonine ou alvéolaires de TREM-1 soluble",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "843b4367f3c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les types de prélèvement et de culture sont laissés au libre choix du clinicien",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "43843a290d45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (page PDF 11) : « ≥ 48h de l'admission en milieu de soins ou de l'exposition au risque invasif (intubation) »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "9b2c7bd2efe3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 : suspicion clinique (fièvre ≥ 38,3 °C, expectorations purulentes, ≥12000 ou ≤4000/mm3, hypoxémie, signes auscultatoires, sepsis/choc sans autre foyer) ; diagnostics différentiels et complications — conforme",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "5ab46f5c9b96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 : opacité(s) en foyer nouvellement apparue(s)/évolutive(s) = diagnostic radiographique ; note : TDM ou échographie en cas de doute",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "f830d769b6d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 : prélèvements puis traitement probabiliste ; prélèvement voies respiratoires (invasif ou non) + culture",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "3689835afad2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 : négative → arrêt ; positive = diagnostic microbiologique → adaptation/désescalade selon identification puis antibiogramme",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "bf082891c49a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "immédiatement en cas de suspicion de pneumonie avec signes de gravité hémodynamique (choc)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "4717bff14aef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut traiter par monothérapie en probabiliste les pneumonies associées aux soins du patient immunocompétent",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u32",
+   "empreinte": "804adc59fa67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "probabiliste et systématique un antibiotique actif contre S. aureus",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u33",
+   "empreinte": "ea97521eb1be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement réduire le spectre et privilégier une",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u34",
+   "empreinte": "cca3f92f4aaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas prolonger plus de 7 jours la durée du traitement antibiotique",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u35",
+   "empreinte": "41ef61aef51f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement administrer la colimycine (colistiméthate",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u36",
+   "empreinte": "5dfde2834985",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas administrer des statines comme traitement adjuvant des pneumonies associées aux soins",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u37",
+   "empreinte": "74f53d187187",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un taux de mortalité prédictible > 25 % reste probablement une indication d'association",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u38",
+   "empreinte": "1b0980b3e576",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Amoxicilline/acide clavulanique 3 à 6 g/j P. aeruginosa ou C3G type Céfotaxime 3 à 6 g/j",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u39",
+   "empreinte": "34f6d9f130dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lévofloxacine 500 mg 2/j + Gentamicine 8 mg/kg/j",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u40",
+   "empreinte": "bc817c9a27b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aztréonam 3 à 6 g/j + Clindamycine 600 mg 3 à 4/j",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u41",
+   "empreinte": "384ad0cf8b4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Vancomycine 15 mg/kg puis 30 à 40 mg/kg/j ou Linézolide 600 mg 2/j",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u42",
+   "empreinte": "f76c9181ef1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Utiliser en priorité l'amikacine par rapport à la gentamicine en raison de son activité sur les bacilles à Gram négatif non-fermentants",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u43",
+   "empreinte": "e67d2ac52835",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "6118dbbf01b6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
