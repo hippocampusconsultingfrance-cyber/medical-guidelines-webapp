@@ -1,0 +1,592 @@
+{
+ "cle": "pancreatite",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "54ef6737a713",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 recommandations. Parmi les recommandations, 8 ont un niveau de preuve élevé (GRADE",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "f932235ee71e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cotations, un accord fort a été obtenu pour 100 % des recommandations. Parmi les",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u3",
+   "empreinte": "1973d88b893d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qui correspond en France à environ 15 000 cas par an",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u4",
+   "empreinte": "c6b62ccd3f0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.1 – Chez les patients admis à l’hôpital pour pancréatite aigüe, il est probablement",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u5",
+   "empreinte": "727bc13d6a70",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2.1 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, en cas de",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "c33ce654961b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.2.2 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il est",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "0665d83bc9c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R1.3 – Chez les patients admis en soins critiques pour pancréatite aigüe grave ventilés de façon",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u8",
+   "empreinte": "15fae13965b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un score de 2 ou plus pour chaque organe définit l’existence d’une défaillance d’organe",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u9",
+   "empreinte": "dc9c76f63602",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": ">400 1 301-400 2 201-300 3 101-200 4 ≤100",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u10",
+   "empreinte": "13065a99d197",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Rein (créatinémie) ≤134 134-169 170-310 311-439 >439",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u11",
+   "empreinte": "4f30428a178f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "remplissage vasculaire <90, pH<7,3 <90, pH<7,2",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u12",
+   "empreinte": "1712b08abd60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’oxygène), à 30% sous 2 l/min d’oxygène, à 40% sous 6-8 l/min d’oxygène, à 50% sous 9-10 l/min",
+   "explication": "",
+   "page": 45
+  },
+  {
+   "id": "u13",
+   "empreinte": "546084fc3210",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "08f1f15a05e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.46 : suspicion de PA grave",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "243ddf825578",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.46 : diagnostic positif et étiologique",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "e3bd2db91e89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.46 : diagnostic de sévérité, scanner 48-72 h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "6eba51749877",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 p.46 : OUI → soins critiques ; NON → unité conventionnelle",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "3400e98380d1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.1 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n'est",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u19",
+   "empreinte": "076bec8e5d6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.2 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u20",
+   "empreinte": "d877c3bfd21c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION – Chez les patients admis en soins critiques pour pancréatite",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u21",
+   "empreinte": "434acc713606",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.3 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il est",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u22",
+   "empreinte": "82b2c288c25f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.4 - Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est pas",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u23",
+   "empreinte": "6102f1a3118e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.5 - Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est pas",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u24",
+   "empreinte": "2d1a721d24d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.6 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u25",
+   "empreinte": "c5b01ef2281f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.7 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, en cas",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u26",
+   "empreinte": "14a9bc926b59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.8 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u27",
+   "empreinte": "febc807a6895",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "0fbc2c4981ec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.9 – Chez les patients admis en soins critiques pour pancréatite aigüe grave d’origine biliaire",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u29",
+   "empreinte": "1ea97c77f7e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R2.10 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u30",
+   "empreinte": "e09d827c1398",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d’hypertriglycéridémie sévère (>11,3 mmol/L) ou très sévère (>22,4 mmol/L) et persistante",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u31",
+   "empreinte": "18f3830105ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION – En l’absence de données évaluant l’analgésie des patients",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u32",
+   "empreinte": "49ce74e3355f",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "3129a68b805d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.1 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il n’est",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u34",
+   "empreinte": "07f40a743062",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "d4aa936d5f6d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.2 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il est",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u36",
+   "empreinte": "4c5914afb203",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.3 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, les experts",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u37",
+   "empreinte": "99bcfef39e15",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "1bd719c6e6fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.4 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il est",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u39",
+   "empreinte": "93ad59ce1626",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.5.1 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il est",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u40",
+   "empreinte": "fc0cfc05ed49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.5.2 – Les experts suggèrent qu’en l’absence d’équipe d’endoscopie interventionnelle et/ou",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u41",
+   "empreinte": "af793b2717b9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "d09f2a6d7c0b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.6.1 – Chez les patients admis en soins critiques ayant une pancréatite aigüe grave",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u43",
+   "empreinte": "675d7f23aa84",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION - En l’état actuel de la littérature, il n’est pas possible",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u44",
+   "empreinte": "c715200a4896",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.6.2 – Chez les patients de soins critiques ayant une pancréatite aigüe grave compliquée",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u45",
+   "empreinte": "308c72323f71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R3.7 – Chez les patients admis en soins critiques pour pancréatite aigüe grave, il est",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u46",
+   "empreinte": "7a8f6bd9d24d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ABSENCE DE RECOMMANDATION – La littérature n’est pas suffisante à ce jour pour se",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u47",
+   "empreinte": "d82e7669b3bd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "15361b39ab45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "CRP > 150 mg/L dans les 72 heures suivant l’admission",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u49",
+   "empreinte": "1fa2f4811ec0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "critère (13)) - Urée sanguine > 8,9 mmol/L",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u50",
+   "empreinte": "861538f64f24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Fréquence respiratoire > 20/min ou PaCO2 < 32 mmHg",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u51",
+   "empreinte": "3316df703aae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un score APACHE (Acute Physiologic Assessment And Chronic Health Evaluation) ≥ 8, calculé",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u52",
+   "empreinte": "55b9ba03ae31",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Séquestration liquidienne > 6 litres de perfusion dans les 48 heures",
+   "explication": "",
+   "page": 47
+  },
+  {
+   "id": "u53",
+   "empreinte": "d5cd040d438b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Critères radiologiques (scanner réalisé à partir de la 48e heure)",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u54",
+   "empreinte": "56ba202f9dd9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grade A : pancréas normal",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u55",
+   "empreinte": "1cf50103814d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grade B : élargissement focal ou diffus du pancréas",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u56",
+   "empreinte": "35f783d6312e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grade C : pancréas hétérogène associé à une densification de la graisse péri-pancréatique",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u57",
+   "empreinte": "023d4c8e4e39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grade D : coulée péri-pancréatique unique",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u58",
+   "empreinte": "59e3dbd78dfa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grade E : coulées multiples ou témoignant d’une surinfection (présence de bulles de gaz au",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u59",
+   "empreinte": "5f1a4849caf8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le score CT Severity Index (CTSI) ≥ 3 prédit la sévérité de l’épisode et une morbi-mortalité",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u60",
+   "empreinte": "49312507f0d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pancréas morphologiquement normal 0 0 % de la glande nécrosée 0",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u61",
+   "empreinte": "a4dc21d3d402",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Augmentation de volume 1 < 30 % de la glande nécrosée 2",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u62",
+   "empreinte": "2886821bed95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Infiltration de la graisse péripancréatique 2 30-50 % de la glande nécrosée 4",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u63",
+   "empreinte": "63135d43fec1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une seule collection extrapancréatique 3 > 50 % de la glande nécrosée 6",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u64",
+   "empreinte": "8d860b429df2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au moins deux collections ou une collection contenant du gaz 4",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u65",
+   "empreinte": "81bcec890fdf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le CTSI correspond à la somme des deux valeurs",
+   "explication": "",
+   "page": 48
+  }
+ ]
+}
