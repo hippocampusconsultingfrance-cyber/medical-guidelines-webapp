@@ -1,0 +1,583 @@
+{
+ "cle": "sedation_reanimation",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a45817e3e617",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "« il faut faire, il ne faut pas faire ; il faut probablement faire, il",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "c379d22c8faf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patients cérébrolésés : évaluation neurologique et/ou contrôle de la pression",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "b066c2753fd1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "plus près des situations cliniques. Il faut éviter une sédationanalgésie insuffisante ou excessive",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "2825c8016a25",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut promouvoir les moyens non médicamenteux",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "c842fb371c82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut limiter la douleur induite par les soins",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "cde00890c894",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En pédiatrie, il faut encourager les programmes d’éducation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "014e2f6fe120",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patients dont l’hémodynamique est instable, il faut",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "dd8ac39d46ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toujours diminuer les doses et il ne faut pas utiliser le nesdonal",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "9a6066d00341",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une durée inférieure à 48 heures et à des doses inférieures à 5",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "221fff4d9fb2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le propofol est contre-indiqué en sédation continue chez",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "f4af8d1cedaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour le midazolam, si un effet plateau est constaté, il ne faut",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "9995f565a3f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’étomidate ne doit pas être utilisé pour la sédation-analgésie en réanimation",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "abe3053659ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le nesdonal ne doit être utilisé qu’en cas d’hypertension",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "dae68a9e6002",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement utiliser un neuroleptique dans les états",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "717b02bd9c6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement utiliser la clonidine lors du sevrage et",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "633b201c8c27",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le choix du propofol ou du midazolam n’a pas de pertinence",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "e73476dbe17e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 p.2 : propofol A 0,1-3 / E 0,1-5 mg/kg ; A < 5 mg/kg/h, E C.I.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "bde4c04f1b4f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 p.2 : midazolam A 0,05-0,2 / E 0,02-0,1 ; 0,10-0,15 / E 0,02-0,4 mg/kg/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "8bfb51517f37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 p.2 : étomidate A 0,2-0,4, E C.I. ; entretien C.I.",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "56e9a72d883b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 p.2 : kétamine 0,5-2 mg/kg ; 0,12-3 / E 0,12-2 mg/kg/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "4f745c73f461",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 p.2 : nesdonal 3 à 5 mg/kg",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "2698c0611ad3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 2 p.2 : clonidine A 0,5-3 / E 1 µg/kg ; E 0,2-2 µg/kg/h",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "4a7916cbf580",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "43f04fec5b45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En administration continue, il faut utiliser la morphine, le",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u25",
+   "empreinte": "03dda3eb20fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fentanyl ou le sufentanil. Si l’on utilise le rémifentanil, il faut",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u26",
+   "empreinte": "07dcf580d41a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour des gestes douloureux, il faut administrer un bolus du",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u27",
+   "empreinte": "c186a6dd6433",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas faire de bolus de rémifentanil",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u28",
+   "empreinte": "e6206dcd3842",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas utiliser les anti-inflammatoires non stéroïdiens",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u29",
+   "empreinte": "63cfc8919dce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La kétamine ne doit pas être utilisée seule comme hypnotique",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u30",
+   "empreinte": "319955f401f2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "propriétés antihyperalgésiques, son respect de la motricité",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u31",
+   "empreinte": "7a7b324388c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut utiliser l’Emla lors de toute effraction cutanée chez",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u32",
+   "empreinte": "83e51e9a824d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le protoxyde d’azote peut être utilisé pour la sédationanalgésie au cours des soins douloureux",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u33",
+   "empreinte": "61f04fa87feb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut pas administrer les curares stéroïdiens en continu",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u34",
+   "empreinte": "f55af628e7db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En perfusion continue, il faut probablement utiliser le cisatracurium",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u35",
+   "empreinte": "2d0d9422f096",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’analgésie locorégionale (ALR) ne s’envisage qu’en postopératoire ou en traumatologie",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u36",
+   "empreinte": "f6c44e5acba5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A : 0,1 mg kg–1 A : 0,01 - 0,05 mg kg–1 h–1",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u37",
+   "empreinte": "74a001b4b3b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A : 2 - 3 µg kg–1 A : 0,6 - 2 µg kg–1 h–1 E : 1-2 µg kg–1 E : 1 - 5 µg kg–1 h–1",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u38",
+   "empreinte": "4129593317de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A : 0,1 - 0,2 µg kg–1 A : 0,1 - 0,5 µg kg-1 h–1",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u39",
+   "empreinte": "d6bf12d84153",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "E : idem ++ A : 10 - 25 µg kg–1 Peu utilisé",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u40",
+   "empreinte": "660564461470",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A : pas de bolus A : 0,05 - 0,25 µg kg–1 h–1",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u41",
+   "empreinte": "b27d66994221",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut évaluer la sédation-analgésie du patient en réanimation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u42",
+   "empreinte": "23d18977401d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’anxiété, l’agitation et l’adaptation du patient au ventilateur. Il faut au moins évaluer l’analgésie et la conscience",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u43",
+   "empreinte": "12bd21ca3150",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les outils doivent être simples. Il faut assurer la traçabilité",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u44",
+   "empreinte": "37b13d5ed98a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez le patient vigile et coopérant et l’enfant de plus de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u45",
+   "empreinte": "53df4f8328be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’échelle BPS (behavorial pain scale) ou l’échelle ATICE",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u46",
+   "empreinte": "5734188481d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour l’évaluation de la conscience, il faut utiliser une des",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u47",
+   "empreinte": "64d892c8b756",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé d’évaluer la profondeur de la sédation par",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u48",
+   "empreinte": "34a7e5c3cb35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’objectif est de deux réponses au train de quatre",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u49",
+   "empreinte": "5d9f8b20f4f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "évaluer la profondeur de la sédation-analgésie pendant toute",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u50",
+   "empreinte": "b56010ea3b18",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de décurarisation. Si c’est impossible, il est proposé d’utiliser",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u51",
+   "empreinte": "c25f2112573f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut dépister la survenue d’un état confuso-délirant",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u52",
+   "empreinte": "809e9d5866a3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement recueillir l’avis du patient au décours",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u53",
+   "empreinte": "047cb383ddd4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lorsque la situation est contrôlée, voire résolue, il faut systématiquement envisager l’allègement progressif puis l’arrêt de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u54",
+   "empreinte": "b51af076f175",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut une surveillance accrue lors de la décroissance de la",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u55",
+   "empreinte": "4bf5fac5cc75",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement diminuer de façon progressive les",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u56",
+   "empreinte": "e8b25129e7fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut que la curarisation soit la plus courte possible et que",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u57",
+   "empreinte": "1e98f4d58d4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut que le syndrome de sevrage soit prévenu, diagnostiqué",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u58",
+   "empreinte": "f3d4a3eceac2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l’enfant, il faut rechercher des signes de syndrome de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u59",
+   "empreinte": "d6d0036f8de5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sevrage. La substitution par méthadone est probablement une",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u60",
+   "empreinte": "5d3038b5d8bc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut une procédure écrite prévoyant l’évaluation et",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u61",
+   "empreinte": "1af8d28b3b44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut définir pour chaque patient les objectifs de sédationanalgésie",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u62",
+   "empreinte": "2c2eee3efcf2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u63",
+   "empreinte": "15b1c9e2dd0e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Algorithme p.4 : Évaluer → débuter → comparer → objectifs atteints/non atteints → réévaluer",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u64",
+   "empreinte": "681ff8dfd566",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
