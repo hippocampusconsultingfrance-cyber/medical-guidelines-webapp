@@ -25,7 +25,8 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
   const [profession, setProfession] = useState("");
   const [professionAutre, setProfessionAutre] = useState("");
   const [enFormation, setEnFormation] = useState(false);
-  const [specialty, setSpecialty] = useState("");
+  // Une seule spécialité ouverte : elle est présélectionnée.
+  const [specialty, setSpecialty] = useState(specialties.length === 1 ? specialties[0].slug : "");
   const [consentService, setConsentService] = useState(false);
   const [consentPartners, setConsentPartners] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -320,7 +321,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             <option value="" disabled>
               {specialties.length ? "Sélectionnez une spécialité" : "Liste indisponible : rechargez la page"}
             </option>
-            {SPECIALTY_GROUPS.map((g) => (
+            {SPECIALTY_GROUPS.filter((g) => specialties.some((s) => s.category === g.category)).map((g) => (
               <optgroup key={g.category} label={g.label}>
                 {specialties
                   .filter((s) => s.category === g.category)
@@ -333,8 +334,10 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             ))}
           </select>
           <p id="specialite-aide" className="mt-1 text-xs text-slate-500">
-            Votre compte donne accès aux fiches de cette spécialité. Pour en
-            changer plus tard, contactez-nous.
+            Votre compte donne accès aux fiches de cette spécialité.
+            {specialties.length === 1 &&
+              " Pour l'instant, seule la spécialité pilote du site est proposée ; les autres ouvriront progressivement."}{" "}
+            Pour en changer plus tard, contactez-nous.
           </p>
         </div>
 

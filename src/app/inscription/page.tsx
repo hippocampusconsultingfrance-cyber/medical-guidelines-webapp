@@ -14,11 +14,19 @@ type SpecialtyRow = {
   name_i18n: { fr?: string } | null;
 };
 
+// Spécialités proposées à l'inscription. L'anesthésie-réanimation est la
+// spécialité pilote : toutes les fiches publiées y sont rattachées. Les
+// autres spécialités seront ajoutées ici à leur ouverture.
+const SPECIALITES_OUVERTES = ["anesthesie_reanimation"];
+
 // Spécialités (table publique specialties) lues côté serveur, puis
 // formulaire d'inscription (client).
 export default async function InscriptionPage() {
   const supabase = await createClient();
-  const { data } = await supabase.from("specialties").select("slug, category, is_other, name_i18n");
+  const { data } = await supabase
+    .from("specialties")
+    .select("slug, category, is_other, name_i18n")
+    .in("slug", SPECIALITES_OUVERTES);
   const specialties: Specialty[] = ((data ?? []) as SpecialtyRow[]).map((s) => ({
     slug: s.slug,
     category: s.category,
