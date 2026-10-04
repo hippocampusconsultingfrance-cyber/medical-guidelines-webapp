@@ -694,4 +694,36 @@ select public.purger_donnees_expirees();
 select pg_temp.ok((select count(*) from public.candidatures_relecteurs where email = 'claire.martin@test.fr') = 2,
   'relecteurs : candidature refusée effacée après 6 mois, les autres gardées');
 
+-- ---------------------------------------------------------------------------
+-- 30. Nouvelle signature après correction : une fiche signée « Équipe médicale
+--     interne » puis corrigée peut être signée à nouveau ; jamais une
+--     signature nominative.
+-- ---------------------------------------------------------------------------
+\i supabase/migrations/20261004120000_resignature_apres_correction.sql
+insert into public.corrections_log (document_id, criticite, resume, created_at)
+values (:'rq1', 'mineure', 'Test : correction après signature', now() + interval '1 second'),
+       (:'rq2', 'mineure', 'Test : correction d''une fiche signée nominativement', now() + interval '1 second');
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok(not exists (select 1 from public.fiches_corrigees_apres_signature()),
+  'nouvelle signature : liste vide pour un membre');
+reset role;
+select pg_temp.agir(:'validateur');
+select set_config('request.jwt.claims', '{"aal":"aal2"}', false);
+set role authenticated;
+select pg_temp.ok(array(select public.fiches_corrigees_apres_signature()) = array[:'rq1']::uuid[],
+  'nouvelle signature : seule la fiche équipe corrigée est proposée');
+select pg_sleep(1.1);
+select pg_temp.ok(public.signer_relecture_equipe(array[:'rq1', :'rq2']::uuid[]) = 1,
+  'nouvelle signature : fiche équipe signée à nouveau, fiche nominative ignorée');
+select pg_temp.ok(not exists (select 1 from public.fiches_corrigees_apres_signature()),
+  'nouvelle signature : la fiche n''est plus proposée');
+reset role;
+select set_config('request.jwt.claims', '', false);
+select pg_temp.ok((select relue_par_nom from public.documents where id = :'rq2') = 'Dr Déjà Signé',
+  'nouvelle signature : signature nominative jamais écrasée');
+select pg_temp.ok(exists (select 1 from public.audit_log where action = 'fiche_relue' and entity_id = :'rq1'
+                            and (after->>'apres_corrections')::boolean),
+  'nouvelle signature : tracée au journal comme signature après correction');
+
 select 'Parcours membre : toutes les vérifications sont passées.';
