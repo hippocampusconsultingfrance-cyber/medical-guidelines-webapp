@@ -1,0 +1,430 @@
+{
+ "cle": "ih",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "705f15da7899",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conception : Un groupe composé de 23 experts de la Société Française d'Anesthésie-Réanimation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u2",
+   "empreinte": "49b10188e7de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "survenant en l'absence d'hépatopathie préexistante et en moins de 26 semaines",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "49059b74ddcc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "toxiques (amphétamine, cocaïne), une échographie cardiaque, et une écho-Doppler hépatique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "0f368ea846ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'instaurer un traitement par N-acétylcystéine sans attendre le résultat du dosage sanguin du paracétamol et quelle que soit sa valeur",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u5",
+   "empreinte": "0db83639cf76",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'IHA sévère, quelle que soit l'étiologie suspectée, il est probablement recommandé d'instaurer un traitement par N-acétylcystéine",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u6",
+   "empreinte": "04dbb159bba2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prescription d'un bilan étiologique de seconde intention si le bilan initial (selon R1) est négatif",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u7",
+   "empreinte": "543753b1f12e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "90,1% de survie en cas de dysfonction hépatique aigüe sans encéphalopathie comparée à 37,8%",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u8",
+   "empreinte": "5d032e3b8fba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de traiter précocement la survenue des défaillances d'organes autres que la défaillance hépatique",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u9",
+   "empreinte": "6cbc0c246627",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Maintien de la natrémie entre 140 et 145 mmol/l",
+   "explication": "",
+   "page": 20
+  },
+  {
+   "id": "u10",
+   "empreinte": "6038d065fd83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aciclovir IV si suspicion",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u11",
+   "empreinte": "c298f08994a5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "on estime que 700 000 personnes sont",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u12",
+   "empreinte": "44bf3cb5b3cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de refuser d'admettre les patients cirrhotiques en soins critiques, du fait de leur seule maladie cirrhotique",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u13",
+   "empreinte": "62cc7aa6c26a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de ne pas contre-indiquer de principe une épuration extrarénale en cas d'insuffisance rénale aigüe chez le patient cirrhotique",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "2caa32e04f64",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "03dbee477fef",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou ≥4 mg/dL (353,6 μmol/L) ou début d'épuration extra-rénale",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u16",
+   "empreinte": "5398641e52a4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de traiter l'insuffisance rénale aigüe selon son stade de gravité et selon l'algorithme proposé (Figure 2)",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u17",
+   "empreinte": "f7d21761afd7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "> 500 mg/jour, absence d'hématurie > 50 érythrocytes par champ, échographie rénale normale",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u18",
+   "empreinte": "8cbd59dd783f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un syndrome hépatorénal (SHR) par un vasoconstricteur (terlipressine en première intention), en association avec de l'albumine",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u19",
+   "empreinte": "c161423ad7ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à la dose initiale de 0,5 mg à 1 mg toutes les 4 à 6 h, puis augmentée progressivement, si la créatininémie ne diminue pas de plus de 25%",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u20",
+   "empreinte": "d7e28f97ed2c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une concentration de polynucléaires neutrophiles >250/mm3 dans le liquide d'ascite définissant une infection",
+   "explication": "",
+   "page": 32
+  },
+  {
+   "id": "u21",
+   "empreinte": "05af765dfe11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'administrer de l'albumine concentrée chez le cirrhotique en soins critiques, en cas de paracentèse excédant 4 à 5 litres",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u22",
+   "empreinte": "1094946c6fb5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cirrhotique en soins critiques en cas d'infection spontanée de liquide d'ascite (ILA)",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u23",
+   "empreinte": "a42261e82c43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé d'administrer 6-8 g d'albumine par litre d'ascite retiré si la paracentèse excède 4 à 5",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u24",
+   "empreinte": "149348092f9c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "octréotide, somatostatine ou terlipressine en association avec une antibiothérapie préventive",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u25",
+   "empreinte": "8e64c8d0f84c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'administrer le plus tôt possible un traitement par inhibiteurs de la pompe à protons",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u26",
+   "empreinte": "5904c0b1a3c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser une endoscopie œsogastroduodénale dès que possible",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u27",
+   "empreinte": "21af7980a098",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'adopter une stratégie transfusionnelle restrictive visant une hémoglobinémie comprise entre 7 et 8 g/dL",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u28",
+   "empreinte": "f36bed742649",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "chez les patients présentant un score de Child-Pugh C < 14, ou un score de Child-Pugh B ayant présenté initialement un saignement actif",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u29",
+   "empreinte": "92875e4cc486",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en urgence en cas d'hémorragie réfractaire au traitement endoscopique (TIPS de sauvetage)",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u30",
+   "empreinte": "a637b5063616",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'endoscopie doit être effectuée dans un délai maximal de 12 heures",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u31",
+   "empreinte": "0401ab57227c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pas administrer systématiquement de manière préventive du plasma, des plaquettes ou du fibrinogène",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u32",
+   "empreinte": "13d3abcafd85",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "91a4434593d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En traitement préventif, l'héparine non fractionnée semble majorer le risque",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u34",
+   "empreinte": "f6720c501b85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A l'admission si le patient est déjà inscrit sur liste de transplantation hépatique",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u35",
+   "empreinte": "bccc87539363",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "982e94248aa0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Bilirubinémie (μmol/L) <20 ≥20.4-<34 ≥34-< 102 ≥102-<204 ≥204",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u37",
+   "empreinte": "5c99449864c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Créatininémie (μmol/L) <105 ≥105-<165 ≥165-<305 ≥305-<440 ≥440",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u38",
+   "empreinte": "540f0a29fa11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Encéphalopathie hépatique (grade selon West Haven)",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u39",
+   "empreinte": "8b686184d6e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.1-1.25 1.26-1.5 1.51-2.5 > 2.5 (TP = 30 %) ou plaquettes",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u40",
+   "empreinte": "52672282644e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5< Dopamine ≤15 µg/kg/min ou adrénaline ≤0,1",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u41",
+   "empreinte": "4073c6f98f57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": ">400 >512 ≤400 >357-≤512 ≤300 >214- ≤357",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u42",
+   "empreinte": "92d91ce50e68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les cases en jaune sont considérées comme des défaillances d'organe",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u43",
+   "empreinte": "57e8d6aeec8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Monodéfaillance cérébrale + créatininémie <132 μmol/L",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u44",
+   "empreinte": "5dc59127fb80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Monodéfaillance cérébrale et créatininémie entre 132 et 165 μmol/L",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u45",
+   "empreinte": "2b83489b988a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2 défaillances d'organe ACLF-2",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u46",
+   "empreinte": "1fe5193c1474",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au moins 3 défaillances d'organe ACLF-3",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u47",
+   "empreinte": "516378ca6fc6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
