@@ -1,0 +1,385 @@
+{
+ "cle": "traumatisme_vertebromedullaire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4942728357dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En France, l'incidence des traumatismes médullaires est de l'ordre de 2000 cas annuel",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u2",
+   "empreinte": "9bf62e750321",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement immobiliser précocement le rachis de tout patient traumatisé suspect de lésion rachidienne",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "c3da819d545b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors d'un transport, le matelas à dépression est recommandé car il est plus confortable pour le patient",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "85b2dccf31d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (page PDF 10) : urgence vitale OUI → extraction rapide, maintien axe tête-cou-tronc (minerve rigide)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "03e1d53f32f9",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Figure 1 (page PDF 10) : branche NON → « PAS D'IMMOBILISATION » seul ; la flèche vers « Transport matelas coquille » part de la case « EXTRACTION PLAN DUR / IMMOBILISATION CERVICALE »",
+   "explication": "La fiche associe « transport sur matelas coquille » à l'absence d'immobilisation. Dans l'algorithme, le matelas coquille suit l'extraction sur plan dur avec fixateur de tête (u6). La synthèse u41 reprend la même inversion.",
+   "page": 0
+  },
+  {
+   "id": "u6",
+   "empreinte": "b77839557bc2",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Figure 1 : OUI → « EXTRACTION PLAN DUR / IMMOBILISATION CERVICALE (Fixateur de tête) » → « Transport matelas coquille »",
+   "explication": "Il manque l'étape « transport matelas coquille » qui suit l'extraction sur plan dur (cf. u5).",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "924cbbb74545",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "3eb06cecbee8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "stabilisation manuelle en ligne, associée à un retrait de la partie antérieure du collier cervical pendant les manœuvres d'intubation trachéale",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u9",
+   "empreinte": "6a0a6a7b7e01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "utilisation d'une bougie type mandrin d'Eschmann et maintien du rachis cervical dans l'axe sans manœuvre de Sellick",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u10",
+   "empreinte": "54dcfcaec767",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En préhospitalier, l'utilisation de la vidéolaryngoscopie ne peut pas être recommandée en première intention",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u11",
+   "empreinte": "8e1bd75d33b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pression artérielle systolique > 110 mmHg avant réalisation du bilan lésionnel pour diminuer la mortalité",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u12",
+   "empreinte": "c3c3839cf29f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts proposent de maintenir le niveau de pression artérielle moyenne > 70 mmHg pendant la première semaine",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u13",
+   "empreinte": "0ed98ac82a0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "augmentation de 4,8% de la mortalité des traumatisés sévères à chaque baisse de 10 mmHg de la pression artérielle systolique",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u14",
+   "empreinte": "820bac835066",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement transférer directement en filière de soins spécialisée le patient avec traumatisme rachidien et déficit neurologique, y compris transitoire",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u15",
+   "empreinte": "9a2e0a25fc41",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cette orientation directe conduit à une prise en charge chirurgicale plus précoce",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u16",
+   "empreinte": "8a8496817101",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il ne faut pas administrer de corticoïdes à la phase précoce dans l'objectif d'améliorer le pronostic neurologique",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u17",
+   "empreinte": "2a6ebbb69c49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Plus d'infections ont également rapportées dans le groupe corticoïde (7% dans le groupe corticoïde",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u18",
+   "empreinte": "0f156dcbfd39",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser une IRM médullaire dans les plus brefs délais devant toutes anomalies de l'examen neurologique",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u19",
+   "empreinte": "92bda55b6141",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si une IRM est réalisable sans retarder le traitement chirurgical et sans mettre le patient en danger",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u20",
+   "empreinte": "aec215826261",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des hématomes épiduraux post-traumatiques était 9,1%",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u21",
+   "empreinte": "acc9e5e0df4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réaliser une décompression chirurgicale en urgence, au plus tard dans les 24 heures du déficit neurologique",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u22",
+   "empreinte": "a89818f1dbec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les trauma center de niveau I français sont en capacité d'opérer en sécurité dans des délais inférieurs à 8 heures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u23",
+   "empreinte": "628ee84f53c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En urgence, il faut probablement réaliser une induction séquence rapide et, pour diminuer le risque d'échec d'intubation au premier essai, s'aider d'une vidéolaryngoscopie en première intention",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u24",
+   "empreinte": "c0a4f04fd98c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fibroscopique en ventilation spontanée chez les patients à risque d'échec de ventilation au masque et/ou de laryngoscopie indirecte (ouverture de bouche < 2,5 cm)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u25",
+   "empreinte": "b222ca348e19",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "désafférentation nerveuse, la limite d'utilisation est classiquement fixée à 48h après le traumatisme",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u26",
+   "empreinte": "205e2448bf55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 (page PDF 21) : extra-hospitalier → ISR, laryngoscopie directe, mandrin long type Eschmann, stabilisation du rachis en ligne",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u27",
+   "empreinte": "3cfaa2da5449",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 : hospitalier, urgence vitale OUI ou estomac plein OUI, ou ouverture de bouche/ventilation NON → ISR (si EP ou urgence vitale) + vidéolaryngoscopie + stabilisation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "21b79ad3460c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 2 : ouverture de bouche limitée ou ventilation au masque prévue difficile OUI → intubation fibroscopique en ventilation spontanée + stabilisation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "536034547eaa",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u30",
+   "empreinte": "a1fb13ed0670",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ceinture abdominale chez le patient en position assise et en ventilation spontanée",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u31",
+   "empreinte": "73c66dd2198f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent la réalisation d'une trachéotomie pour accélérer le sevrage ventilatoire dans les 7 premiers jours en cas d'atteinte du rachis cervical haut (C2-C5)",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u32",
+   "empreinte": "0ce1144877c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Protocole de sevrage de la ventilation mécanique",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u33",
+   "empreinte": "61e9dc8da263",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement introduire une analgésie multimodale associant analgésique non morphinique et anti-hyperalgésique (kétamine) aux opioïdes",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u34",
+   "empreinte": "cb2301681aab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un traitement par voie orale par gabapentinoides pour une durée prolongée (>6 mois)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u35",
+   "empreinte": "3433873caab2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prévalence des douleurs chroniques est de 65-85%, dont 40% sont neuropathiques",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u36",
+   "empreinte": "dee186cf5387",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "installation des articulations dans le sens inverse de la déformation prévisible",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u37",
+   "empreinte": "e75b8baa41e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "repositionnement toutes les 2 à 4 heures avec contrôle des zones d'appui",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u38",
+   "empreinte": "09c0afb01603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévalence des escarres peut atteindre 26%, les localisations principales sont le sacrum (39 %)",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u39",
+   "empreinte": "c3c8b9c51675",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement mettre en place une stratégie permettant un sondage urinaire intermittent dès que le volume de diurèse quotidien le permet",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u40",
+   "empreinte": "9d951a001907",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le sondage intermittent est la méthode de référence de drainage des urines du patient traumatisé médullaire",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u41",
+   "empreinte": "6cd3a9b38a2f",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "PAS D'IMMOBILISATION OUI EXTRACTION PLAN DUR IMMOBILISATION CERVICALE (Fixateur de tête) Transport matelas coquille",
+   "explication": "La synthèse reprend « sinon pas d'immobilisation systématique (transport matelas coquille) ». Dans la Figure 1, le matelas coquille suit l'extraction sur plan dur (cf. u5).",
+   "page": 10
+  },
+  {
+   "id": "u42",
+   "empreinte": "159365b48ffc",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

@@ -1,0 +1,385 @@
+{
+ "cle": "ivg_14sa",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "9f8e4c9d05fb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "057375e84a67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les parties des recommandations de mars 2001 modifiées suite aux recommandations de décembre 2010 apparaissent en rouge dans ce document",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "cceea95f50b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de précision, les recommandations proposées correspondent à un accord professionnel",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u4",
+   "empreinte": "d891f3b27a2e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les structures d'IVG fonctionnent chaque semaine, sans interruption, pendant toute l'année",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u5",
+   "empreinte": "8fb37c5bc4d4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit en convention avec un établissement disposant d'un plateau technique permettant de prendre en charge l'ensemble des complications de l'IVG",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u6",
+   "empreinte": "fce297b8e173",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les IVG au-delà de 12 SA doivent être prises en charge dans une structure disposant d'un plateau technique chirurgical",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u7",
+   "empreinte": "428ba41111b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dispose au sein de l'établissement d'au moins un échographe avec sonde vaginale",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u8",
+   "empreinte": "b1eb670c2acf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit obtenir un rendez-vous de consultation dans les 5 jours suivant son appel",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u9",
+   "empreinte": "8b21d7f75c62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit disposer d'une ligne téléphonique dédiée à cette seule activité, connue et largement diffusée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u10",
+   "empreinte": "2fbd321d0580",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cet accueil et ce secrétariat sont signalés avec précision à l'entrée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u11",
+   "empreinte": "985fe3f0acd8",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "les IVG doivent être réalisées en ambulatoire ou en hôpital de jour (séjour inférieur à 12 heures)",
+   "explication": "Texte tronqué dans la fiche : « (séjour (AP) ». La durée « inférieur à 12 heures » a disparu.",
+   "page": 8
+  },
+  {
+   "id": "u12",
+   "empreinte": "09a74621da2b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les choix offerts de recours à l'anesthésie locale ou générale, ainsi que sur le temps de réflexion",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u13",
+   "empreinte": "920bf99164f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un entretien d'information, de soutien et d'écoute doit pouvoir être proposé systématiquement",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u14",
+   "empreinte": "44aa5f070a33",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le recours à une échographie doit être possible sur place lors de la consultation",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u15",
+   "empreinte": "1b189e49377f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un dépistage des maladies sexuellement transmissibles dont l'infection par le VIH et des frottis cervico-vaginaux",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u16",
+   "empreinte": "b9abcf32a090",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le mode de contraception ultérieure est abordé et éventuellement prescrit dès la visite précédant l'IVG",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u17",
+   "empreinte": "b72e03eabd44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Cette procédure s'applique aux femmes dont l'âge gestationnel est situé entre 12 et 14 SA",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u18",
+   "empreinte": "fc7edc01385a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutes les patientes doivent disposer d'un groupe sanguin Rhésus avec recherche d'agglutinines irrégulières",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u19",
+   "empreinte": "5ccd56f28cdc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les femmes doivent pouvoir choisir la technique, médicale ou chirurgicale, ainsi que le mode d'anesthésie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u20",
+   "empreinte": "99a356d47922",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "mifépristone 200 mg per os 36 à 48 heures avant aspiration (grade A)",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u21",
+   "empreinte": "6824e85a998c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 9 : « ou misoprostol 400 µg par voie orale ou vaginale 3 à 4 heures avant aspiration (grade A) » (ligne en rouge non extraite par le texte)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u22",
+   "empreinte": "3e575ecd7603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le contrôle visuel du produit d'aspiration est indispensable",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u23",
+   "empreinte": "7f5dd02a737e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La technique chirurgicale expose à un risque d'échec inférieur à la technique médicale",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u24",
+   "empreinte": "4d4038795be2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour la technique chirurgicale, une préparation cervicale médicamenteuse est recommandée chez la nullipare",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u25",
+   "empreinte": "b3369732a37f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "De la 10e à la 12e SA (de 64 à 84 jours) La technique chirurgicale est la technique de choix",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u26",
+   "empreinte": "4bb0aa373d85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation éventuelle de l'anesthésie locale demande une très bonne maîtrise de la technique de dilatation et évacuation",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "6fbca75a269f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La technique chirurgicale est la technique de choix (grade B)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "d390375a7a3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modérées à sévères pour plus de 50 % des femmes, liées principalement à l'utilisation des prostaglandines",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "99c841cc9d62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la technique d'anesthésie locale par bloc paracervical ne prévient pas la survenue de douleurs considérées comme sévères",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "12ddfd83d849",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'injection de lidocaïne intracervicale au niveau de la région isthmique (orifice interne du col) diminue significativement le score de la douleur",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "14145f0f96c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les grossesses les plus précoces et les plus avancées (grade C)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u32",
+   "empreinte": "499c2a9f10db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'administration d'ibuprofène (AINS) diminue les scores de douleur per et postopératoire (grade A)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u33",
+   "empreinte": "9c5f310de530",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les benzodiazépines sont inefficaces sur la douleur des IVG par aspiration",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u34",
+   "empreinte": "968c52df54fc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les halogénés à forte concentration augmentent le volume des pertes sanguines ; l'utilisation d'ocytocine le diminue (grade B)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u35",
+   "empreinte": "e00aa484332b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si l'anesthésie générale est retenue, elle répond aux exigences du décret n° 94-1050 du 5 décembre 1994",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u36",
+   "empreinte": "b95218eab776",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recherche de Chlamydiae trachomatis par PCR sur les urines, suivi de traitement de la patiente et du (des) partenaire(s)",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u37",
+   "empreinte": "c92e9ea2a294",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'IVG médicamenteuse à domicile, la prévention doit être faite lors de la prise de mifépristone",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u38",
+   "empreinte": "ad504f7817f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une contraception œstroprogestative peut être commencée dès le lendemain de l'IVG",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u39",
+   "empreinte": "8bfb9e3048f1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La visite de contrôle est prévue entre le 14e et le 21e jour post-IVG",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u40",
+   "empreinte": "71b5446ba7bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un recueil national des données concernant l'IVG est nécessaire",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u41",
+   "empreinte": "d3fcc9dd1395",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "afin de déterminer l'utilité à long terme d'une antibioprophylaxie ou d'une antibiothérapie au cours de l'IVG",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u42",
+   "empreinte": "38689324d489",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
