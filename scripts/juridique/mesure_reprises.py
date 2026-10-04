@@ -27,7 +27,8 @@ def shingles(mots, n=N):
     return {" ".join(mots[i:i + n]) for i in range(len(mots) - n + 1)}
 
 def html(t):
-    return re.sub(r"<[^>]+>", " ", t or "").replace("&nbsp;", " ")
+    # Seules les vraies balises : « <21 si >70 ans » est du texte.
+    return re.sub(r"</?[a-zA-Z][^>]*>", " ", t or "").replace("&nbsp;", " ")
 
 def textes(p):
     """Texte de la fiche : paragraphes et cellules, hors blocs « source »."""

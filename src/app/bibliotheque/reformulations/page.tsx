@@ -29,7 +29,8 @@ type Ligne = {
   status: string;
 };
 
-const sansBalises = (h: string) => h.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ");
+// Seules les vraies balises : « <21 si >70 ans » est du texte.
+const sansBalises = (h: string) => h.replace(/<\/?[a-z][^>]*>/gi, "").replace(/&nbsp;/g, " ");
 
 // Reformulation des libellés recopiés de la source (audit juridique,
 // option C) : le médecin valide, retouche ou refuse chaque proposition ;

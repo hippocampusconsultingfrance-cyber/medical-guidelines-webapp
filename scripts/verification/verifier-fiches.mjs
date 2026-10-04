@@ -90,7 +90,8 @@ const ENTITES = { "&nbsp;": " ", "&lt;": "<", "&gt;": ">", "&amp;": "&", "&quot;
 function texteHtml(h) {
   return (h || "")
     .replace(/<br\s*\/?>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
+    // Seules les vraies balises (« <b> », « </font> »…) : « <21 si >70 ans » est du texte.
+    .replace(/<\/?[a-z][^>]*>/gi, " ")
     .replace(/&[a-z0-9#]+;/gi, (e) => ENTITES[e.toLowerCase()] ?? " ")
     .replace(/\s+/g, " ")
     .trim();
