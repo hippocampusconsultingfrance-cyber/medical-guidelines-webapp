@@ -1,0 +1,376 @@
+{
+ "cle": "sevrage_vm",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "4b1f668190ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La définition retenue par le jury pour le terme « sevrage », est la procédure décrite ci-dessus aboutissant à l'interruption de la VM pendant 48 heures",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u2",
+   "empreinte": "c2630a92e179",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Society of Critical Care Medicine Rating System for Strength of Recommendation",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "456479a30625",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces scores sont indiqués entre crochets dans le texte",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "27d556c7d888",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u5",
+   "empreinte": "f24bf078455f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être précoce [c, 3], quotidienne [c, 3] et faire l'objet d'un protocole rédigé [a, 1]",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "99ba542c07b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'absence de vasopresseur et d'inotrope, l'absence de sédation et une réponse cohérente aux ordres simples [3]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "eb464f6790e2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le médecin peut s'affranchir d'un ou plusieurs de ces critères généraux ou respiratoires",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "fd0141a3db46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le sevrage est réussi dès la première tentative chez les deux tiers environ des patients sélectionnés sur ces critères [b]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "fe5dce5b8e77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans les 48 heures, environ 15 % des patients extubés à l'issue de la première épreuve de VS sont ré-intubés [b]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "d6340f16cfc3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "responsable de la décompensation respiratoire initiale multiplie au moins par deux le risque de sevrage difficile",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "ef6930565574",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ensemble de ces arguments ne permet pas de recommander ce paramètre de façon habituelle [b, 3]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "bfbbfced4479",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La présence d'un ou plus de ces facteurs de risque ne doit pas retarder la procédure de sevrage",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "a13d0a76ad5c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "147eb132d0a8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "auto-extubations, trachéotomies, nombre de patients ventilés de façon prolongée et durée moyenne de séjour en réanimation [a, 1]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "ac1e9b632822",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "9aa1a75b8762",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'AI doit donc être vraisemblablement préférée à la pièce en T si la sonde d'intubation n'a pas un diamètre adéquat",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "90a82347eac4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'adulte, il n'existe pas d'argument justifiant l'administration d'une corticothérapie pour prévenir l'œdème laryngé [a, 1]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "01e621d90a63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La ventilation assistée contrôlée intermittente allonge la durée du sevrage et ne doit pas être proposée dans cette situation [a, 1]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "6f5015f645fd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le déroulement de la procédure de sevrage est identique et doit débuter le plus tôt possible [c, 2]",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u20",
+   "empreinte": "49aa3e7b4e37",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l'exception pour certains du seuil de SaO2 - mauvaise tolérance si SaO2 < 88 % - [c, 3]",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u21",
+   "empreinte": "23c02bc6219d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est théoriquement préférable à la stimulation de l'inotropisme",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u22",
+   "empreinte": "2f00a8f18b79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le sevrage ne se conçoit qu'en l'absence d'hypertension intracrânienne [2]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u23",
+   "empreinte": "5b09750c8ce0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une CV minimale de 15 mL/kg a été proposée au cours de la polyradiculonévrite aiguë pour envisager l'extubation",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u24",
+   "empreinte": "6d600e461ce1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il importe d'évoquer avec le patient et sa famille les choix thérapeutiques futurs",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u25",
+   "empreinte": "5ed444e40879",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces patients ont le taux d'échec d'extubation le plus faible [b]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u26",
+   "empreinte": "2cb0f7e97a4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ces complications pourraient être prévenues par l'administration de corticoïdes 6 à 12 heures avant l'extubation [b]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u27",
+   "empreinte": "28c995885c46",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "malgré des tentatives de sevrage répétées depuis au moins 30 jours",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u28",
+   "empreinte": "d7520a3a62c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de contre-indication ou d'échec de la VNI, la trachéotomie peut être proposée",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u29",
+   "empreinte": "3a0a48738872",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "unités de soins intermédiaires respiratoires, des unités de soins de suite spécialisées ou des unités de sevrage",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u30",
+   "empreinte": "7a4a8b394e6c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dépendance ventilatoire élevée - supérieure à 16 heures par jour - nécessite une infrastructure particulière",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u31",
+   "empreinte": "6e0637a99972",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lorsque le recours à la VNI ou à la trachéotomie apparaît comme une obstination déraisonnable",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u32",
+   "empreinte": "b9aeb0839e8a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u33",
+   "empreinte": "cfd8e3ae96c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (page PDF 11) : pré-requis — absence d'inotrope et de vasopresseur, absence de sédation, réponse cohérente, FiO2 ≤ 50 %, PEP ≤ 5 cmH2O",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u34",
+   "empreinte": "4a5be9a6a860",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : « Pièce en T ou AI sans PEP - 30 à 120 minutes »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "d6012a3d1ab2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : FR > 35/min, SpO2 < 90 %, variation > 20 % FC ou PAS, sueurs, agitation, troubles de la vigilance",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "17b357b45eca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : branches « Présents » / « Absents »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u37",
+   "empreinte": "f361b896a25e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : présents → gaz du sang artériel et reprise de la VM ; absents → recherche des critères d'extubation",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "243c8e3bd9ea",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : sevrage difficile → >30 j échec du sevrage, ou boucle « AI dégressive ou VS/VAC » vers le pré-requis ; extubation → 48 h sevrage réussi ; ré-intubation ou VNI → sevrage difficile. Condensé mais conforme",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "67204d78616f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le choix entre les deux techniques et celui de la durée de l'épreuve de VS dépend des habitudes de l'unité",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u40",
+   "empreinte": "13ef29fea027",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'intérêt de protocoles de sevrage appliqués à des sous- groupes homogènes de malades",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u41",
+   "empreinte": "c6c1b4aaf9e1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

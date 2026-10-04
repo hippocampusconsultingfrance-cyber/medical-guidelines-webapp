@@ -1,0 +1,376 @@
+{
+ "cle": "urgences_vitales_ih_2026",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b978c53d6caf",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "6ca4618e7e4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place une filière UVIH institutionnelle afin d'améliorer la qualité de prise en charge des patients",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u3",
+   "empreinte": "36440f5a116d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "multidisciplinaire avec un référent médical identifié",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u4",
+   "empreinte": "d69a8ee01c99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les 4 volets suivants : détection précoce, activation, intervention et debriefing",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u5",
+   "empreinte": "e5f2a334a126",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "le niveau d'engagement thérapeutique individuel des patients hospitalisés en cas de dégradation clinique",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u6",
+   "empreinte": "d9418702974a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(notamment les articles L1110-5-1 et R4127-37-2), dont la décision doit être tracée dans le dossier médical",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u7",
+   "empreinte": "d5db392735ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les données de la littérature ne permettent pas de conclure à un bénéfice de l'utilisation de scores d'alerte précoce",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u8",
+   "empreinte": "320ff93d3a45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de mettre en place un numéro unique afin d'améliorer la qualité de prise en charge",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u9",
+   "empreinte": "b01806e51c4a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en conformité avec les propositions européennes, que ce numéro unique soit le 2222",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u10",
+   "empreinte": "6ca40d1c0b7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "accessible via les DECT, les téléphones fixes hospitaliers, mais également les téléphones portables professionnels",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u11",
+   "empreinte": "93c442a3cd6b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hors contexte obstétrical, les données de la littérature sont insuffisantes pour déterminer si la régulation de l'appel",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u12",
+   "empreinte": "82e3ebeb9f82",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez les patientes obstétricales présentant une UVIH, les experts suggèrent de ne pas mettre en place de régulation de l'appel",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u13",
+   "empreinte": "03b25346a83c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de standardiser les chariots d'urgence au sein d'un même établissement",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "eb3fbbedc074",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de distinguer des chariots d'urgence standardisés adulte, pédiatrique et néonatal",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u15",
+   "empreinte": "43a77e2bb9b6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de disposer à proximité de leur chariot d'urgence, leur matériel supplémentaire",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u16",
+   "empreinte": "8ac777f4a6c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent que chaque service assure la maintenance du chariot d'urgence scellé",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u17",
+   "empreinte": "ce34af722f91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les données de la littérature ne permettent pas d'émettre une liste exhaustive et applicable à tous les établissements de santé, concernant les équipements spécifiques contenus dans les chariots d'urgence",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u18",
+   "empreinte": "1f51ff4b7a99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les données de la littérature ne permettent pas de recommander une liste exhaustive et applicable à tous les établissements de santé relative aux équipements spécifiques du sac",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u19",
+   "empreinte": "04442cf6453c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "A l'échelle d'un établissement, les experts suggèrent de standardiser les équipements spécifiques du sac d'intervention",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u20",
+   "empreinte": "e976b8387c1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oxygéner, ventiler et accéder aux voies aériennes ● Scoper et monitorer",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u21",
+   "empreinte": "ef0c76f2dbb1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ait à disposition un sac d'intervention adulte et un sac d'intervention pédiatrique",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u22",
+   "empreinte": "fb4ee91e5a45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "assurent la maintenance de ses sacs d'intervention d'urgence scellés",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u23",
+   "empreinte": "b7e72749b42a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'équipe spécialisée UVIH obstétricale se déplace avec un kit chirurgical nécessaire pour la réalisation d'une césarienne sur place",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u24",
+   "empreinte": "954f0ba55382",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "aide cognitive qui doit être placée sur les chariots d'urgence",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u25",
+   "empreinte": "44c552932968",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit d'au moins un médecin senior et un infirmier diplômé, formés à la prise en charge des urgences vitales",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u26",
+   "empreinte": "b3aff897360c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de mettre en place un registre institutionnel unique de suivi de la filière UVIH",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u27",
+   "empreinte": "c8e8e88be4a1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent la mise en place de réunions de morbi-mortalité régulières consacrées au suivi de la filière UVIH",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u28",
+   "empreinte": "766433672291",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par le médecin responsable du patient au sein du service ou, à défaut, par le médecin intervenu dans le cadre de l'UVIH",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u29",
+   "empreinte": "83200befd1c9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'organisation de l'annonce aux proches soit formalisée localement dans la procédure institutionnelle UVIH",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u30",
+   "empreinte": "f54a80c8b8b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "suggèrent de proposer aux proches d'être présents pendant la réanimation cardio-pulmonaire s'ils le souhaitent",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u31",
+   "empreinte": "2f090028cd35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est obligatoire de vérifier que tous les professionnels de santé disposent d'une attestation valide de Formation aux Gestes et Soins d'urgence de niveau 2",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u32",
+   "empreinte": "4cc1a26ec70c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de former les professionnels de santé à la prise en charge d'une UVIH par simulation",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u33",
+   "empreinte": "42231860f2dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec traçabilité des formations et suivi d'indicateurs de couverture et de performance",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u34",
+   "empreinte": "90bea21a50b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "abordent la détection de la détérioration de l'état clinique, l'alerte, l'activation des équipes spécialisées",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u35",
+   "empreinte": "7d3d8109844b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à la réanimation d'un arrêt cardiaque dans les équipes non UVIH soient répétées annuellement",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u36",
+   "empreinte": "66ec0aa60d79",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soient réalisées en groupe pluriprofessionnel et assorties d'un débriefing réalisé par du personnel formé",
+   "explication": "",
+   "page": 51
+  },
+  {
+   "id": "u37",
+   "empreinte": "48f1cdbed06c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et ce même en l'absence de structure d'aval de soins critiques",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u38",
+   "empreinte": "e6f2fa740595",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "repose sur des protocoles locaux d'intervention et un recours immédiat au SAMU",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u39",
+   "empreinte": "7a50da1211d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent de distinguer deux équipes et procédures UVIH distinctes",
+   "explication": "",
+   "page": 58
+  },
+  {
+   "id": "u40",
+   "empreinte": "1fb1b8d8d3f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour un visiteur ou personnel de l'établissement en situation d'UVIH, les experts suggèrent de suivre la même procédure que pour les patients hospitalisés",
+   "explication": "",
+   "page": 61
+  },
+  {
+   "id": "u41",
+   "empreinte": "df7ad67e71ed",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
