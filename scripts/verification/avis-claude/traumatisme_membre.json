@@ -1,0 +1,457 @@
+{
+ "cle": "traumatisme_membre",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "00339213cf8e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "1894d1455be9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Score de Glasgow inférieur à 13 - Saturation inférieure à 90 % en air ambiant",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "be81ead30220",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au moins une victime décédée dans l'accident - Chute de plus de 6 mètres",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u4",
+   "empreinte": "56af2b2aa024",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ventilation assistée - Remplissage vasculaire > 1 litre - Perfusion de catécholamines",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u5",
+   "empreinte": "44043df913e1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Traumatisme pénétrant - Volet thoracique - Brûlure - Traumatisme du bassin",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u6",
+   "empreinte": "df556528e92c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Grossesse au 2ème ou 3ème trimestre",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u7",
+   "empreinte": "f0e79deef5f4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Type 1 Plaie < 1 cm Contamination minimale <2%",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u8",
+   "empreinte": "79e1829ad4e3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Type 2 Plaie de 1 à 10 cm Sans lésion extensive des tissus mous 2à5%",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u9",
+   "empreinte": "8e45fc074d99",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Couverture cutanée possible Comminution importante 5 à 10 %",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u10",
+   "empreinte": "c94a33c9e7d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.B Exposition osseuse Comminution importante 10 à 50 %",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u11",
+   "empreinte": "aa8010342a32",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.C Lésion artérielle associée 25 à 50 %",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u12",
+   "empreinte": "315d306f03b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'admettre en centre spécialisé de traumatologie grave les patients ayant au moins un critère de Vittel en préhospitalier",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u13",
+   "empreinte": "7ff018c7a70e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une survie additionnelle de trois à quatre patients tous les 100 patients admis",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u14",
+   "empreinte": "158e14deed1a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "radial (critère hémodynamique) ou de multiples actions simultanées à mener, il est probablement recommandé de mettre en place un garrot",
+   "explication": "",
+   "page": 13
+  },
+  {
+   "id": "u15",
+   "empreinte": "b52ed3bc5671",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "son efficacité, son utilité et sa localisation sur le membre",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u16",
+   "empreinte": "6af99fc3c5da",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ce délai, le risque d'amputation augmente significativement (de 6 à 11,7 % ; p < 0,01)",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u17",
+   "empreinte": "ddc2356982d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Indice de pression systolique (IPS) cheville-bras inférieur à 0,9",
+   "explication": "",
+   "page": 16
+  },
+  {
+   "id": "u18",
+   "empreinte": "3920614e8d71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sensibilité et spécificité étaient de 96,2 % et 99,2 % respectivement",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u19",
+   "empreinte": "d1a3b7d2a839",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "b557e891f858",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser l'ostéosynthèse définitive et sûre du (des) foyer(s) de fracture des os longs dans les 24 première heures",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u21",
+   "empreinte": "db2220f46c0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "retarder l'ostéosynthèse définitive au profit d'une stabilisation temporaire (fixateur externe ou traction selon les délais envisagés)",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u22",
+   "empreinte": "98efa255fa3c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la réduction de 15 % du risque de survenue de",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u23",
+   "empreinte": "030be0d8cdec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Débit de noradrénaline ∈ 2–4 mg.h-1 -Transfusion 1–4 CGR -Lactate 2,5–4 mmol.L-1",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u24",
+   "empreinte": "45ceff0e3d64",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Coagulopathie modérée -TQr 1,2 – 1,5 -Fibrinogène 1 – 1,5 g.L-1",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u25",
+   "empreinte": "3cadc2f7a5bd",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Lésions associées simples ou bénignes -Lésion unique -Score de Glasgow Î[13–15]",
+   "explication": "Le tableau de gradation du risque comporte aussi des lignes « lésions anatomiques » (ISS < 25 / > 25 / > 40, TC modéré ou grave, trauma thoracique sévère, lésions abdominales…) et « chirurgie lourde à risque » (laparotomie, ostéosynthèse du rachis en décubitus ventral, angio-embolisation…), absentes de la fiche.",
+   "page": 24
+  },
+  {
+   "id": "u26",
+   "empreinte": "091a3a76828a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "CHIRURGIE DÉFINITIVE SÛRE PRÉCOCE RÉANIMATION APPROPRIÉE",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u27",
+   "empreinte": "0f8c0dc3cf68",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "e2eb96f92670",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de stabilité hémodynamique, il est probablement recommandé de procéder à un sauvetage du membre",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u29",
+   "empreinte": "4de654e6ee85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucun critère de gravité considéré isolément n'impose le recours à une amputation",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u30",
+   "empreinte": "7dbd44a53b08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "augmente les risques d'échec de réimplantation à 87 % vs. 61 % en deçà de ce délai",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u31",
+   "empreinte": "205a720f54e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour une durée maximale de 48 à 72 heures (à l'exception d'une infection avérée)",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u32",
+   "empreinte": "4b2d4f08ccaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas réaliser de prélèvements microbiologiques systématiques au bloc opératoire",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u33",
+   "empreinte": "5a33a1dd4cee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "incluant 245 patients, ces prélèvements s'avéraient non contributifs dans 47 % des cas",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u34",
+   "empreinte": "db378cbf10cc",
+   "verdict": "ecart",
+   "type_ecart": "autre",
+   "citation": "Figure 4 (page PDF 32) : « si allergie : clindamycine + gentamicine »",
+   "explication": "La fiche écrit « clindamycine ± gentamicine ». La figure source indique une association systématique (« + »). Les autres items (lavage, pansement humide, immobilisation, statut antitétanique, prise en charge chirurgicale) sont conformes.",
+   "page": 0
+  },
+  {
+   "id": "u35",
+   "empreinte": "e74a8f7b0fce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé d'instaurer une thromboprophylaxie médicamenteuse précoce par héparine de bas poids moléculaire (HBPM)",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u36",
+   "empreinte": "ca16ff030b10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de mettre en place un filtre cave chez des patients à risque thrombo-embolique majeur",
+   "explication": "",
+   "page": 34
+  },
+  {
+   "id": "u37",
+   "empreinte": "87b1c1f5670a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une embolie pulmonaire était évitée pour 109 sur 962 patients ayant bénéficié de l'implantation d'un filtre",
+   "explication": "",
+   "page": 35
+  },
+  {
+   "id": "u38",
+   "empreinte": "2309859d6ef8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les experts suggèrent d'effectuer une fasciotomie précoce en cas de syndrome de loge récemment constitué",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u39",
+   "empreinte": "6f480fe3a894",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une mesure de pression intracompartimentale ≥ 30 mmHg ou une pression différentielle < 30 mmHg",
+   "explication": "",
+   "page": 37
+  },
+  {
+   "id": "u40",
+   "empreinte": "ce11c28edae6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un sondage urinaire permettant de monitorer la diurèse horaire et le pH urinaire (objectif ≥ 6,5)",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u41",
+   "empreinte": "2e27fe6b7778",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les préconisations sont celles des recommandations formalisées d'experts SFAR-SRLF de 2016",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u42",
+   "empreinte": "35c10ef22907",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un taux de CPK supérieur à 75 000 UI.L-1 était",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u43",
+   "empreinte": "fbc6366ea309",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fracture de la diaphyse des os longs dans les 24 premières heures post-traumatiques",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u44",
+   "empreinte": "64b2fb30a285",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la balance bénéfice-risque entre une ostéosynthèse définitive ou la pose d'un fixateur externe doit faire l'objet d'une discussion multidisciplinaire",
+   "explication": "",
+   "page": 41
+  },
+  {
+   "id": "u45",
+   "empreinte": "6f5e01e67b27",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de ne pas administrer de corticoïdes pour prévenir l'embolie graisseuse",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u46",
+   "empreinte": "dbe12162d374",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "graisseuse chez les patients opérés dans les 10 premières heures",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u47",
+   "empreinte": "3570f521fce2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des molécules choisies soit évalué à l'aune de la volémie et de l'atteinte musculaire",
+   "explication": "",
+   "page": 43
+  },
+  {
+   "id": "u48",
+   "empreinte": "cb83eac1d3b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La kétamine administrée à une dose de 0,15 à 0,3",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u49",
+   "empreinte": "df99c74c2dbd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "e491e6482616",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
