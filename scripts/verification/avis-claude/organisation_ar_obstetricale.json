@@ -1,0 +1,358 @@
+{
+ "cle": "organisation_ar_obstetricale",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a2b20c039b93",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "480874a261b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un accès permanent à au moins une salle d'intervention dédiée à la chirurgie obstétricale d'urgence",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u3",
+   "empreinte": "b9fdd69a82db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "quel que soit le nombre d'accouchements, l'anesthésiste-réanimateur doit être disponible dans des délais compatibles",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u4",
+   "empreinte": "452be5865de1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La charte de fonctionnement identifie quotidiennement ce(s) personnel(s) supplémentaire(s)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u5",
+   "empreinte": "492720de0874",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doivent être comptabilisées séparément et en plus des effectifs du secteur de naissance",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "c4281e24d704",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à périodicité définie de deux ans maximum en fonction notamment des résultats objectifs",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u7",
+   "empreinte": "ba86833d1756",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'anticiper et d'optimiser la qualité et la sécurité de la prise en charge des patientes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u8",
+   "empreinte": "e7b7fc03b19b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec priorité à l'activité obstétricale urgente",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u9",
+   "empreinte": "ba20640367d9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si l'activité obstétricale est supérieure à 2000 accouchements, l'anesthésisteréanimateur doit être dédié au secteur naissance",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u10",
+   "empreinte": "b9fe2ae7e480",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dispose d'une organisation écrite, connue et validée de renfort ponctuel",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u11",
+   "empreinte": "be606f42f779",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "que ces organisations soient opérationnelles 24 h/24 afin d'assurer la continuité et la permanence des soins",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "37e23e9d293f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lors de la consultation préanesthésique obligatoire, réglementaire et d'effectuer la visite préanesthésique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "af66503c19de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "après un interrogatoire et un examen clinique minimal compatible avec l'éventuel degré d'urgence",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "42125cc82708",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "31cad1bc8881",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les modalités de retrait du cathéter péridural, la surveillance de la levée du bloc moteur",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "2a30bfb12066",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "04bc132d879d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'appliquer et de consigner les directives du décret no 94_1050",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "ba274111252f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "d'établir un code de communication permettant une définition claire du degré d'urgence",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "bf42d8639a93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est partie intégrante du dossier médical de la patiente",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "aafb1b344270",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u21",
+   "empreinte": "0904adabeb78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la présence d'un pédiatre formé à la réanimation néonatale est nécessaire et doit être anticipée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "2d7873941ca2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u23",
+   "empreinte": "6471dcef9e95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit continue et réalisée par du personnel dédié et formé",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u24",
+   "empreinte": "dfdf7a91c8ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit dans la salle de travail où a eu lieu l'acte d'anesthésie, dans la mesure où elle est réalisée par du personnel dédié et formé",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u25",
+   "empreinte": "ef8a5769e25e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit prévue et écrite dans la charte du secteur de naissance",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u26",
+   "empreinte": "8b77581240af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "favorisent la relation mère-pèrenouveau-né et précisent les modalités de la surveillance du nouveau-né",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u27",
+   "empreinte": "272989d22f1f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un programme de réhabilitation rapide avec une approche pluridisciplinaire",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u28",
+   "empreinte": "040032704497",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u29",
+   "empreinte": "dc6deaf5d89c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "selon la convention établie entre chaque unité d'obstétrique et une unité de réanimation adulte",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u30",
+   "empreinte": "55e6dd2f8a8c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la traçabilité des produits sanguins administrés, les critères et les conditions du transfert",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u31",
+   "empreinte": "ef1392da406e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par des analyses de morbimortalité avec l'ensemble de l'équipe médicale et paramédicale",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "8d21ab2d21fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "démarches de gestion des risques interdisciplinaires pluriprofessionnelles incluant les personnels d'anesthésie-réanimation au sein du réseau de périnatalité",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u33",
+   "empreinte": "ef1622900b0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "selon la liste indicative des cas de transfert proposée par la circulaire du 21 juin 2006",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u34",
+   "empreinte": "c318eb30b46c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patientes transférées de la maison de naissance en expérimentation conventionnée",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u35",
+   "empreinte": "d4bb64bbe085",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans le cadre du développement professionnel continu, il est recommandé aux professionnels d'anesthésie-réanimation d'actualiser leurs compétences",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u36",
+   "empreinte": "d23a39214ad8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "taux d'hémorragies du postpartum grave, taux de transfusion, taux de césarienne, délai décision-incision",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u37",
+   "empreinte": "69d372461f53",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'existence d'une pathologie maternelle et d'une pathologie fœtale simultanée conduit à les associer",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u38",
+   "empreinte": "4a6810999468",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un stock de concentrés érythrocytaires d'urgence vitale et une procédure de réapprovisionnement",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u39",
+   "empreinte": "b8ab91fae956",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

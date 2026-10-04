@@ -1,0 +1,349 @@
+{
+ "cle": "raac_cardiaque_2021",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "dc5d7f9a9ca6",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "efaf424434c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'inclure les patients dans un programme de RAACC",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u3",
+   "empreinte": "43543c6ef025",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de délivrer une information et une éducation de qualité à l'aide de plusieurs supports",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u4",
+   "empreinte": "e7d96cb50df5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'admettre les patients en unité de soins critiques",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u5",
+   "empreinte": "ffbab5decad9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de dépister la dénutrition avant une chirurgie",
+   "explication": "",
+   "page": 14
+  },
+  {
+   "id": "u6",
+   "empreinte": "13326b9ef330",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'obtenir le sevrage tabagique le plus tôt possible avant une",
+   "explication": "",
+   "page": 15
+  },
+  {
+   "id": "u7",
+   "empreinte": "b013f3f32568",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "plus en amont possible de la chirurgie (et au besoin en la reportant en fonction du degré d'urgence) en cas de valeur >8%",
+   "explication": "La fiche omet le seuil HbA1c >8 % qui déclenche l'avis diabétologique et l'éventuel report de la chirurgie.",
+   "page": 16
+  },
+  {
+   "id": "u8",
+   "empreinte": "d4b586cd0e8f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de proposer un programme de préhabilitation cardiorespiratoire et musculaire",
+   "explication": "",
+   "page": 17
+  },
+  {
+   "id": "u9",
+   "empreinte": "e87977708e67",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "biquotidien à la chlorhexidine, en les débutant au moins 48h avant la chirurgie et pour une durée totale de 5-7 jours",
+   "explication": "La fiche omet la chlorhexidine biquotidienne, le début au moins 48 h avant et la durée totale de 5-7 jours.",
+   "page": 19
+  },
+  {
+   "id": "u10",
+   "empreinte": "42e534123299",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "En l'absence de contre-indication, les bétabloquants seront utilisés en première intention",
+   "explication": "La fiche omet que les bêtabloquants sont utilisés en première intention.",
+   "page": 21
+  },
+  {
+   "id": "u11",
+   "empreinte": "9e654945edaa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé d'initier un traitement par statine en l'absence de traitement préalable",
+   "explication": "",
+   "page": 23
+  },
+  {
+   "id": "u12",
+   "empreinte": "b17671a45db8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "limiter le jeûne préopératoire à 6 heures pour les solides et 2 heures pour les liquides clairs",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u13",
+   "empreinte": "2f27d83d6493",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de privilégier des agents halogénés plutôt qu'intraveineux",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "88a34a6a5439",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hors CEC, associant un volume courant compris entre 6-8 mL/kg de poids idéal théorique",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u15",
+   "empreinte": "aac88dacf3ad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé d'appliquer une ventilation pendant la CEC",
+   "explication": "",
+   "page": 28
+  },
+  {
+   "id": "u16",
+   "empreinte": "9e6581735c23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "notamment par le monitorage systématique du volume d'éjection systolique",
+   "explication": "",
+   "page": 29
+  },
+  {
+   "id": "u17",
+   "empreinte": "e9f4bdacc510",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "privilégiant les blocs échoguidés de la paroi thoracique (en injection unique ou continue)",
+   "explication": "",
+   "page": 30
+  },
+  {
+   "id": "u18",
+   "empreinte": "ebb16f76e577",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de réaliser une infiltration pré-sternale et/ou d'utiliser une",
+   "explication": "",
+   "page": 31
+  },
+  {
+   "id": "u19",
+   "empreinte": "6d3a43e80b8e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec épargne morphinique, sans qu'une classe thérapeutique n'ait fait la preuve de sa supériorité en dehors du paracétamol",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u20",
+   "empreinte": "4e1a53c00617",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé d'utiliser la gabapentine dans le cadre d'une analgésie",
+   "explication": "",
+   "page": 33
+  },
+  {
+   "id": "u21",
+   "empreinte": "57e4dfff57dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En chirurgie valvulaire aortique, l'utilisation des voies mini-invasives ne peut pas faire l'objet de recommandations",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u22",
+   "empreinte": "73817560534c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de favoriser la chirurgie mitrale vidéo-assistée",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u23",
+   "empreinte": "891895fb15a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En chirurgie coronaire, l'utilisation des voies miniinvasives ne peut pas faire l'objet de recommandations",
+   "explication": "",
+   "page": 36
+  },
+  {
+   "id": "u24",
+   "empreinte": "44f100ce4bc4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser la chirurgie sous CEC en normothermie pour diminuer le",
+   "explication": "",
+   "page": 38
+  },
+  {
+   "id": "u25",
+   "empreinte": "c771a0800845",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est pas recommandé de réaliser les pontages à cœur battant de façon systématique, même chez les sujets âgés de plus de 75 ans",
+   "explication": "",
+   "page": 39
+  },
+  {
+   "id": "u26",
+   "empreinte": "591a5f5c7e80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les patients dont l'aorte est très athéromateuse ou calcifiée pour limiter le risque d'accident",
+   "explication": "",
+   "page": 40
+  },
+  {
+   "id": "u27",
+   "empreinte": "7f1a34df9c55",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de privilégier une technique de « CEC optimisée »",
+   "explication": "",
+   "page": 42
+  },
+  {
+   "id": "u28",
+   "empreinte": "f7a3220a239d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'est probablement pas recommandé de considérer une méthode de cardioplégie plutôt qu'une autre",
+   "explication": "",
+   "page": 44
+  },
+  {
+   "id": "u29",
+   "empreinte": "4d99c8e6b585",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'implémenter un programme de PBM en chirurgie cardiaque et notamment de rechercher et corriger une anémie ferriprive, pour réduire le recours aux transfusions",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u30",
+   "empreinte": "218671785e3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'implémenter un programme de PBM en chirurgie",
+   "explication": "",
+   "page": 46
+  },
+  {
+   "id": "u31",
+   "empreinte": "ad2768898561",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé d'utiliser un système de récupération sanguine peropératoire",
+   "explication": "",
+   "page": 48
+  },
+  {
+   "id": "u32",
+   "empreinte": "41dc09893f90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de recommander une stratégie transfusionnelle (restrictive ou libérale) en chirurgie cardiaque",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u33",
+   "empreinte": "d8a42c03a78c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "qu'une valeur systématique de seuil transfusionnel",
+   "explication": "",
+   "page": 50
+  },
+  {
+   "id": "u34",
+   "empreinte": "e11bf276cf05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réaliser une extubation précoce (dans les 6 heures qui suivent",
+   "explication": "",
+   "page": 52
+  },
+  {
+   "id": "u35",
+   "empreinte": "5c6c0a0da566",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de mobiliser précocement les patients afin de",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u36",
+   "empreinte": "2cdef36186b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent l'ablation précoce des drains thoraciques, de la sonde vésicale",
+   "explication": "",
+   "page": 53
+  },
+  {
+   "id": "u37",
+   "empreinte": "349c8568348e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "programme de réhabilitation postopératoire débuté dans les 2 premières semaines",
+   "explication": "",
+   "page": 55
+  },
+  {
+   "id": "u38",
+   "empreinte": "e11ad360adad",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
