@@ -1,0 +1,430 @@
+{
+ "cle": "ecbu",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "a4e3c8bb50bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est de fait non recommandé de réaliser un quelconque traitement de la colonisation urinaire, et ce aussi bien en présence qu'en l'absence d'un matériel endo-urinaire",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u2",
+   "empreinte": "8dc1e7c0fc4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ECBU est la méthode de référence pour dépister une colonisation urinaire (Grade A)",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u3",
+   "empreinte": "21d9e46c2a93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est fortement recommandé de ne pas utiliser la bandelette urinaire pour dépister une colonisation urinaire (Grade B)",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u4",
+   "empreinte": "1f8872376f90",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "exceptionnellement en cas de difficultés organisationnelles, il est possible d'élargir ce délai jusqu'à 15 jours",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u5",
+   "empreinte": "ef2196fb4d17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ni la coloration de Gram ni la valeur de la leucocyturie ne permet de préjuger du résultat définitif",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u6",
+   "empreinte": "85657acf371b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de réaliser des antibiogrammes sur les espèces retrouvées selon les recommandations du REMIC (Grade AE)",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u7",
+   "empreinte": "acc0864c1fe4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de culture polymicrobienne (≥ 3 germes), en l'absence de données et de consensus au sein du groupe",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u8",
+   "empreinte": "8eafdf43b90f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En l'absence de données de la littérature et de consensus, il n'est pas possible de",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u9",
+   "empreinte": "5bfa520b41a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'infection urinaire, le groupe de travail suggère de reporter l'intervention chirurgicale après résolution de l'infection",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u10",
+   "empreinte": "9a1e158a5269",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est suggéré de réaliser un ECBU per-opératoire sur des urines pyéliques, à défaut une culture de calcul",
+   "explication": "",
+   "page": 22
+  },
+  {
+   "id": "u11",
+   "empreinte": "c96870b5ef08",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En France, près de 7 à 9 millions4 d'ECBU sont réalisés chaque année",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "07441720a906",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans des cas particuliers (ex : patients immunodéprimés), la décision du clinicien peut ne pas",
+   "explication": "",
+   "page": 18
+  },
+  {
+   "id": "u13",
+   "empreinte": "a56fd33619fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui : [ElMalik et al. 2000] (NP2) / Grade B",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u14",
+   "empreinte": "eb1a3d053c63",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(laser holmium [HoLEP], laser thulium [ThuLEP], laser greenlight [GreenLEP], bipolaire",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u15",
+   "empreinte": "52f5a4804aad",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui : [Kohada et al. 2019] (NP4) [Kutchukian et al. 2024] (NP3) / Grade C",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u16",
+   "empreinte": "1a94633c5439",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui comme JJ -> cf. recommandations du CIAFU [Bey et al. 2021]",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u17",
+   "empreinte": "470ddf7f5ad0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui : [Martov et al. 2015] (NP2) [Sohn et al. 2013] (NP4) / Grade B",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u18",
+   "empreinte": "8f22ee5f0d81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui : [Noble et al. 2022] (NP4) / Grade C",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u19",
+   "empreinte": "e17f40e9a172",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Uréthrotomie Uréthroplastie Urétéroplastie",
+   "explication": "La ligne « Urétéroplastie » (ECBU indiqué, Grade AE ; R6) ne figure pas dans la liste « ECBU indiqué » de la fiche.",
+   "page": 27
+  },
+  {
+   "id": "u20",
+   "empreinte": "de4af3979d91",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui : cf. recommandations du CIAFU [Bey et al. 2021]",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u21",
+   "empreinte": "386562ea635f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui / Grade A, et si possible urine pyélique",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u22",
+   "empreinte": "50dee989e508",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Oui / Accord fort d'après [Egrot et al. 2018]",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u23",
+   "empreinte": "1bc7e5d7ff3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non : [Bourgi et al. 2025b] (NP4) / Grade C",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u24",
+   "empreinte": "07a935dfe455",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "en l'absence de lien démontré entre colonisation urinaire préopératoire et infection postopératoire, il est recommandé de ne pas réaliser de dépistage de la colonisation urinaire avant une énucléation prostatique par laparatomie",
+   "explication": "L'adénomectomie chirurgicale (énucléation par laparotomie, cœlioscopie ou robot ; R4, ECBU non indiqué, Grade AE) manque dans la liste « ECBU non indiqué ».",
+   "page": 18
+  },
+  {
+   "id": "u25",
+   "empreinte": "89059ce4d0a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non -> cf. recommandations du CCAFU [Ploussard et al. 2022]",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u26",
+   "empreinte": "d6a0d6f5d534",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non : [Haider et al. 2019] [Kyoda et al. 2010] (NP4) / Grade C",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u27",
+   "empreinte": "3f5465f284d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non : [Herr 2012b] [Herr 2013] [Herr 2015] [Herr 2016]",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u28",
+   "empreinte": "1d77375107c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non : [Kavoussi et al. 2017] (NP4) / Grade C",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u29",
+   "empreinte": "f108ddaba01f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(NP3 -> NP2 car plusieurs études concordantes) / Grade B Non / Grade AE",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u30",
+   "empreinte": "424c9514a5b0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "R13.bis. Il est recommandé de ne pas réaliser de dépistage de la colonisation urinaire avant injections intra-détrusoriennes de toxine botulinique A",
+   "explication": "",
+   "page": 19
+  },
+  {
+   "id": "u31",
+   "empreinte": "c7fe09de4ce9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Non : [Bruyere et al. 2025] (NP3) [Ayoub et al. 2024] (NP4) / Grade C",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u32",
+   "empreinte": "3c650d178358",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Surrénalectomie Embolisation des artères rénales",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u33",
+   "empreinte": "8bcd6216ea77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Biopsie rénale ou thermoablation de tumeur rénale",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u34",
+   "empreinte": "7b2fe61f63b8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pose ou changement de cathéter de dialyse intrapéritonéale",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u35",
+   "empreinte": "2d87303da6b9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pose d'implant pénien Non : [Kavoussi et al. 2017] (NP4) / Grade C",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u36",
+   "empreinte": "47fa450b9b23",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie scrotale ou du pénis sans prothèse Non / Grade AE",
+   "explication": "",
+   "page": 27
+  },
+  {
+   "id": "u37",
+   "empreinte": "a10365faa370",
+   "verdict": "ecart",
+   "type_ecart": "omission",
+   "citation": "Uréthrocystographie rétrograde Non / Grade AE",
+   "explication": "La ligne « Uréthrocystographie rétrograde » (ECBU non indiqué, Grade AE) ne figure pas dans la fiche.",
+   "page": 27
+  },
+  {
+   "id": "u38",
+   "empreinte": "6f6c34350a88",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Radiothérapie, curiethérapie",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u39",
+   "empreinte": "f32381ddbab8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prostate par d'autres techniques : thermothérapie à la vapeur d'eau Ultrasons focalisés (HIFU)",
+   "explication": "",
+   "page": 26
+  },
+  {
+   "id": "u40",
+   "empreinte": "b01b6a1cea20",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de mettre en place un traitement antibiotique adapté, indépendamment de la quantité du microorganisme isolé",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u41",
+   "empreinte": "e955903b88b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit un total de 3 à 5 jours de traitement péri-opératoire (Grade C)",
+   "explication": "",
+   "page": 24
+  },
+  {
+   "id": "u42",
+   "empreinte": "20d37ddb2c67",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de traiter une colonisation urinaire avant néphrolithotomie percutanée",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u43",
+   "empreinte": "988fe7f9d98d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il n'est pas possible de recommander ou de ne pas recommander de traiter une colonisation urinaire fongique préopératoire",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u44",
+   "empreinte": "9aaaabd56543",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de culture polymicrobienne, en l'absence de données et de consensus au sein du groupe, il n'est pas possible de recommander ou de ne pas recommander un traitement antibiotique",
+   "explication": "",
+   "page": 21
+  },
+  {
+   "id": "u45",
+   "empreinte": "cd5b998d8f5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En 3ème intention : Amoxicilline + acide clavulanique",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u46",
+   "empreinte": "990675a57ecb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de privilégier les molécules suivantes (ordre alphabétique) : FosfomycineTrométamol, Nitrofurantoïne, Pivmécillinam et Triméthoprime",
+   "explication": "",
+   "page": 25
+  },
+  {
+   "id": "u47",
+   "empreinte": "fd91b7fc3e39",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
