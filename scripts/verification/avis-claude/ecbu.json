@@ -168,10 +168,10 @@
   {
    "id": "u19",
    "empreinte": "e17f40e9a172",
-   "verdict": "ecart",
-   "type_ecart": "omission",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "Uréthrotomie Uréthroplastie Urétéroplastie",
-   "explication": "La ligne « Urétéroplastie » (ECBU indiqué, Grade AE ; R6) ne figure pas dans la liste « ECBU indiqué » de la fiche.",
+   "explication": "",
    "page": 27
   },
   {
@@ -213,10 +213,10 @@
   {
    "id": "u24",
    "empreinte": "07a935dfe455",
-   "verdict": "ecart",
-   "type_ecart": "omission",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "en l'absence de lien démontré entre colonisation urinaire préopératoire et infection postopératoire, il est recommandé de ne pas réaliser de dépistage de la colonisation urinaire avant une énucléation prostatique par laparatomie",
-   "explication": "L'adénomectomie chirurgicale (énucléation par laparotomie, cœlioscopie ou robot ; R4, ECBU non indiqué, Grade AE) manque dans la liste « ECBU non indiqué ».",
+   "explication": "",
    "page": 18
   },
   {
@@ -330,10 +330,10 @@
   {
    "id": "u37",
    "empreinte": "a10365faa370",
-   "verdict": "ecart",
-   "type_ecart": "omission",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "Uréthrocystographie rétrograde Non / Grade AE",
-   "explication": "La ligne « Uréthrocystographie rétrograde » (ECBU non indiqué, Grade AE) ne figure pas dans la fiche.",
+   "explication": "",
    "page": 27
   },
   {

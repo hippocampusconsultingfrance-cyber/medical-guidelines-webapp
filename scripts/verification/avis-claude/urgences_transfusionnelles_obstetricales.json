@@ -402,10 +402,10 @@
   {
    "id": "u45",
    "empreinte": "dfc14f7d2bb9",
-   "verdict": "ecart",
-   "type_ecart": "omission",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "La tenue du dossier transfusionnel ! La traçabilité ! Les contrôles post-transfusionnels",
-   "explication": "L'item « La traçabilité », entre « tenue du dossier transfusionnel » et « contrôles post-transfusionnels », manque dans la liste de la fiche.",
+   "explication": "",
    "page": 7
   },
   {

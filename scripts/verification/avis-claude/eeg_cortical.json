@@ -141,10 +141,10 @@
   {
    "id": "u16",
    "empreinte": "24bd57c1eeb8",
-   "verdict": "ecart",
-   "type_ecart": "omission",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "ASA 4 /5 Rétrécissement aortique sévère Maladies respiratoires graves",
-   "explication": "La liste de la question 5 dans la source compte aussi : ASA 4/5, rétrécissement aortique sévère, maladies respiratoires graves, césarienne, insuffisance hépatique sévère. Ces 5 situations manquent dans la fiche (u17-u30), qui présente pourtant la liste comme celle de la source.",
+   "explication": "",
    "page": 10
   },
   {
