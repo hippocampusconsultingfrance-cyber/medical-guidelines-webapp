@@ -368,6 +368,27 @@ export default function AccueilPublic({ recentes = [] }: { recentes?: PublicFich
           </div>
         </section>
 
+        {/* Médecins relecteurs */}
+        <section aria-labelledby="relecteurs" className="mx-auto max-w-5xl px-4 pb-16 sm:px-6">
+          <div className="flex flex-col gap-4 rounded-2xl border border-[#BFE3DE] bg-[#EEF8F6] p-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 id="relecteurs" className="text-xl font-bold text-[#0E3A78]">
+                Vous êtes médecin et vous souhaitez participer à la correction des fiches&nbsp;?
+              </h2>
+              <p className="mt-2 text-slate-700">
+                Les fiches ont déjà été relues deux fois par des outils d&apos;intelligence artificielle. Bénéficiez
+                d&apos;un accès gratuit au site ainsi que de 5 accès au choix.
+              </p>
+            </div>
+            <Link
+              href="/relecteurs"
+              className="shrink-0 rounded-lg bg-[#177E73] px-5 py-2.5 text-center font-semibold text-white hover:bg-[#126A61]"
+            >
+              Devenir relecteur
+            </Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section aria-labelledby="faq" className="bg-[#F4F8FB]">
           <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
