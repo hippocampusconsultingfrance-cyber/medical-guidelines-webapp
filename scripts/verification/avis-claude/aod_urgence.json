@@ -1,0 +1,448 @@
+{
+ "cle": "aod_urgence",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "674a18db8487",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les données relatives à l'apixaban et à l'edoxaban étant encore trop peu nombreuses",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "4beb99cbdbdb",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "8a2d5a393131",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "seulement des propositions qui seront amenées à évoluer en fonction de l'expérience accumulée",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "6497a99978c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "taux inférieurs ou égaux à 30 ng/mL, à la fois pour dabigatran et rivaroxaban, devraient permettre la",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "8f26f7f0a188",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "proches, tant pour la Cmax que pour la Cmin (Tableau 1)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "08d0d4a9d802",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "183 (5–95 perc : 64–447) 254 ( 70,5) 37 (5–95 perc : 10–96) (24 h)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "384479ed7b3a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "254 ( 70,5) 37 (5–95 perc : 10–96) (24 h) 80,3 (18,7) (12 h)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "4d277b160b98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "125 (5–95 perc : 91–195) 215 (5–95 perc : 22–535) 9 (5–95 perc : 1–38) (24 h)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "6fa853baa9a0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "215 (5–95 perc : 22–535) 9 (5–95 perc : 1–38) (24 h) 32 (5–95 perc : 6–239) (24 h)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "8c5b15dfa44e",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "81819f246ac9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "d1332172addf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "[Dabigatran] ≤ 30 ng/ml 30 < [Dabigatran] ≤ 200 ng/ml",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "0bb4abddd199",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "CCP=25-50 UI/kg ou FEIBA=30-50 UI/Kg en fonction de la disponibilité",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "59b774bc1f40",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "seulement 35 % du dabigatran circulant est lié à l'albumine",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "86a82540499a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Discuter la dialyse avant chirurgie",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "c80f4dcebd20",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "d1332172addf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est proposé d'opérer sans délai les patients chez lesquels la concentration de dabigatran à l'admission est inférieure ou égale à 30 ng/mL",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "0bb4abddd199",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'intervention si possible jusqu'à 12 heures après la première",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "03c0b9ceefe0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24 heures et de répéter le dosage",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "cd34bec45f44",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La dialyse n'est pas envisageable",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "e2d16750da93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'antagonisation par CCP ou FEIBA ne corrige pas complètement les anomalies biologiques de l'hémostase",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u22",
+   "empreinte": "98e7e63e3287",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce test est donc peu utile dans la situation d'urgence",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u23",
+   "empreinte": "245464f25e65",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u24",
+   "empreinte": "27bc20766c89",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les valeurs proposées de rapport M/T sont inférieures ou égales à 1,2 pour chacun des deux tests",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u25",
+   "empreinte": "0de8714c9218",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jusqu'à 12 à 24 heures, selon la fonction rénale, devrait permettre d'atteindre des concentrations proches de 30 ng/mL",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "b220e97ae52a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas de ClCr < 50 mL/min et de ratio TCA supérieur à 1,5, il est hautement improbable",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "b99f5009d50a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u28",
+   "empreinte": "616e8c4458d7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Une activité inférieure ou égale à 0,1 U/mL garantit l'absence du médicament",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "db633b2eab94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "délai d'attente jusqu'à 12 heures devrait permettre d'atteindre un taux inférieur à 30 ng/mL",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "786d48f2014c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un ratio TCA supérieur à 1,5 correspond à des concentrations de rivaroxaban supérieures à 200 ng/mL",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u31",
+   "empreinte": "e58ad7922f4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une approche identique à celle du dabigatran est proposée",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u32",
+   "empreinte": "b4a96875475a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Enﬁn, il est important de rappeler que la mesure de l'INR n'a",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u33",
+   "empreinte": "a96646a28726",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est proposé d'opérer sans administration préventive de médicaments procoagulants",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u34",
+   "empreinte": "26c1f16aba05",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nous proposons de distinguer deux situations d'hémorragies graves",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u35",
+   "empreinte": "8a95ffeab52c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "b341fa80a365",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "soit du CPP 50 U/kg, éventuellement renouvelé une fois à huit heures d'intervalle",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u37",
+   "empreinte": "90d2daf9bdc1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u38",
+   "empreinte": "cde09c926a17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "si un geste hémostatique est praticable d'emblée (endoscopique, intravasculaire), celui-ci doit être privilégié",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u39",
+   "empreinte": "0a8bc7628172",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "30 ng/mL, l'hémorragie en cause ne peut être imputée au seul",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u40",
+   "empreinte": "be867c7e865e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si pas de geste hémostatique immédiat et si [ ]** > 30 ng / ml",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u41",
+   "empreinte": "71d369081929",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il s'agit d'une solution dégradée en cas d'indisponibilité immédiate de dosage spécifique",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u42",
+   "empreinte": "c2e8e943e6fd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "f12b6c9fc747",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les recommandations pour la pratique clinique HAS/GEHT 2008 concernant les accidents des AVK ont déﬁni les hémorragies graves",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u44",
+   "empreinte": "a1c428c6f3c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hémorragie extériorisée non contrôlable par les moyens usuels",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u45",
+   "empreinte": "691c2b4f6880",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "par rapport à la PAS habituelle, ou PAM < 65 mmHg, ou tout signe de choc",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u46",
+   "empreinte": "c20c6eaa0bc1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nécessité d'un geste hémostatique urgent : chirurgie, radiologie interventionnelle, endoscopie",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u47",
+   "empreinte": "9035b40e4ed6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Nécessité de transfusion de culots globulaires",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u48",
+   "empreinte": "03467126609f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hématome musculaire profond et/ou syndrome de loge",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u49",
+   "empreinte": "f29bb0c52e34",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
