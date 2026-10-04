@@ -50,20 +50,20 @@
   },
   {
    "id": "u6",
-   "empreinte": "446b44b322f7",
-   "verdict": "ecart",
-   "type_ecart": "chiffre",
-   "citation": "leucopénie (< 4000 GB/mm3) ou hyperleucocytose",
-   "explication": "Texte altéré dans la fiche : « leucopénie ( 12 000/mm³) ». La source dit « leucopénie (< 4000 GB/mm³) ou hyperleucocytose (> 12 000 GB/mm³) ».",
+   "empreinte": "755c08681c5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "leucopénie (< 4000 GB/mm3) ou hyperleucocytose (> 12 000 GB/mm3).",
+   "explication": "",
    "page": 3
   },
   {
    "id": "u7",
-   "empreinte": "730a305f0cce",
-   "verdict": "ecart",
-   "type_ecart": "chiffre",
-   "citation": "cours ou dans les sept jours précédents : uroculture",
-   "explication": "Texte altéré : « avec sondage (en cours ou 5 microorg./mL » ; la source dit « avec sondage en cours ou dans les 7 jours précédents : uroculture ≥ 10⁵ microorganismes/mL, au plus 2 microorganismes ». Seuil et délai perdus.",
+   "empreinte": "afe6bc9493a2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "avec sondage vésical ou autre abord de l’arbre urinaire, en cours ou dans les sept jours précédents : uroculture positive ( 105 microorganismes/ml) et au plus deux microorganismes différents.",
+   "explication": "",
    "page": 4
   },
   {

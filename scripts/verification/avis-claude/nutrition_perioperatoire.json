@@ -86,11 +86,11 @@
   },
   {
    "id": "u10",
-   "empreinte": "ff04e607d335",
-   "verdict": "ecart",
-   "type_ecart": "chiffre",
-   "citation": "un IMC  18,5 ou un IMC < 21 chez le sujet de plus de 70 ans ;",
-   "explication": "La fiche écrit « IMC ≤18,5 (ou 70 ans) » : le seuil « IMC < 21 chez le sujet de plus de 70 ans » a disparu (texte tronqué, probablement un signe « < » mal converti).",
+   "empreinte": "993d74a8ec45",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "un IMC  18,5 ou un IMC < 21 chez le sujet de plus de 70 ans ; ou une perte de poids récente d’au moins 10 %",
+   "explication": "",
    "page": 3
   },
   {
@@ -113,11 +113,11 @@
   },
   {
    "id": "u13",
-   "empreinte": "6772a8b8bb12",
-   "verdict": "ecart",
-   "type_ecart": "chiffre",
+   "empreinte": "8578ac465e1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "présente un IMC < 13 ou un amaigrissement > 20 % en trois mois ou des apports oraux négligeables pendant 15 jours ou plus.",
-   "explication": "La fiche écrit « IMC 20 % en 3 mois » : « IMC < 13 ou un amaigrissement > » a disparu. Critère de risque de syndrome de renutrition rendu illisible.",
+   "explication": "",
    "page": 3
   },
   {
@@ -833,11 +833,11 @@
   },
   {
    "id": "u93",
-   "empreinte": "5ed86e207e5a",
-   "verdict": "ecart",
-   "type_ecart": "chiffre",
+   "empreinte": "20643f6b5441",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "IMC  13, perte de poids > 20 % en trois mois, apports oraux négligeable pendant 15 jours ou plus.",
-   "explication": "Même troncature que R10 : « IMC 20 % en 3 mois » au lieu de « IMC < 13, perte de poids > 20 % en trois mois ». Le reste (≥ 21 jours, 10 kcal/kg/j, thiamine 200-300 mg, phosphore, magnésium, potassium) est conforme.",
+   "explication": "",
    "page": 7
   },
   {

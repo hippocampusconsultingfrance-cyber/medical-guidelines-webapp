@@ -95,11 +95,11 @@
   },
   {
    "id": "u11",
-   "empreinte": "85cc4593c068",
-   "verdict": "ecart",
-   "type_ecart": "chiffre",
+   "empreinte": "522760eafb35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "< 0,5 mL/kg/h pendant > 8 h Injury (atteinte) Diminuée de > 50 % < 0,5 mL/kg/h pendant > 16 h",
-   "explication": "Colonne diurèse tronquée : la source donne « < 0,5 mL/kg/h pendant > 8 h » (Risk), « < 0,5 mL/kg/h pendant > 16 h » (Injury) et « < 0,3 mL/kg/h pendant 24 h ou anurie pendant > 12 h » (Failure). La fiche n'affiche que « 8 h / 16 h / 12 h », sans le seuil de débit. Pour Failure, « 12 h » seul est trompeur.",
+   "explication": "",
    "page": 6
   },
   {

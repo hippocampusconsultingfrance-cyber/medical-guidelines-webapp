@@ -95,11 +95,11 @@
   },
   {
    "id": "u11",
-   "empreinte": "985fe3f0acd8",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "les IVG doivent être réalisées en ambulatoire ou en hôpital de jour (séjour inférieur à 12 heures)",
-   "explication": "Texte tronqué dans la fiche : « (séjour (AP) ». La durée « inférieur à 12 heures » a disparu.",
+   "empreinte": "4d7d940db096",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "jour (séjour inférieur à 12 heures).",
+   "explication": "",
    "page": 8
   },
   {

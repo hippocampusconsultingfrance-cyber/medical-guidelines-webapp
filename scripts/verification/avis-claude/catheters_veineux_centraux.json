@@ -95,11 +95,11 @@
   },
   {
    "id": "u11",
-   "empreinte": "efed159defec",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "en place » ne peuvent s’envisager qu’en l’absence d’état de",
-   "explication": "Texte tronqué « cathéters de courte durée ( [point non résolu] » : la source précise courte durée (< 14 j), études complémentaires nécessaires, et le délai différentiel de positivité reste un point non résolu.",
+   "empreinte": "be204af86e7e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Pour les cathéters de courte durée (< 14 j), le mode de contamination des cathéters est essentiellement extraluminal.",
+   "explication": "",
    "page": 2
   },
   {
@@ -203,11 +203,11 @@
   },
   {
    "id": "u23",
-   "empreinte": "084df8142468",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "silicones entraînent moins d’ILC que les PVC",
-   "explication": "Texte tronqué : la source ajoute que les cathéters imprégnés d'héparine ou solutions héparinées réduisent complications thrombotiques et bactériémies pour les cathéters de petit diamètre (< 5 Fr) insérés par voie fémorale chez l'enfant (2-b) ; restriction de population perdue.",
+   "empreinte": "5eabe73aed43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "héparinisation des solutions de perfusion réduit les complications thrombotiques et les bactériémies liées aux CVC de petits diamètres (< 5 Fr) insérés par voie fémorale (2-b).",
+   "explication": "",
    "page": 4
   },
   {
