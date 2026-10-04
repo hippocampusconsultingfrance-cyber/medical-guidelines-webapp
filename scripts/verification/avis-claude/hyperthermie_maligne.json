@@ -1,0 +1,430 @@
+{
+ "cle": "hyperthermie_maligne",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "d560fea12e11",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce document est une mise à jour des Recommandations d'Experts pour le risque d'HYPERTHERMIE MALIGNE en anesthésie-réanimation de septembre 2013",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "46730640075f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de dépister les patients à risque d'hyperthermie maligne en consultation d'anesthésie selon l'arbre décisionnel de la figure 1",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "5be18dea8cc5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "experts suggèrent que l'anesthésiste contacte l'un des centres experts « Hyperthermie Maligne »",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u4",
+   "empreinte": "ae790b2ed277",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "associant anesthésiste, expert de l'hyperthermie maligne, généticien, neurologue et le patient lui-même",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "0e74f11a9e61",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les antécédents de syndrome malin des neuroleptiques ne constituent pas une situation à risque d'HM anesthésique",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "e6ff7517a79c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u7",
+   "empreinte": "fe4e5a26f7cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (page PDF 3) : document HM disponible → IVCT négatif = HM négatif → pas de risque ; IVCT positif ou mutation = HM sensible → précautions anesthésiques HM",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u8",
+   "empreinte": "8903058261ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : document non disponible → considérer à risque → chirurgie urgente → précautions HM ; chirurgie programmée → contacter centre HM",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "4c4816bda3d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : pas d'antécédent ; patient à risque hors anesthésie Non → pas de risque ; Oui → urgente → précautions, programmée → contacter centre HM",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "9149c5624326",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de préciser le diagnostic de sensibilité à l'hyperthermie maligne chez les sujets à risque par des « In Vitro Contracture Tests»",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "26ceb2ed5e4e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'analyse génétique prédictive n'est pas recommandée chez les mineurs sauf en cas de bénéfice individuel direct",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u12",
+   "empreinte": "93d8dd46b009",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Exclure tous les agents anesthésiques volatils halogénés, quels qu'ils soient, ainsi que le curare dépolarisant",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "43aa2c9d5682",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La purge par un flux de 10 L/min de gaz en circuit ouvert doit être effectuée pendant une durée variant entre 10 et 50 min",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "1efce16f6e68",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de disposer dans tous les lieux où sont réalisées des anesthésies générales d'une affiche « résumé »",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u15",
+   "empreinte": "06f42603c6e6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "comporte des informations claires et précises sur l'accès immédiat au stock de dantrolène et sur la procédure de reconstitution",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u16",
+   "empreinte": "e8cbdbaf8132",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de colliger dans un document tous les éléments survenus en faveur du diagnostic de crise d'hyperthermie maligne",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u17",
+   "empreinte": "18f9b9b6f1dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Les experts suggèrent de réaliser un dosage des CPK 12 heures et 24 heures après la crise d'HM, répété jusqu'à normalisation",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u18",
+   "empreinte": "3ad7fd0b2941",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "risque familial basé sur la transmission autosomique dominante",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u19",
+   "empreinte": "c743c73845fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de prendre contact le plus rapidement possible après la crise avec un centre expert de l'hyperthermie maligne",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u20",
+   "empreinte": "4dc6e71bb291",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tel : 03.20.44.62.68 ou 03.20.44.40.74 (secrétariat)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u21",
+   "empreinte": "dcf26f21904d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "PENTHROX® (méthoxyflurane), CELOCURINE® (Suxaméthonium, Succinylcholine)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u22",
+   "empreinte": "dd0acd37c0ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Hyperventiler en oxygène 100% (2 à 3 fois le volume minute utilisé avant la crise HM), en circuit ouvert",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u23",
+   "empreinte": "4ce8f7804968",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Demander du renfort. Relais par des anesthésiques non déclenchants",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u24",
+   "empreinte": "498d7ddd7992",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Monitorer l'EtCO2 et la température centrale. Réaliser un gaz du sang artériel et veineux",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u25",
+   "empreinte": "34235f6b0ede",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Injecter 2 à 3 mg/kg intraveineux direct, le plus vite possible",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u26",
+   "empreinte": "ac0cfdf83e95",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Des doses supplémentaires de 1 mg/kg peuvent être nécessaires jusqu'à 10 mg/kg",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u27",
+   "empreinte": "9981beb860b1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "doit être arrêté dès que la température centrale est inférieure à 38°C",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u28",
+   "empreinte": "fa62f4498ae3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Surveiller : diurèse, température centrale, kaliémie, pH, CPK, myoglobine, coagulation",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u29",
+   "empreinte": "ca0b27253cee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'hyperkaliémie, traiter par perfusion de glucose-insuline",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u30",
+   "empreinte": "ec711c3ab1dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "En cas d'acidose métabolique grave (pH <7,2) injection IV de bicarbonate de sodium",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u31",
+   "empreinte": "1487b34a38e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chaque flacon de dantrolène contient 3 g de mannitol qui provoque une diurèse osmotique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u32",
+   "empreinte": "c88e35eef3d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après la crise, surveiller le patient en réanimation pendant au moins 24 heures",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u33",
+   "empreinte": "1488ea5794bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dantrolène IV en seringue électrique de 1mg/kg sur 4 heures sont recommandées",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u34",
+   "empreinte": "ac0b60a93ccf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Un dosage de CPK à 12h et à 24h qui reste normal est un argument important de diagnostic différentiel",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u35",
+   "empreinte": "a586de74282e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Remise d'un document écrit au patient et à sa famille informant du diagnostic",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u36",
+   "empreinte": "19e7b4bcd808",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prélèvement sanguin de 10 mL sur tube EDTA en vue d'analyse génétique",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u37",
+   "empreinte": "cff659168b17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Ce protocole peut ne pas convenir à tous les patients et doit être modifié en fonction de cas particuliers",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u38",
+   "empreinte": "6413c829949d",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "78b9cf3f06b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "36 flacons de 20 mg peuvent être nécessaires au traitement de la crise d'HM",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u40",
+   "empreinte": "601e73e369ab",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « 1 - Matériel nécessaire » (photo : flacon, seringue, poche, dispositif)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u41",
+   "empreinte": "4eb766ef2ae6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « 2 - Prélever 60 ml d'eau ppi »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u42",
+   "empreinte": "e63455e1b0be",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « 3 - Insérer le dispositif de transfert »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "4c08c5ab8767",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « 4 - Injecter les 60 ml d'eau ppi »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u44",
+   "empreinte": "bb111c7daade",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « 5 - Prélever les 60 ml de dantrolène dissous / 6 - Secouer si présence de particules »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u45",
+   "empreinte": "1180f0efb09e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « 7 - Injecter » + encadré « robinet à trois voies sur une ligne de perfusion dédiée de sérum salé à 0,9 % le plus rapidement possible »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "5e0e129aee83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Page PDF 11 : « La dose recommandée initiale est 2,5 mg/kg chez l'adulte et l'enfant »",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "318e4fd949f1",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}

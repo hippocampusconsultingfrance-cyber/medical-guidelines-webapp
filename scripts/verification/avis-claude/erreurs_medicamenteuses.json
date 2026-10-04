@@ -1,0 +1,430 @@
+{
+ "cle": "erreurs_medicamenteuses",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "8a368b94c302",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Amendé et validé par le Comité Analyse et Maîtrise du Risque de la SFAR",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "ccc320d131c5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n'existe que très peu de travaux ayant prouvé de manière irréfutable, l'efficacité des mesures de prévention",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u3",
+   "empreinte": "65fdb5d05b0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "provoquent un EIG toutes les 2 000 journées d'hospitalisation [9], soit environ 70 000 EIG par an",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "e17d18f4b020",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la fréquence des erreurs observées pourrait être 400 fois supérieure à celle des erreurs déclarées",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "59f999b50724",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l'erreur survient dans 55% des cas au moment de l'administration (erreur de seringue), et dans 45% pendant la reconstitution",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u6",
+   "empreinte": "70a93391d2cd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la publication de recommandations ou de normes dans d'autres pays (Australie, Canada, Etats-Unis, Nouvelle-Zélande, Royaume-Uni)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "9069028ffca3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "modélisation de l'erreur médicamenteuse à l'aide de la méthode de l'arbre des pannes",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "f77ce362ce85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 (page PDF 2) : erreur médicamenteuse = OU (reconstitution, administration)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "2d2edc4929b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : reconstitution = OU (spécialité, dilution [losange], étiquetage [losange])",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u10",
+   "empreinte": "1ec0e0da86ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : erreur de spécialité = ET (sélection spécialité, contrôle spécialité)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u11",
+   "empreinte": "759c266f0745",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : erreur de dilution = losange (non détaillée)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "656bb87c2f85",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : erreur d'étiquetage = losange (non détaillée)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u13",
+   "empreinte": "0979bf7ba3ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : administration = OU (seringue, voie, volume ou débit, moment, patient)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u14",
+   "empreinte": "424118d67a14",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : erreur de seringue = ET (sélection seringue, contrôle seringue)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u15",
+   "empreinte": "e8c4682632ba",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : erreur de voie = ET (sélection voie, contrôle voie)",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "bd2c7c3aaf7a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : volume ou débit = losange",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u17",
+   "empreinte": "ab213d999432",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : moment = losange",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u18",
+   "empreinte": "aaf964477922",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : patient = losange",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u19",
+   "empreinte": "c1f926396017",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Figure 1 : légende — rectangle arrondi erreur résultante, rectangle intermédiaire, losange non détaillée, cercle élémentaire",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "f44e0de30524",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "résultent de la combinaison d'une erreur de sélection et d'une erreur de contrôle",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "e9693da787c0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'ensemble de la démarche conduite par la structure, doit être documentée, et les preuves de son existence apportées",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u22",
+   "empreinte": "6e169a3a3262",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la prévention des erreurs de moment et des erreurs de volume ou de débit relève essentiellement de l'utilisation des dispositifs médicaux",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "8c8828cb843b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "des dispositions destinées à limiter les perturbations lors des tâches de préparation des médicaments devraient être prises",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "10269fe2fd80",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévention des erreurs de spécialité repose tout d'abord de manière active sur le contrôle des informations notées sur le conditionnement",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "dcf6560d8761",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le stock disponible de chaque spécialité doit être restreint au minimum",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "5b9cec745dac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le recours à des médicaments prêts à l'emploi réalisés par l'industrie pharmaceutique ou par la pharmacie de l'institution devrait être encouragé",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u27",
+   "empreinte": "a0881ba0aaf9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "au cours d'une seule séquence de gestes par la même personne, sans interruption ni changement de lieu",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u28",
+   "empreinte": "e536e8db26ae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La présence de robinets sur les cathéters et tubulures destinés à l'anesthésie loco-régionale devrait être évitée",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u29",
+   "empreinte": "fbebf3b34228",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prévention des erreurs de seringues utilisées pour l'administration directe ou continue",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u30",
+   "empreinte": "da8626ab8e81",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L'utilisation d'une seringue sur laquelle manque soit le nom de la spécialité, soit sa concentration doit être prohibée",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u31",
+   "empreinte": "fbcc862f712e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Identification des seringues des médicaments de l'anesthésie : Codes internationaux de couleurs et de trames",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "0c7a606c550c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anti-émétiques métoclopramide, ondansétron saumon 156",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u33",
+   "empreinte": "096be409b7c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "hypnotiques thiopental, étomidate, kétamine, propofol jaune",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u34",
+   "empreinte": "a9ac0e0daaa8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "benzodiazépines diazépam, midazolam orange 151",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "1cf2aafeeac8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "flumazénil orange 151 et bandes blanches diagonales",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "40a3f987f7af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "cisatracurium, vécuronium, rocuronium rouge fluorescent 805 ou rouge vif",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u37",
+   "empreinte": "d7055874438e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "néostigmine rouge fluorescent 805 ou rouge vif et bandes blanches diagonales",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u38",
+   "empreinte": "57295b87d52a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "remifentanil, alfentanil bleu 297",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u39",
+   "empreinte": "daa7d9c84691",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "naloxone bleu 297 et bandes blanches diagonales",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u40",
+   "empreinte": "8565afe9e1a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "neuroleptiques droperidol saumon 156",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "5c9e3c5c36c6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "adrénaline, noradrénaline, éphédrine, phényléphrine violet 256",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "88417af70dec",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "phentolamine violet 256 et bandes blanches diagonales",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u43",
+   "empreinte": "531432ef5ad4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lévobupivacaïne, mépivacaïne gris 401",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u44",
+   "empreinte": "342b0739101d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anticholinergiques atropine vert 367",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u45",
+   "empreinte": "069221d21479",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "blanc (protamine blanc et bandes noires diagonales)",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u46",
+   "empreinte": "005b5bb17607",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les agents antagonistes sont identifiés à l'aide d'étiquettes dont la trame est hachurée",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u47",
+   "empreinte": "5107c260b2fa",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
