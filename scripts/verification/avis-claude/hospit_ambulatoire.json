@@ -1,0 +1,772 @@
+{
+ "cle": "hospit_ambulatoire",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "b8f2cfde8af1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’hospitalisation ambulatoire est définie par la sortie du patient le jour même de son admission, sans nuit d’hébergement. Cela inclut l’ensemble des actes chirurgicaux ou",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u2",
+   "empreinte": "1f483fc3c6bd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u3",
+   "empreinte": "31f955eedc04",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La prise en charge anesthésique du patient en hospitalisation ambulatoire est un concept d’organisation, centré sur le",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u4",
+   "empreinte": "6dfe4142c224",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1. Il est recommandé de privilégier le mode de prise en charge ambulatoire des patients dès que les conditions de sa",
+   "explication": "",
+   "page": 1
+  },
+  {
+   "id": "u5",
+   "empreinte": "0375c39436e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "59. Il est recommandé que seuls les acteurs d’une même structure définissent entre eux la liste des actes ambulatoires adaptés à leur expertise et à l’organisation mise en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u6",
+   "empreinte": "5bad49175786",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3. Il est souhaitable qu’il n’y ait pas de liste réglementaire d’actes à réaliser en ambulatoire.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "f5ddcb13cfca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "concept fondamental est le triptyque acte-patient-structure qui correspond à l’analyse du bénéfice/risque pour le patient, à la",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "27cd2670bc00",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "du bénéfice/risque pour le patient, la prévisibilité de sa prise en charge et de l’organisation mise en place, en particulier la",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u9",
+   "empreinte": "f1bce3203ee0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "5. Il est recommandé que la sélection des actes réalisés en ambulatoire soit fondée sur la maîtrise des risques, de la",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "3de2e3406d4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "perturber le fonctionnement de l’unité ambulatoire et de garantir le même niveau de qualité et de sécurité au patient.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "c491e714a191",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "7. Il est recommandé que les patients de statut ASA I, II et III stable soient éligibles à l’ambulatoire. C’est l’analyse du",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u12",
+   "empreinte": "c67c20a9db1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "8. Il est recommandé d’assurer les conditions de la compréhension et de l’acceptation des modalités de prise",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "7dd2edbc0178",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lieu de résidence postopératoire est compatible avec la prise en charge ambulatoire. La durée du transport et la",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "65441978f693",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "10. Il est recommandé de formaliser une convention entre établissements afin de prévoir la prise en charge d’une",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "cef48b266935",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "11. Il est recommandé de s’assurer que lors du trajet du retour à son lieu de résidence postopératoire le patient ne conduise",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u16",
+   "empreinte": "8cfd1a7471a6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "lieu de résidence postopératoire soit évaluée en fonction du couple acte – patient et soit être définie au préalable par",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "e2a64f75c571",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le patient hospitalisé en ambulatoire est acteur de sa préparation préopératoire et de sa réhabilitation postopératoire au lieu de résidence. Une information détaillée sur toutes",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "f483baf4ba0d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "13. Il est recommandé de délivrer une information précoce et réitérée à chaque étape de la prise en charge.",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "3b2abe1cee93",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "14. Il est recommandé que l’information donnée au patient soit élaborée et concertée entre les différents acteurs amenés à",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u20",
+   "empreinte": "5f559c91df47",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "15. Il est recommandé que la consultation préanesthésique soit réalisée par un anesthésiste réanimateur connaissant les",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "89b6f41d5d6e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "16. Il est recommandé, au cours de la consultation préanesthésique, de dispenser une information adaptée à la spécificité de la prise en charge en anesthésie ambulatoire",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u22",
+   "empreinte": "0c535844a549",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "17. Il est recommandé d’informer le patient des effets de l’anesthésie ou de la sédation sur les fonctions cognitives et",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u23",
+   "empreinte": "3e3d51cdf642",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "18. Il est recommandé d’informer le patient que la conduite de tout véhicule est proscrite pendant les 12 premières heures",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u24",
+   "empreinte": "f883b60128ac",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "19. Il est recommandé d’informer le patient pratiquant la conduite automobile du groupe lourd (poids lourds,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "8c405669094e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "20. Il est recommandé d’informer les patients des effets secondaires possibles du traitement prescrit en périopératoire (anxiolytique, antalgiques majeurs) sur les",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u26",
+   "empreinte": "6c4116b1c352",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patient pendant la phase de récupération de l’anesthésie, du fait d’une possible altération de la mémoire et de sa",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "26a8138d8865",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "22. Il est recommandé que l’information délivrée soit orale, complétée par un support écrit court et lisible ou d’un",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "94674c8d6031",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prise en charge ambulatoire, ce qui à la vertu pédagogique d’inciter à la lecture du document proposé. Cette signature",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "3ba5f535c3b3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "24. Il est recommandé de pouvoir établir un contact avec le patient dans les jours précédant l’hospitalisation pour",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "e34a57c1298d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le choix de la technique d’anesthésie repose sur l’analyse du bénéfice/risque pour le patient, de l’acte réalisé et de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "589d903fc7ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "25. Il est souhaitable de formaliser les modalités de réalisation de la visite préanesthésique et d’en assurer la traçabilité.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "82aa00be512f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "26. Il est possible de prescrire une prémédication anxiolytique et/ou analgésique.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "399e084fb718",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "27. Il est recommandé d’établir des règles de jeune préopératoire adaptées à la programmation opératoire pour améliorer le confort du patient.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "5f6f0dadf3db",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "28. Il n’est pas recommandé de stratégie spécifique à la prise en charge anesthésique ambulatoire. L’ensemble des agents",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u35",
+   "empreinte": "e8ac5efcca92",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "29. Il est souhaitable d’adapter la technique de rachianesthésie à la nécessité d’une reprise rapide de l’autonomie du patient",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u36",
+   "empreinte": "dd4678b10f4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "30. Il est recommandé de réaliser des blocs périphériques en accord avec le patient pour les interventions des membres",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u37",
+   "empreinte": "8e13e57a6ac4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "essentielle à la réussite de l’ambulatoire. Elle allie anticipation, rigueur de la prescription et respect de l’observance.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u38",
+   "empreinte": "b52fe5cc79dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "31. Il est recommandé de mettre en place une stratégie multimodale de la prise en charge de la douleur postopératoire y compris au lieu de résidence : information,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u39",
+   "empreinte": "d456b1b884de",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "32. Il est souhaitable que les ordonnances d’antalgiques soient remises au patient dès la consultation préopératoire de",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u40",
+   "empreinte": "2288838975dd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "précisent les horaires de prise systématiques des antalgiques et les conditions de recours aux antalgiques de niveau plus élevé si nécessaire.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u41",
+   "empreinte": "c7ff9ee658b4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "34. Il est souhaitable que les modalités de gestion et de prise des analgésiques de « secours » soient expliquées dès la",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u42",
+   "empreinte": "24c9a5b6642d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "35. Il est souhaitable d’utiliser les infiltrations et les blocs périphériques seuls ou en complément d’une autre",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u43",
+   "empreinte": "4b8ad38c63d0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "36. Il est recommandé de formaliser l’organisation du suivi de l’analgésie par cathéters périnerveux au lieu de résidence.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u44",
+   "empreinte": "c84560426acb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "37. Il est recommandé de prescrire tout moyen non médicamenteux permettant de réduire la douleur postopératoire (application de froid, posture antalgique. . .).",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u45",
+   "empreinte": "85ff6e475a34",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’incidence de la maladie-thromboembolique veineuse semble globalement faible après une chirurgie ambulatoire.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u46",
+   "empreinte": "492821db0e15",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "38. Il est recommandé de prendre en compte la combinaison du risque individuel du patient et du risque de la chirurgie.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u47",
+   "empreinte": "37d1735c8d7d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "39. Il est recommandé que la durée du traitement pharmacologique ne soit pas inférieure à cinq jours et soit adaptée au cas par cas. En présence d’un risque global faible à modéré,",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u48",
+   "empreinte": "f45c386b52c4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il n’existe pas de stratégie spécifique de prévention des NVPO dans le contexte ambulatoire. La prophylaxie des NVPO",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u49",
+   "empreinte": "63ac02dbc999",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "40. Il est recommandé d’adopter une stratégie antiémétique prophylactique multimodale chez les patients ambulatoires",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u50",
+   "empreinte": "a0565ddaae98",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "validés en prophylaxie, en changeant de classe et sous une forme galénique adaptée, en cas d’échec du premier choix",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u51",
+   "empreinte": "713a5c154c66",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "charge ambulatoire réussie. Autoriser cette sortie, sans aucune concession à la sécurité, constitue le moment-clé de cette prise",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u52",
+   "empreinte": "dbfb1d77a339",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "42. Il est recommandé que l’ensemble des modalités de sortie soit formalisé par les acteurs et porté à la connaissance",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u53",
+   "empreinte": "d873c72b5449",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "rechercher une alternative avant de proposer un transfert en hospitalisation traditionnelle. En cas de refus du patient,",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u54",
+   "empreinte": "21c460daa722",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "44. Il est souhaitable d’utiliser un score pour autoriser la sortie, facile à mettre en œuvre. Il n’y a pas d’intérêt à utiliser des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u55",
+   "empreinte": "17cfd7516ed8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "45. Il n’est pas recommandé d’imposer une réalimentation liquide et solide avant la sortie.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u56",
+   "empreinte": "389f3a3b8328",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "46. Il est possible après anesthésie générale ou bloc périphérique, de ne pas exiger une miction pour autoriser la sortie, en l’absence de facteur de risque lié au patient ou au",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u57",
+   "empreinte": "4fc20f015faa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "47. Il est possible après une rachianesthésie de ne pas attendre une miction pour autoriser la sortie sous réserve :",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u58",
+   "empreinte": "74ab33bba732",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "48. Il est possible lorsque des blocs périphériques sont utilisés, de permettre la sortie du patient malgré l’absence de levée",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u59",
+   "empreinte": "2d424fafcb78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "s’assurer des capacités de déambulation du patient avant la sortie. Le port d’attelle ou de béquille peut être utilisé.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u60",
+   "empreinte": "a734dc8ba8fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permette le partage de l’information entre les acteurs de la structure et la coordination des soins avec la médecine de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u61",
+   "empreinte": "d8e55fd153df",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "51. Il est recommandé que soient remis au patient, à sa sortie, les documents nécessaires à la continuité des soins.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u62",
+   "empreinte": "8a2612f27ad0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "52. Il est recommandé que les acteurs de la structure s’assurent que le processus du retour au lieu de résidence du patient",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u63",
+   "empreinte": "1f708dcafa10",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "collaboration avec la médecine de ville, organisent le suivi du patient après sa sortie en fonction de la prévisibilité des",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u64",
+   "empreinte": "35d61d126e96",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "54. Il est recommandé de mettre en place une démarche qualité au sein de l’unité ambulatoire : description du",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u65",
+   "empreinte": "e0660fe86b78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "55. Il est recommandé que l’organisation de la structure prenne en compte le risque propre du patient du fait de son statut",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u66",
+   "empreinte": "163e5e5b8aaf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "56. Il est recommandé de mettre en place une démarche d’analyse et de maitrise des risques de l’activité ambulatoire",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u67",
+   "empreinte": "91a89734f698",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "57. Il est souhaitable de définir des indicateurs d’analyse et de pilotage adaptés à la structure et d’établir des tableaux de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u68",
+   "empreinte": "f43c8fc80f74",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "58. Il est recommandé d’assurer le suivi de la qualité des soins et de la satisfaction des patients après leur sortie.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u69",
+   "empreinte": "5752ec40b144",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "59. Il est recommandé que seuls les acteurs d’une même structure définissent entre eux la liste des actes ambulatoires adaptés à leur expertise et à l’organisation mise en",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u70",
+   "empreinte": "173418de8ef5",
+   "verdict": "ecart",
+   "type_ecart": "sens",
+   "citation": "Pour les enfants nés prématurés : un âge postconceptionnel inférieur à 60 semaines est un facteur",
+   "explication": "Source : < 60 semaines = exclusion ; au-delà, seuls « certains patients d'âge postconceptionnel supérieur à 60 semaines et jusqu'à un an peuvent être inclus après accord préalable anesthésiste/opérateur ». La fiche présente ≥ 60 semaines comme éligible d'emblée et omet « l'accord préalable anesthésiste/opérateur » (aussi pour les < 3 mois nés à terme).",
+   "page": 5
+  },
+  {
+   "id": "u71",
+   "empreinte": "d77708902b83",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "61. Il est recommandé que l’information délivrée soit adaptée, personnalisée et compréhensible pour les parents mais",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u72",
+   "empreinte": "4e6df330dc3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "62. Il est recommandé d’informer les parents de la présence nécessaire d’un accompagnant qui ne soit pas le conducteur. Au-delà de 10 ans, la présence du deuxième",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u73",
+   "empreinte": "f865249d3cb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’ambulatoire. La prise en charge ambulatoire semble diminuer l’incidence des troubles du comportement postopératoire par rapport à une hospitalisation conventionnelle.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u74",
+   "empreinte": "bbb9fffbcbd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "63. Il est recommandé de faire bénéficier aux personnes âgées d’une prise en charge ambulatoire en fonction de l’analyse",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u75",
+   "empreinte": "230eff86faae",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "64. Il est recommandé d’éviter les benzodiazépines en préopératoire. Elles augmentent l’incidence des troubles",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u76",
+   "empreinte": "cae618ea2989",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le parcours du patient est au centre de l’organisation de la structure ambulatoire.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u77",
+   "empreinte": "42557c1650c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "65. Il est recommandé que le parcours du patient soit fluide et maîtrisé et relève d’une pensée logistique. L’agencement de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u78",
+   "empreinte": "786133b61d52",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "permette une optimisation des flux, garante de la prise en charge des patients dans les délais prévus.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u79",
+   "empreinte": "f7924539a4d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sa propre organisation en ordonnant, contrôlant et dirigeant tous les flux : patients, informations, personnels,",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u80",
+   "empreinte": "d586f96db050",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "L’accompagnant est un tiers sans statut particulier : il n’a aucune responsabilité spécifique en dehors des cas du mineur",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u81",
+   "empreinte": "f8491fb190c2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "écrit concernant les consignes de l’ambulatoire et d’archiver ce document, dans le dossier du patient,",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u82",
+   "empreinte": "f2b35c1a84d2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "69. Il est recommandé de vérifier le respect des consignes et d’assurer la traçabilité dans le dossier du patient.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u83",
+   "empreinte": "293861487587",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "70. Il est recommandé d’écrire clairement les modalités d’autorisation de sortie du patient au sein de la charte",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u84",
+   "empreinte": "c808c92910fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "anesthésiste réanimateur puisse être joint en cas de survenue d’un évènement imprévu en rapport avec l’anesthésie dans",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u85",
+   "empreinte": "6fedbd4d0a6b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
