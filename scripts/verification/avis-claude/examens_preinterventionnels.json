@@ -1,0 +1,484 @@
+{
+ "cle": "examens_preinterventionnels",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "8a285a0439cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "en 1998 par l'Anaes [1]. L'objectif de cette RFE est d'assurer",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "fcab9a50a9bb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "faible : Il est possible de faire ou de ne pas faire (GRADE 2+",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "517ca27b1585",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas prescrire un nouvel ECG lorsqu'un tracé datant de moins de 12 mois est disponible",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "500017c9d5e8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de ne pas prescrire un ECG pour une intervention mineure",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "c854670a9b71",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "intervention à risque intermédiaire ou élevé (sauf interventions artérielles) en dehors de signes d'appel cliniques",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u6",
+   "empreinte": "6c064fa4ca4d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Après 65 ans. Il faut probablement prescrire un ECG 12 dérivations de repos avant toute intervention à risque élevé ou intermédiaire",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u7",
+   "empreinte": "5b7725bae6bd",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de prescrire de façon systématique une échocardiographie de repos préinterventionnelle",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u8",
+   "empreinte": "2b82e5d82f7f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "patients présentant un souffle systolique non connu ou une suspicion d'HTAP (GRADE 2+)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u9",
+   "empreinte": "51f0bb5ffe69",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pathologie pulmonaire évolutive ou aiguë (GRADE 1 )",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "abecbe561fc2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(GRADE 1 ). Il est recommandé de ne pas prescrire de",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "391f165e26b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pathologie pulmonaire évolutive ou aiguë (GRADE 1 )",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u12",
+   "empreinte": "20397f335e49",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé d'évaluer le risque hémorragique d'après l'anamnèse personnelle et familiale de diathèse hémorragique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u13",
+   "empreinte": "0fd795e35828",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement utiliser un questionnaire standardisé à la recherche de manifestations hémorragiques",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u14",
+   "empreinte": "de647dcb01fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "à l'exclusion des enfants qui n'ont pas acquis la marche",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u15",
+   "empreinte": "4ad4abca8208",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(anesthésie générale, anesthésie neuraxiale, blocs périphériques ou techniques combinées), y compris en obstétrique",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u16",
+   "empreinte": "a6552f91eb6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de demander un avis spécialisé en cas d'anamnèse de diathèse hémorragique évocatrice",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u17",
+   "empreinte": "22112a824e22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant qui n'a pas acquis la marche, il faut probablement prescrire un TCA et une numération des plaquettes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u18",
+   "empreinte": "bae2ad1345a7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'adulte non interrogeable, il faut probablement prescrire un TP, un TCA et une numération des plaquettes",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u19",
+   "empreinte": "7ef9438fbf21",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Aucun examen de laboratoire ne permet d'évaluer le risque de saignement chez les patients traités par antiPlaq",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u20",
+   "empreinte": "8aa09df82acc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Lors d'une intervention à risque mineur, quel que soit l'âge, il est recommandé de ne pas prescrire un hémogramme",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u21",
+   "empreinte": "872f8fb87147",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de prescrire un hémogramme avant l'acte pour son caractère pronostique",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u22",
+   "empreinte": "24ad829cba48",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "saignement nul à faible, il est recommandé de ne pas prescrire de groupage sanguin et de RAI",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u23",
+   "empreinte": "de6ec8214b4b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "ou élevé ou de saignement important, il est recommandé de prescrire un groupage sanguin et une RAI",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u24",
+   "empreinte": "df280e117f73",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "saignement important mentionné par la check-list « sécurité au bloc opératoire »",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u25",
+   "empreinte": "de928b39d4fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "leurs résultats avant l'intervention en cas de procédure ayant un risque de transfusion intermédiaire ou élevé",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u26",
+   "empreinte": "5f9fe2dd1ef7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement s'assurer que les examens IH soient disponibles avec leurs résultats lors de la visite préanesthésique",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u27",
+   "empreinte": "214609bf1690",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "validité de la RAI négative de trois à 21j s'il a été vérifié l'absence de circonstances immunisantes",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u28",
+   "empreinte": "d1170c241c57",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "biochimique sanguin préinterventionnel systématique, en dehors de signes d'appel anamnestiques ou cliniques, dans le contexte d'une chirurgie mineure",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u29",
+   "empreinte": "4c1acddcafa9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement évaluer la fonction rénale préopératoire par l'estimation du débit de filtration glomérulaire",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u30",
+   "empreinte": "cc61684d3e3d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "biochimique d'urine systématique, quel que soit l'âge, en préopératoire d'une chirurgie quel que soit son type",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u31",
+   "empreinte": "7d042e7b6915",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "y compris avant la réalisation d'une ALR périmédullaire (GRADE 1 )",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u32",
+   "empreinte": "0311ca1cf45d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de réévaluer la normalité de la grossesse de façon répétée",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u33",
+   "empreinte": "85c9ea36c353",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de disposer d'une RAI datant de moins de trois jours (GRADE 1+)",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u34",
+   "empreinte": "9e49beff61a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Dans le cadre d'une césarienne programmée il est recommandé de disposer d'une RAI datant de moins de trois jours",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u35",
+   "empreinte": "fd0018677507",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est recommandé de poser la question à toute femme en âge de procréer sur sa méthode éventuelle de contraception",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u36",
+   "empreinte": "2309717f793d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommandé de prescrire un dosage plasmatique des bHCG après avoir obtenu le consentement de la patiente",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u37",
+   "empreinte": "d374c0afd360",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Si le résultat des bHCG plasmatiques est positif, il est recommandé de reporter l'intervention chaque fois que possible",
+   "explication": "",
+   "page": 9
+  },
+  {
+   "id": "u38",
+   "empreinte": "5eed5f89e52e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il est recommandé de réaliser systématiquement un ECBU préopératoire (GRADE 1+)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u39",
+   "empreinte": "fb94d32504dc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "est probablement recommandé de réaliser un ECBU préopératoire systématique chez les patients présentant un facteur",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u40",
+   "empreinte": "cb30b81f2059",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La réalisation d'une bandelette urinaire (BU) complétée par un ECBU en cas de positivité de la recherche de nitrites ou de la leucocyte-estérase",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u41",
+   "empreinte": "edf6b2939ee1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il est probablement recommandé de ne pas pratiquer d'analyse d'urine à la recherche d'une infection (BU ou ECBU)",
+   "explication": "",
+   "page": 10
+  },
+  {
+   "id": "u42",
+   "empreinte": "5d2dba7b7137",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u43",
+   "empreinte": "9e151b15f4ee",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie des voies urinaires ECBU systématique ECBU systématique",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u44",
+   "empreinte": "4b2d76de471a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chirurgie gynécologique prolapsus/incontinence ECBU systématique BUa puis ECBU si +",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u45",
+   "empreinte": "af6efcd3bc17",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Autres chirurgies BUa puis ECBU si + Rien",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u46",
+   "empreinte": "85c0c6b78581",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u47",
+   "empreinte": "fad8cdf268aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Patient ASA I OU II Pas d'examens complémentaires systématiques Prescription en fonction du risque opératoire",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u48",
+   "empreinte": "e8ccba0a0dd3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Prescription en fonction de la pathologie du patient et du risque opératoire",
+   "explication": "",
+   "page": 11
+  },
+  {
+   "id": "u49",
+   "empreinte": "8e17e91c6a49",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u50",
+   "empreinte": "495f2baf310d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Élevé > 5 % Chirurgie aortique ou autre chirurgie vasculaire majeure Chirurgie vasculaire périphérique",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u51",
+   "empreinte": "655f7dd44899",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Endartériectomie carotidienne Chirurgie de la tête et du cou",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u52",
+   "empreinte": "42f67224d785",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Procédures endoscopiques",
+   "explication": "",
+   "page": 12
+  },
+  {
+   "id": "u53",
+   "empreinte": "a73c45d4e4d5",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
