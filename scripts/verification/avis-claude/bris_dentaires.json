@@ -1,0 +1,457 @@
+{
+ "cle": "bris_dentaires",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "c9b173231cdd",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u2",
+   "empreinte": "8afc9a585626",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Toutes les propositions ont reçu un accord fort lors des votes par le groupe de travail",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u3",
+   "empreinte": "cff3f4a8a72c",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u4",
+   "empreinte": "08801479e259",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut rechercher les critères d'intubation difficile et de ventilation au masque difficile",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u5",
+   "empreinte": "2054354eec0f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "existence de prothèses, de restaurations1 et de traitement orthodontique, de mobilité des dents et des prothèses",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u6",
+   "empreinte": "628a615142f7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement insérer des questions relatives à l'état buccodentaire dans un questionnaire rempli par le patient",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u7",
+   "empreinte": "55b08611e30c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut porter une attention particulière aux incisives supérieures et inférieures, et notamment en cas de dent isolée",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u8",
+   "empreinte": "8244bfa0611a",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u9",
+   "empreinte": "1a407a680145",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut consigner les signes prédictifs d'intubation et de ventilation au masque difficile dans le compte rendu",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u10",
+   "empreinte": "c2804ff32c86",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut consigner de façon compréhensible (schéma dentaire simplifié conseillé)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u11",
+   "empreinte": "74a1dcda81c0",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "bbdfd164373c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut évoquer le report d'intervention chirurgicale ou des soins dentaires dans l'information sur le rapport bénéfice-risque",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u13",
+   "empreinte": "55340d4e1475",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il ne faut probablement pas adresser systématiquement le patient chez le dentiste et/ou le stomatologue dans les autres cas",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u14",
+   "empreinte": "66c20f1e1469",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement demander un avis spécialisé (possibilité de suspendre le traitement ou de démonter le dispositif)",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u15",
+   "empreinte": "8b900c4d2300",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u16",
+   "empreinte": "f565a6751bd2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "La preuve de cette information doit être consignée dans le dossier d'anesthésie au moins pour les patients avec risque de bris dentaire identifié",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u17",
+   "empreinte": "b49d4a22b5a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommande de signaler toute prothèse ou toute fragilité dentaire particulière",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u18",
+   "empreinte": "ac09fd588518",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut informer les parents du risque de luxation accidentelle d'une dent temporaire ou d'une dent définitive immature",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u19",
+   "empreinte": "2464ebea7673",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u20",
+   "empreinte": "f62566c587d8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Au vu de l'ensemble des risques évalués, il faut proposer une stratégie de prise en charge anesthésique dans le dossier",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u21",
+   "empreinte": "0fc6fcc38ee2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut mettre en place une stratégie d'équipe pour diminuer l'incidence des bris dentaires",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u22",
+   "empreinte": "3f8dadf843fe",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut favoriser la pratique de l'anesthésie locorégionale dans le cadre de l'analyse bénéfice/risque",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u23",
+   "empreinte": "adaa28828f1c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut obtenir un relâchement musculaire optimal pour faciliter les conditions d'intubation trachéale",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u24",
+   "empreinte": "339b5325f64a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant entre trois et 14 ans, il faut rechercher avant l'induction de l'anesthésie une éventuelle dent temporaire devenue mobile",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u25",
+   "empreinte": "0f24bfe80c37",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u26",
+   "empreinte": "5a30141c5ed3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut tenir compte de l'état dentaire dans la stratégie de contrôle des voies aériennes supérieures",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u27",
+   "empreinte": "c30b63083135",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il ne faut probablement pas utiliser systématiquement une canule oropharyngée",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u28",
+   "empreinte": "330c5fcea63c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "pour la prévention de la morsure de la sonde (compresses roulées)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u29",
+   "empreinte": "75c1c2dcdd58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut que le contrôle des voies aériennes soit assuré par un opérateur expérimenté",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u30",
+   "empreinte": "6265f291423d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement privilégier le choix d'un dispositif supraglottique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u31",
+   "empreinte": "26bfca72496f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement utiliser une lame de laryngoscope type Macintosh métallique",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u32",
+   "empreinte": "5f322f2edf0a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement recommander l'utilisation d'une protection dentaire (gouttière)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u33",
+   "empreinte": "db080405916a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "recommander l'utilisation de gouttière sur mesure plutôt que de gouttière standard",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u34",
+   "empreinte": "06ab0aa98572",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut éviter d'exercer une pression avec la lame du laryngoscope au niveau de la gencive du maxillaire supérieur",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u35",
+   "empreinte": "10e18fae9590",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u36",
+   "empreinte": "cf7d7c5ba017",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "il faut probablement tracer l'absence de dommage dentaire directement visible lié à anesthésie",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u37",
+   "empreinte": "6e403a8a63c7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réalisée par un opérateur expérimenté chez un patient complètement réveillé, sans curarisation résiduelle",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u38",
+   "empreinte": "3e4c364f7d35",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u39",
+   "empreinte": "685b8aaa7e78",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "une Hank's Balanced Salt Solution (solution HBSS)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u40",
+   "empreinte": "f5d6dd1a58f3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "prendre en charge une éventuelle complication (inhalation ou ingestion, radiographie thoracique éventuelle)",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u41",
+   "empreinte": "10e6a1f37c43",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Chez l'enfant, il ne faut pas réimplanter une dent temporaire en cas de luxation complète",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u42",
+   "empreinte": "240f1ce4cac5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "établir un constat descriptif et factuel des lésions dans le dossier du patient (sans opinion ni jugement personnel)",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u43",
+   "empreinte": "98aebaf23269",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut probablement prendre des photographies des lésions et les conserver",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u44",
+   "empreinte": "4b47bf3401ca",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "dans les 15 jours suivants la découverte du dommage ou la demande du patient",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u45",
+   "empreinte": "eac8d0aab5e2",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u46",
+   "empreinte": "ba4ec85c8a01",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Il faut que le praticien effectue selon son mode d'activité une déclaration de bris dentaire auprès de son assurance",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u47",
+   "empreinte": "3553e8ea2f15",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u48",
+   "empreinte": "a21383fcbbbb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "les coordonnées du service qualité et relation avec les usagers de son établissement",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u49",
+   "empreinte": "d93066b152b2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le groupe de travail suggère que les propositions 1, 2, 3, 6, 9, 11 et 23 puissent faire l'objet d'une évaluation",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u50",
+   "empreinte": "56e395303d54",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
