@@ -1,0 +1,835 @@
+{
+ "cle": "amygdalectomie_enfant",
+ "date": "2026-10-03",
+ "relecture": "Claude (session Claude Code, lecture du texte de la source)",
+ "unites": [
+  {
+   "id": "u1",
+   "empreinte": "98c3e842f006",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "la troisième place, après l’anesthésie en orthopédie et en chirurgie digestive 1. Sur environ 670 000 anesthésies annuelles en ORL, 17 % le sont pour amygdalectomie, associée (43 %) ou non",
+   "explication": "",
+   "page": 2
+  },
+  {
+   "id": "u2",
+   "empreinte": "2fa3db1b7503",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "preuve, ont été cotées individuellement par chacun des experts selon une méthodologie dérivée de la RAND/UCLA. Les réponses à chaque question sont analysées en définissant la médiane des cotations",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u3",
+   "empreinte": "58ef591c990c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Le niveau de preuve et la force des recommandations sur lesquelles se sont appuyés les experts sont présentés dans les tableaux 1 et 2.",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u4",
+   "empreinte": "134e4c3ea602",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "preuve, ont été cotées individuellement par chacun des experts selon une méthodologie dérivée de la RAND/UCLA. Les réponses à chaque question sont analysées en définissant la médiane des cotations",
+   "explication": "",
+   "page": 3
+  },
+  {
+   "id": "u5",
+   "empreinte": "d3a4a1097683",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.1. Quels sont les objectifs et les modalités de la consultation d’anesthésie, y compris l’information sur le risque donnée aux patients et à leurs parents ?",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u6",
+   "empreinte": "2abf86768a59",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La consultation d’anesthésie en prévision d’une amygdalectomie a deux buts essentiels : l’évaluation des risques inhérents à l’acte et l’information du patient et de ses parents. [Accord fort]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u7",
+   "empreinte": "8621ad26610e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’évaluation des risques repose sur l’interrogatoire des parents et si possible de l’enfant, ainsi que sur l’examen clinique de l’enfant. [Accord fort]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u8",
+   "empreinte": "127e3cff6ccf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les risques respiratoires et hémorragiques doivent faire l’objet d’une attention et d’une information particulières. [Accord fort]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u9",
+   "empreinte": "b44fd58bf216",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "particulières. [Accord fort] – Le risque respiratoire est majoré en cas de Syndrome d’apnée obstructive du sommeil (SAOS) grave.",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u10",
+   "empreinte": "a65c0d3daff4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’information s’adresse à la fois à l’enfant et aux parents, et doit être adaptée au degré de compréhension de chacun. [Accord fort]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u11",
+   "empreinte": "ee41b307a07b",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u12",
+   "empreinte": "95f8bb75b27e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’évaluation préopératoire du risque hémorragique, repose sur un interrogatoire précis à la recherche d’antécédents personnels et/ou familiaux suggérant une anomalie de l’hémostase, et sur un examen",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u13",
+   "empreinte": "18611cb91ced",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En cas d’antécédents personnels ou familiaux d’hémorragie connus ou suspectés, ou lorsque l’évaluation préopératoire ne peut être considérée comme fiable, notamment chez l’enfant de moins",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u14",
+   "empreinte": "bb2fdfc6a778",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les résultats de cette étude initiale, s’ils restent anormaux après contrôle doivent être discutés avec un spécialiste de l’hémostase afin de déterminer l’opportunité d’une étude plus approfondie. [Accord",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u15",
+   "empreinte": "020f106756e5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Si des examens d’hémostase sont prescrits, le temps de céphaline avec activateur et la numération plaquettaire sont les tests les plus utiles. [Accord fort]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u16",
+   "empreinte": "939ab640bd5a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Chez l’enfant de plus de trois ans, lorsque l’évaluation clinique préopératoire ne dépiste pas de risque hémorragique anormal, l’étude systématique de l’hémostase ne s’impose pas. [Accord fort]",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u17",
+   "empreinte": "019bd5960b0c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.3. Comment faut-il gérer une infection des voies aériennes supérieures (IVAS) avant amygdalectomie chez l’enfant ?",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u18",
+   "empreinte": "5664138995b5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’amygdalectomie majore le risque de complications respiratoires du fait de la localisation du site chirurgical sur les voies aériennes supérieures (Grade A).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u19",
+   "empreinte": "84351b56187d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Ces complications respiratoires contribuent à générer une morbidité dénuée de réelle gravité si l’anesthésiste est expérimenté dans ce contexte (Grade B).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u20",
+   "empreinte": "1b31e3f18113",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• l’IVAS entraîne une fréquence accrue de complications respiratoires telles que désaturation et pause respiratoire (Grade A).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u21",
+   "empreinte": "3c560303d917",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• l’IVAS entraîne une augmentation de la fréquence des bronchospasmes lorsque l’enfant est intubé (Grade A).",
+   "explication": "",
+   "page": 4
+  },
+  {
+   "id": "u22",
+   "empreinte": "a498644993f0",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conférence d’experts - Sfar - 2005 1.4. En cas d’IVAS, quels sont les critères de report d’intervention ?",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u23",
+   "empreinte": "a38908db05c8",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.4. En cas d’IVAS, quels sont les critères de report d’intervention ? – L’intervention est différée si l’enfant présente [Accord fort] :",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u24",
+   "empreinte": "8c306c0e1f60",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• des signes spastiques bronchiques ; • une laryngite ;",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u25",
+   "empreinte": "eacd49b0e41f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En cas de report d’intervention, le délai de re-programmation est d’au moins trois semaines. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u26",
+   "empreinte": "462b2e4ee1c3",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.5. Quelles sont les conséquences du syndrome d’apnée du sommeil (SAOS) sur la prise en charge anesthésique des patients ?",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u27",
+   "empreinte": "d209835ed16a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "sur la prise en charge anesthésique des patients ? – Le SAOS représente environ deux tiers des indications d’amygdalectomie. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u28",
+   "empreinte": "582e2ad36b24",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Le SAOS représente environ deux tiers des indications d’amygdalectomie. [Accord fort] – Les enfants concernés ont le plus souvent moins de cinq ans. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u29",
+   "empreinte": "429d343c7205",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En l’absence de critères de gravité, le SAOS ne modifie habituellement pas la prise en charge anesthésique. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u30",
+   "empreinte": "5ad65d168b35",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les formes graves de SAOS sont plus fréquentes chez le jeune enfant et en cas de dysmorphie faciale ou de pathologie associées. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u31",
+   "empreinte": "c969726f24af",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les formes graves de SAOS nécessitent une évaluation préopératoire du retentissement cardiopulmonaire, et justifient une surveillance postopératoire d’au moins 24 heures dans une structure de type salle de surveillance post-interventionnelle (SSPI) ou surveillance continue. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u32",
+   "empreinte": "8bf66ce3431c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "1.5. Quelles sont les conséquences du syndrome d’apnée du sommeil (SAOS) sur la prise en charge anesthésique des patients ?",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u33",
+   "empreinte": "12b82327c34b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "2.1. Quelle doit être la prise en charge anesthésique des patients ? – Les règles de jeûne habituelles, adaptées à l’âge de l’enfant, doivent être appliquées (Grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u34",
+   "empreinte": "c4e8e9b7ef97",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les règles de jeûne habituelles, adaptées à l’âge de l’enfant, doivent être appliquées (Grade C). – En dehors des syndromes obstructifs graves, une prémédication anxiolytique est utile (Grade C).",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u35",
+   "empreinte": "4b88c2fd9fe6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les structures de prise en charge et le matériel utilisé doivent être conformes aux recommandations de la Sfar et de l’Adarpef. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u36",
+   "empreinte": "8cd26b3a6b3f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de la Sfar et de l’Adarpef. [Accord fort] – La surveillance peropératoire repose sur un monitorage conforme aux recommandations de la Sfar.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u37",
+   "empreinte": "f0462a2dc933",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’anesthésie générale lors de l’amygdalectomie a pour but d’assurer une composante hypnotique suffisante pour éviter la mémorisation peropératoire, et une composante analgésique efficace.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u38",
+   "empreinte": "823b0054cda7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "[Accord fort] – L’induction par inhalation est la modalité la plus fréquente. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u39",
+   "empreinte": "2125d64f4ace",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’induction intraveineuse est parfois préférée chez les grands enfants ou en cas de syndrome obstructif sévère. [Accord fort]",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u40",
+   "empreinte": "37ad601f509b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "obstructif sévère. [Accord fort] – L’entretien de l’anesthésie est souvent assuré par un agent halogéné associé à un morphinique.",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u41",
+   "empreinte": "ead8e8fa2202",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les apports hydroélectrolytiques peropératoires reposent sur l’utilisation d’un soluté isotonique en sel, pouvant contenir une faible concentration de glucose et perfusé à un débit adapté à l’âge de",
+   "explication": "",
+   "page": 5
+  },
+  {
+   "id": "u42",
+   "empreinte": "886fe9f11ed2",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conférence d’experts - Sfar - 2005 – Le débit de perfusion doit suivre la règle des 4-2-1 : 4 ml/kg par heure pour les 10 premiers kilos de",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u43",
+   "empreinte": "3a6f81a5b6ce",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "exemple. [Accord fort] – Il est recommandé d’utiliser un dispositif médical de contrôle du débit de perfusion. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u44",
+   "empreinte": "07983853246e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’administration peropératoire de déxaméthasone est recommandée car elle réduit l’incidence des NVPO, et le délai avant la reprise alimentaire (Grade B).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u45",
+   "empreinte": "e349cc1def22",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’administration d’une antibioprophylaxie peropératoire n’a pas démontré son intérêt, et ne s’impose donc pas systématiquement. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u46",
+   "empreinte": "7070c83e2019",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "donc pas systématiquement. [Accord fort] 2.2. Quelles sont les modalités de contrôle des voies aériennes lors de l’amygdalectomie ?",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u47",
+   "empreinte": "30a968aa3cd5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’amygdalectomie chez l’enfant requiert une anesthésie générale balancée impliquant une protection des voies aériennes. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u48",
+   "empreinte": "1da81ca5a43b",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "protection des voies aériennes. [Accord fort] – Le contrôle optimal des voies aériennes est assuré par une sonde d’intubation trachéale à ballonnet.",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u49",
+   "empreinte": "247de0980c6a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’extubation est réalisée, en présence d’un médecin anesthésiste, au réveil complet de l’enfant, déterminé par l’ouverture des yeux à la demande. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u50",
+   "empreinte": "baa134379ff9",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  },
+  {
+   "id": "u51",
+   "empreinte": "ed51460716fa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.1. Quelles sont les modalités de surveillance postopératoires ? – La surveillance en SSPI doit être systématique. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u52",
+   "empreinte": "863908673cb6",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En plus de la surveillance habituelle, le dépistage et le traitement éventuel des complications respiratoires et hémorragique est indispensable. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u53",
+   "empreinte": "1b674b6633d5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La surveillance en SSPI peut être prolongée chez les jeunes enfants opérés dans un contexte de SAOS grave. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u54",
+   "empreinte": "db0a7b5f2773",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La sortie de SSPI est autorisée après vérification des critères habituels (respiration, état hémodynamique, conscience, douleur, NVPO) et vérification de l’absence de saignement pharyngé",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u55",
+   "empreinte": "c11b59071410",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "3.2. Quelles sont les règles de perfusion postopératoires et de reprise des boissons et de l’alimentation ?",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u56",
+   "empreinte": "9f976fdef9ff",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les apports hydroélectrolytiques postopératoires reposent sur un soluté isotonique en sel, pouvant contenir une faible concentration de glucose. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u57",
+   "empreinte": "5bc134a8bf77",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "contenir une faible concentration de glucose. [Accord fort] – La perfusion est poursuivie jusqu’à la reprise efficace des boissons. [Accord fort]",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u58",
+   "empreinte": "647f8dd4879c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– En raison du risque hémorragique, la reprise de l’alimentation s’effectue six heures après la fin de l’intervention, par contre la reprise des liquides clairs est possible après la deuxième heure. [Accord",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u59",
+   "empreinte": "9677ae310cb4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Un régime alimentaire spécifique n’a pas fait preuve de sa supériorité par rapport à une alimentation libre après amygdalectomie (Grade C).",
+   "explication": "",
+   "page": 6
+  },
+  {
+   "id": "u60",
+   "empreinte": "b1b11e0d7641",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conférence d’experts - Sfar - 2005 3.3. Quelles sont les modalités de l’analgésie postopératoire ?",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u61",
+   "empreinte": "fb179e6ef28d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La douleur post-amygdalectomie est considérée comme une douleur forte à composante inflammatoire. Elle dure en moyenne huit jours, avec un maximum les trois premiers jours. [Accord",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u62",
+   "empreinte": "d9a945e9ecf5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "fort] – L’évaluation et le traitement de la douleur doivent être systématiques, y compris à domicile",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u63",
+   "empreinte": "97cd3fbf42e4",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’utilisation du paracétamol doit être large, quasi-systématique ; les voies IV et orale sont les plus fiables (Grade B).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u64",
+   "empreinte": "4e49ef763603",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Seule la morphine est efficace en monothérapie, administrée par voie IV en SSPI, elle est considérée comme l’antalgique de référence. Les autres analgésiques doivent être utilisés en association et en",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u65",
+   "empreinte": "96a545d910a9",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "tenant compte de leur délai d’action (Grade C). – La posologie de la morphine doit être réduite en cas de SAOS grave. [Accord fort]",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u66",
+   "empreinte": "95346d6938b7",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les antalgiques du palier II en association avec le paracétamol, peuvent prendre le relais de la morphine IV. Leur administration par voie orale doit être débutée dès que possible (Grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u67",
+   "empreinte": "52237c89133e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les AINS non sélectifs ne sont pas recommandés car ils peuvent s’associer à une augmentation de la fréquence des reprises chirurgicales pour saignement. [Accord faible]",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u68",
+   "empreinte": "72d6ffb00224",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Question 4 Quelles sont les principales complications postopératoires",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u69",
+   "empreinte": "9252cdac3102",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les principales complications primaires (avant la 24e heure) sont : les complications respiratoires, l’hémorragie et les nausées et vomissements (Grade B).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u70",
+   "empreinte": "63b1d3c87624",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les principaux facteurs de risques de complications respiratoires sont : la gravité du SAOS et l’importance de la désaturation artérielle préopératoire (Grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u71",
+   "empreinte": "9744e108f953",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Chez les patients atteints de SAOS, 70 % des complications respiratoires majeures surviennent dans la première heure postopératoire, alors que les complications mineures surviennent",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u72",
+   "empreinte": "33a1e057933d",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "habituellement avant la sixième heure (Grade C). – L’hémorragie postopératoire survient chez 0,5 à 3 % des patients (Grade B).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u73",
+   "empreinte": "0af85de69b58",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’hémorragie postopératoire survient chez 0,5 à 3 % des patients (Grade B). – Quatre vingt pour cent des hémorragies primaires surviennent avant la sixième heure (Grade B).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u74",
+   "empreinte": "848fbdf1c08f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Quatre vingt pour cent des hémorragies primaires surviennent avant la sixième heure (Grade B). – Approximativement 25 % des hémorragies postopératoires vont nécessiter une reprise chirurgicale",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u75",
+   "empreinte": "50f41401288e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Les patients nécessitant une reprise chirurgicale pour hémostase doivent être considérés comme ayant l’estomac plein et justifient une induction en séquence rapide. [Accord fort]",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u76",
+   "empreinte": "c8effb5b21c1",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "4.2. Quelles sont l’incidence, les conséquences et la prise en charge des nausées et vomissements postopératoire (NVPO) après amygdalectomie chez l’enfant ?",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u77",
+   "empreinte": "680b38ef97aa",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "et vomissements postopératoire (NVPO) après amygdalectomie chez l’enfant ? – Après amygdalectomie on observe des nausées et vomissements chez 40 à 70 % des patients",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u78",
+   "empreinte": "549eb3c333cf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "(Grade C). – L’utilisation peropératoire de protoxyde d’azote ne modifie pas l’incidence des NVPO (Grade C).",
+   "explication": "",
+   "page": 7
+  },
+  {
+   "id": "u79",
+   "empreinte": "cd68f61a4bfc",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Conférence d’experts - Sfar - 2005 – Les NVPO sont moins fréquentes après injection peropératoire de propofol (Grade C).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u80",
+   "empreinte": "42f9b35a6307",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’administration prophylactique IV de sétron réduit significativement l’incidence des NVPO après amygdalectomie chez l’enfant (Grade C).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u81",
+   "empreinte": "229ab5cc675c",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La déxaméthasone réduit significativement l’incidence des NVPO, et potentialise l’efficacité des sétrons (Grade C).",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u82",
+   "empreinte": "9855425c980e",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Des protocoles de prise en charge des NVPO doivent être prévus et accessibles en SSPI. [Accord fort]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u83",
+   "empreinte": "1189a1dc4a62",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "de l’amygdalectomie en ambulatoire ? – La réalisation de l’amygdalectomie en ambulatoire est possible si [Accord fort] :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u84",
+   "empreinte": "8472a18e0f94",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "• les critères habituels de proximité et d’entourage familial sont satisfaits ; • et sous réserve d’un consensus entre le chirurgien, l’anesthésiste et les parents.",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u85",
+   "empreinte": "b5beef7e359a",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– L’intervention doit être réalisée le plus tôt possible dans la matinée afin de permettre la sortie après une surveillance postopératoire de six heures. [Accord fort]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u86",
+   "empreinte": "063df6745ceb",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La gestion anesthésique doit privilégier la prévention des NVPO, et l’anticipation peropératoire de l’analgésie postopératoire. [Accord fort]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u87",
+   "empreinte": "8cbd42092ecf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "l’analgésie postopératoire. [Accord fort] – Le relais antalgique oral devrait être débuté avant la sortie du patient. [Accord fort]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u88",
+   "empreinte": "1659c505070f",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Il est recommandé de remettre aux parents un document avec les coordonnées de la personne à contacter en cas de difficultés, ainsi que l’ordonnance d’antalgiques de sortie. [Accord fort]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u89",
+   "empreinte": "87ef6ed86caf",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– La sortie de l’enfant est autorisée après la sixième heure postopératoire, si les critères suivants sont réunis [Accord fort] :",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u90",
+   "empreinte": "b1b267c7b727",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "réunis [Accord fort] : • absence de saignement au niveau des loges amygdaliennes, confirmée par le chirurgien ;",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u91",
+   "empreinte": "203e8bf6b4f5",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "– Un suivi téléphonique du patient à domicile à la 24e heure est souhaitable, car il améliore la qualité de la prise en charge. [Accord fort]",
+   "explication": "",
+   "page": 8
+  },
+  {
+   "id": "u92",
+   "empreinte": "fac1ac1ae193",
+   "verdict": "sans_objet",
+   "type_ecart": "aucun",
+   "citation": "",
+   "explication": "",
+   "page": 0
+  }
+ ]
+}
