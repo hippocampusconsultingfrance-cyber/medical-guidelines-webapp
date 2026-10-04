@@ -114,11 +114,11 @@
   {
    "id": "u13",
    "empreinte": "211792b209fe",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "C. Coma (1) du geste d'extubation",
-   "explication": "Le tableau MACOCHA de la fiche omet deux items de la source : « C. Coma (1) » et « H. Hypoxémie (1) ». Avec les 5 items affichés, le total maximal est 10, alors que la fiche indique « codé de 0 à 12 ». Le score calculé sur la fiche serait sous-estimé.",
-   "page": 19
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "validation) et bonne une sensibilité (respectivement 76 % et 73 % dans les cohortes originales et de validation).",
+   "explication": "",
+   "page": 5
   },
   {
    "id": "u14",

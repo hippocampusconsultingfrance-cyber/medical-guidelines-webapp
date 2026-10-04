@@ -618,10 +618,10 @@
   {
    "id": "u69",
    "empreinte": "a10206a108ca",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "Annexe 1, p. 16 (image) : 23 lignes dont « Infiltrations périarticulaires 3 », « Tenotomie percutanée 2 », « Biopsie synoviale 2 », « Biopsie osseuse 2 », « Cimentoplastie 1 », « Capsulodistension 2 »",
-   "explication": "Les 17 lignes reprises par la fiche ont la bonne cotation, mais 6 lignes de la source manquent, dont la cimentoplastie (risque élevé = 1). La fiche annonce pourtant reprendre l'intégralité.",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Annexe 1, p. 16 (image) : 23 lignes",
+   "explication": "",
    "page": 0
   },
   {

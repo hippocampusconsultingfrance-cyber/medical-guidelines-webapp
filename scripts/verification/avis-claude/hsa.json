@@ -33,11 +33,11 @@
   {
    "id": "u4",
    "empreinte": "adb1d59984a2",
-   "verdict": "ecart",
-   "type_ecart": "omission",
-   "citation": "Tableau 1 : Classification de la World Federation of Neurological Surgeons (WFNS).",
-   "explication": "Le tableau WFNS de la source a 5 lignes : la fiche omet le grade I (Glasgow 15, sans déficit moteur) et commence au grade II.",
-   "page": 3
+   "verdict": "conforme",
+   "type_ecart": "aucun",
+   "citation": "Tableau 1 de la source : WFNS grades I à V",
+   "explication": "",
+   "page": 0
   },
   {
    "id": "u5",
@@ -270,7 +270,7 @@
    "verdict": "ecart",
    "type_ecart": "sens",
    "citation": "cornes frontales au niveau des noyaux caudés ; B : diamètre cérébral au même niveau).",
-   "explication": "Deux problèmes. (1) La fiche dit que la valeur normale est « décroissant avec l'âge » ; dans la source elle augmente avec l'âge (≤ 30 ans < 0,16 ; 50 ans < 0,18 ; 60 ans < 0,19 ; 80 ans < 0,21 ; 100 ans < 0,25). (2) La phrase se termine par « : » mais le tableau des valeurs n'est pas reproduit.",
+   "explication": "La fiche dit que la valeur normale de l'index bicaudé est « décroissant avec l'âge » ; dans la source elle augmente avec l'âge (≤ 30 ans < 0,16 ; 50 ans < 0,18 ; 60 ans < 0,19 ; 80 ans < 0,21 ; 100 ans < 0,25). Le tableau des valeurs, lui, est bien reproduit.",
    "page": 5
   },
   {

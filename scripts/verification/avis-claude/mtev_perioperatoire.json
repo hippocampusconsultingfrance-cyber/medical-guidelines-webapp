@@ -267,10 +267,10 @@
   {
    "id": "u30",
    "empreinte": "bdcdb391cdd1",
-   "verdict": "ecart",
-   "type_ecart": "omission",
+   "verdict": "conforme",
+   "type_ecart": "aucun",
    "citation": "HNF SC 2h 4h Apixaban 12h * 36h",
-   "explication": "Le tableau des délais avant geste neuraxial de la source comporte une ligne apixaban (demi-vie 12 h, délai 36 h) absente de la fiche. Les autres lignes (HBPM, HNF, rivaroxaban, dabigatran, fondaparinux) sont conformes.",
+   "explication": "",
    "page": 41
   },
   {
@@ -377,8 +377,8 @@
    "empreinte": "3f276840eacb",
    "verdict": "ecart",
    "type_ecart": "omission",
-   "citation": "Tableau « Thromboprophylaxie et fonction rénale », p. 52 (image) : 6 lignes (HNF, tinzaparine, enoxaparine, fondaparinux 2,5 mg, apixaban/rivaroxaban, dabigatran)",
-   "explication": "La fiche dit reproduire ce tableau « verbatim » mais n'en garde que 2 lignes (enoxaparine, fondaparinux), sans couleurs. Manquent HNF (verte < 15, orange au-delà), tinzaparine (rouge < 20), apixaban/rivaroxaban (rouge < 15), dabigatran (rouge < 30). La note u46 compense en partie pour les AOD et le fondaparinux.",
+   "citation": "Tableau « Thromboprophylaxie et fonction rénale », p. 52 (image) : cases colorées rouge / orange / vert pour HNF, tinzaparine, enoxaparine, fondaparinux 2,5 mg, apixaban/rivaroxaban, dabigatran",
+   "explication": "Les 6 lignes sont présentes dans la fiche, mais toutes les cases sont vides et sans couleur (seul « ½ dose » de l'enoxaparine est écrit). Or l'information du tableau est portée par la couleur (rouge = non recommandé AMM, orange = non recommandé GIHP, vert = recommandé). Tel quel, le tableau ne dit rien ; la note u46 ne couvre que les AOD et le fondaparinux.",
    "page": 0
   },
   {
