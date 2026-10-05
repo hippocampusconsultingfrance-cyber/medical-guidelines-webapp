@@ -16,7 +16,8 @@ const MESSAGES: Record<string, [string, boolean]> = {
   erreur: ["La signature n'a pas abouti (droits de validateur, double authentification ?).", false],
 };
 
-// Fiches publiées sans relecture signée. Un validateur atteste, pour les
+// Fiches publiées sans relecture signée, ou signées puis corrigées depuis.
+// Un validateur atteste, pour les
 // fiches qu'il coche, leur relecture par l'équipe médicale interne : chaque
 // fiche affiche alors « Relue par Équipe médicale interne, le … ».
 export default async function RelecturePage({ searchParams }: PageProps<"/bibliotheque/relecture">) {
@@ -32,6 +33,11 @@ export default async function RelecturePage({ searchParams }: PageProps<"/biblio
   const signee = new Map((signatures ?? []).map((s) => [s.id as string, s.relue_par_nom as string | null]));
   const aRelire = lib.docs.filter((d) => lib.published.has(d.id) && !signee.get(d.id));
   const relues = lib.docs.filter((d) => signee.get(d.id)).length;
+  // Fiches signées « Équipe médicale interne » puis corrigées : à relire et
+  // signer à nouveau (liste calculée par la base, validateurs seulement).
+  const { data: corrigeesIds } = await supabase.rpc("fiches_corrigees_apres_signature");
+  const corrigeesSet = new Set(((corrigeesIds as string[] | null) ?? []).map(String));
+  const corrigees = lib.docs.filter((d) => corrigeesSet.has(d.id));
 
   const r = (await searchParams).r;
   const message =
@@ -48,7 +54,8 @@ export default async function RelecturePage({ searchParams }: PageProps<"/biblio
         <h1>Relecture des fiches</h1>
         <div className="doc-header__meta">
           <span>
-            {relues} fiche(s) signée(s) · {aRelire.length} fiche(s) publiée(s) sans relecture signée
+            {relues} fiche(s) signée(s) · {aRelire.length} fiche(s) publiée(s) sans relecture signée ·{" "}
+            {corrigees.length} fiche(s) corrigée(s) depuis leur signature
           </span>
         </div>
       </div>
@@ -59,7 +66,7 @@ export default async function RelecturePage({ searchParams }: PageProps<"/biblio
         </div>
       )}
 
-      {aRelire.length === 0 ? (
+      {aRelire.length === 0 && corrigees.length === 0 ? (
         <div className="lib-empty">Toutes les fiches publiées portent une relecture signée.</div>
       ) : (
         <form action={signerEquipe} className="unlock-box" style={{ marginTop: 18 }}>
@@ -70,6 +77,32 @@ export default async function RelecturePage({ searchParams }: PageProps<"/biblio
             fiche déjà signée nominativement n&apos;est jamais modifiée.
           </p>
           <ToutCocher />
+          {corrigees.length > 0 && (
+            <>
+              <h3 style={{ margin: "14px 0 4px", fontSize: "0.95rem" }}>Fiches corrigées depuis leur signature</h3>
+              <p style={{ margin: 0, fontSize: "0.85rem", color: "var(--ink-muted)" }}>
+                Signées « Équipe médicale interne » avant une correction inscrite au{" "}
+                <a href="/corrections">journal des corrections</a>. Relisez les corrections avant de signer à nouveau.
+              </p>
+              <ul style={{ listStyle: "none", padding: 0, margin: "8px 0 12px", maxHeight: 420, overflowY: "auto", border: "1px solid var(--border)", borderRadius: 8 }}>
+                {corrigees.map((d) => (
+                  <li key={d.id} style={{ borderBottom: "1px solid var(--border)", padding: "6px 10px" }}>
+                    <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.88rem" }}>
+                      <input type="checkbox" name="ids" value={d.id} style={{ marginTop: 3 }} />
+                      <span>
+                        {cardTitle(d)}
+                        <span style={{ color: "var(--ink-muted)" }}> · {d.card_json?.society ?? d.doc_type ?? ""}</span>
+                      </span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {aRelire.length > 0 && corrigees.length > 0 && (
+            <h3 style={{ margin: "14px 0 4px", fontSize: "0.95rem" }}>Fiches jamais signées</h3>
+          )}
+          {aRelire.length > 0 && (
           <ul style={{ listStyle: "none", padding: 0, margin: "12px 0", maxHeight: 420, overflowY: "auto", border: "1px solid var(--border)", borderRadius: 8 }}>
             {aRelire.map((d) => (
               <li key={d.id} style={{ borderBottom: "1px solid var(--border)", padding: "6px 10px" }}>
@@ -83,6 +116,7 @@ export default async function RelecturePage({ searchParams }: PageProps<"/biblio
               </li>
             ))}
           </ul>
+          )}
           <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.88rem", margin: "4px 0 12px" }}>
             <input type="checkbox" name="atteste" value="1" required style={{ marginTop: 3 }} />
             <span>

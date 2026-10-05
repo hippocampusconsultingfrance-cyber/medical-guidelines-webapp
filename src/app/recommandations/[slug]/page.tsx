@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
-import { loadPublicFiches } from "../data";
+import { loadPointsClesPublics, loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
 import DonneesStructurees from "../../donnees-structurees";
 
@@ -42,8 +42,9 @@ export async function generateMetadata({ params }: PageProps<"/recommandations/[
 }
 
 // Page publique de résumé d'une fiche : ce qui figure sur sa carte (titre,
-// sociétés, date, méthodologie, résumé) et le lien vers la source. Le
-// contenu de la fiche reste réservé aux comptes (crédits ou PREMIUM).
+// sociétés, date, méthodologie, résumé), ses 3 premiers points clés validés
+// et le lien vers la source. Le contenu de la fiche (recommandations
+// détaillées et grades) reste réservé aux comptes (crédits ou PREMIUM).
 export default async function RecommandationPage({ params }: PageProps<"/recommandations/[slug]">) {
   const { slug } = await params;
   const found = await load(slug);
@@ -55,7 +56,13 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
       data: { user },
     },
     toutes,
-  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches()]);
+    points,
+  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(), loadPointsClesPublics(fiche.id)]);
+  // Texte source remplacé : lien vers la fiche qui le remplace, si elle est en ligne.
+  const remplacante =
+    fiche.freshness_status === "remplacee" && fiche.superseded_by_document_id
+      ? toutes.find((f) => f.id === fiche.superseded_by_document_id)
+      : undefined;
   // Autres fiches de la même spécialité, de la plus récente à la plus ancienne.
   const section = fiche.card_json?.section;
   const voisines = section
@@ -65,7 +72,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
   const c = fiche.card_json;
   const title = c?.title ?? fiche.title;
   const date = formatDate(fiche.publication_date);
-  const anciennete = avertissementAnciennete(fiche.publication_date);
+  const anciennete = fiche.freshness_status === "remplacee" ? null : avertissementAnciennete(fiche.publication_date);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
@@ -107,7 +114,81 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           Synthèse indépendante, ni éditée ni validée par les sociétés savantes citées.
         </p>
 
-        <dl className="mt-6 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
+        {fiche.freshness_status === "remplacee" && (
+          <p role="note" className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+            <b>Recommandation remplacée.</b> La société savante a publié un texte plus récent sur ce sujet.
+            {remplacante && (
+              <>
+                {" "}
+                Consultez plutôt la fiche{" "}
+                <Link href={`/recommandations/${ficheSlug(remplacante.fiche_key)}`} className="font-semibold underline">
+                  {remplacante.card_json?.title ?? remplacante.title}
+                </Link>
+                .
+              </>
+            )}{" "}
+            Cette fiche reste disponible pour son intérêt historique.
+          </p>
+        )}
+        {fiche.freshness_status === "revision_detectee" && (
+          <p role="note" className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
+            <b>Révision en cours.</b> Une nouvelle version de cette recommandation a été annoncée par la société
+            savante ; la fiche sera actualisée dès sa publication.
+          </p>
+        )}
+
+        {points.length > 0 && (
+          <section className="mt-8" aria-labelledby="points-cles">
+            <h2 id="points-cles" className="text-lg font-bold text-slate-900">
+              Points clés
+            </h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5 leading-relaxed text-slate-700">
+              {points.map((p) => (
+                <li key={p}>{p}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {c?.short && (
+          <section className="mt-8">
+            <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
+            <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
+          </section>
+        )}
+
+        <section className="mt-6 rounded-2xl bg-[#EEF6FB] p-6">
+          <h2 className="text-lg font-bold text-[#0E3A78]">Lire la fiche complète</h2>
+          <p className="mt-2 text-sm text-slate-700">
+            Recommandations détaillées par thème, avec leurs grades tels qu&apos;ils figurent dans la
+            source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
+          </p>
+          {user ? (
+            <Link
+              href={`/bibliotheque/${fiche.id}`}
+              className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+            >
+              Ouvrir la fiche dans ma bibliothèque
+            </Link>
+          ) : (
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/inscription"
+                className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
+              >
+                Créer mon compte gratuit
+              </Link>
+              <Link
+                href="/connexion"
+                className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
+              >
+                J&apos;ai déjà un compte
+              </Link>
+            </div>
+          )}
+        </section>
+
+        <dl className="mt-10 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
           {fiche.societies.length > 0 && (
             <>
               <dt className="font-semibold text-slate-900">Sociétés savantes</dt>
@@ -140,12 +221,6 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           </p>
         )}
 
-        {c?.short && (
-          <section className="mt-8">
-            <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
-            <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
-          </section>
-        )}
 
         <p className="mt-6 text-sm">
           <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1A74A6] underline">
@@ -154,36 +229,6 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           <span className="text-slate-500">— en accès libre sur le site de la société savante.</span>
         </p>
 
-        <section className="mt-10 rounded-2xl bg-[#EEF6FB] p-6">
-          <h2 className="text-lg font-bold text-[#0E3A78]">Lire la fiche complète</h2>
-          <p className="mt-2 text-sm text-slate-700">
-            Recommandations détaillées par thème, avec leurs grades tels qu&apos;ils figurent dans la
-            source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
-          </p>
-          {user ? (
-            <Link
-              href={`/bibliotheque/${fiche.id}`}
-              className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-            >
-              Ouvrir la fiche dans ma bibliothèque
-            </Link>
-          ) : (
-            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/inscription"
-                className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
-              >
-                Créer mon compte gratuit
-              </Link>
-              <Link
-                href="/connexion"
-                className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
-              >
-                J&apos;ai déjà un compte
-              </Link>
-            </div>
-          )}
-        </section>
 
         {voisines.length > 0 && (
           <section className="mt-10" aria-labelledby="voisines">

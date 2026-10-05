@@ -19,6 +19,10 @@
     {
       "path": "/api/cron/purge",
       "schedule": "40 3 * * *"
+    },
+    {
+      "path": "/api/cron/liens",
+      "schedule": "30 4 * * 1"
     }
   ]
 }

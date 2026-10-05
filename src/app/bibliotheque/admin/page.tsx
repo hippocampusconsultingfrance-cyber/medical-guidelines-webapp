@@ -9,6 +9,7 @@ import { SENTRY_ENABLED } from "@/lib/sentry";
 import { checkoutOpen, stripeMode } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
+import { FREE_QUOTA } from "@/lib/fiches";
 import { loadLibrary } from "../data";
 import Shell from "../shell";
 import { envoyerSynthese, testerSentry } from "./actions";
@@ -78,6 +79,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     reformulations,
     sansRelecture,
     pointsCles,
+    liensRompus,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -99,6 +101,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("libelles_reformulation").select("id", head).eq("status", "proposee")),
     count(admin.from("documents").select("id", head).not("published_at", "is", null).neq("freshness_status", "retiree").is("relue_le", null)),
     count(admin.from("points_cles_propositions").select("document_id", head).eq("status", "proposee")),
+    count(admin.from("documents").select("id", head).not("published_at", "is", null).eq("link_status", "rompu")),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -115,6 +118,29 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
   const mode = stripeMode();
   const venteOuverte = checkoutOpen(false);
   const conversion = membres && premium !== null ? Math.round((100 * premium) / membres) : 0;
+
+  // Parcours d'achat, mesuré sur les données déjà en base (aucun suivi ni
+  // cookie supplémentaire) : de l'inscription à l'abonnement, membres hors
+  // équipe éditoriale, depuis l'ouverture du site.
+  const [{ data: equipe }, { data: deblocages }] = await Promise.all([
+    admin.from("profiles").select("id").not("editorial_role", "is", null),
+    admin.from("document_unlocks").select("user_id"),
+  ]);
+  const idsEquipe = new Set((equipe ?? []).map((p) => p.id as string));
+  const fichesParMembre = new Map<string, number>();
+  for (const d of deblocages ?? []) {
+    const id = d.user_id as string;
+    if (!idsEquipe.has(id)) fichesParMembre.set(id, (fichesParMembre.get(id) ?? 0) + 1);
+  }
+  const auMoinsUne = fichesParMembre.size;
+  const quotaAtteint = [...fichesParMembre.values()].filter((n) => n >= FREE_QUOTA).length;
+  const parcours: [string, number | null][] = [
+    ["Comptes créés", membres],
+    ["Comptes finalisés (profil complété)", finalises],
+    ["Au moins une fiche gratuite ouverte", deblocages ? auMoinsUne : null],
+    [`Les ${FREE_QUOTA} fiches gratuites utilisées`, deblocages ? quotaAtteint : null],
+    ["Abonnés PREMIUM", premium],
+  ];
 
   const chiffres: [string, string, string?][] = [
     ["Membres inscrits", String(membres ?? "?"), nouveaux7 !== null ? `+${nouveaux7} en 7 j · +${nouveaux30 ?? "?"} en 30 j` : undefined],
@@ -167,6 +193,13 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
         sansRelecture === null
           ? "Migration de la mention de relecture pas encore appliquée dans Supabase."
           : "Relire la fiche puis « Signer la relecture » : la fiche affiche « Relue par Dr …, le … ».",
+    },
+    {
+      label: "Liens vers le document source rompus",
+      n: liensRompus,
+      href: "/bibliotheque",
+      detail:
+        "Vérifiés chaque lundi : la page ou le PDF de la société savante ne répond plus (404). Mettre à jour le lien dans la fiche.",
     },
     {
       label: "Fiches en ligne sans date de la source",
@@ -318,6 +351,33 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
           </div>
         ))}
       </div>
+      <h2 className="block-section" style={{ marginTop: 28 }}>
+        Parcours d&apos;achat
+      </h2>
+      <div style={{ ...card, display: "grid", gap: 10 }}>
+        {parcours.map(([label, n]) => {
+          const base = parcours[0][1] || 0;
+          const part = base && n !== null ? Math.round((100 * n) / base) : 0;
+          return (
+            <div key={label} style={{ display: "grid", gap: 4 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", gap: 8, fontSize: "0.85rem" }}>
+                <span>{label}</span>
+                <span style={{ fontVariantNumeric: "tabular-nums", color: "var(--ink-muted)" }}>
+                  <b style={{ color: "var(--ink)" }}>{n ?? "?"}</b> · {part} %
+                </span>
+              </div>
+              <div style={{ height: 6, borderRadius: 3, background: "var(--border)" }}>
+                <div style={{ width: `${part}%`, height: 6, borderRadius: 3, background: "var(--brand-ink)" }} />
+              </div>
+            </div>
+          );
+        })}
+        <p style={{ margin: 0, fontSize: "0.76rem", color: "var(--ink-muted)" }}>
+          Depuis l&apos;ouverture, membres hors équipe éditoriale. L&apos;étape où la barre chute le plus est celle à
+          améliorer en priorité.
+        </p>
+      </div>
+
       <p style={{ marginTop: 10 }}>
         <Link href="/bibliotheque/membres" className="btn btn-ghost btn-sm">
           Voir la liste des membres inscrits →

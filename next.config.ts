@@ -39,6 +39,11 @@ const nextConfig: NextConfig = {
   experimental: { serverActions: { bodySizeLimit: "4mb" } },
   // Ancienne page des fiches (un seul fichier avec tout le contenu),
   // remplacée par la bibliothèque et ses crédits.
+  // Icône demandée d'office par les navigateurs et les moteurs : le logo du
+  // site en PNG (src/app/icones), servi à l'adresse classique.
+  async rewrites() {
+    return [{ source: "/favicon.ico", destination: "/icones/48.png" }];
+  },
   async redirects() {
     return [{ source: "/fiches/:path*", destination: "/bibliotheque", permanent: false }];
   },

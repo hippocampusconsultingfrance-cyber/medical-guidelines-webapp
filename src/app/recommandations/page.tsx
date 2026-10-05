@@ -138,7 +138,19 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
                         href={`/recommandations/${ficheSlug(fiche.fiche_key)}`}
                         className="flex flex-col gap-1 px-4 py-3 hover:bg-slate-50 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
                       >
-                        <span className="font-medium text-slate-900">{titre}</span>
+                        <span className="font-medium text-slate-900">
+                          {titre}
+                          {fiche.freshness_status === "remplacee" && (
+                            <span className="ml-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
+                              Remplacée
+                            </span>
+                          )}
+                          {fiche.freshness_status === "revision_detectee" && (
+                            <span className="ml-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
+                              Révision en cours
+                            </span>
+                          )}
+                        </span>
                         <span className="shrink-0 font-mono text-xs text-slate-500">
                           {[fiche.societies.slice(0, 3).join(" / "), formatDate(fiche.publication_date)]
                             .filter(Boolean)
