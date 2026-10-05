@@ -78,6 +78,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     reformulations,
     sansRelecture,
     pointsCles,
+    liensRompus,
   ] = await Promise.all([
     count(admin.from("profiles").select("id", head).is("editorial_role", null)),
     count(admin.from("profiles").select("id", head).is("editorial_role", null).gte("created_at", since7)),
@@ -99,6 +100,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     count(admin.from("libelles_reformulation").select("id", head).eq("status", "proposee")),
     count(admin.from("documents").select("id", head).not("published_at", "is", null).neq("freshness_status", "retiree").is("relue_le", null)),
     count(admin.from("points_cles_propositions").select("document_id", head).eq("status", "proposee")),
+    count(admin.from("documents").select("id", head).not("published_at", "is", null).eq("link_status", "rompu")),
   ]);
 
   const actualisations = (await chargerPropositions(admin)).length;
@@ -167,6 +169,13 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
         sansRelecture === null
           ? "Migration de la mention de relecture pas encore appliquée dans Supabase."
           : "Relire la fiche puis « Signer la relecture » : la fiche affiche « Relue par Dr …, le … ».",
+    },
+    {
+      label: "Liens vers le document source rompus",
+      n: liensRompus,
+      href: "/bibliotheque",
+      detail:
+        "Vérifiés chaque lundi : la page ou le PDF de la société savante ne répond plus (404). Mettre à jour le lien dans la fiche.",
     },
     {
       label: "Fiches en ligne sans date de la source",

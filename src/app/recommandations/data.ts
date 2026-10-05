@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import { unstable_cache } from "next/cache";
 import { orderSocieties, type Card } from "@/lib/fiches";
+import { createAdminClient } from "@/lib/supabase/admin";
 
 export type PublicFiche = {
   id: string;
@@ -11,6 +12,10 @@ export type PublicFiche = {
   source_url: string;
   card_json: Card | null;
   societies: string[];
+  // Veille : « a_jour », « revision_detectee » ou « remplacee » (texte source
+  // remplacé, superseded_by_document_id désignant la fiche qui le remplace).
+  freshness_status: string | null;
+  superseded_by_document_id: string | null;
 };
 
 type Row = Omit<PublicFiche, "societies"> & {
@@ -32,7 +37,9 @@ const toutesLesFiches = unstable_cache(
     });
     const { data, error } = await supabase
       .from("documents")
-      .select("id, fiche_key, title, doc_type, publication_date, source_url, card_json, document_societies(societies(acronym))")
+      .select(
+        "id, fiche_key, title, doc_type, publication_date, source_url, card_json, freshness_status, superseded_by_document_id, document_societies(societies(acronym))",
+      )
       .not("fiche_key", "is", null)
       .not("published_at", "is", null)
       .order("publication_date", { ascending: false, nullsFirst: false })
@@ -59,4 +66,26 @@ export async function loadPublicFiches(key?: string, limit?: number) {
   const toutes = await toutesLesFiches();
   if (key) return toutes.filter((f) => f.fiche_key === key);
   return limit ? toutes.slice(0, limit) : toutes;
+}
+
+// Points clés validés par un médecin (3 à 5 par fiche), dont les 3 premiers
+// sont montrés sur la page publique de la fiche. La colonne n'est lisible
+// que par le serveur ; gardés 5 minutes en cache comme les métadonnées. Une
+// lecture impossible n'empêche jamais d'afficher la page.
+const pointsCles = unstable_cache(
+  async (id: string): Promise<string[]> => {
+    try {
+      const { data } = await createAdminClient().from("documents").select("points_cles").eq("id", id).maybeSingle();
+      const points = data?.points_cles;
+      return Array.isArray(points) ? points.filter((p): p is string => typeof p === "string") : [];
+    } catch {
+      return [];
+    }
+  },
+  ["points-cles-publics"],
+  { revalidate: 300, tags: [FICHES_PUBLIQUES] },
+);
+
+export async function loadPointsClesPublics(id: string, nombre = 3) {
+  return (await pointsCles(id)).slice(0, nombre);
 }

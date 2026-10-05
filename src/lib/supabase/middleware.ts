@@ -1,6 +1,19 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
+// Premiers segments des pages et routes réservées aux membres connectés.
+const ESPACES_MEMBRES = [
+  "/abonnement",
+  "/alertes",
+  "/api",
+  "/assistant",
+  "/bibliotheque",
+  "/compte",
+  "/mfa",
+  "/nouveau-mot-de-passe",
+  "/suggestions",
+];
+
 // requestHeaders : en-têtes transmis au rendu (jeton CSP de la page).
 export async function updateSession(request: NextRequest, requestHeaders: Headers = request.headers) {
   let supabaseResponse = NextResponse.next({ request: { headers: requestHeaders } });
@@ -77,7 +90,14 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
     // Contact de sécurité (RFC 9116).
     request.nextUrl.pathname === "/.well-known/security.txt";
 
-  if (!user && !isAuthRoute && !isPublicAsset && request.nextUrl.pathname !== "/") {
+  // Espaces réservés aux membres : un visiteur y est renvoyé vers la connexion.
+  // Toute autre adresse inconnue affiche la page 404 (src/app/not-found.tsx)
+  // au lieu d'une redirection, pour les visiteurs comme pour les moteurs.
+  const isMemberArea = ESPACES_MEMBRES.some(
+    (p) => request.nextUrl.pathname === p || request.nextUrl.pathname.startsWith(`${p}/`),
+  );
+
+  if (!user && isMemberArea && !isAuthRoute && !isPublicAsset) {
     const url = request.nextUrl.clone();
     url.pathname = "/connexion";
     return NextResponse.redirect(url);
