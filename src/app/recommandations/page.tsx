@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { formatDate } from "@/lib/fiches";
-import { INDEXABLE, SITE_URL, ficheSlug } from "@/lib/seo";
+import { INDEXABLE, SITE_URL, ficheSlug, sectionSlug } from "@/lib/seo";
 import { groupBySection } from "../bibliotheque/data";
 import { loadPublicFiches } from "./data";
 import PublicHeader from "./public-header";
@@ -124,7 +124,9 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
               aria-labelledby={`t-${ancre(section)}`}
             >
               <h2 id={`t-${ancre(section)}`} className="text-xl font-bold text-[#0E3A78]">
-                {section}{" "}
+                <Link href={`/recommandations/specialite/${sectionSlug(section)}`} className="hover:underline">
+                  {section}
+                </Link>{" "}
                 <span className="text-base font-medium text-slate-500">
                   (<span data-compte={ancre(section)}>{list.length}</span>)
                 </span>
