@@ -1,11 +1,23 @@
 import { composerAvisRenouvellement, logRenouvellement } from "@/lib/commande";
 import { emailEnabled, sendBatch, siteUrl, type OutgoingEmail } from "@/lib/email";
-import { ciblesFinaliser, ciblesQuota, emailFinaliser, emailQuota, LOG_FINALISER, LOG_QUOTA } from "@/lib/relances";
+import {
+  ciblesFinaliser,
+  ciblesPremiereFiche,
+  ciblesQuota,
+  emailFinaliser,
+  emailPremiereFiche,
+  emailQuota,
+  fichesSuggerees,
+  LOG_FINALISER,
+  LOG_PREMIERE,
+  LOG_QUOTA,
+} from "@/lib/relances";
 import { checkoutOpen, getStripe, stripeEnabled } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 
 // Relances quotidiennes (tâche planifiée Vercel, vercel.json) : inscription
-// non finalisée, crédits gratuits épuisés, avis de renouvellement de
+// non finalisée, aucune fiche ouverte après la finalisation, crédits
+// gratuits épuisés, avis de renouvellement de
 // l'abonnement (35 à 45 jours avant l'échéance, CGV §5). Authentifiée par
 // CRON_SECRET ; une relance de chaque sorte au plus par membre, et un avis
 // par échéance (notifications_log).
@@ -17,13 +29,19 @@ export async function GET(request: Request) {
   }
   const admin = createAdminClient();
   const now = Date.now();
-  const [finaliser, quota, echeances] = await Promise.all([
+  const [finaliser, premiere, quota, echeances] = await Promise.all([
     ciblesFinaliser(admin, now),
+    ciblesPremiereFiche(admin, now),
     ciblesQuota(admin, now),
     echeancesProches(admin, now),
   ]);
   if (new URL(request.url).searchParams.get("apercu") === "1") {
-    return Response.json({ finaliser: finaliser.length, quota: quota.length, renouvellement: echeances.length });
+    return Response.json({
+      finaliser: finaliser.length,
+      premiere_fiche: premiere.length,
+      quota: quota.length,
+      renouvellement: echeances.length,
+    });
   }
   if (!emailEnabled()) return Response.json({ envoyes: 0, info: "RESEND_API_KEY manquant : aucun envoi" });
 
@@ -35,6 +53,13 @@ export async function GET(request: Request) {
     const hash = data?.properties?.hashed_token;
     if (error || !hash) continue;
     lots.push({ userId: c.userId, body: LOG_FINALISER, email: emailFinaliser(c, `${site}/auth/callback?token_hash=${hash}&type=email`, site) });
+  }
+  const suggestions = new Map<string, Awaited<ReturnType<typeof fichesSuggerees>>>();
+  for (const c of premiere) {
+    const cle = c.specialtyId ?? "";
+    if (!suggestions.has(cle)) suggestions.set(cle, await fichesSuggerees(admin, c.specialtyId, site));
+    const fiches = suggestions.get(cle) ?? [];
+    if (fiches.length) lots.push({ userId: c.userId, body: LOG_PREMIERE, email: emailPremiereFiche(c, fiches, site) });
   }
   const vente = checkoutOpen(false);
   for (const c of quota) lots.push({ userId: c.userId, body: LOG_QUOTA, email: emailQuota(c, vente, site) });
@@ -56,7 +81,12 @@ export async function GET(request: Request) {
   await admin
     .from("notifications_log")
     .insert(lots.map((l) => ({ user_id: l.userId, subject: l.email.subject, body: l.body, channel: "email" })));
-  return Response.json({ finaliser: finaliser.length, quota: quota.length, renouvellement: avis.length });
+  return Response.json({
+    finaliser: finaliser.length,
+    premiere_fiche: premiere.length,
+    quota: quota.length,
+    renouvellement: avis.length,
+  });
 }
 
 type Echeance = { userId: string; subscriptionId: string; fin: string };
