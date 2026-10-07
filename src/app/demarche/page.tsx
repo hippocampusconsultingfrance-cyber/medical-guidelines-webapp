@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { createClient } from "@/lib/supabase/server";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
@@ -12,9 +11,11 @@ export const metadata: Metadata = {
 // et §12.5) : les recommandations ne sont pas vendues ; l'abonnement finance
 // le service (outils d'IA, hébergement, relecture) ; projet construit avec
 // des volontaires ; procédure de demande ou de retrait pour les sociétés.
-export default async function DemarchePage() {
-  const supabase = await createClient();
-  const { data } = await supabase.auth.getUser();
+// Page publique mise en cache (identique pour tous les visiteurs),
+// régénérée au plus toutes les 5 minutes.
+export const revalidate = 300;
+
+export default function DemarchePage() {
   const sections: [string, string[]][] = [
     [
       "Les recommandations restent libres et gratuites",
@@ -47,7 +48,7 @@ export default async function DemarchePage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(data.user)} />
+      <PublicHeader />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <h1 className="text-3xl font-bold text-[#0E3A78]">Notre démarche</h1>
         <p className="mt-3 text-lg text-slate-600">

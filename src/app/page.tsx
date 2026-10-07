@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import AccueilPublic from "./accueil-public";
 import DonneesStructurees from "./donnees-structurees";
 import { loadPublicFiches } from "./recommandations/data";
-import EspaceMembre from "./espace-membre";
 import { INDEXABLE, SITE_URL } from "@/lib/seo";
 
 const TITRE = "medical-guidelines.net — Recommandations médicales et paramédicales en fiches";
@@ -20,63 +17,40 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-export default async function Home({ searchParams }: PageProps<"/">) {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+// Accueil public, mis en cache (identique pour tous les visiteurs) et
+// régénéré au plus toutes les 5 minutes. Un membre connecté reçoit à la
+// place son espace (src/app/espace, servi à la même adresse par le proxy).
+export const revalidate = 300;
 
-  if (!user) {
-    // Les plus récentes d'abord (ordre de loadPublicFiches).
-    const recentes = await loadPublicFiches(undefined, 4);
-    return (
-      <>
-        <DonneesStructurees
-          data={{
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "Organization",
-                "@id": `${SITE_URL}/#organisation`,
-                name: "medical-guidelines.net",
-                url: SITE_URL,
-                logo: `${SITE_URL}/icones/512.png`,
-                email: "contact@medical-guidelines.net",
-              },
-              {
-                "@type": "WebSite",
-                "@id": `${SITE_URL}/#site`,
-                name: "medical-guidelines.net",
-                url: SITE_URL,
-                inLanguage: "fr",
-                publisher: { "@id": `${SITE_URL}/#organisation` },
-              },
-            ],
-          }}
-        />
-        <AccueilPublic recentes={recentes} />
-      </>
-    );
-  }
-
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("prenom, profession, setup_completed")
-    .eq("id", user.id)
-    .single();
-
-  if (profile && !profile.setup_completed) {
-    redirect("/finaliser-compte");
-  }
-
-  const { societe, r } = await searchParams;
+export default async function Home() {
+  // Les plus récentes d'abord (ordre de loadPublicFiches).
+  const recentes = await loadPublicFiches(undefined, 4);
   return (
-    <EspaceMembre
-      supabase={supabase}
-      user={user}
-      profile={profile}
-      societe={typeof societe === "string" ? societe : ""}
-      r={typeof r === "string" ? r : ""}
-    />
+    <>
+      <DonneesStructurees
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organisation`,
+              name: "medical-guidelines.net",
+              url: SITE_URL,
+              logo: `${SITE_URL}/icones/512.png`,
+              email: "contact@medical-guidelines.net",
+            },
+            {
+              "@type": "WebSite",
+              "@id": `${SITE_URL}/#site`,
+              name: "medical-guidelines.net",
+              url: SITE_URL,
+              inLanguage: "fr",
+              publisher: { "@id": `${SITE_URL}/#organisation` },
+            },
+          ],
+        }}
+      />
+      <AccueilPublic recentes={recentes} />
+    </>
   );
 }

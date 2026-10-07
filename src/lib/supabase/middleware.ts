@@ -9,14 +9,21 @@ const ESPACES_MEMBRES = [
   "/assistant",
   "/bibliotheque",
   "/compte",
+  "/espace",
   "/mfa",
   "/nouveau-mot-de-passe",
   "/suggestions",
 ];
 
 // requestHeaders : en-têtes transmis au rendu (jeton CSP de la page).
-export async function updateSession(request: NextRequest, requestHeaders: Headers = request.headers) {
-  let supabaseResponse = NextResponse.next({ request: { headers: requestHeaders } });
+// rewrite : page servie à la place de l'adresse demandée (accueil d'un
+// membre connecté, cf. src/proxy.ts).
+export async function updateSession(request: NextRequest, requestHeaders: Headers = request.headers, rewrite?: URL) {
+  const suite = () =>
+    rewrite
+      ? NextResponse.rewrite(rewrite, { request: { headers: requestHeaders } })
+      : NextResponse.next({ request: { headers: requestHeaders } });
+  let supabaseResponse = suite();
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -30,7 +37,7 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
           cookiesToSet.forEach(({ name, value }) =>
             request.cookies.set(name, value),
           );
-          supabaseResponse = NextResponse.next({ request: { headers: requestHeaders } });
+          supabaseResponse = suite();
           cookiesToSet.forEach(({ name, value, options }) =>
             supabaseResponse.cookies.set(name, value, options),
           );

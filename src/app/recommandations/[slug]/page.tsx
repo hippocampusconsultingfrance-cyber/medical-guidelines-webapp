@@ -2,19 +2,26 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadPointsClesPublics, loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
 import DonneesStructurees from "../../donnees-structurees";
+import SelonConnexion from "../../selon-connexion";
+
+// Pages mises en cache (identiques pour tous les visiteurs), générées à la
+// première visite puis régénérées au plus toutes les 5 minutes, ou dès
+// qu'une fiche est publiée ou retirée (étiquette des fiches publiques).
+export const revalidate = 300;
+export function generateStaticParams() {
+  return [];
+}
 
 // Une seule lecture par requête pour les métadonnées et la page.
 const load = cache(async (slug: string) => {
   if (!/^[a-z0-9-]{2,120}$/.test(slug)) return null;
-  const supabase = await createClient();
   const [fiche] = await loadPublicFiches(ficheKey(slug));
-  return fiche ? { fiche, supabase } : null;
+  return fiche ? { fiche } : null;
 });
 
 export async function generateMetadata({ params }: PageProps<"/recommandations/[slug]">): Promise<Metadata> {
@@ -49,15 +56,9 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
   const { slug } = await params;
   const found = await load(slug);
   if (!found) notFound();
-  const { fiche, supabase } = found;
+  const { fiche } = found;
   if (ficheSlug(fiche.fiche_key) !== slug) notFound();
-  const [
-    {
-      data: { user },
-    },
-    toutes,
-    points,
-  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(), loadPointsClesPublics(fiche.id)]);
+  const [toutes, points] = await Promise.all([loadPublicFiches(), loadPointsClesPublics(fiche.id)]);
   // Texte source remplacé : lien vers la fiche qui le remplace, si elle est en ligne.
   const remplacante =
     fiche.freshness_status === "remplacee" && fiche.superseded_by_document_id
@@ -86,7 +87,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(user)} />
+      <PublicHeader />
       <DonneesStructurees data={jsonLd} />
       <DonneesStructurees
         data={{
@@ -163,29 +164,32 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
             Recommandations détaillées par thème, avec leurs grades tels qu&apos;ils figurent dans la
             source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
           </p>
-          {user ? (
-            <Link
-              href={`/bibliotheque/${fiche.id}`}
-              className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-            >
-              Ouvrir la fiche dans ma bibliothèque
-            </Link>
-          ) : (
-            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+          <SelonConnexion
+            connecte={
               <Link
-                href="/inscription"
-                className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
+                href={`/bibliotheque/${fiche.id}`}
+                className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
               >
-                Créer mon compte gratuit
+                Ouvrir la fiche dans ma bibliothèque
               </Link>
-              <Link
-                href="/connexion"
-                className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
-              >
-                J&apos;ai déjà un compte
-              </Link>
-            </div>
-          )}
+            }
+            visiteur={
+              <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/inscription"
+                  className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
+                >
+                  Créer mon compte gratuit
+                </Link>
+                <Link
+                  href="/connexion"
+                  className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
+                >
+                  J&apos;ai déjà un compte
+                </Link>
+              </div>
+            }
+          />
         </section>
 
         <dl className="mt-10 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">

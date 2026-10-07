@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { chargerCorrections, CRITICITES, dateCorrection } from "@/lib/corrections";
 import { ficheSlug } from "@/lib/seo";
-import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
@@ -12,13 +12,16 @@ export const metadata: Metadata = {
 
 // Journal public des corrections (cahier des charges §9.4), accessible sans
 // compte : date, fiche, criticité, résumé. Aucune donnée personnelle.
+// Page publique mise en cache (identique pour tous les visiteurs),
+// régénérée au plus toutes les 5 minutes.
+export const revalidate = 300;
+
 export default async function CorrectionsPage() {
-  const supabase = await createClient();
-  const [corrections, { data: auth }] = await Promise.all([chargerCorrections(supabase), supabase.auth.getUser()]);
+  const corrections = await chargerCorrections(createPublicClient());
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(auth.user)} />
+      <PublicHeader />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <h1 className="text-3xl font-bold text-[#0E3A78]">Journal des corrections</h1>
         <p className="mt-3 text-slate-600">

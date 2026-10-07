@@ -32,8 +32,7 @@ const champ =
 // des fiches en échange d'un accès gratuit et de 5 accès offerts aux personnes de son choix.
 export default async function RelecteursPage({ searchParams }: PageProps<"/relecteurs">) {
   const supabase = await createClient();
-  const [{ data: auth }, { data }, params] = await Promise.all([
-    supabase.auth.getUser(),
+  const [{ data }, params] = await Promise.all([
     supabase.from("specialties").select("slug, name_i18n").eq("category", "medicale"),
     searchParams,
   ]);
@@ -44,7 +43,7 @@ export default async function RelecteursPage({ searchParams }: PageProps<"/relec
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(auth.user)} />
+      <PublicHeader />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-wide text-[#177E73]">Médecins relecteurs</p>
         <h1 className="mt-2 text-3xl font-bold text-[#0E3A78]">

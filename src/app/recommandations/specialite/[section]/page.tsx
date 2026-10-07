@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import { formatDate } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheSlug, sectionLibelle, sectionSlug } from "@/lib/seo";
 import { groupBySection } from "../../../bibliotheque/data";
 import { loadPublicFiches } from "../../data";
 import PublicHeader from "../../public-header";
 import DonneesStructurees from "../../../donnees-structurees";
+import SelonConnexion from "../../../selon-connexion";
 
 // Page d'entrée d'une spécialité : les fiches d'une rubrique du catalogue,
 // de la plus récente à la plus ancienne, avec leurs sociétés et dates.
 // Titres, sociétés et dates uniquement, comme le catalogue.
+// Pages mises en cache comme le catalogue (5 minutes au plus).
+export const revalidate = 300;
+export function generateStaticParams() {
+  return [];
+}
+
 const pluriel = (n: number, mot: string) => `${n} ${mot}${n > 1 ? "s" : ""}`;
 
 async function rubrique(slug: string) {
@@ -45,16 +51,12 @@ export default async function SpecialitePage({ params }: PageProps<"/recommandat
   if (!trouvee) notFound();
   const [section, list] = trouvee;
   const libelle = sectionLibelle(section);
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
   const recentes = list.filter((f) => f.publication_date && f.publication_date >= "2020-01-01").length;
   const url = `${SITE_URL}/recommandations/specialite/${slug}`;
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(user)} />
+      <PublicHeader />
       <DonneesStructurees
         data={{
           "@context": "https://schema.org",
@@ -99,12 +101,24 @@ export default async function SpecialitePage({ params }: PageProps<"/recommandat
               indépendantes{recentes > 0 ? `, dont ${recentes} publiée${recentes > 1 ? "s" : ""} depuis 2020` : ""}. Chaque fiche garde les grades de la source et renvoie au document
               officiel ; elle n&apos;est ni éditée ni validée par les sociétés savantes.
             </p>
-            <Link
-              href={user ? "/bibliotheque" : "/inscription"}
-              className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-            >
-              {user ? "Ouvrir ma bibliothèque" : "Créer un compte gratuit : 5 fiches offertes"}
-            </Link>
+            <SelonConnexion
+              connecte={
+                <Link
+                  href="/bibliotheque"
+                  className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+                >
+                  Ouvrir ma bibliothèque
+                </Link>
+              }
+              visiteur={
+                <Link
+                  href="/inscription"
+                  className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+                >
+                  Créer un compte gratuit : 5 fiches offertes
+                </Link>
+              }
+            />
           </div>
         </div>
 
