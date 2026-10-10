@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
-import { loadPointsClesPublics, loadPublicFiches } from "../data";
+import { loadApercuPublic, loadPointsClesPublics, loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
 import DonneesStructurees from "../../donnees-structurees";
 import SelonConnexion from "../../selon-connexion";
@@ -16,6 +16,9 @@ export const revalidate = 300;
 export function generateStaticParams() {
   return [];
 }
+
+// Chapitres affichés dans le sommaire public (les suivants sont comptés).
+const CHAPITRES_MAX = 12;
 
 // Une seule lecture par requête pour les métadonnées et la page.
 const load = cache(async (slug: string) => {
@@ -49,16 +52,21 @@ export async function generateMetadata({ params }: PageProps<"/recommandations/[
 }
 
 // Page publique de résumé d'une fiche : ce qui figure sur sa carte (titre,
-// sociétés, date, méthodologie, résumé), ses 3 premiers points clés validés
-// et le lien vers la source. Le contenu de la fiche (recommandations
-// détaillées et grades) reste réservé aux comptes (crédits ou PREMIUM).
+// sociétés, date, méthodologie, résumé), son champ d'application, ses 3
+// premiers points clés validés, le sommaire de ses chapitres et le lien vers
+// la source. Le contenu de la fiche (recommandations détaillées et grades)
+// reste réservé aux comptes (crédits ou PREMIUM).
 export default async function RecommandationPage({ params }: PageProps<"/recommandations/[slug]">) {
   const { slug } = await params;
   const found = await load(slug);
   if (!found) notFound();
   const { fiche } = found;
   if (ficheSlug(fiche.fiche_key) !== slug) notFound();
-  const [toutes, points] = await Promise.all([loadPublicFiches(), loadPointsClesPublics(fiche.id)]);
+  const [toutes, points, apercu] = await Promise.all([
+    loadPublicFiches(),
+    loadPointsClesPublics(fiche.id),
+    loadApercuPublic(fiche.id),
+  ]);
   // Texte source remplacé : lien vers la fiche qui le remplace, si elle est en ligne.
   const remplacante =
     fiche.freshness_status === "remplacee" && fiche.superseded_by_document_id
@@ -138,6 +146,22 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           </p>
         )}
 
+        {apercu.champ ? (
+          <section className="mt-8" aria-labelledby="champ">
+            <h2 id="champ" className="text-lg font-bold text-slate-900">
+              Champ de la recommandation
+            </h2>
+            <p className="mt-2 leading-relaxed text-slate-700">{apercu.champ}</p>
+          </section>
+        ) : (
+          c?.short && (
+            <section className="mt-8">
+              <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
+              <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
+            </section>
+          )
+        )}
+
         {points.length > 0 && (
           <section className="mt-8" aria-labelledby="points-cles">
             <h2 id="points-cles" className="text-lg font-bold text-slate-900">
@@ -148,13 +172,6 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
                 <li key={p}>{p}</li>
               ))}
             </ul>
-          </section>
-        )}
-
-        {c?.short && (
-          <section className="mt-8">
-            <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
-            <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
           </section>
         )}
 
@@ -191,6 +208,24 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
             }
           />
         </section>
+
+        {apercu.chapitres.length > 1 && (
+          <section className="mt-10" aria-labelledby="sommaire">
+            <h2 id="sommaire" className="text-lg font-bold text-slate-900">
+              Sommaire de la fiche complète
+            </h2>
+            <ol className="mt-3 list-decimal space-y-1 pl-6 text-slate-700 marker:text-slate-400">
+              {apercu.chapitres.slice(0, CHAPITRES_MAX).map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ol>
+            {apercu.chapitres.length > CHAPITRES_MAX && (
+              <p className="mt-2 text-sm text-slate-500">
+                Et {apercu.chapitres.length - CHAPITRES_MAX} autres chapitres.
+              </p>
+            )}
+          </section>
+        )}
 
         <dl className="mt-10 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
           {fiche.societies.length > 0 && (
