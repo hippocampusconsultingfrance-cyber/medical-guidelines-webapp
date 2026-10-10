@@ -17,6 +17,10 @@ export type PublicFiche = {
   // remplacé, superseded_by_document_id désignant la fiche qui le remplace).
   freshness_status: string | null;
   superseded_by_document_id: string | null;
+  // Contrôle hebdomadaire du lien source (tâche /api/cron/liens) : « ok »,
+  // « rompu » ou « inconnu », et date du dernier contrôle.
+  link_status: string | null;
+  link_last_checked_at: string | null;
 };
 
 type Row = Omit<PublicFiche, "societies"> & {
@@ -39,7 +43,7 @@ const toutesLesFiches = unstable_cache(
     const { data, error } = await supabase
       .from("documents")
       .select(
-        "id, fiche_key, title, doc_type, publication_date, source_url, card_json, freshness_status, superseded_by_document_id, document_societies(societies(acronym))",
+        "id, fiche_key, title, doc_type, publication_date, source_url, card_json, freshness_status, superseded_by_document_id, link_status, link_last_checked_at, document_societies(societies(acronym))",
       )
       .not("fiche_key", "is", null)
       .not("published_at", "is", null)

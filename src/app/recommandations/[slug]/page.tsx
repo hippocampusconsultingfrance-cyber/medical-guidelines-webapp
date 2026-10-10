@@ -265,7 +265,13 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1A74A6] underline">
             Document source officiel ↗
           </a>{" "}
-          <span className="text-slate-500">— en accès libre sur le site de la société savante.</span>
+          <span className="text-slate-500">
+            — en accès libre sur le site de la société savante
+            {fiche.link_status === "ok" && fiche.link_last_checked_at
+              ? ` (lien contrôlé le ${formatDate(fiche.link_last_checked_at.slice(0, 10))})`
+              : ""}
+            .
+          </span>
         </p>
 
 
