@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { chargerCorrections, CRITICITES, dateCorrection } from "@/lib/corrections";
-import { ficheSlug } from "@/lib/seo";
+import { INDEXABLE, SITE_URL, ficheSlug } from "@/lib/seo";
 import { createPublicClient } from "@/lib/supabase/public";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
   title: "Journal des corrections — medical-guidelines.net",
   description: "Corrections apportées aux fiches de synthèse : date, fiche, criticité et résumé de la modification.",
+  alternates: { canonical: `${SITE_URL}/corrections` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 // Journal public des corrections (cahier des charges §9.4), accessible sans

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PROFESSIONS_MEDECIN } from "@/lib/relecteurs";
 import { createClient } from "@/lib/supabase/server";
+import { INDEXABLE, SITE_URL } from "@/lib/seo";
 import PublicHeader from "../recommandations/public-header";
 import { envoyerCandidature } from "./actions";
 
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   title: "Médecins relecteurs — medical-guidelines.net",
   description:
     "Vous êtes médecin ? Participez à la correction des fiches, déjà relues deux fois par des outils d'intelligence artificielle : accès gratuit et illimité au site, plus 5 accès gratuits illimités pour les personnes de votre choix.",
+  alternates: { canonical: `${SITE_URL}/relecteurs` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 const MESSAGES: Record<string, [string, boolean]> = {

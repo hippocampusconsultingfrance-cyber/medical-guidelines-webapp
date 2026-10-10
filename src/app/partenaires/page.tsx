@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { INDEXABLE, SITE_URL } from "@/lib/seo";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
   title: "Sociétés savantes partenaires — medical-guidelines.net",
   description:
     "Sociétés savantes : devenez partenaires. Accès PREMIUM offert, statistiques anonymes de lecture de vos recommandations et signalements d'erreurs des lecteurs sur vos fiches.",
+  alternates: { canonical: `${SITE_URL}/partenaires` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 // Offre de partenariat aux sociétés savantes (page publique). Ce qui est

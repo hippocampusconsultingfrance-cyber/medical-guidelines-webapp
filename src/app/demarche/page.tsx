@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import { INDEXABLE, SITE_URL } from "@/lib/seo";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
   title: "Notre démarche — medical-guidelines.net",
   description:
     "Les recommandations restent en accès libre sur les sites des sociétés savantes. L'abonnement couvre l'hébergement, le développement et les outils d'IA du site, pas les recommandations.",
+  alternates: { canonical: `${SITE_URL}/demarche` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 // Positionnement vis-à-vis des sociétés savantes (cahier des charges §12.4
