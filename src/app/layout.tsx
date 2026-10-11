@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
@@ -29,10 +28,11 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = { themeColor: "#0E3A78" };
 
-// Rendu à chaque requête : le jeton CSP de la page (src/proxy.ts) doit être
-// appliqué aux scripts de Next.js, ce qu'une page pré-générée ne permet pas.
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-  await headers();
+// Les pages publiques listées dans src/proxy.ts sont mises en cache ; toutes
+// les autres sont rendues à chaque requête avec le jeton CSP de la page
+// (src/proxy.ts), appliqué par Next.js à ses propres scripts (elles lisent
+// les cookies de session, ou le déclarent via RenduParRequete).
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="fr"

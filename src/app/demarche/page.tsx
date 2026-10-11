@@ -1,20 +1,24 @@
 import type { Metadata } from "next";
-import { createClient } from "@/lib/supabase/server";
+import { INDEXABLE, SITE_URL } from "@/lib/seo";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
   title: "Notre démarche — medical-guidelines.net",
   description:
     "Les recommandations restent en accès libre sur les sites des sociétés savantes. L'abonnement couvre l'hébergement, le développement et les outils d'IA du site, pas les recommandations.",
+  alternates: { canonical: `${SITE_URL}/demarche` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 // Positionnement vis-à-vis des sociétés savantes (cahier des charges §12.4
 // et §12.5) : les recommandations ne sont pas vendues ; l'abonnement finance
 // le service (outils d'IA, hébergement, relecture) ; projet construit avec
 // des volontaires ; procédure de demande ou de retrait pour les sociétés.
-export default async function DemarchePage() {
-  const supabase = await createClient();
-  const { data } = await supabase.auth.getUser();
+// Page publique mise en cache (identique pour tous les visiteurs),
+// régénérée au plus toutes les 5 minutes.
+export const revalidate = 300;
+
+export default function DemarchePage() {
   const sections: [string, string[]][] = [
     [
       "Les recommandations restent libres et gratuites",
@@ -47,7 +51,7 @@ export default async function DemarchePage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(data.user)} />
+      <PublicHeader />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <h1 className="text-3xl font-bold text-[#0E3A78]">Notre démarche</h1>
         <p className="mt-3 text-lg text-slate-600">

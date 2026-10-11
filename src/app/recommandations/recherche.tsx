@@ -12,14 +12,20 @@ const normaliser = (s: string) =>
 // rubriques vides) dont le titre ou les sociétés ne contiennent pas tous les
 // mots saisis. La liste complète reste rendue par le serveur (référencement,
 // fonctionnement sans JavaScript).
-export default function RechercheCatalogue({ total, initiale = "" }: { total: number; initiale?: string }) {
-  const [q, setQ] = useState(initiale);
+export default function RechercheCatalogue({ total }: { total: number }) {
+  const [q, setQ] = useState("");
   const [visibles, setVisibles] = useState(total);
 
-  // Recherche lancée depuis l'accueil (/recommandations?q=…).
+  // Recherche lancée depuis l'accueil (/recommandations?q=…), lue dans
+  // l'adresse : la page est la même pour tous (mise en cache).
   useEffect(() => {
-    if (initiale) filtrer(initiale);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const initiale = (new URLSearchParams(window.location.search).get("q") ?? "").slice(0, 80);
+    if (!initiale) return;
+    const id = requestAnimationFrame(() => {
+      setQ(initiale);
+      filtrer(initiale);
+    });
+    return () => cancelAnimationFrame(id);
   }, []);
 
   function filtrer(valeur: string) {

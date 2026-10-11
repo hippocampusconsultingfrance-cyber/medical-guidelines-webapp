@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
 import CadreAuth from "../cadre-auth";
+import RenduParRequete from "../rendu-par-requete";
 
 export const metadata: Metadata = { title: "Se connecter — medical-guidelines.net" };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <CadreAuth>{children}</CadreAuth>;
+  // Rendu à chaque requête : CSP stricte par jeton (src/proxy.ts).
+  return (
+    <RenduParRequete>
+      <CadreAuth>{children}</CadreAuth>
+    </RenduParRequete>
+  );
 }

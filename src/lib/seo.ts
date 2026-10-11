@@ -14,3 +14,27 @@ export function ficheSlug(key: string) {
 export function ficheKey(slug: string) {
   return slug.replace(/-/g, "_");
 }
+
+// Pages d'entrée par spécialité (/recommandations/specialite/…), une par
+// rubrique du catalogue (card_json.section) : adresse et libellé dans une
+// phrase (« Recommandations en … »).
+export function sectionSlug(section: string) {
+  return section
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+const LIBELLES_SECTIONS: Record<string, string> = {
+  Anesthésie: "anesthésie",
+  Réanimation: "réanimation",
+  Urgences: "médecine d'urgence",
+  Pédiatrie: "pédiatrie",
+  Obstétrique: "obstétrique",
+  Infectiologie: "infectiologie",
+  Nutrition: "nutrition",
+};
+export function sectionLibelle(section: string) {
+  return LIBELLES_SECTIONS[section] ?? section.toLowerCase();
+}

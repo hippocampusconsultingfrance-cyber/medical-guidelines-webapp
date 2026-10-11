@@ -2,19 +2,29 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
 import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
 import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
-import { loadPointsClesPublics, loadPublicFiches } from "../data";
+import { loadApercuPublic, loadPointsClesPublics, loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
 import DonneesStructurees from "../../donnees-structurees";
+import SelonConnexion from "../../selon-connexion";
+
+// Pages mises en cache (identiques pour tous les visiteurs), générées à la
+// première visite puis régénérées au plus toutes les 5 minutes, ou dès
+// qu'une fiche est publiée ou retirée (étiquette des fiches publiques).
+export const revalidate = 300;
+export function generateStaticParams() {
+  return [];
+}
+
+// Chapitres affichés dans le sommaire public (les suivants sont comptés).
+const CHAPITRES_MAX = 12;
 
 // Une seule lecture par requête pour les métadonnées et la page.
 const load = cache(async (slug: string) => {
   if (!/^[a-z0-9-]{2,120}$/.test(slug)) return null;
-  const supabase = await createClient();
   const [fiche] = await loadPublicFiches(ficheKey(slug));
-  return fiche ? { fiche, supabase } : null;
+  return fiche ? { fiche } : null;
 });
 
 export async function generateMetadata({ params }: PageProps<"/recommandations/[slug]">): Promise<Metadata> {
@@ -42,22 +52,21 @@ export async function generateMetadata({ params }: PageProps<"/recommandations/[
 }
 
 // Page publique de résumé d'une fiche : ce qui figure sur sa carte (titre,
-// sociétés, date, méthodologie, résumé), ses 3 premiers points clés validés
-// et le lien vers la source. Le contenu de la fiche (recommandations
-// détaillées et grades) reste réservé aux comptes (crédits ou PREMIUM).
+// sociétés, date, méthodologie, résumé), son champ d'application, ses 3
+// premiers points clés validés, le sommaire de ses chapitres et le lien vers
+// la source. Le contenu de la fiche (recommandations détaillées et grades)
+// reste réservé aux comptes (crédits ou PREMIUM).
 export default async function RecommandationPage({ params }: PageProps<"/recommandations/[slug]">) {
   const { slug } = await params;
   const found = await load(slug);
   if (!found) notFound();
-  const { fiche, supabase } = found;
+  const { fiche } = found;
   if (ficheSlug(fiche.fiche_key) !== slug) notFound();
-  const [
-    {
-      data: { user },
-    },
-    toutes,
-    points,
-  ] = await Promise.all([supabase.auth.getUser(), loadPublicFiches(), loadPointsClesPublics(fiche.id)]);
+  const [toutes, points, apercu] = await Promise.all([
+    loadPublicFiches(),
+    loadPointsClesPublics(fiche.id),
+    loadApercuPublic(fiche.id),
+  ]);
   // Texte source remplacé : lien vers la fiche qui le remplace, si elle est en ligne.
   const remplacante =
     fiche.freshness_status === "remplacee" && fiche.superseded_by_document_id
@@ -86,7 +95,7 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(user)} />
+      <PublicHeader />
       <DonneesStructurees data={jsonLd} />
       <DonneesStructurees
         data={{
@@ -137,6 +146,22 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           </p>
         )}
 
+        {apercu.champ ? (
+          <section className="mt-8" aria-labelledby="champ">
+            <h2 id="champ" className="text-lg font-bold text-slate-900">
+              Champ de la recommandation
+            </h2>
+            <p className="mt-2 leading-relaxed text-slate-700">{apercu.champ}</p>
+          </section>
+        ) : (
+          c?.short && (
+            <section className="mt-8">
+              <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
+              <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
+            </section>
+          )
+        )}
+
         {points.length > 0 && (
           <section className="mt-8" aria-labelledby="points-cles">
             <h2 id="points-cles" className="text-lg font-bold text-slate-900">
@@ -150,43 +175,57 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           </section>
         )}
 
-        {c?.short && (
-          <section className="mt-8">
-            <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
-            <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
-          </section>
-        )}
-
         <section className="mt-6 rounded-2xl bg-[#EEF6FB] p-6">
           <h2 className="text-lg font-bold text-[#0E3A78]">Lire la fiche complète</h2>
           <p className="mt-2 text-sm text-slate-700">
             Recommandations détaillées par thème, avec leurs grades tels qu&apos;ils figurent dans la
             source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
           </p>
-          {user ? (
-            <Link
-              href={`/bibliotheque/${fiche.id}`}
-              className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-            >
-              Ouvrir la fiche dans ma bibliothèque
-            </Link>
-          ) : (
-            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+          <SelonConnexion
+            connecte={
               <Link
-                href="/inscription"
-                className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
+                href={`/bibliotheque/${fiche.id}`}
+                className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
               >
-                Créer mon compte gratuit
+                Ouvrir la fiche dans ma bibliothèque
               </Link>
-              <Link
-                href="/connexion"
-                className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
-              >
-                J&apos;ai déjà un compte
-              </Link>
-            </div>
-          )}
+            }
+            visiteur={
+              <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="/inscription"
+                  className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
+                >
+                  Créer mon compte gratuit
+                </Link>
+                <Link
+                  href="/connexion"
+                  className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
+                >
+                  J&apos;ai déjà un compte
+                </Link>
+              </div>
+            }
+          />
         </section>
+
+        {apercu.chapitres.length > 1 && (
+          <section className="mt-10" aria-labelledby="sommaire">
+            <h2 id="sommaire" className="text-lg font-bold text-slate-900">
+              Sommaire de la fiche complète
+            </h2>
+            <ol className="mt-3 list-decimal space-y-1 pl-6 text-slate-700 marker:text-slate-400">
+              {apercu.chapitres.slice(0, CHAPITRES_MAX).map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ol>
+            {apercu.chapitres.length > CHAPITRES_MAX && (
+              <p className="mt-2 text-sm text-slate-500">
+                Et {apercu.chapitres.length - CHAPITRES_MAX} autres chapitres.
+              </p>
+            )}
+          </section>
+        )}
 
         <dl className="mt-10 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
           {fiche.societies.length > 0 && (
@@ -226,7 +265,13 @@ export default async function RecommandationPage({ params }: PageProps<"/recomma
           <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1A74A6] underline">
             Document source officiel ↗
           </a>{" "}
-          <span className="text-slate-500">— en accès libre sur le site de la société savante.</span>
+          <span className="text-slate-500">
+            — en accès libre sur le site de la société savante
+            {fiche.link_status === "ok" && fiche.link_last_checked_at
+              ? ` (lien contrôlé le ${formatDate(fiche.link_last_checked_at.slice(0, 10))})`
+              : ""}
+            .
+          </span>
         </p>
 
 

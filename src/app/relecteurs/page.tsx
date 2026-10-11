@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PROFESSIONS_MEDECIN } from "@/lib/relecteurs";
 import { createClient } from "@/lib/supabase/server";
+import { INDEXABLE, SITE_URL } from "@/lib/seo";
 import PublicHeader from "../recommandations/public-header";
 import { envoyerCandidature } from "./actions";
 
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   title: "Médecins relecteurs — medical-guidelines.net",
   description:
     "Vous êtes médecin ? Participez à la correction des fiches, déjà relues deux fois par des outils d'intelligence artificielle : accès gratuit et illimité au site, plus 5 accès gratuits illimités pour les personnes de votre choix.",
+  alternates: { canonical: `${SITE_URL}/relecteurs` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 const MESSAGES: Record<string, [string, boolean]> = {
@@ -32,8 +35,7 @@ const champ =
 // des fiches en échange d'un accès gratuit et de 5 accès offerts aux personnes de son choix.
 export default async function RelecteursPage({ searchParams }: PageProps<"/relecteurs">) {
   const supabase = await createClient();
-  const [{ data: auth }, { data }, params] = await Promise.all([
-    supabase.auth.getUser(),
+  const [{ data }, params] = await Promise.all([
     supabase.from("specialties").select("slug, name_i18n").eq("category", "medicale"),
     searchParams,
   ]);
@@ -44,7 +46,7 @@ export default async function RelecteursPage({ searchParams }: PageProps<"/relec
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(auth.user)} />
+      <PublicHeader />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-wide text-[#177E73]">Médecins relecteurs</p>
         <h1 className="mt-2 text-3xl font-bold text-[#0E3A78]">

@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { createClient } from "@/lib/supabase/server";
+import { INDEXABLE, SITE_URL } from "@/lib/seo";
 import PublicHeader from "../recommandations/public-header";
 
 export const metadata: Metadata = {
   title: "Sociétés savantes partenaires — medical-guidelines.net",
   description:
     "Sociétés savantes : devenez partenaires. Accès PREMIUM offert, statistiques anonymes de lecture de vos recommandations et signalements d'erreurs des lecteurs sur vos fiches.",
+  alternates: { canonical: `${SITE_URL}/partenaires` },
+  robots: { index: INDEXABLE, follow: INDEXABLE },
 };
 
 // Offre de partenariat aux sociétés savantes (page publique). Ce qui est
 // promis ici doit rester aligné sur la politique de confidentialité (§3.3 :
 // statistiques anonymes, au-delà de 10 lecteurs) : aucune donnée
 // individuelle de membre n'est transmise.
-export default async function PartenairesPage() {
-  const supabase = await createClient();
-  const { data } = await supabase.auth.getUser();
+// Page publique mise en cache (identique pour tous les visiteurs),
+// régénérée au plus toutes les 5 minutes.
+export const revalidate = 300;
+
+export default function PartenairesPage() {
   const offre: [string, string][] = [
     [
       "Accès PREMIUM offert",
@@ -33,7 +37,7 @@ export default async function PartenairesPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(data.user)} />
+      <PublicHeader />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-wide text-[#177E73]">Sociétés savantes</p>
         <h1 className="mt-2 text-3xl font-bold text-[#0E3A78]">Devenez notre partenaire</h1>

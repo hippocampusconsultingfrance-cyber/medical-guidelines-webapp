@@ -1,5 +1,6 @@
 import { createClient } from "@supabase/supabase-js";
 import { unstable_cache } from "next/cache";
+import { extraireApercu, type ApercuPublic } from "@/lib/apercu";
 import { orderSocieties, type Card } from "@/lib/fiches";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -16,6 +17,10 @@ export type PublicFiche = {
   // remplacé, superseded_by_document_id désignant la fiche qui le remplace).
   freshness_status: string | null;
   superseded_by_document_id: string | null;
+  // Contrôle hebdomadaire du lien source (tâche /api/cron/liens) : « ok »,
+  // « rompu » ou « inconnu », et date du dernier contrôle.
+  link_status: string | null;
+  link_last_checked_at: string | null;
 };
 
 type Row = Omit<PublicFiche, "societies"> & {
@@ -38,7 +43,7 @@ const toutesLesFiches = unstable_cache(
     const { data, error } = await supabase
       .from("documents")
       .select(
-        "id, fiche_key, title, doc_type, publication_date, source_url, card_json, freshness_status, superseded_by_document_id, document_societies(societies(acronym))",
+        "id, fiche_key, title, doc_type, publication_date, source_url, card_json, freshness_status, superseded_by_document_id, link_status, link_last_checked_at, document_societies(societies(acronym))",
       )
       .not("fiche_key", "is", null)
       .not("published_at", "is", null)
@@ -88,4 +93,23 @@ const pointsCles = unstable_cache(
 
 export async function loadPointsClesPublics(id: string, nombre = 3) {
   return (await pointsCles(id)).slice(0, nombre);
+}
+
+// Aperçu public (champ et chapitres, voir @/lib/apercu), lu par le serveur et
+// gardé 5 minutes en cache comme les points clés.
+const apercu = unstable_cache(
+  async (id: string): Promise<ApercuPublic> => {
+    try {
+      const { data } = await createAdminClient().from("documents").select("presentation_json").eq("id", id).maybeSingle();
+      return extraireApercu(data?.presentation_json);
+    } catch {
+      return { champ: null, chapitres: [] };
+    }
+  },
+  ["apercu-public"],
+  { revalidate: 300, tags: [FICHES_PUBLIQUES] },
+);
+
+export async function loadApercuPublic(id: string) {
+  return apercu(id);
 }

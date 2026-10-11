@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { createClient } from "@/lib/supabase/server";
 import { formatDate } from "@/lib/fiches";
-import { INDEXABLE, SITE_URL, ficheSlug } from "@/lib/seo";
+import { INDEXABLE, SITE_URL, ficheSlug, sectionSlug } from "@/lib/seo";
 import { groupBySection } from "../bibliotheque/data";
 import { loadPublicFiches } from "./data";
 import PublicHeader from "./public-header";
 import RechercheCatalogue from "./recherche";
+import SelonConnexion from "../selon-connexion";
 import DonneesStructurees from "../donnees-structurees";
 
 export const metadata: Metadata = {
@@ -41,16 +41,18 @@ const motsCles = (s: string) =>
     .replace(/[̀-ͯ]/g, "")
     .toLowerCase();
 
-// Catalogue public des fiches : titres, sociétés et dates uniquement.
-export default async function RecommandationsPage({ searchParams }: PageProps<"/recommandations">) {
-  const { q } = await searchParams;
-  const supabase = await createClient();
-  const [{ data: auth }, fiches] = await Promise.all([supabase.auth.getUser(), loadPublicFiches()]);
+// Catalogue public des fiches : titres, sociétés et dates uniquement. Page
+// mise en cache (identique pour tous), régénérée au plus toutes les 5 minutes
+// ou dès qu'une fiche est publiée ou retirée (étiquette des fiches publiques).
+export const revalidate = 300;
+
+export default async function RecommandationsPage() {
+  const fiches = await loadPublicFiches();
   const groups = groupBySection(fiches);
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      <PublicHeader connected={Boolean(auth.user)} />
+      <PublicHeader />
       <DonneesStructurees
         data={{
           "@context": "https://schema.org",
@@ -83,13 +85,25 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
               officiel, en accès libre chez ses auteurs ; elle n&apos;est ni éditée ni validée par les sociétés
               savantes.
             </p>
-            <Link
-              href={auth.user ? "/bibliotheque" : "/inscription"}
-              className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
-            >
-              {auth.user ? "Ouvrir ma bibliothèque" : "Créer un compte gratuit : 5 fiches offertes"}
-            </Link>
-            <RechercheCatalogue total={fiches.length} initiale={typeof q === "string" ? q.slice(0, 80) : ""} />
+            <SelonConnexion
+              connecte={
+                <Link
+                  href="/bibliotheque"
+                  className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+                >
+                  Ouvrir ma bibliothèque
+                </Link>
+              }
+              visiteur={
+                <Link
+                  href="/inscription"
+                  className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
+                >
+                  Créer un compte gratuit : 5 fiches offertes
+                </Link>
+              }
+            />
+            <RechercheCatalogue total={fiches.length} />
           </div>
         </div>
 
@@ -124,7 +138,9 @@ export default async function RecommandationsPage({ searchParams }: PageProps<"/
               aria-labelledby={`t-${ancre(section)}`}
             >
               <h2 id={`t-${ancre(section)}`} className="text-xl font-bold text-[#0E3A78]">
-                {section}{" "}
+                <Link href={`/recommandations/specialite/${sectionSlug(section)}`} className="hover:underline">
+                  {section}
+                </Link>{" "}
                 <span className="text-base font-medium text-slate-500">
                   (<span data-compte={ancre(section)}>{list.length}</span>)
                 </span>
