@@ -350,6 +350,16 @@ export function texteLisible(texte: string) {
   return appliquer(appliquer(cites, REFERENCES), JARGON);
 }
 
+// Méthodologie affichée : le nom de la méthode seulement. Ce qui suit le
+// premier « — » est une note de l'atelier (décomptes, vérifications,
+// renvois à la légende), sans intérêt pour le lecteur.
 export function methodologieLisible(texte: string) {
-  return appliquer(texteLisible(texte), DECOMPTES);
+  const lisible = appliquer(texteLisible(texte), DECOMPTES);
+  let profondeur = 0;
+  for (let i = 0; i < lisible.length; i++) {
+    if (lisible[i] === "(") profondeur++;
+    else if (lisible[i] === ")") profondeur = Math.max(0, profondeur - 1);
+    else if (profondeur === 0 && lisible.startsWith(" — ", i)) return lisible.slice(0, i).trim();
+  }
+  return lisible.trim();
 }

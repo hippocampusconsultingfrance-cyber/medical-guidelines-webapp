@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Mesure de la reprise des sources dans les fiches (audit juridique du
 01/10/2026, §4). Pour chaque fiche dont la source est un PDF, deux taux,
-calculés après normalisation (minuscules, accents, ponctuation et coupures de
-ligne ignorés) :
+calculés après normalisation (minuscules, accents, ponctuation, coupures de
+ligne et espaces ignorés : l'apostrophe typographique de « d’une », les mots
+coupés à l'extraction du PDF et les traits d'union en fin de ligne ne masquent
+ainsi aucun passage identique) :
   - reprise : part des suites de 8 mots de la fiche retrouvées à l'identique
     dans le PDF (copie mot pour mot de passages entiers) ;
   - proximité : part des suites de 4 mots retrouvées (reprise quasi
@@ -24,7 +26,8 @@ def norm(t):
     return re.findall(r"[a-z0-9]+", t)
 
 def shingles(mots, n=N):
-    return {" ".join(mots[i:i + n]) for i in range(len(mots) - n + 1)}
+    # Suites de mots collés : comparées à la source elle aussi sans espaces.
+    return {"".join(mots[i:i + n]) for i in range(len(mots) - n + 1)}
 
 def html(t):
     # Seules les vraies balises : « <21 si >70 ans » est du texte.
@@ -101,7 +104,7 @@ for d in docs:
     mots = norm(textes(d["p"]))
     sh, sh4 = shingles(mots), shingles(mots, 4)
     try:
-        src = " ".join(norm(pdf_texte(d["pdf"])))
+        src = "".join(norm(pdf_texte(d["pdf"])))
         taux = round(100 * sum(1 for s in sh if s in src) / len(sh)) if sh else None
         prox = round(100 * sum(1 for s in sh4 if s in src) / len(sh4)) if sh4 else None
         resultats.append((d, taux, prox))
