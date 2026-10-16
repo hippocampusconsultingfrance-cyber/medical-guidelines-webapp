@@ -1,5 +1,6 @@
 // Génère supabase/content/0200_fiches_atelier.sql à partir de l'atelier
-// (dépôt rfe-sfar-website) : les fiches terminées (build/content_*.json),
+// (dépôt central des sociétés savantes, anciennement rfe-sfar-website) :
+// les fiches terminées (build/content_*.json),
 // leurs métadonnées (site/app.js : DOC_META, FICHE_HREF_MATCH) et la
 // bibliothèque des recommandations (build/library_final.json).
 //
@@ -10,14 +11,34 @@
 // Aucune fiche n'est publiée par ce script : la mise en ligne reste une
 // action du porteur de projet (publish_all_documents / bouton « Publier »).
 //
-// Usage : ATELIER_DIR=../rfe-sfar-website node scripts/import-atelier.mjs
+// Pas d'accord, pas de fiche : l'import est refusé tant que le contrôle des
+// accords de l'atelier (outils/accords.mjs) signale une erreur, c'est-à-dire
+// une fiche sans l'accord de sa société porteuse.
+//
+// Usage : ATELIER_DIR=../depot-central-societes-savantes node scripts/import-atelier.mjs
 import { createHash } from "node:crypto";
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { pathToFileURL } from "node:url";
 import vm from "node:vm";
 
 const root = new URL("../", import.meta.url);
-const atelier = process.env.ATELIER_DIR ?? new URL("../rfe-sfar-website", root).pathname;
+const atelier =
+  process.env.ATELIER_DIR ??
+  ["../depot-central-societes-savantes", "../rfe-sfar-website"]
+    .map((d) => new URL(d, root).pathname)
+    .find((d) => existsSync(d)) ??
+  new URL("../depot-central-societes-savantes", root).pathname;
+
+// 0. Accords des sociétés savantes (règle de l'atelier).
+const controle = join(atelier, "outils/accords.mjs");
+if (!existsSync(controle)) throw new Error(`Contrôle des accords absent de l'atelier : ${controle}`);
+const accords = (await import(pathToFileURL(controle).href)).verifier(atelier);
+if (accords.erreurs.length) {
+  console.error(accords.erreurs.map((e) => `ERREUR  ${e}`).join("\n"));
+  throw new Error(`Import refusé : ${accords.erreurs.length} erreur(s) d'accord dans l'atelier (pas d'accord, pas de fiche).`);
+}
+for (const a of accords.avertissements) console.warn(`Accords : ${a}`);
 
 // 1. Données de l'atelier (même lecture que sa page site/app.js).
 const blocks = { library: readFileSync(join(atelier, "build/library_final.json"), "utf8") };
