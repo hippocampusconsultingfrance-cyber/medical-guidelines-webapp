@@ -33,6 +33,9 @@ export async function envoyerBienvenue() {
     if (!profile?.setup_completed || (deja ?? 0) > 0) return;
 
     let fiches = 0;
+    const { data: couverte } = profile.specialty_id
+      ? await admin.rpc("specialite_couverte", { spec: profile.specialty_id })
+      : { data: false };
     if (profile.specialty_id) {
       const { count } = await admin
         .from("document_specialties")
@@ -52,6 +55,8 @@ export async function envoyerBienvenue() {
         specialite: specialite ? specialite.toLowerCase() : null,
         fiches,
         premiumOuvert: checkoutOpen(false),
+        // Vérification impossible : message habituel.
+        catalogueOuvert: couverte === false,
       },
       siteUrl(),
     );

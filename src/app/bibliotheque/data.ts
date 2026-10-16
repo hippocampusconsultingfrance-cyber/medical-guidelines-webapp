@@ -29,7 +29,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
   const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
   if (aal?.nextLevel === "aal2" && aal.currentLevel !== "aal2") redirect("/mfa");
 
-  const [{ data: documents }, { data: unlocks }, { data: premium }, { data: profile }, { data: favorites }] =
+  const [{ data: documents }, { data: unlocks }, { data: premium }, { data: profile }, { data: favorites }, { data: ouvert }] =
     await Promise.all([
       supabase
         .from("documents")
@@ -52,6 +52,8 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
         .eq("user_id", userId)
         .not("document_id", "is", null)
         .order("created_at", { ascending: false }),
+      // Spécialité encore peu couverte : tout le catalogue, sans PREMIUM (@/lib/catalogue).
+      supabase.rpc("catalogue_ouvert"),
     ]);
 
   const role = (profile?.editorial_role as string | null) ?? null;
@@ -106,6 +108,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     favorites: favoriteIds,
     favorite: new Set(favoriteIds),
     premium: Boolean(premium),
+    catalogueOuvert: Boolean(ouvert) && !role,
     isEditor,
     // Publication réservée aux validateurs et administrateurs.
     canPublish: role === "validateur" || role === "admin",

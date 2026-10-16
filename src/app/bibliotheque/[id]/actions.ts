@@ -50,11 +50,16 @@ export async function setPublication(formData: FormData) {
   }
 
   const supabase = await createClient();
+  // La case « J'ai relu cette fiche » vaut relecture : la signature (mention
+  // « Relue par … ») est enregistrée d'abord ; si elle échoue, la fiche n'est
+  // pas publiée.
+  if (publier) {
+    const { error: signature } = await signerRelecture(supabase, id);
+    if (signature) redirect(`/bibliotheque/${id}?r=${/Nom/.test(signature.message) ? "relue_nom" : "relue_erreur"}`);
+  }
   const { error } = await supabase.rpc("publish_document", { doc_id: id, publier });
   // Pages publiques à jour tout de suite (retrait immédiat d'une fiche).
   if (!error) revalidateTag(FICHES_PUBLIQUES, { expire: 0 });
-  // La case « J'ai relu cette fiche » vaut relecture : mention affichée sur la fiche.
-  if (!error && publier) await signerRelecture(supabase, id);
   const status = error
     ? /juridique/.test(error.message)
       ? "publication_juridique"

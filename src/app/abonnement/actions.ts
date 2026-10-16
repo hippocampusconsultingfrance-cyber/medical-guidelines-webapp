@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { deposerJustificatif } from "@/lib/etudiants-depot";
 import { isEditorialAccount } from "@/lib/roles";
-import { APP, CGV_VERSION, checkoutOpen, getStripe, promotionCodeFor, stripeEnabled } from "@/lib/stripe";
+import { APP, CGV_VERSION, checkoutOpen, getStripe, isOwnSubscription, promotionCodeFor, stripeEnabled } from "@/lib/stripe";
 
 // Client Stripe déjà connu, s'il existe dans le mode courant : un client
 // créé en mode test n'existe pas en mode réel (et inversement).
@@ -32,6 +32,10 @@ async function origin() {
 // (métadonnées Stripe → base, via le webhook). Codes promotionnels
 // (FONDATEURS, codes étudiants personnels) saisis sur le site et vérifiés
 // (promotionCodeFor) : un seul code par paiement, donc pas de cumul.
+// Jamais deux abonnements : un abonné est renvoyé vers sa page, une seule
+// ouverture de paiement à la fois (reserver_paiement), les sessions de
+// paiement encore ouvertes du membre sont fermées avant d'en créer une, et
+// la création porte une clé d'idempotence.
 export async function startCheckout(formData: FormData) {
   if (!stripeEnabled()) redirect("/abonnement");
   if (formData.get("cgv") !== "1" || formData.get("retractation") !== "1") {
@@ -43,7 +47,21 @@ export async function startCheckout(formData: FormData) {
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) redirect("/connexion");
-  if (!checkoutOpen(await isEditorialAccount(supabase, user.id))) redirect("/abonnement");
+  const editeur = await isEditorialAccount(supabase, user.id);
+  if (!checkoutOpen(editeur)) redirect("/abonnement");
+
+  const [{ data: dejaPremium, error: errPremium }, { data: ouvert }] = await Promise.all([
+    supabase.rpc("has_premium"),
+    supabase.rpc("catalogue_ouvert"),
+  ]);
+  if (errPremium) redirect("/abonnement?r=erreur");
+  if (dejaPremium) redirect("/abonnement?r=deja_abonne");
+  // Spécialité encore peu couverte : abonnement non proposé (@/lib/catalogue).
+  if (ouvert && !editeur) redirect("/abonnement?r=specialite");
+
+  const { data: reservation, error: errReservation } = await supabase.rpc("reserver_paiement");
+  if (errReservation) redirect("/abonnement?r=erreur");
+  if (!reservation) redirect("/abonnement?r=paiement_en_cours");
 
   const { data: existing } = await supabase
     .from("subscriptions")
@@ -86,6 +104,21 @@ export async function startCheckout(formData: FormData) {
       .catch(() => null);
     known = found?.data[0]?.id ?? null;
   }
+  if (known) {
+    // Abonnement déjà souscrit (notification Stripe pas encore reçue) ou
+    // paiement en cours de confirmation : pas de second abonnement.
+    const subs = await stripe.subscriptions.list({ customer: known, status: "all", limit: 20 });
+    const actif = subs.data.find(
+      (s) => isOwnSubscription(s) && ["active", "trialing", "past_due", "unpaid", "incomplete"].includes(s.status),
+    );
+    if (actif) redirect(actif.status === "incomplete" ? "/abonnement?r=paiement_en_cours" : "/abonnement?r=deja_abonne");
+    // Sessions de paiement encore ouvertes (autre onglet, essai abandonné) :
+    // fermées, pour qu'un seul paiement reste possible.
+    const ouvertes = await stripe.checkout.sessions.list({ customer: known, status: "open", limit: 20 });
+    for (const s of ouvertes.data) {
+      if (s.metadata?.app === APP) await stripe.checkout.sessions.expire(s.id).catch(() => null);
+    }
+  }
   const customer = known
     ? (await stripe.customers.update(known, { invoice_settings: rendering })).id
     : (
@@ -106,33 +139,37 @@ export async function startCheckout(formData: FormData) {
   const base = await origin();
   const autoTax = process.env.STRIPE_TAX === "1";
   const taxRate = process.env.STRIPE_TAX_RATE_ID;
-  const session = await stripe.checkout.sessions.create({
-    mode: "subscription",
-    // Carte bancaire seulement (Apple Pay et Google Pay inclus) : fiable pour
-    // le renouvellement automatique annuel, indépendamment des moyens de
-    // paiement activés pour les autres activités du compte Stripe.
-    payment_method_types: ["card"],
-    line_items: [
-      {
-        price: process.env.STRIPE_PRICE_ID!,
-        quantity: 1,
-        // TVA 20 % incluse (taux fixe), sauf si Stripe Tax la calcule.
-        ...(autoTax || !taxRate ? {} : { tax_rates: [taxRate] }),
-      },
-    ],
-    client_reference_id: user.id,
-    customer,
-    customer_update: { address: "auto", name: "auto" },
-    subscription_data: { metadata },
-    metadata,
-    ...(promotionCode ? { discounts: [{ promotion_code: promotionCode }] } : {}),
-    billing_address_collection: "required",
-    tax_id_collection: { enabled: true },
-    automatic_tax: { enabled: autoTax },
-    locale: "fr",
-    success_url: `${base}/abonnement?r=merci`,
-    cancel_url: `${base}/abonnement?r=annule`,
-  });
+  const session = await stripe.checkout.sessions.create(
+    {
+      mode: "subscription",
+      // Carte bancaire seulement (Apple Pay et Google Pay inclus) : fiable pour
+      // le renouvellement automatique annuel, indépendamment des moyens de
+      // paiement activés pour les autres activités du compte Stripe.
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          price: process.env.STRIPE_PRICE_ID!,
+          quantity: 1,
+          // TVA 20 % incluse (taux fixe), sauf si Stripe Tax la calcule.
+          ...(autoTax || !taxRate ? {} : { tax_rates: [taxRate] }),
+        },
+      ],
+      client_reference_id: user.id,
+      customer,
+      customer_update: { address: "auto", name: "auto" },
+      subscription_data: { metadata },
+      metadata,
+      ...(promotionCode ? { discounts: [{ promotion_code: promotionCode }] } : {}),
+      billing_address_collection: "required",
+      tax_id_collection: { enabled: true },
+      automatic_tax: { enabled: autoTax },
+      locale: "fr",
+      success_url: `${base}/abonnement?r=merci`,
+      cancel_url: `${base}/abonnement?r=annule`,
+    },
+    // Une tentative (réservation) = une session, même si l'appel est rejoué.
+    { idempotencyKey: `checkout-${user.id}-${reservation}` },
+  );
   redirect(session.url!);
 }
 

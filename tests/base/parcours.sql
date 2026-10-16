@@ -726,4 +726,59 @@ select pg_temp.ok(exists (select 1 from public.audit_log where action = 'fiche_r
                             and (after->>'apres_corrections')::boolean),
   'nouvelle signature : tracée au journal comme signature après correction');
 
+-- ---------------------------------------------------------------------------
+-- 31. Spécialité peu couverte : tout le catalogue, 5 fiches gratuites au choix.
+-- ---------------------------------------------------------------------------
+\set geriatre '00000000-0000-0000-0000-00000000a006'
+insert into auth.users (id, email, raw_user_meta_data, email_confirmed_at) values
+  (:'geriatre', 'geriatre@test.fr', '{"prenom":"Geriatre","specialty_slug":"geriatrie"}', now());
+select pg_temp.ok(not public.specialite_couverte((select id from public.specialties where slug = 'geriatrie')),
+  'spécialité peu couverte : gériatrie');
+select pg_temp.ok(public.specialite_couverte((select id from public.specialties where slug = 'anesthesie_reanimation'))
+                  and public.specialite_couverte((select id from public.specialties where slug = 'medecine_d_urgence')),
+  'spécialités couvertes : anesthésie-réanimation et médecine d''urgence');
+select pg_temp.ok('anesthesie_reanimation' in (select public.specialites_couvertes())
+                  and 'geriatrie' not in (select public.specialites_couvertes()),
+  'inscription : liste des spécialités couvertes');
+select pg_temp.agir(:'geriatre');
+set role authenticated;
+select pg_temp.ok(public.catalogue_ouvert(), 'gériatre : catalogue ouvert');
+select pg_temp.ok(exists (select 1 from public.documents where id = :'f2'), 'gériatre : fiche d''anesthésie visible au catalogue');
+select pg_temp.ok(not public.can_read_document(:'f2'), 'gériatre : fiche bloquée sans crédit');
+select pg_temp.ok(public.get_document_presentation(:'f2') is null, 'gériatre : contenu non transmis sans crédit');
+select pg_temp.ok(public.unlock_document(:'f2') ->> 'status' = 'debloque', 'gériatre : fiche d''anesthésie débloquée avec un crédit');
+select pg_temp.ok(public.can_read_document(:'f2'), 'gériatre : fiche débloquée lisible');
+select pg_temp.ok((public.unlock_document(:'f3') ->> 'used')::int = 2, 'gériatre : crédits décomptés comme pour tous');
+reset role;
+select pg_temp.agir(:'urgence');
+set role authenticated;
+select pg_temp.ok(not public.catalogue_ouvert(), 'médecine d''urgence : spécialité couverte, catalogue non ouvert');
+select pg_temp.ok(not exists (select 1 from public.documents where id = :'f1'),
+  'médecine d''urgence : cloisonnement inchangé');
+reset role;
+select pg_temp.agir(null);
+set role anon;
+select pg_temp.ok(not public.catalogue_ouvert(), 'visiteur : catalogue non ouvert');
+reset role;
+
+-- ---------------------------------------------------------------------------
+-- 32. Paiement : une seule ouverture à la fois par membre.
+-- ---------------------------------------------------------------------------
+select pg_temp.ok(not has_function_privilege('anon', 'public.reserver_paiement()', 'execute')
+                  and not has_table_privilege('authenticated', 'public.paiements_en_cours', 'select'),
+  'paiement : réservation réservée aux membres connectés, table non lisible');
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok(public.reserver_paiement() is not null, 'paiement : première ouverture réservée');
+select pg_temp.ok(public.reserver_paiement() is null, 'paiement : seconde ouverture immédiate refusée');
+reset role;
+update public.paiements_en_cours set reserve_le = now() - interval '31 seconds' where user_id = :'gratuit';
+set role authenticated;
+select pg_temp.ok(public.reserver_paiement() is not null, 'paiement : nouvelle ouverture possible après 30 s');
+reset role;
+select pg_temp.agir(:'urgence');
+set role authenticated;
+select pg_temp.ok(public.reserver_paiement() is not null, 'paiement : réservation indépendante pour un autre membre');
+reset role;
+
 select 'Parcours membre : toutes les vérifications sont passées.';

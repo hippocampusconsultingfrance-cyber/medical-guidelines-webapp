@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { CATALOGUE_OUVERT } from "@/lib/catalogue";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
 import { cardTitle, docState, FRESHNESS_LABEL, loadLibrary, societyCounts } from "./data";
 import Shell from "./shell";
@@ -119,12 +120,19 @@ export default async function BibliothequePage({
               </b>{" "}
               sur {FREE_QUOTA}. Un crédit débloque une fiche, définitivement.
             </span>
-            <a href="/abonnement" style={{ marginLeft: "auto", fontWeight: 700 }}>
-              Passer à PREMIUM →
-            </a>
+            {!lib.catalogueOuvert && (
+              <a href="/abonnement" style={{ marginLeft: "auto", fontWeight: 700 }}>
+                Passer à PREMIUM →
+              </a>
+            )}
           </>
         )}
       </div>
+      {lib.catalogueOuvert && !lib.premium && (
+        <p className="block-p is-note" style={{ marginTop: 10 }}>
+          {CATALOGUE_OUVERT}
+        </p>
+      )}
 
       {notice && (
         <div className="credit-strip" role="status">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { CATALOGUE_OUVERT } from "@/lib/catalogue";
 import { createClient } from "@/lib/supabase/server";
 import { isEditorialAccount } from "@/lib/roles";
 import { checkoutOpen, stripeEnabled, stripeMode } from "@/lib/stripe";
@@ -28,6 +29,10 @@ const MESSAGES: Record<string, string> = {
   code: "Ce code promotionnel n'est pas valable. Vérifiez-le, ou laissez le champ vide.",
   resiliation: "Résiliation enregistrée : votre accès PREMIUM reste ouvert jusqu'à la fin de la période payée, sans renouvellement.",
   portail: "Espace de facturation indisponible pour ce compte : écrivez-nous à contact@medical-guidelines.net.",
+  specialite: "L'abonnement PREMIUM n'est pas encore proposé pour votre spécialité.",
+  erreur: "Le paiement n'a pas pu être ouvert. Réessayez dans un instant.",
+  deja_abonne: "Votre abonnement PREMIUM est déjà actif : aucun nouveau paiement n'a été lancé.",
+  paiement_en_cours: "Un paiement est déjà en cours d'ouverture : patientez quelques secondes, puis rechargez la page.",
 };
 
 export default async function AbonnementPage({ searchParams }: PageProps<"/abonnement">) {
@@ -37,7 +42,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
   } = await supabase.auth.getUser();
   if (!user) redirect("/connexion");
 
-  const [{ data: sub }, { data: premium }, isEditor, { data: demande }] = await Promise.all([
+  const [{ data: sub }, { data: premium }, isEditor, { data: demande }, { data: ouvert }] = await Promise.all([
     supabase
       .from("subscriptions")
       .select("status, current_period_end, canceled_at, stripe_customer_id, stripe_subscription_id")
@@ -52,7 +57,10 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
       .order("created_at", { ascending: false })
       .limit(1)
       .maybeSingle(),
+    supabase.rpc("catalogue_ouvert"),
   ]);
+  // Spécialité encore peu couverte : abonnement non proposé (@/lib/catalogue).
+  const specialiteNonCouverte = Boolean(ouvert) && !isEditor && !premium;
   // Professionnel en formation (case cochée à l'inscription, ou demande déposée
   // ici) : pas de paiement pendant l'examen ; une fois validée, la remise
   // s'applique d'office au paiement (startCheckout), sans code à saisir.
@@ -175,7 +183,7 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
         </p>
       )}
 
-      {!premium && blocEtudiant}
+      {!premium && !specialiteNonCouverte && blocEtudiant}
 
       {premium ? (
         <section className="mt-6 rounded-2xl border-2 border-[#2BB5A6] p-6">
@@ -208,6 +216,14 @@ export default async function AbonnementPage({ searchParams }: PageProps<"/abonn
               )}
             </div>
           )}
+        </section>
+      ) : specialiteNonCouverte ? (
+        <section className="mt-6 rounded-2xl border border-slate-200 p-6">
+          <p className="text-lg font-semibold text-slate-900">Abonnement bientôt proposé pour votre spécialité</p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">{CATALOGUE_OUVERT}</p>
+          <Link href="/bibliotheque" className="mt-4 inline-block font-semibold text-[#1A74A6] hover:underline">
+            Choisir mes fiches gratuites →
+          </Link>
         </section>
       ) : (
         <section className="mt-6 rounded-2xl border border-slate-200 p-6">

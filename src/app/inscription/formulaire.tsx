@@ -7,7 +7,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { PROFESSION_GROUPS } from "@/lib/professions";
 
-export type Specialty = { slug: string; category: string; isOther: boolean; name: string };
+export type Specialty = { slug: string; category: string; isOther: boolean; name: string; couverte: boolean };
 
 const SPECIALTY_GROUPS = [
   { category: "medicale", label: "Spécialités médicales" },
@@ -336,6 +336,14 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             Votre compte donne accès aux fiches de cette spécialité. Pour en
             changer plus tard, contactez-nous.
           </p>
+          {specialty && specialties.find((s) => s.slug === specialty)?.couverte === false && (
+            <p role="note" className="mt-2 rounded-md bg-amber-50 p-3 text-xs leading-relaxed text-amber-900">
+              Cette spécialité est encore peu couverte : le catalogue porte aujourd&apos;hui surtout sur
+              l&apos;anesthésie-réanimation, la réanimation, la médecine d&apos;urgence et la pédiatrie. Vos 5 fiches
+              gratuites seront au choix dans tout le catalogue ; l&apos;abonnement vous sera proposé quand votre
+              spécialité sera couverte.
+            </p>
+          )}
         </div>
 
         <div className="space-y-3 rounded-md border border-slate-200 bg-slate-50 p-4">

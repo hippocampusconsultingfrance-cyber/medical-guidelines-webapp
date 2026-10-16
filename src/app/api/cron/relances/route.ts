@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { composerAvisRenouvellement, logRenouvellement } from "@/lib/commande";
 import { emailEnabled, sendBatch, siteUrl, type OutgoingEmail } from "@/lib/email";
 import {
@@ -58,8 +59,8 @@ export async function GET(request: Request) {
   for (const c of premiere) {
     const cle = c.specialtyId ?? "";
     if (!suggestions.has(cle)) suggestions.set(cle, await fichesSuggerees(admin, c.specialtyId, site));
-    const fiches = suggestions.get(cle) ?? [];
-    if (fiches.length) lots.push({ userId: c.userId, body: LOG_PREMIERE, email: emailPremiereFiche(c, fiches, site) });
+    const s = suggestions.get(cle);
+    if (s?.fiches.length) lots.push({ userId: c.userId, body: LOG_PREMIERE, email: emailPremiereFiche(c, s.fiches, s.specialite, site) });
   }
   const vente = checkoutOpen(false);
   for (const c of quota) lots.push({ userId: c.userId, body: LOG_QUOTA, email: emailQuota(c, vente, site) });
@@ -69,24 +70,44 @@ export async function GET(request: Request) {
   }
   if (!lots.length) return Response.json({ envoyes: 0 });
 
+  // Lots de 100 e-mails au plus (limite de Resend). Clé d'idempotence :
+  // empreinte du jour et du contenu du lot (destinataires et sortes de
+  // relance), pour qu'un lot rejoué le même jour ne parte pas deux fois.
   const jour = new Date(now).toISOString().slice(0, 10);
-  const sent = await sendBatch(
-    lots.map((l) => l.email),
-    `relances-${jour}-${lots.map((l) => l.userId.slice(0, 8)).join("")}`.slice(0, 250),
-  );
-  if (!sent.ok) {
-    console.error("Relances", sent.error);
-    return Response.json({ error: "Envoi impossible" }, { status: 502 });
+  let envoyes = 0;
+  let echecs = 0;
+  for (let i = 0; i < lots.length; i += 100) {
+    const lot = lots.slice(i, i + 100);
+    const cle = createHash("sha256")
+      .update(jour + JSON.stringify(lot.map((l) => [l.userId, l.body])))
+      .digest("hex");
+    const sent = await sendBatch(
+      lot.map((l) => l.email),
+      `relances-${cle}`,
+    );
+    if (!sent.ok) {
+      console.error("Relances : envoi", sent.error);
+      echecs += lot.length;
+      continue;
+    }
+    envoyes += lot.length;
+    // Journal indispensable : sans lui, la relance repartirait le lendemain.
+    const { error } = await admin
+      .from("notifications_log")
+      .insert(lot.map((l) => ({ user_id: l.userId, subject: l.email.subject, body: l.body, channel: "email" })));
+    if (error) console.error("Relances : journal non enregistré, relances envoyées", lot.map((l) => l.userId), error);
   }
-  await admin
-    .from("notifications_log")
-    .insert(lots.map((l) => ({ user_id: l.userId, subject: l.email.subject, body: l.body, channel: "email" })));
-  return Response.json({
-    finaliser: finaliser.length,
-    premiere_fiche: premiere.length,
-    quota: quota.length,
-    renouvellement: avis.length,
-  });
+  return Response.json(
+    {
+      finaliser: finaliser.length,
+      premiere_fiche: premiere.length,
+      quota: quota.length,
+      renouvellement: avis.length,
+      envoyes,
+      echecs,
+    },
+    { status: echecs ? 502 : 200 },
+  );
 }
 
 type Echeance = { userId: string; subscriptionId: string; fin: string };
@@ -121,6 +142,8 @@ async function echeancesProches(admin: ReturnType<typeof createAdminClient>, now
 // Montant exact de la prochaine facture (remise éventuelle comprise), lu
 // chez Stripe ; abonnement déjà résilié pour la fin de période : pas d'avis.
 async function avisRenouvellement(admin: ReturnType<typeof createAdminClient>, echeances: Echeance[]) {
+  // Stripe n'est appelé que s'il y a une échéance à traiter.
+  if (!echeances.length) return [];
   const stripe = getStripe();
   const out: { userId: string; email: string; prenom: string | null; fin: string; montantCents: number }[] = [];
   for (const e of echeances) {

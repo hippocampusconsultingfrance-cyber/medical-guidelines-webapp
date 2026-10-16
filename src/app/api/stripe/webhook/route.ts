@@ -1,14 +1,19 @@
+import { captureMessage } from "@sentry/nextjs";
 import type Stripe from "stripe";
 import { composerConfirmation, LOG_COMMANDE } from "@/lib/commande";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { APP, getStripe, isOwnSubscription, periodEnd, toDbStatus } from "@/lib/stripe";
+import { APP, choisirAbonnement, getStripe, isOwnSubscription, periodEnd, toDbStatus } from "@/lib/stripe";
 
 // Notifications Stripe (paiement, renouvellement, résiliation). Seule source
 // d'écriture des abonnements : la signature Stripe authentifie l'appel, puis
 // la ligne du membre est créée ou mise à jour avec la clé service_role.
 // Le compte Stripe sert aussi à d'autres activités : leurs paiements et
 // abonnements sont ignorés (réponse 200, rien n'est écrit).
+// Stripe peut livrer les notifications en retard, en double ou dans le
+// désordre : l'abonnement est toujours relu chez Stripe (état courant) avant
+// d'être enregistré, et un ancien abonnement ne remplace jamais un abonnement
+// actif plus récent du même membre (saveSubscription).
 export async function POST(request: Request) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
   const signature = request.headers.get("stripe-signature");
@@ -32,8 +37,7 @@ export async function POST(request: Request) {
       const session = event.data.object;
       const ours = session.metadata?.app === APP || Boolean(session.metadata?.cgv_version);
       if (ours && session.mode === "subscription" && typeof session.subscription === "string") {
-        const sub = await stripe.subscriptions.retrieve(session.subscription);
-        const userId = await saveSubscription(sub, session.client_reference_id);
+        const { sub, userId } = await saveSubscription(session.subscription, session.client_reference_id);
         await confirmerCommande(session, sub, userId);
       }
     } else if (
@@ -41,7 +45,7 @@ export async function POST(request: Request) {
       event.type === "customer.subscription.updated" ||
       event.type === "customer.subscription.deleted"
     ) {
-      if (isOwnSubscription(event.data.object)) await saveSubscription(event.data.object, null);
+      if (isOwnSubscription(event.data.object)) await saveSubscription(event.data.object.id, null);
     }
   } catch (e) {
     console.error("Webhook Stripe", event.type, e);
@@ -52,7 +56,9 @@ export async function POST(request: Request) {
   return Response.json({ received: true });
 }
 
-async function saveSubscription(sub: Stripe.Subscription, clientReference: string | null) {
+async function saveSubscription(subscriptionId: string, clientReference: string | null) {
+  // État courant chez Stripe, quel que soit l'ordre d'arrivée des notifications.
+  const sub = await getStripe().subscriptions.retrieve(subscriptionId);
   const meta = sub.metadata ?? {};
   const customer = typeof sub.customer === "string" ? sub.customer : sub.customer.id;
   const admin = createAdminClient();
@@ -70,11 +76,30 @@ async function saveSubscription(sub: Stripe.Subscription, clientReference: strin
   }
   if (!userId) throw new Error(`Abonnement ${sub.id} sans membre associé`);
 
+  // Un seul abonnement enregistré par membre : un ancien abonnement (résilié,
+  // expiré) ne remplace pas un autre abonnement actif ; de deux abonnements
+  // actifs (double paiement, à rembourser), celui qui finit le plus tard est
+  // gardé.
+  const status = toDbStatus(sub.status);
+  const { data: existant, error: errExistant } = await admin
+    .from("subscriptions")
+    .select("stripe_subscription_id, status, current_period_end")
+    .eq("user_id", userId)
+    .maybeSingle();
+  if (errExistant) throw errExistant;
+  const decision = choisirAbonnement(existant, { id: sub.id, status, fin: periodEnd(sub) });
+  if (decision === "double" || decision === "double_remplacer") {
+    const detail = `deux abonnements actifs pour le membre ${userId} : ${existant?.stripe_subscription_id} et ${sub.id}`;
+    console.error("Webhook Stripe :", detail);
+    captureMessage(`Abonnement en double (${detail}) : rembourser l'un des deux`, "error");
+  }
+  if (decision === "garder" || decision === "double") return { sub, userId };
+
   const price = sub.items?.data?.[0]?.price?.unit_amount ?? null;
   const row = {
     user_id: userId,
     plan: "premium",
-    status: toDbStatus(sub.status),
+    status,
     stripe_customer_id: customer,
     stripe_subscription_id: sub.id,
     current_period_end: periodEnd(sub),
@@ -87,7 +112,7 @@ async function saveSubscription(sub: Stripe.Subscription, clientReference: strin
   };
   const { error } = await admin.from("subscriptions").upsert(row, { onConflict: "user_id" });
   if (error) throw error;
-  return userId;
+  return { sub, userId };
 }
 
 // Confirmation de commande sur support durable (CGV §7), une fois par
@@ -126,10 +151,13 @@ async function confirmerCommande(session: Stripe.Checkout.Session, sub: Stripe.S
     const sent = await sendBatch([email], body);
     if (!sent.ok) {
       console.error("Confirmation de commande : envoi", sent.error);
+      captureMessage(`Confirmation de commande non envoyée (abonnement ${sub.id}) : à renvoyer`, "error");
       return;
     }
-    await admin.from("notifications_log").insert({ user_id: userId, subject: email.subject, body, channel: "email" });
+    const { error } = await admin.from("notifications_log").insert({ user_id: userId, subject: email.subject, body, channel: "email" });
+    if (error) console.error("Confirmation de commande : journal", error);
   } catch (e) {
     console.error("Confirmation de commande", e);
+    captureMessage(`Confirmation de commande en échec (abonnement ${sub.id}) : à vérifier`, "error");
   }
 }

@@ -24,10 +24,13 @@ export default function CguPage() {
         pédiatrie…). L&apos;accès au contenu est réservé aux
         professionnels de santé et étudiants des filières médicales et
         paramédicales, sous réserve de la création d&apos;un compte.
-        Le compte gratuit donne accès, dans la spécialité choisie à
-        l&apos;inscription, à 5 fiches complètes au total, à vie, sans carte
-        bancaire. L&apos;abonnement PREMIUM (toutes les fiches de la
-        spécialité choisie) est proposé au prix de 50 € TTC par an, payable
+        Le compte gratuit donne accès à 5 fiches complètes au total, à vie,
+        sans carte bancaire, choisies dans la spécialité indiquée à
+        l&apos;inscription ou, tant que le catalogue couvre encore peu cette
+        spécialité (moins de 20 fiches publiées), parmi toutes les fiches
+        publiées. L&apos;abonnement PREMIUM (toutes les fiches de la
+        spécialité choisie), proposé pour les spécialités couvertes par le
+        catalogue, est au prix de 50 € TTC par an, payable
         annuellement d&apos;avance ; il se renouvelle automatiquement à la
         date anniversaire et peut être résilié à tout moment, l&apos;accès
         étant maintenu jusqu&apos;à la fin de l&apos;année payée. Le tarif de
