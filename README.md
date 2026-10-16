@@ -7,8 +7,10 @@ recommandations (SFAR, SRLF, HAS…).
 - Framework : Next.js 16 (App Router), déployé sur Vercel.
 - Base de données et authentification : Supabase (projet hébergé à
   Francfort).
-- Fiches : produites dans le dépôt `rfe-sfar-website` (l'atelier), chargées
-  dans la base par `scripts/import-atelier.mjs` puis l'outil d'import, et
+- Fiches : produites dans le dépôt central des sociétés savantes (l'atelier,
+  anciennement `rfe-sfar-website`), un dossier par société avec l'état de son
+  accord ; règle « pas d'accord, pas de fiche » appliquée aussi à l'import.
+  Chargées dans la base par `scripts/import-atelier.mjs` puis l'outil d'import, et
   affichées par la bibliothèque (`/bibliotheque`) : bloquées par défaut,
   5 crédits pour un compte gratuit, tout ouvert pour PREMIUM.
 
