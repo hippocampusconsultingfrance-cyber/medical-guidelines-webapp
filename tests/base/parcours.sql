@@ -17,10 +17,13 @@ begin
 end $$;
 
 -- Agir comme un membre connecté (ou comme visiteur si identifiant vide).
+-- Session complète (code de double authentification saisi, aal2) ; la
+-- section 17 vérifie les sessions sans code.
 create function pg_temp.agir(identifiant text) returns void
 language plpgsql as $$
 begin
   perform set_config('request.jwt.claim.sub', coalesce(identifiant, ''), false);
+  perform set_config('request.jwt.claims', case when identifiant is null then '' else '{"aal":"aal2"}' end, false);
 end $$;
 
 \set gratuit   '00000000-0000-0000-0000-00000000a001'
@@ -379,8 +382,15 @@ select 'ok  signalements : 21e en 24 h refusé';
 reset role;
 
 -- ---------------------------------------------------------------------------
--- 17. Double authentification : droits éditoriaux seulement avec le code.
+-- 17. Double authentification obligatoire : droits éditoriaux seulement avec
+-- le code.
 -- ---------------------------------------------------------------------------
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select set_config('request.jwt.claims', '{"aal":"aal1"}', false);
+select pg_temp.ok(not public.has_editorial_role('relecteur') and not public.is_admin(),
+  'MFA non activée (aal1) : aucun droit éditorial, double authentification obligatoire');
+reset role;
 insert into auth.mfa_factors (user_id) values (:'validateur');
 select pg_temp.agir(:'validateur');
 set role authenticated;
@@ -779,6 +789,23 @@ reset role;
 select pg_temp.agir(:'urgence');
 set role authenticated;
 select pg_temp.ok(public.reserver_paiement() is not null, 'paiement : réservation indépendante pour un autre membre');
+reset role;
+
+-- ---------------------------------------------------------------------------
+-- 33. Assistant : question comptée avant l'appel, limite jamais dépassée.
+-- ---------------------------------------------------------------------------
+select pg_temp.ok(not has_function_privilege('authenticated', 'public.reserver_question_assistant(uuid, integer)', 'execute')
+                  and not has_function_privilege('anon', 'public.reserver_question_assistant(uuid, integer)', 'execute'),
+  'assistant : réservation appelable par le serveur seulement');
+set role service_role;
+select pg_temp.ok(public.reserver_question_assistant(:'gratuit', 2) is not null, 'assistant : 1re question réservée');
+select pg_temp.ok(public.reserver_question_assistant(:'gratuit', 2) is not null, 'assistant : 2e question réservée');
+select pg_temp.ok(public.reserver_question_assistant(:'gratuit', 2) is null, 'assistant : limite atteinte, 3e question refusée');
+select pg_temp.ok(public.reserver_question_assistant(:'urgence', 2) is not null, 'assistant : limite propre à chaque membre');
+reset role;
+update public.assistant_usage set created_at = now() - interval '25 hours' where user_id = :'gratuit';
+set role service_role;
+select pg_temp.ok(public.reserver_question_assistant(:'gratuit', 2) is not null, 'assistant : questions de plus de 24 h non comptées');
 reset role;
 
 select 'Parcours membre : toutes les vérifications sont passées.';

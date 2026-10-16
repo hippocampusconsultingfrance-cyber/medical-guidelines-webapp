@@ -40,8 +40,14 @@ export default async function BibliothequePage({
   // Recherche dans le contenu, faite par la base : elle ne renvoie que les
   // fiches correspondantes (et leur pertinence), jamais leur texte.
   const contentRank = new Map<string, number>();
+  let rechercheIndisponible = false;
   if (needle.length >= 2) {
-    const { data: hits } = await supabase.rpc("search_documents", { q: query });
+    const { data: hits, error } = await supabase.rpc("search_documents", { q: query });
+    // Panne : on le dit, plutôt que de laisser croire qu'aucune fiche ne correspond.
+    if (error) {
+      console.error("Recherche dans le contenu", error);
+      rechercheIndisponible = true;
+    }
     for (const h of (hits ?? []) as { document_id: string; rank: number }[]) contentRank.set(h.document_id, h.rank);
   }
   const titleMatch = (d: (typeof lib.docs)[number]) =>
@@ -137,6 +143,11 @@ export default async function BibliothequePage({
       {notice && (
         <div className="credit-strip" role="status">
           <b>{notice}</b>
+        </div>
+      )}
+      {rechercheIndisponible && (
+        <div className="credit-strip" role="alert">
+          <b>La recherche dans le texte des fiches est momentanément indisponible : seuls les titres ont été cherchés. Réessayez dans un instant.</b>
         </div>
       )}
       {lib.canPublish && drafts > 0 && (

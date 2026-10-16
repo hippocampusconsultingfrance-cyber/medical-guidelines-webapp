@@ -47,8 +47,10 @@ export default async function AssistantPage() {
       </p>
       <p className="mt-2 text-xs text-slate-500">
         Outil d&apos;aide à la recherche utilisant une intelligence artificielle ; chaque extrait est revérifié mot pour
-        mot dans la fiche. Ne saisissez aucune donnée permettant d&apos;identifier un patient. {ASSISTANT_QUOTA} questions
-        par 24 heures ; vos questions ne sont pas conservées.
+        mot dans la fiche. Ne saisissez aucune donnée permettant d&apos;identifier un patient : une question contenant
+        une adresse e-mail, un numéro de téléphone ou de sécurité sociale, une date de naissance ou un identifiant
+        patient est bloquée avant tout envoi. {ASSISTANT_QUOTA} questions par 24 heures ; vos questions ne sont pas
+        conservées.
       </p>
       {acces ? (
         <>

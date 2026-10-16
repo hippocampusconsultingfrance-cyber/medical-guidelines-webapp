@@ -2,7 +2,9 @@ name: Sauvegarde de la base
 
 # Chaque lundi : sauvegarde des schémas public (fiches, abonnements,
 # déblocages…) et auth (comptes), puis restauration dans une base vide pour
-# vérifier qu'elle est exploitable (mêmes nombres de lignes qu'en production).
+# vérifier qu'elle est exploitable : toutes les tables restaurées, aucune
+# perte de plus de 1 % des lignes, et mêmes règles de sécurité qu'en
+# production (sécurité par ligne, règles d'accès, fonctions).
 #
 # Conservation : si le secret BACKUP_PASSPHRASE existe, la sauvegarde est
 # chiffrée (AES-256) et gardée 30 jours dans l'onglet Actions. Sans ce
@@ -40,8 +42,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Nombres de lignes en production
-        run: $PG psql "$DATABASE_URL" -X -At -F ' ' -f scripts/sauvegarde/comptes.sql > production.txt && cat production.txt
+      - name: État de la production
+        run: $PG psql "$DATABASE_URL" -X -At -F ' ' -v ON_ERROR_STOP=1 -f scripts/sauvegarde/comptes.sql > production.txt && cat production.txt
 
       - name: Sauvegarde
         run: |
@@ -60,15 +62,11 @@ jobs:
       - name: Vérification
         shell: bash
         run: |
-          $PG psql "$RESTAURATION_URL" -X -At -F ' ' -f scripts/sauvegarde/comptes.sql > restauration.txt
-          echo "table production restauration"
+          $PG psql "$RESTAURATION_URL" -X -At -F ' ' -v ON_ERROR_STOP=1 -f scripts/sauvegarde/comptes.sql > restauration.txt
+          echo "mesure production restauration"
           join -a1 -e -1 -o 0,1.2,2.2 <(sort production.txt) <(sort restauration.txt) | tee comparaison.txt
-          # Échec si une table manque ou est vide alors qu'elle ne l'est pas
-          # en production. Un écart de quelques lignes (inscription pendant
-          # la sauvegarde) est seulement signalé.
-          awk '$3 < 0 || ($2 > 0 && $3 == 0) { print "::error::" $1 " non restaurée"; bad=1 }
-               $2 != $3 && $3 > 0 { print "::warning::" $1 " : " $2 " en production, " $3 " restaurées" }
-               END { exit bad }' comparaison.txt
+          [ -s comparaison.txt ] || { echo "::error::Aucune mesure : vérification impossible"; exit 1; }
+          bash scripts/sauvegarde/comparer.sh comparaison.txt
 
       - name: Chiffrement
         id: chiffrement

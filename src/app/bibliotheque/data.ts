@@ -29,8 +29,14 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
   const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
   if (aal?.nextLevel === "aal2" && aal.currentLevel !== "aal2") redirect("/mfa");
 
-  const [{ data: documents }, { data: unlocks }, { data: premium }, { data: profile }, { data: favorites }, { data: ouvert }] =
-    await Promise.all([
+  const [
+    { data: documents, error: errDocuments },
+    { data: unlocks, error: errUnlocks },
+    { data: premium, error: errPremium },
+    { data: profile },
+    { data: favorites },
+    { data: ouvert },
+  ] = await Promise.all([
       supabase
         .from("documents")
         .select(
@@ -56,7 +62,15 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
       supabase.rpc("catalogue_ouvert"),
     ]);
 
+  // Base injoignable : page d'erreur (« Réessayer », signalée à Sentry) plutôt
+  // qu'un catalogue vide ou des fiches affichées à tort comme bloquées.
+  const panne = errDocuments ?? errUnlocks ?? errPremium;
+  if (panne) throw new Error(`Bibliothèque indisponible : ${panne.message}`);
+
   const role = (profile?.editorial_role as string | null) ?? null;
+  // Équipe éditoriale : double authentification obligatoire (la base refuse
+  // les droits d'équipe sans elle) ; on l'envoie l'activer.
+  if (role && aal?.currentLevel !== "aal2") redirect("/compte/securite?obligatoire=1");
   const isEditor = Boolean(role);
   let published = new Set<string>();
   if (isEditor) {
