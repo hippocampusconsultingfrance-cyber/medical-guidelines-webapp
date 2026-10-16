@@ -140,7 +140,7 @@ export default async function FichePage({
   if (!doc) notFound();
 
   // Lectures indépendantes, envoyées ensemble.
-  const [{ data: extra }, { data: verif }, { data: relecture }, { data: canRead }, { data: blocked }, { data: versions }] =
+  const [{ data: extra }, { data: verif }, { data: relecture }, { data: canRead, error: errLecture }, { data: blocked }, { data: versions }] =
     await Promise.all([
       supabase
         .from("documents")
@@ -161,6 +161,9 @@ export default async function FichePage({
             .order("detected_at", { ascending: false })
         : Promise.resolve({ data: null }),
     ]);
+  // Droit de lecture illisible (panne) : page d'erreur, pas une fiche
+  // affichée à tort comme bloquée.
+  if (errLecture) throw new Error(`Droit de lecture indisponible : ${errLecture.message}`);
   const verification = verificationSource(
     (verif?.source_verified_at as string | null | undefined) ?? null,
     doc.published_at,
@@ -321,7 +324,8 @@ export default async function FichePage({
 
   // Chaque lecture est journalisée et limitée par la base (anti-extraction) :
   // un rythme anormal suspend la lecture, dès cette fiche.
-  const { data: presentation } = await supabase.rpc("get_document_presentation", { doc_id: id });
+  const { data: presentation, error: errPresentation } = await supabase.rpc("get_document_presentation", { doc_id: id });
+  if (errPresentation) throw new Error(`Contenu de la fiche indisponible : ${errPresentation.message}`);
   let body: string;
   let toc: TocItem[];
   if (presentation) {

@@ -1,16 +1,27 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { Suspense, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 type Facteur = { id: string; friendly_name?: string | null; status: string; created_at: string };
 
 // Double authentification (code à 6 chiffres d'une application comme
 // Google Authenticator, Microsoft Authenticator ou l'app Mots de passe
-// d'Apple). Recommandée pour tous ; exigée en pratique pour les comptes de
-// l'équipe : une fois activée, les droits d'administration demandent le code
-// (règle appliquée par la base).
+// d'Apple). Recommandée pour tous ; obligatoire pour les comptes de l'équipe
+// éditoriale : sans code saisi, la base leur refuse les droits d'équipe
+// (mfa_satisfaite) et la bibliothèque les renvoie ici (?obligatoire=1).
+function AvisObligatoire() {
+  if (useSearchParams().get("obligatoire") !== "1") return null;
+  return (
+    <p className="mt-4 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-950">
+      Votre compte fait partie de l&apos;équipe éditoriale : la double authentification est obligatoire. Activez-la
+      ci-dessous pour retrouver vos droits de relecture et d&apos;administration.
+    </p>
+  );
+}
+
 export default function SecuritePage() {
   const [facteurs, setFacteurs] = useState<Facteur[]>([]);
   const [chargement, setChargement] = useState(true);
@@ -72,7 +83,7 @@ export default function SecuritePage() {
   }
 
   async function desactiver(id: string) {
-    if (!confirm("Désactiver la double authentification ? Votre compte sera moins protégé.")) return;
+    if (!confirm("Désactiver la double authentification ? Votre compte sera moins protégé ; pour l'équipe éditoriale, les droits d'équipe seront suspendus.")) return;
     setErreur(null);
     const { error } = await createClient().auth.mfa.unenroll({ factorId: id });
     if (error) {
@@ -97,6 +108,9 @@ export default function SecuritePage() {
         passe était volé, personne ne pourrait se connecter sans votre téléphone.
       </p>
 
+      <Suspense>
+        <AvisObligatoire />
+      </Suspense>
       {message && <p className="mt-4 rounded-lg bg-emerald-50 p-3 text-sm text-emerald-900">{message}</p>}
       {erreur && <p className="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-800">{erreur}</p>}
 

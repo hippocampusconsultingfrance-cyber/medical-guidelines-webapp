@@ -236,7 +236,9 @@ export default function ConfidentialitePage() {
         contractuelles types de la Commission européenne. Ni la question ni la réponse ne sont
         conservées par le site : seuls la date et le nombre d&apos;extraits sont enregistrés, pour
         appliquer la limite quotidienne. Ne saisissez aucune donnée permettant d&apos;identifier un
-        patient.
+        patient : une question contenant une adresse e-mail, un numéro de téléphone ou de sécurité
+        sociale, une date de naissance ou un identifiant patient est bloquée par le site et
+        n&apos;est pas transmise.
       </p>
       <p className="mt-2">
         Chaque changement de votre consentement au partage avec des

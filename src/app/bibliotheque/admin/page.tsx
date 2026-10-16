@@ -274,7 +274,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/bibliotheq
     [
       "Double authentification de votre compte",
       mfa,
-      mfa ? "Activée : les droits d'administration exigent votre code." : "Non activée : à activer dans Mon compte → Double authentification.",
+      mfa ? "Activée : les droits d'administration exigent votre code." : "Non activée : obligatoire pour l'équipe, à activer dans Mon compte → Double authentification.",
     ],
     [
       "Assistant de recherche (bêta)",
