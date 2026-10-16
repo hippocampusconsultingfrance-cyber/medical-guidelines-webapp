@@ -111,3 +111,24 @@ export function isOwnSubscription(sub: Stripe.Subscription) {
   const price = process.env.STRIPE_PRICE_ID;
   return Boolean(price && sub.items?.data?.some((i) => i.price?.id === price));
 }
+
+// Notification d'un abonnement pour un membre qui en a déjà un enregistré :
+// faut-il le remplacer ? Un abonnement non actif ne remplace jamais un autre
+// abonnement actif (notification ancienne ou en retard). Deux abonnements
+// actifs signalent un double paiement (« double », gardé tel quel, ou
+// « double_remplacer » si le nouveau finit plus tard).
+export type Enregistre = { stripe_subscription_id: string | null; status: string; current_period_end: string | null };
+export function choisirAbonnement(
+  existant: Enregistre | null,
+  entrant: { id: string; status: string; fin: string | null },
+  maintenant = new Date(),
+): "remplacer" | "garder" | "double" | "double_remplacer" {
+  if (!existant?.stripe_subscription_id || existant.stripe_subscription_id === entrant.id) return "remplacer";
+  const autreActif =
+    existant.status === "actif" && (!existant.current_period_end || new Date(existant.current_period_end) > maintenant);
+  if (!autreActif) return "remplacer";
+  if (entrant.status !== "actif") return "garder";
+  const plusTard =
+    Boolean(entrant.fin) && (!existant.current_period_end || new Date(entrant.fin!) > new Date(existant.current_period_end));
+  return plusTard ? "double_remplacer" : "double";
+}

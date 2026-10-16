@@ -35,6 +35,10 @@ export function siteUrl() {
 export async function sendBatch(emails: OutgoingEmail[], idempotencyKey: string) {
   const key = process.env.RESEND_API_KEY;
   if (!key) return { ok: false as const, error: "RESEND_API_KEY manquant" };
+  // Les appelants découpent leurs envois par 100 : un lot plus gros serait
+  // refusé en entier par Resend.
+  if (emails.length > 100) return { ok: false as const, error: `Lot de ${emails.length} e-mails : 100 au plus` };
+  if (!emails.length) return { ok: true as const };
   const from = process.env.ALERTS_FROM ?? "medical-guidelines.net <alertes@medical-guidelines.net>";
   // Les réponses des membres arrivent sur une boîte lue, pas sur l'adresse
   // d'envoi.

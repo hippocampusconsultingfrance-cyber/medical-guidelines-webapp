@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { SupabaseClient, User } from "@supabase/supabase-js";
+import { CATALOGUE_OUVERT } from "@/lib/catalogue";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
 import {
   cardTitle,
@@ -698,9 +699,13 @@ function AccessCard({
           </ul>
         </>
       )}
-      <Link href="/abonnement" className={`${primaryBtn} mt-4 w-full text-sm`}>
-        Passer à PREMIUM · 50 € / an
-      </Link>
+      {lib.catalogueOuvert ? (
+        <p className="mt-4 rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">{CATALOGUE_OUVERT}</p>
+      ) : (
+        <Link href="/abonnement" className={`${primaryBtn} mt-4 w-full text-sm`}>
+          Passer à PREMIUM · 50 € / an
+        </Link>
+      )}
     </section>
   );
 }

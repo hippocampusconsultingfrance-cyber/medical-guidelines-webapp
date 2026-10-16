@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { CATALOGUE_OUVERT_QUOTA } from "@/lib/catalogue";
 import { chargerCorrections, CRITICITES, dateCorrection } from "@/lib/corrections";
 import { signalerSuspensions } from "@/lib/extraction";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -165,7 +166,8 @@ export default async function FichePage({
     doc.published_at,
   );
   const r = (await searchParams).r;
-  const message = typeof r === "string" ? MESSAGES[r] : undefined;
+  const message =
+    r === "quota_atteint" && lib.catalogueOuvert ? CATALOGUE_OUVERT_QUOTA : typeof r === "string" ? MESSAGES[r] : undefined;
 
   const card = doc.card_json;
   const date = formatDate(doc.publication_date);
@@ -304,10 +306,12 @@ export default async function FichePage({
             </>
           ) : (
             <>
-              {!message && <p>{MESSAGES.quota_atteint}</p>}
-              <a href="/abonnement" className="btn btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
-                Passer à PREMIUM
-              </a>
+              {!message && <p>{lib.catalogueOuvert ? CATALOGUE_OUVERT_QUOTA : MESSAGES.quota_atteint}</p>}
+              {!lib.catalogueOuvert && (
+                <a href="/abonnement" className="btn btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+                  Passer à PREMIUM
+                </a>
+              )}
             </>
           )}
         </div>

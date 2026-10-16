@@ -14,6 +14,9 @@ recommandations (SFAR, SRLF, HAS…).
 
 ## Développement
 
+Node 24 (comme le projet Vercel : `.nvmrc`, `engines` de `package.json`,
+GitHub Actions).
+
 ```bash
 npm ci
 cp .env.example .env.local   # puis renseigner les deux variables
@@ -27,9 +30,14 @@ Variables d'environnement (publiques, côté navigateur) :
 
 Variables serveur (Vercel uniquement, jamais exposées au navigateur) :
 
-- `SUPABASE_SERVICE_ROLE_KEY` : webhook Stripe, alertes e-mail, désinscription
-- `STRIPE_*` : paiement PREMIUM (voir `src/lib/stripe.ts`)
-- `RESEND_API_KEY` : envoi des alertes e-mail (sans clé, aucun envoi)
+- `SUPABASE_SERVICE_ROLE_KEY` : webhook Stripe, tâches planifiées,
+  désinscription, aperçu public des fiches
+- `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `STRIPE_PRICE_ID` : paiement
+  PREMIUM (voir `src/lib/stripe.ts`) ; `STRIPE_PORTAL_CONFIG_ID` (portail
+  client), `STRIPE_TAX=1` (Stripe Tax) ou `STRIPE_TAX_RATE_ID` (TVA fixe),
+  `STRIPE_STUDENT_COUPON_ID` (remise étudiante). Contrôle :
+  `/abonnement/verification` (administrateur)
+- `RESEND_API_KEY` : envoi des e-mails (sans clé, aucun envoi)
 - `ALERTS_FROM` (facultatif) : expéditeur des alertes, par défaut
   `medical-guidelines.net <alertes@medical-guidelines.net>` (domaine à
   vérifier dans Resend)
@@ -37,8 +45,13 @@ Variables serveur (Vercel uniquement, jamais exposées au navigateur) :
   `contact@medical-guidelines.net` (doit pouvoir recevoir des e-mails)
 - `SITE_URL` (facultatif) : adresse du site dans les e-mails, par défaut
   `https://www.medical-guidelines.net` (le domaine nu y redirige)
-- `CRON_SECRET` : secret de la tâche planifiée des alertes (Vercel l'envoie
-  automatiquement à `/api/cron/alertes`)
+- `CRON_SECRET` : secret des tâches planifiées (Vercel l'envoie
+  automatiquement à chaque `/api/cron/…`)
+- `ANTHROPIC_API_KEY`, `ASSISTANT_MODEL` (facultatif) : assistant IA ;
+  `ASSISTANT_PUBLIC=1` l'ouvre aux membres (sinon équipe éditoriale seule)
+- `NEXT_PUBLIC_SENTRY_DSN` (facultatif) : suivi des erreurs, actif en
+  production seulement ; données personnelles retirées avant envoi
+  (`src/lib/sentry.ts`)
 
 Vérifications (lancées aussi par GitHub Actions sur chaque PR) :
 
@@ -90,6 +103,22 @@ les fiches (IA) » → Run workflow (secrets `SUPABASE_DB_URL`,
 `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`) ; le rapport est joint à l'exécution.
 Nécessite `psql` et `pdftotext` (poppler).
 
+## Tâches planifiées
+
+Déclarées dans `vercel.json` (heures UTC), authentifiées par `CRON_SECRET` :
+
+| Route | Fréquence | Rôle |
+|---|---|---|
+| `/api/cron/purge` | tous les jours, 3 h 40 | Durées de conservation (journal de lecture, comptes inactifs) |
+| `/api/cron/liens` | lundi, 4 h 30 | Vérification des liens vers les sources officielles |
+| `/api/cron/synthese` | lundi, 5 h 50 | Synthèse hebdomadaire aux administrateurs |
+| `/api/cron/alertes` | tous les jours, 6 h 10 | Alertes e-mail (ci-dessous) |
+| `/api/cron/relances` | tous les jours, 8 h 20 | Relances (inscription, première fiche, crédits épuisés) et avis de renouvellement |
+
+`?apercu=1` (alertes, relances, synthèse) montre ce qui serait envoyé sans
+rien envoyer. Surveillance horaire du site et de la base :
+`.github/workflows/surveillance.yml` (`/api/sante`).
+
 ## Alertes e-mail
 
 Tâche planifiée Vercel (`vercel.json`), tous les jours à 6 h 10 UTC :
@@ -120,7 +149,9 @@ Aperçu sans envoi : `curl -H "Authorization: Bearer $CRON_SECRET"
 | `/alertes/desinscription` | Désinscription des alertes e-mail (lien des e-mails) |
 | `/cgu`, `/confidentialite` | Textes légaux |
 | `/api/signalements` | Signalements d'erreurs sur les fiches |
-| `/api/cron/alertes` | Envoi quotidien des alertes e-mail (tâche planifiée) |
+| `/api/cron/…` | Tâches planifiées (voir ci-dessus) |
+| `/api/stripe/webhook` | Notifications Stripe (abonnements) |
+| `/api/sante` | État du site et de la base (surveillance) |
 
 ## Audit
 

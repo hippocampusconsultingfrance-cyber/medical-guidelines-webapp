@@ -14,16 +14,22 @@ export type Bienvenue = {
   specialite: string | null;
   fiches: number;
   premiumOuvert: boolean;
+  // Spécialité encore peu couverte : fiches gratuites au choix dans tout le
+  // catalogue, abonnement non proposé (@/lib/catalogue).
+  catalogueOuvert: boolean;
 };
 
 export function composerBienvenue(b: Bienvenue, site: string): OutgoingEmail {
   const hello = b.prenom ? `Bonjour ${b.prenom},` : "Bonjour,";
   const subject = "Bienvenue sur medical-guidelines.net";
-  const catalogue =
-    b.fiches > 0
+  const catalogue = b.catalogueOuvert
+    ? `Votre spécialité est encore peu couverte : vos ${FREE_QUOTA} fiches gratuites sont au choix dans tout le catalogue (anesthésie-réanimation, réanimation, médecine d'urgence, pédiatrie…)`
+    : b.fiches > 0
       ? `${b.fiches} fiche${b.fiches > 1 ? "s" : ""} de synthèse${b.specialite ? ` en ${b.specialite}` : ""} vous attendent`
       : `Les fiches${b.specialite ? ` de ${b.specialite}` : ""} arrivent au fil de leur validation`;
-  const premium = b.premiumOuvert
+  const premium = b.catalogueOuvert
+    ? `L'abonnement PREMIUM, qui ouvre toutes les fiches d'une spécialité, vous sera proposé quand la vôtre sera couverte : nous vous écrirons à ce moment-là.`
+    : b.premiumOuvert
     ? `Pour tout ouvrir, l'abonnement PREMIUM donne accès à toutes les fiches de votre spécialité et aux alertes de mise à jour, pour 50 € TTC par an (−30 % la première année avec le code FONDATEURS, pour les 100 premiers abonnés).`
     : `L'abonnement PREMIUM, qui ouvrira toutes les fiches de votre spécialité et les alertes de mise à jour, sera bientôt disponible : nous vous préviendrons.`;
 
@@ -40,7 +46,7 @@ export function composerBienvenue(b: Bienvenue, site: string): OutgoingEmail {
     p(`Astuce : la recherche trouve aussi les mots à l'intérieur des fiches (un médicament, une situation clinique), et l'étoile ☆ garde vos fiches favorites à portée de main.`) +
     `<h2 style="font-size:17px;color:#0E3A78;margin:24px 0 8px">Tout ouvrir</h2>` +
     p(escapeHtml(premium)) +
-    (b.premiumOuvert ? button(`${site}/abonnement`, "Découvrir PREMIUM") : "") +
+    (b.premiumOuvert && !b.catalogueOuvert ? button(`${site}/abonnement`, "Découvrir PREMIUM") : "") +
     p(`Une question, une erreur repérée dans une fiche ? Répondez simplement à cet e-mail, ou utilisez « Signaler une erreur » en bas de chaque fiche.`);
   const html = cadreEmail(
     subject,
@@ -54,7 +60,7 @@ export function composerBienvenue(b: Bienvenue, site: string): OutgoingEmail {
     `${hello}\n\nVotre compte est prêt. ${catalogue} : des synthèses fidèles des recommandations des sociétés savantes, grades conservés et source officielle toujours indiquée.\n\n` +
     `VOS ${FREE_QUOTA} CRÉDITS GRATUITS\nToutes les fiches sont visibles dans la bibliothèque. Choisissez-en une et cliquez sur « Débloquer » : un crédit ouvre la fiche définitivement. Vous disposez de ${FREE_QUOTA} crédits, sans limite de durée.\nBibliothèque : ${site}/bibliotheque\n\n` +
     `Astuce : la recherche trouve aussi les mots à l'intérieur des fiches, et l'étoile garde vos fiches favorites à portée de main.\n\n` +
-    `TOUT OUVRIR\n${premium}${b.premiumOuvert ? `\n${site}/abonnement` : ""}\n\n` +
+    `TOUT OUVRIR\n${premium}${b.premiumOuvert && !b.catalogueOuvert ? `\n${site}/abonnement` : ""}\n\n` +
     `Une question, une erreur repérée dans une fiche ? Répondez simplement à cet e-mail.\n\n` +
     `Synthèses indépendantes, non officielles : elles ne remplacent pas le texte intégral des recommandations ni le jugement clinique.\nMon compte : ${site}/compte\n`;
 
