@@ -8,7 +8,7 @@ function setAll(open: boolean) {
 
 // Boutons « Tout déplier / Tout replier » et ouverture automatique de la
 // section visée par un lien du sommaire (#ancre).
-export default function AccordionControls() {
+export default function AccordionControls({ deplier, replier }: { deplier: string; replier: string }) {
   useEffect(() => {
     const openTarget = () => {
       const id = decodeURIComponent(window.location.hash.slice(1));
@@ -26,10 +26,10 @@ export default function AccordionControls() {
   return (
     <div className="acc-controls">
       <button type="button" className="btn btn-ghost btn-sm" onClick={() => setAll(true)}>
-        Tout déplier
+        {deplier}
       </button>
       <button type="button" className="btn btn-ghost btn-sm" onClick={() => setAll(false)}>
-        Tout replier
+        {replier}
       </button>
     </div>
   );

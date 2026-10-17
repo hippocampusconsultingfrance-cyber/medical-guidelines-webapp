@@ -6,8 +6,8 @@ import {
   assistantOuvertAuxMembres,
   donneesIdentifiantes,
   interrogerAssistant,
-  messageDonneesIdentifiantes,
   rechercherPassages,
+  type CodeErreur,
   type Reponse,
 } from "@/lib/assistant";
 import { createAdminClient } from "@/lib/supabase/admin";
@@ -23,23 +23,23 @@ export type EtatAssistant = { question: string; reponse: Reponse | null };
 // une panne de l'IA ne la décompte pas. Rien de la question n'est conservé.
 export async function poserQuestion(_: EtatAssistant, formData: FormData): Promise<EtatAssistant> {
   const question = String(formData.get("question") ?? "").trim().slice(0, 500);
-  const erreur = (message: string): EtatAssistant => ({ question, reponse: { etat: "erreur", message } });
-  if (question.length < 5) return erreur("Posez une question de quelques mots.");
+  const erreur = (code: CodeErreur): EtatAssistant => ({ question, reponse: { etat: "erreur", code } });
+  if (question.length < 5) return erreur("courte");
   const identifiantes = donneesIdentifiantes(question);
-  if (identifiantes.length) return { question, reponse: { etat: "refus", message: messageDonneesIdentifiantes(identifiantes) } };
-  if (!assistantConfigure()) return erreur("L'assistant n'est pas encore configuré.");
+  if (identifiantes.length) return { question, reponse: { etat: "identifiantes", donnees: identifiantes } };
+  if (!assistantConfigure()) return erreur("configuration");
 
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return erreur("Connectez-vous pour utiliser l'assistant.");
+  if (!user) return erreur("connexion");
   const [{ data: equipe }, { data: premium }] = await Promise.all([
     supabase.rpc("has_editorial_role", { min_role: "relecteur" }),
     supabase.rpc("has_premium"),
   ]);
   if (!equipe && !(premium && assistantOuvertAuxMembres())) {
-    return erreur("L'assistant de recherche est réservé aux abonnés PREMIUM.");
+    return erreur("premium");
   }
 
   const admin = createAdminClient();
@@ -49,9 +49,9 @@ export async function poserQuestion(_: EtatAssistant, formData: FormData): Promi
   });
   if (errQuota) {
     console.error("Assistant : compteur illisible", errQuota);
-    return erreur("L'assistant est momentanément indisponible : réessayez dans un instant.");
+    return erreur("indisponible");
   }
-  if (!reservation) return erreur(`Limite de ${ASSISTANT_QUOTA} questions par 24 heures atteinte : réessayez demain.`);
+  if (!reservation) return erreur("limite");
 
   // Panne (de l'IA ou du serveur) : la question n'est pas décomptée.
   const liberer = async () => {

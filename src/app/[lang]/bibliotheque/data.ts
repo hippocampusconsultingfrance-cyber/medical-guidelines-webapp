@@ -49,7 +49,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
       supabase.rpc("has_premium"),
       supabase
         .from("profiles")
-        .select("editorial_role, specialty:specialties(name_i18n)")
+        .select("editorial_role, specialty:specialties(slug, name_i18n)")
         .eq("id", userId)
         .single(),
       supabase
@@ -85,12 +85,12 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
     }
   }
 
-  const spec = profile?.specialty as
-    | { name_i18n: { fr?: string } | null }
-    | { name_i18n: { fr?: string } | null }[]
-    | null
-    | undefined;
-  const specialty = (Array.isArray(spec) ? spec[0] : spec)?.name_i18n?.fr ?? null;
+  type Specialite = { slug: string; name_i18n: { fr?: string } | null };
+  const spec = profile?.specialty as Specialite | Specialite[] | null | undefined;
+  const specialite = Array.isArray(spec) ? spec[0] : spec;
+  // Nom français ; dans une autre langue : nomSpecialite(specialtySlug, specialty, langue).
+  const specialty = specialite?.name_i18n?.fr ?? null;
+  const specialtySlug = specialite?.slug ?? null;
 
   type Society = { acronym: string; full_name: string | null };
   type Row = Omit<LibraryDoc, "societies"> & {
@@ -115,6 +115,7 @@ export async function loadLibrary(supabase: SupabaseClient, userId: string) {
 
   return {
     specialty,
+    specialtySlug,
     docs,
     societyNames,
     unlocked: new Set((unlocks ?? []).map((u) => u.document_id as string)),

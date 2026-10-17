@@ -1,21 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { fmt } from "@/i18n/format";
+import { textes } from "@/i18n/serveur";
 import { ASSISTANT_QUOTA, assistantOuvertAuxMembres } from "@/lib/assistant";
 import { createClient } from "@/lib/supabase/server";
 import Formulaire from "./formulaire";
+import { ASSISTANT } from "./textes";
 
-export const metadata: Metadata = {
-  title: "Assistant de recherche — medical-guidelines.net",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await textes(ASSISTANT);
+  return { title: t.titreMeta };
+}
 
 // Assistant de recherche (bêta) : retrouve des passages exacts des fiches.
 export default async function AssistantPage() {
+  const { t, lien, locale } = await textes(ASSISTANT);
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) redirect(lien("/connexion"));
   const [{ data: equipe }, { data: premium }] = await Promise.all([
     supabase.rpc("has_editorial_role", { min_role: "relecteur" }),
     supabase.rpc("has_premium"),
@@ -25,53 +30,44 @@ export default async function AssistantPage() {
   return (
     <div className="mx-auto min-h-screen max-w-2xl px-6 py-12">
       <p className="text-sm">
-        <Link href="/bibliotheque" className="text-[#1A74A6] underline">
-          ← Retour aux fiches
+        <Link href={lien("/bibliotheque")} className="text-[#1A74A6] underline">
+          {t.retour}
         </Link>
       </p>
       <h1 className="mt-4 text-2xl font-semibold text-slate-900">
-        Assistant de recherche <span className="text-sm font-normal text-slate-500">(bêta)</span>
+        {t.titre} <span className="text-sm font-normal text-slate-500">{t.beta}</span>
       </h1>
       <div role="note" className="mt-4 rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">
-        <p className="font-semibold">Réponses produites par une intelligence artificielle</p>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Elles peuvent contenir des erreurs ou des oublis.</li>
-          <li>Elles ne remplacent pas votre jugement clinique.</li>
-          <li>Vérifiez toujours le passage dans la fiche et la source officielle citée avant toute décision.</li>
+        <p className="font-semibold">{t.iaTitre}</p>
+        <ul className="mt-2 list-disc space-y-1 ps-5">
+          {t.ia.map((x) => (
+            <li key={x}>{x}</li>
+          ))}
         </ul>
       </div>
-      <p className="mt-4 text-sm text-slate-600">
-        Posez une question en langage courant : l&apos;assistant retrouve dans vos fiches les passages exacts qui y
-        répondent, avec le lien vers la fiche et la source officielle. Il ne rédige pas de réponse et ne donne aucun
-        avis sur un patient : la décision relève de votre jugement clinique.
-      </p>
-      <p className="mt-2 text-xs text-slate-500">
-        Outil d&apos;aide à la recherche utilisant une intelligence artificielle ; chaque extrait est revérifié mot pour
-        mot dans la fiche. Ne saisissez aucune donnée permettant d&apos;identifier un patient : une question contenant
-        une adresse e-mail, un numéro de téléphone ou de sécurité sociale, une date de naissance ou un identifiant
-        patient est bloquée avant tout envoi. {ASSISTANT_QUOTA} questions par 24 heures ; vos questions ne sont pas
-        conservées.
-      </p>
+      <p className="mt-4 text-sm text-slate-600">{t.intro}</p>
+      {t.enFrancais && <p className="mt-2 text-sm font-medium text-slate-700">{t.enFrancais}</p>}
+      <p className="mt-2 text-xs text-slate-500">{fmt(t.details, { quota: ASSISTANT_QUOTA })}</p>
       {acces ? (
         <>
           {Boolean(equipe) && !assistantOuvertAuxMembres() && (
             <p className="mt-4 rounded-lg bg-sky-50 p-3 text-sm text-sky-900">
-              Phase de test : réservé à l&apos;équipe éditoriale tant qu&apos;ASSISTANT_PUBLIC n&apos;est pas activé.
+              {t.phaseTest}
             </p>
           )}
-          <Formulaire />
+          <Formulaire t={t.formulaire} quota={ASSISTANT_QUOTA} locale={locale} />
         </>
       ) : (
         <p className="mt-6 rounded-lg bg-slate-50 p-4 text-sm text-slate-700">
           {assistantOuvertAuxMembres() ? (
             <>
-              L&apos;assistant est réservé aux abonnés PREMIUM.{" "}
-              <Link href="/abonnement" className="font-semibold text-[#1A74A6] underline">
-                Découvrir l&apos;abonnement
+              {t.reservePremium}{" "}
+              <Link href={lien("/abonnement")} className="font-semibold text-[#1A74A6] underline">
+                {t.decouvrir}
               </Link>
             </>
           ) : (
-            "L'assistant de recherche sera bientôt disponible pour les abonnés PREMIUM."
+            t.bientot
           )}
         </p>
       )}

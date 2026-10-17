@@ -1,6 +1,8 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { langueDuFormulaire } from "@/i18n/serveur";
+import { chemin } from "@/lib/langues";
 import { createClient } from "@/lib/supabase/server";
 
 // Suivi des sociétés savantes et alertes e-mail, depuis l'espace membre ou
@@ -12,7 +14,7 @@ const RETOURS = new Set(["/", "/compte"]);
 
 function back(formData: FormData, r: string): never {
   const retour = String(formData.get("retour") ?? "/");
-  redirect(`${RETOURS.has(retour) ? retour : "/"}?r=${r}#alertes`);
+  redirect(chemin(langueDuFormulaire(formData), `${RETOURS.has(retour) ? retour : "/"}?r=${r}#alertes`));
 }
 
 async function currentUser() {

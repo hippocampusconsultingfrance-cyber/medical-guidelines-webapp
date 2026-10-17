@@ -2,6 +2,8 @@
 
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { langueDuFormulaire } from "@/i18n/serveur";
+import { chemin, type Langue } from "@/lib/langues";
 import { createClient } from "@/lib/supabase/server";
 import { deposerJustificatif } from "@/lib/etudiants-depot";
 import { isEditorialAccount } from "@/lib/roles";
@@ -18,6 +20,17 @@ async function knownCustomer(id: string | null | undefined) {
     return null;
   }
 }
+
+// Langue du formulaire (champ caché « langue ») : retours dans cette langue,
+// et pages de paiement Stripe aussi (l'arabe n'y existe pas : langue du
+// navigateur).
+function langueDe(formData?: FormData) {
+  return formData ? langueDuFormulaire(formData) : "fr";
+}
+function aller(l: Langue, p: string): never {
+  redirect(chemin(l, p));
+}
+const STRIPE_LOCALES = { fr: "fr", en: "en", es: "es", de: "de", zh: "zh", ar: "auto" } as const satisfies Record<Langue, string>;
 
 async function origin() {
   const h = await headers();
@@ -37,31 +50,32 @@ async function origin() {
 // paiement encore ouvertes du membre sont fermées avant d'en créer une, et
 // la création porte une clé d'idempotence.
 export async function startCheckout(formData: FormData) {
-  if (!stripeEnabled()) redirect("/abonnement");
+  const l = langueDe(formData);
+  if (!stripeEnabled()) aller(l, "/abonnement");
   if (formData.get("cgv") !== "1" || formData.get("retractation") !== "1") {
-    redirect("/abonnement?r=cases");
+    aller(l, "/abonnement?r=cases");
   }
 
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) aller(l, "/connexion");
   const editeur = await isEditorialAccount(supabase, user.id);
-  if (!checkoutOpen(editeur)) redirect("/abonnement");
+  if (!checkoutOpen(editeur)) aller(l, "/abonnement");
 
   const [{ data: dejaPremium, error: errPremium }, { data: ouvert }] = await Promise.all([
     supabase.rpc("has_premium"),
     supabase.rpc("catalogue_ouvert"),
   ]);
-  if (errPremium) redirect("/abonnement?r=erreur");
-  if (dejaPremium) redirect("/abonnement?r=deja_abonne");
+  if (errPremium) aller(l, "/abonnement?r=erreur");
+  if (dejaPremium) aller(l, "/abonnement?r=deja_abonne");
   // Spécialité encore peu couverte : abonnement non proposé (@/lib/catalogue).
-  if (ouvert && !editeur) redirect("/abonnement?r=specialite");
+  if (ouvert && !editeur) aller(l, "/abonnement?r=specialite");
 
   const { data: reservation, error: errReservation } = await supabase.rpc("reserver_paiement");
-  if (errReservation) redirect("/abonnement?r=erreur");
-  if (!reservation) redirect("/abonnement?r=paiement_en_cours");
+  if (errReservation) aller(l, "/abonnement?r=erreur");
+  if (!reservation) aller(l, "/abonnement?r=paiement_en_cours");
 
   const { data: existing } = await supabase
     .from("subscriptions")
@@ -82,14 +96,14 @@ export async function startCheckout(formData: FormData) {
     .order("created_at", { ascending: false })
     .limit(1)
     .maybeSingle();
-  if (demande?.status === "en_attente") redirect("/abonnement?r=etudiant_attente#etudiant");
+  if (demande?.status === "en_attente") aller(l, "/abonnement?r=etudiant_attente#etudiant");
   const remiseEtudiant =
     demande?.status === "valide" && demande.promotion_code
       ? await promotionCodeFor(demande.promotion_code as string, user.id)
       : null;
   const code = remiseEtudiant ? "" : String(formData.get("code") ?? "");
   const promotionCode = remiseEtudiant ?? (code.trim() ? await promotionCodeFor(code, user.id) : null);
-  if (code.trim() && !promotionCode) redirect("/abonnement?r=code");
+  if (code.trim() && !promotionCode) aller(l, "/abonnement?r=code");
 
   // Client Stripe propre au membre : factures affichées TTC (prix TVA
   // incluse, comme pour un particulier : 50,00 € − remise = total, dont TVA).
@@ -111,7 +125,7 @@ export async function startCheckout(formData: FormData) {
     const actif = subs.data.find(
       (s) => isOwnSubscription(s) && ["active", "trialing", "past_due", "unpaid", "incomplete"].includes(s.status),
     );
-    if (actif) redirect(actif.status === "incomplete" ? "/abonnement?r=paiement_en_cours" : "/abonnement?r=deja_abonne");
+    if (actif) aller(l, actif.status === "incomplete" ? "/abonnement?r=paiement_en_cours" : "/abonnement?r=deja_abonne");
     // Sessions de paiement encore ouvertes (autre onglet, essai abandonné) :
     // fermées, pour qu'un seul paiement reste possible.
     const ouvertes = await stripe.checkout.sessions.list({ customer: known, status: "open", limit: 20 });
@@ -163,9 +177,9 @@ export async function startCheckout(formData: FormData) {
       billing_address_collection: "required",
       tax_id_collection: { enabled: true },
       automatic_tax: { enabled: autoTax },
-      locale: "fr",
-      success_url: `${base}/abonnement?r=merci`,
-      cancel_url: `${base}/abonnement?r=annule`,
+      locale: STRIPE_LOCALES[l],
+      success_url: `${base}${chemin(l, "/abonnement?r=merci")}`,
+      cancel_url: `${base}${chemin(l, "/abonnement?r=annule")}`,
     },
     // Une tentative (réservation) = une session, même si l'appel est rejoué.
     { idempotencyKey: `checkout-${user.id}-${reservation}` },
@@ -174,27 +188,28 @@ export async function startCheckout(formData: FormData) {
 }
 
 // Espace client Stripe : factures, moyen de paiement, résiliation.
-export async function openPortal() {
-  if (!stripeEnabled()) redirect("/abonnement");
+export async function openPortal(formData?: FormData) {
+  const l = langueDe(formData);
+  if (!stripeEnabled()) aller(l, "/abonnement");
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) aller(l, "/connexion");
   const { data } = await supabase
     .from("subscriptions")
     .select("stripe_customer_id")
     .eq("user_id", user.id)
     .maybeSingle();
   const customer = await knownCustomer(data?.stripe_customer_id);
-  if (!customer) redirect("/abonnement?r=portail");
+  if (!customer) aller(l, "/abonnement?r=portail");
 
   const configuration = process.env.STRIPE_PORTAL_CONFIG_ID;
   const portal = await getStripe().billingPortal.sessions.create({
     customer,
     ...(configuration ? { configuration } : {}),
-    return_url: `${await origin()}/abonnement`,
-    locale: "fr",
+    return_url: `${await origin()}${chemin(l, "/abonnement")}`,
+    locale: STRIPE_LOCALES[l],
   });
   redirect(portal.url);
 }
@@ -203,28 +218,29 @@ export async function openPortal() {
 // consommation) : ouvre directement l'écran de résiliation du portail
 // Stripe pour l'abonnement payé du membre ; l'accès reste ouvert jusqu'à la
 // fin de la période payée (le webhook enregistre la résiliation).
-export async function resilier() {
-  if (!stripeEnabled()) redirect("/abonnement");
+export async function resilier(formData?: FormData) {
+  const l = langueDe(formData);
+  if (!stripeEnabled()) aller(l, "/abonnement");
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) aller(l, "/connexion");
   const { data } = await supabase
     .from("subscriptions")
     .select("stripe_customer_id, stripe_subscription_id")
     .eq("user_id", user.id)
     .maybeSingle();
   const customer = await knownCustomer(data?.stripe_customer_id);
-  if (!customer || !data?.stripe_subscription_id) redirect("/abonnement?r=portail");
+  if (!customer || !data?.stripe_subscription_id) aller(l, "/abonnement?r=portail");
 
-  const retour = `${await origin()}/abonnement`;
+  const retour = `${await origin()}${chemin(l, "/abonnement")}`;
   const configuration = process.env.STRIPE_PORTAL_CONFIG_ID;
   const portal = await getStripe().billingPortal.sessions.create({
     customer: customer!,
     ...(configuration ? { configuration } : {}),
     return_url: retour,
-    locale: "fr",
+    locale: STRIPE_LOCALES[l],
     flow_data: {
       type: "subscription_cancel",
       subscription_cancel: { subscription: data!.stripe_subscription_id as string },
@@ -236,11 +252,12 @@ export async function resilier() {
 
 // Demande de tarif professionnel en formation depuis la page Abonnement.
 export async function demanderTarifEtudiant(formData: FormData) {
+  const l = langueDe(formData);
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) aller(l, "/connexion");
   const r = await deposerJustificatif(user.id, formData);
-  redirect(`/abonnement?r=${r}#etudiant`);
+  aller(l, `/abonnement?r=${r}#etudiant`);
 }

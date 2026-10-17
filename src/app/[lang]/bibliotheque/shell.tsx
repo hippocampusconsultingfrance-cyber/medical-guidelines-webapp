@@ -1,14 +1,18 @@
 import Link from "next/link";
+import { rubrique } from "@/i18n/rubriques";
+import { textes } from "@/i18n/serveur";
+import { nomSpecialite } from "@/i18n/specialites";
 import type { TocItem } from "@/lib/fiches";
 import { LogoMark } from "../logo";
 import { cardTitle, docState, groupBySection, type Library } from "./data";
 import BoutonIdee from "./bouton-idee";
 import MenuToggle from "./menu-toggle";
+import { BIBLIOTHEQUE } from "./textes";
 
 // Cadre commun de la bibliothèque : barre latérale (logo, spécialité
 // consultée, fiches rangées par rubrique, sommaire de la fiche ouverte) et
-// zone de lecture.
-export default function Shell({
+// zone de lecture. Liens de l'équipe (tableau de bord…) : pages en français.
+export default async function Shell({
   lib,
   activeId,
   toc,
@@ -19,6 +23,8 @@ export default function Shell({
   toc?: TocItem[];
   children: React.ReactNode;
 }) {
+  const { t: tout, langue, lien } = await textes(BIBLIOTHEQUE);
+  const t = tout.shell;
   const groups = groupBySection(lib.docs);
   const activeSection = lib.docs.find((d) => d.id === activeId)?.card_json?.section ?? null;
   const byId = new Map(lib.docs.map((d) => [d.id, d]));
@@ -28,7 +34,7 @@ export default function Shell({
     <div className="mg-app">
       <MenuToggle />
       <aside className="sidebar" id="sidebar">
-        <Link href="/" className="sidebar__brand sidebar__brand--logo" aria-label="medical-guidelines.net, accueil">
+        <Link href={lien("/")} className="sidebar__brand sidebar__brand--logo" aria-label={t.accueilAria}>
           <span className="sidebar__logo">
             <LogoMark className="sidebar__logo-mark" />
           </span>
@@ -36,25 +42,29 @@ export default function Shell({
             <span className="sidebar__mark">
               medical-guidelines<span className="sidebar__tld">.net</span>
             </span>
-            {lib.specialty && <span className="sidebar__specialty">{lib.specialty}</span>}
+            {lib.specialty && (
+              <span className="sidebar__specialty">
+                {lib.specialtySlug ? nomSpecialite(lib.specialtySlug, lib.specialty, langue) : lib.specialty}
+              </span>
+            )}
           </span>
         </Link>
 
         {toc && toc.length > 0 && (
           <div className="toc">
-            <div className="nav-group__label">Sommaire de la fiche</div>
-            {toc.map((t) => (
-              <a key={t.id} href={`#${t.id}`} className="toc__item">
-                {t.text}
+            <div className="nav-group__label">{t.sommaire}</div>
+            {toc.map((item) => (
+              <a key={item.id} href={`#${item.id}`} className="toc__item">
+                {item.text}
               </a>
             ))}
           </div>
         )}
 
-        <nav className="nav-group" aria-label="Fiches">
-          <Link href="/bibliotheque" className={`nav-link${activeId ? "" : " is-active"}`}>
+        <nav className="nav-group" aria-label={t.fichesAria}>
+          <Link href={lien("/bibliotheque")} className={`nav-link${activeId ? "" : " is-active"}`}>
             <span className="nav-link__dot" />
-            Toutes les fiches
+            {t.toutes}
             <span className="count-badge" style={{ background: "var(--accent)" }}>
               {lib.docs.length}
             </span>
@@ -62,13 +72,13 @@ export default function Shell({
           {favorites.length > 0 && (
             <details className="nav-section" open={!activeId || favorites.some((d) => d.id === activeId)}>
               <summary className="nav-section__title">
-                ★ Mes favoris
+                {t.favoris}
                 <span className="nav-section__count">{favorites.length}</span>
               </summary>
               {favorites.map((d) => (
                 <Link
                   key={d.id}
-                  href={`/bibliotheque/${d.id}`}
+                  href={lien(`/bibliotheque/${d.id}`)}
                   className={`nav-link nav-link--sub${d.id === activeId ? " is-active" : ""}`}
                 >
                   {cardTitle(d)}
@@ -79,7 +89,7 @@ export default function Shell({
           {groups.map(([section, docs]) => (
             <details key={section} className="nav-section" open={section === activeSection}>
               <summary className="nav-section__title">
-                {section}
+                {rubrique(section, langue).nom}
                 <span className="nav-section__count">{docs.length}</span>
               </summary>
               {docs.map((d) => {
@@ -87,12 +97,12 @@ export default function Shell({
                 return (
                   <Link
                     key={d.id}
-                    href={`/bibliotheque/${d.id}`}
+                    href={lien(`/bibliotheque/${d.id}`)}
                     className={`nav-link nav-link--sub${d.id === activeId ? " is-active" : ""}`}
                   >
                     {cardTitle(d)}
                     {state === "lock" && (
-                      <span className="nav-link__lock" aria-label="Fiche bloquée">
+                      <span className="nav-link__lock" aria-label={t.ficheBloquee}>
                         🔒
                       </span>
                     )}
@@ -104,18 +114,18 @@ export default function Shell({
         </nav>
 
         <div className="sidebar__footer">
-          <Link href="/" style={{ color: "inherit" }}>
-            Accueil
+          <Link href={lien("/")} style={{ color: "inherit" }}>
+            {t.accueil}
           </Link>
           {" · "}
-          <Link href="/compte" style={{ color: "inherit" }}>
-            Mon compte
+          <Link href={lien("/compte")} style={{ color: "inherit" }}>
+            {t.monCompte}
           </Link>
           {(lib.isEditor || lib.premium) && (
             <>
               {" · "}
-              <Link href="/assistant" style={{ color: "inherit" }}>
-                Assistant de recherche (bêta)
+              <Link href={lien("/assistant")} style={{ color: "inherit" }}>
+                {t.assistant}
               </Link>
             </>
           )}
@@ -208,14 +218,13 @@ export default function Shell({
             </>
           )}
           <br />
-          Synthèses indépendantes, non officielles. Se référer aux textes
-          intégraux en cas de doute.
+          {t.avertissement}
         </div>
       </aside>
       <main>
         <div className="content-wrap">{children}</div>
       </main>
-      <BoutonIdee />
+      <BoutonIdee libelle={t.idee} />
     </div>
   );
 }

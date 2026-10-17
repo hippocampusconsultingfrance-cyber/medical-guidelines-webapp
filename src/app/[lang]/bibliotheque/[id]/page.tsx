@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { CATALOGUE_OUVERT_QUOTA } from "@/lib/catalogue";
-import { chargerCorrections, CRITICITES, dateCorrection } from "@/lib/corrections";
+import { FICHE } from "@/i18n/fiche";
+import { fmt, plur, riche } from "@/i18n/format";
+import { textes } from "@/i18n/serveur";
+import { chargerCorrections, dateCorrection } from "@/lib/corrections";
 import { signalerSuspensions } from "@/lib/extraction";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -20,48 +22,19 @@ import {
   type Presentation,
   type TocItem,
 } from "@/lib/fiches";
-import { cardTitle, FRESHNESS_LABEL, loadLibrary } from "../data";
+import { cardTitle, loadLibrary } from "../data";
 import AccordionControls from "../accordion-controls";
 import { publierCorrection } from "../signalements/actions";
 import Shell from "../shell";
+import { BIBLIOTHEQUE } from "../textes";
 import { marquerRelue, reportError, setFreshness, setPublication, toggleFavorite, unlockDocument } from "./actions";
 
-export const metadata: Metadata = {
-  title: "Fiche — Medical Guidelines",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await textes(BIBLIOTHEQUE);
+  return { title: t.fiche.titreMeta };
+}
 
 const UUID = /^[0-9a-f-]{36}$/i;
-
-const MESSAGES: Record<string, string> = {
-  quota_atteint: `Vous avez utilisé vos ${FREE_QUOTA} crédits. L'abonnement PREMIUM ouvre toutes les fiches de votre spécialité.`,
-  indisponible: "Cette fiche n'est pas disponible pour votre compte.",
-  erreur: "Le déblocage n'a pas abouti. Réessayez dans un instant.",
-  suspendu: "Consultation suspendue temporairement : aucun crédit n'a été utilisé.",
-  publiee: "Fiche publiée : elle est maintenant visible par les membres de sa spécialité.",
-  depubliee: "Fiche dépubliée : elle n'est plus visible par les membres.",
-  confirmation_requise: "Cochez la case de relecture avant de valider.",
-  relue: "Relecture enregistrée : la mention « Relue par … » est à jour sur la fiche.",
-  relue_nom: "Renseignez votre prénom et votre nom dans Mon compte : ils figurent dans la mention de relecture.",
-  relue_erreur: "La relecture n'a pas pu être enregistrée.",
-  publication_erreur: "La publication n'a pas abouti (droits de validateur requis).",
-  publication_juridique:
-    "Publication refusée : le statut juridique de la source n'est pas « Validé » (Registre juridique, depuis le tableau de bord).",
-  publication_date: "Publication refusée : la date de publication de la source manque.",
-  publication_source: "Publication refusée : l'URL de la source officielle manque.",
-  signalement_envoye: "Merci : votre signalement a été envoyé. Il sera examiné avant toute correction.",
-  signalement_vide: "Décrivez l'erreur en quelques mots avant d'envoyer.",
-  signalement_erreur: "Le signalement n'a pas pu être envoyé. Réessayez dans un instant.",
-  veille_ok: "Statut de la fiche enregistré.",
-  veille_version: "Nouvelle version enregistrée, statut de la fiche mis à jour.",
-  veille_invalide: "Formulaire incomplet : vérifiez le statut et le type de version.",
-  veille_remplacement: "Choisissez la fiche qui remplace celle-ci.",
-  veille_retrait: "Cochez la case de confirmation pour retirer la fiche.",
-  veille_version_existe: "Cette version est déjà enregistrée pour cette fiche.",
-  veille_erreur: "L'enregistrement n'a pas abouti (droits de validateur requis).",
-  correction_publiee: "Correction publiée au journal public.",
-  correction_incomplete: "Choisissez la criticité et résumez la correction (5 caractères au moins).",
-  correction_erreur: "La correction n'a pas pu être publiée.",
-};
 
 const FRESHNESS_OPTIONS: [string, string][] = [
   ["a_jour", "À jour"],
@@ -77,12 +50,6 @@ type Version = {
   diff_summary: string | null;
   detected_at: string;
   published_at: string | null;
-};
-
-const FRESHNESS_NOTICE: Record<string, string> = {
-  revision_detectee:
-    "Une nouvelle version de la recommandation source a été détectée : cette fiche est en cours de révision par notre équipe.",
-  remplacee: "La recommandation source a été remplacée par un texte plus récent.",
 };
 
 type Divergence = {
@@ -129,12 +96,18 @@ export default async function FichePage({
 }: PageProps<"/[lang]/bibliotheque/[id]">) {
   const { id } = await params;
   if (!UUID.test(id)) notFound();
+  const { t: tout, langue, lien, locale } = await textes(BIBLIOTHEQUE);
+  const t = tout.fiche;
+  const tf = FICHE[langue];
+  const MESSAGES: Record<string, string> = { ...t.messages, quota_atteint: fmt(t.quotaAtteint, { quota: FREE_QUOTA }) };
+  const FRESHNESS_NOTICE: Record<string, string> = { revision_detectee: t.revisionDetectee, remplacee: t.remplaceeNotice };
+  const quotaCatalogue = fmt(tf.catalogueOuvertQuota, { quota: FREE_QUOTA });
 
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) redirect(lien("/connexion"));
 
   const lib = await loadLibrary(supabase, user.id);
   const doc = lib.docs.find((d) => d.id === id);
@@ -171,10 +144,10 @@ export default async function FichePage({
   );
   const r = (await searchParams).r;
   const message =
-    r === "quota_atteint" && lib.catalogueOuvert ? CATALOGUE_OUVERT_QUOTA : typeof r === "string" ? MESSAGES[r] : undefined;
+    r === "quota_atteint" && lib.catalogueOuvert ? quotaCatalogue : typeof r === "string" ? MESSAGES[r] : undefined;
 
   const card = doc.card_json;
-  const date = formatDate(doc.publication_date);
+  const date = formatDate(doc.publication_date, locale);
   const isFavorite = lib.favorite.has(id);
   const replacement = extra?.superseded_by_document_id
     ? lib.docs.find((d) => d.id === extra.superseded_by_document_id)
@@ -195,36 +168,37 @@ export default async function FichePage({
       <div className="doc-header__meta">
         {(card?.methodology || extra?.grading_system) && (
           <span>
-            <b>Méthodologie</b>&nbsp;{card?.methodology ? methodologieLisible(card.methodology) : extra?.grading_system}
+            <b>{t.methodologie}</b>&nbsp;{card?.methodology ? methodologieLisible(card.methodology) : extra?.grading_system}
           </span>
         )}
         <span>
-          <b>Version</b>&nbsp;{card?.version ?? date ?? "non indiquée"}
+          <b>{t.version}</b>&nbsp;{card?.version ?? date ?? t.nonIndiquee}
         </span>
         {card?.validated && (
           <span>
-            <b>Validation</b>&nbsp;{card.validated}
+            <b>{t.validation}</b>&nbsp;{card.validated}
           </span>
         )}
         {extra?.revision_date && (
           <span>
-            <b>Révision</b>&nbsp;{formatDate(extra.revision_date)}
+            <b>{t.revision}</b>&nbsp;{formatDate(extra.revision_date, locale)}
           </span>
         )}
         {relecture?.relue_par_nom && relecture.relue_le && (
           <span>
-            <b>Relue par</b>&nbsp;{relecture.relue_par_nom as string}, le {formatDate(relecture.relue_le as string)}
+            <b>{t.reluePar}</b>&nbsp;
+            {fmt(t.relueParLe, { nom: relecture.relue_par_nom as string, date: formatDate(relecture.relue_le as string, locale) ?? "" })}
           </span>
         )}
         {verification && (
           <span>
-            <b>Source vérifiée le</b>&nbsp;{verification.derniere} · prochaine vérification prévue le{" "}
-            {verification.prochaine}
+            <b>{t.sourceVerifiee}</b>&nbsp;
+            {fmt(t.sourceVerifieeTexte, { derniere: verification.derniere, prochaine: verification.prochaine })}
           </span>
         )}
         {doc.societies.length > 0 && (
           <span>
-            <b>Société{doc.societies.length > 1 ? "s" : ""}</b>&nbsp;
+            <b>{plur(locale, doc.societies.length, t.societes)}</b>&nbsp;
             {doc.societies
               .map((s) => (lib.societyNames[s] ? `${s} (${lib.societyNames[s]})` : s))
               .join(" · ")}
@@ -234,29 +208,30 @@ export default async function FichePage({
       <div className="doc-header__actions">
         {extra?.source_url && (
           <a className="source-link" href={extra.source_url} target="_blank" rel="noopener noreferrer">
-            Document source officiel ↗
+            {tf.sourceOfficielle}
           </a>
         )}
         <form action={toggleFavorite}>
           <input type="hidden" name="id" value={id} />
+          <input type="hidden" name="langue" value={langue} />
           <input type="hidden" name="favori" value={isFavorite ? "0" : "1"} />
           <button className={`btn btn-ghost btn-sm fav-btn${isFavorite ? " is-on" : ""}`} aria-pressed={isFavorite}>
-            {isFavorite ? "★ Dans mes favoris" : "☆ Ajouter aux favoris"}
+            {isFavorite ? t.favoriOn : t.favoriOff}
           </button>
         </form>
       </div>
       {anneeSource && (
         <div className="panel warn" role="note">
-          <b>Source ancienne.</b> Recommandation publiée en {anneeSource}, il y a plus de {ANCIENNETE_MAX} ans : vérifiez auprès de la société savante qu&apos;aucune actualisation n&apos;a été publiée depuis.
+          <b>{tf.ancienneTitre}</b> {fmt(tf.ancienneTexte, { annee: anneeSource, max: ANCIENNETE_MAX })}
         </div>
       )}
       {freshness && (
         <div className="panel warn" role="note">
-          <b>{FRESHNESS_LABEL[doc.freshness_status!]}.</b> {freshness}
+          <b>{tf.fraicheur[doc.freshness_status!]}.</b> {freshness}
           {replacement && (
             <>
               {" "}
-              <Link href={`/bibliotheque/${replacement.id}`}>Voir la nouvelle fiche : {cardTitle(replacement)} →</Link>
+              <Link href={lien(`/bibliotheque/${replacement.id}`)}>{fmt(t.voirNouvelle, { titre: cardTitle(replacement) })}</Link>
             </>
           )}
         </div>
@@ -270,15 +245,9 @@ export default async function FichePage({
     <Shell lib={lib} activeId={id}>
       {header}
       <div className="unlock-box">
-        <h2>Consultation momentanément suspendue</h2>
-        <p>
-          Un nombre inhabituel de fiches a été ouvert depuis votre compte en peu de temps. Pour protéger le
-          contenu, la lecture est suspendue pendant quelques heures ; elle reprendra automatiquement.
-        </p>
-        <p>
-          S&apos;il s&apos;agit d&apos;un usage normal, écrivez-nous à contact@medical-guidelines.net : nous
-          rétablirons l&apos;accès.
-        </p>
+        <h2>{t.suspendueTitre}</h2>
+        <p>{t.suspendueTexte}</p>
+        <p>{t.suspendueContact}</p>
       </div>
     </Shell>
   );
@@ -294,26 +263,23 @@ export default async function FichePage({
         {header}
         {card?.short && <p className="block-p">{card.short}</p>}
         <div className="unlock-box">
-          <h2>🔒 Fiche bloquée</h2>
+          <h2>{t.bloqueeTitre}</h2>
           {message && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
           {remaining > 0 ? (
             <>
-              <p>
-                Débloquer cette fiche utilise <b>1 crédit</b>. Il vous en reste{" "}
-                <b>{remaining}</b> sur {FREE_QUOTA}. Une fiche débloquée le reste
-                définitivement.
-              </p>
+              <p>{riche(t.debloquerTexte, { b: (c) => <b>{c}</b> }, { n: remaining, quota: FREE_QUOTA })}</p>
               <form action={unlockDocument}>
                 <input type="hidden" name="id" value={id} />
-                <button className="btn btn-primary">Utiliser 1 crédit pour débloquer</button>
+                <input type="hidden" name="langue" value={langue} />
+                <button className="btn btn-primary">{t.debloquer}</button>
               </form>
             </>
           ) : (
             <>
-              {!message && <p>{lib.catalogueOuvert ? CATALOGUE_OUVERT_QUOTA : MESSAGES.quota_atteint}</p>}
+              {!message && <p>{lib.catalogueOuvert ? quotaCatalogue : MESSAGES.quota_atteint}</p>}
               {!lib.catalogueOuvert && (
-                <a href="/abonnement" className="btn btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
-                  Passer à PREMIUM
+                <a href={lien("/abonnement")} className="btn btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+                  {t.passerPremium}
                 </a>
               )}
             </>
@@ -337,7 +303,7 @@ export default async function FichePage({
       await signalerSuspensions();
       return suspension;
     }
-    ({ html: body, toc } = renderRecommendations((recs ?? []) as Recommendation[]));
+    ({ html: body, toc } = renderRecommendations((recs ?? []) as Recommendation[], t));
   }
   // Points clés validés par un médecin (colonne lue par le serveur seulement,
   // ici sur une fiche que le membre a le droit de lire). Sans la migration
@@ -351,7 +317,7 @@ export default async function FichePage({
   const divergences = (Array.isArray(divData) ? divData : []) as Divergence[];
   const pointsCles = Array.isArray(cles?.points_cles) ? (cles.points_cles as string[]) : [];
 
-  const watermark = `${user.email} · ${new Date().toLocaleString("fr-FR", { timeZone: "Europe/Paris" })}`;
+  const watermark = `${user.email} · ${new Date().toLocaleString(locale, { timeZone: "Europe/Paris" })}`;
 
   return (
     <Shell lib={lib} activeId={id} toc={toc}>
@@ -363,9 +329,9 @@ export default async function FichePage({
         </div>
         {header}
         {pointsCles.length > 0 && (
-          <section className="panel" aria-label="Points clés" style={{ marginTop: 18 }}>
-            <p style={{ fontWeight: 700 }}>Points clés</p>
-            <ul style={{ margin: 0, paddingLeft: 20 }}>
+          <section className="panel" aria-label={t.pointsCles} style={{ marginTop: 18 }}>
+            <p style={{ fontWeight: 700 }}>{t.pointsCles}</p>
+            <ul style={{ margin: 0, paddingInlineStart: 20 }}>
               {pointsCles.map((p, i) => (
                 <li key={i} style={{ marginBottom: 4 }}>
                   {p}
@@ -514,10 +480,9 @@ export default async function FichePage({
         )}
         {divergences.map((d) => (
           <section key={d.id} className="panel warn" style={{ userSelect: "text", WebkitUserSelect: "text" }}>
-            <h2 style={{ fontSize: "1rem", margin: "0 0 4px" }}>Recommandations divergentes : {d.question}</h2>
+            <h2 style={{ fontSize: "1rem", margin: "0 0 4px" }}>{fmt(t.divergentesTitre, { question: d.question })}</h2>
             <p style={{ fontSize: "0.85rem", margin: "0 0 10px" }}>
-              Les sociétés savantes ne formulent pas la même recommandation. Leurs positions sont présentées
-              séparément, sans que l&apos;une soit présentée comme meilleure.
+              {t.divergentesTexte}
               {d.avertissement ? ` ${d.avertissement}` : ""}
             </p>
             <div style={{ display: "grid", gap: 10, gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
@@ -527,17 +492,17 @@ export default async function FichePage({
                   style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 8, padding: "10px 12px" }}
                 >
                   <div style={{ fontWeight: 700, fontSize: "0.9rem" }}>
-                    {p.societes ?? "Société"}
+                    {p.societes ?? t.societe}
                     {p.date ? ` · ${p.date.slice(0, 4)}` : ""}
                   </div>
                   <p style={{ fontSize: "0.9rem", margin: "6px 0" }}>{p.position}</p>
                   <div style={{ fontSize: "0.8rem", color: "var(--ink-muted)" }}>
-                    Population : {p.population || "non indiquée"} · Grade : {p.grade || "non indiqué"} · Niveau de
-                    preuve : {p.niveau || "non indiqué"}
+                    {t.population} : {p.population || t.nonIndiquee} · {t.grade} : {p.grade || t.nonIndique} · {t.niveau} :{" "}
+                    {p.niveau || t.nonIndique}
                   </div>
                   {p.document_id !== id && (
-                    <Link href={`/bibliotheque/${p.document_id}`} style={{ fontSize: "0.8rem" }}>
-                      Voir la fiche : {p.titre} →
+                    <Link href={lien(`/bibliotheque/${p.document_id}`)} style={{ fontSize: "0.8rem" }}>
+                      {fmt(t.voirFiche, { titre: p.titre })}
                     </Link>
                   )}
                 </div>
@@ -545,25 +510,25 @@ export default async function FichePage({
             </div>
           </section>
         ))}
-        {toc.length > 1 && <AccordionControls />}
+        {toc.length > 1 && <AccordionControls deplier={tout.shell.toutDeplier} replier={tout.shell.toutReplier} />}
         <div dangerouslySetInnerHTML={{ __html: body }} />
         <p className="block-p" style={{ fontSize: "0.82rem", color: "var(--ink-muted)", marginTop: 18 }}>
-          Recommandations citées d&apos;après{" "}
-          {doc.societies.length ? doc.societies.map((s) => lib.societyNames[s] ?? s).join(", ") : "leurs auteurs"}, «&nbsp;
-          {doc.title}&nbsp;»{doc.publication_date ? ` (${doc.publication_date.slice(0, 4)})` : ""}. Elles restent
-          l&apos;œuvre et la propriété de leurs auteurs
+          {t.citees}{" "}
+          {doc.societies.length ? doc.societies.map((s) => lib.societyNames[s] ?? s).join(", ") : t.leursAuteurs}, «&nbsp;
+          {doc.title}&nbsp;»{doc.publication_date ? ` (${doc.publication_date.slice(0, 4)})` : ""}
+          {t.proprietes}
           {extra?.source_url ? (
             <>
-              {" "}; texte intégral en accès libre :{" "}
+              {t.texteIntegral}{" "}
               <a href={extra.source_url} target="_blank" rel="noopener noreferrer">
-                document source officiel
+                {t.documentSource}
               </a>
             </>
           ) : null}
-          . Synthèse indépendante, ni éditée ni validée par les sociétés savantes citées.
+          {t.independante}
         </p>
         <section className="unlock-box" id="corrections" style={{ userSelect: "text", WebkitUserSelect: "text" }}>
-          <h2 style={{ fontSize: "1rem", margin: 0 }}>Journal des corrections de cette fiche</h2>
+          <h2 style={{ fontSize: "1rem", margin: 0 }}>{t.correctionsTitre}</h2>
           {typeof r === "string" && r.startsWith("correction") && message && (
             <p style={{ color: "var(--ink)", fontWeight: 600, marginTop: 10 }}>{message}</p>
           )}
@@ -571,15 +536,15 @@ export default async function FichePage({
             <ul style={{ margin: "10px 0 0", paddingLeft: 18, fontSize: "0.9rem" }}>
               {corrections.map((c) => (
                 <li key={c.id}>
-                  {dateCorrection(c.corrected_at)} — <b>{CRITICITES[c.criticite] ?? c.criticite}</b> : {c.resume}
+                  {dateCorrection(c.corrected_at, locale)} — <b>{tf.criticites[c.criticite] ?? c.criticite}</b> : {c.resume}
                 </li>
               ))}
             </ul>
           ) : (
-            <p style={{ fontSize: "0.9rem", margin: "8px 0 0" }}>Aucune correction publiée pour cette fiche.</p>
+            <p style={{ fontSize: "0.9rem", margin: "8px 0 0" }}>{t.aucuneCorrection}</p>
           )}
           <p style={{ fontSize: "0.82rem", margin: "8px 0 0" }}>
-            <Link href="/corrections">Journal de toutes les corrections →</Link>
+            <Link href={lien("/corrections")}>{t.toutesCorrections}</Link>
           </p>
           {lib.isAdmin && (
             <details style={{ marginTop: 12 }}>
@@ -593,7 +558,7 @@ export default async function FichePage({
                     <option value="" disabled>
                       Choisir…
                     </option>
-                    {Object.entries(CRITICITES).map(([v, l]) => (
+                    {Object.entries(FICHE.fr.criticites).map(([v, l]) => (
                       <option key={v} value={v}>
                         {l}
                       </option>
@@ -615,43 +580,42 @@ export default async function FichePage({
           open={r === "signalement_vide" || r === "signalement_erreur"}
           style={{ userSelect: "text", WebkitUserSelect: "text" }}
         >
-          <summary style={{ cursor: "pointer", fontWeight: 700 }}>⚠ Signaler une erreur dans cette fiche</summary>
+          <summary style={{ cursor: "pointer", fontWeight: 700 }}>{t.signalerTitre}</summary>
           {typeof r === "string" && r.startsWith("signalement") && message && (
             <p style={{ color: "var(--ink)", fontWeight: 600, marginTop: 12 }}>{message}</p>
           )}
           <form action={reportError} style={{ marginTop: 12 }}>
             <input type="hidden" name="id" value={id} />
             <input type="hidden" name="title" value={cardTitle(doc)} />
+            <input type="hidden" name="langue" value={langue} />
             <div className="field">
-              <label htmlFor="rf-section">Section ou tableau concerné (facultatif)</label>
+              <label htmlFor="rf-section">{t.signalerSection}</label>
               <input id="rf-section" name="section" maxLength={300} />
             </div>
             <div className="field">
-              <label htmlFor="rf-description">Description de l&apos;erreur</label>
+              <label htmlFor="rf-description">{t.signalerDescription}</label>
               <textarea id="rf-description" name="description" required minLength={5} maxLength={4000} />
             </div>
-            <button className="btn btn-primary">Envoyer le signalement</button>
+            <button className="btn btn-primary">{t.signalerEnvoyer}</button>
           </form>
         </details>
         <p className="block-p is-note" style={{ marginTop: 40 }}>
-          <b>Référence de la source :</b>{" "}
+          <b>{t.referenceTitre}</b>{" "}
           {[doc.societies.join(" / ") || card?.society, `« ${doc.title} »`, card?.version ?? date]
             .filter(Boolean)
             .join(", ")}
           .{" "}
           {extra?.source_url && (
             <>
-              Texte intégral en accès libre :{" "}
+              {t.referenceIntegral}{" "}
               <a href={extra.source_url} target="_blank" rel="noopener noreferrer">
-                document officiel ↗
+                {t.documentOfficiel}
               </a>
               .{" "}
             </>
           )}
-          Les recommandations citées restent l&apos;œuvre et la propriété de leurs auteurs ; cette fiche est une
-          synthèse indépendante qui ne remplace pas le texte intégral. Correction ou retrait :{" "}
-          <a href="mailto:contact@medical-guidelines.net">contact@medical-guidelines.net</a>.{" "}
-          <Link href="/bibliotheque">← Toutes les fiches</Link>
+          {t.referenceFin} <a href="mailto:contact@medical-guidelines.net">contact@medical-guidelines.net</a>.{" "}
+          <Link href={lien("/bibliotheque")}>{t.toutesFiches}</Link>
         </p>
       </div>
     </Shell>
@@ -661,17 +625,20 @@ export default async function FichePage({
 // Fiches sans mise en page détaillée : recommandations groupées par section
 // de la source, dans le même style que les fiches détaillées. Le texte vient
 // de la base et est échappé.
-function renderRecommendations(recs: Recommendation[]) {
+function renderRecommendations(
+  recs: Recommendation[],
+  t: { recommandationsGroupe: string; gradeNonIndique: string; niveauPreuve: string; nonIndique: string },
+) {
   const toc: TocItem[] = [];
   const groups: { title: string; html: string }[] = [];
   for (const rec of recs) {
-    const section = rec.source_section ?? "Recommandations";
+    const section = rec.source_section ?? t.recommandationsGroupe;
     if (groups[groups.length - 1]?.title !== section) groups.push({ title: section, html: "" });
     const meta = [
       rec.grade?.trim()
         ? `<span class="chip ${chipClass(rec.grade)}">${escapeHtml(rec.grade)}</span>`
-        : `<span class="chip chip-neutral">Grade non indiqué</span>`,
-      `Niveau de preuve : ${rec.evidence_level?.trim() ? escapeHtml(rec.evidence_level) : "non indiqué"}`,
+        : `<span class="chip chip-neutral">${escapeHtml(t.gradeNonIndique)}</span>`,
+      escapeHtml(fmt(t.niveauPreuve, { niveau: rec.evidence_level?.trim() ? rec.evidence_level : t.nonIndique })),
       rec.source_page && `p. ${rec.source_page}`,
       escapeHtml(rec.recommendation_code),
       rec.status !== "active" && `<span class="state-pill state-draft">${escapeHtml(rec.status)}</span>`,

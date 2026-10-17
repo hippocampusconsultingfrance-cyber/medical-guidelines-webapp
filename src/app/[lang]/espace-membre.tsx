@@ -1,11 +1,14 @@
 import Link from "next/link";
 import type { SupabaseClient, User } from "@supabase/supabase-js";
-import { CATALOGUE_OUVERT } from "@/lib/catalogue";
+import { FICHE } from "@/i18n/fiche";
+import { fmt, plur, riche } from "@/i18n/format";
+import { textes } from "@/i18n/serveur";
+import { nomProfession, nomSpecialite } from "@/i18n/specialites";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
+import type { LangueOuverte } from "@/lib/langues";
 import {
   cardTitle,
   docState,
-  FRESHNESS_LABEL,
   loadLibrary,
   societyCounts,
   type Library,
@@ -15,6 +18,7 @@ import { followSociety, unfollowSociety } from "./actions";
 import LogoutButton from "./logout-button";
 import { assistantOuvertAuxMembres } from "@/lib/assistant";
 import Logo from "./logo";
+import { ESPACE } from "./textes-espace";
 
 // Espace membre (page d'accueil d'un compte connecté) : fiches mises à jour,
 // nouveautés de l'année des sociétés savantes de la spécialité, fiches les
@@ -37,17 +41,19 @@ type DocumentUpdate = {
   version_published_at: string | null;
 };
 
-const STATE_LABEL = { lock: "🔒 Bloquée", open: "Débloquée", draft: "Brouillon" };
 const STATE_CLASS = {
   lock: "bg-slate-100 text-slate-600",
   open: "bg-emerald-50 text-emerald-800",
   draft: "bg-amber-50 text-amber-800",
 };
 
-const MESSAGES: Record<string, string> = {
-  suivi: "Société suivie : vous recevrez un e-mail à chaque nouvelle recommandation qu'elle publie dans votre spécialité.",
-  suivi_retire: "Vous ne suivez plus cette société.",
-  suivi_erreur: "Le suivi n'a pas pu être enregistré. Réessayez dans un instant.",
+// Textes, langue et liens de la page, pour les blocs ci-dessous.
+type I18n = {
+  t: (typeof ESPACE)["fr"];
+  tf: (typeof FICHE)["fr"];
+  langue: LangueOuverte;
+  locale: string;
+  lien: (p: string) => string;
 };
 
 // Nombre de nouveautés affichées avant le lien vers la bibliothèque.
@@ -73,6 +79,8 @@ export default async function EspaceMembre({
   societe: string;
   r: string;
 }) {
+  const { t, langue, lien, locale } = await textes(ESPACE);
+  const i18n: I18n = { t, tf: FICHE[langue], langue, locale, lien };
   // Les deux fonctions et la colonne email_alerts viennent de la migration
   // 20260929140000 : en son absence, les blocs correspondants restent vides.
   const [lib, { data: history }, { data: sub }, { data: updates }, { data: popular }, { data: follows }, { data: prefs }] =
@@ -100,7 +108,7 @@ export default async function EspaceMembre({
       supabase.from("profiles").select("email_alerts").eq("id", user.id).maybeSingle(),
     ]);
 
-  const year = new Intl.DateTimeFormat("fr-FR", { year: "numeric", timeZone: "Europe/Paris" }).format(new Date());
+  const year = new Intl.DateTimeFormat(locale, { year: "numeric", timeZone: "Europe/Paris" }).format(new Date());
   const yearDocs = lib.docs.filter((d) => d.publication_date?.startsWith(year));
   const yearSocieties = societyCounts(yearDocs);
   const societe = yearSocieties.some(([s]) => s === societeParam) ? societeParam : "";
@@ -135,20 +143,21 @@ export default async function EspaceMembre({
   // qui ne sont plus affichés tant qu'il n'est pas réabonné.
   const canFollow = lib.premium || lib.isEditor;
   const unlockedDocs = lib.docs.filter((d) => lib.unlocked.has(d.id));
-  const newsHref = (s: string) => (s ? `/?societe=${encodeURIComponent(s)}` : "/");
-  const libraryYearHref = `/bibliotheque?annee=${year}${societe ? `&societe=${encodeURIComponent(societe)}` : ""}`;
-  const message = MESSAGES[r];
+  const newsHref = (s: string) => lien(s ? `/?societe=${encodeURIComponent(s)}` : "/");
+  const libraryYearHref = lien(`/bibliotheque?annee=${year}${societe ? `&societe=${encodeURIComponent(societe)}` : ""}`);
+  const message = t.messages[r];
+  const specialite = lib.specialty && lib.specialtySlug ? nomSpecialite(lib.specialtySlug, lib.specialty, langue) : lib.specialty;
 
   return (
     <div className="mx-auto min-h-screen max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
       <header className="flex flex-wrap items-center justify-between gap-3">
         <Logo />
-        <nav className="flex items-center gap-4" aria-label="Compte">
-          <Link href="/bibliotheque" className="text-sm font-medium text-slate-700 hover:text-slate-900">
-            Bibliothèque
+        <nav className="flex items-center gap-4" aria-label={t.navCompte}>
+          <Link href={lien("/bibliotheque")} className="text-sm font-medium text-slate-700 hover:text-slate-900">
+            {t.bibliotheque}
           </Link>
-          <Link href="/compte" className="text-sm font-medium text-slate-700 hover:text-slate-900">
-            Mon compte
+          <Link href={lien("/compte")} className="text-sm font-medium text-slate-700 hover:text-slate-900">
+            {t.monCompte}
           </Link>
           <LogoutButton />
         </nav>
@@ -156,72 +165,73 @@ export default async function EspaceMembre({
 
       <section className="mt-8 rounded-2xl bg-gradient-to-br from-[#0E3A78] to-[#1C5FA8] px-5 py-7 text-white sm:px-8">
         <h1 className="text-2xl font-bold sm:text-3xl">
-          Bienvenue{profile?.prenom ? `, ${profile.prenom.charAt(0).toLocaleUpperCase("fr") + profile.prenom.slice(1)}` : ""}
+          {t.bienvenue}
+          {profile?.prenom ? `, ${profile.prenom.charAt(0).toLocaleUpperCase(locale) + profile.prenom.slice(1)}` : ""}
         </h1>
         <p className="mt-1 text-sm text-sky-100 sm:text-base">
-          {[profile?.profession, lib.specialty && lib.specialty !== profile?.profession ? `spécialité consultée : ${lib.specialty}` : null]
+          {[
+            profile?.profession ? nomProfession(profile.profession, langue) : null,
+            lib.specialty && lib.specialty !== profile?.profession ? fmt(t.specialiteConsultee, { specialite: specialite ?? "" }) : null,
+          ]
             .filter(Boolean)
             .join(" · ")}
         </p>
-        <form action="/bibliotheque" role="search" className="mt-6 flex max-w-2xl flex-col gap-2 sm:flex-row">
+        <form action={lien("/bibliotheque")} role="search" className="mt-6 flex max-w-2xl flex-col gap-2 sm:flex-row">
           <label className="flex flex-1 items-center gap-2 rounded-lg bg-white px-3 text-slate-800 focus-within:ring-2 focus-within:ring-[#3AA8E0]">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 shrink-0 text-slate-400" aria-hidden="true">
               <circle cx="11" cy="11" r="7" />
               <path d="m20 20-3.5-3.5" />
             </svg>
-            <span className="sr-only">Rechercher une fiche</span>
+            <span className="sr-only">{t.rechercheLibelle}</span>
             <input
               name="q"
               type="search"
               maxLength={100}
-              placeholder="Rechercher une recommandation (sepsis, AOD, intubation…)"
+              placeholder={t.recherchePlaceholder}
               className="w-full bg-transparent py-3 text-sm outline-none placeholder:text-slate-400 sm:text-base"
             />
           </label>
           <button className="rounded-lg bg-[#2BB5A6] px-5 py-3 font-semibold text-white hover:bg-[#23998C]">
-            Rechercher
+            {t.rechercher}
           </button>
         </form>
-        <dl className="mt-6 grid grid-cols-3 gap-3 text-center sm:max-w-xl sm:text-left">
-          <Stat value={lib.docs.length} label={lib.docs.length > 1 ? "fiches disponibles" : "fiche disponible"} />
-          <Stat value={yearDocs.length} label={`nouveauté${yearDocs.length > 1 ? "s" : ""} ${year}`} />
-          <Stat value={societies.length} label={societies.length > 1 ? "sociétés savantes" : "société savante"} />
+        <dl className="mt-6 grid grid-cols-3 gap-3 text-center sm:max-w-xl sm:text-start">
+          <Stat value={lib.docs.length} label={plur(locale, lib.docs.length, t.statFiches)} />
+          <Stat value={yearDocs.length} label={plur(locale, yearDocs.length, t.statNouveautes, { annee: year })} />
+          <Stat value={societies.length} label={plur(locale, societies.length, t.statSocietes)} />
         </dl>
       </section>
 
       {lib.isEditor && (
         <p className="mt-4 rounded-lg bg-amber-50 px-4 py-3 text-sm text-amber-900">
-          Compte relecteur : la bibliothèque et cette page affichent aussi les brouillons, avec le
-          bouton de publication.
+          {t.relecteur}
         </p>
       )}
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="space-y-10">
           {updates && updates.length > 0 && (
-            <UpdatesBlock updates={updates as DocumentUpdate[]} byId={byId} />
+            <UpdatesBlock updates={updates as DocumentUpdate[]} byId={byId} i18n={i18n} />
           )}
 
           <section id="nouveautes" aria-labelledby="nouveautes-titre" className="scroll-mt-6">
             <div className="flex flex-wrap items-end justify-between gap-2">
               <div>
                 <h2 id="nouveautes-titre" className="text-xl font-bold text-[#0E3A78]">
-                  {yearDocs.length ? `Nouveautés ${year}` : "Dernières recommandations"}
+                  {yearDocs.length ? fmt(t.nouveautes, { annee: year }) : t.dernieres}
                 </h2>
                 <p className="mt-1 text-sm text-slate-600">
-                  {yearDocs.length
-                    ? `Recommandations publiées en ${year} par les sociétés savantes de votre spécialité.`
-                    : `Aucune recommandation publiée en ${year} pour votre spécialité à ce jour : voici les plus récentes.`}
+                  {fmt(yearDocs.length ? t.nouveautesTexte : t.dernieresTexte, { annee: year })}
                 </p>
               </div>
-              <Link href="/bibliotheque" className="text-sm font-semibold text-[#1A74A6] hover:underline">
-                Toute la bibliothèque →
+              <Link href={lien("/bibliotheque")} className="text-sm font-semibold text-[#1A74A6] hover:underline">
+                {t.toute}
               </Link>
             </div>
 
             {yearSocieties.length > 1 && (
-              <nav className="mt-4 flex flex-wrap items-start gap-2" aria-label={`Filtrer les nouveautés ${year} par société savante`}>
-                <SocietyChip href={newsHref("")} active={!societe} label="Toutes" count={yearDocs.length} />
+              <nav className="mt-4 flex flex-wrap items-start gap-2" aria-label={fmt(t.filtrer, { annee: year })}>
+                <SocietyChip href={newsHref("")} active={!societe} label={t.toutes} count={yearDocs.length} />
                 {yearSocieties.slice(0, CHIP_LIMIT).map(([s, n]) => (
                   <SocietyChip key={s} href={newsHref(s)} active={societe === s} label={s} title={lib.societyNames[s]} count={n} />
                 ))}
@@ -231,8 +241,8 @@ export default async function EspaceMembre({
                     open={yearSocieties.slice(CHIP_LIMIT).some(([s]) => s === societe)}
                   >
                     <summary className="inline-block cursor-pointer list-none rounded-full border border-dashed border-slate-300 px-3 py-1 text-sm font-semibold text-slate-600 hover:border-[#1A74A6] hover:text-[#1A74A6] [&::-webkit-details-marker]:hidden">
-                      <span className="group-open:hidden">+ {yearSocieties.length - CHIP_LIMIT} autres sociétés</span>
-                      <span className="hidden group-open:inline">Moins de sociétés</span>
+                      <span className="group-open:hidden">{plur(locale, yearSocieties.length - CHIP_LIMIT, t.autresSocietes)}</span>
+                      <span className="hidden group-open:inline">{t.moinsSocietes}</span>
                     </summary>
                     <span className="mt-2 flex flex-wrap gap-2">
                       {yearSocieties.slice(CHIP_LIMIT).map(([s, n]) => (
@@ -246,14 +256,13 @@ export default async function EspaceMembre({
 
             {news.length === 0 && latest.length === 0 ? (
               <p className="mt-6 rounded-xl border border-dashed border-slate-300 p-6 text-sm text-slate-600">
-                Aucune fiche n&apos;est encore publiée pour votre spécialité. Elles apparaîtront ici au fil
-                de leur validation par notre équipe médicale.
+                {t.aucuneFiche}
               </p>
             ) : (
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {(yearDocs.length ? news.slice(0, NEWS_LIMIT) : latest).map((d) => (
                   <li key={d.id}>
-                    <DocCard doc={d} lib={lib} />
+                    <DocCard doc={d} lib={lib} i18n={i18n} />
                   </li>
                 ))}
               </ul>
@@ -261,8 +270,7 @@ export default async function EspaceMembre({
             {news.length > NEWS_LIMIT && (
               <p className="mt-4 text-sm">
                 <Link href={libraryYearHref} className="font-semibold text-[#1A74A6] hover:underline">
-                  Voir les {news.length} nouveautés {year}
-                  {societe ? ` ${societe}` : ""} dans la bibliothèque →
+                  {fmt(t.voirNouveautes, { n: news.length, annee: year, societe: societe ? ` ${societe}` : "" })}
                 </Link>
               </p>
             )}
@@ -271,19 +279,15 @@ export default async function EspaceMembre({
           {popularDocs.length > 0 && (
             <section aria-labelledby="populaires-titre">
               <h2 id="populaires-titre" className="text-xl font-bold text-[#0E3A78]">
-                Les plus consultées de votre spécialité
+                {t.populaires}
               </h2>
-              <p className="mt-1 text-sm text-slate-600">
-                {lib.premium || lib.isEditor
-                  ? "Les fiches les plus lues par les membres ces trois derniers mois."
-                  : "Les fiches les plus lues par les membres ces trois derniers mois : de quoi vous aider à choisir celles à débloquer avec vos crédits."}
-              </p>
+              <p className="mt-1 text-sm text-slate-600">{lib.premium || lib.isEditor ? t.populairesPremium : t.populairesCredits}</p>
               <ol className="mt-4 divide-y divide-slate-100 rounded-xl border border-slate-200">
                 {popularDocs.map((d, i) => {
                   const state = docState(lib, d.id);
                   return (
                     <li key={d.id}>
-                      <Link href={`/bibliotheque/${d.id}`} className="group flex items-center gap-4 px-4 py-3">
+                      <Link href={lien(`/bibliotheque/${d.id}`)} className="group flex items-center gap-4 px-4 py-3">
                         <span className="w-6 shrink-0 text-lg font-bold text-[#177E73]" aria-hidden="true">
                           {i + 1}
                         </span>
@@ -292,11 +296,11 @@ export default async function EspaceMembre({
                             {cardTitle(d)}
                           </span>
                           <span className="block text-xs text-slate-500">
-                            {[d.societies.join(" · "), formatDate(d.publication_date)].filter(Boolean).join(" — ")}
+                            {[d.societies.join(" · "), formatDate(d.publication_date, locale)].filter(Boolean).join(" — ")}
                           </span>
                         </span>
                         <span className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${STATE_CLASS[state]}`}>
-                          {STATE_LABEL[state]}
+                          {i18n.tf.etats[state]}
                         </span>
                       </Link>
                     </li>
@@ -308,22 +312,22 @@ export default async function EspaceMembre({
         </div>
 
         <aside className="space-y-6">
-          <AccessCard lib={lib} unlockedDocs={unlockedDocs} sub={sub} />
+          <AccessCard lib={lib} unlockedDocs={unlockedDocs} sub={sub} i18n={i18n} />
 
           <section aria-labelledby="favoris-titre" className={card}>
             <h2 id="favoris-titre" className="font-bold text-[#0E3A78]">
-              ★ Mes favoris
+              {t.favoris}
             </h2>
             {favorites.length ? (
               <ul className="mt-3 divide-y divide-slate-100">
                 {favorites.slice(0, 8).map((d) => (
                   <li key={d.id}>
-                    <Link href={`/bibliotheque/${d.id}`} className="group flex items-baseline justify-between gap-3 py-2">
+                    <Link href={lien(`/bibliotheque/${d.id}`)} className="group flex items-baseline justify-between gap-3 py-2">
                       <span className="text-sm font-medium text-slate-800 group-hover:text-[#1A74A6] group-hover:underline">
                         {cardTitle(d)}
                       </span>
                       {docState(lib, d.id) === "lock" && (
-                        <span className="shrink-0 text-xs" aria-label="Fiche bloquée">
+                        <span className="shrink-0 text-xs" aria-label={t.ficheBloquee}>
                           🔒
                         </span>
                       )}
@@ -332,72 +336,67 @@ export default async function EspaceMembre({
                 ))}
               </ul>
             ) : (
-              <p className="mt-2 text-sm text-slate-600">
-                Ajoutez une fiche à vos favoris avec le bouton « ☆ Ajouter aux favoris » de sa page :
-                elle apparaîtra ici et dans la bibliothèque.
-              </p>
+              <p className="mt-2 text-sm text-slate-600">{t.favorisVide}</p>
             )}
             {favorites.length > 8 && (
-              <Link href="/bibliotheque" className="mt-2 inline-block text-xs font-semibold text-[#1A74A6] hover:underline">
-                Tous mes favoris dans la bibliothèque →
+              <Link href={lien("/bibliotheque")} className="mt-2 inline-block text-xs font-semibold text-[#1A74A6] hover:underline">
+                {t.tousFavoris}
               </Link>
             )}
           </section>
 
           <section aria-labelledby="reprendre-titre" className={card}>
             <h2 id="reprendre-titre" className="font-bold text-[#0E3A78]">
-              Reprendre la lecture
+              {t.reprendre}
             </h2>
             {recent.length ? (
               <ul className="mt-3 divide-y divide-slate-100">
                 {recent.map(({ doc, viewedAt }) => (
                   <li key={doc.id}>
-                    <Link href={`/bibliotheque/${doc.id}`} className="group flex items-baseline justify-between gap-3 py-2">
+                    <Link href={lien(`/bibliotheque/${doc.id}`)} className="group flex items-baseline justify-between gap-3 py-2">
                       <span className="text-sm font-medium text-slate-800 group-hover:text-[#1A74A6] group-hover:underline">
                         {cardTitle(doc)}
                       </span>
-                      <span className="shrink-0 text-xs text-slate-500">{viewedLabel(viewedAt)}</span>
+                      <span className="shrink-0 text-xs text-slate-500">{viewedLabel(viewedAt, i18n)}</span>
                     </Link>
                   </li>
                 ))}
               </ul>
             ) : (
-              <p className="mt-2 text-sm text-slate-600">
-                Les fiches que vous ouvrez apparaîtront ici, pour y revenir en un clic.
-              </p>
+              <p className="mt-2 text-sm text-slate-600">{t.reprendreVide}</p>
             )}
           </section>
 
           {societies.length > 0 && (
             <section id="alertes" aria-labelledby="societes-titre" className={`${card} scroll-mt-6`}>
               <h2 id="societes-titre" className="font-bold text-[#0E3A78]">
-                Sociétés savantes de votre spécialité
+                {t.societesTitre}
               </h2>
               <p className="mt-1 text-xs text-slate-500">
-                Nombre de fiches co-signées, dans la bibliothèque.
-                {canFollow && followed.size > 0 ? " 🔔 : société suivie." : ""}
+                {t.societesTexte}
+                {canFollow && followed.size > 0 ? t.societeSuivie : ""}
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {societies.slice(0, 12).map(([s, n]) => (
                   <Link
                     key={s}
-                    href={`/bibliotheque?societe=${encodeURIComponent(s)}`}
+                    href={lien(`/bibliotheque?societe=${encodeURIComponent(s)}`)}
                     title={lib.societyNames[s]}
                     className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-700 hover:border-[#1A74A6] hover:text-[#1A74A6]"
                   >
-                    {canFollow && followed.has(s) && <span aria-label="suivie">🔔 </span>}
+                    {canFollow && followed.has(s) && <span aria-label={t.suivie}>🔔 </span>}
                     {s} <span className="font-normal text-slate-500">{n}</span>
                   </Link>
                 ))}
               </div>
               {societies.length > 12 && (
-                <Link href="/bibliotheque" className="mt-3 inline-block text-xs font-semibold text-[#1A74A6] hover:underline">
-                  Et {societies.length - 12} autres dans la bibliothèque →
+                <Link href={lien("/bibliotheque")} className="mt-3 inline-block text-xs font-semibold text-[#1A74A6] hover:underline">
+                  {plur(locale, societies.length - 12, t.autresDansBibliotheque)}
                 </Link>
               )}
 
               <div className="mt-5 border-t border-slate-100 pt-4">
-                <h3 className="text-sm font-bold text-slate-800">Alertes e-mail</h3>
+                <h3 className="text-sm font-bold text-slate-800">{t.alertesTitre}</h3>
                 {message && (
                   <p role="status" className="mt-2 rounded-md bg-[#EEF6FB] px-3 py-2 text-xs font-medium text-[#0E3A78]">
                     {message}
@@ -405,32 +404,32 @@ export default async function EspaceMembre({
                 )}
                 {canFollow ? (
                   <>
-                    <p className="mt-1 text-xs text-slate-600">
-                      Un e-mail par jour au plus, quand une société suivie publie une recommandation
-                      dans votre spécialité ou qu&apos;une de vos fiches est mise à jour.
-                    </p>
+                    <p className="mt-1 text-xs text-slate-600">{t.alertesTexte}</p>
                     {emailAlerts === false && (
                       <p className="mt-2 text-xs font-medium text-amber-800">
-                        Vos alertes e-mail sont désactivées :{" "}
-                        <Link href="/compte#alertes" className="underline">
-                          les réactiver dans Mon compte
-                        </Link>
-                        .
+                        {riche(t.alertesDesactivees, {
+                          compte: (c) => (
+                            <Link href={lien("/compte#alertes")} className="underline">
+                              {c}
+                            </Link>
+                          ),
+                        })}
                       </p>
                     )}
                     {followed.size > 0 && (
-                      <ul className="mt-3 flex flex-wrap gap-2" aria-label="Sociétés suivies">
+                      <ul className="mt-3 flex flex-wrap gap-2" aria-label={t.suiviesAria}>
                         {[...followed].sort().map((s) => (
                           <li key={s}>
                             <form action={unfollowSociety} className="inline-flex">
                               <input type="hidden" name="societe" value={s} />
                               <input type="hidden" name="retour" value="/" />
+                              <input type="hidden" name="langue" value={langue} />
                               <button
-                                title={`Ne plus suivre ${lib.societyNames[s] ?? s}`}
+                                title={fmt(t.nePlusSuivre, { societe: lib.societyNames[s] ?? s })}
                                 className="rounded-full bg-[#EEF6FB] px-3 py-1 text-xs font-semibold text-[#0E3A78] hover:bg-red-50 hover:text-red-700"
                               >
                                 🔔 {s} <span aria-hidden="true">×</span>
-                                <span className="sr-only">ne plus suivre</span>
+                                <span className="sr-only">{t.nePlusSuivreCourt}</span>
                               </button>
                             </form>
                           </li>
@@ -440,8 +439,9 @@ export default async function EspaceMembre({
                     {societies.some(([s]) => !followed.has(s)) && (
                       <form action={followSociety} className="mt-3 flex gap-2">
                         <input type="hidden" name="retour" value="/" />
+                        <input type="hidden" name="langue" value={langue} />
                         <label className="sr-only" htmlFor="suivre-societe">
-                          Société à suivre
+                          {t.societeASuivre}
                         </label>
                         <select
                           id="suivre-societe"
@@ -451,7 +451,7 @@ export default async function EspaceMembre({
                           className="min-w-0 flex-1 rounded-md border border-slate-300 bg-white px-2 py-1.5 text-sm"
                         >
                           <option value="" disabled>
-                            Suivre une société…
+                            {t.suivreUne}
                           </option>
                           {societies
                             .filter(([s]) => !followed.has(s))
@@ -462,19 +462,20 @@ export default async function EspaceMembre({
                             ))}
                         </select>
                         <button className="shrink-0 rounded-md bg-[#0E3A78] px-3 py-1.5 text-sm font-semibold text-white hover:bg-[#0B2F63]">
-                          Suivre
+                          {t.suivre}
                         </button>
                       </form>
                     )}
                   </>
                 ) : (
                   <p className="mt-1 text-xs text-slate-600">
-                    Suivez les sociétés de votre choix et recevez un e-mail à chaque nouvelle
-                    recommandation, ainsi qu&apos;à chaque mise à jour de vos fiches : inclus dans{" "}
-                    <Link href="/abonnement" className="font-semibold text-[#1A74A6] underline">
-                      l&apos;abonnement PREMIUM
-                    </Link>
-                    .
+                    {riche(t.alertesPremium, {
+                      abonnement: (c) => (
+                        <Link href={lien("/abonnement")} className="font-semibold text-[#1A74A6] underline">
+                          {c}
+                        </Link>
+                      ),
+                    })}
                   </p>
                 )}
               </div>
@@ -525,27 +526,27 @@ function SocietyChip({
   );
 }
 
-function DocCard({ doc, lib }: { doc: LibraryDoc; lib: Library }) {
+function DocCard({ doc, lib, i18n }: { doc: LibraryDoc; lib: Library; i18n: I18n }) {
   const state = docState(lib, doc.id);
   const c = doc.card_json;
   return (
     <Link
-      href={`/bibliotheque/${doc.id}`}
+      href={i18n.lien(`/bibliotheque/${doc.id}`)}
       className="flex h-full flex-col rounded-xl border border-slate-200 p-4 transition hover:border-[#1A74A6] hover:shadow-sm"
     >
       <span className="flex items-center justify-between gap-2">
         <span className="text-xs font-semibold uppercase tracking-wide text-[#1A74A6]">
-          {doc.doc_type ?? "Recommandation"}
-          {doc.publication_date ? ` · ${formatDate(doc.publication_date)}` : ""}
+          {doc.doc_type ?? i18n.tf.recommandation}
+          {doc.publication_date ? ` · ${formatDate(doc.publication_date, i18n.locale)}` : ""}
         </span>
         <span className="flex shrink-0 items-center gap-1.5">
           {lib.favorite.has(doc.id) && (
-            <span className="text-sm text-amber-600" aria-label="Dans mes favoris">
+            <span className="text-sm text-amber-600" aria-label={i18n.t.favoris}>
               ★
             </span>
           )}
           <span className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATE_CLASS[state]}`}>
-            {STATE_LABEL[state]}
+            {i18n.tf.etats[state]}
           </span>
         </span>
       </span>
@@ -571,30 +572,29 @@ function DocCard({ doc, lib }: { doc: LibraryDoc; lib: Library }) {
 // Fiches débloquées, favorites ou consultées qui ont changé : nouvelle
 // version depuis la dernière visite, révision en cours, remplacement ou
 // retrait (une fiche retirée n'est plus consultable : pas de lien).
-function UpdatesBlock({ updates, byId }: { updates: DocumentUpdate[]; byId: Map<string, LibraryDoc> }) {
+function UpdatesBlock({ updates, byId, i18n }: { updates: DocumentUpdate[]; byId: Map<string, LibraryDoc>; i18n: I18n }) {
+  const { t, tf, lien } = i18n;
   return (
     <section aria-labelledby="maj-titre" className="rounded-2xl border border-amber-200 bg-amber-50 p-5">
       <h2 id="maj-titre" className="text-lg font-bold text-amber-900">
-        Vos fiches ont été mises à jour
+        {t.majTitre}
       </h2>
-      <p className="mt-1 text-sm text-amber-900/80">
-        Fiches que vous avez débloquées, mises en favori ou consultées.
-      </p>
+      <p className="mt-1 text-sm text-amber-900/80">{t.majTexte}</p>
       <ul className="mt-3 space-y-2">
         {updates.map((u) => {
           const doc = byId.get(u.document_id);
           const replacement = u.superseded_by ? byId.get(u.superseded_by) : undefined;
           const detail =
             u.freshness_status === "retiree"
-              ? "Recommandation retirée par la société savante : la fiche n'est plus consultable."
+              ? t.majRetiree
               : u.freshness_status === "remplacee"
-                ? "Recommandation remplacée par un texte plus récent."
+                ? t.majRemplacee
                 : u.freshness_status === "revision_detectee"
-                  ? "Nouvelle version de la source détectée : fiche en cours de révision."
+                  ? t.majRevision
                   : [
-                      u.version_label && `Version ${u.version_label}`,
-                      u.change_type && `modification ${u.change_type}`,
-                      u.version_published_at && `publiée le ${formatDateTime(u.version_published_at)}`,
+                      u.version_label && fmt(t.majVersion, { version: u.version_label }),
+                      u.change_type && fmt(t.majModification, { type: tf.criticites[u.change_type]?.toLowerCase() ?? u.change_type }),
+                      u.version_published_at && fmt(t.majPubliee, { date: formatDateTime(u.version_published_at, i18n.locale) }),
                     ]
                       .filter(Boolean)
                       .join(", ") + (u.diff_summary ? ` — ${u.diff_summary}` : "");
@@ -602,20 +602,20 @@ function UpdatesBlock({ updates, byId }: { updates: DocumentUpdate[]; byId: Map<
             <li key={u.document_id} className="rounded-lg bg-white px-4 py-3">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 {doc ? (
-                  <Link href={`/bibliotheque/${doc.id}`} className="font-semibold text-slate-900 hover:text-[#1A74A6] hover:underline">
+                  <Link href={lien(`/bibliotheque/${doc.id}`)} className="font-semibold text-slate-900 hover:text-[#1A74A6] hover:underline">
                     {u.title}
                   </Link>
                 ) : (
                   <span className="font-semibold text-slate-900">{u.title}</span>
                 )}
                 <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-900">
-                  {FRESHNESS_LABEL[u.freshness_status] ?? "Mise à jour"}
+                  {tf.fraicheur[u.freshness_status] ?? t.majDefaut}
                 </span>
               </div>
               <p className="mt-1 text-sm text-slate-600">{detail}</p>
               {replacement && (
-                <Link href={`/bibliotheque/${replacement.id}`} className="mt-1 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
-                  Nouvelle fiche : {cardTitle(replacement)} →
+                <Link href={lien(`/bibliotheque/${replacement.id}`)} className="mt-1 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
+                  {fmt(t.nouvelleFiche, { titre: cardTitle(replacement) })}
                 </Link>
               )}
             </li>
@@ -630,36 +630,36 @@ function AccessCard({
   lib,
   unlockedDocs,
   sub,
+  i18n,
 }: {
   lib: Library;
   unlockedDocs: LibraryDoc[];
   sub: { current_period_end: string | null; canceled_at: string | null } | null;
+  i18n: I18n;
 }) {
+  const { t, tf, lien, locale } = i18n;
   if (lib.isEditor) return null;
 
   if (lib.premium) {
-    const fin = sub?.current_period_end ? formatDateTime(sub.current_period_end, true) : null;
+    const fin = sub?.current_period_end ? formatDateTime(sub.current_period_end, locale, true) : null;
     return (
       <section aria-labelledby="acces-titre" className="rounded-2xl border-2 border-[#2BB5A6] p-5">
         <h2 id="acces-titre" className="font-bold text-[#0E3A78]">
-          Abonnement PREMIUM actif
+          {t.premiumTitre}
         </h2>
         <p className="mt-1 text-sm text-slate-600">
-          Toutes les fiches de votre spécialité sont ouvertes
-          {fin ? (sub?.canceled_at ? `, jusqu'au ${fin}.` : ` ; renouvellement le ${fin}.`) : "."}
+          {t.premiumTexte}
+          {fin ? fmt(sub?.canceled_at ? t.premiumJusquau : t.premiumRenouvellement, { date: fin }) : "."}
         </p>
-        <Link href="/abonnement" className="mt-3 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
-          Gérer mon abonnement →
+        <Link href={lien("/abonnement")} className="mt-3 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
+          {t.gerer}
         </Link>
         {assistantOuvertAuxMembres() && (
           <div className="mt-4 border-t border-slate-200 pt-4">
-            <h3 className="font-semibold text-[#0E3A78]">Assistant de recherche (bêta)</h3>
-            <p className="mt-1 text-sm text-slate-600">
-              Posez une question en langage courant : l&apos;assistant retrouve les passages exacts des fiches qui y
-              répondent, sans conseil médical.
-            </p>
-            <Link href="/assistant" className="mt-2 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
-              Poser une question →
+            <h3 className="font-semibold text-[#0E3A78]">{t.assistantTitre}</h3>
+            <p className="mt-1 text-sm text-slate-600">{t.assistantTexte}</p>
+            <Link href={lien("/assistant")} className="mt-2 inline-block text-sm font-semibold text-[#1A74A6] hover:underline">
+              {t.assistantLien}
             </Link>
           </div>
         )}
@@ -672,7 +672,7 @@ function AccessCard({
   return (
     <section aria-labelledby="acces-titre" className={card}>
       <h2 id="acces-titre" className="font-bold text-[#0E3A78]">
-        Mes crédits
+        {t.creditsTitre}
       </h2>
       <div className="mt-3 flex items-center gap-1.5" aria-hidden="true">
         {Array.from({ length: FREE_QUOTA }, (_, i) => (
@@ -680,18 +680,15 @@ function AccessCard({
         ))}
       </div>
       <p className="mt-2 text-sm text-slate-700">
-        <b>
-          {remaining} crédit{remaining > 1 ? "s" : ""} restant{remaining > 1 ? "s" : ""}
-        </b>{" "}
-        sur {FREE_QUOTA}. Un crédit débloque une fiche, définitivement.
+        <b>{plur(locale, remaining, t.creditsRestants)}</b> {fmt(t.creditsSur, { quota: FREE_QUOTA })}
       </p>
       {unlockedDocs.length > 0 && (
         <>
-          <h3 className="mt-4 text-xs font-semibold uppercase tracking-wide text-slate-500">Mes fiches débloquées</h3>
+          <h3 className="mt-4 text-xs font-semibold uppercase tracking-wide text-slate-500">{t.debloquees}</h3>
           <ul className="mt-1 space-y-1">
             {unlockedDocs.map((d) => (
               <li key={d.id}>
-                <Link href={`/bibliotheque/${d.id}`} className="text-sm text-slate-800 hover:text-[#1A74A6] hover:underline">
+                <Link href={lien(`/bibliotheque/${d.id}`)} className="text-sm text-slate-800 hover:text-[#1A74A6] hover:underline">
                   {cardTitle(d)}
                 </Link>
               </li>
@@ -700,18 +697,20 @@ function AccessCard({
         </>
       )}
       {lib.catalogueOuvert ? (
-        <p className="mt-4 rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">{CATALOGUE_OUVERT}</p>
+        <p className="mt-4 rounded-lg bg-slate-50 p-3 text-xs leading-relaxed text-slate-600">
+          {fmt(tf.catalogueOuvert, { quota: FREE_QUOTA })}
+        </p>
       ) : (
-        <Link href="/abonnement" className={`${primaryBtn} mt-4 w-full text-sm`}>
-          Passer à PREMIUM · 50 € / an
+        <Link href={lien("/abonnement")} className={`${primaryBtn} mt-4 w-full text-sm`}>
+          {t.passerPremium}
         </Link>
       )}
     </section>
   );
 }
 
-function formatDateTime(iso: string, year = false) {
-  return new Date(iso).toLocaleDateString("fr-FR", {
+function formatDateTime(iso: string, locale: string, year = false) {
+  return new Date(iso).toLocaleDateString(locale, {
     day: "numeric",
     month: "long",
     ...(year ? { year: "numeric" } : {}),
@@ -720,11 +719,11 @@ function formatDateTime(iso: string, year = false) {
 }
 
 // « aujourd'hui », « hier », « il y a 3 j », puis la date (fuseau de Paris).
-function viewedLabel(iso: string) {
+function viewedLabel(iso: string, { t, locale }: I18n) {
   const day = (d: Date) => d.toLocaleDateString("sv-SE", { timeZone: "Europe/Paris" });
   const diff = Math.round((Date.parse(day(new Date())) - Date.parse(day(new Date(iso)))) / 86_400_000);
-  if (diff <= 0) return "aujourd'hui";
-  if (diff === 1) return "hier";
-  if (diff < 7) return `il y a ${diff} j`;
-  return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "short", timeZone: "Europe/Paris" });
+  if (diff <= 0) return t.aujourdhui;
+  if (diff === 1) return t.hier;
+  if (diff < 7) return fmt(t.ilYa, { n: diff });
+  return new Date(iso).toLocaleDateString(locale, { day: "numeric", month: "short", timeZone: "Europe/Paris" });
 }

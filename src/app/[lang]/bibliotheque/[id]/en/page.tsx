@@ -143,7 +143,7 @@ export default async function TraductionPage({ params, searchParams }: PageProps
       )}
 
       <h2 className="block-section">Fiche traduite</h2>
-      {toc.length > 1 && <AccordionControls />}
+      {toc.length > 1 && <AccordionControls deplier="Tout déplier" replier="Tout replier" />}
       <div lang="en" dangerouslySetInnerHTML={{ __html: html || `<p class="block-p">${escapeHtml("(contenu vide)")}</p>` }} />
 
       <form action={reviewTranslation} className="unlock-box" id="relecture" style={{ marginTop: 28 }}>

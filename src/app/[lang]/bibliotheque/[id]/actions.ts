@@ -2,41 +2,48 @@
 
 import { revalidateTag } from "next/cache";
 import { redirect } from "next/navigation";
+import { langueDuFormulaire } from "@/i18n/serveur";
+import { chemin } from "@/lib/langues";
 import { signerRelecture } from "@/lib/relecture";
 import { FICHES_PUBLIQUES } from "../../recommandations/data";
 import { createClient } from "@/lib/supabase/server";
 
 const UUID = /^[0-9a-f-]{36}$/i;
 
+// Retour à la page dans la langue du formulaire (champ caché « langue »).
+function aller(formData: FormData, p: string): never {
+  redirect(chemin(langueDuFormulaire(formData), p));
+}
+
 // Le quota est vérifié et décompté par la base (unlock_document) : cette
 // action ne fait que transmettre la demande confirmée par l'utilisateur.
 export async function unlockDocument(formData: FormData) {
   const id = String(formData.get("id") ?? "");
-  if (!UUID.test(id)) redirect("/bibliotheque");
+  if (!UUID.test(id)) aller(formData, "/bibliotheque");
 
   const supabase = await createClient();
   const { data, error } = await supabase.rpc("unlock_document", { doc_id: id });
   const status = error ? "erreur" : (data as { status?: string } | null)?.status ?? "erreur";
-  redirect(`/bibliotheque/${id}?r=${encodeURIComponent(status)}`);
+  aller(formData, `/bibliotheque/${id}?r=${encodeURIComponent(status)}`);
 }
 
 // Ajout ou retrait d'une fiche des favoris (RLS : chacun ne gère que les
 // siens). Un double envoi bute sur la contrainte d'unicité, sans effet.
 export async function toggleFavorite(formData: FormData) {
   const id = String(formData.get("id") ?? "");
-  if (!UUID.test(id)) redirect("/bibliotheque");
+  if (!UUID.test(id)) aller(formData, "/bibliotheque");
 
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) aller(formData, "/connexion");
   if (formData.get("favori") === "1") {
     await supabase.from("favorites").insert({ user_id: user.id, document_id: id });
   } else {
     await supabase.from("favorites").delete().eq("user_id", user.id).eq("document_id", id);
   }
-  redirect(`/bibliotheque/${id}`);
+  aller(formData, `/bibliotheque/${id}`);
 }
 
 // Publication ou dépublication d'une fiche. Le droit (validateur ou admin)
@@ -99,21 +106,21 @@ export async function publishAll(formData: FormData) {
 // membre connecté) et le statut initial « nouveau » (RLS).
 export async function reportError(formData: FormData) {
   const id = String(formData.get("id") ?? "");
-  if (!UUID.test(id)) redirect("/bibliotheque");
+  if (!UUID.test(id)) aller(formData, "/bibliotheque");
   const description = String(formData.get("description") ?? "").trim().slice(0, 4000);
   const section = String(formData.get("section") ?? "").trim().slice(0, 300) || null;
   const title = String(formData.get("title") ?? "").trim().slice(0, 300) || null;
-  if (description.length < 5) redirect(`/bibliotheque/${id}?r=signalement_vide#signaler`);
+  if (description.length < 5) aller(formData, `/bibliotheque/${id}?r=signalement_vide#signaler`);
 
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) aller(formData, "/connexion");
   const { error } = await supabase
     .from("error_reports")
     .insert({ user_id: user.id, doc: id, doc_title: title, section, description });
-  redirect(`/bibliotheque/${id}?r=${error ? "signalement_erreur" : "signalement_envoye"}#signaler`);
+  aller(formData, `/bibliotheque/${id}?r=${error ? "signalement_erreur" : "signalement_envoye"}#signaler`);
 }
 
 // Décision de l'administrateur sur un signalement (RLS : administrateurs).

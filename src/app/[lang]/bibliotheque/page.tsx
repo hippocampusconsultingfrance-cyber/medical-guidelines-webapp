@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { FICHE } from "@/i18n/fiche";
+import { fmt, plur, riche } from "@/i18n/format";
+import { textes } from "@/i18n/serveur";
+import { nomSpecialite } from "@/i18n/specialites";
 import { createClient } from "@/lib/supabase/server";
-import { CATALOGUE_OUVERT } from "@/lib/catalogue";
 import { formatDate, FREE_QUOTA } from "@/lib/fiches";
-import { cardTitle, docState, FRESHNESS_LABEL, loadLibrary, societyCounts } from "./data";
+import { cardTitle, docState, loadLibrary, societyCounts } from "./data";
 import Shell from "./shell";
+import { BIBLIOTHEQUE } from "./textes";
 import { publishAll } from "./[id]/actions";
 
-export const metadata: Metadata = {
-  title: "Bibliothèque — Medical Guidelines",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await textes(BIBLIOTHEQUE);
+  return { title: t.catalogue.titreMeta };
+}
 
-const STATE_LABEL = { lock: "🔒 Bloquée", open: "Débloquée", draft: "Brouillon" };
 const STATE_CLASS = { lock: "state-lock", open: "state-open", draft: "state-draft" };
 
 // Catalogue des fiches de la spécialité du compte, de la plus récente à la
@@ -22,11 +26,14 @@ const STATE_CLASS = { lock: "state-lock", open: "state-open", draft: "state-draf
 export default async function BibliothequePage({
   searchParams,
 }: PageProps<"/[lang]/bibliotheque">) {
+  const { t: tout, langue, lien, locale } = await textes(BIBLIOTHEQUE);
+  const t = tout.catalogue;
+  const tf = FICHE[langue];
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) redirect("/connexion");
+  if (!user) redirect(lien("/connexion"));
 
   const lib = await loadLibrary(supabase, user.id);
   const params = await searchParams;
@@ -68,7 +75,7 @@ export default async function BibliothequePage({
     if (annee) p.set("annee", annee);
     if (s) p.set("societe", s);
     const qs = p.toString();
-    return qs ? `/bibliotheque?${qs}` : "/bibliotheque";
+    return lien(qs ? `/bibliotheque?${qs}` : "/bibliotheque");
   };
 
   const r = (await searchParams).r;
@@ -87,32 +94,32 @@ export default async function BibliothequePage({
   return (
     <Shell lib={lib}>
       <div className="hero">
-        <div className="hero__eyebrow">{lib.specialty ?? "Recommandations"}</div>
-        <h1>Les recommandations, enfin lisibles.</h1>
-        <p>
-          Synthèses fidèles des recommandations des sociétés savantes — grades
-          conservés, sources tracées, pensées pour être lues en quelques
-          minutes au moment de la décision clinique.
-        </p>
+        <div className="hero__eyebrow">
+          {lib.specialty
+            ? lib.specialtySlug
+              ? nomSpecialite(lib.specialtySlug, lib.specialty, langue)
+              : lib.specialty
+            : t.recommandations}
+        </div>
+        <h1>{t.titre}</h1>
+        <p>{t.accroche}</p>
       </div>
 
       <div className="credit-strip">
         {lib.isEditor ? (
           <span>
-            <b>Vue relecteur</b> : toutes les fiches sont lisibles, brouillons compris.
+            {riche(t.vueRelecteur, { b: (c) => <b>{c}</b> })}
             {lib.isAdmin && (
               <>
                 {" "}
                 <Link href="/bibliotheque/admin" style={{ fontWeight: 700 }}>
-                  Tableau de bord →
+                  {t.tableauDeBord}
                 </Link>
               </>
             )}
           </span>
         ) : lib.premium ? (
-          <span>
-            <b>PREMIUM</b> : toutes les fiches de votre spécialité sont ouvertes.
-          </span>
+          <span>{riche(t.premium, { b: (c) => <b>{c}</b> })}</span>
         ) : (
           <>
             <span className="credit-dots" aria-hidden="true">
@@ -121,14 +128,11 @@ export default async function BibliothequePage({
               ))}
             </span>
             <span>
-              <b>
-                {remaining} crédit{remaining > 1 ? "s" : ""} restant{remaining > 1 ? "s" : ""}
-              </b>{" "}
-              sur {FREE_QUOTA}. Un crédit débloque une fiche, définitivement.
+              <b>{plur(locale, remaining, t.creditsRestants)}</b> {fmt(t.creditsSur, { quota: FREE_QUOTA })}
             </span>
             {!lib.catalogueOuvert && (
-              <a href="/abonnement" style={{ marginLeft: "auto", fontWeight: 700 }}>
-                Passer à PREMIUM →
+              <a href={lien("/abonnement")} style={{ marginInlineStart: "auto", fontWeight: 700 }}>
+                {t.passerPremium}
               </a>
             )}
           </>
@@ -136,7 +140,7 @@ export default async function BibliothequePage({
       </div>
       {lib.catalogueOuvert && !lib.premium && (
         <p className="block-p is-note" style={{ marginTop: 10 }}>
-          {CATALOGUE_OUVERT}
+          {fmt(tf.catalogueOuvert, { quota: FREE_QUOTA })}
         </p>
       )}
 
@@ -147,7 +151,7 @@ export default async function BibliothequePage({
       )}
       {rechercheIndisponible && (
         <div className="credit-strip" role="alert">
-          <b>La recherche dans le texte des fiches est momentanément indisponible : seuls les titres ont été cherchés. Réessayez dans un instant.</b>
+          <b>{t.rechercheIndisponible}</b>
         </div>
       )}
       {lib.canPublish && drafts > 0 && (
@@ -173,20 +177,15 @@ export default async function BibliothequePage({
             <circle cx="11" cy="11" r="7" />
             <path d="m20 20-3.5-3.5" />
           </svg>
-          <span className="sr-only">Rechercher une fiche</span>
-          <input
-            name="q"
-            type="search"
-            defaultValue={query}
-            placeholder="Rechercher un titre, un médicament, une situation… (ex. rivaroxaban)"
-          />
+          <span className="sr-only">{t.rechercheLibelle}</span>
+          <input name="q" type="search" defaultValue={query} placeholder={t.recherchePlaceholder} />
         </label>
         {societe && <input type="hidden" name="societe" value={societe} />}
         {annee && <input type="hidden" name="annee" value={annee} />}
         <div className="lib-filters">
-          <span className="lib-filters__label">Société savante</span>
+          <span className="lib-filters__label">{t.societe}</span>
           <a href={filterHref("")} className={`soc-chip${societe ? "" : " is-active"}`}>
-            Toutes
+            {t.toutes}
           </a>
           {societies.slice(0, 8).map(([s, n]) => (
             <a
@@ -200,7 +199,7 @@ export default async function BibliothequePage({
           ))}
           {societies.length > 8 && (
             <details className="soc-more">
-              <summary className="soc-chip">Autres sociétés ({societies.length - 8})</summary>
+              <summary className="soc-chip">{fmt(t.autresSocietes, { n: societies.length - 8 })}</summary>
               <div className="soc-more__list">
                 {societies.slice(8).map(([s, n]) => (
                   <a
@@ -219,50 +218,50 @@ export default async function BibliothequePage({
       </form>
       {(societe || query || annee) && (
         <div className="lib-count">
-          {docs.length} fiche{docs.length > 1 ? "s" : ""}
-          {annee ? ` publiée${docs.length > 1 ? "s" : ""} en ${annee}` : ""}
+          {plur(locale, docs.length, t.compte)}
+          {annee ? plur(locale, docs.length, t.publiees, { annee }) : ""}
           {societe
-            ? ` co-signée${docs.length > 1 ? "s" : ""} par ${societe}${lib.societyNames[societe] ? ` (${lib.societyNames[societe]})` : ""}`
+            ? plur(locale, docs.length, t.cosignees, {
+                societe: `${societe}${lib.societyNames[societe] ? ` (${lib.societyNames[societe]})` : ""}`,
+              })
             : ""}
-          {query ? ` pour « ${query} »` : ""}
+          {query ? fmt(t.pour, { q: query }) : ""}
           {" · "}
-          <Link href="/bibliotheque">Effacer les filtres</Link>
+          <Link href={lien("/bibliotheque")}>{t.effacer}</Link>
         </div>
       )}
 
       {docs.length === 0 ? (
         <div className="lib-empty">
-          {query || annee
-            ? "Aucune fiche ne correspond à cette recherche."
-            : "Aucune fiche n'est encore publiée pour votre spécialité. Elles apparaîtront ici au fil de leur validation par notre équipe médicale."}
+          {query || annee ? t.aucuneRecherche : t.aucunePubliee}
         </div>
       ) : (
         <div className="doc-grid">
           {docs.map((d) => {
             const state = docState(lib, d.id);
             const c = d.card_json;
-            const date = formatDate(d.publication_date);
+            const date = formatDate(d.publication_date, locale);
             return (
-              <Link key={d.id} href={`/bibliotheque/${d.id}`} className="doc-card">
+              <Link key={d.id} href={lien(`/bibliotheque/${d.id}`)} className="doc-card">
                 <span className="doc-card__top">
-                  <span className="doc-card__badge">{shortBadge(c?.badge, d.doc_type)}</span>
+                  <span className="doc-card__badge">{shortBadge(c?.badge, d.doc_type, tf.recommandation)}</span>
                   <span style={{ display: "flex", gap: 6, flexWrap: "wrap", justifyContent: "flex-end" }}>
-                    {d.freshness_status && FRESHNESS_LABEL[d.freshness_status] && (
-                      <span className="state-pill state-draft">{FRESHNESS_LABEL[d.freshness_status]}</span>
+                    {d.freshness_status && tf.fraicheur[d.freshness_status] && (
+                      <span className="state-pill state-draft">{tf.fraicheur[d.freshness_status]}</span>
                     )}
-                    <span className={`state-pill ${STATE_CLASS[state]}`}>{STATE_LABEL[state]}</span>
+                    <span className={`state-pill ${STATE_CLASS[state]}`}>{tf.etats[state]}</span>
                   </span>
                 </span>
                 <h2>{cardTitle(d)}</h2>
                 {needle && !titleMatch(d) && contentRank.has(d.id) && (
                   <span className="state-pill state-open" style={{ width: "fit-content" }}>
-                    « {query} » dans le contenu
+                    {fmt(t.dansContenu, { q: query })}
                   </span>
                 )}
                 {c?.short ? <p className="doc-card__short">{c.short}</p> : null}
                 <span className="doc-card__meta">
                   <span className="doc-card__society">{c?.society ?? d.doc_type ?? ""}</span>
-                  <span>{[date, c?.pages ? `${c.pages} p.` : null].filter(Boolean).join(" · ")}</span>
+                  <span>{[date, c?.pages ? fmt(t.pages, { n: c.pages }) : null].filter(Boolean).join(" · ")}</span>
                 </span>
               </Link>
             );
@@ -282,7 +281,7 @@ function normalize(s: string) {
 
 // Étiquette courte de la carte : le badge de l'atelier s'il est bref, sinon
 // le type de document (RFE, RBP…).
-function shortBadge(badge: string | undefined, docType: string | null) {
+function shortBadge(badge: string | undefined, docType: string | null, defaut: string) {
   if (badge && badge.length <= 22) return badge;
-  return docType ?? badge?.split(/[—,(]/)[0].trim().slice(0, 22) ?? "Recommandation";
+  return docType ?? badge?.split(/[—,(]/)[0].trim().slice(0, 22) ?? defaut;
 }

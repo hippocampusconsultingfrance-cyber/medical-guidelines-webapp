@@ -1,8 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useLangue } from "@/i18n/client";
+import { fmt, riche } from "@/i18n/format";
+import { COOKIE_LANGUE, LANGUES_OUVERTES, LOCALES, NOMS_LANGUES, chemin, decouper, estOuverte } from "@/lib/langues";
 import { createClient } from "@/lib/supabase/client";
+import type { TextesCompteForm } from "./textes";
 
 type Profile = {
   nom: string;
@@ -12,9 +16,6 @@ type Profile = {
   profession_autre: string | null;
   username: string | null;
   consent_partners: boolean;
-  // Relation many-to-one : objet unique à l'exécution, typé tableau ou objet
-  // selon le client Supabase.
-  specialty?: { name_i18n: { fr?: string } | null } | { name_i18n: { fr?: string } | null }[] | null;
 };
 
 type Consent = {
@@ -26,8 +27,8 @@ type Consent = {
 const inputClass =
   "mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30";
 
-function formatDate(iso: string) {
-  return new Date(iso).toLocaleString("fr-FR", {
+function formatDate(iso: string, locale: string) {
+  return new Date(iso).toLocaleString(locale, {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
@@ -37,16 +38,26 @@ function formatDate(iso: string) {
   });
 }
 
+// Profession et spécialité : libellés dans la langue de la page (page.tsx).
 export default function CompteForm({
   email,
   profile,
+  profession,
+  specialite,
   consents,
+  t,
 }: {
   email: string;
   profile: Profile;
+  profession: string;
+  specialite: string | null;
   consents: Consent[];
+  t: TextesCompteForm;
 }) {
   const router = useRouter();
+  const langue = useLangue();
+  const pathname = usePathname() ?? "/compte";
+  const [langueMessage, setLangueMessage] = useState<string | null>(null);
   const [nom, setNom] = useState(profile.nom);
   const [prenom, setPrenom] = useState(profile.prenom);
   const [telephone, setTelephone] = useState(profile.telephone);
@@ -69,11 +80,7 @@ export default function CompteForm({
       .update({ nom: nom.trim(), prenom: prenom.trim(), telephone: telephone.trim() })
       .eq("id", user?.id ?? "");
     setBusy(false);
-    setSaveMessage(
-      error
-        ? "Les modifications n'ont pas pu être enregistrées. Réessayez."
-        : "Modifications enregistrées.",
-    );
+    setSaveMessage(error ? t.enregistreErreur : t.enregistre);
     if (!error) router.refresh();
   }
 
@@ -89,13 +96,7 @@ export default function CompteForm({
       .update({ consent_partners: value })
       .eq("id", user?.id ?? "");
     setBusy(false);
-    setConsentMessage(
-      error
-        ? "Votre choix n'a pas pu être enregistré. Réessayez."
-        : value
-          ? "Consentement au partage avec les partenaires enregistré."
-          : "Consentement retiré : vos données ne seront plus partagées avec des partenaires.",
-    );
+    setConsentMessage(error ? t.consentementErreur : value ? t.consentementDonne : t.consentementRetire);
     if (!error) router.refresh();
   }
 
@@ -160,8 +161,8 @@ export default function CompteForm({
   async function handleDelete(e: React.FormEvent) {
     e.preventDefault();
     setDeleteError(null);
-    if (deleteConfirm.trim().toUpperCase() !== "SUPPRIMER") {
-      setDeleteError("Tapez SUPPRIMER pour confirmer.");
+    if (deleteConfirm.trim().toUpperCase() !== t.mot) {
+      setDeleteError(t.taperErreur);
       return;
     }
     setBusy(true);
@@ -169,34 +170,71 @@ export default function CompteForm({
     const { error } = await supabase.rpc("delete_my_account");
     if (error) {
       setBusy(false);
-      setDeleteError("La suppression a échoué. Réessayez dans quelques instants.");
+      setDeleteError(t.suppressionErreur);
       return;
     }
     await supabase.auth.signOut();
-    router.push("/connexion?compte=supprime");
+    router.push(chemin(langue, "/connexion?compte=supprime"));
     router.refresh();
   }
 
-  const spec = Array.isArray(profile.specialty) ? profile.specialty[0] : profile.specialty;
-  const specialtyName = spec?.name_i18n?.fr;
+  // Langue du site et des e-mails : enregistrée dans le profil, puis la
+  // même page dans la nouvelle langue.
+  async function handleLangue(nouvelle: string) {
+    if (!estOuverte(nouvelle) || nouvelle === langue) return;
+    setBusy(true);
+    setLangueMessage(null);
+    const supabase = createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    const { error } = await supabase
+      .from("profiles")
+      .update({ langue_preferee: nouvelle })
+      .eq("id", user?.id ?? "");
+    setBusy(false);
+    if (error) {
+      setLangueMessage(t.langueErreur);
+      return;
+    }
+    document.cookie = `${COOKIE_LANGUE}=${nouvelle}; path=/; max-age=31536000; samesite=lax`;
+    window.location.assign(chemin(nouvelle, decouper(pathname).reste));
+  }
 
   return (
     <div className="mt-8 space-y-10">
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">
-          Informations personnelles
-        </h2>
+        <h2 className="text-lg font-semibold text-slate-900">{t.langueTitre}</h2>
+        <p className="mt-1 text-sm text-slate-600">{t.langueTexte}</p>
+        <select
+          aria-label={t.langueTitre}
+          value={langue}
+          disabled={busy}
+          onChange={(e) => handleLangue(e.target.value)}
+          className="mt-3 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm"
+        >
+          {LANGUES_OUVERTES.map((l) => (
+            <option key={l} value={l} lang={l}>
+              {NOMS_LANGUES[l]}
+            </option>
+          ))}
+        </select>
+        {langueMessage && <p className="mt-2 text-sm text-red-700">{langueMessage}</p>}
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-slate-900">{t.infos}</h2>
         <p className="mt-1 text-sm text-slate-600">
-          Profession : {profile.profession}
+          {fmt(t.profession, { profession })}
           {profile.profession_autre ? ` (${profile.profession_autre})` : ""}
-          {specialtyName ? ` · Spécialité : ${specialtyName}` : ""}
-          {profile.username ? ` · Identifiant : ${profile.username}` : ""}
+          {specialite ? fmt(t.specialite, { specialite }) : ""}
+          {profile.username ? fmt(t.identifiant, { identifiant: profile.username }) : ""}
         </p>
         <form onSubmit={handleSave} className="mt-4 space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label htmlFor="nom" className="block text-sm font-medium text-slate-700">
-                Nom
+                {t.nom}
               </label>
               <input
                 id="nom"
@@ -209,7 +247,7 @@ export default function CompteForm({
             </div>
             <div>
               <label htmlFor="prenom" className="block text-sm font-medium text-slate-700">
-                Prénom
+                {t.prenom}
               </label>
               <input
                 id="prenom"
@@ -223,7 +261,7 @@ export default function CompteForm({
           </div>
           <div>
             <label htmlFor="telephone" className="block text-sm font-medium text-slate-700">
-              Numéro de téléphone
+              {t.telephone}
             </label>
             <input
               id="telephone"
@@ -241,20 +279,15 @@ export default function CompteForm({
             disabled={busy}
             className="rounded-lg bg-[#0E3A78] px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
           >
-            Enregistrer
+            {t.enregistrer}
           </button>
         </form>
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">
-          Partage avec des partenaires
-        </h2>
+        <h2 className="text-lg font-semibold text-slate-900">{t.partageTitre}</h2>
         <p className="mt-1 text-sm text-slate-600">
-          {profile.consent_partners
-            ? "Vous avez accepté que vos nom, e-mail et profession soient transmis à notre partenaire LASKA CORPORATE SAS."
-            : "Vos données ne sont transmises à aucun partenaire (partenaire actuel : LASKA CORPORATE SAS)."}{" "}
-          Ce choix n&apos;a aucun effet sur votre accès aux fiches.
+          {profile.consent_partners ? t.partageOui : t.partageNon} {t.partageEffet}
         </p>
         <button
           type="button"
@@ -262,18 +295,17 @@ export default function CompteForm({
           onClick={() => handleConsent(!profile.consent_partners)}
           className="mt-3 rounded-md border border-slate-300 px-4 py-2 text-sm text-slate-800 hover:bg-slate-50 disabled:opacity-50"
         >
-          {profile.consent_partners ? "Retirer mon consentement" : "Donner mon consentement"}
+          {profile.consent_partners ? t.retirer : t.donner}
         </button>
         {consentMessage && <p className="mt-2 text-sm text-slate-700">{consentMessage}</p>}
         {consents.length > 0 && (
           <details className="mt-4 text-sm text-slate-600">
-            <summary className="cursor-pointer">Historique de mes consentements</summary>
+            <summary className="cursor-pointer">{t.historique}</summary>
             <ul className="mt-2 space-y-1">
               {consents.map((c, i) => (
                 <li key={i}>
-                  {formatDate(c.recorded_at)} —{" "}
-                  {c.consent_type === "service" ? "Conditions d'utilisation" : "Partenaires"} :{" "}
-                  {c.value ? "accepté" : "refusé"}
+                  {formatDate(c.recorded_at, LOCALES[langue])} — {c.consent_type === "service" ? t.cgu : t.partenaires} :{" "}
+                  {c.value ? t.accepte : t.refuse}
                 </li>
               ))}
             </ul>
@@ -282,31 +314,24 @@ export default function CompteForm({
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold text-slate-900">Mes données</h2>
-        <p className="mt-1 text-sm text-slate-600">
-          Téléchargez l&apos;ensemble des données associées à votre compte
-          (fichier JSON).
-        </p>
+        <h2 className="text-lg font-semibold text-slate-900">{t.donneesTitre}</h2>
+        <p className="mt-1 text-sm text-slate-600">{t.donneesTexte}</p>
         <button
           type="button"
           disabled={busy}
           onClick={handleExport}
           className="mt-3 rounded-md border border-slate-300 px-4 py-2 text-sm text-slate-800 hover:bg-slate-50 disabled:opacity-50"
         >
-          Exporter mes données
+          {t.exporter}
         </button>
       </section>
 
       <section className="rounded-md border border-red-200 bg-red-50 p-4">
-        <h2 className="text-lg font-semibold text-red-800">Supprimer mon compte</h2>
-        <p className="mt-1 text-sm text-red-900">
-          Votre compte, votre profil et l&apos;historique de vos consentements
-          seront effacés définitivement. Les signalements d&apos;erreurs que
-          vous avez envoyés sont conservés sans lien avec votre identité.
-        </p>
+        <h2 className="text-lg font-semibold text-red-800">{t.supprimerTitre}</h2>
+        <p className="mt-1 text-sm text-red-900">{t.supprimerTexte}</p>
         <form onSubmit={handleDelete} className="mt-3 space-y-3">
           <label htmlFor="delete-confirm" className="block text-sm text-red-900">
-            Tapez <strong>SUPPRIMER</strong> pour confirmer
+            {riche(t.taper, { b: (c) => <strong>{c}</strong> })}
           </label>
           <input
             id="delete-confirm"
@@ -320,7 +345,7 @@ export default function CompteForm({
             disabled={busy}
             className="rounded-md bg-red-700 px-4 py-2 text-sm font-medium text-white hover:bg-red-800 disabled:opacity-50"
           >
-            Supprimer définitivement mon compte
+            {t.supprimer}
           </button>
         </form>
       </section>
