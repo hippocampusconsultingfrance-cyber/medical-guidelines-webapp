@@ -137,6 +137,36 @@ Aperçu sans envoi : `curl -H "Authorization: Bearer $CRON_SECRET"
 "https://…/api/cron/alertes?apercu=1"`. Désinscription : lien et en-tête
 « List-Unsubscribe » de chaque e-mail, ou « Mon compte ».
 
+## Demandes d'accord aux sociétés savantes
+
+Outil des administrateurs (`/bibliotheque/demandes-accord`) : une demande
+par société de l'atelier (`societes/<slug>/ACCORD.md`).
+
+1. **Import** depuis l'atelier : `ATELIER_DIR=../depot-central-societes-savantes
+   node scripts/demandes-accord/importer.mjs > demandes.sql`, puis appliquer
+   `demandes.sql` (éditeur SQL de Supabase). On peut le relancer : il ne
+   remplace ni les adresses, ni les destinataires, ni les textes déjà
+   travaillés dans l'outil ; une demande envoyée ou acceptée dans l'atelier
+   y passe aussi, et ne peut plus repartir. Textes propres à une société :
+   `scripts/demandes-accord/personnalisation.json`.
+2. **Relevé des adresses** sur le site de la société (12 pages au plus) :
+   adresses de la société seulement (présidence, secrétariat, contact,
+   équipe sur son domaine) ; adresses personnelles de médecins écartées.
+3. **Courriel** généré depuis le modèle (`/bibliotheque/demandes-accord/modele`),
+   relu et modifiable société par société ; **pièce jointe** propre (dossier
+   de comparaison) ou par défaut (dossier SFAR), en PDF.
+4. **Validation**, puis **envoi** par Resend, une société à la fois (pause
+   réglable entre deux envois, plafond sur 24 h), avec copie cachée ;
+   **relance** après 7 jours ; suivi des réponses (accord, refus, ne plus
+   contacter). Chaque envoi se termine par une mention : d'où vient
+   l'adresse, « répondez STOP pour ne plus être contacté ».
+
+Variables d'environnement (Vercel) : `RESEND_API_KEY` (la même que pour les
+alertes) ; facultatives : `DEMANDES_FROM` (par défaut « Dr Ahmed Ben Lallahom
+<contact@medical-guidelines.net> »), `DEMANDES_REPLY_TO` (par défaut
+contact@medical-guidelines.net), `DEMANDES_COPIE` (copie cachée, par défaut
+l'adresse de réponse), `DEMANDES_PLAFOND_JOUR` (par défaut 25).
+
 ## Pages
 
 | Route | Rôle |
