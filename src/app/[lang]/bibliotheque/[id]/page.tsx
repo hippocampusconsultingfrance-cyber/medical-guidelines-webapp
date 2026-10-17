@@ -19,6 +19,7 @@ import {
   FREE_QUOTA,
   methodologieLisible,
   renderPresentation,
+  type Card,
   type Presentation,
   type TocItem,
 } from "@/lib/fiches";
@@ -144,7 +145,10 @@ export default async function FichePage({
     (verif?.source_verified_at as string | null | undefined) ?? null,
     doc.published_at,
   );
-  const r = (await searchParams).r;
+  const recherche = await searchParams;
+  const r = recherche.r;
+  // ?vf=1 : la fiche française, même si une traduction est publiée.
+  const versionFrancaise = recherche.vf === "1";
   const message =
     r === "quota_atteint" && lib.catalogueOuvert ? quotaCatalogue : typeof r === "string" ? MESSAGES[r] : undefined;
 
@@ -156,12 +160,19 @@ export default async function FichePage({
     : undefined;
   const freshness = doc.freshness_status ? FRESHNESS_NOTICE[doc.freshness_status] : undefined;
   const anneeSource = doc.freshness_status === "remplacee" ? null : anneeAncienne(doc.publication_date);
-  const header = (
+  // En-tête ; « traduite » : titre et mention d'une traduction publiée.
+  const entete = (traduite?: { titre: string; iaNonRelue: boolean }) => (
     <div className="doc-header">
       <div className="doc-header__eyebrow">
         {card?.society ?? [doc.doc_type, date].filter(Boolean).join(" — ")}
       </div>
-      <h1 {...fr}>{cardTitle(doc)}</h1>
+      {traduite ? <h1>{traduite.titre}</h1> : <h1 {...fr}>{cardTitle(doc)}</h1>}
+      {traduite && (
+        <div className="panel" role="note">
+          {traduite.iaNonRelue ? tf.traductionIA : tf.traductionRelue}{" "}
+          <Link href={`${lien(`/bibliotheque/${id}`)}?vf=1`}>{tf.versionFrancaise}</Link>
+        </div>
+      )}
       {card?.title && card.title !== doc.title && (
         <p className="block-p" style={{ color: "var(--ink-muted)", marginTop: 0 }} {...fr}>
           {doc.title}
@@ -245,7 +256,7 @@ export default async function FichePage({
   // sans proposer de débloquer la fiche.
   const suspension = (
     <Shell lib={lib} activeId={id}>
-      {header}
+      {entete()}
       <div className="unlock-box">
         <h2>{t.suspendueTitre}</h2>
         <p>{t.suspendueTexte}</p>
@@ -262,7 +273,7 @@ export default async function FichePage({
     const remaining = Math.max(FREE_QUOTA - lib.unlocked.size, 0);
     return (
       <Shell lib={lib} activeId={id}>
-        {header}
+        {entete()}
         {card?.short && (
           <p className="block-p" {...fr}>
             {card.short}
@@ -295,13 +306,25 @@ export default async function FichePage({
     );
   }
 
+  // Traduction publiée dans la langue de la page : même contrôle et même
+  // journal de lecture que la fiche française (get_translation).
+  const { data: tradData } =
+    langue === "fr" || versionFrancaise
+      ? { data: null }
+      : await supabase.rpc("get_translation", { doc_id: id, target_lang: langue });
+  const traduction = tradData as { card: Card | null; presentation: Presentation | null; ia_non_relue: boolean } | null;
+
   // Chaque lecture est journalisée et limitée par la base (anti-extraction) :
   // un rythme anormal suspend la lecture, dès cette fiche.
-  const { data: presentation, error: errPresentation } = await supabase.rpc("get_document_presentation", { doc_id: id });
+  const { data: presentation, error: errPresentation } = traduction?.presentation
+    ? { data: null, error: null }
+    : await supabase.rpc("get_document_presentation", { doc_id: id });
   if (errPresentation) throw new Error(`Contenu de la fiche indisponible : ${errPresentation.message}`);
   let body: string;
   let toc: TocItem[];
-  if (presentation) {
+  if (traduction?.presentation) {
+    ({ html: body, toc } = renderPresentation(traduction.presentation));
+  } else if (presentation) {
     ({ html: body, toc } = renderPresentation(presentation as Presentation));
   } else {
     const { data: recs, error } = await supabase.rpc("get_document_recommendations", { doc_id: id });
@@ -333,7 +356,7 @@ export default async function FichePage({
             <span key={i}>{watermark}</span>
           ))}
         </div>
-        {header}
+        {entete(traduction ? { titre: traduction.card?.title ?? cardTitle(doc), iaNonRelue: traduction.ia_non_relue } : undefined)}
         {pointsCles.length > 0 && (
           <section className="panel" aria-label={t.pointsCles} style={{ marginTop: 18 }}>
             <p style={{ fontWeight: 700 }}>{t.pointsCles}</p>
@@ -517,7 +540,7 @@ export default async function FichePage({
           </section>
         ))}
         {toc.length > 1 && <AccordionControls deplier={tout.shell.toutDeplier} replier={tout.shell.toutReplier} />}
-        <div {...fr} dangerouslySetInnerHTML={{ __html: body }} />
+        <div {...(traduction?.presentation ? { lang: langue } : fr)} dangerouslySetInnerHTML={{ __html: body }} />
         <p className="block-p" style={{ fontSize: "0.82rem", color: "var(--ink-muted)", marginTop: 18 }}>
           {t.citees}{" "}
           {doc.societies.length ? doc.societies.map((s) => lib.societyNames[s] ?? s).join(", ") : t.leursAuteurs}, «&nbsp;

@@ -42,6 +42,14 @@ export default function CguEs() {
         logotipo, marca ni elemento protegido de una sociedad científica. En caso de duda clínica, el usuario debe
         remitirse al texto completo de la guía o a una opinión especializada.
       </p>
+      <p className="mt-2">
+        <b>Traducciones.</b> Algunos resúmenes pueden ofrecerse en otros idiomas (inglés, español, alemán, árabe,
+        chino), solo cuando los autores de la guía lo han autorizado por escrito. Estas traducciones las realiza la
+        inteligencia artificial a partir del resumen francés revisado por un médico y se controlan automáticamente
+        (dosis, unidades, umbrales, grados); salvo indicación contraria en el resumen, no las revisa un médico en el
+        idioma de traducción, como indica cada resumen traducido. Solo la versión francesa del resumen y el texto
+        oficial de la guía son auténticos.
+      </p>
 
       <h2 className={h2}>3. Propiedad intelectual y uso autorizado</h2>
       <p className="mt-2">

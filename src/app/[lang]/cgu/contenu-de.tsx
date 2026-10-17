@@ -45,6 +45,15 @@ export default function CguDe() {
         Fachgesellschaft wiedergegeben. Bei klinischen Zweifeln muss der Nutzer den vollständigen Text der Leitlinie oder
         fachärztlichen Rat heranziehen.
       </p>
+      <p className="mt-2">
+        <b>Übersetzungen.</b> Einige Zusammenfassungen können in anderen Sprachen angeboten werden (Englisch,
+        Spanisch, Deutsch, Arabisch, Chinesisch), nur wenn die Autoren der Leitlinie dies schriftlich genehmigt
+        haben. Diese Übersetzungen werden durch künstliche Intelligenz auf Grundlage der von einem Arzt geprüften
+        französischen Zusammenfassung erstellt und automatisch kontrolliert (Dosierungen, Einheiten, Schwellenwerte,
+        Empfehlungsgrade); sofern auf der Zusammenfassung nicht anders angegeben, werden sie in der Zielsprache nicht
+        von einem Arzt geprüft, worauf jede übersetzte Zusammenfassung hinweist. Maßgeblich sind allein die
+        französische Fassung der Zusammenfassung und der offizielle Text der Leitlinie.
+      </p>
 
       <h2 className={h2}>3. Geistiges Eigentum und zulässige Nutzung</h2>
       <p className="mt-2">

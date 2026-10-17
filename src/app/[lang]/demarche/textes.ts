@@ -34,6 +34,7 @@ export const DEMARCHE: Traductions<{
           "L'intelligence artificielle aide, elle ne décide pas : chaque fiche est relue par l'équipe médicale, et la date de cette relecture figure sur la fiche ; toute erreur signalée est corrigée publiquement dans le journal des corrections.",
         ],
       ],
+      ["Les traductions", ["Certaines fiches peuvent être lues dans d'autres langues, uniquement lorsque leurs auteurs l'ont autorisé par écrit. Ces traductions sont faites par intelligence artificielle à partir de la fiche française relue par un médecin, puis contrôlées automatiquement (doses, unités, seuils, grades). Sauf mention contraire, elles ne sont pas relues par un médecin dans leur langue : chaque fiche traduite le signale, et la version française et le texte officiel font foi."]],
       [
         "Un projet construit avec des volontaires",
         ["Ce site n'existerait pas sans des personnes volontaires qui ont permis sa construction. Qu'elles en soient remerciées."],
@@ -75,6 +76,7 @@ export const DEMARCHE: Traductions<{
           "Artificial intelligence helps, it does not decide: every summary is reviewed by the medical team, and the date of that review appears on the summary; any error reported is corrected publicly in the corrections log.",
         ],
       ],
+      ["Translations", ["Some summaries can be read in other languages, only where their authors have authorised it in writing. These translations are produced by artificial intelligence from the French summary reviewed by a physician, then checked automatically (doses, units, thresholds, grades). Unless stated otherwise, they are not reviewed by a physician in their language: each translated summary says so, and the French version and the official text prevail."]],
       [
         "A project built with volunteers",
         ["This site would not exist without the volunteers who made it possible. Our thanks go to them."],
@@ -116,6 +118,7 @@ export const DEMARCHE: Traductions<{
           "La inteligencia artificial ayuda, no decide: cada resumen es revisado por el equipo médico, y la fecha de esa revisión figura en el resumen; cualquier error notificado se corrige públicamente en el registro de correcciones.",
         ],
       ],
+      ["Las traducciones", ["Algunos resúmenes pueden leerse en otros idiomas, solo cuando sus autores lo han autorizado por escrito. Estas traducciones las realiza la inteligencia artificial a partir del resumen francés revisado por un médico y se controlan automáticamente (dosis, unidades, umbrales, grados). Salvo indicación contraria, no las revisa un médico en su idioma: cada resumen traducido lo indica, y prevalecen la versión francesa y el texto oficial."]],
       [
         "Un proyecto construido con personas voluntarias",
         ["Este sitio no existiría sin las personas voluntarias que lo han hecho posible. Les damos las gracias."],
@@ -157,6 +160,7 @@ export const DEMARCHE: Traductions<{
           "Künstliche Intelligenz hilft, sie entscheidet nicht: Jede Zusammenfassung wird vom ärztlichen Team geprüft, und das Datum dieser Prüfung steht auf der Zusammenfassung; jeder gemeldete Fehler wird öffentlich im Korrekturprotokoll berichtigt.",
         ],
       ],
+      ["Die Übersetzungen", ["Einige Zusammenfassungen können in anderen Sprachen gelesen werden, nur wenn ihre Autoren dies schriftlich genehmigt haben. Diese Übersetzungen werden durch künstliche Intelligenz auf Grundlage der von einem Arzt geprüften französischen Zusammenfassung erstellt und automatisch kontrolliert (Dosierungen, Einheiten, Schwellenwerte, Empfehlungsgrade). Sofern nicht anders angegeben, werden sie in ihrer Sprache nicht von einem Arzt geprüft: Jede übersetzte Zusammenfassung weist darauf hin, und maßgeblich sind die französische Fassung und der offizielle Text."]],
       [
         "Ein Projekt, das mit Freiwilligen aufgebaut wurde",
         ["Diese Website gäbe es nicht ohne die Freiwilligen, die sie möglich gemacht haben. Ihnen gilt unser Dank."],
@@ -197,6 +201,7 @@ export const DEMARCHE: Traductions<{
           "الذكاء الاصطناعي يساعد ولا يقرّر: يراجع الفريق الطبي كل ملخص، ويظهر تاريخ هذه المراجعة على الملخص؛ ويُصحَّح أي خطأ يُبلَّغ عنه علنًا في سجل التصحيحات.",
         ],
       ],
+      ["الترجمات", ["يمكن قراءة بعض الملخصات بلغات أخرى، فقط عندما يأذن مؤلفوها بذلك كتابةً. تُنجز هذه الترجمات بالذكاء الاصطناعي انطلاقًا من الملخص الفرنسي الذي راجعه طبيب، ثم تُراقَب آليًا (الجرعات، الوحدات، العتبات، الدرجات). وما لم يُذكر خلاف ذلك، فإنها لا تُراجَع من قبل طبيب بلغتها: يشير كل ملخص مترجم إلى ذلك، والنسخة الفرنسية والنص الرسمي هما المرجع المعتمد."]],
       ["مشروع بُني بفضل متطوعين", ["ما كان لهذا الموقع أن يوجد لولا المتطوعون الذين جعلوه ممكنًا. فلهم منا جزيل الشكر."]],
       [
         "الاستقلالية",
@@ -233,6 +238,7 @@ export const DEMARCHE: Traductions<{
           "人工智能只是辅助，不作决定：每篇摘要均经医疗团队审阅，审阅日期显示在摘要上；任何被报告的错误都会在更正记录中公开更正。",
         ],
       ],
+      ["翻译", ["部分摘要可以其他语言阅读，前提是其作者已书面授权。这些译文由人工智能根据经医生审阅的法文摘要翻译而成，并经过自动核查（剂量、单位、阈值、推荐等级）。除另有说明外，译文未经医生以该语言审阅：每篇译文摘要均会注明，并以法文版本和官方文本为准。"]],
       ["由志愿者共同建成的项目", ["没有让本站得以实现的志愿者，就没有这个网站。在此向他们致谢。"]],
       [
         "独立性",

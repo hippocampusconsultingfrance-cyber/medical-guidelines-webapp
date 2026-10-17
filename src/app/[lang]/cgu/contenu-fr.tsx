@@ -64,6 +64,18 @@ export default function CguFr() {
         texte intégral de la recommandation ou à un avis spécialisé.
       </p>
 
+      <p className="mt-2">
+        <b>Traductions.</b> Certaines fiches peuvent être proposées dans
+        d&apos;autres langues (anglais, espagnol, allemand, arabe, chinois),
+        uniquement lorsque les auteurs de la recommandation l&apos;ont autorisé
+        par écrit. Ces traductions sont réalisées par intelligence artificielle
+        à partir de la fiche française relue par un médecin, puis contrôlées
+        automatiquement (doses, unités, seuils, grades) ; sauf mention contraire
+        sur la fiche, elles ne sont pas relues par un médecin dans la langue de
+        traduction, ce que chaque fiche traduite signale. La version française
+        de la fiche et le texte officiel de la recommandation font seuls foi.
+      </p>
+
       <h2 className="mt-8 text-lg font-semibold text-slate-900">
         3. Propriété intellectuelle et usage autorisé
       </h2>

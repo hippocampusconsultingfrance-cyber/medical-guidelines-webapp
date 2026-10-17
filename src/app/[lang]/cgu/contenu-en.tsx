@@ -41,6 +41,14 @@ export default function CguEn() {
         reproduced on this site. In case of clinical doubt, the user must refer to the full text of the guideline or to
         specialist advice.
       </p>
+      <p className="mt-2">
+        <b>Translations.</b> Some summaries may be offered in other languages (English, Spanish, German, Arabic,
+        Chinese), only where the authors of the guideline have authorised it in writing. These translations are
+        produced by artificial intelligence from the French summary reviewed by a physician, then checked
+        automatically (doses, units, thresholds, grades); unless stated otherwise on the summary, they are not
+        reviewed by a physician in the language of translation, as each translated summary states. Only the French
+        version of the summary and the official text of the guideline are authoritative.
+      </p>
 
       <h2 className={h2}>3. Intellectual property and permitted use</h2>
       <p className="mt-2">

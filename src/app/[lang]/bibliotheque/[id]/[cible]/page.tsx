@@ -7,7 +7,7 @@ import { createClient } from "@/lib/supabase/server";
 import AccordionControls from "../../accordion-controls";
 import { cardTitle, loadLibrary } from "../../data";
 import Shell from "../../shell";
-import { reviewTranslation } from "./actions";
+import { publishTranslation, reviewTranslation } from "./actions";
 import { LANGUES_TRADUCTION, NOMS_TRADUCTION, type LangueTraduction } from "./langues";
 
 export const metadata: Metadata = {
@@ -21,11 +21,23 @@ const MESSAGES: Record<string, string> = {
   brouillon: "Traduction repassée en brouillon.",
   confirmation: "Cochez la case de relecture avant de marquer la traduction relue.",
   erreur: "L'enregistrement n'a pas abouti (droits de relecteur requis).",
+  publiee: "Traduction publiée : visible des membres dans cette langue, avec sa mention.",
+  retiree: "Publication retirée : la fiche est de nouveau servie en français dans cette langue.",
+  pub_confirmation: "Cochez la case de confirmation avant de publier.",
+  pub_registre: "Publication refusée : le registre juridique n'autorise pas la traduction de cette source (translation_allowed = oui et revue juridique « valide » requis).",
+  pub_fr_change: "Publication refusée : la fiche française a changé depuis la traduction.",
+  pub_a_verifier: "Publication refusée : des points restent à vérifier.",
+  pub_fr_non_relue: "Publication refusée : la fiche française n'est pas publiée ou pas relue par un médecin.",
+  pub_non_relue: "Publication refusée : traduction non relue.",
+  pub_droits: "Publication réservée aux validateurs.",
+  pub_erreur: "La publication n'a pas abouti.",
 };
 
 type KeyPoint = { ref?: string; grade?: string; fr?: string } & Record<string, string | undefined>;
 type Translation = {
   status: string;
+  publiee_sans_relecture?: boolean;
+  publiee_le?: string | null;
   card_json: Card | null;
   presentation_json: (Presentation & { chip_legend?: Record<string, string> | null }) | null;
   key_points: KeyPoint[] | null;
@@ -57,9 +69,9 @@ export default async function TraductionPage({ params, searchParams }: PageProps
 
   const { data } = await supabase
     .from("document_translations")
-    .select(
-      "status, card_json, presentation_json, key_points, a_verifier, source_publication_date, fr_a_jour, review_notes, reviewed_at, imported_at",
-    )
+    // Toutes les colonnes : celles de la publication (migration
+    // 20261018110000) manquent tant qu'elle n'est pas appliquée.
+    .select("*")
     .eq("document_id", id)
     .eq("lang", cible)
     .maybeSingle();
@@ -77,7 +89,12 @@ export default async function TraductionPage({ params, searchParams }: PageProps
     <Shell lib={lib} activeId={id} toc={toc}>
       <div className="doc-header">
         <div className="doc-header__eyebrow">
-          Traduction {nom.adjectif} · {t.status === "relue" ? "relue" : "brouillon"} · non publiée
+          Traduction {nom.adjectif} ·{" "}
+          {t.status === "publiee"
+            ? t.publiee_sans_relecture
+              ? "publiée (IA, non relue)"
+              : "publiée (relue)"
+            : `${t.status === "relue" ? "relue" : "brouillon"} · non publiée`}
         </div>
         <h1 lang={cible} dir={direction(cible)}>
           {t.card_json?.title ?? cardTitle(doc)}
@@ -160,7 +177,9 @@ export default async function TraductionPage({ params, searchParams }: PageProps
 
       <form action={reviewTranslation} className="unlock-box" id="relecture" style={{ marginTop: 28 }}>
         <h2>Relecture</h2>
-        {message && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
+        {message && !r?.toString().startsWith("pub") && !["publiee", "retiree"].includes(String(r)) && (
+          <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>
+        )}
         {t.reviewed_at && (
           <p style={{ fontSize: "0.9rem" }}>
             Dernière décision le {date(t.reviewed_at)} : {t.status === "relue" ? "relue" : "brouillon"}.
@@ -188,6 +207,51 @@ export default async function TraductionPage({ params, searchParams }: PageProps
           </button>
         </div>
       </form>
+      {lib.canPublish && (
+        <form action={publishTranslation} className="unlock-box" id="publication" style={{ marginTop: 20 }}>
+          <h2>Publication</h2>
+          {message && (r?.toString().startsWith("pub") || ["publiee", "retiree"].includes(String(r))) && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
+          <input type="hidden" name="id" value={id} />
+          <input type="hidden" name="cible" value={cible} />
+          {t.status === "publiee" ? (
+            <>
+              <p style={{ fontSize: "0.9rem" }}>
+                Publiée{t.publiee_le ? ` le ${date(t.publiee_le)}` : ""}{" "}
+                {t.publiee_sans_relecture
+                  ? "comme traduction par IA non relue, avec la mention « Traduction réalisée par IA à partir de la fiche française relue par un médecin. Non relue dans cette langue. La version française et le texte officiel font foi. »"
+                  : "comme traduction relue par un médecin."}
+              </p>
+              <button className="btn btn-ghost" name="publier" value="0">
+                Retirer la publication
+              </button>
+            </>
+          ) : (
+            <>
+              <p style={{ fontSize: "0.9rem" }}>
+                {t.status === "relue"
+                  ? "Traduction relue : publiable comme traduction relue par un médecin."
+                  : "Traduction non relue : publiable comme traduction par IA non relue, avec sa mention, si la fiche française est publiée et relue par un médecin, si elle n'a pas changé depuis la traduction et si aucun point ne reste à vérifier."}{" "}
+                Dans tous les cas, le registre juridique doit autoriser la traduction de la source.
+              </p>
+              <ul style={{ margin: "0 0 12px", paddingLeft: 18, fontSize: "0.86rem" }}>
+                <li>Fiche française à jour : {t.fr_a_jour ? "oui" : "non"}</li>
+                <li>Points à vérifier : {t.a_verifier?.length ?? 0}</li>
+              </ul>
+              <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: "0.86rem", margin: "4px 0 12px" }}>
+                <input type="checkbox" name="confirme" value="1" style={{ marginTop: 3 }} />
+                <span>
+                  {t.status === "relue"
+                    ? "Je publie cette traduction relue, avec la mention « La version française et le texte officiel font foi »."
+                    : "Je publie cette traduction par IA, non relue dans cette langue, avec la mention « Traduction réalisée par IA à partir de la fiche française relue par un médecin. Non relue dans cette langue. La version française et le texte officiel font foi. »"}
+                </span>
+              </label>
+              <button className="btn btn-primary" name="publier" value="1">
+                Publier
+              </button>
+            </>
+          )}
+        </form>
+      )}
       <p className="block-p is-note" style={{ marginTop: 24 }}>
         <Link href="/bibliotheque/traductions">← Toutes les traductions</Link>
       </p>

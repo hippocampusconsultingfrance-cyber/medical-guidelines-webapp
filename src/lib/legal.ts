@@ -18,4 +18,4 @@ export function mediateurRenseigne() {
 // Version des conditions générales d'utilisation, enregistrée avec chaque
 // inscription (profiles.cgu_version). Toute modification du texte de
 // src/app/[lang]/cgu/page.tsx s'accompagne d'une nouvelle version.
-export const CGU_VERSION = "2026-10-16";
+export const CGU_VERSION = "2026-10-17";

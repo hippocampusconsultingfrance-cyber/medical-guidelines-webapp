@@ -260,8 +260,8 @@ console.log(`${keys.length} fiches : ${matched} documents existants complétés,
 // 4. Traductions (build/<langue>/content_<clé>.json, brouillons de l'atelier :
 // build/TRADUCTIONS.md) → supabase/content/0210_traductions_<langue>.sql,
 // table document_translations (lecture réservée à l'équipe éditoriale). Un
-// brouillon modifié depuis le dernier import repasse en « brouillon » ;
-// fr_a_jour indique si la traduction part du contenu français actuel.
+// brouillon modifié depuis le dernier import, ou dont la fiche française a
+// changé (fr_a_jour faux), repasse en « brouillon », même publié.
 const sha = (buf) => createHash("sha256").update(buf).digest("hex");
 for (const langue of ["en", "es", "de", "ar", "zh"]) {
   const dossier = join(atelier, "build", langue);
@@ -292,8 +292,10 @@ for (const langue of ["en", "es", "de", "ar", "zh"]) {
       `  card_json = excluded.card_json, presentation_json = excluded.presentation_json,\n` +
       `  key_points = excluded.key_points, a_verifier = excluded.a_verifier,\n` +
       `  source_publication_date = excluded.source_publication_date, fr_a_jour = excluded.fr_a_jour,\n` +
-      `  status = case when public.document_translations.content_sha256 = excluded.content_sha256\n` +
+      `  status = case when public.document_translations.content_sha256 = excluded.content_sha256 and excluded.fr_a_jour\n` +
       `    then public.document_translations.status else 'brouillon' end,\n` +
+      `  publiee_sans_relecture = public.document_translations.publiee_sans_relecture\n` +
+      `    and public.document_translations.content_sha256 = excluded.content_sha256 and excluded.fr_a_jour,\n` +
       `  content_sha256 = excluded.content_sha256, imported_at = now();\n\n`;
     n++;
   }

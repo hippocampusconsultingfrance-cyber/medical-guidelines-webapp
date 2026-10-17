@@ -113,3 +113,41 @@ const apercu = unstable_cache(
 export async function loadApercuPublic(id: string) {
   return apercu(id);
 }
+
+// Traductions publiées d'une fiche (document_translations, statut « publiee »,
+// à jour du français) : langues, et pour une langue la carte traduite, la
+// mention (par IA non relue, ou relue) et l'aperçu. Lues par le serveur,
+// gardées 5 minutes en cache ; publier ou retirer une traduction vide ce
+// cache. Une lecture impossible laisse la page en français.
+export type TraductionPublique = { card: Card | null; iaNonRelue: boolean; apercu: ApercuPublic };
+
+const traductions = unstable_cache(
+  async (id: string): Promise<Record<string, TraductionPublique>> => {
+    try {
+      const { data } = await createAdminClient()
+        .from("document_translations")
+        .select("lang, card_json, presentation_json, publiee_sans_relecture")
+        .eq("document_id", id)
+        .eq("status", "publiee")
+        .eq("fr_a_jour", true);
+      return Object.fromEntries(
+        (data ?? []).map((t) => [
+          t.lang as string,
+          {
+            card: (t.card_json as Card | null) ?? null,
+            iaNonRelue: Boolean(t.publiee_sans_relecture),
+            apercu: extraireApercu(t.presentation_json),
+          },
+        ]),
+      );
+    } catch {
+      return {};
+    }
+  },
+  ["traductions-publiques"],
+  { revalidate: 300, tags: [FICHES_PUBLIQUES] },
+);
+
+export async function loadTraductionsPubliques(id: string) {
+  return traductions(id);
+}

@@ -19,6 +19,9 @@ export const FICHE: Traductions<{
   recommandation: string;
   catalogueOuvert: string;
   catalogueOuvertQuota: string;
+  traductionIA: string;
+  traductionRelue: string;
+  versionFrancaise: string;
 }> = {
   fr: {
     remplacee: "Remplacée",
@@ -38,6 +41,9 @@ export const FICHE: Traductions<{
       "Votre spécialité est encore peu couverte : le catalogue porte aujourd'hui surtout sur l'anesthésie-réanimation, la réanimation, la médecine d'urgence et la pédiatrie. Vos {quota} fiches gratuites sont donc au choix dans tout le catalogue. L'abonnement PREMIUM vous sera proposé quand votre spécialité sera couverte : nous vous écrirons à ce moment-là.",
     catalogueOuvertQuota:
       "Vous avez utilisé vos {quota} crédits. Votre spécialité est encore peu couverte : l'abonnement PREMIUM vous sera proposé quand elle le sera, et nous vous écrirons à ce moment-là.",
+    traductionIA: "",
+    traductionRelue: "",
+    versionFrancaise: "",
   },
   en: {
     remplacee: "Superseded",
@@ -58,6 +64,9 @@ export const FICHE: Traductions<{
       "Your specialty is not yet well covered: the catalogue currently focuses on anaesthesiology and critical care, intensive care, emergency medicine and paediatrics. Your {quota} free summaries can therefore be chosen from the whole catalogue. The PREMIUM subscription will be offered once your specialty is covered: we will write to you then.",
     catalogueOuvertQuota:
       "You have used your {quota} credits. Your specialty is not yet well covered: the PREMIUM subscription will be offered once it is, and we will write to you then.",
+    traductionIA: "Translation produced by AI from the French summary reviewed by a physician. Not reviewed in this language. The French version and the official text prevail.",
+    traductionRelue: "Translation reviewed by a physician. The French version and the official text prevail.",
+    versionFrancaise: "Read the French version",
   },
   es: {
     remplacee: "Sustituida",
@@ -78,6 +87,9 @@ export const FICHE: Traductions<{
       "Su especialidad todavía está poco cubierta: el catálogo trata hoy sobre todo de anestesiología y reanimación, medicina intensiva, medicina de urgencias y pediatría. Por eso puede elegir sus {quota} resúmenes gratuitos en todo el catálogo. Le propondremos la suscripción PREMIUM cuando su especialidad esté cubierta: le escribiremos en ese momento.",
     catalogueOuvertQuota:
       "Ha utilizado sus {quota} créditos. Su especialidad todavía está poco cubierta: le propondremos la suscripción PREMIUM cuando lo esté y le escribiremos en ese momento.",
+    traductionIA: "Traducción realizada por IA a partir del resumen francés revisado por un médico. No revisada en este idioma. Prevalecen la versión francesa y el texto oficial.",
+    traductionRelue: "Traducción revisada por un médico. Prevalecen la versión francesa y el texto oficial.",
+    versionFrancaise: "Leer la versión francesa",
   },
   de: {
     remplacee: "Ersetzt",
@@ -98,6 +110,9 @@ export const FICHE: Traductions<{
       "Ihr Fachgebiet ist noch wenig abgedeckt: Der Katalog umfasst derzeit vor allem Anästhesiologie und Intensivmedizin, Intensivmedizin, Notfallmedizin und Pädiatrie. Ihre {quota} kostenlosen Zusammenfassungen können Sie daher aus dem gesamten Katalog wählen. Das PREMIUM-Abonnement wird Ihnen angeboten, sobald Ihr Fachgebiet abgedeckt ist: Wir schreiben Ihnen dann.",
     catalogueOuvertQuota:
       "Sie haben Ihre {quota} Guthaben aufgebraucht. Ihr Fachgebiet ist noch wenig abgedeckt: Das PREMIUM-Abonnement wird Ihnen angeboten, sobald es abgedeckt ist, und wir schreiben Ihnen dann.",
+    traductionIA: "Übersetzung durch KI auf Grundlage der von einem Arzt geprüften französischen Zusammenfassung. In dieser Sprache nicht geprüft. Maßgeblich sind die französische Fassung und der offizielle Text.",
+    traductionRelue: "Von einem Arzt geprüfte Übersetzung. Maßgeblich sind die französische Fassung und der offizielle Text.",
+    versionFrancaise: "Französische Fassung lesen",
   },
   ar: {
     remplacee: "مستبدلة",
@@ -125,6 +140,9 @@ export const FICHE: Traductions<{
       "تخصصك ما زال قليل التغطية: يتناول الفهرس حاليًا بشكل أساسي التخدير والإنعاش، والعناية المركزة، وطب الطوارئ، وطب الأطفال. لذلك يمكنك اختيار ملخصاتك المجانية الـ{quota} من الفهرس بأكمله. سنعرض عليك اشتراك PREMIUM عندما يصبح تخصصك مغطًّى، وسنراسلك حينها.",
     catalogueOuvertQuota:
       "لقد استخدمت أرصدتك الـ{quota}. تخصصك ما زال قليل التغطية: سنعرض عليك اشتراك PREMIUM عندما يصبح مغطًّى، وسنراسلك حينها.",
+    traductionIA: "ترجمة أنجزها الذكاء الاصطناعي انطلاقًا من الملخص الفرنسي الذي راجعه طبيب. لم تُراجَع بهذه اللغة. النسخة الفرنسية والنص الرسمي هما المرجع المعتمد.",
+    traductionRelue: "ترجمة راجعها طبيب. النسخة الفرنسية والنص الرسمي هما المرجع المعتمد.",
+    versionFrancaise: "قراءة النسخة الفرنسية",
   },
   zh: {
     remplacee: "已被取代",
@@ -143,5 +161,8 @@ export const FICHE: Traductions<{
       "您的专科目前覆盖尚少：目录现阶段主要涵盖麻醉与重症、重症医学、急诊医学和儿科。因此，您可以在整个目录中选择 {quota} 篇免费摘要。待您的专科有所覆盖时，我们将向您提供 PREMIUM 订阅，并届时写信通知您。",
     catalogueOuvertQuota:
       "您已用完 {quota} 个点数。您的专科目前覆盖尚少：待覆盖后我们将向您提供 PREMIUM 订阅，并届时写信通知您。",
+    traductionIA: "本译文由人工智能根据经医生审阅的法文摘要翻译而成，未经该语言的审阅。以法文版本和官方文本为准。",
+    traductionRelue: "本译文已经医生审阅。以法文版本和官方文本为准。",
+    versionFrancaise: "阅读法文版本",
   },
 };

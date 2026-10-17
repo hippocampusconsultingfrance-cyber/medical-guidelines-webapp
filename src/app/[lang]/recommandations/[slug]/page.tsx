@@ -7,9 +7,9 @@ import { fmt, plur } from "@/i18n/format";
 import { rubrique } from "@/i18n/rubriques";
 import { textes } from "@/i18n/serveur";
 import { ANCIENNETE_MAX, anneeAncienne, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
-import { texteFrancais } from "@/lib/langues";
+import { LANGUES_OUVERTES, texteFrancais, type LangueOuverte } from "@/lib/langues";
 import { INDEXABLE, LANGUES_CONTENU, SITE_URL, alternatives, contenuIndexable, ficheKey, ficheSlug } from "@/lib/seo";
-import { loadApercuPublic, loadPointsClesPublics, loadPublicFiches } from "../data";
+import { loadApercuPublic, loadPointsClesPublics, loadPublicFiches, loadTraductionsPubliques } from "../data";
 import PublicHeader from "../public-header";
 import { RECOMMANDATIONS } from "../textes";
 import DonneesStructurees from "../../donnees-structurees";
@@ -39,14 +39,19 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/recommanda
   const found = await load(slug);
   if (!found) return { title: t.fiche.introuvable };
   const { fiche } = found;
-  const title = fiche.card_json?.title ?? fiche.title;
-  const description = (fiche.card_json?.short ?? fiche.title).slice(0, 160);
-  const adresses = alternatives(langue, `/recommandations/${slug}`, LANGUES_CONTENU);
+  // Traduction publiée dans la langue de la page : titre et résumé traduits,
+  // page indexée ; hreflang : le français et les langues traduites.
+  const traductions = await loadTraductionsPubliques(fiche.id);
+  const tr = langue === "fr" ? undefined : traductions[langue];
+  const title = tr?.card?.title ?? fiche.card_json?.title ?? fiche.title;
+  const description = (tr?.card?.short ?? fiche.card_json?.short ?? fiche.title).slice(0, 160);
+  const langues: LangueOuverte[] = [...LANGUES_CONTENU, ...LANGUES_OUVERTES.filter((l) => !LANGUES_CONTENU.includes(l) && traductions[l])];
+  const adresses = alternatives(langue, `/recommandations/${slug}`, langues);
   return {
     title: `${title} — ${fiche.societies.slice(0, 3).join(" / ") || FICHE[langue].synthese} | medical-guidelines.net`,
     description,
     alternates: adresses,
-    robots: { index: contenuIndexable(langue), follow: INDEXABLE },
+    robots: { index: contenuIndexable(langue) || (INDEXABLE && Boolean(tr)), follow: INDEXABLE },
     openGraph: {
       title,
       description,
@@ -73,11 +78,16 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
   if (!found) notFound();
   const { fiche } = found;
   if (ficheSlug(fiche.fiche_key) !== slug) notFound();
-  const [toutes, points, apercu] = await Promise.all([
+  const [toutes, points, apercuFr, traductions] = await Promise.all([
     loadPublicFiches(),
     loadPointsClesPublics(fiche.id),
     loadApercuPublic(fiche.id),
+    loadTraductionsPubliques(fiche.id),
   ]);
+  // Traduction publiée dans la langue de la page (sinon : contenu en français).
+  const tr = langue === "fr" ? undefined : traductions[langue];
+  const apercu = tr ? tr.apercu : apercuFr;
+  const contenu = tr ? { lang: langue } : fr;
   // Texte source remplacé : lien vers la fiche qui le remplace, si elle est en ligne.
   const remplacante =
     fiche.freshness_status === "remplacee" && fiche.superseded_by_document_id
@@ -90,7 +100,8 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
     : [];
 
   const c = fiche.card_json;
-  const title = c?.title ?? fiche.title;
+  const title = tr?.card?.title ?? c?.title ?? fiche.title;
+  const resume = tr?.card?.short ?? c?.short;
   const date = formatDate(fiche.publication_date, locale);
   const annee = fiche.freshness_status === "remplacee" ? null : anneeAncienne(fiche.publication_date);
   const url = `${SITE_URL}${lien(`/recommandations/${slug}`)}`;
@@ -98,12 +109,12 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     name: title,
-    description: c?.short ?? fiche.title,
+    description: resume ?? fiche.title,
     url,
     about: { "@type": "MedicalGuideline", name: fiche.title, url: fiche.source_url },
     audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
     // Contenu de la fiche : en français tant que sa traduction n'est pas publiée.
-    inLanguage: "fr",
+    inLanguage: tr ? langue : "fr",
   };
 
   return (
@@ -130,7 +141,7 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#177E73]">
           {c?.society ?? fiche.societies.join(" / ")}
         </p>
-        <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]" {...fr}>
+        <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]" {...contenu}>
           {title}
         </h1>
         {c?.title && c.title !== fiche.title && (
@@ -139,10 +150,16 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
           </p>
         )}
         <p className="mt-2 text-sm text-slate-500">{t.fiche.independante}</p>
-        {tf.enFrancais && (
-          <p role="note" className="mt-4 rounded-lg bg-slate-50 p-3 text-sm text-slate-600 ring-1 ring-slate-200">
-            {tf.enFrancais}
+        {tr ? (
+          <p role="note" className="mt-4 rounded-lg bg-amber-50 p-3 text-sm text-amber-900 ring-1 ring-amber-200">
+            {tr.iaNonRelue ? tf.traductionIA : tf.traductionRelue}
           </p>
+        ) : (
+          tf.enFrancais && (
+            <p role="note" className="mt-4 rounded-lg bg-slate-50 p-3 text-sm text-slate-600 ring-1 ring-slate-200">
+              {tf.enFrancais}
+            </p>
+          )
         )}
 
         {fiche.freshness_status === "remplacee" && (
@@ -172,16 +189,16 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
             <h2 id="champ" className="text-lg font-bold text-slate-900">
               {t.fiche.champ}
             </h2>
-            <p className="mt-2 leading-relaxed text-slate-700" {...fr}>
+            <p className="mt-2 leading-relaxed text-slate-700" {...contenu}>
               {apercu.champ}
             </p>
           </section>
         ) : (
-          c?.short && (
+          resume && (
             <section className="mt-8">
               <h2 className="text-lg font-bold text-slate-900">{t.fiche.resume}</h2>
-              <p className="mt-2 leading-relaxed text-slate-700" {...fr}>
-                {c.short}
+              <p className="mt-2 leading-relaxed text-slate-700" {...contenu}>
+                {resume}
               </p>
             </section>
           )
@@ -236,7 +253,7 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
             <h2 id="sommaire" className="text-lg font-bold text-slate-900">
               {t.fiche.sommaire}
             </h2>
-            <ol className="mt-3 list-decimal space-y-1 ps-6 text-slate-700 marker:text-slate-400" {...fr}>
+            <ol className="mt-3 list-decimal space-y-1 ps-6 text-slate-700 marker:text-slate-400" {...contenu}>
               {apercu.chapitres.slice(0, CHAPITRES_MAX).map((chapitre) => (
                 <li key={chapitre}>{chapitre}</li>
               ))}
