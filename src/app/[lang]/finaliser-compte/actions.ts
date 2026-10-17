@@ -1,6 +1,8 @@
 "use server";
 
+import { nomSpecialite } from "@/i18n/specialites";
 import { composerBienvenue } from "@/lib/bienvenue";
+import { langueMembre } from "@/lib/emails-textes";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { deposerJustificatif } from "@/lib/etudiants-depot";
 import { checkoutOpen } from "@/lib/stripe";
@@ -11,8 +13,9 @@ const LOG = "bienvenue";
 
 // E-mail de bienvenue du membre connecté, une seule fois (journal
 // notifications_log, body « bienvenue », et clé d'idempotence Resend). Un
-// échec n'empêche jamais l'accès au site.
-export async function envoyerBienvenue() {
+// échec n'empêche jamais l'accès au site. Langue : celle de la page.
+export async function envoyerBienvenue(langueDemandee?: string) {
+  const langue = langueMembre(langueDemandee);
   try {
     if (!emailEnabled()) return;
     const supabase = await createClient();
@@ -25,7 +28,7 @@ export async function envoyerBienvenue() {
     const [{ data: profile }, { count: deja }] = await Promise.all([
       admin
         .from("profiles")
-        .select("prenom, setup_completed, specialty_id, specialty:specialties(name_i18n)")
+        .select("prenom, setup_completed, specialty_id, specialty:specialties(slug, name_i18n)")
         .eq("id", user.id)
         .single(),
       admin.from("notifications_log").select("id", { count: "exact", head: true }).eq("user_id", user.id).eq("body", LOG),
@@ -45,20 +48,24 @@ export async function envoyerBienvenue() {
         .neq("documents.freshness_status", "retiree");
       fiches = count ?? 0;
     }
-    const spec = profile.specialty as { name_i18n: { fr?: string } | null } | { name_i18n: { fr?: string } | null }[] | null;
-    const specialite = (Array.isArray(spec) ? spec[0] : spec)?.name_i18n?.fr ?? null;
+    type Specialite = { slug: string; name_i18n: { fr?: string } | null };
+    const spec = profile.specialty as Specialite | Specialite[] | null;
+    const s = Array.isArray(spec) ? spec[0] : spec;
+    const specialite = s?.name_i18n?.fr ? nomSpecialite(s.slug, s.name_i18n.fr, langue) : null;
 
     const email = composerBienvenue(
       {
         email: user.email,
         prenom: (profile.prenom as string | null) || null,
-        specialite: specialite ? specialite.toLowerCase() : null,
+        // « en anesthésie-réanimation » ; en anglais, nom propre de la spécialité.
+        specialite: specialite ? (langue === "fr" ? specialite.toLowerCase() : specialite) : null,
         fiches,
         premiumOuvert: checkoutOpen(false),
         // Vérification impossible : message habituel.
         catalogueOuvert: couverte === false,
       },
       siteUrl(),
+      langue,
     );
     const sent = await sendBatch([email], `bienvenue-${user.id}`);
     if (!sent.ok) {

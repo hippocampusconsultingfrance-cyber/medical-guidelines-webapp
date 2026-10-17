@@ -1,12 +1,13 @@
 import { escapeHtml } from "@/lib/fiches";
+import { direction, type Langue } from "@/lib/langues";
 
 // Gabarit commun des e-mails envoyés aux membres : fond gris clair, carte
 // blanche, bandeau bleu marine avec le nom du site, pied de page discret.
 // Mise en page en tableaux et styles en ligne (lus par toutes les
 // messageries, y compris Outlook).
-export function cadreEmail(subject: string, corps: string, pied: string) {
+export function cadreEmail(subject: string, corps: string, pied: string, langue: Langue = "fr") {
   return (
-    `<!doctype html><html lang="fr"><head><meta charset="utf-8">` +
+    `<!doctype html><html lang="${langue}" dir="${direction(langue)}"><head><meta charset="utf-8">` +
     `<meta name="viewport" content="width=device-width, initial-scale=1">` +
     `<title>${escapeHtml(subject)}</title></head>` +
     `<body style="margin:0;padding:0;background-color:#F1F5F9">` +

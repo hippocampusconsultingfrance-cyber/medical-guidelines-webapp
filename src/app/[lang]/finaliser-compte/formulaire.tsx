@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useLien } from "@/i18n/client";
+import { useLangue, useLien } from "@/i18n/client";
 import { fmt } from "@/i18n/format";
 import { createClient } from "@/lib/supabase/client";
 import { passwordAssezFort } from "@/lib/password";
@@ -17,6 +17,7 @@ const MAX = 3 * 1024 * 1024;
 export default function FinaliserCompteForm({ t, regle }: { t: TextesFinaliser; regle: string }) {
   const router = useRouter();
   const lien = useLien();
+  const langue = useLangue();
   const ERREURS = t.erreurs;
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -118,7 +119,7 @@ export default function FinaliserCompteForm({ t, regle }: { t: TextesFinaliser; 
     }
 
     // E-mail de bienvenue (une seule fois ; un échec n'empêche pas l'accès).
-    await envoyerBienvenue().catch(() => undefined);
+    await envoyerBienvenue(langue).catch(() => undefined);
     router.push(lien(enFormation ? "/abonnement?r=etudiant_envoye#etudiant" : "/"));
   }
 

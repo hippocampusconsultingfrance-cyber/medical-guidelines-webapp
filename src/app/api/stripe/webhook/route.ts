@@ -1,6 +1,7 @@
 import { captureMessage } from "@sentry/nextjs";
 import type Stripe from "stripe";
 import { composerConfirmation, LOG_COMMANDE } from "@/lib/commande";
+import { langueMembre } from "@/lib/emails-textes";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { APP, choisirAbonnement, getStripe, isOwnSubscription, periodEnd, toDbStatus } from "@/lib/stripe";
@@ -130,7 +131,7 @@ async function confirmerCommande(session: Stripe.Checkout.Session, sub: Stripe.S
       .eq("body", body);
     if (count) return;
     const [{ data: profil }, { data: compte }] = await Promise.all([
-      admin.from("profiles").select("prenom").eq("id", userId).maybeSingle(),
+      admin.from("profiles").select("prenom, langue_preferee").eq("id", userId).maybeSingle(),
       admin.auth.admin.getUserById(userId),
     ]);
     const to = compte?.user?.email ?? session.customer_details?.email;
@@ -147,6 +148,7 @@ async function confirmerCommande(session: Stripe.Checkout.Session, sub: Stripe.S
         renonciation: meta.withdrawal_waiver_at || null,
       },
       siteUrl(),
+      langueMembre(profil?.langue_preferee),
     );
     const sent = await sendBatch([email], body);
     if (!sent.ok) {

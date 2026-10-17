@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { journaliser } from "@/lib/journal";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { codeEtudiant, emailDecision } from "@/lib/etudiants";
+import { langueMembre } from "@/lib/emails-textes";
 import { APP, getStripe, stripeEnabled } from "@/lib/stripe";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -92,12 +93,18 @@ export async function deciderEtudiant(formData: FormData) {
   if (emailEnabled()) {
     const [{ data: member }, { data: profile }] = await Promise.all([
       admin.auth.admin.getUserById(req!.user_id),
-      admin.from("profiles").select("prenom").eq("id", req!.user_id).single(),
+      admin.from("profiles").select("prenom, langue_preferee").eq("id", req!.user_id).single(),
     ]);
     const email = member?.user?.email;
     if (email) {
       const sent = await sendBatch(
-        [emailDecision({ email, prenom: (profile?.prenom as string | null) || null, valide, code, surAbonnement, note }, siteUrl())],
+        [
+          emailDecision(
+            { email, prenom: (profile?.prenom as string | null) || null, valide, code, surAbonnement, note },
+            siteUrl(),
+            langueMembre(profile?.langue_preferee),
+          ),
+        ],
         `etudiant-${id}`,
       );
       if (!sent.ok) console.error("Tarif étudiant : e-mail", sent.error);
