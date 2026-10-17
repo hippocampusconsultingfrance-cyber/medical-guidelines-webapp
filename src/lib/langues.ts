@@ -12,7 +12,7 @@ export const LANGUE_DEFAUT = "fr" satisfies Langue;
 // toute l'interface traduite (textes.ts de chaque page : TypeScript exige
 // une version pour chaque langue ouverte). Une adresse d'une langue fermée
 // affiche la page 404.
-export const LANGUES_OUVERTES = ["fr", "en"] as const satisfies readonly Langue[];
+export const LANGUES_OUVERTES = ["fr", "en", "es", "de", "ar", "zh"] as const satisfies readonly Langue[];
 export type LangueOuverte = (typeof LANGUES_OUVERTES)[number];
 
 export const NOMS_LANGUES: Record<Langue, string> = {
@@ -48,6 +48,13 @@ export function estOuverte(x: unknown): x is LangueOuverte {
 
 export function direction(langue: Langue): "ltr" | "rtl" {
   return langue === "ar" ? "rtl" : "ltr";
+}
+
+// Attributs d'un texte resté en français (contenu des fiches) dans une page
+// d'une autre langue : prononciation des lecteurs d'écran, et sens de lecture
+// gauche-droite dans une page en arabe.
+export function texteFrancais(langue: Langue) {
+  return langue === LANGUE_DEFAUT ? {} : ({ lang: LANGUE_DEFAUT, dir: "ltr" } as const);
 }
 
 // Adresse d'une page dans une langue : chemin("en", "/cgu") = "/en/cgu",

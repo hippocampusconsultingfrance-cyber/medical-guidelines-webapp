@@ -140,7 +140,7 @@ export default async function AccueilPublic({ recentes = [] }: { recentes?: Publ
                   <table className="mt-3 w-full text-start text-[0.8rem]">
                     <thead>
                       <tr className="bg-[#0E3A78] text-white">
-                        <th className="rounded-s-md px-2 py-1.5 font-semibold">{t.apercu.ref}</th>
+                        <th className="whitespace-nowrap rounded-s-md px-2 py-1.5 font-semibold">{t.apercu.ref}</th>
                         <th className="px-2 py-1.5 font-semibold">{t.apercu.recommandation}</th>
                         <th className="rounded-e-md px-2 py-1.5 font-semibold">{t.apercu.grade}</th>
                       </tr>

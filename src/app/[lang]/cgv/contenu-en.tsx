@@ -1,4 +1,4 @@
-import { MediationEn } from "../mediation";
+import { MediationTraduite } from "../mediation";
 import { CGV_VERSION } from "@/lib/stripe";
 
 // Traduction d'information des CGV (contenu-fr.tsx fait seul foi).
@@ -84,7 +84,7 @@ export default function CgvEn() {
       </p>
 
       <h2 className={h2}>9. Mediation and applicable law</h2>
-      <MediationEn />
+      <MediationTraduite langue="en" />
       <p className="mt-2">These terms are governed by French law.</p>
     </div>
   );

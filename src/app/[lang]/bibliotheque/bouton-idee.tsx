@@ -13,7 +13,7 @@ export default function BoutonIdee({ libelle }: { libelle: string }) {
     <Link
       href={lien(`/suggestions?page=${encodeURIComponent(page)}`)}
       className="btn btn-primary btn-sm"
-      style={{ position: "fixed", right: 16, bottom: 16, zIndex: 40, boxShadow: "0 4px 14px rgba(0,0,0,.15)" }}
+      style={{ position: "fixed", insetInlineEnd: 16, bottom: 16, zIndex: 40, boxShadow: "0 4px 14px rgba(0,0,0,.15)" }}
     >
       {libelle}
     </Link>

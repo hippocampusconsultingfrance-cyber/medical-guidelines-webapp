@@ -7,6 +7,7 @@ import { fmt, plur } from "@/i18n/format";
 import { rubrique } from "@/i18n/rubriques";
 import { textes } from "@/i18n/serveur";
 import { ANCIENNETE_MAX, anneeAncienne, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
+import { texteFrancais } from "@/lib/langues";
 import { INDEXABLE, LANGUES_CONTENU, SITE_URL, alternatives, contenuIndexable, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadApercuPublic, loadPointsClesPublics, loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
@@ -67,6 +68,7 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
   const { slug } = await params;
   const { t, langue, lien, locale } = await textes(RECOMMANDATIONS);
   const tf = FICHE[langue];
+  const fr = texteFrancais(langue);
   const found = await load(slug);
   if (!found) notFound();
   const { fiche } = found;
@@ -128,8 +130,14 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#177E73]">
           {c?.society ?? fiche.societies.join(" / ")}
         </p>
-        <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]">{title}</h1>
-        {c?.title && c.title !== fiche.title && <p className="mt-2 text-slate-600">{fiche.title}</p>}
+        <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]" {...fr}>
+          {title}
+        </h1>
+        {c?.title && c.title !== fiche.title && (
+          <p className="mt-2 text-slate-600" {...fr}>
+            {fiche.title}
+          </p>
+        )}
         <p className="mt-2 text-sm text-slate-500">{t.fiche.independante}</p>
         {tf.enFrancais && (
           <p role="note" className="mt-4 rounded-lg bg-slate-50 p-3 text-sm text-slate-600 ring-1 ring-slate-200">
@@ -164,13 +172,17 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
             <h2 id="champ" className="text-lg font-bold text-slate-900">
               {t.fiche.champ}
             </h2>
-            <p className="mt-2 leading-relaxed text-slate-700">{apercu.champ}</p>
+            <p className="mt-2 leading-relaxed text-slate-700" {...fr}>
+              {apercu.champ}
+            </p>
           </section>
         ) : (
           c?.short && (
             <section className="mt-8">
               <h2 className="text-lg font-bold text-slate-900">{t.fiche.resume}</h2>
-              <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
+              <p className="mt-2 leading-relaxed text-slate-700" {...fr}>
+                {c.short}
+              </p>
             </section>
           )
         )}
@@ -180,7 +192,7 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
             <h2 id="points-cles" className="text-lg font-bold text-slate-900">
               {t.fiche.pointsCles}
             </h2>
-            <ul className="mt-3 list-disc space-y-2 ps-5 leading-relaxed text-slate-700">
+            <ul className="mt-3 list-disc space-y-2 ps-5 leading-relaxed text-slate-700" {...fr}>
               {points.map((p) => (
                 <li key={p}>{p}</li>
               ))}
@@ -224,7 +236,7 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
             <h2 id="sommaire" className="text-lg font-bold text-slate-900">
               {t.fiche.sommaire}
             </h2>
-            <ol className="mt-3 list-decimal space-y-1 ps-6 text-slate-700 marker:text-slate-400">
+            <ol className="mt-3 list-decimal space-y-1 ps-6 text-slate-700 marker:text-slate-400" {...fr}>
               {apercu.chapitres.slice(0, CHAPITRES_MAX).map((chapitre) => (
                 <li key={chapitre}>{chapitre}</li>
               ))}

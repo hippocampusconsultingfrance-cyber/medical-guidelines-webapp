@@ -22,6 +22,7 @@ import {
   type Presentation,
   type TocItem,
 } from "@/lib/fiches";
+import { texteFrancais } from "@/lib/langues";
 import { cardTitle, loadLibrary } from "../data";
 import AccordionControls from "../accordion-controls";
 import { publierCorrection } from "../signalements/actions";
@@ -99,6 +100,7 @@ export default async function FichePage({
   const { t: tout, langue, lien, locale } = await textes(BIBLIOTHEQUE);
   const t = tout.fiche;
   const tf = FICHE[langue];
+  const fr = texteFrancais(langue);
   const MESSAGES: Record<string, string> = { ...t.messages, quota_atteint: fmt(t.quotaAtteint, { quota: FREE_QUOTA }) };
   const FRESHNESS_NOTICE: Record<string, string> = { revision_detectee: t.revisionDetectee, remplacee: t.remplaceeNotice };
   const quotaCatalogue = fmt(tf.catalogueOuvertQuota, { quota: FREE_QUOTA });
@@ -159,9 +161,9 @@ export default async function FichePage({
       <div className="doc-header__eyebrow">
         {card?.society ?? [doc.doc_type, date].filter(Boolean).join(" — ")}
       </div>
-      <h1>{cardTitle(doc)}</h1>
+      <h1 {...fr}>{cardTitle(doc)}</h1>
       {card?.title && card.title !== doc.title && (
-        <p className="block-p" style={{ color: "var(--ink-muted)", marginTop: 0 }}>
+        <p className="block-p" style={{ color: "var(--ink-muted)", marginTop: 0 }} {...fr}>
           {doc.title}
         </p>
       )}
@@ -261,7 +263,11 @@ export default async function FichePage({
     return (
       <Shell lib={lib} activeId={id}>
         {header}
-        {card?.short && <p className="block-p">{card.short}</p>}
+        {card?.short && (
+          <p className="block-p" {...fr}>
+            {card.short}
+          </p>
+        )}
         <div className="unlock-box">
           <h2>{t.bloqueeTitre}</h2>
           {message && <p style={{ color: "var(--ink)", fontWeight: 600 }}>{message}</p>}
@@ -331,7 +337,7 @@ export default async function FichePage({
         {pointsCles.length > 0 && (
           <section className="panel" aria-label={t.pointsCles} style={{ marginTop: 18 }}>
             <p style={{ fontWeight: 700 }}>{t.pointsCles}</p>
-            <ul style={{ margin: 0, paddingInlineStart: 20 }}>
+            <ul style={{ margin: 0, paddingInlineStart: 20 }} {...fr}>
               {pointsCles.map((p, i) => (
                 <li key={i} style={{ marginBottom: 4 }}>
                   {p}
@@ -511,7 +517,7 @@ export default async function FichePage({
           </section>
         ))}
         {toc.length > 1 && <AccordionControls deplier={tout.shell.toutDeplier} replier={tout.shell.toutReplier} />}
-        <div dangerouslySetInnerHTML={{ __html: body }} />
+        <div {...fr} dangerouslySetInnerHTML={{ __html: body }} />
         <p className="block-p" style={{ fontSize: "0.82rem", color: "var(--ink-muted)", marginTop: 18 }}>
           {t.citees}{" "}
           {doc.societies.length ? doc.societies.map((s) => lib.societyNames[s] ?? s).join(", ") : t.leursAuteurs}, «&nbsp;
@@ -533,7 +539,7 @@ export default async function FichePage({
             <p style={{ color: "var(--ink)", fontWeight: 600, marginTop: 10 }}>{message}</p>
           )}
           {corrections.length ? (
-            <ul style={{ margin: "10px 0 0", paddingLeft: 18, fontSize: "0.9rem" }}>
+            <ul style={{ margin: "10px 0 0", paddingInlineStart: 18, fontSize: "0.9rem" }}>
               {corrections.map((c) => (
                 <li key={c.id}>
                   {dateCorrection(c.corrected_at, locale)} — <b>{tf.criticites[c.criticite] ?? c.criticite}</b> : {c.resume}

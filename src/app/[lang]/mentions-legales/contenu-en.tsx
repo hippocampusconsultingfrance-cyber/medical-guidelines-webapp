@@ -1,4 +1,4 @@
-import { MediationEn } from "../mediation";
+import { MediationTraduite } from "../mediation";
 
 // Traduction d'information des mentions légales (contenu-fr.tsx fait seul foi).
 export default function MentionsLegalesEn() {
@@ -47,7 +47,7 @@ export default function MentionsLegalesEn() {
       </p>
 
       <h2 className={h2}>Consumer mediation</h2>
-      <MediationEn />
+      <MediationTraduite langue="en" />
 
       <h2 className={h2}>Intellectual property</h2>
       <p className="mt-2">

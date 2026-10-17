@@ -1,5 +1,5 @@
 import { CGU_VERSION } from "@/lib/legal";
-import { MediationEn } from "../mediation";
+import { MediationTraduite } from "../mediation";
 
 // Traduction d'information des CGU (contenu-fr.tsx fait seul foi).
 export default function CguEn() {
@@ -130,7 +130,7 @@ export default function CguEn() {
         matter to the court of their choice under the conditions provided by law and use consumer mediation free of
         charge:
       </p>
-      <MediationEn />
+      <MediationTraduite langue="en" />
     </div>
   );
 }
