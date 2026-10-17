@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { chipClass, escapeHtml, renderPresentation, type Card, type Presentation } from "@/lib/fiches";
+import { direction } from "@/lib/langues";
 import { createClient } from "@/lib/supabase/server";
 import AccordionControls from "../../accordion-controls";
 import { cardTitle, loadLibrary } from "../../data";
 import Shell from "../../shell";
 import { reviewTranslation } from "./actions";
+import { LANGUES_TRADUCTION, NOMS_TRADUCTION, type LangueTraduction } from "./langues";
 
 export const metadata: Metadata = {
   title: "Relecture de la traduction — medical-guidelines.net",
@@ -21,7 +23,7 @@ const MESSAGES: Record<string, string> = {
   erreur: "L'enregistrement n'a pas abouti (droits de relecteur requis).",
 };
 
-type KeyPoint = { ref?: string; ref_en?: string; grade?: string; fr?: string; en?: string };
+type KeyPoint = { ref?: string; grade?: string; fr?: string } & Record<string, string | undefined>;
 type Translation = {
   status: string;
   card_json: Card | null;
@@ -35,12 +37,14 @@ type Translation = {
   imported_at: string;
 };
 
-// Relecture de la version anglaise d'une fiche (équipe éditoriale) : points
-// à vérifier, points clés français/anglais, fiche traduite complète, décision
-// du relecteur. Jamais visible des membres.
-export default async function TraductionPage({ params, searchParams }: PageProps<"/[lang]/bibliotheque/[id]/en">) {
-  const { id } = await params;
-  if (!UUID.test(id)) notFound();
+// Relecture de la traduction d'une fiche dans une langue (équipe éditoriale) :
+// points à vérifier, points clés français/traduits, fiche traduite complète,
+// décision du relecteur. Jamais visible des membres.
+export default async function TraductionPage({ params, searchParams }: PageProps<"/[lang]/bibliotheque/[id]/[cible]">) {
+  const { id, cible: brut } = await params;
+  if (!UUID.test(id) || !(LANGUES_TRADUCTION as readonly string[]).includes(brut)) notFound();
+  const cible = brut as LangueTraduction;
+  const nom = NOMS_TRADUCTION[cible];
   const supabase = await createClient();
   const {
     data: { user },
@@ -57,7 +61,7 @@ export default async function TraductionPage({ params, searchParams }: PageProps
       "status, card_json, presentation_json, key_points, a_verifier, source_publication_date, fr_a_jour, review_notes, reviewed_at, imported_at",
     )
     .eq("document_id", id)
-    .eq("lang", "en")
+    .eq("lang", cible)
     .maybeSingle();
   const t = data as Translation | null;
   if (!t) notFound();
@@ -73,18 +77,24 @@ export default async function TraductionPage({ params, searchParams }: PageProps
     <Shell lib={lib} activeId={id} toc={toc}>
       <div className="doc-header">
         <div className="doc-header__eyebrow">
-          Traduction anglaise · {t.status === "relue" ? "relue" : "brouillon"} · non publiée
+          Traduction {nom.adjectif} · {t.status === "relue" ? "relue" : "brouillon"} · non publiée
         </div>
-        <h1>{t.card_json?.title ?? cardTitle(doc)}</h1>
+        <h1 lang={cible} dir={direction(cible)}>
+          {t.card_json?.title ?? cardTitle(doc)}
+        </h1>
         <p className="block-p" style={{ color: "var(--ink-muted)", marginTop: 0 }}>
           Fiche française : <Link href={`/bibliotheque/${id}`}>{cardTitle(doc)}</Link>
           {" · "}importée le {date(t.imported_at)}
           {t.source_publication_date ? ` · source du ${date(t.source_publication_date)}` : ""}
         </p>
-        {t.card_json?.short && <p className="block-p">{t.card_json.short}</p>}
+        {t.card_json?.short && (
+          <p className="block-p" lang={cible} dir={direction(cible)}>
+            {t.card_json.short}
+          </p>
+        )}
         {!t.fr_a_jour && (
           <div className="panel warn" role="note">
-            <b>Fiche française modifiée depuis la traduction.</b> Cette version anglaise part
+            <b>Fiche française modifiée depuis la traduction.</b> Cette version {nom.adjectif} part
             d&apos;un contenu français antérieur : à retraduire ou à comparer avant relecture.
           </div>
         )}
@@ -105,7 +115,7 @@ export default async function TraductionPage({ params, searchParams }: PageProps
 
       {t.key_points && t.key_points.length > 0 && (
         <>
-          <h2 className="block-section">Points clés — français / anglais</h2>
+          <h2 className="block-section">Points clés — français / {nom.adjectif}</h2>
           <div className="table-scroll">
             <table className="rfe">
               <thead>
@@ -113,18 +123,20 @@ export default async function TraductionPage({ params, searchParams }: PageProps
                   <th>Réf.</th>
                   <th>Grade</th>
                   <th>Français</th>
-                  <th>English</th>
+                  <th>{nom.autonyme}</th>
                 </tr>
               </thead>
               <tbody>
                 {t.key_points.map((k, i) => (
                   <tr key={i}>
-                    <td>{k.ref_en ?? k.ref}</td>
+                    <td>{k[`ref_${cible}`] ?? k.ref}</td>
                     <td className="num">
                       {k.grade && <span className={`chip ${chipClass(k.grade)}`}>{k.grade}</span>}
                     </td>
                     <td>{k.fr}</td>
-                    <td>{k.en}</td>
+                    <td lang={cible} dir={direction(cible)}>
+                      {k[cible]}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -134,8 +146,8 @@ export default async function TraductionPage({ params, searchParams }: PageProps
       )}
 
       {legend && (
-        <p className="block-p is-note" style={{ marginTop: 12 }}>
-          <b>Grade legend:</b>{" "}
+        <p className="block-p is-note" style={{ marginTop: 12 }} lang={cible} dir={direction(cible)}>
+          <b>{nom.legende}</b>{" "}
           {Object.entries(legend)
             .map(([k, v]) => `${k} = ${v}`)
             .join(" · ")}
@@ -144,7 +156,7 @@ export default async function TraductionPage({ params, searchParams }: PageProps
 
       <h2 className="block-section">Fiche traduite</h2>
       {toc.length > 1 && <AccordionControls deplier="Tout déplier" replier="Tout replier" />}
-      <div lang="en" dangerouslySetInnerHTML={{ __html: html || `<p class="block-p">${escapeHtml("(contenu vide)")}</p>` }} />
+      <div lang={cible} dir={direction(cible)} dangerouslySetInnerHTML={{ __html: html || `<p class="block-p">${escapeHtml("(contenu vide)")}</p>` }} />
 
       <form action={reviewTranslation} className="unlock-box" id="relecture" style={{ marginTop: 28 }}>
         <h2>Relecture</h2>
@@ -155,6 +167,7 @@ export default async function TraductionPage({ params, searchParams }: PageProps
           </p>
         )}
         <input type="hidden" name="id" value={id} />
+        <input type="hidden" name="cible" value={cible} />
         <div className="field">
           <label htmlFor="tr-notes">Remarques du relecteur (corrections à faire dans l&apos;atelier, points tranchés)</label>
           <textarea id="tr-notes" name="notes" maxLength={4000} rows={5} defaultValue={t.review_notes ?? ""} />

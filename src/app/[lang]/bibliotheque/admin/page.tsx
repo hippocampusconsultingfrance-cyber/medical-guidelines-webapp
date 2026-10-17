@@ -244,7 +244,7 @@ export default async function AdminPage({ searchParams }: PageProps<"/[lang]/bib
     },
     { label: "Fiches « révision détectée »", n: revision, href: "/bibliotheque", detail: "Nouvelle version de la source : à mettre à jour (bloc « Veille » de la fiche)." },
     {
-      label: "Traductions anglaises à relire",
+      label: "Traductions à relire",
       n: traductions,
       href: "/bibliotheque/traductions",
       detail: traductions === null ? "Migration des traductions pas encore appliquée dans Supabase." : "Brouillons de l'atelier, non publiés.",

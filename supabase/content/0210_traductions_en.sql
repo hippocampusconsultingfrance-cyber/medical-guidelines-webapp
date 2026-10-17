@@ -1,5 +1,5 @@
 -- Généré par scripts/import-atelier.mjs — ne pas modifier à la main.
--- Traductions anglaises des fiches, en brouillon pour relecture (aucune
+-- Traductions des fiches (en), en brouillon pour relecture (aucune
 -- publication). Idempotent.
 
 insert into public.document_translations (document_id, lang, card_json, presentation_json, key_points, a_verifier, source_publication_date, content_sha256, fr_a_jour)

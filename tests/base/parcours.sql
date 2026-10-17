@@ -230,6 +230,18 @@ reset role;
 select pg_temp.ok(
   (select status = 'relue' and reviewed_by = :'validateur' from public.document_translations where document_id = :'tr' and lang = 'en'),
   'relecture enregistrée avec son auteur');
+insert into public.document_translations (document_id, lang, content_sha256) values (:'tr', 'zh', 'test');
+select pg_temp.ok((select status = 'brouillon' from public.document_translations where document_id = :'tr' and lang = 'zh'),
+  'traductions : les cinq langues du site admises (chinois en brouillon)');
+do $$
+begin
+  insert into public.document_translations (document_id, lang, content_sha256)
+  select document_id, 'fr', 'test' from public.document_translations limit 1;
+  raise exception 'traduction en français acceptée';
+exception when check_violation then null;
+end $$;
+select pg_temp.ok(true, 'traductions : le français (langue des fiches) refusé');
+delete from public.document_translations where lang = 'zh' and content_sha256 = 'test';
 
 -- ---------------------------------------------------------------------------
 -- 10. Tarif médecin en formation : chacun ne voit que ses demandes.
