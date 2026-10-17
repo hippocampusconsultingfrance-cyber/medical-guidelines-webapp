@@ -1,0 +1,20 @@
+{
+  "srlf": {
+    "exemple": "Pour illustrer cette méthode, je vous joins un exemple : notre fiche consacrée à la conférence de consensus commune SFAR–SRLF « Mieux vivre la réanimation » (2009). Elle est suivie du texte original et d'une comparaison mot à mot des deux documents. 3,9 % des passages de la fiche se retrouvent à l'identique dans votre texte : il s'agit pour l'essentiel des locutions qui portent la force de vos recommandations (« il faut », « il faut probablement », « il est possible »), que la fiche conserve volontairement. Votre texte n'est joint, sans modification, que pour permettre cette comparaison.",
+    "revues": "notamment Annals of Intensive Care et Médecine Intensive Réanimation"
+  },
+  "has": {
+    "exemple": "Pour illustrer cette méthode, je vous joins un exemple : notre fiche consacrée à votre recommandation de bonne pratique « Prise en charge de la douleur de l'accouchement : analgésie périmédullaire et alternatives médicamenteuses » (avril 2025). Elle est suivie du texte original et d'une comparaison mot à mot des deux documents. 11,4 % des passages de la fiche se retrouvent à l'identique dans votre texte : surtout des termes médicaux et quelques énoncés courts repris presque tels quels, tous listés dans la comparaison. Votre texte n'est joint, sans modification, que pour permettre cette comparaison.",
+    "paragraphe_specifique": "Si vos conditions de réutilisation couvrent déjà cet usage, pourriez-vous nous le confirmer ? Certaines de vos recommandations sont élaborées avec des sociétés savantes promotrices (par exemple la SFAR et le CARO pour la douleur de l'accouchement) : pourriez-vous nous indiquer si leur accord est également nécessaire ?"
+  },
+  "gihp": {
+    "exemple": "Pour illustrer cette méthode, je vous joins un exemple : notre fiche consacrée à vos propositions « Prise en charge des hémorragies et des gestes invasifs urgents chez les patients recevant un anticoagulant oral direct anti-IIa (dabigatran) » (réactualisation de septembre 2016). Elle est suivie du texte original et d'une comparaison mot à mot des deux documents. Seuls 2,8 % des passages de la fiche se retrouvent à l'identique dans votre texte : pour l'essentiel des termes médicaux et les critères de vos algorithmes, repris à l'identique pour éviter toute erreur de transcription. Votre texte n'est joint, sans modification, que pour permettre cette comparaison.",
+    "revues": "notamment Anaesthesia Critical Care & Pain Medicine",
+    "paragraphe_specifique": "Pour les textes communs avec le GFHT, pourriez-vous nous indiquer si votre accord suffit ou s'il faut également solliciter le GFHT ?"
+  },
+  "sfmu": {
+    "exemple": "Pour illustrer cette méthode, je vous joins un exemple : notre fiche consacrée à vos RFE communes avec la SFAR, le GIHP et la SFTH, « Gestion de l'anticoagulation dans un contexte d'urgence » (2024). Elle est suivie du texte original et d'une comparaison mot à mot des deux documents. Seuls 3,9 % des passages de la fiche se retrouvent à l'identique dans votre texte : pour l'essentiel des termes médicaux et des seuils biologiques (INR, AOD, anti-Xa), repris à l'identique pour éviter toute erreur de transcription. Votre texte n'est joint, sans modification, que pour permettre cette comparaison.",
+    "revues": "notamment les Annales françaises de médecine d'urgence",
+    "paragraphe_specifique": "Vos mentions légales soumettent toute reproduction, même partielle, à votre consentement : c'est l'objet de cette demande."
+  }
+}

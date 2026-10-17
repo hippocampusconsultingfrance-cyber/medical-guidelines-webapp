@@ -199,6 +199,10 @@ export default function Shell({
                   <Link href="/bibliotheque/acces" style={{ color: "inherit" }}>
                     Accès anormaux
                   </Link>
+                  {" · "}
+                  <Link href="/bibliotheque/demandes-accord" style={{ color: "inherit" }}>
+                    Demandes d&apos;accord
+                  </Link>
                 </>
               )}
             </>

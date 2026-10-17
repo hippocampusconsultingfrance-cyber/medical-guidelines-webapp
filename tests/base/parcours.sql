@@ -808,4 +808,48 @@ set role service_role;
 select pg_temp.ok(public.reserver_question_assistant(:'gratuit', 2) is not null, 'assistant : questions de plus de 24 h non comptées');
 reset role;
 
+-- ---------------------------------------------------------------------------
+-- 34. Demandes d'accord aux sociétés savantes : administrateurs seulement,
+--     aucune écriture directe (actions serveur avec la clé service_role).
+-- ---------------------------------------------------------------------------
+select pg_temp.ok((select count(*) from public.demandes_accord_modele) = 1, 'demandes d''accord : modèle de courriel créé');
+insert into public.demandes_accord (societe_slug, sigle, adresses, destinataires)
+values ('societe-test', 'TEST', '[{"adresse": "contact@test.fr", "nature": "société", "page": ""}]', array['contact@test.fr']);
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.demandes_accord) = 0
+                  and (select count(*) from public.demandes_accord_modele) = 0
+                  and (select count(*) from public.demandes_accord_journal) = 0,
+  'demandes d''accord : invisibles pour un validateur');
+do $$
+begin
+  update public.demandes_accord set etat = 'valide';
+  raise exception 'ÉCHEC : un membre a pu modifier une demande d''accord';
+exception when insufficient_privilege then null;
+end $$;
+reset role;
+select pg_temp.agir(null);
+set role anon;
+do $$
+begin
+  perform 1 from public.demandes_accord;
+  raise exception 'ÉCHEC : un visiteur a pu lire les demandes d''accord';
+exception when insufficient_privilege then null;
+end $$;
+reset role;
+select 'ok  demandes d''accord : refusées aux visiteurs';
+update public.profiles set editorial_role = 'admin' where id = :'gratuit';
+select pg_temp.agir(:'gratuit');
+set role authenticated;
+select pg_temp.ok((select count(*) from public.demandes_accord where societe_slug = 'societe-test') = 1,
+  'demandes d''accord : lisibles par un administrateur');
+reset role;
+select set_config('request.jwt.claims', '{"aal":"aal1"}', false);
+set role authenticated;
+select pg_temp.ok((select count(*) from public.demandes_accord) = 0, 'demandes d''accord : administrateur sans code (aal1) : rien');
+reset role;
+update public.profiles set editorial_role = null where id = :'gratuit';
+delete from public.demandes_accord where societe_slug = 'societe-test';
+select pg_temp.agir(null);
+
 select 'Parcours membre : toutes les vérifications sont passées.';
