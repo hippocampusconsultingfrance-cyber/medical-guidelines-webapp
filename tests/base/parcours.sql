@@ -813,6 +813,9 @@ reset role;
 --     aucune écriture directe (actions serveur avec la clé service_role).
 -- ---------------------------------------------------------------------------
 select pg_temp.ok((select count(*) from public.demandes_accord_modele) = 1, 'demandes d''accord : modèle de courriel créé');
+select pg_temp.ok((select corps from public.demandes_accord_modele) like '%le lien vers votre site.
+
+Nous sollicitons également votre autorisation de traduire ces fiches%', 'demandes d''accord : le modèle demande l''autorisation de traduire');
 insert into public.demandes_accord (societe_slug, sigle, adresses, destinataires)
 values ('societe-test', 'TEST', '[{"adresse": "contact@test.fr", "nature": "société", "page": ""}]', array['contact@test.fr']);
 select pg_temp.agir(:'validateur');
