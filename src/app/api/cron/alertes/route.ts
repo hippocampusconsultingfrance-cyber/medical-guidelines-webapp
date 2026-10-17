@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import type { Card } from "@/lib/fiches";
 import { buildDigests, type AlertDocument, type PendingAlert } from "@/lib/alertes";
+import { langueMembre } from "@/lib/emails-textes";
 import { emailEnabled, sendBatch, siteUrl } from "@/lib/email";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -32,7 +33,8 @@ export async function GET(request: Request) {
   if (!rows.length) return Response.json({ destinataires: 0, envoyes: 0 });
 
   const ids = [...new Set(rows.map((r) => r.document_id))];
-  const [{ data: documents, error: docError }, { data: versions }] = await Promise.all([
+  const membres = [...new Set(rows.map((r) => r.user_id))];
+  const [{ data: documents, error: docError }, { data: versions }, { data: profils }] = await Promise.all([
     admin
       .from("documents")
       .select("id, title, card_json, publication_date, source_url, document_societies(societies(acronym))")
@@ -43,6 +45,8 @@ export async function GET(request: Request) {
       .in("document_id", ids)
       .not("published_at", "is", null)
       .order("published_at", { ascending: false }),
+    // Langue de chaque membre (e-mail dans sa langue ; à défaut le français).
+    admin.from("profiles").select("id, langue_preferee").in("id", membres),
   ]);
   if (docError) {
     console.error("Alertes : documents", docError);
@@ -73,7 +77,10 @@ export async function GET(request: Request) {
     ]),
   );
 
-  const digests = buildDigests(rows, docs, siteUrl());
+  const langues = new Map(
+    ((profils ?? []) as { id: string; langue_preferee: string | null }[]).map((p) => [p.id, langueMembre(p.langue_preferee)]),
+  );
+  const digests = buildDigests(rows, docs, siteUrl(), langues);
   if (apercu) {
     return Response.json({
       destinataires: digests.length,

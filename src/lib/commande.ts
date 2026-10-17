@@ -1,7 +1,10 @@
 import "server-only";
 import type { OutgoingEmail } from "@/lib/email";
 import { cadreEmail } from "@/lib/email-gabarit";
+import { fmt } from "@/i18n/format";
+import { EMAILS } from "@/lib/emails-textes";
 import { escapeHtml } from "@/lib/fiches";
+import { LOCALES, chemin, type LangueOuverte } from "@/lib/langues";
 
 // E-mails contractuels de l'abonnement (CGV §5 et §7), envoyés quelle que
 // soit la préférence d'alertes :
@@ -15,29 +18,40 @@ import { escapeHtml } from "@/lib/fiches";
 export const LOG_COMMANDE = "commande";
 export const logRenouvellement = (finPeriode: string) => `renouvellement:${finPeriode.slice(0, 10)}`;
 
-const euros = (cents: number) =>
-  (cents / 100).toLocaleString("fr-FR", { style: "currency", currency: "EUR", minimumFractionDigits: cents % 100 ? 2 : 0 });
-const jour = (iso: string) =>
-  new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" });
+const euros = (cents: number, locale: string) =>
+  (cents / 100).toLocaleString(locale, { style: "currency", currency: "EUR", minimumFractionDigits: cents % 100 ? 2 : 0 });
+const jour = (iso: string, locale: string) =>
+  new Date(iso).toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" });
 
 const p = (t: string) => `<p style="font-size:15px;line-height:1.55;margin:0 0 14px">${t}</p>`;
 const bouton = (href: string, label: string) =>
   `<p style="margin:22px 0"><a href="${href}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">${escapeHtml(label)}</a></p>`;
 
-function enveloppe(to: string, prenom: string | null, subject: string, paragraphes: string[], lien: [string, string], site: string): OutgoingEmail {
-  const hello = prenom ? `Bonjour ${prenom},` : "Bonjour,";
-  const pied = "Hippocampus Consulting, SARL au capital de 1 000 € — 6 rue d'Armaillé, 75017 Paris — SIREN 999 259 252.";
+function enveloppe(
+  to: string,
+  prenom: string | null,
+  subject: string,
+  paragraphes: string[],
+  lien: [string, string],
+  site: string,
+  langue: LangueOuverte,
+): OutgoingEmail {
+  const t = EMAILS[langue];
+  const hello = prenom ? fmt(t.bonjourPrenom, { prenom }) : t.bonjour;
+  const pied = t.commande.pied;
+  const cgv = `${site}${chemin(langue, "/cgv")}`;
   const html = cadreEmail(
     subject,
     p(escapeHtml(hello)) +
-      paragraphes.map((t) => p(escapeHtml(t))).join("") +
+      paragraphes.map((x) => p(escapeHtml(x))).join("") +
       bouton(lien[1], lien[0]) +
-      p(`Conditions générales de vente : <a href="${site}/cgv" style="color:#0E3A78">${site}/cgv</a>. Une question : répondez simplement à cet e-mail.`),
+      p(`${escapeHtml(t.commande.cgv)}${t.dp}<a href="${cgv}" style="color:#0E3A78">${cgv}</a>. ${escapeHtml(t.commande.question)}`),
     escapeHtml(pied),
+    langue,
   );
   const text =
-    `${hello}\n\n${paragraphes.join("\n\n")}\n\n${lien[0]} : ${lien[1]}\n\n` +
-    `Conditions générales de vente : ${site}/cgv. Une question : répondez simplement à cet e-mail.\n\n${pied}\n`;
+    `${hello}\n\n${paragraphes.join("\n\n")}\n\n${lien[0]}${t.dp}${lien[1]}\n\n` +
+    `${t.commande.cgv}${t.dp}${cgv}. ${t.commande.question}\n\n${pied}\n`;
   return { to, subject, html, text };
 }
 
@@ -51,26 +65,28 @@ export type Commande = {
   renonciation: string | null;
 };
 
-export function composerConfirmation(c: Commande, site: string): OutgoingEmail {
+// Langue du membre (profiles.langue_preferee) : le texte français des CGV
+// fait seul foi, l'e-mail reprend leurs termes dans la langue du membre.
+export function composerConfirmation(c: Commande, site: string, langue: LangueOuverte = "fr"): OutgoingEmail {
+  const t = EMAILS[langue].commande;
+  const locale = LOCALES[langue];
   const lignes = [
-    `Merci pour votre abonnement PREMIUM à medical-guidelines.net, souscrit le ${jour(c.debut)}. Il ouvre toutes les fiches de votre spécialité et les alertes de mise à jour.`,
-    `Montant payé : ${euros(c.montantCents)} TTC pour un an${c.fin ? `, jusqu'au ${jour(c.fin)}` : ""}. La facture vous est envoyée séparément par notre prestataire de paiement, Stripe.`,
-    `L'abonnement se renouvelle automatiquement chaque année au tarif alors en vigueur (50 € TTC par an aujourd'hui). Nous vous écrirons un à trois mois avant chaque renouvellement. Vous pouvez le résilier à tout moment depuis la page « Abonnement » (bouton « Résilier mon abonnement ») : l'accès reste ouvert jusqu'à la fin de l'année payée.`,
-    c.renonciation
-      ? `Droit de rétractation : le ${jour(c.renonciation)}, vous avez demandé l'accès immédiat au service et renoncé expressément à votre droit de rétractation de 14 jours dès le début de l'accès (article L221-28 13° du Code de la consommation).`
-      : `Droit de rétractation : l'accès au service étant immédiat, il ne s'applique plus dès le début de l'accès (article L221-28 13° du Code de la consommation).`,
-    ...(c.cgvVersion ? [`Conditions générales de vente acceptées : version du ${c.cgvVersion.split("-").reverse().join("/")}.`] : []),
+    fmt(t.merci, { date: jour(c.debut, locale) }),
+    fmt(t.montant, { montant: euros(c.montantCents, locale), fin: c.fin ? fmt(t.jusquau, { date: jour(c.fin, locale) }) : "" }),
+    t.renouvellement,
+    c.renonciation ? fmt(t.retractationRenonciation, { date: jour(c.renonciation, locale) }) : t.retractation,
+    ...(c.cgvVersion ? [fmt(t.cgvVersion, { version: c.cgvVersion.split("-").reverse().join("/") })] : []),
   ];
-  return enveloppe(c.email, c.prenom, "Confirmation de votre abonnement PREMIUM", lignes, ["Gérer mon abonnement", `${site}/abonnement`], site);
+  return enveloppe(c.email, c.prenom, t.confirmationSujet, lignes, [t.gerer, `${site}${chemin(langue, "/abonnement")}`], site, langue);
 }
 
-export type Renouvellement = { email: string; prenom: string | null; fin: string; montantCents: number };
+export type Renouvellement = { email: string; prenom: string | null; fin: string; montantCents: number; langue?: LangueOuverte };
 
 export function composerAvisRenouvellement(r: Renouvellement, site: string): OutgoingEmail {
-  const lignes = [
-    `Votre abonnement PREMIUM à medical-guidelines.net arrive à échéance le ${jour(r.fin)}.`,
-    `Sans action de votre part, il sera renouvelé automatiquement ce jour-là pour un an, au prix de ${euros(r.montantCents)} TTC.`,
-    `Si vous ne souhaitez pas le renouveler, vous pouvez le résilier dès maintenant depuis la page « Abonnement » : l'accès reste ouvert jusqu'au ${jour(r.fin)}, puis votre compte redevient gratuit, sans perte des fiches débloquées avec vos crédits gratuits.`,
-  ];
-  return enveloppe(r.email, r.prenom, `Votre abonnement PREMIUM sera renouvelé le ${jour(r.fin)}`, lignes, ["Gérer ou résilier mon abonnement", `${site}/abonnement`], site);
+  const langue = r.langue ?? "fr";
+  const t = EMAILS[langue].commande;
+  const locale = LOCALES[langue];
+  const fin = jour(r.fin, locale);
+  const lignes = [fmt(t.echeance, { date: fin }), fmt(t.renouvele, { montant: euros(r.montantCents, locale) }), fmt(t.resilier, { date: fin })];
+  return enveloppe(r.email, r.prenom, fmt(t.avisSujet, { date: fin }), lignes, [t.gererResilier, `${site}${chemin(langue, "/abonnement")}`], site, langue);
 }

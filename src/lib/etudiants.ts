@@ -1,7 +1,10 @@
 import "server-only";
 import type { OutgoingEmail } from "@/lib/email";
 import { cadreEmail } from "@/lib/email-gabarit";
+import { fmt } from "@/i18n/format";
+import { EMAILS } from "@/lib/emails-textes";
 import { escapeHtml } from "@/lib/fiches";
+import { chemin, type LangueOuverte } from "@/lib/langues";
 
 // Tarif professionnel en formation (CGV §4) : −30 % la première année sur
 // justificatif de l'année universitaire en cours, validé par un
@@ -44,11 +47,13 @@ export function codeEtudiant() {
   return `ETU-${[...bytes].map((x) => alphabet[x % alphabet.length]).join("")}`;
 }
 
-function layout(subject: string, body: string, site: string) {
+function layout(subject: string, body: string, site: string, langue: LangueOuverte) {
+  const t = EMAILS[langue].etudiant;
   return cadreEmail(
     subject,
     body,
-    `Votre justificatif a été supprimé après examen. <a href="${site}/abonnement" style="color:#64748B">Mon abonnement</a>`,
+    `${escapeHtml(t.supprime)} <a href="${site}${chemin(langue, "/abonnement")}" style="color:#64748B">${escapeHtml(t.monAbonnement)}</a>`,
+    langue,
   );
 }
 
@@ -64,33 +69,36 @@ export function emailDecision(
     note: string | null;
   },
   site: string,
+  langue: LangueOuverte = "fr",
 ): OutgoingEmail {
-  const hello = d.prenom ? `Bonjour ${d.prenom},` : "Bonjour,";
-  const subject = d.valide ? "Votre tarif professionnel en formation est validé" : "Votre demande de tarif professionnel en formation";
+  const te = EMAILS[langue];
+  const t = te.etudiant;
+  const abonnement = `${site}${chemin(langue, "/abonnement")}`;
+  const hello = d.prenom ? fmt(te.bonjourPrenom, { prenom: d.prenom }) : te.bonjour;
+  const subject = d.valide ? t.sujetValide : t.sujet;
   let body = p(escapeHtml(hello));
   let text = `${hello}\n\n`;
   if (d.valide && d.surAbonnement) {
-    const t = "Votre justificatif est validé : la réduction de 30 % s'appliquera automatiquement à votre prochain renouvellement.";
-    body += p(t);
-    text += `${t}\n`;
+    body += p(escapeHtml(t.valideRenouvellement));
+    text += `${t.valideRenouvellement}\n`;
   } else if (d.valide) {
-    const t =
-      "Votre justificatif est validé : la réduction de 30 % s'applique automatiquement à votre première année PREMIUM, soit 35 € TTC au lieu de 50 €. Aucun code à saisir.";
     body +=
-      p(t) +
-      `<p style="margin:22px 0"><a href="${site}/abonnement" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">Activer PREMIUM à 35 €</a></p>`;
-    text += `${t}\n\nActiver PREMIUM : ${site}/abonnement\n`;
+      p(escapeHtml(t.valide)) +
+      `<p style="margin:22px 0"><a href="${abonnement}" style="background:#0E3A78;color:#ffffff;padding:12px 20px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;display:inline-block">${escapeHtml(t.activer)}</a></p>`;
+    text += `${t.valide}\n\n${t.activerTexte}${te.dp}${abonnement}\n`;
   } else {
-    const t = "Nous n'avons pas pu valider votre justificatif.";
-    body += p(t) + (d.note ? p(`<b>Motif :</b> ${escapeHtml(d.note)}`) : "") + p("Vous pouvez déposer un nouveau justificatif depuis votre page d'abonnement.");
-    text += `${t}\n${d.note ? `Motif : ${d.note}\n` : ""}Vous pouvez déposer un nouveau justificatif : ${site}/abonnement\n`;
+    body +=
+      p(escapeHtml(t.refuse)) +
+      (d.note ? p(`<b>${escapeHtml(t.motif)}</b> ${escapeHtml(d.note)}`) : "") +
+      p(escapeHtml(t.nouveau));
+    text += `${t.refuse}\n${d.note ? `${t.motif} ${d.note}\n` : ""}${t.nouveauTexte}${te.dp}${abonnement}\n`;
   }
   if (d.valide && d.note) {
     body += p(escapeHtml(d.note));
     text += `\n${d.note}\n`;
   }
-  text += `\nVotre justificatif a été supprimé après examen.\n`;
-  return { to: d.email, subject, html: layout(subject, body, site), text };
+  text += `\n${t.supprime}\n`;
+  return { to: d.email, subject, html: layout(subject, body, site, langue), text };
 }
 
 // Nouveau justificatif : avertit les administrateurs (sans pièce jointe : le

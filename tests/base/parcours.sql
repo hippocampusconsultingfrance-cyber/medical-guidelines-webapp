@@ -230,6 +230,18 @@ reset role;
 select pg_temp.ok(
   (select status = 'relue' and reviewed_by = :'validateur' from public.document_translations where document_id = :'tr' and lang = 'en'),
   'relecture enregistrée avec son auteur');
+insert into public.document_translations (document_id, lang, content_sha256) values (:'tr', 'zh', 'test');
+select pg_temp.ok((select status = 'brouillon' from public.document_translations where document_id = :'tr' and lang = 'zh'),
+  'traductions : les cinq langues du site admises (chinois en brouillon)');
+do $$
+begin
+  insert into public.document_translations (document_id, lang, content_sha256)
+  select document_id, 'fr', 'test' from public.document_translations limit 1;
+  raise exception 'traduction en français acceptée';
+exception when check_violation then null;
+end $$;
+select pg_temp.ok(true, 'traductions : le français (langue des fiches) refusé');
+delete from public.document_translations where lang = 'zh' and content_sha256 = 'test';
 
 -- ---------------------------------------------------------------------------
 -- 10. Tarif médecin en formation : chacun ne voit que ses demandes.
@@ -496,6 +508,51 @@ insert into public.source_legal_profiles (document_id, legal_review_status, tran
 update public.document_translations set status = 'publiee' where document_id = :'ft' and lang = :'lt';
 select pg_temp.ok((select status = 'publiee' from public.document_translations where document_id = :'ft' and lang = :'lt'),
   'traduction : publication acceptée quand le registre l''autorise');
+
+-- Traduction par IA non relue : publiée seulement par un validateur, si la
+-- fiche française est relue par un médecin et qu'aucun point ne reste à vérifier.
+insert into public.document_translations (document_id, lang, card_json, presentation_json, key_points, a_verifier, content_sha256)
+select document_id, 'zh', '{"title": "测试"}', presentation_json, '[]', '["À VÉRIFIER : test"]', 'ia'
+from public.document_translations where document_id = :'ft' and lang = :'lt';
+update public.documents set relue_le = null where id = :'ft';
+select pg_temp.agir(:'premium');
+set role authenticated;
+select pg_temp.ok(public.publish_translation(:'ft', 'zh', true) = 'Droits de validateur requis',
+  'traduction IA : publication refusée à un membre');
+reset role;
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok(public.publish_translation(:'ft', 'zh', true) like '%points à vérifier%',
+  'traduction IA : publication refusée tant qu''un point reste à vérifier');
+reset role;
+update public.document_translations set a_verifier = '[]' where document_id = :'ft' and lang = 'zh';
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok(public.publish_translation(:'ft', 'zh', true) like '%non relue par un médecin%',
+  'traduction IA : publication refusée si la fiche française n''est pas relue par un médecin');
+reset role;
+update public.documents set relue_le = current_date where id = :'ft';
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok(public.publish_translation(:'ft', 'zh', true) = 'ok', 'traduction IA : publiée par un validateur');
+select pg_temp.ok((public.get_translation(:'ft', 'zh') ->> 'ia_non_relue')::boolean,
+  'traduction IA : contenu servi avec la mention « non relue »');
+reset role;
+set role anon;
+select pg_temp.ok((public.get_translation_card(:'ft', 'zh') -> 'card' ->> 'title') = '测试'
+  and 'zh' = any(public.langues_traduites(:'ft')), 'traduction IA : carte et langue visibles des visiteurs');
+select pg_temp.ok(pg_temp.refuse(format('select public.get_translation(%L, ''zh'')', :'ft'), 'permission denied'),
+  'traduction IA : contenu refusé aux visiteurs');
+reset role;
+update public.document_translations set fr_a_jour = false where document_id = :'ft' and lang = 'zh';
+select pg_temp.ok(public.get_translation_card(:'ft', 'zh') is null, 'traduction IA : plus servie si la fiche française a changé');
+select pg_temp.agir(:'validateur');
+set role authenticated;
+select pg_temp.ok(public.publish_translation(:'ft', 'zh', false) = 'ok', 'traduction IA : retirée par un validateur');
+select pg_temp.ok((select status = 'brouillon' and not publiee_sans_relecture from public.document_translations where document_id = :'ft' and lang = 'zh'),
+  'traduction IA : retirée, elle repasse en brouillon');
+reset role;
+delete from public.document_translations where document_id = :'ft' and lang = 'zh';
 
 -- ---------------------------------------------------------------------------
 -- 22. Reformulation des libellés : validateur seulement, fiche inchangée.
@@ -813,6 +870,9 @@ reset role;
 --     aucune écriture directe (actions serveur avec la clé service_role).
 -- ---------------------------------------------------------------------------
 select pg_temp.ok((select count(*) from public.demandes_accord_modele) = 1, 'demandes d''accord : modèle de courriel créé');
+select pg_temp.ok((select corps from public.demandes_accord_modele) like '%le lien vers votre site.
+
+Nous sollicitons également votre autorisation de traduire ces fiches%', 'demandes d''accord : le modèle demande l''autorisation de traduire');
 insert into public.demandes_accord (societe_slug, sigle, adresses, destinataires)
 values ('societe-test', 'TEST', '[{"adresse": "contact@test.fr", "nature": "société", "page": ""}]', array['contact@test.fr']);
 select pg_temp.agir(:'validateur');

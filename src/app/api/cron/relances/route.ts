@@ -1,5 +1,7 @@
 import { createHash } from "node:crypto";
 import { composerAvisRenouvellement, logRenouvellement } from "@/lib/commande";
+import { langueMembre } from "@/lib/emails-textes";
+import { chemin, type LangueOuverte } from "@/lib/langues";
 import { emailEnabled, sendBatch, siteUrl, type OutgoingEmail } from "@/lib/email";
 import {
   ciblesFinaliser,
@@ -53,12 +55,13 @@ export async function GET(request: Request) {
     const { data, error } = await admin.auth.admin.generateLink({ type: "magiclink", email: c.email });
     const hash = data?.properties?.hashed_token;
     if (error || !hash) continue;
-    lots.push({ userId: c.userId, body: LOG_FINALISER, email: emailFinaliser(c, `${site}/auth/callback?token_hash=${hash}&type=email`, site) });
+    const retour = `${site}${chemin(c.langue, "/auth/callback")}?token_hash=${hash}&type=email`;
+    lots.push({ userId: c.userId, body: LOG_FINALISER, email: emailFinaliser(c, retour, site) });
   }
   const suggestions = new Map<string, Awaited<ReturnType<typeof fichesSuggerees>>>();
   for (const c of premiere) {
-    const cle = c.specialtyId ?? "";
-    if (!suggestions.has(cle)) suggestions.set(cle, await fichesSuggerees(admin, c.specialtyId, site));
+    const cle = `${c.specialtyId ?? ""}:${c.langue}`;
+    if (!suggestions.has(cle)) suggestions.set(cle, await fichesSuggerees(admin, c.specialtyId, site, c.langue));
     const s = suggestions.get(cle);
     if (s?.fiches.length) lots.push({ userId: c.userId, body: LOG_PREMIERE, email: emailPremiereFiche(c, s.fiches, s.specialite, site) });
   }
@@ -145,18 +148,25 @@ async function avisRenouvellement(admin: ReturnType<typeof createAdminClient>, e
   // Stripe n'est appelé que s'il y a une échéance à traiter.
   if (!echeances.length) return [];
   const stripe = getStripe();
-  const out: { userId: string; email: string; prenom: string | null; fin: string; montantCents: number }[] = [];
+  const out: { userId: string; email: string; prenom: string | null; fin: string; montantCents: number; langue: LangueOuverte }[] = [];
   for (const e of echeances) {
     try {
       const sub = await stripe.subscriptions.retrieve(e.subscriptionId);
       if (sub.cancel_at_period_end || sub.cancel_at || sub.status !== "active") continue;
       const facture = await stripe.invoices.createPreview({ subscription: e.subscriptionId });
       const [{ data: profil }, { data: compte }] = await Promise.all([
-        admin.from("profiles").select("prenom").eq("id", e.userId).maybeSingle(),
+        admin.from("profiles").select("prenom, langue_preferee").eq("id", e.userId).maybeSingle(),
         admin.auth.admin.getUserById(e.userId),
       ]);
       if (!compte?.user?.email) continue;
-      out.push({ userId: e.userId, email: compte.user.email, prenom: (profil?.prenom as string | null) || null, fin: e.fin, montantCents: facture.total });
+      out.push({
+        userId: e.userId,
+        email: compte.user.email,
+        prenom: (profil?.prenom as string | null) || null,
+        fin: e.fin,
+        montantCents: facture.total,
+        langue: langueMembre(profil?.langue_preferee),
+      });
     } catch (err) {
       console.error("Avis de renouvellement", e.subscriptionId, err);
     }

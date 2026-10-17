@@ -7,12 +7,14 @@ export const FREE_QUOTA = 5;
 // Ancienneté de la source (cahier des charges §4.3) : au-delà de 10 ans, la
 // fiche invite à vérifier qu'aucune actualisation n'a été publiée.
 export const ANCIENNETE_MAX = 10;
-export function avertissementAnciennete(publicationDate: string | null) {
+// Année d'une recommandation de plus de ANCIENNETE_MAX ans (avertissement
+// « source ancienne », texte dans la langue de la page), sinon null.
+export function anneeAncienne(publicationDate: string | null) {
   if (!publicationDate) return null;
   const annee = Number(publicationDate.slice(0, 4));
   const age = new Date().getUTCFullYear() - annee;
   if (!Number.isFinite(age) || age <= ANCIENNETE_MAX) return null;
-  return `Recommandation publiée en ${annee}, il y a plus de ${ANCIENNETE_MAX} ans : vérifiez auprès de la société savante qu'aucune actualisation n'a été publiée depuis.`;
+  return annee;
 }
 
 // Vérification de la source (cahier des charges §4.3) : dernière date de
@@ -27,10 +29,10 @@ export function verificationSource(verifiedAt: string | null, publishedAt: strin
   return { derniere: jour(derniere), prochaine: jour(prochaine) };
 }
 
-export function formatDate(value: string | null) {
+export function formatDate(value: string | null, locale = "fr-FR") {
   if (!value) return null;
   if (value.endsWith("-01-01")) return value.slice(0, 4);
-  return new Date(`${value}T00:00:00Z`).toLocaleDateString("fr-FR", {
+  return new Date(`${value}T00:00:00Z`).toLocaleDateString(locale, {
     day: "numeric",
     month: "long",
     year: "numeric",

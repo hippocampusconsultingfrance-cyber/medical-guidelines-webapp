@@ -14,7 +14,8 @@ import { createAdminClient } from "@/lib/supabase/admin";
 //   - une question contenant une donnée identifiante (e-mail, téléphone,
 //     n° de sécurité sociale, date de naissance, IPP) n'est jamais envoyée ;
 //   - l'introduction et les messages de refus sont rédigés par le site, pas
-//     par l'IA ;
+//     par l'IA (codes ci-dessous, textes dans la langue de la page :
+//     src/app/[lang]/assistant/textes.ts) ;
 //   - ni la question ni la réponse ne sont conservées.
 
 export const ASSISTANT_QUOTA = 20; // questions par membre et par 24 h
@@ -31,46 +32,32 @@ export function assistantOuvertAuxMembres() {
 
 export type Passage = { n: number; docId: string; titre: string; section: string; texte: string; source: string | null };
 export type Extrait = { docId: string; titre: string; section: string; citation: string; source: string | null };
+export type DonneeIdentifiante = "email" | "telephone" | "secu" | "naissance" | "identifiant";
+export type MotifRefus = "patient" | "hors_champ" | "refus_ia";
+export type CodeErreur = "courte" | "configuration" | "connexion" | "premium" | "indisponible" | "limite" | "sollicite" | "illisible";
 export type Reponse =
-  | { etat: "ok"; introduction: string; extraits: Extrait[] }
-  | { etat: "refus"; message: string }
+  | { etat: "ok"; extraits: Extrait[] }
+  | { etat: "refus"; motif: MotifRefus }
+  | { etat: "identifiantes"; donnees: DonneeIdentifiante[] }
   | { etat: "vide" }
-  | { etat: "erreur"; message: string };
+  | { etat: "erreur"; code: CodeErreur };
 
 // Données permettant d'identifier une personne : la question est bloquée
 // avant tout envoi à l'IA. Volontairement large (mieux vaut faire reformuler
 // une question que transmettre une donnée de patient).
-const DONNEES_IDENTIFIANTES: { nom: string; motif: RegExp }[] = [
-  { nom: "adresse e-mail", motif: /[A-Z0-9._%+-]+@[A-Z0-9-]+(?:\.[A-Z0-9-]+)*\.[A-Z]{2,}/i },
-  { nom: "numéro de téléphone", motif: /(?:\+33|0033|\b0)\s?[1-9](?:[\s.-]?\d{2}){4}\b/ },
-  { nom: "numéro de sécurité sociale", motif: /\b[12][\s.]?\d{2}[\s.]?\d{2}[\s.]?(?:\d{2}|2[AB])[\s.]?\d{3}[\s.]?\d{3}(?:[\s.]?\d{2})?\b/i },
+const DONNEES_IDENTIFIANTES: { nom: DonneeIdentifiante; motif: RegExp }[] = [
+  { nom: "email", motif: /[A-Z0-9._%+-]+@[A-Z0-9-]+(?:\.[A-Z0-9-]+)*\.[A-Z]{2,}/i },
+  { nom: "telephone", motif: /(?:\+33|0033|\b0)\s?[1-9](?:[\s.-]?\d{2}){4}\b/ },
+  { nom: "secu", motif: /\b[12][\s.]?\d{2}[\s.]?\d{2}[\s.]?(?:\d{2}|2[AB])[\s.]?\d{3}[\s.]?\d{3}(?:[\s.]?\d{2})?\b/i },
   {
-    nom: "date de naissance",
+    nom: "naissance",
     motif: /\b(?:0?[1-9]|[12]\d|3[01])[/.-](?:0?[1-9]|1[0-2])[/.-](?:19|20)\d{2}\b|\b(?:0?[1-9]|[12]\d|3[01])\/(?:0?[1-9]|1[0-2])\/\d{2}\b|\bn[ée]e?\s+le\b|date\s+de\s+naissance|\bDDN\b/i,
   },
-  { nom: "identifiant patient", motif: /\b(?:IPP|NIP|n°\s*(?:de\s+)?dossier)\s*:?\s*\d{4,}/i },
+  { nom: "identifiant", motif: /\b(?:IPP|NIP|n°\s*(?:de\s+)?dossier)\s*:?\s*\d{4,}/i },
 ];
 
 export function donneesIdentifiantes(question: string) {
   return DONNEES_IDENTIFIANTES.filter((d) => d.motif.test(question)).map((d) => d.nom);
-}
-
-export function messageDonneesIdentifiantes(trouvees: string[]) {
-  return `Votre question semble contenir une donnée permettant d'identifier une personne (${trouvees.join(", ")}) : elle n'a pas été envoyée. Retirez cette donnée et posez la question de façon générale.`;
-}
-
-// Messages rédigés par le site (jamais par l'IA).
-const REFUS = {
-  patient:
-    "L'assistant ne donne pas d'avis sur un cas individuel : la décision relève de votre jugement clinique. Reformulez la question de façon générale, sans décrire un patient précis.",
-  hors_champ:
-    "Cette question sort du champ de l'assistant, qui retrouve seulement des passages des fiches de recommandations.",
-} as const;
-
-function introduction(extraits: Extrait[]) {
-  const titres = [...new Set(extraits.map((e) => e.titre))];
-  const n = extraits.length;
-  return `${n} extrait${n > 1 ? "s" : ""} retrouvé${n > 1 ? "s" : ""} dans ${titres.length > 1 ? `${titres.length} fiches` : "la fiche"} : ${titres.map((t) => `« ${t} »`).join(", ")}.`;
 }
 
 const MOTS_VIDES = new Set(
@@ -227,24 +214,24 @@ export async function interrogerAssistant(question: string, passages: Passage[])
       ],
     });
   } catch (e) {
-    if (e instanceof Anthropic.RateLimitError) return { etat: "erreur", message: "L'assistant est très sollicité : réessayez dans une minute." };
+    if (e instanceof Anthropic.RateLimitError) return { etat: "erreur", code: "sollicite" };
     if (e instanceof Anthropic.APIError) {
       console.error("Assistant : erreur de l'API", e.status, e.message);
-      return { etat: "erreur", message: "L'assistant est momentanément indisponible." };
+      return { etat: "erreur", code: "indisponible" };
     }
     throw e;
   }
   if (reponse.stop_reason === "refusal") {
-    return { etat: "refus", message: "Cette question ne peut pas être traitée par l'assistant." };
+    return { etat: "refus", motif: "refus_ia" };
   }
   const texte = reponse.content.find((b): b is Anthropic.Beta.BetaTextBlock => b.type === "text")?.text ?? "";
-  let brut: { motif: "aucun" | keyof typeof REFUS; extraits: { passage: number; citation: string }[] };
+  let brut: { motif: "aucun" | "patient" | "hors_champ"; extraits: { passage: number; citation: string }[] };
   try {
     brut = JSON.parse(texte);
   } catch {
-    return { etat: "erreur", message: "Réponse illisible : reformulez votre question." };
+    return { etat: "erreur", code: "illisible" };
   }
-  if (brut.motif === "patient" || brut.motif === "hors_champ") return { etat: "refus", message: REFUS[brut.motif] };
+  if (brut.motif === "patient" || brut.motif === "hors_champ") return { etat: "refus", motif: brut.motif };
 
   // Chaque extrait doit figurer mot pour mot dans le passage cité.
   const compact = (t: string) => t.replace(/\s+/g, " ").trim();
@@ -257,5 +244,5 @@ export async function interrogerAssistant(question: string, passages: Passage[])
     extraits.push({ docId: p.docId, titre: p.titre, section: p.section, citation, source: p.source });
   }
   if (!extraits.length) return { etat: "vide" };
-  return { etat: "ok", introduction: introduction(extraits), extraits };
+  return { etat: "ok", extraits };
 }

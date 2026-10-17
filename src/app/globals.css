@@ -18,6 +18,23 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+/* Arabe et chinois : la police du site (Geist) n'a que l'alphabet latin ;
+   les caractères arabes et chinois viennent des polices du système, sans
+   téléchargement. */
+html:lang(ar) {
+  --font-geist-sans-fallback: "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma, sans-serif;
+}
+html:lang(zh) {
+  --font-geist-sans-fallback: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+html:lang(ar) body,
+html:lang(zh) body {
+  font-family: var(--font-geist-sans), var(--font-geist-sans-fallback);
+}
+html:lang(ar) body {
+  line-height: 1.7;
+}
+
 /* Aucune impression du contenu premium (CDC §11, dissuasion). */
 @media print {
   .fiche-premium {
