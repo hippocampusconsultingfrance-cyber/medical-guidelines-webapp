@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { avertissementAnciennete, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
-import { INDEXABLE, SITE_URL, ficheKey, ficheSlug } from "@/lib/seo";
+import { FICHE } from "@/i18n/fiche";
+import { fmt, plur } from "@/i18n/format";
+import { rubrique } from "@/i18n/rubriques";
+import { textes } from "@/i18n/serveur";
+import { ANCIENNETE_MAX, anneeAncienne, FREE_QUOTA, formatDate, methodologieLisible } from "@/lib/fiches";
+import { INDEXABLE, LANGUES_CONTENU, SITE_URL, alternatives, contenuIndexable, ficheKey, ficheSlug } from "@/lib/seo";
 import { loadApercuPublic, loadPointsClesPublics, loadPublicFiches } from "../data";
 import PublicHeader from "../public-header";
+import { RECOMMANDATIONS } from "../textes";
 import DonneesStructurees from "../../donnees-structurees";
 import SelonConnexion from "../../selon-connexion";
 
@@ -29,23 +34,25 @@ const load = cache(async (slug: string) => {
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/recommandations/[slug]">): Promise<Metadata> {
   const { slug } = await params;
+  const { t, langue } = await textes(RECOMMANDATIONS);
   const found = await load(slug);
-  if (!found) return { title: "Fiche introuvable — medical-guidelines.net" };
+  if (!found) return { title: t.fiche.introuvable };
   const { fiche } = found;
   const title = fiche.card_json?.title ?? fiche.title;
   const description = (fiche.card_json?.short ?? fiche.title).slice(0, 160);
+  const adresses = alternatives(langue, `/recommandations/${slug}`, LANGUES_CONTENU);
   return {
-    title: `${title} — ${fiche.societies.slice(0, 3).join(" / ") || "fiche de synthèse"} | medical-guidelines.net`,
+    title: `${title} — ${fiche.societies.slice(0, 3).join(" / ") || FICHE[langue].synthese} | medical-guidelines.net`,
     description,
-    alternates: { canonical: `${SITE_URL}/recommandations/${slug}` },
-    robots: { index: INDEXABLE, follow: INDEXABLE },
+    alternates: adresses,
+    robots: { index: contenuIndexable(langue), follow: INDEXABLE },
     openGraph: {
       title,
       description,
       type: "article",
-      url: `${SITE_URL}/recommandations/${slug}`,
+      url: adresses.canonical,
       siteName: "medical-guidelines.net",
-      locale: "fr_FR",
+      locale: t.catalogue.ogLocale,
     },
     twitter: { card: "summary_large_image" },
   };
@@ -58,6 +65,8 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/recommanda
 // reste réservé aux comptes (crédits ou PREMIUM).
 export default async function RecommandationPage({ params }: PageProps<"/[lang]/recommandations/[slug]">) {
   const { slug } = await params;
+  const { t, langue, lien, locale } = await textes(RECOMMANDATIONS);
+  const tf = FICHE[langue];
   const found = await load(slug);
   if (!found) notFound();
   const { fiche } = found;
@@ -80,16 +89,18 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
 
   const c = fiche.card_json;
   const title = c?.title ?? fiche.title;
-  const date = formatDate(fiche.publication_date);
-  const anciennete = fiche.freshness_status === "remplacee" ? null : avertissementAnciennete(fiche.publication_date);
+  const date = formatDate(fiche.publication_date, locale);
+  const annee = fiche.freshness_status === "remplacee" ? null : anneeAncienne(fiche.publication_date);
+  const url = `${SITE_URL}${lien(`/recommandations/${slug}`)}`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     name: title,
     description: c?.short ?? fiche.title,
-    url: `${SITE_URL}/recommandations/${slug}`,
+    url,
     about: { "@type": "MedicalGuideline", name: fiche.title, url: fiche.source_url },
     audience: { "@type": "MedicalAudience", audienceType: "Clinician" },
+    // Contenu de la fiche : en français tant que sa traduction n'est pas publiée.
     inLanguage: "fr",
   };
 
@@ -102,16 +113,16 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
-            { "@type": "ListItem", position: 2, name: "Recommandations", item: `${SITE_URL}/recommandations` },
-            { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}/recommandations/${slug}` },
+            { "@type": "ListItem", position: 1, name: t.accueil, item: alternatives(langue, "/").canonical },
+            { "@type": "ListItem", position: 2, name: t.recommandations, item: `${SITE_URL}${lien("/recommandations")}` },
+            { "@type": "ListItem", position: 3, name: title, item: url },
           ],
         }}
       />
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <p className="text-sm">
-          <Link href="/recommandations" className="text-[#1A74A6] underline">
-            ← Toutes les recommandations
+          <Link href={lien("/recommandations")} className="text-[#1A74A6] underline">
+            {t.fiche.retour}
           </Link>
         </p>
         <p className="mt-6 font-mono text-xs font-semibold uppercase tracking-wider text-[#177E73]">
@@ -119,44 +130,46 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         </p>
         <h1 className="mt-2 text-3xl font-bold leading-tight text-[#0E3A78]">{title}</h1>
         {c?.title && c.title !== fiche.title && <p className="mt-2 text-slate-600">{fiche.title}</p>}
-        <p className="mt-2 text-sm text-slate-500">
-          Synthèse indépendante, ni éditée ni validée par les sociétés savantes citées.
-        </p>
+        <p className="mt-2 text-sm text-slate-500">{t.fiche.independante}</p>
+        {tf.enFrancais && (
+          <p role="note" className="mt-4 rounded-lg bg-slate-50 p-3 text-sm text-slate-600 ring-1 ring-slate-200">
+            {tf.enFrancais}
+          </p>
+        )}
 
         {fiche.freshness_status === "remplacee" && (
           <p role="note" className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
-            <b>Recommandation remplacée.</b> La société savante a publié un texte plus récent sur ce sujet.
+            <b>{t.fiche.remplaceeTitre}</b> {t.fiche.remplaceeTexte}
             {remplacante && (
               <>
                 {" "}
-                Consultez plutôt la fiche{" "}
-                <Link href={`/recommandations/${ficheSlug(remplacante.fiche_key)}`} className="font-semibold underline">
+                {t.fiche.remplaceeVoir}{" "}
+                <Link href={lien(`/recommandations/${ficheSlug(remplacante.fiche_key)}`)} className="font-semibold underline">
                   {remplacante.card_json?.title ?? remplacante.title}
                 </Link>
                 .
               </>
             )}{" "}
-            Cette fiche reste disponible pour son intérêt historique.
+            {t.fiche.remplaceeHistorique}
           </p>
         )}
         {fiche.freshness_status === "revision_detectee" && (
           <p role="note" className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
-            <b>Révision en cours.</b> Une nouvelle version de cette recommandation a été annoncée par la société
-            savante ; la fiche sera actualisée dès sa publication.
+            <b>{t.fiche.revisionTitre}</b> {t.fiche.revisionTexte}
           </p>
         )}
 
         {apercu.champ ? (
           <section className="mt-8" aria-labelledby="champ">
             <h2 id="champ" className="text-lg font-bold text-slate-900">
-              Champ de la recommandation
+              {t.fiche.champ}
             </h2>
             <p className="mt-2 leading-relaxed text-slate-700">{apercu.champ}</p>
           </section>
         ) : (
           c?.short && (
             <section className="mt-8">
-              <h2 className="text-lg font-bold text-slate-900">Résumé</h2>
+              <h2 className="text-lg font-bold text-slate-900">{t.fiche.resume}</h2>
               <p className="mt-2 leading-relaxed text-slate-700">{c.short}</p>
             </section>
           )
@@ -165,9 +178,9 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         {points.length > 0 && (
           <section className="mt-8" aria-labelledby="points-cles">
             <h2 id="points-cles" className="text-lg font-bold text-slate-900">
-              Points clés
+              {t.fiche.pointsCles}
             </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-5 leading-relaxed text-slate-700">
+            <ul className="mt-3 list-disc space-y-2 ps-5 leading-relaxed text-slate-700">
               {points.map((p) => (
                 <li key={p}>{p}</li>
               ))}
@@ -176,33 +189,30 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         )}
 
         <section className="mt-6 rounded-2xl bg-[#EEF6FB] p-6">
-          <h2 className="text-lg font-bold text-[#0E3A78]">Lire la fiche complète</h2>
-          <p className="mt-2 text-sm text-slate-700">
-            Recommandations détaillées par thème, avec leurs grades tels qu&apos;ils figurent dans la
-            source. Compte gratuit : {FREE_QUOTA} fiches au choix, sans carte bancaire.
-          </p>
+          <h2 className="text-lg font-bold text-[#0E3A78]">{t.fiche.lireTitre}</h2>
+          <p className="mt-2 text-sm text-slate-700">{fmt(t.fiche.lireTexte, { quota: FREE_QUOTA })}</p>
           <SelonConnexion
             connecte={
               <Link
-                href={`/bibliotheque/${fiche.id}`}
+                href={lien(`/bibliotheque/${fiche.id}`)}
                 className="mt-4 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
               >
-                Ouvrir la fiche dans ma bibliothèque
+                {t.fiche.ouvrir}
               </Link>
             }
             visiteur={
               <div className="mt-4 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="/inscription"
+                  href={lien("/inscription")}
                   className="rounded-lg bg-[#0E3A78] px-6 py-3 text-center font-semibold text-white hover:bg-[#0B2F63]"
                 >
-                  Créer mon compte gratuit
+                  {t.fiche.creerCompte}
                 </Link>
                 <Link
-                  href="/connexion"
+                  href={lien("/connexion")}
                   className="rounded-lg border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50"
                 >
-                  J&apos;ai déjà un compte
+                  {t.fiche.dejaCompte}
                 </Link>
               </div>
             }
@@ -212,16 +222,16 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         {apercu.chapitres.length > 1 && (
           <section className="mt-10" aria-labelledby="sommaire">
             <h2 id="sommaire" className="text-lg font-bold text-slate-900">
-              Sommaire de la fiche complète
+              {t.fiche.sommaire}
             </h2>
-            <ol className="mt-3 list-decimal space-y-1 pl-6 text-slate-700 marker:text-slate-400">
-              {apercu.chapitres.slice(0, CHAPITRES_MAX).map((t) => (
-                <li key={t}>{t}</li>
+            <ol className="mt-3 list-decimal space-y-1 ps-6 text-slate-700 marker:text-slate-400">
+              {apercu.chapitres.slice(0, CHAPITRES_MAX).map((chapitre) => (
+                <li key={chapitre}>{chapitre}</li>
               ))}
             </ol>
             {apercu.chapitres.length > CHAPITRES_MAX && (
               <p className="mt-2 text-sm text-slate-500">
-                Et {apercu.chapitres.length - CHAPITRES_MAX} autres chapitres.
+                {plur(locale, apercu.chapitres.length - CHAPITRES_MAX, t.fiche.autresChapitres)}
               </p>
             )}
           </section>
@@ -230,45 +240,45 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         <dl className="mt-10 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-[auto_1fr]">
           {fiche.societies.length > 0 && (
             <>
-              <dt className="font-semibold text-slate-900">Sociétés savantes</dt>
+              <dt className="font-semibold text-slate-900">{t.fiche.societes}</dt>
               <dd className="text-slate-600">{fiche.societies.join(", ")}</dd>
             </>
           )}
           {(fiche.doc_type || date) && (
             <>
-              <dt className="font-semibold text-slate-900">Document</dt>
+              <dt className="font-semibold text-slate-900">{t.fiche.document}</dt>
               <dd className="text-slate-600">{[fiche.doc_type, date].filter(Boolean).join(" · ")}</dd>
             </>
           )}
           {c?.methodology && (
             <>
-              <dt className="font-semibold text-slate-900">Méthodologie</dt>
+              <dt className="font-semibold text-slate-900">{t.fiche.methodologie}</dt>
               <dd className="text-slate-600">{methodologieLisible(c.methodology)}</dd>
             </>
           )}
           {c?.validated && (
             <>
-              <dt className="font-semibold text-slate-900">Validation</dt>
+              <dt className="font-semibold text-slate-900">{t.fiche.validation}</dt>
               <dd className="text-slate-600">{c.validated}</dd>
             </>
           )}
         </dl>
 
-        {anciennete && (
+        {annee && (
           <p role="note" className="mt-6 rounded-lg bg-amber-50 p-4 text-sm text-amber-900">
-            <b>Source ancienne.</b> {anciennete}
+            <b>{tf.ancienneTitre}</b> {fmt(tf.ancienneTexte, { annee, max: ANCIENNETE_MAX })}
           </p>
         )}
 
 
         <p className="mt-6 text-sm">
           <a href={fiche.source_url} target="_blank" rel="noopener noreferrer" className="text-[#1A74A6] underline">
-            Document source officiel ↗
+            {tf.sourceOfficielle}
           </a>{" "}
           <span className="text-slate-500">
-            — en accès libre sur le site de la société savante
+            {t.fiche.accesLibre}
             {fiche.link_status === "ok" && fiche.link_last_checked_at
-              ? ` (lien contrôlé le ${formatDate(fiche.link_last_checked_at.slice(0, 10))})`
+              ? fmt(t.fiche.lienControle, { date: formatDate(fiche.link_last_checked_at.slice(0, 10), locale) ?? "" })
               : ""}
             .
           </span>
@@ -278,37 +288,35 @@ export default async function RecommandationPage({ params }: PageProps<"/[lang]/
         {voisines.length > 0 && (
           <section className="mt-10" aria-labelledby="voisines">
             <h2 id="voisines" className="text-lg font-bold text-slate-900">
-              Autres fiches — {section}
+              {fmt(t.fiche.autres, { rubrique: section ? rubrique(section, langue).nom : "" })}
             </h2>
             <ul className="mt-3 divide-y divide-slate-100 overflow-hidden rounded-2xl ring-1 ring-slate-200">
               {voisines.map((f) => (
                 <li key={f.id}>
                   <Link
-                    href={`/recommandations/${ficheSlug(f.fiche_key)}`}
+                    href={lien(`/recommandations/${ficheSlug(f.fiche_key)}`)}
                     className="flex flex-col gap-0.5 px-4 py-3 hover:bg-slate-50"
                   >
                     <span className="font-medium text-slate-900">{f.card_json?.title ?? f.title}</span>
                     <span className="font-mono text-xs text-slate-500">
-                      {[f.societies.slice(0, 3).join(" / "), formatDate(f.publication_date)].filter(Boolean).join(" · ")}
+                      {[f.societies.slice(0, 3).join(" / "), formatDate(f.publication_date, locale)].filter(Boolean).join(" · ")}
                     </span>
                   </Link>
                 </li>
               ))}
             </ul>
             <p className="mt-3 text-sm">
-              <Link href="/recommandations" className="text-[#1A74A6] underline">
-                Voir toutes les recommandations
+              <Link href={lien("/recommandations")} className="text-[#1A74A6] underline">
+                {t.fiche.voirToutes}
               </Link>
             </p>
           </section>
         )}
 
         <p className="mt-10 text-xs text-slate-500">
-          Synthèse indépendante : elle ne remplace ni le texte intégral de la recommandation
-          officielle ni le jugement clinique, et n&apos;est ni éditée ni validée par les sociétés
-          savantes citées.{" "}
-          <Link href="/demarche" className="underline">
-            Notre démarche
+          {t.fiche.avertissement}{" "}
+          <Link href={lien("/demarche")} className="underline">
+            {t.fiche.demarche}
           </Link>
         </p>
       </main>

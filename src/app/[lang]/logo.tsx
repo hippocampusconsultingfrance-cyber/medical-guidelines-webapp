@@ -34,7 +34,8 @@ export function LogoMark({ className }: { className?: string }) {
   );
 }
 
-export default function Logo({ tagline = false, className = "" }: { tagline?: boolean; className?: string }) {
+// tagline : sous-titre, dans la langue de la page.
+export default function Logo({ tagline, className = "" }: { tagline?: string; className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
       <LogoMark className="h-7 w-auto shrink-0 sm:h-10" />
@@ -44,7 +45,7 @@ export default function Logo({ tagline = false, className = "" }: { tagline?: bo
         </span>
         {tagline && (
           <span className="mt-1 block text-[0.7rem] font-medium tracking-wide text-slate-500 sm:text-xs">
-            Recommandations médicales et paramédicales
+            {tagline}
           </span>
         )}
       </span>

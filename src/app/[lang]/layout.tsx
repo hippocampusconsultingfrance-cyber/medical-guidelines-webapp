@@ -3,7 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { notFound } from "next/navigation";
-import { LANGUES_OUVERTES, direction, estOuverte } from "@/lib/langues";
+import ChoixLangue from "@/i18n/choix-langue";
+import { COMMUN } from "@/i18n/commun";
+import { riche } from "@/i18n/format";
+import { textes } from "@/i18n/serveur";
+import { LANGUES_OUVERTES, chemin, direction, estOuverte } from "@/lib/langues";
 import { SITE_URL } from "@/lib/seo";
 
 const geistSans = Geist({
@@ -16,17 +20,19 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  // Adresses absolues des images de partage (opengraph-image).
-  metadataBase: new URL(SITE_URL),
-  title: "Medical Guidelines",
-  description:
-    "Fiches de synthèse des recommandations professionnelles, pour le personnel médical et paramédical.",
-  robots: { index: false, follow: false },
-  icons: { apple: "/icones/180.png" },
-  appleWebApp: { capable: true, title: "Guidelines", statusBarStyle: "default" },
-  openGraph: { siteName: "medical-guidelines.net", locale: "fr_FR", type: "website" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await textes(COMMUN);
+  return {
+    // Adresses absolues des images de partage (opengraph-image).
+    metadataBase: new URL(SITE_URL),
+    title: "Medical Guidelines",
+    description: t.meta.description,
+    robots: { index: false, follow: false },
+    icons: { apple: "/icones/180.png" },
+    appleWebApp: { capable: true, title: "Guidelines", statusBarStyle: "default" },
+    openGraph: { siteName: "medical-guidelines.net", locale: t.meta.ogLocale, type: "website" },
+  };
+}
 
 export const viewport: Viewport = { themeColor: "#0E3A78" };
 
@@ -43,6 +49,8 @@ export function generateStaticParams() {
 export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {
   const { lang } = await params;
   if (!estOuverte(lang)) notFound();
+  const t = COMMUN[lang];
+  const lien = (p: string) => chemin(lang, p);
   return (
     <html
       lang={lang}
@@ -53,37 +61,37 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         <div className="flex-1">{children}</div>
         <footer className="border-t border-slate-200 px-6 py-4 text-center text-xs text-slate-500">
           <p className="mb-2 text-sm text-slate-700">
-            <b>Société savante&nbsp;?</b> Devenez notre partenaire : accès PREMIUM offert, statistiques anonymes de lecture
-            et signalements d&apos;erreurs sur vos fiches.{" "}
-            <a href="/partenaires" className="font-semibold text-[#1A74A6] hover:underline">
-              En savoir plus
+            {riche(t.pied.societe, { b: (c) => <b>{c}</b> })}{" "}
+            <a href={lien("/partenaires")} className="font-semibold text-[#1A74A6] hover:underline">
+              {t.pied.societeLien}
             </a>
           </p>
           <p className="mb-2 text-sm text-slate-700">
-            <b>Médecin&nbsp;?</b> Participez à la correction des fiches : accès gratuit au site et 5 accès offerts aux personnes de votre choix.{" "}
-            <a href="/relecteurs" className="font-semibold text-[#1A74A6] hover:underline">
-              Devenir relecteur
+            {riche(t.pied.medecin, { b: (c) => <b>{c}</b> })}{" "}
+            <a href={lien("/relecteurs")} className="font-semibold text-[#1A74A6] hover:underline">
+              {t.pied.medecinLien}
             </a>
           </p>
-          <a href="/mentions-legales" className="hover:underline">
-            Mentions légales
+          <a href={lien("/mentions-legales")} className="hover:underline">
+            {t.pied.mentions}
           </a>
           {" · "}
-          <a href="/cgu" className="hover:underline">
-            CGU
+          <a href={lien("/cgu")} className="hover:underline">
+            {t.pied.cgu}
           </a>
           {" · "}
-          <a href="/cgv" className="hover:underline">
-            CGV
+          <a href={lien("/cgv")} className="hover:underline">
+            {t.pied.cgv}
           </a>
           {" · "}
-          <a href="/confidentialite" className="hover:underline">
-            Confidentialité
+          <a href={lien("/confidentialite")} className="hover:underline">
+            {t.pied.confidentialite}
           </a>
           {" · "}
-          <a href="/corrections" className="hover:underline">
-            Journal des corrections
+          <a href={lien("/corrections")} className="hover:underline">
+            {t.pied.corrections}
           </a>
+          <ChoixLangue libelle={t.pied.langues} className="mt-3" />
         </footer>
         {/* Mesure d'audience Vercel : sans cookies ni identifiant persistant. */}
         <Analytics />

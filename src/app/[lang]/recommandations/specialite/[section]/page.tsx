@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FICHE } from "@/i18n/fiche";
+import { fmt, plur } from "@/i18n/format";
+import { rubrique } from "@/i18n/rubriques";
+import { textes } from "@/i18n/serveur";
 import { formatDate } from "@/lib/fiches";
-import { INDEXABLE, SITE_URL, ficheSlug, sectionLibelle, sectionSlug } from "@/lib/seo";
+import { INDEXABLE, LANGUES_CONTENU, SITE_URL, alternatives, contenuIndexable, ficheSlug, sectionSlug } from "@/lib/seo";
 import { groupBySection } from "../../../bibliotheque/data";
 import { loadPublicFiches } from "../../data";
 import PublicHeader from "../../public-header";
+import { RECOMMANDATIONS } from "../../textes";
 import DonneesStructurees from "../../../donnees-structurees";
 import SelonConnexion from "../../../selon-connexion";
 
@@ -18,41 +23,42 @@ export function generateStaticParams() {
   return [];
 }
 
-const pluriel = (n: number, mot: string) => `${n} ${mot}${n > 1 ? "s" : ""}`;
-
-async function rubrique(slug: string) {
+async function trouver(slug: string) {
   const groups = groupBySection(await loadPublicFiches());
   return groups.find(([section]) => sectionSlug(section) === slug) ?? null;
 }
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/recommandations/specialite/[section]">): Promise<Metadata> {
   const { section: slug } = await params;
-  const trouvee = await rubrique(slug);
-  if (!trouvee) return { title: "Spécialité introuvable — medical-guidelines.net" };
+  const { t, langue, locale } = await textes(RECOMMANDATIONS);
+  const trouvee = await trouver(slug);
+  if (!trouvee) return { title: t.specialite.introuvable };
   const [section, list] = trouvee;
-  const libelle = sectionLibelle(section);
+  const libelle = rubrique(section, langue).phrase;
   const societes = [...new Set(list.flatMap((f) => f.societies))].slice(0, 5).join(", ");
-  const title = `Recommandations en ${libelle} : ${pluriel(list.length, "fiche")} de synthèse | medical-guidelines.net`;
-  const description = `Les recommandations en ${libelle} des sociétés savantes françaises (${societes}…) en fiches de synthèse indépendantes, sourcées, grades conservés, de la plus récente à la plus ancienne.`;
-  const url = `${SITE_URL}/recommandations/specialite/${slug}`;
+  const title = fmt(t.specialite.titreMeta, { libelle, fiches: plur(locale, list.length, FICHE[langue].fiches) });
+  const description = fmt(t.specialite.descriptionMeta, { libelle, societes });
+  const adresses = alternatives(langue, `/recommandations/specialite/${slug}`, LANGUES_CONTENU);
   return {
     title,
     description,
-    alternates: { canonical: url },
-    robots: { index: INDEXABLE, follow: INDEXABLE },
-    openGraph: { title, description, url, siteName: "medical-guidelines.net", locale: "fr_FR", type: "website" },
+    alternates: adresses,
+    robots: { index: contenuIndexable(langue), follow: INDEXABLE },
+    openGraph: { title, description, url: adresses.canonical, siteName: "medical-guidelines.net", locale: t.catalogue.ogLocale, type: "website" },
     twitter: { card: "summary_large_image" },
   };
 }
 
 export default async function SpecialitePage({ params }: PageProps<"/[lang]/recommandations/specialite/[section]">) {
   const { section: slug } = await params;
-  const trouvee = await rubrique(slug);
+  const { t, langue, lien, locale } = await textes(RECOMMANDATIONS);
+  const tf = FICHE[langue];
+  const trouvee = await trouver(slug);
   if (!trouvee) notFound();
   const [section, list] = trouvee;
-  const libelle = sectionLibelle(section);
+  const { nom, phrase: libelle } = rubrique(section, langue);
   const recentes = list.filter((f) => f.publication_date && f.publication_date >= "2020-01-01").length;
-  const url = `${SITE_URL}/recommandations/specialite/${slug}`;
+  const url = `${SITE_URL}${lien(`/recommandations/specialite/${slug}`)}`;
 
   return (
     <div className="min-h-screen bg-white text-slate-800">
@@ -61,9 +67,9 @@ export default async function SpecialitePage({ params }: PageProps<"/[lang]/reco
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: `Recommandations en ${libelle}`,
+          name: fmt(t.specialite.titre, { libelle }),
           url,
-          inLanguage: "fr",
+          inLanguage: langue,
           mainEntity: {
             "@type": "ItemList",
             numberOfItems: list.length,
@@ -71,7 +77,7 @@ export default async function SpecialitePage({ params }: PageProps<"/[lang]/reco
               "@type": "ListItem",
               position: i + 1,
               name: f.card_json?.title ?? f.title,
-              url: `${SITE_URL}/recommandations/${ficheSlug(f.fiche_key)}`,
+              url: `${SITE_URL}${lien(`/recommandations/${ficheSlug(f.fiche_key)}`)}`,
             })),
           },
         }}
@@ -81,9 +87,9 @@ export default async function SpecialitePage({ params }: PageProps<"/[lang]/reco
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Accueil", item: SITE_URL },
-            { "@type": "ListItem", position: 2, name: "Recommandations", item: `${SITE_URL}/recommandations` },
-            { "@type": "ListItem", position: 3, name: section, item: url },
+            { "@type": "ListItem", position: 1, name: t.accueil, item: alternatives(langue, "/").canonical },
+            { "@type": "ListItem", position: 2, name: t.recommandations, item: `${SITE_URL}${lien("/recommandations")}` },
+            { "@type": "ListItem", position: 3, name: nom, item: url },
           ],
         }}
       />
@@ -91,31 +97,32 @@ export default async function SpecialitePage({ params }: PageProps<"/[lang]/reco
         <div className="bg-gradient-to-b from-[#EEF6FB] to-white">
           <div className="mx-auto max-w-5xl px-4 pb-8 pt-10 sm:px-6">
             <p className="text-sm">
-              <Link href="/recommandations" className="text-[#1A74A6] underline">
-                ← Toutes les spécialités
+              <Link href={lien("/recommandations")} className="text-[#1A74A6] underline">
+                {t.specialite.retour}
               </Link>
             </p>
-            <h1 className="mt-4 text-3xl font-bold text-[#0E3A78] sm:text-4xl">Recommandations en {libelle}</h1>
+            <h1 className="mt-4 text-3xl font-bold text-[#0E3A78] sm:text-4xl">{fmt(t.specialite.titre, { libelle })}</h1>
             <p className="mt-3 max-w-2xl text-slate-600">
-              {pluriel(list.length, "recommandation")} des sociétés savantes françaises en fiches de synthèse
-              indépendantes{recentes > 0 ? `, dont ${recentes} publiée${recentes > 1 ? "s" : ""} depuis 2020` : ""}. Chaque fiche garde les grades de la source et renvoie au document
-              officiel ; elle n&apos;est ni éditée ni validée par les sociétés savantes.
+              {plur(locale, list.length, t.specialite.texte)}
+              {recentes > 0 ? plur(locale, recentes, t.specialite.dontRecentes) : ""}
+              {t.specialite.texteFin}
             </p>
+            {tf.enFrancais && <p className="mt-3 max-w-2xl text-sm text-slate-500">{tf.enFrancais}</p>}
             <SelonConnexion
               connecte={
                 <Link
-                  href="/bibliotheque"
+                  href={lien("/bibliotheque")}
                   className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
                 >
-                  Ouvrir ma bibliothèque
+                  {t.ouvrirBibliotheque}
                 </Link>
               }
               visiteur={
                 <Link
-                  href="/inscription"
+                  href={lien("/inscription")}
                   className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
                 >
-                  Créer un compte gratuit : 5 fiches offertes
+                  {t.creerCompteOffert}
                 </Link>
               }
             />
@@ -127,24 +134,24 @@ export default async function SpecialitePage({ params }: PageProps<"/[lang]/reco
             {list.map((fiche) => (
               <li key={fiche.id}>
                 <Link
-                  href={`/recommandations/${ficheSlug(fiche.fiche_key)}`}
+                  href={lien(`/recommandations/${ficheSlug(fiche.fiche_key)}`)}
                   className="flex flex-col gap-1 px-4 py-3 hover:bg-slate-50 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
                 >
                   <span className="font-medium text-slate-900">
                     {fiche.card_json?.title ?? fiche.title}
                     {fiche.freshness_status === "remplacee" && (
-                      <span className="ml-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
-                        Remplacée
+                      <span className="ms-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
+                        {tf.remplacee}
                       </span>
                     )}
                     {fiche.freshness_status === "revision_detectee" && (
-                      <span className="ml-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
-                        Révision en cours
+                      <span className="ms-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
+                        {tf.revision}
                       </span>
                     )}
                   </span>
                   <span className="shrink-0 font-mono text-xs text-slate-500">
-                    {[fiche.societies.slice(0, 3).join(" / "), formatDate(fiche.publication_date)].filter(Boolean).join(" · ")}
+                    {[fiche.societies.slice(0, 3).join(" / "), formatDate(fiche.publication_date, locale)].filter(Boolean).join(" · ")}
                   </span>
                 </Link>
               </li>

@@ -6,12 +6,14 @@
 
 export const LANGUES = ["fr", "en", "es", "de", "ar", "zh"] as const;
 export type Langue = (typeof LANGUES)[number];
-export const LANGUE_DEFAUT: Langue = "fr";
+export const LANGUE_DEFAUT = "fr" satisfies Langue;
 
 // Langues proposées aux visiteurs : une langue n'est ouverte qu'une fois
-// toute l'interface traduite. Une adresse d'une langue fermée affiche la
-// page 404.
-export const LANGUES_OUVERTES: readonly Langue[] = ["fr"];
+// toute l'interface traduite (textes.ts de chaque page : TypeScript exige
+// une version pour chaque langue ouverte). Une adresse d'une langue fermée
+// affiche la page 404.
+export const LANGUES_OUVERTES = ["fr", "en"] as const satisfies readonly Langue[];
+export type LangueOuverte = (typeof LANGUES_OUVERTES)[number];
 
 export const NOMS_LANGUES: Record<Langue, string> = {
   fr: "Français",
@@ -40,8 +42,8 @@ export function estLangue(x: unknown): x is Langue {
   return typeof x === "string" && (LANGUES as readonly string[]).includes(x);
 }
 
-export function estOuverte(x: unknown): x is Langue {
-  return estLangue(x) && LANGUES_OUVERTES.includes(x);
+export function estOuverte(x: unknown): x is LangueOuverte {
+  return typeof x === "string" && (LANGUES_OUVERTES as readonly string[]).includes(x);
 }
 
 export function direction(langue: Langue): "ltr" | "rtl" {

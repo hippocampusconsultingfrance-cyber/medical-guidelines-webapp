@@ -8,7 +8,8 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import {
   accordion,
-  avertissementAnciennete,
+  ANCIENNETE_MAX,
+  anneeAncienne,
   verificationSource,
   chipClass,
   escapeHtml,
@@ -179,7 +180,7 @@ export default async function FichePage({
     ? lib.docs.find((d) => d.id === extra.superseded_by_document_id)
     : undefined;
   const freshness = doc.freshness_status ? FRESHNESS_NOTICE[doc.freshness_status] : undefined;
-  const anciennete = doc.freshness_status === "remplacee" ? null : avertissementAnciennete(doc.publication_date);
+  const anneeSource = doc.freshness_status === "remplacee" ? null : anneeAncienne(doc.publication_date);
   const header = (
     <div className="doc-header">
       <div className="doc-header__eyebrow">
@@ -244,9 +245,9 @@ export default async function FichePage({
           </button>
         </form>
       </div>
-      {anciennete && (
+      {anneeSource && (
         <div className="panel warn" role="note">
-          <b>Source ancienne.</b> {anciennete}
+          <b>Source ancienne.</b> Recommandation publiée en {anneeSource}, il y a plus de {ANCIENNETE_MAX} ans : vérifiez auprès de la société savante qu&apos;aucune actualisation n&apos;a été publiée depuis.
         </div>
       )}
       {freshness && (

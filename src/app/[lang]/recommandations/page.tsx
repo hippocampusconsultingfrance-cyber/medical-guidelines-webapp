@@ -1,30 +1,38 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FICHE } from "@/i18n/fiche";
+import { plur } from "@/i18n/format";
+import { rubrique } from "@/i18n/rubriques";
+import { textes } from "@/i18n/serveur";
 import { formatDate } from "@/lib/fiches";
-import { INDEXABLE, SITE_URL, ficheSlug, sectionSlug } from "@/lib/seo";
+import { INDEXABLE, LANGUES_CONTENU, SITE_URL, alternatives, contenuIndexable, ficheSlug, sectionSlug } from "@/lib/seo";
 import { groupBySection } from "../bibliotheque/data";
 import { loadPublicFiches } from "./data";
 import PublicHeader from "./public-header";
 import RechercheCatalogue from "./recherche";
 import SelonConnexion from "../selon-connexion";
 import DonneesStructurees from "../donnees-structurees";
+import { RECOMMANDATIONS } from "./textes";
 
-export const metadata: Metadata = {
-  title: "Fiches de synthèse indépendantes des recommandations médicales | medical-guidelines.net",
-  description:
-    "Synthèses indépendantes des recommandations des sociétés savantes françaises (SFAR, SRLF, SFMU, HAS…), sourcées, grades conservés, avec le lien vers chaque texte officiel : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
-  alternates: { canonical: `${SITE_URL}/recommandations` },
-  robots: { index: INDEXABLE, follow: INDEXABLE },
-  openGraph: {
-    title: "Fiches de synthèse indépendantes des recommandations médicales",
-    description: "Synthèses sourcées, grades conservés, avec le lien vers chaque texte officiel : anesthésie-réanimation, réanimation, urgences, pédiatrie et d'autres spécialités.",
-    url: `${SITE_URL}/recommandations`,
-    siteName: "medical-guidelines.net",
-    locale: "fr_FR",
-    type: "website",
-  },
-  twitter: { card: "summary_large_image" },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t, langue } = await textes(RECOMMANDATIONS);
+  const adresses = alternatives(langue, "/recommandations", LANGUES_CONTENU);
+  return {
+    title: t.catalogue.titreMeta,
+    description: t.catalogue.descriptionMeta,
+    alternates: adresses,
+    robots: { index: contenuIndexable(langue), follow: INDEXABLE },
+    openGraph: {
+      title: t.catalogue.titreOg,
+      description: t.catalogue.descriptionOg,
+      url: adresses.canonical,
+      siteName: "medical-guidelines.net",
+      locale: t.catalogue.ogLocale,
+      type: "website",
+    },
+    twitter: { card: "summary_large_image" },
+  };
+}
 
 const ancre = (section: string) =>
   "s-" +
@@ -47,6 +55,8 @@ const motsCles = (s: string) =>
 export const revalidate = 300;
 
 export default async function RecommandationsPage() {
+  const { t, langue, lien, locale } = await textes(RECOMMANDATIONS);
+  const tf = FICHE[langue];
   const fiches = await loadPublicFiches();
   const groups = groupBySection(fiches);
 
@@ -57,9 +67,9 @@ export default async function RecommandationsPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Fiches de synthèse indépendantes des recommandations médicales",
-          url: `${SITE_URL}/recommandations`,
-          inLanguage: "fr",
+          name: t.catalogue.titreOg,
+          url: `${SITE_URL}${lien("/recommandations")}`,
+          inLanguage: langue,
           mainEntity: {
             "@type": "ItemList",
             numberOfItems: fiches.length,
@@ -67,7 +77,7 @@ export default async function RecommandationsPage() {
               "@type": "ListItem",
               position: i + 1,
               name: f.card_json?.title ?? f.title,
-              url: `${SITE_URL}/recommandations/${ficheSlug(f.fiche_key)}`,
+              url: `${SITE_URL}${lien(`/recommandations/${ficheSlug(f.fiche_key)}`)}`,
             })),
           },
         }}
@@ -75,40 +85,36 @@ export default async function RecommandationsPage() {
       <main>
         <div className="bg-gradient-to-b from-[#EEF6FB] to-white">
           <div className="mx-auto max-w-5xl px-4 pb-6 pt-10 sm:px-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#177E73]">Toutes spécialités</p>
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#177E73]">{t.catalogue.surtitre}</p>
             <h1 className="mt-2 text-3xl font-bold text-[#0E3A78] sm:text-4xl">
-              {fiches.length} recommandations en fiches de synthèse
+              {plur(locale, fiches.length, t.catalogue.titre)}
             </h1>
-            <p className="mt-3 max-w-2xl text-slate-600">
-              Synthèses indépendantes des recommandations des sociétés savantes françaises, de la plus
-              récente à la plus ancienne. Chaque fiche garde les grades de la source et renvoie au document
-              officiel, en accès libre chez ses auteurs ; elle n&apos;est ni éditée ni validée par les sociétés
-              savantes.
-            </p>
+            <p className="mt-3 max-w-2xl text-slate-600">{t.catalogue.texte}</p>
+            {tf.enFrancais && <p className="mt-3 max-w-2xl text-sm text-slate-500">{tf.enFrancais}</p>}
             <SelonConnexion
               connecte={
                 <Link
-                  href="/bibliotheque"
+                  href={lien("/bibliotheque")}
                   className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
                 >
-                  Ouvrir ma bibliothèque
+                  {t.ouvrirBibliotheque}
                 </Link>
               }
               visiteur={
                 <Link
-                  href="/inscription"
+                  href={lien("/inscription")}
                   className="mt-6 inline-block rounded-lg bg-[#0E3A78] px-6 py-3 font-semibold text-white hover:bg-[#0B2F63]"
                 >
-                  Créer un compte gratuit : 5 fiches offertes
+                  {t.creerCompteOffert}
                 </Link>
               }
             />
-            <RechercheCatalogue total={fiches.length} />
+            <RechercheCatalogue total={fiches.length} t={t.recherche} locale={locale} />
           </div>
         </div>
 
         <nav
-          aria-label="Spécialités"
+          aria-label={t.catalogue.specialites}
           className="sticky top-0 z-10 border-y border-slate-200 bg-white/95 backdrop-blur"
         >
           <ul className="mx-auto flex max-w-5xl gap-2 overflow-x-auto px-4 py-2.5 sm:px-6">
@@ -118,7 +124,7 @@ export default async function RecommandationsPage() {
                   href={`#${ancre(section)}`}
                   className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:border-[#3AA8E0] hover:text-[#0E3A78]"
                 >
-                  {section}
+                  {rubrique(section, langue).nom}
                   <span className="text-xs text-slate-500" data-compte={ancre(section)}>
                     {list.length}
                   </span>
@@ -138,8 +144,8 @@ export default async function RecommandationsPage() {
               aria-labelledby={`t-${ancre(section)}`}
             >
               <h2 id={`t-${ancre(section)}`} className="text-xl font-bold text-[#0E3A78]">
-                <Link href={`/recommandations/specialite/${sectionSlug(section)}`} className="hover:underline">
-                  {section}
+                <Link href={lien(`/recommandations/specialite/${sectionSlug(section)}`)} className="hover:underline">
+                  {rubrique(section, langue).nom}
                 </Link>{" "}
                 <span className="text-base font-medium text-slate-500">
                   (<span data-compte={ancre(section)}>{list.length}</span>)
@@ -151,24 +157,24 @@ export default async function RecommandationsPage() {
                   return (
                     <li key={fiche.id} data-q={motsCles(`${titre} ${fiche.title} ${fiche.societies.join(" ")}`)}>
                       <Link
-                        href={`/recommandations/${ficheSlug(fiche.fiche_key)}`}
+                        href={lien(`/recommandations/${ficheSlug(fiche.fiche_key)}`)}
                         className="flex flex-col gap-1 px-4 py-3 hover:bg-slate-50 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6"
                       >
                         <span className="font-medium text-slate-900">
                           {titre}
                           {fiche.freshness_status === "remplacee" && (
-                            <span className="ml-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
-                              Remplacée
+                            <span className="ms-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
+                              {tf.remplacee}
                             </span>
                           )}
                           {fiche.freshness_status === "revision_detectee" && (
-                            <span className="ml-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
-                              Révision en cours
+                            <span className="ms-2 rounded bg-amber-50 px-1.5 py-0.5 align-middle text-xs font-semibold text-amber-800">
+                              {tf.revision}
                             </span>
                           )}
                         </span>
                         <span className="shrink-0 font-mono text-xs text-slate-500">
-                          {[fiche.societies.slice(0, 3).join(" / "), formatDate(fiche.publication_date)]
+                          {[fiche.societies.slice(0, 3).join(" / "), formatDate(fiche.publication_date, locale)]
                             .filter(Boolean)
                             .join(" · ")}
                         </span>
