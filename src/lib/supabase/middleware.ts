@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { LANGUE_DEFAUT, chemin, decouper, estOuverte } from "@/lib/langues";
 
 // Premiers segments des pages et routes réservées aux membres connectés.
 const ESPACES_MEMBRES = [
@@ -52,61 +53,66 @@ export async function updateSession(request: NextRequest, requestHeaders: Header
     data: { user },
   } = await supabase.auth.getUser();
 
+  // Adresse sans la langue (/en/compte → /compte, cf. src/lib/langues.ts).
+  // Une langue pas encore ouverte est traitée comme une adresse française.
+  const decoupe = decouper(request.nextUrl.pathname);
+  const langue = estOuverte(decoupe.langue) ? decoupe.langue : LANGUE_DEFAUT;
+  const pathname = estOuverte(decoupe.langue) ? decoupe.reste : request.nextUrl.pathname;
   const isAuthRoute =
-    request.nextUrl.pathname.startsWith("/connexion") ||
-    request.nextUrl.pathname.startsWith("/inscription") ||
-    request.nextUrl.pathname.startsWith("/auth") ||
-    request.nextUrl.pathname.startsWith("/verifiez-votre-email") ||
-    request.nextUrl.pathname.startsWith("/finaliser-compte") ||
-    request.nextUrl.pathname.startsWith("/cgu") ||
-    request.nextUrl.pathname.startsWith("/confidentialite") ||
-    request.nextUrl.pathname.startsWith("/mentions-legales") ||
-    request.nextUrl.pathname.startsWith("/cgv") ||
+    pathname.startsWith("/connexion") ||
+    pathname.startsWith("/inscription") ||
+    pathname.startsWith("/auth") ||
+    pathname.startsWith("/verifiez-votre-email") ||
+    pathname.startsWith("/finaliser-compte") ||
+    pathname.startsWith("/cgu") ||
+    pathname.startsWith("/confidentialite") ||
+    pathname.startsWith("/mentions-legales") ||
+    pathname.startsWith("/cgv") ||
     // Pages publiques de résumé des fiches (sans contenu premium).
-    request.nextUrl.pathname.startsWith("/recommandations") ||
+    pathname.startsWith("/recommandations") ||
     // Journal public des corrections (date, fiche, criticité, résumé).
-    request.nextUrl.pathname === "/corrections" ||
+    pathname === "/corrections" ||
     // Démarche et financement du site (public).
-    request.nextUrl.pathname === "/demarche" ||
+    pathname === "/demarche" ||
     // Offre de partenariat aux sociétés savantes (public).
-    request.nextUrl.pathname === "/partenaires" ||
+    pathname === "/partenaires" ||
     // Appel aux médecins relecteurs et formulaire de candidature (public).
-    request.nextUrl.pathname === "/relecteurs" ||
-    request.nextUrl.pathname === "/sitemap.xml" ||
+    pathname === "/relecteurs" ||
+    pathname === "/sitemap.xml" ||
     // Appelé par Stripe (sans session) ; authentifié par sa signature.
-    request.nextUrl.pathname === "/api/stripe/webhook" ||
+    pathname === "/api/stripe/webhook" ||
     // Page de santé de la surveillance (aucune donnée).
-    request.nextUrl.pathname === "/api/sante" ||
+    pathname === "/api/sante" ||
     // Tâche planifiée Vercel ; authentifiée par CRON_SECRET.
-    request.nextUrl.pathname.startsWith("/api/cron/") ||
+    pathname.startsWith("/api/cron/") ||
     // Liens de désinscription des e-mails ; authentifiés par leur jeton.
-    request.nextUrl.pathname === "/alertes/desinscription" ||
-    request.nextUrl.pathname === "/api/alertes/desinscription" ||
-    request.nextUrl.pathname.startsWith("/mot-de-passe-oublie");
+    pathname === "/alertes/desinscription" ||
+    pathname === "/api/alertes/desinscription" ||
+    pathname.startsWith("/mot-de-passe-oublie");
   const isPublicAsset =
-    request.nextUrl.pathname.startsWith("/_next") ||
+    pathname.startsWith("/_next") ||
     // Script et envoi de la mesure d'audience Vercel.
-    request.nextUrl.pathname.startsWith("/_vercel") ||
-    request.nextUrl.pathname.startsWith("/favicon") ||
-    request.nextUrl.pathname === "/robots.txt" ||
+    pathname.startsWith("/_vercel") ||
+    pathname.startsWith("/favicon") ||
+    pathname === "/robots.txt" ||
     // Installation sur l'écran d'accueil (manifeste et icônes).
-    request.nextUrl.pathname === "/manifest.webmanifest" ||
-    request.nextUrl.pathname.startsWith("/icones/") ||
+    pathname === "/manifest.webmanifest" ||
+    pathname.startsWith("/icones/") ||
     // Image de partage du site (LinkedIn, messageries).
-    request.nextUrl.pathname.startsWith("/opengraph-image") ||
+    pathname.startsWith("/opengraph-image") ||
     // Contact de sécurité (RFC 9116).
-    request.nextUrl.pathname === "/.well-known/security.txt";
+    pathname === "/.well-known/security.txt";
 
   // Espaces réservés aux membres : un visiteur y est renvoyé vers la connexion.
-  // Toute autre adresse inconnue affiche la page 404 (src/app/not-found.tsx)
+  // Toute autre adresse inconnue affiche la page 404 (src/app/[lang]/not-found.tsx)
   // au lieu d'une redirection, pour les visiteurs comme pour les moteurs.
   const isMemberArea = ESPACES_MEMBRES.some(
-    (p) => request.nextUrl.pathname === p || request.nextUrl.pathname.startsWith(`${p}/`),
+    (p) => pathname === p || pathname.startsWith(`${p}/`),
   );
 
   if (!user && isMemberArea && !isAuthRoute && !isPublicAsset) {
     const url = request.nextUrl.clone();
-    url.pathname = "/connexion";
+    url.pathname = chemin(langue, "/connexion");
     return NextResponse.redirect(url);
   }
 
