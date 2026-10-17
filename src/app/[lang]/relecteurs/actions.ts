@@ -1,6 +1,8 @@
 "use server";
 
-import { redirect } from "next/navigation";
+import { redirect as rediriger } from "next/navigation";
+import { langueDuFormulaire } from "@/i18n/serveur";
+import { chemin } from "@/lib/langues";
 import { EMAIL, PROFESSIONS_MEDECIN, TELEPHONE } from "@/lib/relecteurs";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
@@ -12,6 +14,8 @@ const champ = (formData: FormData, nom: string, max: number) => String(formData.
 // serveur : la table n'est ni lisible ni modifiable depuis le navigateur.
 // La limite par adresse e-mail est imposée par la base.
 export async function envoyerCandidature(formData: FormData) {
+  // Retour à la page dans sa langue.
+  const redirect: (p: string) => never = (p) => rediriger(chemin(langueDuFormulaire(formData), p));
   // Champ invisible pour un humain : rempli, c'est un robot.
   if (champ(formData, "site_web", 200)) redirect("/relecteurs?r=merci#candidature");
 

@@ -4,20 +4,34 @@ import { CGU_VERSION } from "@/lib/legal";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useLien } from "@/i18n/client";
+import { fmt, riche } from "@/i18n/format";
+import type { LangueOuverte } from "@/lib/langues";
 import { createClient } from "@/lib/supabase/client";
-import { PROFESSION_GROUPS } from "@/lib/professions";
+import type { TextesInscription } from "../textes-auth";
 
 export type Specialty = { slug: string; category: string; isOther: boolean; name: string; couverte: boolean };
+export type GroupeProfessions = { label: string; options: { value: string; label: string }[] };
 
-const SPECIALTY_GROUPS = [
-  { category: "medicale", label: "Spécialités médicales" },
-  { category: "paramedicale", label: "Professions paramédicales" },
-];
-
-// Liste des spécialités lue par le serveur (page.tsx) : pas d'attente à
-// l'affichage du formulaire.
-export default function InscriptionForm({ specialties }: { specialties: Specialty[] }) {
+// Liste des spécialités et des professions lue par le serveur (page.tsx),
+// dans la langue de la page : pas d'attente à l'affichage du formulaire.
+export default function InscriptionForm({
+  specialties,
+  professions,
+  t,
+  langue,
+}: {
+  specialties: Specialty[];
+  professions: GroupeProfessions[];
+  t: TextesInscription;
+  langue: LangueOuverte;
+}) {
   const router = useRouter();
+  const lien = useLien();
+  const groupesSpecialites = [
+    { category: "medicale", label: t.groupeMedical },
+    { category: "paramedicale", label: t.groupeParamedical },
+  ];
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [telephone, setTelephone] = useState("");
@@ -56,6 +70,8 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
           cgu_version: CGU_VERSION,
           consent_partners: consentPartners,
           en_formation: enFormation,
+          // Langue du membre (e-mails), recopiée dans son profil.
+          langue,
         },
       },
     });
@@ -66,13 +82,11 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
     setError(null);
 
     if (!consentService) {
-      setError(
-        "Vous devez accepter les Conditions Générales d'Utilisation et la Politique de Confidentialité pour créer un compte.",
-      );
+      setError(t.erreurCgu);
       return;
     }
     if (professionEstAutre && professionAutre.trim().length < 2) {
-      setError("Merci de préciser votre spécialité.");
+      setError(t.erreurAutre);
       return;
     }
 
@@ -83,8 +97,8 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
     if (signUpError) {
       setError(
         signUpError.status === 429
-          ? "Trop de demandes en peu de temps. Patientez quelques minutes puis réessayez."
-          : "L'envoi du code a échoué. Vérifiez votre adresse email et réessayez.",
+          ? t.erreurTrop
+          : t.erreurEnvoi,
       );
       return;
     }
@@ -104,12 +118,10 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
     setCodeLoading(false);
 
     if (verifyError) {
-      setCodeError(
-        "Code invalide ou expiré. Vérifiez le code ou demandez-en un nouveau.",
-      );
+      setCodeError(t.erreurCode);
       return;
     }
-    router.push("/finaliser-compte");
+    router.push(lien("/finaliser-compte"));
   }
 
   async function handleResend() {
@@ -121,27 +133,19 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
     if (resendError) {
       setCodeError(
         resendError.status === 429
-          ? "Trop de demandes en peu de temps. Patientez quelques minutes avant de redemander un code."
-          : "Impossible de renvoyer le code. Réessayez dans quelques instants.",
+          ? t.erreurTropRenvoi
+          : t.erreurRenvoi,
       );
       return;
     }
-    setResendMessage("Un nouveau code vient d'être envoyé à " + email + ".");
+    setResendMessage(fmt(t.renvoye, { email }));
   }
 
   if (submitted) {
     return (
       <div className="flex flex-col text-center">
-        <h1 className="text-2xl font-bold text-[#0E3A78]">
-          Vérifiez votre boîte email
-        </h1>
-        <p className="mt-4 text-slate-600">
-          Un code a été envoyé à <strong>{email}</strong>.
-          Saisissez-le ci-dessous pour valider votre adresse et finaliser la
-          création de votre compte (choix d&apos;un identifiant et d&apos;un
-          mot de passe). Le lien présent dans l&apos;email fonctionne aussi,
-          mais uniquement s&apos;il est ouvert sur cet appareil.
-        </p>
+        <h1 className="text-2xl font-bold text-[#0E3A78]">{t.verifiezTitre}</h1>
+        <p className="mt-4 text-slate-600">{riche(t.verifiezTexte, { b: (c) => <strong>{c}</strong> }, { email })}</p>
 
         <form onSubmit={handleVerifyCode} className="mt-6 space-y-3">
           <input
@@ -165,7 +169,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             disabled={codeLoading || code.trim().length < 6}
             className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
           >
-            {codeLoading ? "Vérification…" : "Valider le code"}
+            {codeLoading ? t.verification : t.validerCode}
           </button>
 
           <button
@@ -174,7 +178,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             disabled={codeLoading}
             className="w-full text-center text-sm text-[#1A74A6] underline disabled:opacity-50"
           >
-            Renvoyer le code
+            {t.renvoyer}
           </button>
         </form>
       </div>
@@ -183,19 +187,14 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
 
   return (
     <div className="w-full">
-      <h1 className="text-2xl font-bold text-[#0E3A78]">
-        Créer un compte
-      </h1>
-      <p className="mt-2 text-sm text-slate-600">
-        Accès réservé aux professionnels de santé. Vous recevrez un email de
-        confirmation pour finaliser votre inscription.
-      </p>
+      <h1 className="text-2xl font-bold text-[#0E3A78]">{t.titre}</h1>
+      <p className="mt-2 text-sm text-slate-600">{t.intro}</p>
 
       <form onSubmit={handleSubmit} className="mt-8 space-y-5">
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label htmlFor="nom" className="block text-sm font-medium text-slate-700">
-              Nom
+              {t.nom}
             </label>
             <input
             id="nom"
@@ -208,7 +207,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
           </div>
           <div>
             <label htmlFor="prenom" className="block text-sm font-medium text-slate-700">
-              Prénom
+              {t.prenom}
             </label>
             <input
             id="prenom"
@@ -223,7 +222,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
 
         <div>
           <label htmlFor="telephone" className="block text-sm font-medium text-slate-700">
-            Numéro de téléphone
+            {t.telephone}
           </label>
           <input
             id="telephone"
@@ -232,14 +231,14 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             type="tel"
             value={telephone}
             onChange={(e) => setTelephone(e.target.value)}
-            placeholder="06 12 34 56 78"
+            placeholder={t.telephoneExemple}
             className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           />
         </div>
 
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-slate-700">
-            Adresse email
+            {t.email}
           </label>
           <input
             id="email"
@@ -254,7 +253,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
 
         <div>
           <label htmlFor="profession" className="block text-sm font-medium text-slate-700">
-            Profession
+            {t.profession}
           </label>
           <select
             id="profession"
@@ -264,13 +263,13 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           >
             <option value="" disabled>
-              Sélectionnez votre profession
+              {t.choisirProfession}
             </option>
-            {PROFESSION_GROUPS.map((group) => (
+            {professions.map((group) => (
               <optgroup key={group.label} label={group.label}>
                 {group.options.map((opt) => (
-                  <option key={opt} value={opt}>
-                    {opt}
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
                   </option>
                 ))}
               </optgroup>
@@ -283,17 +282,14 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
               onChange={(e) => setEnFormation(e.target.checked)}
               className="mt-0.5 h-4 w-4"
             />
-            <span>
-              (en formation) Étudiant en médecine ou paramédical, interne, résident, docteur junior : −30 % la première année, sur
-              justificatif demandé à l&apos;étape suivante.
-            </span>
+            <span>{t.enFormation}</span>
           </label>
         </div>
 
         {professionEstAutre && (
           <div>
             <label htmlFor="profession-autre" className="block text-sm font-medium text-slate-700">
-              Précisez votre spécialité
+              {t.preciser}
             </label>
             <input
             id="profession-autre"
@@ -307,7 +303,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
 
         <div>
           <label htmlFor="specialite" className="block text-sm font-medium text-slate-700">
-            Spécialité que vous souhaitez consulter
+            {t.specialite}
           </label>
           <select
             id="specialite"
@@ -318,9 +314,9 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base sm:text-sm focus:border-[#3AA8E0] focus:outline-none focus:ring-2 focus:ring-[#3AA8E0]/30"
           >
             <option value="" disabled>
-              {specialties.length ? "Sélectionnez une spécialité" : "Liste indisponible : rechargez la page"}
+              {specialties.length ? t.choisirSpecialite : t.listeIndisponible}
             </option>
-            {SPECIALTY_GROUPS.map((g) => (
+            {groupesSpecialites.map((g) => (
               <optgroup key={g.category} label={g.label}>
                 {specialties
                   .filter((s) => s.category === g.category)
@@ -333,15 +329,11 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
             ))}
           </select>
           <p id="specialite-aide" className="mt-1 text-xs text-slate-500">
-            Votre compte donne accès aux fiches de cette spécialité. Pour en
-            changer plus tard, contactez-nous.
+            {t.aideSpecialite}
           </p>
           {specialty && specialties.find((s) => s.slug === specialty)?.couverte === false && (
             <p role="note" className="mt-2 rounded-md bg-amber-50 p-3 text-xs leading-relaxed text-amber-900">
-              Cette spécialité est encore peu couverte : le catalogue porte aujourd&apos;hui surtout sur
-              l&apos;anesthésie-réanimation, la réanimation, la médecine d&apos;urgence et la pédiatrie. Vos 5 fiches
-              gratuites seront au choix dans tout le catalogue ; l&apos;abonnement vous sera proposé quand votre
-              spécialité sera couverte.
+              {t.peuCouverte}
             </p>
           )}
         </div>
@@ -356,21 +348,19 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
               className="mt-0.5 h-4 w-4 rounded border-slate-300"
             />
             <span>
-              J&apos;accepte les{" "}
-              <Link href="/cgu" target="_blank" className="underline">
-                Conditions Générales d&apos;Utilisation
-              </Link>{" "}
-              et la{" "}
-              <Link
-                href="/confidentialite"
-                target="_blank"
-                className="underline"
-              >
-                Politique de Confidentialité
-              </Link>
-              . Mes données (nom, prénom, téléphone, email, profession, spécialité) sont
-              traitées pour créer et sécuriser mon compte.{" "}
-              <em>Obligatoire.</em>
+              {riche(t.consentement, {
+                cgu: (c) => (
+                  <Link href={lien("/cgu")} target="_blank" className="underline">
+                    {c}
+                  </Link>
+                ),
+                confidentialite: (c) => (
+                  <Link href={lien("/confidentialite")} target="_blank" className="underline">
+                    {c}
+                  </Link>
+                ),
+                em: (c) => <em>{c}</em>,
+              })}
             </span>
           </label>
 
@@ -381,17 +371,7 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
               onChange={(e) => setConsentPartners(e.target.checked)}
               className="mt-0.5 h-4 w-4 rounded border-slate-300"
             />
-            <span>
-              J&apos;accepte que mes nom, e-mail et profession soient
-              transmis à notre partenaire LASKA CORPORATE SAS à des fins
-              commerciales (offres, produits ou services liés à mon activité
-              professionnelle).{" "}
-              <em>
-                Facultatif — vous pouvez créer votre compte sans cocher cette
-                case, et revenir sur ce choix à tout moment depuis la page
-                « Mon compte ».
-              </em>
-            </span>
+            <span>{riche(t.partenaires, { em: (c) => <em>{c}</em> })}</span>
           </label>
         </div>
 
@@ -402,13 +382,13 @@ export default function InscriptionForm({ specialties }: { specialties: Specialt
           disabled={loading}
           className="w-full rounded-lg bg-[#0E3A78] px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#0B2F63] disabled:opacity-50"
         >
-          {loading ? "Envoi en cours…" : "Créer mon compte"}
+          {loading ? t.envoi : t.creer}
         </button>
 
         <p className="text-center text-sm text-slate-600">
-          Déjà inscrit ?{" "}
-          <Link href="/connexion" className="font-medium text-[#1A74A6] underline">
-            Se connecter
+          {t.dejaInscrit}{" "}
+          <Link href={lien("/connexion")} className="font-medium text-[#1A74A6] underline">
+            {t.seConnecter}
           </Link>
         </p>
       </form>

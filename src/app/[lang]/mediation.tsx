@@ -29,3 +29,30 @@ export default function Mediation() {
     </>
   );
 }
+
+// Traduction d'information de la mention ci-dessus (le français fait foi).
+export function MediationEn() {
+  return (
+    <>
+      <p className="mt-2">
+        In accordance with the provisions of the French Consumer Code concerning “the consumer dispute mediation
+        process”, after contacting us at contact@medical-guidelines.net and failing a satisfactory reply, you may use a
+        consumer mediation procedure free of charge with:
+      </p>
+      <p className="mt-2 rounded-md border border-slate-200 p-3">
+        <b>{MEDIATEUR.nom}</b>
+        <br />
+        {MEDIATEUR.adresse}
+        <br />
+        Phone: {MEDIATEUR.telephone}
+        <br />
+        Website:{" "}
+        <a href={MEDIATEUR.site} className="underline" target="_blank" rel="noopener noreferrer">
+          {MEDIATEUR.site}
+        </a>
+        <br />
+        Email: {MEDIATEUR.email}
+      </p>
+    </>
+  );
+}

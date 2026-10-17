@@ -20,3 +20,11 @@ export async function textes<T>(dico: Traductions<T>) {
   const l = await langue();
   return { t: dico[l], langue: l, lien: (p: string) => chemin(l, p), locale: LOCALES[l] };
 }
+
+// Langue d'un formulaire envoyé à une action serveur (champ caché
+// « langue » ; root-params n'y est pas disponible) : adresse de retour dans
+// la langue de la page.
+export function langueDuFormulaire(formData: FormData): LangueOuverte {
+  const l = formData.get("langue");
+  return estOuverte(l) ? l : LANGUE_DEFAUT;
+}

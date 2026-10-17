@@ -13,6 +13,7 @@ export const FICHE: Traductions<{
   synthese: string;
   enFrancais: string;
   fiches: Pluriel;
+  criticites: Record<string, string>;
 }> = {
   fr: {
     remplacee: "Remplacée",
@@ -24,6 +25,7 @@ export const FICHE: Traductions<{
     synthese: "fiche de synthèse",
     enFrancais: "",
     fiches: { one: "{n} fiche", other: "{n} fiches" },
+    criticites: { mineure: "Mineure", majeure: "Majeure", critique: "Critique" },
   },
   en: {
     remplacee: "Superseded",
@@ -36,5 +38,6 @@ export const FICHE: Traductions<{
     enFrancais:
       "This summary is currently available in French only (titles, summaries and recommendations): the English version is in preparation.",
     fiches: { one: "{n} summary", other: "{n} summaries" },
+    criticites: { mineure: "Minor", majeure: "Major", critique: "Critical" },
   },
 };

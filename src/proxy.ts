@@ -81,7 +81,7 @@ export async function proxy(request: NextRequest) {
   const cible = new URL(`/${langue}${espace ? "/espace" : reste === "/" ? "" : reste}${search}`, request.url);
 
   if (enCache(reste) && !espace) {
-    return updateSession(request, request.headers, cible);
+    return retenirLangue(request, langue, await updateSession(request, request.headers, cible));
   }
 
   // Jeton aléatoire par requête pour la CSP stricte, transmis au rendu par
@@ -93,6 +93,16 @@ export async function proxy(request: NextRequest) {
   requestHeaders.set("Content-Security-Policy", csp);
   const response = await updateSession(request, requestHeaders, cible);
   response.headers.set("Content-Security-Policy", csp);
+  return retenirLangue(request, langue, response);
+}
+
+// Page d'une autre langue que le français : langue retenue (cookie), pour
+// que les liens sans langue (e-mails de connexion) y ramènent le visiteur.
+// Le sélecteur de langue la change, y compris pour revenir au français.
+function retenirLangue(request: NextRequest, langue: Langue, response: NextResponse) {
+  if (langue !== LANGUE_DEFAUT && request.cookies.get(COOKIE_LANGUE)?.value !== langue) {
+    response.cookies.set(COOKIE_LANGUE, langue, { path: "/", maxAge: 31536000, sameSite: "lax" });
+  }
   return response;
 }
 

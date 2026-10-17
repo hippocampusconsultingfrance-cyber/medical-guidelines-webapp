@@ -31,5 +31,5 @@ export async function chargerCorrections(supabase: SupabaseClient, documentId?: 
   return (data ?? []) as unknown as Correction[];
 }
 
-export const dateCorrection = (v: string) =>
-  new Date(`${v}T00:00:00Z`).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+export const dateCorrection = (v: string, locale = "fr-FR") =>
+  new Date(`${v}T00:00:00Z`).toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });

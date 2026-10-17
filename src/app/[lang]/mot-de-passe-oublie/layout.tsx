@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
+import { textes } from "@/i18n/serveur";
 import CadreAuth from "../cadre-auth";
 import RenduParRequete from "../rendu-par-requete";
+import { AUTH } from "../textes-auth";
 
-export const metadata: Metadata = { title: "Mot de passe oublié — medical-guidelines.net" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await textes(AUTH);
+  return { title: t.oublie.titreMeta };
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   // Rendu à chaque requête : CSP stricte par jeton (src/proxy.ts).
